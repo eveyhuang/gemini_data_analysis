@@ -66,12 +66,12 @@ def init():
 
 # Save the path dictionary to a JSON file
 def save_path_dict(path_dict, file_name, destdir):
-    with open(destdir+file_name, 'w') as json_file:
+    with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
 
 # Create or update the path dictionary with video file paths and their split chunks
-def create_or_update_path_dict(directory):
-    path_dict_file = os.path.join(directory, "path_dict.json")
+def create_or_update_path_dict(directory, cur_dir):
+    path_dict_file = os.path.join(cur_dir, "path_dict.json")
     
     # Check if path_dict.json exists
     if os.path.exists(path_dict_file):
@@ -102,10 +102,6 @@ def create_or_update_path_dict(directory):
                 
                 # Add to path_dict
                 path_dict[file_name] = chunk_paths
-
-    # Save updated path_dict to path_dict.json
-    with open(path_dict_file, 'w') as f:
-        json.dump(path_dict, f, indent=4)
 
     return path_dict
 
@@ -213,10 +209,11 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
 
 # Analyze all videos in the path dictionary
 def analyze_video(client, path_dict, prompt, dir):
+    cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{dir}/output-{file_name}"
+        output_dir = f"{cur_dir}/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
         for m in range(len(list_chunks)):
             file_name = list_chunks[m][0]
@@ -440,15 +437,16 @@ def annotate_and_merge(client, path_dict, directory, codebook):
             print(f"{output_subfolder} does not exist, skipping...")
 
 
-def main(directory):
+def main(vid_dir):
     client, prompt, codebook = init()
-    split_videos_dict = process_videos_in_directory(directory)
-    path_dict = create_or_update_path_dict(directory)
-    save_path_dict(path_dict, "path_dict.json", directory)
+    cur_dir = os.getcwd()
+    process_videos_in_directory(vid_dir)
+    path_dict = create_or_update_path_dict(vid_dir, cur_dir)
+    save_path_dict(path_dict, "path_dict.json", cur_dir)
 
-    new_path_dict = analyze_video(client, path_dict, prompt, directory)
-    save_path_dict(new_path_dict, "path_dict.json", directory)
-    annotate_and_merge(client, new_path_dict, directory, codebook)
+    new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
+    save_path_dict(new_path_dict, "path_dict.json", cur_dir)
+    annotate_and_merge(client, new_path_dict, cur_dir, codebook)
     return new_path_dict
 
 if __name__ == '__main__':
