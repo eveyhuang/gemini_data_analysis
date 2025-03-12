@@ -177,7 +177,7 @@ def process_videos_in_directory(directory):
         video_full_path = video_file[0]
         file_name, file_extension = os.path.splitext(video_file[3])
         split_dir = os.path.join(directory, f"split-{file_name}")
-        print(f"Split directory is {split_dir}")
+        # print(f"Split directory is {split_dir}")
         if not os.path.exists(split_dir):
             try:
                 probe = ffmpeg.probe(video_full_path)
@@ -188,8 +188,9 @@ def process_videos_in_directory(directory):
                 else:
                     print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
                     split_videos_dict[video_file] = [video_full_path]
-            except:
+            except Exception as e:
                 print(f"Having issues with video: {video_full_path}")
+                print(f"Here is the exception: {e}")
             
         else:
             print(f"Found a folder with splitted videios for {video_file} already.")
