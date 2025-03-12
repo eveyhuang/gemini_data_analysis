@@ -69,6 +69,23 @@ def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
 
+# get all the paths to the video files (scialog directory is categorized by folders of each conference)
+def get_video_files(directory):
+    folder_names = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
+    video_files = []
+    for folder in folder_names:
+        if not folder.startswith("split") and not folder.startswith("output"):
+            folder_path = os.path.join(directory, folder)
+            for root, _, files in os.walk(folder_path):
+                for file in files:
+                    if file.endswith(('.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv')):
+                        file_name, file_extension = os.path.splitext(file)
+                        # path to video, path_to_folder, video file name for path_dict, original filename
+                        video_files.append((os.path.join(root, file), os.path.join(root, folder), f"{folder}/{file_name}", file))
+                        
+    
+    return video_files
+
 # Create or update the path dictionary with video file paths and their split chunks
 def create_or_update_path_dict(directory, cur_dir):
     path_dict_file = os.path.join(cur_dir, "path_dict.json")
@@ -82,13 +99,13 @@ def create_or_update_path_dict(directory, cur_dir):
         # Create a new path_dict
         path_dict = {}
 
-    video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
     # Get list of video files in the directory
-    video_files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and os.path.splitext(f)[1].lower() in video_extensions]
+    video_files = get_video_files(directory)
 
     for video_file in video_files:
-        file_name, file_extension = os.path.splitext(video_file)
-        if file_name not in path_dict.keys():
+        file_name, file_extension = os.path.splitext(video_file[3])
+        path_key_name = video_file[2]
+        if path_key_name not in path_dict.keys():
             # Get the split directory for this video file
             split_dir = os.path.join(directory, f"split-{file_name}")
             
@@ -97,11 +114,11 @@ def create_or_update_path_dict(directory, cur_dir):
                 chunk_files = [f for f in os.listdir(split_dir) if os.path.isfile(os.path.join(split_dir, f)) and f.startswith(file_name) and f.endswith(file_extension)]
                 chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
                 
-                # Create list of [full path to this video, ' ', False] for each chunk file
+                # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
                 chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
                 
                 # Add to path_dict
-                path_dict[file_name] = chunk_paths
+                path_dict[path_key_name] = chunk_paths
 
     return path_dict
 
@@ -133,15 +150,14 @@ def split_video(video_full_path, duration, chunk_length=15*60):
 # Process all videos in a directory, splitting them if necessary
 def process_videos_in_directory(directory):
     
-    video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
-    # Get list of video files in the directory
-    video_files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and os.path.splitext(f)[1].lower() in video_extensions]
+    # path to video, path_to_folder, video file name for path_dict, original filename
+    video_files = get_video_files(directory)
 
     split_videos_dict = {}
     
     for video_file in video_files:
-        video_full_path = os.path.join(directory, video_file)
-        file_name, file_extension = os.path.splitext(os.path.basename(video_full_path))
+        video_full_path = video_file[0]
+        file_name, file_extension = os.path.splitext(video_file[3])
         split_dir = os.path.join(directory, f"split-{file_name}")
         if not os.path.exists(split_dir):
             try:
