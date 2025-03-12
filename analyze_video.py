@@ -69,21 +69,37 @@ def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
 
-# get all the paths to the video files (scialog directory is categorized by folders of each conference)
-def get_video_files(directory):
-    folder_names = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
+# get all the video files (scialog directory is categorized by folders of each conference)
+def get_video_in_folders(directory):
+    video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
     video_files = []
+
+    # Get all folders in the given directory
+    folder_names = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
+
     for folder in folder_names:
-        if not folder.startswith("split") and not folder.startswith("output"):
-            folder_path = os.path.join(directory, folder)
-            for root, _, files in os.walk(folder_path):
-                for file in files:
-                    if file.endswith(('.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv')):
-                        file_name, file_extension = os.path.splitext(file)
-                        # path to video, path_to_folder, video file name for path_dict, original filename
-                        video_files.append((os.path.join(root, file), os.path.join(root, folder), f"{folder}/{file_name}", file))
-                        
-    
+        folder_path = os.path.join(directory, folder)
+        # Get all files in the current folder
+        files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+        for file in files:
+            if os.path.splitext(file)[1].lower() in video_extensions:
+                file_name, file_extension = os.path.splitext(file)
+                # path to video, path_to_folder, video file name for path_dict, original filename
+                video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+
+    return video_files
+
+# get videos files in a directory (used for split directory with splitted videos)
+def get_videos(directory):
+    video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
+    video_files = []
+
+    # Get all files in the given directory
+    files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+    for file in files:
+        if os.path.splitext(file)[1].lower() in video_extensions:
+            video_files.append(file)
+
     return video_files
 
 # Create or update the path dictionary with video file paths and their split chunks
@@ -100,18 +116,20 @@ def create_or_update_path_dict(directory, cur_dir):
         path_dict = {}
 
     # Get list of video files in the directory
-    video_files = get_video_files(directory)
+     # path to video, path_to_folder, video file name for path_dict, original filename
+    video_files = get_video_in_folders(directory)
 
     for video_file in video_files:
         file_name, file_extension = os.path.splitext(video_file[3])
         path_key_name = video_file[2]
+        folder_dir = video_file[1]
         if path_key_name not in path_dict.keys():
             # Get the split directory for this video file
-            split_dir = os.path.join(directory, f"split-{file_name}")
-            
+            split_dir = os.path.join(folder_dir, f"split-{file_name}")
+            # print(f"Split directory is {split_dir}")
             if os.path.exists(split_dir):
                 # Get list of chunk files in the split directory
-                chunk_files = [f for f in os.listdir(split_dir) if os.path.isfile(os.path.join(split_dir, f)) and f.startswith(file_name) and f.endswith(file_extension)]
+                chunk_files = get_videos(split_dir)
                 chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
                 
                 # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
@@ -119,11 +137,11 @@ def create_or_update_path_dict(directory, cur_dir):
                 
                 # Add to path_dict
                 path_dict[path_key_name] = chunk_paths
-
+    # print(f"updated path dict: {path_dict}")
     return path_dict
 
 # Split a video into chunks of specified length
-def split_video(video_full_path, duration, chunk_length=15*60):
+def split_video(video_full_path, duration, chunk_length=10*60):
     
     # Calculate the number of chunks
     num_chunks = int(duration // chunk_length) + 1
@@ -151,7 +169,7 @@ def split_video(video_full_path, duration, chunk_length=15*60):
 def process_videos_in_directory(directory):
     
     # path to video, path_to_folder, video file name for path_dict, original filename
-    video_files = get_video_files(directory)
+    video_files = get_video_in_folders(directory)
 
     split_videos_dict = {}
     
@@ -159,15 +177,16 @@ def process_videos_in_directory(directory):
         video_full_path = video_file[0]
         file_name, file_extension = os.path.splitext(video_file[3])
         split_dir = os.path.join(directory, f"split-{file_name}")
+        print(f"Split directory is {split_dir}")
         if not os.path.exists(split_dir):
             try:
                 probe = ffmpeg.probe(video_full_path)
                 duration = float(probe['format']['duration'])
-                if duration > 15 * 60:
+                if duration > 10 * 60:
                     print(f"Splitting video: {video_file}")
                     split_videos_dict[video_file] = split_video(video_full_path, duration)
                 else:
-                    print(f"Video {video_file} is shorter than 15 minutes, no need to split.")
+                    print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
                     split_videos_dict[video_file] = [video_full_path]
             except:
                 print(f"Having issues with video: {video_full_path}")
@@ -178,7 +197,7 @@ def process_videos_in_directory(directory):
     return split_videos_dict
 
 # Return the video file from Gemini, uploading it if necessary
-def get_video(client, file_name, file_path, gemini_name):
+def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     existing_files = [x.name for x in client.files.list()]
     
@@ -238,7 +257,7 @@ def analyze_video(client, path_dict, prompt, dir):
             analyzed = list_chunks[m][3]
             if not analyzed:
                 print(f"Analyzing {file_name}")
-                video_file, gemini_name = get_video(client, file_name, file_path, gemini_name)
+                video_file, gemini_name = get_gemini_video(client, file_name, file_path, gemini_name)
                 list_chunks[m][2] = gemini_name
                 if video_file:
                     response = gemini_analyze_video(client, prompt, video_file, file_name)
@@ -407,10 +426,10 @@ def merge_output_json(directory):
                 data = i.copy()
                 sp_time = data['timestamp'].split('-')
                 if len(sp_time)==2:
-                    data['start_time'] = add_times(sp_time[0], str(15*m)+':00')
-                    data['end_time'] = add_times(sp_time[1], str(15*m)+':00')
+                    data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
+                    data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
                 else:
-                    data['start_time'] = add_times(sp_time[0], str(15*m)+':00')
+                    data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
                     
                 full_output.append(data)
                 utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
