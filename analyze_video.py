@@ -201,22 +201,26 @@ def process_videos_in_directory(directory):
 def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     existing_files = [x.name for x in client.files.list()]
-    
+    video_file = None
     if gemini_name in existing_files:
         print(f"{file_name} already uploaded to Gemini, returning that...")
         video_file = client.files.get(name=gemini_name)
     else:
         print(f"Uploading {file_name} to Gemini")
-        video_file = client.files.upload(file=file_path)
-        print(f"Completed upload: {video_file.uri}")  
-        while video_file.state.name == "PROCESSING":
-            print('.', end='')
-            time.sleep(10)
-            video_file = client.files.get(name=video_file.name)
-            gemini_name = video_file.name
-        if video_file.state.name == "FAILED":
-            print("File processing failed.")
-            return None
+        try:
+            video_file = client.files.upload(file=file_path)
+            print(f"Completed upload: {video_file.uri}")  
+            while video_file.state.name == "PROCESSING":
+                print('.', end='')
+                time.sleep(10)
+                video_file = client.files.get(name=video_file.name)
+                gemini_name = video_file.name
+            if video_file.state.name == "FAILED":
+                print("File processing failed.")
+                return None
+        except Exception as e:
+            print(f"File processing failed for {file_name}")
+            
     return video_file, gemini_name
 
 # Analyze a video using the Gemini API
