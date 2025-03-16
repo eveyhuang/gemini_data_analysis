@@ -478,10 +478,11 @@ def annotate_and_merge(client, path_dict, directory, codebook):
             print(f"{output_subfolder} does not exist, skipping...")
 
 
-def main(vid_dir):
+def main(vid_dir, process_video):
     client, prompt, codebook = init()
     cur_dir = os.getcwd()
-    process_videos_in_directory(vid_dir)
+    if process_video == 'yes':
+        process_videos_in_directory(vid_dir)
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
     save_path_dict(path_dict, "path_dict.json", cur_dir)
 
@@ -492,4 +493,5 @@ def main(vid_dir):
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
-    main(dir)
+    process_video = input("Process video? yes/no")
+    main(dir, process_video)
