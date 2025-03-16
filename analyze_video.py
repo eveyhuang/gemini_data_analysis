@@ -202,6 +202,7 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     existing_files = [x.name for x in client.files.list()]
     video_file = None
+    gemini_name = ''
     if gemini_name in existing_files:
         print(f"{file_name} already uploaded to Gemini, returning that...")
         video_file = client.files.get(name=gemini_name)
@@ -217,7 +218,6 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
                 gemini_name = video_file.name
             if video_file.state.name == "FAILED":
                 print("File processing failed.")
-                return None
         except Exception as e:
             print(f"File processing failed for {file_name}")
             
@@ -280,6 +280,7 @@ def analyze_video(client, path_dict, prompt, dir):
                                 list_chunks[m][3] = False
                     else:
                         list_chunks[m][3] = False
+                save_path_dict(n_path_dict, "path_dict.json", cur_dir)
             else:
                 print(f"{file_name} already analyzed, moving on..")
                 continue
