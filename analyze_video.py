@@ -3,7 +3,7 @@ import re
 import time, json, os
 from google import genai
 from dotenv import load_dotenv
-
+from google.genai.errors import ServerError
 
 def init():
     load_dotenv()
@@ -200,9 +200,16 @@ def process_videos_in_directory(directory):
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
-    existing_files = [x.name for x in client.files.list()]
     video_file = None
     gemini_name = ''
+    existing_files = []
+    try:
+        response = client.files.list()
+        print(f"response of files: {response}")
+        existing_files = [x.name for x in response]
+    except ServerError as e:
+        print(f"Server error: {e}")
+    
     if gemini_name in existing_files:
         print(f"{file_name} already uploaded to Gemini, returning that...")
         video_file = client.files.get(name=gemini_name)
@@ -493,5 +500,5 @@ def main(vid_dir, process_video):
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
-    process_video = input("Process video? yes/no")
+    process_video = input("Process video? yes/no ")
     main(dir, process_video)
