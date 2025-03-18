@@ -281,8 +281,12 @@ def analyze_video(client, path_dict, prompt, dir):
                         except ValueError:
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
                             if response:
-                                save_to_json(response.text, file_name, f"{output_dir}/")
-                                list_chunks[m][3] = True
+                                try:
+                                    save_to_json(response.text, file_name, f"{output_dir}/")
+                                    list_chunks[m][3] = True
+                                except Exception as e:
+                                    print(f"Still can't get the output to workout: {file_name}")
+                                    continue
                             else: 
                                 list_chunks[m][3] = False
                     else:
