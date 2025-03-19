@@ -197,18 +197,22 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
+def safe_list_files(client, max_retries=3, delay=5):
+    for attempt in range(max_retries):
+        try:
+            return [x.name for x in client.files.list()]
+        except genai.errors.ServerError as e:
+            print(f"Server error (attempt {attempt + 1}): {e}")
+            time.sleep(delay)  # Wait before retrying
+    print("Max retries reached, failing gracefully.")
+    return []
+
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     video_file = None
     gemini_name = ''
-    existing_files = []
-    try:
-        response = client.files.list()
-        print(f"response of files: {response}")
-        existing_files = [x.name for x in response]
-    except ServerError as e:
-        print(f"Server error: {e}")
+    existing_files = safe_list_files(client)
     
     if gemini_name in existing_files:
         print(f"{file_name} already uploaded to Gemini, returning that...")
@@ -436,29 +440,38 @@ def merge_output_json(directory):
 
     for m in range(num_chunks):
         ck = data_list[m]
-        for key in ck.keys():
-            d_list = ck[key]
-            
-            for i in d_list:
-                data = i.copy()
-                sp_time = data['timestamp'].split('-')
-                if len(sp_time)==2:
-                    data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
-                    data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
-                else:
-                    data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
-                    
-                full_output.append(data)
-                utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
+        if ck:
+            for key in ck.keys():
+                d_list = ck[key]
+                
+                for i in d_list:
+                    data = i.copy()
+                    sp_time = data['timestamp'].split('-')
+                    if len(sp_time)==2:
+                        data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
+                        data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
+                    else:
+                        data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
+                        
+                    full_output.append(data)
+                    utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
+        else:
+            print(f"Having issues with data in directory: {directory}")
                 
     return (full_output, utterance_list)
 
 # Annotate and merge the output JSON files
 def annotate_and_merge(client, path_dict, directory, codebook):
     for key in path_dict.keys():
+        split_vid_name = key.split("/")
+        if len(split_vid_name)>1:
+            vid_name = split_vid_name[1]
+        else:
+            vid_name = split_vid_name[0]
+
         output_subfolder = os.path.join(directory, f"output-{key}")
-        verbal_file = os.path.join(output_subfolder, f"verbal_{key}.json")
-        all_file = os.path.join(output_subfolder,f"all_{key}.json" )
+        verbal_file = os.path.join(output_subfolder, f"verbal_{vid_name}.json")
+        all_file = os.path.join(output_subfolder,f"all_{vid_name}.json" )
         if os.path.exists(output_subfolder):
             merged_output = merge_output_json(output_subfolder)
             if not os.path.exists(all_file):
@@ -467,7 +480,7 @@ def annotate_and_merge(client, path_dict, directory, codebook):
                     print(f"Annotating verbal behvaiors for {key}")
                     annotations = annotate_utterances(client, merged_output[1],codebook)
                     verbal_annotations = annotations
-                    output_file = f"{output_subfolder}/verbal_{key}.json"
+                    output_file = verbal_file
                     with open(output_file, "w") as f:
                         json.dump(annotations, f, indent=4)
                 else:
@@ -499,8 +512,8 @@ def main(vid_dir, process_video):
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, "path_dict.json", cur_dir)
-    annotate_and_merge(client, new_path_dict, cur_dir, codebook)
-    return new_path_dict
+    annotate_and_merge(client, path_dict, cur_dir, codebook)
+    return path_dict
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")

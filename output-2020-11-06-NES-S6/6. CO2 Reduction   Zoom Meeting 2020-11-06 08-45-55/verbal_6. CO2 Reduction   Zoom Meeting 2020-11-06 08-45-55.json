@@ -1,0 +1,327 @@
+[
+    {
+        "utterance": "CM: and then extrapolate that to hundreds of thousands and then do careful, you know, random sampling of those hundred thousands to make sure to help us find them all. ",
+        "annotations": {
+            "expand on existing idea": "CM builds upon the prior discussion of sampling by suggesting a method to scale it up and ensure comprehensive coverage.",
+            "explain or define term or concept": "CM clarifies the sampling methodology by specifying the use of random sampling and its purpose in finding all relevant instances."
+        }
+    },
+    {
+        "utterance": "WS: So a comment coming back to what's been discussed a lot is Jimmy and Venkat you're discussing kind of techno economic type of things and costs of catalyst and Venkat you brought up Opus 12 and Dioxide. So we work with both of those companies and NREL we've done pretty extensive techno economic and life cycle assessment of various CO2 processes. And what we see is when you get to scale, the cost of the catalyst is nothing. We assume that every catalyst will be bulk copper. So it absolutely is not the catalyst cost and for PEM electrolysis where you have platinum and iridium based catalyst, that's a huge driver. But for CO2 reduction, it's not. And so what we find is regardless if we do the Opus 12 approach is using PEM electrolysis essentially with CO2 catalyst. So it's an acidic environment and Dioxide is alkaline electrolysis with CO2. And in both cases when we get to the economy of scales, whether it's acidic or basic, the major cost driver and the major cost at these systems is the cost of the membranes. And so I think as we for this room of a complete picture of CO2 reduction, I think membranes is a huge thing, especially alkaline exchange membranes in terms of separations, stability, managing pHs. But we even find in the manufacturing that at large scales when we get to over 10,000 units made of any of these systems, including things like bipolar plates, recirculation. So the first thing is that membranes is something I think that is huge and important for this field. The other thing is that Venkat you're mentioning that the price of electricity and how we kind of distill that into metrics in the lab that are the most relevant that are correlated to that. The two metrics we see that are the biggest knobs to turn are the single pass conversion efficiency and the current density. So current density and it's a challenge, I think, a big challenge for the field and that those two metrics seem to be counterproductive to each other. If you increase the current density, usually you decrease the single pass conversion and vice versa, if you have low flow rates to have a higher conversion efficiency, you're going to have lower currents. So we see that the biggest economic knobs to turn are the membrane costs and the biggest performance metrics are current density and single pass. ",
+        "annotations": {
+            "provide supporting evidence": "WS provides evidence from NREL's work with Opus 12 and Dioxide, stating that at scale, catalyst cost is negligible for CO2 reduction, unlike PEM electrolysis where platinum and iridium catalysts are cost drivers.",
+            "explain or define term or concept": "WS explains that the key metrics for CO2 reduction are single pass conversion efficiency and current density, and that membrane cost is a major economic factor.",
+            "present new idea": "WS introduces the idea of focusing on membrane technology, particularly alkaline exchange membranes, for improving CO2 reduction processes."
+        }
+    },
+    {
+        "utterance": "SB: Listen, can you to dive down a little bit deeper, what contributes to the membrane cost? Is it manufacturing costs or material costs or ",
+        "annotations": {
+            "ask clarifying question": "SB asks for more details about the factors influencing membrane costs, specifically inquiring about manufacturing and material costs, following WS's explanation of membrane costs as a major economic driver in CO2 reduction systems."
+        }
+    },
+    {
+        "utterance": "WS: It's the it's a combination of the bulk cost of the polymers and the synthesis. But then that also relies on their functionality. So if we can have membranes that are more stable, even if they're a little more expensive, that would win out in the end. So it's both the bulk cost of the polymers and the synthesis and we're taking into account roll-to-roll synthesis as they already use. So we're using that part of the analysis has a smaller error bar because that's already an industrially relevant process. We get really good numbers about that. So it's bulk polymer costs and then alkaline exchange membrane fabrication. ",
+        "annotations": {
+            "expand on existing idea": "WS expands on their prior explanation of membrane costs by elaborating on the factors influencing it, such as polymer cost, synthesis, and functionality.",
+            "provide supporting evidence": "WS supports their claims about the analysis by mentioning the consideration of roll-to-roll synthesis and its smaller error bar due to industrial relevance.",
+            "explain or define term or concept": "WS explains the factors contributing to membrane costs, including bulk polymer costs, synthesis costs, and the importance of membrane functionality and stability."
+        }
+    },
+    {
+        "utterance": "CM: So so sort of ",
+        "annotations": {
+            "ask clarifying question": "CM is asking for clarification or elaboration on the prior statements about membrane costs, indicated by the repetition of \"so\" and trailing off."
+        }
+    },
+    {
+        "utterance": "SB: creative and spread of sort of siloed ideas. Maybe this you know, we've heard a lot at least in the groups I've been in of about designing new catalysts, which is something that chemists and chemical engineers and material scientists love to do. But maybe this membrane problem is one that that groups here ought to be thinking about really getting at fundamentally like robust membranes, chemistries of membranes that will allow us to solve these problems, right? ",
+        "annotations": {
+            "present new idea": "SB suggests focusing on membrane development as a key research area, shifting from the prevalent focus on catalyst design.",
+            "expand on existing idea": "SB builds upon WS's point about membrane costs being a major driver by suggesting specific research directions for robust membrane chemistries.",
+            "provide supporting evidence": "SB mentions prior discussions in other groups about the emphasis on catalyst design to highlight the existing focus and the need for a shift towards membrane research.",
+            "encourage particpatioin": "SB uses \"groups here ought to be thinking about\" to encourage researchers to consider membrane development as a crucial area of focus."
+        }
+    },
+    {
+        "utterance": "CM: Not electro, there's going to be electro, photoelectricity that's going to pump into an electrolyzer because that's the only practical scale. ",
+        "annotations": {
+            "present new idea": "CM introduces the concept of using photoelectricity to power an electrolyzer, which had not been mentioned previously.",
+            "provide supporting evidence": "CM supports the idea of using photoelectricity by stating it's the only practical option at scale."
+        }
+    },
+    {
+        "utterance": "SB: It's a dark electrolyzer. ",
+        "annotations": {
+            "explain or define term or concept": "SB clarifies the type of electrolyzer being discussed, specifying it as a \"dark electrolyzer\" to distinguish it from photoelectrochemical or other types."
+        }
+    },
+    {
+        "utterance": "CM: And I will say all of the hubs, they they're promising liquid fuels. I don't think they're going to make that, but they're promising liquid fuels through tandem catalysis, not direct catalysis. They're all banking. They they have some direct catalysis pathways, but they're really all banking on tandem, which is why they're going molecular. ",
+        "annotations": {
+            "provide supporting evidence": "CM supports their claim about the hubs focusing on tandem catalysis by stating that the hubs are \"going molecular,\" which implies a focus on molecular-level manipulation consistent with tandem catalysis.",
+            "reject idea": "CM expresses skepticism about the hubs' ability to produce liquid fuels as promised, stating, \"I don't think they're going to make that.\""
+        }
+    },
+    {
+        "utterance": "SB: Okay. That's that's well, that's a that's a really good good certain things to keep in mind. ",
+        "annotations": {
+            "acknowledge contribution": "SB acknowledges CM's contribution about liquid fuels and tandem catalysis by saying \"That's a really good certain things to keep in mind.\""
+        }
+    },
+    {
+        "utterance": "VV: But is there is there like I mean, is there still like some interesting things to be learned there, right? I mean, I mean, you know, it doesn't need to be, you know, not everything needs to be practically relevant to be able to, you know, get a complete picture on some things. ",
+        "annotations": {
+            "ask clarifying question": "VV is asking for clarification on whether there are still interesting research avenues in direct catalysis, even if they are not immediately practically relevant, to gain a complete understanding of CO2 reduction.",
+            "provide supporting evidence": "VV supports his question by stating that not all research needs to have immediate practical applications to contribute to a comprehensive understanding."
+        }
+    },
+    {
+        "utterance": "CM: Well, in their hub call, do we said that it was about basic science, not about building a device. ",
+        "annotations": {
+            "explain or define term or concept": "CM clarifies the hub's focus, defining it as basic science rather than device development, contrasting it with the prior discussion about practical applications and economic factors like membrane costs and catalyst design."
+        }
+    },
+    {
+        "utterance": "SB: So so I mean integration of cattles and semiconductor is fundamentally interesting. ",
+        "annotations": {
+            "present new idea": "SB introduces the idea of integrating catalysts and semiconductors as a fundamentally interesting research direction.",
+            "explain or define term or concept": "SB is implicitly defining a research area that combines catalyst and semiconductor technologies."
+        }
+    },
+    {
+        "utterance": "CM: Charge transport, molecular versus solid state catalyst. Those are all interesting. ",
+        "annotations": {
+            "present new idea": "CM introduces the comparison of charge transport in molecular versus solid-state catalysts as a research area.",
+            "explain or define term or concept": "CM clarifies the specific area of interest within catalysis research, focusing on charge transport mechanisms.",
+            "express enthusiasm": "CM's use of \"interesting\" suggests excitement and potential value in exploring these research directions."
+        }
+    },
+    {
+        "utterance": "EM: I mean there's a whole program, there's a whole program at DOE. It's not just like these hubs, right? Solar fuels. ",
+        "annotations": {
+            "provide_supporting_evidence": "EM points out that the DOE has a broader program on solar fuels, suggesting that the hubs are not the only initiative in this area and providing context to the discussion.",
+            "explain_or_define_term_or_concept": "EM clarifies that the discussion should consider the wider context of solar fuels research within the DOE, not just the specific hubs mentioned earlier."
+        }
+    },
+    {
+        "utterance": "SB: Solar water chemistry. Yeah. ",
+        "annotations": {
+            "confirm decision": "SB confirms the prior statement about the existence of a program at DOE related to solar fuels and water chemistry.",
+            "express agreement": "SB expresses agreement with EM's statement about the DOE program on solar fuels."
+        }
+    },
+    {
+        "utterance": "JJ: Yeah, I ",
+        "annotations": {
+            "None": "This utterance is incomplete and does not convey a clear meaning, thus no code from the codebook applies."
+        }
+    },
+    {
+        "utterance": "AB: the same conversation about these systems. Um is there anything else that I should focus on? In particular, there's so many interesting things that came up. I don't know if you want to kind of like screw ",
+        "annotations": {
+            "ask clarifying question": "AB asks for guidance on what to prioritize, given the numerous interesting points raised in the conversation about CO2 reduction systems.",
+            "encourage particpatioin": "AB explicitly invites others to contribute by asking if there's anything else they want to focus on or any other interesting things that came up."
+        }
+    },
+    {
+        "utterance": "SB: I thought I really like the point that Wilson made about about the relative, you know, costs of different uh, you know, where can you sort of make the most difference for uh focusing your effort and if if the membrane um is is still something that people need to work on. I think this group needs to hear about it and perhaps ideate about, you know, how you can come up with better membranes that uh using fundamental science that would sort of resolve some of these issues. ",
+        "annotations": {
+            "acknowledge contribution": "\"SB: I thought I really like the point that Wilson made about about the relative, you know, costs of different uh, you know, where can you sort of make the most difference for uh focusing your effort...\"",
+            "expand on existing idea": "SB builds upon Wilson's point about membrane costs by suggesting the group ideate on how to improve membranes using fundamental science.",
+            "encourage particpatioin": "SB encourages the group to think about and discuss how to improve current membranes."
+        }
+    },
+    {
+        "utterance": "MH: Yeah, I think also to that membranes and also the opportunities for CO which I think ",
+        "annotations": {
+            "expand on existing idea": "MH adds \"opportunities for CO\" to the existing discussion on membranes, expanding the scope of materials to consider.",
+            "express agreement": "MH starts with \"Yeah, I think also to that\", explicitly agreeing with the previous speaker's point about membrane importance."
+        }
+    },
+    {
+        "utterance": "SB: CO take away ",
+        "annotations": {
+            "ask clarifying question": "SB asks for clarification or elaboration on MH's previous statement about CO opportunities, seemingly cutting MH off mid-sentence."
+        }
+    },
+    {
+        "utterance": "MH: So like moving away from just CO2 um problems, right? So membranes ",
+        "annotations": {
+            "expand on existing idea": "MH adds \"opportunities for CO\" to the existing discussion about membrane costs and CO2 reduction.",
+            "provide supporting evidence": "MH supports the idea of focusing on membranes by mentioning the opportunities related to CO, implying it's another area where membrane improvements are crucial."
+        }
+    },
+    {
+        "utterance": "SB: Yeah, that's right. membranes and opportunities and membranes and CO and the opportunities for CO perhaps just amplifying that would be that you know, perhaps um people focus too much on product selectivity, but really the idea of reaction selectivity and then and you don't have to do everything electro catalytically. Can you do CO and go on in all sorts of other directions that might make most economic sense ultimately. ",
+        "annotations": {
+            "expand on existing idea": "SB expands on WS's point about membrane costs by suggesting the group ideate on better membranes using fundamental science and MH's point about CO opportunities by amplifying the idea of reaction selectivity and exploring non-electro catalytic pathways.",
+            "present new idea": "SB introduces the idea of shifting focus from product selectivity to reaction selectivity and exploring non-electrocatalytic pathways for CO utilization.",
+            "offer constructive criticism": "SB critiques the current focus on product selectivity, suggesting it might be excessive."
+        }
+    },
+    {
+        "utterance": "MH: Yeah, I think that's that's good. Basically, you don't have to do everything electro catalytically, what hybrid systems make sense, whether it's thermo catalytic, electro catalytic, electro catalytic, bio catalytic. Um ",
+        "annotations": {
+            "expand on existing idea": "MH expands on the idea of focusing on membrane technology by suggesting exploring hybrid systems that incorporate various catalytic approaches beyond electrocatalysis, aligning with the discussion of cost-effectiveness and alternative solutions.",
+            "propose decision": "MH proposes that the group consider hybrid catalytic systems (thermo catalytic, electro catalytic, and bio catalytic) as a potential research direction, shifting the focus from solely electrocatalytic processes.",
+            "explain or define term or concept": "MH explains and defines the concept of hybrid catalytic systems by listing examples such as thermo catalytic, electro catalytic, and bio catalytic systems, providing specific terms for the audience to consider."
+        }
+    },
+    {
+        "utterance": "SB: So product versus reaction selectivity Wilson um message about that. I think that's that's a really really good point. Um and and so the benchmarking point I think is a really good one also from because we're not talking about like Charles mentioned that what has gone down in the last two versions of hubs, but really much more systems level analysis about benchmarking um where you might then very quickly come to the realization that things like photocatalysis is going to be exceedingly difficult or would require a complete redesign of reactors. Um and so again, there's perhaps certain aspects of it that you might want to do but not others. ",
+        "annotations": {
+            "acknowledge contribution": "\"SB: So product versus reaction selectivity Wilson um message about that. I think that's that's a really really good point.\": SB acknowledges Wilson's point about product versus reaction selectivity.",
+            "expand on existing idea": "\"SB: Um and and so the benchmarking point I think is a really good one also from because we're not talking about like Charles mentioned that what has gone down in the last two versions of hubs, but really much more systems level analysis about benchmarking um where you might then very quickly come to the realization that things like photocatalysis is going to be exceedingly difficult or would require a complete redesign of reactors.\": SB expands on the idea of benchmarking by emphasizing the need for systems-level analysis and mentions the challenges of photocatalysis.",
+            "provide supporting evidence": "\"SB: Um and so again, there's perhaps certain aspects of it that you might want to do but not others.\": SB supports the idea of focusing on specific aspects of photocatalysis by implying that some aspects are more feasible than others."
+        }
+    },
+    {
+        "utterance": "EM: I get kind of worried. I mean, I'm not an engineer. So obviously this is not my area of expertise, but I do get worried with some of these types of conversations that I've been listening to about technology lock-in. And like if you're only thinking about one perspective, are you immediately dismissive or ruling out an entire space that you're eliminating the ability to gather basic knowledge. And so I don't know what SciLogs goal is here. Like are you trying to have the most operational um ",
+        "annotations": {
+            "present new idea": "\"Technology lock-in\" is introduced as a potential concern regarding focusing solely on one perspective, potentially hindering basic knowledge gathering.",
+            "ask clarifying question": "EM questions SciLogs' goal, asking if it prioritizes operational aspects, suggesting a concern about the balance between practical applications and fundamental research.",
+            "express frustation": "EM expresses worry about the direction of the conversation, indicating potential frustration with the emphasis on certain perspectives and the potential for overlooking valuable research avenues."
+        }
+    },
+    {
+        "utterance": "SB: No, we're not. So I think we're finding trying to identify opportunities fundamental signs. So if there is things you can do by photocatalysis, I think those are those would be would be definitely in the in the realm of this. Like if there if there are new opportunities that can be unrolled, but but to look critically at what's been done. So in a in a sense, for example, I think BES has an agenda that folks perhaps have not agreed as much of it in terms of both batteries and and catalysis. So so we don't have to subscribe to that, but we can definitely have a conversation. There's nothing nothing that is out of um out of the realm of, you know, SciLogs. ",
+        "annotations": {
+            "explain or define term or concept": "SB clarifies SciLogs' goal is to identify fundamental science opportunities, not necessarily focus on operational aspects.",
+            "expand on existing idea": "SB expands on the discussion of photocatalysis and its potential within the scope of SciLogs.",
+            "offer constructive criticism": "SB suggests a critical review of existing work in photocatalysis and related areas.",
+            "resolve conflict": "SB addresses concerns about technology lock-in by emphasizing the openness of SciLogs to various approaches, including photocatalysis, and suggests a conversation about potentially diverging agendas, such as that of BES."
+        }
+    },
+    {
+        "utterance": "WS: tropes and a whole industry that can take it to whatever you want. ",
+        "annotations": {
+            "None": "No code from the codebook applies to this single-sentence utterance."
+        }
+    },
+    {
+        "utterance": "CM: I knew we had fisher tropes. I also know fisher tropes is somewhat energy intensive, but ",
+        "annotations": {
+            "explain or define term or concept": "CM defines/explains what \"fisher tropes\" are and mentions their energy intensiveness, adding to the prior discussion about CO2 reduction, membranes, and cost drivers like electricity."
+        }
+    },
+    {
+        "utterance": "SB: Is there are there opportunities to make you know, work on fisher tropes to make that more much more efficient? ",
+        "annotations": {
+            "ask clarifying question": "SB asks if there are opportunities to improve the efficiency of Fischer-Tropsch processes, seeking further information on potential research directions related to the prior discussion on energy efficiency and cost-effectiveness of different catalytic approaches."
+        }
+    },
+    {
+        "utterance": "WS: Yeah, if you can if you can do electrochemical fisher tropes and get more selective and control over your selectivity and the heat integration, you know, it's a good boundary condition. Thermodynamically, it's more favorable to do it. It's been challenging to do in real life, but thermodynamically, it it should be possible. It's just really it's like, you know, methane activation. It's really hard. It's possible, but it's really hard. ",
+        "annotations": {
+            "expand on existing idea": "WS expands on the previously discussed idea of Fischer-Tropsch by suggesting an electrochemical approach and highlighting the importance of selectivity and heat integration.",
+            "provide supporting evidence": "WS supports the feasibility of electrochemical Fischer-Tropsch by stating its thermodynamic favorability.",
+            "explain or define term or concept": "WS explains the concept of electrochemical Fischer-Tropsch and draws an analogy to methane activation to illustrate its difficulty."
+        }
+    },
+    {
+        "utterance": "CM: Is there any is there any work here in elevated temperature electrochemistry looking at instead of using aqueous or whatever, looking at steam electrochemistry where you have the membrane that swells with with high temperature water and then we use that to drive part of the activation barrier so that you get higher it's not really active so you get faster kinetics basically in faster turnover conversion. ",
+        "annotations": {
+            "present new idea": "CM introduces the idea of exploring elevated temperature electrochemistry with steam, rather than aqueous solutions, to improve reaction kinetics and turnover conversion by using membranes that swell with high-temperature water to lower the activation barrier.",
+            "ask clarifying question": "CM is inquiring about existing work in elevated temperature electrochemistry, specifically using steam and membranes that swell with high-temperature water to enhance reaction kinetics."
+        }
+    },
+    {
+        "utterance": "WS: It's it's not the I don't know about the swelling membrane, but there is a lot of work in solid oxide electrolysis at high temperatures. And I believe that's what Helder Topso has as their um they sell skids of it now and Ryan O'Hare um has done some really good work at high temperature electrolysis and it's fascinating. I don't understand it, but it's really good. ",
+        "annotations": {
+            "provide_supporting_evidence": "Wilson supports CM's question about high-temperature electrolysis by mentioning the existing work in solid oxide electrolysis and the contributions of Helder Topso and Ryan O'Hare.",
+            "explain_or_define_term_or_concept": "Wilson clarifies the type of high-temperature electrolysis being discussed, referring to solid oxide electrolysis.",
+            "acknowledge_contribution": "Wilson acknowledges the work of Helder Topso and Ryan O'Hare in high-temperature electrolysis."
+        }
+    },
+    {
+        "utterance": "CM: I knew there was solid oxide and and there's some molten salt stuff too. But I was wondering if the if there was some sort of not solid oxide, but not aqueous because it won't be aqueous, but basically steam electrochemistry at that triple phase boundary of a swelled proton uh swelled uh membrane catalyst and then gas feed. ",
+        "annotations": {
+            "present new idea": "CM introduces the idea of steam electrochemistry at the triple phase boundary of a swelled membrane catalyst and gas feed, a concept not previously discussed in the conversation.",
+            "explain or define term or concept": "CM clarifies their idea by specifying it is neither solid oxide nor aqueous electrochemistry, but rather a steam-based approach.",
+            "ask clarifying question": "CM inquires about the existence of research in a specific area of electrochemistry involving steam and swelled membranes."
+        }
+    },
+    {
+        "utterance": "VV: So that that I mean, so that actually goes to the temperature access which we didn't include in that complete picture, right? Uh because it seems to be that the solid oxide which is I guess the the high temperature extreme and then molten may be sort of in the heart phase. It's like or not not as hot, but then I think there's sort of I guess this intermediate region. Uh the Charles is bringing up that I think might be uh might be ",
+        "annotations": {
+            "expand on existing idea": "VV adds the temperature dimension to the factors impacting CO2 reduction, referencing the prior discussion on membranes and catalyst costs.",
+            "explain or define term or concept": "VV explains the different temperature ranges for electrolysis, differentiating solid oxide (high temperature), molten (medium temperature), and an intermediate range.",
+            "acknowledge contribution": "VV acknowledges Charles' contribution by mentioning that his point about steam electrochemistry relates to this temperature discussion."
+        }
+    },
+    {
+        "utterance": "SB: exploring here. ",
+        "annotations": {
+            "acknowledge contribution": "SB acknowledges VV's contribution to the conversation by stating \"exploring here\", which refers to VV's suggestion of exploring the temperature axis in electrochemistry and the intermediate region between solid oxide and aqueous systems."
+        }
+    },
+    {
+        "utterance": "CM: I just bring I have no knowledge of, you know, whether that is even feasible. It's just something I've thought about before. ",
+        "annotations": {
+            "present new idea": "CM introduces the concept of steam electrochemistry at the triple phase boundary of a swelled membrane, catalyst, and gas feed, which had not been discussed before.",
+            "explain or define term or concept": "CM clarifies their limited understanding of the feasibility of steam electrochemistry by specifying the context as the triple phase boundary of swelled membrane, catalyst, and gas feed."
+        }
+    },
+    {
+        "utterance": "VV: What what are the what are these solid oxide electrolytes? They are they just like like solid oxide fuel cells with just like YZ like uh ",
+        "annotations": {
+            "ask clarifying question": "VV asks for clarification about the composition of solid oxide electrolytes and their similarity to solid oxide fuel cells, building upon the prior discussion of high-temperature electrolysis and different electrolysis methods."
+        }
+    },
+    {
+        "utterance": "SB: oxides, yeah, lanthanum, yeah. And there's there's definitely room for improvement there, right? I mean, I think uh salts and if there there are all kinds of great solid state electrolytes that people haven't tried yet in these context. ",
+        "annotations": {
+            "expand on existing idea": "SB expands on the prior discussion of solid oxide electrolytes by suggesting lanthanum oxides as an example and mentioning the potential for improvement with other solid-state electrolytes.",
+            "provide supporting evidence": "SB supports the idea of exploring alternative solid-state electrolytes by pointing out that many haven't been tried in these contexts.",
+            "present new idea": "SB introduces the idea of exploring new solid-state electrolytes, such as salts, for potential improvements in the discussed application."
+        }
+    },
+    {
+        "utterance": "VV: Is is Bloom Energy making money yet? ",
+        "annotations": {
+            "ask clarifying question": "VV asks about the financial status of Bloom Energy to gauge their success and relevance to the discussion about solid oxide technology."
+        }
+    },
+    {
+        "utterance": "EM: Do you see that? I just sent a link of of Donald Trump's concession speech, but it's you probably shouldn't play it. No, no, no, no, no, no. He didn't he did not concede. It's a it's a link to a a movie where Leonardo DiCaprio refuses to leave. So, there's cursed words, so I wouldn't put it on in front of children. ",
+        "annotations": {
+            "express humor": "EM shares a humorous link comparing a movie scene to Donald Trump's non-concession speech.",
+            "explain or define term or concept": "EM explains the context of the link by clarifying that it's a movie scene and not an actual concession speech."
+        }
+    },
+    {
+        "utterance": "SB: I was gonna I just I shouldn't I just I just clicked on the link. I'm glad my didn't start playing. ",
+        "annotations": {
+            "express humor": "SB's utterance about accidentally clicking on a potentially inappropriate link and expressing relief that it didn't play is a humorous anecdote in the context of a serious scientific discussion."
+        }
+    },
+    {
+        "utterance": "EM: Okay. This was really awesome, guys. Thank you so much for ",
+        "annotations": {
+            "express enthusiasm": "EM expresses positive feedback and gratitude for the discussion.",
+            "acknowledge contribution": "EM thanks the participants for their contributions to the conversation."
+        }
+    },
+    {
+        "utterance": "SB: reading notes. I think we had a great discussion. ",
+        "annotations": {
+            "acknowledge contribution": "SB acknowledges the group's contribution to the discussion by saying \"we had a great discussion.\"",
+            "express enthusiasm": "SB expresses enthusiasm about the discussion by saying \"great discussion\"."
+        }
+    },
+    {
+        "utterance": "VV: Thanks. Thanks so much. This is awesome. ",
+        "annotations": {
+            "express enthusiasm": "VV expresses positive feedback regarding the discussion.",
+            "acknowledge contribution": "VV thanks the other participants for the discussion."
+        }
+    },
+    {
+        "utterance": "CM: Actually, thanks so much for for taking everything down. That was an awesome job. I appreciate it. ",
+        "annotations": {
+            "acknowledge contribution": "CM acknowledges SB's effort in taking notes during the meeting.",
+            "express enthusiasm": "CM expresses enthusiasm about the job SB did in taking notes."
+        }
+    }
+]

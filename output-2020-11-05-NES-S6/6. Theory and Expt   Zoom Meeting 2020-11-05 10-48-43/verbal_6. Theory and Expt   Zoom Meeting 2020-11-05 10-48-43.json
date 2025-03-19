@@ -1,0 +1,283 @@
+[
+    {
+        "utterance": "SB: sort of have to have theory, right? ",
+        "annotations": {
+            "ask clarifying question": "SB asks for confirmation about the necessity of having a theory, indicating a desire for clarification on the importance of theory in their current discussion."
+        }
+    },
+    {
+        "utterance": "LL: And this is getting into scaling stuff. ",
+        "annotations": {
+            "expand on existing idea": "LL builds upon the prior discussion about theory by connecting it to the concept of scaling."
+        }
+    },
+    {
+        "utterance": "SB: So what are, I mean, what is missing now from that uh that theory is going to provide us, the rest of us. ",
+        "annotations": {
+            "ask clarifying question": "SB is asking for clarification on what aspects of the theory are still needed to inform their work, building upon the prior discussion of theory and scaling."
+        }
+    },
+    {
+        "utterance": "SM: Oh boy, right away, I think. ",
+        "annotations": {
+            "express humor": "The phrase \"Oh boy, right away, I think\" is delivered sarcastically, suggesting that the speaker is overwhelmed by the question and doesn't have a ready answer, which can be interpreted as humorous self-deprecation."
+        }
+    },
+    {
+        "utterance": "SB: It doesn't have to be just for you or like folks, I mean, if you think about how you take uh reaction down one route versus the other, right? ",
+        "annotations": {
+            "expand on existing idea": "SB builds upon the prior discussion of theory by suggesting it should be applicable to everyone and provides an example of taking a reaction down one route versus another.",
+            "ask clarifying question": "SB is asking what is missing from the current theory that would make it more useful for the entire group by giving the example of different reaction routes."
+        }
+    },
+    {
+        "utterance": "SM: Right. And uh it's it's a couple of things, right? It depends on who you talk to and what they're specifically interested in as far as experimentalists go. So, synthetic chemists would like to make those materials and they focus on getting a certain product distributions, but not necessarily the mechanisms or rates. So, I think that there's like a there's a difference in strategy which gives us less information that we can potentially benchmark to. Uh but I think theory can definitely pitch in when it comes to identifying product distributions, the various pathways, uh selectivities and so on. It's just finding the right match in terms of like uh finding this one experimentalist group that is interested in going the whole way, right? Right from synthesizing what you think works to to showing that that is indeed the pathway. So, I I think it's nice that like most fields are moving towards teams of people. Uh but yeah, I think you need a team because each person has their own individual interest as far as experimentalists go and while theorists have the ability to bridge all these gaps, you can't just work with one person at least from what I've seen in my limited experience. ",
+        "annotations": {
+            "expand on existing idea": "SM expands on the earlier discussion of theory by explaining the challenges of aligning theoretical work with experimentalists' varying interests and the need for team science.",
+            "explain or define term or concept": "SM explains the different focuses of experimentalists, such as synthetic chemists prioritizing product distributions over mechanisms or rates.",
+            "provide supporting evidence": "SM supports the argument for team science with their own experience of the limitations of working with single experimentalists.",
+            "present new idea": "SM introduces the idea of needing a team of experimentalists with diverse interests to effectively collaborate with theorists and bridge the gaps in research."
+        }
+    },
+    {
+        "utterance": "SB: That's great. So this is I mean where SciLock comes in, right? You can have teams of what up to three, right? And and uh this is uh major opportunities from lots of the topics we've talked about. Um can I just pull another thread uh machine learning? Jose, you talked about that. What are your uh you know, opportunities there, challenges? ",
+        "annotations": {
+            "acknowledge contribution": "SB acknowledges the value of SM's prior contribution by saying \"That's great.\"",
+            "expand on existing idea": "SB expands on the prior discussion of team science by introducing SciLock as a platform that supports teams.",
+            "present new idea": "SB introduces machine learning as a new topic for discussion, referencing a prior mention by Jose.",
+            "encourage particpatioin": "SB encourages Jose to participate by directly asking him about the opportunities and challenges in machine learning.",
+            "ask clarifying question": "SB asks clarifying questions to Jose about the opportunities and challenges related to machine learning in the context of their discussion."
+        }
+    },
+    {
+        "utterance": "JM: Well, this would be um I think it's it's a very interesting topic as you know, it's it's a very hot topic and everybody is probably trying to do it. I don't know if uh anybody of us really understand it. I don't think anybody does, but we can we can make it with the glasses of usefulness, right? So, it's definitely useful. It has been proven to be useful. And it's just a natural thing of um you know, a multi-dimensional analysis especially for structure property relationships. So um you can see it how it works, right? So it's a multi-dimensional thing that it's I don't know, 12, 13 dimensions, but you can reduce it to a component um that it could be understand by understood by a human brain. So, one of the things I I think I I will have to go back to the original um comment that I give, which is the negative results, right? So there was a very beautiful paper recently, well, not recently, three years ago where it was an organic synthesis, but you can train a machine learning model that takes into account the negative results of experiments. So at the end of the day, you were able to predict the the right reaction path and the right conditions that are the most optimal, right? So I think that's where um machine learning could be used because if you ever do any simple models with machine learning, you will learn that the more data, the better, right? So the more data that it's accurate, the better, the more data that it's um you know, uh that you can reproduce it better. So basically any data is good. So I think that it's something missing um that we can exploit both as experimentalists and as a computationally tradition-minded scientist that um we might be discarding um a lot of data that could be useful. Uh one quick example for theory could be, you know, when you do your your simulation of MD, you're trying to wait all these different snapshots that could be so useful. One example for experiments, those negative results um or where where we were seeing is the all these decay, maybe that decay can give you the the next design principle. But you know, those bottom line is um I think uh the current thing in machine learning probably that could be useful is just we need to find ways to get more information, more data that is more accurate and maybe look at places that we thought um you know, they were they were um rubbish, they were waste, but maybe they are useful. ",
+        "annotations": {
+            "explain or define term or concept": "JM explains that machine learning is useful for multi-dimensional analysis, especially in structure-property relationships, and can reduce complex data into understandable components.",
+            "present new idea": "JM suggests that negative results from experiments and discarded data from MD simulations could be valuable for machine learning models.",
+            "provide supporting evidence": "JM refers to a three-year-old paper on organic synthesis where a machine learning model trained on negative results successfully predicted reaction paths and optimal conditions.",
+            "expand on existing idea": "JM builds on the idea of machine learning by emphasizing the importance of data quantity, accuracy, and reproducibility for better model performance."
+        }
+    },
+    {
+        "utterance": "YL: Yeah, I would like to follow up on uh Jose's points. I find machine learning is very useful to my research because uh I'm doing the so-called AB initial molecular dynamics to study the various electro compasses. And of course, this type of calculation, um we basically need to sample for example, hundreds of thousands structures in order to get one hourly the quantity instead we just using one snapshot uh to tell you the the the uh the property. And in order to sample all this uh numerous structures, if you want to uh calculate all the structures using for example, density functional theory, it will be extremely computationally expensive. So machine learning can help us uh in a way so that we do not need to do explicit uh quantum mechanical calculation for all the structures. We just need to do uh uh calculation for a set for a selected selected set of structures and use the structures to train the machine learning model so then you can predict the of other structures without doing the gateway DFT calculations. So I find this is very helpful and needs to my research. ",
+        "annotations": {
+            "expand on existing idea": "YL expands on JM's points about machine learning by providing specific examples of how it is useful in their research, particularly in AB initial molecular dynamics and studying various electro compasses.",
+            "provide supporting evidence": "YL supports their claim about the usefulness of machine learning by explaining how it reduces the computational cost of sampling numerous structures in molecular dynamics simulations.",
+            "explain or define term or concept": "YL explains their research process involving AB initial molecular dynamics, sampling structures, and using density functional theory, providing context for their use of machine learning.",
+            "acknowledge contribution": "YL begins by acknowledging and following up on JM's earlier points about machine learning."
+        }
+    },
+    {
+        "utterance": "SB: Very cool. What about machine learning for experimentalists? ",
+        "annotations": {
+            "ask clarifying question": "SB asks for clarification on how machine learning can be applied to experimental work, following up on the previous discussion of machine learning in computational chemistry.",
+            "encourage particpatioin": "SB directly asks experimentalists in the group to share their perspectives on using machine learning in their work."
+        }
+    },
+    {
+        "utterance": "RG: Yeah, I just wanted to build on that. I think we're doing a bit of machine learning too, but the challenge is just the amount of of high quality reference data you need. So, Jose was talking about machine learning based on experimental data at least to some extent. The amount of experimental data you need to have an actually predictive model is massive. You and UA was talking about machine learning based on um quantum chemistry and the amount of reference data you need there is mass of. And so yes, it can help, but it's also one of those that it only works if you have good reference data for something very similar to what you're trying to predict. ",
+        "annotations": {
+            "expand on existing idea": "RG expands on YL and JM's points about using machine learning by discussing the challenges of needing substantial high-quality reference data.",
+            "provide supporting evidence": "RG supports his claim by pointing to the large amounts of data needed for predictive models in both experimental and quantum chemistry-based machine learning.",
+            "explain or define term or concept": "RG explains the importance of high-quality reference data in building effective machine learning models.",
+            "acknowledge contribution": "RG acknowledges both JM's and YL/UA's contributions regarding the use of machine learning."
+        }
+    },
+    {
+        "utterance": "YL: Yeah, I fully agree with that. So I often see many machine learning papers especially um predicting predicting new materials with certain properties. So those papers are only done in a way uh that's the first study uh limited set of number uh limited number of materials and calculate the properties of those materials and then use the uh use the data set to train the machine learning model and then use this machine learning model uh for other materials uh which then they can predict the properties. So as we need to be very careful because I often found that the the computational methods used to predict the properties are problematic. They are not very accurate to predict the properties. So if you use wrong data, not very high quality data to train your machine learning model, then you will end up with wrong predictions. So I think that's um uh that's an issue we need to be uh we need to pay more attention to in the machine learning field. Yeah. ",
+        "annotations": {
+            "provide supporting evidence": "YL supports RG's point about the importance of high-quality data by providing examples of machine learning papers that use limited datasets and inaccurate computational methods, leading to wrong predictions.",
+            "expand on existing idea": "YL expands on the previously discussed topic of machine learning challenges by focusing on the issue of data quality and its impact on prediction accuracy.",
+            "offer constructive criticism": "YL critiques the current practices in machine learning research, particularly the use of limited and low-quality data, which leads to inaccurate predictions."
+        }
+    },
+    {
+        "utterance": "SB: Yeah. So, but maybe here again, the collision of or curation of data is a point, a touch point for experiment theory to sort of feed off each other. Um I mean, Caleb Lindsey, like in terms of like large scale measurements, what do you think about machine learning for your experiments, imaging or spectroscopy or a thing? ",
+        "annotations": {
+            "expand on existing idea": "The speaker builds upon the prior discussion of machine learning and data by suggesting that data curation could be a point of connection between experimental and theoretical approaches.",
+            "encourage particpatioin": "The speaker directly addresses Caleb and Lindsey, inviting them to share their perspectives on the role of machine learning in large-scale measurements, imaging, or spectroscopy."
+        }
+    },
+    {
+        "utterance": "CH: We've actually been really interested in that, at least on the kind of single entity side, um to go through and kind of screen large ensembles because we can actually do those measurements even though they're tough pretty quickly. So you can get through hundreds, thousands of kind of individual constituents and if you can characterize those structurally, you can actually generate a pretty large amount of experimental data that you could potentially use as a guide um in systems. It just it's always a struggle with really defining what you're going to use. Are you looking at variations in composition, size, geometry, site density, yada yada? ",
+        "annotations": {
+            "provide supporting evidence": "CH explains how their team uses single entity measurements to generate large amounts of experimental data that can be used in machine learning models, supporting the idea of using machine learning in experimental science.",
+            "expand on existing idea": "CH builds on the previous discussion of machine learning by describing how their team is interested in using it for screening large ensembles on the single entity side.",
+            "ask clarifying question": "CH asks clarifying questions about what specific parameters should be considered when using machine learning, such as variations in composition, size, geometry, and site density."
+        }
+    },
+    {
+        "utterance": "LS: We actually have one current collaboration with a group um where they're not doing machine learning. It's kind of a balance between the number of ab initio equations they're using and then a smaller set of data. My group cannot, we're not doing high throughput studies. We cannot generate these large data sets that are needed. We tend to do try to do more accurate fundamental deep insight measurements. Um but sort of building off from that as a benchmark, if this is a a good description of a system that we have characterized thoroughly, and then if you can use this with a few guiding equations of things we know, it's kind of bringing the two sides of of theory together where it's purely based on equations or purely based ",
+        "annotations": {
+            "provide supporting evidence": "LS explains their group's approach, which involves balancing ab initio equations and a smaller dataset, focusing on accurate fundamental measurements, to support their point about the challenges of machine learning requiring large datasets.",
+            "explain or define term or concept": "LS defines their group's research approach as a balance between ab initio equations and a smaller set of data, contrasting it with high-throughput studies and emphasizing deep insight measurements.",
+            "present new idea": "LS introduces the idea of their collaboration with another group that uses a balanced approach between ab initio equations and a smaller dataset, instead of machine learning, for accurate measurements."
+        }
+    },
+    {
+        "utterance": "LS: based on averages over extremely large data sets. But yeah, I'm not really sure I guess how the intersection of the two would be most optimal. ",
+        "annotations": {
+            "expand on existing idea": "LS expands on the previous point about the limitations and potential of machine learning by suggesting a balance between equation-based and data-driven approaches.",
+            "ask clarifying question": "LS questions how to best combine equation-based and data-driven theoretical approaches to achieve optimal results."
+        }
+    },
+    {
+        "utterance": "FL: So speaking of the big data sets, actually we are sitting on data that has been sitting in our computer for years, unanalyzed. Let me give you one example that we are probing the solid state materials and probing the redox reactions inside solid state materials with three-dimensional spatial resolution. Now, with a particle of 10 micron size, we are collecting 1.5 million excess absorption spectroscopy for metal cations. So every time we do the experiment with over a week, we get back with 8 to 10 terabyte data. So it's at the point that we have to develop our own machine learning or other advanced data analysis methods to analyze data. Unfortunately, we are still very slow on that end. We are still analyzing data that we collected a few years back. Now, speaking of the other high throughput capability that there are a lot of experimental opportunities at different synchrotron facilities where you can collect a thousand high quality absorption spectra just in one day. Again, beamline scientists and myself, we have been talking about how to streamline the data analysis using high throughput mode, but we are still not making progress on that yet. So the data analysis is still mostly just by hand, individually. ",
+        "annotations": {
+            "provide supporting evidence": "FL supports the need for better data analysis methods by describing the large amounts of unanalyzed data they possess, including 1.5 million spectra from week-long experiments resulting in 8-10 terabytes of data, and the potential for high-throughput experiments at synchrotron facilities generating thousands of spectra daily.",
+            "present new idea": "FL introduces the idea of developing their own machine learning or advanced data analysis methods to handle the large datasets they are generating.",
+            "express frustation": "FL expresses frustration at the slow progress of data analysis, stating they are still analyzing data from a few years ago and haven't made much progress on streamlining high-throughput data analysis."
+        }
+    },
+    {
+        "utterance": "SB: Yeah, no, this is, so yeah, especially for large synchrotron, I think this is really effective means to start collating together negative data, positive data, whatever data you don't know what it is and starting to do stuff. Since it's the 15 minute point, Jose, do you feel like you're getting enough to sort of talk about in our three minute, you've got your thing up there, it's pretty, it's fairly detailed. Anything you're missing Jose that you, that we should quickly get you information on? ",
+        "annotations": {
+            "expand on existing idea": "SB expands on the previously discussed topic of machine learning and data analysis by suggesting the use of large synchrotrons for data collation and analysis.",
+            "propose decision": "SB proposes to move the discussion forward due to time constraints and checks with Jose if he has enough information for his presentation.",
+            "encourage particpatioin": "SB directly asks Jose for his input on whether he has sufficient information for his presentation or needs further clarification."
+        }
+    },
+    {
+        "utterance": "JM: Yeah, I will actually ask help from you if you can just quickly go through the points. I did my best on writing everything on paper but oh, I discovered something from Zoom. You can be like Harry Potter, look. ",
+        "annotations": {
+            "assign task": "JM asks SB for help going through the points he wrote down.",
+            "express humor": "JM makes a joke about discovering something on Zoom and being like Harry Potter.",
+            "acknowledge contribution": "JM acknowledges his own effort in writing everything down on paper."
+        }
+    },
+    {
+        "utterance": "FL: [Laughter] ",
+        "annotations": {
+            "express humor": "FL laughs in response to JM's joke about discovering a Zoom feature."
+        }
+    },
+    {
+        "utterance": "SB: Missing data. ",
+        "annotations": {
+            "ask clarifying question": "SB asks for clarification on what data is missing from JM's presentation about machine learning opportunities and challenges, following up on JM's request for help reviewing the points he has written down."
+        }
+    },
+    {
+        "utterance": "JM: I'm missing myself. ",
+        "annotations": {
+            "express humor": "Jose makes a lighthearted joke about being missing from the Zoom meeting, following a comment about missing data."
+        }
+    },
+    {
+        "utterance": "SB: So yeah, if you can look at the points, please and see if I capture most of them. ",
+        "annotations": {
+            "assign_task": "SB assigns JM the task of reviewing the points and confirming their completeness.",
+            "encourage_participation": "SB directly invites JM to participate by asking him to review the discussion points."
+        }
+    },
+    {
+        "utterance": "JM: I tried to do my best in simplifying because you have limited amount of time. I don't want to make the font too small. But um, yes, so that was my best that I can, right. See if you can find anything that I miss. If not, do you want to do, I can do a summary of what I wrote in those points and what I meant once, is it time to present it or what would you suggest? ",
+        "annotations": {
+            "explain or define term or concept": "JM clarifies the reasoning behind his simplification efforts and presentation format, explaining that he aimed for conciseness due to time constraints and readability by avoiding a small font size.",
+            "ask clarifying question": "JM asks for feedback on his presentation points and seeks guidance on whether to present a summary or proceed differently.",
+            "propose decision": "JM proposes two alternative actions: either the other person reviews the points for completeness or JM presents a summary of the points and their meaning."
+        }
+    },
+    {
+        "utterance": "SM: A way to get more accurate temperatures is by using these very approximate rate theories, right? We, for almost a century now, we've been using transition state theory and assuming that all of these modes are harmonic. And we all implicitly know that there are deficiencies to this. And the thing though is that like more advanced, more accurate rate theories exist. So there's variational theories, there are semi-classical theories, all of them exist, we just don't use them because they are too expensive. So, I think there is definitely room for finding ways in which we can make these more expensive theories more tractable. I think a lot of advances in machine learning, signal processing, all of these can be applied to like quantum chemistry to make all of this happen. And make those more cost effective. And therefore make quantum chemistry predictions of rates more accurate. We generally throw out our rate coefficient predictions because we know that they're quite meaningless. We only compare barriers, we only look at potential energy surfaces. But I think there's room for rate predictions, accurate tunneling contribution calculations and so on. Like all of those sophisticated things which now exist only for model systems can be made more practical with all of the other advances that are going on in algorithm development. ",
+        "annotations": {
+            "present new idea": "SM introduces the idea of using more advanced but computationally expensive rate theories to improve temperature accuracy and rate predictions in quantum chemistry.",
+            "expand on existing idea": "SM expands on the limitations of current rate theories like transition state theory and suggests exploring more advanced options like variational and semi-classical theories.",
+            "provide supporting evidence": "SM supports the need for better rate theories by pointing out the known deficiencies of existing methods and the current practice of discarding rate coefficient predictions due to their inaccuracy.",
+            "explain or define term or concept": "SM explains the concept of using more advanced rate theories, such as variational and semi-classical theories, and their potential benefits.",
+            "offer constructive criticism": "SM critiques the current reliance on approximate rate theories and the limitations they impose on the accuracy of temperature and rate predictions."
+        }
+    },
+    {
+        "utterance": "SB: That would be amazing, right? To be able to do that and for predicting speciation for resolving some of these things that are very much a black box. To really apply those sorts of methods. ",
+        "annotations": {
+            "express enthusiasm": "SB expresses excitement about the potential of applying advanced methods for predicting speciation and resolving black box issues.",
+            "expand on existing idea": "SB builds upon SM's prior suggestion of using advanced rate theories by highlighting the potential benefits for predicting speciation and resolving currently unclear areas.",
+            "acknowledge contribution": "SB acknowledges SM's contribution regarding the potential of advanced rate theories by expressing enthusiasm for their application."
+        }
+    },
+    {
+        "utterance": "FL: I think the discussion is I think the discussion is very interesting that the topic actually doesn't limit to just the electrochemical catalysis. Just experiments and theory somehow all of our discussion is now in the electrochemical. ",
+        "annotations": {
+            "provide supporting evidence": "FL supports their statement about the discussion's broader relevance by pointing out that it has drifted from the initial topic to focus on electrochemistry.",
+            "express enthusiasm": "FL expresses positive feedback by stating that the discussion is \"very interesting\"."
+        }
+    },
+    {
+        "utterance": "SB: Oh, that's right. Yeah. So if there's any other sorts of reactions or processes you want to talk about, you know, uh, this would be a good time to do that. Anything else, Fang, you have in mind? ",
+        "annotations": {
+            "encourage particpatioin": "SB encourages other participants to contribute to the discussion by asking if they have any other reactions or processes they want to talk about and specifically asking Fang for her input.",
+            "propose decision": "SB suggests that now is a good time to discuss other reactions or processes."
+        }
+    },
+    {
+        "utterance": "FL: No, I I I don't have I don't have in mind for this, but I guess if we are talking about absorption, capture, uh, the the solid gas interface could be another thing that we didn't cover here. ",
+        "annotations": {
+            "present new idea": "FL introduces \"solid gas interface\" as a topic not previously discussed in the context of absorption and capture.",
+            "expand on existing idea": "FL builds upon the ongoing discussion about reactions and processes by suggesting another area related to absorption and capture at solid gas interfaces."
+        }
+    },
+    {
+        "utterance": "LL: Yeah, that's what a little bit earlier, but not too extensive. Yeah, I don't know if I can do the last comment. So it's um ",
+        "annotations": {
+            "expand on existing idea": "LL adds to the ongoing discussion about data analysis methods by mentioning a previous, less extensive discussion on the topic.",
+            "acknowledge contribution": "LL acknowledges Fang's contribution about solid gas interfaces.",
+            "express frustation": "LL expresses uncertainty and potential inability to contribute further to the conversation by saying \"I don't know if I can do the last comment.\""
+        }
+    },
+    {
+        "utterance": "JM: Um, going back to the method development, your question. I I was still thinking about it. Um, so, yeah, from from computation, I think the the interface is still all the methods that we're still using is, you know, um, electronic structure, uh, MD and to some degree Monte Carlo, but I think the new wave of method development that I see pretty much everywhere is just implementing machine learning for something, right? Machine learning for development, uh, for understanding the, uh, the wave function or machine learning to understanding, you know, a guess of transition state and so that's where method development I have seen, um, going in pretty much every area, you know, MD and and so on. Um, so, I don't know. My my my take on this is that is definitely the the way to go, but also because machine learning is so useful, so tempting, at the same time, we still don't understand the basics of it, right? It works. We just don't know why why it works at the fundamental level. So, my, um, I guess concern would be if all these new models or new, uh, developments or methods work, do we really truly understand everything? Because really machine learning part we don't fully understand it. We we just know it works. So it's just a question of, um, of once these method work and are developed and fully, uh, implemented, the question will be really, do we really understand all these? Because really the machine learning is still not clear there. ",
+        "annotations": {
+            "expand on existing idea": "JM expands on the earlier discussion of machine learning, focusing on its application in method development within computational chemistry.",
+            "explain or define term or concept": "JM explains how machine learning is being implemented in various computational methods, such as understanding wave functions and guessing transition states.",
+            "ask clarifying question": "JM implicitly questions whether the reliance on machine learning, despite its effectiveness, hinders a true understanding of the underlying scientific principles.",
+            "express alternative decision": "JM rejects the idea of solely relying on machine learning without fully understanding its underlying mechanisms."
+        }
+    },
+    {
+        "utterance": "SB: Yeah, and also, um, there is, you know, one of the things I also want to keep in mind is we have a small contingent. I mean, not not huge, uh, in this dialogue of folks that are interested in these, uh, uh, mineralization, weathering sorts of phenomena, which also have, uh, you know, I think are somewhat less developed in terms of mechanisms, right? You know, understanding how you would you would do these silica reactions or such to the geochemistry bit and and uh, we hopefully one of the other sections will deal with that, um, in in we've got us one of the discussion sections that will address, um, some of the experimental sort of theory measurement spectrum for for that set of reactions. ",
+        "annotations": {
+            "expand on existing idea": "SB expands on the previous discussion about machine learning and other computational methods by mentioning another area of interest, mineralization and weathering phenomena, and their less developed mechanisms.",
+            "propose decision": "SB proposes that one of the other discussion sections should address the experimental and theoretical aspects of mineralization and weathering reactions.",
+            "explain or define term or concept": "SB explains that the mineralization and weathering phenomena are related to silica reactions and geochemistry."
+        }
+    },
+    {
+        "utterance": "SB: Okay, so we're down to the countdown. Any final thoughts or um, anybody inspired to start thinking about some silo projects here? Yeah? Great. Okay, so this is this has been this has been awesome. I think, um, silo projects with theory and experiment, uh, you know, mixes do really well, uh, because they they just seem to, you know, uh, fill a need, right? And I think, uh, there's there's opportunities here that would be superb. ",
+        "annotations": {
+            "encourage particpation": "SB is encouraging final thoughts and participation by asking if anyone has been inspired to start thinking about silo projects.",
+            "acknowledge contribution": "SB acknowledges the contributions and discussion by saying \"this has been awesome.\"",
+            "express enthusiasm": "SB expresses enthusiasm for the discussion and potential silo projects by using words like \"awesome\" and \"superb.\"",
+            "provide supporting evidence": "SB supports the idea of silo projects by stating that they fill a need and mixes of theory and experiment do really well."
+        }
+    },
+    {
+        "utterance": "FL: You did a great job of facilitating the discussion. Thank you. ",
+        "annotations": {
+            "acknowledge contribution": "Fang acknowledges SB's contribution to the discussion by thanking them for facilitating."
+        }
+    },
+    {
+        "utterance": "SB: Thanks, Fang. This is this was very easy. You know, I think we're all making it super easy, so ",
+        "annotations": {
+            "acknowledge contribution": "SB acknowledges Fang's compliment and thanks them for it.",
+            "express enthusiasm": "SB expresses enthusiasm and a positive outlook on the ease and success of the discussion."
+        }
+    },
+    {
+        "utterance": "LL: Yeah, thank you. Lovely. You did a great job. ",
+        "annotations": {
+            "acknowledge contribution": "LL acknowledges SB's contribution to the discussion by thanking them and complimenting their facilitation.",
+            "express enthusiasm": "LL expresses enthusiasm by using the word \"lovely\" and stating that SB did \"a great job.\""
+        }
+    },
+    {
+        "utterance": "SB: Yeah, we can head start heading back to the main room. I'm going to stop sharing. Um, Jose, you're all set. You you you're good to go, you think? Yeah. Okay, very good. Perfect. So we'll start leaving the breakout room. ",
+        "annotations": {
+            "propose decision": "SB proposes that the group return to the main meeting room and suggests the end of the breakout session.",
+            "assign task": "SB tells Jose that he is ready to present, implying the task of presenting is assigned to Jose.",
+            "confirm decision": "SB confirms the decision to leave the breakout room after receiving positive confirmation from Jose.",
+            "acknowledge contribution": "SB acknowledges Jose's readiness and preparation for his presentation."
+        }
+    }
+]
