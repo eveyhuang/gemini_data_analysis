@@ -264,7 +264,7 @@ def analyze_video(client, path_dict, prompt, dir):
     n_path_dict = path_dict.copy()
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{cur_dir}/output-{file_name}"
+        output_dir = f"{cur_dir}/outputs/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
         for m in range(len(list_chunks)):
             file_name = list_chunks[m][0]
@@ -512,7 +512,7 @@ def main(vid_dir, process_video):
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, "path_dict.json", cur_dir)
-    annotate_and_merge(client, path_dict, cur_dir, codebook)
+    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs", codebook)
     return path_dict
 
 if __name__ == '__main__':
