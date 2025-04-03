@@ -264,9 +264,10 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
 def analyze_video(client, path_dict, prompt, dir):
     cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
+    folder_name = os.path.basename(dir)
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{cur_dir}/outputs/output-{file_name}"
+        output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
         for m in range(len(list_chunks)):
             file_name = list_chunks[m][0]
