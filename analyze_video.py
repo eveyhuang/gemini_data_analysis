@@ -230,9 +230,9 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
                 video_file = client.files.get(name=video_file.name)
                 gemini_name = video_file.name
             if video_file.state.name == "FAILED":
-                print("File processing failed.")
+                print("Failed to upload the video to Gemini.")
         except Exception as e:
-            print(f"File processing failed for {file_name}")
+            print(f"File processing failed for {file_name}. Error is {e}.")
             
     return video_file, gemini_name
 
@@ -505,17 +505,19 @@ def annotate_and_merge(client, path_dict, directory, codebook):
 
 
 def main(vid_dir, process_video):
+    # get the last folder name from vid_dir
+    folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init()
     cur_dir = os.getcwd()
     if process_video == 'yes':
         process_videos_in_directory(vid_dir)
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
-    save_path_dict(path_dict, "path_dict.json", cur_dir)
+    save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    save_path_dict(new_path_dict, "path_dict.json", cur_dir)
+    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
     annotate_and_merge(client, path_dict, f"{cur_dir}/outputs", codebook)
-    return path_dict
+    return new_path_dict
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
