@@ -16,7 +16,7 @@ def init():
     You are an expert in interaction analysis and team research. You are provided with recording of a zoom meeting between a group of scientists collaborating on novel ideas to address scientific challenges. 
     Your objective is to annotate behavior and verbal cues to help us understand this team's behavior and processes.
     Each time someone speaks in this video, provide the following structured annotation:
-    (1) speaker: Initials of speaker.
+    (1) speaker: Full names of speaker.
     (2) timestamp: startiing and ending time of this person's speech in [MM:SS-MM:SS] format, before the speaker changes
     (3) transcript: Verbatim speech transcript. Remove filler words unless meaningful.
     (4) speaking duration: the total number of seconds the speaker talks in this segment
@@ -123,21 +123,23 @@ def create_or_update_path_dict(directory, cur_dir):
         file_name, file_extension = os.path.splitext(video_file[3])
         path_key_name = video_file[2]
         folder_dir = video_file[1]
+        # Get the split directory for this video file
+        split_dir = os.path.join(folder_dir, f"split-{file_name}")
+        # print(f"Split directory is {split_dir}")
+        if os.path.exists(split_dir):
+            # Get list of chunk files in the split directory
+            chunk_files = get_videos(split_dir)
+            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
+            
+            # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
+            chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
+            
         if path_key_name not in path_dict.keys():
-            # Get the split directory for this video file
-            split_dir = os.path.join(folder_dir, f"split-{file_name}")
-            # print(f"Split directory is {split_dir}")
-            if os.path.exists(split_dir):
-                # Get list of chunk files in the split directory
-                chunk_files = get_videos(split_dir)
-                chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
-                
-                # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
-                chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
-                
-                # Add to path_dict
-                path_dict[path_key_name] = chunk_paths
-    # print(f"updated path dict: {path_dict}")
+            path_dict[path_key_name] = chunk_paths
+        else:
+            # only update the path in path_dic 
+            old_chunk_path = path_dict[path_key_name]
+            old_chunk_path[1] = chunk_paths[1]
     return path_dict
 
 # Split a video into chunks of specified length
