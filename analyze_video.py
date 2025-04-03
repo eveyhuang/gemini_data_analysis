@@ -104,8 +104,9 @@ def get_videos(directory):
 
 # Create or update the path dictionary with video file paths and their split chunks
 def create_or_update_path_dict(directory, cur_dir):
-    path_dict_file = os.path.join(cur_dir, "path_dict.json")
-    
+    folder_name = os.path.basename(directory)
+    path_dict_file = os.path.join(cur_dir, f"{folder_name}_path_dict.json")
+
     # Check if path_dict.json exists
     if os.path.exists(path_dict_file):
         # Load existing path_dict
