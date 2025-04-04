@@ -174,12 +174,14 @@ def create_or_update_path_dict(directory, cur_dir):
             # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
             chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
             
-        if path_key_name not in path_dict.keys():
-            path_dict[path_key_name] = chunk_paths
-        else:
-            # only update the path in path_dic 
-            old_chunk_path = path_dict[path_key_name]
-            old_chunk_path[1] = chunk_paths[1]
+            if path_key_name not in path_dict.keys():
+                path_dict[path_key_name] = chunk_paths
+            else:
+                # only update the path in path_dic
+                old_chunks = path_dict[path_key_name]
+                for i in range(len(chunk_paths)):
+                    old_chunks[i][0] =chunk_paths[i][0]
+                    old_chunks[i][1] = chunk_paths[i][1]
     return path_dict
 
 # Split a video into chunks of specified length
