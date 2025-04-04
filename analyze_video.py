@@ -100,9 +100,10 @@ def get_videos(directory):
         file_name, file_extension = os.path.splitext(file)
         if file_extension.lower() in video_extensions:
             if file_extension == '.mkv':
-                converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
-                file_name = os.path.basename(converted_path)
-                video_files.append(file_name)
+                if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+                    converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+                    file_name = os.path.basename(converted_path)
+                    video_files.append(file_name)
             else:
                 video_files.append(file)
 
