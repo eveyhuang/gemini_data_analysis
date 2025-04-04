@@ -101,6 +101,7 @@ def get_videos(directory):
         if file_extension.lower() in video_extensions:
             if file_extension == '.mkv':
                 if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+                    print(f"No mp4 version of {file} found, converting it...")
                     converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
                     file_name = os.path.basename(converted_path)
                     video_files.append(file_name)
@@ -161,12 +162,20 @@ def create_or_update_path_dict(directory, cur_dir):
     for video_file in video_files:
         file_name, file_extension = os.path.splitext(video_file[3])
 
-        path_key_name = video_file[2]
+        path_key_name = video_file[1]
         folder_dir = video_file[1]
         # Get the split directory for this video file
         split_dir = os.path.join(folder_dir, f"split-{file_name}")
+
+        if path_key_name in path_dict.keys():
+            current_chunks = path_dict[path_key_name]
+        else:
+            current_chunks = []
+            
+        old_chunks_names = [i[0] for i in current_chunks]
         # print(f"Split directory is {split_dir}")
         if os.path.exists(split_dir):
+            print(f"Found a folder with splitted videios for {video_file} already.")
             # Get list of chunk files in the split directory
             chunk_files = get_videos(split_dir)
             chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
@@ -174,14 +183,32 @@ def create_or_update_path_dict(directory, cur_dir):
             # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
             chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
             
-            if path_key_name not in path_dict.keys():
-                path_dict[path_key_name] = chunk_paths
+            for chunk in chunk_paths:
+                if chunk[0] in old_chunks_names:
+                    index = old_chunks_names.index(chunk[0])
+                    current_chunks[index][1] = chunk[1]
+                else:
+                    current_chunks.append(chunk)
+        else:
+            print(f"No folder with splitted videios for {video_file} found.")
+            if file_name not in old_chunks_names:
+                # check if the file is in mkv format, if not, check if the mp4 version exists, if not, convert it
+                if file_extension == '.mkv':
+                    if not os.path.exists(os.path.join(folder_dir, file_name + '.mp4')):
+                        print(f"No mp4 version of {video_file} found, converting it...")
+                        converted_path = convert_mkv_to_mp4(os.path.join(folder_dir, video_file))
+                        file_name = os.path.basename(converted_path)
+                        current_chunks.append([file_name, converted_path, ' ', False])
+                    else:
+                        current_chunks.append([file_name, os.path.join(folder_dir, file_name + '.mp4'), ' ', False])
             else:
-                # only update the path in path_dic
-                old_chunks = path_dict[path_key_name]
-                for i in range(len(chunk_paths)):
-                    old_chunks[i][0] =chunk_paths[i][0]
-                    old_chunks[i][1] = chunk_paths[i][1]
+                index = old_chunks_names.index(file_name)
+                if os.path.exists(os.path.join(folder_dir, file_name + '.mp4')):
+                    current_chunks[index][1] = os.path.join(folder_dir, file_name + '.mp4')
+                else:
+                    current_chunks[index][1] = convert_mkv_to_mp4(os.path.join(folder_dir, video_file))
+            
+    path_dict[path_key_name] = current_chunks
     return path_dict
 
 # Split a video into chunks of specified length
