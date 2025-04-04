@@ -265,9 +265,10 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
 def analyze_video(client, path_dict, prompt, dir):
     cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
+    folder_name = os.path.basename(dir)
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{cur_dir}/outputs/output-{file_name}"
+        output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
         for m in range(len(list_chunks)):
             file_name = list_chunks[m][0]
@@ -298,7 +299,7 @@ def analyze_video(client, path_dict, prompt, dir):
                                 list_chunks[m][3] = False
                     else:
                         list_chunks[m][3] = False
-                save_path_dict(n_path_dict, "path_dict.json", cur_dir)
+                save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
             else:
                 print(f"{file_name} already analyzed, moving on..")
                 continue
@@ -506,16 +507,17 @@ def annotate_and_merge(client, path_dict, directory, codebook):
 
 
 def main(vid_dir, process_video):
+    folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init()
     cur_dir = os.getcwd()
     if process_video == 'yes':
         process_videos_in_directory(vid_dir)
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
-    save_path_dict(path_dict, "path_dict.json", cur_dir)
+    save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    save_path_dict(new_path_dict, "path_dict.json", cur_dir)
-    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs", codebook)
+    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
     return path_dict
 
 if __name__ == '__main__':
