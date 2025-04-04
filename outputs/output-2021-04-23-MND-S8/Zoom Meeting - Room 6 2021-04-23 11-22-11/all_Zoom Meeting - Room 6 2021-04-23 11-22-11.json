@@ -1,0 +1,302 @@
+[
+    {
+        "speaker": "Lisa Osborne",
+        "timestamp": "00:00-00:40",
+        "transcript": "of fungus. Um they just sort of have more access to nutrients and the niches open up is sort of my general understanding of what they think is driving that fungal bloom. Um and back to sorry, Caroline can probably speak a little bit more to this, but when you change bacterial composition, you're also going to see changes in phage composition. And some of that is going to be predator prey relationships, some of that is going to just be the loss of the bacteria that happen. So there are sort of bits and pieces that we know, but like a systematic understanding, I think, is still to be defined.",
+        "speaking_duration": 40,
+        "nods_others": 2,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "10:00",
+        "end_time": "10:40",
+        "annotations": {
+            "explain or define term or concept": "Lisa explains the fungal bloom is driven by increased access to nutrients and niche availability, and how changes in bacterial composition lead to changes in phage composition due to predator-prey relationships and bacterial loss.",
+            "provide supporting evidence": "Lisa supports her explanation by mentioning the general understanding of fungal bloom drivers and the known relationship between bacterial and phage composition changes.",
+            "acknowledge contribution": "Lisa acknowledges that Caroline may have more expertise on the topic of bacterial and phage composition changes."
+        }
+    },
+    {
+        "speaker": "Aida Ebrahimimi",
+        "timestamp": "00:41-01:20",
+        "transcript": "So what do we, you know, what what do you look at? You look at, let's say, growth of population of a certain species and that's the signal or no, it's more detail like more detail in terms of here is um you know, certain metabolites that also are getting released or produced or consumed like what is that signal that shows the fungus bloom? I assume it's just the population goes up. Is that so or no? It's more detail like we know biochemical markers that they also change in addition to growth.",
+        "speaking_duration": 39,
+        "nods_others": 1,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "10:41",
+        "end_time": "11:20",
+        "annotations": {
+            "ask clarifying question": "Aida is asking for clarification on what signals indicate a fungal bloom, specifically whether it's simply population growth or involves more detailed biochemical markers.",
+            "explain or define term or concept": "Aida is seeking a definition of the \"signal\" used to identify a fungal bloom, inquiring about the specific indicators involved."
+        }
+    },
+    {
+        "speaker": "Lisa Osborne",
+        "timestamp": "01:21-02:10",
+        "transcript": "The last paper that I can remember looking at for that was just a description of fungal growth without a detailed biochemical, this is the pathway that allows for that to happen. Just general, like there's more space, so they have more nutrients, so they're not competing against the bacteria, therefore they can take off. Just a very sort of simplistic, like this is probably what's happening. Um but no real systematic test for that. We have a project sort of developing in the lab where we're trying to get a much more detailed understanding of what happens when we have a helminth and a specific bacteria and what the dynamics between the helminth and the bacteria do in the host and whether or not it's immune mediated. But I'm happy to let other people chime in on their understanding of this.",
+        "speaking_duration": 49,
+        "nods_others": 1,
+        "smile_self": 15,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "11:21",
+        "end_time": "12:10",
+        "annotations": {
+            "provide_supporting_evidence": "Lisa is referencing a paper describing fungal growth to support the idea of increased fungal presence due to reduced bacterial competition.",
+            "explain_or_define_term_or_concept": "Lisa explains the simplistic understanding of fungal growth as being related to increased space and nutrients due to reduced bacterial competition.",
+            "present_new_idea": "Lisa introduces a new project in the lab focusing on the dynamics between helminth, bacteria, and host, including immune response.",
+            "encourage_participation": "Lisa invites others to share their understanding of the topic."
+        }
+    },
+    {
+        "speaker": "Yang-Yu Liu",
+        "timestamp": "02:10-06:23",
+        "transcript": "As a physicist, I think the um the interspecies interactions can be due to many different mechanism. For example, um a bacteria A can secrete some bacteri that kill bacteria B, right? This is there are many evidence. And also the different species might um compete with with uh for the same type of nutrients or they do cross-feeding, right? The metabolic product of one species will feed the other species or the interaction can be modeled by the host immune system. So uh from the modeling perspective, we consider all different kind of mechanism jointly determining the interaction strength and the sign of one species on another species. And if you are lucky and if you study bacteria that can be really cultured in vitro, then of course you can use the textbook technique, right? through the monoculture and co-culture and then you calculate the relative view. And this will give you very um convincing result regarding the interspecies interactions. But in many cases, those bacteria cannot be cultured. So we have to infer the interactions based on uh experimental data. So and they are my understanding that there are two different approach. You can either rely on high quality time series data. But the caveat is that the time series data should be really informative enough. But what do you what do I mean by informative enough? How informative is informative? Okay, in system identification or control theory, actually there's a well-defined mathematical criterion to define this kind of informativeness. It's called persistent excitation. In a sense that the signal or the time series has to be basically crazy enough. So you can calculate the eigen value of the time series and eigen value should be um much larger than zero. And in reality, you know, at least for human gut microbiome, we know that for healthy adults, if you don't change your diet drastically, if you don't take too much antibiotics, our microbiome is so stable and the temporal fluctuation doesn't mean any real ecological dynamics. It's kind of just reflecting that um our slight vibe change. So um so in that sense, the temporal data you observe from like human gut microbiome is not informative enough for us to infer the interspecies interactions. Even if you convince someone to do the sample collection on a daily basis for one year, the data still is not informative enough. And we have we have shown very clear evidence that this will not work. And the idea is very simple. If you just shuffle the time series, you largely destroy the temporal structure and use standard system identification method to infer the interaction, you will get very similar interactions. What does this mean? This just means the real time series is just like a random shuffle time series. Okay? So that's one approach. As long as you have very informative time series data, you can rely on very standard system identification technique to infer the interspecies interaction. But if you don't have time series data, you can still rely on cross-section data. As long as you see on the cross-section data roughly represent the statistic samples of the complex ecosystem and we have developed method to infer the interspecies interactions from cross-section data. And the basic idea is that as long as you have two statistic samples, as long as they have uh one common species, then the difference between the two statistics somehow encode the interspecies interactions. So in this case, as long as you collect enough statistic samples, then we can basically infer the interspecies interactions. The only caveat is that we need absolute abundance. Relative abundance will not work. The compositionality issue is really a big challenge in this interspecies interaction inference. So that's my understanding about this this topic. We we don't uh we do have methods, but we don't have very high quality data either time series data or cross-sectional data.",
+        "speaking_duration": 313,
+        "nods_others": 4,
+        "smile_self": 5,
+        "smile_other": 10,
+        "distracted_others": 1,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "12:10",
+        "end_time": "16:23",
+        "annotations": {
+            "explain or define term or concept": "Yang-Yu Liu explains interspecies interactions through various mechanisms like secretion of bacteriocins, competition for nutrients, cross-feeding, and host immune system modeling.",
+            "present new idea": "Yang-Yu Liu introduces the concept of persistent excitation as a criterion for informativeness of time series data in system identification.",
+            "provide supporting evidence": "Yang-Yu Liu supports the idea of time series data not being informative enough by stating that shuffling the data produces similar interaction inferences.",
+            "offer constructive criticism": "Yang-Yu Liu points out the limitations of using relative abundance data due to the compositionality issue in interspecies interaction inference."
+        }
+    },
+    {
+        "speaker": "Carolina Tropini",
+        "timestamp": "06:23-07:07",
+        "transcript": "I also had a very interesting point about kind of asking what what mattered. Is it the metabolites? Is it the species? And I feel like this is a really big question in the field about is it the function that matters about the microbiota? So if you add a helminth and are you providing a new member to the microbiota or are you providing new functionality? And same thing with adding, say, a community that doesn't have viruses and you add viruses in, like does it affect just the dynamics of the bacteria or does it matter to the host because there's viruses specifically? And I think that's kind of an interesting way of thinking about the different levels, too.",
+        "speaking_duration": 44,
+        "nods_others": 2,
+        "smile_self": 0,
+        "smile_other": 50,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "16:23",
+        "end_time": "17:07",
+        "annotations": {
+            "ask clarifying question": "Carolina asks whether the important factor is the metabolites, the species, or the function of the microbiota when considering the impact of adding a helminth or viruses.",
+            "present new idea": "Carolina introduces the idea of focusing on the function of the microbiota, rather than just the species or metabolites, as a key question in the field.",
+            "expand on existing idea": "Building on the discussion of the impact of adding organisms to a microbial community, Carolina expands the idea by considering the functional changes introduced by the addition of a helminth or viruses."
+        }
+    },
+    {
+        "speaker": "Rosa Krajmalnik-Brown",
+        "timestamp": "07:07-07:13",
+        "transcript": "Courtney, what do you think? You've been quiet and you're our ecologist. Tell us, what do you think?",
+        "speaking_duration": 6,
+        "nods_others": 0,
+        "smile_self": 70,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "17:07",
+        "end_time": "17:13",
+        "annotations": {
+            "encourage particpation": "Rosa asks Courtney for her opinion, noting she has been quiet and highlighting her expertise as an ecologist.",
+            "ask clarifying question": "Rosa asks Courtney for her opinion on the discussion."
+        }
+    },
+    {
+        "speaker": "Courtney Robinson",
+        "timestamp": "07:13-07:42",
+        "transcript": "No, I'm just uh taking everything and I actually agree very much with what um Carolina just said, um especially around the idea of introducing new functions and the the idea with the phages is actually pretty interesting. Um because it's not only that you're disrupting again the structure, but you are impacting the function that those bacteria provide to the system in addition to whatever comes along with the viruses.",
+        "speaking_duration": 29,
+        "nods_others": 1,
+        "smile_self": 0,
+        "smile_other": 60,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "17:13",
+        "end_time": "17:42",
+        "annotations": {
+            "acknowledge contribution": "Courtney acknowledges Carolina's contribution by stating she agrees with what Carolina just said.",
+            "express agreement": "Courtney explicitly states \"I actually agree very much with what Carolina just said.\"",
+            "expand on existing idea": "Courtney expands on Carolina's idea of introducing new functions by adding that phages not only disrupt the structure but also impact the function bacteria provide."
+        }
+    },
+    {
+        "speaker": "Rosa Krajmalnik-Brown",
+        "timestamp": "07:50-08:07",
+        "transcript": "So some of you mentioned um pathogens when you describe what you do. So I guess pathogens are sometimes a very good, I would say, system to study some of these interactions. Any thoughts?",
+        "speaking_duration": 17,
+        "nods_others": 0,
+        "smile_self": 60,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "17:50",
+        "end_time": "18:07",
+        "annotations": {
+            "present new idea": "Rosa Krajmalnik-Brown introduces the idea of using pathogens as a system to study microbial interactions.",
+            "encourage particpatioin": "Rosa Krajmalnik-Brown asks \"Any thoughts?\" to solicit feedback and encourage participation from other attendees."
+        }
+    },
+    {
+        "speaker": "Rosa Krajmalnik-Brown",
+        "timestamp": "08:09-08:11",
+        "transcript": "Hi, David.",
+        "speaking_duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:09",
+        "end_time": "18:11",
+        "annotations": {
+            "encourage particpatioin": "Rosa greets David, likely to invite him into the conversation and encourage his participation."
+        }
+    },
+    {
+        "speaker": "Lawrence David",
+        "timestamp": "08:11-08:14",
+        "transcript": "Hi everyone. It's Lawrence. Sorry, I'm late.",
+        "speaking_duration": 3,
+        "nods_others": 0,
+        "smile_self": 100,
+        "smile_other": 80,
+        "distracted_others": 0,
+        "hand_gesture": "Raising Hand",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:11",
+        "end_time": "18:14",
+        "annotations": {
+            "None": "No codes from the codebook apply to this utterance."
+        }
+    },
+    {
+        "speaker": "Rosa Krajmalnik-Brown",
+        "timestamp": "08:14-08:24",
+        "transcript": "Sorry. Sorry, Lawrence, David. I'm brain fogged. I know who you are. Can you introduce yourself really quickly, please?",
+        "speaking_duration": 10,
+        "nods_others": 0,
+        "smile_self": 80,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:14",
+        "end_time": "18:24",
+        "annotations": {
+            "encourage particpation": "Rosa asks Lawrence David to introduce himself to the group.",
+            "express humor": "Rosa jokes about her brain fog and mixing up Lawrence and David's names to lighten the mood.",
+            "ask clarifying question": "Rosa asks Lawrence David to introduce himself so that everyone in the meeting knows who he is."
+        }
+    },
+    {
+        "speaker": "Lawrence David",
+        "timestamp": "08:24-08:51",
+        "transcript": "Sure. Um I'm an assistant professor at Duke University. Um I have background in biomedical engineering and microbial ecology and evolution. Our lab now works on um diet and gut microbiome interactions and we do it both with um in vitro studies and in developing like high throughput methods for bacterial culture as well as through um human trials. So we do dietary intervention trials.",
+        "speaking_duration": 27,
+        "nods_others": 1,
+        "smile_self": 10,
+        "smile_other": 80,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:24",
+        "end_time": "18:51",
+        "annotations": {
+            "explain or define term or concept": "Lawrence David explains his background and current research focus, defining the scope of his expertise and lab's work.",
+            "provide supporting evidence": "Lawrence David supports his claim of expertise by mentioning his professorship, background, and the lab's current research projects, providing evidence of his qualifications and current work."
+        }
+    },
+    {
+        "speaker": "Rosa Krajmalnik-Brown",
+        "timestamp": "08:51-08:59",
+        "transcript": "That's great. So um I don't know, Carolina is described. Um do you have a few key points that",
+        "speaking_duration": 8,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:51",
+        "end_time": "18:59",
+        "annotations": {
+            "encourage particpatioin": "Rosa asks Lawrence for his key points after he introduces himself to the group, inviting him to share his perspective.",
+            "acknowledge contribution": "Rosa says \"That's great\" to acknowledge Lawrence's introduction."
+        }
+    },
+    {
+        "speaker": "Carolina Tropini",
+        "timestamp": "08:59-09:59",
+        "transcript": "Yeah, so I guess like the the problem that we're looking at is the what level of species interaction with different types of organisms are important for population homeostasis. How does it affect gut brain communication? And those are the main two things that we've talked about as well as a little bit about how we measure things. And so some mostly questions have come up rather than answers to these. That's good. And so some of the questions are like, how do we actually study them? Like this depends on the model approach and the sequencing depth as well as extraction approach. One of the questions that came up initially was like, what does it even mean to have homeostasis? And so there was this question about population sizes, what are the actual interactions that happen between these different organisms? Are they direct, indirect? Do they happen through the immune system? And then the question then became thinking about how is this actually important for homeostasis and um what are the time scales of homeostasis, for example. Like so",
+        "speaking_duration": 60,
+        "nods_others": 2,
+        "smile_self": 20,
+        "smile_other": 60,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "Yes",
+        "screenshare": "No",
+        "screenshare_content": "None",
+        "start_time": "18:59",
+        "end_time": "19:59",
+        "annotations": {
+            "explain or define term or concept": "Carolina defines the central problem as understanding the level of species interaction important for population homeostasis and how it affects gut-brain communication.",
+            "ask clarifying question": "Carolina poses several clarifying questions related to how to study species interactions, the meaning of homeostasis, the nature of interactions (direct/indirect), their impact on homeostasis, and relevant time scales for homeostasis."
+        }
+    }
+]
