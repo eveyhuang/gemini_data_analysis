@@ -4,7 +4,7 @@ import time, json, os
 from google import genai
 from dotenv import load_dotenv
 from google.genai.errors import ServerError
-
+import subprocess
 def init():
     load_dotenv()
     GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
@@ -97,10 +97,47 @@ def get_videos(directory):
     # Get all files in the given directory
     files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
     for file in files:
-        if os.path.splitext(file)[1].lower() in video_extensions:
-            video_files.append(file)
+        file_name, file_extension = os.path.splitext(file)
+        if file_extension.lower() in video_extensions:
+            if file_extension == '.mkv':
+                converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+                file_name = os.path.basename(converted_path)
+                video_files.append(file_name)
+            else:
+                video_files.append(file)
 
     return video_files
+
+# convert mkv to mp4 using ffmpeg
+def convert_mkv_to_mp4(input_path):
+    """
+    Converts an MKV video file to MP4 using ffmpeg.
+
+    Args:
+        input_path (str): Path to the .mkv file
+
+    Returns:
+        str: Path to the converted .mp4 file
+    """
+    if not input_path.lower().endswith(".mkv"):
+        raise ValueError("Input file must be an MKV file.")
+    
+    output_path = os.path.splitext(input_path)[0] + ".mp4"
+    
+    command = [
+        "ffmpeg",
+        "-i", input_path,
+        "-codec", "copy",  # Copy without re-encoding
+        output_path
+    ]
+
+    try:
+        subprocess.run(command, check=True)
+        print(f"Conversion successful: {output_path}")
+        return output_path
+    except subprocess.CalledProcessError as e:
+        print(f"Conversion failed: {e}")
+        return None
 
 # Create or update the path dictionary with video file paths and their split chunks
 def create_or_update_path_dict(directory, cur_dir):
@@ -122,6 +159,7 @@ def create_or_update_path_dict(directory, cur_dir):
 
     for video_file in video_files:
         file_name, file_extension = os.path.splitext(video_file[3])
+
         path_key_name = video_file[2]
         folder_dir = video_file[1]
         # Get the split directory for this video file
@@ -151,6 +189,11 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     
     # Get the file name and directory
     file_name, file_extension = os.path.splitext(os.path.basename(video_full_path))
+
+    # if the file is in mkv format, convert it to mp4 using ffmpeg
+    if file_extension == '.mkv':
+        video_full_path = convert_mkv_to_mp4(video_full_path)
+
     directory = os.path.dirname(video_full_path)
     
     # Create a directory to store the split videos
