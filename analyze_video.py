@@ -262,22 +262,22 @@ def safe_list_files(client, max_retries=3, delay=5):
     try:
         # Get the list of files
         files = client.files.list()
-        
+    except Exception as e:
+        print(f"When getting all files on gemini, received unexpected error: {e}")
         # Filter out any files with problematic names
+    try:    
         safe_files = []
         for file in files:
-            try:
-                # Try to encode and decode the name to check if it's safe
-                file.name.encode('latin-1').decode('latin-1')
-                safe_files.append(file)
-            except UnicodeEncodeError:
-                # Skip files with problematic names
-                print(f"Skipping file with problematic name: {file.name}")
-                continue
-        
-        # Return only the names of safe files
-        return [x.name for x in safe_files]
-        
+                try:
+                    # Try to encode the name to ASCII, ignoring errors
+                    safe_name = file.name.encode('ascii', 'ignore').decode('ascii')
+                    safe_files.append(safe_name)
+                except Exception as e:
+                    # Skip files with problematic names
+                    print(f"Skipping file with problematic name: {file.name}")
+                    continue
+            
+        return safe_files
     except Exception as e:
         print(f"When getting all files on gemini, received unexpected error: {e}")
         
