@@ -82,9 +82,8 @@ def get_video_in_folders(directory):
         # Get all files in the current folder
         files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
         for file in files:
-            if os.path.splitext(file)[1].lower() in video_extensions:
-                file_name, file_extension = os.path.splitext(file)
-                # path to video, path_to_folder, video file name for path_dict, original filename
+            file_name, file_extension = os.path.splitext(file)
+            if file_extension.lower() in video_extensions:
                 video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
 
     return video_files
@@ -172,14 +171,16 @@ def create_or_update_path_dict(directory, cur_dir):
             chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
             
             # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
-            chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
+            new_chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
             
         if path_key_name not in path_dict.keys():
-            path_dict[path_key_name] = chunk_paths
+            path_dict[path_key_name] = new_chunk_paths
         else:
             # only update the path in path_dic 
             old_chunk_path = path_dict[path_key_name]
-            old_chunk_path[1] = chunk_paths[1]
+            for i in range(len(new_chunk_paths)):
+                old_chunk_path[i][0] = new_chunk_paths[i][0]
+                old_chunk_path[i][1] = new_chunk_paths[i][1]
     return path_dict
 
 # Split a video into chunks of specified length
@@ -559,9 +560,9 @@ def main(vid_dir, process_video):
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
     save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
-    new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
-    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
+    # new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
+    # save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    # annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
     return path_dict
 
 if __name__ == '__main__':
