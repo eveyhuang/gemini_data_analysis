@@ -20,10 +20,10 @@ def init():
     (2) timestamp: startiing and ending time of this person's speech in [MM:SS-MM:SS] format, before the speaker changes
     (3) transcript: Verbatim speech transcript. Remove filler words unless meaningful.
     (4) speaking duration: the total number of seconds the speaker talks in this segment
-    (4) nods_others: Count of head nods from other participants during this speaker's turn.
+    (4) nods_others: Count of head nods from other participants during this speaker’s turn.
     (5) smile_self: Percentage of time this speaker was smiling during their turn.
     (6) smile_other: Percentage of time at least one other person was smiling.
-    (7) distracted_others: Number of people looking away or using their phone during this speaker's turn.
+    (7) distracted_others: Number of people looking away or using their phone during this speaker’s turn.
     (8) hand_gesture: what type of hand gesture did the speaker use? (Raising Hand, Pointing, Open Palms, Thumbs up, Crossed Arms, None)
     (9) interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
     (10) overlap: Was this turn overlapped? (Yes/No) – if another person spoke at the same time
@@ -42,21 +42,21 @@ def init():
     """
 
     code_book = """
-        (1) present new idea: introduces a novel concept, approach, or hypothesis not previously mentioned. Example: "What if we used reinforcement learning instead?"
-        (2) expand on existing idea: builds on a previously mentioned idea, adding details, variations, or improvements. Example: "Yes, and if we train it with synthetic data, we might improve accuracy."
-        (3) provide supporting evidence: provides data, references, or logical reasoning to strengthen an idea. Example: "A recent Nature paper shows that this method outperforms others."
-        (4) explain or define term or concept: explains a concept, method, or terminology for clarity. Example: "When I say 'feature selection,' I mean choosing the most important variables."
-        (5) ask clarifying question: requests explanation or elaboration on a prior statement. Example:"Can you explain what you mean by 'latent variable modeling'?"
-        (6) propose decision: suggests a concrete choice for the group. "I think we should prioritize dataset A."
-        (7) confirm decision: explicitly agrees with a proposed decision, finalizing it. Example: "Yes, let's go with that approach."
-        (9) express alternative decision: rejects a prior decision and suggests another. Example: "Instead of dataset A, we should use dataset B because it has more variability."
+        (1) present new idea: introduces a novel concept, approach, or hypothesis not previously mentioned. Example: "“What if we used reinforcement learning instead?”
+        (2) expand on existing idea: builds on a previously mentioned idea, adding details, variations, or improvements. Example: “Yes, and if we train it with synthetic data, we might improve accuracy.”
+        (3) provide supporting evidence: provides data, references, or logical reasoning to strengthen an idea. Example: “A recent Nature paper shows that this method outperforms others.”
+        (4) explain or define term or concept: explains a concept, method, or terminology for clarity. Example: “When I say ‘feature selection,’ I mean choosing the most important variables.”
+        (5) ask clarifying question: requests explanation or elaboration on a prior statement. Example:“Can you explain what you mean by ‘latent variable modeling’?”
+        (6) propose decision: suggests a concrete choice for the group. “I think we should prioritize dataset A.”
+        (7) confirm decision: explicitly agrees with a proposed decision, finalizing it. Example: “Yes, let’s go with that approach.”
+        (9) express alternative decision: rejects a prior decision and suggests another. Example: “Instead of dataset A, we should use dataset B because it has more variability.”
         (10) express agreement: explicitely agrees with proposed idea or decision. Example: "I agree with your approach."
         (11) assign task: assigns responsibility for a task to a team member. Example: "Alex, can you handle data processing?"
         (12) offer constructive criticism: critiques with the intent to improve. Example: "This model has too many parameters, maybe we can prune them."
         (13) reject idea: dismisses or rejects an idea but does not offer a new one or ways to improve. "I don't think that will work"
         (14) resolve conflict: mediates between opposing ideas to reach concensus. "we can test both and compare the results."
         (15) express frustation: verbalizes irritation, impatience, or dissatisfaction. "We have been going in circles on this issue."
-        (16) acknowledge contribution: verbally recognizes another person's input, but not agreeing or expanding. "That is a great point."
+        (16) acknowledge contribution: verbally recognizes another person’s input, but not agreeing or expanding. "That is a great point."
         (17) encourage particpatioin: invites someone else to contribute. "Alex, what do you think?"
         (18) express enthusiasm: expresses excitement, optimism, or encouragement. "This is an exciting direction!"
         (19) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
@@ -259,29 +259,28 @@ def process_videos_in_directory(directory):
     return split_videos_dict
 
 def safe_list_files(client, max_retries=3, delay=5):
-    for attempt in range(max_retries):
-        try:
-            # Get the list of files
-            files = client.files.list()
-            
-            # Filter out any files with problematic names
-            safe_files = []
-            for file in files:
-                try:
-                    # Try to encode and decode the name to check if it's safe
-                    file.name.encode('latin-1').decode('latin-1')
-                    safe_files.append(file)
-                except UnicodeEncodeError:
-                    # Skip files with problematic names
-                    print(f"Skipping file with problematic name: {file.name}")
-                    continue
-            
-            # Return only the names of safe files
-            return [x.name for x in safe_files]
+    try:
+        # Get the list of files
+        files = client.files.list()
         
-        except Exception as e:
-            print(f"Unexpected error (attempt {attempt + 1}): {e}")
-            time.sleep(delay)  # Wait before retrying
+        # Filter out any files with problematic names
+        safe_files = []
+        for file in files:
+            try:
+                # Try to encode and decode the name to check if it's safe
+                file.name.encode('latin-1').decode('latin-1')
+                safe_files.append(file)
+            except UnicodeEncodeError:
+                # Skip files with problematic names
+                print(f"Skipping file with problematic name: {file.name}")
+                continue
+        
+        # Return only the names of safe files
+        return [x.name for x in safe_files]
+        
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        
 
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
@@ -290,31 +289,27 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     gemini_name = ''
     existing_files = safe_list_files(client)
     
-    # Ensure file_name is ASCII-compatible
-    safe_file_name = file_name.encode('ascii', 'ignore').decode('ascii')
-    
-    if gemini_name in existing_files:
-        print(f"{safe_file_name} already uploaded to Gemini, returning that...")
-        video_file = client.files.get(name=gemini_name)
-    else:
-        print(f"Uploading {safe_file_name} to Gemini")
-        try:
-            # Ensure file_path is properly encoded
-            safe_file_path = str(file_path).encode('ascii', 'ignore').decode('ascii')
-            video_file = client.files.upload(file=safe_file_path)
-            print(f"Completed upload: {video_file.uri}")  
-            while video_file.state.name == "PROCESSING":
-                print('.', end='')
-                time.sleep(10)
-                video_file = client.files.get(name=video_file.name)
-                gemini_name = video_file.name
-            if video_file.state.name == "FAILED":
-                print("File processing failed.")
-        except Exception as e:
-            print(f"File processing failed for {safe_file_name}")
-            print(f"Error: {str(e)}")
+    if existing_files:
+        if gemini_name in existing_files:
+            print(f"{file_name} already uploaded to Gemini, returning that...")
+            video_file = client.files.get(name=gemini_name)
+        else:
+            print(f"Uploading {file_name} to Gemini")
+            try:
+                video_file = client.files.upload(file=file_path)
+                print(f"Completed upload: {video_file.uri}")  
+                while video_file.state.name == "PROCESSING":
+                    print('.', end='')
+                    time.sleep(10)
+                    video_file = client.files.get(name=video_file.name)
+                    gemini_name = video_file.name
+                if video_file.state.name == "FAILED":
+                    print("File processing failed.")
+            except Exception as e:
+                print(f"File processing failed for {file_name}")
             
     return video_file, gemini_name
+     
 
 # Analyze a video using the Gemini API
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, delay=1):
