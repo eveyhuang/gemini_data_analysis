@@ -157,14 +157,19 @@ def create_or_update_path_dict(directory, cur_dir):
      # path to video, path_to_folder, video file name for path_dict, original filename
     video_files = get_video_in_folders(directory)
 
-    for video_file in video_files:
-        file_name, file_extension = os.path.splitext(video_file[3])
+    for video_tuple in video_files:
+        video_path, folder_path, video_file_name, full_filename = video_tuple
+        print(f"procesing: {video_tuple}")
+        
+        file_name, file_extension = os.path.splitext(full_filename)
 
-        path_key_name = video_file[2]
-        folder_dir = video_file[1]
+        path_key_name = video_file_name
+        
         # Get the split directory for this video file
-        split_dir = os.path.join(folder_dir, f"split-{file_name}")
+        split_dir = os.path.join(folder_path, f"split-{file_name}")
         # print(f"Split directory is {split_dir}")
+        new_chunk_paths = []
+        # if the split directory exists, get the list of chunk files and sort them by chunk number
         if os.path.exists(split_dir):
             # Get list of chunk files in the split directory
             chunk_files = get_videos(split_dir)
@@ -172,6 +177,14 @@ def create_or_update_path_dict(directory, cur_dir):
             
             # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
             new_chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
+        else:
+            # if the split directory does not exist, means that the video has not been split; so chunk path is the original video file
+            # If it's an MKV file, convert it
+            if video_path.endswith('.mkv'):
+                if not os.path.exists(video_path.replace('.mkv', '.mp4')):
+                    converted_path = convert_mkv_to_mp4(video_path)
+                    video_path = converted_path
+            new_chunk_paths = [[full_filename,  video_path, ' ', False]]
             
         if path_key_name not in path_dict.keys():
             path_dict[path_key_name] = new_chunk_paths
