@@ -287,26 +287,26 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     video_file = None
     gemini_name = ''
-    existing_files = safe_list_files(client)
+    # existing_files = safe_list_files(client)
+    existing_files = []
     
-    if existing_files:
-        if gemini_name in existing_files:
-            print(f"{file_name} already uploaded to Gemini, returning that...")
-            video_file = client.files.get(name=gemini_name)
-        else:
-            print(f"Uploading {file_name} to Gemini")
-            try:
-                video_file = client.files.upload(file=file_path)
-                print(f"Completed upload: {video_file.uri}")  
-                while video_file.state.name == "PROCESSING":
-                    print('.', end='')
-                    time.sleep(10)
-                    video_file = client.files.get(name=video_file.name)
-                    gemini_name = video_file.name
-                if video_file.state.name == "FAILED":
-                    print(f"File processing failed for {file_name}")
-            except Exception as e:
-                print(f"When processing {file_name} encountered the following error: {e}")
+    if gemini_name in existing_files:
+        print(f"{file_name} already uploaded to Gemini, returning that...")
+        video_file = client.files.get(name=gemini_name)
+    else:
+        print(f"Uploading {file_name} to Gemini")
+        try:
+            video_file = client.files.upload(file=file_path)
+            print(f"Completed upload: {video_file.uri}")  
+            while video_file.state.name == "PROCESSING":
+                print('.', end='')
+                time.sleep(10)
+                video_file = client.files.get(name=video_file.name)
+                gemini_name = video_file.name
+            if video_file.state.name == "FAILED":
+                print(f"File processing failed for {file_name}")
+        except Exception as e:
+            print(f"When processing {file_name} encountered the following error: {e}")
             
     return video_file, gemini_name
      
