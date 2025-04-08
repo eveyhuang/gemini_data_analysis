@@ -5,9 +5,6 @@ from google import genai
 from dotenv import load_dotenv
 from google.genai.errors import ServerError
 import subprocess
-import shutil
-import tempfile
-
 def init():
     load_dotenv()
     GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
@@ -261,7 +258,7 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
-def safe_list_files(client, max_retries=1, delay=5):
+def safe_list_files(client, max_retries=3, delay=5):
     for attempt in range(max_retries):
         try:
             # Get the list of files
@@ -285,9 +282,6 @@ def safe_list_files(client, max_retries=1, delay=5):
         except Exception as e:
             print(f"Unexpected error (attempt {attempt + 1}): {e}")
             time.sleep(delay)  # Wait before retrying
-    
-    print("Max retries reached, failing gracefully.")
-    return []
 
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
@@ -299,51 +293,27 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # Ensure file_name is ASCII-compatible
     safe_file_name = file_name.encode('ascii', 'ignore').decode('ascii')
     
-    # Check if the file is already uploaded by trying to get it directly
-    if gemini_name:
+    if gemini_name in existing_files:
+        print(f"{safe_file_name} already uploaded to Gemini, returning that...")
+        video_file = client.files.get(name=gemini_name)
+    else:
+        print(f"Uploading {safe_file_name} to Gemini")
         try:
-            video_file = client.files.get(name=gemini_name)
-            print(f"{safe_file_name} already uploaded to Gemini, returning that...")
-            return video_file, gemini_name
+            # Ensure file_path is properly encoded
+            safe_file_path = str(file_path).encode('ascii', 'ignore').decode('ascii')
+            video_file = client.files.upload(file=safe_file_path)
+            print(f"Completed upload: {video_file.uri}")  
+            while video_file.state.name == "PROCESSING":
+                print('.', end='')
+                time.sleep(10)
+                video_file = client.files.get(name=video_file.name)
+                gemini_name = video_file.name
+            if video_file.state.name == "FAILED":
+                print("File processing failed.")
         except Exception as e:
-            print(f"Could not retrieve existing file {gemini_name}: {e}")
-            # Continue to upload a new file
-    
-    print(f"Uploading {safe_file_name} to Gemini")
-    try:
-        # Ensure file_path is properly encoded
-        safe_file_path = str(file_path).encode('ascii', 'ignore').decode('ascii')
-        
-        # Create a temporary copy of the file with ASCII-compatible name
-        # Create a temporary directory
-        temp_dir = tempfile.mkdtemp()
-        
-        # Create a safe filename for the temporary file
-        temp_filename = f"temp_{safe_file_name}.mp4"
-        temp_file_path = os.path.join(temp_dir, temp_filename)
-        
-        # Copy the file to the temporary location with the safe name
-        shutil.copy2(safe_file_path, temp_file_path)
-        
-        # Upload the temporary file
-        video_file = client.files.upload(file=temp_file_path)
-        print(f"Completed upload: {video_file.uri}")  
-        
-        # Clean up the temporary file and directory
-        os.remove(temp_file_path)
-        os.rmdir(temp_dir)
-        
-        while video_file.state.name == "PROCESSING":
-            print('.', end='')
-            time.sleep(10)
-            video_file = client.files.get(name=video_file.name)
-            gemini_name = video_file.name
-        if video_file.state.name == "FAILED":
-            print("File processing failed.")
-    except Exception as e:
-        print(f"File processing failed for {safe_file_name}")
-        print(f"Error: {str(e)}")
-        
+            print(f"File processing failed for {safe_file_name}")
+            print(f"Error: {str(e)}")
+            
     return video_file, gemini_name
 
 # Analyze a video using the Gemini API
