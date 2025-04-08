@@ -258,109 +258,93 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
-def safe_list_files(client, max_retries=3, delay=5):
+def safe_list_files(client, max_retries=1, delay=5):
     """
-    Safely list files from the Gemini API, handling Unicode encoding issues.
+    Safely list files from the Gemini API, handling Unicode characters in file names.
+    
+    Args:
+        client: The Gemini API client
+        max_retries: Maximum number of retry attempts
+        delay: Delay between retries in seconds
+        
+    Returns:
+        List of safe file names
     """
     for attempt in range(max_retries):
         try:
-            # Try to get the list of files
+            # Get the list of files
             files = client.files.list()
             
-            # Create a list to store safe file names
-            safe_names = []
-            
-            # Process each file
+            # Filter out any files with problematic names
+            safe_files = []
             for file in files:
                 try:
-                    # Try to encode the name in ASCII (more permissive than latin-1)
+                    # Try to encode the name to ASCII, ignoring errors
                     safe_name = file.name.encode('ascii', 'ignore').decode('ascii')
-                    safe_names.append(safe_name)
+                    safe_files.append(safe_name)
                 except Exception as e:
-                    # If there's any issue with this file, skip it
+                    # Skip files with problematic names
                     print(f"Skipping file with problematic name: {file.name}")
                     continue
             
-            return safe_names
+            return safe_files
             
         except Exception as e:
-            print(f"Error listing files (attempt {attempt+1}/{max_retries}): {str(e)}")
+            print(f"Attempt {attempt+1}/{max_retries} failed: {e}")
             if attempt < max_retries - 1:
                 print(f"Retrying in {delay} seconds...")
                 time.sleep(delay)
             else:
-                print("Max retries reached. Returning empty list.")
+                print("All retry attempts failed.")
                 return []
     
     return []
 
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
-    """
-    Get a video file from Gemini, uploading it if necessary.
-    Handles Unicode encoding issues and provides robust error handling.
-    """
-    # Initialize variables
+    # files that have already been uploaded to gemini
     video_file = None
+    gemini_name = ''
     
-    # Ensure file_name is ASCII-compatible
+    # Create a safe version of the file name for upload
     safe_file_name = file_name.encode('ascii', 'ignore').decode('ascii')
     
-    # Try to get the list of files (with retries)
+    # Check if the file already exists in Gemini
     existing_files = safe_list_files(client)
     
-    # If we have a gemini_name, try to get the file directly
-    if gemini_name:
-        try:
-            video_file = client.files.get(name=gemini_name)
+    if existing_files:
+        if gemini_name in existing_files:
             print(f"{safe_file_name} already uploaded to Gemini, returning that...")
-            return video_file, gemini_name
-        except Exception as e:
-            print(f"Could not retrieve existing file {gemini_name}: {e}")
-            # Continue to upload a new file
+            video_file = client.files.get(name=gemini_name)
+        else:
+            print(f"Uploading {safe_file_name} to Gemini")
+            try:
+                # Create a temporary copy with a safe name if needed
+                temp_path = file_path
+                if file_name != safe_file_name:
+                    import shutil
+                    temp_dir = os.path.dirname(file_path)
+                    temp_path = os.path.join(temp_dir, f"temp_{safe_file_name}")
+                    shutil.copy2(file_path, temp_path)
+                    print(f"Created temporary file with safe name: {temp_path}")
+                
+                # Upload the file
+                video_file = client.files.upload(file=temp_path)
+                print(f"Completed upload: {video_file.uri}")
+                
+                # Clean up temporary file if created
+                if temp_path != file_path and os.path.exists(temp_path):
+                    os.remove(temp_path)
+                    print(f"Removed temporary file: {temp_path}")
+                
+                gemini_name = video_file.name
+            except Exception as e:
+                print(f"Error uploading {safe_file_name}: {e}")
+                if temp_path != file_path and os.path.exists(temp_path):
+                    os.remove(temp_path)
+    else:
+        print("Could not retrieve existing files from Gemini")
     
-    # If we don't have a gemini_name or couldn't retrieve the file, upload a new one
-    print(f"Uploading {safe_file_name} to Gemini")
-    try:
-        # Ensure file_path is properly encoded
-        safe_file_path = str(file_path).encode('ascii', 'ignore').decode('ascii')
-        
-        # Create a temporary copy of the file with ASCII-compatible name
-        import tempfile
-        import shutil
-        
-        # Create a temporary directory
-        temp_dir = tempfile.mkdtemp()
-        
-        # Create a safe filename for the temporary file
-        temp_filename = f"temp_{safe_file_name}.mp4"
-        temp_file_path = os.path.join(temp_dir, temp_filename)
-        
-        # Copy the file to the temporary location with the safe name
-        shutil.copy2(safe_file_path, temp_file_path)
-        
-        # Upload the temporary file
-        video_file = client.files.upload(file=temp_file_path)
-        print(f"Completed upload: {video_file.uri}")  
-        
-        # Clean up the temporary file and directory
-        os.remove(temp_file_path)
-        os.rmdir(temp_dir)
-        
-        # Wait for processing to complete
-        while video_file.state.name == "PROCESSING":
-            print('.', end='')
-            time.sleep(10)
-            video_file = client.files.get(name=video_file.name)
-            gemini_name = video_file.name
-            
-        if video_file.state.name == "FAILED":
-            print("File processing failed.")
-            
-    except Exception as e:
-        print(f"File processing failed for {safe_file_name}")
-        print(f"Error: {str(e)}")
-        
     return video_file, gemini_name
      
 
