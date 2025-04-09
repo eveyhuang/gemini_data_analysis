@@ -286,13 +286,13 @@ def safe_list_files(client, max_retries=3, delay=5):
 def get_gemini_video(client, file_name, file_path, gemini_name):
     # files that have already been uploaded to gemini
     video_file = None
-    gemini_name = ''
-    # existing_files = safe_list_files(client)
-    existing_files = []
     
-    if gemini_name in existing_files:
-        print(f"{file_name} already uploaded to Gemini, returning that...")
-        video_file = client.files.get(name=gemini_name)
+    # existing_files = safe_list_files(client)
+    gemini_file = client.files.get(name = gemini_name)
+    if gemini_file:
+        return gemini_file, gemini_name
+        # print(f"{file_name} already uploaded to Gemini, returning that...")
+        # video_file = client.files.get(name=gemini_name)
     else:
         print(f"Uploading {file_name} to Gemini")
         try:
@@ -450,7 +450,7 @@ def annotate_utterances(client, merged_list, codebook):
 
         # Call Gemini API (adjust depending on your implementation)
         response = client.models.generate_content(
-            model='gemini-1.5-pro',
+            model='gemini-2.0-flash',
             contents=[comm_prompt],
             config={
                 'response_mime_type':'application/json',
