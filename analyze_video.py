@@ -191,9 +191,12 @@ def create_or_update_path_dict(directory, cur_dir):
         else:
             # only update the path in path_dic 
             old_chunk_path = path_dict[path_key_name]
-            for i in range(len(old_chunk_path)):
-                old_chunk_path[i][0] = new_chunk_paths[i][0]
-                old_chunk_path[i][1] = new_chunk_paths[i][1]
+            if len(old_chunk_path) != len(new_chunk_paths):
+                path_dict[path_key_name] = new_chunk_paths
+            else:
+                for i in range(len(old_chunk_path)):
+                    old_chunk_path[i][0] = new_chunk_paths[i][0]
+                    old_chunk_path[i][1] = new_chunk_paths[i][1]
     return path_dict
 
 # Split a video into chunks of specified length
