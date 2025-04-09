@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 import os
-import re
 import sys
 import json
+import re
 import unicodedata
 import argparse
 from pathlib import Path
 
-def sanitize_filename(filename, replace_char='_'):
+def sanitize_filename_general(filename, replace_char='_'):
     """
     Sanitize a filename by removing or replacing problematic characters.
     
@@ -37,12 +37,85 @@ def sanitize_filename(filename, replace_char='_'):
     # Combine with the extension
     return sanitized_base + ext
 
-def sanitize_path_dict(path_dict_file, dry_run=False, verbose=False):
+def is_latin1_compatible(filename):
     """
-    Sanitize file paths and names in a path_dict.json file.
+    Check if a filename can be encoded in latin-1.
+    
+    Args:
+        filename: The filename to check
+        
+    Returns:
+        True if the filename can be encoded in latin-1, False otherwise
+    """
+    try:
+        filename.encode('latin-1')
+        return True
+    except UnicodeEncodeError:
+        return False
+
+def sanitize_filename_latin1(filename):
+    """
+    Create a safe version of a filename by replacing non-latin-1 characters.
+    
+    Args:
+        filename: The original filename
+        
+    Returns:
+        A safe version of the filename
+    """
+    # Get the base name and extension
+    base, ext = os.path.splitext(filename)
+    
+    # Replace problematic characters with underscores
+    safe_base = ''
+    for char in base:
+        try:
+            char.encode('latin-1')
+            safe_base += char
+        except UnicodeEncodeError:
+            safe_base += '_'
+    
+    # Remove multiple consecutive underscores
+    safe_base = '_'.join(filter(None, safe_base.split('_')))
+    
+    # Combine with the extension
+    return safe_base + ext
+
+def sanitize_filename_ascii(filename):
+    """
+    Create a safe version of a filename by replacing non-ASCII characters.
+    
+    Args:
+        filename: The original filename
+        
+    Returns:
+        A safe version of the filename
+    """
+    # Get the base name and extension
+    base, ext = os.path.splitext(filename)
+    
+    # Replace problematic characters with underscores
+    safe_base = ''
+    for char in base:
+        try:
+            char.encode('ascii')
+            safe_base += char
+        except UnicodeEncodeError:
+            safe_base += '_'
+    
+    # Remove multiple consecutive underscores
+    safe_base = '_'.join(filter(None, safe_base.split('_')))
+    
+    # Combine with the extension
+    return safe_base + ext
+
+def fix_path_dict(path_dict_file, method='general', dry_run=False, verbose=False):
+    """
+    Fix encoding issues in a path_dict.json file.
     
     Args:
         path_dict_file: Path to the path_dict.json file
+        method: Method to use for sanitizing filenames ('general', 'latin1', or 'ascii')
         dry_run: If True, only print what would be done without making changes
         verbose: If True, print detailed information about each file processed
         
@@ -54,13 +127,24 @@ def sanitize_path_dict(path_dict_file, dry_run=False, verbose=False):
         with open(path_dict_file, 'r', encoding='utf-8') as f:
             path_dict = json.load(f)
         
+        # Select the appropriate sanitization method
+        if method == 'general':
+            sanitize_fn = sanitize_filename_general
+        elif method == 'latin1':
+            sanitize_fn = sanitize_filename_latin1
+        elif method == 'ascii':
+            sanitize_fn = sanitize_filename_ascii
+        else:
+            print(f"Error: Unknown method '{method}'")
+            return False
+        
         # Track changes for reporting
         changes = []
         
         # Process each entry in the path_dict
         for key, value in list(path_dict.items()):
             # Sanitize the key (which is often a file path or name)
-            sanitized_key = sanitize_filename(key)
+            sanitized_key = sanitize_fn(key)
             
             # Process each item in the value list
             for i, item in enumerate(value):
@@ -70,7 +154,7 @@ def sanitize_path_dict(path_dict_file, dry_run=False, verbose=False):
                     file_name = os.path.basename(file_path)
                     
                     # Sanitize the file name
-                    sanitized_file_name = sanitize_filename(file_name)
+                    sanitized_file_name = sanitize_fn(file_name)
                     
                     # Create a new file path with the sanitized file name
                     dir_path = os.path.dirname(file_path)
@@ -114,63 +198,35 @@ def sanitize_path_dict(path_dict_file, dry_run=False, verbose=False):
         print(f"Error processing {path_dict_file}: {e}")
         return False
 
-def process_directory(directory, dry_run=False, verbose=False):
-    """
-    Process all path_dict.json files in the given directory.
-    
-    Args:
-        directory: The directory to process
-        dry_run: If True, only print what would be done without making changes
-        verbose: If True, print detailed information about each file processed
-        
-    Returns:
-        Number of files processed successfully
-    """
-    # Convert to Path object for easier handling
-    dir_path = Path(directory)
-    
-    # Find all path_dict.json files
-    path_dict_files = list(dir_path.glob('**/*path_dict.json'))
-    
-    if not path_dict_files:
-        print(f"No path_dict.json files found in {directory}")
-        return 0
-    
-    # Process each path_dict.json file
-    success_count = 0
-    for file_path in path_dict_files:
-        if verbose:
-            print(f"Processing {file_path}...")
-        
-        if sanitize_path_dict(file_path, dry_run, verbose):
-            success_count += 1
-    
-    return success_count
-
 def main():
-    parser = argparse.ArgumentParser(description='Sanitize file paths and names in path_dict.json files.')
-    parser.add_argument('directory', help='Directory containing path_dict.json files')
+    parser = argparse.ArgumentParser(description='Fix encoding issues in a path_dict.json file.')
+    parser.add_argument('path_dict_file', help='Path to the path_dict.json file')
+    parser.add_argument('--method', choices=['general', 'latin1', 'ascii'], default='general',
+                        help='Method to use for sanitizing filenames (default: general)')
     parser.add_argument('--dry-run', action='store_true', help='Print what would be done without making changes')
     parser.add_argument('--verbose', '-v', action='store_true', help='Print detailed information')
     
     args = parser.parse_args()
     
-    if not os.path.isdir(args.directory):
-        print(f"Error: {args.directory} is not a valid directory")
+    if not os.path.isfile(args.path_dict_file):
+        print(f"Error: {args.path_dict_file} is not a valid file")
         return 1
     
-    print(f"Processing directory: {args.directory}")
+    if not args.path_dict_file.endswith('.json'):
+        print(f"Warning: {args.path_dict_file} does not appear to be a JSON file")
+    
+    print(f"Processing {args.path_dict_file} using {args.method} method")
     if args.dry_run:
         print("DRY RUN - no changes will be made")
     
-    success_count = process_directory(args.directory, args.dry_run, args.verbose)
+    success = fix_path_dict(args.path_dict_file, args.method, args.dry_run, args.verbose)
     
-    if args.dry_run:
-        print(f"Would process {success_count} path_dict.json files")
+    if success:
+        print("Processing completed successfully")
+        return 0
     else:
-        print(f"Processed {success_count} path_dict.json files")
-    
-    return 0
+        print("Processing failed")
+        return 1
 
 if __name__ == "__main__":
     sys.exit(main()) 
