@@ -261,57 +261,81 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
-def safe_list_files(client, max_retries=3, delay=5):
+def safe_list_files(client):
     try:
         # Get the list of files
         files = client.files.list()
-    except Exception as e:
-        print(f"When getting all files on gemini, received unexpected error: {e}")
+        
         # Filter out any files with problematic names
-    try:    
         safe_files = []
         for file in files:
-                try:
-                    # Try to encode the name to ASCII, ignoring errors
-                    safe_name = file.name.encode('ascii', 'ignore').decode('ascii')
-                    safe_files.append(safe_name)
-                except Exception as e:
-                    # Skip files with problematic names
-                    print(f"Skipping file with problematic name: {file.name}")
-                    continue
-            
+            try:
+                # Use our sanitization function
+                safe_name = sanitize_filename(file.name)
+                safe_files.append(safe_name)
+            except Exception as e:
+                # Skip files with problematic names
+                print(f"Skipping file {file} with problematic name: {e}")
+                continue
+                
         return safe_files
     except Exception as e:
         print(f"When getting all files on gemini, received unexpected error: {e}")
-        
+        return []  # Return empty list instead of None
 
+def sanitize_filename(name):
+    """
+    Sanitize a filename to ensure it contains only ASCII characters.
+    Replace or remove problematic characters.
+    """
+    if name is None:
+        return None
+        
+    try:
+        # Try to encode the name to ASCII, replacing non-ASCII chars
+        safe_name = name.encode('ascii', 'replace').decode('ascii')
+        return safe_name
+    except Exception as e:
+        print(f"Error sanitizing filename: {e}")
+        # Fall back to a simpler sanitization if the above fails
+        import re
+        # Remove or replace non-ASCII characters
+        return re.sub(r'[^\x00-\x7F]+', '_', name)
+    
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
-    # files that have already been uploaded to gemini
+    """Return the video file from Gemini, uploading it if necessary"""
     video_file = None
     
-    # existing_files = safe_list_files(client)
-    gemini_file = client.files.get(name = gemini_name)
-    if gemini_file:
-        return gemini_file, gemini_name
-        # print(f"{file_name} already uploaded to Gemini, returning that...")
-        # video_file = client.files.get(name=gemini_name)
-    else:
-        print(f"Uploading {file_name} to Gemini")
+    # Sanitize the gemini_name if it exists
+    safe_gemini_name = sanitize_filename(gemini_name)
+    
+    # If gemini_name is not empty or just whitespace, try to get the file
+    if safe_gemini_name and safe_gemini_name.strip():
         try:
-            video_file = client.files.upload(file=file_path)
-            print(f"Completed upload: {video_file.uri}")  
-            while video_file.state.name == "PROCESSING":
-                print('.', end='')
-                time.sleep(10)
-                video_file = client.files.get(name=video_file.name)
-                gemini_name = video_file.name
-            if video_file.state.name == "FAILED":
-                print(f"File processing failed for {file_name}")
+            gemini_file = client.files.get(name=safe_gemini_name)
+            if gemini_file:
+                print(f"{file_name} already uploaded to Gemini, returning that...")
+                return gemini_file, safe_gemini_name
         except Exception as e:
-            print(f"When processing {file_name} encountered the following error: {e}")
-            
-    return video_file, gemini_name
+            print(f"Could not get file with name {safe_gemini_name}: {e}")
+    
+    # If we couldn't get the file, upload it
+    print(f"Uploading {file_name} to Gemini")
+    try:
+        video_file = client.files.upload(file=file_path)
+        print(f"Completed upload: {video_file.uri}")  
+        while video_file.state.name == "PROCESSING":
+            print('.', end='')
+            time.sleep(10)
+            video_file = client.files.get(name=video_file.name)
+            safe_gemini_name = sanitize_filename(video_file.name)
+        if video_file.state.name == "FAILED":
+            print(f"File processing failed for {file_name}")
+    except Exception as e:
+        print(f"When processing {file_name} encountered the following error: {e}")
+        
+    return video_file, safe_gemini_name
      
 
 # Analyze a video using the Gemini API
