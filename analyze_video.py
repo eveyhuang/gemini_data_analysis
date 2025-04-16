@@ -616,9 +616,9 @@ def main(vid_dir, process_video):
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
     save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
-    # new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    # save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
-    # annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
+    new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
+    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
     return path_dict
 
 if __name__ == '__main__':
