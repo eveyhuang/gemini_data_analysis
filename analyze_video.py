@@ -74,17 +74,30 @@ def get_video_in_folders(directory):
     video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
     video_files = []
 
-    # Get all folders in the given directory
-    folder_names = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
-
-    for folder in folder_names:
-        folder_path = os.path.join(directory, folder)
-        # Get all files in the current folder
-        files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
-        for file in files:
-            file_name, file_extension = os.path.splitext(file)
-            if file_extension.lower() in video_extensions:
-                video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+    # Get all items in the given directory
+    items = os.listdir(directory)
+    
+    # First check for folders
+    folder_names = [f for f in items if os.path.isdir(os.path.join(directory, f))]
+    
+    # If folders exist, process videos in folders
+    if folder_names:
+        for folder in folder_names:
+            folder_path = os.path.join(directory, folder)
+            # Get all files in the current folder
+            files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+            for file in files:
+                file_name, file_extension = os.path.splitext(file)
+                if file_extension.lower() in video_extensions:
+                    video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+    
+    # If no folders or additional files exist in root directory, check for direct video files
+    files_in_root = [f for f in items if os.path.isfile(os.path.join(directory, f))]
+    for file in files_in_root:
+        file_name, file_extension = os.path.splitext(file)
+        if file_extension.lower() in video_extensions:
+            # For files in root, use the file name as both folder and file identifier
+            video_files.append((os.path.join(directory, file), directory, f"{file_name}", file))
 
     return video_files
 
