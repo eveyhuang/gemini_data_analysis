@@ -111,20 +111,20 @@ def get_videos(directory):
     for file in files:
         file_name, file_extension = os.path.splitext(file)
         if file_extension.lower() in video_extensions:
-            if file_extension == '.mkv':
-                if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
-                    converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
-                    file_name = os.path.basename(converted_path)
-                    video_files.append(file_name)
-            else:
-                video_files.append(file)
-
+            # if file_extension == '.mkv':
+            #     if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+            #         converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+            #         file_name = os.path.basename(converted_path)
+            #         video_files.append(file_name)
+            # else:
+            #     video_files.append(file)
+            video_files.append(file)
     return video_files
 
 # convert mkv to mp4 using ffmpeg
 def convert_mkv_to_mp4(input_path):
     """
-    Converts an MKV video file to MP4 using ffmpeg with settings optimized for Gemini API compatibility.
+    Converts an MKV video file to MP4 using ffmpeg.
 
     Args:
         input_path (str): Path to the .mkv file
@@ -137,47 +137,19 @@ def convert_mkv_to_mp4(input_path):
     
     output_path = os.path.splitext(input_path)[0] + ".mp4"
     
-    # Optimized ffmpeg command for web compatibility
     command = [
         "ffmpeg",
         "-i", input_path,
-        "-c:v", "libx264",  # Use H.264 codec
-        "-preset", "medium",  # Balance between speed and compression
-        "-crf", "23",  # Constant Rate Factor for quality (lower = better, 18-28 is good)
-        "-c:a", "aac",  # Convert audio to AAC
-        "-b:a", "128k",  # Audio bitrate
-        "-ac", "2",  # Convert to stereo audio
-        "-movflags", "+faststart",  # Optimize for web streaming
-        "-y",  # Overwrite output file if it exists
+        "-codec", "copy",  # Copy without re-encoding
         output_path
     ]
 
     try:
-        # First check if output path already exists
-        if os.path.exists(output_path):
-            print(f"Output file already exists: {output_path}")
-            return output_path
-            
-        print(f"Converting {os.path.basename(input_path)} to MP4...")
-        result = subprocess.run(command, check=True, capture_output=True, text=True)
-        
-        # Verify the output file exists and has size > 0
-        if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
-            print(f"Conversion successful: {output_path}")
-            return output_path
-        else:
-            print(f"Conversion failed: Output file is missing or empty")
-            return None
-            
+        subprocess.run(command, check=True)
+        print(f"Conversion successful: {output_path}")
+        return output_path
     except subprocess.CalledProcessError as e:
-        print(f"FFmpeg conversion failed with error: {e.stderr}")
-        if os.path.exists(output_path):
-            os.remove(output_path)  # Clean up partial file
-        return None
-    except Exception as e:
-        print(f"Unexpected error during conversion: {e}")
-        if os.path.exists(output_path):
-            os.remove(output_path)  # Clean up partial file
+        print(f"Conversion failed: {e}")
         return None
 
 # Create or update the path dictionary with video file paths and their split chunks
