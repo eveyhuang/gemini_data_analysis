@@ -346,22 +346,7 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     print(f"Uploading {file_name} to Gemini")
     try:
         safe_file_path = sanitize_filename(file_path)
-        
-        # Determine MIME type based on file extension
-        mime_type = 'video/mp4'  # Default to MP4
-        if file_path.lower().endswith('.mkv'):
-            mime_type = 'video/x-matroska'
-        elif file_path.lower().endswith('.avi'):
-            mime_type = 'video/x-msvideo'
-        elif file_path.lower().endswith('.mov'):
-            mime_type = 'video/quicktime'
-            
-        # Upload with explicit MIME type
-        video_file = client.files.upload(
-            file=safe_file_path,
-            mime_type=mime_type
-        )
-        
+        video_file = client.files.upload(file=safe_file_path)
         print(f"Completed upload: {video_file.uri}")  
         while video_file.state.name == "PROCESSING":
             print('.', end='')
