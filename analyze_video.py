@@ -173,7 +173,6 @@ def create_or_update_path_dict(directory, cur_dir):
 
     for video_tuple in video_files:
         video_path, folder_path, video_file_name, full_filename = video_tuple
-        print(f"procesing: {video_tuple}")
         
         file_name, file_extension = os.path.splitext(full_filename)
 
@@ -362,7 +361,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.0-flash',  # Using the generally available model
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
