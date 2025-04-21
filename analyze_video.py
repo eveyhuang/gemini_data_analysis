@@ -119,8 +119,14 @@ def get_videos(directory):
         #     else:
         #         video_files.append(file)
         #     video_files.append(file)
-        if file_extension.lower() == '.mkv':
-            video_files.append(file)
+        
+        if file_extension.lower() in video_extensions:
+            if file_extension == '.mp4':
+                if not os.path.exists(os.path.join(directory, file_name + '.mkv')):
+                    video_files.append(file)
+            else:
+                video_files.append(file)
+        
     return video_files
 
 # convert mkv to mp4 using ffmpeg
@@ -340,7 +346,22 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     print(f"Uploading {file_name} to Gemini")
     try:
         safe_file_path = sanitize_filename(file_path)
-        video_file = client.files.upload(file=safe_file_path)
+        
+        # Determine MIME type based on file extension
+        mime_type = 'video/mp4'  # Default to MP4
+        if file_path.lower().endswith('.mkv'):
+            mime_type = 'video/x-matroska'
+        elif file_path.lower().endswith('.avi'):
+            mime_type = 'video/x-msvideo'
+        elif file_path.lower().endswith('.mov'):
+            mime_type = 'video/quicktime'
+            
+        # Upload with explicit MIME type
+        video_file = client.files.upload(
+            file=safe_file_path,
+            mime_type=mime_type
+        )
+        
         print(f"Completed upload: {video_file.uri}")  
         while video_file.state.name == "PROCESSING":
             print('.', end='')
@@ -537,18 +558,32 @@ def add_times(time1, time2):
 
 # Load JSON files from a directory and sort them by chunk number
 def load_json_files(directory):
+    # Get all JSON files except those starting with 'all' or 'verbal'
     json_files = [f for f in os.listdir(directory) if f.endswith('.json') and not (f.startswith('all') or f.startswith('verbal'))]
-    json_files.sort(key=lambda x: int(re.search(r'chunk(\d+)', x).group(1)))
+    
+    # Sort files by chunk number, handling files without chunk numbers
+    def sort_key(filename):
+        chunk_num = extract_chunk_number(filename)
+        return chunk_num if chunk_num is not None else float('inf')
+    
+    json_files.sort(key=sort_key)
     
     result = []
     for json_file in json_files:
-        with open(os.path.join(directory, json_file)) as f:
-            data = json.load(f)
-            chunk_number = extract_chunk_number(json_file)
-
-            while len(result) < chunk_number:
-                result.append(None)
-            result[chunk_number-1] = data
+        try:
+            with open(os.path.join(directory, json_file)) as f:
+                data = json.load(f)
+                chunk_number = extract_chunk_number(json_file)
+                
+                # Only process files with valid chunk numbers
+                if chunk_number is not None:
+                    # Ensure the result list is long enough
+                    while len(result) < chunk_number:
+                        result.append(None)
+                    result[chunk_number-1] = data
+        except Exception as e:
+            print(f"Error loading {json_file}: {e}")
+            continue
     
     return result
 
