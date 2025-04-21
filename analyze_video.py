@@ -110,14 +110,16 @@ def get_videos(directory):
     files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
     for file in files:
         file_name, file_extension = os.path.splitext(file)
-        if file_extension.lower() in video_extensions:
-            # if file_extension == '.mkv':
-            #     if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
-            #         converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
-            #         file_name = os.path.basename(converted_path)
-            #         video_files.append(file_name)
-            # else:
-            #     video_files.append(file)
+        # if file_extension.lower() in video_extensions:
+        #     if file_extension == '.mkv':
+        #         if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+        #             converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+        #             file_name = os.path.basename(converted_path)
+        #             video_files.append(file_name)
+        #     else:
+        #         video_files.append(file)
+        #     video_files.append(file)
+        if file_extension.lower() == '.mkv':
             video_files.append(file)
     return video_files
 
@@ -191,14 +193,18 @@ def create_or_update_path_dict(directory, cur_dir):
             # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
             new_chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
         else:
-            # if the split directory does not exist, means that the video has not been split; so chunk path is the original video file
+            # if the split directory does not exist, means that the video has not been split (length is short); 
+            # so chunk path is the original video file
             # If it's an MKV file, convert it
+            
             if video_path.endswith('.mkv'):
                 if not os.path.exists(video_path.replace('.mkv', '.mp4')):
                     converted_path = convert_mkv_to_mp4(video_path)
                     video_path = converted_path
+                    
             new_chunk_paths = [[full_filename,  video_path, ' ', False]]
-            
+
+        # check     
         if path_key_name not in path_dict.keys():
             path_dict[path_key_name] = new_chunk_paths
         else:
@@ -358,7 +364,6 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
                 model='gemini-1.5-pro',
                 contents=[prompt, video_file],
                 config={
-                    'response_mime_type':'application/json',
                     'temperature':0,
                     'max_output_tokens':8192,      
                 },)
@@ -370,7 +375,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
             if attempt < max_tries-1:
                 time.sleep(delay)
             else:
-                print(f"Couldn't get response even after three tries: {filename}")
+                print(f"Couldn't get response even after three tries: {filename}. Error: {e}")
                 return None
 
 # Analyze all videos in the path dictionary
