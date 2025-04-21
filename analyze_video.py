@@ -110,22 +110,15 @@ def get_videos(directory):
     files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
     for file in files:
         file_name, file_extension = os.path.splitext(file)
-        # if file_extension.lower() in video_extensions:
-        #     if file_extension == '.mkv':
-        #         if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
-        #             converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
-        #             file_name = os.path.basename(converted_path)
-        #             video_files.append(file_name)
-        #     else:
-        #         video_files.append(file)
-        #     video_files.append(file)
-        
         if file_extension.lower() in video_extensions:
-            if file_extension == '.mp4':
-                if not os.path.exists(os.path.join(directory, file_name + '.mkv')):
-                    video_files.append(file)
+            if file_extension == '.mkv':
+                if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+                    converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+                    file_name = os.path.basename(converted_path)
+                    video_files.append(file_name)
             else:
                 video_files.append(file)
+            video_files.append(file)
         
     return video_files
 
@@ -196,7 +189,7 @@ def create_or_update_path_dict(directory, cur_dir):
             chunk_files = get_videos(split_dir)
             chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
             
-            # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
+            # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
             new_chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
         else:
             # if the split directory does not exist, means that the video has not been split (length is short); 
@@ -286,6 +279,7 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
+# Get the list of files on gemini
 def safe_list_files(client):
     try:
         # Get the list of files
@@ -308,6 +302,7 @@ def safe_list_files(client):
         print(f"When getting all files on gemini, received unexpected error: {e}")
         return []  # Return empty list instead of None
 
+# Sanitize a filename to ensure it contains only ASCII characters
 def sanitize_filename(name):
     """
     Sanitize a filename to ensure it contains only ASCII characters.
@@ -367,7 +362,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-1.5-pro',
+                model='gemini-2.5-flash',
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
@@ -393,8 +388,12 @@ def analyze_video(client, path_dict, prompt, dir):
         list_chunks = n_path_dict[file_name]
         output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
+
         for m in range(len(list_chunks)):
+            # [chunk file name, full path to this video, gemini upload file name, analysis status]
             file_name = list_chunks[m][0]
+
+            fileName, file_extension = os.path.splitext(file_name)
             file_path = list_chunks[m][1]
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
@@ -413,7 +412,7 @@ def analyze_video(client, path_dict, prompt, dir):
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
                             if response:
                                 try:
-                                    save_to_json(response.text, file_name, f"{output_dir}/")
+                                    save_to_json(response.text, fileName, f"{output_dir}/")
                                     list_chunks[m][3] = True
                                 except Exception as e:
                                     print(f"Still can't get the output to workout: {file_name}")
@@ -427,34 +426,70 @@ def analyze_video(client, path_dict, prompt, dir):
                 print(f"{file_name} already analyzed, moving on..")
                 continue
     print("Analysis all finished. Returning updated path_dict.")
-    # print(f"Updated path dict: {n_path_dict}")
+    
     return n_path_dict
 
 # Save data to a JSON file in the specified directory
 def save_to_json(response, filename, destdir):
-    output_file_path= destdir + filename+".json"
-    jres = response
-
-    # Ensure the response text is properly formatted JSON
+    """Save Gemini API response to a JSON file, handling various response formats"""
+    output_file_path = destdir + filename + ".json"
+    jres = response.strip()  # Remove any leading/trailing whitespace
+    
+    # Try to extract JSON content if response starts with ```json or ``` 
+    if jres.startswith('```'):
+        try:
+            # Find the first and last ``` markers
+            start_idx = jres.find('\n', jres.find('```')) + 1
+            end_idx = jres.rfind('```')
+            if start_idx > 0 and end_idx > start_idx:
+                jres = jres[start_idx:end_idx].strip()
+        except Exception as e:
+            print(f"Error extracting JSON content: {e}")
+    
+    # Try to parse and save the JSON
     try:
         parsed_json = json.loads(jres)
         with open(output_file_path, 'w') as json_file:
             json.dump(parsed_json, json_file, indent=4)
+        print(f"Successfully saved JSON to {output_file_path}")
+        return
     except json.JSONDecodeError as e:
-        print(f"JSONDecodeError: {e}")
-        print("Attempting to fix the JSON format...")
-        # Attempt to fix the JSON format by removing any trailing characters
-        jres_fixed = jres[:e.pos]
+        print(f"Initial JSONDecodeError: {e}")
+        
+        # Try to fix common JSON formatting issues
         try:
-            parsed_json = json.loads(jres_fixed)
+            # Replace single quotes with double quotes
+            jres = jres.replace("'", '"')
+            # Ensure proper JSON structure
+            if not jres.startswith('{'):
+                jres = '{"meeting_annotations": ' + jres + '}'
+            parsed_json = json.loads(jres)
             with open(output_file_path, 'w') as json_file:
                 json.dump(parsed_json, json_file, indent=4)
-        except json.JSONDecodeError as e:
-            print(f"Failed to fix JSON format: {e}")
-            print("Saving the original response text to the file for manual inspection.")
-            with open(output_file_path, 'w') as json_file:
-                json_file.write(jres)
-            raise ValueError("Could not fix the error; try to run the prompt again.")
+            print(f"Successfully saved fixed JSON to {output_file_path}")
+            return
+        except json.JSONDecodeError as e2:
+            print(f"Failed to fix JSON format: {e2}")
+            
+            # Save the original response for debugging
+            debug_file = output_file_path + '.debug'
+            with open(debug_file, 'w') as f:
+                f.write(f"Original response:\n{response}\n\nProcessed response:\n{jres}")
+            print(f"Saved debug information to {debug_file}")
+            
+            # Save as much as we can parse
+            try:
+                # Try to parse up to the error position
+                partial_json = jres[:e2.pos].rstrip(',} \n') + '}'
+                parsed_json = json.loads(partial_json)
+                with open(output_file_path, 'w') as json_file:
+                    json.dump(parsed_json, json_file, indent=4)
+                print(f"Saved partial JSON data to {output_file_path}")
+            except:
+                print("Could not save partial JSON data")
+                with open(output_file_path, 'w') as json_file:
+                    json_file.write(jres)
+                raise ValueError("Could not parse the response as JSON; saved raw response for inspection.")
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
