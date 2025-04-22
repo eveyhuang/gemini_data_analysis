@@ -8,11 +8,11 @@ from pathlib import Path
 
 def sanitize_name(name, replace_char='_'):
     """
-    Sanitize a name by removing or replacing problematic characters.
+    Sanitize a name by replacing spaces and hyphens with underscores.
     
     Args:
         name: The name to sanitize
-        replace_char: Character to use as replacement for invalid characters
+        replace_char: Character to use as replacement for spaces and hyphens
         
     Returns:
         A sanitized version of the name
@@ -20,31 +20,10 @@ def sanitize_name(name, replace_char='_'):
     # Normalize Unicode characters (e.g., convert 'é' to 'e')
     name = unicodedata.normalize('NFKD', name)
     
-    # Handle _json extension
-    if name.lower().endswith('_json'):
-        base_name = name[:-5]  # Remove '_json'
-        return f"{base_name}.json"
-    
-    # Preserve .json extension
-    base_name, ext = os.path.splitext(name)
-    if ext.lower() == '.json':
-        # Replace spaces and problematic characters with the replacement character
-        # This regex matches spaces and any character that's not alphanumeric, hyphen, underscore, or period
-        sanitized_base = re.sub(r'[\s\W]', replace_char, base_name)
-        
-        # Remove multiple consecutive replacement characters
-        sanitized_base = re.sub(f'{replace_char}+', replace_char, sanitized_base)
-        
-        # Remove leading/trailing replacement characters
-        sanitized_base = sanitized_base.strip(replace_char)
-        
-        return f"{sanitized_base}.json"
-    else:
-        # For non-JSON files, use the original sanitization logic
-        sanitized = re.sub(r'[\s\W]', replace_char, name)
-        sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
-        sanitized = sanitized.strip(replace_char)
-        return sanitized
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
 
 def get_all_paths(directory):
     """
