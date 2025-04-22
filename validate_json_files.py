@@ -30,12 +30,13 @@ def sanitize_name(name, replace_char='_'):
         A sanitized version of the name
     """
     # Normalize Unicode characters (e.g., convert 'é' to 'e')
-    name = unicodedata.normalize('NFKD', name)
+    # name = unicodedata.normalize('NFKD', name)
     
-    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
-    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
-    sanitized = sanitized.strip(replace_char)
-    return sanitized
+    # sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    # sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    # sanitized = sanitized.strip(replace_char)
+    # return sanitized
+    return name
 
 def validate_and_update_path_dict(path_dict_file, base_output_dir):
     """
@@ -55,7 +56,7 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
     # Process each key-value pair
     for key, file_lists in updated_dict.items():
         # Get the directory name from the key (split by / and take the last part)
-        dir_name = f"output_{sanitize_name(key)}"
+        dir_name = f"output-{sanitize_name(key)}"
         
         
         for file_list in file_lists:
@@ -64,7 +65,7 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
             base_name = sanitize_name(base_name)
             
             # Construct the expected JSON file path
-            json_file = os.path.join(base_output_dir, dir_name, f"{base_name}.json")
+            json_file = os.path.join(base_output_dir, dir_name, f"{base_name}.mp4.json")
             
             # Check if the JSON file exists and is valid
             if file_list[3]:  # Only check files marked as True
@@ -99,9 +100,9 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
 
 def main():
     # File paths
-    path_dict_file = "2020NES_path_dict.json"
-    output_dir = "outputs/2020NES"
-    output_file = "2020NES_path_dict_validated.json"
+    path_dict_file = "2021MND_path_dict.json"
+    output_dir = "outputs/2021MND"
+    output_file = "2021MND_path_dict_validated.json"
     
     # Get absolute paths
     workspace_dir = os.path.dirname(os.path.abspath(__file__))
