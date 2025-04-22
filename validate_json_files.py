@@ -4,11 +4,17 @@ from pathlib import Path
 import unicodedata
 import re
 def is_valid_json_file(file_path):
-    """Check if a file contains valid JSON"""
+    """
+    Check if a file contains valid and non-empty JSON.
+    Returns True only if the file contains valid JSON and is not empty ({}).
+    """
     try:
         with open(file_path, 'r') as f:
-            json.load(f)
-        return True
+            content = json.load(f)
+            # Check if the JSON is empty (just {})
+            if content == {} or content == [] or not content:
+                return False
+            return True
     except (json.JSONDecodeError, FileNotFoundError, IOError):
         return False
 
@@ -80,7 +86,7 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
                     })
     # Print changes
     if changes_made:
-        print("\nThe following files were found and marked as valid:")
+        print("\nThe following files were found and changed analysis status:")
         for change in changes_made:
             print(f"Directory: {change['key']}")
             print(f"File: {change['file']}")
