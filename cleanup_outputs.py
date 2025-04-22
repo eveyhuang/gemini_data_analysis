@@ -22,6 +22,23 @@ def get_json_size(file_path):
     except (UnicodeDecodeError, FileNotFoundError):
         return 0
 
+def normalize_name(name):
+    """Normalize a name by replacing spaces with underscores and handling special characters."""
+    # First handle any double spaces
+    name = ' '.join(name.split())
+    # Replace spaces with underscores
+    name = name.replace(' ', '_')
+    # Remove any double underscores that might have been created
+    while '__' in name:
+        name = name.replace('__', '_')
+    return name
+
+def should_merge_dirs(dir1, dir2):
+    """Check if two directories should be merged based on their normalized names."""
+    name1 = normalize_name(dir1.name)
+    name2 = normalize_name(dir2.name)
+    return name1 == name2
+
 def merge_similar_folders(base_dir):
     """Find and merge folders that differ only by space/underscore."""
     base_dir = Path(base_dir)
@@ -29,98 +46,84 @@ def merge_similar_folders(base_dir):
         print(f"Directory not found: {base_dir}")
         return
     
-    # Process each subdirectory
-    for subdir in base_dir.iterdir():
-        if not subdir.is_dir():
-            continue
+    # First, process the current directory level
+    try:
+        all_dirs = [d for d in base_dir.iterdir() if d.is_dir()]
+    except Exception as e:
+        print(f"Error accessing directory {base_dir}: {e}")
+        return
+    
+    # Group directories by their normalized names
+    dir_groups = {}
+    for d in all_dirs:
+        normalized_name = normalize_name(d.name)
+        if normalized_name not in dir_groups:
+            dir_groups[normalized_name] = []
+        dir_groups[normalized_name].append(d)
+    
+    # Process groups with multiple directories
+    for normalized_name, dirs in dir_groups.items():
+        if len(dirs) > 1:
+            print(f"\nFound similar folders: {[d.name for d in dirs]}")
             
-        # Get all subdirectories within this directory
-        try:
-            subdirs = [d for d in subdir.iterdir() if d.is_dir()]
-        except Exception as e:
-            print(f"Error accessing directory {subdir}: {e}")
-            continue
-        
-        # Group directories by their normalized names (replacing spaces with underscores)
-        dir_groups = {}
-        for d in subdirs:
-            normalized_name = d.name.replace(' ', '_')
-            if normalized_name not in dir_groups:
-                dir_groups[normalized_name] = []
-            dir_groups[normalized_name].append(d)
-        
-        # Process groups with multiple directories
-        for normalized_name, dirs in dir_groups.items():
-            if len(dirs) > 1:
-                print(f"\nFound similar folders for: {normalized_name}")
-                # Find the target directory (the one with underscore)
-                target_dir = next((d for d in dirs if '_' in d.name), None)
-                if not target_dir:
-                    # If no underscore version exists, use the first one
-                    target_dir = dirs[0]
-                
-                print(f"Target directory: {target_dir.name}")
-                
-                # Move files from other directories to target
-                for source_dir in dirs:
-                    if source_dir != target_dir:
-                        print(f"Moving files from {source_dir.name} to {target_dir.name}")
-                        for file in source_dir.iterdir():
-                            if file.is_file():
-                                target_path = target_dir / file.name
-                                if target_path.exists():
-                                    # If both files exist, keep the one with underscore in name
-                                    if '_' in file.name and ' ' in target_path.name:
-                                        # Replace the space version with underscore version
-                                        os.remove(target_path)
-                                        shutil.move(str(file), str(target_path))
-                                        print(f"  Replaced: {target_path.name} with {file.name}")
-                                    elif ' ' in file.name and '_' in target_path.name:
-                                        # Keep the underscore version, discard the space version
-                                        print(f"  Keeping underscore version: {target_path.name}")
+            # Choose the target directory - prefer the one that already has the normalized name
+            target_dir = next((d for d in dirs if d.name == normalized_name), None)
+            if not target_dir:
+                # If no directory matches the normalized name, create a new one
+                target_dir = base_dir / normalized_name
+                if not target_dir.exists():
+                    target_dir.mkdir()
+                    print(f"Created target directory: {target_dir.name}")
+            
+            # Move all files from source directories to target
+            for source_dir in dirs:
+                if source_dir != target_dir and source_dir.exists():
+                    print(f"Moving files from {source_dir.name} to {target_dir.name}")
+                    try:
+                        # Move all contents from source to target
+                        for item in source_dir.iterdir():
+                            target_path = target_dir / normalize_name(item.name)
+                            if target_path.exists():
+                                # If both exist, keep the one with more content
+                                if item.is_file():
+                                    source_size = item.stat().st_size
+                                    target_size = target_path.stat().st_size
+                                    if source_size > target_size:
+                                        target_path.unlink()
+                                        shutil.move(str(item), str(target_path))
+                                        print(f"  Replaced: {target_path.name} with larger version")
                                     else:
-                                        print(f"  Warning: {file.name} already exists in target, skipping")
-                                else:
-                                    shutil.move(str(file), str(target_path))
-                                    print(f"  Moved: {file.name}")
+                                        print(f"  Keeping existing file: {target_path.name}")
+                            else:
+                                # If target doesn't exist, just move the file/directory
+                                try:
+                                    if item.is_file():
+                                        shutil.move(str(item), str(target_path))
+                                        print(f"  Moved file: {item.name} -> {target_path.name}")
+                                    elif item.is_dir():
+                                        # For directories, merge recursively
+                                        if target_path.exists():
+                                            merge_similar_folders(item)  # Merge contents first
+                                        else:
+                                            shutil.move(str(item), str(target_path))
+                                            print(f"  Moved directory: {item.name} -> {target_path.name}")
+                                except Exception as e:
+                                    print(f"  Error moving {item.name}: {e}")
                         
-                        # Remove the now-empty source directory
+                        # Remove the source directory after moving all contents
                         try:
-                            source_dir.rmdir()
-                            print(f"Removed empty directory: {source_dir.name}")
+                            shutil.rmtree(source_dir)
+                            print(f"Removed source directory: {source_dir.name}")
                         except Exception as e:
                             print(f"Error removing directory {source_dir.name}: {e}")
-        
-        # Now process files in each directory
-        for d in subdirs:
-            if d.exists():  # Check if directory still exists after merging
-                files = [f for f in d.iterdir() if f.is_file() and f.suffix == '.json']
-                file_groups = {}
-                
-                # Group files by their normalized names
-                for file in files:
-                    normalized_name = file.name.replace(' ', '_')
-                    if normalized_name not in file_groups:
-                        file_groups[normalized_name] = []
-                    file_groups[normalized_name].append(file)
-                
-                # Process groups with multiple files
-                for norm_name, file_group in file_groups.items():
-                    if len(file_group) > 1:
-                        print(f"\nFound similar files in {d.name}: {[f.name for f in file_group]}")
-                        # Find the target file (the one with underscore)
-                        target_file = next((f for f in file_group if '_' in f.name), None)
-                        if not target_file:
-                            target_file = file_group[0]
-                        
-                        # Move or merge files
-                        for source_file in file_group:
-                            if source_file != target_file:
-                                try:
-                                    os.remove(source_file)
-                                    print(f"  Removed duplicate: {source_file.name}")
-                                except Exception as e:
-                                    print(f"  Error removing {source_file.name}: {e}")
+                            
+                    except Exception as e:
+                        print(f"Error processing {source_dir.name}: {e}")
+    
+    # Now process remaining subdirectories recursively
+    for d in base_dir.iterdir():
+        if d.is_dir():
+            merge_similar_folders(d)
 
 def process_repetitive_files(pair):
     """Process a pair of repetitive files and keep the better one based on priority:
@@ -201,12 +204,12 @@ def find_repetitive_files(directory):
         if '_chunk' in rest:
             base_part, chunk_part = rest.rsplit('_chunk', 1)
             # Normalize the base part by replacing spaces with underscores
-            normalized_base = base_part.replace(' ', '_')
+            normalized_base = normalize_name(base_part)
             # Reconstruct the normalized key
             group_key = f"{prefix}{normalized_base}_chunk{chunk_part}"
         else:
             # For files without chunks, just normalize the whole name
-            normalized_base = rest.replace(' ', '_')
+            normalized_base = normalize_name(rest)
             group_key = f"{prefix}{normalized_base}"
         
         if group_key not in file_groups:
@@ -267,7 +270,6 @@ def process_directory(base_dir):
     remove_mp4_from_filenames(base_dir)
 
 def main():
-   
     base_dir = "/Users/eveyhuang/Documents/NICO/gemini_code/outputs/2020NES"
     process_directory(base_dir)
 
