@@ -393,6 +393,7 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # If gemini_name is not empty or just whitespace, try to get the file
     if safe_gemini_name and safe_gemini_name.strip():
         try:
+
             gemini_file = client.files.get(name=safe_gemini_name)
             if gemini_file:
                 print(f"{file_name} already uploaded to Gemini, returning that...")
@@ -417,7 +418,7 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
         print(f"When processing {file_name} encountered the following error: {e}")
         
     return video_file, safe_gemini_name
-     
+
 
 # Analyze a video using the Gemini API
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, delay=1):
@@ -731,6 +732,7 @@ def annotate_and_merge(client, path_dict, directory, codebook):
 
 
 def main(vid_dir, process_video):
+
     folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init()
     cur_dir = os.getcwd()
@@ -741,8 +743,10 @@ def main(vid_dir, process_video):
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+
     annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
     return path_dict
+
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
