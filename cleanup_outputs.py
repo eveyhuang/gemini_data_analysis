@@ -2,7 +2,7 @@ import os
 import json
 import shutil
 from pathlib import Path
-
+import unicodedata
 def is_valid_json(file_path):
     """Check if a file contains valid JSON."""
     try:
@@ -22,17 +22,24 @@ def get_json_size(file_path):
     except (UnicodeDecodeError, FileNotFoundError):
         return 0
 
-def normalize_name(name):
-    """Normalize a name by replacing spaces with underscores and handling special characters."""
-    # First handle any double spaces
-    name = ' '.join(name.split())
-    # Replace spaces with underscores
-    name = name.replace(' ', '_')
-    name = name.replace('-', '_')
-    # Remove any double underscores that might have been created
-    while '__' in name:
-        name = name.replace('__', '_')
-    return name
+def normalize_name(name, replace_char='_'):
+    """
+    Sanitize a name by replacing spaces and hyphens with underscores.
+    
+    Args:
+        name: The name to sanitize
+        replace_char: Character to use as replacement for spaces and hyphens
+        
+    Returns:
+        A sanitized version of the name
+    """
+    # Normalize Unicode characters (e.g., convert 'é' to 'e')
+    name = unicodedata.normalize('NFKD', name)
+    
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
 
 def should_merge_dirs(dir1, dir2):
     """Check if two directories should be merged based on their normalized names."""
