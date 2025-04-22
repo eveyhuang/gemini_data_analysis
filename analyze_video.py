@@ -205,10 +205,21 @@ def create_or_update_path_dict(directory, cur_dir):
             chunk_files = get_videos(split_dir)
             # Filter out MKV files if MP4 version exists
             chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
-            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
+            
+            # Remove duplicates while preserving order
+            chunk_files = list(dict.fromkeys(chunk_files))
+            
+            # Sort chunk files by chunk number
+            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
             
             # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
-            new_chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
+            # Use a set to track paths we've already added
+            added_paths = set()
+            for chunk_file in chunk_files:
+                chunk_path = os.path.join(split_dir, chunk_file)
+                if chunk_path not in added_paths:
+                    new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
+                    added_paths.add(chunk_path)
         else:
             # if the split directory does not exist, means that the video has not been split (length is short)
             # Convert MKV to MP4 if needed
@@ -226,7 +237,7 @@ def create_or_update_path_dict(directory, cur_dir):
         # Update path_dict, preserving analysis status if it exists
         if path_key_name in path_dict:
             old_chunk_paths = path_dict[path_key_name]
-            # Create a map of existing analysis status
+            # Create a map of existing analysis status using the full path as key
             status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
             
             # Update new paths with existing status if available
@@ -234,7 +245,15 @@ def create_or_update_path_dict(directory, cur_dir):
                 if chunk_path[1] in status_map:
                     chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
                     
-        path_dict[path_key_name] = new_chunk_paths
+        # Remove any duplicates in new_chunk_paths while preserving order
+        seen_paths = set()
+        unique_chunk_paths = []
+        for chunk_path in new_chunk_paths:
+            if chunk_path[1] not in seen_paths:
+                unique_chunk_paths.append(chunk_path)
+                seen_paths.add(chunk_path[1])
+                
+        path_dict[path_key_name] = unique_chunk_paths
         processed_files.add(video_path)
         
     return path_dict
