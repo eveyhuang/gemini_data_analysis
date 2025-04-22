@@ -4,6 +4,9 @@ import time, json, os
 from google import genai
 from dotenv import load_dotenv
 from google.genai.errors import ServerError
+import subprocess
+import unicodedata
+
 
 def init():
     load_dotenv()
@@ -20,10 +23,10 @@ def init():
     (2) timestamp: startiing and ending time of this person's speech in [MM:SS-MM:SS] format, before the speaker changes
     (3) transcript: Verbatim speech transcript. Remove filler words unless meaningful.
     (4) speaking duration: the total number of seconds the speaker talks in this segment
-    (4) nods_others: Count of head nods from other participants during this speaker’s turn.
+    (4) nods_others: Count of head nods from other participants during this speaker's turn.
     (5) smile_self: Percentage of time this speaker was smiling during their turn.
     (6) smile_other: Percentage of time at least one other person was smiling.
-    (7) distracted_others: Number of people looking away or using their phone during this speaker’s turn.
+    (7) distracted_others: Number of people looking away or using their phone during this speaker's turn.
     (8) hand_gesture: what type of hand gesture did the speaker use? (Raising Hand, Pointing, Open Palms, Thumbs up, Crossed Arms, None)
     (9) interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
     (10) overlap: Was this turn overlapped? (Yes/No) – if another person spoke at the same time
@@ -42,21 +45,21 @@ def init():
     """
 
     code_book = """
-        (1) present new idea: introduces a novel concept, approach, or hypothesis not previously mentioned. Example: "“What if we used reinforcement learning instead?”
-        (2) expand on existing idea: builds on a previously mentioned idea, adding details, variations, or improvements. Example: “Yes, and if we train it with synthetic data, we might improve accuracy.”
-        (3) provide supporting evidence: provides data, references, or logical reasoning to strengthen an idea. Example: “A recent Nature paper shows that this method outperforms others.”
-        (4) explain or define term or concept: explains a concept, method, or terminology for clarity. Example: “When I say ‘feature selection,’ I mean choosing the most important variables.”
-        (5) ask clarifying question: requests explanation or elaboration on a prior statement. Example:“Can you explain what you mean by ‘latent variable modeling’?”
-        (6) propose decision: suggests a concrete choice for the group. “I think we should prioritize dataset A.”
-        (7) confirm decision: explicitly agrees with a proposed decision, finalizing it. Example: “Yes, let’s go with that approach.”
-        (9) express alternative decision: rejects a prior decision and suggests another. Example: “Instead of dataset A, we should use dataset B because it has more variability.”
+        (1) present new idea: introduces a novel concept, approach, or hypothesis not previously mentioned. Example: "What if we used reinforcement learning instead?"
+        (2) expand on existing idea: builds on a previously mentioned idea, adding details, variations, or improvements. Example: "Yes, and if we train it with synthetic data, we might improve accuracy."
+        (3) provide supporting evidence: provides data, references, or logical reasoning to strengthen an idea. Example: "A recent Nature paper shows that this method outperforms others."
+        (4) explain or define term or concept: explains a concept, method, or terminology for clarity. Example: "When I say 'feature selection,' I mean choosing the most important variables."
+        (5) ask clarifying question: requests explanation or elaboration on a prior statement. Example:"Can you explain what you mean by 'latent variable modeling'?"
+        (6) propose decision: suggests a concrete choice for the group. "I think we should prioritize dataset A."
+        (7) confirm decision: explicitly agrees with a proposed decision, finalizing it. Example: "Yes, let's go with that approach."
+        (9) express alternative decision: rejects a prior decision and suggests another. Example: "Instead of dataset A, we should use dataset B because it has more variability."
         (10) express agreement: explicitely agrees with proposed idea or decision. Example: "I agree with your approach."
         (11) assign task: assigns responsibility for a task to a team member. Example: "Alex, can you handle data processing?"
         (12) offer constructive criticism: critiques with the intent to improve. Example: "This model has too many parameters, maybe we can prune them."
         (13) reject idea: dismisses or rejects an idea but does not offer a new one or ways to improve. "I don't think that will work"
         (14) resolve conflict: mediates between opposing ideas to reach concensus. "we can test both and compare the results."
         (15) express frustation: verbalizes irritation, impatience, or dissatisfaction. "We have been going in circles on this issue."
-        (16) acknowledge contribution: verbally recognizes another person’s input, but not agreeing or expanding. "That is a great point."
+        (16) acknowledge contribution: verbally recognizes another person's input, but not agreeing or expanding. "That is a great point."
         (17) encourage particpatioin: invites someone else to contribute. "Alex, what do you think?"
         (18) express enthusiasm: expresses excitement, optimism, or encouragement. "This is an exciting direction!"
         (19) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
@@ -74,18 +77,30 @@ def get_video_in_folders(directory):
     video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
     video_files = []
 
-    # Get all folders in the given directory
-    folder_names = [f for f in os.listdir(directory) if os.path.isdir(os.path.join(directory, f))]
-
-    for folder in folder_names:
-        folder_path = os.path.join(directory, folder)
-        # Get all files in the current folder
-        files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
-        for file in files:
-            if os.path.splitext(file)[1].lower() in video_extensions:
+    # Get all items in the given directory
+    items = os.listdir(directory)
+    
+    # First check for folders
+    folder_names = [f for f in items if os.path.isdir(os.path.join(directory, f))]
+    
+    # If folders exist, process videos in folders
+    if folder_names:
+        for folder in folder_names:
+            folder_path = os.path.join(directory, folder)
+            # Get all files in the current folder
+            files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+            for file in files:
                 file_name, file_extension = os.path.splitext(file)
-                # path to video, path_to_folder, video file name for path_dict, original filename
-                video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+                if file_extension.lower() in video_extensions:
+                    video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+    
+    # If no folders or additional files exist in root directory, check for direct video files
+    files_in_root = [f for f in items if os.path.isfile(os.path.join(directory, f))]
+    for file in files_in_root:
+        file_name, file_extension = os.path.splitext(file)
+        if file_extension.lower() in video_extensions:
+            # For files in root, use the file name as both folder and file identifier
+            video_files.append((os.path.join(directory, file), directory, f"{file_name}", file))
 
     return video_files
 
@@ -97,15 +112,60 @@ def get_videos(directory):
     # Get all files in the given directory
     files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
     for file in files:
-        if os.path.splitext(file)[1].lower() in video_extensions:
-            video_files.append(file)
-
+        file_name, file_extension = os.path.splitext(file)
+        if file_extension.lower() in video_extensions:
+            if file_extension.lower() == '.mkv':
+                # Check if MP4 version exists
+                mp4_path = os.path.join(directory, file_name + '.mp4')
+                if not os.path.exists(mp4_path):
+                    # Convert MKV to MP4
+                    converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
+                    if converted_path:
+                        video_files.append(os.path.basename(converted_path))
+                else:
+                    # Use existing MP4 version
+                    video_files.append(file_name + '.mp4')
+            elif file_extension.lower() != '.mkv':  # Skip MKV files but include other video formats
+                video_files.append(file)
+        
     return video_files
+
+# convert mkv to mp4 using ffmpeg
+def convert_mkv_to_mp4(input_path):
+    """
+    Converts an MKV video file to MP4 using ffmpeg.
+
+    Args:
+        input_path (str): Path to the .mkv file
+
+    Returns:
+        str: Path to the converted .mp4 file
+    """
+    if not input_path.lower().endswith(".mkv"):
+        raise ValueError("Input file must be an MKV file.")
+    
+    output_path = os.path.splitext(input_path)[0] + ".mp4"
+    
+    command = [
+        "ffmpeg",
+        "-i", input_path,
+        "-codec", "copy",  # Copy without re-encoding
+        output_path
+    ]
+
+    try:
+        subprocess.run(command, check=True)
+        print(f"Conversion successful: {output_path}")
+        return output_path
+    except subprocess.CalledProcessError as e:
+        print(f"Conversion failed: {e}")
+        return None
 
 # Create or update the path dictionary with video file paths and their split chunks
 def create_or_update_path_dict(directory, cur_dir):
-    path_dict_file = os.path.join(cur_dir, "path_dict.json")
-    
+    folder_name = os.path.basename(directory)
+    path_dict_file = os.path.join(cur_dir, f"{folder_name}_path_dict.json")
+
     # Check if path_dict.json exists
     if os.path.exists(path_dict_file):
         # Load existing path_dict
@@ -116,30 +176,89 @@ def create_or_update_path_dict(directory, cur_dir):
         path_dict = {}
 
     # Get list of video files in the directory
-     # path to video, path_to_folder, video file name for path_dict, original filename
     video_files = get_video_in_folders(directory)
+    
+    # Track processed files to avoid duplicates
+    processed_files = set()
 
-    for video_file in video_files:
-        file_name, file_extension = os.path.splitext(video_file[3])
-        path_key_name = video_file[2]
-        folder_dir = video_file[1]
+    for video_tuple in video_files:
+        video_path, folder_path, video_file_name, full_filename = video_tuple
+        
+        # Skip if we've already processed this file
+        if video_path in processed_files:
+            continue
+            
+        file_name, file_extension = os.path.splitext(full_filename)
+        
+        # Skip MKV files if MP4 version exists
+        if file_extension.lower() == '.mkv':
+            mp4_path = video_path.replace('.mkv', '.mp4')
+            if os.path.exists(mp4_path):
+                continue
+                
+        path_key_name = video_file_name
+        
         # Get the split directory for this video file
-        split_dir = os.path.join(folder_dir, f"split-{file_name}")
-        # print(f"Split directory is {split_dir}")
+        split_dir = os.path.join(folder_path, f"split-{file_name}")
+        new_chunk_paths = []
+        
+        # if the split directory exists, get the list of chunk files and sort them by chunk number
         if os.path.exists(split_dir):
             # Get list of chunk files in the split directory
             chunk_files = get_videos(split_dir)
-            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))  # Sort chunk files by chunk number
+            # Filter out MKV files if MP4 version exists
+            chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
             
-            # Create list of [chunk name, full path to this video, gemini upload file name, analysis status] for each chunk file
-            chunk_paths = [[chunk_file, os.path.join(split_dir, chunk_file), ' ', False] for chunk_file in chunk_files]
+            # Remove duplicates while preserving order
+            chunk_files = list(dict.fromkeys(chunk_files))
             
-        if path_key_name not in path_dict.keys():
-            path_dict[path_key_name] = chunk_paths
+            # Sort chunk files by chunk number
+            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
+            
+            # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
+            # Use a set to track paths we've already added
+            added_paths = set()
+            for chunk_file in chunk_files:
+                chunk_path = os.path.join(split_dir, chunk_file)
+                if chunk_path not in added_paths:
+                    new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
+                    added_paths.add(chunk_path)
         else:
-            # only update the path in path_dic 
-            old_chunk_path = path_dict[path_key_name]
-            old_chunk_path[1] = chunk_paths[1]
+            # if the split directory does not exist, means that the video has not been split (length is short)
+            # Convert MKV to MP4 if needed
+            if video_path.endswith('.mkv'):
+                mp4_path = video_path.replace('.mkv', '.mp4')
+                if not os.path.exists(mp4_path):
+                    print(f"Converting {video_path} to mp4")
+                    video_path = convert_mkv_to_mp4(video_path)
+                else:
+                    print(f"Found {video_path} already converted to mp4")
+                    video_path = mp4_path
+                    
+            new_chunk_paths = [[full_filename, video_path, ' ', False]]
+
+        # Update path_dict, preserving analysis status if it exists
+        if path_key_name in path_dict:
+            old_chunk_paths = path_dict[path_key_name]
+            # Create a map of existing analysis status using the full path as key
+            status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
+            
+            # Update new paths with existing status if available
+            for chunk_path in new_chunk_paths:
+                if chunk_path[1] in status_map:
+                    chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
+                    
+        # Remove any duplicates in new_chunk_paths while preserving order
+        seen_paths = set()
+        unique_chunk_paths = []
+        for chunk_path in new_chunk_paths:
+            if chunk_path[1] not in seen_paths:
+                unique_chunk_paths.append(chunk_path)
+                seen_paths.add(chunk_path[1])
+                
+        path_dict[path_key_name] = unique_chunk_paths
+        processed_files.add(video_path)
+        
     return path_dict
 
 # Split a video into chunks of specified length
@@ -150,6 +269,11 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     
     # Get the file name and directory
     file_name, file_extension = os.path.splitext(os.path.basename(video_full_path))
+
+    # if the file is in mkv format, convert it to mp4 using ffmpeg
+    if file_extension == '.mkv':
+        video_full_path = convert_mkv_to_mp4(video_full_path)
+
     directory = os.path.dirname(video_full_path)
     
     # Create a directory to store the split videos
@@ -166,6 +290,25 @@ def split_video(video_full_path, duration, chunk_length=10*60):
         print(f"Created chunk: {output_file_name}")
     
     return chunk_paths
+
+def sanitize_name(name, replace_char='_'):
+    """
+    Sanitize a name by replacing spaces and hyphens with underscores.
+    
+    Args:
+        name: The name to sanitize
+        replace_char: Character to use as replacement for spaces and hyphens
+        
+    Returns:
+        A sanitized version of the name
+    """
+    # Normalize Unicode characters (e.g., convert 'é' to 'e')
+    name = unicodedata.normalize('NFKD', name)
+    
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
 
 # Process all videos in a directory, splitting them if necessary
 def process_videos_in_directory(directory):
@@ -199,42 +342,83 @@ def process_videos_in_directory(directory):
     
     return split_videos_dict
 
-def safe_list_files(client, max_retries=3, delay=5):
-    for attempt in range(max_retries):
-        try:
-            return [x.name for x in client.files.list()]
-        except genai.errors.ServerError as e:
-            print(f"Server error (attempt {attempt + 1}): {e}")
-            time.sleep(delay)  # Wait before retrying
-    print("Max retries reached, failing gracefully.")
-    return []
+# Get the list of files on gemini
+def safe_list_files(client):
+    try:
+        # Get the list of files
+        files = client.files.list()
+        
+        # Filter out any files with problematic names
+        safe_files = []
+        for file in files:
+            try:
+                # Use our sanitization function
+                safe_name = sanitize_filename(file.name)
+                safe_files.append(safe_name)
+            except Exception as e:
+                # Skip files with problematic names
+                print(f"Skipping file {file} with problematic name: {e}")
+                continue
+                
+        return safe_files
+    except Exception as e:
+        print(f"When getting all files on gemini, received unexpected error: {e}")
+        return []  # Return empty list instead of None
 
+# Sanitize a filename to ensure it contains only ASCII characters
+def sanitize_filename(name):
+    """
+    Sanitize a filename to ensure it contains only ASCII characters.
+    Replace or remove problematic characters.
+    """
+    if name is None:
+        return None
+        
+    try:
+        # Try to encode the name to ASCII, replacing non-ASCII chars
+        safe_name = name.encode('ascii', 'replace').decode('ascii')
+        return safe_name
+    except Exception as e:
+        print(f"Error sanitizing filename {name}: {e}")
+        
+    
 # Return the video file from Gemini, uploading it if necessary
 def get_gemini_video(client, file_name, file_path, gemini_name):
-    # files that have already been uploaded to gemini
+    """Return the video file from Gemini, uploading it if necessary"""
     video_file = None
-    gemini_name = ''
-    existing_files = safe_list_files(client)
     
-    if gemini_name in existing_files:
-        print(f"{file_name} already uploaded to Gemini, returning that...")
-        video_file = client.files.get(name=gemini_name)
-    else:
-        print(f"Uploading {file_name} to Gemini")
+    # Sanitize the gemini_name if it exists
+    safe_gemini_name = sanitize_filename(gemini_name)
+    
+    # If gemini_name is not empty or just whitespace, try to get the file
+    if safe_gemini_name and safe_gemini_name.strip():
         try:
-            video_file = client.files.upload(file=file_path)
-            print(f"Completed upload: {video_file.uri}")  
-            while video_file.state.name == "PROCESSING":
-                print('.', end='')
-                time.sleep(10)
-                video_file = client.files.get(name=video_file.name)
-                gemini_name = video_file.name
-            if video_file.state.name == "FAILED":
-                print("Failed to upload the video to Gemini.")
+
+            gemini_file = client.files.get(name=safe_gemini_name)
+            if gemini_file:
+                print(f"{file_name} already uploaded to Gemini, returning that...")
+                return gemini_file, safe_gemini_name
         except Exception as e:
-            print(f"File processing failed for {file_name}. Error is {e}.")
-            
-    return video_file, gemini_name
+            print(f"Could not get file with name {safe_gemini_name}: {e}")
+    
+    # If we couldn't get the file, upload it
+    print(f"Uploading {file_name} to Gemini")
+    try:
+        safe_file_path = sanitize_filename(file_path)
+        video_file = client.files.upload(file=safe_file_path)
+        print(f"Completed upload: {video_file.uri}")  
+        while video_file.state.name == "PROCESSING":
+            print('.', end='')
+            time.sleep(10)
+            video_file = client.files.get(name=video_file.name)
+            safe_gemini_name = sanitize_filename(video_file.name)
+        if video_file.state.name == "FAILED":
+            print(f"File processing failed for {file_name}")
+    except Exception as e:
+        print(f"When processing {file_name} encountered the following error: {e}")
+        
+    return video_file, safe_gemini_name
+
 
 # Analyze a video using the Gemini API
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, delay=1):
@@ -242,10 +426,9 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-1.5-pro',
+                model='gemini-2.0-flash',  # Using the generally available model
                 contents=[prompt, video_file],
                 config={
-                    'response_mime_type':'application/json',
                     'temperature':0,
                     'max_output_tokens':8192,      
                 },)
@@ -257,7 +440,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
             if attempt < max_tries-1:
                 time.sleep(delay)
             else:
-                print(f"Couldn't get response even after three tries: {filename}")
+                print(f"Couldn't get response even after three tries: {filename}. Error: {e}")
                 return None
 
 # Analyze all videos in the path dictionary
@@ -269,8 +452,12 @@ def analyze_video(client, path_dict, prompt, dir):
         list_chunks = n_path_dict[file_name]
         output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
         os.makedirs(output_dir, exist_ok=True)
+
         for m in range(len(list_chunks)):
+            # [chunk file name, full path to this video, gemini upload file name, analysis status]
             file_name = list_chunks[m][0]
+
+            fileName, file_extension = os.path.splitext(file_name)
             file_path = list_chunks[m][1]
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
@@ -289,7 +476,7 @@ def analyze_video(client, path_dict, prompt, dir):
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
                             if response:
                                 try:
-                                    save_to_json(response.text, file_name, f"{output_dir}/")
+                                    save_to_json(response.text, fileName, f"{output_dir}/")
                                     list_chunks[m][3] = True
                                 except Exception as e:
                                     print(f"Still can't get the output to workout: {file_name}")
@@ -298,28 +485,52 @@ def analyze_video(client, path_dict, prompt, dir):
                                 list_chunks[m][3] = False
                     else:
                         list_chunks[m][3] = False
-                save_path_dict(n_path_dict, "path_dict.json", cur_dir)
+                save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
             else:
                 print(f"{file_name} already analyzed, moving on..")
                 continue
     print("Analysis all finished. Returning updated path_dict.")
-    # print(f"Updated path dict: {n_path_dict}")
+    
     return n_path_dict
 
 # Save data to a JSON file in the specified directory
 def save_to_json(response, filename, destdir):
-    output_file_path= destdir + filename+".json"
-    jres = response
-
-    # Ensure the response text is properly formatted JSON
+    """Save Gemini API response to a JSON file, handling various response formats"""
+    fileName, file_extension = os.path.splitext(filename)
+    output_file_path = destdir + fileName + ".json"
+    output_file_path = sanitize_name(output_file_path)
+    jres = response.strip()  # Remove any leading/trailing whitespace
+    
+    # Handle code block markers more robustly
+    if '```' in jres:
+        # Split by ``` and look for the JSON content
+        blocks = jres.split('```')
+        for block in blocks:
+            # Skip empty blocks
+            if not block.strip():
+                continue
+            # If block starts with 'json', remove it
+            block = block.strip().removeprefix('json').strip()
+            try:
+                # Try to parse this block as JSON
+                parsed_json = json.loads(block)
+                # If we successfully parsed JSON, use this block
+                jres = block
+                break
+            except json.JSONDecodeError:
+                continue
+    
+    # Try to parse the cleaned JSON
     try:
         parsed_json = json.loads(jres)
         with open(output_file_path, 'w') as json_file:
             json.dump(parsed_json, json_file, indent=4)
+        print(f"Successfully saved JSON to {output_file_path}")
+        return
     except json.JSONDecodeError as e:
         print(f"JSONDecodeError: {e}")
         print("Attempting to fix the JSON format...")
-        # Attempt to fix the JSON format by removing any trailing characters
+         # Attempt to fix the JSON format by removing any trailing characters
         jres_fixed = jres[:e.pos]
         try:
             parsed_json = json.loads(jres_fixed)
@@ -331,6 +542,7 @@ def save_to_json(response, filename, destdir):
             with open(output_file_path, 'w') as json_file:
                 json_file.write(jres)
             raise ValueError("Could not fix the error; try to run the prompt again.")
+         
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
@@ -375,7 +587,7 @@ def annotate_utterances(client, merged_list, codebook):
 
         # Call Gemini API (adjust depending on your implementation)
         response = client.models.generate_content(
-            model='gemini-1.5-pro',
+            model='gemini-2.0-flash',
             contents=[comm_prompt],
             config={
                 'response_mime_type':'application/json',
@@ -419,18 +631,32 @@ def add_times(time1, time2):
 
 # Load JSON files from a directory and sort them by chunk number
 def load_json_files(directory):
+    # Get all JSON files except those starting with 'all' or 'verbal'
     json_files = [f for f in os.listdir(directory) if f.endswith('.json') and not (f.startswith('all') or f.startswith('verbal'))]
-    json_files.sort(key=lambda x: int(re.search(r'chunk(\d+)', x).group(1)))
+    
+    # Sort files by chunk number, handling files without chunk numbers
+    def sort_key(filename):
+        chunk_num = extract_chunk_number(filename)
+        return chunk_num if chunk_num is not None else float('inf')
+    
+    json_files.sort(key=sort_key)
     
     result = []
     for json_file in json_files:
-        with open(os.path.join(directory, json_file)) as f:
-            data = json.load(f)
-            chunk_number = extract_chunk_number(json_file)
-
-            while len(result) < chunk_number:
-                result.append(None)
-            result[chunk_number-1] = data
+        try:
+            with open(os.path.join(directory, json_file)) as f:
+                data = json.load(f)
+                chunk_number = extract_chunk_number(json_file)
+                
+                # Only process files with valid chunk numbers
+                if chunk_number is not None:
+                    # Ensure the result list is long enough
+                    while len(result) < chunk_number:
+                        result.append(None)
+                    result[chunk_number-1] = data
+        except Exception as e:
+            print(f"Error loading {json_file}: {e}")
+            continue
     
     return result
 
@@ -506,7 +732,7 @@ def annotate_and_merge(client, path_dict, directory, codebook):
 
 
 def main(vid_dir, process_video):
-    # get the last folder name from vid_dir
+
     folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init()
     cur_dir = os.getcwd()
@@ -517,8 +743,10 @@ def main(vid_dir, process_video):
 
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
-    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs", codebook)
-    return new_path_dict
+
+    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
+    return path_dict
+
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
