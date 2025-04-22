@@ -503,51 +503,21 @@ def save_to_json(response, filename, destdir):
         print(f"Successfully saved JSON to {output_file_path}")
         return
     except json.JSONDecodeError as e:
-        print(f"Initial JSONDecodeError: {e}")
-        
-        # Try to fix common JSON formatting issues
+        print(f"JSONDecodeError: {e}")
+        print("Attempting to fix the JSON format...")
+         # Attempt to fix the JSON format by removing any trailing characters
+        jres_fixed = jres[:e.pos]
         try:
-            # Replace single quotes with double quotes
-            jres = jres.replace("'", '"')
-            # Fix common formatting issues
-            jres = jres.replace('\n', ' ').replace('\r', ' ')  # Remove newlines
-            jres = re.sub(r'\s+', ' ', jres)  # Normalize whitespace
-            # Ensure proper JSON structure
-            if not jres.startswith('{'):
-                if '"meeting_annotations"' in jres:
-                    # If it already contains the key, just wrap in braces
-                    jres = '{' + jres + '}'
-                else:
-                    # Add the key if it's missing
-                    jres = '{"meeting_annotations": ' + jres + '}'
-            
-            parsed_json = json.loads(jres)
+            parsed_json = json.loads(jres_fixed)
             with open(output_file_path, 'w') as json_file:
                 json.dump(parsed_json, json_file, indent=4)
-            print(f"Successfully saved fixed JSON to {output_file_path}")
-            return
-        except json.JSONDecodeError as e2:
-            print(f"Failed to fix JSON format: {e2}")
-            
-            # Save the original response for debugging
-            debug_file = output_file_path + '.debug'
-            with open(debug_file, 'w') as f:
-                f.write(f"Original response:\n{response}\n\nProcessed response:\n{jres}")
-            print(f"Saved debug information to {debug_file}")
-            
-            # Save as much as we can parse
-            try:
-                # Try to parse up to the error position
-                partial_json = jres[:e2.pos].rstrip(',} \n') + '}'
-                parsed_json = json.loads(partial_json)
-                with open(output_file_path, 'w') as json_file:
-                    json.dump(parsed_json, json_file, indent=4)
-                print(f"Saved partial JSON data to {output_file_path}")
-            except:
-                print("Could not save partial JSON data")
-                with open(output_file_path, 'w') as json_file:
-                    json_file.write(jres)
-                raise ValueError("Could not parse the response as JSON; saved raw response for inspection.")
+        except json.JSONDecodeError as e:
+            print(f"Failed to fix JSON format: {e}")
+            print("Saving the original response text to the file for manual inspection.")
+            with open(output_file_path, 'w') as json_file:
+                json_file.write(jres)
+            raise ValueError("Could not fix the error; try to run the prompt again.")
+         
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
