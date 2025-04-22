@@ -28,6 +28,7 @@ def normalize_name(name):
     name = ' '.join(name.split())
     # Replace spaces with underscores
     name = name.replace(' ', '_')
+    name = name.replace('-', '_')
     # Remove any double underscores that might have been created
     while '__' in name:
         name = name.replace('__', '_')
