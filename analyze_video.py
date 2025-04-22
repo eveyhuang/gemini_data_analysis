@@ -473,7 +473,8 @@ def analyze_video(client, path_dict, prompt, dir):
 # Save data to a JSON file in the specified directory
 def save_to_json(response, filename, destdir):
     """Save Gemini API response to a JSON file, handling various response formats"""
-    output_file_path = destdir + filename + ".json"
+    fileName, file_extension = os.path.splitext(filename)
+    output_file_path = destdir + fileName + ".json"
     jres = response.strip()  # Remove any leading/trailing whitespace
     
     # Handle code block markers more robustly
