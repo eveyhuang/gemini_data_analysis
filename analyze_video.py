@@ -111,14 +111,19 @@ def get_videos(directory):
     for file in files:
         file_name, file_extension = os.path.splitext(file)
         if file_extension.lower() in video_extensions:
-            if file_extension == '.mkv':
-                if not os.path.exists(os.path.join(directory, file_name + '.mp4')):
+            if file_extension.lower() == '.mkv':
+                # Check if MP4 version exists
+                mp4_path = os.path.join(directory, file_name + '.mp4')
+                if not os.path.exists(mp4_path):
+                    # Convert MKV to MP4
                     converted_path = convert_mkv_to_mp4(os.path.join(directory, file))
-                    file_name = os.path.basename(converted_path)
-                    video_files.append(file_name)
-            else:
+                    if converted_path:
+                        video_files.append(os.path.basename(converted_path))
+                else:
+                    # Use existing MP4 version
+                    video_files.append(file_name + '.mp4')
+            elif file_extension.lower() != '.mkv':  # Skip MKV files but include other video formats
                 video_files.append(file)
-            video_files.append(file)
         
     return video_files
 
@@ -452,18 +457,26 @@ def save_to_json(response, filename, destdir):
     output_file_path = destdir + filename + ".json"
     jres = response.strip()  # Remove any leading/trailing whitespace
     
-    # Try to extract JSON content if response starts with ```json or ``` 
-    if jres.startswith('```'):
-        try:
-            # Find the first and last ``` markers
-            start_idx = jres.find('\n', jres.find('```')) + 1
-            end_idx = jres.rfind('```')
-            if start_idx > 0 and end_idx > start_idx:
-                jres = jres[start_idx:end_idx].strip()
-        except Exception as e:
-            print(f"Error extracting JSON content: {e}")
+    # Handle code block markers more robustly
+    if '```' in jres:
+        # Split by ``` and look for the JSON content
+        blocks = jres.split('```')
+        for block in blocks:
+            # Skip empty blocks
+            if not block.strip():
+                continue
+            # If block starts with 'json', remove it
+            block = block.strip().removeprefix('json').strip()
+            try:
+                # Try to parse this block as JSON
+                parsed_json = json.loads(block)
+                # If we successfully parsed JSON, use this block
+                jres = block
+                break
+            except json.JSONDecodeError:
+                continue
     
-    # Try to parse and save the JSON
+    # Try to parse the cleaned JSON
     try:
         parsed_json = json.loads(jres)
         with open(output_file_path, 'w') as json_file:
@@ -477,9 +490,18 @@ def save_to_json(response, filename, destdir):
         try:
             # Replace single quotes with double quotes
             jres = jres.replace("'", '"')
+            # Fix common formatting issues
+            jres = jres.replace('\n', ' ').replace('\r', ' ')  # Remove newlines
+            jres = re.sub(r'\s+', ' ', jres)  # Normalize whitespace
             # Ensure proper JSON structure
             if not jres.startswith('{'):
-                jres = '{"meeting_annotations": ' + jres + '}'
+                if '"meeting_annotations"' in jres:
+                    # If it already contains the key, just wrap in braces
+                    jres = '{' + jres + '}'
+                else:
+                    # Add the key if it's missing
+                    jres = '{"meeting_annotations": ' + jres + '}'
+            
             parsed_json = json.loads(jres)
             with open(output_file_path, 'w') as json_file:
                 json.dump(parsed_json, json_file, indent=4)
