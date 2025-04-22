@@ -69,7 +69,17 @@ def merge_similar_folders(base_dir):
                             if file.is_file():
                                 target_path = target_dir / file.name
                                 if target_path.exists():
-                                    print(f"  Warning: {file.name} already exists in target, skipping")
+                                    # If both files exist, keep the one with underscore in name
+                                    if '_' in file.name and ' ' in target_path.name:
+                                        # Replace the space version with underscore version
+                                        os.remove(target_path)
+                                        shutil.move(str(file), str(target_path))
+                                        print(f"  Replaced: {target_path.name} with {file.name}")
+                                    elif ' ' in file.name and '_' in target_path.name:
+                                        # Keep the underscore version, discard the space version
+                                        print(f"  Keeping underscore version: {target_path.name}")
+                                    else:
+                                        print(f"  Warning: {file.name} already exists in target, skipping")
                                 else:
                                     shutil.move(str(file), str(target_path))
                                     print(f"  Moved: {file.name}")
@@ -80,6 +90,37 @@ def merge_similar_folders(base_dir):
                             print(f"Removed empty directory: {source_dir.name}")
                         except Exception as e:
                             print(f"Error removing directory {source_dir.name}: {e}")
+        
+        # Now process files in each directory
+        for d in subdirs:
+            if d.exists():  # Check if directory still exists after merging
+                files = [f for f in d.iterdir() if f.is_file() and f.suffix == '.json']
+                file_groups = {}
+                
+                # Group files by their normalized names
+                for file in files:
+                    normalized_name = file.name.replace(' ', '_')
+                    if normalized_name not in file_groups:
+                        file_groups[normalized_name] = []
+                    file_groups[normalized_name].append(file)
+                
+                # Process groups with multiple files
+                for norm_name, file_group in file_groups.items():
+                    if len(file_group) > 1:
+                        print(f"\nFound similar files in {d.name}: {[f.name for f in file_group]}")
+                        # Find the target file (the one with underscore)
+                        target_file = next((f for f in file_group if '_' in f.name), None)
+                        if not target_file:
+                            target_file = file_group[0]
+                        
+                        # Move or merge files
+                        for source_file in file_group:
+                            if source_file != target_file:
+                                try:
+                                    os.remove(source_file)
+                                    print(f"  Removed duplicate: {source_file.name}")
+                                except Exception as e:
+                                    print(f"  Error removing {source_file.name}: {e}")
 
 def process_repetitive_files(pair):
     """Process a pair of repetitive files and keep the better one based on priority:
@@ -213,40 +254,13 @@ def process_directory(base_dir):
         print(f"Directory not found: {base_dir}")
         return
     
-    # First merge similar folders
-    print("Merging similar folders...")
+    # First merge similar folders and files
+    print("Merging similar folders and files...")
     merge_similar_folders(base_dir)
     
     # Then remove debug and bak files
     print("\nRemoving debug and bak files...")
     remove_debug_and_bak_files(base_dir)
-    
-    # Process each subdirectory for repetitive files
-    for subdir in base_dir.iterdir():
-        if subdir.is_dir():
-            print(f"\nProcessing directory: {subdir}")
-            repetitive_pairs = find_repetitive_files(subdir)
-            
-            if not repetitive_pairs:
-                print("No repetitive files found.")
-                continue
-            
-            print(f"Found {len(repetitive_pairs)} pairs of repetitive files.")
-            
-            for pair in repetitive_pairs:
-                print(f"\nProcessing pair: {[os.path.basename(f) for f in pair]}")
-                keep_file, remove_files = process_repetitive_files(pair)
-                
-                if keep_file:
-                    print(f"Keeping: {os.path.basename(keep_file)}")
-                    for file in remove_files:
-                        try:
-                            os.remove(file)
-                            print(f"Removed: {os.path.basename(file)}")
-                        except Exception as e:
-                            print(f"Error removing {file}: {e}")
-                else:
-                    print("No valid files to keep in this pair.")
     
     # Finally, remove 'mp4' from remaining JSON filenames
     print("\nRemoving 'mp4' from JSON filenames...")
