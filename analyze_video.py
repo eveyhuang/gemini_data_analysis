@@ -480,6 +480,7 @@ def analyze_video(client, path_dict, prompt, dir):
                                     list_chunks[m][3] = True
                                 except Exception as e:
                                     print(f"Still can't get the output to workout: {file_name}")
+                                    list_chunks[m][3] = False
                                     continue
                             else: 
                                 list_chunks[m][3] = False
@@ -629,10 +630,17 @@ def add_times(time1, time2):
     # Format the result as "HH:MM"
     return f"{total_hours:02}:{total_minutes:02}"
 
+class InvalidJsonContentError(Exception):
+    """Exception raised when JSON file is invalid or empty."""
+    pass
+
 # Load JSON files from a directory and sort them by chunk number
 def load_json_files(directory):
     # Get all JSON files except those starting with 'all' or 'verbal'
     json_files = [f for f in os.listdir(directory) if f.endswith('.json') and not (f.startswith('all') or f.startswith('verbal'))]
+    
+    if not json_files:
+        raise InvalidJsonContentError(f"No JSON files found in directory: {directory}")
     
     # Sort files by chunk number, handling files without chunk numbers
     def sort_key(filename):
@@ -642,10 +650,18 @@ def load_json_files(directory):
     json_files.sort(key=sort_key)
     
     result = []
+    invalid_files = []
+    
     for json_file in json_files:
+        file_path = os.path.join(directory, json_file)
         try:
-            with open(os.path.join(directory, json_file)) as f:
+            with open(file_path) as f:
                 data = json.load(f)
+                # Check if JSON is empty or has no content
+                if data == {} or data == [] or not data:
+                    invalid_files.append(f"{json_file} (empty content)")
+                    continue
+                
                 chunk_number = extract_chunk_number(json_file)
                 
                 # Only process files with valid chunk numbers
@@ -654,9 +670,20 @@ def load_json_files(directory):
                     while len(result) < chunk_number:
                         result.append(None)
                     result[chunk_number-1] = data
+                
+        except json.JSONDecodeError:
+            invalid_files.append(f"{json_file} (invalid JSON)")
         except Exception as e:
-            print(f"Error loading {json_file}: {e}")
-            continue
+            invalid_files.append(f"{json_file} (error: {str(e)})")
+    
+    if invalid_files:
+        raise InvalidJsonContentError(
+            f"Found invalid or empty JSON files in {directory}:\n" + 
+            "\n".join(f"- {f}" for f in invalid_files)
+        )
+    
+    if not result:
+        raise InvalidJsonContentError(f"No valid JSON files with chunk numbers found in {directory}")
     
     return result
 
@@ -701,8 +728,14 @@ def annotate_and_merge(client, path_dict, directory, codebook):
         output_subfolder = os.path.join(directory, f"output-{key}")
         verbal_file = os.path.join(output_subfolder, f"verbal_{vid_name}.json")
         all_file = os.path.join(output_subfolder,f"all_{vid_name}.json" )
+        
         if os.path.exists(output_subfolder):
-            merged_output = merge_output_json(output_subfolder)
+            try:
+                merged_output = merge_output_json(output_subfolder)
+            except InvalidJsonContentError as e:
+                print(f"Skipping {output_subfolder} due to invalid JSON content: {str(e)}")
+                continue
+                
             if not os.path.exists(all_file):
                 verbal_annotations = []
                 if not os.path.exists(verbal_file):
