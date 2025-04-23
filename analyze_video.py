@@ -448,19 +448,26 @@ def analyze_video(client, path_dict, prompt, dir):
     cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
     folder_name = os.path.basename(dir)
+    
+    # Create the base outputs directory
+    base_output_dir = os.path.join(cur_dir, "outputs", folder_name)
+    os.makedirs(base_output_dir, exist_ok=True)
+    
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
+        # Sanitize the output directory name
+        safe_file_name = sanitize_name(file_name)
+        output_dir = os.path.join(base_output_dir, f"output-{safe_file_name}")
         os.makedirs(output_dir, exist_ok=True)
 
         for m in range(len(list_chunks)):
             # [chunk file name, full path to this video, gemini upload file name, analysis status]
             file_name = list_chunks[m][0]
-
             fileName, file_extension = os.path.splitext(file_name)
             file_path = list_chunks[m][1]
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
+            
             if not analyzed:
                 print(f"Analyzing {file_name}")
                 video_file, gemini_name = get_gemini_video(client, file_name, file_path, gemini_name)
@@ -498,8 +505,11 @@ def analyze_video(client, path_dict, prompt, dir):
 def save_to_json(response, filename, destdir):
     """Save Gemini API response to a JSON file, handling various response formats"""
     fileName, file_extension = os.path.splitext(filename)
-    output_file_path = destdir + fileName + ".json"
-    output_file_path = sanitize_name(output_file_path)
+    output_file_path = destdir + sanitize_name(fileName) + ".json"
+
+    # Create all parent directories if they don't exist
+    os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+    
     jres = response.strip()  # Remove any leading/trailing whitespace
     
     # Handle code block markers more robustly
