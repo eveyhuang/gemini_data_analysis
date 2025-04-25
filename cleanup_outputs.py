@@ -256,6 +256,46 @@ def remove_mp4_from_filenames(directory):
                 except Exception as e:
                     print(f"Error renaming {file}: {e}")
 
+def normalize_filenames(directory):
+    """Normalize all JSON filenames in the directory."""
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.json'):
+                old_path = os.path.join(root, file)
+                
+                # Handle prefixes (all_, verbal_)
+                if file.startswith('all_'):
+                    prefix = 'all_'
+                    rest = file[4:]  # Remove 'all_' prefix
+                elif file.startswith('verbal_'):
+                    prefix = 'verbal_'
+                    rest = file[7:]  # Remove 'verbal_' prefix
+                else:
+                    prefix = ''
+                    rest = file
+                
+                # Handle chunk numbers
+                if '_chunk' in rest:
+                    base_part, chunk_part = rest.rsplit('_chunk', 1)
+                    # Normalize the base part
+                    normalized_base = normalize_name(base_part)
+                    # Reconstruct the filename
+                    new_name = f"{prefix}{normalized_base}_chunk{chunk_part}"
+                else:
+                    # For files without chunks, just normalize the whole name (excluding prefix)
+                    base_name = rest.rsplit('.json', 1)[0]  # Remove .json extension
+                    normalized_base = normalize_name(base_name)
+                    new_name = f"{prefix}{normalized_base}.json"
+                
+                new_path = os.path.join(root, new_name)
+                
+                if old_path != new_path:
+                    try:
+                        os.rename(old_path, new_path)
+                        print(f"Renamed: {file} -> {new_name}")
+                    except Exception as e:
+                        print(f"Error renaming {file}: {e}")
+
 def process_directory(base_dir):
     """Process all subdirectories in the base directory."""
     base_dir = Path(base_dir)
@@ -288,6 +328,10 @@ def process_directory(base_dir):
                         print(f"Removed: {os.path.basename(file_to_remove)}")
                     except Exception as e:
                         print(f"Error removing {os.path.basename(file_to_remove)}: {e}")
+    
+    # Normalize remaining filenames
+    print("\nNormalizing filenames...")
+    normalize_filenames(base_dir)
     
     # Finally remove debug and bak files
     print("\nRemoving debug and bak files...")
