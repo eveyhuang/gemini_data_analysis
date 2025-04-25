@@ -16,8 +16,9 @@
         "start_time": "00:00",
         "end_time": "00:22",
         "annotations": {
-            "present new idea": "ER introduces the idea of using existing city sensors for CO2 measurement and optimization.",
-            "ask clarifying question": "ER poses a question about the feasibility of using existing sensor systems for CO2 measurement."
+            "present new idea": "The speaker introduces the idea of tapping into existing sensor networks in cities, designed for detecting biological or terrorist attacks, to gather CO2 measurements for city-wide system optimization, which is a novel concept in the context of the conversation.",
+            "provide supporting evidence": "The speaker mentions the existence of sensor networks in cities used for detecting biological or terrorist attacks, providing real-world examples to support the feasibility of using such systems for CO2 measurement.",
+            "propose decision": "The speaker suggests exploring the possibility of using existing sensor networks to obtain CO2 measurements, implying a potential course of action for the group to consider."
         }
     },
     {
@@ -37,10 +38,9 @@
         "start_time": "00:22",
         "end_time": "01:18",
         "annotations": {
-            "acknowledge contribution": "AP acknowledges ER's idea about using city sensors by saying \"great idea\" and \"I totally agree with you.\"",
-            "expand on existing idea": "AP expands on the idea of urban CO2 capture by discussing direct air capture inside buildings and the historical context of DAC development in rural areas.",
-            "provide supporting evidence": "AP supports the idea of direct air capture in buildings by stating that indoor CO2 concentrations are much higher than outside and that people are point sources of CO2.",
-            "explain or define term or concept": "AP explains the benefits of co-locating CO2 storage and capture sites in rural areas, eliminating transportation needs and costs."
+            "express agreement": "The speaker explicitly agrees with the prior speaker's idea about urban cities.",
+            "expand on existing idea": "The speaker builds on the idea of CO2 capture by mentioning direct air capture inside buildings and the higher concentration of CO2 inside buildings.",
+            "provide supporting evidence": "The speaker provides supporting evidence by explaining why DAC was historically developed in rural areas, mentioning the benefit of co-locating CO2 storage and capture sites to eliminate transportation costs."
         }
     },
     {
@@ -60,8 +60,9 @@
         "start_time": "01:22",
         "end_time": "01:55",
         "annotations": {
-            "provide_supporting_evidence": "KS explains why it is harder to deploy modularly designed DAC systems, citing the high thermal energy requirement and the lower efficiency of electricity compared to gas or coal-fired heat sources.",
-            "ask_clarifying_question": "KS asks for confirmation about the thermal energy requirements for the catalytic process in DAC systems."
+            "explain or define term or concept": "The utterance explains the thermal energy requirement for deploying direct air capture (DAC) units modularly, specifying the need for a heat source for the catalytic process, which clarifies the challenges associated with deploying them in urban settings.",
+            "ask clarifying question": "The speaker asks \"Is that correct?\" to confirm their understanding of the energy requirements for modular DAC deployment.",
+            "provide supporting evidence": "The utterance provides evidence that deploying DAC units in cities and running them off electricity is not as efficient, supporting the idea that thermal energy is a key requirement."
         }
     },
     {
@@ -81,9 +82,9 @@
         "start_time": "01:55",
         "end_time": "02:05",
         "annotations": {
-            "expand on existing idea": "ER expands on their previous idea of using city sensors for CO2 measurement by suggesting that cities often have local plants that could provide the necessary heat for DAC systems.",
-            "provide supporting evidence": "ER supports their idea by pointing out the existence of local plants as a heat source for DAC systems in cities.",
-            "acknowledge contribution": "ER acknowledges KS's point about the difficulty of modular deployment due to energy requirements by saying \"I understand that problem.\""
+            "expand on existing idea": "ER is building on KS's point about the thermal energy requirements of direct air capture (DAC) in cities, adding that many cities have local plants that could provide steam heat.",
+            "express agreement": "ER acknowledges KS's point about the thermal energy requirements of DAC in cities by saying 'yeah, I understand that problem'.",
+            "provide supporting evidence": "ER provides supporting evidence by stating that many cities have local plants that provide steam heat, suggesting DAC could work in those cases."
         }
     },
     {
@@ -103,8 +104,7 @@
         "start_time": "02:10",
         "end_time": "02:20",
         "annotations": {
-            "ask clarifying question": "GM asks Alyssa to elaborate on CO2 storage approaches, both current and future, following the discussion on CO2 capture in urban and rural settings.",
-            "encourage particpatioin": "GM directly addresses Alyssa, inviting her to share her expertise on CO2 storage after the previous speakers discussed CO2 capture locations."
+            "ask clarifying question": "GM is asking AP about the current and future approaches for storing captured CO2, seeking more information on the topic that was previously discussed."
         }
     },
     {
@@ -123,11 +123,11 @@
         "screenshare_content": "None",
         "start_time": "02:20",
         "end_time": "02:51",
-        "annotations": {
-            "acknowledge contribution": "AP acknowledges Kristen's and GM's comments and questions, stating that she will address them.",
-            "explain or define term or concept": "AP explains the energy requirements of CO2 capture materials and the regeneration process involved.",
-            "provide supporting evidence": "AP supports her explanation by detailing the energy input required for binding and releasing CO2, emphasizing its impact on net carbon sink and energy penalty."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker explains that when developing CO2 capture materials, energy must be put in to bind and pull down the CO2, and then energy must be put back in for regeneration."
+            }
+        ]
     },
     {
         "speaker": "AP",
@@ -145,28 +145,17 @@
         "screenshare_content": "None",
         "start_time": "02:52",
         "end_time": "05:00",
-        "annotations": {
-            "explain or define term or concept": [
-                "Explains why waste heat is used by power producers for carbon capture, defining the temperature range and the reason behind its perceived cost-effectiveness.",
-                "Defines current regeneration methods as temperature or pressure swings or a combination, and introduces the concept of non-thermal regeneration methods.",
-                "Explains that enhanced oil recovery is currently the most economically viable CO2 storage method due to existing market demand."
-            ],
-            "present new idea": [
-                "Introduces the idea of using alternative energy sources like microwave, plasma, and radio frequency for regeneration in carbon capture.",
-                "Poses the question of whether non-thermal regeneration is possible, suggesting a novel research direction."
-            ],
-            "ask clarifying question": [
-                "Questions the current practice of using heat for regeneration, prompting discussion on alternative approaches."
-            ],
-            "provide supporting evidence": [
-                "Supports the explanation of waste heat usage with the temperature range (120-140 degrees C) and the rationale behind its perceived cost-effectiveness.",
-                "Justifies the current focus on enhanced oil recovery for CO2 storage by citing its economic viability and market demand."
-            ],
-            "acknowledge contribution": [
-                "Acknowledges Kristen's earlier comments regarding the challenges of modular deployment and the need for a heat source.",
-                "Acknowledges Gary's question about CO2 storage approaches."
-            ]
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker explains that waste heat from power producers is used because the temperature is around 120-140 degrees C, which is not very high, and this is considered a cost-effective approach."
+            },
+            {
+                "present new idea": "The speaker presents the idea of using alternative energy sources like microwave, plasma, or radio frequency for CO2 regeneration instead of heat, which is a new question being asked."
+            },
+            {
+                "expand on existing idea": "The speaker expands on the discussion about CO2 capture and storage by mentioning that enhanced oil recovery is currently the most economically viable option due to the existing market."
+            }
+        ]
     },
     {
         "speaker": "GS",
@@ -185,8 +174,7 @@
         "start_time": "05:01",
         "end_time": "05:05",
         "annotations": {
-            "ask clarifying question": "GS asks if anyone in the group is working on CO2 capture materials or separation technology, seeking information or clarification on current research efforts related to the keynote topic.",
-            "encourage particpatioin": "GS directs his question to the entire group, inviting broader participation and input from other members."
+            "ask clarifying question": "GS is asking the group if anyone is working on materials that would capture CO2 or separation technology, seeking to understand the current research focus of the team."
         }
     },
     {
@@ -205,10 +193,11 @@
         "screenshare_content": "None",
         "start_time": "05:09",
         "end_time": "05:16",
-        "annotations": {
-            "present new idea": "CG introduces their work on electrochemical direct air capture, a specific approach to DAC not previously discussed in detail.",
-            "explain or define term or concept": "CG clarifies that the materials used in their electrochemical direct air capture method are typically in aqueous solutions, explaining a technical aspect of their work."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is defining the type of direct air capture they are working on, specifying that it is electrochemical and involves materials in aqueous solutions, which clarifies the specific approach being used."
+            }
+        ]
     },
     {
         "speaker": "FR",
@@ -227,8 +216,7 @@
         "start_time": "05:16",
         "end_time": "05:22",
         "annotations": {
-            "present new idea": "FR introduces their team's work on solid materials for CO2 capture, which had not been mentioned by previous speakers in this specific context of material science.",
-            "provide supporting evidence": "FR supports their team's expertise by specifying the type of materials they work with, i.e. mini sorbent materials, providing evidence of their involvement in the discussed research area."
+            "present new idea": "FR is introducing their work on solid materials for CO2 capture, which is a new topic in the conversation."
         }
     },
     {
@@ -248,8 +236,7 @@
         "start_time": "05:23",
         "end_time": "05:34",
         "annotations": {
-            "present new idea": "VP introduces their work on mineral carbonation and algae growth for direct air capture, which had not been previously discussed.",
-            "express enthusiasm": "VP expresses interest in exploring direct air capture options using algae, indicating enthusiasm for this research area."
+            "present new idea": "VP introduces a new idea of using algae for direct capture, which hasn't been explicitly mentioned before."
         }
     },
     {
@@ -269,10 +256,15 @@
         "start_time": "10:00",
         "end_time": "10:19",
         "annotations": {
-            "explain or define term or concept": "AP explains the overlapping fundamental expertise areas and different roles that the group members have.",
-            "propose decision": "AP proposes that focusing on one approach over another would be going in the wrong direction, suggesting the group should consider multiple approaches.",
-            "offer constructive criticism": "AP gently criticizes the potential for the group to focus too narrowly on one approach, suggesting a broader perspective.",
-            "express alternative decision": "AP rejects the implied decision of focusing on a single approach and suggests considering the diverse roles and expertise within the group."
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges the different areas of expertise of the team members, recognizing their individual contributions."
+            },
+            "express enthusiasm": {
+                "Explanation": "The speaker expresses optimism about bringing the team together to advance science."
+            },
+            "reject idea": {
+                "Explanation": "The speaker rejects the idea of prioritizing one approach over another, suggesting it would be a wrong direction."
+            }
         }
     },
     {
@@ -292,10 +284,15 @@
         "start_time": "10:22",
         "end_time": "11:04",
         "annotations": {
-            "propose decision": "AP suggests the group discuss the placement and challenges of combining DAC and conversion/utilization, focusing on location considerations like ocean platforms, remote areas, or urban systems.",
-            "explain or define term or concept": "AP clarifies that the group lacks expertise in atmospheric simulation, highlighting the need for external input or alternative approaches.",
-            "encourage particpatioin": "AP encourages the group's participation in discussing the optimal placement and associated challenges of DAC and conversion/utilization.",
-            "ask clarifying question": "AP asks the group to consider the challenges, opportunities, and relevant questions regarding the placement of DAC and conversion/utilization technologies in different locations."
+            "propose decision": {
+                "Explanation": "The speaker suggests having a discussion about the best place to put direct air capture (DAC) and conversion technologies, framing it as a potentially easier question to address."
+            },
+            "present new idea": {
+                "Explanation": "The speaker introduces the idea of discussing the optimal location for DAC and conversion technologies, including the possibility of placing them on ocean platforms, which hasn't been explicitly discussed before."
+            },
+            "encourage particpatioin": {
+                "Explanation": "The speaker is encouraging the group to think about the challenges, opportunities, and questions related to placing DAC and conversion technologies in different locations."
+            }
         }
     },
     {
@@ -315,8 +312,7 @@
         "start_time": "11:04",
         "end_time": "11:16",
         "annotations": {
-            "ask clarifying question": "Gary is asking Alyssa to clarify the optimal placement strategy for direct air capture and CO2 utilization technologies based on her prior explanations.",
-            "acknowledge contribution": "Gary begins by acknowledging Alyssa's teaching and expertise on the subject."
+            "ask clarifying question": "GM is asking Alyssa if it makes sense to have decentralized CO2 capture and storage, building on Alyssa's previous explanations of different approaches to CO2 capture and storage."
         }
     },
     {
@@ -335,12 +331,14 @@
         "screenshare_content": "None",
         "start_time": "11:17",
         "end_time": "12:24",
-        "annotations": {
-            "explain or define term or concept": "Alyssa explains the concept of distributed renewable energy and its impact on climate change.",
-            "ask clarifying question": "Alyssa asks the group for their opinion on the impact of rooftop solar compared to concentrated solar farms.",
-            "provide supporting evidence": "Alyssa supports her point about the debate around rooftop solar by mentioning some studies and public acceptance of renewable energy.",
-            "present new idea": "Alyssa introduces the idea of comparing the distribution of renewable energy to the distribution of DAC technology."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining the complexities and uncertainties surrounding CO2 capture and renewable energy distribution, highlighting the lack of definitive answers and the ongoing debates in these fields, which is similar to defining a concept."
+            },
+            {
+                "ask clarifying question": "The speaker poses a question about the impact of rooftop solar compared to concentrated solar farms, seeking input from the group to clarify the issue, which is similar to asking a clarifying question."
+            }
+        ]
     },
     {
         "speaker": "AP",
@@ -359,7 +357,7 @@
         "start_time": "12:25",
         "end_time": "12:25",
         "annotations": {
-            "None": "This single word utterance does not fit any of the provided codes related to scientific collaboration and discussion."
+            "acknowledge contribution": "The speaker is acknowledging Alyssa, possibly to invite her to speak or to recognize her presence, but without agreeing or expanding on any specific point."
         }
     },
     {
@@ -379,8 +377,7 @@
         "start_time": "12:25",
         "end_time": "13:11",
         "annotations": {
-            "ask clarifying question": "PB asks a clarifying question about the potential for net CO2 reduction when converting CO2 into value-added chemicals, considering the energy input required.",
-            "explain or define term or concept": "PB explains the thermodynamic properties of CO2 and the carbon cost associated with its conversion into useful chemicals."
+            "ask clarifying question": "PB is asking a question about the possibility of net CO2 reduction in CO2 conversion processes, seeking clarification on which chemicals or processes might achieve this, given the energy input required, which is a request for explanation."
         }
     },
     {
@@ -400,8 +397,8 @@
         "start_time": "13:12",
         "end_time": "13:17",
         "annotations": {
-            "acknowledge contribution": "Alyssa acknowledges PB's question about CO2 conversion and its carbon cost as a \"good question.\"",
-            "encourage particpatioin": "Alyssa encourages the group to participate by asking, \"Who wants to volunteer?\""
+            "acknowledge contribution": "The speaker acknowledges the previous question as a good one.",
+            "encourage particpatioin": "The speaker encourages others to volunteer answers to the question."
         }
     },
     {
@@ -421,7 +418,7 @@
         "start_time": "13:28",
         "end_time": "13:31",
         "annotations": {
-            "explain or define term or concept": "CG clarifies their work by specifying it as \"structure chemical capture.\""
+            "explain or define term or concept": "CG is explaining the type of work they are doing in response to AP's question about who is working on materials that would capture CO2, defining their area as structure chemical capture."
         }
     },
     {
@@ -441,7 +438,7 @@
         "start_time": "13:32",
         "end_time": "13:33",
         "annotations": {
-            "acknowledge contribution": "Alyssa acknowledges CG's contribution about doing structural chemical capture by repeating the word \"capture\"."
+            "acknowledge contribution": "The speaker acknowledges the previous speaker's contribution, but does not agree or expand on it."
         }
     },
     {
@@ -460,12 +457,14 @@
         "screenshare_content": "None",
         "start_time": "13:34",
         "end_time": "14:21",
-        "annotations": {
-            "provide supporting evidence": "CG provides evidence about the limited impact of using CO2 for resources like plastics and the need for sequestration.",
-            "expand on existing idea": "CG expands on the discussion of CO2 conversion by suggesting the creation of chemicals that are easier to sequester than CO2 itself.",
-            "present new idea": "CG introduces the idea of creating chemicals easier to sequester than CO2, which hasn't been previously mentioned.",
-            "ask clarifying question": "CG asks if it's possible to create more easily sequestered chemicals with less energy."
-        }
+        "annotations": [
+            {
+                "present new idea": "The speaker introduces the idea of making chemicals that are easier to sequester than CO2 itself, which hasn't been explored much, in response to a question about CO2 conversion and utilization."
+            },
+            {
+                "expand on existing idea": "The speaker expands on the idea of CO2 conversion by suggesting that even if valuable chemicals are made, the amount used might not significantly change the CO2 balance, building on the previous discussion about CO2 conversion and utilization."
+            }
+        ]
     },
     {
         "speaker": "AP",
@@ -483,10 +482,13 @@
         "screenshare_content": "None",
         "start_time": "14:22",
         "end_time": "14:50",
-        "annotations": {
-            "provide_supporting_evidence": "AP provides a hypothetical scenario of converting CO2 to solid carbon using excess energy from a nuclear power source on a Navy platform in the ocean as a supporting example for CG's idea about creating chemicals easier to sequester than CO2.",
-            "expand_on_existing_idea": "AP builds upon CG's idea by providing a specific example of a chemical (pure carbon) that is easier to sequester than CO2 in a supercritical state.",
-            "explain_or_define_term_or_concept": "AP explains the concept of converting CO2 into a more easily sequesterable form, solid carbon, using excess energy from a hypothetical nuclear power source on a Navy platform."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "AP is expanding on the previous discussion about CO2 conversion and utilization by providing a specific example of converting CO2 to carbon in a remote location with access to nuclear power."
+            },
+            {
+                "provide supporting evidence": "AP provides a hypothetical scenario with nuclear power in the middle of the ocean to support the idea of converting CO2 to carbon, highlighting the ease of disposal in solid form."
+            }
+        ]
     }
 ]

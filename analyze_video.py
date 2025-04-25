@@ -36,6 +36,7 @@ def init():
     Notes:
     If uncertain about a label due to poor visibility, return [low confidence] next to the annotation.
     Ensure timestamps, speaker IDs, and behavior annotations are consistent throughout the video.
+    For transcripts, remove filler words unless meaningful and return one long string without line breaks or paragraph breaks.s
 
     Input:
     A video recording of a zoom meeting among a team of scientists from diverse backgrounds engaged in a collaborative task.
@@ -71,6 +72,25 @@ def init():
 def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
+
+def sanitize_name(name, replace_char='_'):
+    """
+    Sanitize a name by replacing spaces and hyphens with underscores.
+    
+    Args:
+        name: The name to sanitize
+        replace_char: Character to use as replacement for spaces and hyphens
+        
+    Returns:
+        A sanitized version of the name
+    """
+    # Normalize Unicode characters (e.g., convert 'é' to 'e')
+    name = unicodedata.normalize('NFKD', name)
+    
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
 
 # get all the video files (scialog directory is categorized by folders of each conference)
 def get_video_in_folders(directory):
@@ -448,19 +468,26 @@ def analyze_video(client, path_dict, prompt, dir):
     cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
     folder_name = os.path.basename(dir)
+    
+    # Create the base outputs directory
+    base_output_dir = os.path.join(cur_dir, "outputs", folder_name)
+    os.makedirs(base_output_dir, exist_ok=True)
+    
     for file_name in n_path_dict.keys():
         list_chunks = n_path_dict[file_name]
-        output_dir = f"{cur_dir}/outputs/{folder_name}/output-{file_name}"
+        # Sanitize the output directory name
+        safe_file_name = sanitize_name(file_name)
+        output_dir = os.path.join(base_output_dir, f"output_{safe_file_name}")
         os.makedirs(output_dir, exist_ok=True)
 
         for m in range(len(list_chunks)):
             # [chunk file name, full path to this video, gemini upload file name, analysis status]
             file_name = list_chunks[m][0]
-
             fileName, file_extension = os.path.splitext(file_name)
             file_path = list_chunks[m][1]
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
+            
             if not analyzed:
                 print(f"Analyzing {file_name}")
                 video_file, gemini_name = get_gemini_video(client, file_name, file_path, gemini_name)
@@ -470,13 +497,14 @@ def analyze_video(client, path_dict, prompt, dir):
                     if response:
                         print(f"Trying to save output for {file_name} to json file")
                         try:
-                            save_to_json(response.text, file_name, f"{output_dir}/")
+                            # Remove trailing slash and use os.path.join
+                            save_to_json(response.text, file_name, output_dir)
                             list_chunks[m][3] = True
                         except ValueError:
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
                             if response:
                                 try:
-                                    save_to_json(response.text, fileName, f"{output_dir}/")
+                                    save_to_json(response.text, fileName, output_dir)
                                     list_chunks[m][3] = True
                                 except Exception as e:
                                     print(f"Still can't get the output to workout: {file_name}")
@@ -495,17 +523,30 @@ def analyze_video(client, path_dict, prompt, dir):
     return n_path_dict
 
 # Save data to a JSON file in the specified directory
-def save_to_json(response, filename, destdir):
-    """Save Gemini API response to a JSON file, handling various response formats"""
-    fileName, file_extension = os.path.splitext(filename)
-    output_file_path = destdir + fileName + ".json"
-    output_file_path = sanitize_name(output_file_path)
-    jres = response.strip()  # Remove any leading/trailing whitespace
+def save_to_json(text, file_name, output_dir):
+    """
+    Save the analysis text to a JSON file, handling various response formats
     
-    # Handle code block markers more robustly
-    if '```' in jres:
+    Args:
+        text (str): The text to save (can be JSON or plain text)
+        file_name (str): The name of the file being analyzed
+        output_dir (str): The directory to save the output to
+    """
+    # Ensure the output directory exists
+    output_dir = sanitize_name(output_dir)
+    os.makedirs(output_dir, exist_ok=True)
+    
+    file_name = sanitize_name(file_name)
+    # Construct the output file path using os.path.join
+    output_file = os.path.join(output_dir, f"{file_name}.json")
+    
+    # Clean the input text
+    text = text.strip()  # Remove any leading/trailing whitespace
+    
+    # Handle code block markers
+    if '```' in text:
         # Split by ``` and look for the JSON content
-        blocks = jres.split('```')
+        blocks = text.split('```')
         for block in blocks:
             # Skip empty blocks
             if not block.strip():
@@ -516,34 +557,35 @@ def save_to_json(response, filename, destdir):
                 # Try to parse this block as JSON
                 parsed_json = json.loads(block)
                 # If we successfully parsed JSON, use this block
-                jres = block
+                text = block
                 break
             except json.JSONDecodeError:
                 continue
     
-    # Try to parse the cleaned JSON
+    # Try to parse as JSON first
     try:
-        parsed_json = json.loads(jres)
-        with open(output_file_path, 'w') as json_file:
-            json.dump(parsed_json, json_file, indent=4)
-        print(f"Successfully saved JSON to {output_file_path}")
+        parsed_json = json.loads(text)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(parsed_json, f, ensure_ascii=False, indent=4)
+        print(f"Successfully saved JSON to {output_file}")
         return
     except json.JSONDecodeError as e:
         print(f"JSONDecodeError: {e}")
         print("Attempting to fix the JSON format...")
-         # Attempt to fix the JSON format by removing any trailing characters
-        jres_fixed = jres[:e.pos]
+        # Attempt to fix the JSON format by removing any trailing characters
+        text_fixed = text[:e.pos]
         try:
-            parsed_json = json.loads(jres_fixed)
-            with open(output_file_path, 'w') as json_file:
-                json.dump(parsed_json, json_file, indent=4)
+            parsed_json = json.loads(text_fixed)
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(parsed_json, f, ensure_ascii=False, indent=4)
+            print(f"Successfully saved fixed JSON to {output_file}")
         except json.JSONDecodeError as e:
             print(f"Failed to fix JSON format: {e}")
-            print("Saving the original response text to the file for manual inspection.")
-            with open(output_file_path, 'w') as json_file:
-                json_file.write(jres)
-            raise ValueError("Could not fix the error; try to run the prompt again.")
-         
+            print("Saving as plain text wrapped in a JSON object")
+            # Fall back to saving as plain text in a JSON wrapper
+            output_dict = {"text": text}
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
@@ -777,7 +819,7 @@ def main(vid_dir, process_video):
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
-    annotate_and_merge(client, path_dict, f"{cur_dir}/outputs/{folder_name}", codebook)
+    
     return path_dict
 
 

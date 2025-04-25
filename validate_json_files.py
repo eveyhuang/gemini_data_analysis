@@ -3,6 +3,8 @@ import os
 from pathlib import Path
 import unicodedata
 import re
+import argparse
+
 def is_valid_json_file(file_path):
     """
     Check if a file contains valid and non-empty JSON.
@@ -30,13 +32,13 @@ def sanitize_name(name, replace_char='_'):
         A sanitized version of the name
     """
     # Normalize Unicode characters (e.g., convert 'é' to 'e')
-    # name = unicodedata.normalize('NFKD', name)
+    name = unicodedata.normalize('NFKD', name)
     
-    # sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
-    # sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
-    # sanitized = sanitized.strip(replace_char)
-    # return sanitized
-    return name
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
+    # return name
 
 def validate_and_update_path_dict(path_dict_file, base_output_dir):
     """
@@ -56,7 +58,8 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
     # Process each key-value pair
     for key, file_lists in updated_dict.items():
         # Get the directory name from the key (split by / and take the last part)
-        dir_name = f"output-{sanitize_name(key)}"
+        # dir_name = f"output-{sanitize_name(key)}"
+        dir_name = f"output_{sanitize_name(key)}"
         
         
         for file_list in file_lists:
@@ -65,7 +68,8 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
             base_name = sanitize_name(base_name)
             
             # Construct the expected JSON file path
-            json_file = os.path.join(base_output_dir, dir_name, f"{base_name}.mp4.json")
+            # json_file = os.path.join(base_output_dir, dir_name, f"{base_name}.mp4.json")
+            json_file = os.path.join(base_output_dir, dir_name, f"{base_name}.json")
             
             # Check if the JSON file exists and is valid
             if file_list[3]:  # Only check files marked as True
@@ -99,15 +103,25 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
     return updated_dict
 
 def main():
-    # File paths
-    path_dict_file = "2021MND_path_dict.json"
-    output_dir = "outputs/2021MND"
-    output_file = "2021MND_path_dict_validated.json"
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description='Validate JSON files and update path dictionary.')
+    parser.add_argument('path_dict_file', help='Path to the path dictionary JSON file')
+    parser.add_argument('output_dir', help='Path to the output directory')
+    
+    args = parser.parse_args()
+    
+    # Extract base name from path_dict_file to construct output file name
+    path_dict_base = os.path.splitext(os.path.basename(args.path_dict_file))[0]
+    if path_dict_base.endswith('_path_dict'):
+        base_name = path_dict_base[:-10]  # Remove '_path_dict' suffix
+    else:
+        base_name = path_dict_base
+    output_file = f"{base_name}_path_dict_validated.json"
     
     # Get absolute paths
     workspace_dir = os.path.dirname(os.path.abspath(__file__))
-    path_dict_path = os.path.join(workspace_dir, path_dict_file)
-    base_output_dir = os.path.join(workspace_dir, output_dir)
+    path_dict_path = os.path.join(workspace_dir, args.path_dict_file)
+    base_output_dir = os.path.join(workspace_dir, args.output_dir)
     
     print(f"Validating JSON files...")
     print(f"Path dictionary: {path_dict_path}")
