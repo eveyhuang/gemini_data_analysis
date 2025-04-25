@@ -311,25 +311,6 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     
     return chunk_paths
 
-def sanitize_name(name, replace_char='_'):
-    """
-    Sanitize a name by replacing spaces and hyphens with underscores.
-    
-    Args:
-        name: The name to sanitize
-        replace_char: Character to use as replacement for spaces and hyphens
-        
-    Returns:
-        A sanitized version of the name
-    """
-    # Normalize Unicode characters (e.g., convert 'é' to 'e')
-    name = unicodedata.normalize('NFKD', name)
-    
-    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
-    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
-    sanitized = sanitized.strip(replace_char)
-    return sanitized
-
 # Process all videos in a directory, splitting them if necessary
 def process_videos_in_directory(directory):
     
