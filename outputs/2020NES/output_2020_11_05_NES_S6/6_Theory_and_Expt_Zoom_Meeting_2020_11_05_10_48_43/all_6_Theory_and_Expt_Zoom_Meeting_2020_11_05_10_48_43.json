@@ -16,7 +16,7 @@
         "start_time": "00:00",
         "end_time": "00:02",
         "annotations": {
-            "ask clarifying question": "SB asks for confirmation about the necessity of having a theory, indicating a desire for clarification on the importance of theory in their current discussion."
+            "ask clarifying question": "The speaker is seeking confirmation or validation of the necessity of having a theory, which implies they are asking for clarification on its importance or role."
         }
     },
     {
@@ -36,7 +36,7 @@
         "start_time": "00:02",
         "end_time": "00:05",
         "annotations": {
-            "expand on existing idea": "LL builds upon the prior discussion about theory by connecting it to the concept of scaling."
+            "expand on existing idea": "LL is building upon the previous statement about theory by introducing the concept of 'scaling stuff,' suggesting a connection or progression of thought."
         }
     },
     {
@@ -56,7 +56,7 @@
         "start_time": "00:05",
         "end_time": "00:17",
         "annotations": {
-            "ask clarifying question": "SB is asking for clarification on what aspects of the theory are still needed to inform their work, building upon the prior discussion of theory and scaling."
+            "ask clarifying question": "SB is asking what the theory will provide, seeking clarification on its purpose and benefits based on the previous discussion about theory."
         }
     },
     {
@@ -76,7 +76,7 @@
         "start_time": "00:18",
         "end_time": "00:22",
         "annotations": {
-            "express humor": "The phrase \"Oh boy, right away, I think\" is delivered sarcastically, suggesting that the speaker is overwhelmed by the question and doesn't have a ready answer, which can be interpreted as humorous self-deprecation."
+            "express humor": "The speaker says \"Oh boy, right away, I think\" which is a humorous response to the previous question about what is missing from the theory."
         }
     },
     {
@@ -96,8 +96,7 @@
         "start_time": "00:22",
         "end_time": "00:35",
         "annotations": {
-            "expand on existing idea": "SB builds upon the prior discussion of theory by suggesting it should be applicable to everyone and provides an example of taking a reaction down one route versus another.",
-            "ask clarifying question": "SB is asking what is missing from the current theory that would make it more useful for the entire group by giving the example of different reaction routes."
+            "expand on existing idea": "SB is elaborating on the need for theory, building upon the previous discussion about theory and scaling."
         }
     },
     {
@@ -117,10 +116,9 @@
         "start_time": "00:35",
         "end_time": "01:51",
         "annotations": {
-            "expand on existing idea": "SM expands on the earlier discussion of theory by explaining the challenges of aligning theoretical work with experimentalists' varying interests and the need for team science.",
-            "explain or define term or concept": "SM explains the different focuses of experimentalists, such as synthetic chemists prioritizing product distributions over mechanisms or rates.",
-            "provide supporting evidence": "SM supports the argument for team science with their own experience of the limitations of working with single experimentalists.",
-            "present new idea": "SM introduces the idea of needing a team of experimentalists with diverse interests to effectively collaborate with theorists and bridge the gaps in research."
+            "expand on existing idea": "The speaker expands on the idea of needing theory by stating that most fields are moving towards teams of people, and that you need a team because each person has their own individual interest as far as experimentalists go.",
+            "provide supporting evidence": "The speaker supports the idea that theory can contribute by identifying product distributions and pathways, providing reasoning based on the different interests of experimentalists.",
+            "present new idea": "The speaker introduces the idea that finding the right experimentalist group interested in going the whole way is crucial, which is a novel suggestion in the context of the discussion."
         }
     },
     {
@@ -139,13 +137,12 @@
         "screenshare_content": "Same document.",
         "start_time": "01:51",
         "end_time": "02:14",
-        "annotations": {
-            "acknowledge contribution": "SB acknowledges the value of SM's prior contribution by saying \"That's great.\"",
-            "expand on existing idea": "SB expands on the prior discussion of team science by introducing SciLock as a platform that supports teams.",
-            "present new idea": "SB introduces machine learning as a new topic for discussion, referencing a prior mention by Jose.",
-            "encourage particpatioin": "SB encourages Jose to participate by directly asking him about the opportunities and challenges in machine learning.",
-            "ask clarifying question": "SB asks clarifying questions to Jose about the opportunities and challenges related to machine learning in the context of their discussion."
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": "SB acknowledges SM's contribution in the previous turn, but does not agree or expand on it.",
+                "encourage particpatioin": "SB invites Jose to contribute by asking about his opportunities and challenges with machine learning, following up on Jose's earlier mention of machine learning."
+            }
+        ]
     },
     {
         "speaker": "JM",
@@ -164,10 +161,9 @@
         "start_time": "02:15",
         "end_time": "04:50",
         "annotations": {
-            "explain or define term or concept": "JM explains that machine learning is useful for multi-dimensional analysis, especially in structure-property relationships, and can reduce complex data into understandable components.",
-            "present new idea": "JM suggests that negative results from experiments and discarded data from MD simulations could be valuable for machine learning models.",
-            "provide supporting evidence": "JM refers to a three-year-old paper on organic synthesis where a machine learning model trained on negative results successfully predicted reaction paths and optimal conditions.",
-            "expand on existing idea": "JM builds on the idea of machine learning by emphasizing the importance of data quantity, accuracy, and reproducibility for better model performance."
+            "explain or define term or concept": "The speaker explains that machine learning is a multi-dimensional analysis, especially for structure property relationships, and that it can reduce complex data to a component understandable by a human brain.",
+            "provide supporting evidence": "The speaker provides supporting evidence by mentioning a paper where a machine learning model was trained with negative results of experiments to predict the right reaction path and conditions.",
+            "expand on existing idea": "The speaker expands on the idea of using machine learning by suggesting that more data, even from sources considered waste, could be useful for improving models."
         }
     },
     {
@@ -186,12 +182,17 @@
         "screenshare_content": "Same document.",
         "start_time": "04:50",
         "end_time": "06:09",
-        "annotations": {
-            "expand on existing idea": "YL expands on JM's points about machine learning by providing specific examples of how it is useful in their research, particularly in AB initial molecular dynamics and studying various electro compasses.",
-            "provide supporting evidence": "YL supports their claim about the usefulness of machine learning by explaining how it reduces the computational cost of sampling numerous structures in molecular dynamics simulations.",
-            "explain or define term or concept": "YL explains their research process involving AB initial molecular dynamics, sampling structures, and using density functional theory, providing context for their use of machine learning.",
-            "acknowledge contribution": "YL begins by acknowledging and following up on JM's earlier points about machine learning."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "YL is building on Jose's points about machine learning by providing a specific example of how it's useful in their research, adding details about AB initial molecular dynamics and computational expense."
+            },
+            {
+                "provide supporting evidence": "YL provides supporting evidence for the usefulness of machine learning by explaining how it reduces computational expense in their research by sampling hundreds of thousands of structures."
+            },
+            {
+                "explain or define term or concept": "YL explains the concept of AB initial molecular dynamics and density functional theory (DFT) in the context of their research."
+            }
+        ]
     },
     {
         "speaker": "SB",
@@ -210,8 +211,8 @@
         "start_time": "06:09",
         "end_time": "06:15",
         "annotations": {
-            "ask clarifying question": "SB asks for clarification on how machine learning can be applied to experimental work, following up on the previous discussion of machine learning in computational chemistry.",
-            "encourage particpatioin": "SB directly asks experimentalists in the group to share their perspectives on using machine learning in their work."
+            "express enthusiasm": "The phrase \"Very cool\" expresses enthusiasm about the previous speaker's contribution.",
+            "encourage particpatioin": "SB is inviting others to contribute to the discussion by asking about machine learning for experimentalists."
         }
     },
     {
@@ -230,12 +231,14 @@
         "screenshare_content": "Same document.",
         "start_time": "06:15",
         "end_time": "07:01",
-        "annotations": {
-            "expand on existing idea": "RG expands on YL and JM's points about using machine learning by discussing the challenges of needing substantial high-quality reference data.",
-            "provide supporting evidence": "RG supports his claim by pointing to the large amounts of data needed for predictive models in both experimental and quantum chemistry-based machine learning.",
-            "explain or define term or concept": "RG explains the importance of high-quality reference data in building effective machine learning models.",
-            "acknowledge contribution": "RG acknowledges both JM's and YL/UA's contributions regarding the use of machine learning."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "RG is building on the previous discussion about machine learning, specifically addressing the challenges related to the amount of high-quality reference data needed, which was initiated by Jose and YL."
+            },
+            {
+                "provide supporting evidence": "RG supports the idea that machine learning can be useful, but emphasizes that it requires a massive amount of high-quality reference data, referencing Jose's and YL's points about machine learning based on experimental data and quantum chemistry, respectively."
+            }
+        ]
     },
     {
         "speaker": "YL",
@@ -254,9 +257,15 @@
         "start_time": "07:01",
         "end_time": "08:09",
         "annotations": {
-            "provide supporting evidence": "YL supports RG's point about the importance of high-quality data by providing examples of machine learning papers that use limited datasets and inaccurate computational methods, leading to wrong predictions.",
-            "expand on existing idea": "YL expands on the previously discussed topic of machine learning challenges by focusing on the issue of data quality and its impact on prediction accuracy.",
-            "offer constructive criticism": "YL critiques the current practices in machine learning research, particularly the use of limited and low-quality data, which leads to inaccurate predictions."
+            "express agreement": {
+                "Explanation": "The speaker starts by explicitly agreeing with the previous speaker's point about the challenges of machine learning, specifically the need for high-quality reference data."
+            },
+            "provide supporting evidence": {
+                "Explanation": "The speaker provides supporting evidence by describing a common issue in machine learning papers where models are trained on limited and potentially inaccurate data, leading to wrong predictions, thus supporting the need for high-quality data."
+            },
+            "offer constructive criticism": {
+                "Explanation": "The speaker offers constructive criticism by pointing out the problematic computational methods used in some machine learning papers for predicting material properties, suggesting a need for more attention to data quality in the field."
+            }
         }
     },
     {
@@ -275,10 +284,12 @@
         "screenshare_content": "Same document.",
         "start_time": "08:09",
         "end_time": "08:32",
-        "annotations": {
-            "expand on existing idea": "The speaker builds upon the prior discussion of machine learning and data by suggesting that data curation could be a point of connection between experimental and theoretical approaches.",
-            "encourage particpatioin": "The speaker directly addresses Caleb and Lindsey, inviting them to share their perspectives on the role of machine learning in large-scale measurements, imaging, or spectroscopy."
-        }
+        "annotations": [
+            {
+                "present new idea": "The utterance introduces the idea of data collision or curation as a point where experiment and theory can feed off each other, which is a novel concept in the context of the discussion.",
+                "encourage particpatioin": "The utterance directly asks Caleb Lindsey for their opinion on machine learning for experiments, encouraging them to participate in the discussion."
+            }
+        ]
     },
     {
         "speaker": "CH",
@@ -296,11 +307,17 @@
         "screenshare_content": "Same document.",
         "start_time": "08:32",
         "end_time": "09:17",
-        "annotations": {
-            "provide supporting evidence": "CH explains how their team uses single entity measurements to generate large amounts of experimental data that can be used in machine learning models, supporting the idea of using machine learning in experimental science.",
-            "expand on existing idea": "CH builds on the previous discussion of machine learning by describing how their team is interested in using it for screening large ensembles on the single entity side.",
-            "ask clarifying question": "CH asks clarifying questions about what specific parameters should be considered when using machine learning, such as variations in composition, size, geometry, and site density."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "CH is building on the previous discussion about machine learning for experimentalists, adding details about their interest in using it for screening large ensembles on the single entity side, expanding on the potential of machine learning in experimental settings."
+            },
+            {
+                "present new idea": "CH presents the idea of using machine learning to screen large ensembles of single entities, which is a novel application of machine learning in their specific experimental context."
+            },
+            {
+                "explain or define term or concept": "CH is explaining the factors that they are considering when using machine learning, such as variations in composition, size, geometry, and site density, clarifying the parameters they are interested in."
+            }
+        ]
     },
     {
         "speaker": "LS",
@@ -319,9 +336,10 @@
         "start_time": "09:18",
         "end_time": "10:00",
         "annotations": {
-            "provide supporting evidence": "LS explains their group's approach, which involves balancing ab initio equations and a smaller dataset, focusing on accurate fundamental measurements, to support their point about the challenges of machine learning requiring large datasets.",
-            "explain or define term or concept": "LS defines their group's research approach as a balance between ab initio equations and a smaller set of data, contrasting it with high-throughput studies and emphasizing deep insight measurements.",
-            "present new idea": "LS introduces the idea of their collaboration with another group that uses a balanced approach between ab initio equations and a smaller dataset, instead of machine learning, for accurate measurements."
+            "expand on existing idea": "The speaker is building on the previous discussion about machine learning and data requirements, providing a specific example of a collaboration.",
+            "provide supporting evidence": "The speaker supports their point about data needs by describing their group's focus on accurate measurements rather than high-throughput studies, implying the difficulty of generating large datasets.",
+            "explain or define term or concept": "The speaker explains the approach of their collaboration, which balances ab initio equations with a smaller set of data, clarifying their methodology.",
+            "acknowledge contribution": "The speaker acknowledges the previous discussion about machine learning and data requirements."
         }
     },
     {
@@ -341,8 +359,8 @@
         "start_time": "10:00",
         "end_time": "10:08",
         "annotations": {
-            "expand on existing idea": "LS expands on the previous point about the limitations and potential of machine learning by suggesting a balance between equation-based and data-driven approaches.",
-            "ask clarifying question": "LS questions how to best combine equation-based and data-driven theoretical approaches to achieve optimal results."
+            "express agreement": "LS agrees with the previous discussion about the need for large datasets in machine learning.",
+            "ask clarifying question": "LS is unsure how to optimally combine theoretical equations with large experimental datasets."
         }
     },
     {
@@ -361,11 +379,17 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not clearly visible.",
         "start_time": "10:09",
         "end_time": "11:40",
-        "annotations": {
-            "provide supporting evidence": "FL supports the need for better data analysis methods by describing the large amounts of unanalyzed data they possess, including 1.5 million spectra from week-long experiments resulting in 8-10 terabytes of data, and the potential for high-throughput experiments at synchrotron facilities generating thousands of spectra daily.",
-            "present new idea": "FL introduces the idea of developing their own machine learning or advanced data analysis methods to handle the large datasets they are generating.",
-            "express frustation": "FL expresses frustration at the slow progress of data analysis, stating they are still analyzing data from a few years ago and haven't made much progress on streamlining high-throughput data analysis."
-        }
+        "annotations": [
+            {
+                "present new idea": "FL introduces the idea that they have large amounts of unanalyzed data from probing solid state materials, which is a new point in the conversation."
+            },
+            {
+                "provide supporting evidence": "FL provides supporting evidence by quantifying the amount of data they collect (1.5 million spectra, 8-10 terabytes) to emphasize the scale of the unanalyzed data problem."
+            },
+            {
+                "express frustation": "FL expresses frustration about the slow progress in analyzing the large datasets they have accumulated, indicating a problem they are facing."
+            }
+        ]
     },
     {
         "speaker": "SB",
@@ -383,11 +407,12 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not clearly visible.",
         "start_time": "11:40",
         "end_time": "12:13",
-        "annotations": {
-            "expand on existing idea": "SB expands on the previously discussed topic of machine learning and data analysis by suggesting the use of large synchrotrons for data collation and analysis.",
-            "propose decision": "SB proposes to move the discussion forward due to time constraints and checks with Jose if he has enough information for his presentation.",
-            "encourage particpatioin": "SB directly asks Jose for his input on whether he has sufficient information for his presentation or needs further clarification."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "SB is building on the previous discussion about large datasets and machine learning, particularly in the context of synchrotron data, by suggesting collating different types of data.",
+                "ask clarifying question": "SB is asking Jose if he has enough information for his presentation, seeking to fill any gaps in his understanding or data."
+            }
+        ]
     },
     {
         "speaker": "JM",
@@ -405,11 +430,11 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not clearly visible.",
         "start_time": "12:14",
         "end_time": "12:27",
-        "annotations": {
-            "assign task": "JM asks SB for help going through the points he wrote down.",
-            "express humor": "JM makes a joke about discovering something on Zoom and being like Harry Potter.",
-            "acknowledge contribution": "JM acknowledges his own effort in writing everything down on paper."
-        }
+        "annotations": [
+            {
+                "express humor": "The speaker makes a joke about discovering a feature on Zoom that makes them look like Harry Potter, indicating humor."
+            }
+        ]
     },
     {
         "speaker": "FL",
@@ -428,7 +453,7 @@
         "start_time": "12:28",
         "end_time": "12:30",
         "annotations": {
-            "express humor": "FL laughs in response to JM's joke about discovering a Zoom feature."
+            "express humor": "The utterance contains laughter, indicating humor."
         }
     },
     {
@@ -448,7 +473,7 @@
         "start_time": "12:31",
         "end_time": "12:33",
         "annotations": {
-            "ask clarifying question": "SB asks for clarification on what data is missing from JM's presentation about machine learning opportunities and challenges, following up on JM's request for help reviewing the points he has written down."
+            "express humor": "SB makes a joke about missing data, following JM's Harry Potter joke, to lighten the mood."
         }
     },
     {
@@ -468,7 +493,7 @@
         "start_time": "12:33",
         "end_time": "12:36",
         "annotations": {
-            "express humor": "Jose makes a lighthearted joke about being missing from the Zoom meeting, following a comment about missing data."
+            "express humor": "The speaker makes a joke about missing himself, following a comment about discovering a feature in Zoom, indicating an attempt to be humorous."
         }
     },
     {
@@ -488,8 +513,7 @@
         "start_time": "12:36",
         "end_time": "12:40",
         "annotations": {
-            "assign_task": "SB assigns JM the task of reviewing the points and confirming their completeness.",
-            "encourage_participation": "SB directly invites JM to participate by asking him to review the discussion points."
+            "ask clarifying question": "SB is asking JM to review the points to ensure they have been adequately captured, seeking clarification and confirmation that nothing is missing."
         }
     },
     {
@@ -508,11 +532,18 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not clearly visible.",
         "start_time": "12:40",
         "end_time": "13:06",
-        "annotations": {
-            "explain or define term or concept": "JM clarifies the reasoning behind his simplification efforts and presentation format, explaining that he aimed for conciseness due to time constraints and readability by avoiding a small font size.",
-            "ask clarifying question": "JM asks for feedback on his presentation points and seeks guidance on whether to present a summary or proceed differently.",
-            "propose decision": "JM proposes two alternative actions: either the other person reviews the points for completeness or JM presents a summary of the points and their meaning."
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": {
+                    "Explanation": "JM acknowledges that he tried his best to simplify the points, recognizing his own effort."
+                }
+            },
+            {
+                "ask clarifying question": {
+                    "Explanation": "JM asks if it's time to present or if SB has any other suggestions, seeking guidance on how to proceed."
+                }
+            }
+        ]
     },
     {
         "speaker": "SM",
@@ -531,11 +562,15 @@
         "start_time": "20:00",
         "end_time": "21:18",
         "annotations": {
-            "present new idea": "SM introduces the idea of using more advanced but computationally expensive rate theories to improve temperature accuracy and rate predictions in quantum chemistry.",
-            "expand on existing idea": "SM expands on the limitations of current rate theories like transition state theory and suggests exploring more advanced options like variational and semi-classical theories.",
-            "provide supporting evidence": "SM supports the need for better rate theories by pointing out the known deficiencies of existing methods and the current practice of discarding rate coefficient predictions due to their inaccuracy.",
-            "explain or define term or concept": "SM explains the concept of using more advanced rate theories, such as variational and semi-classical theories, and their potential benefits.",
-            "offer constructive criticism": "SM critiques the current reliance on approximate rate theories and the limitations they impose on the accuracy of temperature and rate predictions."
+            "present new idea": {
+                "Explanation": "SM introduces the idea of using more advanced rate theories and applying machine learning and signal processing to quantum chemistry to make rate predictions more accurate, which hasn't been explicitly discussed before."
+            },
+            "expand on existing idea": {
+                "Explanation": "SM builds upon the previous discussion of machine learning by suggesting specific applications within quantum chemistry to improve rate theories and make them more tractable."
+            },
+            "provide supporting evidence": {
+                "Explanation": "SM supports the idea by mentioning the existence of more advanced rate theories like variational and semi-classical theories, and highlighting the potential of machine learning and signal processing."
+            }
         }
     },
     {
@@ -555,9 +590,8 @@
         "start_time": "21:19",
         "end_time": "21:31",
         "annotations": {
-            "express enthusiasm": "SB expresses excitement about the potential of applying advanced methods for predicting speciation and resolving black box issues.",
-            "expand on existing idea": "SB builds upon SM's prior suggestion of using advanced rate theories by highlighting the potential benefits for predicting speciation and resolving currently unclear areas.",
-            "acknowledge contribution": "SB acknowledges SM's contribution regarding the potential of advanced rate theories by expressing enthusiasm for their application."
+            "express enthusiasm": "The speaker expresses excitement about the possibility of applying more accurate rate theories to predict speciation and resolve complex problems, building on the previous speaker's suggestion to make expensive theories more tractable.",
+            "expand on existing idea": "The speaker builds on the previous speaker's idea of making more expensive rate theories more tractable by suggesting specific applications like predicting speciation and resolving complex problems."
         }
     },
     {
@@ -577,8 +611,8 @@
         "start_time": "21:31",
         "end_time": "21:46",
         "annotations": {
-            "provide supporting evidence": "FL supports their statement about the discussion's broader relevance by pointing out that it has drifted from the initial topic to focus on electrochemistry.",
-            "express enthusiasm": "FL expresses positive feedback by stating that the discussion is \"very interesting\"."
+            "present new idea": "FL introduces the idea that the discussion's relevance extends beyond electrochemical catalysis, encompassing experiments and theory more broadly.",
+            "express agreement": "FL expresses agreement that the discussion is very interesting."
         }
     },
     {
@@ -597,10 +631,11 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "21:46",
         "end_time": "21:58",
-        "annotations": {
-            "encourage particpatioin": "SB encourages other participants to contribute to the discussion by asking if they have any other reactions or processes they want to talk about and specifically asking Fang for her input.",
-            "propose decision": "SB suggests that now is a good time to discuss other reactions or processes."
-        }
+        "annotations": [
+            {
+                "encourage particpatioin": "SB is explicitly inviting Fang to contribute to the discussion by asking if he has anything else in mind, encouraging participation."
+            }
+        ]
     },
     {
         "speaker": "FL",
@@ -619,8 +654,9 @@
         "start_time": "21:59",
         "end_time": "22:12",
         "annotations": {
-            "present new idea": "FL introduces \"solid gas interface\" as a topic not previously discussed in the context of absorption and capture.",
-            "expand on existing idea": "FL builds upon the ongoing discussion about reactions and processes by suggesting another area related to absorption and capture at solid gas interfaces."
+            "present new idea": {
+                "Explanation": "The speaker introduces the solid gas interface as another topic that hasn't been covered, presenting a new area for discussion."
+            }
         }
     },
     {
@@ -639,11 +675,14 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "22:17",
         "end_time": "22:21",
-        "annotations": {
-            "expand on existing idea": "LL adds to the ongoing discussion about data analysis methods by mentioning a previous, less extensive discussion on the topic.",
-            "acknowledge contribution": "LL acknowledges Fang's contribution about solid gas interfaces.",
-            "express frustation": "LL expresses uncertainty and potential inability to contribute further to the conversation by saying \"I don't know if I can do the last comment.\""
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": "LL acknowledges that the solid gas interface was mentioned earlier, recognizing a prior contribution to the discussion."
+            },
+            {
+                "express alternative decision": "LL expresses uncertainty about making the last comment, suggesting a potential shift away from the current discussion point."
+            }
+        ]
     },
     {
         "speaker": "JM",
@@ -661,12 +700,17 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "22:21",
         "end_time": "23:57",
-        "annotations": {
-            "expand on existing idea": "JM expands on the earlier discussion of machine learning, focusing on its application in method development within computational chemistry.",
-            "explain or define term or concept": "JM explains how machine learning is being implemented in various computational methods, such as understanding wave functions and guessing transition states.",
-            "ask clarifying question": "JM implicitly questions whether the reliance on machine learning, despite its effectiveness, hinders a true understanding of the underlying scientific principles.",
-            "express alternative decision": "JM rejects the idea of solely relying on machine learning without fully understanding its underlying mechanisms."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "JM is expanding on the previous discussion about method development by mentioning the current computational methods used and the emerging trend of implementing machine learning in various areas."
+            },
+            {
+                "present new idea": "JM presents the idea that the new wave of method development involves implementing machine learning for various purposes, such as understanding wave functions or guessing transition states."
+            },
+            {
+                "offer constructive criticism": "JM offers constructive criticism by expressing concern that while machine learning is useful and tempting, the fundamental understanding of why it works is lacking, raising questions about whether we truly understand the methods being developed."
+            }
+        ]
     },
     {
         "speaker": "SB",
@@ -685,9 +729,9 @@
         "start_time": "23:58",
         "end_time": "24:46",
         "annotations": {
-            "expand on existing idea": "SB expands on the previous discussion about machine learning and other computational methods by mentioning another area of interest, mineralization and weathering phenomena, and their less developed mechanisms.",
-            "propose decision": "SB proposes that one of the other discussion sections should address the experimental and theoretical aspects of mineralization and weathering reactions.",
-            "explain or define term or concept": "SB explains that the mineralization and weathering phenomena are related to silica reactions and geochemistry."
+            "present new idea": "SB introduces the idea of considering mineralization and weathering phenomena, which haven't been extensively discussed yet, as another area of interest.",
+            "expand on existing idea": "SB expands on the idea of considering mineralization and weathering phenomena by mentioning silica reactions and geochemistry, suggesting a specific area within that broader topic.",
+            "propose decision": "SB proposes that another discussion section will address the experimental and theoretical aspects of mineralization and weathering reactions, suggesting a plan for future discussion."
         }
     },
     {
@@ -706,12 +750,14 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "24:47",
         "end_time": "25:23",
-        "annotations": {
-            "encourage particpation": "SB is encouraging final thoughts and participation by asking if anyone has been inspired to start thinking about silo projects.",
-            "acknowledge contribution": "SB acknowledges the contributions and discussion by saying \"this has been awesome.\"",
-            "express enthusiasm": "SB expresses enthusiasm for the discussion and potential silo projects by using words like \"awesome\" and \"superb.\"",
-            "provide supporting evidence": "SB supports the idea of silo projects by stating that they fill a need and mixes of theory and experiment do really well."
-        }
+        "annotations": [
+            {
+                "encourage particpatioin": "SB is encouraging participation by asking if anyone has any final thoughts or is inspired to start thinking about silo projects, inviting others to contribute to the discussion."
+            },
+            {
+                "express enthusiasm": "SB expresses enthusiasm by saying \"this has been awesome\" and that silo projects with theory and experiment mixes do really well, showing excitement and encouragement for the collaboration."
+            }
+        ]
     },
     {
         "speaker": "FL",
@@ -730,7 +776,7 @@
         "start_time": "25:25",
         "end_time": "25:27",
         "annotations": {
-            "acknowledge contribution": "Fang acknowledges SB's contribution to the discussion by thanking them for facilitating."
+            "acknowledge contribution": "FL acknowledges SB's contribution by stating that they did a great job facilitating the discussion, expressing appreciation for their efforts in guiding the conversation."
         }
     },
     {
@@ -750,8 +796,12 @@
         "start_time": "25:28",
         "end_time": "25:32",
         "annotations": {
-            "acknowledge contribution": "SB acknowledges Fang's compliment and thanks them for it.",
-            "express enthusiasm": "SB expresses enthusiasm and a positive outlook on the ease and success of the discussion."
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges Fang's contribution to the discussion by thanking them."
+            },
+            "express enthusiasm": {
+                "Explanation": "The speaker expresses enthusiasm by saying that the discussion was very easy and that everyone is making it super easy."
+            }
         }
     },
     {
@@ -770,10 +820,11 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "25:32",
         "end_time": "25:34",
-        "annotations": {
-            "acknowledge contribution": "LL acknowledges SB's contribution to the discussion by thanking them and complimenting their facilitation.",
-            "express enthusiasm": "LL expresses enthusiasm by using the word \"lovely\" and stating that SB did \"a great job.\""
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": "LL acknowledges SB's contribution by thanking them and saying they did a great job facilitating the discussion."
+            }
+        ]
     },
     {
         "speaker": "SB",
@@ -791,11 +842,12 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "25:35",
         "end_time": "25:51",
-        "annotations": {
-            "propose decision": "SB proposes that the group return to the main meeting room and suggests the end of the breakout session.",
-            "assign task": "SB tells Jose that he is ready to present, implying the task of presenting is assigned to Jose.",
-            "confirm decision": "SB confirms the decision to leave the breakout room after receiving positive confirmation from Jose.",
-            "acknowledge contribution": "SB acknowledges Jose's readiness and preparation for his presentation."
-        }
+        "annotations": [
+            {
+                "propose decision": "The speaker suggests heading back to the main room, proposing a concrete action for the group.",
+                "assign task": "The speaker asks Jose if he is ready, assigning him the implicit task of confirming his readiness for the next phase.",
+                "encourage particpatioin": "The speaker asks Jose if he is all set, encouraging him to confirm his readiness."
+            }
+        ]
     }
 ]

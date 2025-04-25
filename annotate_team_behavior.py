@@ -208,12 +208,39 @@ def load_json_files(directory):
     
     return result
 
-# Merge output JSON files into a single list of annotations
-def merge_output_json(directory):
-    data_list = load_json_files(directory)
+def get_json_subfolder(output_folder):
+    """Find the subdirectory containing the JSON files."""
+    try:
+        # List all items in the output folder
+        items = os.listdir(output_folder)
+        # Look for a directory that might contain JSON files
+        for item in items:
+            item_path = os.path.join(output_folder, item)
+            if os.path.isdir(item_path):
+                # Check if this directory contains any JSON files
+                if any(f.endswith('.json') for f in os.listdir(item_path)):
+                    return item_path
+        return None
+    except Exception as e:
+        print(f"Error accessing directory {output_folder}: {e}")
+        return None
+
+def merge_output_json(output_folder):
+    """
+    Merge output JSON files from the correct subdirectory.
+    Args:
+        output_folder: Path to the output folder containing a subdirectory with JSON files
+    """
+    # Find the subdirectory containing JSON files
+    json_dir = get_json_subfolder(output_folder)
+    if not json_dir:
+        raise InvalidJsonContentError(f"No subdirectory with JSON files found in {output_folder}")
+    
+    # Now load and process JSON files from the correct subdirectory
+    data_list = load_json_files(json_dir)
     num_chunks = len(data_list)
     full_output = []
-    utterance_list=[]
+    utterance_list = []
 
     for m in range(num_chunks):
         ck = data_list[m]
@@ -223,7 +250,9 @@ def merge_output_json(directory):
                 
                 for i in d_list:
                     data = i.copy()
-                    sp_time = data['timestamp'].split('-')
+                    # Remove brackets from timestamp if present
+                    timestamp = data['timestamp'].strip('[]')
+                    sp_time = timestamp.split('-')
                     if len(sp_time)==2:
                         data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
                         data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
@@ -233,7 +262,7 @@ def merge_output_json(directory):
                     full_output.append(data)
                     utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
         else:
-            print(f"Having issues with data in directory: {directory}")
+            print(f"Having issues with data in directory: {json_dir}")
                 
     return (full_output, utterance_list)
 
@@ -267,47 +296,52 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
     
     for output_subfolder in output_folders:
         folder_name = os.path.basename(output_subfolder)
-        # Extract video name from folder name (remove 'output_' or 'output-' prefix)
-        vid_name = folder_name[7:] if folder_name.startswith('output_') else folder_name[7:]
-        
-        verbal_file = os.path.join(output_subfolder, f"verbal_{vid_name}.json")
-        all_file = os.path.join(output_subfolder, f"all_{vid_name}.json")
-        
         print(f"\nProcessing folder: {folder_name}")
         
-        if os.path.exists(output_subfolder):
+        # Get the subdirectory containing JSON files
+        json_dir = get_json_subfolder(output_subfolder)
+        if not json_dir:
+            print(f"No JSON files found in {output_subfolder}, skipping...")
+            continue
+            
+        # Get the base name for the JSON files from the json_dir name
+        json_dir_name = os.path.basename(json_dir)
+        
+        # Create verbal and all files in the JSON directory
+        verbal_file = os.path.join(json_dir, f"verbal_{json_dir_name}.json")
+        all_file = os.path.join(json_dir, f"all_{json_dir_name}.json")
+        
+        print(f"Using JSON files from: {json_dir_name}")
+        
+        if os.path.exists(json_dir):
             try:
                 merged_output = merge_output_json(output_subfolder)
             except InvalidJsonContentError as e:
-                print(f"Skipping {output_subfolder} due to invalid JSON content: {str(e)}")
+                print(f"Skipping {json_dir} due to invalid JSON content: {str(e)}")
                 continue
                 
-            if not os.path.exists(all_file):
-                verbal_annotations = []
-                if not os.path.exists(verbal_file):
-                    print(f"Annotating verbal behaviors for {vid_name}")
-                    annotations = annotate_utterances(client, merged_output[1], codebook)
-                    verbal_annotations = annotations
-                    output_file = verbal_file
-                    with open(output_file, "w") as f:
-                        json.dump(annotations, f, indent=4)
-                else:
-                    print(f"{verbal_file} already exists, loading that to merge...")
-                    with open(verbal_file, 'r') as f:
-                        verbal_annotations = json.load(f)
-                    
-                if len(verbal_annotations) == len(merged_output[0]):
-                    all_anno = merged_output[0].copy()
-                    for i in range(len(verbal_annotations)):
-                        anno = verbal_annotations[i]['annotations']
-                        all_anno[i]['annotations'] = anno
-                    print(f"Merged verbal annotations with existing video annotations.")
-                    with open(all_file, "w") as f:
-                        json.dump(all_anno, f, indent=4)
-            else:
-                print(f"{all_file} already exists, skipping...")
+            
+            verbal_annotations = []
+            
+            print(f"Annotating verbal behaviors for {json_dir_name}")
+            annotations = annotate_utterances(client, merged_output[1], codebook)
+            verbal_annotations = annotations
+            output_file = verbal_file
+            with open(output_file, "w") as f:
+                json.dump(annotations, f, indent=4)
+            
+                
+            if len(verbal_annotations) == len(merged_output[0]):
+                all_anno = merged_output[0].copy()
+                for i in range(len(verbal_annotations)):
+                    anno = verbal_annotations[i]['annotations']
+                    all_anno[i]['annotations'] = anno
+                print(f"Merged verbal annotations with existing video annotations.")
+                with open(all_file, "w") as f:
+                    json.dump(all_anno, f, indent=4)
+            
         else:
-            print(f"{output_subfolder} does not exist, skipping...")
+            print(f"{json_dir} does not exist, skipping...")
 
 def main():
     # Set up argument parser

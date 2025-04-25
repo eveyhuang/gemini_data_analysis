@@ -36,6 +36,7 @@ def init():
     Notes:
     If uncertain about a label due to poor visibility, return [low confidence] next to the annotation.
     Ensure timestamps, speaker IDs, and behavior annotations are consistent throughout the video.
+    For transcripts, remove filler words unless meaningful and return one long string without line breaks or paragraph breaks.s
 
     Input:
     A video recording of a zoom meeting among a team of scientists from diverse backgrounds engaged in a collaborative task.
@@ -477,13 +478,14 @@ def analyze_video(client, path_dict, prompt, dir):
                     if response:
                         print(f"Trying to save output for {file_name} to json file")
                         try:
-                            save_to_json(response.text, file_name, f"{output_dir}/")
+                            # Remove trailing slash and use os.path.join
+                            save_to_json(response.text, file_name, output_dir)
                             list_chunks[m][3] = True
                         except ValueError:
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
                             if response:
                                 try:
-                                    save_to_json(response.text, fileName, f"{output_dir}/")
+                                    save_to_json(response.text, fileName, output_dir)
                                     list_chunks[m][3] = True
                                 except Exception as e:
                                     print(f"Still can't get the output to workout: {file_name}")
@@ -502,20 +504,28 @@ def analyze_video(client, path_dict, prompt, dir):
     return n_path_dict
 
 # Save data to a JSON file in the specified directory
-def save_to_json(response, filename, destdir):
-    """Save Gemini API response to a JSON file, handling various response formats"""
-    fileName, file_extension = os.path.splitext(filename)
-    output_file_path = destdir + sanitize_name(fileName) + ".json"
-
-    # Create all parent directories if they don't exist
-    os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+def save_to_json(text, file_name, output_dir):
+    """
+    Save the analysis text to a JSON file, handling various response formats
     
-    jres = response.strip()  # Remove any leading/trailing whitespace
+    Args:
+        text (str): The text to save (can be JSON or plain text)
+        file_name (str): The name of the file being analyzed
+        output_dir (str): The directory to save the output to
+    """
+    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
     
-    # Handle code block markers more robustly
-    if '```' in jres:
+    # Construct the output file path using os.path.join
+    output_file = os.path.join(output_dir, f"{file_name}.json")
+    
+    # Clean the input text
+    text = text.strip()  # Remove any leading/trailing whitespace
+    
+    # Handle code block markers
+    if '```' in text:
         # Split by ``` and look for the JSON content
-        blocks = jres.split('```')
+        blocks = text.split('```')
         for block in blocks:
             # Skip empty blocks
             if not block.strip():
@@ -526,34 +536,35 @@ def save_to_json(response, filename, destdir):
                 # Try to parse this block as JSON
                 parsed_json = json.loads(block)
                 # If we successfully parsed JSON, use this block
-                jres = block
+                text = block
                 break
             except json.JSONDecodeError:
                 continue
     
-    # Try to parse the cleaned JSON
+    # Try to parse as JSON first
     try:
-        parsed_json = json.loads(jres)
-        with open(output_file_path, 'w') as json_file:
-            json.dump(parsed_json, json_file, indent=4)
-        print(f"Successfully saved JSON to {output_file_path}")
+        parsed_json = json.loads(text)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(parsed_json, f, ensure_ascii=False, indent=4)
+        print(f"Successfully saved JSON to {output_file}")
         return
     except json.JSONDecodeError as e:
         print(f"JSONDecodeError: {e}")
         print("Attempting to fix the JSON format...")
-         # Attempt to fix the JSON format by removing any trailing characters
-        jres_fixed = jres[:e.pos]
+        # Attempt to fix the JSON format by removing any trailing characters
+        text_fixed = text[:e.pos]
         try:
-            parsed_json = json.loads(jres_fixed)
-            with open(output_file_path, 'w') as json_file:
-                json.dump(parsed_json, json_file, indent=4)
+            parsed_json = json.loads(text_fixed)
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(parsed_json, f, ensure_ascii=False, indent=4)
+            print(f"Successfully saved fixed JSON to {output_file}")
         except json.JSONDecodeError as e:
             print(f"Failed to fix JSON format: {e}")
-            print("Saving the original response text to the file for manual inspection.")
-            with open(output_file_path, 'w') as json_file:
-                json_file.write(jres)
-            raise ValueError("Could not fix the error; try to run the prompt again.")
-         
+            print("Saving as plain text wrapped in a JSON object")
+            # Fall back to saving as plain text in a JSON wrapper
+            output_dict = {"text": text}
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
