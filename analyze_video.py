@@ -458,7 +458,7 @@ def analyze_video(client, path_dict, prompt, dir):
         list_chunks = n_path_dict[file_name]
         # Sanitize the output directory name
         safe_file_name = sanitize_name(file_name)
-        output_dir = os.path.join(base_output_dir, f"output-{safe_file_name}")
+        output_dir = os.path.join(base_output_dir, f"output_{safe_file_name}")
         os.makedirs(output_dir, exist_ok=True)
 
         for m in range(len(list_chunks)):
