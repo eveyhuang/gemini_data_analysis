@@ -15,11 +15,14 @@
         "screenshare_content": "None",
         "start_time": "00:00",
         "end_time": "00:20",
-        "annotations": {
-            "propose decision": "GS proposes that the group needs to find a volunteer to report out.",
-            "assign task": "GS assigns the task of reporting out to a volunteer.",
-            "encourage particpation": "GS asks for a volunteer to report out."
-        }
+        "annotations": [
+            {
+                "propose decision": "The utterance proposes the decision to find a volunteer to report out, setting the agenda for the meeting."
+            },
+            {
+                "encourage particpatioin": "The utterance encourages participation by asking if there is a volunteer."
+            }
+        ]
     },
     {
         "speaker": "HW",
@@ -38,24 +41,7 @@
         "start_time": "00:20",
         "end_time": "00:23",
         "annotations": {
-            "explain or define term or concept": "HW explains that they were previously unable to speak because their microphone was muted, clarifying their silence during the call for volunteers.",
-            "ask clarifying question": "None",
-            "present new idea": "None",
-            "expand on existing idea": "None",
-            "provide supporting evidence": "None",
-            "propose decision": "None",
-            "confirm decision": "None",
-            "express alternative decision": "None",
-            "express agreement": "None",
-            "assign task": "None",
-            "offer constructive criticism": "None",
-            "reject idea": "None",
-            "resolve conflict": "None",
-            "express frustation": "None",
-            "acknowledge contribution": "None",
-            "encourage particpatioin": "None",
-            "express enthusiasm": "None",
-            "express humor": "None"
+            "express humor": "The speaker is making a lighthearted comment about being muted, which is a common occurrence in virtual meetings and can be seen as humorous."
         }
     },
     {
@@ -75,8 +61,8 @@
         "start_time": "00:23",
         "end_time": "00:27",
         "annotations": {
-            "propose decision": "LS proposes to volunteer for the reporting task.",
-            "expand on existing idea": "LS builds upon the prior request for a volunteer by offering their help."
+            "offer constructive criticism": "LS is offering to take on the task if no one else wants to, which is a constructive way to ensure the task is completed.",
+            "encourage particpatioin": "LS is encouraging others to participate by stating that they will do it if no one else wants to."
         }
     },
     {
@@ -96,9 +82,12 @@
         "start_time": "00:28",
         "end_time": "00:33",
         "annotations": {
-            "assign task": "GS assigns the task of reporting out to Lindsey by confirming her offer to volunteer and instructing her to type directly into the PowerPoint.",
-            "confirm decision": "GS confirms Lindsey's decision to volunteer for the reporting task after she offers to do it.",
-            "explain or define term or concept": "GS explains the process of reporting out by clarifying that Lindsey can type directly into the PowerPoint."
+            "acknowledge contribution": {
+                "Explanation": "GS thanks Lindsey for volunteering to report out, acknowledging her contribution to the task."
+            },
+            "assign task": {
+                "Explanation": "GS assigns Lindsey the task of typing directly into the PowerPoint, clarifying the specific action she needs to take."
+            }
         }
     },
     {
@@ -118,7 +107,7 @@
         "start_time": "00:33",
         "end_time": "00:37",
         "annotations": {
-            "ask clarifying question": "Lindsey asks for clarification on where to start typing in the PowerPoint to confirm she understood correctly."
+            "ask clarifying question": "LS is asking a question to confirm the starting slide for her report, seeking clarification from GS."
         }
     },
     {
@@ -138,7 +127,7 @@
         "start_time": "00:37",
         "end_time": "00:42",
         "annotations": {
-            "confirm decision": "GS confirms the decision to start from slide 3.1, clarifying the starting point for Lindsey's report out."
+            "confirm decision": "GS confirms the slide number that LS should report from, solidifying the starting point for the presentation."
         }
     },
     {
@@ -158,7 +147,7 @@
         "start_time": "00:43",
         "end_time": "00:44",
         "annotations": {
-            "confirm decision": "CJ confirms the decision about which slide to start with, agreeing with LS and GS that it is slide 30."
+            "confirm decision": "CJ confirms that slide 30 is the correct starting point for Lindsey's report, solidifying the decision made in the previous turn."
         }
     },
     {
@@ -178,8 +167,8 @@
         "start_time": "00:47",
         "end_time": "01:00",
         "annotations": {
-            "propose decision": "GS suggests the group begin the meeting and have each member introduce themselves and their research.",
-            "explain or define term or concept": "GS clarifies the start of the meeting process and what information each person should share in their introduction."
+            "propose decision": "The speaker proposes the decision to start the meeting and have everyone introduce themselves and their research.",
+            "encourage particpatioin": "The speaker encourages everyone to participate by introducing themselves and their research."
         }
     },
     {
@@ -199,7 +188,7 @@
         "start_time": "01:00",
         "end_time": "01:11",
         "annotations": {
-            "explain or define term or concept": "George Shields introduces himself and explains his research focus, which is micro-modeling of aerosol formation from clusters in the atmosphere."
+            "explain or define term or concept": "George is explaining his research area, which involves micro modeling of aerosol formation, to provide context for the group."
         }
     },
     {
@@ -219,7 +208,7 @@
         "start_time": "01:13",
         "end_time": "01:15",
         "annotations": {
-            "encourage particpatioin": "George is inviting Jesus to introduce himself and his research in the meeting."
+            "encourage particpatioin": "GS is inviting Jesus to introduce himself next, encouraging him to participate in the introductions."
         }
     },
     {
@@ -238,10 +227,11 @@
         "screenshare_content": "A slide with chemical formulas CO2 and H3OH is shared. The slide shows a diagram of a chemical reaction involving CO2 and H3OH. The speaker explains his research on electrochemical and photoelectrochemical conversion of CO2.",
         "start_time": "01:17",
         "end_time": "01:47",
-        "annotations": {
-            "explain or define term or concept": "Jesus is explaining his research area by defining concepts like electrochemical, electrocatalytic conversion of CO2, photoelectrochemical conversion of CO2, multi-dimensional materials, oxide, calcined and carbide space, synchrotron methods, x-ray absorption spectroscopy, ex situ and operando.",
-            "present new idea": "Jesus introduces his research focus on electrochemical and photoelectrochemical conversion of CO2 using multi-dimensional materials and synchrotron methods, which was not previously mentioned in the conversation."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining their research focus, including specific methods like electrochemical, electrocatalytic conversion of CO2, and synchrotron methods like x-ray absorption spectroscopy."
+            }
+        ]
     },
     {
         "speaker": "GS",
@@ -260,8 +250,7 @@
         "start_time": "01:48",
         "end_time": "01:54",
         "annotations": {
-            "acknowledge contribution": "George acknowledges Xiao Su's presence and contribution to the meeting by addressing them directly.",
-            "encourage particpation": "George encourages Xiao Su to participate by inviting them to speak next after acknowledging them."
+            "acknowledge contribution": "GS acknowledges JV's contribution after JV introduced himself and his research."
         }
     },
     {
@@ -281,8 +270,8 @@
         "start_time": "01:54",
         "end_time": "02:36",
         "annotations": {
-            "explain or define term or concept": "Xiao explains what his research entails, including electrochemical separations, purifying liquid phase molecules, and isomeric type separations.",
-            "present new idea": "Xiao introduces his research focus on electrochemical separations and isomeric type separations, which had not been previously discussed in the meeting."
+            "explain or define term or concept": "The speaker explains their research focus on electrochemical separations and purifying liquid phase molecules, providing context for their work.",
+            "expand on existing idea": "The speaker expands on their research by mentioning their focus on isomeric type separations and how it relates to the broader topic of carbon dioxide research, building upon the initial introduction of their work."
         }
     },
     {
@@ -302,7 +291,7 @@
         "start_time": "02:36",
         "end_time": "02:38",
         "annotations": {
-            "encourage particpatioin": "George is inviting David to introduce himself and his research, following the round of introductions in the meeting."
+            "encourage particpatioin": "GS is encouraging David to introduce himself and say a little bit about his research, as he did with the previous participants."
         }
     },
     {
@@ -322,7 +311,7 @@
         "start_time": "02:42",
         "end_time": "02:43",
         "annotations": {
-            "ask clarifying question": "David asks if the group can hear him, likely due to prior audio issues or to ensure his participation in the meeting."
+            "ask clarifying question": "DK is checking if others can hear him, which is a request for confirmation of audibility."
         }
     },
     {
@@ -342,9 +331,10 @@
         "start_time": "10:00",
         "end_time": "10:53",
         "annotations": {
-            "provide supporting evidence": "LS describes a seminar and current research on hydrogen storage and ammonia production as evidence for the economic considerations of different processes.",
-            "explain or define term or concept": "LS explains the process of converting hydrogen to ammonia and back for transportation and use.",
-            "ask clarifying question": "LS questions the economic viability of electrochemical ammonia production given the efficiency of thermal conversion processes for hydrogen storage and transportation."
+            "present new idea": "The speaker introduces the idea of converting electrochemically produced hydrogen to ammonia for easier transportation and then back to hydrogen, which is a novel concept in the context of the discussion.",
+            "expand on existing idea": "The speaker expands on the idea of hydrogen storage by discussing the thermal conversion of hydrogen to ammonia and back, adding details about its potential use and efficiency.",
+            "provide supporting evidence": "The speaker supports the idea by mentioning a seminar speaker from Johnson Matthew who discussed this approach for hydrogen storage, providing an external source as evidence.",
+            "ask clarifying question": "The speaker poses a question about the economic viability of an electrochemical route to ammonia production compared to the thermal route, seeking clarification on its worth."
         }
     },
     {
@@ -364,9 +354,9 @@
         "start_time": "10:57",
         "end_time": "11:23",
         "annotations": {
-            "expand on existing idea": "AT adds to DK's point about hydrogen storage and transportation by bringing up the localized production of ammonia and its economic implications.",
-            "provide supporting evidence": "AT supports their argument by mentioning the economy of scale and energy recovery benefits of thermal recovery cited by DK.",
-            "ask clarifying question": "AT questions whether the efficiencies of centralized ammonia production can be replicated in a distributed network, given nitrogen's distributed nature."
+            "expand on existing idea": "AT is building on the previous discussion about hydrogen storage and transportation by adding the argument of localized ammonia production, which contrasts with the economy of scale benefits mentioned earlier.",
+            "provide supporting evidence": "AT refers to 'those numbers that you just cited' to support the argument that the benefits of thermal recovery are dependent on the economy of scale.",
+            "present new idea": "AT introduces the idea of a distributed network for ammonia production, capitalizing on nitrogen as a distributed resource, which is a new concept in the context of the conversation."
         }
     },
     {
@@ -385,12 +375,20 @@
         "screenshare_content": "None",
         "start_time": "11:31",
         "end_time": "12:59",
-        "annotations": {
-            "expand on existing idea": "HW expands on the previous discussion of hydrogen storage by focusing on the challenges and considerations of nitrogen reduction to ammonia as an alternative approach.",
-            "provide supporting evidence": "HW supports their argument by mentioning the issue of false positive signals in nitrogen reduction research and the difficulty of replicating results due to low current density.",
-            "offer constructive criticism": "HW points out the limitations and challenges associated with nitrogen reduction to ammonia, such as low current density and difficulty in replicating results, suggesting potential areas for improvement.",
-            "ask clarifying question": "HW questions whether it's worthwhile to sacrifice energy efficiency for nitrogen reduction to ammonia or if improving water splitting efficiency and using the Haber-Bosch process is a better approach."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "HW is building on the discussion about ammonia production by adding information about the challenges and limitations of electrochemical nitrogen reduction to ammonia, which was previously mentioned by DK and AT."
+            },
+            {
+                "provide supporting evidence": "HW provides supporting evidence by mentioning the issue of false positive signals and the difficulty in replicating results in electrochemical nitrogen reduction, and also compares the energy efficiency of this method to the Haber-Bosch process."
+            },
+            {
+                "explain or define term or concept": "HW explains the concept of false positive signals in the context of nitrogen reduction research, clarifying a potential issue in the field."
+            },
+            {
+                "propose decision": "HW proposes a decision by questioning whether it makes sense to sacrifice energy efficiency for electrochemical nitrogen reduction or to improve water splitting efficiency for the Haber-Bosch process."
+            }
+        ]
     },
     {
         "speaker": "XS",
@@ -409,11 +407,9 @@
         "start_time": "13:36",
         "end_time": "14:31",
         "annotations": {
-            "present new idea": "XS introduces the idea of using electrochemical separations for nitrogen conversion from nitrates, which has not been previously discussed.",
-            "expand on existing idea": "XS builds upon the prior discussion of nitrogen conversion by suggesting an alternative approach focused on nitrate recovery and upcycling using electrochemical separations.",
-            "provide supporting evidence": "XS mentions the observed interest in nitrogen conversion from nitrates as evidence for the potential of this approach.",
-            "explain or define term or concept": "XS clarifies their focus on separations rather than reactions, setting the context for their subsequent contribution about nitrate conversion.",
-            "offer constructive criticism": "XS implicitly suggests that current nitrogen conversion methods could be improved by integrating electrochemical separations for increased efficiency."
+            "present new idea": "The speaker introduces the idea of nitrogen conversion from nitrates as a reaction of interest.",
+            "expand on existing idea": "The speaker builds on the discussion of nitrogen conversion by adding the perspective of electrochemical separations, suggesting that recovering waste nitrate electrochemically and upcycling it could improve overall system efficiency.",
+            "provide supporting evidence": "The speaker supports the idea of electrochemical separations by mentioning the sustainability and chemical consumption advantages."
         }
     },
     {
@@ -432,12 +428,13 @@
         "screenshare_content": "None",
         "start_time": "14:32",
         "end_time": "15:29",
-        "annotations": {
-            "present new idea": "David proposes to zoom out and consider the role of nitrogen in negative emissions and its broader implications, shifting the focus from specific methods to a systems-level perspective.",
-            "expand on existing idea": "David builds upon the previous discussion about nitrogen's role in ammonia production by broadening the scope to encompass negative emissions and carbon capture.",
-            "ask clarifying question": "David poses a series of questions about the effectiveness, benefits, drawbacks, and permanence of using nitrogen for negative emissions, prompting further discussion and analysis.",
-            "provide supporting evidence": "David supports his argument by citing the example of wildfires in California, highlighting the impermanence of some natural climate solutions and the need to consider long-term effects."
-        }
+        "annotations": [
+            {
+                "present new idea": "The speaker introduces the idea of considering the role of nitrogen in negative emissions, which hasn't been explicitly discussed before in the conversation.",
+                "ask clarifying question": "The speaker poses several questions about the carbon capture potential, co-benefits, disbenefits, and permanence of nitrogen's role in negative emissions, seeking to clarify the overall impact and sustainability of this approach.",
+                "provide supporting evidence": "The speaker supports their questioning of the role of nitrogen by mentioning the recent wildfires in California, highlighting the lack of permanence in natural carbon solutions."
+            }
+        ]
     },
     {
         "speaker": "MS",
@@ -456,10 +453,9 @@
         "start_time": "15:34",
         "end_time": "16:21",
         "annotations": {
-            "expand on existing idea": "MS expands on the prior discussion of nitrogen's role in negative emissions by focusing on ammonia's potential as an energy carrier.",
-            "provide supporting evidence": "MS supports the idea of ammonia as an energy carrier by stating its properties, such as being liquefiable at reasonable temperatures and pressures, and its ability to store hydrogen.",
-            "explain or define term or concept": "MS explains the concept of ammonia as an energy carrier by describing how hydrogen atoms can be attached to nitrogen and used.",
-            "offer constructive criticism": "MS acknowledges the toxicity of ammonia as a drawback to its use as an energy carrier."
+            "expand on existing idea": "MS is building upon the previous discussion about nitrogen and ammonia by adding the idea that ammonia can serve as an energy carrier.",
+            "provide supporting evidence": "MS provides supporting evidence for ammonia's potential as an energy carrier by mentioning its ability to be stored, liquefied at reasonable conditions, and used to shuffle hydrogen atoms.",
+            "explain or define term or concept": "MS clarifies that using ammonia as an energy carrier is a carbon-neutral emission technology, not a carbon-negative one."
         }
     },
     {
@@ -478,12 +474,13 @@
         "screenshare_content": "None",
         "start_time": "16:30",
         "end_time": "17:53",
-        "annotations": {
-            "provide supporting evidence": "YL explains that there are many experimental papers on nitrogen reduction to ammonium that other groups cannot reproduce, making it challenging for computational chemists to conduct follow-up studies.",
-            "explain or define term or concept": "YL explains the challenges faced by computational chemists due to non-reproducible experimental results in nitrogen reduction to ammonium.",
-            "express frustation": "YL expresses frustration that non-reproducible experimental results waste time and hinder computational studies.",
-            "propose decision": "YL proposes that clean, reproducible experiments are crucial for computational studies in nitrogen reduction."
-        }
+        "annotations": [
+            {
+                "present new idea": "The speaker introduces the idea that irreproducible experimental results in nitrogen reduction pose a challenge for computational chemists who rely on these results for their studies, which is a new perspective in the conversation.",
+                "provide supporting evidence": "The speaker supports their claim about the challenges of irreproducible experiments by mentioning that many experiments on nitrogen reduction to ammonium cannot be reproduced by other groups, and that some people are saying their experiments are not done carefully.",
+                "express frustation": "The speaker expresses frustration about wasting time studying papers that cannot be reproduced, highlighting the difficulty in relying on experimental results that lack reproducibility."
+            }
+        ]
     },
     {
         "speaker": "CJ",
@@ -502,8 +499,8 @@
         "start_time": "17:56",
         "end_time": "18:07",
         "annotations": {
-            "provide supporting evidence": "CJ supports the importance of labeling studies by pointing out that many false positive papers on CO2 and N2 reduction could have been avoided through this practice.",
-            "offer constructive criticism": "CJ implicitly criticizes past research practices by highlighting the lack of labeling studies as a source of error in published papers."
+            "provide supporting evidence": "The utterance provides evidence for the importance of labeling studies by stating that many false CO2 and N2 reduction papers could have been avoided if labeling studies were conducted, supporting the need for more rigorous experimental methods.",
+            "explain or define term or concept": "The utterance implicitly explains the importance of 'labeling studies' in the context of CO2 and N2 reduction research, highlighting their role in preventing false results."
         }
     },
     {
@@ -523,8 +520,7 @@
         "start_time": "18:11",
         "end_time": "18:30",
         "annotations": {
-            "provide supporting evidence": "JV supports the prior speakers' concerns about irreproducibility in N2 reduction research by suggesting the need for benchmarking analytical techniques and labeling studies.",
-            "propose decision": "JV proposes that the N2 reduction community should focus on benchmarking analytical characterization techniques and labeling as a solution to the reproducibility issues."
+            "propose decision": "The speaker suggests that the nitrogen reduction community would benefit from benchmarking efforts on analytical characterization techniques and labeling, proposing a concrete action for the community."
         }
     },
     {
@@ -544,8 +540,8 @@
         "start_time": "18:34",
         "end_time": "19:16",
         "annotations": {
-            "ask clarifying question": "The user asks for information about a roadmap and the required performance/energy efficiency for nitrogen reduction to compete with the Haber-Bosch process, thus seeking clarification on the feasibility and potential of this approach.",
-            "encourage particpatioin": "The speaker is asking the group for their input and expertise on the topic."
+            "ask clarifying question": "HW is asking a question about the roadmap and performance/energy efficiency needed for micro reduction to compete with the Haber-Bosch process, seeking information from the group.",
+            "encourage particpatioin": "HW is encouraging the group to answer the question by stating 'maybe our group may have an answer here'."
         }
     },
     {
@@ -565,8 +561,8 @@
         "start_time": "19:17",
         "end_time": "19:46",
         "annotations": {
-            "provide_supporting_evidence": "DK provides an example of a pilot project at Stanford University using plasma to synthesize reactive nitrogen as evidence of a potential alternative to the Harbor-Bosch process.",
-            "explain_or_define_term_or_concept": "DK explains the concept of a \"proof of concept pilot study\" to clarify the stage of development of the Stanford project."
+            "provide supporting evidence": "DK provides evidence to support the discussion on nitrogen reduction by mentioning a pilot project at Stanford University that aims to compete with industrial-scale nitrogen production, which supports the feasibility of alternative nitrogen reduction methods.",
+            "expand on existing idea": "DK expands on the discussion of nitrogen reduction by providing details about a pilot project at Stanford University that uses plasma to break N2 bonds and synthesize reactive nitrogen, building upon the previous discussion of alternative methods to the Haber-Bosch process."
         }
     },
     {
@@ -586,8 +582,7 @@
         "start_time": "19:47",
         "end_time": "19:59",
         "annotations": {
-            "provide_supporting_evidence": "CJ provides a supporting reference to a review paper written by AJ Medford and Martha Hetzel on distributed N2 reduction to strengthen the discussion around nitrogen reduction.",
-            "explain_or_define_term_or_concept": "CJ explains the concept of distributed N2 reduction by referencing a review paper that discusses it."
+            "provide supporting evidence": "CJ mentions AJ Medford and Martha Hetzel, who have written a review paper on distributed N2 reduction, to support the discussion on nitrogen reduction."
         }
     },
     {
@@ -607,9 +602,7 @@
         "start_time": "20:00",
         "end_time": "20:18",
         "annotations": {
-            "provide_supporting_evidence": "CJ provides further details about the review paper on distributed N2 reduction, mentioning the authors and the inclusion of energetic analysis.",
-            "expand_on_existing_idea": "CJ's utterance continues the discussion on alternative nitrogen reduction methods by providing specific information about a relevant review paper.",
-            "encourage_participation": "CJ encourages interaction with Martha Hetzel, suggesting participants discuss the topic further with her at the meeting."
+            "provide supporting evidence": "CJ provides supporting evidence by mentioning a review paper on distributed N2 reduction with energetic analysis and follow-up papers, suggesting that these resources can provide further information on the topic discussed."
         }
     },
     {
@@ -629,7 +622,7 @@
         "start_time": "20:19",
         "end_time": "20:23",
         "annotations": {
-            "ask clarifying question": "George Shields asks Chris whether the challenge related to nitrogen reduction is specifically a catalysis problem or something else, seeking clarification on the nature of the issue."
+            "ask clarifying question": "GS is asking CJ a question to clarify whether the problem with N2 reduction is a catalysis problem or something else, seeking to understand the nature of the challenge."
         }
     },
     {
@@ -648,11 +641,14 @@
         "screenshare_content": "None",
         "start_time": "20:24",
         "end_time": "20:39",
-        "annotations": {
-            "explain or define term or concept": "CJ explains that the challenge of N2 reduction is not solely a catalysis problem, but also involves systems engineering issues.",
-            "acknowledge contribution": "CJ acknowledges Martha's expertise in the details of distributed N2 reduction.",
-            "provide supporting evidence": "CJ supports his claim about the complexity of N2 reduction by mentioning systems engineering issues and his referral to Martha's expertise."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The utterance explains that the problem is partly a catalysis problem and partly systems engineering issues, clarifying the nature of the challenge being discussed."
+            },
+            {
+                "provide supporting evidence": "The speaker refers people to Martha, who is well-versed in the details, to provide further information and support for the points being made."
+            }
+        ]
     },
     {
         "speaker": "LS",
@@ -671,8 +667,8 @@
         "start_time": "20:41",
         "end_time": "20:45",
         "annotations": {
-            "ask clarifying question": "Lindsey asks for clarification on whether the group wants to include the paper mentioned by Chris in the report or just add a link in the speaker notes.",
-            "propose decision": "Lindsey proposes two potential actions: either include the paper in the report or add a link in the speaker notes."
+            "propose decision": "LS is proposing a decision to either drop a paper or add a link to it in the speaker notes, offering two options for the group to consider.",
+            "assign task": "LS is implicitly assigning the task of adding the link to the speaker notes to herself if the group decides to do so."
         }
     },
     {
@@ -692,8 +688,7 @@
         "start_time": "20:45",
         "end_time": "20:51",
         "annotations": {
-            "assign task": "CJ takes on the task of finding and sharing relevant links in the chat.",
-            "propose decision": "CJ proposes to search for and share relevant links related to distributed N2 reduction."
+            "assign task": "CJ is assigning themself the task of finding and sharing relevant links in the chat, following up on the discussion about distributed N2 reduction and papers by AJ Medford and Martha Hetzel."
         }
     },
     {
@@ -713,7 +708,7 @@
         "start_time": "20:51",
         "end_time": "20:51",
         "annotations": {
-            "acknowledge contribution": "Lindsey acknowledges Chris's offer to find and share the relevant links in the chat."
+            "acknowledge contribution": "LS acknowledges CJ's offer to find and share relevant links, showing appreciation for the contribution."
         }
     },
     {
@@ -732,12 +727,20 @@
         "screenshare_content": "None",
         "start_time": "20:56",
         "end_time": "22:38",
-        "annotations": {
-            "provide supporting evidence": "Marcel supports his argument against nitrogen reduction by highlighting the engineering challenges of scaling the process, specifically the difficulty of managing a triple-phase boundary and the weak solubility of gaseous species.",
-            "offer constructive criticism": "Marcel is critiquing the scalability of nitrogen reduction, suggesting that the inherent difficulties in the process make it less competitive than the Harbor-Bosch process.",
-            "present new idea": "Marcel introduces the idea of considering the engineering challenges of nitrogen reduction at scale, specifically the triple-phase boundary requirement and the weak solubility of gaseous species.",
-            "ask clarifying question": "After presenting his concerns about the scalability of nitrogen reduction, Marcel asks the group for their thoughts on his perspective."
-        }
+        "annotations": [
+            {
+                "present new idea": "MS introduces the idea of a fundamental concern regarding the engineering perspective of electrochemical nitrogen reduction, contrasting it with the ease of hydrogen generation via electrolysis."
+            },
+            {
+                "expand on existing idea": "MS expands on the challenges of electrochemical nitrogen reduction at scale, mentioning the need for a triple phase boundary and the difficulty of transporting gaseous species, building upon the previous discussion about the challenges of nitrogen reduction."
+            },
+            {
+                "offer constructive criticism": "MS offers a critique by highlighting the engineering challenges of electrochemical nitrogen reduction compared to the coupled Haber-Bosch and electrolyzer design, suggesting it may be hard to compete at scale."
+            },
+            {
+                "encourage particpatioin": "MS encourages participation by asking \"I don't know what you guys think.\", inviting others to share their perspectives on the topic."
+            }
+        ]
     },
     {
         "speaker": "AT",
@@ -756,8 +759,7 @@
         "start_time": "22:41",
         "end_time": "23:07",
         "annotations": {
-            "ask clarifying question": "AT asks for clarification on MS's point about the difficulty of electrochemical transformation of nitrogen due to the need for a triple-phase boundary, by questioning if the challenge lies in the co-location of reactants on the active site.",
-            "explain or define term or concept": "AT explains that the net thermodynamic states and driving forces are the same for both electrochemical and Harbor-Bosch processes."
+            "ask clarifying question": "AT is asking MS to confirm if their argument is that the electrochemical route faces an engineering challenge in co-locating the proton on the active site, compared to the traditional Haber-Bosch process, after admitting they missed part of the explanation."
         }
     },
     {
@@ -777,7 +779,7 @@
         "start_time": "23:07",
         "end_time": "23:09",
         "annotations": {
-            "explain or define term or concept": "Marcel clarifies that his previous concern was about the transport limitations in electrochemical nitrogen reduction."
+            "explain or define term or concept": "MS is likely referring to the transport challenges associated with electrochemical nitrogen reduction, building on his previous statement about the difficulty of bringing gaseous species to the reaction site."
         }
     },
     {
@@ -797,8 +799,8 @@
         "start_time": "23:13",
         "end_time": "23:24",
         "annotations": {
-            "provide_supporting_evidence": "The speaker explains that in a classical catalytic environment, there is good transport between two gases going to an iron-based catalytic site and turning over to ammonia, supporting their argument about the engineering challenges of electrochemical nitrogen reduction.",
-            "explain_or_define_term_or_concept": "The speaker is explaining the concept of a triple phase boundary in the context of catalytic nitrogen conversion to ammonia."
+            "expand on existing idea": "This utterance expands on MS's previously stated concern about the engineering challenges of electrochemical nitrogen reduction, specifically focusing on the transport advantages of the Haber-Bosch process over electrochemical methods, building on the discussion of the difficulties of electrochemical nitrogen reduction compared to the Haber-Bosch process.",
+            "provide supporting evidence": "The utterance provides supporting evidence for the engineering challenges of electrochemical nitrogen reduction by highlighting the good transport in a classical catalytic environment with two gases going to an iron-based catalytic site, supporting the idea that the Haber-Bosch process has transport advantages."
         }
     },
     {
@@ -818,9 +820,8 @@
         "start_time": "23:25",
         "end_time": "23:45",
         "annotations": {
-            "expand on existing idea": "AT expands on MS's point about the difficulty of electrochemical nitrogen reduction by arguing that the challenge lies in the technical implementation of a triple-phase boundary, similar to how fluidized bed technology has been optimized for the Haber-Bosch process.",
-            "offer constructive criticism": "AT constructively critiques the view that electrochemical nitrogen reduction is inherently inefficient by framing the challenge as a technical one rather than a scientific one.",
-            "express alternative decision": "Instead of dismissing electrochemical nitrogen reduction as inherently inefficient, AT suggests reframing the problem as a technical challenge of implementing a triple-phase boundary."
+            "expand on existing idea": "AT is building on MS's point about the engineering challenges of electrochemical nitrogen reduction, adding that the transport in the Haber-Bosch process has been fine-tuned over decades.",
+            "express alternative decision": "AT is disagreeing with MS's implicit suggestion that electrochemical nitrogen reduction is fundamentally limited, arguing that it's a technical challenge, not a scientific barrier, implying that it can be overcome with engineering solutions."
         }
     },
     {
@@ -839,14 +840,15 @@
         "screenshare_content": "None",
         "start_time": "23:53",
         "end_time": "24:41",
-        "annotations": {
-            "express agreement": "The speaker states \"I agree with Marshall\"",
-            "acknowledge contribution": "The speaker acknowledges Andrew's contribution by saying \"I also agree with Andrew\"",
-            "provide supporting evidence": "The speaker provides the example of oxygen reduction fuel cells to support the idea that the transport problem can be solved",
-            "expand on existing idea": "The speaker expands on the idea of transport challenges by explaining how they can be overcome, drawing parallels with fuel cells and highlighting the need for efficient catalysts",
-            "explain or define term or concept": "The speaker explains the concept of triple phase boundaries and their relevance to both oxygen reduction and nitrogen reduction reactions",
-            "offer constructive criticism": "The speaker points out the critical challenge of not having a catalyst as efficient as platinum for nitrogen reduction, hindering the scalability to compete with the Harbor-Bosch process"
-        }
+        "annotations": [
+            {
+                "express agreement": "HW agrees with Marshall that the triple phase boundary is a big problem for electrochemical nitrogen reduction, acknowledging Marshall's prior concerns about the engineering challenges of bringing reactants together at scale.",
+                "expand on existing idea": "HW expands on the discussion about the challenges of electrochemical nitrogen reduction by suggesting that the problem could be solved, drawing an analogy to oxygen reduction fuel cells which also require triple phase boundaries and can deliver high current density.",
+                "provide supporting evidence": "HW provides supporting evidence by mentioning oxygen reduction fuel cells as an example of a system with triple phase boundaries that can achieve high current density, suggesting that similar solutions might be possible for nitrogen reduction.",
+                "explain or define term or concept": "HW explains the concept of triple phase boundaries by relating it to oxygen reduction fuel cells, clarifying the challenges and potential solutions for electrochemical nitrogen reduction.",
+                "present new idea": "HW presents the idea of drawing inspiration from oxygen reduction fuel cells to address the challenges of triple phase boundaries in electrochemical nitrogen reduction, suggesting a new approach to the problem."
+            }
+        ]
     },
     {
         "speaker": "OL",
@@ -864,13 +866,14 @@
         "screenshare_content": "None",
         "start_time": "24:47",
         "end_time": "26:35",
-        "annotations": {
-            "present new idea": "The speaker suggests exploring nitrogen reduction for purposes beyond replacing the Harbor-Bosch process, such as producing amino acids, which has not been previously discussed.",
-            "expand on existing idea": "Building on the discussion of nitrogen reduction's challenges, the speaker proposes focusing on alternative valuable products besides ammonia.",
-            "provide supporting evidence": "The speaker mentions the existence of systems capable of electrocatalytic ammonia production and subsequent amino acid synthesis from it.",
-            "explain or define term or concept": "The speaker explains the challenge of nitrogen activation from an organic chemistry perspective, highlighting the lack of a dipole in the nitrogen molecule.",
-            "encourage particpatioin": "The speaker implicitly encourages broader participation by suggesting the group \"dream big\" and \"think a little bigger\" about nitrogen's potential uses."
-        }
+        "annotations": [
+            {
+                "present new idea": "The speaker suggests a new approach: capturing CO2, converting it to formaldehyde, making ammonia electrocatalytically, adding a cyanide source, and making amino acids, which are building blocks for organic synthesis and pharmaceutical science."
+            },
+            {
+                "expand on existing idea": "The speaker expands on the discussion about nitrogen reduction by suggesting alternative products and framing the problem as an opportunity in a different context, rather than directly replacing the Haber-Bosch process."
+            }
+        ]
     },
     {
         "speaker": "GS",
@@ -889,8 +892,12 @@
         "start_time": "26:35",
         "end_time": "26:42",
         "annotations": {
-            "encourage particpation": "George is inviting other participants to contribute to the discussion by asking if anyone wants to follow up on or brainstorm around the previously mentioned ideas.",
-            "acknowledge contribution": "George acknowledges the value of the preceding thoughts by describing them as \"nice\" before encouraging further discussion."
+            "acknowledge contribution": {
+                "Explanation": "GS acknowledges OL's contribution of ideas regarding alternative uses of nitrogen reduction products beyond replacing Haber-Bosch."
+            },
+            "encourage particpatioin": {
+                "Explanation": "GS encourages other participants to follow up on OL's ideas or brainstorm around them."
+            }
         }
     },
     {
@@ -910,9 +917,9 @@
         "start_time": "26:44",
         "end_time": "27:24",
         "annotations": {
-            "expand on existing idea": "Andrew is building on Olivia's idea about thinking bigger than just replacing the Harbor Bosch process by suggesting pathways to high-value products using nitrogen reduction.",
-            "provide supporting evidence": "Andrew supports his idea by mentioning specific examples of high-value products like amino acids, proteins, and other organic molecules.",
-            "resolve conflict": "Andrew is mediating the conflict between the difficulty of competing with the Haber Bosch process and the potential of nitrogen reduction by suggesting a focus on high-value products that could justify the higher costs."
+            "expand on existing idea": "AT is building on OL's idea of exploring alternative products from nitrogen reduction, adding that high-value pathways like amino acids or proteins could help recoup costs.",
+            "provide supporting evidence": "AT supports the idea of high value pathways by suggesting that subsidies or renewable energy sources could make the process relevant even if it's not more efficient than Haber-Bosch.",
+            "express alternative decision": "AT suggests that instead of focusing solely on making nitrogen reduction more efficient than Haber-Bosch, they should consider producing high-value products to make the process economically viable."
         }
     },
     {
@@ -932,9 +939,8 @@
         "start_time": "27:25",
         "end_time": "28:08",
         "annotations": {
-            "expand on existing idea": "Xiao Su expands on the idea of alternative uses for nitrogen reduction beyond ammonia production by suggesting the creation of valuable organic molecules and the subsequent need for electro separation purification methods.",
-            "provide supporting evidence": "Xiao Su supports their idea by contrasting the potential for purifying valuable organic compounds with the difficulty of competing with existing methods for bulk iron separations.",
-            "present new idea": "Xiao Su introduces the idea of using electro separations for purifying valuable organic molecules produced via nitrogen reduction, linking it to opportunities for integrating separations with reactions."
+            "expand on existing idea": "XS is building on the idea of producing high-value products from nitrogen reduction, adding that it creates new opportunities for electro separations.",
+            "present new idea": "XS introduces the idea of using electro separations for the purification of valuable organic molecules produced from nitrogen reduction, which is a new application of electro separations in this context."
         }
     },
     {
@@ -954,9 +960,9 @@
         "start_time": "28:08",
         "end_time": "28:41",
         "annotations": {
-            "acknowledge contribution": "MS acknowledges XS's thoughts on the integration of synthesis and separation in electrochemistry.",
-            "expand on existing idea": "MS expands on the idea of electrochemistry's ability to integrate synthesis and separation, adding that it's underappreciated and highlighting how Chen's work has drawn attention to it.",
-            "express enthusiasm": "MS expresses enthusiasm for the potential of integrating synthesis and separation in electrochemistry, suggesting further opportunities in this space."
+            "acknowledge contribution": "The speaker acknowledges Xiao's thoughts, indicating recognition of their input.",
+            "expand on existing idea": "The speaker builds on Xiao's idea about integrating separations with reactions, relating it to Chen's work and highlighting the unique abilities of electrochemistry in this area.",
+            "express enthusiasm": "The speaker expresses enthusiasm for the idea of integrating synthesis and separation, indicating excitement about potential opportunities in this space."
         }
     },
     {
@@ -976,10 +982,9 @@
         "start_time": "28:41",
         "end_time": "29:17",
         "annotations": {
-            "expand on existing idea": "Xiao Su is building upon the previous suggestion of integrating synthesis and separation in electrochemistry by suggesting specific electrochemical separation methods and highlighting the potential of electrochemical symmetry/asymmetry.",
-            "encourage particpatioin": "Xiao Su encourages Haoting to contribute to the discussion by directly addressing him and inviting him to \"pitch in.\"",
-            "present new idea": "Xiao Su introduces the idea of using a selective polymeric system for purification of precursors or products in electrochemical reactions.",
-            "provide supporting evidence": "Xiao Su supports the idea of integrating separation and reactions by pointing out that traditional separation or reaction methods alone lack the capability for such integration due to the absence of electron transfer-based mechanisms."
+            "expand on existing idea": "XS is building on the idea of integrating electrochemical reactions and separations, adding the detail that a selective polymeric system could purify precursors or products.",
+            "encourage particpatioin": "XS encourages Haoting to contribute to the discussion.",
+            "present new idea": "XS presents the idea that the symmetric or asymmetric nature of electrochemistry brings new opportunities for integration that usual separation or reaction methods can't."
         }
     },
     {
@@ -999,10 +1004,9 @@
         "start_time": "29:18",
         "end_time": "29:59",
         "annotations": {
-            "express agreement": "HW expresses agreement with Marshall's point about the underdevelopment of electrochemical tools for driving ions in different directions for separation purposes.",
-            "expand on existing idea": "HW expands on the idea of electrochemical tools by adding the detail that they can drive ions in different directions, which can be used in separation.",
-            "present new idea": "HW introduces the novel idea of coupling electrosynthesis with electro separation using a single pass through of an electron.",
-            "express enthusiasm": "HW expresses excitement about the potential of electrosynthesis coupled with electro separation, calling it a \"very exciting field\"."
+            "express agreement": "HW explicitly agrees with Marshall's point about the underdevelopment of electrochemical tools for separation, building on the previous discussion about integrating synthesis and separation.",
+            "expand on existing idea": "HW expands on the idea of integrating electrosynthesis and electroseparation by mentioning the potential of electrochemical tools to drive ions in different directions, which can be used in separation, building on the previous discussion about integrating synthesis and separation.",
+            "express enthusiasm": "HW expresses excitement about the potential of electrosynthesis coupled with electroseparation, building on the previous discussion about integrating synthesis and separation."
         }
     },
     {
@@ -1022,8 +1026,7 @@
         "start_time": "30:00",
         "end_time": "30:05",
         "annotations": {
-            "expand on existing idea": "Haoting Wang expands on the idea of coupling electrosynthesis and electroseparation by highlighting the energy-saving potential of achieving two goals with a single electron pass.",
-            "provide supporting evidence": "Haoting Wang supports the idea of coupling electrosynthesis and electroseparation by stating that it can save a lot of energy for different purposes."
+            "expand on existing idea": "HW is expanding on the idea of electrosynthesis coupled with electroseparation, building on the previous discussion about integrating synthesis and separation to save energy."
         }
     },
     {
@@ -1043,10 +1046,10 @@
         "start_time": "30:16",
         "end_time": "31:00",
         "annotations": {
-            "present new idea": "Andrew proposes a new idea of using CO2 as an oxidant to oxidize dinitrogen to form NOx, which can be processed downstream, as an alternative pathway in the discussion of nitrogen reduction.",
-            "provide supporting evidence": "Andrew supports his idea by mentioning the existing technology in NOx production and the relative ease of breaking the nitrogen-oxygen bond compared to the nitrogen-nitrogen bond.",
-            "ask clarifying question": "Andrew asks the group for their ideas on NOx chemistry and its potential relevance to the discussion.",
-            "encourage particpatioin": "Andrew encourages participation by asking the group if they have any ideas on the proposed pathway."
+            "present new idea": "AT introduces a new idea about using NOx chemistry as a different pathway, deviating from the prior discussion on ammonia production from nitrogen reduction.",
+            "expand on existing idea": "AT expands on the idea of exploring alternatives to direct nitrogen reduction by suggesting NOx chemistry, building upon the earlier discussion of the challenges in breaking the nitrogen-nitrogen bond.",
+            "ask clarifying question": "AT asks if anyone has ideas on NOx or NOx chemistry, seeking input from the group on this alternative pathway.",
+            "encourage particpatioin": "AT encourages participation by asking if anyone has any ideas on NOx or NOx chemistry, inviting others to contribute to the discussion."
         }
     },
     {
@@ -1065,11 +1068,14 @@
         "screenshare_content": "None",
         "start_time": "31:04",
         "end_time": "31:39",
-        "annotations": {
-            "present new idea": "Lindsey introduces a new idea of exploring electrochemical reduction of NOx, shifting the discussion from N2 reduction.",
-            "provide supporting evidence": "Lindsey supports her interest in NOx reduction by mentioning her prior zeolite work on NOx SCR via ammonia.",
-            "expand on existing idea": "Lindsey expands on the challenges of NOx reduction by highlighting the need to handle flexible or dilute feed streams, adding a practical consideration to the discussion."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "The speaker is building upon the previous idea of NOx chemistry by suggesting an electrochemical analog of NOx reduction, expanding the discussion on nitrogen-related compounds beyond dinitrogen."
+            },
+            {
+                "present new idea": "The speaker introduces the idea of dealing with flexible or dilute feed streams in the context of NOx reduction, which is a new consideration in the discussion."
+            }
+        ]
     },
     {
         "speaker": "AT",
@@ -1088,8 +1094,9 @@
         "start_time": "31:48",
         "end_time": "32:07",
         "annotations": {
-            "present new idea": "Andrew proposes a novel idea of using CO2 as an oxidant to activate dinitrogen, similar to dry reforming of methane, to address the challenge of breaking the stable nitrogen-nitrogen bond.",
-            "ask clarifying question": "Andrew poses a clarifying question about the possibility of using CO2 as an oxidant to activate nitrogen and achieve a dual benefit."
+            "present new idea": "The speaker introduces a new idea of using CO2 as an oxidant to activate nitrogen, drawing an analogy to dry reforming of methane, which has not been previously discussed.",
+            "expand on existing idea": "This utterance expands on the previous discussion about NOx chemistry and activating nitrogen by suggesting a specific pathway involving CO2 as an oxidant.",
+            "propose decision": "The speaker is proposing a direction to explore, which is to use CO2 to activate nitrogen."
         }
     },
     {
@@ -1109,8 +1116,7 @@
         "start_time": "32:21",
         "end_time": "32:25",
         "annotations": {
-            "ask clarifying question": "George is summarizing Andrew's question about using CO2 as an oxidant to activate nitrogen and highlighting that no one in the group has an answer to it yet.",
-            "encourage particpatioin": "George is prompting the group for a response to Andrew's question about NOx chemistry and its potential relevance to the discussion."
+            "express frustration": "GS expresses frustration that no one has an answer to the question posed by AT regarding NOx chemistry and CO2 as an oxidant for dinitrogen."
         }
     },
     {
@@ -1130,7 +1136,7 @@
         "start_time": "32:26",
         "end_time": "32:30",
         "annotations": {
-            "express humor": "The speaker makes a self-deprecating joke about their tendency to pose difficult questions, following a period of discussion where their question about using CO2 as an oxidant for dinitrogen remained unanswered."
+            "express humor": "The speaker makes a self-deprecating joke about their ability to pose difficult questions, expressing humor."
         }
     },
     {
@@ -1149,13 +1155,23 @@
         "screenshare_content": "None",
         "start_time": "32:36",
         "end_time": "33:13",
-        "annotations": {
-            "present new idea": "Haoting Wang (HW) suggests exploring the oxidation of nitrogen by carbon dioxide as a potentially more efficient pathway to ammonia production than direct electrochemical reduction of nitrogen.",
-            "expand on existing idea": "HW builds upon Andrew's earlier suggestion of exploring NOx chemistry by proposing a specific reaction involving CO2 oxidation of nitrogen.",
-            "provide supporting evidence": "HW supports the idea by explaining that activating nitrogen to NOx would make subsequent reduction to ammonia easier.",
-            "propose decision": "HW suggests conducting a literature search to investigate the feasibility and efficiency of the proposed reaction.",
-            "express enthusiasm": "HW expresses interest in the idea by calling it \"very interesting\"."
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": {
+                    "Explanation": "The speaker acknowledges AT's idea of using carbon oxide to oxidize nitrogen as interesting, showing recognition of the contribution."
+                }
+            },
+            {
+                "propose decision": {
+                    "Explanation": "The speaker suggests doing a literature search to see if the reaction of using carbon oxide to oxidize nitrogen has been done before, proposing a concrete action for the group."
+                }
+            },
+            {
+                "expand on existing idea": {
+                    "Explanation": "The speaker builds on AT's idea by suggesting that activating nitrogen to NO or other NOx would make it much easier to reduce to ammonia, adding a potential benefit to the initial idea."
+                }
+            }
+        ]
     },
     {
         "speaker": "AT",
@@ -1174,9 +1190,9 @@
         "start_time": "33:14",
         "end_time": "33:42",
         "annotations": {
-            "expand on existing idea": "Andrew expands on his prior idea of using CO2 as an oxidant for nitrogen, suggesting that oxidizing nitrogen could be a pre-treatment step in direct air CO2 capture.",
-            "provide supporting evidence": "Andrew supports his idea by referencing discussions in other groups about removing oxygen as a pre-treatment step in direct air CO2 capture.",
-            "present new idea": "Andrew presents the new idea of directly oxidizing nitrogen as a pre-treatment for direct air CO2 capture, resulting in nitric acid as a byproduct."
+            "expand on existing idea": "AT is expanding on the idea of NOx chemistry by suggesting it could be used as a pre-treatment step, building upon the previous discussion about NOx and CO2.",
+            "present new idea": "AT presents the idea of oxidizing nitrogen as a pre-treatment step to remove oxygen in direct air CO2 capture, which is a novel suggestion in the context of the conversation.",
+            "provide supporting evidence": "AT supports the idea by mentioning that other groups are discussing oxygen removal, providing a real-world context for the proposed pre-treatment."
         }
     },
     {
@@ -1196,8 +1212,8 @@
         "start_time": "33:48",
         "end_time": "34:05",
         "annotations": {
-            "provide_supporting_evidence": "AT supports his doubt about the feasibility of using CO2 to oxidize nitrogen by pointing out that both gases are present in automobile exhaust streams, where such a reaction would likely have been observed if it were efficient.",
-            "reject_idea": "AT expresses skepticism about the idea of using CO2 as an oxidant for nitrogen, suggesting that if it were viable, it would likely already be utilized in automotive catalysts."
+            "provide supporting evidence": "The speaker is providing reasoning based on the existing automotive catalysts and exhaust stream composition to suggest that the proposed idea of using CO2 to oxidize nitrogen might not be feasible or practical, implying that if it were viable, it would likely already be implemented in automotive catalysts.",
+            "reject idea": "The speaker is rejecting the idea of using CO2 to oxidize nitrogen, suggesting it might not work because it hasn't been implemented in automotive catalysts despite the presence of CO2 and nitrogen in exhaust streams."
         }
     },
     {
@@ -1217,8 +1233,7 @@
         "start_time": "34:12",
         "end_time": "34:27",
         "annotations": {
-            "provide_supporting_evidence": "YL provides a Nature Chemistry paper to support the discussion about coupling nitrogen and CO2, directly relating to AT's question and HW's follow-up comment.",
-            "acknowledge_contribution": "YL acknowledges AT and HW's discussion points by mentioning the relevance of the shared paper."
+            "provide supporting evidence": "YL provides a paper about coupling nitrogen and CO2, published in Nature Chemistry, as supporting evidence for the discussion about using CO2 to oxidize nitrogen, which AT proposed."
         }
     },
     {
@@ -1237,11 +1252,14 @@
         "screenshare_content": "None",
         "start_time": "34:51",
         "end_time": "35:15",
-        "annotations": {
-            "expand on existing idea": "Andrew is building upon the previous idea of using CO2 as an oxidant by suggesting that the resulting coking of the catalyst could be a method of carbon sequestration.",
-            "explain or define term or concept": "Andrew explains that \"coking up a catalyst\" refers to carbon deposition on the catalyst surface, which is usually undesirable but could be leveraged for carbon sequestration.",
-            "present new idea": "Andrew introduces the novel idea of using catalyst coking, a typically unwanted side effect, as a means of sequestering carbon derived from CO2."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "This utterance builds upon the previous discussion about using CO2 to oxidize nitrogen, suggesting that coking up a catalyst could sequester carbon, which could then be delaminated to obtain graphitized carbon."
+            },
+            {
+                "present new idea": "The speaker introduces the idea of coking up a catalyst as a way to sequester carbon from CO2, which could then be delaminated to obtain graphitized carbon."
+            }
+        ]
     },
     {
         "speaker": "MS",
@@ -1260,10 +1278,11 @@
         "start_time": "35:20",
         "end_time": "36:09",
         "annotations": {
-            "provide_supporting_evidence": "MS provides supporting evidence by mentioning the UC Santa Barbara work on converting CO2 to graphitic carbon and storing it, which is a negative emissions technology.",
-            "express_alternative_decision": "MS rejects the idea of electrocatalysis by stating that the molten metal catalysis work is not electrocatalysis.",
-            "ask_clarifying_question": "MS asks a clarifying question about how people have looked into directly converting CO2 to graphitic carbon.",
-            "present_new_idea": "MS presents the new idea of electrocatalytic pathways used by Japanese researchers to convert CO2 to carbon in a molten salt environment."
+            "expand on existing idea": "The speaker is expanding on the idea of using CO2 to create graphitic carbon, which was brought up in the previous utterance by AT.",
+            "provide supporting evidence": "The speaker mentions UC Santa Barbara's work and Japanese research as examples of efforts to convert CO2 to graphitic carbon, providing evidence that this idea has been explored.",
+            "explain or define term or concept": "The speaker explains that converting CO2 to graphitic carbon would be a real negative emissions technology because the carbon can be stored away.",
+            "express agreement": "The speaker agrees with the previous statement about coking up a catalyst and sequestering carbon.",
+            "acknowledge contribution": "The speaker acknowledges the previous contribution by AT."
         }
     },
     {
@@ -1283,8 +1302,9 @@
         "start_time": "36:10",
         "end_time": "36:42",
         "annotations": {
-            "provide_supporting_evidence": "The speaker refers to existing literature about a specific chemical reaction to support the idea of generating oxygen from CO2, particularly in space travel conditions.",
-            "explain_or_define_term_or_concept": "The speaker explains the context of the reaction by mentioning its potential use in space travel for generating oxygen from CO2 sources like human breath."
+            "expand on existing idea": "OL is expanding on the idea of converting CO2 to carbon, mentioning a specific application of this reaction for generating oxygen in space travel, building upon MS's previous mention of UC Santa Barbara's work on converting CO2 to graphitic carbon.",
+            "provide supporting evidence": "OL mentions reading literature about using the reaction of converting CO2 to carbon as a way to generate oxygen in space travel, providing a reference to support the idea.",
+            "assign task": "OL assigns themself the task of finding the literature they read about converting CO2 to carbon as a way to generate oxygen in space travel."
         }
     },
     {
@@ -1304,8 +1324,9 @@
         "start_time": "36:43",
         "end_time": "37:09",
         "annotations": {
-            "provide_supporting_evidence": "MS explains the chemical processes used in spacecraft, supporting their previous statement about the logic of the process.",
-            "explain_or_define_term_or_concept": "MS explains the Sabatier process and the specific materials used on the ISS, clarifying the context of hydrogen loss and water regeneration."
+            "provide supporting evidence": "The speaker supports their previous statement by providing an example of the Sabatier process used in spacecraft to take CO2 and make methane, explaining how hydrogen atoms are lost in the process.",
+            "explain or define term or concept": "The speaker explains the Sabatier process, which is relevant to the discussion of CO2 conversion and oxygen generation in space travel.",
+            "expand on existing idea": "The speaker expands on the discussion of CO2 conversion by describing the Sabatier process and its implications for hydrogen loss in spacecraft."
         }
     },
     {
@@ -1325,11 +1346,15 @@
         "start_time": "37:23",
         "end_time": "38:42",
         "annotations": {
-            "present new idea": "Haoting introduces hydrogen peroxide production as a topic related to electrochemical methods and CO2 reduction, shifting the discussion from nitrogen reduction.",
-            "expand on existing idea": "Haoting elaborates on the existing discussion of alternative electrochemical processes by focusing on the challenges and potential of hydrogen peroxide production.",
-            "provide supporting evidence": "Haoting supports his claims by mentioning recent research on catalysts for oxygen reduction to hydrogen peroxide and the relative ease of finding such catalysts compared to nitrogen reduction.",
-            "explain or define term or concept": "Haoting explains that the anthraquinone process for hydrogen peroxide production consumes a lot of hydrogen and has lower energy efficiency due to product separation and organic waste.",
-            "offer constructive criticism": "Haoting points out the limitations of current hydrogen peroxide production methods, such as the anthraquinone process, which involves high hydrogen consumption, organic waste, and energy inefficiency, suggesting room for improvement through electrifying the process."
+            "present new idea": {
+                "Explanation": "HW introduces a new topic, hydrogen peroxide production, which is distinct from the prior discussion focused on nitrogen reduction and CO2 utilization."
+            },
+            "expand on existing idea": {
+                "Explanation": "HW expands on the idea of alternative feedstocks by discussing the limitations of the current anthraquinone process for hydrogen peroxide production, including its hydrogen consumption, energy inefficiency, organic waste, and separation challenges."
+            },
+            "provide supporting evidence": {
+                "Explanation": "HW provides supporting evidence by mentioning recent research indicating that catalysts for oxygen reduction to hydrogen peroxide are easier to find than those for nitrogen reduction."
+            }
         }
     },
     {
@@ -1348,11 +1373,14 @@
         "screenshare_content": "None",
         "start_time": "38:43",
         "end_time": "39:40",
-        "annotations": {
-            "ask clarifying question": "XS asks about purification methods for hydrogen peroxide when produced electrochemically, referring to phase separation, membrane technology, and concentration challenges.",
-            "provide supporting evidence": "XS supports their question by mentioning their roommate's company that produces hydrogen peroxide through bio means and the challenges they face with concentration.",
-            "explain or define term or concept": "XS explains the context of their question by mentioning anthraquinone and its role in hydrogen peroxide production and phase separation."
-        }
+        "annotations": [
+            {
+                "ask clarifying question": "XS asks how hydrogen peroxide is purified when it is produced, following HW's introduction of hydrogen peroxide as a fundamental feedstock."
+            },
+            {
+                "explain or define term or concept": "XS explains the phase separation and membrane technology used in hydrogen peroxide production, showing their understanding of the process."
+            }
+        ]
     },
     {
         "speaker": "LS",
@@ -1370,11 +1398,11 @@
         "screenshare_content": "None",
         "start_time": "39:40",
         "end_time": "39:55",
-        "annotations": {
-            "ask clarifying question": "Lindsey asks about the purpose of concentrating hydrogen peroxide, given that most applications use it in dilute form, implying a question about the practical need for concentration.",
-            "provide supporting evidence": "Lindsey supports her question by stating that most end-use applications utilize dilute hydrogen peroxide, suggesting concentration is primarily for transport.",
-            "expand on existing idea": "Lindsey builds on the discussion of hydrogen peroxide production by addressing the aspect of concentration and its relevance to electrified, distributed production."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining the purpose of concentrating hydrogen peroxide, suggesting it's mainly for transportation and not necessary for electrified, distributed production, which is relevant to the ongoing discussion about hydrogen peroxide production."
+            }
+        ]
     },
     {
         "speaker": "LS",
@@ -1393,9 +1421,9 @@
         "start_time": "40:00",
         "end_time": "40:26",
         "annotations": {
-            "provide supporting evidence": "Lindsey supports the idea of distributed hydrogen peroxide production by pointing out that hydroperoxy acetates formed with the electrolyte can enhance downstream catalyst applications.",
-            "expand on existing idea": "Lindsey expands on the discussion of hydrogen peroxide production by considering the potential synergies and challenges related to the electrolyte used in the process.",
-            "present new idea": "Lindsey introduces the idea of using hydroperoxy acetates, formed during hydrogen peroxide production, to enhance downstream catalyst applications."
+            "expand on existing idea": "The speaker is expanding on the previous discussion about hydrogen peroxide, mentioning existing industries that use it and potential synergies with electrolytes, building upon the topic of hydrogen peroxide production and its applications.",
+            "present new idea": "The speaker introduces the idea of forming hydroperoxy acetate molecules from sulfates or acetates in the electrolyte, which can enhance downstream catalyst applications, presenting a novel concept related to hydrogen peroxide use.",
+            "express enthusiasm": "The speaker ends the utterance with \"which is really kind of neat,\" expressing enthusiasm about the potential synergies and applications of hydrogen peroxide."
         }
     },
     {
@@ -1414,9 +1442,11 @@
         "screenshare_content": "None",
         "start_time": "40:28",
         "end_time": "40:28",
-        "annotations": {
-            "ask clarifying question": "Lindsey is asking for clarification or confirmation about something previously stated, indicated by the phrase \"Is that?\""
-        }
+        "annotations": [
+            {
+                "ask clarifying question": "The speaker ends the utterance with \"Is that?\", which is an incomplete sentence that seeks confirmation or further explanation on a previous point."
+            }
+        ]
     },
     {
         "speaker": "LS",
@@ -1435,9 +1465,8 @@
         "start_time": "40:29",
         "end_time": "40:57",
         "annotations": {
-            "expand on existing idea": "Lindsey expands on the discussion of alternative electrochemical processes by comparing electrifying peroxide and hydrogen production and their emission implications.",
-            "ask clarifying question": "Lindsey asks for clarification on the emissions balance of the anthraquinone process and steam methane reforming for hydrogen production.",
-            "provide supporting evidence": "Lindsey provides a specific example, stating that one ton of hydrogen produced via steam methane reforming generates eight tons of CO2."
+            "expand on existing idea": "LS is expanding on the previous discussion about hydrogen peroxide by relating it to the discussion of hydrogen production and emissions, building on the idea of electrifying chemical production.",
+            "provide supporting evidence": "LS provides supporting evidence by stating the amount of CO2 produced for every ton of hydrogen using steam methane reforming, which strengthens the argument for electrifying hydrogen production."
         }
     },
     {
@@ -1457,7 +1486,7 @@
         "start_time": "41:00",
         "end_time": "41:01",
         "annotations": {
-            "None": "No code from the codebook applies to this single-sentence utterance."
+            "express humor": "The speaker is making a lighthearted comment about accidentally muting themselves, which expresses humor."
         }
     },
     {
@@ -1477,9 +1506,8 @@
         "start_time": "41:01",
         "end_time": "41:33",
         "annotations": {
-            "provide_supporting_evidence": "David provides an example of a company using electrochemical separation of seawater for negative emissions H2 gas production to support the discussion of alternative energy production methods.",
-            "explain_or_define_term_or_concept": "David explains the process of negative emissions H2 gas production by describing how a company adds mineral salt to seawater, produces H2 gas and hydroxide ions that absorb carbon dioxide.",
-            "present_new_idea": "David introduces the concept of negative emissions H2 gas production through electrochemical separation of seawater as a potential solution in the discussion of alternative energy sources."
+            "provide supporting evidence": "The speaker provides an example of a company (Planetary Hydrogen) that is producing H2 gas with negative emissions using electrochemical separation of seawater, supporting the idea that there are negative emission pathways for H2 production.",
+            "expand on existing idea": "The speaker expands on the discussion of hydrogen production by providing a specific example of a company using electrochemical separation of seawater to achieve negative emissions, building upon the previous discussion of hydrogen production and its potential for negative emissions."
         }
     },
     {
@@ -1499,7 +1527,7 @@
         "start_time": "41:34",
         "end_time": "41:35",
         "annotations": {
-            "ask clarifying question": "Lindsey asks a clarifying question about the byproduct of the electrochemical separation process described by David, showing her attention to detail and potential environmental impacts."
+            "ask clarifying question": "Lindsey asks what the company does with the chlorine produced during electrochemical separation of seawater, seeking more information about the process mentioned by David."
         }
     },
     {
@@ -1519,9 +1547,9 @@
         "start_time": "41:37",
         "end_time": "41:48",
         "annotations": {
-            "provide_supporting_evidence": "David acknowledges Lindsey's question about chlorine by stating it is a common problem for seawater-based hydrogen production.",
-            "explain_or_define_term_or_concept": "David explains that chlorine production is a common issue when using seawater for hydrogen production.",
-            "acknowledge_contribution": "David acknowledges Lindsey's contribution by directly responding to her question about chlorine."
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges that dealing with chlorine is a common problem for seawater issues, recognizing a known challenge without necessarily agreeing or expanding on it."
+            }
         }
     },
     {
@@ -1541,7 +1569,7 @@
         "start_time": "41:56",
         "end_time": "41:59",
         "annotations": {
-            "ask clarifying question": "Lindsey asks for the company name again so she can make a note of it."
+            "ask clarifying question": "LS is asking for the name of the company mentioned by DK in the previous turn, indicating a need for clarification."
         }
     },
     {
@@ -1561,9 +1589,8 @@
         "start_time": "41:59",
         "end_time": "42:19",
         "annotations": {
-            "explain or define term or concept": "DK explains that the hydrogen production method can only be considered carbon negative if powered by renewable energy sources, not fossil fuels.",
-            "provide supporting evidence": "DK clarifies that using non-renewable energy sources to power the hydrogen production negates its carbon negativity, making it not a negative emissions process.",
-            "expand on existing idea": "Building on the previous discussion of negative emissions H2 gas production, DK emphasizes the importance of the energy source used in the process."
+            "provide supporting evidence": "DK is providing supporting evidence to the previous statement about Planetary Hydrogen by clarifying that the process is only carbon negative if powered by renewable energy, implying that the source of energy is a crucial factor for its environmental impact.",
+            "explain or define term or concept": "DK is explaining the concept of 'carbon negative' in the context of hydrogen production, clarifying that it depends on the energy source used to power the process."
         }
     },
     {
@@ -1583,9 +1610,8 @@
         "start_time": "42:34",
         "end_time": "43:26",
         "annotations": {
-            "ask clarifying question": "MS asks what the targets are for negative emissions electrochemistry and what the most reasonable targets to pursue are.",
-            "express enthusiasm": "MS finds the discussion interesting as it explores different possibilities for negative emissions electrochemistry.",
-            "present new idea": "MS suggests graphitized carbon as a target for negative emissions electrochemistry, highlighting it as an unexplored technology for terminal storage of carbon dioxide."
+            "ask clarifying question": "The speaker is asking what the targets should be for negative emissions electrochemistry, seeking to clarify the direction of the discussion.",
+            "express enthusiasm": "The speaker expresses enthusiasm for the discussion and finds the idea of going to graphitized carbon electrochemically the most interesting, indicating excitement about this unexplored negative emissions technology."
         }
     },
     {
@@ -1605,8 +1631,7 @@
         "start_time": "43:30",
         "end_time": "43:48",
         "annotations": {
-            "ask clarifying question": "XS asks for clarification on how the cost of electro organic synthesis compares to the cost of producing graphitized carbon from CO2, given the discussion of both topics.",
-            "provide supporting evidence": "XS mentions the high cost of electro organic synthesis as a reason for their surprise at the discussion of graphitized carbon production."
+            "ask clarifying question": "XS is asking how electro organic synthesis and graphitic carbon production compare in terms of cost, suggesting a need for clarification on the economic feasibility of these approaches, given the previous discussion about different electrochemical pathways."
         }
     },
     {
@@ -1626,8 +1651,8 @@
         "start_time": "43:49",
         "end_time": "44:17",
         "annotations": {
-            "provide_supporting_evidence": "The speaker supports his argument by referring to discussions in other sessions about the limited capacity for CO2 conversion into polymers to significantly impact atmospheric CO2 levels.",
-            "expand_on_existing_idea": "The speaker elaborates on the previous discussion about the potential of electrocatalytic graphitic carbon production as a negative emissions technology by highlighting the limitations of polymer production from captured CO2."
+            "expand on existing idea": "MS is expanding on XS's question about the comparison between electro organic synthesis and graphitic carbon by discussing the market and use size of polymers, which relates to the potential impact of using CO2 to make plastics.",
+            "provide supporting evidence": "MS provides supporting evidence by referencing discussions in other sessions where the limited impact of using CO2 to make all the world's plastics was discussed, suggesting that the amount of CO2 that can be sequestered in this way is limited."
         }
     },
     {
@@ -1647,7 +1672,7 @@
         "start_time": "44:18",
         "end_time": "44:25",
         "annotations": {
-            "provide_supporting_evidence": "Chris provides data to support the idea that the amount of CO2 used to make polyethylene and polypropylene is small compared to annual CO2 emissions."
+            "provide supporting evidence": "This statement provides quantitative data (1% of annual CO2 emissions) to support the idea that using CO2 to make plastics might not significantly impact overall CO2 levels, building on the previous discussion about the potential of electrochemistry for carbon sequestration and the scale of the market."
         }
     },
     {
@@ -1667,8 +1692,7 @@
         "start_time": "44:27",
         "end_time": "44:36",
         "annotations": {
-            "present new idea": "Lindsey suggests an alternative approach to carbon sequestration by creating solid carbon chunks and burying them, instead of sequestering CO2 as a gas.",
-            "ask clarifying question": "Lindsey poses a question to the group, prompting a discussion on the feasibility and practicality of creating and burying large carbon chunks as a sequestration method."
+            "present new idea": "LS presents a novel idea of making huge chunks of carbon and burying them instead of sequestering CO2 as a gas and putting it back in the ground, which is a different approach than previously discussed."
         }
     },
     {
@@ -1688,7 +1712,7 @@
         "start_time": "44:40",
         "end_time": "44:40",
         "annotations": {
-            "confirm decision": "Chris confirms Lindsey's suggestion to make and bury large carbon chunks, agreeing with her idea."
+            "confirm decision": "CJ confirms LS's idea of making huge chunks of carbon and burying them instead of sequestering CO2 as a gas."
         }
     },
     {
@@ -1707,10 +1731,14 @@
         "screenshare_content": "None",
         "start_time": "44:41",
         "end_time": "44:54",
-        "annotations": {
-            "provide_supporting_evidence": "Lindsey supports the idea of burying large carbon chunks by stating it would act as a carbon sink.",
-            "ask_clarifying_question": "Lindsey asks for clarification on the permanence and implications of burying carbon chunks versus pressurized CO2 storage underground."
-        }
+        "annotations": [
+            {
+                "present new idea": "LS is presenting a new idea of making huge chunks of carbon and burying them as a sink for CO2, which has not been discussed before."
+            },
+            {
+                "ask clarifying question": "LS is asking about the permanence or implications of burying carbon chunks versus pressurized CO2 underground, seeking clarification on the comparison."
+            }
+        ]
     },
     {
         "speaker": "CJ",
@@ -1729,9 +1757,8 @@
         "start_time": "44:55",
         "end_time": "45:03",
         "annotations": {
-            "acknowledge contribution": "Chris acknowledges Lindsey's idea of making chunks of carbon and burying them, by mentioning a similar study about the cost of cutting down trees and burying them.",
-            "express agreement": "Chris agrees with Lindsey's idea by saying \"I think it's a good idea.\"",
-            "provide supporting evidence": "Chris supports Lindsey's idea by mentioning a study that explored a similar concept of burying trees as a carbon sink."
+            "express agreement": "CJ explicitly agrees with the idea of making huge chunks of carbon and burying them.",
+            "expand on existing idea": "CJ expands on the idea of burying carbon by mentioning a similar study about cutting down trees and burying them, building upon LS's suggestion."
         }
     },
     {
@@ -1751,8 +1778,7 @@
         "start_time": "45:09",
         "end_time": "45:29",
         "annotations": {
-            "provide_supporting_evidence": "CJ supports the idea of using large carbon materials for sequestration by explaining that their low surface area to volume ratio leads to slower breakdown compared to biochar with higher surface area and faster degradation.",
-            "explain_or_define_term_or_concept": "CJ explains the concept of surface area to volume ratio and its implications for the breakdown rate of carbon materials."
+            "provide supporting evidence": "The utterance provides reasoning for why a tree or large carbon material would break down slower than biochar, supporting the idea of burying carbon materials for sequestration, which was brought up in the previous utterance."
         }
     },
     {
@@ -1771,11 +1797,14 @@
         "screenshare_content": "None",
         "start_time": "45:37",
         "end_time": "46:45",
-        "annotations": {
-            "provide_supporting_evidence": "David is providing further explanation and support for his previous argument about the difficulty of using trees as a carbon sink by explaining that trees decompose faster than coal or biochar and that the concept of permanence in carbon capture usually refers to time scales of 100-1000 years.",
-            "explain_or_define_term_or_concept": "David is defining the concept of \"permanence\" in the context of carbon capture to clarify its meaning and relevance to the discussion about using trees as a carbon sink.",
-            "expand_on_existing_idea": "David further elaborates on the challenges of using trees for carbon storage by highlighting the social and environmental implications, such as opposition from environmental groups due to the negative impact on clean water, habitat, and biodiversity."
-        }
+        "annotations": [
+            {
+                "provide supporting evidence": "The speaker provides supporting evidence by comparing the lability of trees to coal and biochar, and discussing the time scale of carbon permanence (100-1000 years) to support the argument against using trees for carbon sequestration, building on the discussion of burying trees as a carbon sink."
+            },
+            {
+                "offer constructive criticism": "The speaker offers constructive criticism by pointing out the challenges of using trees for carbon sequestration, including the social and environmental opposition, building on the discussion of burying trees as a carbon sink."
+            }
+        ]
     },
     {
         "speaker": "AT",
@@ -1794,9 +1823,9 @@
         "start_time": "46:47",
         "end_time": "47:10",
         "annotations": {
-            "provide_supporting_evidence": "Andrew provides the example of switchgrass as a more marketable biomass alternative to trees, supporting the idea of sustainable biomass sourcing.",
-            "expand_on_existing_idea": "Andrew loops back to the topic of resource availability, expanding on the discussion of negative emissions technologies and their potential impact on resource consumption.",
-            "propose_decision": "Andrew proposes that the group consider the resource implications, such as mineral and fixed nitrogen requirements, of different harvesting methods for negative emissions technologies."
+            "expand on existing idea": "The speaker is expanding on the previous discussion about trees and carbon sequestration by suggesting switch grass as an alternative biomass source, building on the idea of harvesting biomass for carbon sequestration.",
+            "provide supporting evidence": "The speaker provides the reasoning that switch grass can be used for biomass, while cutting down trees is not as marketable, to support the idea of using switch grass as an alternative.",
+            "present new idea": "The speaker introduces the idea of considering resources like minerals and fixed nitrogen when discussing harvesting for biomass, which is a new point in the conversation."
         }
     },
     {
@@ -1816,8 +1845,8 @@
         "start_time": "47:13",
         "end_time": "47:36",
         "annotations": {
-            "provide_supporting_evidence": "CJ provides an example of an existing market for wood chips as fuel in Europe to support the ongoing discussion about carbon sequestration and negative emissions technologies.",
-            "explain_or_define_term_or_concept": "CJ explains the context of the wood chip market by mentioning its role as a replacement for coal in European power plants."
+            "provide supporting evidence": "CJ provides evidence of a robust market for wood chips in Europe as a way to cut down on fossil-based CO2 emissions, supporting the discussion around carbon sequestration and alternative energy sources.",
+            "express alternative decision": "CJ implicitly suggests that cutting and burning trees is an alternative decision to other carbon sequestration methods, despite potential political and social issues, which is in response to the discussion about carbon sequestration."
         }
     },
     {
@@ -1836,11 +1865,12 @@
         "screenshare_content": "None",
         "start_time": "48:08",
         "end_time": "49:04",
-        "annotations": {
-            "provide supporting evidence": "MS provides an example of his village using local wood for district heating as evidence for sustainable local resource utilization.",
-            "express enthusiasm": "MS expresses enthusiasm for the elegant implementation of district heating in his village and how impressed he was by it.",
-            "offer constructive criticism": "MS criticizes shipping wood from the US, suggesting that using local resources is a better approach."
-        }
+        "annotations": [
+            {
+                "provide supporting evidence": "MS provides an example of their village using local wood for district heating and combined heat and power as a sustainable solution, supporting the idea of using local resources for energy production.",
+                "express enthusiasm": "MS expresses enthusiasm by describing the district heating center as \"brilliant\" and being \"fairly impressed\" with the sustainable implementation in their village."
+            }
+        ]
     },
     {
         "speaker": "DK",
@@ -1858,11 +1888,14 @@
         "screenshare_content": "None",
         "start_time": "49:09",
         "end_time": "49:34",
-        "annotations": {
-            "explain or define term or concept": "DK explains that BECCS involves growing biomass, burning it for energy, and capturing the resulting CO2 emissions.",
-            "expand on existing idea": "DK expands on the prior discussion of biomass by explaining how it fits into Bioenergy with Carbon Capture and Storage (BECCS) systems and the importance of carbon capture for negative emissions.",
-            "provide supporting evidence": "DK supports his explanation by contrasting BECCS with simply burning biomass, which only results in carbon neutrality, not negative emissions."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining the concept of BEC (Bioenergy with Carbon Capture) systems, outlining the initial steps of growing biomass and burning it."
+            },
+            {
+                "expand on existing idea": "The speaker expands on the concept of BEC systems by explaining that the second part involves capturing and sequestering the carbon dioxide to achieve negative emissions, building upon the initial steps of growing and burning biomass."
+            }
+        ]
     },
     {
         "speaker": "GS",
@@ -1881,8 +1914,7 @@
         "start_time": "49:55",
         "end_time": "49:59",
         "annotations": {
-            "encourage particpation": "George is inviting Phil to contribute to the ongoing discussion, as he joined late.",
-            "acknowledge contribution": "George acknowledges Phil's presence in the meeting despite joining late."
+            "encourage particpatioin": "GS is inviting Phil, who has joined the conversation late, to contribute his thoughts."
         }
     },
     {
@@ -1901,11 +1933,14 @@
         "screenshare_content": "None",
         "start_time": "50:00",
         "end_time": "50:09",
-        "annotations": {
-            "encourage particpation": "George Shields is encouraging Phil Nolner to participate in the conversation by inviting him to add to the discussion, look at the Google Doc, or ask any questions he has.",
-            "acknowledge contribution": "George acknowledges Phil's late arrival to the conversation and offers him a chance to catch up and contribute.",
-            "explain or define term or concept": "George introduces Phil Nolner to the group by stating his name and affiliation (Cornell)."
-        }
+        "annotations": [
+            {
+                "encourage particpatioin": "GS is inviting Phil Nolner to contribute to the discussion, as he has joined the conversation late."
+            },
+            {
+                "acknowledge contribution": "GS acknowledges Phil Nolner's presence in the meeting."
+            }
+        ]
     },
     {
         "speaker": "PM",
@@ -1923,11 +1958,11 @@
         "screenshare_content": "None",
         "start_time": "50:10",
         "end_time": "50:19",
-        "annotations": {
-            "explain or define term or concept": "Phil explains why he joined the conversation late - because he had to teach.",
-            "propose decision": "Phil proposes to take a look at the document and see if he has anything to add later.",
-            "acknowledge contribution": "Phil acknowledges the ongoing conversation by mentioning he is eavesdropping."
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": "PM acknowledges joining the conversation late and having to leave to teach, recognizing the group's ongoing discussion."
+            }
+        ]
     },
     {
         "speaker": "GS",
@@ -1946,7 +1981,7 @@
         "start_time": "50:20",
         "end_time": "50:21",
         "annotations": {
-            "acknowledge contribution": "George acknowledges Phil's late arrival and potential need to catch up."
+            "acknowledge contribution": "GS acknowledges Phil's presence without engaging in further discussion, simply noting his arrival and excusing his late entry."
         }
     },
     {
@@ -1966,9 +2001,7 @@
         "start_time": "50:23",
         "end_time": "50:36",
         "annotations": {
-            "encourage particpation": "Lindsey is encouraging other participants to contribute to the report by offering to incorporate their comments and edits.",
-            "assign task": "Lindsey is implicitly assigning the task of reviewing and providing feedback on the document to the other participants.",
-            "offer constructive criticism": "By inviting suggestions on organization and highlighting, Lindsey is implicitly suggesting that there might be room for improvement in the document."
+            "encourage particpatioin": "LS is encouraging others to provide feedback and contribute to the document by offering to make edits or rewrite sections, inviting further input from the group."
         }
     },
     {
@@ -1988,8 +2021,8 @@
         "start_time": "50:37",
         "end_time": "50:47",
         "annotations": {
-            "propose decision": "George proposes that everyone review the document individually since the discussion seems to have reached a standstill.",
-            "express frustation": "George expresses frustration that the discussion has reached an impasse by saying \"we seem to be at a loss for words here.\""
+            "assign task": "GS is assigning the task of reviewing the document to everyone, as the group seems to be running out of ideas.",
+            "encourage particpatioin": "GS is encouraging everyone to participate by reviewing the document and providing their input."
         }
     },
     {
@@ -2009,9 +2042,8 @@
         "start_time": "50:50",
         "end_time": "50:58",
         "annotations": {
-            "acknowledge contribution": "Chris acknowledges the group's contribution to the discussion.",
-            "express humor": "Chris jokes about \"Zoom fatigue\" as a reason for the current lull in conversation.",
-            "explain or define term or concept": "Chris explains the current state of the conversation by mentioning \"Zoom fatigue\" which is a term used to describe tiredness from extensive video conferencing."
+            "express agreement": "CJ expresses agreement with the group's work on the document, acknowledging their good job.",
+            "express humor": "CJ makes a lighthearted comment about Zoom fatigue, adding a touch of humor to the situation."
         }
     },
     {
@@ -2031,7 +2063,7 @@
         "start_time": "50:59",
         "end_time": "51:01",
         "annotations": {
-            "express agreement": "George agrees with Chris's assessment of the group's performance and the reason for the current lull in conversation."
+            "express agreement": "GS agrees with Chris's statement about the group having done a good job and the Zoom fatigue being a symptom of a Friday, indicating agreement with a prior statement."
         }
     },
     {
@@ -2051,7 +2083,7 @@
         "start_time": "51:06",
         "end_time": "51:08",
         "annotations": {
-            "acknowledge contribution": "George acknowledges the difficulty of the discussion topic (beyond CO2 reduction and negative emissions technologies) that the group has been brainstorming on."
+            "express agreement": "GS agrees with CJ's statement that the group has done a good job and the silence is due to Zoom fatigue, indicating agreement with the assessment of the situation."
         }
     },
     {
@@ -2071,10 +2103,12 @@
         "start_time": "51:24",
         "end_time": "52:53",
         "annotations": {
-            "present new idea": "Chris introduces the concept of BECCS and its potential role in negative emissions, which had not been previously discussed.",
-            "explain or define term or concept": "Chris explains that BECCS stands for bioenergy and carbon capture and sequestration.",
-            "expand on existing idea": "Chris elaborates on the challenges of BECCS implementation, focusing on the distributed nature of biomass and the resulting complexities in CO2 or carbon storage.",
-            "ask clarifying question": "Chris implicitly asks for the group's perspective on the feasibility and practicality of large-scale BECCS deployment, considering the challenges of CO2 pipelines and biochar transportation."
+            "present new idea": {
+                "Explanation": "CJ introduces the topic of BECCS (Bioenergy with Carbon Capture and Storage) and its implications for carbon storage and distribution, which is a new direction in the conversation."
+            },
+            "expand on existing idea": {
+                "Explanation": "CJ expands on the idea of negative emissions technologies by discussing the challenges and complexities of implementing BECCS, building upon the previous discussion of carbon sequestration and negative emissions."
+            }
         }
     },
     {
@@ -2093,12 +2127,17 @@
         "screenshare_content": "None",
         "start_time": "53:01",
         "end_time": "54:00",
-        "annotations": {
-            "present new idea": "Phil Nolner introduces a novel idea of combining BECCS with CO2 polymerization to create a self-sustaining factory, thus offering an alternative to CO2 sequestration and piping.",
-            "expand on existing idea": "Phil expands on the existing discussion of CO2 sequestration and BECCS by suggesting an alternative approach that integrates CO2 polymerization.",
-            "offer constructive criticism": "Phil constructively criticizes the idea of widespread CO2 piping by pointing out its logistical challenges and proposing a localized solution.",
-            "ask clarifying question": "Phil asks for the group's thoughts on his idea, acknowledging that others may have more expertise on the topic."
-        }
+        "annotations": [
+            {
+                "present new idea": "PM introduces a new idea of integrating BECCS with CO2 polymerization to create a self-sustained factory, differing from the previously discussed CO2 sequestration methods."
+            },
+            {
+                "expand on existing idea": "PM expands on the existing discussion of BECCS by suggesting an alternative approach to carbon sequestration, which involves feeding captured CO2 into a CO2 polymerization site."
+            },
+            {
+                "offer constructive criticism": "PM offers constructive criticism by questioning the feasibility of widespread CO2 pipelines for sequestration, suggesting an alternative approach to address the challenges of BECCS implementation."
+            }
+        ]
     },
     {
         "speaker": "CJ",
@@ -2117,8 +2156,8 @@
         "start_time": "54:05",
         "end_time": "54:08",
         "annotations": {
-            "acknowledge contribution": "Chris acknowledges Phil's idea of attaching a biomass to CO2 unit onto a CO2 polymer facility as \"cool\".",
-            "express enthusiasm": "Chris expresses enthusiasm for Phil's idea by calling it \"cool\"."
+            "express agreement": "CJ expresses agreement with the idea presented in the previous utterance by PM.",
+            "acknowledge contribution": "CJ acknowledges PM's contribution without necessarily agreeing or expanding on the idea."
         }
     },
     {
@@ -2138,7 +2177,7 @@
         "start_time": "54:09",
         "end_time": "54:10",
         "annotations": {
-            "confirm decision": "PM confirms CJ's greeting to Jeff Coates."
+            "acknowledge contribution": "PM is acknowledging CJ's previous comment about BECCS and the challenges of CO2 pipelines."
         }
     },
     {
@@ -2158,9 +2197,9 @@
         "start_time": "54:21",
         "end_time": "55:00",
         "annotations": {
-            "provide_supporting_evidence": "Chris provides further justification for the potential of BECCS by suggesting a geographic analysis to identify suitable areas for biomass growth and sequestration, reducing the need for extensive CO2 pipelines.",
-            "expand_on_existing_idea": "Chris expands on the discussion of BECCS by considering the geographical constraints and logistical challenges associated with its implementation.",
-            "offer_constructive_criticism": "While acknowledging the positive potential of BECCS, Chris points out the complexity of implementing such a system from a systems engineering perspective."
+            "expand on existing idea": "CJ is expanding on the discussion of BECCS (Bioenergy with Carbon Capture and Storage) by suggesting a geographic analysis to optimize biomass growth and sequestration locations, building on the previous discussion about the challenges of CO2 pipelines and biochar transport.",
+            "express agreement": "CJ expresses agreement with the positive potential of BECCS, building on the previous discussion about the challenges of CO2 pipelines and biochar transport.",
+            "offer constructive criticism": "CJ offers constructive criticism by acknowledging the complexity of BECCS from a systems engineering perspective, even while agreeing with its potential, building on the previous discussion about the challenges of CO2 pipelines and biochar transport."
         }
     },
     {
@@ -2180,7 +2219,7 @@
         "start_time": "55:10",
         "end_time": "55:17",
         "annotations": {
-            "ask clarifying question": "CJ asks if there is any remaining content in their shared spreadsheet that the group hasn't discussed yet, indicating a need to ensure all topics are addressed."
+            "ask clarifying question": "CJ is asking if there are any topics in the spreadsheet that the group has not yet discussed, seeking to ensure all relevant points are addressed."
         }
     },
     {
@@ -2200,7 +2239,9 @@
         "start_time": "55:21",
         "end_time": "55:27",
         "annotations": {
-            "confirm decision": "CJ confirms the group's decision to move on from the nitrogen to ammonia discussion, as they have talked about it extensively."
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges that the group has discussed nitrogen to ammonia, indicating they recognize the contribution of that topic to the conversation."
+            }
         }
     },
     {
@@ -2220,7 +2261,7 @@
         "start_time": "55:49",
         "end_time": "55:51",
         "annotations": {
-            "acknowledge contribution": "Jesus acknowledges Lindsey's contribution to the meeting minutes or report."
+            "acknowledge contribution": "The speaker acknowledges Lindsey's contribution to the work."
         }
     },
     {
@@ -2240,7 +2281,7 @@
         "start_time": "55:54",
         "end_time": "55:55",
         "annotations": {
-            "acknowledge contribution": "JV acknowledges LS's work on the report by saying \"Thanks.\""
+            "acknowledge contribution": "JV acknowledges Lindsey's contribution, but does not agree or expand on it."
         }
     },
     {
@@ -2259,10 +2300,14 @@
         "screenshare_content": "None",
         "start_time": "55:55",
         "end_time": "55:57",
-        "annotations": {
-            "acknowledge contribution": "George acknowledges Lindsey's contribution to the meeting minutes.",
-            "express agreement": "George agrees with Jesus' positive assessment of Lindsey's work."
-        }
+        "annotations": [
+            {
+                "express agreement": "GS explicitly agrees with Lindsey's contribution, acknowledging her good job."
+            },
+            {
+                "acknowledge contribution": "GS verbally recognizes Lindsey's input."
+            }
+        ]
     },
     {
         "speaker": "CJ",
@@ -2281,7 +2326,7 @@
         "start_time": "56:09",
         "end_time": "56:11",
         "annotations": {
-            "ask clarifying question": "Chris asks for clarification about the meeting end time, as the discussion seems to be winding down and they've covered most topics."
+            "ask clarifying question": "CJ is asking a question to clarify the end time of the session."
         }
     },
     {
@@ -2301,7 +2346,7 @@
         "start_time": "56:12",
         "end_time": "56:14",
         "annotations": {
-            "provide supporting evidence": "George answers Chris' question about when the session ends by stating the time remaining."
+            "None": "No code applies to this utterance."
         }
     },
     {
@@ -2321,8 +2366,7 @@
         "start_time": "56:21",
         "end_time": "56:24",
         "annotations": {
-            "propose decision": "Chris proposes to end the meeting a few minutes early due to the participants' apparent fatigue and lack of further discussion points.",
-            "express agreement": "Chris implicitly agrees with the sentiment that participants are tired and further discussion might not be productive."
+            "propose decision": "CJ proposes a decision to end the meeting a few minutes early, likely due to the group expressing burnout and Zoom fatigue."
         }
     },
     {
@@ -2341,11 +2385,12 @@
         "screenshare_content": "None",
         "start_time": "56:29",
         "end_time": "56:42",
-        "annotations": {
-            "propose decision": "George proposes ending the breakout session and returning to the main session.",
-            "express agreement": "George agrees with Chris's assessment of the group's fatigue.",
-            "acknowledge contribution": "George thanks everyone for participating and Chris for co-moderating."
-        }
+        "annotations": [
+            {
+                "propose decision": "The speaker proposes that the group can end the session and return to the main session if everyone feels they are done, suggesting a concrete choice for the group.",
+                "acknowledge contribution": "The speaker thanks everyone for their participation and specifically thanks Chris for co-moderating, verbally recognizing their input."
+            }
+        ]
     },
     {
         "speaker": "CJ",
@@ -2363,11 +2408,14 @@
         "screenshare_content": "None",
         "start_time": "56:43",
         "end_time": "56:46",
-        "annotations": {
-            "acknowledge contribution": "Chris acknowledges the group's contribution to the session.",
-            "express enthusiasm": "Chris expresses positive feedback about the session by saying \"It was a good session\".",
-            "express agreement": "Chris implicitly agrees with George's assessment of the session by thanking everyone involved."
-        }
+        "annotations": [
+            {
+                "express agreement": "CJ expresses agreement with the positive sentiment about the session, indicating a shared positive evaluation."
+            },
+            {
+                "acknowledge contribution": "CJ acknowledges the contributions of everyone in the session."
+            }
+        ]
     },
     {
         "speaker": "JV",
@@ -2386,7 +2434,7 @@
         "start_time": "56:46",
         "end_time": "56:47",
         "annotations": {
-            "acknowledge contribution": "Jesus acknowledges the group's effort and contribution to the discussion."
+            "acknowledge contribution": "The speaker is verbally recognizing Lindsey's contribution to the discussion."
         }
     },
     {
@@ -2406,7 +2454,7 @@
         "start_time": "56:47",
         "end_time": "56:48",
         "annotations": {
-            "acknowledge contribution": "Oliver expresses gratitude for the discussion and contributions of the group."
+            "acknowledge contribution": "OL is acknowledging the contributions of others in the meeting, as the meeting is ending and people are expressing thanks."
         }
     }
 ]

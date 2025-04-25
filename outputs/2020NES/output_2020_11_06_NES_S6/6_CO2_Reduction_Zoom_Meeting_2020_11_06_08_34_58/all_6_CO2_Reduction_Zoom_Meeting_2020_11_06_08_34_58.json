@@ -16,9 +16,9 @@
         "start_time": "00:00",
         "end_time": "00:43",
         "annotations": {
-            "explain or define term or concept": "The speaker explains the advantages and disadvantages of molecular systems, including their selectivity and tunability, but also issues with stability and leeching.",
-            "provide supporting evidence": "The speaker supports their claim about the dismissal of molecular systems by mentioning that many researchers have experience in organics and therefore discount molecular approaches.",
-            "offer constructive criticism": "The speaker points out a flaw in the current research approach, which is the discounting of molecular systems due to stability issues, but also suggests a potential solution by mimicking organic environments with polymers."
+            "provide supporting evidence": "The utterance provides supporting evidence by mentioning the advantages and disadvantages of moleculars, such as their selectivity and tunability versus stability and leeching issues, to support the idea that they are often unfairly discounted.",
+            "explain or define term or concept": "The utterance explains the concept of mimicking organic environments using polymer materials to address the limitations of molecular systems.",
+            "present new idea": "The utterance presents the idea of using relatively cheap polymer materials to mimic organic environments, which could potentially solve the problems associated with molecular systems."
         }
     },
     {
@@ -38,15 +38,7 @@
         "start_time": "00:44",
         "end_time": "01:03",
         "annotations": {
-            "present new idea": [
-                "The speaker introduces the idea of using enzymes and single-atom catalysts, which were not previously discussed, as potential solutions."
-            ],
-            "ask clarifying question": [
-                "The speaker asks if anyone has explored the use of enzymes for the discussed problem."
-            ],
-            "expand on existing idea": [
-                "The speaker suggests using single-atom catalysts embedded in cheaper materials to reduce costs, building upon the prior discussion of cost and material properties."
-            ]
+            "present new idea": "The speaker introduces the idea of using single atom catalysts to drive down costs, which is a novel concept in the conversation."
         }
     },
     {
@@ -66,9 +58,8 @@
         "start_time": "01:04",
         "end_time": "01:19",
         "annotations": {
-            "provide_supporting_evidence": "EM mentions a collaborator working on enzyme-based CO2 reduction as evidence of ongoing research in the area.",
-            "explain_or_define_term_or_concept": "EM implicitly defines the area of research as \"this space\" referring to enzyme-based CO2 reduction and related work.",
-            "present_new_idea": "EM introduces the idea of using enzymes for CO2 reduction, responding to AB's question."
+            "expand on existing idea": "The utterance builds on the previous question about using enzymes, adding information about a collaborator who is working on enzymes for CO2 reduction.",
+            "provide supporting evidence": "The utterance provides evidence that enzymes can be used for CO2 reduction by mentioning a collaborator who has shown that it works and stating that there is some work out there in this space."
         }
     },
     {
@@ -87,13 +78,23 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "01:20",
         "end_time": "03:02",
-        "annotations": {
-            "expand on existing idea": "VV expands on AB's idea of single-atom catalysts by providing details about an RFI program actively researching this area and explaining the advantages of single-atom catalysts.",
-            "provide supporting evidence": "VV supports the potential of single-atom catalysts by mentioning their cost-effectiveness, ability to mimic properties of expensive materials, and the advancements in achieving high single-atom densities.",
-            "explain or define term or concept": "VV explains the concept of single-atom alloys and how they function in heterogeneous catalysis.",
-            "acknowledge contribution": "VV acknowledges AB's contribution by mentioning the cost reduction aspect of single-atom catalysts.",
-            "express enthusiasm": "VV expresses enthusiasm for single-atom catalysts and single-atom alloys as exciting material sets with vast potential in CO2 reduction."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "VV is expanding on AB's idea of using single atom catalysts by providing information about their RFI program and the benefits of single atom catalysts, such as addressing cost and creating new material properties."
+            },
+            {
+                "provide supporting evidence": "VV supports the idea of single atom catalysts by mentioning their RFI program and explaining how single atoms can alter material properties and reduce costs, suggesting that single atom density issues have been largely solved."
+            },
+            {
+                "explain or define term or concept": "VV explains the concept of single atom catalysts and their properties, including how they can make cheaper atoms mimic the functionality of more expensive ones."
+            },
+            {
+                "acknowledge contribution": "VV acknowledges AB's contribution by saying that single atom catalysts address the cost question that AB pointed out."
+            },
+            {
+                "express enthusiasm": "VV expresses enthusiasm for single atom and single atom alloy materials, stating they are very exciting material sets."
+            }
+        ]
     },
     {
         "speaker": "AB",
@@ -112,7 +113,7 @@
         "start_time": "03:03",
         "end_time": "03:05",
         "annotations": {
-            "confirm decision": "AB confirms VV's statement about single atom alloy being a promising material set for CO2 reduction."
+            "express agreement": "AB is explicitly agreeing with VV's prior statement about single atom alloys."
         }
     },
     {
@@ -132,8 +133,8 @@
         "start_time": "03:06",
         "end_time": "03:13",
         "annotations": {
-            "expand on existing idea": "VV continues their explanation of single atom alloys and their potential for CO2 reduction, building on their previous description of the material's properties and advantages.",
-            "express enthusiasm": "VV expresses excitement about the potential of single atom alloys for CO2 reduction by describing them as \"very exciting material sets.\""
+            "expand on existing idea": "VV is expanding on AB's idea of using single atom catalysts by mentioning single atom alloys as a related and exciting material set.",
+            "express enthusiasm": "VV expresses enthusiasm for single atom alloys as a material set for CO2 reduction."
         }
     },
     {
@@ -153,8 +154,9 @@
         "start_time": "03:13",
         "end_time": "03:33",
         "annotations": {
-            "provide_supporting_evidence": "EM mentions a \"huge body of literature and organometallic research\" to support the potential parallels between single atom catalysts and noble metal reactivity in first-row transition metals.",
-            "ask_clarifying_question": "EM wonders \"if there's parallels\" between single atom catalysts and research on noble metal reactivity in first-row transition metals to potentially clarify and refine the discussed ideas."
+            "expand on existing idea": "EM is building on VV's discussion of single atom catalysts by relating it to organometallic research, suggesting a connection between the two.",
+            "present new idea": "EM introduces the idea of drawing parallels between single atom catalysts and organometallic research to help crystallize ideas, which is a novel concept not previously mentioned.",
+            "provide supporting evidence": "EM mentions a \"huge body of literature and organometallic research\" as a basis for drawing parallels, providing a reference to support the idea."
         }
     },
     {
@@ -173,11 +175,12 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "03:35",
         "end_time": "04:05",
-        "annotations": {
-            "expand on existing idea": "SB expands on VV's discussion of single-atom catalysis by connecting it to molecular catalysis and suggesting the goal is to find universal principles for optimizing reactivity.",
-            "provide supporting evidence": "SB references Julia's presentation and the scale of liquid fuel production (200 gigatons) to highlight the importance of fuel production.",
-            "ask clarifying question": "SB asks if there's a pathway to liquid fuels or if simpler products are easier to achieve, given the previous discussion about single-atom catalysis and its potential applications."
-        }
+        "annotations": [
+            {
+                "expand on existing idea": "The speaker is building on the previous discussion about single atom catalysts and their potential by suggesting that it is a good touch point for molecular and heterogeneous catalysis to tease out universal principles.",
+                "ask clarifying question": "The speaker is asking if there is a pathway to liquid fuel or if it is easier to do something simpler, seeking clarification on the potential outcomes of the research."
+            }
+        ]
     },
     {
         "speaker": "EM",
@@ -195,10 +198,11 @@
         "screenshare_content": "A document is shared on the screen. The content of the document is not visible.",
         "start_time": "04:36",
         "end_time": "04:51",
-        "annotations": {
-            "provide_supporting_evidence": "EM provides supporting evidence for the feasibility of liquid fuel production from CO2 by mentioning DOE's funding of a molecular-based hub dedicated to this goal.",
-            "explain_or_define_term_or_concept": "EM explains DOE's focus by stating their goal is to convert CO2 into liquid fuel, clarifying the purpose of the funded hub."
-        }
+        "annotations": [
+            {
+                "provide supporting evidence": "The speaker provides evidence that DOE funded a hub to convert CO2 into liquid fuel, supporting the idea that there is a pathway to liquid fuel."
+            }
+        ]
     },
     {
         "speaker": "SB",
@@ -217,7 +221,7 @@
         "start_time": "04:52",
         "end_time": "04:59",
         "annotations": {
-            "express frustation": "SB expresses frustration with the effectiveness of DOE centers, implying their track record is not strong, although he stops short of fully articulating the criticism."
+            "reject idea": "SB is expressing a negative opinion about DOE centers, implying they are not particularly effective, but does not offer an alternative or ways to improve them."
         }
     },
     {
@@ -237,10 +241,21 @@
         "start_time": "05:00",
         "end_time": "06:21",
         "annotations": {
-            "present new idea": "\"MH proposes the idea of developing industrially relevant benchmarking metrics applicable to any catalyst system to better compare different types of catalysts and guide research directions.\"",
-            "expand on existing idea": "\"MH synthesizes the prior discussion on various catalyst systems (alloys, single-atom catalysts, enzymes, proteins) to emphasize the need for standardized benchmarking metrics.\"",
-            "provide supporting evidence": "\"MH supports the need for benchmarking by pointing out the difficulty in comparing different catalyst systems, such as thermal, electrocatalytic, and biocatalysis, without such metrics.\"",
-            "explain or define term or concept": "\"MH explains the concept of benchmarking metrics by suggesting examples like turnover number, dollar per active site, and other relevant measures.\""
+            "present new idea": {
+                "Explanation": "The speaker introduces the idea of needing industrial-relevant benchmarking metrics to compare different catalyst systems for CO2 reduction, which hasn't been explicitly stated before."
+            },
+            "expand on existing idea": {
+                "Explanation": "The speaker builds upon the previous discussion about alloys, single atom catalysts, enzymes, and proteins by synthesizing them into the need for benchmarking metrics."
+            },
+            "provide supporting evidence": {
+                "Explanation": "The speaker supports the idea of needing benchmarking metrics by stating that it's hard to compare different catalysts without them, and that they don't even do it when comparing thermal and electro catalytic systems."
+            },
+            "propose decision": {
+                "Explanation": "The speaker proposes that establishing industrial-relevant benchmarking metrics is necessary to guide the direction of research and development in CO2 reduction."
+            },
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges Ashley's point from Provine, highlighting its importance to the discussion."
+            }
         }
     },
     {
@@ -260,8 +275,8 @@
         "start_time": "10:00",
         "end_time": "10:31",
         "annotations": {
-            "provide_supporting_evidence": "CM provides specific examples of the challenges in high-throughput experimentation for CO2 reduction, such as measuring gaseous and dissolved products inline, especially in small amounts, based on the experience of a research group.",
-            "explain_or_define_term_or_concept": "CM explains the key challenge in high-throughput experimentation for CO2 reduction, which is accurately measuring product distribution due to the various forms of products generated."
+            "explain or define term or concept": "The speaker explains that in high throughput experimentation for HER or CO2, product distribution is important because both gaseous and dissolved products are created.",
+            "provide supporting evidence": "The speaker provides supporting evidence by mentioning the issues faced by the high throughput experimentation group at J cap/Lisa, specifically the difficulty in measuring products inline when small amounts are produced."
         }
     },
     {
@@ -281,7 +296,7 @@
         "start_time": "10:31",
         "end_time": "10:33",
         "annotations": {
-            "acknowledge contribution": "WS acknowledges CM's point about the challenges of high throughput experimentation for CO2 reduction by using \"Mhm.\""
+            "express agreement": "WS is expressing agreement with the previous speaker's point about the difficulty of measuring products inline in CO2 high throughput experimentation."
         }
     },
     {
@@ -301,7 +316,7 @@
         "start_time": "10:33",
         "end_time": "10:36",
         "annotations": {
-            "provide_supporting_evidence": "CM explains why high throughput experimentation for CO2 reduction is limited by the difficulty of measuring products inline, especially in small amounts, expanding on the challenges of comparing different catalyst systems."
+            "provide supporting evidence": "The speaker is providing a reason why high throughput experimentation group has not published much in this phase space, which is that it's hard to measure products inline."
         }
     },
     {
@@ -321,10 +336,7 @@
         "start_time": "10:36",
         "end_time": "10:39",
         "annotations": {
-            "present new idea": "WS introduces the idea of using machine learning to address the challenge of measuring products inline during high throughput experimentation for CO2 reduction, which had not been previously discussed.",
-            "expand on existing idea": "Building upon CM's description of the difficulties in measuring products during high throughput experimentation, WS suggests machine learning as a potential solution to this problem.",
-            "provide supporting evidence": "Although not explicitly stated, WS implies that machine learning could be helpful based on the previously discussed challenges in product measurement.",
-            "explain or define term or concept": "While \"machine learning\" is a commonly understood term, in this context, WS is implicitly defining its application as a tool to improve product measurement in high throughput experimentation."
+            "present new idea": "The utterance introduces a novel concept of using machine learning to address the challenges in measuring products inline, which hasn't been explicitly mentioned before in the conversation."
         }
     },
     {
@@ -344,9 +356,9 @@
         "start_time": "10:40",
         "end_time": "10:54",
         "annotations": {
-            "expand on existing idea": "CM expands on the previously discussed need for robust product measurement by suggesting coupling machine learning with manual or robotic training set generation.",
-            "present new idea": "CM introduces the idea of using machine learning coupled with manual or robotic data generation to improve high throughput experimentation for CO2 reduction.",
-            "provide supporting evidence": "CM supports the idea of using machine learning by explaining that it allows for dramatic expansion of data analysis capabilities by measuring more efficiently."
+            "present new idea": "The speaker introduces the idea of coupling machine learning with a robust manual or robotic system for generating training sets, which hasn't been explicitly mentioned before.",
+            "expand on existing idea": "The speaker expands on the opportunity for machine learning to help, building on the previous statement about limitations in measuring products inline.",
+            "provide supporting evidence": "The speaker suggests that this coupling expands capabilities dramatically because it allows for measurements to be taken, providing a reason to support the idea."
         }
     }
 ]
