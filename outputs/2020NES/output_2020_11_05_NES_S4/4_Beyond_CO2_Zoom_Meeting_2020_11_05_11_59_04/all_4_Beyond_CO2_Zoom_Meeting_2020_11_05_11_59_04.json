@@ -15,11 +15,14 @@
         "screenshare_content": "None",
         "start_time": "00:00",
         "end_time": "01:03",
-        "annotations": {
-            "propose decision": "JC suggests the participants briefly introduce themselves by stating their name, affiliation, and research interests.",
-            "explain or define term or concept": "JC explains the introduction procedure, including the option of watching pre-recorded videos for more detailed information.",
-            "assign task": "JC assigns the task of brief self-introductions to each participant in the meeting."
-        }
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining the purpose and format of the introductions they want the participants to give, including name, affiliation, and research interests."
+            },
+            {
+                "assign task": "The speaker is assigning the task of giving a brief introduction to each participant."
+            }
+        ]
     },
     {
         "speaker": "AH",
@@ -38,8 +41,8 @@
         "start_time": "01:03",
         "end_time": "01:22",
         "annotations": {
-            "explain or define term or concept": "Adam is explaining his research interests in catalysis and electrocatalysis, specifying the types of molecules involved, such as those used in CO2 conversion and biomass processing, for the group's understanding.",
-            "present new idea": "Adam introduces his research interests in catalysis and electrocatalysis applied to organic molecules, CO2 conversion, and biomass, which were not previously discussed in the meeting."
+            "explain or define term or concept": "The speaker is defining their research area by providing specific examples like 'catalysis and electrocatalysis' and 'direct CO2 conversion'.",
+            "present new idea": "The speaker is introducing their research interests, which is a novel concept in the context of the introductions."
         }
     },
     {
@@ -58,11 +61,17 @@
         "screenshare_content": "None",
         "start_time": "01:22",
         "end_time": "01:48",
-        "annotations": {
-            "ask clarifying question": "JC asks who Bot number 4 is and whether it can speak, seeking clarification about its presence in the meeting.",
-            "explain or define term or concept": "JC explains that Bot number 4 might be a feature of the breakout room functionality.",
-            "express humor": "JC jokes that hopefully Bot number 4 is \"not a spy or anything.\""
-        }
+        "annotations": [
+            {
+                "acknowledge contribution": "JC acknowledges AH's introduction by saying \"Okay, thank you.\""
+            },
+            {
+                "express humor": "JC makes a joke about the 'Bot number 4' being a spy to lighten the mood."
+            },
+            {
+                "encourage particpatioin": "JC calls on Carlos to participate after dealing with the 'Bot number 4' issue."
+            }
+        ]
     },
     {
         "speaker": "CM",
@@ -81,7 +90,7 @@
         "start_time": "01:49",
         "end_time": "02:12",
         "annotations": {
-            "explain or define term or concept": "Carlos is explaining his research interests, defining the specific area of electrocatalysis he focuses on, including decoupling mass transport effects, nitrogen and CO2 reduction, and scaling up devices."
+            "explain or define term or concept": "The speaker is defining their research interests within electrocatalysis, specifying focus areas like nitrogen and CO2 reduction, which serves to explain their specific research domain to the group."
         }
     },
     {
@@ -101,7 +110,7 @@
         "start_time": "02:12",
         "end_time": "02:16",
         "annotations": {
-            "acknowledge contribution": "JC acknowledges Charles's introduction by saying \"All right. Thank you.\""
+            "acknowledge contribution": "JC acknowledges Charles' turn to speak, recognizing his upcoming contribution to the introductions."
         }
     },
     {
@@ -121,7 +130,8 @@
         "start_time": "02:17",
         "end_time": "02:38",
         "annotations": {
-            "explain or define term or concept": "Charles McCrory introduces himself and his research group, explaining that they are an electrocatalysis group focused on electrocatalytic mechanisms, including molecular and solid-state catalysts for CO2, nitrate, and micro reduction, with a current focus on controlling transport and chemical environment to drive selectivity."
+            "explain or define term or concept": "The speaker is defining their research area by mentioning electrocatalytic mechanisms, molecular and solid-state catalysts, CO2, nitrate, and micro reduction, which helps clarify their expertise to the group.",
+            "expand on existing idea": "The speaker is building on the previous introductions by mentioning their focus on electrocatalytic mechanisms and controlling transport and chemical environment to drive selectivity, adding details about their specific research interests within electrocatalysis."
         }
     },
     {
@@ -141,8 +151,7 @@
         "start_time": "02:38",
         "end_time": "02:43",
         "annotations": {
-            "acknowledge contribution": "JC acknowledges Chong's introduction by thanking him.",
-            "encourage particpatioin": "JC implicitly encourages the next participant to introduce themselves by thanking the current speaker and moving on in the participant list."
+            "None": "This utterance is simply a transition to the next person, and does not fit any of the codes."
         }
     },
     {
@@ -162,8 +171,8 @@
         "start_time": "02:44",
         "end_time": "03:08",
         "annotations": {
-            "explain or define term or concept": "Chong Liu introduces himself and explains his expertise in electrochemistry, nanomaterials, and work with microorganisms for common down classification, along with his work on methane activation at ambient conditions, to clarify his background and relevance to the meeting.",
-            "present new idea": "Chong Liu introduces his work about methane activation at ambient condition as a relevant contribution to the ongoing discussion."
+            "explain or define term or concept": "The speaker explains their expertise in electrochemistry and nanomaterials.",
+            "present new idea": "The speaker introduces their work on methane activation at ambient condition, which is a new topic in the conversation."
         }
     },
     {
@@ -182,11 +191,14 @@
         "screenshare_content": "None",
         "start_time": "10:04",
         "end_time": "11:23",
-        "annotations": {
-            "explain or define term or concept": "JC explains her role as facilitator and the recorder's role in the discussion.",
-            "encourage participation": "JC encourages everyone to actively participate and share their ideas without waiting to be called upon.",
-            "expand on existing idea": "JC builds upon the earlier stated goal of the workshop by suggesting participants consider how their ideas converge or build upon each other's ideas."
-        }
+        "annotations": [
+            {
+                "encourage particpatioin": "JC encourages participation by stating that their role is to make sure everyone feels empowered to intervene and share ideas, and that they would like to hear from everybody."
+            },
+            {
+                "expand on existing idea": "JC builds on the idea of sharing ideas by suggesting that it's helpful to build from each other's ideas and see if they converge, which will help the recorder distill the big ideas."
+            }
+        ]
     },
     {
         "speaker": "CM",
@@ -205,10 +217,9 @@
         "start_time": "11:24",
         "end_time": "12:26",
         "annotations": {
-            "present new idea": "CM introduces the idea of focusing research on nitrogen transformation for sustainable ammonia synthesis, particularly at low temperatures.",
-            "expand on existing idea": "CM expands on the idea of low-temperature ammonia synthesis by suggesting two approaches: direct electrochemical synthesis and low-temperature hydrogenation, and explains the benefits and challenges of each.",
-            "provide supporting evidence": "CM supports the idea of low-temperature ammonia synthesis by explaining that high-temperature synthesis requires high hydrogen pressures to overcome thermodynamic barriers and kinetic barriers of nitrogen bond cleavage, which can be avoided at low temperatures.",
-            "explain or define term or concept": "CM defines the concept of distributed ammonia production in the context of low-temperature hydrogenation."
+            "present new idea": "The speaker introduces the idea of nitrogen transformation to ammonia and sustainable ammonia synthesis, which goes beyond the previously discussed CO2 conversion.",
+            "expand on existing idea": "The speaker expands on the idea of low-temperature ammonia synthesis, detailing how it could be achieved through direct electrochemical methods or low-temperature hydrogenation.",
+            "provide supporting evidence": "The speaker provides reasoning for the importance of low-temperature ammonia synthesis, explaining how it overcomes thermodynamic barriers and reduces the need for high hydrogen pressures."
         }
     },
     {
@@ -227,12 +238,20 @@
         "screenshare_content": "None",
         "start_time": "12:27",
         "end_time": "13:28",
-        "annotations": {
-            "expand on existing idea": "SZ expands on the previous discussion of nitrogen transformation by adding the importance of ammonia to nitrate conversion and nitrate reduction.",
-            "provide supporting evidence": "SZ supports the need for new processes by highlighting the energy intensiveness of current ammonia to nitrate and nitrate reduction processes.",
-            "present new idea": "SZ introduces the idea of electrochemical conversion of ammonium to nitrogen as a potential solution.",
-            "explain or define term or concept": "SZ explains the importance of the nitrogen cycle and its various steps, including nitrogen to ammonia conversion, ammonia to nitrate conversion, and nitrate reduction."
-        }
+        "annotations": [
+            {
+                "ask clarifying question": "The speaker asks if they can follow the nitrogen cycle, seeking permission to expand on the previous speaker's point about nitrogen transformation."
+            },
+            {
+                "expand on existing idea": "The speaker builds on the previous idea of nitrogen transformation by discussing the subsequent steps in the nitrogen cycle, such as ammonia to nitrate conversion, and nitrate reduction, highlighting their importance and challenges."
+            },
+            {
+                "provide supporting evidence": "The speaker supports the importance of addressing the subsequent steps in the nitrogen cycle by stating that the current processes are energy consuming and energy intensive."
+            },
+            {
+                "present new idea": "The speaker introduces the idea of developing new technologies, such as electrochemical conversion of ammonium to nitrogen, and nitrate reduction, to address the challenges in the nitrogen cycle."
+            }
+        ]
     },
     {
         "speaker": "MH",
@@ -251,11 +270,10 @@
         "start_time": "13:28",
         "end_time": "14:57",
         "annotations": {
-            "expand on existing idea": "MH expands on the nitrogen cycle discussion by suggesting direct nitrogen oxidation, skipping the ammonia intermediate step.",
-            "present new idea": "MH introduces the idea of direct nitrogen oxidation as a potential energy-saving alternative to current nitrogen transformation processes.",
-            "provide supporting evidence": "MH supports the idea of direct nitrogen oxidation by mentioning its potential for large energy savings and its emerging discussion in the literature.",
-            "ask clarifying question": "MH implicitly questions the current undefined applications of ammonia and suggests further discussion on its appropriate uses.",
-            "offer constructive criticism": "MH expresses hesitancy towards considering ammonia as a universal solution for all applications, suggesting a more nuanced approach."
+            "expand on existing idea": "The speaker builds on the previous discussion about nitrogen transformations by suggesting direct nitrogen oxidation as an alternative to ammonia production, which was previously mentioned by CM and SZ.",
+            "provide supporting evidence": "The speaker mentions that direct nitrogen oxidation has been demonstrated in papers, but questions its actual feasibility, providing a nuanced perspective.",
+            "present new idea": "The speaker introduces the idea of questioning whether ammonia should be used as a fuel or fertilizer, bringing up life cycle perspective and comparing it to ethanol.",
+            "express agreement": "The speaker agrees with the idea of nitrogen oxidation, which was previously mentioned."
         }
     },
     {
@@ -274,12 +292,20 @@
         "screenshare_content": "None",
         "start_time": "14:57",
         "end_time": "16:21",
-        "annotations": {
-            "expand on existing idea": "CL expands on the previous discussion of nitrogen transformation by suggesting the use of electricity to accelerate nitrogenase for organic fertilizer production.",
-            "provide supporting evidence": "CL supports their idea by mentioning that nature already uses nitrogenase effectively, albeit slowly, and that this method produces organic fertilizer without the need for separation.",
-            "present new idea": "CL introduces the idea of using electrochemistry to accelerate natural enzymes for methane activation, similar to their proposed method for nitrogenase.",
-            "explain or define term or concept": "CL explains that organism catalysis is potentially long-lasting due to the self-replication of organisms."
-        }
+        "annotations": [
+            {
+                "encourage particpatioin": "The speaker starts by asking if they can add something, encouraging participation in the discussion."
+            },
+            {
+                "expand on existing idea": "The speaker wants to follow up on the nitrogen case, expanding on the previously discussed topic of nitrogen transformation."
+            },
+            {
+                "present new idea": "The speaker presents the idea of feeding electricity to accelerate nitrogenase to produce organic fertilizer, which is a novel approach not previously mentioned."
+            },
+            {
+                "present new idea": "The speaker introduces the idea that nature has enzymes to process methane and that they may need an energy source like electrochemistry to accelerate the process."
+            }
+        ]
     },
     {
         "speaker": "JC",
@@ -298,8 +324,7 @@
         "start_time": "16:22",
         "end_time": "16:26",
         "annotations": {
-            "ask clarifying question": "JC asks a clarifying question to follow up on Chong's statement about accelerating nitrogenase with electricity and its application in organic fertilizer production and methane activation using electrochemistry.",
-            "encourage particpatioin": "JC encourages further participation by asking a follow-up question to Chong's idea."
+            "encourage particpatioin": "JC is encouraging someone to speak after the previous speaker finished their point."
         }
     },
     {
@@ -319,9 +344,10 @@
         "start_time": "16:26",
         "end_time": "17:17",
         "annotations": {
-            "expand on existing idea": "MN expands on the idea of using electrocatalysis with enzymes by suggesting the electrocatalytic generation of \"food\" for enzymes, building upon CL's suggestion of using electricity to accelerate nitrogenase.",
-            "provide supporting evidence": "MN supports the idea of electrocatalytic generation of food for enzymes by mentioning that people have tried to make efficient systems for NAD+ to NADH conversion using hydrogen.",
-            "ask clarifying question": "MN asks a clarifying question about the specific \"food\" required for methane oxygenases after discussing the electrocatalytic generation of food for enzymes in general."
+            "expand on existing idea": "The speaker is building upon the idea of using enzymes for nitrogen fixation and methane activation, which was introduced by CL in the previous turn.",
+            "explain or define term or concept": "The speaker explains the concept of electro catalytic generation of food for enzymes, clarifying that it refers to the electrochemical generation of the driving force for enzymes.",
+            "provide supporting evidence": "The speaker mentions the challenges in achieving efficient systems for NAD+ to NADH conversion, providing evidence of hurdles in the electrocatalytic generation of food for enzymes.",
+            "ask clarifying question": "The speaker asks about the food for methane oxygenases, seeking clarification on the specific requirements for this enzyme."
         }
     }
 ]
