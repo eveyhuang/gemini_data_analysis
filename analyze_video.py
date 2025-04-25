@@ -563,11 +563,14 @@ def save_to_json(text, file_name, output_dir):
             print(f"Successfully saved fixed JSON to {output_file}")
         except json.JSONDecodeError as e:
             print(f"Failed to fix JSON format: {e}")
-            print("Saving as plain text wrapped in a JSON object")
-            # Fall back to saving as plain text in a JSON wrapper
-            output_dict = {"text": text}
+            print("Saving original output directly")
+            # Find the first '{' and remove everything before it
+            first_brace = text.find('{')
+            if first_brace != -1:
+                text = text[first_brace:]
+            # Save the cleaned text directly to the file
             with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(output_dict, f, ensure_ascii=False, indent=4)
+                f.write(text)
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):

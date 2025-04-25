@@ -6,57 +6,55 @@ import sys
 
 def fix_quotes_in_text(text):
     """Fix quotes in text content to ensure valid JSON."""
-    # First try to extract JSON from code blocks if present
-    if '```json' in text:
-        # Split by code block markers and get the content
-        parts = text.split('```')
-        for part in parts:
-            if part.strip().startswith('json'):
-                # Remove the 'json' prefix and try to clean that content
-                content = part.replace('json', '', 1).strip()
-                try:
-                    # Try to parse it directly first
-                    json.loads(content)
-                    return content
-                except json.JSONDecodeError:
-                    # If that fails, continue with cleaning
-                    pass
-            elif len(part.strip()) > 0:
-                try:
-                    # Try to parse non-empty parts directly
-                    json.loads(part.strip())
-                    return part.strip()
-                except json.JSONDecodeError:
-                    pass
+    # First try to extract the meeting_annotations directly using regex
+    try:
+        # Remove escaped newlines and code block markers first
+        text = text.replace('\\n', '')
+        text = text.replace('```json', '').replace('```', '')
+        
+        # Extract the meeting_annotations array
+        pattern = r'"meeting_annotations"\s*:\s*\[(.*?)\]'
+        match = re.search(pattern, text, re.DOTALL)
+        if match:
+            content = match.group(1).strip()
+            # Wrap the content in a proper JSON structure
+            full_json = f'{{"meeting_annotations": [{content}]}}'
+            # Try to parse to validate
+            parsed = json.loads(full_json)
+            return json.dumps(parsed, indent=2)
+    except Exception:
+        pass
 
-    # If we get here, either there were no code blocks or they weren't valid JSON
-    # Remove any remaining code block markers and 'json' markers
-    text = text.replace('```json', '').replace('```', '')
-    
-    # Fix various quote issues
-    text = text.replace('"', '"').replace('"', '"')  # Fix curly quotes
-    text = text.replace(''', "'").replace(''', "'")  # Fix curly apostrophes
-    
-    # Remove any outer JSON wrapper if it exists
-    if text.strip().startswith('{"meeting_annotations":') and not text.strip().startswith('{"meeting_annotations":['):
-        try:
-            # Try to parse as JSON to extract inner content
-            data = json.loads(text)
-            if isinstance(data, dict) and 'meeting_annotations' in data:
-                inner_content = data['meeting_annotations']
-                if isinstance(inner_content, str):
-                    text = inner_content.strip()
-        except json.JSONDecodeError:
-            pass
+    # If that fails, try to parse the whole thing as JSON
+    try:
+        # Clean up the text first
+        text = text.replace('\\n', '').replace('\n', '')  # Remove both escaped and real newlines
+        text = text.replace('\\"', '"')  # Fix escaped quotes
+        text = text.strip()
+        
+        parsed = json.loads(text)
+        if isinstance(parsed, dict):
+            if "text" in parsed:
+                # If it's wrapped in a text field, try to parse that
+                inner_text = parsed["text"]
+                inner_text = inner_text.replace('```json', '').replace('```', '')
+                try:
+                    inner_parsed = json.loads(inner_text)
+                    if "meeting_annotations" in inner_parsed:
+                        return json.dumps(inner_parsed, indent=2)
+                except json.JSONDecodeError:
+                    pass
+            elif "meeting_annotations" in parsed:
+                return json.dumps(parsed, indent=2)
+    except json.JSONDecodeError:
+        pass
 
-    # Clean up any trailing/leading whitespace
-    text = text.strip()
-    
-    # Ensure the content is a JSON array if it contains meeting annotations
-    if '"meeting_annotations":' in text and not text.strip().startswith('{"meeting_annotations":['):
-        text = '{"meeting_annotations":' + text + '}'
-    
-    return text
+    # If all attempts fail, wrap in an error structure
+    error_dict = {
+        "error": "Failed to parse JSON",
+        "original_text": text[:200]  # Include first 200 chars of problematic text
+    }
+    return json.dumps(error_dict, indent=2)
 
 def clean_json_file(file_path):
     """Clean a JSON file by creating a backup and fixing the content."""
@@ -73,39 +71,48 @@ def clean_json_file(file_path):
         try:
             json.loads(content)
             return True  # If it parses, we're done
-        except json.JSONDecodeError as e:
+        except json.JSONDecodeError:
             pass  # Continue with cleaning if parsing fails
         
         # Clean the content
         cleaned_content = fix_quotes_in_text(content)
         
-        # Verify the cleaned content is valid JSON
-        try:
-            json.loads(cleaned_content)
-        except json.JSONDecodeError as e:
-            print(f"Error cleaning {file_path}: {str(e)}")
-            print("Original content:", content[:200])  # Print first 200 chars for debugging
-            print("Cleaned content:", cleaned_content[:200])
-            return False
-        
         # Write the cleaned content
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(cleaned_content)
         
-        return True
+        # Verify the cleaned content is valid JSON
+        try:
+            json.loads(cleaned_content)
+            print(f"Successfully cleaned {file_path}")
+            return True
+        except json.JSONDecodeError as e:
+            print(f"Error: Cleaned content is still not valid JSON in {file_path}: {str(e)}")
+            print("Original content:", content[:200])  # Print first 200 chars for debugging
+            print("Cleaned content:", cleaned_content[:200])
+            return False
             
     except Exception as e:
         print(f"Error processing {file_path}: {str(e)}")
         return False
 
 def process_directory(base_dir):
-    """Process all JSON files in the directory"""
+    """Process all JSON files in the directory and its subdirectories."""
+    success_count = 0
+    fail_count = 0
+    
     # Walk through all subdirectories
     for root, dirs, files in os.walk(base_dir):
         for file in files:
             if file.endswith('.json') and not (file.startswith('all_') or file.startswith('verbal_')):
                 file_path = os.path.join(root, file)
-                clean_json_file(file_path)
+                print(f"\nProcessing: {file_path}")
+                if clean_json_file(file_path):
+                    success_count += 1
+                else:
+                    fail_count += 1
+    
+    print(f"\nProcessing complete. Successfully cleaned {success_count} files. Failed to clean {fail_count} files.")
 
 def main():
     """Main function to process JSON files."""
