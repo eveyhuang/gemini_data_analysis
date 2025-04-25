@@ -3,6 +3,7 @@ import json
 import shutil
 from pathlib import Path
 import unicodedata
+import re
 def is_valid_json(file_path):
     """Check if a file contains valid JSON."""
     try:
@@ -71,17 +72,14 @@ def merge_similar_folders(base_dir):
     
     # Process groups with multiple directories
     for normalized_name, dirs in dir_groups.items():
-        if len(dirs) > 1:
+        if len(dirs) > 1 or dirs[0].name != normalized_name:  # Also process single dirs that aren't normalized
             print(f"\nFound similar folders: {[d.name for d in dirs]}")
             
-            # Choose the target directory - prefer the one that already has the normalized name
-            target_dir = next((d for d in dirs if d.name == normalized_name), None)
-            if not target_dir:
-                # If no directory matches the normalized name, create a new one
-                target_dir = base_dir / normalized_name
-                if not target_dir.exists():
-                    target_dir.mkdir()
-                    print(f"Created target directory: {target_dir.name}")
+            # Always create or use the normalized name directory
+            target_dir = base_dir / normalized_name
+            if not target_dir.exists():
+                target_dir.mkdir()
+                print(f"Created normalized target directory: {target_dir.name}")
             
             # Move all files from source directories to target
             for source_dir in dirs:
@@ -265,20 +263,38 @@ def process_directory(base_dir):
         print(f"Directory not found: {base_dir}")
         return
     
-    # First merge similar folders and files
-    print("Merging similar folders and files...")
+    # Then merge similar folders
+    print("\nMerging similar folders...")
     merge_similar_folders(base_dir)
     
-    # Then remove debug and bak files
-    print("\nRemoving debug and bak files...")
-    remove_debug_and_bak_files(base_dir)
-    
-    # Finally, remove 'mp4' from remaining JSON filenames
+    # First remove 'mp4' from JSON filenames
     print("\nRemoving 'mp4' from JSON filenames...")
     remove_mp4_from_filenames(base_dir)
+    
+    # Process repetitive files in each directory
+    print("\nProcessing repetitive files...")
+    for root, _, _ in os.walk(base_dir):
+        print(f"\nChecking directory: {root}")
+        repetitive_pairs = find_repetitive_files(root)
+        if repetitive_pairs:
+            print(f"Found {len(repetitive_pairs)} groups of repetitive files")
+            for pair in repetitive_pairs:
+                print(f"\nProcessing group: {[os.path.basename(f) for f in pair]}")
+                keep_file, remove_files = process_repetitive_files(pair)
+                # Remove the files that we don't want to keep
+                for file_to_remove in remove_files:
+                    try:
+                        os.remove(file_to_remove)
+                        print(f"Removed: {os.path.basename(file_to_remove)}")
+                    except Exception as e:
+                        print(f"Error removing {os.path.basename(file_to_remove)}: {e}")
+    
+    # Finally remove debug and bak files
+    print("\nRemoving debug and bak files...")
+    remove_debug_and_bak_files(base_dir)
 
 def main():
-    base_dir = "/Users/eveyhuang/Documents/NICO/gemini_code/outputs/2020NES"
+    base_dir = "/Users/eveyhuang/Documents/NICO/gemini_code/outputs/2021MND"
     process_directory(base_dir)
 
 if __name__ == "__main__":
