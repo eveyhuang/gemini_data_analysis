@@ -73,6 +73,25 @@ def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
 
+def sanitize_name(name, replace_char='_'):
+    """
+    Sanitize a name by replacing spaces and hyphens with underscores.
+    
+    Args:
+        name: The name to sanitize
+        replace_char: Character to use as replacement for spaces and hyphens
+        
+    Returns:
+        A sanitized version of the name
+    """
+    # Normalize Unicode characters (e.g., convert 'é' to 'e')
+    name = unicodedata.normalize('NFKD', name)
+    
+    sanitized = name.replace(' ', replace_char).replace('-', replace_char).replace('._', replace_char)
+    sanitized = re.sub(f'{replace_char}+', replace_char, sanitized)
+    sanitized = sanitized.strip(replace_char)
+    return sanitized
+
 # get all the video files (scialog directory is categorized by folders of each conference)
 def get_video_in_folders(directory):
     video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv']
@@ -514,8 +533,10 @@ def save_to_json(text, file_name, output_dir):
         output_dir (str): The directory to save the output to
     """
     # Ensure the output directory exists
+    output_dir = sanitize_name(output_dir)
     os.makedirs(output_dir, exist_ok=True)
     
+    file_name = sanitize_name(file_name)
     # Construct the output file path using os.path.join
     output_file = os.path.join(output_dir, f"{file_name}.json")
     
