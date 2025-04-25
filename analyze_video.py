@@ -469,6 +469,7 @@ def analyze_video(client, path_dict, prompt, dir):
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
             
+            fileName, file_extension = os.path.splitext(file_name)
             if not analyzed:
                 print(f"Analyzing {file_name}")
                 video_file, gemini_name = get_gemini_video(client, file_name, file_path, gemini_name)
@@ -479,7 +480,7 @@ def analyze_video(client, path_dict, prompt, dir):
                         print(f"Trying to save output for {file_name} to json file")
                         try:
                             # Remove trailing slash and use os.path.join
-                            save_to_json(response.text, file_name, output_dir)
+                            save_to_json(response.text, fileName, output_dir)
                             list_chunks[m][3] = True
                         except ValueError:
                             response = gemini_analyze_video(client, prompt, video_file, file_name)
