@@ -20,7 +20,7 @@ def init():
     Your objective is to annotate behavior and verbal cues to help us understand this team's behavior and processes.
     Each time someone speaks in this video, provide the following structured annotation:
     (1) speaker: Full names of speaker.
-    (2) timestamp: startiing and ending time of this person's speech in [MM:SS-MM:SS] format, before the speaker changes
+    (2) timestamp: startiing and ending time of this person's speech in MM:SS-MM:SS format, before the speaker changes
     (3) transcript: Verbatim speech transcript. Remove filler words unless meaningful.
     (4) speaking duration: the total number of seconds the speaker talks in this segment
     (4) nods_others: Count of head nods from other participants during this speaker's turn.
@@ -521,29 +521,7 @@ def save_to_json(text, file_name, output_dir):
     file_name = sanitize_name(file_name)
     # Construct the output file path using os.path.join
     output_file = os.path.join(output_dir, f"{file_name}.json")
-    
-    # Clean the input text
-    text = text.strip()  # Remove any leading/trailing whitespace
-    
-    # Handle code block markers
-    if '```' in text:
-        # Split by ``` and look for the JSON content
-        blocks = text.split('```')
-        for block in blocks:
-            # Skip empty blocks
-            if not block.strip():
-                continue
-            # If block starts with 'json', remove it
-            block = block.strip().removeprefix('json').strip()
-            try:
-                # Try to parse this block as JSON
-                parsed_json = json.loads(block)
-                # If we successfully parsed JSON, use this block
-                text = block
-                break
-            except json.JSONDecodeError:
-                continue
-    
+
     # Try to parse as JSON first
     try:
         parsed_json = json.loads(text)
@@ -562,15 +540,10 @@ def save_to_json(text, file_name, output_dir):
                 json.dump(parsed_json, f, ensure_ascii=False, indent=4)
             print(f"Successfully saved fixed JSON to {output_file}")
         except json.JSONDecodeError as e:
-            print(f"Failed to fix JSON format: {e}")
-            print("Saving original output directly")
-            # Find the first '{' and remove everything before it
-            first_brace = text.find('{')
-            if first_brace != -1:
-                text = text[first_brace:]
-            # Save the cleaned text directly to the file
-            with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(text)
+            output_file = os.path.join(output_dir, f"ATTN_{file_name}.json")
+            print(f"Failed to fix JSON format: {e}. Saving the original response text to the file for manual inspection.")
+            with open(output_file, 'w') as json_file:
+                json_file.write(text)
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):

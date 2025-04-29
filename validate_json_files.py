@@ -75,6 +75,7 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
             if file_list[3]:  # Only check files marked as True
                 if not is_valid_json_file(json_file):
                     # Update status to False
+                    print(f"Found file marked true with invalidJSON file: {json_file}")
                     file_list[3] = False
                     changes_made.append({
                         'key': key,
@@ -83,6 +84,7 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
                     })
             else:
                 if is_valid_json_file(json_file):
+                    print(f"Found file marked false with valid JSON file: {json_file}")
                     file_list[3] = True
                     changes_made.append({
                         'key': key,
@@ -93,8 +95,6 @@ def validate_and_update_path_dict(path_dict_file, base_output_dir):
     if changes_made:
         print("\nThe following files were found and changed analysis status:")
         for change in changes_made:
-            print(f"Directory: {change['key']}")
-            print(f"File: {change['file']}")
             print(f"JSON path: {change['json_path']}")
             print("-" * 80)
     else:
