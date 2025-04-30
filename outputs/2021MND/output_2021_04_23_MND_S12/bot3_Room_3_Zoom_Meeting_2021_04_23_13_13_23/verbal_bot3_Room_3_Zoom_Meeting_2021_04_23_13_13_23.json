@@ -1,157 +1,1419 @@
 [
     {
-        "utterance": "Judith Eisen: they can be hijacked for desired outcomes. So before we really get started, um, we need to choose somebody to be a scribe. Does anybody want to volunteer to do that? ",
+        "utterance": "Judith Eisen: Hello everyone. Hi, good afternoon. Welcome to breakout room, um, 3.3 I think we are. Um, so communication between the gut and the brain. So we have a few questions cued up. Um, what is the diversity of messages that pass back and forth between the gut microbiome and the brain? Are these unidirectional or bidirectional channels of communication? Are there ways to perturb neuronal function to watch the microbial response and how can these communication signals be monitored, hijacked or interrupted to drive desired outcomes. ",
+        "annotations": [
+            {
+                "present new idea": "The utterance introduces the topic of communication between the gut and the brain, which is a novel concept for the discussion."
+            },
+            {
+                "ask clarifying question": "The utterance poses several questions about the nature of communication between the gut microbiome and the brain, seeking to clarify the diversity, directionality, and potential manipulation of these signals."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: So I haven't been um in the same room with everybody here. I presume that that's the case since I think they're trying to mix us up. So maybe we could do some really quick introductions. ",
         "annotations": {
-            "propose decision": "Judith proposed that the group needs to choose a scribe before starting the meeting.",
-            "encourage participation": "Judith asked if anyone would volunteer to be the scribe."
+            "encourage particpatioin": "Judith encourages participation by suggesting that the group do quick introductions."
         }
     },
     {
-        "utterance": "Mei Shen: Okay. I can take notes. ",
+        "utterance": "Judith Eisen: So, um, my name is Judith Eisen. I'm at the University of Oregon. I'm a neuroscientist and I really think about development of the nervous system. So how uh how does the nervous system initially get wired up? I think one of the big revelations of the let previous decade is that it's not just mom's genes and and then the your genes, but there all these other organisms with genes that are associated at least with vertebrates and they uh make molecules that uh certainly have effects on the process, not just in the nervous system but other parts of the of the animal. But um and and we don't know very much about that. I think we we've learned uh much more at this point about later effects of the microbiome on the nervous system in terms of disease states and so forth, but we don't really don't know very much about the initial initial wiring and how that might set the animal up to be predisposed or not to what happens later. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining her background and research interests, which involves defining her perspective on the development of the nervous system and the role of the microbiome."
+            },
+            {
+                "present new idea": "The speaker introduces the idea that the microbiome plays a role in the initial wiring of the nervous system, which is a novel concept in the context of the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: So I'm sure everybody's on a different place on everybody else's screen. So I'm just going to ask people to to volunteer to say something about themselves and we'll get through everybody that way. ",
         "annotations": {
-            "assign task": "Mei Shen takes on the responsibility of note-taking, fulfilling Judith Eisen's request for a scribe.",
-            "confirm decision": "Mei Shen confirms the implicit decision to have a scribe by volunteering.",
-            "express agreement": "Mei Shen agrees to Judith Eisen's suggestion to have a scribe."
+            "encourage particpatioin": "Judith is asking people to volunteer to introduce themselves, encouraging participation in the discussion."
+        }
+    },
+    {
+        "utterance": "Mei Shen: Okay, I can volunteer to break the ice. Hi everybody. Uh I'm Mesha. Uh I am assistant professor from University of Illinois and Urbana Champagne. So I have appointment in Department of Chemistry as well as Neuroscience program and the Department of Bioengineering. So my interests are in two folds. Uh one of them is methodology development and we are interested in developing electrochemical sensing probes that can monitor the neurotransmitters at the time scale of reoccurrence, like break communication, like namely at like millisecond um time scale. And we are also interested to make this sensing probes to be pretty small, like nanometer in size. So for example, we have a published paper where we can make them to be like 15 nanometer in radius. So we can probe synaptic neurotransmission. And currently we we are interested in prove multiple groups of neurotransmitters. Uh and very often those are like involved in neurological disorders and also um look into new methodologies to monitor uh electrical as well as chemical break communication at the same time. Yeah, I'm interesting Alzheimer's disease as well. Nice to meet you all. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker explains their research interests, including the development of electrochemical sensing probes for monitoring neurotransmitters at a millisecond timescale and making these probes very small to probe synaptic neurotransmission, providing context for their expertise."
+            },
+            {
+                "provide supporting evidence": "The speaker mentions a published paper where they created probes with a 15 nanometer radius, providing evidence for their methodology development."
+            }
+        ]
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala: I can go. Uh my name is Robin Voigt Zuwala. I'm an associate professor at Rush University Medical Center in Chicago. Uh my primary interests are how lifestyle factors influence microbiome and how that is influencing disease. So I work with everything from um in vitro, ex vivo, rodent models and humans. Um primarily I study Alzheimer's disease, Parkinson's disease and PTSD. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is introducing themself and their research interests, which involves explaining the concepts of how lifestyle factors influence the microbiome and its connection to disease."
+        }
+    },
+    {
+        "utterance": "Noah Palm: I guess I can go. Um, so my name is Noah Palm. I'm an assistant professor of immunobiology um at Yale University. Um, I'm trained kind of as a hardcore immunologist but for the past decade or so I've been working on um both uh immune microbiota interactions as well as now kind of host microbiota interactions more broadly. Um, one of the focuses in my lab has been um development of new technologies to kind of deconvolute the complexity of the microbiome and identify causal and mechanistic roles for specific microbes or microbial products by leveraging new developments in combinatorial biology um uh and next generation sequencing to simultaneously interrogate kind of thousands of possible molecular level interactions between indigenous microbes and their hosts. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker explains their background as an immunologist and their current work on host microbiota interactions, providing context for their expertise.",
+            "present new idea": "The speaker introduces the idea of developing new technologies to deconvolute the complexity of the microbiome and identify causal roles for specific microbes, which is a novel approach within the conversation."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: All right, I can go next. Um, my name is Dave Durgan. I'm at Baylor College of Medicine in Houston. Uh my background is in cardiovascular physiology. Uh my main interests are in development of hypertension. And so that and I've been looking uh over the last several years at the role of the micro uh biota as well as its metabolites uh and how they regulate host blood pressure. Uh much of this work has been done um in how they affect the vasculature but also how this affects blood pressure regulating nuclei in the brain. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "Dave is explaining his research interests, which involves the role of the microbiota and its metabolites in regulating host blood pressure, particularly how they affect the vasculature and blood pressure regulating nuclei in the brain."
+            }
+        ]
+    },
+    {
+        "utterance": "Courtney Robinson: Hi, my name is Courtney Robinson. I'm an associate professor of biology at Howard University in Washington DC. And I'm a microbial ecologist. Most of my work is in environmental systems. So I'm interested in um micro interactions in uh insects. And then I'm also interested in things like iodine transformation in soil systems. And the thing that brings me to this group is our work looking at the role of Rexin in uh gut micro uh interactions and at that level. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "Courtney is explaining her background and research interests, including her role as a microbial ecologist and her work on micro interactions in insects and iodine transformation in soil systems, to provide context for her participation in the group."
+            }
+        ]
+    },
+    {
+        "utterance": "Erin Longbrake: Hi, I'm Erin Longbrake. I'm an assistant professor at Yale. Um I'm a neuroimmunologist, mostly clinical and translational. ",
+        "annotations": {
+            "None": "This utterance is a self-introduction and does not present a new idea, expand on an existing one, provide evidence, explain a term, ask a question, propose or confirm a decision, express agreement or disagreement, assign a task, offer criticism, resolve conflict, express frustration, acknowledge contribution, encourage participation, or express enthusiasm or humor."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: I work in multiple sclerosis. ",
+        "annotations": {
+            "explain or define term or concept": "Erin is providing context about her research interests, specifically mentioning 'multiple sclerosis' to clarify her area of expertise within neuroimmunology."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: And I have an interest in the microbiome. ",
+        "annotations": {
+            "expand on existing idea": "Erin Longbrake is expanding on her introduction by adding another detail about her interests, building upon her previous statements about being a neuroimmunologist working in multiple sclerosis."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: As potentially something that might mediate some of the onset of MS. ",
+        "annotations": {
+            "expand on existing idea": "Erin is building on her previous statements about her interest in the microbiome by suggesting a potential role in mediating the onset of multiple sclerosis (MS)."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: Um either directly or by communications with the immune system. ",
+        "annotations": {
+            "expand on existing idea": "Erin is expanding on her previous statement about her interest in the microbiome, adding that it might mediate the onset of MS either directly or through communication with the immune system."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: And also something that may be manipulated by different immunomodulatory medications that we use for treating our disease states. ",
+        "annotations": {
+            "expand on existing idea": "Erin is expanding on her previous idea about the microbiome's role in MS, adding that it may be manipulated by immunomodulatory medications used to treat the disease."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: So nice to meet everyone. ",
+        "annotations": {
+            "express enthusiasm": "Erin Longbrake expresses a positive sentiment at the end of her introduction, indicating she is pleased to meet the other participants."
+        }
+    },
+    {
+        "utterance": "Sandra Laney: Hi everyone. I'm Sandra Laney. ",
+        "annotations": {
+            "None": "This utterance is a simple introduction and does not fit any of the defined codes."
+        }
+    },
+    {
+        "utterance": "Sandra Laney: Uh uh director of science innovation at the Walder Foundation. ",
+        "annotations": {
+            "explain or define term or concept": "Sandra is explaining her role as the director of science innovation at the Walder Foundation, providing context about her background."
+        }
+    },
+    {
+        "utterance": "Sandra Laney: Really here in in listening and learning mode. ",
+        "annotations": {
+            "acknowledge contribution": "Sandra Laney acknowledges the contributions of others by stating she is in \"listening and learning mode\", indicating she is present to absorb information from the group."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: I'll go next. ",
+        "annotations": {
+            "encourage particpatioin": "Maayan Levy is volunteering to introduce herself, encouraging the conversation to continue."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: Um, so I'm Maayan Levy. I'm an assistant professor at Q Penn. Um I started my lab three years ago and we study um generally in the interaction between the host and the microbiome and we're specifically interested in how epithelial cells in the gut are mediating this interaction. Um, we are trying to identify um new metabolites that are being sensed by intestinal epithelial cells and new receptors that are sensing these metabolites. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is explaining their research interests, specifically the interaction between the host and the microbiome and how epithelial cells in the gut mediate this interaction, which helps the other participants understand the speaker's expertise."
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy: Trying to understand what are the consequences of of this detection of metabolites and and how they influence um different intestinal diseases. ",
+        "annotations": {
+            "expand on existing idea": "Maayan Levy is expanding on her previously stated interest in the interaction between the host and the microbiome, detailing her lab's efforts to understand the consequences of metabolite detection by intestinal epithelial cells and their influence on intestinal diseases."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: So we work a lot with the mouse models of IBD and colorectal cancer. Um, we work with germ free mice, um as well as in vitro organoid models and and some um cell cultures. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Maayan is describing the models and methods used in her lab, building on her earlier introduction of her research interests."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu: I guess I'll bring up the rear. ",
+        "annotations": {
+            "express humor": "The speaker uses the phrase \"bring up the rear\" in a slightly humorous way to indicate that they will be the last to introduce themselves."
+        }
+    },
+    {
+        "utterance": "JP Yu: Um, my name is JP Yu. ",
+        "annotations": {
+            "None": "This utterance is simply an introduction of the speaker and does not fit any of the codes."
+        }
+    },
+    {
+        "utterance": "JP Yu: I'm an assistant professor at the University of Wisconsin. ",
+        "annotations": {
+            "None": "This utterance is simply an introduction of the speaker and does not fit any of the codes in the codebook."
+        }
+    },
+    {
+        "utterance": "JP Yu: I'm a physician scientist here. ",
+        "annotations": {
+            "None": "This utterance is a simple statement of identity and does not fit any of the defined codes."
+        }
+    },
+    {
+        "utterance": "JP Yu: Um, clinically uh uh I'm a neuro radiologist here. ",
+        "annotations": {
+            "explain or define term or concept": "JP Yu is providing background information about his clinical role as a neuroradiologist."
+        }
+    },
+    {
+        "utterance": "JP Yu: And then my lab uh is really interested in using advanced uh MR and pet technologies. ",
+        "annotations": {
+            "explain or define term or concept": "The utterance explains the type of technologies that JP Yu's lab uses, which is advanced MR and PET technologies."
+        }
+    },
+    {
+        "utterance": "JP Yu: To identify neuroimaging biomarkers of neuropsychiatric and neurocognitive illness. ",
+        "annotations": {
+            "explain or define term or concept": "The utterance explains the goal of JP Yu's lab, which is to identify neuroimaging biomarkers, clarifying the lab's focus."
+        }
+    },
+    {
+        "utterance": "JP Yu: Um, a lot of that work has been uh designed to try to really unravel the biological transformations that sort of uh are changing the actual parameters that we're measuring on our uh neuroimaging techniques. ",
+        "annotations": {
+            "explain or define term or concept": "JP Yu is explaining the goal of his work, which is to unravel the biological transformations that are changing the parameters measured by neuroimaging techniques, providing context for his research interests."
+        }
+    },
+    {
+        "utterance": "JP Yu: And in our sort of search for these biomarkers. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is defining the term 'biomarkers' in the context of their research, which involves identifying neuroimaging biomarkers of neuropsychiatric and neurocognitive illness."
+        }
+    },
+    {
+        "utterance": "JP Yu: We serendipitously started to notice that different gut microbial populations. ",
+        "annotations": {
+            "present new idea": "JP Yu is introducing a new observation about gut microbial populations, which hasn't been discussed by others yet."
+        }
+    },
+    {
+        "utterance": "JP Yu: Um have a a very unexpected and a very large effect on uh neuro microstructure and brain function. ",
+        "annotations": {
+            "provide supporting evidence": "JP Yu is providing evidence for his lab's interest in gut microbial populations by stating that they have a large effect on neuro microstructure and brain function, which supports his earlier statement about searching for biomarkers."
+        }
+    },
+    {
+        "utterance": "JP Yu: Um, and as you might imagine that's really going to confound how we measure uh neuroimaging biomarkers. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is clarifying the impact of gut microbial populations on neuroimaging biomarkers, which is a key concept in their research.",
+            "express frustration": "The speaker expresses frustration that gut microbial populations will confound how they measure neuroimaging biomarkers."
+        }
+    },
+    {
+        "utterance": "JP Yu: So now we're very much interested in trying to really uh unravel the relationship between uh and how gut microbiota and these different populations and dysbiosis can lead to different neuroimaging biomarkers in the brain. ",
+        "annotations": {
+            "expand on existing idea": "JP Yu is expanding on his earlier statement about noticing the effect of gut microbial populations on neuro microstructure and brain function, elaborating on his interest in unraveling the relationship between gut microbiota, dysbiosis, and neuroimaging biomarkers.",
+            "present new idea": "JP Yu presents the idea that gut microbiota and dysbiosis can lead to different neuroimaging biomarkers in the brain, which is a novel concept in the context of his lab's search for biomarkers."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: So really great diversity of of uh interests and backgrounds here to address these questions. ",
+        "annotations": {
+            "acknowledge contribution": "Judith acknowledges the diverse interests and backgrounds of the participants, recognizing their potential to address the questions at hand, following a round of introductions where each participant described their research interests."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: So uh diversity of messages that pass back and forth between the gut microbiome and the brain, whether they're unidirectional, bidirectional, uh whether they can be perturbed and whether ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is defining the scope of the discussion by mentioning the diversity of messages between the gut microbiome and the brain, and whether they are unidirectional or bidirectional, setting the stage for further discussion."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: they can be uh hijacked for desired outcomes. So before we really get started, um we need to choose somebody to be a scribe. Does anybody want to volunteer to do that? ",
+        "annotations": {
+            "propose decision": "Judith proposes the decision to choose someone to be a scribe for the meeting.",
+            "encourage particpatioin": "Judith encourages participation by asking if anyone wants to volunteer to be the scribe."
+        }
+    },
+    {
+        "utterance": "Mei Shen: I can take notes. ",
+        "annotations": {
+            "assign task": "Mei Shen volunteers to take notes, assigning herself the task of being the scribe for the group."
         }
     },
     {
         "utterance": "Judith Eisen: May, thank you very much. ",
         "annotations": {
-            "acknowledge contribution": "Judith acknowledges Mei's offer to take notes by thanking her.",
-            "assign task": "Judith implicitly assigns the role of scribe to Mei by accepting her offer."
+            "acknowledge contribution": "Judith Eisen acknowledges Mei Shen's offer to take notes, showing appreciation for her willingness to contribute."
         }
     },
     {
-        "utterance": "Mei Shen: I think Erin will be good. So since I did in the previous session. Yeah, will be better by different person. ",
-        "annotations": {
-            "propose decision": "Mei proposes that Erin should be the scribe for the meeting.",
-            "provide supporting evidence": "Mei explains that she was the scribe in the previous session, suggesting it's someone else's turn.",
-            "express alternative decision": "Mei states that it would be better for a different person to take notes this time."
-        }
+        "utterance": "Mei Shen: So I think Aaron will be good, so since I'm already in the previous session. Are you doing it may or am I? Yeah, will be better for different person. ",
+        "annotations": [
+            {
+                "assign task": "Mei is suggesting that Aaron should be the scribe, as she was already in the previous session, thus assigning the task of note-taking to Aaron."
+            },
+            {
+                "encourage particpatioin": "Mei is encouraging Aaron to participate by suggesting that she take notes."
+            }
+        ]
     },
     {
-        "utterance": "Judith Eisen: Do you know where those are on the slide deck? ",
+        "utterance": "Judith Eisen: And you know where those are on the slide deck. ",
         "annotations": {
-            "ask clarifying question": "Judith is asking for clarification on the location of information within the slide deck, as the prior context indicates a discussion about desired outcomes and note-taking roles."
-        }
-    },
-    {
-        "utterance": "Erin Longbrake: I haven't actually looked to see which number it is, but they're on that slide deck. ",
-        "annotations": {
-            "provide supporting evidence": "Erin clarifies that while she doesn't know the specific slide number, the information Judith is looking for is indeed present within the slide deck.",
-            "explain or define term or concept": "Erin clarifies the location of the information by mentioning \"that slide deck,\" referring to a previously mentioned presentation."
-        }
-    },
-    {
-        "utterance": "Erin Longbrake: If anyone else wants to jump on the slide deck, feel free. I'm finding it now. ",
-        "annotations": {
-            "encourage particpation": "Erin is inviting others to collaborate on finding the slide deck.",
-            "assign task": "Erin is implicitly assigning the task of finding the slide deck to anyone who volunteers.",
-            "explain or define term or concept": "Erin is explaining what she is currently doing (finding the slide deck)."
+            "assign task": "Judith is assigning the task of being a scribe to someone, and she is confirming that the person knows where the relevant information is located on the slide deck."
         }
     },
     {
         "utterance": "Judith Eisen: Okay. ",
         "annotations": {
-            "acknowledge contribution": "Judith acknowledges Mei's willingness to take notes and Erin's offer to find the slides."
+            "acknowledge contribution": "Judith Eisen acknowledges Mei Shen's offer to take notes, but then suggests that Erin would be better, thus acknowledging Mei's contribution."
         }
     },
     {
-        "utterance": "Andrew Feig: 3.3 is slide 55. ",
+        "utterance": "Judith Eisen: Uh, I haven't actually looked to see which number it is, but they're on that slide deck. ",
         "annotations": {
-            "provide supporting evidence": "Andrew provides the slide number where the information Judith is looking for can be found.",
-            "resolve conflict": "By providing the slide number, Andrew resolves the issue of not knowing where the information is located."
+            "assign task": "Judith is assigning the task of being a scribe to someone, and is now clarifying where the relevant information is located."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake - Yale: Yeah, anyone else wants to jump on the slide deck, feel free. I'm finding it now. ",
+        "annotations": {
+            "encourage particpatioin": "Erin encourages others to contribute to the slide deck, following Judith's request for a scribe.",
+            "acknowledge contribution": "Erin acknowledges Mei's offer to take notes and suggests that someone else take on the task."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: Okay. ",
+        "annotations": {
+            "acknowledge contribution": "Judith Eisen acknowledges that Erin Longbrake is finding the slide deck, recognizing her contribution to the task."
+        }
+    },
+    {
+        "utterance": "Andrew Feig - RCSA (he/him): 3.3 is slide 55. ",
+        "annotations": {
+            "explain or define term or concept": "Andrew is clarifying the location of the slides being discussed by providing the slide number, which helps the group find the relevant information."
         }
     },
     {
         "utterance": "Judith Eisen: Oh, thank you. ",
         "annotations": {
-            "acknowledge contribution": "Judith acknowledges Andrew's contribution of finding the slide number."
+            "acknowledge contribution": "Judith Eisen acknowledges Andrew Feig's contribution of providing the slide number."
         }
     },
     {
-        "utterance": "Andrew Feig: Okay. There you go. ",
+        "utterance": "Erin Longbrake - Yale: Okay. ",
         "annotations": {
-            "confirm decision": "Andrew confirms the decision to look at slide 55 by pointing out \"There you go.\"",
-            "assign task": "Andrew implicitly assigns the task of looking at the slide deck to Judith by saying \"There you go.\""
+            "acknowledge contribution": "Erin acknowledges the information provided by Andrew about the slide number."
         }
     },
     {
-        "utterance": "Erin Longbrake: May. ",
+        "utterance": "Judith Eisen: There we go. ",
         "annotations": {
-            "confirm decision": "Erin confirms she will take notes, finalizing the decision."
+            "acknowledge contribution": "Judith acknowledges Andrew's contribution of providing the slide number."
         }
     },
     {
         "utterance": "Judith Eisen: Actually, that's not us 55. ",
         "annotations": {
-            "reject idea": "Judith rejects Andrew's statement that slide 3.3 is slide 55 by stating that it is not actually slide 55 for them."
+            "reject idea": "Judith rejects the idea that slide 55 is the correct one, based on Andrew's prior statement."
         }
     },
     {
-        "utterance": "Mei Shen: Let's see. Google Drive. Yeah, it should be 55. ",
+        "utterance": "Mei Shen: Let me see. Google Drive. Yeah, it should be 55. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is trying to locate the correct slide number in Google Drive, implying they are clarifying or confirming the location of a resource for the group."
+            }
+        ]
+    },
+    {
+        "utterance": "Andrew Feig - RCSA (he/him): Someone's entering. ",
         "annotations": {
-            "propose decision": "Mei proposes to check Google Drive to confirm the slide number.",
-            "expand on existing idea": "Mei is checking the location mentioned by Andrew and confirms it should be slide 55.",
-            "provide supporting evidence": "Mei mentions Google Drive as the evidence source to verify the slide number."
+            "None": "This utterance does not fit any of the codes in the codebook, as it is simply an observation about someone joining the meeting."
         }
     },
     {
-        "utterance": "Andrew Feig: Someone's entering. ",
+        "utterance": "Noah Palm - Yale: I think one of the other groups is is incorrect on the in the on the incorrect slide. ",
         "annotations": {
-            "present new idea": "Andrew states that someone is entering the meeting, introducing the new information about a new participant.",
-            "explain or define term or concept": "Andrew's statement clarifies the cause of the interruption or notification they are experiencing, explaining that someone is joining the meeting."
+            "explain or define term or concept": "The speaker is clarifying that another group is on the wrong slide, which is important for the current discussion."
         }
     },
     {
-        "utterance": "Andrew Feig: I think one of the other groups is is incorrect on the in on the incorrect slide. ",
+        "utterance": "Mei Shen: Oh, somebody took our. ",
         "annotations": {
-            "provide supporting evidence": "Andrew is providing evidence to support the idea that the other group is on the wrong slide.",
-            "explain or define term or concept": "Andrew is explaining why he thinks the other group might be confused by pointing out that they are on the incorrect slide."
+            "express frustration": "Mei Shen expresses frustration that someone else is using their designated slide, indicating a disruption to their planned activity."
         }
     },
     {
-        "utterance": "Mei Shen: Oh, somebody took our slide. Okay. ",
+        "utterance": "Judith Eisen: Okay, slide. Okay. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "Judith acknowledges that the correct slide was found, building on the previous turn where Mei and others were trying to locate the correct slide."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm - Yale: Yeah. ",
         "annotations": {
-            "express frustation": "Mei Shen expresses mild frustration that another group is using their assigned slide, indicated by the \"Oh\" and the implication that their slide was taken."
+            "express agreement": "Noah agrees with the previous statement about the incorrect slide."
         }
     },
     {
-        "utterance": "Judith Eisen: Okay. ",
+        "utterance": "Andrew Feig - RCSA (he/him): Just go copy copy it and make it uh and and uh we'll get them fixed. We'll get them straightened out. ",
         "annotations": {
-            "None": "No specific code applies to a simple acknowledgment like \"Okay\" in this context, as it doesn't introduce new ideas, ask questions, or express opinions."
+            "assign task": "Andrew suggests copying the correct slide and fixing the issue, implicitly assigning the task of correcting the slides to someone, likely the organizers."
         }
     },
     {
-        "utterance": "Andrew Feig: Copy copy it and make it and we'll get them fix we'll get them straightened out. ",
+        "utterance": "Judith Eisen: Okay, thank you. Thank you. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "Judith expresses gratitude for the help provided in resolving the slide issue, acknowledging the contributions of those who assisted."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: Okay, well, so um so maybe I'll just start this off. What do people think about the diversity of messages that pass back and forth between the gut microbiome and the brain? ",
         "annotations": {
-            "assign task": "Andrew is suggesting to copy the slide and fix the issue, implicitly assigning the task to the group.",
-            "propose decision": "Andrew proposes a solution to the problem of someone using their slide by suggesting to copy it and fix the issue."
+            "encourage particpatioin": "Judith is starting the discussion by asking for people's thoughts on the diversity of messages between the gut microbiome and the brain, encouraging participation from the group.",
+            "present new idea": "Judith is introducing the first question for discussion, which is about the diversity of messages between the gut microbiome and the brain, presenting a new idea to explore."
         }
     },
     {
-        "utterance": "Judith Eisen: Okay, thank you. ",
+        "utterance": "Mei Shen: I mean. Oh, go ahead. ",
+        "annotations": [
+            {
+                "encourage particpatioin": "Mei Shen initially started to speak but then deferred to someone else, encouraging them to participate."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): I actually have a uh seems question probably could be uh essentially at first best answered by Noah. Um so you know we always hear about how like, you know, gut metabolites and so on and so forth humoral stuff can, you know, affect the brain. Um you know, this last couple of days I've started to think about, you know, you know, this idea of true bidirectionality. So like how can the brain actually influence other immune mediators in the gut or elsewhere. Um in your in your work, is there any suggestion that things like, you know, alterations to like the HPA axis or any of these sort of effector molecules produced by the brain uh usually sort of endocrine in nature is sort of what I'm thinking. Have you encountered that they might affect sort of the gut microbita or any immune effectors down there? ",
         "annotations": {
-            "acknowledge contribution": "Judith acknowledges Andrew's contribution in helping to locate and fix the slide issue."
+            "ask clarifying question": "JP asks Noah a question about how the brain can influence immune mediators in the gut, specifically if alterations to the HPA axis or endocrine molecules produced by the brain might affect the gut microbiota or immune effectors, building on the initial question about the diversity of messages between the gut and the brain."
         }
+    },
+    {
+        "utterance": "Noah Palm - Yale: Was that was that directed at me? ",
+        "annotations": {
+            "ask clarifying question": "JP Yu asked Noah a question about how the brain can influence immune mediators in the gut, and Noah is asking for confirmation that the question was directed at him."
+        }
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): Uh yeah or anybody. This is sort of like a thought that I had. But you're the you're pretty uh from your description you're more uh you're an immunologist so I thought you might be a good first hack at this. ",
+        "annotations": {
+            "encourage particpatioin": "JP Yu is encouraging Noah Palm to participate in the discussion, given Noah's background in immunology, by explicitly directing the question to him and inviting him to answer.",
+            "acknowledge contribution": "JP Yu acknowledges Noah's expertise by stating that Noah is an immunologist and therefore might be a good person to answer the question."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: Yeah, I mean, I think there's definitely um lots of possibilities there and you know, one of the scenarios where we know these kinds of things can occur is um in the case of stress. Um, for example, so one of my colleagues here at Yale recently had a really nice paper showing this isn't gut brain in this case, but uh but brain uh immune connection where he showed actually that stress can lead to um uh a nervous system mediated activation of adipocytes to release IL6, um an inflammatory cytokine. Um, I think there's also some really interesting, I was talking about this in the last group as well actually. Um, you know, examples of uh even uh conditioning of immune responses, so classical conditioning of immune responses, again suggesting true bidirectional communication because basically uh, you know, what what one of the things that was shown a couple decades ago, um is that you can condition allergic responses. Uh, so if you give a neutral stimulus, ring a bell and give an allergen, ring a bell and give an allergen, ring a bell and give an allergen, eventually you can ring the bell and all the mass cells in the body will degranulate um without the allergen being present. Um, so that really truly does suggest bidirectional because this type this information had to be encoded from the immune cells being the initial responders, um presumably, although could be direct neuronal sensing as well. There's now evidence for that, but at least the model at the time was that it's initially the mass cells that are sensing, talking to the neurons, the neurons talking to the brain, eventually the brain learning that the proper response to this stimulus um is uh is an allergic response and then encoding that as a learned behavior. Um, and becomes almost an anticipatory behavior and you have these kind of anecdotes of people who are the the famous story my PI used to tell was that he had a uh he had a friend who who insisted that she was allergic to the sight of her of her ex-boyfriend. Um, that she would see him and start to, you know, break out in hives. And um, yeah, so anyway that I probably other people on this can comment maybe even better than I can, but I I think definitely there's lots of opportunities for that kind of bidirectional communication and you can imagine that happening in the gut as well. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Noah expands on JP's question about bidirectionality by providing examples of how the brain can influence immune mediators, specifically mentioning stress-induced activation of adipocytes and classical conditioning of immune responses."
+            },
+            {
+                "provide supporting evidence": "Noah provides supporting evidence for brain-immune connection by mentioning a colleague's paper on stress leading to nervous system mediated activation of adipocytes and the example of classical conditioning of allergic responses."
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: Yeah, I I have one idea that also from Richard's lab. So IL-18 um was shown to be produced by interic neurons. Um, and it is um it is um sorry, secreted um after activation by by the microbiome and downstream to IL-18 secretion, there is the secretion of antimicrobial peptides that then um go into the lumen and can affect the microbiome and and specifically microbial composition. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Maayan is building on the previous discussion about bidirectionality between the brain and the gut by providing a specific example of how enteric neurons can influence the microbiome through the secretion of IL-18 and antimicrobial peptides."
+            },
+            {
+                "provide supporting evidence": "Maayan mentions that the idea comes from Richard's lab, providing a source for the information about IL-18 production by enteric neurons."
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: So you can think about it in as the microbiome inducing IL-18 on interic neurons and from epithelial cells. I think the the relative contribution of each is is at the moment unclear. Um, but then IL-18 will induce the the antimicrobials that will control the microbiome back. So there is this bidirectionality in that case. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Maayan is building on Noah's explanation of bidirectionality by providing a specific example involving IL-18, interic neurons, epithelial cells, and antimicrobial peptides."
+            },
+            {
+                "provide supporting evidence": "Maayan provides the example of IL-18 production by interic neurons and epithelial cells, which then induces antimicrobial peptides that control the microbiome, supporting the idea of bidirectionality."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen: So do you all know like so if like and this is like follow up conversation if like micro biome like secrete certain like substances, right? So how can we monitor that, you know, if this can actually goes to the brain side to affect what's happening here there, right? This is actually related to the last point of this like topic of discussion. ",
+        "annotations": {
+            "ask clarifying question": "Mei Shen is asking how to monitor substances secreted by the microbiome that may affect the brain, seeking clarification on how to track these effects, building on the discussion about bidirectional communication between the gut and the brain.",
+            "expand on existing idea": "Mei Shen is expanding on the discussion about the diversity of messages between the gut microbiome and the brain by asking how to monitor the substances secreted by the microbiome that may affect the brain."
+        }
+    },
+    {
+        "utterance": "Mei Shen: So what are the typical have been, you know, explored to figure out, right? ",
+        "annotations": {
+            "ask clarifying question": "Mei Shen is asking about the typical methods that have been explored to figure out how microbiome secretions can affect the brain, following up on the discussion about bidirectional communication between the gut and the brain."
+        }
+    },
+    {
+        "utterance": "Mei Shen: Any thought anyway? ",
+        "annotations": {
+            "encourage particpatioin": "Mei Shen is encouraging others to share their thoughts on how to monitor the substances secreted by the microbiome and their effects on the brain, following up on her previous questions about the topic."
+        }
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): I would cannulate the portal vein and you could do portal vein sampling longitudinally and continuously. ",
+        "annotations": {
+            "propose decision": "JP suggests a concrete method (cannulating the portal vein and sampling longitudinally) to monitor substances secreted by the microbiome, which directly addresses Mei Shen's question about how to track microbiome-brain communication."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala - Rush U Med Ctr: that it's getting into the circulation. Would you not also want to at the same time sample the lumen of the intestine to see what's being produced compared to what's in the circulation and then what's happening in the brain. ",
+        "annotations": {
+            "expand on existing idea": "Building on the idea of sampling the portal vein to monitor substances secreted by the microbiome, Robin suggests also sampling the lumen of the intestine to compare what's produced with what's in circulation and the brain, adding more detail to the experimental design.",
+            "ask clarifying question": "Robin poses a question about whether it would be beneficial to sample the lumen of the intestine in addition to the portal vein and the brain, seeking clarification on the experimental approach."
+        }
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): That too. ",
+        "annotations": {
+            "express agreement": "JP Yu agrees with Robin's suggestion to sample the lumen of the intestine in addition to the portal vein, indicating agreement with the proposed approach."
+        }
+    },
+    {
+        "utterance": "Mei Shen: Yeah. ",
+        "annotations": {
+            "express agreement": "Mei Shen is agreeing with JP Yu and Robin Voigt-Zuwala's suggestions to sample the portal vein and the lumen of the intestine to monitor substances secreted by the microbiome."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: There's some really elegant studies from uh Andrew Mcpherson's lab where they did labeling of because what you really want to know, the problem is that there's too many compounds that both we and the microbes make, right? There's just a huge overlap, this kind of common chemical languages. Um so what you really want to know is what's actually coming from the microbes in the gut. And so Andrew Mcpherson did this experiment where they did heavy labeling of um of microbes and then did a colon irreversible colonization of germ free mice. So these were auxotrophic bacteria that um couldn't grow on their own unless they have, you know, the the right supplements. Um, so basically they were able to put in these bacteria that were heavy labeled and then track all of the metabolites specifically that had come from those bacteria across the body. Um, this was maybe a year ago or something that they published this. So I thought this was to I think this is a yeah, one very, very elegant, expensive but elegant way to actually prove uh a microbial origin um for those kinds of compounds. They didn't really do it and I don't think they actually looked in the brain at all. They only looked in circulation. Um, but other groups have done the typical kind of shotgun metabolomics in the brain and you can kind of guess that maybe things are coming from the microbiota, but not proven. ",
+        "annotations": {
+            "provide supporting evidence": "Noah describes a study by Andrew Mcpherson's lab that used heavy labeling of microbes to track metabolites, providing evidence for how to determine the microbial origin of compounds, which supports the discussion on monitoring substances secreted by the microbiome.",
+            "expand on existing idea": "Noah expands on the idea of monitoring substances secreted by the microbiome by describing a specific method (heavy labeling) used to track metabolites from microbes, adding details about the experimental design and its application in germ-free mice.",
+            "explain or define term or concept": "Noah explains the concept of auxotrophic bacteria, clarifying that they require specific supplements to grow, which is relevant to understanding the experimental design of the study he is describing."
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: in the germ free situation, but it's maybe a way to narrow it down a bit. ",
+        "annotations": {
+            "expand on existing idea": "Maayan is expanding on Noah's idea of using heavy labeling to track metabolites of microbial origin, suggesting that using a germ-free situation could help narrow down the search for metabolites of interest."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala, Rush U Med Ctr: I like that experiment, but I think you're missing a whole arm of it where metabolites produced locally in the intestine could be affecting the mucosal immunity or the enteric nervous system. So it's it's gives you one piece of information, but it's not the whole puzzle yet. ",
+        "annotations": {
+            "offer constructive criticism": "Robin acknowledges that she likes the experiment that Noah described, but then offers constructive criticism by pointing out that the experiment is missing a whole arm of it where metabolites produced locally in the intestine could be affecting the mucosal immunity or the enteric nervous system, suggesting that the experiment only provides one piece of information and not the whole puzzle."
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: Yeah, I completely agree. ",
+        "annotations": {
+            "express agreement": "Maayan Levy explicitly agrees with Robin Voigt-Zuwala's statement about the limitations of the experiment discussed, indicating agreement with the prior speaker."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: Along those lines of what Noah was saying, um there's also a study with bile acids where they use click chemistry and gavage these bile acids uh and you can then sort the biome um by to see which ones are actually taking up that bile acid and then also track it once it's been secreted from uh from the metabo sorry, from the microbiome uh and track it in the host as well. So you kind of get those multiple steps along the pathway and like you're saying looking in portal but then also in systemic as well so you see uh what has the potential to be actually making it all the way to brain. ",
+        "annotations": {
+            "expand on existing idea": "Dave provides another study as an example of how to track metabolites from the microbiome to the host, expanding on Noah's previous suggestion of using heavy labeling to track metabolites of microbial origin.",
+            "provide supporting evidence": "Dave mentions a study using click chemistry and bile acids to track metabolites from the microbiome to the host, providing a specific example to support the discussion on how to monitor substances secreted by the microbiome."
+        }
+    },
+    {
+        "utterance": "Noah Palm, Yale: Yeah, another important thing we learned in some of our studies is that a lot of these compounds are actively degraded, right? So that you see things that might that microbes are making in vitro. Um but you know, we've evolved systems uh to regulate the bioavailability of of compounds like catecholamines for obvious reasons you can't have a bunch of uh dopamine or epinephrin floating around the body all the time. So anything that you need to regulate the bioavailability of you don't just regulate production, you regulate um uh also the degradation. And so I think yeah, we we you can end up with a lot of false positives if you're just looking at what microbes can make um as in terms of what will actually be physiologically making it to the places where we're interested. Uh same with blood brain barrier of course, right? ",
+        "annotations": {
+            "expand on existing idea": "Noah is expanding on the previous discussion about how to monitor substances secreted by the microbiome by adding that many compounds are actively degraded, which affects their bioavailability and should be considered when studying their effects.",
+            "provide supporting evidence": "Noah mentions that their studies have shown that many compounds are actively degraded, supporting the idea that bioavailability regulation is important.",
+            "explain or define term or concept": "Noah explains the concept of bioavailability regulation by giving the example of catecholamines and how the body regulates their levels through both production and degradation."
+        }
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: So so Noah, I'll follow up a question. Do you know about like glutamate, you know, so I know like glutamate apart some of those actually are made, right? In the gut. So it's also like a very important neurotransmitter in the brain as well. Do you know how stable are they? Not sure if you already did some work on those. ",
+        "annotations": {
+            "ask clarifying question": "Mei Shen asks Noah if he knows about glutamate, a neurotransmitter made in the gut, and how stable it is, seeking clarification on its properties and potential effects on the brain, following up on the discussion about metabolites produced by the microbiome and their impact on the brain.",
+            "explain or define term or concept": "Mei Shen explains that glutamate is a very important neurotransmitter in the brain, providing context for her question about its stability and origin in the gut."
+        }
+    },
+    {
+        "utterance": "Noah Palm, Yale: We haven't. I don't know if anyone else wants to comment on on those particular pathways. We've done more work on um kind of like uh aminergic kind of uh compounds like dopamine and tyramine and phenethylamine. Um of which actually we we we were able to show actually that phenethylamine from the gut can make it to the brain. Um not proof without a shadow of a doubt, but pretty pretty pretty strong because we didn't do labeling or anything like that. Um but this happens to be a mood modifying chemical, mood enhancing chemical that actually can cross the blood brain barrier. Um yeah. I don't know, Mayan if you have yeah. ",
+        "annotations": {
+            "encourage particpatioin": "Noah encourages Mayan to comment on the pathways related to glutamate, following up on a question from Mei about glutamate production in the gut and its potential impact on the brain.",
+            "expand on existing idea": "Noah expands on the discussion about metabolites produced in the gut by mentioning their work on aminergic compounds like dopamine, tyramine, and phenethylamine, and how phenethylamine from the gut can reach the brain and affect mood.",
+            "present new idea": "Noah presents the idea that phenethylamine, a mood-enhancing chemical produced in the gut, can cross the blood-brain barrier and affect the brain, which is a new point in the conversation."
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: Yeah, no, I'm just thinking about some we don't necessarily need to think only about these metabolites that will travel and and get physically to the brain or to the central nervous system, but I think that um maybe signaling through epithelial cells that then form synapse with the enteric nervous system is another way to think about it. ",
+        "annotations": {
+            "present new idea": "Maayan suggests that signaling through epithelial cells that form synapses with the enteric nervous system is another way to think about gut-brain communication, presenting an alternative to metabolites directly traveling to the brain, which is a new idea in the context of the discussion."
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: Um, and I think that there uh in that case we we know much less. Um, I yeah. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "Maayan acknowledges the previous discussion about metabolites traveling to the brain, but then pivots to a different perspective, signaling through epithelial cells, thus acknowledging the previous points."
+            }
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: So I think that generally identifying which cell types in the gut um in terms of which epithelial cells are able to form these synapses, um whether these cells can sense specific metabolites that cannot be sensed by other cell types and and how can they transmit the information of this sensing for whatever reason to to the central nervous system. ",
+        "annotations": {
+            "present new idea": "Maayan suggests a new idea about identifying which cell types in the gut can form synapses, sense specific metabolites, and transmit information to the central nervous system, which has not been previously discussed in this specific way.",
+            "expand on existing idea": "Maayan is expanding on the existing discussion about how the microbiome communicates with the brain by suggesting that signaling through epithelial cells that form synapses with the enteric nervous system is another way to think about it, building on the previous discussion about metabolites traveling to the brain."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala, Rush U Med Ctr: Yeah, I like that idea a lot. the thing that always troubles me about metabolites and things in the systemic circulation. Let's say that they get there and they cross the blood brain barrier and they're in the brain, are they there in sufficient quantities and in the areas where they need to be to have a physiological impact where maybe they could cause neurodegeneration or that kind of thing. Has anybody looked regionally and then looked at concentrations to see if it would even have an effect? ",
+        "annotations": {
+            "express agreement": "Robin expresses agreement with Maayan's idea about epithelial cells forming synapses with the enteric nervous system.",
+            "ask clarifying question": "Robin asks if anyone has looked at regional concentrations of metabolites in the brain to see if they are sufficient to have a physiological impact, following a discussion about metabolites produced in the gut and their potential effects on the brain."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: I'm just gonna gonna say here, I think that's a really important question and you have to think of what kind of effect you're thinking about. So, you know, generally if you're thinking about a synaptic effect, you want a really high concentration of a particular transmitter in a very small area and it's such a small area, it's not even very many molecules of it and it has to be there rapidly because if it's not there rapidly, it's going to desensitize. So you could you could certainly think of all sorts of desensitization processes going on and every every neurotransmitter has some sort of re uptake process. So you can imagine that uh systemic neurotransmitters that could get through the blood brain barrier maybe rather than working synaptically are are altering um re uptake. So altering levels of excitation or inhibition or ratios of excitation and inhibition which I thought to be very, very important in in many sort of uh neurodevelopmental disease processes, probably other processes too. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "Judith acknowledges Robin's question about the physiological impact of metabolites in the brain by stating that it's a \"really important question.\""
+            },
+            "expand on existing idea": {
+                "Explanation": "Judith expands on the discussion about metabolites in the brain by explaining the importance of concentration and speed for synaptic effects, and suggesting that systemic neurotransmitters might affect re-uptake processes."
+            },
+            "explain or define term or concept": {
+                "Explanation": "Judith explains the concept of synaptic effect, emphasizing the need for high concentration and rapid presence of neurotransmitters in a small area to avoid desensitization."
+            }
+        }
+    },
+    {
+        "utterance": "Maayan Levy, UPenn: I have kind of a basic question. Um how and if um it's possible to measure uh the concentration of of metabolites in in the synaptic space? ",
+        "annotations": {
+            "ask clarifying question": "Maayan asks a question about the possibility of measuring metabolite concentrations in the synaptic space, seeking clarification on measurement techniques."
+        }
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: So actually we have a um a paper, you know, it's it's not like in vivo, it's like um in vitro model. Um, so you know, you can I'm electrochemist by training. You can make like electrode to be pretty small in size to be smaller than synaptic cleft. So then you have to put them around there, right? So so the methodology uh we we actually this is not a big direction my lab. So we are um developing nanometer positioning platform, which is scanning probe technology. You can position the sensing probe with nanometer resolution. Um so so we did that with the colinergic transmitters from California model. So we basically learned that the concentration of colinergic transmitters is like two molar. It's really dynamically changing. It's not like a flat level. So the highest level we get is like two molar. Um, so overall, you know, there are studies also uh based on like extracellular studies and simulation also tells that information as well. But I you know, I totally agree with like you know, Judith just mentioned besides synaptic transmission, there is also like volume transmission as well. like release from the cells, those also matters a lot. in the brain, so. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "Mei Shen provides evidence from her paper about measuring neurotransmitter concentrations in vitro, supporting the discussion on measuring metabolites in the synaptic space that Maayan Levy asked about."
+            },
+            {
+                "expand on existing idea": "Mei Shen expands on Judith's point about synaptic effects by mentioning volume transmission, suggesting that release from cells also matters in the brain."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: And it's just to make it a little more complicated, it's not necessarily just neurons that release transmitters at synapses, there are gleal cells in the brain that release transmitters uh maybe as part of this re uptake process or as a way of uh somehow uh balancing what's going on under various different circumstances. I think this this is all uh you know, like uh the work that May talked about, this is all really active area of research right now as people are developing tools to try to look at it and um finding all sorts of new exciting things that complicate our picture of what's going on. ",
+        "annotations": {
+            "expand on existing idea": "Judith expands on the discussion about metabolites and neurotransmitters in the brain by introducing the role of glial cells in releasing transmitters, adding complexity to the picture.",
+            "explain or define term or concept": "Judith explains that glial cells also release transmitters, which is relevant to the discussion of neurotransmitters in the brain.",
+            "acknowledge contribution": "Judith acknowledges Mei's work by mentioning it in the context of active research in the area of neurotransmitter release and uptake."
+        }
+    },
+    {
+        "utterance": "Noah Palm, Yale: I think in terms of concentrations kind of one of the challenges and this comes from the microbial side and I don't I still don't often one gets this question about why a microbe is making a particular chemical that you find that it makes and most of the time you don't have a good answer um to that. But one of the things that does seem to be true is that um, you know, many of chemicals including what are used by us as neurotransmitters that are made by bacteria are made at incredibly high levels. I mean that they're just pumping out constantly millimolar quantities of these things. And so that, you know, does I think give the opportunity to end up with physiologically relevant concentrations of compounds um even if, you know, our system is set up to have it be exquisitely controlled at this synapse, um, you know, if a bug is spitting out as a waste product GABA um at millimolar quantities all the time, um, you know, that's a pretty remarkable level of that neurotransmitter that's being produced. ",
+        "annotations": {
+            "provide supporting evidence": "Noah provides evidence that microbes produce neurotransmitters at high levels, suggesting they could reach physiologically relevant concentrations, supporting the idea that microbial metabolites can affect the brain.",
+            "expand on existing idea": "Noah expands on the discussion about metabolite concentrations in the synaptic space by discussing the high levels of neurotransmitters produced by bacteria and how this could lead to physiologically relevant concentrations, building on Judith's point about synaptic effects and re-uptake processes.",
+            "explain or define term or concept": "Noah explains that bacteria produce chemicals, including neurotransmitters, at high levels, which is relevant to the discussion about metabolite concentrations and their potential effects on the brain."
+        }
+    },
+    {
+        "utterance": "JP Yu: and just to piggy back off of that, uh, Emily Balskus who's also here as a facilitator. She showed, I think it was a couple years ago in Nature Micro, I think, where it was actually if they were a group of microbes that were deficient in an enzyme called like TMA lyase, there were other gut microbes that could basically engage in alternative metabolic processing of those natural byproducts to generate TMA endogenously even the absence of the the native enzyme that catalyzes that transformation. So, I think it's not just one like like the classic one bug one metabolite but also you know, sort of how to different different, you know, groups of bacteria communicate either in a stochastic manner or in a program manner to generate all of these factors. ",
+        "annotations": {
+            "expand on existing idea": "JP is building on Noah's point about the high levels of chemicals produced by microbes, adding that different groups of bacteria can communicate to generate these factors, referencing Emily Balskus's work on TMA lyase as an example.",
+            "provide supporting evidence": "JP provides supporting evidence by referencing Emily Balskus's work published in Nature Micro, which showed that some gut microbes can generate TMA endogenously even in the absence of the native enzyme, supporting the idea that different groups of bacteria can communicate to generate metabolites."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: And probably for many of these metabolites, the question is why like why the bacteria are making it and why do we even need to sense it? Um yeah. It's I think one of the example is uh succinate and tough cells. What what does it mean that that uh that succinate is present and and and is being sensed? It's yeah just just one example but there are many more. ",
+        "annotations": {
+            "present new idea": "Maayan presents a new idea by questioning the purpose of bacteria producing metabolites and why we need to sense them, which hasn't been explicitly discussed before.",
+            "explain or define term or concept": "Maayan explains the concept by using the example of succinate and tuft cells, questioning the meaning of succinate's presence and sensing, aiming to clarify the broader question of metabolite function.",
+            "ask clarifying question": "Maayan asks a clarifying question about the purpose of bacteria producing metabolites and why we need to sense them, seeking a deeper understanding of the underlying mechanisms."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: Well, this is my my bias, but I I really think a lot of these things are ",
+        "annotations": {
+            "present new idea": "Judith is about to introduce her perspective or hypothesis on the topic being discussed, which qualifies as presenting a new idea."
+        }
+    },
+    {
+        "utterance": "Noah Palm: actually, so succinate and tough cells is an example of this. We know that tons of bacteria make succinate. But actually colonic tough tough cells don't respond to succinate. It's small intestinal tough tough cells that respond to succinate. And that actually makes sense. So the organization of the system is such that we've evolved to avoid sensing the microbial succinate and segregated the expression of the receptor to sense it away from the bacteria. And I think actually that's mostly the design principle is for us to try to design in the majority of cases uh systems where we're not being manipulated by these constant signals or noise. Um the same goes for actually this is a subject I've been fascinated by for a while is that, you know, we secrete tons and tons and tons of um monoamine oxidase into the lumen of the gut. Um mostly this isn't really taught, but actually in the gut lumen there's tons and tons and tons of monoamine oxidase. Um which presumably is there to basically degrade all of these signals before they even get to us. Um of course on the flip side there are going to be those instances that we've evolved to sense things to either to monitor the structure or function of the microbial community or the integrity of the barrier. But I think actually those are the exceptions to the rule. The rule is that we try to not have this these things muck with our gears. Um and then choose a small subset of them to actually monitor and respond to that's kind of our our the sentinel signal. I don't know, but yeah if other people agree with that kind of point of view, but that's kind of my point of view. ",
+        "annotations": {
+            "expand on existing idea": "Noah expands on Maayan's point about succinate and tuft cells by providing a specific example of how the body avoids sensing microbial succinate in the colon, contrasting it with the small intestine where tuft cells do respond to succinate.",
+            "provide supporting evidence": "Noah provides supporting evidence by mentioning the secretion of monoamine oxidase into the gut lumen, which degrades signals before they reach us, supporting his point that we've evolved to avoid being manipulated by constant microbial signals.",
+            "present new idea": "Noah presents a new idea that the design principle of the gut-brain interaction is to avoid being manipulated by constant microbial signals, and that sensing these signals is the exception rather than the rule."
+        }
+    },
+    {
+        "utterance": "Courtney Robinson: So my question is going to be um has anyone looked at sort of like an engineered community where we we know that there are these different microbes that are producing these things that, you know, the the nervous system can respond to and then look at where these organisms then colonize. ",
+        "annotations": {
+            "ask clarifying question": "Courtney is asking if anyone has investigated the colonization patterns of engineered microbial communities that produce substances the nervous system can respond to, seeking to understand the relationship between microbial products and their impact on the nervous system."
+        }
+    },
+    {
+        "utterance": "Mei Shen: Sorry, I have some interruption with my internet. You were saying like if people have engineer something to see where the bacteria is colonized. ",
+        "annotations": {
+            "ask clarifying question": "Mei Shen is asking for clarification on Courtney Robinson's previous question about engineered communities and bacterial colonization, due to an internet interruption."
+        }
+    },
+    {
+        "utterance": "Courtney Robinson: Yeah, so if you had a a like a a notobiotic model or something like that um and you take a community that you've handpicked uh made up of organisms that produce the compounds that you're interested in and then you look for colonization throughout that uh gastrointestinal tract. So like you said there's this separation such that the host only recognizes, you know, the the things that the the host is interested in as opposed to um the molecules that are generated from the microbiota. ",
+        "annotations": [
+            {
+                "present new idea": "Courtney introduces the idea of using an engineered microbial community in a notobiotic model to study colonization patterns and host responses to specific microbial compounds, which is a novel approach not previously discussed in this specific context."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: I don't know offhand of anyone who's done those kinds of of studies. Um I mean if you if you look in in mice, um I mean certainly you you find different different um microorganisms in different parts of the uh gastrointestinal tract. But I don't know that anybody has systematically gone through and you know, engineered particular bugs and then made a Shaler's flora, which is a community uh microorganisms some sort of Shaler's flora and then put it back and then asked where do different ones go and does it do they go different places if they're making something that you want them to make. Which I think is a really critical question if you're thinking about using um uh microbiome as a therapeutic, you would want to know where particular organisms go or uh you know what excuse me, what sort of environment they would be in at any rate because that might make a difference on whether the products would become accessible to use as a therapeutic or not. I don't know. maybe other people know other research into this but I don't I don't know any. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "Judith acknowledges Courtney's question about engineered communities and their colonization patterns in the gut, but she doesn't agree or expand on it."
+            },
+            {
+                "ask clarifying question": "Judith is asking if other people know of research into engineered bugs and their colonization patterns, seeking to expand her knowledge on the topic."
+            }
+        ]
+    },
+    {
+        "utterance": "Dave Durgan: I would imagine that one hurdle in getting into that is choosing which bug to try and manipulate. Um and we've had that issue. I mean we can transplant a whole community and see our phenotype move along with it. But the approaches that we've been taking recently is kind of a a reductionist approach. So we've been doing dilutions of our complex community and then seeing which of those dilutions carry forward the phenotype. Um and then further dilute them in order to make the community more simple and just continue to do this um until we hopefully get down to a a much more simplified community that still carries the phenotype we can then look at not only who's there but what are they producing. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Dave is expanding on the previous discussion about engineered communities and colonization by describing a hurdle in manipulating bugs and then describing his lab's reductionist approach to studying complex communities."
+            },
+            {
+                "provide supporting evidence": "Dave provides supporting evidence by describing his lab's approach of diluting complex communities to simplify them and identify the bugs carrying the phenotype of interest, which supports the idea of manipulating bugs."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm: Yeah, I think both the both the gross and fine level spatial organization is going to be critical to understand. It's just a pain in the ass to actually do. Um I mean I think there's been some there are kind of anecdotal ways that people have somewhat done this where you do track particular bugs by fish in terms of where they get um you know, are they going into the intermucus layer but you know, kind of the more fine scale resolution is difficult. I I think one thing one other maybe related somewhat to at least what what um Judith is alluding to um of you know, again bioavailability, controlling bioavailability. I think it's important to remember that most of these things are actually absorbed via active transport um via channels. It's not that they're just magically going across the barrier and so um small intestinal versus large intestinal organization is also really critical because many more chemicals will actually be absorbed um in the small intestine and so the you know, you can imagine scenarios where if you have aberrant expansion of taxa in the small intestine that are making chemicals bioactive compounds that that may have very different effects than that than they would have if they had stayed in the colon where that that chemical just isn't transported or absorbed at all. Um so I think it's a really important point that we need to always keep in mind that all plays into this question of, you know, the key million dollar question of are these things actually make it to the making it to the places where we think they might be biologically relevant at concentrations that are sufficient to engage whatever host systems. Um which is one that yeah, again is often hard really hard to answer and we answer it using the proxies of some sort of um change in phenotype. But often those are just proxies. ",
+        "annotations": {
+            "expand on existing idea": "Noah expands on the discussion about spatial organization of microbes and their metabolites, building on Judith's point about the importance of knowing where particular organisms go if using the microbiome as a therapeutic.",
+            "provide supporting evidence": "Noah provides supporting evidence by mentioning that most of these compounds are absorbed via active transport via channels, highlighting the importance of small intestinal versus large intestinal organization.",
+            "explain or define term or concept": "Noah explains the concept of bioavailability, emphasizing the importance of controlling it and how it relates to the absorption of chemicals in different parts of the intestine.",
+            "express frustration": "Noah expresses frustration by saying that understanding the spatial organization is a pain in the ass to actually do."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: Um sorry I'm without the camera. But one thing that I thought about is whether there is sensing that occurs, let's say in the small intestine and then it will be sensed by some component of the enteric nervous system that then will transmit the signal through the neurons to to the large intestine, let's say. And say yeah, something was sensed, you need to change the gut motility. But that the sensing will will occur upstream and would affect some activity downstream. ",
+        "annotations": [
+            {
+                "present new idea": "Maayan presents a new idea about sensing in the small intestine affecting the enteric nervous system and transmitting signals to the large intestine to change gut motility, which hasn't been discussed before."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu: I want to ask uh Dave, your that reductionist approach that you guys are doing your lab, um as you start to dilute, you know, those colonies, do do you see changes in the relative abundances in the guys that are being carried forward? ",
+        "annotations": {
+            "ask clarifying question": "JP asks Dave a question about the reductionist approach his lab is using, specifically inquiring about changes in relative abundances as colonies are diluted, seeking clarification on the methodology."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: Yeah, absolutely. I mean that that's kind of the point though, right? Is that we end up diluting out some of the more low abundance members. ",
+        "annotations": {
+            "express agreement": "Dave agrees with JP's question about whether the relative abundances change as the colonies are diluted, confirming that this is indeed what happens.",
+            "expand on existing idea": "Dave expands on the idea of a reductionist approach by explaining that the point of diluting the colonies is to dilute out some of the more low abundance members."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: Uh that's going to be like the first cut. But but yeah, each subsequent dilution uh the abundances are definitely changing. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Dave is expanding on his previously mentioned reductionist approach, adding details about how the abundances change with each dilution."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu: So how do you how do you disentangle specific microbe contributions versus total community contributions? ",
+        "annotations": {
+            "ask clarifying question": "JP is asking Dave how to differentiate the effects of individual microbes from the effects of the entire microbial community, following up on Dave's description of a reductionist approach to studying the microbiome."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: That's a good question. Um, I mean really the point we're at, we're more interested we don't really care if it's one versus the other, right? We we're trying to my thought is that I'm not really worried about what the members are or in what ratio they're there, but more of what's their functional output. Um, so while we're going to look at who's remaining in the community, I'm really more interested in what are the overall, let's say metabolites that are coming from those those different diluted communities. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges JP Yu's question as a good one."
+            },
+            "explain or define term or concept": {
+                "Explanation": "The speaker explains their lab's focus on functional output rather than specific microbial members or their ratios within the community, clarifying their approach in response to a question about disentangling microbe contributions."
+            }
+        }
+    },
+    {
+        "utterance": "JP Yu: God, that's a tough nut to crack, right? Because if the abundances are changing and you know, like I can imagine this is like a mathematical equation, right? Like normal colony phenotype is equal to this reduced colony phenotype. But the actual like transform that happened was so right? It's like anyway, I'm stuck in my own head. I'll let that go. ",
+        "annotations": [
+            {
+                "express frustation": "JP expresses frustration about the difficulty of disentangling specific microbe contributions versus total community contributions, acknowledging the complexity of the problem Dave is trying to solve."
+            },
+            {
+                "express humor": "JP makes a humorous remark about the problem being a tough nut to crack and uses a mathematical equation analogy, adding a lighthearted tone to the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: I'm just going to ask because I work in a somewhat simpler system, zebrafish, which has the you can see through the larvae, so you can put in labeled bugs and you can know where they go and you can put in one labeled bug and another labeled bug and see one bug chase another bug out and things like that. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Judith is expanding on the discussion about spatial organization of microbes in the gut by providing an example from her work with zebrafish, which allows for direct observation of microbial interactions."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: Um, I'm wondering if any of you see potential roles for those kinds of experiments in elucidating some of these uh things that you want to learn in animals that are opaque and have much bigger guts. ",
+        "annotations": {
+            "encourage particpatioin": "Judith is asking the other participants if they see potential roles for experiments in simpler systems to elucidate things they want to learn, encouraging them to contribute their thoughts."
+        }
+    },
+    {
+        "utterance": "JP Yu: Uh part of my naivete, but do zebrafish also have, you know, like a functional small and large intestine as well? ",
+        "annotations": [
+            {
+                "ask clarifying question": "JP is asking if zebrafish have a functional small and large intestine, which is a request for information to clarify the applicability of zebrafish models to gut microbiome research."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: Um, in terms of in terms of gene expression, yes. And you know, it's not been studied functionally very well, very well. There are clearly particular regions for absorption and things like that and absorption of different, you know, proteins and so forth. Um, it's not been studied very well and so uh you know, it's it's a little bit harder to to parse it out, although I think we're getting there. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Judith is expanding on JP's question about whether zebrafish have a functional small and large intestine, providing more details about gene expression and absorption regions.",
+                "provide supporting evidence": "Judith mentions that in terms of gene expression, zebrafish do have functional small and large intestines, providing evidence to support her claim.",
+                "explain or define term or concept": "Judith explains that while zebrafish have regions for absorption, it hasn't been studied functionally very well, clarifying the extent of functional understanding.",
+                "express enthusiasm": "Judith expresses optimism about future progress by stating that 'we're getting there' in terms of understanding the functional differences in zebrafish intestines."
+            }
+        ]
+    },
+    {
+        "utterance": "Erin Longbrake: One thing that hasn't really come up and we've talked a lot about kind of direct interactions between these bacterial metabolites and nerves and neurons. What about the immune system as a mediator, a communicator between the two? We haven't really touched on that. These are our mobile units that could receive a local signal and then take it elsewhere in the body. ",
+        "annotations": {
+            "present new idea": "The speaker introduces the idea of the immune system acting as a mediator between bacterial metabolites/nerves/neurons, which hasn't been discussed so far.",
+            "ask clarifying question": "The speaker asks about the role of the immune system as a mediator between the gut and the brain, seeking to explore this aspect further."
+        }
+    },
+    {
+        "utterance": "Dave Durgan: No, I think it's a great point and that really kind of helps us to get around this problem that we've been bringing up of concentrations, right? So you can have a much higher concentration there in the gut wall activating then the secondary messenger essentially uh that can then like you're saying, make that connection to brain. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "Dave acknowledges Erin's point about the immune system as a mediator between the gut and the brain, recognizing its importance."
+            },
+            "expand on existing idea": {
+                "Explanation": "Dave builds on Erin's idea by suggesting that the immune system can help overcome the concentration problem, acting as a secondary messenger to connect the gut and the brain."
+            }
+        }
+    },
+    {
+        "utterance": "Judith Eisen: It can also be through uh cytokine receptors that are expressed in the CNS that respond to cytokines that will be secreted by different immune cells. ",
+        "annotations": {
+            "expand on existing idea": "This utterance builds upon Erin's idea about the immune system as a mediator, adding a specific mechanism (cytokine receptors in the CNS) by which immune cells can communicate with the brain."
+        }
+    },
+    {
+        "utterance": "Robin Voigt: For a long time it was even thought that the brain was, you know, separate from the peripheral immune system, but we know that that's not true anymore. Um, especially in cases where there's blood brain barrier integrity issues. Um, areas where there's fenestrations. So I think the immune system is for sure important. ",
+        "annotations": {
+            "expand on existing idea": "This utterance expands on the previous discussion about the role of the immune system as a mediator between the gut microbiome and the brain, adding that the brain is not separate from the peripheral immune system, especially when there are blood brain barrier integrity issues.",
+            "provide supporting evidence": "The speaker provides supporting evidence for the importance of the immune system by mentioning blood brain barrier integrity issues and areas with fenestrations, suggesting that these factors allow for communication between the brain and the peripheral immune system."
+        }
+    },
+    {
+        "utterance": "Noah Palm: I mean guess one one difficult question is always with that like Erin what you're bringing up of you know, potentially mobile cells being educated in the gut and changing their behavior and then going more central. Um, a difficult question is always kind of the theological question of, you know, why? You know what what would be the reason to actually have that happen. I think I can understand to me it's easier to understand these kind of direct neuronal connections that would lead to behavioral changes or learning or you know, obviously sensing uh nutrient intake and using the food quality or toxin sensing to then dictate behavioral patterns is a very useful thing. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges Erin's point about the immune system as a mediator between the gut and the brain, recognizing her contribution to the discussion."
+            },
+            "ask clarifying question": {
+                "Explanation": "The speaker poses a question about the evolutionary rationale behind mobile immune cells being educated in the gut and then migrating to the central nervous system, seeking a deeper understanding of the biological purpose."
+            }
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: Can I add? I mean, you're right. I mean, but in a sense isn't that what the whole endocrine system is? That you have distant responses. So you're right. I mean it's maybe not a black and white easy answer on the surface, but that doesn't necessarily mean that there isn't a reason or or for it to happen. I don't know. I think it's but it it is a potential um player in all of this. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Erin asks if the endocrine system, with its distant responses, is analogous to the immune system's role as a mediator, seeking to clarify the potential reasons for immune-mediated communication between the gut and the brain, following a discussion about direct interactions between bacterial metabolites and nerves.",
+                "express agreement": "Erin agrees with Noah's point about the difficulty in understanding the theological reason for mobile cells being educated in the gut and changing their behavior, acknowledging his perspective before expanding on it."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu: To take Noah's theological question to the next step, the one thing that I've always wondered is why the heck do we even have gut microbes living essentially inside of us? Because if you think about all sort of the pathological things that having foreign bacteria viruses fungi can do to us, evolutionarily what was the advantage of having these gut microbes in the very beginning? ",
+        "annotations": {
+            "present new idea": "JP Yu introduces a new question about the evolutionary advantage of having gut microbes, which hasn't been explicitly discussed before, building on Noah's previous question about the purpose of immune cell migration.",
+            "ask clarifying question": "JP Yu is asking a question to understand the evolutionary advantage of having gut microbes, given the potential pathological effects, which seeks clarification on a fundamental aspect of the gut-brain-microbiome interaction."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: Oh, they do a lot of really great things. ",
+        "annotations": {
+            "express enthusiasm": "Judith expresses enthusiasm about the gut microbes, likely in response to JP's question about why we have them, implying that they are beneficial."
+        }
+    },
+    {
+        "utterance": "Robin Voigt: They actually create vitamins that we can't synthesize on our own. Um, it's a symbiotic relation. We get we get stuff out of it too, for sure. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "Robin provides supporting evidence for why we have gut microbes, stating that they create vitamins we can't synthesize, supporting Judith's claim that they do a lot of great things."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: I think that's ",
+        "annotations": {
+            "express agreement": "Judith expresses agreement with the previous statement about the benefits of gut microbes, indicating alignment with the ongoing discussion."
+        }
+    },
+    {
+        "utterance": "Noah Palm: I actually totally so I have a strong strong opinion about this which I totally disagree with the idea that any of these things are symbionts. ",
+        "annotations": {
+            "reject idea": "Noah expresses disagreement with the idea that gut microbes are symbionts, rejecting a previously stated idea about the benefits of gut microbes."
+        }
+    },
+    {
+        "utterance": "Noah Palm: Um, I I think we have bugs in our guts for well and on us and wherever for for two reasons. Um, well the most basic reason is because it's impossible to avoid. Bacteria are everywhere and we were going to have something there. Um, because the cost of keeping it sterile was probably too high. Um, you know, the the costs of having that constant immune response and the the uh, you know, the collateral damage of those ongoing responses to maintain truce sterility was too high. ",
+        "annotations": {
+            "present new idea": "Noah presents a new idea about why we have bugs in our guts, suggesting it's not symbiosis but rather an unavoidable consequence of bacteria being everywhere and the high cost of maintaining sterility, contrasting with the previous discussion about the benefits of gut microbes.",
+            "expand on existing idea": "Noah expands on his idea by explaining that the cost of maintaining a sterile gut, with its constant immune response and collateral damage, is too high, building on his initial statement about why we have gut microbes."
+        }
+    },
+    {
+        "utterance": "Noah Palm: And so then what we chose to do is actually harbor organisms that are the least bad for us, right? And that's where the only really truly essential thing I think they do for us is provide colonization resistance. Because if against true pathogens, because if you get rid of the microbiome, the we all be dead from infection with pathogens in the next week because the you know, infectious dose of salmonella goes from 10 to the eighth to 10 microbes, right? Now once we've had those microbes in our in our guts, ",
+        "annotations": {
+            "provide supporting evidence": "Noah supports his claim that we harbor the least bad organisms by stating that they provide colonization resistance, and without them, we would be dead from infection with pathogens.",
+            "explain or define term or concept": "Noah explains the concept of colonization resistance as the essential function of gut microbes, protecting against true pathogens.",
+            "expand on existing idea": "Noah expands on the discussion about why we have gut microbes, disagreeing with the idea of symbiosis and providing an alternative explanation."
+        }
+    },
+    {
+        "utterance": "Noah Palm: Now that creates um a new condition on top of which uh uh dependencies can evolve, right? So vitamin production, for example, is a good example of is a perfect example of this because we had the machinery to make these vitamins. It turns out that we harbor organisms that also make these vitamin vitamins and that production of that vitamin now becomes by our own genes now can become non-essential. So we can lose that gene. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Noah is expanding on the previous discussion about the evolutionary advantage of having gut microbes, building on the idea that they provide vitamins by explaining how dependencies on these microbes can evolve over time."
+            },
+            {
+                "provide supporting evidence": "Noah provides vitamin production as an example to support his argument about how dependencies on gut microbes can evolve, stating that we had the machinery to make vitamins, but now rely on microbes for this function."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm: But ",
+        "annotations": {
+            "expand on existing idea": "Noah is in the middle of explaining his perspective on why we have gut microbes, having just discussed colonization resistance and vitamin production, and he is about to continue expanding on that idea."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: I'm going ",
+        "annotations": [
+            {
+                "encourage particpatioin": "Judith is about to encourage participation from the group, as she has done previously by asking specific people for their thoughts."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: any context of uh uh the way different organisms form. And I mean it's not just true for us, it's true for everything on the planet. ",
+        "annotations": {
+            "explain or define term or concept": "Judith is explaining the broader context of how different organisms form relationships, suggesting this applies not just to humans but to all life on Earth, which is meant to provide a general framework for understanding the previous discussion about gut microbes."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: I'll make one final point, which is that germ free mice live longer, happier, healthier lives um than uh conventional animals. Um so, I think that wouldn't be true if they were exposed to pathogens obviously, they would just die then. But um other than that, all of these essential things are not essential. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "Noah provides evidence that germ-free mice live longer and healthier lives than conventional animals to support his argument against the idea that gut microbes are symbionts."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: So happier and But please someone push back at me. Push back and tell me that I'm I'm wrong if you guys think that. ",
+        "annotations": [
+            {
+                "encourage particpatioin": "Judith Eisen is encouraging others to disagree with her point of view, inviting them to contribute to the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm - Yale: happier is ",
+        "annotations": {
+            "express humor": "Noah is making a joke about germ free mice living happier lives, which is humorous in the context of the discussion about the benefits of gut microbes."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: happier is judged by what criteria? ",
+        "annotations": {
+            "ask clarifying question": "Judith asks for the criteria used to judge 'happier', seeking clarification on the previous statement about germ-free mice living happier lives."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: I'm I was joking about happier. ",
+        "annotations": {
+            "express humor": "Noah Palm is clarifying that his previous statement about germ-free mice living 'happier' lives was a joke, indicating he was using humor in the conversation."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: but they live longer and healthier lives. Um yeah. ",
+        "annotations": {
+            "express agreement": "Noah Palm is agreeing with Judith's statement that gut microbes do a lot of great things, by stating that germ free mice live longer and healthier lives."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: The only other argument I kind of find compelling about the microbes and it's kind of I don't know if I want to call it symbiosis but or or commensalism is the idea of expanding potential niches that can be colonized by enabling uh uh nutrient um, you know, collection of nutrients that we otherwise wouldn't be able to harvest. ",
+        "annotations": {
+            "expand on existing idea": "Noah is building on the previous discussion about the role of gut microbes, adding another argument related to expanding potential niches for nutrient collection, which is an elaboration on the benefits of having gut microbes."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: that's but even that is a little tough for me because at least from what I've read the estimates for, you know, the extra energy we get from harvesting um, you know, undigestible fibers for example is about 10%. ",
+        "annotations": {
+            "provide supporting evidence": "Noah provides supporting evidence by referencing estimates for extra energy gained from harvesting undigestible fibers, which is about 10%, to support his argument against the idea of symbiosis with gut microbes."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: You have a lot of really great points. ",
+        "annotations": {
+            "acknowledge contribution": "Noah acknowledges that the previous speaker made good points, without necessarily agreeing or expanding on them."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: that's but even that is a little tough for me because at least from what I've read the estimates for, you know, the extra energy we get from harvesting um, you know, undigestible fibers for example is about 10%. And let's be honest, the amount of energy we spend making constant immune responses, you know, secreting grams qualities of antibodies into our gut lumen and crapping it out every day is way more than 10% of our our, you know, what we get back from having the microbes there. ",
+        "annotations": {
+            "reject idea": {
+                "Explanation": "Noah expresses skepticism about the idea that the gut microbiome provides a significant energy benefit, referencing estimates of only 10% energy gain from undigestible fibers and arguing that the energy expenditure on immune responses outweighs this benefit, thus rejecting the idea that gut microbes are symbionts."
+            },
+            "provide supporting evidence": {
+                "Explanation": "Noah supports his rejection of the idea that gut microbes provide a significant energy benefit by referencing estimates of only 10% energy gain from undigestible fibers and arguing that the energy expenditure on immune responses outweighs this benefit."
+            }
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: You have a lot of really great points. ",
+        "annotations": {
+            "acknowledge contribution": "Noah acknowledges the previous speaker's contributions to the discussion."
+        }
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): Do you know are there other besides like a germ free mouse, is there another vertebrate species that we could use as a model organism that has a more I guess a simpler sort of commensal gut microbial population for us to look at? ",
+        "annotations": {
+            "ask clarifying question": "JP asks if there are other vertebrate species besides germ-free mice that could be used as a model organism with a simpler gut microbial population, seeking to understand the complexity of gut microbial populations."
+        }
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): You kind of get the idea. ",
+        "annotations": [
+            {
+                "express agreement": "JP Yu is expressing agreement with the previous speaker's points, indicating he understands the idea being conveyed."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): You kind of get the idea. ",
+        "annotations": {
+            "express agreement": "JP Yu is expressing agreement with the previous speaker's idea, indicating he understands the concept being discussed."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: I don't think you're going to find that iguanas necessarily have a simpler uh system. I mean, zebrafish have maybe maybe there are somewhat fewer species than in mammals, but it's very complicated too. And they're a lot smaller than iguanas or mice. So. ",
+        "annotations": [
+            {
+                "reject idea": "Judith rejects the idea that iguanas would have a simpler system, responding to JP's question about a simpler vertebrate model."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: I mean, do we know if there is like rodent model that does not produce a certain neurotransmitter in the brain. So for example, a mice that does not produce glutamate in the brain. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Mei is asking if there is a rodent model that does not produce a certain neurotransmitter in the brain, specifically glutamate, to clarify the possibilities for studying neurotransmitter production."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu (University of Wisconsin): That sounds embryonic lethal. ",
+        "annotations": {
+            "reject idea": "JP rejects Mei's idea of using a rodent model that does not produce a certain neurotransmitter in the brain, stating that it sounds embryonic lethal."
+        }
+    },
+    {
+        "utterance": "Judith Eisen: I don't think you can make a mouse that doesn't produce glutamate in the brain. You could you could probably knock out parts of the, you know, some of the receptors, there are a lot of different receptors or parts of the packaging apparatus, although there's quite a lot to that. I think uh glutamate is probably a tough one because glutamate's. ",
+        "annotations": [
+            {
+                "reject idea": "Judith rejects the idea of creating a mouse that doesn't produce glutamate in the brain, implying it's not feasible."
+            },
+            {
+                "expand on existing idea": "Judith expands on the idea of manipulating glutamate production by suggesting knocking out receptors or packaging apparatus, building on the previous question about rodent models lacking certain neurotransmitters."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: There isn't a cell that doesn't use glutamate. ",
+        "annotations": {
+            "explain or define term or concept": "Judith is explaining the importance of glutamate by stating that every cell uses it, which clarifies its fundamental role in cellular function."
+        }
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: So how about other kinds of transmitters like a colinergic transmitters? I'm just thinking maybe totally wrong. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Mei is asking if there are rodent models that do not produce cholinergic transmitters, after Judith said that it is not possible to make a mouse that doesn't produce glutamate in the brain, so she is asking a clarifying question about other neurotransmitters."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: So so what do you what do you want to do with these mice that are lacking a transmitter? ",
+        "annotations": [
+            {
+                "ask clarifying question": "Judith is asking Mei to clarify the purpose of having mice lacking a specific neurotransmitter, to better understand the direction of Mei's line of thought."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: Yeah, I'm just thinking, right. So you know, like possible experimental design. So if you really want to learning more about this um communication between the gut and the brain. And it is know that, you know, at least based on what I have read, some of the gut they do produce like glutamate from the food. So if we can have a mice that do not have a glutamate in the brain. So then, you know, for example, we can use expertise in my lab, you know, we can make a glutamate sensing probe that implant in the brain. So then we can monitor how that change, right? If we have like germ free mice and have mice, we put some bacteria back there. So that way we can certainly tell if the glutamate actually transport from the gut back to the brain, right? ",
+        "annotations": [
+            {
+                "present new idea": "Mei Shen is suggesting a novel experimental design to investigate the communication between the gut and the brain, which involves using mice that do not produce glutamate in the brain and implanting a glutamate sensing probe to monitor changes after introducing bacteria."
+            },
+            {
+                "explain or define term or concept": "Mei Shen is explaining the experimental design to investigate the communication between the gut and the brain, which involves using mice that do not produce glutamate in the brain and implanting a glutamate sensing probe to monitor changes after introducing bacteria."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: Maybe you don't ",
+        "annotations": {
+            "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala-Rush U Med Ctr: Maybe you don't need to be measuring glutamate that's coming from the periphery into the brain. Maybe it's another mechanism that's upregulating or changing neurotransmitter production. ",
+        "annotations": {
+            "express alternative decision": "Robin suggests that instead of measuring glutamate coming from the periphery into the brain, they should consider other mechanisms that might be upregulating or changing neurotransmitter production, expressing an alternative approach to Mei's suggestion."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala-Rush U Med Ctr: So like a bute, even though the the quantities in the brain are are so low, I don't know if it's actually having an effect, but maybe it's changing the gene expression in a cell and causing it to change the production of um glutamate or, you know, reuptake or something like that. ",
+        "annotations": {
+            "expand on existing idea": "This utterance expands on the existing idea of how gut-derived substances affect the brain, building on Mei Shen's suggestion of measuring glutamate transport from the gut to the brain by suggesting an alternative mechanism where substances like butyrate change gene expression and neurotransmitter production."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala-Rush U Med Ctr: So I don't know that you need to be ",
+        "annotations": {
+            "None": "No code applies to this utterance."
+        }
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: That could be a simpler approach, right? So compare to see the difference. Yeah. So actually I talked with one of the fellow yesterday about some experiment between like germ free mice and the mice with like germs. I think this would be pretty exciting, so. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Robin suggested that instead of measuring glutamate transport from the periphery to the brain, they could look at other mechanisms that change neurotransmitter production, and Mei agrees that this could be a simpler approach."
+            },
+            {
+                "express enthusiasm": "Mei expresses excitement about an experiment between germ-free mice and mice with germs, indicating enthusiasm for the potential findings."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: And you could couple that with with RNA seek experiments to look at all the genes involved in the transporters and the receptors and things like that. And if you did uh single cell RNA seek, you could get a real profile of the brain or whatever tissue you were looking at in germ free conditions, in colonized conditions, in conditions colonized with specific uh bacteria. Um that might give you a lot of information. ",
+        "annotations": [
+            {
+                "expand on existing idea": "This utterance builds upon Mei Shen's idea of comparing germ-free mice with mice with germs by suggesting RNA-seq experiments to look at genes involved in transporters and receptors, adding more detail to the experimental design."
+            },
+            {
+                "provide supporting evidence": "Judith suggests single-cell RNA-seq to profile the brain in different conditions (germ-free, colonized, specific bacteria), implying this method would provide a lot of information to support the investigation of gut-brain communication."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: I ",
+        "annotations": [
+            {
+                "None": "None"
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm - Yale: Can I ask in terms of the bidirectional, does anybody know? I just don't know off hand in extreme I'm just thinking about how like the the germ free is like the biggest hammer you can have, right? It's completely artificial take it away. but that's useful because then you get signals, strong signals. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Noah is asking if anyone knows about bidirectionality in the context of germ-free models, seeking information from the group.",
+                "explain or define term or concept": "Noah explains that using germ-free models is like using \"the biggest hammer\" because it's a completely artificial way to remove the microbiome and get strong signals."
+            }
+        ]
+    },
+    {
+        "utterance": "Dave Durgan: You're talking basically the biome? ",
+        "annotations": {
+            "ask clarifying question": "Dave is asking for clarification on what Noah is referring to, specifically if he means the biome, after Noah mentioned the germ-free state as a strong but artificial manipulation."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: Yeah, basically if you totally mess up the the the brain. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Noah is expanding on the idea of bidirectional communication between the gut and the brain, and how the germ-free model is a useful tool to study this, building on the previous discussion about the immune system as a mediator."
+            }
+        ]
+    },
+    {
+        "utterance": "Dave Durgan: Yeah, following stroke the biome drastically changed. Yeah. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "Dave is providing evidence that the brain can influence the gut microbiome by stating that the biome drastically changes following a stroke, supporting the idea of bidirectionality."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm - Yale: Oh god, okay. ",
+        "annotations": [
+            {
+                "express frustration": "Noah expresses frustration after Dave mentions that the biome drastically changes following a stroke, indicating a potential confounding factor in their research."
+            }
+        ]
+    },
+    {
+        "utterance": "Dave Durgan: A lot of it a lot of that though is thought to be secondary to that post stroke patients have awful GI motility. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "Dave provides supporting evidence by stating that post-stroke patients have awful GI motility, which is thought to be secondary to the drastic changes in the biome following a stroke, supporting the idea that the brain can influence the gut."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm - Yale: I think this motility thing is a big problem. It's a big confounder, right? ",
+        "annotations": {
+            "present new idea": "Noah suggests that motility is a big problem and a confounder, introducing a new consideration in the discussion."
+        }
+    },
+    {
+        "utterance": "Noah Palm - Yale: Like I guess you could say it's still interesting that it's changed, but it I don't know, somehow to me it makes it like a little bit less interesting, which is also how you said it, right? You said it like oh there's this confound. Yeah. So I don't know if there's a good way to deal with this confound or if it's not account found it is the it's the real signal. ",
+        "annotations": [
+            {
+                "express alternative decision": "Noah expresses that the change in the biome after a stroke is less interesting to him because it could be due to GI motility issues, which he considers a confound, thus expressing an alternative view on the importance of the change."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen, University of Illinois at Urbana-Champaign: Another like personal experience, have you all have the feeling sometimes you feel like particular food? Nobody have that feeling? I mean, for me at least like, right, depend on what your body need, sometimes you feel like, oh, eating like, you know, apples, right, things like that. Depend on like I guess your health status, then might be like micro gut doing something to the brain, right? Like kind of like sensing like oh certain things are lacking, then send a signal to the brain, the brain tells you, oh, okay, I feel like this kinds of food. So I think that's how like natural mechanism maintain a balance in the brain to make sure you are healthy. ",
+        "annotations": [
+            {
+                "present new idea": "Mei Shen introduces the idea that gut microbes might influence food cravings based on the body's needs, suggesting a gut-brain communication mechanism for maintaining balance and health, which is a novel concept in the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: know how how well it's been looked at in vertebrates though. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Given the prior discussion about the role of gut microbes and their metabolites on the brain, Judith is asking if the role of gut microbes has been well-studied in vertebrates."
+            }
+        ]
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala: I mean, I think it's partly a learned behavior too. Um what you crave. I mean, I think you can feel hungry, but I think it's awesome that you crave apples. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Robin is expanding on Mei Shen's idea about food cravings, suggesting that it's partly a learned behavior."
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy: God, I wish I craved apples and not chips. ",
+        "annotations": [
+            {
+                "express humor": "Maayan expresses a humorous sentiment about craving unhealthy food (chips) instead of healthy food (apples), which is a relatable experience."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen: I do, you know, if I don't eat the fruits for a long time, I just miss fruits and vegetables. ",
+        "annotations": [
+            {
+                "express humor": "Mei Shen expresses a personal preference for fruits and vegetables, contrasting with Maayan's craving for chips, which adds a lighthearted tone to the conversation."
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy: But no one ever did that like food preference studies in mice? ",
+        "annotations": {
+            "ask clarifying question": "Maayan is asking if food preference studies have been conducted in mice, seeking to understand if such research exists."
+        }
+    },
+    {
+        "utterance": "Robin Voigt-Zuwala: People have done food, yeah, I mean, I think some of these studies have been done. ",
+        "annotations": {
+            "confirm decision": "Robin confirms that food preference studies have been done, building on Maayan's question about whether food preference studies have been done in mice."
+        }
+    },
+    {
+        "utterance": "Noah Palm: I don't know all of the and people are very attracted to this idea that microbes may manipulate our feeding behavior for their own benefit or whatever. Um but yeah, I mean it's a super interesting phenomenon. Also, you know, the food preference and aversion, what happens in pregnancy, right? Like any I can't speak to it personally, but at least by proxy knowing that this is a pretty powerful um thing. And you can yeah, you so you can certainly imagine gut microbes either, I mean people have put forward that idea of their that they're actually manipulating it purposefully, but I think you can also maybe not you know, imply purpose and still imagine that they would they would have some effect on this and maybe in an unintended effect. I think yeah, an interesting possibility would be particularly for things like eating disorders, which I think has also been proposed. ",
+        "annotations": [
+            {
+                "expand on existing idea": "The speaker expands on the idea of gut microbes influencing food cravings, which was brought up by Mei Shen, by discussing the potential for microbes to manipulate feeding behavior, even unintentionally, and linking it to eating disorders."
+            },
+            {
+                "express enthusiasm": "The speaker expresses enthusiasm by calling the phenomenon of food preference and aversion a \"super interesting phenomenon.\""
+            }
+        ]
+    },
+    {
+        "utterance": "Maayan Levy: Yeah, anorexia, no. ",
+        "annotations": [
+            {
+                "reject idea": "Maayan Levy rejects the idea that gut microbes may have an effect on food preference and eating disorders, specifically anorexia, without offering an alternative."
+            }
+        ]
+    },
+    {
+        "utterance": "JP Yu: And even going to your uh gastric mobility, you know, the the transit hypothesis. So there's like there's known psychiatric and cognitive associations with either gastric dumping, so rapid GI transit or you know, basically the slow they call lazy bowels sort of syndromes where it takes, you know, 72, 96 hours to get food all the way from the mouth uh through the large intestine. So both of those also have other associations. So hard to say if it's the transit or if it's something that happens along the way that's just slower or it's all very confusing to me actually. ",
+        "annotations": {
+            "expand on existing idea": "JP Yu is expanding on the existing discussion about food preference and aversion by introducing the concept of gastric motility and its association with psychiatric and cognitive conditions, building upon the previous discussion about the gut-brain axis.",
+            "explain or define term or concept": "JP Yu explains the concept of gastric motility and defines terms like \"gastric dumping\" and \"lazy bowels\" to clarify the discussion around transit time and its potential impact on health.",
+            "express frustation": "JP Yu expresses confusion about disentangling the effects of transit time versus other factors along the digestive process, indicating frustration with the complexity of the issue."
+        }
+    },
+    {
+        "utterance": "Noah Palm: I think Mayan's point is also a good one that there's obviously communication between sensory circuits in the proximal intestine and stomach and motility, right? We've all experienced uh probably probably we've all experienced at least some incidents of some food that somehow doesn't disagree with you and that not disagreeing with you make happens uh much faster than that food is actually making it to the colon which I think very much implies these I'm sure that people they're probably studied and mapped to at least to some extent, but I think it's a really good point that Mayan raised that this within GI tract communication. ",
+        "annotations": {
+            "expand on existing idea": "Noah expands on Maayan's point about the gut-brain axis, suggesting that communication between sensory circuits in the proximal intestine and stomach and motility is important, building on the previous discussion about food preferences and gut microbes.",
+            "acknowledge contribution": "Noah acknowledges Maayan's point as a good one, recognizing her contribution to the discussion about gut-brain communication and food preferences."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: Yeah, we don't know how to study it though. Like how do you disrupt this connection? ",
+        "annotations": [
+            {
+                "ask clarifying question": "Maayan is asking how to disrupt the connection between sensory circuits in the proximal intestine and stomach and motility, which is a request for methods or approaches to study this connection."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm: Yeah, and how much of it is uh, you know, going centrally and back or happening within the ENS. Uh I just don't know some people may know. I just don't know offhand. ",
+        "annotations": {
+            "ask clarifying question": "Noah is asking how much of the communication is going centrally and back or happening within the ENS, which is a request for more information on the topic of gut-brain communication."
+        }
+    },
+    {
+        "utterance": "Maayan Levy: Yeah. ",
+        "annotations": [
+            {
+                "express agreement": "Maayan Levy is agreeing with the previous statement about the communication between sensory circuits in the proximal intestine and stomach and motility."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: Okay, we just got a note saying we've got two minutes left and we're supposed to make sure the slide is finished up. So Aaron, are you good with that? ",
+        "annotations": {
+            "assign task": "Judith asks Aaron if they are okay with finishing up the slide, assigning them the task of ensuring its completion before the session ends."
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: Sure, if people want to take a look, I've got my slides. We are back to being number 55 in the deck. So if anyone has things they want to add to um feel free. ",
+        "annotations": [
+            {
+                "encourage particpatioin": "Erin encourages others to review and contribute to the slides, inviting participation from the group."
+            }
+        ]
+    },
+    {
+        "utterance": "Mei Shen: So for the first point. ",
+        "annotations": {
+            "None": "This utterance does not fit any of the codes in the codebook because it is an incomplete sentence and does not express a clear idea, question, or action."
+        }
+    },
+    {
+        "utterance": "Noah Palm: And I apologize for my strong opinions. I just I've I've been heard too many from too many microbiome conferences about how amazing our microbes are and how they're all all our friends and I've I've gotten uh annoyed over the years. So my apologies. ",
+        "annotations": {
+            "express humor": "Noah expresses humor by exaggerating the common sentiment at microbiome conferences about microbes being \"all our friends,\" implying a humorous contrast to his own more critical view.",
+            "express frustation": "Noah expresses frustration with the overly positive and, in his view, potentially misleading portrayals of microbes at microbiome conferences, indicating his annoyance with the prevailing narrative."
+        }
+    },
+    {
+        "utterance": "Mei Shen: I mean, so for the first point, besides I I'll pen, you know, should we include there are other kinds of possible like, you know, neurotransmitters like glutamate since like that we haven't talked about uh. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Mei Shen is suggesting to include other neurotransmitters like glutamate in the discussion, building upon the current point being discussed."
+            },
+            {
+                "propose decision": "Mei Shen is suggesting a concrete choice for the group to include other neurotransmitters like glutamate in the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Erin Longbrake: Yeah, that was more just um one of the examples that was up. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "Erin is acknowledging that the previous statement was just an example, not a comprehensive list, recognizing the contribution of the previous speaker."
+            }
+        }
+    },
+    {
+        "utterance": "Erin Longbrake: [Silence] ",
+        "annotations": [
+            {
+                "None": "There is no content in this utterance to code."
+            }
+        ]
+    },
+    {
+        "utterance": "Judith Eisen: maybe maybe one of the one of the points is that um it's an open question about whether transmitters in the whether or how much transmitters in in the gut influence the brain. ",
+        "annotations": {
+            "explain or define term or concept": "Judith is explaining that it is still an open question how much transmitters in the gut influence the brain, which clarifies the current understanding of the gut-brain communication."
+        }
+    },
+    {
+        "utterance": "Mei Shen: Yeah, yeah. ",
+        "annotations": [
+            {
+                "express agreement": "The speaker is agreeing with the previous statement made by Judith Eisen."
+            }
+        ]
+    },
+    {
+        "utterance": "Noah Palm: Yeah, thanks all. It was great chatting. ",
+        "annotations": [
+            {
+                "express enthusiasm": "Noah expresses that he enjoyed the conversation."
+            }
+        ]
     },
     {
         "utterance": "Mei Shen: Thank you. ",
-        "annotations": {
-            "acknowledge contribution": "Mei Shen acknowledges Andrew Feig's help in identifying and resolving the issue with their group's slide in the shared Google Drive."
-        }
+        "annotations": [
+            {
+                "express agreement": "Mei Shen is expressing agreement or gratitude, likely in response to the preceding conversation or a specific statement made."
+            }
+        ]
     },
     {
-        "utterance": "Judith Eisen: Brian. ",
-        "annotations": {
-            "encourage particpatioin": "Judith is encouraging Brian to participate in the conversation by calling his name, likely to ask him a question or solicit his input on the current discussion about slide deck issues."
-        }
-    },
-    {
-        "utterance": "Judith Eisen: Okay, well, so, um, so maybe I'll just start this off. What do people think about the diversity of messages that pass back and forth between the gut microbiome and the brain? ",
-        "annotations": {
-            "encourage particpation": "Judith Eisen asks the group for their thoughts on the diversity of messages between the gut microbiome and the brain, inviting everyone to contribute to the discussion.",
-            "present new idea": "Judith Eisen introduces the topic of the diversity of messages between the gut microbiome and the brain, which hadn't been discussed previously in this meeting."
-        }
+        "utterance": "Judith Eisen: [Silence] ",
+        "annotations": [
+            {
+                "None": "No code applies to this utterance as it is just silence."
+            }
+        ]
     }
 ]
