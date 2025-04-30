@@ -64,8 +64,6 @@ def sanitize_name(name, replace_char='_'):
     sanitized = sanitized.strip(replace_char)
     return sanitized
 
-
-
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
@@ -191,6 +189,8 @@ def load_json_files(directory):
                     while len(result) < chunk_number:
                         result.append(None)
                     result[chunk_number-1] = data
+                else:
+                    result.append(data)
                 
         except json.JSONDecodeError:
             invalid_files.append(f"{json_file} (invalid JSON)")
@@ -204,7 +204,7 @@ def load_json_files(directory):
         )
     
     if not result:
-        raise InvalidJsonContentError(f"No valid JSON files with chunk numbers found in {directory}")
+        raise InvalidJsonContentError(f"No valid JSON files found in {directory}")
     
     return result
 

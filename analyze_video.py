@@ -504,6 +504,13 @@ def analyze_video(client, path_dict, prompt, dir):
     
     return n_path_dict
 
+def parse_json_garbage(s):
+    s = s[next(idx for idx, c in enumerate(s) if c in "{["):]
+    try:
+        return json.loads(s)
+    except json.JSONDecodeError as e:
+        return json.loads(s[:e.pos])
+    
 # Save data to a JSON file in the specified directory
 def save_to_json(text, file_name, output_dir):
     """
@@ -533,9 +540,9 @@ def save_to_json(text, file_name, output_dir):
         print(f"JSONDecodeError: {e}")
         print("Attempting to fix the JSON format...")
         # Attempt to fix the JSON format by removing any trailing characters
-        text_fixed = text[:e.pos]
-        try:
-            parsed_json = json.loads(text_fixed)
+        
+        try: 
+            parsed_json = parse_json_garbage(text)
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(parsed_json, f, ensure_ascii=False, indent=4)
             print(f"Successfully saved fixed JSON to {output_file}")
