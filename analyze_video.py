@@ -476,25 +476,16 @@ def analyze_video(client, path_dict, prompt, dir):
                 list_chunks[m][2] = gemini_name
                 if video_file:
                     response = gemini_analyze_video(client, prompt, video_file, file_name)
-                    if response:
+                    if response and response.text:
                         print(f"Trying to save output for {file_name} to json file")
                         try:
                             # Remove trailing slash and use os.path.join
                             save_to_json(response.text, fileName, output_dir)
                             list_chunks[m][3] = True
                         except ValueError:
-                            response = gemini_analyze_video(client, prompt, video_file, file_name)
-                            if response:
-                                try:
-                                    save_to_json(response.text, fileName, output_dir)
-                                    list_chunks[m][3] = True
-                                except Exception as e:
-                                    print(f"Still can't get the output to workout: {file_name}")
-                                    list_chunks[m][3] = False
-                                    continue
-                            else: 
-                                list_chunks[m][3] = False
+                            list_chunks[m][3] = False
                     else:
+                        print(f"No response for {file_name}")
                         list_chunks[m][3] = False
                 save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
             else:
@@ -530,27 +521,31 @@ def save_to_json(text, file_name, output_dir):
     output_file = os.path.join(output_dir, f"{file_name}.json")
 
     # Try to parse as JSON first
-    try:
-        parsed_json = json.loads(text)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(parsed_json, f, ensure_ascii=False, indent=4)
-        print(f"Successfully saved JSON to {output_file}")
-        return
-    except json.JSONDecodeError as e:
-        print(f"JSONDecodeError: {e}")
-        print("Attempting to fix the JSON format...")
-        # Attempt to fix the JSON format by removing any trailing characters
-        
-        try: 
-            parsed_json = parse_json_garbage(text)
+    if text:
+        try:
+            parsed_json = json.loads(text)
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(parsed_json, f, ensure_ascii=False, indent=4)
-            print(f"Successfully saved fixed JSON to {output_file}")
+            print(f"Successfully saved JSON to {output_file}")
+            return
         except json.JSONDecodeError as e:
-            output_file = os.path.join(output_dir, f"ATTN_{file_name}.json")
-            print(f"Failed to fix JSON format: {e}. Saving the original response text to the file for manual inspection.")
-            with open(output_file, 'w') as json_file:
-                json_file.write(text)
+            print(f"JSONDecodeError: {e}")
+            print("Attempting to fix the JSON format...")
+            # Attempt to fix the JSON format by removing any trailing characters
+            
+            try: 
+                parsed_json = parse_json_garbage(text)
+                with open(output_file, 'w', encoding='utf-8') as f:
+                    json.dump(parsed_json, f, ensure_ascii=False, indent=4)
+                print(f"Successfully saved fixed JSON to {output_file}")
+            except json.JSONDecodeError as e:
+                output_file = os.path.join(output_dir, f"ATTN_{file_name}.json")
+                print(f"Failed to fix JSON format: {e}. Saving the original response text to the file for manual inspection.")
+                with open(output_file, 'w') as json_file:
+                    json_file.write(text)
+    else:
+        raise ValueError(f"No text to save for {file_name}")
+        # print(f"No text to save for {file_name}")
 
 # save path dict file
 def save_path_dict(path_dict, file_name, destdir):
