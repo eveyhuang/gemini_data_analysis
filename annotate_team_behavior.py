@@ -75,7 +75,7 @@ def annotate_utterances(client, merged_list, codebook):
     Iterates over each utterance, using the full list as context.
     Returns structured annotations in JSON format.
     """
-    print(f"Annotating {len(merged_list)} utterances")
+    # print(f"Annotating {len(merged_list)} utterances")
     annotations = []  # Store annotations for all utterances
 
     for i, utterance in enumerate(merged_list):
@@ -236,7 +236,7 @@ def merge_output_json(output_folder):
     
     # Now load and process JSON files from the correct subdirectory
     data_list = load_json_files(output_folder)
-    print(f"Merging {len(data_list)} chunks in {output_folder}")
+    # print(f"Merging {len(data_list)} chunks in {output_folder}")
     num_chunks = len(data_list)
     full_output = []
     utterance_list = []
@@ -279,6 +279,20 @@ def get_output_folders(base_dir):
     return output_folders
 
 
+def is_valid_json_file(file_path):
+    """
+    Check if a file contains valid and non-empty JSON.
+    Returns True only if the file contains valid JSON and is not empty ({}).
+    """
+    try:
+        with open(file_path, 'r') as f:
+            content = json.load(f)
+            # Check if the JSON is empty (just {})
+            if content == {} or content == [] or not content:
+                return False
+            return True
+    except (json.JSONDecodeError, FileNotFoundError, IOError):
+        return False
 
 def annotate_and_merge_outputs(client, output_dir, codebook):
     """
@@ -322,8 +336,8 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
             verbal_file = os.path.join(folder, f"verbal_{json_dir_name}.json")
             all_file = os.path.join(folder, f"all_{json_dir_name}.json")
             
-            
-            if os.path.exists(folder):
+            if not is_valid_json_file(verbal_file):
+                print(f"Existing verbal file {verbal_file} is not valid, annotating now...")
                 try:
                     merged_output = merge_output_json(folder)
                 except InvalidJsonContentError as e:
@@ -352,8 +366,8 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                         json.dump(all_anno, f, indent=4)
                 
             else:
-                print(f"{json_dir} does not exist, skipping...")
-
+                print(f"Already annotated files in {folder}, skipping...")
+        
 def main():
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Annotate and merge team behavior analysis outputs.')
