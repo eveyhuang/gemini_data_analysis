@@ -236,7 +236,7 @@ def merge_output_json(output_folder):
     
     # Now load and process JSON files from the correct subdirectory
     data_list = load_json_files(output_folder)
-    print(f"Merging {len(data_list)} chunks")
+    print(f"Merging {len(data_list)} chunks in {output_folder}")
     num_chunks = len(data_list)
     full_output = []
     utterance_list = []
@@ -332,12 +332,12 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                     
                 verbal_annotations = []
                 
-                print(f"Annotating verbal behaviors for {json_dir_name}")
+                # print(f"Annotating verbal behaviors for {json_dir_name}")
                 annotations = annotate_utterances(client, merged_output[1], codebook)
                 verbal_annotations = annotations
                 output_file = verbal_file
                 with open(output_file, "w") as f:
-                    print(f"Saving annotations to {output_file}")
+                    print(f"Saved verbal annotations to {output_file}")
                     json.dump(annotations, f, indent=4)
                 
                     
@@ -346,9 +346,9 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                     for i in range(len(verbal_annotations)):
                         anno = verbal_annotations[i]['annotations']
                         all_anno[i]['annotations'] = anno
-                    print(f"Merged verbal annotations with existing video annotations.")
+                    
                     with open(all_file, "w") as f:
-                        print(f"Saving merged annotations to {all_file}")
+                        print(f"Merged verbal annotations with existing video annotations to {all_file}")
                         json.dump(all_anno, f, indent=4)
                 
             else:
