@@ -112,14 +112,14 @@ def get_video_in_folders(directory):
             for file in files:
                 file_name, file_extension = os.path.splitext(file)
                 if file_extension.lower() in video_extensions:
-                    # if file_extension.lower() == '.mkv':
-                    #     # convert to mp4 first if it is a mkv file
-                    #     mp4_path = os.path.join(folder_path, file_name + '.mp4')
-                    #     if not os.path.exists(mp4_path):
-                    #         mp4_path = convert_mkv_to_mp4(os.path.join(folder_path, file))
-                    #     video_files.append((mp4_path, folder_path, f"{folder}/{file_name}", file))
-                    # else:
-                    #     video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
+                    if file_extension.lower() == '.mkv':
+                        # convert to mp4 first if it is a mkv file
+                        mp4_path = os.path.join(folder_path, file_name + '.mp4')
+                        if not os.path.exists(mp4_path):
+                            mp4_path = convert_mkv_to_mp4(os.path.join(folder_path, file))
+                        video_files.append((mp4_path, folder_path, f"{folder}/{file_name}", file))
+                    else:
+                        video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
                     video_files.append((os.path.join(folder_path, file), folder_path, f"{folder}/{file_name}", file))
     
     # If no folders or additional files exist in root directory, check for direct video files
@@ -127,15 +127,15 @@ def get_video_in_folders(directory):
     for file in files_in_root:
         file_name, file_extension = os.path.splitext(file)
         if file_extension.lower() in video_extensions:
-            # if file_extension.lower() == '.mkv':
-            #     # convert to mp4 first if it is a mkv file
-            #     mp4_path = os.path.join(directory, file_name + '.mp4')
-            #     if not os.path.exists(mp4_path):
-            #         mp4_path = convert_mkv_to_mp4(os.path.join(directory, file))
-            #     video_files.append((mp4_path, directory, f"{file_name}", file))
-            # # For files in root, use the file name as both folder and file identifier
-            # else:
-            #     video_files.append((os.path.join(directory, file), directory, f"{file_name}", file))
+            if file_extension.lower() == '.mkv':
+                # convert to mp4 first if it is a mkv file
+                mp4_path = os.path.join(directory, file_name + '.mp4')
+                if not os.path.exists(mp4_path):
+                    mp4_path = convert_mkv_to_mp4(os.path.join(directory, file))
+                video_files.append((mp4_path, directory, f"{file_name}", file))
+            # For files in root, use the file name as both folder and file identifier
+            else:
+                video_files.append((os.path.join(directory, file), directory, f"{file_name}", file))
             video_files.append((os.path.join(directory, file), directory, f"{file_name}", file))
 
     return video_files
@@ -305,10 +305,6 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     
     # Get the file name and directory
     file_name, file_extension = os.path.splitext(os.path.basename(video_full_path))
-
-    # if the file is in mkv format, convert it to mp4 using ffmpeg
-    if file_extension == '.mkv':
-        video_full_path = convert_mkv_to_mp4(video_full_path)
 
     directory = os.path.dirname(video_full_path)
     
