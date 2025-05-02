@@ -159,7 +159,7 @@ def get_videos(directory):
                 else:
                     # Use existing MP4 version
                     video_files.append(file_name + '.mp4')
-            elif file_extension.lower() != '.mkv':  # Skip MKV files but include other video formats
+            else:  # Skip MKV files but include other video formats
                 video_files.append(file)
         
     return video_files
@@ -168,22 +168,22 @@ def get_videos(directory):
 def convert_mkv_to_mp4(input_path):
     """
     Converts an MKV video file to MP4 using ffmpeg.
-
-    Args:
-        input_path (str): Path to the .mkv file
-
-    Returns:
-        str: Path to the converted .mp4 file
+    Re-encodes audio to AAC to ensure compatibility.
     """
+    import subprocess
+    import os
+
     if not input_path.lower().endswith(".mkv"):
         raise ValueError("Input file must be an MKV file.")
     
     output_path = os.path.splitext(input_path)[0] + ".mp4"
-    
+
     command = [
         "ffmpeg",
         "-i", input_path,
-        "-codec", "copy",  # Copy without re-encoding
+        "-c:v", "copy",        # Copy video stream
+        "-c:a", "aac",         # Re-encode audio to AAC
+        "-b:a", "192k",        # Set audio bitrate (optional)
         output_path
     ]
 
