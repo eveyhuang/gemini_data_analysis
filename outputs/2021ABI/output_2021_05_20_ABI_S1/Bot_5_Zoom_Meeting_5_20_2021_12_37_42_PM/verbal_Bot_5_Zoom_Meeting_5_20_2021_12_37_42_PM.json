@@ -1,0 +1,739 @@
+[
+    {
+        "utterance": "Gokul Upadhyayula: very dense network of of objects that we've detected and be able to assign, you know, the trajectories for merges or splits and things like that. The biggest challenge I think uh for tracking in a label free setting is being able to identify the object. To be able to segment the object first, to be able to classify the object because again it's a label free setting, right? So that means that you're picking up lots of uh non specific um um uh changes um within your detection or imaging method. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker explains the challenges of tracking objects in a label-free setting, defining the problem as being able to identify, segment, and classify objects without pre-existing labels.",
+            "present new idea": "The speaker introduces the idea of tracking objects and assigning trajectories for merges or splits within a dense network of detected objects."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula: Um and then uh the other uh okay I just kind of noted down a couple of other points, right? Which is okay, well are we doing this in two dimensions or three dimensions because obviously the problem is much easier in three dimensions than it is in two dimensions. Um and what happens uh when you are using whatever modality you're using to to detect the object which changes um potentially the um uh it it's properties which now does not allow you to be able to record it. So for example when you're doing like QPI or some sort of phase imaging, you know, it's tracking the refractive index changes um in these in these images, but um uh even though the object is present, but it changes its kind of uh physical like bending properties, you're no longer able to detect it from a uh label free context. So how do you deal with these kinds of problems, right? So um yeah, so those are my general thoughts and and happy to kind of um uh work through and refine some of these things with you guys. ",
+        "annotations": {
+            "ask clarifying question": "The speaker poses a question about whether the tracking is being done in 2D or 3D, which directly seeks clarification on a key aspect of the problem.",
+            "explain or define term or concept": "The speaker explains how the modality used to detect the object can change its properties, making it undetectable in a label-free context, using QPI as an example to clarify the challenges.",
+            "present new idea": "The speaker presents the problem of how to deal with objects that change properties and become undetectable in a label-free context, which is a new challenge introduced in the discussion."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali: Yeah, I mean I see label free imaging as as a possibility if you're if you're trying to track things that are organelles or you know, larger structures within cells that are detectable and identifiable with label free methods. Um some of the questions that I'm most interested in involve tracking individual proteins, right? So when it comes to tracking individual proteins inside cells, how do you do that in a label free way? Um and and you know, have enough contrast or molecular specificity, how do you know which protein you're tracking? Uh even if you had the contrast, I think is the big challenge. Um but I I mean I just want to kind of maybe pull people about how perturbative do people think is labeling? Um is it really that big of a problem? I mean, Jin showed beautiful examples of, you know, biosensors that you all kinds of amazing information um about activity of um enzymes inside cells. Um uh and and we're using this type of modalities to to extract a lot of really, you know, uh deep information. Is it really that big of a problem the labeling? ",
+        "annotations": [
+            {
+                "expand on existing idea": "Melike expands on Gokul's idea of label-free imaging by suggesting it's possible for tracking organelles but questions its feasibility for individual proteins."
+            },
+            {
+                "ask clarifying question": "Melike asks how to track individual proteins in a label-free way and how to ensure enough contrast or molecular specificity, seeking clarification on the challenges of label-free protein tracking."
+            },
+            {
+                "encourage particpatioin": "Melike encourages participation by asking how perturbative people think labeling is, inviting others to share their perspectives on the impact of labeling."
+            }
+        ]
+    },
+    {
+        "utterance": "Nick Galati: Yeah, I've always wondered and I don't know if this exists, but combining, I mean, you could probably really reduce the amount of light. I I agree with you. I don't see a way because I do single protein imaging as well and I I can't conceptualize how to do that without labeling. So it's just something that I can't envision. But with something like QPI, I mean, can you combine QPI with, you know, some of these new more sensitive reporters and just really go very, very low on the fluorescent side. So go low excitation, very, very fast detection times and then combine the QPI readout with fluorescence to facilitate some of these things. So it's not really getting rid of labeling, it's just really minimizing labeling. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Nick builds on the discussion about label-free imaging and the challenges of tracking individual proteins, adding the idea of combining QPI with sensitive reporters to minimize labeling rather than eliminate it entirely."
+            },
+            {
+                "express agreement": "Nick agrees with Melike's point that it's difficult to envision single protein imaging without labeling."
+            },
+            {
+                "present new idea": "Nick introduces the idea of combining QPI with sensitive reporters to minimize the amount of light and labeling needed for single protein imaging."
+            }
+        ]
+    },
+    {
+        "utterance": "Nick Galati: Um, and the other thing I I I I I I just I don't have the computational brain to think about it, but I see particle tracking going down the path of like the genome sciences where it's like, okay, first we, you know, we sequence one gene and now we sequence everything and we wind up with these huge data sets, how do you ever infer that two different networks of particles are interacting with one another or constraining the movement of one another? Um, because you know, you have a homogeneous population of like this is all the GFP particles and they're all moving and we get beautiful tracks. ",
+        "annotations": {
+            "present new idea": "Nick introduces the idea of particle tracking evolving similarly to genome sciences, leading to huge datasets.",
+            "ask clarifying question": "Nick poses the question of how to infer interactions between different networks of particles given large datasets, building on the idea of particle tracking.",
+            "explain or define term or concept": "Nick explains that he is talking about a homogeneous population of GFP particles and their movement, providing context for his question."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali: Yeah, I agree with you on that. I was actually thinking about when Gokul mentioned AI based, you know, high density tracking. I feel like and this was one of the original questions I think in the PowerPoint, how do how many things do we need to track to be able to, you know, extract information about interactions. But the challenge there is again, I'm thinking from like the bias of tracking individual proteins, um this relies on sparse labeling. So you're labeling maybe 1% of the proteins that you're tracking. Um and then you label 1% of one protein in red and 1% of another protein in green, even if they're interacting, how do you really know they're interacting if you only label 1% of each um population. ",
+        "annotations": {
+            "express agreement": "Melike agrees with Nick's previous point about the challenges of single protein imaging without labeling.",
+            "expand on existing idea": "Melike expands on the challenges of high-density tracking, particularly in the context of sparse labeling and individual protein interactions, building on Gokul's mention of AI-based tracking.",
+            "provide supporting evidence": "Melike provides supporting evidence for the challenges of tracking individual proteins by explaining that even if two interacting proteins are labeled at only 1% each, it's difficult to determine their interaction."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali: Um ",
+        "annotations": [
+            {
+                "None": "There is no code that applies to this utterance."
+            }
+        ]
+    },
+    {
+        "utterance": "Yevgenia/Genia Kozorovitsky: Building upon what uh Melika said, I think this question of real time analysis is really important, right? And it also may allow if you're able, it may solve some of Catherine's problems, I think, because if you are able to identify interesting interactions efficiently using some kind of uh you know, less perturbative imaging modalities that do not bleed bleach your let's say fluorescent based probes, then you're able to kind of zoom in and track those specific things, you know, with your higher power applications. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Genia builds upon Melike's previous points about the challenges of tracking individual proteins and sparse labeling by suggesting real-time analysis as a potential solution."
+            },
+            {
+                "present new idea": "Genia introduces the idea that real-time analysis could solve Catherine's problems by allowing for zooming in on specific interactions using less perturbative imaging modalities."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula: The awesome part is that I feel like I really believe that we're really right now at the perfect moment in time to be able to address all of these things, right? Because over the past decades, you know, the math and the computational algorithms have have been developed and implemented and it's only recently that it's becoming more and more accessible um or accessible in the sense sense of computationally accessible to be able to do this in real time in um um in a robust way, especially the robustness comes from the fact that, you know, your algorithms may be completely tunable. ",
+        "annotations": [
+            {
+                "express enthusiasm": "Gokul expresses excitement about the current state of technology and algorithms, suggesting it's the perfect time to address the challenges discussed."
+            },
+            {
+                "provide supporting evidence": "Gokul supports his enthusiasm by stating that the necessary math and computational algorithms have been developed and are becoming more accessible, making real-time analysis robust."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula: But when and how to tune that is basically still a human endeavor at this moment, right? And that's basically where the these massive, you know, you know, either white neural nets or deep neural nets are kind of, you know, uh basically going to make my job obsolete, I think. Well, I hope. So. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The first sentence explains that tuning algorithms is currently a human endeavor.",
+                "express humor": "The second sentence expresses humor by saying that neural nets will make his job obsolete, and he hopes so."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten: Because coming back to this like do we need a label how perturbating how much perturbation is a label? I mean I'm definitely in the label camp um and you know what we're working with in terms of our floor force are really big right now and that does give us some limitations. So I do think that there is a need for how small of a label can we go and there have been some papers out about uniquely fluorescent biomolecules like really thinking about what is that autofluorescence, you know, can we you know start to decipher specific molecular identities. I think some carbohydrates in a certain orientations are going to be fluorescent. ",
+        "annotations": [
+            {
+                "expand on existing idea": "The speaker is expanding on the previously discussed topic of whether labels are needed and how perturbing they are, by providing her perspective and elaborating on the limitations of current fluorophores."
+            },
+            {
+                "provide supporting evidence": "The speaker mentions papers about uniquely fluorescent biomolecules, providing evidence to support the idea of deciphering specific molecular identities through autofluorescence."
+            },
+            {
+                "present new idea": "The speaker introduces the idea of exploring autofluorescence and uniquely fluorescent biomolecules to decipher specific molecular identities, which is a novel concept in the context of the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten: And ",
+        "annotations": [
+            {
+                "None": "This utterance is incomplete and does not express any complete idea or action."
+            }
+        ]
+    },
+    {
+        "utterance": "Anna-Karin Gustavsson: Yeah, because I feel like there's always this trade off. You want to have the label as small and you know, both the label and the floor for as small as possible and less the least perturbative as possible, but at the same time you want to have the long tracks and the bright bright labels. So like for chromatin tracking, you can, you know, consider maybe some arrays and you know, these different schemes where you have multiple floor force but for a single protein. ",
+        "annotations": {
+            "expand on existing idea": "The speaker is expanding on the discussion about labeling by discussing the trade-offs between label size and signal brightness, which was brought up by Ellen Sletten and Melike Lakadamyali.",
+            "present new idea": "The speaker introduces the idea of using arrays and different schemes with multiple fluorophores for a single protein, which is a novel suggestion in the context of the conversation."
+        }
+    },
+    {
+        "utterance": "Anna-Karin Gustavsson: Tracking, you know, you don't want to weigh that down with a a big brick, right? ",
+        "annotations": {
+            "express humor": "The speaker uses the analogy of a \"big brick\" to describe a large label on a single protein, which is intended to be humorous."
+        }
+    },
+    {
+        "utterance": "Anna-Karin Gustavsson: Uh that would be very perturbative to the motion. Um, so yeah, it's um other ways of thinking kind of outside of those strategies are really interesting to see, you know, how can you actually get longer tracks. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "This statement supports the idea that large labels can be disruptive to the motion of the tracked molecule, building on the discussion about the trade-offs between label size and brightness."
+            },
+            {
+                "expand on existing idea": "This statement expands on the discussion about strategies for tracking, suggesting the need to explore alternative approaches to achieve longer tracks, following the previous discussion about the trade-offs between label size and brightness."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula: Uh just out of curiosity, how many of us are in the label free camp versus the label camp? Just just curious. ",
+        "annotations": {
+            "ask clarifying question": "Gokul is asking a question to understand the distribution of opinions regarding the use of labeled versus label-free methods, seeking to clarify the preferences within the group."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula: I I'm definitely for label if that. ",
+        "annotations": {
+            "express agreement": "Gokul expresses agreement with using labels, aligning with the ongoing discussion about the trade-offs between labeled and label-free methods for tracking."
+        }
+    },
+    {
+        "utterance": "Katharine White: For label? ",
+        "annotations": {
+            "ask clarifying question": "Katharine is asking for clarification on whether Gokul is in favor of using labels, following Gokul's statement about being 'definitely for label'."
+        }
+    },
+    {
+        "utterance": "Katharine White: Do we have to be in one? ",
+        "annotations": {
+            "ask clarifying question": "Katharine is asking for clarification on whether they need to choose between the 'label free' and 'label' approaches, following Gokul's question about which camp people are in."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: I mean, my opinion is is that ",
+        "annotations": {
+            "present new idea": "The speaker is about to introduce their opinion on the topic of labeling versus label-free methods, which can be considered a new idea or perspective within the ongoing discussion."
+        }
+    },
+    {
+        "utterance": "Katharine White: The label needs to be as small as it needs to be to study the biology. And so if and it needs to be as bright as it needs to be in order for you to track whatever phenotype or whatever behavior you're you're looking for. Um, I mean, I I did my PhD in a lab that was developing new approaches to fluorescently tagging proteins inside cells and we I still remember I was presenting for my postdoc interview and I said, you know, GFP is too bulky, it's too large, it affects biology. And then, you know, later on in the day I hear, oh, we tagged it with three GFPs because it doesn't affect the protein and it's really bright and everything works. And so, you know, it needs to be as as as as good as it needs to be for the biology you're studying and so for some people label free is going to be a requirement. ",
+        "annotations": [
+            {
+                "provide supporting evidence": "The speaker provides supporting evidence for the need to optimize label size and brightness by sharing a personal anecdote from their PhD experience where GFP's size was debated, illustrating the trade-offs involved in labeling and its impact on biological studies, which supports the idea that the label needs to be optimized for the specific biological context."
+            }
+        ]
+    },
+    {
+        "utterance": "Katharine White: But for other people and for people that you know, have proteins that are more permissive, it needs to be as small and as bright as it needs to be for not affecting the biology you're interested in. ",
+        "annotations": {
+            "provide supporting evidence": "This statement provides reasoning to support the idea that the size and brightness of a label should be optimized for the specific biological context, building on the discussion about the trade-offs of labeling and label-free approaches.",
+            "expand on existing idea": "This utterance expands on the existing idea of label size and brightness, adding the condition that it should be optimized for the specific biological context, which was brought up by Ellen and Anna-Karin."
+        }
+    },
+    {
+        "utterance": "Seu Sim: I'm a polymer chemist, so I think of cells as a polymeric network with the spatial heterogeneity, for example, near nucleus or let's say bacterial cells as simple as you get near DNA, you know, nucleus then you are going to have a different types of mesh and near membrane you're going to have different types of mesh and there's everything in the middle. And when I was writing it down, I wrote down, you know, microreology in bacterial cells and how this spatial heterogeneity will affect to multiple different particle tracking and in terms of understanding how they interact in different spatial context, different polymeric network as you say. This is not really, when you think about it, it's so many things are floating, it's just so crowded. In that crowded spatial media, can we deduce, you know, reology of a really simplistic cells and can we decouple that. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker explains their perspective as a polymer chemist, viewing cells as polymeric networks with spatial heterogeneity, providing context for their subsequent points."
+            },
+            {
+                "present new idea": "The speaker introduces the idea of microreology in bacterial cells and how spatial heterogeneity affects particle tracking, which is a new direction in the conversation."
+            },
+            {
+                "ask clarifying question": "The speaker poses a question about deducing reology in crowded spatial media and decoupling it, seeking to explore the possibilities of understanding cell behavior in complex environments."
+            }
+        ]
+    },
+    {
+        "utterance": "Seu Sim: This is not really ",
+        "annotations": {
+            "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+        }
+    },
+    {
+        "utterance": "Seu Sim: I was wondering how biologists think about these types of types of problems. ",
+        "annotations": {
+            "ask clarifying question": "Seu Sim is asking how biologists approach the problems related to spatial heterogeneity and microreology in cells, seeking insight from their perspective."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula: So is it useful to just again broadly summarize that label free is great for anything that is not molecular or doesn't require molecular specificity, right? Um and then of course ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is summarizing the utility of label-free methods, defining their applicability to non-molecular or non-molecularly specific targets, based on the discussion about the pros and cons of label-free vs labeled imaging.",
+            "expand on existing idea": "The speaker is building upon the previous discussion about label-free imaging and its limitations, adding a summary statement."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: Potentially, there are some molecules that could be tracked by itself, right? Or or or or identified by itself based on some unique property, then that will still give the molecular identity and the um kind of label free metabolites, you know, as Ellen mentioned a little bit and some of the sugar molecules. Uh so label free could be for some molecules with molecular identity. ",
+        "annotations": {
+            "expand on existing idea": "Jin expands on Gokul's previous statement that label-free methods are suitable for non-molecular entities by suggesting that some molecules with unique properties can still be tracked or identified without labels, thus building on the discussion about the scope of label-free methods.",
+            "provide supporting evidence": "Jin mentions label-free metabolites and sugar molecules as examples, referencing Ellen's earlier comment, to support the idea that some molecules can be tracked without labels due to their unique properties.",
+            "explain or define term or concept": "Jin explains that label-free methods can be used for some molecules with molecular identity, clarifying the scope of label-free tracking beyond just non-molecular entities."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: But again for majority of the proteins it's going to be hard. ",
+        "annotations": {
+            "reject idea": "Jin Zhang is rejecting the idea of label-free tracking for the majority of proteins, following a discussion about the pros and cons of label-free versus labeled tracking methods."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula: So so I mean I think Jin uh if I understood correctly you're saying you can identify a class of molecules but not a very specific molecule with label free imaging or did I misunderstand that? ",
+        "annotations": {
+            "ask clarifying question": "Gokul is asking Jin to confirm his understanding of Jin's previous statement about identifying molecules with label-free imaging, specifically whether it's about identifying a class of molecules rather than a specific one."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: I guess if I well, I I'm definitely a label like we do a lot of labeling. Um but for some, you know, from what I um have seen, you know, a sub yeah, indeed, a subclass uh of uh sugar molecules. some of the unique metabolites. There could be, you know, unique metabolites that give you certain uh, you know, Raman characteristics that are um visible, right? So it doesn't have to be a a whole class of molecules. There could be some really unique cases where this is uh um this is could this could be specific enough for you to uh get uh uh specific biology out of that label free. Um ",
+        "annotations": {
+            "express agreement": "Jin expresses agreement with the general idea of using labels, aligning with the ongoing discussion about the necessity and limitations of label-free imaging versus labeling techniques.",
+            "expand on existing idea": "Jin expands on the idea of label-free imaging for specific molecules, mentioning that a subclass of sugar molecules and unique metabolites could be identified without labels, building upon previous mentions of metabolites and sugar molecules by Ellen and herself.",
+            "provide supporting evidence": "Jin provides supporting evidence by mentioning Raman characteristics as a unique property that could make certain metabolites visible without labels, supporting the idea that label-free methods could work for some molecules."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: Do I, you know, is that how people I wonder if uh people more people have uh experience with the label free. ",
+        "annotations": {
+            "ask clarifying question": "Jin is asking if her understanding of label-free imaging aligns with others' experiences, specifically wondering if more people have experience with label-free methods, following a discussion about the possibilities and limitations of label-free imaging for tracking molecules.",
+            "encourage particpatioin": "Jin is encouraging others to share their experiences with label-free methods, following a discussion about the possibilities and limitations of label-free imaging for tracking molecules."
+        }
+    },
+    {
+        "utterance": "Nick Galati: I I I've started doing so so I I've looked into doing some Raman and some Flim imaging and so with Flim imaging you can look at metabolites like NADPH and NAD ratios and things like that. It's not particle tracking per se. It's more just trying to get a, you know, like a metabolic view of the cell. And with the Raman stuff, we've got a group that's working on surface enhanced Raman probes, which I think could potentially be tagged to to molecules. But what we've like it's just I I'd interested if anybody's actually gone further with Raman. We can't get around the integration time. So to study fast things, we just have to integrate for so long that it's not really a particle tracking thing. It might be more of a a cell migration type time scale on the minutes kind of time scale, but on this the second particle tracking in a cell type stuff, we haven't we haven't been able to do it. We we can characterize lipids and and DNA and things like that and mitochondria produce a pretty strong Raman signal. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Nick is expanding on the discussion of label-free methods by sharing his experience with Raman and FLIM imaging, which Jin mentioned in the previous turn as a potential label-free method to identify molecules."
+            },
+            {
+                "provide supporting evidence": "Nick provides supporting evidence by mentioning that FLIM imaging can be used to look at metabolites and Raman can characterize lipids and DNA, supporting the idea that these methods can provide some molecular information without labels."
+            },
+            {
+                "ask clarifying question": "Nick is asking if anyone has gone further with Raman, seeking more information about its application."
+            }
+        ]
+    },
+    {
+        "utterance": "Morteza Mahmoudi: I just want to add one thing from like a nanotechnology point of view, similar to what Jean mentioned is that like we have some particles that have some characteristics that can be probed by themselves. Like we have quantum dots that we can track them by like fluorescence microscopy or we have like magnetic nanoparticles that can be used like I mean we can use like uh magnetic resonance imaging big technologies to basically track them. But uh at least at like at the nano site part of view when I basically try to tag other type of nanoparticles with a small molecules, what I see is that like the interaction of proteins with the surface of these nanoparticles gets changed. So what happens is that I have different nanoparticles in terms of their biological identity. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Morteza is building upon Jin's point about molecules with unique properties that can be tracked, adding examples from a nanotechnology perspective."
+            },
+            {
+                "provide supporting evidence": "Morteza provides examples of quantum dots and magnetic nanoparticles as particles with characteristics that allow them to be tracked, supporting the idea that some particles can be tracked without labels."
+            },
+            {
+                "offer constructive criticism": "Morteza offers a critique about tagging nanoparticles, stating that it can change the interaction of proteins with the surface, thus altering their biological identity, which is a potential problem."
+            }
+        ]
+    },
+    {
+        "utterance": "Morteza Mahmoudi: So my question here is that like for protein labeling, how do you ensure that the kind of labeling doesn't like at it mentioned in the question perturb the interactions or protein protein interactions that you uh basically expect to see. I mean, what is the correct control for that if there's no label free approach for do like some evaluation of like if you do the labeling, there's no changes or no alteration in protein protein interactions or like the functionality of that particular protein. ",
+        "annotations": {
+            "ask clarifying question": "Morteza is asking how to ensure that protein labeling doesn't perturb protein interactions, especially when there's no label-free approach to compare against, seeking clarification on appropriate controls."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali: Um, I can chime in on the first question or just uh from what we do um in our lab, um is, you know, and again it depends on what level you want to probe uh the perturbation, but um, you know, if you have a protein that you're tagging and you knock down or knock out the endogenous protein or you mutate the endogenous protein and you have a phenotype and now you express the tagged protein and the tagged protein can rescue the phenotype and ",
+        "annotations": [
+            {
+                "expand on existing idea": "Melike is building upon Morteza's question about protein labeling and perturbation of protein interactions, offering her lab's approach to address this concern."
+            }
+        ]
+    },
+    {
+        "utterance": "Melike Lakadamyali: You know, um rescue the cell function then the tagging is probably not perturbing. ",
+        "annotations": {
+            "provide supporting evidence": "Melike is providing evidence that if a tagged protein can rescue a cell function after the endogenous protein is knocked down or mutated, then the tagging is likely not perturbing the protein's function, supporting the idea that labeling may not always be a significant problem."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali: Perturbative. ",
+        "annotations": {
+            "confirm decision": "Melike is confirming the use of the term 'perturbative' in the context of labeling proteins, which was previously discussed."
+        }
+    },
+    {
+        "utterance": "Yevgenia/Genia Kozorovitskiy: Sometimes also you actually don't really want the normal interactions if in case for example you're interested in how particular protein um production may be affected by some specific stimulus. So in some cases we've actually we may crisper in the tag on one copy of the gene, spare the the other copy and then modify take away the most highly active interacting domains so that we can see changes in production of a protein uh downstream of some biological event. ",
+        "annotations": {
+            "expand on existing idea": "This utterance expands on the discussion about protein labeling and its potential perturbations, building on Morteza's question and Melike's response by providing a specific example where altered interactions are intentionally created to study protein production.",
+            "provide supporting evidence": "The speaker provides a specific example of using CRISPR to tag one copy of a gene and modify interacting domains to observe changes in protein production, supporting the idea that altered interactions can be useful in certain research contexts."
+        }
+    },
+    {
+        "utterance": "Yevgenia/Genia Kozorovitskiy: So people have tried to ",
+        "annotations": {
+            "None": "This utterance is incomplete and does not express a complete idea, so no code applies."
+        }
+    },
+    {
+        "utterance": "Yevgenia/Genia Kozorovitskiy: Solve this problem in lots of different ways, but it always ends up depending on exactly what your biological question is what will be the right thing. ",
+        "annotations": {
+            "explain or define term or concept": "The speaker is explaining that the appropriate method for addressing a biological question depends on the specific nature of that question, summarizing the discussion about labeling and perturbation.",
+            "acknowledge contribution": "The speaker acknowledges the various approaches people have taken to solve the problem of perturbation due to labeling, without explicitly agreeing or disagreeing with any specific approach."
+        }
+    },
+    {
+        "utterance": "Yevgenia/Genia Kozorovitskiy: Sometimes you don't want that protein to interact and sometimes you want it to interact as natively as possible. Um and of course endogenous levels of expression versus over expression, um, you know, is is kind of a problem. We've actually come across situations where we've carefully created nice crisper tagged things and they look beautiful in cell culture and we can't really use them even in acute brain slices very well at all because of some incompatibility between imaging modalities. ",
+        "annotations": [
+            {
+                "explain or define term or concept": "The speaker is implicitly defining the importance of considering endogenous levels of expression versus over expression when studying protein interactions, which is relevant to the discussion of labeling and perturbation.",
+                "present new idea": "The speaker introduces the idea that sometimes researchers intentionally disrupt protein interactions to study production changes, which is a novel concept in the context of minimizing perturbation."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): that that captured the some of the polymer uh features and um very heterogeneity and very dynamic could allow things to to exchange. So this goes back to what we were talking about earlier in terms of the heterogeneity. I think actually single cell life cell imaging, single life cell imaging is where single cell behaviors all of a sudden showed up very very strongly. This is in the 19 um I think uh 80s. ",
+        "annotations": [
+            {
+                "expand on existing idea": "The speaker is building on the previous discussion about heterogeneity by relating it to polymer features and dynamics."
+            },
+            {
+                "provide supporting evidence": "The speaker provides historical context by mentioning single cell life cell imaging in the 1980s as an example of when single cell behaviors became prominent."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): So if you look at a single molecule behaviors or single particle behaviors, whether that particular particles are near nucleus or near the plasma membrane or actually in a very confined uh micro compartment, that could affect the heterogeneity of that particle. ",
+        "annotations": {
+            "expand on existing idea": "This utterance expands on the previous discussion about the heterogeneity of cells and how it affects particle tracking, building on the idea that single-cell imaging reveals strong single-cell behaviors.",
+            "provide supporting evidence": "The speaker references single cell life cell imaging in the 1980s as an example of how single cell behaviors showed up strongly, providing historical context to support the idea that location affects particle behavior."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Uh so I guess that's why I think uh you know I I I um echo what Sue mentioned a little bit. ",
+        "annotations": {
+            "acknowledge contribution": "Jin acknowledges Seu's contribution, indicating agreement with a point Seu made earlier about the importance of spatial heterogeneity in cells."
+        }
+    },
+    {
+        "utterance": "Nick Galati, West. Wash. Univ.: Yeah, I think that was one of the most interesting things about your talk, Shin, was the the the modeling of being three to four orders of magnitude different than what was observed for the cyclic AMP diffusion. So I think one way to start is to just do those back of the envelope calculations with the observed data and say, well, what would need to be the diffusion constant to match that? I think that's a very kind of simple thing that we we could do with a lot of the particles that we've already tracked and measured is to just say like, you know, what constraints must be imposed to slow this thing down to the observed rate. Um, and that could be, you know, the polymeric nature of the cytosol, it could be a lot of different things. So I thought that was a, you know, maybe maybe simple modeling is is one way to just approach it from from the ground up. ",
+        "annotations": {
+            "acknowledge contribution": "Nick acknowledges Shin's talk and highlights the interesting finding about the difference in magnitude between modeling and observed data.",
+            "propose decision": "Nick proposes to start with back-of-the-envelope calculations using observed data to determine the diffusion constant needed to match the observed rate, suggesting a simple modeling approach."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Yeah, I definitely um believe the computational biology, the modeling aspect has a lot to contribute to uh imaging uh this uh like today's imaging science. Uh for some of the heterogeneity that Catherine mentioned. ",
+        "annotations": {
+            "express agreement": "Jin expresses agreement with the idea that computational biology and modeling can contribute to imaging science, building on previous discussions about heterogeneity in imaging, specifically mentioning Catherine's contributions."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): I wonder, you know, are there hints that could be uh used from some of the the modeling um studies as well. So uh do we covered some, you know, some of the points that you wrote at the beginning of the session? Does anyone want to uh share uh a few thoughts that you wrote down but we haven't really uh discussed? ",
+        "annotations": [
+            {
+                "ask clarifying question": "The speaker is asking if there are hints from modeling studies that could be used, seeking further information on the potential applications of modeling in imaging science, which was previously discussed.",
+                "encourage particpatioin": "The speaker is inviting others to share thoughts that haven't been discussed yet, encouraging participation from the group."
+            }
+        ]
+    },
+    {
+        "utterance": "Melike Lakadamyali, UPenn: Since I'm going to be doing the reporting, I wonder if we should try to sort of summarize everything that we have discussed um. ",
+        "annotations": {
+            "propose decision": "Melike suggests summarizing the discussion, proposing a concrete action for the group since she will be doing the reporting."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Exactly. if no um additional, you know, topics we could summarize. ",
+        "annotations": [
+            {
+                "confirm decision": "The speaker explicitly agrees with the previous speaker's suggestion to summarize the discussion, confirming that decision."
+            },
+            {
+                "propose decision": "The speaker proposes a decision to summarize the discussion if there are no additional topics to cover."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): So uh are we are we looking at our notes? ",
+        "annotations": {
+            "encourage particpatioin": "Jin is inviting others to share their thoughts by asking if they are looking at their notes, encouraging them to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Uh something happened with uh the version of the document. It's just been it's been updated and I can't. ",
+        "annotations": [
+            {
+                "express frustation": "Gokul expresses frustration because he is unable to access the document due to an update, hindering his participation in the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten (UCLA): Yeah, it keeps changing. ",
+        "annotations": [
+            {
+                "express frustration": "Ellen expresses frustration that the document keeps changing, which is interfering with the discussion."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten (UCLA): Maybe Gokul do you want to share since you're mostly working on. ",
+        "annotations": {
+            "encourage particpatioin": "Ellen is inviting Gokul to share his thoughts, likely on the document issue or the topics discussed so far, since he's been actively working on it."
+        }
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): No, I'm having the same issue as. ",
+        "annotations": [
+            {
+                "express frustation": "Gokul expresses frustration because he is having technical difficulties with the document, similar to Ellen."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten (UCLA): It says you can go to version history. ",
+        "annotations": [
+            {
+                "assign task": "Ellen is assigning the task of checking the version history to someone, likely Gokul, who is having issues with the document."
+            }
+        ]
+    },
+    {
+        "utterance": "Melike Lakadamyali, UPenn: Copy the notes and then hopefully. ",
+        "annotations": [
+            {
+                "propose decision": "Melike suggests copying the notes, proposing a concrete action for the group to take to address the issue with the document version."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Yes, Ed Mclusky is messing it up for all of us. ",
+        "annotations": [
+            {
+                "express humor": "Gokul makes a humorous remark about Ed Mclusky causing problems with the document, which expresses humor."
+            },
+            {
+                "express frustation": "Gokul expresses frustration about the document issue, indicating irritation with the situation."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Oh. ",
+        "annotations": {
+            "express humor": "The utterance \"Oh\" in response to the statement \"Yes, Ed Mclusky is messing it up for all of us\" expresses humor."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Yeah we got our notes back. Thanks. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "Jin thanks the group for getting the notes back, acknowledging their contribution to resolving the issue."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): So what are the three major points we want to share with the group? Is it um sufficient or do we have another uh point? ",
+        "annotations": [
+            {
+                "ask clarifying question": "The speaker is asking whether the points they have are sufficient or if they need to add another point, seeking clarification on the completeness of their summary."
+            },
+            {
+                "propose decision": "The speaker is suggesting a concrete choice for the group to decide whether the current points are sufficient or if they need to add another point."
+            }
+        ]
+    },
+    {
+        "utterance": "Melike Lakadamyali, UPenn: We had a major discussion around heterogeneity and how to make sense of heterogeneity, right? That was a major um point that we discussed. ",
+        "annotations": {
+            "explain or define term or concept": "The utterance summarizes a key discussion point, which is the concept of 'heterogeneity' and the challenges in understanding it, thus explaining the term in the context of their discussion.",
+            "summarize": "The utterance summarizes a key discussion point, which is the concept of 'heterogeneity' and the challenges in understanding it."
+        }
+    },
+    {
+        "utterance": "Anna-Karin Gustavsson (Rice): Yeah and that we discussed both taking require ways to require higher proof of data versus analysis schemes to address that question. ",
+        "annotations": {
+            "expand on existing idea": "This utterance builds upon the previous discussion about heterogeneity, adding that they discussed ways to acquire higher proof of data versus analysis schemes to address that question.",
+            "express agreement": "The speaker starts with \"Yeah\" indicating agreement with the previous statement by Melike about the major discussion being around heterogeneity."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali, UPenn: I'm sorry, potentially modeling and you know, combining modeling with maybe even um AI based approaches. ",
+        "annotations": {
+            "expand on existing idea": "Melike is expanding on the previous discussion about heterogeneity and ways to address it, adding modeling and AI-based approaches as potential solutions."
+        }
+    },
+    {
+        "utterance": "Nick Galati, West. Wash. Univ.: Did we also kind of converge that we we we think that like flexible single molecule imaging is going to require a label of some sort. ",
+        "annotations": {
+            "ask clarifying question": "Nick is asking if the group has reached a consensus that flexible single-molecule imaging will require some kind of label, seeking confirmation on a potential agreement."
+        }
+    },
+    {
+        "utterance": "Jin Zhang (UC San Diego): Yeah. ",
+        "annotations": {
+            "express agreement": "The speaker explicitly agrees with the previous statement that flexible single molecule imaging is going to require a label of some sort."
+        }
+    },
+    {
+        "utterance": "Nick Galati, West. Wash. Univ.: I mean. ",
+        "annotations": {
+            "None": "This utterance is incomplete and does not express any specific idea, agreement, or question."
+        }
+    },
+    {
+        "utterance": "Melike Lakadamyali, UPenn: And that, you know, we want these labels to be as small and as bright as possible. ",
+        "annotations": {
+            "expand on existing idea": "This utterance builds upon the previous discussion about the need for labels in single-molecule imaging, adding the detail that these labels should be as small and bright as possible, which was mentioned earlier by Anna-Karin and others."
+        }
+    },
+    {
+        "utterance": "Ellen Sletten (UCLA): Yeah, I think the speed requirement we should also bring up and that we want to be able to do real time tracking. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Ellen is adding to the summary of the discussion, building on the points already mentioned by others about heterogeneity and labeling by bringing up the speed requirement for real-time tracking."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Oh sorry guys one second. ",
+        "annotations": [
+            {
+                "express humor": "Gokul is making a lighthearted comment about the situation, likely due to the ongoing technical difficulties with the document."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Well, I managed to rescue our slide. ",
+        "annotations": [
+            {
+                "express humor": "Gokul's statement that he rescued the slide is delivered with a tone of lightheartedness, likely intended to be humorous after the group experienced technical difficulties with the shared document."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): To some extent. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "This utterance acknowledges the effort of rescuing the slide, but doesn't agree or expand on it."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Okay. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "This utterance acknowledges the previous discussion, but does not agree or expand on it."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula (UC Berkeley): Uh if you go to the next slide. ",
+        "annotations": {
+            "assign task": "Gokul is assigning the task of advancing the presentation to the next slide."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: I think that sounds good, you know, two major points and we had lots of constructive discussions. ",
+        "annotations": {
+            "express agreement": "Jin agrees with the summary of the discussion, indicating agreement with the points made."
+        }
+    },
+    {
+        "utterance": "Samuel Achilefu: I mean as you guys reflect on this, I'm not sure if you some of you have noticed that leveling can actually be your friend in discovery. Sometimes they don't give you what you want, they give you something completely different. Have you observed that in your research where you level something and instead of doing what it's supposed to do, it did completely something else. But that something else turned out to be exciting. ",
+        "annotations": [
+            {
+                "present new idea": "The speaker introduces the idea that labeling, despite potential drawbacks, can unexpectedly lead to valuable discoveries, which is a novel perspective in the context of the discussion about the challenges and limitations of labeling.",
+                "encourage particpatioin": "The speaker encourages participation by asking if others have observed similar phenomena in their research, inviting them to share their experiences related to unexpected discoveries from labeling."
+            }
+        ]
+    },
+    {
+        "utterance": "Gokul Upadhyayula: Absolutely, yeah. I mean especially because we know molecules exist, but we don't really understand fully how they interact with each other in terms of dynamics, right? Especially in the context of processes that either self assemble or um that need to have uh or at least in the biological schemes or the textbooks, they always have, you know, molecule A comes, then molecule B comes, then molecule C comes, right? And I'm always thinking, how does molecule B know when to get there, you know? Um the stochasticity is completely lost in in in quantifications of of these biological systems, right? Is is that yes, anything is possible, but it's also the probability that's defining a particular process. And it's it's it's yeah, anyways, yeah. Sorry. ",
+        "annotations": [
+            {
+                "express agreement": "Gokul agrees with Samuel's point that labeling can lead to unexpected discoveries."
+            },
+            {
+                "present new idea": "Gokul introduces the idea that the stochasticity of molecular interactions is often lost in biological quantifications, questioning how molecules coordinate their actions in dynamic processes."
+            }
+        ]
+    },
+    {
+        "utterance": "Nick Galati: I I just wanted to say that as somebody that, you know, I I teach undergraduates, I'm at a mostly undergraduate institution and the textbook models of A leading to B leading to C, my goal I feel is as as as when I'm teaching seniors is to undo that thought process because it limits them so much and I feel like I I try to undo everything they've learned by getting them to stop thinking like that. And so I yeah, it's a really wonderful point. ",
+        "annotations": {
+            "acknowledge contribution": {
+                "Explanation": "The speaker acknowledges the previous speaker's point by saying \"it's a really wonderful point.\""
+            }
+        }
+    },
+    {
+        "utterance": "Ellen Sletten: Do we have any any more minutes left? ",
+        "annotations": {
+            "ask clarifying question": "Ellen is asking a question to clarify how much time is remaining in the meeting, which is a request for information."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: Yeah, uh five minutes left, right? Ellen was going to say something. ",
+        "annotations": {
+            "encourage particpatioin": "Jin Zhang encourages Ellen to speak, as Ellen was about to say something."
+        }
+    },
+    {
+        "utterance": "Ellen Sletten: Oh, I was just going to add to that and then it brings you to the question of which of these unexpected findings are are worth following and which ones are not and I feel like that is kind of the the biggest challenge of of our job. you know, we sort of started there with with Catherine's question. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Ellen is adding to the discussion about unexpected findings that Gokul and Nick brought up in the previous utterances."
+            },
+            {
+                "present new idea": "Ellen introduces the idea that deciding which unexpected findings are worth pursuing is the biggest challenge, which is a new perspective in the conversation."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang: Right, back to the circle. ",
+        "annotations": {
+            "express humor": "The speaker is making a lighthearted comment about the conversation returning to a previous topic, implying a cyclical nature to the discussion."
+        }
+    },
+    {
+        "utterance": "Ellen Sletten: And any um ",
+        "annotations": [
+            {
+                "encourage particpatioin": "Ellen is encouraging participation by leaving the utterance open-ended, inviting others to contribute their thoughts, following a discussion about unexpected findings and challenges in research."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang: Additional thoughts that people want to share with the group? ",
+        "annotations": {
+            "encourage particpatioin": "Jin Zhang is explicitly inviting others to contribute their thoughts to the discussion, continuing the conversation."
+        }
+    },
+    {
+        "utterance": "Ellen Sletten: In terms of the label and like the problems that come with the label, do we think it is the floor for itself and then it's hydrophobic? Do we think it is the large protein that we drag along? Do we think it's even a peptide that we append to the protein? Like if there was something that we wanted to focus on getting rid of in terms of the label, what would it be? ",
+        "annotations": {
+            "ask clarifying question": "The speaker is asking a question to clarify the specific aspects of the label (fluorophore, large protein, peptide) that cause problems, building on the previous discussion about labels and their impact."
+        }
+    },
+    {
+        "utterance": "Anna-Karin Gustavsson: Yeah, I think people already touched upon the smaller the better, especially on the super resolution side, you know, you want to reduce that offset error uh and of course functionality, keep the functionality. Um but also, yeah. So when now more towards I guess super resolution imaging then and tracking too. But yeah, cell talking about synthetic dyes, uh you know, smaller dyes, photostable dyes, how to get those into live cells in a non-perturbative way and you know, optimize those and yeah. ",
+        "annotations": {
+            "expand on existing idea": "The speaker is expanding on the previous discussion about labels, adding that smaller labels are better, especially in super-resolution microscopy, and that functionality should be maintained.",
+            "present new idea": "The speaker introduces the idea of using synthetic dyes, smaller dyes, and photostable dyes to get them into live cells in a non-perturbative way and optimize them, which is a new direction in the context of the discussion."
+        }
+    },
+    {
+        "utterance": "Jin Zhang: I was going to mention maybe um for the different questions uh that that that we're looking at. Um some of the feature, you know, some of the features are more important to get rid of than others. Um we're looking at I guess diffusion uh within the cells, uh you know, maybe the size definitely we want a smaller and single molecule tracking we don't want the the error. Um but for some of the I guess when we look at some of the um uh separation process, we do want we do consider the hydrophobic uh aspect, you know, whether that's going to be perturbed. ",
+        "annotations": [
+            {
+                "expand on existing idea": "Building on Ellen and Anna-Karin's discussion about labels, Jin expands on the features of labels, such as size and hydrophobicity, that are important to consider based on the research question."
+            }
+        ]
+    },
+    {
+        "utterance": "Seu Sim: For a small molecule labeling, are you more thinking towards endogenous machinery, hijacking them and then using that as you know, way to way to sparsely label your particles? I mean, I just wanted to know what people think and like obviously you can't just like force feed the cells a lot of fluorophores and hope that you've achieved selective labelings and defined populations. ",
+        "annotations": [
+            {
+                "ask clarifying question": "Seu Sim is asking if the group is considering hijacking endogenous machinery for sparse labeling, seeking clarification on their approach to small molecule labeling."
+            },
+            {
+                "encourage particpatioin": "Seu Sim is encouraging participation by asking what people think about the approach of hijacking endogenous machinery for sparse labeling."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten: I think a lot of people will ",
+        "annotations": {
+            "encourage particpatioin": "Ellen ends her utterance abruptly, likely intending to invite others to share their thoughts on the topic of labeling, building on the ongoing discussion about labels and their impact."
+        }
+    },
+    {
+        "utterance": "Katharine White: In an ideal world, oh, I was just going to say in an ideal world though, you could imagine developing like an endogenous protein ligase or something that would be able to tag a little fluorophore on every protein that it encounters and then you would get a bright fluorescent tag on your protein of interest and you could track it and that would be, you know, a teeny tiny little tag on a single on a single protein so you could imagine in an ideal world that that would be possible but the amount of evolution in terms of protein evolution to evolve something that's specific for your protein of interest is kind of problematic on on a kind of global scale if you envision doing this for like 20,000 proteins that exist inside the cell to get 20,000 specific ligases um ",
+        "annotations": [
+            {
+                "present new idea": "Katharine introduces a novel concept of developing an endogenous protein ligase to tag proteins with fluorophores, which hasn't been explicitly discussed before in this specific manner."
+            }
+        ]
+    },
+    {
+        "utterance": "Ellen Sletten: We need like a a protag for fluorophores. ",
+        "annotations": {
+            "present new idea": "Ellen introduces a novel concept of a 'protag' for fluorophores, which hasn't been discussed before in this conversation."
+        }
+    },
+    {
+        "utterance": "Katharine White: Yeah. ",
+        "annotations": [
+            {
+                "express agreement": "Katharine agrees with Ellen's previous statement about needing a protag for fluorophores."
+            }
+        ]
+    },
+    {
+        "utterance": "Katharine White: Yeah. ",
+        "annotations": [
+            {
+                "express agreement": "Katharine agrees with Ellen's previous statement about needing a protag for fluorophores."
+            }
+        ]
+    },
+    {
+        "utterance": "Jin Zhang: I hope yeah, I think our group everyone uh has uh discussed, you know, presented uh viewpoints and uh participated in discussion and we have uh 59 seconds to go back and then thank you uh Gokul for you know, recording and Melika for reporting and I think if people can chime in also a little bit if there are some points that you want to add at the end of Melika's uh reporting. Great. Thank you so much and thank you for great discussion. We'll see you at the um in the main meeting room. ",
+        "annotations": [
+            {
+                "acknowledge contribution": "The speaker thanks Gokul for recording and Melika for reporting, acknowledging their contributions to the meeting."
+            },
+            {
+                "encourage particpatioin": "The speaker encourages others to add points to Melika's reporting, inviting further participation."
+            }
+        ]
+    }
+]
