@@ -313,7 +313,8 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     for i in range(num_chunks):
         start_time = i * chunk_length
         output_file_name = os.path.join(split_dir, f"{file_name}_chunk{i+1}.mp4")
-        ffmpeg.input(video_full_path, ss=start_time, t=chunk_length).output(output_file_name).run()
+        # Add -n flag to skip existing files
+        ffmpeg.input(video_full_path, ss=start_time, t=chunk_length).output(output_file_name, n=None).run()
         chunk_paths.append(output_file_name)
         print(f"Created chunk: {output_file_name}")
     
