@@ -337,7 +337,7 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
             all_file = os.path.join(folder, f"all_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
-                print(f"Existing verbal file {verbal_file} is not valid, annotating now...")
+                print(f"No existing/valid verbal file in {folder}, annotating now...")
                 try:
                     merged_output = merge_output_json(folder)
                 except InvalidJsonContentError as e:
