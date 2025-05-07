@@ -250,16 +250,20 @@ def merge_output_json(output_folder):
                 for i in d_list:
                     data = i.copy()
                     # Remove brackets from timestamp if present
-                    timestamp = data['timestamp'].strip('[]')
-                    sp_time = timestamp.split('-')
-                    if len(sp_time)==2:
-                        data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
-                        data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
-                    else:
-                        data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
-                        
-                    full_output.append(data)
-                    utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
+                    try:
+                        timestamp = data['timestamp'].strip('[]')
+                        sp_time = timestamp.split('-')
+                        if len(sp_time)==2:
+                            data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
+                            data['end_time'] = add_times(sp_time[1], str(10*m)+':00')
+                        else:
+                            data['start_time'] = add_times(sp_time[0], str(10*m)+':00')
+                            
+                        full_output.append(data)
+                        utterance_list.append(f"{data['speaker']}: {data['transcript']} ")
+                    except KeyError:
+                        print(f"KeyError in {output_folder} for chunk {m}. Original data: {data}")
+                        continue
         else:
             print(f"Having issues with data in directory: {output_folder}")
                 
