@@ -19,19 +19,19 @@ def init():
     You are an expert in interaction analysis and team research. You are provided with recording of a zoom meeting between a group of scientists collaborating on novel ideas to address scientific challenges. 
     Your objective is to annotate behavior and verbal cues to help us understand this team's behavior and processes.
     Each time someone speaks in this video, provide the following structured annotation:
-    (1) speaker: Full names of speaker.
-    (2) timestamp: startiing and ending time of this person's speech in MM:SS-MM:SS format, before the speaker changes
-    (3) transcript: Verbatim speech transcript. Remove filler words unless meaningful.
-    (4) speaking duration: the total number of seconds the speaker talks in this segment
-    (4) nods_others: Count of head nods from other participants during this speaker's turn.
-    (5) smile_self: Percentage of time this speaker was smiling during their turn.
-    (6) smile_other: Percentage of time at least one other person was smiling.
-    (7) distracted_others: Number of people looking away or using their phone during this speaker's turn.
-    (8) hand_gesture: what type of hand gesture did the speaker use? (Raising Hand, Pointing, Open Palms, Thumbs up, Crossed Arms, None)
-    (9) interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
-    (10) overlap: Was this turn overlapped? (Yes/No) – if another person spoke at the same time
-    (11) screenshare: Did anyone share their screen during this segment? (Yes/No)
-    (12) screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
+    speaker: Full names of speaker.
+    timestamp: startiing and ending time of this person's speech in MM:SS-MM:SS format, before the speaker changes
+    transcript: Verbatim speech transcript. Remove filler words unless meaningful.
+    speaking duration: the total number of seconds the speaker talks in this segment
+    nods_others: Count of head nods from other participants during this speaker's turn.
+    smile_self: Percentage of time this speaker was smiling during their turn.
+    smile_other: Percentage of time at least one other person was smiling.
+    distracted_others: Number of people looking away or using their phone during this speaker's turn.
+    hand_gesture: what type of hand gesture did the speaker use? (Raising Hand, Pointing, Open Palms, Thumbs up, Crossed Arms, None)
+    interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
+    overlap: Was this turn overlapped? (Yes/No) – if another person spoke at the same time
+    screenshare: Did anyone share their screen during this segment? (Yes/No)
+    screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
     
     Notes:
     If uncertain about a label due to poor visibility, return [low confidence] next to the annotation.
