@@ -86,12 +86,14 @@ def init(prompt_type='scialog'):
     
     Notes:
     If you are ever unclear about a code, use -1 rather than forcing a code.
+    For code 1-6 and 10-12, also include a one-sentence explanation of your code. 
+    For 7-9, include the time stamp of each transcript in the list. 
 
     Input:
     A video recording of a zoom meeting between two people having a conversation about COVID. 
     
     Output Format:
-    Return a JSON object with the list of annotations as value.
+    Return a JSON object with the annotations as value.
     """
 
     # Select prompt based on prompt_type
