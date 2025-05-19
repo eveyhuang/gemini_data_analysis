@@ -8,13 +8,13 @@ import subprocess
 import unicodedata
 
 
-def init():
+def init(prompt_type='scialog'):
     load_dotenv()
     GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
     client = genai.Client(api_key=GOOGLE_API_KEY)
 
     ## behavior focused prompt
-    prompt = """
+    scialog_prompt = """
     Objective:
     You are an expert in interaction analysis and team research. You are provided with recording of a zoom meeting between a group of scientists collaborating on novel ideas to address scientific challenges. 
     Your objective is to annotate behavior and verbal cues to help us understand this team's behavior and processes.
@@ -65,6 +65,40 @@ def init():
         (18) express enthusiasm: expresses excitement, optimism, or encouragement. "This is an exciting direction!"
         (19) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
     """
+
+    covid_prompt = """
+    Objective:
+    You are an expert in interaction analysis. You are provided with recording of a zoom meeting between two people having a conversation about their experience with Covid and covid vaccines. 
+    Your objective is to code the video using the codebook provided below:
+    (1) technology: The extent to which the participant experiences technical difficulties (e.g., audio cutting out, video cutting out, sound issues, etc.).  Use 1-7 scale: 1 = no difficulties, 7 = extreme difficulties.
+    (2) cur_neg_affect: The extent to which the participant discloses negative affect about the pandemic/masks/vaccine/boosters in the present. To what degree does s/he exhibit or disclose negative affective states such as being: angry, frustrated, sad, etc. Use 1-7 scale: 1 = not at all negative, 4 = somewhat negative, 7 = extremely negative. Examples: 1 = living life as it was before/normal, 2 = booster symptoms, 3 = COVID is still here/wearing mask, 4 = negative societal implications, 5 = political comments about lockdown, 6/7 = super sick, hospitalized, family member die, etc.
+    (3) past_neg_affect: The extent to which the participant discloses feeling negative affect about the pandemic/masks/vaccine/boosters when recalling the past. To what degree does s/he describe feeling negative affective states such as being: angry, frustrated, sad, uneasy, uncertain, hesitant, etc. 1-7 scale: 1 = not at all negative, 4 = somewhat negative, 7 = extremely negative. Examples: 3 - 4 = missing graduation, prom, etc.
+    (4) communal_orientation: The extent to which the participant displays behaviors or makes statements that reflect a desire for social connectedness with their conversation partner (e.g., being kind, showing concern and being sympathetic to partner’s needs). Use 1-7 scale: 1 = not at all, 7 = extremely communal. Examples:  1 - 2 = Just answering the questions, cold in responses, not wanting to talk to partner beyond the time; 3, 4, 5 = talking and asking questions but not giving affirmations, doesn’t seem entirely engaged; 6 - 7 = building off of story conversation partner told, trying to relate to partner.
+    (5) engagement: The extent to which the participant is engaged in the conversation (e.g., throwing themselves into the conversation and genuinely conversing with their partner, trying to keep the conversation going, etc.). 1-7 scale: 1 = disengaged, 7 = engaged
+    (6) defensiveness: The extent to which the participant is defensive in justifying their beliefs/perspective. (e.g., “How could you say that…”, “I don’t think you understand what I’m saying . . .”, etc. 1-7 scale: 1 = not at all defensive, 7 = very defensive
+    (7) questions: List of transcripts of each question that participant asks partner throughout the conversation.
+    (8) perspective_statements: List of transcripts of each statement that attempts to understand the other person’s perspective (i.e., engages in perspective taking, or understanding of the others’ thoughts and/or emotions) with their partner (e.g., using language such as: “I know how you feel…”, “I imagine that feels. . .”, “I hear what you are saying . . .”, “I have never experienced that but I could imagine that…”, etc.).
+    (9) similarity: List of transcripts of each statement that participant acknowledges some sort of similarity between themselves and their partner (e.g., saying things such as: “I also had a bad reaction to the vaccine”, “I feel the same way”, “That happened to me too”, or otherwise attempting to relate to the other by pointing out common ground such as “Oh you’re in Texas? My best friend lives in Texas.”).
+    (10) vaccine_importance: At the very end of the conversation, to what extent does the participant believe that vaccines are important. 1-7 scale: 1 = not at all important, 4 = somewhat important, 7 = extremely important, -1 = unclear or not discussed at all
+    (11) booster_importance: At the very end of the conversation, to what extent does the participant believe that boosters are important. same 1-7 scale as (10).
+    (12) cognitive_complexity: To what extent during the conversation does the participant demonstrate cognitive complexity (i.e., consideration, analysis, recognizing nuance, playing with different ideas, and/or understanding the various perspectives in the conversation). 1-7 scale: 1 = not at all, 4 = moderate amount, 7 = very much. 
+    (13) general_notes: any general notes about this conversation that stuck out to you.
+    
+    Notes:
+    If you are ever unclear about a code, use -1 rather than forcing a code.
+
+    Input:
+    A video recording of a zoom meeting between two people having a conversation about COVID. 
+    
+    Output Format:
+    Return a JSON object with the list of annotations as value.
+    """
+
+    # Select prompt based on prompt_type
+    if prompt_type.lower() == 'covid':
+        prompt = covid_prompt
+    else:  # default to scialog
+        prompt = scialog_prompt
 
     return client, prompt, code_book
 
@@ -783,10 +817,9 @@ def annotate_and_merge(client, path_dict, directory, codebook):
             print(f"{output_subfolder} does not exist, skipping...")
 
 
-def main(vid_dir, process_video):
-
+def main(vid_dir, process_video, prompt_type='scialog'):
     folder_name = os.path.basename(vid_dir)
-    client, prompt, codebook = init()
+    client, prompt, codebook = init(prompt_type)
     cur_dir = os.getcwd()
     if process_video == 'yes':
         process_videos_in_directory(vid_dir)
@@ -796,11 +829,14 @@ def main(vid_dir, process_video):
     new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
     save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
-    
     return path_dict
 
 
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
     process_video = input("Process video? yes/no ")
-    main(dir, process_video)
+    prompt_type = input("Choose prompt type (scialog/covid): ").lower()
+    if prompt_type not in ['scialog', 'covid']:
+        print("Invalid prompt type. Defaulting to 'scialog'")
+        prompt_type = 'scialog'
+    main(dir, process_video, prompt_type)
