@@ -68,8 +68,8 @@ def init(prompt_type='scialog'):
 
     covid_prompt = """
     Objective:
-    You are an expert in interaction analysis. You are provided with recording of a zoom meeting between two people having a conversation about their experience with Covid and covid vaccines. 
-    Your objective is to code the video using the codebook provided below:
+    You are an expert in qualitative interaction analysis. 
+    Your objective is to watch the video carefully and code using the codebook provided below:
     (1) technology: The extent to which the participant experiences technical difficulties (e.g., audio cutting out, video cutting out, sound issues, etc.).  Use 1-7 scale: 1 = no difficulties, 7 = extreme difficulties.
     (2) cur_neg_affect: The extent to which the participant discloses negative affect about the pandemic/masks/vaccine/boosters in the present. To what degree does s/he exhibit or disclose negative affective states such as being: angry, frustrated, sad, etc. Use 1-7 scale: 1 = not at all negative, 4 = somewhat negative, 7 = extremely negative. Examples: 1 = living life as it was before/normal, 2 = booster symptoms, 3 = COVID is still here/wearing mask, 4 = negative societal implications, 5 = political comments about lockdown, 6/7 = super sick, hospitalized, family member die, etc.
     (3) past_neg_affect: The extent to which the participant discloses feeling negative affect about the pandemic/masks/vaccine/boosters when recalling the past. To what degree does s/he describe feeling negative affective states such as being: angry, frustrated, sad, uneasy, uncertain, hesitant, etc. 1-7 scale: 1 = not at all negative, 4 = somewhat negative, 7 = extremely negative. Examples: 3 - 4 = missing graduation, prom, etc.
@@ -77,7 +77,7 @@ def init(prompt_type='scialog'):
     (5) engagement: The extent to which the participant is engaged in the conversation (e.g., throwing themselves into the conversation and genuinely conversing with their partner, trying to keep the conversation going, etc.). 1-7 scale: 1 = disengaged, 7 = engaged
     (6) defensiveness: The extent to which the participant is defensive in justifying their beliefs/perspective. (e.g., “How could you say that…”, “I don’t think you understand what I’m saying . . .”, etc. 1-7 scale: 1 = not at all defensive, 7 = very defensive
     (7) questions: List of transcripts of each question that participant asks partner throughout the conversation.
-    (8) perspective_statements: List of transcripts of each statement that attempts to understand the other person’s perspective (i.e., engages in perspective taking, or understanding of the others’ thoughts and/or emotions) with their partner (e.g., using language such as: “I know how you feel…”, “I imagine that feels. . .”, “I hear what you are saying . . .”, “I have never experienced that but I could imagine that…”, etc.).
+    (8) perspective_statements: List of transcripts of statements that attempt to understand the other person’s perspective (i.e., engages in perspective taking, or understanding of the others’ thoughts and/or emotions) with their partner (e.g., using language such as: “I know how you feel…”, “I imagine that feels. . .”, “I hear what you are saying . . .”, “I have never experienced that but I could imagine that…”, etc.).
     (9) similarity: List of transcripts of each statement that participant acknowledges some sort of similarity between themselves and their partner (e.g., saying things such as: “I also had a bad reaction to the vaccine”, “I feel the same way”, “That happened to me too”, or otherwise attempting to relate to the other by pointing out common ground such as “Oh you’re in Texas? My best friend lives in Texas.”).
     (10) vaccine_importance: At the very end of the conversation, to what extent does the participant believe that vaccines are important. 1-7 scale: 1 = not at all important, 4 = somewhat important, 7 = extremely important, -1 = unclear or not discussed at all
     (11) booster_importance: At the very end of the conversation, to what extent does the participant believe that boosters are important. same 1-7 scale as (10).
@@ -93,7 +93,7 @@ def init(prompt_type='scialog'):
     A video recording of a zoom meeting between two people having a conversation about COVID. 
     
     Output Format:
-    Return a JSON object with the annotations as value.
+    Return a JSON object with the code name as key, and a list of either the (1) rating and a one-sentence explanation for your rating or (2) transcripts (based on the codebook) and time stamp for each transcript as the value for each code in the codebook.
     """
 
     # Select prompt based on prompt_type
