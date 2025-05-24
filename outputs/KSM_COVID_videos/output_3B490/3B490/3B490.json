@@ -1,40 +1,51 @@
 {
-    "technology": 1,
-    "cur_neg_affect": 2,
-    "past_neg_affect": 3,
-    "communal_orientation": 4,
-    "engagement": 5,
-    "defensiveness": 1,
+    "technology": [
+        1,
+        "There were no technical difficulties during the conversation."
+    ],
+    "cur_neg_affect": [
+        2,
+        "The participant mentions getting COVID three times, but does not express strong negative affect about it."
+    ],
+    "past_neg_affect": [
+        3,
+        "The participant mentions having to hold off on grad school for a year, but does not express strong negative affect about it."
+    ],
+    "communal_orientation": [
+        4,
+        "The participant engages in conversation and asks questions, but does not give affirmations or seem entirely engaged."
+    ],
+    "engagement": [
+        5,
+        "The participant is engaged in the conversation and genuinely converses with their partner."
+    ],
+    "defensiveness": [
+        1,
+        "The participant is not at all defensive in justifying their beliefs/perspective."
+    ],
     "questions": [
-        {
-            "timestamp": "00:38",
-            "transcript": "Hey, welcome to the study."
-        },
-        {
-            "timestamp": "00:49",
-            "transcript": "I'm going to ask you both talk about what it was like for you during the pandemic."
-        },
-        {
-            "timestamp": "00:51",
-            "transcript": "I will also ask you to share your feelings about vaccinations for COVID-19."
-        },
-        {
-            "timestamp": "00:55",
-            "transcript": "Why don't you start?"
-        },
-        {
-            "timestamp": "03:20",
-            "transcript": "How would you say your pandemic experience was?"
-        },
-        {
-            "timestamp": "10:55",
-            "transcript": "Did you end up doing your grad school?"
-        }
+        [
+            "How would you say your pandemic experience was?",
+            "10:35:54"
+        ],
+        [
+            "Did you end up doing your grad school?",
+            "10:42:19"
+        ]
     ],
     "perspective_statements": [],
     "similarity": [],
-    "vaccine_importance": 4,
-    "booster_importance": 2,
-    "cognitive_complexity": 4,
-    "general_notes": "The male participant seems to be more skeptical about the vaccine, while the female participant seems to be more in favor of it."
+    "vaccine_importance": [
+        4,
+        "The participant believes vaccines are somewhat important, but does not express a strong opinion."
+    ],
+    "booster_importance": [
+        -1,
+        "The importance of boosters was not discussed."
+    ],
+    "cognitive_complexity": [
+        4,
+        "The participant demonstrates a moderate amount of cognitive complexity by analyzing their experience and considering different perspectives."
+    ],
+    "general_notes": "The participant seems to have a generally positive outlook on life."
 }

@@ -1,36 +1,45 @@
 {
-    "technology": 1,
-    "cur_neg_affect": 3,
-    "past_neg_affect": 4,
-    "communal_orientation": 5,
-    "engagement": 6,
-    "defensiveness": 2,
+    "technology": [
+        1,
+        "There were no technical difficulties during the conversation."
+    ],
+    "cur_neg_affect": [
+        2,
+        "The participant mentions the pandemic is technically over, but does not express any negative affect."
+    ],
+    "past_neg_affect": [
+        3,
+        "The participant recalls feeling concerned and scared for people being affected by COVID."
+    ],
+    "communal_orientation": [
+        5,
+        "The participant is engaged in the conversation and asks questions of their partner."
+    ],
+    "engagement": [
+        6,
+        "The participant is very engaged in the conversation and shares a lot of information."
+    ],
+    "defensiveness": [
+        1,
+        "The participant does not display any defensive behaviors."
+    ],
     "questions": [
-        {
-            "timestamp": "00:24:00",
-            "transcript": "What was your experience like?"
-        }
+        "What was your experience like? [00:24:31]",
+        "Do you think you would try getting your omicron booster? [00:17:37]"
     ],
     "perspective_statements": [],
-    "similarity": [
-        {
-            "timestamp": "00:26:36",
-            "transcript": "kind of similar experience"
-        }
+    "similarity": [],
+    "vaccine_importance": [
+        7,
+        "The participant believes that vaccines are important and that everyone should get vaccinated."
     ],
-    "vaccine_importance": 7,
-    "booster_importance": 7,
-    "cognitive_complexity": 5,
-    "general_notes": "Participant 33823 seems to have a more negative experience with Covid than participant 1045. Participant 33823 also seems to be more opinionated about vaccines and boosters.",
-    "codes_explanation": {
-        "technology": "There were no technical difficulties during the conversation, so I coded this as a 1.",
-        "cur_neg_affect": "The participant mentions that Covid was a shitty experience, so I coded this as a 3.",
-        "past_neg_affect": "The participant mentions missing a day of school, so I coded this as a 4.",
-        "communal_orientation": "The participant asks questions and seems to be engaged in the conversation, so I coded this as a 5.",
-        "engagement": "The participant is engaged in the conversation and seems to be genuinely interested in what the other person has to say, so I coded this as a 6.",
-        "defensiveness": "The participant does not seem to be defensive in justifying their beliefs/perspective, so I coded this as a 2.",
-        "vaccine_importance": "The participant believes that vaccines are important, so I coded this as a 7.",
-        "booster_importance": "The participant believes that boosters are important, so I coded this as a 7.",
-        "cognitive_complexity": "The participant demonstrates cognitive complexity by considering different perspectives and recognizing nuance, so I coded this as a 5."
-    }
+    "booster_importance": [
+        7,
+        "The participant believes that boosters are important and would get another booster if it was available."
+    ],
+    "cognitive_complexity": [
+        5,
+        "The participant demonstrates a moderate amount of cognitive complexity by recognizing the different perspectives on vaccination."
+    ],
+    "general_notes": "The participant is very talkative and shares a lot of information about their experiences with COVID and their opinions on vaccination."
 }
