@@ -1,44 +1,51 @@
 {
-    "technology": 1,
-    "technology_explanation": "There were no technical difficulties during the conversation.",
-    "cur_neg_affect": 2,
-    "cur_neg_affect_explanation": "The participant expresses some mild negative affect related to the pandemic, such as not liking mask mandates.",
-    "past_neg_affect": 3,
-    "past_neg_affect_explanation": "The participant expresses some negative affect when recalling the past, such as not liking mask mandates.",
-    "communal_orientation": 5,
-    "communal_orientation_explanation": "The participant engages in conversation and asks questions, but doesn't give many affirmations.",
-    "engagement": 6,
-    "engagement_explanation": "The participant is engaged in the conversation and tries to keep it going.",
-    "defensiveness": 2,
-    "defensiveness_explanation": "The participant is not very defensive in justifying their beliefs.",
+    "technology": [
+        1,
+        "There were no technical difficulties during the conversation."
+    ],
+    "cur_neg_affect": [
+        2,
+        "The participant expresses some negative affect regarding mask mandates."
+    ],
+    "past_neg_affect": [
+        3,
+        "The participant expresses some negative affect when recalling the pandemic."
+    ],
+    "communal_orientation": [
+        4,
+        "The participant engages in conversation and asks questions, but does not give affirmations."
+    ],
+    "engagement": [
+        5,
+        "The participant is engaged in the conversation and genuinely converses with their partner."
+    ],
+    "defensiveness": [
+        2,
+        "The participant is not very defensive in justifying their beliefs/perspective."
+    ],
     "questions": [
         {
-            "time_stamp": "0:25",
-            "transcript": "what do you like to start first?"
+            "transcript": "what do you like to start first?",
+            "time_stamp": "00:01:25"
         },
         {
-            "time_stamp": "15:25",
-            "transcript": "What was your experience like?"
-        },
-        {
-            "time_stamp": "15:55",
-            "transcript": "Did you do any booster shots?"
-        },
-        {
-            "time_stamp": "16:07",
-            "transcript": "Do you think in the future you would consider getting the booster shot?"
+            "transcript": "With COVID or with any other diseases?",
+            "time_stamp": "00:15:16"
         }
     ],
     "perspective_statements": [],
-    "similarity": [
-        {
-            "time_stamp": "15:50",
-            "transcript": "I also contracted COVID like last summer in June 2022. I similarly lost my taste and smell."
-        }
+    "similarity": [],
+    "vaccine_importance": [
+        4,
+        "The participant believes that vaccines are somewhat important."
     ],
-    "vaccine_importance": 3,
-    "booster_importance": 1,
-    "cognitive_complexity": 4,
-    "cognitive_complexity_explanation": "The participant demonstrates a moderate amount of cognitive complexity by considering different perspectives and recognizing some nuance.",
-    "general_notes": "The participant seems to have some distrust in the vaccine."
+    "booster_importance": [
+        2,
+        "The participant does not believe that boosters are very important."
+    ],
+    "cognitive_complexity": [
+        4,
+        "The participant demonstrates a moderate amount of cognitive complexity."
+    ],
+    "general_notes": "The participant expresses that he does not like mask mandates because he feels that it restricts his rights."
 }
