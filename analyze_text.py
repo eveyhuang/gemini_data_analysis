@@ -5,6 +5,7 @@ from google import genai
 from dotenv import load_dotenv
 import unicodedata
 import re
+from datetime import datetime
 
 def init(prompt_type='scialog'):
     load_dotenv()
@@ -123,23 +124,106 @@ def sanitize_name(name, replace_char='_'):
     sanitized = sanitized.strip(replace_char)
     return sanitized
 
+def parse_vtt_time(time_str):
+    """Convert VTT timestamp to MM:SS format."""
+    try:
+        # Parse the VTT timestamp (HH:MM:SS.mmm)
+        dt = datetime.strptime(time_str.strip(), '%H:%M:%S.%f')
+        return f"{dt.minute:02d}:{dt.second:02d}"
+    except ValueError:
+        try:
+            # Try without milliseconds
+            dt = datetime.strptime(time_str.strip(), '%H:%M:%S')
+            return f"{dt.minute:02d}:{dt.second:02d}"
+        except ValueError:
+            return "00:00"
+
+def parse_vtt_file(file_path):
+    """Parse a VTT file and return a formatted transcript."""
+    transcript = []
+    current_speaker = None
+    current_text = []
+    current_times = None
+    
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            
+        # Skip the WEBVTT header
+        start_idx = 0
+        for i, line in enumerate(lines):
+            if line.strip() == 'WEBVTT':
+                start_idx = i + 1
+                break
+        
+        for line in lines[start_idx:]:
+            line = line.strip()
+            
+            # Skip empty lines and WEBVTT metadata
+            if not line or line.startswith('NOTE') or line.startswith('STYLE'):
+                continue
+                
+            # Check for timestamp line
+            if '-->' in line:
+                if current_text and current_times:
+                    transcript.append({
+                        'speaker': current_speaker or 'Unknown',
+                        'timestamp': current_times,
+                        'transcript': ' '.join(current_text)
+                    })
+                current_text = []
+                times = line.split('-->')
+                start_time = parse_vtt_time(times[0])
+                end_time = parse_vtt_time(times[1])
+                current_times = f"{start_time}-{end_time}"
+                continue
+            
+            # Check for speaker line (usually in format "Speaker: ")
+            if ':' in line and not line[0].isdigit():
+                if current_text and current_times:
+                    transcript.append({
+                        'speaker': current_speaker or 'Unknown',
+                        'timestamp': current_times,
+                        'transcript': ' '.join(current_text)
+                    })
+                current_speaker = line.split(':')[0].strip()
+                current_text = []
+                continue
+            
+            # Add text to current segment
+            if line and not line.startswith('WEBVTT'):
+                current_text.append(line)
+        
+        # Add the last segment
+        if current_text and current_times:
+            transcript.append({
+                'speaker': current_speaker or 'Unknown',
+                'timestamp': current_times,
+                'transcript': ' '.join(current_text)
+            })
+            
+        return transcript
+    except Exception as e:
+        print(f"Error parsing VTT file {file_path}: {e}")
+        return []
+
 def get_text_files(directory):
-    """Get all text files in the given directory and its subdirectories."""
-    text_files = []
+    """Get all VTT files in the given directory and its subdirectories."""
+    vtt_files = []
     
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith('.txt'):
+            if file.endswith('.vtt'):
                 full_path = os.path.join(root, file)
                 relative_path = os.path.relpath(full_path, directory)
-                text_files.append((full_path, relative_path))
+                vtt_files.append((full_path, relative_path))
     
-    return text_files
+    return vtt_files
 
 def create_or_update_path_dict(directory, cur_dir):
     """Create or update the path dictionary with text file paths."""
     folder_name = os.path.basename(directory)
-    path_dict_file = os.path.join(cur_dir, f"Text_{folder_name}_path_dict.json")
+    path_dict_file = os.path.join(cur_dir, f"TEXT_{folder_name}_path_dict.json")
 
     # Check if path_dict.json exists
     if os.path.exists(path_dict_file):
@@ -177,13 +261,20 @@ def save_path_dict(path_dict, file_name, destdir):
         json.dump(path_dict, json_file, indent=4)
 
 def gemini_analyze_text(client, prompt, text_content, filename, max_tries=3, delay=1):
-    """Analyze text content using the Gemini API."""
+    """Analyze VTT content using the Gemini API."""
     print(f"Making LLM inference request for {filename}...")
+    
+    # Convert the transcript list to a formatted string
+    formatted_transcript = "\n".join([
+        f"{entry['speaker']} ({entry['timestamp']}): {entry['transcript']}"
+        for entry in text_content
+    ])
+    
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
                 model='gemini-2.0-flash',
-                contents=[prompt, text_content],
+                contents=[prompt, formatted_transcript],
                 config={
                     'temperature': 0,
                     'max_output_tokens': 8192,
@@ -240,7 +331,7 @@ def save_to_json(text, file_name, output_dir):
         raise ValueError(f"No text to save for {file_name}")
 
 def analyze_text(client, path_dict, prompt, dir):
-    """Analyze all text files in the path dictionary."""
+    """Analyze all VTT files in the path dictionary."""
     cur_dir = os.getcwd()
     n_path_dict = path_dict.copy()
     folder_name = os.path.basename(dir)
@@ -263,10 +354,14 @@ def analyze_text(client, path_dict, prompt, dir):
             if not analyzed:
                 print(f"Analyzing {file_name}")
                 try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        text_content = f.read()
+                    # Parse VTT file instead of reading raw text
+                    transcript = parse_vtt_file(file_path)
+                    if not transcript:
+                        print(f"Failed to parse VTT file: {file_name}")
+                        list_files[m][3] = False
+                        continue
                     
-                    response = gemini_analyze_text(client, prompt, text_content, file_name)
+                    response = gemini_analyze_text(client, prompt, transcript, file_name)
                     if response and response.text:
                         print(f"Trying to save output for {file_name} to json file")
                         try:
@@ -281,7 +376,7 @@ def analyze_text(client, path_dict, prompt, dir):
                     print(f"Error processing file {file_name}: {e}")
                     list_files[m][3] = False
                 
-                save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+                save_path_dict(n_path_dict, f"TEXT_{folder_name}_path_dict.json", cur_dir)
             else:
                 print(f"{file_name} already analyzed, moving on..")
                 continue
@@ -296,15 +391,15 @@ def main(text_dir, prompt_type='scialog'):
     cur_dir = os.getcwd()
     
     path_dict = create_or_update_path_dict(text_dir, cur_dir)
-    save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    save_path_dict(path_dict, f"TEXT_{folder_name}_path_dict.json", cur_dir)
 
     new_path_dict = analyze_text(client, path_dict, prompt, text_dir)
-    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    save_path_dict(new_path_dict, f"TEXT_{folder_name}_path_dict.json", cur_dir)
 
     return path_dict
 
 if __name__ == '__main__':
-    dir = input("Please provide the FULL PATH to the directory where text files are stored (do NOT wrap it in quotes): ")
+    dir = input("Please provide the FULL PATH to the directory where VTT files are stored (do NOT wrap it in quotes): ")
     prompt_type = input("Choose prompt type (scialog/covid): ").lower()
     if prompt_type not in ['scialog', 'covid']:
         print("Invalid prompt type. Defaulting to 'scialog'")
