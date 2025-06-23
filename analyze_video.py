@@ -34,7 +34,7 @@ def init(prompt_type='scialog'):
     screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
     
     Notes:
-    If uncertain about a label due to poor visibility, return [low confidence] next to the annotation.
+    If uncertain about a label due to poor visibility, add [low confidence] next to the annotation.
     Ensure timestamps, speaker IDs, and behavior annotations are consistent throughout the video.
     For transcripts, remove filler words unless meaningful and return one long string without line breaks or paragraph breaks.s
 
@@ -482,7 +482,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-pro',  # Using the generally available model
+                model='gemini-2.5-pro', 
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
@@ -821,7 +821,7 @@ def annotate_and_merge(client, path_dict, directory, codebook):
             print(f"{output_subfolder} does not exist, skipping...")
 
 
-def main(vid_dir, process_video, prompt_type='scialog'):
+def main(vid_dir, process_video, annotate_video, prompt_type='scialog'):
     folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init(prompt_type)
     cur_dir = os.getcwd()
@@ -829,9 +829,9 @@ def main(vid_dir, process_video, prompt_type='scialog'):
         process_videos_in_directory(vid_dir)
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
     save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
-
-    new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    if annotate_video == 'yes':
+        path_dict = analyze_video(client, path_dict, prompt, vid_dir)
+        save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
     return path_dict
 
@@ -839,8 +839,9 @@ def main(vid_dir, process_video, prompt_type='scialog'):
 if __name__ == '__main__':
     dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
     process_video = input("Process video? yes/no ")
-    prompt_type = input("Choose prompt type (scialog/covid): ").lower()
-    if prompt_type not in ['scialog', 'covid']:
-        print("Invalid prompt type. Defaulting to 'scialog'")
-        prompt_type = 'scialog'
-    main(dir, process_video, prompt_type)
+    # prompt_type = input("Choose prompt type (scialog/covid): ").lower()
+    # if prompt_type not in ['scialog', 'covid']:
+    #     print("Invalid prompt type. Defaulting to 'scialog'")
+    #     prompt_type = 'scialog'
+    annotate_video = input("Annotate videos? yes/no")
+    main(dir, process_video, annotate_video, prompt_type='scialog')
