@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from google.genai.errors import ServerError
 import subprocess
 import unicodedata
+import argparse
 
 
 def init(prompt_type='scialog'):
@@ -837,11 +838,16 @@ def main(vid_dir, process_video, annotate_video, prompt_type='scialog'):
 
 
 if __name__ == '__main__':
-    dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
-    process_video = input("Process video? yes/no ")
-    # prompt_type = input("Choose prompt type (scialog/covid): ").lower()
-    # if prompt_type not in ['scialog', 'covid']:
-    #     print("Invalid prompt type. Defaulting to 'scialog'")
-    #     prompt_type = 'scialog'
-    annotate_video = input("Annotate videos? yes/no")
-    main(dir, process_video, annotate_video, prompt_type='scialog')
+    parser = argparse.ArgumentParser(description='Analyze videos using Gemini AI')
+    parser.add_argument('--dir', required=True, 
+                       help='Full path to the directory where videos are stored')
+    parser.add_argument('--process-video', choices=['yes', 'no'], required=True,
+                       help='Whether to process video (yes/no)')
+    parser.add_argument('--annotate-video', choices=['yes', 'no'], required=True,
+                       help='Whether to annotate videos (yes/no)')
+    parser.add_argument('--prompt-type', choices=['scialog', 'covid'], default='scialog',
+                       help='Prompt type to use (default: scialog)')
+    
+    args = parser.parse_args()
+    
+    main(args.dir, args.process_video, args.annotate_video, args.prompt_type)
