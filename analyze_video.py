@@ -371,31 +371,31 @@ def process_videos_in_directory(directory):
         video_full_path = video_file[0]
         file_name, file_extension = os.path.splitext(video_file[3])
         split_dir = os.path.join(directory, f"split-{file_name}")
-        
-        # Check if the file is MKV and needs conversion
-        if file_extension.lower() == '.mkv':
-            mp4_path = video_full_path.replace('.mkv', '.mp4')
-            if not os.path.exists(mp4_path):
-                print(f"Converting MKV to MP4: {video_full_path}")
-                video_full_path = convert_mkv_to_mp4(video_full_path)
-            else:
-                video_full_path = mp4_path
-        
-        if not os.path.exists(split_dir):
-            try:
-                probe = ffmpeg.probe(video_full_path)
-                duration = float(probe['format']['duration'])
-                if duration > 10 * 60:
-                    print(f"Splitting video: {video_file}")
-                    split_videos_dict[video_file] = split_video(video_full_path, duration)
+        if video_full_path:
+            # Check if the file is MKV and needs conversion
+            if file_extension.lower() == '.mkv':
+                mp4_path = video_full_path.replace('.mkv', '.mp4')
+                if not os.path.exists(mp4_path):
+                    print(f"Converting MKV to MP4: {video_full_path}")
+                    video_full_path = convert_mkv_to_mp4(video_full_path)
                 else:
-                    print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
-                    split_videos_dict[video_file] = [video_full_path]
-            except Exception as e:
-                print(f"Having issues with video: {video_full_path}")
-                print(f"Here is the exception: {e}")
-        else:
-            print(f"Found a folder with splitted videos for {video_file} already.")
+                    video_full_path = mp4_path
+            
+            if not os.path.exists(split_dir):
+                try:
+                    probe = ffmpeg.probe(video_full_path)
+                    duration = float(probe['format']['duration'])
+                    if duration > 10 * 60:
+                        print(f"Splitting video: {video_file}")
+                        split_videos_dict[video_file] = split_video(video_full_path, duration)
+                    else:
+                        print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
+                        split_videos_dict[video_file] = [video_full_path]
+                except Exception as e:
+                    print(f"Having issues with video: {video_full_path}")
+                    print(f"Here is the exception: {e}")
+            else:
+                print(f"Found a folder with splitted videos for {video_file} already.")
     
     return split_videos_dict
 
