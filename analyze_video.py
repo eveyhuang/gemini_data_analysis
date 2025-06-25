@@ -263,73 +263,78 @@ def create_or_update_path_dict(directory, cur_dir):
         file_name, file_extension = os.path.splitext(full_filename)
         
         # Skip MKV files if MP4 version exists
-        if file_extension.lower() == '.mkv':
-            mp4_path = video_path.replace('.mkv', '.mp4')
-            if os.path.exists(mp4_path):
-                continue
-                
-        path_key_name = video_file_name
-        
-        # Get the split directory for this video file
-        split_dir = os.path.join(folder_path, f"split-{file_name}")
-        new_chunk_paths = []
-        
-        # if the split directory exists, get the list of chunk files and sort them by chunk number
-        if os.path.exists(split_dir):
-            # Get list of chunk files in the split directory
-            chunk_files = get_videos(split_dir)
-            # Filter out MKV files if MP4 version exists
-            chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
-            
-            # Remove duplicates while preserving order
-            chunk_files = list(dict.fromkeys(chunk_files))
-            
-            # Sort chunk files by chunk number
-            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
-            
-            # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
-            # Use a set to track paths we've already added
-            added_paths = set()
-            for chunk_file in chunk_files:
-                chunk_path = os.path.join(split_dir, chunk_file)
-                if chunk_path not in added_paths:
-                    new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
-                    added_paths.add(chunk_path)
-        else:
-            # if the split directory does not exist, means that the video has not been split (length is short)
-            # Convert MKV to MP4 if needed
-            if video_path.endswith('.mkv'):
+        try:
+            if file_extension.lower() == '.mkv':
                 mp4_path = video_path.replace('.mkv', '.mp4')
-                if not os.path.exists(mp4_path):
-                    print(f"Converting {video_path} to mp4")
-                    video_path = convert_mkv_to_mp4(video_path)
-                else:
-                    print(f"Found {video_path} already converted to mp4")
-                    video_path = mp4_path
-                    
-            new_chunk_paths = [[full_filename, video_path, ' ', False]]
-
-        # Update path_dict, preserving analysis status if it exists
-        if path_key_name in path_dict:
-            old_chunk_paths = path_dict[path_key_name]
-            # Create a map of existing analysis status using the full path as key
-            status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
+                if os.path.exists(mp4_path):
+                    continue
+                        
+            path_key_name = video_file_name
             
-            # Update new paths with existing status if available
-            for chunk_path in new_chunk_paths:
-                if chunk_path[1] in status_map:
-                    chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
-                    
-        # Remove any duplicates in new_chunk_paths while preserving order
-        seen_paths = set()
-        unique_chunk_paths = []
-        for chunk_path in new_chunk_paths:
-            if chunk_path[1] not in seen_paths:
-                unique_chunk_paths.append(chunk_path)
-                seen_paths.add(chunk_path[1])
+            # Get the split directory for this video file
+            split_dir = os.path.join(folder_path, f"split-{file_name}")
+            new_chunk_paths = []
+            
+            # if the split directory exists, get the list of chunk files and sort them by chunk number
+            if os.path.exists(split_dir):
+                # Get list of chunk files in the split directory
+                chunk_files = get_videos(split_dir)
+                # Filter out MKV files if MP4 version exists
+                chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
                 
-        path_dict[path_key_name] = unique_chunk_paths
-        processed_files.add(video_path)
+                # Remove duplicates while preserving order
+                chunk_files = list(dict.fromkeys(chunk_files))
+                
+                # Sort chunk files by chunk number
+                chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
+                
+                # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
+                # Use a set to track paths we've already added
+                added_paths = set()
+                for chunk_file in chunk_files:
+                    chunk_path = os.path.join(split_dir, chunk_file)
+                    if chunk_path not in added_paths:
+                        new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
+                        added_paths.add(chunk_path)
+            else:
+                # if the split directory does not exist, means that the video has not been split (length is short)
+                # Convert MKV to MP4 if needed
+                if video_path.endswith('.mkv'):
+                    mp4_path = video_path.replace('.mkv', '.mp4')
+                    if not os.path.exists(mp4_path):
+                        print(f"Converting {video_path} to mp4")
+                        video_path = convert_mkv_to_mp4(video_path)
+                    else:
+                        print(f"Found {video_path} already converted to mp4")
+                        video_path = mp4_path
+                        
+                new_chunk_paths = [[full_filename, video_path, ' ', False]]
+
+            # Update path_dict, preserving analysis status if it exists
+            if path_key_name in path_dict:
+                old_chunk_paths = path_dict[path_key_name]
+                # Create a map of existing analysis status using the full path as key
+                status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
+                
+                # Update new paths with existing status if available
+                for chunk_path in new_chunk_paths:
+                    if chunk_path[1] in status_map:
+                        chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
+                        
+            # Remove any duplicates in new_chunk_paths while preserving order
+            seen_paths = set()
+            unique_chunk_paths = []
+            for chunk_path in new_chunk_paths:
+                if chunk_path[1] not in seen_paths:
+                    unique_chunk_paths.append(chunk_path)
+                    seen_paths.add(chunk_path[1])
+                    
+            path_dict[path_key_name] = unique_chunk_paths
+            processed_files.add(video_path)
+
+        except Exception as e:
+            print(f"Error processing video file {video_file_name}: {e}")
+            continue
         
     return path_dict
 
