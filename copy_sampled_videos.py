@@ -155,7 +155,7 @@ def find_video_file(source_dir, folder_name, subfolder_name, file_name, chunk_fi
         return None
     
     # Look for the split folder
-    split_folder_name = f"split-{file_name}"
+    split_folder_name = f"split_{file_name}"
     split_folder_path = os.path.join(folder_path, split_folder_name)
     
     if verbose:
