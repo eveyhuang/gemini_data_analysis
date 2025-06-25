@@ -129,7 +129,7 @@ def split_video(video_full_path, duration, chunk_length=10*60):
     directory = os.path.dirname(video_full_path)
     
     # Create a directory to store the split videos
-    split_dir = os.path.join(directory, f"split-{file_name}")
+    split_dir = os.path.join(directory, f"split_{file_name}")
     os.makedirs(split_dir, exist_ok=True)
     
     # Split the video into chunks
