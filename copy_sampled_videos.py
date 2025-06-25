@@ -17,6 +17,7 @@ import argparse
 from pathlib import Path
 import unicodedata
 import re
+import ffmpeg
 
 
 def sanitize_name(name, replace_char='_'):
@@ -86,6 +87,62 @@ def extract_folder_info(key):
     
     return folder_name, subfolder_name
 
+# convert mkv to mp4 using ffmpeg
+def convert_mkv_to_mp4(input_path):
+    """
+    Converts an MKV video file to MP4 using ffmpeg.
+    Re-encodes audio to AAC to ensure compatibility.
+    """
+    import subprocess
+    import os
+
+    if not input_path.lower().endswith(".mkv"):
+        raise ValueError("Input file must be an MKV file.")
+    
+    output_path = os.path.splitext(input_path)[0] + ".mp4"
+
+    command = [
+        "ffmpeg",
+        "-i", input_path,
+        "-c:v", "copy",        # Copy video stream
+        "-c:a", "aac",         # Re-encode audio to AAC
+        "-b:a", "192k",        # Set audio bitrate (optional)
+        output_path
+    ]
+
+    try:
+        subprocess.run(command, check=True)
+        print(f"Conversion successful: {output_path}")
+        return output_path
+    except subprocess.CalledProcessError as e:
+        print(f"Conversion failed: {e}")
+        return None
+
+# Split a video into chunks of specified length
+def split_video(video_full_path, duration, chunk_length=10*60):
+    
+    # Calculate the number of chunks
+    num_chunks = int(duration // chunk_length) + 1
+    
+    # Get the file name and directory
+    file_name, _ = os.path.splitext(os.path.basename(video_full_path))
+    directory = os.path.dirname(video_full_path)
+    
+    # Create a directory to store the split videos
+    split_dir = os.path.join(directory, f"split-{file_name}")
+    os.makedirs(split_dir, exist_ok=True)
+    
+    # Split the video into chunks
+    chunk_paths = []
+    for i in range(num_chunks):
+        start_time = i * chunk_length
+        output_file_name = os.path.join(split_dir, f"{file_name}_chunk{i+1}.mp4")
+        # Add -n flag to skip existing files
+        ffmpeg.input(video_full_path, ss=start_time, t=chunk_length).output(output_file_name, n=None).run()
+        chunk_paths.append(output_file_name)
+        print(f"Created chunk: {output_file_name}")
+    
+    return chunk_paths
 
 def extract_file_info(value):
     """
@@ -140,11 +197,13 @@ def find_video_file(source_dir, folder_name, subfolder_name, file_name, chunk_fi
     # Look for the video file (with various extensions)
     video_extensions = ['.mp4', '.mkv', '.avi', '.mov', '.wmv']
     video_file_path = None
+    video_extension = None
     
     for ext in video_extensions:
         potential_video_path = os.path.join(folder_path, file_name + ext)
         if os.path.exists(potential_video_path):
             video_file_path = potential_video_path
+            video_extension = ext
             if verbose:
                 print(f"      Found video file: {potential_video_path}")
             break
@@ -164,10 +223,46 @@ def find_video_file(source_dir, folder_name, subfolder_name, file_name, chunk_fi
     if not os.path.exists(split_folder_path):
         if verbose:
             print(f"      Split folder does not exist: {split_folder_path}")
-        return None
+            print(f"      Will create split folder and process video")
+        
+        # Check if the video file is MKV and needs conversion
+        if video_extension.lower() == '.mkv':
+            if verbose:
+                print(f"      Converting MKV to MP4: {video_file_path}")
+            try:
+                converted_path = convert_mkv_to_mp4(video_file_path)
+                if converted_path and os.path.exists(converted_path):
+                    video_file_path = converted_path
+                    if verbose:
+                        print(f"      Successfully converted to: {converted_path}")
+                else:
+                    if verbose:
+                        print(f"      Failed to convert MKV file")
+                    return None
+            except Exception as e:
+                if verbose:
+                    print(f"      Error converting MKV: {e}")
+                return None
+        
+        # Split the video into chunks
+        if verbose:
+            print(f"      Splitting video: {video_file_path}")
+        try:
+            # Get video duration using ffmpeg
+            probe = ffmpeg.probe(video_file_path)
+            duration = float(probe['streams'][0]['duration'])
+            
+            # Split the video
+            chunk_paths = split_video(video_file_path, duration)
+            if verbose:
+                print(f"      Successfully created {len(chunk_paths)} chunks")
+        except Exception as e:
+            if verbose:
+                print(f"      Error splitting video: {e}")
+            return None
     
     # Look for the chunk file in the split folder
-    chunk_file_path = os.path.join(split_folder_path, chunk_file_name +'.mp4')
+    chunk_file_path = os.path.join(split_folder_path, chunk_file_name + '.mp4')
     
     if verbose:
         print(f"      Looking for chunk file: {chunk_file_path}")
