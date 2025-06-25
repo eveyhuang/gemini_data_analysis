@@ -74,8 +74,15 @@ def extract_folder_info(key):
     if len(parts) != 2:
         return None, None
     
-    folder_name = sanitize_name(parts[0])  # e.g., "2021MND"
-    subfolder_name = sanitize_name(parts[1])  # e.g., "output_2021_04_22_MND_S6"
+    folder_name = sanitize_name(parts[0])
+      # e.g., "2021MND"
+    
+    # Extract subfolder name as what follows after "output_"
+    if parts[1].startswith('output_'):
+        subfolder_name = parts[1][7:]  # Remove "output_" prefix (7 characters)
+    else:
+        # If it doesn't start with "output_", use the whole part
+        subfolder_name = parts[1]
     
     return folder_name, subfolder_name
 
@@ -95,7 +102,11 @@ def extract_file_info(value):
         return None, None
     
     file_name = sanitize_name(parts[0])  # e.g., "Breakout_Room_4_Part_2_2021_04_22_13_14_53"
+    
+    # Remove .json extension from chunk file name
     chunk_file_name = sanitize_name(parts[1])  # e.g., "Breakout_Room_4_Part_2_2021_04_22_13_14_53_chunk6.json"
+    if chunk_file_name.endswith('.json'):
+        chunk_file_name = chunk_file_name[:-5]  # Remove ".json" (5 characters)
     
     return file_name, chunk_file_name
 
