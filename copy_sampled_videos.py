@@ -336,7 +336,14 @@ def copy_video_files(source_dir, dest_dir, json_path, dry_run=False, verbose=Fal
                 
                 if video_file_path:
                     # Copy the file
-                    dest_file_path = os.path.join(dest_dir, chunk_file_name)
+                    dest_file_path = os.path.join(dest_dir, chunk_file_name + '.mp4')
+                    
+                    # Check if file already exists in destination
+                    if os.path.exists(dest_file_path):
+                        if verbose:
+                            print(f"    Skipping: {chunk_file_name}.mp4 (already exists)")
+                        copied_count += 1
+                        continue
                     
                     if dry_run:
                         print(f"    Would copy: {video_file_path} -> {dest_file_path}")
@@ -344,10 +351,10 @@ def copy_video_files(source_dir, dest_dir, json_path, dry_run=False, verbose=Fal
                     else:
                         try:
                             shutil.copy2(video_file_path, dest_file_path)
-                            print(f"    Copied: {chunk_file_name}")
+                            print(f"    Copied: {chunk_file_name}.mp4")
                             copied_count += 1
                         except Exception as e:
-                            print(f"    Error copying {chunk_file_name}: {e}")
+                            print(f"    Error copying {chunk_file_name}.mp4: {e}")
                             missing_files.append(f"{key}/{value_key}")
                 else:
                     print(f"    Not found: {chunk_file_name}")
