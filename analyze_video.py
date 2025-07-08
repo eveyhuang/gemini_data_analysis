@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from google.genai.errors import ServerError
 import subprocess
 import unicodedata
+import argparse
 
 
 def init(prompt_type='scialog'):
@@ -34,7 +35,7 @@ def init(prompt_type='scialog'):
     screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
     
     Notes:
-    If uncertain about a label due to poor visibility, return [low confidence] next to the annotation.
+    If uncertain about a label due to poor visibility, add [low confidence] next to the annotation.
     Ensure timestamps, speaker IDs, and behavior annotations are consistent throughout the video.
     For transcripts, remove filler words unless meaningful and return one long string without line breaks or paragraph breaks.s
 
@@ -262,73 +263,78 @@ def create_or_update_path_dict(directory, cur_dir):
         file_name, file_extension = os.path.splitext(full_filename)
         
         # Skip MKV files if MP4 version exists
-        if file_extension.lower() == '.mkv':
-            mp4_path = video_path.replace('.mkv', '.mp4')
-            if os.path.exists(mp4_path):
-                continue
-                
-        path_key_name = video_file_name
-        
-        # Get the split directory for this video file
-        split_dir = os.path.join(folder_path, f"split-{file_name}")
-        new_chunk_paths = []
-        
-        # if the split directory exists, get the list of chunk files and sort them by chunk number
-        if os.path.exists(split_dir):
-            # Get list of chunk files in the split directory
-            chunk_files = get_videos(split_dir)
-            # Filter out MKV files if MP4 version exists
-            chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
-            
-            # Remove duplicates while preserving order
-            chunk_files = list(dict.fromkeys(chunk_files))
-            
-            # Sort chunk files by chunk number
-            chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
-            
-            # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
-            # Use a set to track paths we've already added
-            added_paths = set()
-            for chunk_file in chunk_files:
-                chunk_path = os.path.join(split_dir, chunk_file)
-                if chunk_path not in added_paths:
-                    new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
-                    added_paths.add(chunk_path)
-        else:
-            # if the split directory does not exist, means that the video has not been split (length is short)
-            # Convert MKV to MP4 if needed
-            if video_path.endswith('.mkv'):
+        try:
+            if file_extension.lower() == '.mkv':
                 mp4_path = video_path.replace('.mkv', '.mp4')
-                if not os.path.exists(mp4_path):
-                    print(f"Converting {video_path} to mp4")
-                    video_path = convert_mkv_to_mp4(video_path)
-                else:
-                    print(f"Found {video_path} already converted to mp4")
-                    video_path = mp4_path
-                    
-            new_chunk_paths = [[full_filename, video_path, ' ', False]]
-
-        # Update path_dict, preserving analysis status if it exists
-        if path_key_name in path_dict:
-            old_chunk_paths = path_dict[path_key_name]
-            # Create a map of existing analysis status using the full path as key
-            status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
+                if os.path.exists(mp4_path):
+                    continue
+                        
+            path_key_name = video_file_name
             
-            # Update new paths with existing status if available
-            for chunk_path in new_chunk_paths:
-                if chunk_path[1] in status_map:
-                    chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
-                    
-        # Remove any duplicates in new_chunk_paths while preserving order
-        seen_paths = set()
-        unique_chunk_paths = []
-        for chunk_path in new_chunk_paths:
-            if chunk_path[1] not in seen_paths:
-                unique_chunk_paths.append(chunk_path)
-                seen_paths.add(chunk_path[1])
+            # Get the split directory for this video file
+            split_dir = os.path.join(folder_path, f"split-{file_name}")
+            new_chunk_paths = []
+            
+            # if the split directory exists, get the list of chunk files and sort them by chunk number
+            if os.path.exists(split_dir):
+                # Get list of chunk files in the split directory
+                chunk_files = get_videos(split_dir)
+                # Filter out MKV files if MP4 version exists
+                chunk_files = [f for f in chunk_files if not (f.endswith('.mkv') and os.path.exists(f.replace('.mkv', '.mp4')))]
                 
-        path_dict[path_key_name] = unique_chunk_paths
-        processed_files.add(video_path)
+                # Remove duplicates while preserving order
+                chunk_files = list(dict.fromkeys(chunk_files))
+                
+                # Sort chunk files by chunk number
+                chunk_files.sort(key=lambda x: int(x.split('chunk')[1].split('.')[0]))
+                
+                # Create list of [chunk file name, full path to this video, gemini upload file name, analysis status] for each chunk file
+                # Use a set to track paths we've already added
+                added_paths = set()
+                for chunk_file in chunk_files:
+                    chunk_path = os.path.join(split_dir, chunk_file)
+                    if chunk_path not in added_paths:
+                        new_chunk_paths.append([chunk_file, chunk_path, ' ', False])
+                        added_paths.add(chunk_path)
+            else:
+                # if the split directory does not exist, means that the video has not been split (length is short)
+                # Convert MKV to MP4 if needed
+                if video_path.endswith('.mkv'):
+                    mp4_path = video_path.replace('.mkv', '.mp4')
+                    if not os.path.exists(mp4_path):
+                        print(f"Converting {video_path} to mp4")
+                        video_path = convert_mkv_to_mp4(video_path)
+                    else:
+                        print(f"Found {video_path} already converted to mp4")
+                        video_path = mp4_path
+                        
+                new_chunk_paths = [[full_filename, video_path, ' ', False]]
+
+            # Update path_dict, preserving analysis status if it exists
+            if path_key_name in path_dict:
+                old_chunk_paths = path_dict[path_key_name]
+                # Create a map of existing analysis status using the full path as key
+                status_map = {path[1]: (path[2], path[3]) for path in old_chunk_paths}
+                
+                # Update new paths with existing status if available
+                for chunk_path in new_chunk_paths:
+                    if chunk_path[1] in status_map:
+                        chunk_path[2], chunk_path[3] = status_map[chunk_path[1]]
+                        
+            # Remove any duplicates in new_chunk_paths while preserving order
+            seen_paths = set()
+            unique_chunk_paths = []
+            for chunk_path in new_chunk_paths:
+                if chunk_path[1] not in seen_paths:
+                    unique_chunk_paths.append(chunk_path)
+                    seen_paths.add(chunk_path[1])
+                    
+            path_dict[path_key_name] = unique_chunk_paths
+            processed_files.add(video_path)
+
+        except Exception as e:
+            print(f"Error processing video file {video_file_name}: {e}")
+            continue
         
     return path_dict
 
@@ -370,31 +376,31 @@ def process_videos_in_directory(directory):
         video_full_path = video_file[0]
         file_name, file_extension = os.path.splitext(video_file[3])
         split_dir = os.path.join(directory, f"split-{file_name}")
-        
-        # Check if the file is MKV and needs conversion
-        if file_extension.lower() == '.mkv':
-            mp4_path = video_full_path.replace('.mkv', '.mp4')
-            if not os.path.exists(mp4_path):
-                print(f"Converting MKV to MP4: {video_full_path}")
-                video_full_path = convert_mkv_to_mp4(video_full_path)
-            else:
-                video_full_path = mp4_path
-        
-        if not os.path.exists(split_dir):
-            try:
-                probe = ffmpeg.probe(video_full_path)
-                duration = float(probe['format']['duration'])
-                if duration > 10 * 60:
-                    print(f"Splitting video: {video_file}")
-                    split_videos_dict[video_file] = split_video(video_full_path, duration)
+        if video_full_path:
+            # Check if the file is MKV and needs conversion
+            if file_extension.lower() == '.mkv':
+                mp4_path = video_full_path.replace('.mkv', '.mp4')
+                if not os.path.exists(mp4_path):
+                    print(f"Converting MKV to MP4: {video_full_path}")
+                    video_full_path = convert_mkv_to_mp4(video_full_path)
                 else:
-                    print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
-                    split_videos_dict[video_file] = [video_full_path]
-            except Exception as e:
-                print(f"Having issues with video: {video_full_path}")
-                print(f"Here is the exception: {e}")
-        else:
-            print(f"Found a folder with splitted videos for {video_file} already.")
+                    video_full_path = mp4_path
+            
+            if not os.path.exists(split_dir):
+                try:
+                    probe = ffmpeg.probe(video_full_path)
+                    duration = float(probe['format']['duration'])
+                    if duration > 10 * 60:
+                        print(f"Splitting video: {video_file}")
+                        split_videos_dict[video_file] = split_video(video_full_path, duration)
+                    else:
+                        print(f"Video {video_file} is shorter than 10 minutes, no need to split.")
+                        split_videos_dict[video_file] = [video_full_path]
+                except Exception as e:
+                    print(f"Having issues with video: {video_full_path}")
+                    print(f"Here is the exception: {e}")
+            else:
+                print(f"Found a folder with splitted videos for {video_file} already.")
     
     return split_videos_dict
 
@@ -482,7 +488,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.0-flash',  # Using the generally available model
+                model='gemini-2.5-pro', 
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
@@ -821,7 +827,7 @@ def annotate_and_merge(client, path_dict, directory, codebook):
             print(f"{output_subfolder} does not exist, skipping...")
 
 
-def main(vid_dir, process_video, prompt_type='scialog'):
+def main(vid_dir, process_video, annotate_video, prompt_type='scialog'):
     folder_name = os.path.basename(vid_dir)
     client, prompt, codebook = init(prompt_type)
     cur_dir = os.getcwd()
@@ -829,18 +835,24 @@ def main(vid_dir, process_video, prompt_type='scialog'):
         process_videos_in_directory(vid_dir)
     path_dict = create_or_update_path_dict(vid_dir, cur_dir)
     save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
-
-    new_path_dict = analyze_video(client, path_dict, prompt, vid_dir)
-    save_path_dict(new_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+    if annotate_video == 'yes':
+        path_dict = analyze_video(client, path_dict, prompt, vid_dir)
+        save_path_dict(path_dict, f"{folder_name}_path_dict.json", cur_dir)
 
     return path_dict
 
 
 if __name__ == '__main__':
-    dir = input("Please provide the FULL PATH to the directory where videos are stored (do NOT wrap it in quotes): ")
-    process_video = input("Process video? yes/no ")
-    prompt_type = input("Choose prompt type (scialog/covid): ").lower()
-    if prompt_type not in ['scialog', 'covid']:
-        print("Invalid prompt type. Defaulting to 'scialog'")
-        prompt_type = 'scialog'
-    main(dir, process_video, prompt_type)
+    parser = argparse.ArgumentParser(description='Analyze videos using Gemini AI')
+    parser.add_argument('--dir', required=True, 
+                       help='Full path to the directory where videos are stored')
+    parser.add_argument('--process-video', choices=['yes', 'no'], required=True,
+                       help='Whether to process video (yes/no)')
+    parser.add_argument('--annotate-video', choices=['yes', 'no'], required=True,
+                       help='Whether to annotate videos (yes/no)')
+    parser.add_argument('--prompt-type', choices=['scialog', 'covid'], default='scialog',
+                       help='Prompt type to use (default: scialog)')
+    
+    args = parser.parse_args()
+    
+    main(args.dir, args.process_video, args.annotate_video, args.prompt_type)
