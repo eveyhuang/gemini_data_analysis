@@ -259,7 +259,7 @@ def find_video_file(source_dir, folder_name, subfolder_name, file_name, chunk_fi
         except Exception as e:
             if verbose:
                 print(f"      Error splitting video: {e}")
-            return None
+        return None
     
     # Look for the chunk file in the split folder
     chunk_file_path = os.path.join(split_folder_path, chunk_file_name + '.mp4')
