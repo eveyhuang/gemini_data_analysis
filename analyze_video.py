@@ -22,22 +22,18 @@ def init(prompt_type='scialog'):
     Each time someone speaks in this video, provide the following structured annotation:
     speaker: Full names of speaker.
     timestamp: startiing and ending time of this person's speech in MM:SS-MM:SS format, before the speaker changes
-    transcript: Verbatim speech transcript. Remove filler words unless meaningful.
+    transcript: Verbatim speech transcript. Remove filler words unless meaningful and one return one long string without line breaks or paragraph breaks.
     speaking duration: the total number of seconds the speaker talks in this segment
-    nods_others: Count of head nods from other participants during this speaker's turn.
-    smile_self: Percentage of time this speaker was smiling during their turn.
-    smile_other: Percentage of time at least one other person was smiling.
-    distracted_others: Number of people looking away or using their phone during this speaker's turn.
-    hand_gesture: what type of hand gesture did the speaker use? (Raising Hand, Pointing, Open Palms, Thumbs up, Crossed Arms, None)
+    self_expression: describe the speaker's expressions during the speach with a few words (e.g., "confident", "hesitant", "enthusiastic", "neutral", "frustrated", "excited", "curious", "thoughtful").
+    others_expression: describe the expressions of other participants during this segment with a few words (e.g., "nodding", "smiling", "confused", "distracted", "engaged", "neutral").
     interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
-    overlap: Was this turn overlapped? (Yes/No) – if another person spoke at the same time
     screenshare: Did anyone share their screen during this segment? (Yes/No)
     screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
+    other: If there are any other relevant or surprising observations about the interaction in this segment, please include them here using a short sentence. Otherwise, write "None".
     
     Notes:
-    If uncertain about a label due to poor visibility, add [low confidence] next to the annotation.
+    For each label, if you feel uncertain due to poor visibility, add [low confidence] next to the annotation.
     Ensure timestamps, speaker IDs, and behavior annotations are consistent throughout the video.
-    For transcripts, remove filler words unless meaningful and return one long string without line breaks or paragraph breaks.s
 
     Input:
     A video recording of a zoom meeting among a team of scientists from diverse backgrounds engaged in a collaborative task.
