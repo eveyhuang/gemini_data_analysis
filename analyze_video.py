@@ -461,8 +461,9 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     
     # If we couldn't get the file, upload it
     print(f"Uploading {file_name} to Gemini")
+    safe_file_path = sanitize_filename(file_path)
     try:
-        safe_file_path = sanitize_filename(file_path)
+        
         video_file = client.files.upload(file=safe_file_path)
         print(f"Completed upload: {video_file.uri}")  
         while video_file.state.name == "PROCESSING":
@@ -473,7 +474,7 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
         if video_file.state.name == "FAILED":
             print(f"File processing failed for {file_name}")
     except Exception as e:
-        print(f"When processing {file_name} encountered the following error: {e}")
+        print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
         
     return video_file, safe_gemini_name
 
