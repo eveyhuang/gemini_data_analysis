@@ -451,7 +451,6 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # If gemini_name is not empty or just whitespace, try to get the file
     if safe_gemini_name and safe_gemini_name.strip():
         try:
-
             gemini_file = client.files.get(name=safe_gemini_name)
             if gemini_file:
                 print(f"{file_name} already uploaded to Gemini, returning that...")
@@ -462,19 +461,25 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # If we couldn't get the file, upload it
     print(f"Uploading {file_name} to Gemini")
     safe_file_path = sanitize_filename(file_path)
-    try:
-        
-        video_file = client.files.upload(file=safe_file_path)
-        print(f"Completed upload: {video_file.uri}")  
-        while video_file.state.name == "PROCESSING":
-            print('.', end='')
-            time.sleep(10)
-            video_file = client.files.get(name=video_file.name)
-            safe_gemini_name = sanitize_filename(video_file.name)
-        if video_file.state.name == "FAILED":
-            print(f"File processing failed for {file_name}")
-    except Exception as e:
-        print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
+    # try:
+    #     video_file = client.files.upload(file=safe_file_path)
+    #     print(f"Completed upload: {video_file.uri}")  
+    #     while video_file.state.name == "PROCESSING":
+    #         print('.', end='')
+    #         time.sleep(10)
+    #         video_file = client.files.get(name=video_file.name)
+    #         safe_gemini_name = sanitize_filename(video_file.name)
+    #     if video_file.state.name == "FAILED":
+    #         print(f"File processing failed for {file_name}")
+    # except Exception as e:
+    #     print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
+    video_file = client.files.upload(file=safe_file_path)
+    print(f"Completed upload: {video_file.uri}")  
+    while video_file.state.name == "PROCESSING":
+        print('.', end='')
+        time.sleep(10)
+        video_file = client.files.get(name=video_file.name)
+        safe_gemini_name = sanitize_filename(video_file.name)
         
     return video_file, safe_gemini_name
 
@@ -485,7 +490,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash', 
+                model='gemini-2.5-pro', 
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
