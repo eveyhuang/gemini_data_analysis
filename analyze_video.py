@@ -24,12 +24,10 @@ def init(prompt_type='scialog'):
     timestamp: startiing and ending time of this person's speech in MM:SS-MM:SS format, before the speaker changes
     transcript: Verbatim speech transcript. Remove filler words unless meaningful and one return one long string without line breaks or paragraph breaks.
     speaking duration: the total number of seconds the speaker talks in this segment
-    self_expression: describe the speaker's expressions during the speach with a few words (e.g., "confident", "hesitant", "enthusiastic", "neutral", "frustrated", "excited", "curious", "thoughtful").
-    others_expression: describe the expressions of other participants during this segment with a few words (e.g., "nodding", "smiling", "confused", "distracted", "engaged", "neutral").
-    interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous one finished.
+    interuption: Was this an interruption? (Yes/No) – if the speaker started talking before the previous speaker finished.
     screenshare: Did anyone share their screen during this segment? (Yes/No)
     screenshare_content: If there was screenshare, summarize the content shared on the screen and changes made to the content within the segment in no more than 3 sentences. Otherwise, write "None".
-    other: If there are any other relevant or surprising observations about the interaction in this segment, please include them here using a short sentence. Otherwise, write "None".
+    other: If there are any other unusual or surprising observations about the interaction in this segment, please include them here using a short sentence. Otherwise, write "None".
     
     Notes:
     For each label, if you feel uncertain due to poor visibility, add [low confidence] next to the annotation.
@@ -461,25 +459,19 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
     # If we couldn't get the file, upload it
     print(f"Uploading {file_name} to Gemini")
     safe_file_path = sanitize_filename(file_path)
-    # try:
-    #     video_file = client.files.upload(file=safe_file_path)
-    #     print(f"Completed upload: {video_file.uri}")  
-    #     while video_file.state.name == "PROCESSING":
-    #         print('.', end='')
-    #         time.sleep(10)
-    #         video_file = client.files.get(name=video_file.name)
-    #         safe_gemini_name = sanitize_filename(video_file.name)
-    #     if video_file.state.name == "FAILED":
-    #         print(f"File processing failed for {file_name}")
-    # except Exception as e:
-    #     print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
-    video_file = client.files.upload(file=safe_file_path)
-    print(f"Completed upload: {video_file.uri}")  
-    while video_file.state.name == "PROCESSING":
-        print('.', end='')
-        time.sleep(10)
-        video_file = client.files.get(name=video_file.name)
-        safe_gemini_name = sanitize_filename(video_file.name)
+    try:
+        video_file = client.files.upload(file=safe_file_path)
+        print(f"Completed upload: {video_file.uri}")  
+        while video_file.state.name == "PROCESSING":
+            print('.', end='')
+            time.sleep(10)
+            video_file = client.files.get(name=video_file.name)
+            safe_gemini_name = sanitize_filename(video_file.name)
+        if video_file.state.name == "FAILED":
+            print(f"File processing failed for {file_name}")
+    except Exception as e:
+        print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
+   
         
     return video_file, safe_gemini_name
 
