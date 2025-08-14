@@ -1,0 +1,148 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "00:00-00:11",
+            "transcript": "Okay, great. Let's kick things off. Thanks, everyone, for joining. Today, we're going to brainstorm some novel approaches to accelerating drug discovery using AI, specifically for neurodegenerative diseases. Ben, I know you had some initial thoughts on leveraging genomic data. Do you want to start?",
+            "speaking_duration": 11,
+            "self_expression": "confident, leading, organized",
+            "others_expression": "engaged, nodding, attentive",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Lauren is clearly facilitating the meeting and setting the agenda."
+        },
+        {
+            "speaker": "Ben Carter",
+            "timestamp": "00:11-00:35",
+            "transcript": "Yeah, thanks, Lauren. I was thinking we could develop a predictive model that integrates multi-omics data—genomics, proteomics, transcriptomics—to identify novel drug targets. The key challenge is the heterogeneity of the data. But if we use a graph neural network approach, we could model the complex biological interactions and potentially uncover pathways that traditional methods might miss.",
+            "speaking_duration": 24,
+            "self_expression": "enthusiastic, confident, knowledgeable",
+            "others_expression": "engaged, nodding thoughtfully, taking notes",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Ben confidently introduces a complex technical concept to start the brainstorm."
+        },
+        {
+            "speaker": "Chloe Davis",
+            "timestamp": "00:35-00:58",
+            "transcript": "I love that, Ben. The GNN approach is powerful. To build on that, what if we also incorporate patient data from electronic health records? We could add another layer to the model, linking molecular data to clinical phenotypes. This could help us not just find targets, but also stratify patient populations for clinical trials. We'd need to be careful with data privacy, of course, but the potential is huge.",
+            "speaking_duration": 23,
+            "self_expression": "collaborative, excited, thoughtful",
+            "others_expression": "smiling, nodding in agreement, intrigued",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Chloe effectively builds on the previous idea by adding a clinical application perspective."
+        },
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "00:58-01:00",
+            "transcript": "That's a fantastic point, Chloe. Patient stratification is critical.",
+            "speaking_duration": 2,
+            "self_expression": "affirming, encouraging",
+            "others_expression": "nodding in agreement",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Lauren provides quick positive reinforcement, facilitating the flow of ideas."
+        },
+        {
+            "speaker": "David Chen",
+            "timestamp": "01:00-01:25",
+            "transcript": "I agree, this is a promising direction. My main concern would be the computational cost and the interpretability of the GNN model. These can become black boxes. Maybe we could integrate a SHAP or LIME framework to help explain the model's predictions. That way, we can validate the biological relevance of the identified targets and pathways, making our findings more trustworthy for the bench scientists.",
+            "speaking_duration": 25,
+            "self_expression": "analytical, cautious, problem-solving",
+            "others_expression": "thoughtful, listening intently, considering the point",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "David introduces a practical challenge and a potential solution, playing the role of a constructive critic."
+        },
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "01:25-01:38",
+            "transcript": "Excellent point on interpretability, David. That's crucial. Okay, this is a great start. We have a core idea: a multi-modal GNN with EHR data, plus an interpretability layer. I'm going to share my screen and start mapping this out on a whiteboard.",
+            "speaking_duration": 13,
+            "self_expression": "decisive, summarizing, action-oriented",
+            "others_expression": "nodding, preparing for screenshare, engaged",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "Lauren initiates a screen share, bringing up a blank digital whiteboard application.",
+            "other": "Lauren synthesizes the discussion into a concrete plan and transitions the group to a visual collaboration tool."
+        },
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "01:38-01:55",
+            "transcript": "So, at the core, we have the 'Predictive Model'. The inputs are, as Ben said, 'Multi-omics Data', and Chloe added 'EHR & Clinical Data'. And the output is 'Novel Drug Targets' and 'Patient Stratification'. David, your point about 'Interpretability' is a key component here.",
+            "speaking_duration": 17,
+            "self_expression": "focused, organizing, collaborative",
+            "others_expression": "watching screen intently, nodding as their ideas are captured",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "On the digital whiteboard, Lauren creates a flowchart. She adds boxes for 'Predictive Model', 'Inputs' (with sub-points for multi-omics and EHR data), 'Outputs' (with sub-points for targets and stratification), and an 'Interpretability' component.",
+            "other": "The use of a shared visual space helps to create a shared understanding of the synthesized idea."
+        },
+        {
+            "speaker": "Ben Carter",
+            "timestamp": "01:55-02:05",
+            "transcript": "Could you draw an arrow from 'Interpretability' back to the 'Drug Targets'? The explanations will directly help us validate those targets.",
+            "speaking_duration": 10,
+            "self_expression": "collaborative, constructive, detail-oriented",
+            "others_expression": "engaged, watching the screen, Lauren acts on the suggestion",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The whiteboard is still being shared. In response to Ben's suggestion, Lauren draws an arrow from the 'Interpretability' box to the 'Novel Drug Targets' box, visually representing a validation loop.",
+            "other": "This segment demonstrates active, real-time co-creation of the project plan."
+        },
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "02:05-02:06",
+            "transcript": "Good call. Done.",
+            "speaking_duration": 1,
+            "self_expression": "receptive, efficient",
+            "others_expression": "engaged, watching the screen",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The whiteboard now shows the newly added arrow.",
+            "other": "None."
+        },
+        {
+            "speaker": "Chloe Davis",
+            "timestamp": "02:06-02:15",
+            "transcript": "This looks great. What's our immediate next step? Do we have access to a dataset we can use for a proof-of-concept?",
+            "speaking_duration": 9,
+            "self_expression": "pragmatic, forward-thinking, curious",
+            "others_expression": "attentive, looking towards others for an answer",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The whiteboard diagram remains on the screen with no changes.",
+            "other": "Chloe effectively pivots the conversation from high-level ideation to practical next steps."
+        },
+        {
+            "speaker": "David Chen",
+            "timestamp": "02:15-02:30",
+            "transcript": "Actually, I know of a public dataset from the ADNI initiative that has both genomic and limited clinical data. It could be perfect for an initial pilot study to test the GNN framework before we seek out more comprehensive proprietary data.",
+            "speaking_duration": 15,
+            "self_expression": "resourceful, helpful, knowledgeable",
+            "others_expression": "smiling, pleased, nodding approvingly",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The whiteboard diagram remains on the screen with no changes.",
+            "other": "David provides a key resource that makes the proposed idea immediately actionable."
+        },
+        {
+            "speaker": "Lauren Wagner",
+            "timestamp": "02:30-02:38",
+            "transcript": "Perfect, David. That's our next step. Can you please circulate the link to that dataset? Ben and Chloe, let's you and I sync up to draft a one-page proposal based on this whiteboard. Great work, everyone. This was incredibly productive.",
+            "speaking_duration": 8,
+            "self_expression": "decisive, appreciative, leading",
+            "others_expression": "smiling, nodding, showing agreement and satisfaction",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The final whiteboard diagram is visible on the screen as Lauren concludes the meeting.",
+            "other": "The meeting concludes with clear, assigned action items for all relevant members."
+        }
+    ]
+}

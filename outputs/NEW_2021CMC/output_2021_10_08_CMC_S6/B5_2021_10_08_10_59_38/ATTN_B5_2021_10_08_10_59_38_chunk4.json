@@ -1,0 +1,115 @@
+```json
+{
+  "meeting_annotations": [
+    {
+      "speaker": "Nathan DeYonker",
+      "timestamp": "00:00-00:06",
+      "transcript": "or circular which I think is may be really useful to a lot of people.",
+      "speaking_duration": 6,
+      "self_expression": "thoughtful",
+      "others_expression": "engaged, neutral",
+      "interuption": "No",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "None"
+    },
+    {
+      "speaker": "Neel Shah",
+      "timestamp": "00:06-00:10",
+      "transcript": "one one question that I have for the whole group is that in our in our",
+      "speaking_duration": 4,
+      "self_expression": "thoughtful, curious",
+      "others_expression": "engaged, listening",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He covers his mouth with his hand while beginning to ask his question."
+    },
+    {
+      "speaker": "Nathan DeYonker",
+      "timestamp": "00:10-00:31",
+      "transcript": "slide we have this bolded overarching question. Does anybody think that the answer to is there still room for physics based and knowledge based methods and models in modern chemical biology? Does anybody here think that the answer to that is no?",
+      "speaking_duration": 21,
+      "self_expression": "inquisitive, engaging, smiling",
+      "others_expression": "engaged, smiling, thoughtful",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He poses a provocative question to the group to stimulate discussion."
+    },
+    {
+      "speaker": "Elizabeth Read",
+      "timestamp": "00:31-00:35",
+      "transcript": "I don't actually understand the question.",
+      "speaking_duration": 4,
+      "self_expression": "confused, thoughtful",
+      "others_expression": "engaged, listening, smiling slightly",
+      "interuption": "No",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "None"
+    },
+    {
+      "speaker": "Rigoberto Hernandez",
+      "timestamp": "00:35-01:52",
+      "transcript": "Let me frame it since it was kind of my question. Everybody's all so hot about data science and machine learning and even already the questions you've been all framing is is very much like what we were talking about in the first session on how machine learning can accelerate discovery. The question is is that is are we so far into data science and machine learning and we believe that it's going to solve everything that we no longer should be using sort of bottom up physics based models like all MD and or should we is there room for developing theories that are sort of would be like in the middle scales that would again be a different types of equations of motion or a different types of of descriptors that would then be modeled with course graining say or is is a one tool that people might say or knowledge based methods or is it really just all data science now and it's going to be learning from the data and we don't need to do anything predictive. So so I was sort of trying to to suggest that maybe there's a reason for advancing in in combinations. I was hoping that the answer was yes that there is still room but I but even just in the way that the conversation started everyone immediately went to just data science and machine learning as the answer. Nothing wrong with that that's",
+      "speaking_duration": 77,
+      "self_expression": "articulate, confident, explanatory",
+      "others_expression": "engaged, listening intently, nodding",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He provides extensive context for the original question to clarify its intent for the group."
+    },
+    {
+      "speaker": "Rommie Amaro",
+      "timestamp": "01:52-01:55",
+      "transcript": "Well we're only we're only three people in.",
+      "speaking_duration": 3,
+      "self_expression": "amused, lighthearted, smiling",
+      "others_expression": "smiling, engaged",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "This is a moment of lighthearted social interaction that eases the intensity of the scientific debate."
+    },
+    {
+      "speaker": "Nathan DeYonker",
+      "timestamp": "01:55-02:45",
+      "transcript": "I know I know I mean the the I would say that that our answers have been the opposite of of that it's just data science because because there are problems with the fidelity and the reproducibility of of the data that is used so so reference data there's still a lot there's I still think that there's my lifetime at least worth of you know of collecting better data and and finding vehicles to share data better. I mean you you can't I don't know I'm not a data scientist but I don't think that you can have you can be a data scientist without enough data without if you don't have enough data right.",
+      "speaking_duration": 50,
+      "self_expression": "thoughtful, explanatory, engaged",
+      "others_expression": "engaged, listening, nodding",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He directly addresses Rigoberto's point and offers a counter-perspective."
+    },
+    {
+      "speaker": "Julien Berro",
+      "timestamp": "02:48-03:48",
+      "transcript": "I have a question for Rigoberto because I think you had when when you talk about models it it sounds like you have a very specific idea of of what kind of problems you're addressing right when my my understanding from what you're saying is mostly at the structural biology molecular dynamics kind of level of question you you were you were touching on and my what I wanted to the when I read the prompt I I I thought about more the little higher scale model and the answer is definitely yes but maybe for the molecular dynamics and that level because the problems are very well defined and very well modeled maybe you can get to a point where where where you can reach this kind of a nice state where machine learning can do a lot of things right I mean tell me if I'm wrong or not from",
+      "speaking_duration": 60,
+      "self_expression": "inquisitive, friendly, engaged",
+      "others_expression": "engaged, listening intently",
+      "interuption": "No",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He seeks clarification from a specific person (Rigoberto) to better understand their perspective."
+    },
+    {
+      "speaker": "Rigoberto Hernandez",
+      "timestamp": "03:48-05:06",
+      "transcript": "I think we're somewhere we're both in agreement. I mean I would say that the that the molecular dynamics simulations that's not a data science technique by itself it is generating I mean there's real equations of motion we know bottom up what the rules are. You could use machine learning to learn uh develop the forces better like what Lu does and and that's an acceleration method but that's a different story. The other you could analyze those trajectories with machine learning using the trajectories as if they were a data science repository and then learn new rules but the question is what what are the new rules that we learn and when we learn these new rules new higher level or collective models like the ones that you're saying that could be only a little bit removed from the molecular dynamics or could be very removed at much larger length scales should we start to develop new models are is there still room to developing uh collective a sort of theories that that really tie in things together which give us new equations that then become the the thing that we have to solve to understand that system. So can or is it just that we give it to the computer it does its machine learning its neural nets and blah blah blah spits out answers and we don't need to know what happened in between. I don't want to be talking you asked me the question.",
+      "speaking_duration": 78,
+      "self_expression": "explanatory, passionate, engaged",
+      "others_expression": "attentive, engaged, nodding, smiling",
+      "interuption": "Yes",
+      "screenshare": "No",
+      "screenshare_content": "None",
+      "other": "He ends his long explanation by humorously pointing out that he was asked the question, showing good social awareness."
+    },
+    {
+      "speaker": "Lu Wang",
+      "timestamp": "05:07-06:06",
+      "transcript": "Also as a computational chemist I definitely want to
