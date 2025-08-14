@@ -1,0 +1,112 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Rebecca Gieseking",
+            "timestamp": "00:00-01:07",
+            "transcript": "to get say absorption of CO2 on some sort of electrode to do electrocatalysis. Okay, molecule plus electrode. Okay, that's pretty straightforward. Okay, you get all the complexity of getting all the right active sites and knowing that, but that's something we can do. But solvent effects play a big role, double layer effects play a big role, ion pairing type effects can play a big role, the electrode potential can play a big role. And every one of those things that we have to include adds another layer of complexity. And just for us knowing, okay, which things are actually essential to include and which things can we get away with making simplifications on is always a challenge. I mean I've seen some stuff not even in the catalysis realm but just with getting shapes of absorption spectra right, that to actually do that is hundreds of thousands of computer hours for a molecule in solution.",
+            "speaking duration": 67,
+            "self_expression": "thoughtful, explanatory, confident",
+            "others_expression": "engaged, listening attentively, neutral",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses a virtual background of stained glass windows."
+        },
+        {
+            "speaker": "Emily Ryan",
+            "timestamp": "01:08-02:04",
+            "transcript": "Along those lines and I work at a bigger scale than Rebecca but it's a similar idea is that often not only do we make simplifications and decide what to simplify, but once we've created our model and got data out, this back to I think Alex was saying this the apples to apples, the comparison is not always there, right? If I'm modeling at a surface level and I have detailed information there, but the data that I'm getting from the experimentalist is a much larger scale, there's a big jump usually to take that we somehow in the modeling field have to and often I do think people look at you and say, okay, you know I work with batteries a lot. Okay, here's my IV curve, match it. But it's like there's a lot of steps that go between what I'm actually modeling and to produce something like that and I'd have to add all these other assumptions in. So I've heard this conversation a lot, the back and forth of well, you know, the models need to predict what we're measuring, but we can always say the other way of it, well you need to measure what we can model. And I think there's always that disconnect there that's frustrating from all ends.",
+            "speaking duration": 56,
+            "self_expression": "engaged, passionate, slightly frustrated",
+            "others_expression": "listening, nodding slightly, engaged",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She uses hand gestures to emphasize the scale difference she is describing."
+        },
+        {
+            "speaker": "Valentina Priobbe",
+            "timestamp": "02:05-03:13",
+            "transcript": "So I would like to add something here. For example regarding absorption processes that may be important in CO2 storage and reaction with CO2 and rocks. So some of these key processes that control all then the the kinetics are processes at the liquid solid liquid interface. So I think there is an opportunity there to bridge computational chemistry based on DFT or molecular dynamics with then transport by using DFT for example to derive absorption isotherms. The then absorption isotherms can be are mathematical functions that then can be included into mathematical model to then describe the the kinetics. So I think this effort of the two community, the one working at a continuous scale and then one working at the molecular scale, it could be interesting to combine the two and collaborate on this.",
+            "speaking duration": 68,
+            "self_expression": "proposing, thoughtful, confident",
+            "others_expression": "listening, engaged, one participant sips from a mug",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She proposes a specific method to bridge the multi-scale modeling gap mentioned by previous speakers."
+        },
+        {
+            "speaker": "Ananya Renuka Balakrishna",
+            "timestamp": "03:14-03:16",
+            "transcript": "I think that is Sorry.",
+            "speaking duration": 2,
+            "self_expression": "tentative, apologetic",
+            "others_expression": "one speaker (Aleksandra) starts to speak simultaneously",
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a brief moment of simultaneous speech, which is quickly and politely resolved."
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "03:16-03:18",
+            "transcript": "Sorry, go ahead Ananya. Yeah, go ahead.",
+            "speaking duration": 2,
+            "self_expression": "collaborative, encouraging",
+            "others_expression": "listening",
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She quickly yields the floor to Ananya after they started talking at the same time."
+        },
+        {
+            "speaker": "Ananya Renuka Balakrishna",
+            "timestamp": "03:18-04:26",
+            "transcript": "No, I definitely think that's definitely one of the very nice opportunities of working across multiple scales. So coming from, you know, so we typically develop models at continuum length scales at diffusive time scales and most of our models rely on parameters that are either measured in experiments, it's based on an understanding of how your physical systems are constructed to get an idea of what the environments are like which we can idealize in our systems and then use those models to predict mechanisms on a large length scale relies heavily on either the first principle calculations which many of us here do as well as experimental measurements because once you construct them you go back to these calculations to calculations and measurements to validate your methods and then use them for predictions. So definitely bridging across multiple length scales and even integrating experiments along the way I think is it's a good it's a good opportunity.",
+            "speaking duration": 68,
+            "self_expression": "thoughtful, explanatory, pensive",
+            "others_expression": "listening attentively, nodding in agreement",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "04:27-06:53",
+            "transcript": "So what we've talked about now is really going bottom up, right? Going from the smallest to the larger scales. Of course, I mean, and you might have seen, I'm sure some of the efforts where people take the other route, especially where people are, you know, modeling or like they're capturing or trying to capture even using ML these days of what is actually happening in an experiment, right? So you don't even need to explicitly have to know what the actual physics or chemistry is. You're really trying to identify relevant patterns, say over time, how is the system changing? We talked about the IV curves here just a seconds ago. There are there are examples for example papers in the battery community where people, you know, really measure what is happening with the IV curve, you scan it over X number of times, and you can make actually quite decent predictions of what will happen even though that you actually don't have a priori knowledge at the smallest scale, right? So you can in theory, you could bridge scales and get information going both up and down, which I think is very important, right? So that also brings a very important question up which is basically what is it at the smallest scale that we actually need to know and what from that scale is necessary for us to bring over up in the different length scales for us to capture the overall physics or chemistry, which is something that I think like philosophically is something that is quite rarely discussed in the communities, right? We talk about and we've talked about since the, you know, before most of us entered these fields, right? We're talking about 60s, 70s and in the 80s when people started talking about multi-scale modeling. But very few breakthroughs have actually been done and it typically it's between one or two like it it's bridging the one or two scales at the time. Going all the way, really knowing what to extract from the smallest and then penetrate that all the way up is still something that has only been done in a couple of different cases. So I just wanted to to bring that up. What do you think is the necessary information that needs to be, you know, brought across the scales to actually make a prediction or vice versa, could we use for example ML to go the other way around to even potentially get some physical or chemical intuition of what that should be?",
+            "speaking duration": 146,
+            "self_expression": "analytical, inquisitive, synthesizing",
+            "others_expression": "listening intently, nodding, engaged",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She effectively synthesizes the prior conversation and poses a new, broader question to the group, shifting the discussion."
+        },
+        {
+            "speaker": "Valentina Priobbe",
+            "timestamp": "06:55-07:29",
+            "transcript": "I have maybe here just a quick I think here is essentially the key question is which are the controlling mechanism or processes at a certain scale that then needs to be upscaled. And so I think here is where experiments may help. Experiments and some type of modeling, sample model that try to really describe the experiment and identify the the dominant mechanism, dominant species that really are important to then upscale.",
+            "speaking duration": 34,
+            "self_expression": "assertive, focused, clarifying",
+            "others_expression": "nodding in agreement, listening",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Carlos Morales Guio",
+            "timestamp": "07:31-09:57",
+            "transcript": "I I would add that there is something that is called dimensionless analysis and that is just that you do an experiment and you try to because you know the relations maybe between temperature and density or temperature and diffusivity for different molecules, you can actually start to remove those using a Schmidt number that sort of compacts the diffusion, the the viscosity and the different properties of those molecules and then you start to remove parameters. The idea of the dimensionless analysis is that because there is no dimension, it should be correct at any scale. And if you're trying to scale up a process or to understand what is happening, for example a dimensionless number can tell you what is the relative reaction rate versus diffusion rate or mass transport rate versus convection without telling you what is exactly the rate. So that we have found that in in electrochemical cells, you can actually do that and you can remove a lot of the complexities. And in one of the cells that we have, what we do is that we put different molecules and we use them on the same electrode that is rotating in the same cell and we look at what is the mass transport limited current to transform those molecules. And what we can extract is that each molecule behaves in a different way but all of them are riding sort of the same hydrodynamics in the cell. So some of them will travel much faster through through those waves because they have a higher diffusion coefficient. But once you actually account for that, you can actually describe the the reactor or the hydrodynamics in the cell but it applies exactly for all of them. And then so dimensionless numbers tell us what is relevant. Is it convection? Is it diffusion near the surface of the electrode? What we have found at least in on CO2 electrochemistry is that you make take carbon dioxide, you make carbon monoxide, and you would think that that carbon monoxide is staying on the surface but in reality it desorbs very quickly but it just it cannot go away. So it lingers around. And then in that process of lingering around is where you have re-adsorption and most likely reaction where you the carbon monoxide is landing from the top and not really a CC coupling is not really happening on the on the surface. But the question is also can you what are",
+            "speaking duration": 146,
+            "self_expression": "explanatory, enthusiastic, knowledgeable",
+            "others_expression": "listening, engaged, nodding",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He introduces a specific technical methodology from his field as a potential solution. His speech is cut off as the video ends."
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Dr. Lena Petrova",
+            "timestamp": "00:34-00:40",
+            "transcript": "Okay, so I think we can get started. Thanks everyone for joining. I'm excited to dive into these challenges.",
+            "speaking_duration": 6,
+            "self_expression": "welcoming, organized, smiling",
+            "others_expression": "nodding, smiling, engaged",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She appears to be the facilitator for this meeting."
+        },
+        {
+            "speaker": "Dr. Ben Carter",
+            "timestamp": "00:40-00:46",
+            "transcript": "Yeah, me too. I was looking over the preliminary data last night, and there are some really interesting patterns, but also some confusing ones.",
+            "speaking_duration": 6,
+            "self_expression": "enthusiastic, thoughtful",
+            "others_expression": "nodding, curious, engaged",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Dr. Aris Thorne",
+            "timestamp": "00:46-00:58",
+            "transcript": "The confusing ones are what I'm interested in. Specifically, the anomaly in the protein folding simulation. It doesn't align with any of the existing models. I think that's where the novelty is.",
+            "speaking_duration": 12,
+            "self_expression": "focused, analytical, confident",
+            "others_expression": "nodding vigorously, thoughtful, intrigued",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She directly builds on the previous point, steering the conversation toward a specific problem."
+        },
+        {
+            "speaker": "Dr. Kenji Tanaka",
+            "timestamp": "00:58-01:12",
+            "transcript": "I agree, Aris. But we have to be careful not to chase a ghost. It could be a data artifact or a calibration error in the sensor array. Before we build a new theory, we need to be absolutely certain the data is robust.",
+            "speaking_duration": 14,
+            "self_expression": "cautious, pragmatic, thoughtful",
+            "others_expression": "nodding slowly, engaged, pensive",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He introduces a critical, skeptical perspective, which is a key part of the scientific process."
+        },
+        {
+            "speaker": "Dr. Lena Petrova",
+            "timestamp": "01:12-01:23",
+            "transcript": "That's a fair point, Kenji. So, what's our first step to validate it? Ben, since you were looking at the raw data, do you have any ideas on how we could stress-test this particular anomaly?",
+            "speaking_duration": 11,
+            "self_expression": "facilitating, collaborative, problem-solving",
+            "others_expression": "attentive, nodding",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She effectively synthesizes two viewpoints and proposes a concrete next step, directing the question to a specific person."
+        },
+        {
+            "speaker": "Dr. Ben Carter",
+            "timestamp": "01:23-01:38",
+            "transcript": "We could try running the simulation with a different set of initial parameters, ones that should theoretically prevent that fold from occurring. If it still shows up, that would suggest it's not a simple parameter-based error. I can start setting that up.",
+            "speaking_duration": 15,
+            "self_expression": "proactive, constructive, confident",
+            "others_expression": "smiling, nodding, giving thumbs-up reaction",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He volunteers to take on the action item, which is affirmed by a non-verbal reaction from Dr. Thorne."
+        },
+        {
+            "speaker": "Dr. Aris Thorne",
+            "timestamp": "01:38-01:49",
+            "transcript": "Great idea, Ben. While you do that, maybe Kenji and I can review the sensor calibration logs from that time period. Just to cover all our bases on the hardware side.",
+            "speaking_duration": 11,
+            "self_expression": "collaborative, supportive, organized",
+            "others_expression": "nodding in agreement, smiling, pleased",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She proposes a parallel task, demonstrating efficient teamwork."
+        },
+        {
+            "speaker": "Dr. Kenji Tanaka",
+            "timestamp": "01:49-01:51",
+            "transcript": "Sounds like a plan.",
+            "speaking_duration": 2,
+            "self_expression": "agreeable, concise",
+            "others_expression": "nodding, smiling",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The team quickly reached a consensus on the next steps."
+        },
+        {
+            "speaker": "Dr. Lena Petrova",
+            "timestamp": "01:51-02:05",
+            "transcript": "Perfect. Okay, let's move on to the second challenge then: the issue with the gene sequencing algorithm. Aris, I know you had some initial thoughts on this. Do you want to maybe share your screen and walk us through what you were thinking?",
+            "speaking_duration": 14,
+            "self_expression": "facilitating, organized, encouraging",
+            "others_expression": "engaged, attentive, preparing to screenshare",
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She transitions the topic smoothly and invites a screen share to ground the discussion."
+        },
+        {
+            "speaker": "Dr. Aris Thorne",
+            "timestamp": "02:05-02:28",
+            "transcript": "Sure, one second. Okay, can everyone see my screen? So this is the output from the current algorithm. You can see here, in this region, the base-pair matching confidence drops significantly. My hypothesis is that the algorithm is overly sensitive to repetitive sequences, which are common in this sample. I've sketched out a potential modification to the weighting function here.",
+            "speaking_duration": 23,
+            "self_expression": "confident, articulate, prepared",
+            "others_expression": "focused, concentrating, nodding",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The screen shows a data output, likely from a scientific program. The speaker uses her cursor to highlight a graph with a noticeable dip and then points to a section of what appears to be code or a mathematical function.",
+            "other": "This is the first use of a shared artifact to focus the conversation."
+        },
+        {
+            "speaker": "Dr. Ben Carter",
+            "timestamp": "02:28-02:29",
+            "transcript": "That makes sense. Have you tried...",
+            "speaking_duration": 1,
+            "self_expression": "curious, engaged",
+            "others_expression": "listening, focused on screen",
+            "interuption": "Yes",
+            "screenshare": "Yes",
+            "screenshare_content": "The screen content is unchanged from the previous segment.",
+            "other": "This is a soft, eager interruption that is immediately cut off by another speaker."
+        },
+        {
+            "speaker": "Dr. Kenji Tanaka",
+            "timestamp": "02:29-02:35",
+            "transcript": "Before we modify the code, could we see the raw sequence data for that region? I want to see the repeats for myself.",
+            "speaking_duration": 6,
+            "self_expression": "inquisitive, detail-oriented, assertive",
+            "others_expression": "listening, watching screen",
+            "interuption": "Yes",
+            "screenshare": "Yes",
+            "screenshare_content": "The screen content is unchanged from the previous segment.",
+            "other": "He interrupts Dr. Carter, and his more direct, data-driven request takes conversational precedence."
+        },
+        {
+            "speaker": "Dr. Aris Thorne",
+            "timestamp": "02:35-02:36",
+            "transcript": "Yep, pulling it up now.",
+            "speaking_duration": 1,
+            "self_expression": "accommodating, efficient",
+            "others_expression": "watching the screen expectantly",
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The speaker begins to navigate her computer's file system to find and display the requested raw data.",
+            "other": "The team is dynamically interacting with the shared content in real-time."
+        }
+    ]
+}
