@@ -82,13 +82,14 @@ def annotate_utterances(client, merged_list, codebook):
         # Prepare the prompt
         comm_prompt = f"""
         You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an 
-        utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook.
+        utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook. 
+        Apply code based onwhat is explicitly observed content, not inferred intent or motivation.
 
         **Annotation Guidelines:**
         - If the utterance has multiple sentences, assign one most relevant code for each sentence. If no code applies, write 'None'.
         - For each code you choose, provide:
           1. **Code Name** 
-          2. **Explanation**: Justify why this code applies in 1 sentence, using relevant prior context.
+          2. **Explanation**: Justify why this code applies in 1 sentence, using evidence from the utterance and definitions from the codebook.
         - Ensure that **each annotation follows the structured JSON format**.
 
         ** Codebook for Annotation:**

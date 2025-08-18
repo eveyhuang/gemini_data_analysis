@@ -482,7 +482,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
     for attempt in range(max_tries):
         try:
             response = client.models.generate_content(
-                model='gemini-2.0-flash', 
+                model='gemini-2.5-pro', 
                 contents=[prompt, video_file],
                 config={
                     'temperature':0,
