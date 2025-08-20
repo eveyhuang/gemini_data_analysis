@@ -46,15 +46,15 @@ def init():
     (2) develop idea: expanding, building upon, or elaborating existing ideas through reasoning, examples, clarification, and evidence.  Example: "This appraoch would work for our problem because... "; "Let me give you a concrete example of how that would look..."; "A Nature paper showed this method outperforms others.";
     (3) ask question: Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member. Example:"Can you explain what you mean by 'latent variable modeling'?"; "do we have data that is needed to train this model?"; "what is your thought on this approach?";
     (4) signal expertise: Explicitly stating one's own or others' expertise or qualifications related to the task. Example: "Emily is our expert in bio-engineering, she could take the lead here"; "I came from a bio-chemistry background and have worked on.. ";
-    (5) identify knowledge gap: explicitly recognizing one's own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I'm not very familiar with this topic"; "This isn't really my area of expertise"; "we don't have the data for that".
-    (6) acknowledge contribution: verbally recognizes another  group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material";
-    (7) supportive response: Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content. Example: "I agree with your approach"; "great point".
+    (5) identify gap: explicitly recognizing one's own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I'm not very familiar with this topic"; "This isn't really my area of expertise"; "we don't have the data for that".
+    (6) acknowledge contribution: verbally recognizes another  group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material"; Not this code if the utterance only has a few words such as "okay", "mhm", "I see".
+    (7) supportive response: Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content. NOT this code if the speaker simply says "yep" or "yes" to acknowledge a prior statement. Example: "I agree with your approach"; "You made agreat point".
     (8) critical response: Questioning, challenging, disagreeing with, or providing negative evaluation of ideas, approaches, or information provided by other group members.  Example: "I'm concerned about the feasibility of..."; "Have we considered the risks of...?"; "You might be missing a very important limitation of this approach". 
     (9) offer feedback: Provide specific suggestions for improvement, modification of existing ideas or approaches proposed by other group members. NOT This Code If: Pure criticism without suggestions or simple agreement. Examples: "here's how we could strengthen the idea..."; 
     (10) summarize conversation: Summarize what has been previously discussed by the group. For example: "So far we have talked about the possibility of training an AI model and limitations of data for traininig."
-    (11) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
+    (11) express humor: makes a joke. example: "well, at least this model isn't as bad as our last one!" Not this code if the speaker is simply laughing, such as "haha" or if only the tone sounds humorous but not explicitly making a joke.
     (12) encourage participation: invites someone else in the group to contribute their expertise, opinions or ideas. "Alex, what do you think?"; "Anyone has any thoughts?";
-    (13) process management: Managing meeting flow, time, structure, or organizing group activities. Examples: “Let’s keep to the agenda”;“We have 5 minutes left.” NOT This Code If: Clarifying goals or assigning tasks.
+    (13) process management: Managing meeting flow, time, structure, or organizing group activities. Examples: “Let’s keep to the agenda”;“We have 5 minutes left.” NOT This Code If: Clarifying goals or assigning tasks, or simply greeting the group.
     (14) assign task: assigns responsibility, roles, deadlines, or action items to the group or a group member. Example: "Alex, can you handle data processing?"; NOT This Code If: Defining what needs to be accomplished (goals);
     (15) clarify goal:  Defining, clarifying, or seeking clarity on objectives, outcomes, expectations, or success criteria for the group to achieve. Key Distinguisher: DEFINING what needs to be accomplished by the group. Examples: "Let's be clear about what we're trying to achieve here..."; "our goal is to ...";
     (16) confirm decision: Explicitly committing to, choosing, or confirming a single idea, approach, goal, or course of action as a group outcome. NOT This Code If: The group is still brainstorming or discussing multiple options without clear closure or commitment. Examples: “It sounds like everyone agrees we’ll proceed with the third option.”
@@ -122,28 +122,61 @@ def extract_json_from_response(response_content):
     # Combine all matches
     all_blocks = json_matches + code_matches
     
+    # Also look for JSON objects that might not be in code blocks
+    # Pattern to match { ... } JSON objects
+    json_object_pattern = r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}'
+    json_object_matches = re.findall(json_object_pattern, content)
+    
+    # Add JSON object matches to all_blocks
+    all_blocks.extend(json_object_matches)
+    
     # Try to parse each block as JSON, keeping track of the last valid one
     last_valid_json = None
+    final_answer_json = None
     
-    for block in all_blocks:
+    for i, block in enumerate(all_blocks):
         block = block.strip()
+        
+        # Check if this block is marked as final answer
+        is_final_answer = False
+        if i < len(all_blocks) - 1:  # Not the last block
+            # Look for "final answer" markers in the surrounding text
+            block_start = content.find(block)
+            if block_start != -1:
+                # Check text after this block for final answer markers
+                after_block = content[block_start + len(block):block_start + len(block) + 100]
+                if any(marker in after_block.lower() for marker in ['final answer', 'final result', 'conclusion', 'therefore']):
+                    is_final_answer = True
+        
         try:
             parsed = json.loads(block)
             # If it's a list, take the first item or convert to dict
             if isinstance(parsed, list) and len(parsed) > 0:
                 if isinstance(parsed[0], dict):
-                    last_valid_json = parsed[0]  # Store first item as dict
+                    parsed_dict = parsed[0]  # Store first item as dict
                 else:
-                    last_valid_json = {"result": parsed}  # Convert list to dict
+                    parsed_dict = {"result": parsed}  # Convert list to dict
             elif isinstance(parsed, dict):
-                last_valid_json = parsed
+                parsed_dict = parsed
             else:
-                last_valid_json = {"result": parsed}
+                parsed_dict = {"result": parsed}
+            
+            # Store as last valid JSON
+            last_valid_json = parsed_dict
+            
+            # If this is marked as final answer, store it separately
+            if is_final_answer:
+                final_answer_json = parsed_dict
+                
         except json.JSONDecodeError:
             continue
     
-    # Return the last valid JSON found (most reasoned conclusion)
-    if last_valid_json is not None:
+    # Return the final answer if found, otherwise the last valid JSON
+    if final_answer_json is not None:
+        # print("final_answer: ", final_answer_json)
+        return final_answer_json
+    elif last_valid_json is not None:
+        # print("last_valid_json: ", last_valid_json)
         return last_valid_json
     
     # If no valid JSON found in code blocks, try parsing the entire content
@@ -151,13 +184,22 @@ def extract_json_from_response(response_content):
         # Remove all markdown code blocks and try to parse what's left
         cleaned_content = re.sub(r'```.*?```', '', content, flags=re.DOTALL).strip()
         if cleaned_content:
+            # print("cleaned_content: ", cleaned_content)
             return json.loads(cleaned_content)
     except json.JSONDecodeError:
+    
         pass
     
-    # If all else fails, return empty dict
-    print(f"Could not extract valid JSON from response: {content[:200]}...")
-    return {}
+    # Try parsing the content directly as JSON (in case it's already clean JSON)
+    try:
+        json_content = json.loads(content)
+        # print("json_content: ", json_content)
+        return json_content
+    except json.JSONDecodeError as e:
+        print(f"Failed to parse content as JSON: {e}")
+        print(f"Content was: {content}")
+        # Return empty dict as fallback
+        return {}
 
 # Annotate utterances with AI-VERDE API via LangChain
 def annotate_utterances(llm, merged_list, codebook):
@@ -171,15 +213,18 @@ def annotate_utterances(llm, merged_list, codebook):
     for i, utterance in enumerate(merged_list):
         # Prepare the prompt
         comm_prompt = f"""
-        You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an 
-        utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook. 
-        Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation.
+        You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook.
+        Each utterance is structured with "speaker name: what the speaker said".
+        Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
+        Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
 
-        **Annotation Guidelines:**
-        - If multiple codes apply, choose no more than three and prioritize the most relevant ones. If no code applies, write 'None' as the code name.
+        **Annotation Guidelines:** 
+        - If no code applies, write 'None' as the code name.
+        - Only choose multiple codes (no more than 3)if they are all explicitly observed in the utterance.
+        - If what the speaker said only has a few words such as "yep", "umm", "I see", always default to the code "None".
         - For each code you choose, provide a json object with the following fields:
-            Code Name: the name of the code from the codebook that applies to the utterance;
-            Explanation: Justify why this code applies in 1 sentence, using evidence from the utterance and definitions from the codebook;
+            code name: the name of the code from the codebook that applies to the utterance;
+            explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
         - Ensure that each annotation follows the structured JSON format.
 
         ** Codebook for Annotation:**
@@ -192,17 +237,20 @@ def annotate_utterances(llm, merged_list, codebook):
         "{utterance}"
 
         **Expected Output:**
-        Output ONLY a single JSON object where each coded category is a key and the explanation is the value. 
-        If multiple codes apply, include no more than 3 codes that are the most relevant to the utterance in the same JSON object.
-        If no code applies, use {"None": "No relevant code applies to this utterance"}.
-        Do not include any explanatory text or reasoning outside the JSON. Do not provide multiple JSON blocks.
-        Example format: {"code_name": "explanation", "another_code": "another explanation"}
+        You may reason through your analysis and provide multiple JSON blocks if needed to show your thinking process.
+        However, your FINAL answer should be a single JSON object where each coded category is a key and the explanation is the value.
+        If multiple codes apply, include the codes and explanations in the same JSON object.
+        If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
+        Make sure your final answer JSON black is clearly marked as the final answer.
+        Example format: {{"code name": "explanation", "another code": "another explanation"}}
         """
 
         # Call AI-VERDE API via LangChain
-        response = llm.invoke(comm_prompt)
-        print("response: ", response)
+        response = llm.invoke(comm_prompt)    
+        
         annotation = extract_json_from_response(response.content)  # Parse response as JSON
+        print("utterance: ", utterance)
+        print("annotation: ", annotation)
 
         annotations.append({
             "utterance": utterance,
