@@ -1,9 +1,8 @@
 import ffmpeg
 import re
 import time, json, os
-from google import genai
+from langchain_community.chat_models import ChatLiteLLM
 from dotenv import load_dotenv
-from google.genai.errors import ServerError
 import subprocess
 import unicodedata
 import argparse
@@ -11,8 +10,15 @@ import argparse
 
 def init():
     load_dotenv()
-    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
-    client = genai.Client(api_key=GOOGLE_API_KEY)
+    NCEMS_API_KEY = os.environ.get("NCEMS_API_KEY")
+    NCEMS_API_URL = os.environ.get("NCEMS_API_URL")
+    
+    # Initialize LangChain with AI-VERDE API
+    llm = ChatLiteLLM(
+        model="litellm_proxy/js2/llama-4-scout",  # You can change this model as needed
+        api_key=NCEMS_API_KEY,
+        api_base=NCEMS_API_URL
+    )
 
     code_book = """
         (1) present new idea: introduces a novel concept, approach, or hypothesis not previously mentioned. Example: "What if we used reinforcement learning instead?"
@@ -39,8 +45,8 @@ def init():
     (1) propose new idea: introducing NEW ideas, suggestions, solutions, or approaches that have not been previously discussed in the meeting. Key Distinguisher: NEWNESS - the content has not been mentioned before. Example: "I think we should try a completely different approach..."; "Here's a new idea - what about..." ;
     (2) develop idea: expanding, building upon, or elaborating existing ideas through reasoning, examples, clarification, and evidence.  Example: "This appraoch would work for our problem because... "; "Let me give you a concrete example of how that would look..."; "A Nature paper showed this method outperforms others.";
     (3) ask question: Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member. Example:"Can you explain what you mean by 'latent variable modeling'?"; "do we have data that is needed to train this model?"; "what is your thought on this approach?";
-    (4) signal expertise: Explicitly stating one’s own or others’ expertise or qualifications related to the task. Example: “Emily is our expert in bio-engineering, she could take the lead here”; "I came from a bio-chemistry background and have worked on.. ";
-    (5) identify knowledge gap: explicitly recognizing one’s own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I’m not very familiar with this topic"; “This isn’t really my area of expertise”; “we don’t have the data for that”.
+    (4) signal expertise: Explicitly stating one's own or others' expertise or qualifications related to the task. Example: "Emily is our expert in bio-engineering, she could take the lead here"; "I came from a bio-chemistry background and have worked on.. ";
+    (5) identify knowledge gap: explicitly recognizing one's own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I'm not very familiar with this topic"; "This isn't really my area of expertise"; "we don't have the data for that".
     (6) acknowledge contribution: verbally recognizes another  group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material";
     (7) supportive response: Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content. Example: "I agree with your approach"; "great point".
     (8) critical response: Questioning, challenging, disagreeing with, or providing negative evaluation of ideas, approaches, or information provided by other group members.  Example: "I'm concerned about the feasibility of..."; "Have we considered the risks of...?"; "You might be missing a very important limitation of this approach". 
@@ -55,7 +61,7 @@ def init():
 
     """
 
-    return client, code_book_v2
+    return llm, code_book_v2
 
 # Save the path dictionary to a JSON file
 def save_path_dict(path_dict, file_name, destdir):
@@ -89,8 +95,72 @@ def save_path_dict(path_dict, file_name, destdir):
     with open(f"{destdir}/{file_name}", 'w') as json_file:
         json.dump(path_dict, json_file, indent=4)
 
-# Annotate utterances with Gemini
-def annotate_utterances(client, merged_list, codebook):
+def extract_json_from_response(response_content):
+    """
+    Extract JSON from response content that may be wrapped in markdown code blocks.
+    Handles cases where multiple JSON blocks are present.
+    
+    Args:
+        response_content: The response content from the LLM
+        
+    Returns:
+        Parsed JSON object (takes the last valid JSON found)
+    """
+    content = response_content.strip()
+    
+    # Find all JSON code blocks in the response
+    json_blocks = []
+    
+    # Pattern to match ```json ... ``` blocks
+    json_pattern = r'```json\s*([\s\S]*?)\s*```'
+    json_matches = re.findall(json_pattern, content)
+    
+    # Pattern to match ``` ... ``` blocks (without json specifier)
+    code_pattern = r'```\s*([\s\S]*?)\s*```'
+    code_matches = re.findall(code_pattern, content)
+    
+    # Combine all matches
+    all_blocks = json_matches + code_matches
+    
+    # Try to parse each block as JSON, keeping track of the last valid one
+    last_valid_json = None
+    
+    for block in all_blocks:
+        block = block.strip()
+        try:
+            parsed = json.loads(block)
+            # If it's a list, take the first item or convert to dict
+            if isinstance(parsed, list) and len(parsed) > 0:
+                if isinstance(parsed[0], dict):
+                    last_valid_json = parsed[0]  # Store first item as dict
+                else:
+                    last_valid_json = {"result": parsed}  # Convert list to dict
+            elif isinstance(parsed, dict):
+                last_valid_json = parsed
+            else:
+                last_valid_json = {"result": parsed}
+        except json.JSONDecodeError:
+            continue
+    
+    # Return the last valid JSON found (most reasoned conclusion)
+    if last_valid_json is not None:
+        return last_valid_json
+    
+    # If no valid JSON found in code blocks, try parsing the entire content
+    try:
+        # Remove all markdown code blocks and try to parse what's left
+        cleaned_content = re.sub(r'```.*?```', '', content, flags=re.DOTALL).strip()
+        if cleaned_content:
+            return json.loads(cleaned_content)
+    except json.JSONDecodeError:
+        pass
+    
+    # If all else fails, return empty dict
+    print(f"Could not extract valid JSON from response: {content[:200]}...")
+    return {}
+
+# Annotate utterances with AI-VERDE API via LangChain
+def annotate_utterances(llm, merged_list, codebook):
     """
     Iterates over each utterance, using the full list as context.
     Returns structured annotations in JSON format.
@@ -122,20 +192,17 @@ def annotate_utterances(client, merged_list, codebook):
         "{utterance}"
 
         **Expected Output:**
-        Output a structured JSON file where each coded category is a key and the explanation is the value. If there are multiple explanations for this code, summarize them into one coherent sentence.
-        Do not include codes that are not relevant to this utterance in your output.
+        Output ONLY a single JSON object where each coded category is a key and the explanation is the value. 
+        If multiple codes apply, include no more than 3 codes that are the most relevant to the utterance in the same JSON object.
+        If no code applies, use {"None": "No relevant code applies to this utterance"}.
+        Do not include any explanatory text or reasoning outside the JSON. Do not provide multiple JSON blocks.
+        Example format: {"code_name": "explanation", "another_code": "another explanation"}
         """
 
-        # Call Gemini API (adjust depending on your implementation)
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=[comm_prompt],
-            config={
-                'response_mime_type':'application/json',
-                'temperature':0,
-                'max_output_tokens':8192,      
-            },)
-        annotation = json.loads(response.text)  # Parse response as JSON
+        # Call AI-VERDE API via LangChain
+        response = llm.invoke(comm_prompt)
+        print("response: ", response)
+        annotation = extract_json_from_response(response.content)  # Parse response as JSON
 
         annotations.append({
             "utterance": utterance,
@@ -176,7 +243,7 @@ class InvalidJsonContentError(Exception):
 
 # Load JSON files from a directory and sort them by chunk number
 def load_json_files(directory):
-    # Get all JSON files except those starting with 'all' or 'verbal'
+    # Get all JSON files except those starting with 'all', 'verbal', or 'verbal_llama'
     json_files = [f for f in os.listdir(directory) if f.endswith('.json') and not (f.startswith('all') or f.startswith('verbal'))]
     
     if not json_files:
@@ -319,11 +386,11 @@ def is_valid_json_file(file_path):
     except (json.JSONDecodeError, FileNotFoundError, IOError):
         return False
 
-def annotate_and_merge_outputs(client, output_dir, codebook):
+def annotate_and_merge_outputs(llm, output_dir, codebook):
     """
     Annotate and merge outputs for all subfolders in the output directory.
     Args:
-        client: Gemini API client
+        llm: LangChain LLM client for AI-VERDE API
         output_dir: Base directory containing output folders
         codebook: Codebook for annotation
     """
@@ -358,11 +425,11 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
             json_dir_name = os.path.basename(folder)
             
             # Create verbal and all files in the JSON directory
-            verbal_file = os.path.join(folder, f"verbal_v2_{json_dir_name}.json")
-            all_file = os.path.join(folder, f"all_v2_{json_dir_name}.json")
+            verbal_file = os.path.join(folder, f"verbal_llama_{json_dir_name}.json")
+            all_file = os.path.join(folder, f"all_llama_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
-                print(f"No existing/valid verbal file in {folder}, annotating now...")
+                print(f"No existing/valid verbal_llama file in {folder}, annotating now...")
                 try:
                     merged_output = merge_output_json(folder)
                 except InvalidJsonContentError as e:
@@ -372,11 +439,11 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                 verbal_annotations = []
                 
                 # print(f"Annotating verbal behaviors for {json_dir_name}")
-                annotations = annotate_utterances(client, merged_output[1], codebook)
+                annotations = annotate_utterances(llm, merged_output[1], codebook)
                 verbal_annotations = annotations
                 output_file = verbal_file
                 with open(output_file, "w") as f:
-                    print(f"Saved verbal annotations to {output_file}")
+                    print(f"Saved verbal_llama annotations to {output_file}")
                     json.dump(annotations, f, indent=4)
                 
                     
@@ -387,11 +454,11 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                         all_anno[i]['annotations'] = anno
                     
                     with open(all_file, "w") as f:
-                        print(f"Merged verbal annotations with existing video annotations to {all_file}")
+                        print(f"Merged verbal_llama annotations with existing video annotations to {all_file}")
                         json.dump(all_anno, f, indent=4)
                 
             else:
-                print(f"Already annotated files in {folder}, skipping...")
+                print(f"Already annotated verbal_llama files in {folder}, skipping...")
         
 def main():
     # Set up argument parser
@@ -400,12 +467,12 @@ def main():
     
     args = parser.parse_args()
     
-    # Initialize client and codebook
-    client, codebook = init()
+    # Initialize LLM and codebook
+    llm, codebook = init()
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(client, args.output_dir, codebook)
+    annotate_and_merge_outputs(llm, args.output_dir, codebook)
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':
