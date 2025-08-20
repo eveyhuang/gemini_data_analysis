@@ -1,0 +1,244 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Zhou Lin",
+            "timestamp": "00:00-01:00",
+            "transcript": "will say hydroxides only carry like a half charge, but the it it it deposit the other half to the surface, but we know that it's not physical. So these are some some of the fundamental problem of the theory. So we hope like we can get better model to do that. And the other thing I want to say a little bit about experimental study which I collaborate with those people in in Germany and the paper will come out this week. So they actually use some I don't know the details though, but I know they use some terahertz spectroscopy. So they can see what's going on exactly on surface. We test a very simple system with a sodium chloride, they looks like sodium chloride, they found that they behave differently with water. But I I don't know if anyone of you have used that method and how it can be used to understand the surface structure.",
+            "speaking duration": 60,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "A Google Docs document titled \"Scalog NES Meeting Slides\" is shared. The document contains notes on the mechanisms of electrochemical CO2 reduction, including points on electrochemical CO2RR, C1 and C2 products, and techniques for intermediate characterization. The document is scrolled down to show more content.",
+            "other": "None"
+        },
+        {
+            "speaker": "Sen Zhang",
+            "timestamp": "01:01-01:03",
+            "transcript": "What spectroscopy are you talking about?",
+            "speaking duration": 2,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Zhou Lin",
+            "timestamp": "01:04-01:06",
+            "transcript": "Terahertz, terahertz.",
+            "speaking duration": 2,
+            "interuption": "Yes",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Sen Zhang",
+            "timestamp": "01:06-01:07",
+            "transcript": "Oh, okay.",
+            "speaking duration": 1,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Zhou Lin",
+            "timestamp": "01:07-01:07",
+            "transcript": "Yeah.",
+            "speaking duration": 0,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "01:08-01:22",
+            "transcript": "That's interesting. I mean, as far as I know, terahertz has interesting signatures, they can be pretty hard to understand exactly what is what they correspond to. They can have interesting penetration depths and such. Um, but that's yeah, that that's cool.",
+            "speaking duration": 14,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "01:22-01:57",
+            "transcript": "Okay, so well I'll just do a quick time check. Um, we've had a very good discussion, but two things to talk about before we start wrapping up and Leo, hopefully you you on the side you can start thinking of distilling a few of these um role of AI and ML in in going in uh understanding. So Venkat, we have you here. I think I put that prompt in for you. So you want to tell us a little bit about what your thoughts are on that. And and then the last point after Venkat talks is maybe uh thinking about the problems at the level of the stack.",
+            "speaking duration": 35,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "02:00-02:56",
+            "transcript": "So I think I think this uh there are two aspects that I think could be quite interesting uh uh where machine learning can help. Obviously, CO2 reduction is one of those challenging problems where you have multiple products, right? And uh delineating those products has been quite tricky. Uh, so I think there machine learning could probably give you additional tools uh to analyze uh even deconvolve uh whatever kinds of measurements you're you're you're trying to fuse together, right? So it's an information fusion problem. You have uh your voltammetric signals uh and then maybe you do some other product measurements of, you know, in various ways. So I think there there's a lot of opportunity for machine learning. Uh, I think there's obviously a lot of opportunity for automation, automated experiments also. I I sort of put both of that in the same bucket. I think automated experiments uh automated there's now lots of very good electric automated electrochemical apparatus apparatus that you can buy.",
+            "speaking duration": 56,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "02:56-03:12",
+            "transcript": "So uh I think being able to use that to um to accelerate the, you know, the search process is is I think quite exciting. Um, okay.",
+            "speaking duration": 16,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Zhou Lin",
+            "timestamp": "03:14-03:27",
+            "transcript": "I have a question about machine learning. I mean, if we use that, where can we obtain sufficient training data to do it? It looks like if the experiment is hard, I mean.",
+            "speaking duration": 13,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "03:28-03:30",
+            "transcript": "Okay.",
+            "speaking duration": 2,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "03:30-04:01",
+            "transcript": "I mean, I think I think people that have made lots and lots of I mean, I think Charles McCurry has done a beautiful uh job of like benchmarking for like HER and OER and ORR catalysts, right? I think uh similar sort of benchmarking exercise that I guess, you know, Lindsey and and others uh have done in the past or many others uh um I think there's quite a lot of data. I I don't think uh we are we have dirt of of uh of data.",
+            "speaking duration": 31,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "04:01-04:01",
+            "transcript": "Lindsay?",
+            "speaking duration": 0,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Linsey Seitz",
+            "timestamp": "04:04-04:52",
+            "transcript": "Just yeah, just a quick uh response to that is yeah, I mean, so some of the automation that Venkat is talking about or high throughput techniques certainly miss a lot of the depth of detail uh that someone who's fundamental like me likes to dig down into and understand what's going on. But I can get you that surface level of of hits or misses. Yeah, I think a lot of the benchmarking protocols of just designing uh a well thought out stability protocol and applying it to a broad range of catalysts is really helpful.",
+            "speaking duration": 48,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Linsey Seitz",
+            "timestamp": "04:52-04:52",
+            "transcript": "Yeah.",
+            "speaking duration": 0,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "04:53-05:32",
+            "transcript": "One cool thing in that is is you know, having an AI you know, having I mean AI or or or or whatever assistant with you at the beam line. So we've actually tried it once um uh Lindsey with Debbie's group, but uh when they try to do some uh forget what they did, maybe uh uh maybe XAS or something. So they were doing the measurement, they were sending the data overnight, we were analyzing the data overnight, uh training our machine learning models or training, you know, whatever models and then sending back and saying go go measure this this and this the next day, right? So uh I think that active loop uh especially I think all beamline scientists should should get an AI assistant to go with them, right? Or anyone making measurements.",
+            "speaking duration": 39,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Linsey Seitz",
+            "timestamp": "05:33-05:47",
+            "transcript": "Yeah, that would be really cool. Especially to direct our in situ measurements, right? So what are the relevant potentials if some of the data is even a little noisier, working through that in real time and saying, okay, that potential isn't tell us anything, but here, this is something exciting to look at. That's really cool.",
+            "speaking duration": 14,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "05:47-06:15",
+            "transcript": "Yeah, that'd be that'd be really superb. I mean, and that's this is true for, you know, spectral microscopy imaging too. When we do a lot of stick sim and such, it's like you've got a whole collection of data, should you should you look more? Like should you, you know, again, uh the classical issue of should you explore or optimize, right? Should you go out and look for um other regions or should you go and dive dive down deeper into something you saw in your original low res images. So that would be be super cool.",
+            "speaking duration": 28,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "06:15-06:32",
+            "transcript": "Um, hey, so we should probably start consolidating. Um, there's a lot of great notes here from Michael, Leo, if we were to talk about three big picture messages, they come messages from this discussion. Do we have enough?",
+            "speaking duration": 17,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Leo Liu",
+            "timestamp": "06:32-06:35",
+            "transcript": "Yeah, we have enough.",
+            "speaking duration": 3,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "06:35-06:42",
+            "transcript": "Yeah, so for your slides, Leo, that you can put in, um, um.",
+            "speaking duration": 7,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "06:43-07:03",
+            "transcript": "Right. So we had a very rich discussion on what should we start with, where where should we get the CO2 from and where should we take it, right? So the beginning and the end is what we started about at the beginning.",
+            "speaking duration": 20,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Banerjee, Sarbajit",
+            "timestamp": "07:03-07:04",
+            "transcript": "Some some great ideas there.",
+            "speaking duration": 1,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Leo Liu",
+            "timestamp": "07:05-07:51",
+            "transcript": "So I'm going to summarize uh what do you want me to project Leo uh the slide? Yeah, I do you want me share? Yeah, sure. Okay. Um, yeah, let me here. So I think uh uh from what uh we have discussed, I think maybe we come up with three to four points, maybe up to four points. I think the first one we can combine uh you know, let's say from here, right? That can be one point uh we can make C1 product and uh and C2 and above and we have different choice here, right?",
+            "speaking duration": 46,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The Google Docs document is now displayed on the screen. Leo highlights sections of the document as he summarizes the discussion.",
+            "other": "None"
+        }
+    ]
+}
