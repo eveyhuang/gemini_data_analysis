@@ -35,7 +35,27 @@ def init():
         (19) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
     """
 
-    return client, code_book
+    code_book_v2 = """
+    (1) propose new idea: introducing NEW ideas, suggestions, solutions, or approaches that have not been previously discussed in the meeting. Key Distinguisher: NEWNESS - the content has not been mentioned before. Example: "I think we should try a completely different approach..."; "Here's a new idea - what about..." ;
+    (2) develop idea: expanding, building upon, or elaborating existing ideas through reasoning, examples, clarification, and evidence.  Example: "This appraoch would work for our problem because... "; "Let me give you a concrete example of how that would look..."; "A Nature paper showed this method outperforms others.";
+    (3) ask question: Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member. Example:"Can you explain what you mean by 'latent variable modeling'?"; "do we have data that is needed to train this model?"; "what is your thought on this approach?";
+    (4) signal expertise: Explicitly stating one’s own or others’ expertise or qualifications related to the task. Example: “Emily is our expert in bio-engineering, she could take the lead here”; "I came from a bio-chemistry background and have worked on.. ";
+    (5) identify knowledge gap: xplicitly recognizing one’s own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I’m not very familiar with this topic"; “This isn’t really my area of expertise”; “we don’t have the data for that”.
+    (6) acknowledge contribution: verbally recognizes another  group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material";
+    (7) supportive response: Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content. Example: "I agree with your approach"; "great point".
+    (8) critical response: Questioning, challenging, disagreeing with, or providing negative evaluation of ideas, approaches, or information provided by other group members.  Example: "I'm concerned about the feasibility of..."; "Have we considered the risks of...?"; "You might be missing a very important limitation of this approach". 
+    (9) offer feedback: Provide specific suggestions for improvement, modification of existing ideas or approaches proposed by other group members. NOT This Code If: Pure criticism without suggestions or simple agreement. Examples: "here's how we could strengthen the idea..."; 
+    (10) summarize conversation: Summarize what has been previously discussed by the group. For example: "So far we have talked about the possibility of training an AI model and limitations of data for traininig."
+    (11) express humor: makes a joke or laughs. example: "well, at least this model isn't as bad as our last one!"
+    (12) encourage participation: invites someone else in the group to contribute their expertise, opinions or ideas. "Alex, what do you think?"; "Anyone has any thoughts?";
+    (13) process management: Managing meeting flow, time, structure, or organizing group activities. Examples: “Let’s keep to the agenda”;“We have 5 minutes left.” NOT This Code If: Clarifying goals or assigning tasks.
+    (14) assign task: assigns responsibility, roles, deadlines, or action items to the group or a group member. Example: "Alex, can you handle data processing?"; NOT This Code If: Defining what needs to be accomplished (goals);
+    (15) clarify goal:  Defining, clarifying, or seeking clarity on objectives, outcomes, expectations, or success criteria for the group to achieve. Key Distinguisher: DEFINING what needs to be accomplished by the group. Examples: "Let's be clear about what we're trying to achieve here..."; "our goal is to ...";
+    (16) confirm decision: Explicitly committing to, choosing, or confirming a single idea, approach, goal, or course of action as a group outcome. NOT This Code If: The group is still brainstorming or discussing multiple options without clear closure or commitment. Examples: “It sounds like everyone agrees we’ll proceed with the third option.”
+
+    """
+
+    return client, code_book_v2
 
 # Save the path dictionary to a JSON file
 def save_path_dict(path_dict, file_name, destdir):
@@ -108,7 +128,7 @@ def annotate_utterances(client, merged_list, codebook):
 
         # Call Gemini API (adjust depending on your implementation)
         response = client.models.generate_content(
-            model='gemini-2.0-flash',
+            model='gemini-2.5-flash',
             contents=[comm_prompt],
             config={
                 'response_mime_type':'application/json',
@@ -338,8 +358,8 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
             json_dir_name = os.path.basename(folder)
             
             # Create verbal and all files in the JSON directory
-            verbal_file = os.path.join(folder, f"verbal_{json_dir_name}.json")
-            all_file = os.path.join(folder, f"all_{json_dir_name}.json")
+            verbal_file = os.path.join(folder, f"verbal_v2_{json_dir_name}.json")
+            all_file = os.path.join(folder, f"all_v2_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
                 print(f"No existing/valid verbal file in {folder}, annotating now...")
