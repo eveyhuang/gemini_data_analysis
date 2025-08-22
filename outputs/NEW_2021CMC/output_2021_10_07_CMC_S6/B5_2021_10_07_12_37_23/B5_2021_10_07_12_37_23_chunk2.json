@@ -1,0 +1,224 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Jim Mitchell",
+            "timestamp": "00:00-00:24",
+            "transcript": "predicted by AlphaFold and others in the next five to 10 years. I'm intensely interested in that. And E a little less, but I know Tesla's got, you know, I own a Tesla and I know they've got a very good neural a machine learning engine and I wonder if they're ever going to make that available to others of us because they claim that it's quite a bit faster than some of the things like the GPUs.",
+            "speaking_duration": 24,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "00:24-00:45",
+            "transcript": "So I I also just picked up a Tesla and I I I feel like I'm I'm a convert so I've been like a Borg a Tesla Borg as well. And he I just saw him in a they he did a presentation in the last couple of in the last month or so where he claimed that he was going to do it for us for a fee.",
+            "speaking_duration": 21,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses expansive hand gestures while talking."
+        },
+        {
+            "speaker": "Jim Mitchell",
+            "timestamp": "00:45-00:48",
+            "transcript": "Oh.",
+            "speaking_duration": 3,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker gives two thumbs up enthusiastically."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "00:48-01:07",
+            "transcript": "So I don't know what the fee is or the time scale but he he claims that he's going to do that and make it available to to the. Sandra or Gary did you want to bring in any questions as well? No pressure just want to be sure that you don't feel excluded. I see no from Sandra and Gary?",
+            "speaking_duration": 19,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Gary Greenburg",
+            "timestamp": "01:07-01:25",
+            "transcript": "Well two areas. One, thermodynamics simulations of out of equilibrium processes in the cell. And a second would be image analysis using AI and segmentation which is of interest to me.",
+            "speaking_duration": 18,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:25-01:38",
+            "transcript": "I can help you with the first one. That'll be offline. So the so I I heard a lot of people talking about AlphaGo. So and and the challenges",
+            "speaking_duration": 13,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "01:38-01:44",
+            "transcript": "That's a good question. I actually don't know what Dojo is. Can anyone like unpack that?",
+            "speaking_duration": 6,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:44-02:09",
+            "transcript": "Dojo is the I forget what it stands for but it it it's the next generation or something processing environment or processor that that they have made for Tesla. And this thing is not that they put it in every Tesla, it's the thing that they're they've created their own computer.",
+            "speaking_duration": 25,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "02:09-02:12",
+            "transcript": "So it's an alternative processor architecture.",
+            "speaking_duration": 3,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:12-02:22",
+            "transcript": "Which is specifically set up for machine like creating neural nets and so it's a specific machine.",
+            "speaking_duration": 10,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "02:22-02:23",
+            "transcript": "I see.",
+            "speaking_duration": 1,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Jim Mitchell",
+            "timestamp": "02:23-02:28",
+            "transcript": "Actually Dojo is for the training problem.",
+            "speaking_duration": 5,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:28-04:36",
+            "transcript": "Yeah so they train it and then they and then it's feed it's its output then it goes into the into your car or whatever but it's not. So not every car has a Dojo but their Dojo is like their in-house computing platform. And and also it's it's really super cool because and this might be useful as you as experimentalists. You know that you have when you have a detector, it's not always going to be perfect. You've got to sort of correct for the detector in the machine. So the car has its its various cameras but they're not going to always be exactly in the same spot and linked to each other to do the processing. So when you first start with your car, it sucks. It doesn't it just barely shows you your car in in the image. And as it learns and gets feedback from the things it's seeing, it starts to realize that for your particular implementation of your car where your cameras are, how to triangulate and know exactly where an object is. And so the objects start to appear in the first 100, 1000 and 2000 miles that you're driving your car as it learns for your particular implementation. So it's it's sort of like a it's like a machine function and it corrects for the machine function of the application. And that's because it has its And that's like the next It had an initial amount from Dojo but then it had its specific neural net. So so you think about like what could you do in active processing if you're interrogating a cell with multiple detectors and in real time you are multiplying the interpretation of the detectors based on that particular cell and its locations that you didn't have perfect control over but you just get let the feedback let you know where they are.",
+            "speaking_duration": 128,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses extensive and varied hand gestures to explain complex concepts."
+        },
+        {
+            "speaker": "Jim Mitchell",
+            "timestamp": "04:36-04:38",
+            "transcript": "Sorry.",
+            "speaking_duration": 2,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker laughs while speaking."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "04:38-04:48",
+            "transcript": "The AlphaFold thing I thought was I heard of several people worried about AlphaFold and maybe you guys can jump in on on talking about opportunities and challenges on that.",
+            "speaking_duration": 10,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "04:48-06:55",
+            "transcript": "Well I would I wouldn't say not necessarily. I mean I'll tell you actually I'll maybe start with a story. So I was at a Protein Society symposium a few months ago. There was a session on AI and ML in structure prediction. Ironically they came up with the program before the big press release on AlphaFold. And as far as I can tell actually that was the first time that they really had announced that they were going to make it a publicly available tool. So people in that session were extremely excited when John Jumper said that. But the other people in that session were pretty miffed. You know they definitely felt like you know they had been royally scooped. And to be fair if I worked directly in that space of trying to design AIs to predict structure I would probably feel that same way. But I do think that like as an experimentalist who works on protein folding, I would say that we're just really excited. We think this is an amazing tool. We obviously weren't competing with Google to do this and now we're just really glad that we can be beneficiaries of what I think is a truly revolutionary technology. I think that you know in terms of the concern, I think that when people say the protein folding problem, it's actually kind of a semantic issue where there really isn't one protein folding problem. I think you know when Christian Anfinsen kind of first used that phrase, he he did in Google's defense, he did actually use it to mean structure prediction. Of course what's happened over the last you know four or five decades is that we now know that protein folding is interesting for many other reasons other than being able to potentially predict structure. And so I think the term has kind of taken on more meanings than it originally had when it was first articulated. So that was just something I kind of wanted to clarify on. But I mean just to kind of like you know update a little bit because this is a space that you know we do a lot of reading and thinking on. They just came out with a preprint two or three days ago to predict complexes as well, like multimers, which apparently works pretty well. So it's pretty remarkable the rate of progress.",
+            "speaking_duration": 127,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "06:55-09:04",
+            "transcript": "Yeah just want to follow up on that. That was exactly what I was trying to say. Because we work on protein-protein interactions and the network for a long time now. So exactly when it first came out the AlphaFold, the first question is can it really predict protein-protein interaction interfaces? The answer is no. And that's okay. And then when when you're talking to people more and more there are many things that AlphaFold didn't really yet produce and generate for us. So yes it's a very amazing platform there's no doubt. So we came up with this paper like almost like 10 years ago. So that was the first time when people predict that you know the protein interaction network generated by computational prediction can be of even higher quality compared to experimentally generated data set. They have proof of that, they have evidence, they have a lot of things and with really high quality and and things that a lot of times because of experimental failures, noise, batch effect and all of that. So apparently of course you cannot really compare to a carefully designed computational algorithm. So definitely see a huge application and potential that we can benefit from AlphaFold. But at the same time you know as Stephen Fried just mentioned now that a couple of days ago maybe last month this new paper came out saying that hey they were able to modify this algorithm to predict protein-protein interaction complexes. And my student has been working on that to see if we can benefit by integrating with PDB that I know Abhishek has been has mentioned there too to see if you can somehow use the prediction to broaden the stand to many different protein interactions and then figure out. I think the key thing that we want to do is to see the mutational effect, how that localized to the protein structure, the interaction interface. AlphaFold did perfect you know so in that regard we can we can really leverage that information and then model our network to really generate potential effect of mutations and then maybe also model a patient level where you have a set of five, six driver mutations, combination of them what will be the effect. I think it's just the beginning of many exciting things.",
+            "speaking_duration": 129,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is using a virtual background of a university campus."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "09:04-09:06",
+            "transcript": "(Laughter)",
+            "speaking_duration": 2,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a non-verbal vocalization (laughter) in response to the previous speaker."
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "09:06-09:28",
+            "transcript": "We can really leverage that information and then model our network to really generate potential effect of mutations and then maybe also model a patient level where you have a set of five, six driver mutations, combination of them what will be the effect. I think it's just the beginning of many exciting things.",
+            "speaking_duration": 22,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "09:28-09:50",
+            "transcript": "I want to actually ask Stephen you about that because that was something that I was wondering. So like if you have like let's say a protein that you know there is a mutation that causes a disease and the main way that that mutation causes the disease is by destabilizing the protein to the point that it you know doesn't properly fold or gets degraded or something to that effect.",
+            "speaking_duration": 22,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "09:50-09:51",
+            "transcript": "Yeah.",
+            "speaking_duration": 1,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "09:51-10:00",
+            "transcript": "So am I understanding you properly and what you're saying that you think that if you then typed into AlphaFold you know here's the exact same sequence now I'm just going to mutate this one phenylalanine",
+            "speaking_duration": 9,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        }
+    ]
+}

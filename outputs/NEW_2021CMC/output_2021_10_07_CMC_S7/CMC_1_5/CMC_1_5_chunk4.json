@@ -1,0 +1,254 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "00:00-00:02",
+            "transcript": "for possibility. Sorry, go ahead.",
+            "speaking_duration": 2,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "00:02-01:34",
+            "transcript": "I was going to say so Stephen E, I know your hand is up and I'm going to push on some of the others who haven't spoken and then I'm going to before I have you speak. And I'm going to stimulate them a little bit to answer to try to address the question. I know Davide has a lot of thoughts on this and maybe Lu or Cheemeng as well. So in this protein folding business, one question is if I have a structure or whatever, what's I mean if I have a sequence, what's the structure, etc. That's the sort of naive structural question which AlphaFold is answering. You could also do and people have been using machine learning, I mean neural nets to propagate structures. So you can demonstrate that you can at least with simple all-atom models, you can learn a little bit of how to propagate from knowing our existing trajectories and propagate them. So you might even be able to use an AI to propagate a large protein and to be an integrator. And what Abhishek has kind of suggested is maybe that's that's like the obvious thing for us to do. We have an integrator, let's make a better integrator that uses the machine that is faster. But is there a different way in which we could think about dynamics or what's happening between these two, knowing the sequence and knowing the structure that would give us more information or different information that would be a different question that we need to address. So I'm wondering what you all think about that and that's my and I picked on Davide and I warned him he was going to be the next person I was going to pick on.",
+            "speaking_duration": 92,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is actively facilitating the discussion by calling on specific people who haven't spoken yet."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "01:34-02:52",
+            "transcript": "I'm totally ignorant of the relevant questions in the field. That's my limitation here. So I see this so I was not pissed off about AlphaFold at all. I don't care. It doesn't scoop me. I'm not trying to fold anything. But I see this as an opportunity and I'm still thinking in terms of of what Rigoberto was saying. So this is a new set of tools that we can apply to answer more complex questions than just sequence versus structure. And one can go the the the next little step is to look at metastability and in in different environments because yeah, I mean you just don't have the protein in in a solvation box and that's it. I think in real life you you have different types of environments which probably affect the structure as well, partial folding or stuff like that. So that goes back to again using these tools with old tools like molecular dynamics but I'm still in the Boltzmann world. I haven't gotten out of it.",
+            "speaking_duration": 78,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses humor to make his point about not being in competition with AlphaFold."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:52-02:58",
+            "transcript": "Lu or Cheemeng, do you want to comment before Stephen jumps in?",
+            "speaking_duration": 6,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "02:58-03:12",
+            "transcript": "I'm not an expert at all at machine learning, but I was wondering, you know, this protein structure prediction tool sounds really cool. Is there an equivalent tool for nucleic acids, especially RNAs?",
+            "speaking_duration": 14,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "03:12-03:25",
+            "transcript": "Uh well there's a science paper that came out from Rhiju Das I guess two years ago that's trying to I mean you might be more familiar Abhishek. I don't think it's as good but it's like in the right direction.",
+            "speaking_duration": 13,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He defers to another participant (Abhishek) for more expert knowledge on the topic."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "03:25-03:43",
+            "transcript": "Yes, exactly. People have been thinking about this. If it's a protein nucleic acid complex, it works better because there is that scaffold. But but it's it's good actually like people are thinking in that direction. I think now they have even gotten this HHMI funding so they'll continue moving that forward. But but yeah, that's that's there.",
+            "speaking_duration": 18,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "03:43-04:26",
+            "transcript": "Good to know. And you know, and the protein folding process is not isolated. So like Davide said, we have to consider the environment, right? It's not just the the water environment, what about the cellular environment, the crowding agents, the chaperones, stuff like that. Would I mean probably the training data will be hard to get, but then otherwise I think it will be a really powerful tool to use because from kind of the atomistic point of view, it will be really difficult to model. But then if we know the structures, like some of the structures, some of its dynamics, there may be ways to kind of propagate them into much longer time scales.",
+            "speaking_duration": 43,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She synthesizes points made by a previous speaker and extends the discussion."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "04:26-04:30",
+            "transcript": "Cheemeng, did you want to jump in or",
+            "speaking_duration": 4,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Cheemeng Tan",
+            "timestamp": "04:30-05:06",
+            "transcript": "Also not an expert on AI ML but we apply that in our work. But I so I'm we're not we're not upset by AlphaFold but something I thought maybe just philosophically speaking is when when there's a lot of data available and where if there's enough commercial interest in generating an AI machine learning based on that model, AlphaFold or similar thing is bound to happen. It's hard for a single academic lab to compete with something like Google.",
+            "speaking_duration": 36,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He introduces a meta-level, philosophical point about the nature of academic vs. corporate research."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "05:06-05:08",
+            "transcript": "I that's that's what I thought from the",
+            "speaking_duration": 2,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Cheemeng Tan",
+            "timestamp": "05:09-05:51",
+            "transcript": "field dynamic. Um but also related to Lu Wang question, I agree. So what my lab has been trying to do is can we generate data that you know, um look at how chemical condition affect function of protein or um or say they are interacting with other protein and then be able to generate that data at a high throughput and then use that kind of data to really advance you know um study of proteins. So that kind of data to me does not yet exist in the database based on my understanding but others can correct me.",
+            "speaking_duration": 42,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He connects his point back to a previous speaker's question and proposes a new research direction."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "05:51-05:52",
+            "transcript": "You're right.",
+            "speaking_duration": 1,
+            "interruption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Cheemeng Tan",
+            "timestamp": "05:53-06:17",
+            "transcript": "So I thought that I thought if we can build out that database combining experimental and then combining yeah um or high throughput technology that that can help us to generate data in a new direction. Also similar to what Abhishek mentioned about protein prediction of protein in living cell or living cell database for PDB.",
+            "speaking_duration": 24,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:17-06:41",
+            "transcript": "So I I want to make sure that we have time for some of the other topics. So I'm going to give Stephen E an opportunity to to sort of wrap up this discussion and to as well as to bring up some of his questions. And of course you can always jump in and and modify if you want to before we go to the next topic. And Rommie I'm going to let you choose the next topic. Go ahead Stephen.",
+            "speaking_duration": 24,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He is actively managing the meeting's time and agenda."
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "06:41-07:52",
+            "transcript": "So I just want to summarize. I think everyone pretty much said exactly the the state of the art now. So I think one key limitation is the the the quality and the completeness of the data provided for AlphaFold or for any you know any body to model per se. I think because of so many different factors involved that Lu mentioned like the environment and chaperone binding because I was working with Susan Lindquist on the protein folding before as well. So that's very important for the folding part and chaperone involvement. So all of that maybe not really in there when they were modeling all of these structures before. So I think all of that you know one one key thing that we got from this ISMB like International Society of Computational Biology meeting just last month was exactly this. So it's it's limited now by the kind of data available to us. So that's why we have always room to improve in the future to keep evolving all of that and the new generation of algorithms and data will be coming.",
+            "speaking_duration": 71,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He effectively summarizes the preceding discussion, referencing multiple speakers' contributions."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "07:52-08:10",
+            "transcript": "I just want to make a quick shout out because that actually is something that our lab is really interested in doing what we're actively doing is sort of proteomic experiments that can sort of survey on a large scale the effect of chaperones and our hope would be eventually you know the machine learning gurus could use data like that to train a model to answer those types of questions.",
+            "speaking_duration": 18,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He connects the discussion directly to his own lab's research, showing active engagement."
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "08:10-08:18",
+            "transcript": "Yeah, it seems like a great opportunity for experimentalists to talk to a theoretician. That's the way forward.",
+            "speaking_duration": 8,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "08:18-08:19",
+            "transcript": "Yeah.",
+            "speaking_duration": 1,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Cheemeng Tan",
+            "timestamp": "08:19-08:20",
+            "transcript": "Yeah, you're right.",
+            "speaking_duration": 1,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "08:21-09:01",
+            "transcript": "Just given one more reason I would say and possibly as as Rigoberto was mentioning I should state like this known knowns and known unknowns comes into really because often when these sort of interactions happen the unknown unknowns are of course definitely a problem, even known unknowns become a problem. So I think machine learning gives that gives that way of of figuring out the known unknowns when you're talking to experimentalists even beyond the physics models that we are often are so used to learning. So I think I think yeah that's why it's it's a really great opportunity I feel.",
+            "speaking_duration": 40,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He uses the 'known knowns, known unknowns' framework to describe the scientific challenge."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:01-09:06",
+            "transcript": "Rommie, do you want to choose a topic to go to next? Sure.",
+            "speaking_duration": 5,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "09:06-09:41",
+            "transcript": "Um well one that I kind of feel like is already floating a little bit in the ether is sort of relates to that to the um the comment point D which is what will be the most useful areas for AI and ML application for molecules in cells? For example, maybe virtual screening for drug leads and chemical probes, decorating proteins with post-translational modifications, handling variants, maybe folding in cells. Do folks have I thought that was maybe an interesting it pulls in another dimension in a more focused way.",
+            "speaking_duration": 35,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She is referencing an external document or agenda ('comment point D') to guide the discussion."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:41-09:43",
+            "transcript": "Anybody want to jump in on that?",
+            "speaking_duration": 2,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "09:43-10:10",
+            "transcript": "I know that there are people who are working on this question of like trying to predict, I mean this is riffing off something that you said very directly Rommie, that people are trying to like predict where PTMs are based on sequence where again we have mass spec you know data of where there are PTMs and then hopefully",
+            "speaking_duration": 27,
+            "interruption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        }
+    ]
+}
