@@ -1,0 +1,154 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Shankar Mukherji",
+            "timestamp": "00:00-00:50",
+            "transcript": "When I was in grad school I studied gene expression, stochastic or gene expression things like that. I sort of lost faith that we were ever going to be able to understand what's happening at the scale of the cell if I just know all the different gene expression levels of all the genes in the cell. And so as a postdoc I started moving to organelle biogenesis, things at a higher scale. And now we're trying to connect these things and it's, yeah, that's where we're having real intellectual challenges because everything's variable on both scales. They obviously talk to each other and how these things map on to things like how big the cell is or how fast they grow, it's very hard to intuit from a bottom-up kind of model. So that's the kind of challenge we're trying to grapple with with the machine learning.",
+            "speaking duration": 50,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He uses hand gestures to illustrate the concept of different scales."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "00:50-00:51",
+            "transcript": "Mhm.",
+            "speaking duration": 1,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a backchanneling cue, showing she is listening."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "00:56-00:59",
+            "transcript": "Great. Laura, you're next in my tile.",
+            "speaking duration": 3,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She is acting as the moderator, calling on the next speaker."
+        },
+        {
+            "speaker": "Laura Sanchez",
+            "timestamp": "01:00-01:02",
+            "transcript": "Maybe I can",
+            "speaking duration": 2,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "01:03-01:08",
+            "transcript": "I'll go ahead and write down while you're you're talking so you don't scribe for yourself.",
+            "speaking duration": 5,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She offers to take notes for the next speaker, facilitating the collaborative task."
+        },
+        {
+            "speaker": "Laura Sanchez",
+            "timestamp": "01:08-02:19",
+            "transcript": "Yeah, okay. I feel like I'm more in the second prompt here where we would like to use this more but I feel like we don't even know where to get started. And I think that falls into we have a lot of data but do we have enough replicates? And so I feel like often times with these problems we would like to use them more but I think like other people have been saying it's just how can this be best applied? So how do you know without having this expertise which approach might be best and how do we actually use it in a meaningful way? Because I feel like with a lot of these I don't even know where to get started. But I think it's clearly powerful it's just do we have, I think often, we were trying, I had a student trying to machine learn something from our data and it was basically like we don't have enough data. So how much data do we even need to even begin to apply? Because I think small data sets are very, as people have already said, are very biased and that's probably a problem. So I think that's kind of been from an experimental standpoint some of the hesitations we have when trying to even jump in.",
+            "speaking duration": 71,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She frequently touches her hair and face while thinking and speaking."
+        },
+        {
+            "speaker": "Nathan DeYonker",
+            "timestamp": "02:20-02:25",
+            "transcript": "Laura can you, can you remind me like what domain you're in where you have too much data?",
+            "speaking duration": 5,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He asks a clarifying question to the previous speaker."
+        },
+        {
+            "speaker": "Laura Sanchez",
+            "timestamp": "02:25-03:19",
+            "transcript": "I'm an analytical chemist so we have a thing where we were collecting patient samples and taking measurements so we have multi-dimensional mass spectrometry data which we hope might supplement traditional pathology results. But it's basically how many disease states do we need? Because basically our model was not very accurate. But from an experimental standpoint when we're saying what fields could benefit or what is the data, I think part of that is how much data do we need to get to even meaningfully use this? I don't have a feel for that still. Other than is the answer just I need to go get thousands of patient samples and is it just thousands? I don't know. I think the answer might be yes but...",
+            "speaking duration": 54,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She uses expressive hand gestures and facial expressions to convey her uncertainty and the scale of the problem."
+        },
+        {
+            "speaker": "Nathan DeYonker",
+            "timestamp": "03:20-03:45",
+            "transcript": "Some dimensions of your problem space you have a lot of data that is amenable to machine learning and other dimensions you don't even know how machine learning could apply or how AI could apply in general. Right. It's very different than my problems. It's cool.",
+            "speaking duration": 25,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He is summarizing and reflecting on Laura's point, comparing it to his own work."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "03:45-03:52",
+            "transcript": "Well that's great thank you. Hopefully I captured that correctly. Elizabeth?",
+            "speaking duration": 7,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She continues to moderate, transitioning to the next speaker."
+        },
+        {
+            "speaker": "Elizabeth Read",
+            "timestamp": "03:53-07:04",
+            "transcript": "Yeah I have a lot of thoughts on this but I guess I'll talk a little bit about my perspective on these questions at sort of these larger scales, I think sort of related to maybe what Julien was talking about. So, you know, part of our work is more in the mathematical biology world where a lot of the models are very large scale in the sense of cellular networks, so gene regulatory networks and signaling networks. And in this field a lot of the models are trying to be not necessarily molecularly accurate because everybody acknowledges that we have tons of gaps, but more can we capture the phenomenology? So can we capture the particular sort of circuit dynamics that are going to appropriately describe what's happening with the data and actually be able to predict how this cell would act under a perturbation, let's say, even if we can't actually capture every single pathway and every single interaction in a signaling network for example. And so what I see is that there is this real sort of question of forward or what was it called, inverse versus forward modeling. So the forward model is, alright, we have a whole bunch of different papers that have a whole bunch of cartoons in them with different sort of mechanistic hypotheses about what this pathway is or whatever, let's start building that into a model. We'll have a whole lot of issues with gaps where we don't know the parameters or whatever but we can start to model those things. And maybe if we're lucky we can kind of compete different models like that against each other and see which ones match the data better. And so I guess that would be sort of like a forward modeling problem. But then in this field there's also been a lot of progress in the inverse modeling, I don't know about machine learning but maybe some more sort of old-fashioned statistical inference approaches where people are doing Bayesian inference and kind of model selection against the data. And so I guess that actually sort of combines both, right? Because you still have your models that you start with and then you sort of compete those against the data. But I guess the issue is that you have such a, if you have a lot of gaps in your knowledge of the system and you're still trying to capture some fundamental properties of it, then you have an issue which is that you're never going to be able to put in your space of models all the possibilities. You know, there's this universe of possible, let's say, network structures that might be there that we don't know about yet and you're never going to be able to capture those in all your models. And so then I think there's this issue of this question of bias, like was brought up previously. It's like, well if I start with my best guess of what these systems are doing, I'm going to have tons of gaps or I'm never going to be able to comprehensively model all the possibilities. But on the other hand, if I were to maybe just do a completely data-driven approach and try to have some of these great new algorithms that are somehow going to learn those dynamics from the data, maybe they'll have their own biases, which I'm no expert in that so I don't know what those pitfalls are. But that's what I'm thinking about.",
+            "speaking duration": 191,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She provides a very detailed and thoughtful explanation, structuring her thoughts around 'forward' and 'inverse' modeling."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "07:05-07:11",
+            "transcript": "That was great, thank you. Neil?",
+            "speaking duration": 6,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Neel Shah",
+            "timestamp": "07:15-09:41",
+            "transcript": "Yeah, I actually wanted to touch on, as was noted at the beginning of this conversation, we've been talking mostly about the machine learning stuff and I did want to at least mention molecular dynamics. It's not to say that this is something that I have expertise in but some association with. I wanted to first briefly touch on questions five and six which are really about what role do atomistic simulations play in understanding of the cell. One question is how big can they get, how big and long can they get, and the other one was should we be modeling things that are cell sized at the atomistic level. As an experimental biochemist who studies protein-protein interactions and cell signaling, I think it would be extraordinary if we could observe at some atomic level resolution the structure and dynamics of large protein complexes or multi-protein complexes operating in the context of a plasma membrane. My sense is that this is very plausible now. I think we're getting very close to that and it seems like the very few limitations that exist from a purely MD standpoint are, the obvious one is computational power, and then with things like the membrane, how well do our force fields and parameters model the membrane. But my naive answer to question F is probably quite big and quite long, we're getting there. But I actually wonder, I'd be curious to know from other people in the room whether you all see a value in being able to model a whole cell or a whole organelle all the way down to the scale and resolution of atoms. It intrigues me intellectually, but is there a value in that? That's a question I wanted to pitch and then I'll have a little comment to make about machine learning, but I'm wondering if anyone wanted to chime in and tell me if they think we should be doing G. I don't know if anyone here in the room is doing that and it's not a criticism of your work, I'm genuinely asking.",
+            "speaking duration": 146,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He directly addresses previous questions and poses a new question to the group, fostering interactive discussion."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "09:43-09:48",
+            "transcript": "Folks want to comment on that now? Any thoughts?",
+            "speaking duration": 5,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Facilitating the question posed by the previous speaker."
+        },
+        {
+            "speaker": "Shankar Mukherji",
+            "timestamp": "09:49-09:59",
+            "transcript": "I guess hidden in that question is another question, which is to what extent are atomic level effects essentially averaged away as you go up scales, right?",
+            "speaking duration": 10,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He reframes the question posed by Neel, adding another layer to the discussion."
+        }
+    ]
+}

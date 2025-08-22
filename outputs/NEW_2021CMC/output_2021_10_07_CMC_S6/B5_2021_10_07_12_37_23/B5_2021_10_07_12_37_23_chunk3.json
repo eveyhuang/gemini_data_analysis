@@ -1,0 +1,134 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "00:00-00:05",
+            "transcript": "to availing that it would then properly predict that the whole thing falls apart.",
+            "speaking_duration": 5,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses hand gestures for emphasis."
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "00:05-01:40",
+            "transcript": "Yeah, so that's we've been working on that actually. That's not published, but for the past I would say three to five months now. So exactly because excitement by AlphaFold. So at the beginning when you first check the mutant and wild type form, so there's no change, almost the same. But actually for people who are very familiar with PDB I think Abhishek may know this more than me, you are able to do generate the score, a quantitative score that compare the sequence similarity and structural similarity or structural differences. When you rotate the structure from the current position 90 degrees rotating, you say this is different. No, they are the same. So you have to have a way to quantify. So there is way that we can somehow see that single point mutation can really do generate the structural differences. I think you can look at that more for structure differences, folding and other things. We we just started, but I think there are for sure some interesting thing that AlphaFold can offer even in terms of protein folding too. At least we can see some sort of thing on the protein surfaces because we are interested more in interactions. And then you see some sort of structural surface changes obviously and then by the structural alignment score, you can say yes, it is really a real change.",
+            "speaking_duration": 95,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "During this long turn, Stephen Fried can be seen listening intently, resting his head on his hand."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:40-01:44",
+            "transcript": "So Abhishek, you've been called out a couple of times by them. Do you want to uh",
+            "speaking_duration": 4,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He directly addresses another participant to invite them into the conversation."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "01:44-03:38",
+            "transcript": "I have very strong feelings about AlphaFold. It's fantastic actually, it's very very good. So actually my feeling is a bit different. I would not like to think about the 10 years in future with AlphaFold. I would like to think about the 10 years in future with Google, with what the CEO of Google is thinking might be potentially once he has gotten AlphaFold out. So now if we think in that direction, where did AlphaFold come from? The reason we really like this is because we essentially have a statistical mechanics kind of a mindset which really really kind of gets us into neural networks and and this sort of a multi-sequence alignment. So essentially as a community we were already highly biased on which this 500 million dollars investment is now being it's a we are we are return on investment. So in a way that's my way of thinking. Now let's think from a different side. Where did machine learning the way we are thinking over the last 20 years come from? The first wave was in 1960s where already Boltzmann motors, not Boltzmann generator but Boltzmann motors were generated. There's a second wave in 1980s and this is the third wave of machine learning holding the hands of GPUs. So from where I like to think is algorithms biology. There are seven different entry points of machine learning. Anything and everything that we are doing right now is the machine learning of neural networks, brain. How does the brain work? That is one way and we are what we are trying to do is we are trying to cast all our problems essentially in terms of how our brain thinks. There are six other ways. I've forgotten the names of the six others, one of them is quantum sensing. There are reviews in algorithms biology of these seven ways, three of them doesn't even have mathematical theorems derived. Let go of like it hasn't even reached computer science, it's in the applied math realm. So I think of machine learning, it's heavily biased by our interpretation of things. It's a virtual machine. So our interpretation is statistical mechanical which goes very nicely with this neural gas and and so this this is so this is very very good and therefore okay now now coming down to AlphaFold, I think therefore the next if we follow this track, I would invite everyone to look into the six other tracks. But if we follow this track, I think can we can we look into dynamics which is what I am very very interested in. In fact if you go to AlphaFold, they have a similar kind of work on dynamics on the website. They have been only able to train on three particle dynamics, they haven't been able to go beyond that. And not only that, one thing we are forgetting, training happens on TPUs not GPUs, very very highly sophisticated hardware which is not available on any public supercomputer in the country. It's only available with as a part of Google Colab, otherwise not. So I think dynamics would be extremely important to learn. The question is should we learn dynamics with neural networks with the way we are thinking about our brain thinks about things? Is that the ansatz to follow or should we think of other ways of machine learning altogether? And I think that's where I think we we we as biologists we can contribute because we know from from this biological side how does nature use seven algorithms. If we can treat this problem these seven that way, then possibly it's going to be easier. I know the reason of doing neural networks, LSTMs, GANs, the different kinds of objects also because now they are available, there's a lot of implementation. But can we think of it beyond that? I would say that's a possibility that sorry go ahead.",
+            "speaking_duration": 114,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is very animated, using frequent hand gestures to emphasize his points."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "03:38-05:10",
+            "transcript": "I was gonna say so Stephen Yi, I know your hand is up. I'm gonna push on some of the others who haven't spoken and then I'm gonna before I I I I have you speak and I'm gonna stimulate them a little bit to to try to address the question. I know Davide has a lot of thoughts on this and maybe Lu or Chinmay as well. So in this protein folding business, one question is if I have a structure or whatever, what's I mean if I have a sequence, what's the structure, etcetera, right? That's the sort of naive structural question which AlphaGo is answering. You could also do and people have been using machine learning, I mean neural nets to propagate a structure. So you can demonstrate that you can at least with simple all-atom models, you can learn a little bit of how to propagate from knowing our existing trajectories and propagate them. So you might even be able to use an AI to propagate a large protein and to be an integrator. And what Abhishek has kind of suggested is maybe that's that's like the obvious thing for us to do. We have an integrator, let's make a better integrator that uses the machine that is faster. But is there a different way in which we could think about dynamics or what's happening between these two, knowing the sequence and knowing the structure that would give us more information or different information that would be a different question that we need to address. So I'm I'm wondering what you all think about that and and that's my and I'm gonna and I picked on Davide and I warned him he was going to be the next person I was going to pick on.",
+            "speaking_duration": 92,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker acts as a moderator, redirecting the conversation and posing a new question to specific participants."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "05:10-05:26",
+            "transcript": "I'm totally ignorant of the relevant questions in the field, that's my limitation here. So I see this, so I was not pissed off about AlphaFold at all, I don't care. It doesn't scoop me.",
+            "speaking_duration": 16,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker laughs and smiles, indicating a lighthearted and humorous tone."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "05:26-05:27",
+            "transcript": "(Laughs)",
+            "speaking_duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a non-verbal vocalization (laughter) in response to the previous speaker."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "05:27-06:27",
+            "transcript": "I'm not trying to fold anything. But I see this as an opportunity and I'm still thinking in terms of what Rigoberto was saying. So this is a new set of tools that we can apply to answer more complex questions than just sequence versus structure. And one can go, the the the next little step is to look at metastability and in different environments because I mean you just don't have the protein in a solvation box and that's it. I think in in real life you you have different types of environments which probably affect the structure as well, partial folding or stuff like that. So that goes back to again using these tools with old tools like molecular dynamics but I'm still in the Boltzmann world, I haven't gone out of that.",
+            "speaking_duration": 60,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:27-06:34",
+            "transcript": "Lu or Chinmay, do you want to comment before Stephen jumps in?",
+            "speaking_duration": 7,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "06:34-06:48",
+            "transcript": "I'm not an expert at all at machine learning, but I was wondering, this protein structure prediction tool sounds really cool. Is there an equivalent tool for nucleic acids, especially RNAs?",
+            "speaking_duration": 14,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "06:48-07:01",
+            "transcript": "Well there's a science paper that came out from Rhiju Das I guess two weeks ago that's trying to, I mean you might be more familiar Abhishek, I don't think it's as good but it's like in the right direction.",
+            "speaking_duration": 13,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He points to his head while thinking and gestures towards another participant."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "07:01-07:19",
+            "transcript": "It's fantastic actually. People have been thinking about this. If it's a protein nucleic acid complex it works better because there's that scaffold but it's good actually like people are thinking in that direction. I think now they have even gotten this HHMI funding so they continue moving that forward. But but yeah that's that's clear.",
+            "speaking_duration": 18,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "07:19-08:00",
+            "transcript": "Good to know. And you know, and the protein folding process is not isolated. So like Davide said, we have to consider the environment, right? It's not just the water environment, what about the cellular environment, the crowding agents, the chaperones, stuff like that. Would I mean probably the training data will be hard to get, but then otherwise I think it will be a really powerful tool to use because from kind of the atomistic point of view it will be really difficult to model. But then if we know the structures, like some of the structures, some of its dynamics, there might be ways to kind of propagate them into much more",
+            "speaking_duration": 41,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        }
+    ]
+}
