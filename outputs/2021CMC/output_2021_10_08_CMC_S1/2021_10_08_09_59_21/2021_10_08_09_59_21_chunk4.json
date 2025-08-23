@@ -1,0 +1,174 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Paul Selvin",
+            "timestamp": "00:00-00:03",
+            "transcript": "All right, shall we call this time?",
+            "speaking duration": 3,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "00:03-00:05",
+            "transcript": "Perfect timing. Go ahead Paul.",
+            "speaking duration": 2,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Paul Selvin",
+            "timestamp": "00:06-00:42",
+            "transcript": "And well rather than me picking a topic, why don't I pick something I know nothing about and that is really computational. So Abhishek, why don't you start and then actually after you, I haven't heard from Alison for a while, so she could consider something. Okay, Abhishek?",
+            "speaking duration": 36,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses self-deprecation to nominate the next speaker and set the topic."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "00:43-05:41",
+            "transcript": "Yeah, so like actually Alison and me we actually have a funded project running through the Moore foundation like through through CMC on something that is related like and so might be yeah but like the question is the question is how to frame the question. I think that's where we are at this point of time thinking. So like in terms of like to do computations to do any sort of theoretical analysis first of all we have to kind of give this problem some sort of a basis and that's what I was primarily thinking. So one basis can be forces. So what we had thought of is can we introduce something like a mechanophore an object that kind of changes its color based on the mechanical properties around it as a probe of the of the force environment heterogeneous or homogeneous whatever that might be. We were primarily thinking intercellular because a lot more work has happened on an extracellular level but still like let's say mechanophore as an object as a reporter for what is the force environment of a cell was something that that we have been thinking about because that gives me a basis something called a force field essentially within which now a bunch of mechanical responses can be computationally achieved. That's from a very you know hardcore physics perspective. Now let's think of learning and that's what I was like looking up might be the colleagues here can can comment on like normally when this is such a multi-scale problem like when you have let's say inputs and outputs let's say inputs at a molecular level as at the level of proteins and outputs that are felt at the level of you know the cell ECM interactions which itself are not very well defined might be models can be built like you know with a very clear focus in mind that here is my molecular level input and there is my intercellular communication level output and and purely as a and purely as a I would say like people have done in genotype phenotype modeling where genes are being tinkered around at one scale and phenotypes are happening at a completely different scale but purely based on observations you connect them and then you try to make some sense out of it. Can we do something like that here? For that of course one has to think of features what features should we choose at the molecular level that might have their manifestations at the intercellular level. And then purely as a way of bookkeeping without any understanding at a priori just collecting data at the molecular level and then seeing their manifestations at the intercell communication level one can come up with a model and then one can test it by introducing different kinds of perturbations like you know some sort of mutants that changes the the the elastic property of the protein that we're talking about and let's see how does that reflect in the in the holistic outcome of the cell and then create that map to start out with as a computational tool because going real all physics multi-scale might not be the best way here possibly it's not even possible I don't think it's some some some scales become irrelevant when some other scales become important as as as someone was telling. So it's better to have to to find out if there exists any causal relationship that kind of those kind of you know feature selection and outcome selection if we can have that kind of a table made then might be one can have and enough data then one can have a map between these two. And finally one last point I would make is why would we not care about you know like as as was mentioned like you know finally when a when a complex gets made at the interface of the of the two membranes when when when this membrane adhesion happens we start only caring about that part not before that. Reason possibly is because anything that's happening before it is not rate determining. We are often interested in highly rate determining events something the slowest part of the system. Might be the diffusion of the proteins on the membrane despite its being you know very very interesting it might be the reason one haven't looked too much into it is because that diffusion process is not the slowest process in this entire cascade and and one is interested in the rate determining the slower processes and changing those kinetics in a way and and to see the effect of cell ECM interactions in that perspective. So these were my three point thought that if we can make a table when we don't have physics at least data science has taught us make a table. If we can make a table then from there we can learn something. So so yeah that would be my two cents.",
+            "speaking duration": 238,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The speaker briefly and likely accidentally shares his desktop screen, showing file icons and the Zoom application window. The share is not intentional for presenting content and is quickly stopped. No changes are made to the content.",
+            "other": "The speaker uses extensive hand gestures to explain complex concepts."
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "05:42-06:18",
+            "transcript": "Great points Abhishek. Let me make a quick comment on what you said. It make me trigger me to think of something. I know you have local specialists on mechanophore compounds that could be injected into the cell to read the tension profile. Also UIUC I think Paul and Anna Marie probably can back me up on those. UIUC have two of the our country's leading specialists in making mechanophore. That's Professor Jeff Moore and Nancy Sottos. So you might if you check them up you can see if any of their mechanophore can serve the purpose.",
+            "speaking duration": 36,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She builds on the previous speaker's point by suggesting specific experts and resources, demonstrating collaborative knowledge sharing."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "06:19-06:22",
+            "transcript": "Yeah they were the director of my program so when I was a Beckman fellow.",
+            "speaking duration": 3,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a brief, confirmatory interjection."
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "06:22-06:25",
+            "transcript": "Yeah I figured you probably knew. Yeah they have really nice.",
+            "speaking duration": 3,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Alison Ondrus",
+            "timestamp": "06:25-06:28",
+            "transcript": "I'll jump in on that too a little bit.",
+            "speaking duration": 3,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is the start of a collaborative turn-taking sequence to pass the floor."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "06:28-06:28",
+            "transcript": "Go on go on Alison yeah.",
+            "speaking duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Encouraging another speaker to take the floor."
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "06:29-06:30",
+            "transcript": "Please I want you all",
+            "speaking duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Also encouraging the next speaker."
+        },
+        {
+            "speaker": "Alison Ondrus",
+            "timestamp": "06:31-06:40",
+            "transcript": "Because Abby you know actually Jeff Moore was the advisor of the person that Abby and I are consulting on our mechanophore project.",
+            "speaking duration": 9,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "She reveals a pre-existing connection to the expert just mentioned, highlighting the small, interconnected nature of their scientific community."
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "06:38-06:39",
+            "transcript": "Oh my goodness.",
+            "speaking duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "A brief, reactive interjection."
+        },
+        {
+            "speaker": "Alison Ondrus",
+            "timestamp": "06:40-06:41",
+            "transcript": "Yes it's always a very",
+            "speaking duration": 1,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "06:43-06:45",
+            "transcript": "Very small world. Yeah.",
+            "speaking duration": 2,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Alison Ondrus",
+            "timestamp": "06:46-09:53",
+            "transcript": "But to follow up on what Abby was saying I think you know that's what I really like about the project you know seeing the forces of life is what we called it that we are you know working on with the support of the CMC is is that we really have tried I think with our team to trace sort of span the the different scales where you know we have Abby's computation where we're looking at you know even like the forces between bonds in an individual tether between what's pulling and what's fixed in the cell and the extracellular environment. And then you know we have these chemical tools that we've developed that fluoresce or create a signal once we've passed a certain force which is definitely at the level of you know cell and protein type forces. And then we're working with Ross Wang who's also you know here this year too and on our project where the ultimate goal is to then look at sort of a macro scale or at least a cellular scale phenomenon of cell migration and take it all the way from sort of the forces that bonds are experiencing in this tether to the sort of phenotypic output of that one protein force that's being felt to what the phenomenon is on the cellular scale of migrating. So I think like that's definitely something that came out of of this meeting and we're looking to to try to make a little bit of inroads at least on this specific topic between the nano scale and the macro scale. Um yeah so I thought that would maybe a progress report a plug our project or something but um switching gears a little bit to my own lab one thing that hasn't been brought up yet that we're really obsessed with is metabolism and signaling metabolites that are exchanged between different cell types different organs and even different species. So what's really hot right now is you know the microbiome and metabolites that are being secreted by this whole you know universe of microbes in our gut and how that affects our health. Um but it also shows up in sort of endocrine signaling within tissues where you have the immune system is something that we work on that communicates metabolically between different immune cell types and spurs on all sorts of different you know differentiation and response processes. So my questions with respect to metabolism here would be you know how how do we sort of trace the origins and receptors of signaling metabolites either between cell types species and organs and then I guess a dream that I had was you know how do we engineer technologies where we might be able to say you know use a bump and hole technique so we can create these labeled signaling metabolites in one species or one cell type and then trace them as they travel to different organs and actually get to the molecular level and see what receptors they're interacting with and how that sort of rewires all of these broader signaling pathways.",
+            "speaking duration": 187,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The speaker briefly and likely accidentally shares her desktop screen, showing file icons and the Zoom application window. The share is not intentional for presenting content and is quickly stopped. No changes are made to the content.",
+            "other": "She effectively summarizes a collaborative project, linking multiple members' expertise, before pivoting to her own lab's specific interests."
+        },
+        {
+            "speaker": "Alison Ondrus",
+            "timestamp": "09:56-09:57",
+            "transcript": "you're you're",
+            "speaking duration": 1,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Seems to be starting a new thought but is cut off."
+        },
+        {
+            "speaker": "Gang-yu Lu",
+            "timestamp": "09:58-10:00",
+            "transcript": "Oh yeah they all under the topic.",
+            "speaking duration": 2,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        }
+    ]
+}
