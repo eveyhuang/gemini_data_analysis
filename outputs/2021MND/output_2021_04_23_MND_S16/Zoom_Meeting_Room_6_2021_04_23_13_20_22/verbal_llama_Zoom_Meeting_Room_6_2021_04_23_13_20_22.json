@@ -1,0 +1,988 @@
+[
+    {
+        "utterance": "Barbara Bendlin: what what does that bring to mind with regard to your own expertise or what's needed in the field. ",
+        "annotations": {
+            "ask question": "The utterance explicitly requests information or thoughts from others.",
+            "encourage participation": "The utterance invites others to contribute their thoughts or expertise."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: All right, would anyone like to start by sharing what uh what comes to mind when thinking about these questions? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or input from other team members regarding their thoughts on certain questions.",
+            "encourage participation": "The speaker is explicitly inviting others to contribute their thoughts and ideas.",
+            "process management": "The speaker is managing the meeting flow by inviting participation."
+        }
+    },
+    {
+        "utterance": "Nandita Garud: Uh, I was looking at this phrase in the question, are there multiomics approaches that are that can be used beyond correlation, specifically beyond correlation to better leverage the massive data collection efforts. And uh, to me what comes to mind is models ",
+        "annotations": {
+            "propose new idea": "The speaker mentions 'multiomics approaches' as a potential solution, introducing a new idea.",
+            "identify gap": "The speaker notes the need to 'better leverage the massive data collection efforts', implying a gap in current methodologies."
+        }
+    },
+    {
+        "utterance": "Nandita Garud: of underlying processes that can generate the patterns that we see in the data. And I think what would be a really interesting uh future direction for the field would be to create generative models that can make predictions across data types. Uh, even within a given data type, it's hard to make predictions that fit multiple summary statistics. For example, you take genetic data, you predict one thing, but you fail to predict the other. So, um, the simpler the model, the better, uh, and often that's where modeling efforts start with, but uh clearly with simpler models you miss some of the subtler details. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea for a future direction in the field, which is to create generative models that can make predictions across data types.",
+            "develop idea": "The speaker expands on their idea by discussing the challenges with making predictions within a given data type and the trade-offs between model simplicity and capturing subtle details.",
+            "identify gap": "The speaker highlights a challenge in the field, which is the difficulty in making predictions that fit multiple summary statistics within a given data type."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: I think I can add something. One which is that when we're using like one data set, I think often or even multiple data sets, I think often times the data is underutilized. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the previous idea by providing another perspective, specifically about the utilization of data sets.",
+            "offer feedback": "The speaker provides a perspective on the issue of data utilization, which can be seen as offering feedback."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: So, I know in my lab if we do like pathway analysis, right, of differential molecules, like we pick one and that's all we work on. So, um, I think this maybe also ties into the later comment about how should data be shared, um, and and made available to the community, but I think, you know, can maybe kind of piggy backing on Nandita's comment about making models, um, one I think is there a way that we can think about using the data more effectively. Um, and then I think there's another element which is what about missing data? So unannotation, um, or unassignable uh signals. I think maybe I just posed more questions and no answers, but nonetheless those are my thoughts. ",
+        "annotations": {
+            "develop idea": "Stephanie is expanding on Nandita's comment about making models by suggesting the need to think about using data more effectively.",
+            "ask question": "Stephanie poses questions about how data should be shared, made available, and used more effectively, as well as what about missing data.",
+            "identify gap": "Stephanie mentions the issue of missing data (unannotation or unassignable signals) as a gap in current approaches."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: Another way to think about uh beyond correlation is uh having uh temporal component. Uh particularly when you look at um not just model organism but in in say in humans where you cannot do easy dissections, but uh um having samples from different time point in relation to the outcome of interest. Um when you bring these multiomic data then you can at least have a temporal association that can speak a bit to what comes first. Obviously genetic post genetics comes first, but there are other other dynamic process that we can look for particularly in chronic neurological diseases that take years to develop. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of using a temporal component to go beyond correlation in multiomic data analysis.",
+            "develop idea": "The speaker elaborates on the idea by discussing the use of samples from different time points and its application to chronic neurological diseases."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou: I I don't know if we we we mentioned this point. Um, so, you know, when we have several data sites, right? Uh, and uh what you can do is just uh um association correlation analysis uh if you have a cross section. I wonder if we go beyond association ask the question about the causation, what kind of data set we need. Um, does longitudinal um data sampling uh, you know, generate that data will help um answer the question causation or new prediction. I guess it depends on the data type how how you design the study. ",
+        "annotations": {
+            "ask question": "The speaker explicitly requests information about the type of data set needed to answer questions about causation and whether longitudinal data sampling can help.",
+            "develop idea": "The speaker expands on existing ideas by discussing the limitations of association correlation analysis and exploring alternatives like longitudinal data sampling for studying causation."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: Temporal data, I think this this really depends on the informativeness of the temporal data. Uh, I can give you an example, if you look at the microbial composition over time, if the the uh the composition just fluctuate around a particular steady state, then this type of time series data is not very useful for us to infer causation because you're basically just looking at fluctuations. So you have to introduce very crazy perturbations, uh which very likely will uh raise ethical concerns for for humans. So, um, what I want to say is that uh temporal data is great, but the temporality should really help us infer the causation. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the idea of using temporal data, providing examples and considerations.",
+            "critical response": "The speaker is providing a cautionary note on the use of temporal data, highlighting limitations.",
+            "offer feedback": "The speaker is providing specific suggestions for how to consider temporal data effectively."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: I I would say though that uh that that's the noise that we see um over time surely is a concern not just for microbiome data or any omic data. ",
+        "annotations": {
+            "critical response": "The speaker is questioning the consideration of using temporal data by mentioning a concern about noise over time.",
+            "offer feedback": "The speaker is providing a comment that can be seen as feedback on the discussion about temporal data."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: for example, imaging data, neuroimaging data is another uh example. However, if there is a large signal that we can see with or without some perturbation, and perturbation could be the disease onset that's happening in the natural environment. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas discussed in the conversation, specifically by providing examples of how the concepts could apply to imaging data and neuroimaging data.",
+            "offer feedback": "The speaker provides additional perspectives by discussing the concept of perturbations and their impact on data analysis over time, which can be seen as offering feedback on how to consider data analysis."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: at some point disease begins and or for example when people get exposure, uh the exposure could be antibiotics as as as as as a large perturbation. ",
+        "annotations": {
+            "Develop Idea": "The speaker is expanding on the idea of considering significant events as large perturbations, building upon existing discussions.",
+            "Supportive Response": "The speaker is adding an example to support and advance the discussion on analyzing significant events or exposures."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: then if you have longitudinal data collected with time frequency um that captures what's a potential ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea of using longitudinal data collected over time to capture potential changes or signals."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: um perturb perturbation and then you have some outcome to measurable outcome then if you're more likely to pick up a larger signal. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea of using longitudinal data and the concept of perturbation to understand the relationship between variables over time.",
+            "offer feedback": "The speaker provides a suggestion on how to approach data analysis, specifically regarding the detection of larger signals with longitudinal data and measurable outcomes."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: but but your point about um noises is of course um need to be taken into consideration. ",
+        "annotations": {
+            "Supportive Response": "The speaker is expressing agreement with Yang-Yu Liu's point about considering noise in data.",
+            "Acknowledge Contribution": "The speaker is verbally recognizing Yang-Yu Liu's input regarding the concern about noise."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Um, I was going to say because I think what we've been talking about is addressing question two, what data must be part of the repository and how can it be integrated effectively to track gut brain interactions. ",
+        "annotations": {
+            "summarize conversation": "Irene Yang is summarizing what has been previously discussed by the group and relating it to a specific question (question two) about what data must be part of the repository and how it can be integrated effectively."
+        }
+    },
+    {
+        "utterance": "Irene Yang: So the examples in the question are molecular, cellular, imaging, genomic, metagenomic, clinical measures, etc. I think behavioral data is really important. ",
+        "annotations": {
+            "develop idea": "Irene Yang is expanding on the existing discussion about data types by listing examples and adding behavioral data as an important consideration.",
+            "offer feedback": "By suggesting that behavioral data is important, Irene is providing feedback on what should be included in the data repository."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Um, social factors, environmental factors. Basically almost everything, like you you want to collect just about everything. ",
+        "annotations": {
+            "develop idea": "Irene Yang expands on the idea of comprehensive data collection by suggesting the inclusion of social and environmental factors.",
+            "offer feedback": "Irene Yang provides feedback on what should be included in the data collection, suggesting a broad approach."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Oh, no, no. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: And no, no, and I I and and I'm a human researcher too. So I think about human data when I think about these questions too. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker starts with 'And no, no', which seems to acknowledge previous points or contributions.",
+            "signal expertise": "The speaker explicitly states their background as a human researcher.",
+            "develop idea": "The speaker expands on their perspective as a human researcher and how it relates to thinking about human data."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Do people know about data sets that that are available? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about available data sets, which directly aligns with the definition of asking a question to gather information."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou: be there. Also, you know, when we do like human studies, it's really a balance, how much you can do our you want to do everything, right? I I think it's really important to kind of rank uh what's the critical match data we need. We cannot do everything, right? ",
+        "annotations": {
+            "develop idea": "Yanjiao Zhou is expanding on previous discussions about study design and data collection, emphasizing the balance between comprehensive data collection and practical limitations.",
+            "identify gap": "Yanjiao Zhou mentions the limitation of not being able to do everything, indicating a recognition of gaps in what can be accomplished.",
+            "clarify goal": "Yanjiao Zhou stresses the importance of ranking critical data needs, which implies clarifying goals or objectives for effective study design."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: depends on you can't do a lot. ",
+        "annotations": {
+            "supportive response": "The speaker acknowledges the limitations of what can be done, offering a somewhat supportive but brief comment on the challenges."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: There are some studies that collect a lot. Maybe maybe one idea would be to add um microbiome collection to ongoing longitudinal studies on neurological diseases. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of adding microbiome collection to ongoing longitudinal studies on neurological diseases.",
+            "offer feedback": "The speaker provides a suggestion for improvement or modification of existing ideas or approaches by proposing to add microbiome collection."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou: Yeah, there are lots of like birth cohort studies and basically really collect everything when you, you know, the Canadian child study. There was so many different things. ",
+        "annotations": {
+            "develop idea": "The speaker expands on the idea of collecting comprehensive data by mentioning specific types of studies (birth cohort studies) and providing an example (Canadian child study).",
+            "supportive response": "The utterance supports the discussion by providing a concrete example of existing studies that collect a wide range of data."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: Can I ask a little bit of a silly question? When you think about clinically collecting samples for microbiome, um what do you actually collect and measure? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the specifics of collecting microbiome samples clinically, which is a clear example of asking a question to gain knowledge or clarification."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: So so so we we collect stool samples primarily because it's a bit easier. I know other people have done oral microbiome collection as well. So we could collect the the the stool sample but we collect blood sample in in conjunction. And uh from from the serum uh sorry, from from the stool you can generate metagenome data. people can also look at uh fecal um uh uh micro RNA which some of the microbiome uh are associated with and from the blood you can do immune profiling, uh transcriptomics and so forth. And and obviously metabolomics. Um we also have uh the the there's some work looking at um cell circulating uh DNA looking for methylation profile which is trying to basically use as little sample that we need from humans to infer a lot more information. So from the circulating DNA, we can infer um tissue of origin and um specifically looking using single cell reference maps of methylation and uh uh so you can infer if there compared to the control level background, is there elevated level of say brain cells or or OPC cells or or etc. That's in your circulating blood that's beyond the normal turnover. This this sort of work has been done primarily in cancer uh liquid biopsy but uh we're trying to develop into um as biomarkers for neuro neurodegeneration. ",
+        "annotations": {
+            "develop idea": "The speaker expands on existing ideas by providing detailed explanations of sample collection and analysis for microbiome studies.",
+            "signal expertise": "The speaker explicitly states their expertise and knowledge in collecting and analyzing samples for microbiome studies."
+        }
+    },
+    {
+        "utterance": "Nandita Garud: Um, there is a paper that came out in late last year that was really impactful for me. It was by uh first author Huge Kovich Savision where it was in published in nature and they found that a lot of these association studies done with microbiome data are confounded by host attributes such as smoking, obesity, etc. I see a lot of you nodding, so you guys have probably seen it. So, um recently with a collaborator we were trying to discuss what data do we need to collect apart from the stool data and we took a look at that paper because we didn't want to be uh running into trouble with these confounders ourselves, though obviously noise correction methods and so on are needed. So, that may be a useful resource. ",
+        "annotations": {
+            "develop idea": "The speaker is building upon the discussion by sharing relevant information from a paper and explaining its relevance to their current considerations.",
+            "identify gap": "The speaker mentions a problem with association studies done with microbiome data being confounded by host attributes.",
+            "clarify goal": "The speaker is discussing what data to collect, which relates to clarifying goals."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: And one question I have is how many stool sample you need to collect because the microbiome is quite flexible like variable. ",
+        "annotations": {
+            "ask question": "Kaixiong Ye is requesting information about the number of stool samples needed for microbiome analysis, indicating he is seeking clarification or expertise from other team members."
+        }
+    },
+    {
+        "utterance": "Heather Bean: I'm just gonna um add two comments to the discussion, although I'm wondering now if I remember both of them. Um so one about the uh utilizing specimens and like the expense of of collecting from humans. I feel like well the vast majority of the expense is actually doing the collection. You know, employing research coordinators and um recruitment efforts and things like that. Then uh but I feel like uh and this was sort of mentioned earlier just even about the data, Stephanie mentioned this, the data and a data set, you might focus on one metabolic pathway and ignore the other 10,000 molecules that you might have collected information on. But it's even compounded by the fact that if you take a stool sample and what you're interested in or what you're interested in measuring are the metagenomes, there's so much other stuff in that stool that could be used, maybe you don't know how to use it, maybe it's not part of your current study, but if you talk to someone who studies immune markers in stool, they could give you some idea of how could you preserve the stuff that you would be normally chucking in the garbage and put it in the freezer that they if they could, you know, um find the funding to do it. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by discussing the underutilization of data and specimens.",
+            "supportive response": "The speaker is expressing validation for the discussion by building on previous comments.",
+            "offer feedback": "The speaker is providing observations that could improve research practices."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean: The same thing goes for metabolomics. Um there I talk with a lot of people who study transcriptomes or genomes. ",
+        "annotations": {
+            "develop idea": "Heather Bean's statement expands on the idea of underutilization of research data or samples by mentioning metabolomics, suggesting a broader application of the concept.",
+            "acknowledge contribution": "Heather Bean acknowledges her conversations with people who study transcriptomes or genomes, recognizing their areas of expertise."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: That's a really good point. I I I I would just echo that in that in that uh uh when we we when we collect samples, we follow the um the HMP2 protocol of collection in which they have uh basically one again we're talking about stool sample collection. We have one tube that's coming from ethanol containing vial, the other come from a non ethanol containing sort of a dry vial and then we make aliquots for each. Um and and we for for for sequencing we only need something like 100 nanograms uh from the ethanol containing tube. So, uh but we preserve uh some of them are you know mark for proteomics but even though we're not really doing that right now, um some of them are you know mark for um metabolomics uh from fecal metabol not just the serum metabol which I'm more interested in. Um and and and also for future experiments where you can that's from the dry tube you can sort of free, you know, culture potentially populated um to to to to do the experiments but even though we haven't we really just use like you know, I guess uh 1/10th of the sample that we have collected so far. So that's that's a very good point. ",
+        "annotations": {
+            "develop idea": "Zongqi Xia is expanding on previous ideas about sample collection and utilization, providing specific details about their protocol and practices.",
+            "offer feedback": "Zongqi Xia offers positive feedback on a previous point, acknowledging its value."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: based on a priori knowledge of biological pathways. And I I I think the important point going back to the question of the I think the first question, you know, um, I think it's the first question. I don't know, lost my slide, but but what additional data must be part a second question about the repository. ",
+        "annotations": {
+            "ask question": "The speaker is implicitly asking about what additional data must be part of the repository.",
+            "identify gap": "The speaker mentions the need for additional data, indicating a gap.",
+            "clarify goal": "The speaker is referring back to questions about the repository, aiming to clarify goals."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou:  ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: I think we've been talking a lot about uh sort of the the omic data, but I think having all these potential confounders as uh as Nandita was saying that that's really important. And not just being healthy, but also in disease populations in which we have even more confounders. Um, things like treatment, uh immune modulating treatment in particular for for for disease that's involved the immune system such as multiple sclerosis profoundly affects the the gut microbiome. Uh there there are multiple studies that show that so even though when we study disease, uh microbiome in in autoimmune diseases in in neuroinflammatory diseases, um almost all the patients are on some sort of treatment. And and accounting for just what they are being treated may not be adequate because people were treated with different medications at different time point that may have longer term impact. Um, I think these are all major challenges. Um, but but going back to another question that was saying earlier, because these treatments are important, um, so so it's so important perturbations, they they um, they will we expect them to have a greater impact. you can think of them as sort of the natural experiment that has already taken place. But the challenge for us doing human research is having the having the the time horizon to capture these information and as the metadata uh that we can add to this um omic data collection in order to do some causal inference. ",
+        "annotations": {
+            "Develop idea": "The speaker is expanding on previous ideas, particularly Nandita's mention of confounders, by providing specific examples related to disease populations and treatments.",
+            "Signal expertise": "The speaker is drawing on their expertise in the field, particularly in studying the gut microbiome and its relation to diseases.",
+            "Identify gap": "The speaker is highlighting the gap in current research, specifically the challenge of accounting for treatments in studying disease populations."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Can we go back to Calvin's point? So just so I'm clear that what I'm writing down. ",
+        "annotations": {
+            "ask question": "Irene Yang is requesting clarification or further discussion on a point made by Calvin.",
+            "None": "No, a relevant code applies"
+        }
+    },
+    {
+        "utterance": "Irene Yang: So you talked about leveraging the correlation structure of metagenomic data or microbiome data to do what, Calvin? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on a prior statement or idea proposed by another group member."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: To align different data set together. ",
+        "annotations": {
+            "offer feedback": "The speaker is providing a suggestion for integrating different data sets together.",
+            "develop idea": "The speaker's suggestion directly builds upon the previously discussed ideas of data integration and analysis."
+        }
+    },
+    {
+        "utterance": "Irene Yang: So ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: So for example that one data set has microbiome and disease status. The other data set has microbiome and metabolome. ",
+        "annotations": {
+            "develop idea": "The speaker provides a specific example of how two different data sets can be aligned, one having microbiome and disease status, and the other having microbiome and metabolome, thereby expanding on the idea of leveraging correlation structures of metagenomic data."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: By aligning the two data sets together, you have disease status, microbiome and metabolome. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an idea previously discussed (integrating different types of data) by explaining how aligning data sets can be useful.",
+            "offer feedback": "The speaker provides a specific example or suggestion for how data integration can be approached."
+        }
+    },
+    {
+        "utterance": "Irene Yang: So but that could apply to any omic as long as there's an omic in common? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on whether a method can apply to any omic data as long as there's an omic in common.",
+            "develop idea": "The speaker is expanding on the idea of aligning datasets by inquiring about its broader applicability across different types of omic data."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: Yes. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or confirmation to a previous statement, which is a positive evaluation or validation of the contribution."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: Just an idea. ",
+        "annotations": {
+            "supportive response": "The speaker is acknowledging their previous suggestion as merely an idea, showing a positive but non-committal attitude towards it.",
+            "None": "No other code seems to directly apply as the statement is very brief and does not explicitly develop an idea, ask a question, signal expertise, or take a critical stance."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou: I think that's a good idea, but in practice, there there can be a lot of problem because uh because uh even for example, two data set both have the microbiome data, the microbiome profile can be quite different. Even you study multiple sclerosis, right? If one studies MS data and the other studies MS data, they can be quite different. ",
+        "annotations": {
+            "critical response": "Yanjiao Zhou is questioning the feasibility of the proposed idea by highlighting practical problems, specifically the variability in microbiome profiles.",
+            "develop idea": "Yanjiao is expanding on the idea by discussing potential challenges and considerations in working with microbiome data, particularly in the context of aligning different datasets."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou: I feel like that can be ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean: more hypothesis generating um than, you know, actually finding those um definitive linkages when you're kind of stepping through um data sets with with commonalities. And I was also going to add to um Calvin's comment and and when he asks is this possible for metabolomics or is it possible for um microbiomics. The um so I feel like my the way I initially interpreted your question is if you have microbiome data for irritable bowel syndrome and then you have microbiome data for another um disease state and then microbiome data for another disease, can you start to like piece together a broader picture just amongst microbiome experiments. And I was just going to comment that it becomes much more challenging um for metabolomics than for some of uh genomics or transcriptomics because um the ability to quantify metabolite A versus metabolite B is entirely platform dependent and much more so, much more sensitive than it is for transcript A versus transcript B if you're measuring transcriptomics. ",
+        "annotations": {
+            "develop idea": "Heather Bean expands on previous discussions about integrating datasets and discusses the challenges involved.",
+            "critical response": "She provides a critical view on the challenges of comparing metabolomics data across different studies or platforms.",
+            "offer feedback": "Heather Bean offers feedback on the approach to integrating different types of data, highlighting the difficulties with metabolomics."
+        }
+    },
+    {
+        "utterance": "Irene Yang: That's a similar challenge for microbiome analysis, isn't it? ",
+        "annotations": {
+            "ask question": "The speaker is seeking confirmation or agreement on the similarity of challenges between microbiome and metabolomics analyses.",
+            "supportive response": "The speaker is showing agreement and relating the challenges in metabolomics to those in microbiome analysis."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Like just the batch effect thing, so then how do you analyze multiple data sets that have been um sequenced at different labs, different times together. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information on how to analyze multiple data sets sequenced at different labs and times.",
+            "identify gap": "The speaker acknowledges a challenge in analyzing data sets due to batch effects, implying a gap in current methodologies."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: I think we are talking about quite different questions. ",
+        "annotations": {
+            "process management": "The speaker is commenting on the flow of the conversation, suggesting that different questions are being discussed, which relates to managing the meeting flow and discussion topics."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Go ahead, you. ",
+        "annotations": {
+            "encourage participation": "Irene Yang is inviting someone else in the group to contribute their thoughts or ideas."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: We are talking about different studies, different cohorts. Of course, that's that's a huge problem. But the question we are supposed to ask is for given study, given cohort, suppose we have different omics data type, how can we integrate them, right? That's my understanding. ",
+        "annotations": {
+            "develop idea": "He is building upon the existing discussion by suggesting a more focused approach on integrating different omics data types within a study.",
+            "ask question": "He directly asks how they can integrate different omics data types, which is a direct question.",
+            "offer feedback": "His suggestion can be seen as offering feedback on how to proceed with the integration of omics data.",
+            "clarify goal": "He is trying to clarify the goal by suggesting a focus on integrating different omics data types within a study."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Can I add to your comment? ",
+        "annotations": {
+            "process management": "The speaker is managing the conversation flow by asking if she can add to the previous comment."
+        }
+    },
+    {
+        "utterance": "Irene Yang: I think yeah, both. ",
+        "annotations": {
+            "supportive response": "Irene Yang is expressing agreement with a previous statement, indicating a positive evaluation of the ideas or options presented."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: have different ideas about how to leverage the existing data. So maybe there's, you know, two things can you ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting others in the group to contribute their expertise, opinions, or ideas."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: use existing data from multiple studies and come up with harmonization or what do you do with one data set, which is the easier one probably to deal with. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a suggestion for a new approach to handling data from multiple studies or a single dataset.",
+            "process management": "The utterance suggests a practical approach to managing data analysis tasks."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: Well, even well, I I I will not say it's easy but uh ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Not easy. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: I think it might might um um um a suggestion. Suppose we have a very comprehensively um study cohort with multiple omics data types including microbiome, genomics, epigenomic and so on. So, um actually this type of a problem has been studied by computer scientists for a while. They consider this kind of a multi view data. So, um they have developed some interesting methods, for example, the so called similarity network diffusion method. And the basic idea is very simple. If you look at each single omics data type, um you can construct a so called patient similarity network. It's based on correlation, I agree, but let let's let's assume we just use correlation. So you construct a patient similarity network based on any single omics data type. And then you do the fusion and this is the magic moment. You fuse all the single network into a big integrated patient similarity network. And from there, then you can study different types of problem, for example, uh the disease subtyping or patient stratification or do some prediction. So, I think this problem the integration has been studied by computer scientists from very different angle. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new approach for integrating multiple omics data types using the similarity network diffusion method.",
+            "develop idea": "The speaker elaborates on the method, explaining its application in constructing patient similarity networks and its potential uses."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: Can I add to your comment? ",
+        "annotations": {
+            "ask question": "The speaker is asking for permission to add to a previous comment, which is a form of question."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: about the what data is available? What if I just put my raw data in a repository? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about what data is available.",
+            "propose new idea": "The speaker suggests putting raw data into a repository as a potential solution or approach."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: Do you do you know how to deal with that? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or expertise from others in the group on how to deal with a particular situation."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: What do you mean by raw data? ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification on the term 'raw data' as used in a previous statement."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: My literally the data that comes off my instrument. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: So that's the practice, right? In mass spectrometry, that's the practice. The best standard that you have is to put your raw data in there. ",
+        "annotations": {
+            "develop idea": "Stephanie Cologna is expanding on the idea of data handling by specifying the practice in mass spectrometry.",
+            "supportive response": "Her statement supports the discussion on data handling by providing a concrete example from her field."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: And then it's up to the world if they want to analyze it however they want. Or do you want somebody else's pre processed data and you want to trust that they did something the way you want? ",
+        "annotations": {
+            "Develop idea": "The speaker is expanding on the idea of how data can be shared and analyzed, discussing implications of different approaches.",
+            "Offer feedback": "The speaker provides a perspective on the trade-offs of sharing raw versus pre-processed data, which can be seen as offering feedback on how to approach data analysis."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: That's that's a good point. ",
+        "annotations": {
+            "supportive response": "The speaker expresses agreement or validation of a previous point."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: Well, well, I I I I think you still should upload the the raw data, but what what we typically do is we upload the raw data but also share our um analytical uh uh script. So so so that way you it's it's clear to people, well here's the raw data, this is how we analyze it. you you go do your your thing and see if you get the same results. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests uploading raw data and sharing analytical scripts to enhance research transparency and reproducibility.",
+            "develop idea": "The speaker elaborates on their practice of sharing raw data and analytical scripts to facilitate analysis and verification by others.",
+            "supportive response": "The speaker expresses a positive view on data sharing and transparency by suggesting a method to achieve this."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: create the importance of of sharing raw data, at least process version of it. Now, you know, just to be clear, there are instances in which raw data cannot be shared due to regulation and so forth. ",
+        "annotations": {
+            "Develop idea": "The speaker is elaborating on the concept of sharing data, specifically mentioning raw or processed data.",
+            "Offer feedback": "The speaker is providing feedback on how to approach data sharing, considering both the benefits and limitations."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: Oh, sure, sure. Not not yeah, yeah, yeah, not like not like, you know, privileged information or anything. But I guess what what I'm trying to get at is is that I'm not sure even within one discipline, right? That we have a good standard metric to be transparent scientists, right? And it's confounded if we're going to use these models to integrate the different types of data. ",
+        "annotations": {
+            "clarify goal": "The utterance clarifies a goal by expressing a need for standards in scientific research for transparency."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: So I agree with you. If you have a if you have a data set one, you, I agree with you. You have all these datas and the computer science approach you describe makes sense. But I guess I I'm almost trying to like go a step backwards and say, I think as communities we haven't even figured out how to share data well. ",
+        "annotations": {
+            "supportive response": "The speaker expresses agreement and validation of others' contributions.",
+            "identify gap": "The speaker highlights a gap in the current practice of data sharing within communities."
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): Stephanie, I'll back you up on that and it's a bigger problem in metabolomics than ",
+        "annotations": {
+            "supportive response": "Heather Bean-ASU is expressing agreement with Stephanie's comment.",
+            "acknowledge contribution": "Heather Bean-ASU is also recognizing and supporting Stephanie's input."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: Oh yeah, I don't even want to yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): we're like a decade late to the party for having required standards for publication. ",
+        "annotations": {
+            "Critical Response": "The speaker critiques the current state of publication standards, implying they are inadequate or behind.",
+            "Express Humor": "The use of the phrase 'late to the party' attempts to add humor to the criticism of publication standards."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: So I I think it also goes back to my comment earlier about there's a lot of unused data because how I process my I mean even if Heather did a promic analysis and I did a pretty much we can actually process it differently. And you're right, we should say how we process it and it's scripts, but what happens is that gets buried and lost. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker references their earlier comment, showing they are building upon previously discussed ideas.",
+            "identify gap": "The speaker highlights the issue of unused data due to different processing methods.",
+            "offer feedback": "The speaker suggests sharing scripts for data processing as a way to improve transparency and reproducibility."
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): provided. Yeah. ",
+        "annotations": {
+            "supportive response": "The utterance expresses agreement or validation for a previous statement."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: Yeah, yeah. ",
+        "annotations": {
+            "None": "The utterance is a brief acknowledgment without adding new content to the conversation."
+        }
+    },
+    {
+        "utterance": "Stephanie Colona: So I guess the I I think Calvin and the genomics folks are probably the model citizens right now. ",
+        "annotations": {
+            "acknowledge contribution": "Stephanie Colona is verbally recognizing the genomics folks' practices as commendable, implying acknowledgment of their contributions.",
+            "supportive response": "Stephanie Colona is expressing a positive sentiment towards the genomics community's practices, indicating support."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): Yeah, I agree. I I think we we have a fairly well try to implement a standard by releasing low data, by releasing script for every paper. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous statement, showing support for the idea discussed.",
+            "acknowledge contribution": "The speaker acknowledges the effort to implement standards for data sharing, specifically by releasing raw data and scripts."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): I I want to go back to Yang's point about using fancy computer science approach to merge data set together. And my point is that after you have those data set together, you are still correlation. Just bigger data set of correlation. ",
+        "annotations": {
+            "develop idea": "Kaixiong Ye is expanding on Yang-Yu Liu's idea about merging datasets by computer science approaches.",
+            "critical response": "Kaixiong Ye is questioning the outcome of merging datasets, pointing out that it still results in correlations."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): Yeah, I I agree. Yes. Yeah. So that we can process the data and we are live with correlation. I'm not saying we are inferring correlation. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous statement.",
+            "develop idea": "The speaker is elaborating on the concept of correlation in data processing.",
+            "clarify goal": "The speaker is clarifying their understanding or approach to analyzing correlation in data."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): But we leverage the the correlation data so that we can do something useful like uh disease subtyping or uh outcome prediction. So those are translation useful task. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing a positive view on leveraging correlation data for certain tasks.",
+            "Offer feedback": "The speaker is providing a perspective on how correlation data can be useful."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): I I want to follow up on that because I ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: you know, encounter this almost every day, how much we can trust on this association result. ",
+        "annotations": {
+            "Critical Response": "The speaker is questioning the trustworthiness of association results, implying a critical evaluation of current methods or findings.",
+            "Ask Question": "The utterance expresses a concern or inquiry about the reliability of association results."
+        }
+    },
+    {
+        "utterance": "Irene Yang - Emory Nursing: Sorry, could you repeat that, yeah. ",
+        "annotations": {
+            "ask question": "The speaker is requesting clarification or more information about a prior statement."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: How much how how confident we are on the result uh you know, find by correlation or omic analysis. ",
+        "annotations": {
+            "ask question": "The speaker is seeking information or clarification on the confidence level in results obtained from correlation or omic analysis."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin (she/her) University of Wisconsin-Madison: How about how about replication is is that's what's needed? ",
+        "annotations": {
+            "ask question": "The speaker is asking for confirmation or consideration of replication as a needed approach.",
+            "offer feedback": "The speaker provides a suggestion for what might be needed."
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): Yeah, I was going to say, I think you have to see that same correlation in multiple studies and then you should um to really nail it down, try some sort of intervention to see if you can ",
+        "annotations": {
+            "Supportive Response": "Heather is expressing agreement and validation of previous comments by suggesting additional steps for validation.",
+            "Offer Feedback": "Heather provides specific suggestions for improving the approach to validating correlations."
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): provided. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: Yeah, that will be an independent validation. I'm I'm thinking whether there are any uh computational approach will be able to provide you know, more um confident finding. Um or what the sample size will be uh to be able to provide enough power to do this kind of multiomic analysis. ",
+        "annotations": {
+            "ask question": "The speaker is asking questions about the existence of computational approaches for more confident findings and the required sample size for multiomic analysis.",
+            "clarify goal": "The speaker is discussing the goal of achieving validation and more confident findings in multiomic analysis."
+        }
+    },
+    {
+        "utterance": "Heather Bean-ASU (she/her): A super, super basic approach is if you have a large enough study to where you can um have build your model, your correlation off of a subset of your data and then test your model off of the other subset of your data. Um that's a a pretty basic generic initial test of is that correlation you found, is it uh even strong enough to stand up to an independent test within your own data collection method. Like the the the most perfect replication you can get of that study. You can do that even with really small studies by doing a leave one out analysis where you build the model from nine of 10 samples and then you predict with that 10th sample and then just kind of round robin it. And I feel like that should be like the basic that's the floor of uh that independent validation for testing the correlation that you're seeing. ",
+        "annotations": {
+            "Offer feedback": "Heather Bean-ASU provides specific suggestions for improving the validation of correlations found in data.",
+            "Develop idea": "She elaborates on a methodological approach for validating correlations, including using subsets of data for model building and testing.",
+            "Signal expertise": "Heather Bean-ASU demonstrates her expertise in statistical methods for data analysis."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): And Liu leading to that is that in in human genetics right now, any G was published G was is required to have a discovery data set and then an independent replication data set. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: Yeah, that's what I I see the trend in the micro research because ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation of a previous point made about trends in microbiome research.",
+            "acknowledge contribution": "The speaker acknowledges a trend observed in microbiome research, implying recognition of others' work or observations."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: you cannot publish this analysis, they always ask you for validation data set. ",
+        "annotations": {
+            "critical response": "The speaker is highlighting the importance of validation datasets for publication, implying that analyses without them may not be publishable, which serves as a critique on current practices.",
+            "clarify goal": "The statement clarifies the goal of ensuring the reliability of published analyses through the use of validation datasets."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: Yeah and yet there are a lot of papers that were published without replication. ",
+        "annotations": {
+            "Critical Response": "The speaker is criticizing the current state of research publications by highlighting that many papers are published without replication."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: you're talking about correlation. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this simple acknowledgment utterance"
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): Okay, in the context of micro, that you're talking about correlation between the species, right? ",
+        "annotations": {
+            "ask question": "Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: Yeah, or you know, even um cross omic correlations. ",
+        "annotations": {
+            "supportive response": "The speaker is acknowledging and showing agreement with a previous point about correlations, indicating a supportive response to the discussion."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): Well, okay, let's talk about a simpler question first. Even when you're talking about species correlation, we know that this is largely affected by the competitionality issue, right? ",
+        "annotations": {
+            "None": "No relevant code perfectly applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): And many competition methods have been developed to infer the the true correlation. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by mentioning 'many competition methods' that have been developed to infer true correlations, thereby providing more information on analyzing correlations."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): So um of course this this uh require large sample size to get reliable information about the correlation. But the point my myself I'm not a big fan of correlation network analysis because we know that even for two species, very simple system. ",
+        "annotations": {
+            "critical response": "The speaker is critiquing correlation network analysis, highlighting its limitations, especially in simple systems."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): With deterministic dynamics, sometimes you can find very positive correlation between the two species abundance, sometimes negative correlation, sometimes no correlation, which means that the correlation of the two species abundance could be really time dependent. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas related to the challenges of interpreting correlations in microbiome studies, specifically discussing the impact of deterministic dynamics on species abundance correlations.",
+            "offer feedback": "The speaker provides insights into the complexities of correlation analysis, which can be seen as offering feedback on how to approach such analyses."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): So what what can we say, right? ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): You cannot say this is wrong. This is not wrong or or or or right. It's it's it's just the nature of the correlation. It really depends on the state of the system. So I don't know if this address your question. ",
+        "annotations": {
+            "Critical Response": "The speaker is questioning and providing a negative evaluation of drawing conclusions from correlation analysis without considering the state of the system.",
+            "Offer Feedback": "The speaker provides feedback on how to interpret correlation analysis, emphasizing its dependency on the system's state."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: Regarding the the the method I talk about the uh uh similarity network diffusion. In that case, ",
+        "annotations": {
+            "develop idea": "The speaker is referring back to and presumably elaborating on a previously mentioned method about 'similarity network diffusion.'"
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu (Brigham & Harvard): we are talking about the the similarity between the different individuals. This is not about different microbes. So we just have for example, we calculate the similarity of human composition between different individuals. And this correlation or similarity can be well defined. This doesn't depend on anything. This is just based on very simple mathematical definition of the um the difference between two individuals um a particular state. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on a concept related to similarity between individuals, providing more details and examples.",
+            "signal expertise": "The speaker demonstrates expertise in data analysis and mathematical definitions."
+        }
+    },
+    {
+        "utterance": "Yanjiao Zhou-UConn Health: Mhm. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: I I I I will say that there is another way of thinking about the correlation beyond maybe it's not just beyond it is correlation. But when you look at data set correlation between different data sets and there are multiple different data sets uh sorry, from the same group of people. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing discussions about correlation by suggesting another way to think about it, specifically in the context of multiple data sets.",
+            "propose new idea": "The speaker introduces a new perspective on thinking about correlation, suggesting an alternative approach to consider."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: And you can learn some biology by say looking at association between the host genetic with the microbiome features. You can look at um relationship between the microbiome features and say the serum metabomic profiles, you can look at um microbiome correlation with uh the gene expression at certain stage and then finally you have some sort of clinical endpoint. But each of these are correlation of course, but uh it's kind of uh uh in a courtroom you you present a bunch of uh uh uh evidence, try to build a picture. Uh and I think it's correlation but but but when you study humans, uh that that that that that's that's sometimes what we have to do. I'm not even talking about longitudinal, I'm just talking about if if you take a cross-sectional uh data sampling of multiple multiomic data with all the different factors that's important with clinical endpoint. ",
+        "annotations": {
+            "develop idea": "Zongqi Xia is expanding on how to approach the analysis of multiomic data and its associations with clinical endpoints.",
+            "offer feedback": "Zongqi Xia provides a perspective on how to interpret and present correlative evidence by suggesting the presentation of multiple correlations.",
+            "clarify goal": "The utterance helps clarify the goal of analyzing these associations to understand relationships between multiomic data types and clinical endpoints."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): I think in human, the only gold standard for causal inference is clinical trial. You randomize people into treatment and then placebo and then follow them. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye (U of Georgia): Otherwise ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: Just again, to generate some hypothesis so that we can take on to the next step. ",
+        "annotations": {
+            "summarize conversation": "The speaker is reflecting on the purpose of the discussion, which is to generate hypotheses.",
+            "process management": "The speaker is commenting on how to proceed with generating hypotheses.",
+            "clarify goal": "The speaker is clarifying the goal of the discussion, which is to generate hypotheses to take on to the next step."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: So for for that kind of intervention, I think I I could be convinced that the the intervention is causing the different kind of outcome, but among those outcome themselves, I feel like their correlation is not it's not necessarily causation. It's just correlation. ",
+        "annotations": {
+            "Critical Response": "The speaker is critically evaluating the relationship between correlation and causation, questioning whether correlation among outcomes implies causation."
+        }
+    },
+    {
+        "utterance": "Kaixiong Ye: Single cause at the beginning, everything else is correlated. And I I want to propose one idea uh from human genetics. And right now the method is claimed to be able to infer causal relationship. And the idea is that uh for example, if you LDL cholesterol is positively correlated with heart disease and a lot of studies find that, but it could be confounded by many factors. Imagine that there's a genetic variant that can increase LDL and it's it's a causal variant, we know that. Some individual will carry that variant. Some individual will carry the reference allele. It's like a randomized trial, assign the treatment placebo randomly to different individuals. You follow them for a lifetime, and then you see for those that carry the variant, they have they have higher LDL by definition. Do they tend to have higher risk of heart disease? And putting that kind of information together can help us infer if LDL is causal for heart disease. And this has been published. And also HDL, the good cholesterol, using the same method has been shown that it is not causally uh leading to heart disease. Genetic variant increase HDL do not associate with lower risk of heart disease. So that is is is a method called Mendelian randomization. And very recently in 2019, there's a nature genetic paper that study the causal relationship of uh microbiome uh short chain and then a metabolic trait, type two diabetes. They study the effect of uh butyrate on obesity and type two diabetes using that approach. And if you guys accept that approach, then we can leverage a lot of the existing data set. You only need a G for a metabolite. And then you need G for the outcome, for the disease. Putting those information together in a statistical network can help you infer if that metabolite is causal for the outcome. Uh and we have a lot of data out there for metabolite. We have less data for microbiome because G for microbiome mostly is small data set, so it's not that reliable. But if we look at butyrate, acetate, we we have large G for them. For example, in UK Biobank, they have 200,000 participants with those uh biomarker. So I think there's a lot of opportunity using that method if you believe that it is causal. But I I I personally feel that at least it's one step forward towards causal, better than correlation. That's that's my idea. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces Mendelian randomization as a method to infer causal relationships between metabolites and diseases.",
+            "develop idea": "The speaker elaborates on the concept of Mendelian randomization, providing examples and explanations of its application in studying causal relationships.",
+            "signal expertise": "The speaker demonstrates expertise in genetics by discussing genetic variants, Mendelian randomization, and specific studies in the field."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Thanks Calvin. Irene, I'm wondering since um we just got our 15 minute uh warning, um do you have questions for the group in terms of the notes that you've been taking or points you want to revisit? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by checking the time and asking if there are any remaining questions or topics to discuss."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Um well, feel free if you all can look at it and let me know if I got something wrong. Do you mind uh screen sharing Irene and then we can see. Oh, sure. ",
+        "annotations": {
+            "process management": "Irene Yang is suggesting a method for sharing information and collaborating within the group.",
+            "encourage participation": "Irene Yang is inviting others to participate by looking at something and sharing their screen."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: You mind walking us through just some of the main themes that you've heard? ",
+        "annotations": {
+            "summarize conversation": "The speaker is requesting a summary of the main themes discussed so far in the meeting."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Irene Yang - Emory Nursing has started screen sharing. Double-click to enter full screen mode. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: You mind walking us through just some of the main themes that you've heard and then we can um we can add in on them? ",
+        "annotations": {
+            "summarize conversation": "The speaker is asking for a summary of the main themes discussed."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Yeah, I mean I placed the most of our responses or the notes that I took under the first two questions, but they might be um able to be moved around, but I think one one thing that um we talked about was in spite of um the challenges of of correlation analysis that um well designed correlation studies can still be useful for hypothesis generation. And then um maybe this could be like a heading of different approaches, which is so model generation, predictive models that that can be useful across multiple omix data sets. Um we discussed the issue of um fully and efficiently using data sets. Um so for example, the stool idea that I can't remember who brought up but that that we might be wasting really valuable data within a particular specimen or whatever. So really thinking very carefully and working with other researchers. Um then related to that sharing data, um and then all of the kind of challenges that are associated with sharing data effectively. Um ",
+        "annotations": {
+            "summarize conversation": "Irene Yang is summarizing the discussion points and ideas shared by the group.",
+            "propose new idea": "Irene Yang suggests considering different approaches such as model generation and predictive models that can be useful across multiple omics data sets."
+        }
+    },
+    {
+        "utterance": "Yang-Yu Liu: Similarity network fusion. ",
+        "annotations": {
+            "develop idea": "Yang-Yu Liu is referencing and possibly elaborating on a previously mentioned method for integrating multiomics data, specifically similarity network diffusion."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Network fusion. Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Irene Yang: So that would be an approach within an omix within a study, not across, right? Within a particular study, yes. Um using network analysis and fusing networks together. Um we talked about replication and intervention as a way to validate correlation results and one existing approach is just to build and test models within a data subset. Um Calvin mentioned using Mendelian randomization to infer causation that that can be an approach that um is useful especially for testing causation of a particular metabolite for uh an outcome. And then see if I can get this in here. Data that we think would be important in a repository, definitely temporal data to address causation, but um there are challenges with that as well in terms of properly collecting and designing a study to collect longitudinal data just because of the noise. Um and ",
+        "annotations": {
+            "develop idea": "Irene is expanding on existing ideas by discussing approaches within a study, the use of network analysis, and the importance of temporal data.",
+            "identify gap": "Irene mentions challenges with collecting longitudinal data, indicating a gap in current methods.",
+            "supportive response": "Irene is supportive and discussing previous ideas, building upon them."
+        }
+    },
+    {
+        "utterance": "Heather Bean: Yeah, that that's uh in part ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance as it is a brief acknowledgment without adding new content."
+        }
+    },
+    {
+        "utterance": "Irene Yang: Oops. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean: Yeah, that that's uh in part ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean: to be able to identify confounders that we might need to ",
+        "annotations": {
+            "identify gap": "The speaker is explicitly recognizing a need or gap in their research or analysis, which is the ability to identify confounders.",
+            "clarify goal": "The utterance also relates to defining or clarifying an objective, which is to be able to identify confounders."
+        }
+    },
+    {
+        "utterance": "Heather Bean: to track and study in in a clinical design. ",
+        "annotations": {
+            "develop idea": "Heather Bean's statement adds to the discussion on study design, emphasizing the importance of tracking and studying certain factors in a clinical setting.",
+            "offer feedback": "The statement provides feedback on what should be considered in a clinical design, suggesting a focus on tracking and studying relevant factors."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: just given, you know, we we went deep into some other directions. So I'm not sure that we necessarily have to answer all of the questions. What I really took away is that we need rigorous designs and we need multidisciplinary teams. Stephanie made the point, you know, like how do you understand my data if I just deposit it, right? And I don't think we're at the point at least in this field where the standards are there. So you're and even once we are at that point where the standards are there, you're still going to need informed multidisciplinary teams applying the different approaches. I don't know what others think about that. ",
+        "annotations": {
+            "summarize conversation": "The speaker is summarizing the discussion and key points.",
+            "process management": "The speaker is managing the discussion flow.",
+            "clarify goal": "The speaker is emphasizing the need for rigorous designs and multidisciplinary teams."
+        }
+    },
+    {
+        "utterance": "Heather Bean: I completely agree. I I could be it might be easy easy for me to access a genomics data set. Um and sounds like they might be really well annotated based on, you know, many years of practice and of doing that, but I'd be totally garbage at like applying analyses and knowing what I might be doing wrong um or you know, how just poor assumptions being made if I were try to analyze that data set. And what I think another part that becomes incredibly important when you want to start making these associations, you don't just need someone who is really well versed at metabolomics and someone who's really well versed at genomics. I feel like you can really benefit if you have someone in the team who knows a little bit about both, who speaks both languages or you know, those two people, the the genomicist knows enough about metabolomics not to make poor assumptions in trying to draw those correlations and vice versa. ",
+        "annotations": {
+            "signal expertise": "Heather Bean is highlighting the importance of having experts in specific fields like metabolomics and genomics.",
+            "identify gap": "She is pointing out the limitations and potential pitfalls of lacking expertise in a particular area.",
+            "develop idea": "The utterance suggests a strategy for improving team effectiveness by having members with mixed expertise."
+        }
+    },
+    {
+        "utterance": "Nandita Garud: I could benefit from that. I feel rather ignorant in metabolomics and always find it very enlightening hearing you talk about metabolomics. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly states a lack of knowledge in metabolomics, indicating an awareness of a personal knowledge gap."
+        }
+    },
+    {
+        "utterance": "Irene Yang: And I appreciate the multidisciplinary team too and I'm thinking even beyond um experts in a particular omix field or a bio stats field. But I always think about just the ethics of all of this collecting that we do and I know in the research projects that I've been around we're always slapping on another sample. Like I do oral collection. So oh you're doing this study, could I collect some saliva or could I do this? It's easy, it's whatever. But I always like and sometimes we're collecting so many samples from these participants and I always think I don't know, is that okay? Is it like what are the ethical things that we should be thinking about? So even having an ethical an ethicist on the team. ",
+        "annotations": {
+            "identify gap": "Irene Yang highlights the gap in ethical considerations for sample collection.",
+            "clarify goal": "She emphasizes the importance of considering ethics in research projects."
+        }
+    },
+    {
+        "utterance": "Stephanie Cologna: Irene, can I just add to that? Like so I had the fortunate event even though I'm a basic scientist to do my postdoc at the NIH hospital. And um we I have to say that we were very guilty of collect every the collect everything model, right? Because going back was always much harder. Um but then what happened is that there's just freezers full of things and ultimately it gets lost. So I I really like this idea of having like a person that has an ethics perspective and a good research design. ",
+        "annotations": {
+            "identify gap": "recognizes the gap in their approach to data collection and management, where they ended up with underutilized resources.",
+            "supportive response": "provides a positive evaluation and personal anecdote supporting the importance of ethics and research design in multiomics research."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: And using the samples that are available, right? So if people did these procedures and provided these samples, then we should be using them even the ones that are still sitting there at the NIH, right? ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea of using available samples by suggesting utilization of samples at the NIH.",
+            "supportive response": "The speaker is expressing agreement or validation for using available samples."
+        }
+    },
+    {
+        "utterance": "Zongqi Xia: Yeah, I think for those of us who do human research, I think we always have to be um mindful of uh this tension between getting more data and then the ethical boundary as as you nicely put um Irene. I think there's also this component of um doing human research, we have to be opportunistic because um what I mean by opportunistic is we have to be resourceful in using what we have because we're not going to get everything we need. We're not going to have all the time points that we have. And um the Mendelian genetics approach is is is interesting a way of, you know, bring different data sets but in some ways it's speaking to this kind of um uh you know, point. And so so yeah, so I I echo everything that you've you guys been discussing. ",
+        "annotations": {
+            "develop idea": "The speaker expands on the challenges of human research, particularly balancing data collection with ethical boundaries.",
+            "identify gap": "The speaker mentions the limitation of not being able to collect all needed data.",
+            "supportive response": "The speaker's tone is supportive and agreeable."
+        }
+    },
+    {
+        "utterance": "George Weinstock: Guess we're guess we're coming to the end and everybody's out of things to say. I'll just I'll just put in uh my two bits. I think this was a very interesting session. It's interesting to hear what your perspective is. All the sessions I've been part of um it's it's always interesting to hear what the group what direction they go with it. Um we hardly ever talked about uh gut brain axis or anything to do that. This was sort of a high level discussion about big data sets and and and how you deal with things. Um certainly one of the things that the I'll just put this out there just so that uh uh it it's in people's minds. It's not necessarily something that uh is right or or better than than what we're doing but uh certainly one of the things that multi omix data sets sort of the hot area that is now are making these tissue atlases for example. So if you look at the enteric nervous system um and you make a multi omic data set there, you can divide it or or the goal is to divide it into what are actually the different tissue types that are there based on some kind of multi omic profile of of individual cells or groups of cells and then how does that what what what anatomical location is that within the GI tract, what what microbes are likely to be in that area. It's very different uh uh at the at the top of the small intestine than it is down at the bottom of the colon. Uh you know, those kind of those kinds of questions about how the gut can communicate with the brain through the enteric nervous system and how you use multi. There's a whole dimension that I don't think we touched on there and um when you're thinking about your your two and three person projects, just remember the goal here is to be bold and you know, try to do something uh highly impactful uh but but manageable, not not completely over the top. And and um I think our discussion was very good but it was kind of high level and and you might think of some of these other kind of methods driven uh approaches to how multi omics is going to uh allow us to understand the connection between the microbiome, whether it's in the gut or any other tissue and the brain. Um oral microbiome is pretty interesting as well because your mouth is much closer to your brain than your gut is and so uh the possibility for communication there is quite different. So anyway, I just throw out a few thoughts for everybody as you as you make your as you pair off or or or break in the threes uh however you're doing it to think of your projects. ",
+        "annotations": {
+            "encourage participation": "The speaker encourages others to contribute their thoughts and ideas for their projects.",
+            "propose new idea": "The speaker suggests making tissue atlases using multi-omics data sets as a new approach to understand the connection between the microbiome and the brain."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Well put, George. Again, great to hear about everybody's areas of research and and all the different areas of expertise and I think that will be very helpful going forward as you put together your projects. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and appreciation for George's contribution, finding value in the discussion about various areas of research and expertise."
+        }
+    },
+    {
+        "utterance": "Heather Bean: Thank you, Irene. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Irene Yang: Feel free to um jump in if I'm sharing and I don't get it right. ",
+        "annotations": {
+            "Encourage participation": "The speaker invites others to contribute to the discussion.",
+            "Supportive response": "The utterance expresses a positive and supportive attitude towards the discussion process."
+        }
+    },
+    {
+        "utterance": "Heather Bean: You'll do great. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing a positive and encouraging sentiment towards another group member."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: Thank you. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Heather Bean: I really agree. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous statement, which is a clear example of a supportive response."
+        }
+    },
+    {
+        "utterance": "Barbara Bendlin: All right, see everybody in the big room. ",
+        "annotations": {
+            "process management": "The speaker is directing the group to move to another location, which involves managing the meeting flow."
+        }
+    }
+]

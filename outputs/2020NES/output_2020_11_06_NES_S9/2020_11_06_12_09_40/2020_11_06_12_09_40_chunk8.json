@@ -2,33 +2,39 @@
     "meeting_annotations": [
         {
             "speaker": "Andrew Feig",
-            "timestamp": "00:00-00:04",
-            "transcript": "here uh the outcomes of those.",
-            "speaking duration": 4,
-            "nods_others": 0,
-            "smile_self": 0,
-            "smile_other": 0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
+            "timestamp": "00:00-00:01",
+            "transcript": "here uh",
+            "speaking_duration": 1,
+            "self_expression": "neutral",
+            "others_expression": "engaged, neutral",
             "interuption": "No",
-            "overlap": "No",
-            "screenshare": "Yes",
-            "screenshare_content": "The screen shows a file directory with various files and folders. The directory appears to be related to OBS Studio, a software for video recording and live streaming."
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "A Zoom notification 'Unmute your speaker or increase volume to hear other participants' is visible, likely an artifact of the recording setup."
+        },
+        {
+            "speaker": "Adam Holewinski",
+            "timestamp": "00:01-00:04",
+            "transcript": "the outcomes of those.",
+            "speaking_duration": 3,
+            "self_expression": "thoughtful, focused",
+            "others_expression": "neutral, listening",
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker appears to be completing the previous speaker's sentence or thought."
         },
         {
             "speaker": "Andrew Feig",
-            "timestamp": "00:04-00:07",
-            "transcript": "Okay, so, um, get my",
-            "speaking duration": 3,
-            "nods_others": 0,
-            "smile_self": 0,
-            "smile_other": 0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
+            "timestamp": "00:04-00:08",
+            "transcript": "Okay so get my",
+            "speaking_duration": 4,
+            "self_expression": "organizational, focused",
+            "others_expression": "neutral, waiting",
             "interuption": "No",
-            "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "The screen changes to show the OBS Studio interface. The interface includes sections for scenes, sources, audio mixer, scene transitions, and controls for starting and stopping streaming and recording."
+            "screenshare_content": "The screen share shows a Windows File Explorer window, which is then minimized to reveal the OBS (Open Broadcaster Software) interface. The speaker appears to be managing the recording setup. No changes are made to the content itself.",
+            "other": "The speaker is sharing his screen to manage the recording software, which is a meta-activity not directly related to the team's primary task."
         }
     ]
 }
