@@ -1,0 +1,244 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "00:00-00:30",
+            "transcript": "a kind of as a as a refinement layer. Once you have a free energy surface, you can do things with Markov state modeling to recover the kinetics out of it, which is all computational. But the free energy surface, this is arguably the third other method. You can always get free energy from simulations. How can you get free energy surfaces from experiments? With single molecule experiments you can do that. And I think from cryo-EM images, this is the other method where you can actually get an experimental free energy plot, so to speak. And then you can compare if your simulations are as good.",
+            "speaking_duration": 30,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses extensive hand gestures to illustrate his points."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "00:30-00:49",
+            "transcript": "So I'm I'm curious to ask like how does that work? Like does that like does that use like sort of the the canonical like cryo-EM pipeline like rely on to do like you know kind of like the image analysis and averaging and then it builds on that or is it go directly from the image?",
+            "speaking_duration": 19,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker leans in close to the camera, showing strong engagement and curiosity."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "00:49-01:23",
+            "transcript": "It goes directly from the image. So they have their own tools and their own setup essentially. So what and in fact variants of this have now started coming into cryoSPARC and RELION where they have they have something called 3D variational analysis which is like a PCA equivalent, like a linear approximation of these sort of dynamics. These have started right after the Nobel prize in cryo-EM, extracting dynamics from from data. So yeah we can this this we can look into. This is a this is a very I would say a problem that has gotten people thinking for the past five years.",
+            "speaking_duration": 34,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "01:23-01:43",
+            "transcript": "So it seems then this is like something that I'd be the molecular dynamicist should then definitely be like taking advantage of. Like you have this and then now maybe now we we say the AI got us this far now let's go back to like you know Newton and try to figure out how these things thread together.",
+            "speaking_duration": 20,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker smiles and seems enthusiastic about the potential of the method."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "01:43-01:45",
+            "transcript": "And that's that's I don't know what you're talking about.",
+            "speaking_duration": 2,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker says this jokingly, smiling."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "01:45-01:49",
+            "transcript": "This is what you're doing.",
+            "speaking_duration": 4,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "Both he and Abhishek Singharoy are laughing."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "01:49-02:28",
+            "transcript": "Exactly, this is what Rommie does that all like we have been doing it like and like a lot of people like people who have good people who work with good experimental collaborators who had the who have the opportunity of doing that, I think are doing it. And broad-minded, not only good but broad-minded because often people sometimes feel like you know here is my structure and this is my you know this is my architecture, this thing never moves. That had been a huge amount of even early 2000s a lot of people would have felt like a like you know this thing is it's this which is that mindset is gone. And if anything AlphaFold will only kind of you know push that mindset like push that mindset aside I would say that yeah.",
+            "speaking_duration": 39,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The interaction is very fluid and collaborative, with laughter and quick back-and-forth."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "02:28-02:31",
+            "transcript": "So then what do you think is next?",
+            "speaking_duration": 3,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker leans back and rests his head on his hand, indicating a shift to a more reflective question."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "02:31-04:12",
+            "transcript": "Next I you know this is AlphaFold had to happen. So this was and of course now the thing is I I think I like thinking about this technology of Tesla inside a molecular dynamics simulation. I but then it's it's both a software and a hardware problem. So that's why it will take some time. Let me say I'll write a DP2 on this see if it flies or not. I haven't written that so and and but but yeah like again it's a it's a but there is a lot of machine learning I think everyone should have a computer science friend at this point of time that's the first thing. I think so that at least like you know now it's very easy like it's very difficult for me to read things so a friend tells me and educates me I learn things. So I think that's what is important everyone does that and to the extent of if you want to use it as dimensionality reduction we're in very good shape. Other things we have to we have to think about. Like yeah that I I don't know like I don't know where this thing is going like in NeurIPS or in this kind of conferences people people show a lot of in-principally correct but to transform them noise for example we have not even talked about noise. Data comes in with tons of noise. To to learn data actually is equivalent to is equivalent to unlearning noise. And real experimental data means like how would you unlearn noise? Like that in itself is what and that that's the point what what did PDB do for us? It removed all the noise over 30 years. That's what you were telling actually.",
+            "speaking_duration": 101,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a very long speaking turn, covering multiple related ideas."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "04:12-04:24",
+            "transcript": "I mean but in the machine learning world autoencoders are are like a standard trick to try to denoise data. I mean so there are tricks that that are in this business.",
+            "speaking_duration": 12,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "04:24-05:11",
+            "transcript": "Yeah I think but like in terms of like sort of more I don't know like unstructured data sets like let's say ribosome profiling data or the stuff that I do proteomics like that'd be really nice if we had a way to like remove noise. Like I would love to be able to like you know say what in this big data set you know should I believe more seriously versus what's maybe more at the edge of noise and that I think is like probably it goes back I think to what we were saying which was you know having really good databases that are really well curated is like you know it's a beautiful thing for experimentalists and it's an even more beautiful thing for like machine learners to like you know how do we create those standards that everyone agree to that is sort of like this is like that level of quality and then and then when there is noise like what do you do with it?",
+            "speaking_duration": 47,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses expansive hand gestures to emphasize the scale of the data."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "05:11-05:14",
+            "transcript": "And as you said non-standard noise. Sorry, go ahead.",
+            "speaking_duration": 3,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker quickly yields the floor back to the previous speaker."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "05:14-06:03",
+            "transcript": "So we we um there's there's two things I want to um bring up. We have nine minutes and so Stephen has to sort of figure out what he wants to report out from this conversation. And the second thing is I'm concerned that we sort of have gotten into a a a naughty Nash equilibrium which is um that the only answer is we need more data and and and we need more computer time to analyze that data I mean to we need to be able to have enough machines to analyze that data etc. Could we have something more than just that we need more data or better data or or or better databases? I mean I I I think we've had lots of discussions where we had the possibility of of maybe a a different types of unknowns and maybe we could emphasize those as well.",
+            "speaking_duration": 49,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is acting as a facilitator, bringing the group back to the task and time constraints."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "06:03-06:25",
+            "transcript": "I think but I think there is like a a broader lesson about like working together to like put forward like the best data and like cooperating better and having standards and I think that's not just like something that's like oh we need more data but it's also like we need to come together as communities that you know focus on certain types of experiments to come up with standards and I think that for me that's a big takeaway.",
+            "speaking_duration": 22,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:25-06:43",
+            "transcript": "So there's some types of data sets not just proteins but other assemblies or complexes that would really accelerate understanding of the cell. We don't want to talk about materials because we're talking about chemical machinery of the cell. So what are the what are the objects that we would want in that database to accelerate our understanding of the cell?",
+            "speaking_duration": 18,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is redirecting the conversation to be more specific and task-focused."
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "06:43-06:53",
+            "transcript": "I think one is imaging, right? Imaging data has to be there and like not just imaging data, imaging raw data, like not the final movie that you get.",
+            "speaking_duration": 10,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:53-07:00",
+            "transcript": "But but this goes to a problem Google has which is everybody does. How do you search images as opposed to searching text?",
+            "speaking_duration": 7,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Abhishek SINGHAROY",
+            "timestamp": "07:00-08:06",
+            "transcript": "Yes. And and uh uh correct. So that's why uh the essentially the training on the right image like the expected image comes in like if you have this pool of images when you train you discriminate between the image that is expected versus not expected. And then based on that and again the now the discrimination based on what features of that image that's where the problem comes in. The discrimination itself is there. So I would say if I have to like like if it's not structural data if it's I think pixels I think you know like the the intensity of of of color in a particular pixel is a very good indicator of training imaging data. So if we if we know that if we if we have real examples of a pixel by pixel intensity of a map then that can be learned very well.",
+            "speaking_duration": 66,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "08:06-08:08",
+            "transcript": "Davide had his hand up.",
+            "speaking_duration": 2,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is facilitating, noticing a non-verbal cue (Davide's raised hand)."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "08:08-09:03",
+            "transcript": "Yeah I was more thinking along a different line you you were mentioning we need more data we need more computer time and so on. Uh let's assume that we don't have a way to get better data or more data. I think putting back a little more physics in the in the models uh allows us to simplify the models so instead of going super deep like three layers of or or deep neural networks you start thinking in terms of well I represent my data in a in a more efficient way and then I don't need uh three layers of neural network I may need to train only one or I may even do a I may even be uh good with a linear model and uh even though high dimensional and that's the way to go when you don't have enough data or you're not confident about the quality of your data.",
+            "speaking_duration": 55,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:03-09:35",
+            "transcript": "Um is metadata I mean one of the things that Abhishek I I heard from Abhishek is that is that the PDB kind of limits or structures uh what metadata you can enter you enter the protein. So can we start to think about uh additional metadata and allowing metadata to grow. Like so if you've deposited and someone else has done some analysis on your protein can they decorate or annotate with additional metadata so that way other people don't have to recreate it. Go ahead Rommie.",
+            "speaking_duration": 32,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is building on previous points and trying to synthesize a concrete proposal."
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "09:35-09:49",
+            "transcript": "Um should should should they maybe I hate to interrupt the discussion but there's three minutes till we switch to the reporting out. Should we maybe share that slide and Stephen so that to give you a few",
+            "speaking_duration": 14,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker is also facilitating, focusing the group on the immediate task of preparing their report-out."
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "09:49-09:51",
+            "transcript": "Yeah, I'm sharing it.",
+            "speaking_duration": 2,
+            "interuption": "Yes",
+            "screenshare": "Yes",
+            "screenshare_content": "Stephen Fried begins sharing his screen. The content appears to be a text-based document or slide, likely for their report-out. The specific text is not clearly visible.",
+            "other": "None"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:51-10:00",
+            "transcript": "So everybody's got it live. Okay yeah. Okay sorry. I thought so I could see what he was starting to type but yes I agree. I mean sorry I I'm on board with Rommie.",
+            "speaking_duration": 9,
+            "interuption": "Yes",
+            "screenshare": "Yes",
+            "screenshare_content": "Stephen Fried is sharing a screen with a document or slide, likely for their report-out. The content is not clearly visible, but it appears to be a text-based document where he is typing.",
+            "other": "The conversation becomes very rapid and focused on logistics for the report-out."
+        }
+    ]
+}

@@ -485,8 +485,7 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, de
                 model='gemini-2.5-pro', 
                 contents=[prompt, video_file],
                 config={
-                    'temperature':0,
-                    'max_output_tokens':8192,      
+                    'temperature':0, 
                 },)
             print("Got a response! ...")
             return response
