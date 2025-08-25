@@ -1,18 +1,18 @@
 {
     "all_speakers": [
-        "Ed McCleskey",
-        "Mini Das",
         "Lingyan Shi",
-        "Kevin Cash",
-        "Ed McCleskey CZI",
-        "Aniruddha Ray",
-        "Wei Min",
         "Larry Cheng",
-        "Joyoni Dey",
-        "Lisa Poulikakos",
         "Sapun Parekh",
+        "Aniruddha Ray",
+        "Ed McCleskey",
+        "Kevin Cash",
+        "Lisa Poulikakos",
         "Silvia Ronco",
-        "Kevin Cash"
+        "Wei Min",
+        "Mini Das",
+        "Aniruddha Ray",
+        "Joyoni Dey",
+        "Ed McCleskey CZI"
     ],
     "total_speaking_length": 3297,
     "all_data": [
@@ -33,8 +33,7 @@
             "start_time": "00:00",
             "end_time": "00:02",
             "annotations": {
-                "express agreement": "The speaker is expressing agreement with a prior statement or idea, indicating a positive evaluation.",
-                "express enthusiasm": "The speaker is expressing enthusiasm, indicating a positive evaluation."
+                "Supportive response": "The utterance expresses a positive evaluation of a previous statement, indicating agreement or validation."
             }
         },
         {
@@ -54,7 +53,7 @@
             "start_time": "00:02",
             "end_time": "00:03",
             "annotations": {
-                "provide supporting evidence": "The utterance '75 minutes' likely refers to the duration of a task or experiment, providing specific data to support a previous point or discussion."
+                "process management": "The speaker is providing information that could be relevant to scheduling or timing, which relates to managing the meeting flow or structure."
             }
         },
         {
@@ -74,7 +73,9 @@
             "start_time": "00:03",
             "end_time": "00:31",
             "annotations": {
-                "ask clarifying question": "Wei Min is asking Silva to clarify whether the points on slide 18 are questions or actual ideas to be shared, seeking to understand the context of the information presented."
+                "ask question": "The speaker is explicitly asking for clarification on the nature of the ideas to be shared with the main room.",
+                "identify gap": "The speaker identifies a lack of clarity or understanding regarding the context and nature of the 'big ideas'.",
+                "process management": "The speaker is concerned about how the ideas will be reported back to the main room, indicating some level of management of the group's process."
             }
         },
         {
@@ -94,9 +95,7 @@
             "start_time": "00:31",
             "end_time": "00:55",
             "annotations": {
-                "explain or define term or concept": "Silvia is explaining the purpose of the questions on the slide, clarifying that they are prompts for discussion and not necessarily all need to be addressed, which helps the team understand the context of the discussion.",
-                "ask clarifying question": "The utterance addresses Wei Min's prior question about the nature of the ideas on slide 18, clarifying whether they are questions or actual ideas to be reported.",
-                "expand on existing idea": "Silvia expands on the purpose of the questions presented on the slide, building on the previous discussion about the content of slide 18."
+                "process management": "Silvia is managing the discussion process by instructing which parts of the slide to focus on and how."
             }
         },
         {
@@ -116,7 +115,7 @@
             "start_time": "00:55",
             "end_time": "00:58",
             "annotations": {
-                "explain or define term or concept": "Wei Min is clarifying that the report should focus on the actual ideas generated, not the initial questions that prompted the discussion, to ensure the report's focus is clear."
+                "clarify goal": "Wei Min is clarifying that the group should focus on 'actual ideas' rather than 'questions' for reporting back to the main room, which aligns with defining or seeking clarity on objectives or expectations."
             }
         },
         {
@@ -136,8 +135,9 @@
             "start_time": "00:58",
             "end_time": "01:08",
             "annotations": {
-                "explain or define term or concept": "Silvia clarifies that the questions on the slide are prompts for discussion, not the actual ideas to be reported, which explains the context of the questions.",
-                "confirm decision": "Silvia confirms that the report should focus on the ideas that emerge from the discussion, not the questions themselves, which agrees with Wei Min's understanding."
+                "summarize conversation": "Silvia Ronco is summarizing the role of the questions and the main goal (reporting main ideas).",
+                "clarify goal": "Silvia Ronco is clarifying what is expected in terms of reporting back (the main ideas that emerge from this discussion).",
+                "offer feedback": "Silvia Ronco is providing guidance on how to approach the task."
             }
         },
         {
@@ -157,7 +157,8 @@
             "start_time": "01:08",
             "end_time": "01:10",
             "annotations": {
-                "express agreement": "Wei Min explicitly agrees with Silvia's clarification that the report should focus on actual ideas, not the questions used to prompt the discussion."
+                "acknowledge contribution": "This code applies because Wei Min's utterance acknowledges Silvia Ronco's input by showing understanding of her clarification.",
+                "supportive response": "This code applies because Wei Min's response expresses agreement and validation of Silvia Ronco's contribution without adding new content."
             }
         },
         {
@@ -177,9 +178,8 @@
             "start_time": "01:10",
             "end_time": "01:59",
             "annotations": {
-                "present new idea": "Joyoni introduces phase contrast imaging and scattering as a potential method, which hasn't been discussed before in the conversation.",
-                "explain or define term or concept": "Joyoni explains the concept of scattering, specifically small angle scatter, and its capabilities in imaging.",
-                "encourage particpatioin": "Joyoni ends by asking if people are interested in this kind of imaging, inviting others to express their thoughts."
+                "develop idea": "The speaker is expanding on their area of expertise by sharing details about phase contrast imaging and scattering.",
+                "ask question": "The speaker asks for interest or relevance of their work to the group."
             }
         },
         {
@@ -199,7 +199,8 @@
             "start_time": "01:59",
             "end_time": "02:04",
             "annotations": {
-                "express agreement": "Wei Min expresses agreement with Joyoni's suggestion of using phase contrast imaging and scattering to start."
+                "Supportive response": "The utterance expresses agreement or a positive evaluation.",
+                "Offer feedback": "The utterance provides a minimal suggestion for moving forward."
             }
         },
         {
@@ -218,14 +219,10 @@
             "screenshare_content": "None",
             "start_time": "02:04",
             "end_time": "02:17",
-            "annotations": [
-                {
-                    "expand on existing idea": "Joyoni is building on Wei Min's suggestion to start with phase contrast imaging, adding more details about the parameters to consider."
-                },
-                {
-                    "ask clarifying question": "Joyoni is asking about the desired resolution, sensitivity, speeds, and frame rates, seeking clarification on the specific requirements for the imaging."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on what kind of resolution, sensitivity, speeds, and frame rates are being considered.",
+                "develop idea": "The speaker is expanding on the idea by suggesting they can discuss details such as resolution, sensitivity, speeds, and frame rates."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -244,7 +241,8 @@
             "start_time": "02:18",
             "end_time": "02:31",
             "annotations": {
-                "propose decision": "Mini Das is suggesting a specific course of action for the group: to share their backgrounds and research before starting the discussion."
+                "process management": "The speaker is suggesting a possible approach to structuring their discussion.",
+                "encourage participation": "The speaker is seeking input or confirmation from others on the proposed approach."
             }
         },
         {
@@ -264,7 +262,7 @@
             "start_time": "02:31",
             "end_time": "02:32",
             "annotations": {
-                "express agreement": "Wei Min explicitly agrees with Mini Das's suggestion to go through backgrounds and discuss prompts, indicating agreement with the proposed approach."
+                "supportive response": "The utterance expresses agreement with a previous suggestion, making it a supportive response."
             }
         },
         {
@@ -284,7 +282,8 @@
             "start_time": "02:32",
             "end_time": "02:40",
             "annotations": {
-                "propose decision": "Mini Das suggests identifying a reporter to take notes for a later presentation, proposing a concrete choice for the group."
+                "process management": "The speaker is suggesting a way to organize the group's activities by identifying a reporter to keep notes for later presentation.",
+                "assign task": "The speaker assigns the task of identifying a reporter who will keep notes to present later."
             }
         },
         {
@@ -304,8 +303,8 @@
             "start_time": "02:41",
             "end_time": "02:46",
             "annotations": {
-                "express agreement": "Wei Min agrees with Mini Das's suggestion to identify a reporter and take notes for the presentation.",
-                "propose decision": "Wei Min proposes to start the discussion by introducing themselves, building on Mini Das's suggestion to go through backgrounds and discuss prompts."
+                "supportive response": "The speaker is expressing agreement with Mini Das's suggestion.",
+                "process management": "The speaker is suggesting a way to start their discussion, which involves introducing themselves."
             }
         },
         {
@@ -325,7 +324,8 @@
             "start_time": "02:51",
             "end_time": "02:53",
             "annotations": {
-                "assign task": "Mini is trying to assign the task of being a reporter to someone in the group, following up on the decision to identify a reporter."
+                "process management": "The speaker is managing group activities by seeking a volunteer for the role of a reporter.",
+                "assign task": "The speaker is seeking a volunteer for a specific role (reporter), which involves assigning responsibility."
             }
         },
         {
@@ -345,8 +345,8 @@
             "start_time": "02:57",
             "end_time": "03:08",
             "annotations": {
-                "assign task": "Joyoni is volunteering to be the reporter, which is a task assignment that Mini proposed in the previous utterance.",
-                "express alternative decision": "Joyoni expresses a reservation about being the reporter due to a lack of biology background, suggesting an implicit alternative decision that someone else with more biology knowledge might be better suited."
+                "identify gap": "The speaker explicitly recognizes their own lack of knowledge in a particular domain (biology background).",
+                "acknowledge contribution": "The speaker verbally recognizes their own input and potential limitations in contributing to the discussion."
             }
         },
         {
@@ -366,7 +366,7 @@
             "start_time": "03:14",
             "end_time": "03:17",
             "annotations": {
-                "encourage particpatioin": "Joyoni is encouraging others to volunteer as a reporter, since she already expressed some reservations about her own suitability for the role in the previous utterance."
+                "encourage participation": "The speaker is inviting others to contribute or volunteer for a role, explicitly asking if there is anybody else."
             }
         },
         {
@@ -386,8 +386,8 @@
             "start_time": "03:20",
             "end_time": "03:33",
             "annotations": {
-                "propose decision": "Ed suggests a method for the group to proceed after introductions, using a 'popcorn' approach to ensure everyone participates, which is a concrete choice for the group.",
-                "explain or define term or concept": "Ed explains that 'popcorn it' is the new jargon, clarifying the terminology for the group."
+                "propose new idea": "The speaker introduces a new suggestion for managing the discussion flow.",
+                "process management": "The proposal is about managing the meeting flow or structure."
             }
         },
         {
@@ -407,7 +407,7 @@
             "start_time": "03:34",
             "end_time": "03:35",
             "annotations": {
-                "express agreement": "Mini Das agrees with Ed's suggestion to 'popcorn it' after introductions, indicating agreement with a proposed approach."
+                "Supportive response": "The utterance 'Mini Das: Yes.' expresses agreement or validation of a previous statement, making it a supportive response."
             }
         },
         {
@@ -427,8 +427,8 @@
             "start_time": "03:36",
             "end_time": "04:00",
             "annotations": {
-                "explain or define term or concept": "Ed introduces himself and his role as a science officer at CZI, providing context about his background and relevance to the program, which explains his role for the other participants.",
-                "acknowledge contribution": "Ed acknowledges his own contribution by mentioning his involvement in creating the program, recognizing his role in the current discussion."
+                "signal expertise": "The speaker mentions his role as a science officer at CZI, which relates to his qualifications or expertise.",
+                "express humor": "The speaker makes a humorous comment about himself being the 'least relevant person here' and says 'since I'm yapping.'"
             }
         },
         {
@@ -448,8 +448,9 @@
             "start_time": "04:00",
             "end_time": "04:37",
             "annotations": {
-                "encourage particpatioin": "Ed encourages the team to get to know each other's expertise and then passes the turn to Lingyan, inviting them to participate.",
-                "express enthusiasm": "Ed expresses enthusiasm about the potential for collaborations to arise from getting to know each other's expertise."
+                "encourage participation": "Ed McCleskey encourages participation by offering to pass the turn to Lingyan.",
+                "supportive response": "Ed McCleskey provides a supportive response by emphasizing the importance of collaboration and getting to know each other's expertise.",
+                "signal expertise": "Ed McCleskey shares his perspective on collaboration, drawing from his experience."
             }
         },
         {
@@ -469,7 +470,7 @@
             "start_time": "04:37",
             "end_time": "04:37",
             "annotations": {
-                "acknowledge contribution": "Lingyan acknowledges Ed's attempt to pronounce her name, without necessarily agreeing or disagreeing with anything substantive."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -488,11 +489,9 @@
             "screenshare_content": "None",
             "start_time": "04:41",
             "end_time": "05:18",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining their background and expertise in biomedical engineering and microscopy techniques, providing context for their contributions to the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications related to the task, mentioning her position as an assistant professor in bioengineering and her research experience."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -511,8 +510,7 @@
             "start_time": "05:18",
             "end_time": "05:30",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining their background and expertise in combining biological questions with optical imaging technology to visualize metabolic activities at a subcellular resolution, which clarifies their area of focus.",
-                "expand on existing idea": "The speaker is building on their previous introduction by providing more details about how they combine biological questions and optical imaging technology."
+                "signal expertise": "The speaker explicitly mentions their background and experience related to the task, specifically their work in bioengineering and experience with optical imaging technology."
             }
         },
         {
@@ -532,7 +530,7 @@
             "start_time": "05:30",
             "end_time": "05:31",
             "annotations": {
-                "expand on existing idea": "Lingyan is adding more detail to her introduction, specifying where the metabolic activities are visualized, building on her previous statements about her background and research."
+                "develop idea": "The utterance provides more specific details about Lingyan Shi's research area, expanding on her previous statements about using subcellular resolution imaging techniques to visualize metabolic activities."
             }
         },
         {
@@ -552,7 +550,7 @@
             "start_time": "05:31",
             "end_time": "05:32",
             "annotations": {
-                "expand on existing idea": "Lingyan is expanding on her previous statement about visualizing metabolic activities in cells and tissues by adding that it can also be done in live animals."
+                "develop idea": "The speaker is expanding on their previous statement about the application of subcellular resolution imaging techniques, specifically mentioning the ability to visualize metabolic activities in live animals."
             }
         },
         {
@@ -572,7 +570,7 @@
             "start_time": "05:45",
             "end_time": "05:49",
             "annotations": {
-                "express enthusiasm": "Lingyan expresses enthusiasm about meeting everyone, indicating a positive and encouraging attitude."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -592,7 +590,8 @@
             "start_time": "05:55",
             "end_time": "05:57",
             "annotations": {
-                "encourage particpatioin": "Ed McCleskey is explicitly inviting Lingyan to choose the next person to speak, encouraging participation from others in the group."
+                "encourage participation": "Ed McCleskey is explicitly inviting others to contribute or to choose the next speaker.",
+                "process management": "Ed McCleskey is managing the discussion flow by indicating it's time for someone else to speak."
             }
         },
         {
@@ -612,7 +611,7 @@
             "start_time": "06:01",
             "end_time": "06:03",
             "annotations": {
-                "assign task": "Lingyan is assigning the task of introducing themselves next to Lisa, following Ed's suggestion to 'popcorn' it after each introduction."
+                "process management": "The speaker is choosing someone to speak next, thereby managing the discussion flow."
             }
         },
         {
@@ -631,11 +630,10 @@
             "screenshare_content": "None",
             "start_time": "06:04",
             "end_time": "06:14",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Lisa acknowledges Lingyan for choosing her to speak next, which is a way of recognizing Lingyan's input."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges the group's process of calling on her to speak.",
+                "supportive response": "The speaker expresses gratitude and engages positively with the group process."
+            }
         },
         {
             "speaker": "Lisa Poulikakos",
@@ -654,8 +652,8 @@
             "start_time": "06:14",
             "end_time": "06:41",
             "annotations": {
-                "present new idea": "Lisa introduces her research area of nanophotonics and its application to probing biological matter, which is a new area of expertise not previously discussed.",
-                "express enthusiasm": "Lisa mentions that starting her assistant professorship in a pandemic year has been exciting, expressing enthusiasm about her work."
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications as a new assistant professor at UCSD, working in nanophotonics.",
+                "develop idea": "The speaker elaborates on her research area, explaining her work on nano optical material platforms and its applications."
             }
         },
         {
@@ -674,12 +672,10 @@
             "screenshare_content": "None",
             "start_time": "06:41",
             "end_time": "06:54",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa encourages Kevin to participate by 'popcorning' to him, which was previously described as choosing the next person to speak.",
-                    "present new idea": "Lisa presents a new idea about label-free imaging, suggesting thinking beyond markers and using light as a marker itself, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or thoughts from the group on a specific topic, 'label-free imaging' and the use of light as a marker.",
+                "encourage participation": "The speaker is inviting the group to contribute their thoughts and opinions, encouraging participation in the discussion."
+            }
         },
         {
             "speaker": "Lisa Poulikakos",
@@ -698,7 +694,8 @@
             "start_time": "06:54",
             "end_time": "07:04",
             "annotations": {
-                "present new idea": "Lisa introduces the idea of structuring light in complex ways to probe biological systems, moving beyond traditional markers, which is a novel concept in the context of the discussion."
+                "ask question": "The speaker is requesting information or clarification on how to structure light in complex ways using nanophotonics.",
+                "encourage participation": "The question also indirectly encourages discussion and participation from other team members."
             }
         },
         {
@@ -718,7 +715,8 @@
             "start_time": "07:14",
             "end_time": "07:30",
             "annotations": {
-                "express humor": "Kevin Cash jokingly expresses feeling left out and offended in a label-free imaging discussion because he makes labels for imaging, using humor to connect with the group."
+                "signal expertise": "Kevin Cash explicitly states his position as an assistant professor in chemical and biological engineering at Colorado School of Mines.",
+                "express humor": "Kevin Cash makes a joke about feeling personally hurt and offended because he makes labels for imaging and loves labels."
             }
         },
         {
@@ -738,8 +736,8 @@
             "start_time": "07:30",
             "end_time": "08:18",
             "annotations": {
-                "explain or define term or concept": "Kevin is explaining what his research group does, which involves creating polymeric nanoparticles with specific components inside.",
-                "express humor": "Kevin jokingly describes his nanomaterial as the \"most boring possible,\" using humor to describe its lack of special properties beyond being small and hydrophobic."
+                "signal expertise": "Kevin is explicitly stating his own expertise and qualifications related to his work on polymeric nanoparticles.",
+                "express humor": "Kevin makes a joke about his nano material being 'the most boring possible nano material'."
             }
         },
         {
@@ -759,7 +757,7 @@
             "start_time": "08:19",
             "end_time": "08:26",
             "annotations": {
-                "ask clarifying question": "Wei Min is asking Kevin to elaborate on the type of nanomaterials he is using, seeking more specific information after Kevin mentioned them in his introduction."
+                "ask question": "The speaker, Wei Min, is requesting information about the nature of the nano materials Kevin is making, which is a direct question seeking clarification on a prior statement."
             }
         },
         {
@@ -778,11 +776,9 @@
             "screenshare_content": "None",
             "start_time": "08:27",
             "end_time": "09:03",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the composition of the polymeric nanoparticles they create, detailing the components within the organic phase."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Kevin is explicitly stating his group's expertise and what they work on, which is making polymeric nanoparticles."
+            }
         },
         {
             "speaker": "Kevin Cash",
@@ -801,7 +797,7 @@
             "start_time": "09:03",
             "end_time": "09:17",
             "annotations": {
-                "explain or define term or concept": "The utterance explains that the size of the nanoparticles impacts the response time of the sensors, clarifying the relationship between size and sensor performance in their work."
+                "develop idea": "Kevin Cash is expanding on his previous idea about the nanoparticles they create, providing more details about how the size of these nanoparticles impacts their application."
             }
         },
         {
@@ -821,7 +817,7 @@
             "start_time": "09:17",
             "end_time": "09:25",
             "annotations": {
-                "provide supporting evidence": "Kevin is providing evidence that the response time of their sensors is fast enough for biological measurements, supporting the idea that the size of the nanoparticles doesn't matter much for their application, which he mentioned in the previous turn."
+                "supportive response": "Kevin is expressing a positive evaluation regarding the suitability of the nanoparticles' response time for biological measurements."
             }
         },
         {
@@ -840,11 +836,11 @@
             "screenshare_content": "None",
             "start_time": "09:25",
             "end_time": "09:39",
-            "annotations": [
-                {
-                    "assign task": "Kevin is passing the turn to Larry to speak next, using the 'popcorn' method."
-                }
-            ]
+            "annotations": {
+                "express humor": "Kevin makes a light comment about 'popcorn', which could be seen as an attempt to lighten the mood or make a joke.",
+                "encourage participation": "By saying 'I will popcorn over to Larry,' Kevin invites Larry to contribute.",
+                "process management": "Kevin manages the conversation flow by passing it to another participant."
+            }
         },
         {
             "speaker": "Larry Cheng",
@@ -862,17 +858,10 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "11:10",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Larry is explaining his research on formable modality sensors for biomedical applications, including long-term monitoring and dissolvable sensors."
-                },
-                {
-                    "present new idea": "Larry introduces the idea of stretchable photoacoustic imaging for long-term monitoring against functional MRI and F needs, applied to free-moving human bodies."
-                },
-                {
-                    "assign task": "Larry passes the turn to Mini to speak next."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Larry explains his work and interests, indicating his expertise in the field.",
+                "encourage participation": "Larry ends with 'And next I will pass that on to Mini,' which encourages Mini to contribute."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -890,26 +879,11 @@
             "screenshare_content": "None",
             "start_time": "11:11",
             "end_time": "13:30",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is introducing herself and her background, which includes defining her areas of expertise such as applied optics, biophotonics, and imaging."
-                },
-                {
-                    "expand on existing idea": "The speaker is building on the previous discussion about imaging techniques by describing her work on enhancing contrast in soft tissue and contrast-enhanced imaging."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of using single photon counting detectors and phase contrast X-ray imaging to enhance contrast without contrast agents."
-                },
-                {
-                    "acknowledge contribution": "The speaker acknowledges Kevin's earlier mention of working with contrast agents, showing she is listening and connecting her work to his."
-                },
-                {
-                    "present new idea": "The speaker presents the idea of multimodality imaging, combining near-infrared optical imaging and ultrasound techniques."
-                },
-                {
-                    "assign task": "The speaker is assigning the task of speaking next to Sapun, continuing the round-robin introductions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on their research in biophotonics and imaging, discussing specific techniques and goals.",
+                "signal expertise": "The speaker explicitly states their background and expertise in applied optics, optical physics, and biophotonics.",
+                "clarify goal": "The speaker mentions their goal of label-free enhancing contrast for early-stage detection of cancers."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -927,15 +901,13 @@
             "screenshare_content": "None",
             "start_time": "13:31",
             "end_time": "14:30",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is introducing themself and their research interests, which involves explaining their area of expertise to the group.",
-                    "acknowledge contribution": "The speaker acknowledges the previous talk by mentioning \"as we heard in the last talk.\""
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task by mentioning their position as an assistant professor in biomedical engineering and their research focus.",
+                "None": "No other code directly applies to this utterance as it primarily serves to introduce the speaker and their expertise."
+            }
         },
         {
-            "speaker": "Aniruddha Ray _ Utoledo",
+            "speaker": "Aniruddha Ray",
             "timestamp": "04:30-05:54",
             "transcript": "Uh hello everyone. This is Anirudh here. Uh I'm currently an assistant professor at the University of Toledo uh in the Department of Physics. Uh before this I was at UCLA and uh before that I did my grad school from University of Michigan. Uh I also hold affiliate position at the University of Michigan. Um so my research uh it can broadly be divided into two parts. One is very similar to what Kevin mentioned. So I also work with nanoparticles. Um we develop different types of nanoparticles, polymeric based, metallic, hybrid. Um and then we use it to get different kinds of information from animals or even from inside the cells. Um and with these nanoparticles, we use different kind of optical imaging modalities such as fluorescence, photoacoustics. Um and even basically use it to enhance the scattering from from samples. Uh we use them for diagnostic applications as well as for therapeutic applications. So it would be like nan particles.",
             "speaking_duration": 84,
@@ -950,14 +922,9 @@
             "screenshare_content": "None",
             "start_time": "14:30",
             "end_time": "15:54",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is introducing themself and their research background, which involves defining the type of nanoparticles they work with (polymeric based, metallic, hybrid) and the imaging modalities used."
-                },
-                {
-                    "acknowledge contribution": "The speaker acknowledges Kevin's contribution by stating their research is similar to what Kevin mentioned about nanoparticles."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Aniruddha Ray explicitly states his own expertise and qualifications related to his research on nanoparticles and optical imaging modalities."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -975,17 +942,11 @@
             "screenshare_content": "None",
             "start_time": "15:54",
             "end_time": "18:54",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Joyoni starts by thanking the group, acknowledging the opportunity to speak after being 'popcorned' by Aniruddha."
-                },
-                {
-                    "explain or define term or concept": "Joyoni explains that she works on building a phase contrast X-ray system for finding microcalcification clusters, defining the focus of her work."
-                },
-                {
-                    "present new idea": "Joyoni presents the idea of using small angle scattering images of nanomaterials as a potential topic for discussion, introducing a new concept for the group to consider."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her position as an associate professor and describes her work in detail, indicating her expertise in the field.",
+                "propose new idea": "The speaker mentions potentially discussing small angle scattering images of nano materials as a possible area of exploration.",
+                "develop idea": "The speaker elaborates on her current projects, such as building a face contrast X-ray system and working on neutron interferometry."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -1004,7 +965,7 @@
             "start_time": "18:54",
             "end_time": "18:55",
             "annotations": {
-                "express agreement": "Wei Min explicitly agrees with the previous statement, indicating alignment with the ongoing discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1024,7 +985,7 @@
             "start_time": "18:55",
             "end_time": "18:55",
             "annotations": {
-                "encourage particpatioin": "Joyoni is indicating that it is Wei Min's turn to speak, encouraging them to participate in the introductions."
+                "process management": "The speaker is managing the meeting flow by indicating it's someone else's turn to speak."
             }
         },
         {
@@ -1044,10 +1005,9 @@
             "start_time": "20:00",
             "end_time": "21:02",
             "annotations": {
-                "explain or define term or concept": "Wei Min explains how heavy water can be used as a chemical reagent in synthetic activities and how the carbon-deuterium bond becomes Raman active, which can be used as a reporter or sensor.",
-                "expand on existing idea": "Wei Min expands on the discussion of label-free imaging by describing a method that uses deuterated water as a reagent to track synthetic activities, bridging label-free and labeled imaging.",
-                "provide supporting evidence": "Wei Min provides supporting evidence by stating that the carbon deuterium bond is well known to be Raman active, supporting the idea of using it as a reporter.",
-                "express enthusiasm": "Wei Min expresses enthusiasm by stating that this interfacial area between label-free and labeled imaging is very exciting."
+                "propose new idea": "Wei Min introduces a new approach using deuterated water for imaging.",
+                "develop idea": "He expands on how this approach works and its potential applications.",
+                "signal expertise": "Wei Min demonstrates his expertise by explaining the method and its implications."
             }
         },
         {
@@ -1066,14 +1026,10 @@
             "screenshare_content": "None",
             "start_time": "21:04",
             "end_time": "21:17",
-            "annotations": [
-                {
-                    "express agreement": "Sapun explicitly agrees with Wei Min's point that the approach is a hybrid between label free imaging and some sort of label imaging."
-                },
-                {
-                    "expand on existing idea": "Sapun expands on the idea of combining label-free and labeled imaging by stating that complementing labels is a good idea because it's impossible to replace all the labels since they are very good and useful."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement and validation for the previous statement.",
+                "Offer feedback": "The speaker is providing a suggestion for complementing labels."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -1092,9 +1048,9 @@
             "start_time": "21:19",
             "end_time": "21:38",
             "annotations": {
-                "expand on existing idea": "Wei Min is expanding on the previous discussion about label-free imaging by suggesting that the group doesn't need to strictly adhere to label-free methods and can explore clever labels or nanostructures, building upon the idea of combining label-free and labeled approaches.",
-                "express agreement": "Wei Min expresses agreement with Sapun's point that labels are useful and complementing them is a good idea, indicating alignment with the previous speaker's perspective.",
-                "present new idea": "Wei Min presents the idea of using clever labels or nanostructures as an interesting direction to explore, suggesting a new approach that combines label-free and labeled imaging techniques."
+                "propose new idea": "Wei Min introduces the idea of using clever labels or nano structures as an interesting direction to explore, which complements the discussion on label-free imaging.",
+                "develop idea": "Wei Min builds upon the existing discussion by suggesting an alternative approach that involves using labels or nanostructures.",
+                "supportive response": "Wei Min expresses agreement with the notion that labels can be useful and suggests exploring their potential."
             }
         },
         {
@@ -1113,14 +1069,11 @@
             "screenshare_content": "None",
             "start_time": "21:39",
             "end_time": "22:15",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is building on the previous discussion about label-free imaging and its limitations, referencing Dr. Zhang's talk and the challenge of visualizing cyclic AMP."
-                },
-                {
-                    "ask clarifying question": "The speaker is asking if Lingyan Shi might have ideas on how to visualize cyclic AMP, which is a relevant question to the topic of metabolite tracking."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on a thought or hypothesis related to a previous discussion, trying to understand how to study cyclic AMP.",
+                "ask question": "The speaker is indirectly asking for input or thoughts from others, specifically mentioning Ling Shan, on how to approach the problem of studying cyclic AMP.",
+                "identify gap": "The speaker identifies a gap in knowledge or capability, specifically the difficulty in observing or proving the sequestration of cyclic AMP."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -1139,8 +1092,9 @@
             "start_time": "22:16",
             "end_time": "22:25",
             "annotations": {
-                "express agreement": "Wei Min expresses agreement with the general idea of being able to directly observe metabolites inside live cells, building on the previous discussion about the limitations of current labeling techniques and the potential for new methods to visualize metabolites directly.",
-                "express enthusiasm": "Wei Min expresses enthusiasm about the prospect of being able to directly observe metabolites inside live cells, indicating that it would be a significant advancement."
+                "identify gap": "The speaker is highlighting a limitation or challenge in being able to metabolize directly inside live cells.",
+                "critical response": "The speaker is pointing out a challenge, which can be seen as a form of criticism or questioning the feasibility.",
+                "offer feedback": "The speaker is providing a perspective on a challenge, which can be seen as offering feedback on the discussion."
             }
         },
         {
@@ -1160,7 +1114,8 @@
             "start_time": "22:26",
             "end_time": "22:27",
             "annotations": {
-                "express enthusiasm": "Sapun expresses enthusiasm about the ability to directly visualize metabolites inside live cells, building on the previous discussion about the importance of visualizing metabolites."
+                "Supportive Response": "The speaker is expressing agreement and positive evaluation of the previous statement, seeking confirmation with a rhetorical question.",
+                "None": "No other codes seem to apply as the utterance primarily serves to express agreement and support."
             }
         },
         {
@@ -1180,9 +1135,9 @@
             "start_time": "22:28",
             "end_time": "22:51",
             "annotations": {
-                "present new idea": "Wei Min is presenting a new idea by posing the question of finding a general method to study metabolites like cyclic AMP, ATP, ADP, and neurotransmitters, especially in live cells, which hasn't been explicitly discussed before.",
-                "propose decision": "Wei Min is proposing a decision by suggesting that the group should consider what would be a good and general method to study metabolites in live cells, guiding the direction of their discussion.",
-                "ask clarifying question": "Wei Min is asking a clarifying question about whether there is a reasonably general approach to look at metabolites, especially in live cells, seeking to understand potential methods for achieving this."
+                "ask question": "The speaker is explicitly asking for a general method to study metabolites in live cells.",
+                "encourage participation": "The speaker is inviting others to contribute their ideas or suggestions.",
+                "clarify goal": "The speaker is seeking to clarify the goal by finding a method to achieve it."
             }
         },
         {
@@ -1202,9 +1157,8 @@
             "start_time": "22:52",
             "end_time": "23:40",
             "annotations": {
-                "provide supporting evidence": "Kevin is providing supporting evidence for why purely label-free approaches might be difficult, especially when dealing with small changes like phosphorylation or minor carbohydrate structure variations, building on the discussion about the limitations of label-free imaging.",
-                "expand on existing idea": "Kevin expands on the existing idea of label-free imaging limitations by giving specific examples of biological modifications that are difficult to detect without labels, following the discussion about the challenges and potential of label-free imaging versus labeled approaches.",
-                "express alternative decision": "Kevin is expressing an alternative decision by suggesting that purely label-free approaches might not be sufficient for detecting small changes in biological molecules, contrasting with the previous discussion that seemed to favor label-free methods."
+                "develop idea": "The speaker is elaborating on the challenges of label-free imaging, building upon the previous discussion.",
+                "offer feedback": "The speaker is providing specific commentary on the limitations of label-free approaches for detecting small biological changes."
             }
         },
         {
@@ -1223,11 +1177,9 @@
             "screenshare_content": "None",
             "start_time": "23:41",
             "end_time": "23:41",
-            "annotations": [
-                {
-                    "express frustration": "The utterance is an interruption, which can be interpreted as an expression of frustration, especially given the context of a potentially lengthy discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Kevin Cash",
@@ -1245,14 +1197,9 @@
             "screenshare_content": "None",
             "start_time": "23:43",
             "end_time": "24:04",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Kevin is providing supporting evidence for why label-free approaches might be difficult by giving an example of a small change (one extra sugar group) on a large protein that would be hard to detect without labels, building on the discussion about the limitations of label-free imaging."
-                },
-                {
-                    "expand on existing idea": "Kevin expands on the existing idea of using labels by stating that labels don't have the same disadvantages in in vitro systems as they do in in vivo or clinical applications, building on the discussion about the limitations of label-free imaging."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Kevin Cash is elaborating on the challenges and potential applications of label-free versus labeled imaging in different contexts, building on previous conversation."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -1271,8 +1218,9 @@
             "start_time": "24:05",
             "end_time": "24:19",
             "annotations": {
-                "offer constructive criticism": "Wei Min is offering constructive criticism by pointing out the ethical and practical issues with immediately using lab-created substances on patients without proper safety studies, while highlighting the feasibility of such experiments on cell lines.",
-                "express humor": "Wei Min uses a humorous tone to critique the idea of immediately using lab-created substances on patients without proper safety studies, using phrases like \"It's frowned upon\" and \"Let's throw it in a patient.\""
+                "Develop idea": "The speaker is expanding on the idea of using labels in different contexts, discussing the feasibility and safety concerns.",
+                "Offer feedback": "The speaker provides a perspective on the use of labels in different contexts, which can be seen as offering feedback on how to approach the issue.",
+                "Clarify goal": "The speaker is discussing the goals and feasibility of certain approaches in research, especially concerning safety studies and applications."
             }
         },
         {
@@ -1292,8 +1240,8 @@
             "start_time": "24:20",
             "end_time": "24:47",
             "annotations": {
-                "expand on existing idea": "Wei Min expands on the discussion about in vivo vs in vitro labeling, noting that while in vivo labeling in humans is restricted, bodily fluids can be extracted and analyzed with more freedom, building on the previous discussion about the limitations of labeling in in vivo settings.",
-                "ask clarifying question": "Wei Min is asking if there are any methods that the group or anyone else could apply to extracted bodily fluid samples, seeking to explore potential research directions based on the previous discussion about the limitations of in vivo labeling."
+                "ask question": "The speaker is explicitly asking for information or clarification on what can be done with extracted bodily fluids.",
+                "None": "No other codes are as directly applicable to the utterance as 'ask question'."
             }
         },
         {
@@ -1313,9 +1261,8 @@
             "start_time": "24:48",
             "end_time": "25:17",
             "annotations": {
-                "expand on existing idea": "Sapun builds on Wei Min's idea of using bodily fluids for analysis by suggesting exosomes as a source of information, adding that they can be analyzed with nanoparticle labels.",
-                "provide supporting evidence": "Sapun mentions reading papers about exosomes, providing evidence that this is a field of interest.",
-                "acknowledge contribution": "Sapun acknowledges Wei Min's contribution by referring to 'the way that he's saying' and building upon it."
+                "express humor": "The speaker makes a joke about torturing exosomes with nanoparticle labels.",
+                "None": "No other relevant code applies to this utterance based on the provided definitions."
             }
         },
         {
@@ -1335,7 +1282,8 @@
             "start_time": "25:18",
             "end_time": "25:26",
             "annotations": {
-                "expand on existing idea": "Wei Min is building upon the discussion of using bodily fluids for analysis, specifically mentioning the use of surface nanoparticles to sense extracellular vesicles (EVs), which Sapun Parekh mentioned as a potential source of information."
+                "develop idea": "The speaker is expanding on a previous idea by mentioning a specific application of nanoparticles.",
+                "supportive response": "The speaker is expressing agreement or validation by mentioning existing research."
             }
         },
         {
@@ -1355,7 +1303,7 @@
             "start_time": "25:27",
             "end_time": "25:33",
             "annotations": {
-                "expand on existing idea": "Sapun is expanding on Wei Min's idea of using bodily fluids for analysis, specifically mentioning urine and his experience reviewing papers on the topic, building on the discussion about analyzing bodily fluids like blood and urine to gain insights."
+                "supportive response": "The speaker is expressing agreement or validation by mentioning they've reviewed papers on the topic, indicating support for the direction of the discussion."
             }
         },
         {
@@ -1374,11 +1322,10 @@
             "screenshare_content": "None",
             "start_time": "25:34",
             "end_time": "25:36",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Mini Das encourages someone else to speak, as indicated by \"go ahead\", after someone started to speak, but then stopped."
-                }
-            ]
+            "annotations": {
+                "Encourage participation": "The utterance invites others to contribute to the conversation.",
+                "Supportive response": "The speaker is yielding the floor, showing a supportive attitude towards others' participation."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -1397,7 +1344,7 @@
             "start_time": "25:37",
             "end_time": "25:37",
             "annotations": {
-                "encourage particpatioin": "Sapun encourages Mini to speak, as Mini started to speak at the same time as Sapun."
+                "encourage participation": "The speaker invites someone else in the group to contribute their expertise, opinions, or ideas by allowing them to proceed or speak."
             }
         },
         {
@@ -1416,13 +1363,11 @@
             "screenshare_content": "None",
             "start_time": "25:41",
             "end_time": "26:37",
-            "annotations": [
-                {
-                    "present new idea": "Mini Das introduces the idea that the depth of the sample is a key consideration when discussing label-free versus labeled imaging, which is a new perspective in the conversation.",
-                    "expand on existing idea": "Mini Das expands on the idea of hybrid approaches, which Wei Min introduced earlier, by suggesting that new nanoparticles could be less harmful and still work for in vivo imaging.",
-                    "express agreement": "Mini Das expresses agreement with the hybrid approach, which Wei Min mentioned earlier, by stating that she really likes the idea."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of label-free versus labeled approaches in the context of sample depth.",
+                "ask question": "The speaker asks if it's possible to achieve something with in vivo applications.",
+                "supportive response": "The speaker expresses approval for the hybrid approach of using nanoparticles."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -1441,8 +1386,7 @@
             "start_time": "26:38",
             "end_time": "26:51",
             "annotations": {
-                "provide supporting evidence": "Wei Min provides supporting evidence by stating that heavy water is clinically approved, suggesting its safety for use in patients at low concentrations, which supports the idea of using it as a label.",
-                "expand on existing idea": "Wei Min expands on the discussion about labels and label-free imaging by providing a specific example of heavy water being clinically approved, building on the previous discussion about the potential of using labels in clinical settings."
+                "Supportive response": "The speaker provides information in a manner that supports the conversation, specifically about the clinical use of heavy water."
             }
         },
         {
@@ -1462,7 +1406,7 @@
             "start_time": "26:52",
             "end_time": "26:52",
             "annotations": {
-                "express humor": "The utterance contains laughter, which is a clear indication of humor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1482,8 +1426,9 @@
             "start_time": "26:53",
             "end_time": "27:32",
             "annotations": {
-                "provide supporting evidence": "Wei Min supports the idea of using a small amount of labeling by stating that heavy water is clinically approved at low concentrations and that people are exposed to nanoparticles due to the pandemic, implying that small amounts of labeling are acceptable.",
-                "expand on existing idea": "Wei Min expands on the idea of using labels by providing examples of heavy water and nanoparticles, building on the previous discussion about the possibility of using labels in conjunction with label-free imaging techniques."
+                "Develop idea": "The speaker is elaborating on the idea of using labeled or modified substances (heavy water, nanoparticles) in biological systems, providing examples and reassurance.",
+                "Supportive response": "The speaker is providing reassurance and agreement with previous statements.",
+                "Offer feedback": "The speaker is providing information that can be seen as feedback on the use of heavy water and nanoparticles."
             }
         },
         {
@@ -1503,7 +1448,7 @@
             "start_time": "27:33",
             "end_time": "27:33",
             "annotations": {
-                "express humor": "The utterance contains laughter, which is a clear indication of humor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1522,14 +1467,10 @@
             "screenshare_content": "None",
             "start_time": "30:00",
             "end_time": "30:37",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lisa is expanding on the discussion about label-free imaging and how signatures can be used to mark samples, building on the previous discussion about the challenges of label-free imaging in vivo and the potential of hybrid approaches."
-                },
-                {
-                    "provide supporting evidence": "Lisa mentions studies that use upconverting nanoparticles, providing an example of an approach to address the depth issue in in vivo imaging, supporting the idea of using clever techniques to overcome limitations."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of label-free imaging and discussing potential solutions to its challenges.",
+                "ask question": "The speaker is inquiring about how to address the issue of multiple scattering effects and filtering out background signals."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -1548,8 +1489,8 @@
             "start_time": "30:38",
             "end_time": "31:14",
             "annotations": {
-                "provide supporting evidence": "Gold's high atomic number makes it useful as a contrast agent in X-ray imaging, supporting the discussion on contrast agents.",
-                "ask clarifying question": "Mini Das asks the community about the typical sample thickness used in Raman scattering, seeking to understand the limitations of the technique in relation to tissue depth, which was brought up in the previous utterance."
+                "ask question": "The speaker asks for information about the current thickness of samples that people have been working with in Raman scattering.",
+                "develop idea": "The speaker discusses and expands on the idea of using gold as a contrast agent in X-ray imaging and its potential applications and challenges."
             }
         },
         {
@@ -1569,7 +1510,8 @@
             "start_time": "31:14",
             "end_time": "32:41",
             "annotations": {
-                "explain or define term or concept": "Wei Min explains different types of Raman microscopies, including spontaneous Raman, non-linear Raman, and spatially offset Raman spectroscopy, detailing their penetration depths and spatial resolutions in response to Mini Das's question about the thickness of samples used in Raman scattering."
+                "develop idea": "The speaker is explaining and elaborating on existing ideas related to different types of Raman microscopies, their penetration depths, and the trade-offs between spatial resolution and penetration.",
+                "None": "No other codes seem to apply as the utterance is primarily explanatory and educational."
             }
         },
         {
@@ -1588,11 +1530,9 @@
             "screenshare_content": "None",
             "start_time": "32:41",
             "end_time": "32:42",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete idea, question, or statement, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -1611,10 +1551,9 @@
             "start_time": "32:42",
             "end_time": "35:30",
             "annotations": {
-                "expand on existing idea": "Joyoni expands on the topic of scatter, which was brought up earlier, by describing their X-ray system and how it addresses the issue of long angle scatter.",
-                "provide supporting evidence": "Joyoni provides technical details about the X-ray system, such as the use of interferometry and the removal of long angle scatter, to support the idea that it's a clean method for small angle scatter imaging.",
-                "present new idea": "Joyoni presents the idea of using neutron interferometry as an alternative method, offering to share a paper on the topic.",
-                "explain or define term or concept": "Joyoni explains the difference between small angle scatter and long angle scatter, and how they relate to Compton and rally scatter."
+                "propose new idea": "The speaker suggests using neutron interferometry as an alternative method for small angle scatter imaging.",
+                "develop idea": "The speaker elaborates on their approach to improve X-ray interferometry for small angle scatter imaging, including challenges and methodologies.",
+                "offer feedback": "The speaker offers feedback by suggesting an alternative method (neutron interferometry) for the group to consider."
             }
         },
         {
@@ -1634,7 +1573,7 @@
             "start_time": "35:37",
             "end_time": "35:41",
             "annotations": {
-                "ask clarifying question": "Wei Min is asking about the sample preparation requirements for neutron scattering, specifically if the sample needs to be dried, to better understand the method Joyoni Dey mentioned."
+                "ask question": "The speaker is requesting information about the requirements for sample preparation in neutron scattering, specifically if the sample has to be dried or what the preparation requirements are."
             }
         },
         {
@@ -1654,9 +1593,8 @@
             "start_time": "35:41",
             "end_time": "36:14",
             "annotations": {
-                "provide supporting evidence": "The speaker refers to a paper that demonstrates the capabilities of neutron interferometry, providing evidence for its potential use.",
-                "expand on existing idea": "The speaker expands on the idea of using neutron interferometry, building on the previous discussion about its potential and advantages over X-rays.",
-                "explain or define term or concept": "The speaker explains the advantage of neutrons in scattering and penetration through metals compared to X-rays, clarifying the concept of neutron interferometry."
+                "develop idea": "The speaker is expanding on the concept of neutron interferometry, explaining its advantages and potential applications.",
+                "signal expertise": "The speaker is demonstrating their knowledge and expertise in the field by discussing the specifics of neutron interferometry."
             }
         },
         {
@@ -1676,7 +1614,7 @@
             "start_time": "36:14",
             "end_time": "36:21",
             "annotations": {
-                "ask clarifying question": "Ed is asking Joyoni to confirm his understanding about whether neutron imaging is particularly sensitive to deuterium, building on the prior discussion of neutron interferometry and heavy water."
+                "ask question": "The speaker is requesting information about whether neutron scattering imaging is particularly sensitive to deuterium, which is related to heavy water."
             }
         },
         {
@@ -1696,7 +1634,7 @@
             "start_time": "36:21",
             "end_time": "36:22",
             "annotations": {
-                "express agreement": "Joyoni confirms Ed's question about whether neutron imaging is particularly sensitive to deuterium, indicating agreement with Ed's statement."
+                "supportive response": "The speaker confirms Ed McCleskey's statement about neutron imaging being sensitive to deuterium, showing agreement and validation."
             }
         },
         {
@@ -1716,7 +1654,7 @@
             "start_time": "36:22",
             "end_time": "36:24",
             "annotations": {
-                "confirm decision": "Ed McCleskey confirms that Joyoni's statement about neutron imaging being sensitive to deuterium is correct, building on the previous discussion about neutron scattering and its advantages."
+                "Supportive response": "The speaker is expressing agreement with a previous statement."
             }
         },
         {
@@ -1736,7 +1674,8 @@
             "start_time": "36:24",
             "end_time": "36:31",
             "annotations": {
-                "express agreement": "The speaker explicitly agrees with the previous statement about neutron imaging being sensitive to deuterium."
+                "Acknowledge contribution": "The speaker acknowledges a point made by someone else.",
+                "Supportive response": "The utterance expresses agreement or validation."
             }
         },
         {
@@ -1756,7 +1695,7 @@
             "start_time": "36:31",
             "end_time": "36:32",
             "annotations": {
-                "express agreement": "Ed McCleskey agrees with Joyoni's point about neutron imaging being sensitive to deuterium, confirming the information."
+                "supportive response": "The speaker is expressing a positive or agreeable response without adding new content."
             }
         },
         {
@@ -1776,8 +1715,7 @@
             "start_time": "36:32",
             "end_time": "36:37",
             "annotations": {
-                "acknowledge contribution": "Wei Min acknowledges Joyoni's suggestion of neutron interferometry as a potential method, recognizing it as a novel idea he hadn't considered before.",
-                "express enthusiasm": "Wei Min expresses enthusiasm by stating that the idea sounds interesting, indicating a positive reception to the suggestion."
+                "supportive response": "The speaker expresses a positive evaluation of the idea, finding it new and interesting."
             }
         },
         {
@@ -1797,9 +1735,8 @@
             "start_time": "36:38",
             "end_time": "37:13",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges that the other ideas are about biology and biological questions, which is outside of their expertise."
-                }
+                "identify gap": "The speaker mentions their lack of biology background, indicating a gap in their knowledge.",
+                "develop idea": "The speaker is discussing and elaborating on ideas related to imaging techniques and their potential applications."
             }
         },
         {
@@ -1819,8 +1756,8 @@
             "start_time": "37:13",
             "end_time": "37:31",
             "annotations": {
-                "ask clarifying question": "Ed is asking Joyoni to confirm his understanding about the sensitivity of neutron imaging to deuterium, building on Joyoni's previous discussion of neutron interferometry.",
-                "expand on existing idea": "Ed expands on Joyoni's idea of using neutron interferometry by suggesting that the sensitivity of neutron imaging to deuterium could be a useful intrinsic label, referencing Wei Min's earlier point about heavy water being clinically approved."
+                "code name": "ask question",
+                "explanation": "The utterance 'Ed McCleskey CZI: So Joyoni, could you um tell me whether it's my memory is right that neutrons uh scatter neutron uh imaging is particularly sensitive to deuterium that that heavy water. So so so it would be a um um useful maybe there's sort of an intrinsic label that's sort of like pointed out is uh exactly that um clinically approved and all that. So so neutrons.' is an example of asking a question."
             }
         },
         {
@@ -1840,7 +1777,7 @@
             "start_time": "37:31",
             "end_time": "37:32",
             "annotations": {
-                "express agreement": "Joyoni agrees with Ed's statement about neutrons being sensitive to deuterium, confirming his memory is correct."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1860,7 +1797,7 @@
             "start_time": "37:32",
             "end_time": "37:32",
             "annotations": {
-                "confirm decision": "Ed McCleskey confirms that neutron imaging is particularly sensitive to deuterium, which Joyoni Dey had just stated."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1880,7 +1817,7 @@
             "start_time": "37:32",
             "end_time": "37:35",
             "annotations": {
-                "express agreement": "Wei Min is expressing agreement with the potential use of neutrons, which was just mentioned by Joyoni and Ed."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1900,7 +1837,7 @@
             "start_time": "37:35",
             "end_time": "37:37",
             "annotations": {
-                "acknowledge contribution": "Wei Min acknowledges Joyoni's suggestion of neutron scattering as a potentially useful imaging technique, which he had not considered before, thus recognizing the value of the contribution."
+                "supportive response": "The speaker is expressing a positive evaluation of the idea's novelty, indicating that it is at least a new idea."
             }
         },
         {
@@ -1920,9 +1857,7 @@
             "start_time": "37:37",
             "end_time": "37:43",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Joyoni acknowledges that the other ideas are the biological questions, recognizing the importance of biology in the discussion."
-                }
+                "identify gap": "The speaker explicitly recognizes her lack of knowledge in biology, identifying a gap in her expertise."
             }
         },
         {
@@ -1942,7 +1877,7 @@
             "start_time": "37:43",
             "end_time": "37:44",
             "annotations": {
-                "acknowledge contribution": "Wei Min says 'Okay', which acknowledges the previous speaker's (Joyoni Dey) extensive explanation of neutron scattering and its potential relevance to the group's discussion on label-free imaging, without necessarily agreeing or disagreeing with the content."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1961,11 +1896,9 @@
             "screenshare_content": "None",
             "start_time": "37:44",
             "end_time": "37:45",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -1984,7 +1917,7 @@
             "start_time": "37:45",
             "end_time": "38:11",
             "annotations": {
-                "present new idea": "Joyoni is presenting a new idea of using neutron heavy water for a biological application, which hasn't been discussed before in this specific context."
+                "propose new idea": "The speaker proposes a new biological application for a method using neutron heavy water."
             }
         },
         {
@@ -2004,7 +1937,7 @@
             "start_time": "38:11",
             "end_time": "38:11",
             "annotations": {
-                "acknowledge contribution": "Ed McCleskey says 'Okay', which acknowledges the previous speaker's contribution without necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2024,9 +1957,9 @@
             "start_time": "38:11",
             "end_time": "39:21",
             "annotations": {
-                "present new idea": "Joyoni introduces the idea of using their nuclear neutron generator at LSU for imaging plant roots to study the effects of different chemicals, which is a new application of their existing technology in the context of the discussion.",
-                "provide supporting evidence": "Joyoni mentions that imaging plant roots can help study the effects of different chemicals, which are harbingers of climate change, providing a reason why this imaging is important.",
-                "express enthusiasm": "Joyoni expresses enthusiasm by highlighting the recent interest in imaging plant roots, indicating excitement about the potential of this application."
+                "identify gap": "The speaker discusses the need to image roots of plants for studying climate change, implying a gap in current research capabilities.",
+                "process management": "The speaker mentions plans for putting interferometry in a nuclear neutron generator in LSU for imaging roots of plants.",
+                "clarify goal": "The speaker clarifies the goal of using neutron interferometry for imaging roots of plants in the context of climate change research."
             }
         },
         {
@@ -2046,9 +1979,9 @@
             "start_time": "39:21",
             "end_time": "39:30",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Wei Min is suggesting a concrete idea for the group to consider, which is to use neutron scattering coupled with heavy water for biology imaging, based on the discussion about neutron imaging and its sensitivity to deuterium."
-                }
+                "ask question": "The utterance is a question asked by Wei Min to the group.",
+                "summarize conversation": "Wei Min is summarizing an idea discussed and seeking thoughts.",
+                "encourage participation": "By asking the group, Wei Min encourages them to participate."
             }
         },
         {
@@ -2068,7 +2001,7 @@
             "start_time": "39:30",
             "end_time": "39:31",
             "annotations": {
-                "express agreement": "Joyoni is agreeing with Wei Min's statement about using neutron scattering coupled with heavy water for biology imaging, which was a new idea presented earlier."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2088,7 +2021,7 @@
             "start_time": "39:31",
             "end_time": "39:37",
             "annotations": {
-                "express enthusiasm": "Wei Min expresses enthusiasm for the idea of using neutron scattering coupled with heavy water for biology imaging, which Joyoni Dey proposed, indicating excitement about the potential of this new approach."
+                "Supportive Response": "The utterance expresses a positive evaluation of an idea presented by another group member."
             }
         },
         {
@@ -2108,7 +2041,9 @@
             "start_time": "40:00",
             "end_time": "40:29",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of visualizing interstitial fluids passing through organs, cells, or the extracellular matrix, which hasn't been explicitly discussed before."
+                "develop idea": "Lingyan is elaborating on an important aspect of their project goals.",
+                "identify gap": "Lingyan is pointing out something crucial that needs attention.",
+                "clarify goal": "Lingyan's statement aids in understanding the project's objectives."
             }
         },
         {
@@ -2127,20 +2062,10 @@
             "screenshare_content": "None",
             "start_time": "40:30",
             "end_time": "40:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lingyan is expanding on the discussion of imaging techniques by focusing on fluid mechanics and interstitial tissue, building upon the previous discussion of various imaging modalities and their applications."
-                },
-                {
-                    "explain or define term or concept": "Lingyan clarifies that the discussion is about fluid mechanics inside interstitial tissue and how changes in the extracellular matrix affect fluid flow, providing context for her subsequent points."
-                },
-                {
-                    "present new idea": "Lingyan introduces the idea of tracing changes in interstitial fluid flow rate as a method to understand disease states, which is a novel concept in the context of the ongoing discussion."
-                },
-                {
-                    "provide supporting evidence": "Lingyan supports the idea of using a method to look at water directly by stating that it is difficult to image water directly, justifying the need for alternative approaches."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Lingyan Shi is expanding on the concept of fluid mechanics in interstitial tissue and the challenges and potential methods for imaging water directly.",
+                "identify gap": "Lingyan Shi explicitly mentions the difficulty in imaging water directly, indicating a gap in current imaging capabilities."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -2159,9 +2084,9 @@
             "start_time": "41:00",
             "end_time": "41:40",
             "annotations": {
-                "present new idea": "Lingyan introduces the idea of using nano-carriers with isotopes as a label-free method, which hasn't been discussed before.",
-                "explain or define term or concept": "Lingyan explains that conventional labeling methods use chemistry like the click method to attach a bulky fluorescence probe onto nano-carriers, providing context for her proposed alternative.",
-                "propose decision": "Lingyan proposes the group consider nano-carriers with an isotope incorporated as a label-free method, suggesting a specific direction for exploration."
+                "propose new idea": "The speaker introduces a new idea of considering nano carriers with an isotope incorporated as a label-free method.",
+                "develop idea": "The speaker expands on the idea by comparing it with conventional labeled methods.",
+                "clarify goal": "The speaker is defining or clarifying what could be considered a label-free method in the context of nano carriers and isotopes."
             }
         },
         {
@@ -2180,17 +2105,11 @@
             "screenshare_content": "None",
             "start_time": "41:41",
             "end_time": "42:48",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains how bulky fluorescence probes can perturb the function and diffusion coefficient of nanoparticles, setting the stage for a discussion on alternative labeling methods."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of using a single deuterium atom attached to a nanoparticle as a label, suggesting it could be considered a label-free technique because it minimally alters the nanoparticle's size and function, which is a novel concept in the context of the discussion."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the idea of using deuterium as a label by suggesting it can be used to visualize drug delivery across various biological barriers and in different disease states, building upon the initial suggestion of deuterium labeling."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests using deuterium as a label for visualizing drug delivery, which is a new approach.",
+                "develop idea": "The speaker elaborates on the challenges with current labeling methods and proposes using deuterium as an alternative.",
+                "identify gap": "The speaker highlights the limitations of current labeling methods, specifically the impact of bulky fluorescence probes on nano carrier function."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -2209,7 +2128,7 @@
             "start_time": "42:49",
             "end_time": "42:49",
             "annotations": {
-                "acknowledge contribution": "Joyoni Dey acknowledges Lingyan Shi's contribution about using nano carriers with an isotope incorporated as a label free method, without agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2229,7 +2148,7 @@
             "start_time": "42:57",
             "end_time": "43:03",
             "annotations": {
-                "ask clarifying question": "Sapun is asking for confirmation about whether the contrast in neutron imaging is derived from the difference between hydrogen and deuterium, following a discussion about using neutron scattering coupled with heavy water for biological imaging."
+                "ask question": "The speaker is requesting clarification on how neutrons derive contrast from hydrogen to deuterium."
             }
         },
         {
@@ -2249,7 +2168,8 @@
             "start_time": "43:04",
             "end_time": "43:07",
             "annotations": {
-                "express agreement": "Joyoni agrees with the previous statement that neutrons are sensitive to deuterium, which is present in heavy water."
+                "acknowledge contribution": "acknowledges a point about heavy water",
+                "supportive response": "expresses agreement or acknowledgment"
             }
         },
         {
@@ -2269,7 +2189,8 @@
             "start_time": "43:07",
             "end_time": "43:16",
             "annotations": {
-                "expand on existing idea": "Sapun is expanding on the idea of using deuterium for imaging, which was previously mentioned by Joyoni and Ed, by suggesting the use of a per-deuterated polymer."
+                "propose new idea": "The speaker introduces the concept of a per deuterated polymer as an example.",
+                "ask question": "The speaker seeks confirmation with 'right?'"
             }
         },
         {
@@ -2289,8 +2210,8 @@
             "start_time": "43:16",
             "end_time": "43:22",
             "annotations": {
-                "expand on existing idea": "Sapun is building on the idea of using deuterium for contrast in neutron imaging, suggesting Kevin could make per-deuterated polystyrene, expanding on the discussion of using heavy water and deuterium as a label.",
-                "encourage particpatioin": "Sapun is directly suggesting that Kevin could make per-deuterated polystyrene, inviting Kevin to contribute to the discussion with his expertise in nanoparticle synthesis."
+                "propose new idea": "The utterance introduces a new idea of using per deuterated polystyrene.",
+                "assign task": "The speaker suggests a specific task for Kevin to make per deuterated polystyrene."
             }
         },
         {
@@ -2309,12 +2230,10 @@
             "screenshare_content": "None",
             "start_time": "43:22",
             "end_time": "43:32",
-            "annotations": [
-                {
-                    "express humor": "Sapun expresses humor by saying \"but who cares? It doesn't matter right now\" after suggesting a potentially expensive idea, lightening the mood.",
-                    "ask clarifying question": "Sapun asks a clarifying question \"So if you had this, could you see that?\" to confirm if a per-deuterated polymer could be visualized using neutrons, following a discussion about using neutron scattering with heavy water for biological imaging."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking for information about the feasibility of seeing something with a hypothetical approach.",
+                "None": "No other codes seem to apply as directly or obviously."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -2333,7 +2252,7 @@
             "start_time": "43:33",
             "end_time": "43:37",
             "annotations": {
-                "ask clarifying question": "Joyoni is asking Sapun about the resolution that can be achieved with per-deuterated polymers and neutron scattering, following Sapun's suggestion to use them."
+                "ask question": "The speaker is requesting information or clarification about the resolution of an imaging technique."
             }
         },
         {
@@ -2353,7 +2272,7 @@
             "start_time": "43:37",
             "end_time": "43:40",
             "annotations": {
-                "expand on existing idea": "Sapun is building upon the previous discussion about using per-deuterated polymers and neutron scattering for imaging, and he is now suggesting a specific size (200 nanometers) for the polymer to further explore the possibilities."
+                "propose new idea": "The speaker introduces a hypothetical scenario for discussion purposes, suggesting a size of 200 (presumably nanometers) for the sake of argument, which could lead to exploring new ideas or applications in the context of imaging techniques."
             }
         },
         {
@@ -2373,8 +2292,7 @@
             "start_time": "43:41",
             "end_time": "43:57",
             "annotations": {
-                "expand on existing idea": "Joyoni is expanding on Sapun's idea of using per-deuterated polymer nanoparticles, stating that 200nm resolution should be possible, building on the discussion of neutron scattering and deuterium sensitivity.",
-                "assign task": "Joyoni assigns herself the task of figuring out the sensitivity requirements for imaging 200nm per-deuterated polymer nanoparticles using neutron scattering, following the discussion about the feasibility of this approach."
+                "None": "No relevant code directly applies to this utterance as it doesn't explicitly propose, develop, question, or conclude, but rather makes a brief speculative comment."
             }
         },
         {
@@ -2394,9 +2312,8 @@
             "start_time": "43:58",
             "end_time": "44:31",
             "annotations": {
-                "expand on existing idea": "Sapun is building upon the idea of using neutron scattering with heavy water for biological imaging, which was introduced by Joyoni and found interesting by Wei Min, by suggesting specific experiments using heavy water and per-deuterated polymeric particles.",
-                "present new idea": "Sapun presents the idea of conducting separate experiments, one involving heavy water consumption to visualize interstitial space and another using per-deuterated polymeric particles for imaging treatment or theranostic applications, which hasn't been explicitly suggested before.",
-                "propose decision": "Sapun proposes the decision to conduct separate experiments using heavy water and per-deuterated polymeric particles to visualize different aspects of biological systems."
+                "develop idea": "The speaker is expanding on previous discussions about imaging techniques, suggesting separate experiments involving heavy water and per deuterated polymeric particles.",
+                "ask question": "The speaker is inquiring about the possibility of conducting separate experiments using heavy water and per deuterated polymeric particles for imaging purposes."
             }
         },
         {
@@ -2416,7 +2333,7 @@
             "start_time": "44:32",
             "end_time": "44:36",
             "annotations": {
-                "express agreement": "Joyoni agrees with Sapun's idea of using per-deuterated polymers and heavy water for separate experiments, acknowledging its theoretical possibility."
+                "Supportive response": "The speaker is expressing agreement or validation of an idea proposed by another participant."
             }
         },
         {
@@ -2436,7 +2353,7 @@
             "start_time": "44:36",
             "end_time": "44:37",
             "annotations": {
-                "ask clarifying question": "Mini Das is about to ask a question, indicating a need for clarification on a previous topic."
+                "ask question": "The speaker explicitly states they have a question, indicating a request for information."
             }
         },
         {
@@ -2456,7 +2373,7 @@
             "start_time": "44:39",
             "end_time": "44:57",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking where the contrast from drinking heavy water is expected to accumulate, indicating she needs clarification on a previous statement about using heavy water for imaging."
+                "ask question": "The speaker is requesting information or clarification on how heavy water provides contrast in imaging, specifically asking where the contrast is expected to accumulate."
             }
         },
         {
@@ -2476,7 +2393,7 @@
             "start_time": "44:59",
             "end_time": "45:10",
             "annotations": {
-                "explain or define term or concept": "This sentence explains how contrast arises with heavy water, which is when cells have metabolic activities and incorporate deuterium into biomolecules, clarifying the mechanism of contrast generation using heavy water as discussed earlier."
+                "develop idea": "The speaker is expanding on an existing idea by explaining how contrast arises in imaging due to cellular metabolic activities and the incorporation of deuterium into biological molecules."
             }
         },
         {
@@ -2496,7 +2413,7 @@
             "start_time": "45:11",
             "end_time": "45:11",
             "annotations": {
-                "express agreement": "Joyoni is agreeing with Lingyan's explanation of how contrast arises from heavy water in cells, following Mini's question about where the contrast accumulates."
+                "None": "No relevant code strongly applies to this utterance"
             }
         },
         {
@@ -2516,7 +2433,7 @@
             "start_time": "45:13",
             "end_time": "45:51",
             "annotations": {
-                "explain or define term or concept": "This sentence explains how heavy water (deuterium) is used in metabolic activities, clarifying that it's not an energy source or nutrient but participates by contributing deuterium atoms to macromolecules, which is relevant to the discussion about using heavy water as a label."
+                "develop idea": "The speaker is expanding on an existing idea by explaining how deuterium from heavy water participates in metabolic activities and is incorporated into biological macromolecules."
             }
         },
         {
@@ -2536,8 +2453,8 @@
             "start_time": "45:51",
             "end_time": "46:00",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking for confirmation that the deuterium from heavy water will accumulate in cancer cells and tissues, following Lingyan Shi's explanation of how deuterium is incorporated into macromolecules during metabolic activity.",
-                "confirm decision": "Mini Das is confirming that the accumulation of deuterium in cancer cells and tissues is expected, based on the previous discussion about heavy water and metabolic activity."
+                "ask question": "The utterance is a clear request for information or confirmation about the accumulation in cancer cells and tissue.",
+                "develop idea": "The question builds upon and seeks clarification about an idea previously discussed, possibly related to imaging techniques or applications."
             }
         },
         {
@@ -2557,7 +2474,7 @@
             "start_time": "46:00",
             "end_time": "46:08",
             "annotations": {
-                "expand on existing idea": "Mini is expanding on the idea of where the contrast accumulates when using heavy water, which Lingyan explained is due to metabolic activities incorporating deuterium into macromolecules within cells and tissues."
+                "supportive response": "The speaker is expressing agreement or validation for the previous discussion about imaging contrast."
             }
         },
         {
@@ -2577,7 +2494,7 @@
             "start_time": "46:08",
             "end_time": "46:11",
             "annotations": {
-                "express enthusiasm": "Lingyan expresses enthusiasm about the ability to see contrast differences in tissue and cells, which was just explained in the prior turn."
+                "supportive response": "The speaker expresses a positive sentiment towards the discussion, indicating agreement or admiration."
             }
         },
         {
@@ -2597,8 +2514,8 @@
             "start_time": "46:11",
             "end_time": "47:41",
             "annotations": {
-                "explain or define term or concept": "This sentence explains the concept of OD and CD bonds in heavy water and how they relate to metabolic activity, building on the prior discussion of using heavy water for imaging.",
-                "expand on existing idea": "This sentence expands on the idea of using heavy water for imaging by explaining how Raman techniques can differentiate between OD and CD bonds, which was brought up in the previous turns."
+                "propose new idea": "The speaker introduces a new method for visualizing cellular metabolic activity using Raman spectroscopy with heavy water.",
+                "develop idea": "The speaker elaborates on the method by explaining the role of OD and CD bonds in Raman spectroscopy."
             }
         },
         {
@@ -2617,11 +2534,9 @@
             "screenshare_content": "None",
             "start_time": "47:56",
             "end_time": "48:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sapun is building upon the discussion about using heavy water and neutron scattering for biological imaging, and he is about to elaborate on the different levels at which this approach could be applied, following Lingyan's explanation of how deuterium is incorporated into biomolecules during metabolic activity."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Silvia Ronco",
@@ -2639,11 +2554,10 @@
             "screenshare_content": "None",
             "start_time": "48:00",
             "end_time": "48:11",
-            "annotations": [
-                {
-                    "assign task": "Silvia asks if the team has started writing the report in the PowerPoint, assigning the task of reporting to the team."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by being mindful of the time and tasks.",
+                "ask question": "The speaker is explicitly asking for information about the progress on writing for PowerPoint."
+            }
         },
         {
             "speaker": "Silvia Ronco",
@@ -2662,7 +2576,7 @@
             "start_time": "48:11",
             "end_time": "48:11",
             "annotations": {
-                "assign task": "Silvia is asking if someone has been assigned to take notes and report back to the main room, which is a task assignment."
+                "process management": "The speaker is inquiring about the status of a task (having a reporter) that is necessary for the meeting's organization and flow."
             }
         },
         {
@@ -2682,7 +2596,7 @@
             "start_time": "48:12",
             "end_time": "48:14",
             "annotations": {
-                "express agreement": "Ed McCleskey agrees with Silvia Ronco's question about whether the group has a reporter."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2702,12 +2616,7 @@
             "start_time": "48:14",
             "end_time": "48:19",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Wei Min acknowledges that they have a reporter, recognizing Mini Das's earlier suggestion and Joyoni Dey's offer to volunteer."
-                },
-                "express enthusiasm": {
-                    "Explanation": "Wei Min expresses enthusiasm for the current discussion, indicating that it is very interesting."
-                }
+                "process management": "Wei Min is managing the meeting flow by suggesting they continue the discussion instead of moving on to reporting."
             }
         },
         {
@@ -2727,8 +2636,7 @@
             "start_time": "48:19",
             "end_time": "48:24",
             "annotations": {
-                "assign task": "Silvia is reminding the group that they need to finish their discussion and prepare a report for the main room, implicitly assigning them the task of wrapping up and documenting their findings.",
-                "express frustration": "Silvia is expressing frustration with the group's focus on the discussion when they need to be preparing a report, as indicated by her saying 'I understand, but we have 15 minutes to finish.'"
+                "process management": "The speaker is reminding the team that they have a limited amount of time left for the meeting and suggesting they need to wrap up, which directly manages the meeting's flow and time."
             }
         },
         {
@@ -2747,14 +2655,9 @@
             "screenshare_content": "None",
             "start_time": "48:24",
             "end_time": "48:27",
-            "annotations": [
-                {
-                    "assign task": "This utterance assigns the task of starting the reporting to someone, following up on the previous turns where Silvia asked if they had started writing in the PowerPoint and if they had a reporter."
-                },
-                {
-                    "ask clarifying question": "This utterance asks a clarifying question about whether the person knows how to start the reporting, following up on the previous turns where Silvia asked if they had started writing in the PowerPoint and if they had a reporter."
-                }
-            ]
+            "annotations": {
+                "process management": "Silvia Ronco is managing the meeting flow by indicating it's time to start and seeking confirmation on how to proceed."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -2773,7 +2676,7 @@
             "start_time": "48:29",
             "end_time": "48:31",
             "annotations": {
-                "confirm decision": "Sapun confirms that the group knows how to update the slide, which is a task related to reporting back to the main room as requested by Silvia."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2793,7 +2696,7 @@
             "start_time": "48:31",
             "end_time": "48:32",
             "annotations": {
-                "express agreement": "Silvia Ronco is explicitly agreeing with a prior statement, indicating confirmation or understanding."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2813,7 +2716,7 @@
             "start_time": "48:32",
             "end_time": "48:37",
             "annotations": {
-                "assign task": "Silvia is assigning the task of updating the slide deck to the group, as they need to report back to the main room and are running out of time."
+                "process management": "This code applies because the speaker is directing the team to move to a specific page in the slide deck, managing the meeting flow."
             }
         },
         {
@@ -2833,7 +2736,7 @@
             "start_time": "48:37",
             "end_time": "48:38",
             "annotations": {
-                "assign task": "Silvia is assigning the task of using page 25 in the slide deck to the group, as they need to start writing stuff in the PowerPoint for the reporting and are running out of time."
+                "process management": "This code applies because Silvia Ronco is directing the group to take a specific action related to the meeting process, which is to use a particular slide."
             }
         },
         {
@@ -2853,7 +2756,7 @@
             "start_time": "48:38",
             "end_time": "48:40",
             "annotations": {
-                "acknowledge contribution": "Silvia Ronco is acknowledging that she interrupted the discussion, showing awareness of the impact of her previous statements."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2873,7 +2776,7 @@
             "start_time": "48:42",
             "end_time": "48:52",
             "annotations": {
-                "propose decision": "Ed McCleskey suggests opening the slide to record concrete points from the discussion, which is a concrete choice for the group to make in order to report back to the main room as Silvia Ronco requested."
+                "process management": "The speaker is suggesting to open a slide and populate it with information from their discussions, which is about managing meeting flow and organizing group activities."
             }
         },
         {
@@ -2893,7 +2796,8 @@
             "start_time": "48:52",
             "end_time": "49:01",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the discussion about using heavy water and neutron scattering for biological imaging, suggesting a specific application (highly metabolic diseases like growing cancer) to maximize contrast, which is an expansion of the previous idea."
+                "propose new idea": "The speaker suggests targeting highly metabolic diseases like growing cancer for imaging applications.",
+                "ask question": "The speaker seeks agreement or opinion with 'right?'"
             }
         },
         {
@@ -2913,9 +2817,8 @@
             "start_time": "49:01",
             "end_time": "49:15",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the idea of using heavy water (deuterium) for imaging metabolic activity, building on Lingyan's explanation of how deuterium gets incorporated into biomolecules and how Raman can distinguish between OD and CD bonds, by suggesting that cancerous regions will show more conversion of OD to CD.",
-                "provide supporting evidence": "This utterance provides supporting evidence for the use of heavy water by suggesting that cancerous regions will show more conversion of OD to CD, which can be detected using Raman spectroscopy, thus supporting the idea that heavy water can be used to image metabolic activity.",
-                "explain or define term or concept": "This utterance explains the concept of metabolic activity by suggesting that cancerous regions will show more conversion of OD to CD, while quiescent regions will show nothing, thus defining the concept of metabolic activity in terms of the conversion of OD to CD."
+                "propose new idea": "The speaker suggests using the conversion of OD to CDs to observe metabolic activities in different body regions.",
+                "develop idea": "The speaker expands on the concept of using deuterium for imaging by discussing its potential in visualizing metabolic activities."
             }
         },
         {
@@ -2934,11 +2837,9 @@
             "screenshare_content": "None",
             "start_time": "49:16",
             "end_time": "49:32",
-            "annotations": [
-                {
-                    "ask clarifying question": "Mini Das is asking about the duration of contrast when using heavy water, seeking clarification on whether it lasts for minutes or seconds, which is a clarifying question about a previously discussed topic."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the expected duration of contrast when using heavy water, indicating a need for clarification or additional information."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -2957,7 +2858,7 @@
             "start_time": "49:36",
             "end_time": "49:42",
             "annotations": {
-                "provide supporting evidence": "Lingyan is offering to share a paper, which would serve as supporting evidence for a previous point or discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2977,7 +2878,7 @@
             "start_time": "49:42",
             "end_time": "49:42",
             "annotations": {
-                "ask clarifying question": "Joyoni asks if Lingyan's paper is the one published in Nature, seeking confirmation about the paper's significance."
+                "None": "The utterance is a simple expression of interest or inquiry about a previously mentioned 'nature paper' and does not explicitly fit into any of the provided codes."
             }
         },
         {
@@ -2997,7 +2898,7 @@
             "start_time": "49:43",
             "end_time": "49:46",
             "annotations": {
-                "provide supporting evidence": "Lingyan refers to a Nature Communications paper from Wei Min's lab, providing a reference to support a previous point about heavy water and metabolic activity."
+                "acknowledge contribution": "The speaker references work done in Wayne's lab, specifically mentioning 'the nature communications we did in Wayne's lab,' which serves as an acknowledgment of someone else's contribution to the field or discussion."
             }
         },
         {
@@ -3017,7 +2918,7 @@
             "start_time": "49:47",
             "end_time": "49:47",
             "annotations": {
-                "express agreement": "Joyoni expresses agreement with Lingyan's statement about posting a paper, indicating a positive reception to the information shared."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3037,8 +2938,8 @@
             "start_time": "50:00",
             "end_time": "50:21",
             "annotations": {
-                "expand on existing idea": "This sentence expands on the idea of using heavy water for imaging, building on the previous discussion about its potential for visualizing metabolic activity.",
-                "provide supporting evidence": "The speaker is providing supporting evidence by explaining how the CD signal can be used to visualize metabolic heterogeneity within a tumor, building on the previous discussion about heavy water."
+                "develop idea": "The speaker is expanding on an existing idea about using the CD signal to visualize metabolic heterogeneity in tumors.",
+                "clarify goal": "The utterance clarifies the goal of using the CD signal to understand tumor metabolism and heterogeneity."
             }
         },
         {
@@ -3058,7 +2959,7 @@
             "start_time": "50:22",
             "end_time": "50:25",
             "annotations": {
-                "provide supporting evidence": "Wei Min is providing information about the duration of the signal from heavy water labeling, building on the discussion about using heavy water for biological imaging and metabolic activity tracking."
+                "supportive response": "Expressing agreement or validation for the idea that the signal could last for days."
             }
         },
         {
@@ -3078,7 +2979,7 @@
             "start_time": "50:26",
             "end_time": "50:27",
             "annotations": {
-                "express agreement": "Mini Das is agreeing with Wei Min's statement that the signal from heavy water labeling can last for days, indicating agreement with the duration of the signal."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3098,7 +2999,7 @@
             "start_time": "50:27",
             "end_time": "50:33",
             "annotations": {
-                "provide supporting evidence": "Lingyan Shi is providing supporting evidence to Mini Das's question about how long the contrast lasts with heavy water, stating that the signal will last for days as long as heavy water is provided, building on the prior discussion about using heavy water for imaging."
+                "supportive response": "The speaker is providing additional information to support the discussion on the use of heavy water in imaging, indicating that as long as heavy water is provided, the contrast will be there."
             }
         },
         {
@@ -3118,7 +3019,8 @@
             "start_time": "50:33",
             "end_time": "50:39",
             "annotations": {
-                "provide supporting evidence": "Wei Min explains why the signal from heavy water labeling can last for days, stating that the tissue turnover time is on the order of days to weeks, supporting the idea that heavy water can be used for metabolic imaging."
+                "supportive response": "The speaker provides an explanation to support the understanding of the signal duration in biological systems, indicating a supportive response to the conversation.",
+                "develop idea": "The speaker elaborates on the reason behind the signal lasting for days to weeks, which is related to tissue turnover time."
             }
         },
         {
@@ -3138,7 +3040,7 @@
             "start_time": "50:39",
             "end_time": "50:50",
             "annotations": {
-                "ask clarifying question": "Sapun asks a clarifying question about the practical aspects of using heavy water in experiments, specifically how it's administered to mice, building on the discussion about using heavy water for biological imaging."
+                "ask question": "The utterance is a clear request for information or clarification on providing heavy water to mice in experiments."
             }
         },
         {
@@ -3158,8 +3060,7 @@
             "start_time": "50:50",
             "end_time": "51:04",
             "annotations": {
-                "expand on existing idea": "Lingyan is expanding on the idea of using heavy water for imaging, which was previously discussed, by providing details on how it is administered to mice, specifically mentioning the percentage and duration of heavy water in their drinking water.",
-                "provide supporting evidence": "Lingyan provides supporting evidence by sharing the specific percentage (25%) of heavy water used in the drinking water and the duration (days) for which the mice were allowed to drink it, which supports the feasibility of the heavy water imaging approach."
+                "develop idea": "This code applies because Lingyan Shi is providing specific details about their experimental approach, elaborating on how they used heavy water in their research."
             }
         },
         {
@@ -3179,8 +3080,8 @@
             "start_time": "51:04",
             "end_time": "51:27",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that while labeling isn't needed for days to visualize the signal, maintaining the signal level requires continuous provision of heavy water, otherwise the CD chemical bond can be chased out, defining the concept of 'chasing out' labels.",
-                "expand on existing idea": "The speaker expands on the previous discussion about using heavy water for imaging, adding details about the duration of labeling and the effect of discontinuing heavy water provision on the signal."
+                "develop idea": "The speaker is expanding on the idea of labeling with heavy water, specifically discussing the duration needed for labeling and how it affects the visibility of the signal.",
+                "offer feedback": "The speaker is providing specific information that could be seen as feedback on how to approach the labeling and signal maintenance."
             }
         },
         {
@@ -3200,8 +3101,8 @@
             "start_time": "51:27",
             "end_time": "51:34",
             "annotations": {
-                "ask clarifying question": "Sapun is asking Lingyan how long the contrast lasts after heavy water is no longer provided, following up on the discussion about using heavy water for metabolic imaging.",
-                "explain or define term or concept": "Sapun is clarifying the duration of the contrast from heavy water labeling after it's stopped, which is a key factor in its potential use for imaging."
+                "ask question": "The speaker asks a question about the duration of something after a specific action.",
+                "supportive response": "The speaker agrees or validates the previous discussion with 'Yeah, I guess that was the question, right?'"
             }
         },
         {
@@ -3220,11 +3121,10 @@
             "screenshare_content": "None",
             "start_time": "51:35",
             "end_time": "51:54",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lingyan explains the concept of 'chase out rate' in the context of heavy water labeling, specifying that it refers to how quickly the CD chemical bond is removed from different tissues, with sebaceous glands having a faster rate than the brain, building on the discussion about heavy water labeling and its duration."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of using deuterium labeling for imaging by explaining how different tissues incorporate and chase out deuterium at different rates.",
+                "acknowledge contribution": "By providing detailed explanations of deuterium labeling in various tissues, the speaker is acknowledging and building upon previous discussions or ideas."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3243,7 +3143,9 @@
             "start_time": "51:55",
             "end_time": "52:10",
             "annotations": {
-                "expand on existing idea": "Sapun is expanding on Lingyan's previous statement about the brain having a slower metabolic activity, suggesting that the brain's high energy demand but low cell division rate leads to slower molecular turnover."
+                "develop idea": "The speaker is expanding on an existing idea about metabolic turnover in the brain, providing insights into why the brain has a unique profile.",
+                "encourage participation": "The speaker invites others to consider the concept, fostering discussion.",
+                "clarify goal": "The discussion contributes to understanding biological processes, specifically the metabolism in the brain."
             }
         },
         {
@@ -3262,11 +3164,10 @@
             "screenshare_content": "None",
             "start_time": "52:11",
             "end_time": "52:30",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lingyan is expanding on Sapun's previous statement about the brain's metabolic turnover by adding that there is huge heterogeneity in the brain, with some cells having high metabolic activity and others not."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and adding more details to the discussion, validating the previous statements.",
+                "develop idea": "The speaker is expanding on the idea of metabolic heterogeneity, specifically in the brain."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -3284,11 +3185,10 @@
             "screenshare_content": "None",
             "start_time": "52:30",
             "end_time": "52:56",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lingyan is expanding on the discussion about heavy water and metabolic activity by providing specific details about metabolic activity in different brain regions, building on the previous discussion about the duration of contrast from heavy water labeling and metabolic activity in different tissues."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on their research findings related to the observation of pyramidal cells and their metabolic activity, providing specific examples and details.",
+                "signal expertise": "The speaker is explicitly stating their own research findings and expertise in the area of neuroscience and imaging."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3307,7 +3207,7 @@
             "start_time": "52:56",
             "end_time": "52:57",
             "annotations": {
-                "express enthusiasm": "Sapun expresses enthusiasm with the statement \"That's cool\" after Lingyan described the heterogeneity of metabolic activity in the brain and how newly synthesized proteins can be visualized in specific brain layers within hours."
+                "supportive response": "The speaker expresses a positive evaluation of a prior statement, indicating agreement or approval without adding new content."
             }
         },
         {
@@ -3326,11 +3226,10 @@
             "screenshare_content": "None",
             "start_time": "52:59",
             "end_time": "53:16",
-            "annotations": [
-                {
-                    "assign task": "Ed is assigning the task of giving a three-minute presentation to someone in the group, as well as assigning the task of putting together a slide with key points from the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Ed McCleskey is managing the meeting flow by reminding the group about the need to prepare a presentation.",
+                "assign task": "Ed McCleskey is assigning the task of creating a slide and presenting to the group."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -3349,7 +3248,8 @@
             "start_time": "53:10",
             "end_time": "53:11",
             "annotations": {
-                "encourage particpatioin": "Joyoni is encouraging Dr. Shi to participate, likely to be the reporter for the group, as they are running out of time and need to prepare a presentation."
+                "encourage participation": "Joyoni Dey is encouraging Dr. Shi to contribute to the discussion.",
+                "supportive response": "Joyoni Dey's response is supportive as it facilitates Dr. Shi's participation."
             }
         },
         {
@@ -3369,7 +3269,7 @@
             "start_time": "53:16",
             "end_time": "53:23",
             "annotations": {
-                "assign task": "Ed is assigning the task of summarizing key points to the group, as someone will need to present them."
+                "process management": "The speaker is suggesting an organizational task to help with the presentation, which involves managing the meeting flow and ensuring tasks are completed."
             }
         },
         {
@@ -3389,7 +3289,9 @@
             "start_time": "53:24",
             "end_time": "53:32",
             "annotations": {
-                "assign task": "Joyoni suggests that Dr. Shi be the one to give the presentation, assigning her the task because she believes Dr. Shi knows the problem well."
+                "signal expertise": "The utterance implies that Dr. Shi has expertise in the problem.",
+                "encourage participation": "By suggesting Dr. Shi for a task, the speaker encourages her participation.",
+                "assign task": "The utterance implicitly assigns a task or suggests Dr. Shi for a role."
             }
         },
         {
@@ -3409,7 +3311,7 @@
             "start_time": "53:36",
             "end_time": "53:37",
             "annotations": {
-                "express agreement": "Sapun agrees with the suggestion that Dr. Shi should give the presentation, as suggested by Joyoni."
+                "supportive response": "The utterance 'Sure, great.' expresses agreement and positive evaluation, fitting the definition of a supportive response."
             }
         },
         {
@@ -3429,7 +3331,7 @@
             "start_time": "53:37",
             "end_time": "53:45",
             "annotations": {
-                "assign task": "Mini Das is assigning the task of making the slides to Lingyan Shi, who has been suggested as the reporter for the group."
+                "assign task": "Mini Das is assigning the task of making slides to Lingyan, as directly stated in the utterance."
             }
         },
         {
@@ -3449,7 +3351,7 @@
             "start_time": "53:46",
             "end_time": "53:47",
             "annotations": {
-                "acknowledge contribution": "Lingyan Shi is acknowledging the request to make the slides, but not agreeing or expanding on it."
+                "Supportive response": "The utterance 'Okay.' is a supportive response as it expresses agreement or validation."
             }
         },
         {
@@ -3469,9 +3371,8 @@
             "start_time": "53:47",
             "end_time": "54:35",
             "annotations": {
-                "present new idea": "Mini Das introduces the idea of inhalable contrast agents, which hasn't been discussed before in the conversation.",
-                "encourage particpatioin": "Mini Das encourages others to share their thoughts on the idea of inhalable contrast agents.",
-                "ask clarifying question": "Mini Das asks how contrast would be generated with inhalable contrast agents, seeking clarification on the concept."
+                "propose new idea": "The speaker introduces a new concept of inhalable contrast agents for in vivo applications, suggesting a potential new direction for discussion.",
+                "ask question": "The speaker requests thoughts on the idea, specifically about how contrast would be generated if a subject inhaled a non-dangerous gas."
             }
         },
         {
@@ -3491,7 +3392,8 @@
             "start_time": "54:36",
             "end_time": "54:41",
             "annotations": {
-                "encourage particpatioin": "Lingyan encourages others to contribute to the discussion, responding to Mini's suggestion that only one person should talk."
+                "supportive response": "Lingyan Shi is expressing agreement and a positive sentiment towards a collaborative approach.",
+                "encourage participation": "Lingyan Shi suggests that not only one person can talk, encouraging others to participate."
             }
         },
         {
@@ -3511,7 +3413,8 @@
             "start_time": "54:41",
             "end_time": "54:45",
             "annotations": {
-                "encourage particpatioin": "Mini Das encourages Lingyan to start typing on the slides so the group can watch and contribute, following up on the decision to have Lingyan create the slides for the presentation."
+                "process management": "The speaker suggests an action to facilitate group work and slide preparation.",
+                "supportive response": "The utterance is supportive as it offers a practical solution to move forward with their task."
             }
         },
         {
@@ -3530,11 +3433,9 @@
             "screenshare_content": "None",
             "start_time": "54:55",
             "end_time": "55:02",
-            "annotations": [
-                {
-                    "assign task": "Lingyan is assigned the task of making the slides for the presentation, as requested by Mini."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by referencing specific slide numbers for the presentation."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -3552,11 +3453,9 @@
             "screenshare_content": "None",
             "start_time": "55:02",
             "end_time": "55:07",
-            "annotations": [
-                {
-                    "ask clarifying question": "Mini is having technical difficulties finding the correct slide, and is asking why she is on the wrong slide."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is checking and mentioning specific slide numbers, indicating an effort to manage or understand the current state of the presentation."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3575,7 +3474,7 @@
             "start_time": "55:08",
             "end_time": "55:08",
             "annotations": {
-                "acknowledge contribution": "Sapun acknowledges that someone is writing on the slide, recognizing their input without necessarily agreeing or expanding on it, as the group is preparing a presentation."
+                "critical response": "The speaker is questioning or challenging the action of someone else, which can be considered a form of critical response."
             }
         },
         {
@@ -3595,7 +3494,7 @@
             "start_time": "55:08",
             "end_time": "55:08",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is an incomplete sentence and lacks specific content or action."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3614,11 +3513,10 @@
             "screenshare_content": "None",
             "start_time": "55:10",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "reject idea": "Joyoni states that neutron scattering is a problem, dismissing it as a viable option in this context, without suggesting alternatives or improvements."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker is questioning the feasibility or practicality of neutron scattering due to its technical limitations, specifically regarding attenuation contrast and absorption contrast.",
+                "offer feedback": "The speaker is providing specific suggestions or critiques about the technical aspects of neutron scattering, aiming to improve the understanding or approach to the problem."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -3637,7 +3535,8 @@
             "start_time": "55:25",
             "end_time": "55:31",
             "annotations": {
-                "assign task": "Joyoni is assigning themself the task of looking into the parameters for interferometry, following a discussion about neutron scattering and its potential applications."
+                "process management": "The speaker is expressing a personal intention to look into parameters for interferometry, which relates to managing their work process or tasks.",
+                "clarify goal": "The consideration to explore interferometry parameters could also imply a clarification of goals or methods to achieve a certain objective."
             }
         },
         {
@@ -3657,8 +3556,8 @@
             "start_time": "55:31",
             "end_time": "55:46",
             "annotations": {
-                "expand on existing idea": "Joyoni is expanding on the idea of using neutron scattering, mentioning that it provides a clean image for coherent scattering and suggesting to look at the phase image and small angle image scattering if attenuation is overwhelmed by scatter, building upon the previous discussion about neutron scattering and its potential for biological imaging.",
-                "provide supporting evidence": "Joyoni provides supporting evidence by stating that neutron scattering has a clean image for coherent scattering, which supports the idea of using it for biological imaging, building upon the previous discussion about neutron scattering and its potential for biological imaging."
+                "develop idea": "The speaker is expanding on previous ideas by suggesting alternative approaches (phase image and small angle image scattering) under certain conditions.",
+                "offer feedback": "The speaker provides specific suggestions for alternative imaging approaches if attenuation is overwhelmed by scatter."
             }
         },
         {
@@ -3678,7 +3577,7 @@
             "start_time": "55:47",
             "end_time": "55:48",
             "annotations": {
-                "assign task": "Lingyan is asking if someone else is able to type on the shared document, assigning the task of typing to someone else."
+                "process management": "Lingyan Shi is managing the workflow by ensuring someone can type to contribute to the slides."
             }
         },
         {
@@ -3698,7 +3597,7 @@
             "start_time": "55:49",
             "end_time": "55:51",
             "annotations": {
-                "express agreement": "Mini Das agrees to type on the slides, which was requested by Silvia Ronco to summarize the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3718,7 +3617,7 @@
             "start_time": "55:51",
             "end_time": "55:54",
             "annotations": {
-                "expand on existing idea": "This utterance is a continuation of the discussion about combining different technologies, which has been an ongoing theme in the conversation."
+                "develop idea": "The speaker is contributing to the discussion on combining different technologies, implying an expansion on existing ideas of technological integration."
             }
         },
         {
@@ -3738,7 +3637,8 @@
             "start_time": "55:54",
             "end_time": "56:01",
             "annotations": {
-                "encourage particpatioin": "Lingyan Shi encourages the other participants to add their comments to the content, inviting them to contribute to the discussion and slide preparation."
+                "propose new idea": "The speaker suggests combining different imaging modalities, which is a new approach.",
+                "encourage participation": "The speaker invites others to add comments to the content, encouraging participation."
             }
         },
         {
@@ -3758,7 +3658,7 @@
             "start_time": "56:01",
             "end_time": "56:02",
             "annotations": {
-                "ask clarifying question": "Wei Min is asking a question to clarify if multiple people can edit the slides simultaneously, which is relevant to the task of preparing the report for the main room."
+                "process management": "Wei Min is asking about the capability to facilitate simultaneous work on a document or slides, which relates to managing the collaboration process."
             }
         },
         {
@@ -3777,11 +3677,9 @@
             "screenshare_content": "None",
             "start_time": "56:02",
             "end_time": "56:03",
-            "annotations": [
-                {
-                    "express agreement": "Sapun Parekh explicitly agrees with Wei Min's question about whether two people can type at the same time."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement."
+            }
         },
         {
             "speaker": "Wei Min",
@@ -3800,7 +3698,7 @@
             "start_time": "56:03",
             "end_time": "56:04",
             "annotations": {
-                "encourage particpatioin": "Wei Min is encouraging anyone to type on the slide, inviting participation from the group."
+                "encourage participation": "Wei Min invites others to contribute by stating that anybody can type, encouraging participation in the collaborative activity."
             }
         },
         {
@@ -3820,7 +3718,8 @@
             "start_time": "56:04",
             "end_time": "56:04",
             "annotations": {
-                "encourage particpatioin": "Sapun is encouraging anyone to contribute to the slide, which is meant to summarize the discussion."
+                "encourage participation": "The speaker invites others to contribute by typing, encouraging participation.",
+                "supportive response": "The statement is supportive and encourages others to participate in the discussion."
             }
         },
         {
@@ -3839,11 +3738,9 @@
             "screenshare_content": "None",
             "start_time": "56:04",
             "end_time": "56:06",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Wei Min acknowledges that he has already typed two things, recognizing his own input to the shared slide."
-                }
-            ]
+            "annotations": {
+                "process management": "Wei Min is managing the collaborative typing process by informing others of their actions."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -3862,7 +3759,7 @@
             "start_time": "56:12",
             "end_time": "56:13",
             "annotations": {
-                "express humor": "Mini Das is making a lighthearted comment about not seeing Sapun's typing, which can be interpreted as a joke in the context of collaborative slide editing."
+                "process management": "Mini Das is addressing a technical issue related to communication within the meeting, which falls under managing the meeting flow."
             }
         },
         {
@@ -3882,7 +3779,7 @@
             "start_time": "56:13",
             "end_time": "56:14",
             "annotations": {
-                "express humor": "Sapun makes a humorous remark suggesting Mini refresh her screen to see his typing, likely because of a technical glitch in the collaborative slide editing, adding a lighthearted moment to the discussion."
+                "process management": "The speaker is addressing a technical issue that could impact the meeting's progress, suggesting the recipient refresh their screen."
             }
         },
         {
@@ -3902,7 +3799,7 @@
             "start_time": "56:16",
             "end_time": "56:17",
             "annotations": {
-                "express humor": "Mini Das expresses humor by stating that she was typing in someone else's document, which is a lighthearted comment on a technical difficulty during the collaborative slide editing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3922,7 +3819,7 @@
             "start_time": "56:17",
             "end_time": "56:20",
             "annotations": {
-                "acknowledge contribution": "Wei Min acknowledges that the group has generated at least two ideas, recognizing the team's input in the discussion."
+                "summarize conversation": "Wei Min is acknowledging and summarizing that at least two ideas have been discussed or proposed."
             }
         },
         {
@@ -3942,7 +3839,7 @@
             "start_time": "56:20",
             "end_time": "56:20",
             "annotations": {
-                "acknowledge contribution": "Lingyan Shi is acknowledging the previous turn, but not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3961,11 +3858,9 @@
             "screenshare_content": "None",
             "start_time": "56:21",
             "end_time": "56:23",
-            "annotations": [
-                {
-                    "express humor": "Sapun is making a joke about the slide number, as the group is trying to update the slide for the presentation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Mini Das",
@@ -3983,11 +3878,9 @@
             "screenshare_content": "None",
             "start_time": "56:26",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "ask clarifying question": "Mini Das is asking a question to clarify which slide they should be on, as the group is trying to update a slide for a presentation."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is checking and commenting on the synchronization of their document view with others, which relates to managing the collaborative process."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -4006,7 +3899,7 @@
             "start_time": "56:29",
             "end_time": "56:30",
             "annotations": {
-                "assign task": "Sapun is directing Mini to the correct slide number for the presentation, assigning her the task of updating slide 24."
+                "process management": "The speaker is guiding someone to update to page 24, which is about managing the meeting flow or tasks."
             }
         },
         {
@@ -4026,7 +3919,7 @@
             "start_time": "56:34",
             "end_time": "56:37",
             "annotations": {
-                "express agreement": "Wei Min agrees that they have at least two ideas, confirming the progress of the discussion."
+                "summarize conversation": "Wei Min's statement acknowledges and summarizes that there are multiple ideas discussed in the conversation."
             }
         },
         {
@@ -4046,7 +3939,8 @@
             "start_time": "56:39",
             "end_time": "57:01",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the prior discussion about using neutron scattering coupled with heavy water for biological imaging, and interstitial fluid imaging, suggesting that these modalities can be used to solve biological questions related to tumor metabolism and interstitial fluid."
+                "Summarize conversation": "The speaker is summarizing the discussion about using two imaging modalities for biological questions.",
+                "Develop idea": "The speaker is developing the idea of applying imaging modalities to study tumor metabolism and interstitial fluid."
             }
         },
         {
@@ -4065,14 +3959,12 @@
             "screenshare_content": "None",
             "start_time": "60:00",
             "end_time": "60:39",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Mini Das acknowledges Lisa's contribution, expressing interest in what Lisa said earlier about label-free imaging, but without explicitly agreeing or expanding on it."
-                },
-                {
-                    "express agreement": "Mini Das expresses agreement with the idea that simpler techniques have a higher chance of succeeding, based on the prior discussion about imaging modalities."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the idea of simplicity in techniques and its importance.",
+                "acknowledge contribution": "The speaker acknowledges Lisa's previous statement.",
+                "encourage participation": "The speaker invites Lisa to contribute.",
+                "process management": "The speaker is mindful of the time, indicating some management of the discussion flow."
+            }
         },
         {
             "speaker": "Lisa Poulikakos",
@@ -4091,7 +3983,8 @@
             "start_time": "60:40",
             "end_time": "60:50",
             "annotations": {
-                "expand on existing idea": "Lisa offers to provide more details on a previously mentioned idea about sculpting the phase or polarization of light, building upon the discussion of label-free imaging and overcoming challenges related to depth and scattering effects."
+                "offer feedback": "Provides specific suggestions for improvement or modification of existing ideas or approaches.",
+                "supportive response": "Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content."
             }
         },
         {
@@ -4110,11 +4003,9 @@
             "screenshare_content": "None",
             "start_time": "60:51",
             "end_time": "60:53",
-            "annotations": [
-                {
-                    "express agreement": "Mini Das expresses agreement with Lisa's suggestion of modulating light to overcome some challenges, building on Lisa's previous statement about sculpting the phase or polarization of light."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement with a previous statement about modulation."
+            }
         },
         {
             "speaker": "Lisa Poulikakos",
@@ -4133,7 +4024,8 @@
             "start_time": "60:53",
             "end_time": "61:00",
             "annotations": {
-                "expand on existing idea": "Lisa is expanding on Mini Das's idea of modulating light to enhance imaging, adding that it can lead to background-free or deeper tissue imaging, building upon the discussion about label-free imaging techniques and challenges in deeper tissue."
+                "Supportive response": "The speaker expresses a positive evaluation of an idea.",
+                "Offer feedback": "The speaker provides a suggestion for modulating light to achieve background-free or deeper tissue imaging."
             }
         },
         {
@@ -4153,8 +4045,7 @@
             "start_time": "61:01",
             "end_time": "61:17",
             "annotations": {
-                "expand on existing idea": "Mini Das is expanding on the idea of modulating light for imaging, which Lisa Poulikakos introduced as a way to overcome scattering effects and achieve deeper tissue imaging, by discussing the challenges of modulation at higher energies.",
-                "offer constructive criticism": "Mini Das offers constructive criticism by pointing out the difficulties in modulating light at higher energies, which is relevant to Joyoni's earlier discussion of X-ray and neutron imaging techniques."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4174,7 +4065,7 @@
             "start_time": "61:17",
             "end_time": "61:18",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking if the slide for the presentation is ready, which is a question to clarify the current status of the presentation preparation."
+                "process management": "The speaker is inquiring about the readiness of a slide, which is related to managing the meeting flow and preparation for a presentation."
             }
         },
         {
@@ -4194,7 +4085,7 @@
             "start_time": "61:19",
             "end_time": "61:21",
             "annotations": {
-                "acknowledge contribution": "The utterance acknowledges that the slide is available, recognizing a prior request or effort to prepare it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4214,7 +4105,8 @@
             "start_time": "61:21",
             "end_time": "61:25",
             "annotations": {
-                "encourage particpatioin": "Mini Das is encouraging the group to review the slide together, inviting everyone to participate in the process of checking for any omissions."
+                "Encourage Participation": "The speaker invites others to participate in reviewing the slide together.",
+                "Process Management": "The speaker suggests a method for reviewing the slide, managing the meeting process."
             }
         },
         {
@@ -4234,9 +4126,8 @@
             "start_time": "61:26",
             "end_time": "61:36",
             "annotations": {
-                "encourage particpatioin": "Lingyan encourages others to add comments to the PowerPoint, inviting them to contribute to the presentation.",
-                "acknowledge contribution": "Lingyan acknowledges that she has typed something in the PowerPoint, recognizing her own input.",
-                "express enthusiasm": "Lingyan expresses enthusiasm about the 'deep imaging' idea, indicating excitement about its potential."
+                "process management": "Managing meeting flow by updating the group on actions taken on the presentation and inviting others to contribute.",
+                "encourage participation": "Inviting others to add comments, thereby encouraging participation in the discussion."
             }
         },
         {
@@ -4256,9 +4147,7 @@
             "start_time": "61:37",
             "end_time": "61:51",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Mini Das acknowledges the heavy water idea, which was brought up by Wei Min and Joyoni Dey, and expresses that she learned about it today."
-                }
+                "None": "No relevant code directly applies to this utterance as it is more of a comment than a substantial contribution to the discussion."
             }
         },
         {
@@ -4278,7 +4167,7 @@
             "start_time": "61:51",
             "end_time": "62:03",
             "annotations": {
-                "expand on existing idea": "Mini Das suggests adding information about deuterium to the slide where heavy water is mentioned, building on the existing idea of using heavy water for imaging and clarifying its usefulness."
+                "ask question": "The speaker is requesting clarification or additional information about the usefulness of deuterium in the context of heavy water for imaging purposes."
             }
         },
         {
@@ -4298,7 +4187,8 @@
             "start_time": "62:04",
             "end_time": "62:10",
             "annotations": {
-                "explain or define term or concept": "Lingyan is explaining what she wrote on the slide, specifically that heavy water can be used to probe the imaging of metabolic heterogeneity, which is a concept that Mini was previously unfamiliar with."
+                "develop idea": "The speaker is elaborating on an existing idea or point by specifying what it entails.",
+                "process management": "The utterance is related to managing the content of a presentation."
             }
         },
         {
@@ -4318,7 +4208,7 @@
             "start_time": "62:10",
             "end_time": "62:13",
             "annotations": {
-                "express agreement": "Mini Das is agreeing with Lingyan Shi, who just mentioned that she has a bullet point about heavy water probing the imaging of metabolic heterogeneity."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4338,7 +4228,8 @@
             "start_time": "62:14",
             "end_time": "62:20",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about heavy water and its applications in imaging metabolic heterogeneity, adding that they also have nano carriers, expanding on the tools available for imaging."
+                "develop idea": "The speaker is building upon previously discussed ideas about nano carriers by mentioning their application in solid tumors.",
+                "propose new idea": "The utterance introduces a specific application of nano carriers in solid tumors, which can be considered a new idea in the context of the conversation."
             }
         },
         {
@@ -4358,7 +4249,7 @@
             "start_time": "62:20",
             "end_time": "62:23",
             "annotations": {
-                "acknowledge contribution": "Mini Das acknowledges Lingyan Shi's contribution regarding the use of deuterium in heavy water for imaging, but does not agree or expand on the idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4378,7 +4269,7 @@
             "start_time": "62:23",
             "end_time": "62:26",
             "annotations": {
-                "expand on existing idea": "Lingyan is adding to the discussion about deuterium, which has been previously mentioned as a contrast agent for imaging, building on the idea of deuterium imaging."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4398,8 +4289,8 @@
             "start_time": "62:26",
             "end_time": "62:37",
             "annotations": {
-                "expand on existing idea": "Joyoni is expanding on the discussion of using neutrons for imaging, which was brought up earlier in the conversation.",
-                "reject idea": "Joyoni rejects the idea of using interferometry unless there is too much scattering, suggesting it's not necessary for small depths."
+                "develop idea": "The speaker is expanding on how they think about using interferometry in relation to neutron scattering, indicating a development of ideas.",
+                "clarify goal": "The speaker is discussing under what conditions they would consider interferometry, which relates to defining or clarifying objectives or approaches."
             }
         },
         {
@@ -4419,7 +4310,7 @@
             "start_time": "62:38",
             "end_time": "62:44",
             "annotations": {
-                "ask clarifying question": "Sapun asks if it is allowed to put a human or animal in front of a neutron beam, seeking clarification on the safety or ethical considerations of such a procedure, which is related to the discussion of neutron scattering and its potential use in biological imaging."
+                "ask question": "The speaker is requesting information about the feasibility or safety of using neutron beams on humans or animals."
             }
         },
         {
@@ -4439,8 +4330,7 @@
             "start_time": "62:45",
             "end_time": "63:00",
             "annotations": {
-                "explain or define term or concept": "Joyoni is explaining the possibility of using neutron beams on humans or mice, clarifying the limitations of the method discussed earlier.",
-                "provide supporting evidence": "Joyoni mentions seeing grants related to using neutron beams on humans or mice, providing anecdotal evidence that it is a considered possibility."
+                "None": "No other code seems to directly apply to the utterance as it does not introduce a new idea, ask a question, or engage in other explicitly defined behaviors."
             }
         },
         {
@@ -4460,7 +4350,7 @@
             "start_time": "63:00",
             "end_time": "63:10",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking Joyoni, who has expertise in neutron imaging, to clarify the radiation hazard of neutrons compared to X-rays for biological applications, showing she is seeking to understand the safety implications of neutron imaging discussed earlier."
+                "ask question": "The utterance is a clear example of asking for information or clarification."
             }
         },
         {
@@ -4479,11 +4369,10 @@
             "screenshare_content": "The screen is shared by Lingyan Shi. The screen shows a picture of a building.",
             "start_time": "63:10",
             "end_time": "63:22",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Joyoni explains the types of neutrons used in neutron scattering, specifying thermal or cold neutrons, in response to Mini's question about radiation hazard."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting clarification on what is meant by 'energies'.",
+                "develop idea": "The speaker is expanding on the types of neutrons relevant to the discussion, specifying thermal and cold neutrons."
+            }
         },
         {
             "speaker": "Mini Das",
@@ -4502,7 +4391,7 @@
             "start_time": "63:22",
             "end_time": "63:23",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking about the biohazard of neutrons compared to X-rays, following a discussion about neutron imaging and its potential use in biological applications."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4522,7 +4411,7 @@
             "start_time": "63:23",
             "end_time": "63:32",
             "annotations": {
-                "explain or define term or concept": "Joyoni is explaining the energy levels of neutrons in neutron scattering, contrasting them with the KV energy levels of X-rays, to Mini who asked about the radiation hazard of neutrons compared to X-rays."
+                "signal expertise": "The speaker is providing specific technical information about energy levels of neutrons compared to X-rays, indicating their expertise in the field."
             }
         },
         {
@@ -4542,7 +4431,7 @@
             "start_time": "63:33",
             "end_time": "63:36",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking a question to clarify whether the neutron sources are portable, given the discussion about neutron imaging and its potential applications."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4562,8 +4451,7 @@
             "start_time": "63:36",
             "end_time": "63:56",
             "annotations": {
-                "provide supporting evidence": "Joyoni mentions that they have a portable neutron generator and have been imaging roots for a while, supporting the feasibility of neutron imaging.",
-                "reject idea": "Joyoni rejects the idea that interferometry is needed, stating that it's not necessary because they have been imaging roots for a while, implying that the current method is sufficient."
+                "None": "No other codes seem to directly apply based on the explicit content of the utterance."
             }
         },
         {
@@ -4583,7 +4471,7 @@
             "start_time": "63:59",
             "end_time": "64:01",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4603,7 +4491,7 @@
             "start_time": "64:01",
             "end_time": "64:04",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking for confirmation about whether neutron sources are portable, given Joyoni Dey's previous discussion of neutron imaging and its potential applications."
+                "ask question": "The speaker is requesting information or confirmation about the portability of certain sources."
             }
         },
         {
@@ -4623,7 +4511,7 @@
             "start_time": "64:05",
             "end_time": "64:11",
             "annotations": {
-                "provide supporting evidence": "Joyoni mentions the existence of a portable neutron generator at their location, supporting the feasibility of using neutron imaging, which was previously discussed."
+                "process management": "The speaker is discussing the availability of a portable neutron generator, which relates to managing or organizing group activities or resources."
             }
         },
         {
@@ -4643,9 +4531,8 @@
             "start_time": "64:11",
             "end_time": "64:25",
             "annotations": {
-                "reject idea": {
-                    "Explanation": "Joyoni rejects the idea that interferometry is needed, stating that it's not necessary because they have been imaging roots for a while without it, building on the prior discussion about neutron imaging."
-                }
+                "signal expertise": "The speaker is explicitly stating their own expertise or familiarity with the portable neutron generator and its applications.",
+                "process management": "The speaker is contributing to the management of the discussion by downplaying the necessity of interferometry based on the success of others in imaging roots."
             }
         },
         {
@@ -4665,7 +4552,7 @@
             "start_time": "64:26",
             "end_time": "64:28",
             "annotations": {
-                "ask clarifying question": "Mini Das is asking if the slide is ready, which is a question to confirm the status of the slide preparation for the presentation."
+                "process management": "The speaker is checking the status of their slide preparation and readiness for presentation."
             }
         },
         {
@@ -4685,7 +4572,8 @@
             "start_time": "64:30",
             "end_time": "64:34",
             "annotations": {
-                "assign task": "Mini Das is assigning Lingyang the task of reading the slide when they go back, indicating a clear delegation of responsibility."
+                "process management": "The speaker is confirming the task of reading or presenting to Lingyang when they go back.",
+                "assign task": "The speaker assigns or confirms the task of reading this to Lingyang."
             }
         },
         {
@@ -4705,7 +4593,7 @@
             "start_time": "64:35",
             "end_time": "64:37",
             "annotations": {
-                "assign task": "Joyoni agrees to read the slide, taking on the task of presenting the group's findings, after Lingyan was initially assigned but Joyoni offered to do it."
+                "supportive response": "The speaker is expressing agreement and willingness to perform a task, showing a positive and cooperative attitude."
             }
         },
         {
@@ -4725,7 +4613,7 @@
             "start_time": "64:38",
             "end_time": "64:54",
             "annotations": {
-                "ask clarifying question": "Lingyan is asking Lisa to clarify her method for exosome imaging, specifically inquiring if it involves a scattering method similar to Joyoni's, showing she is seeking to understand the details of Lisa's approach."
+                "ask question": "The speaker is requesting information or clarification about Lisa's method for exosome and the pronunciation of 'Joyni', directly asking for details from other team members."
             }
         },
         {
@@ -4745,7 +4633,7 @@
             "start_time": "64:55",
             "end_time": "64:57",
             "annotations": {
-                "acknowledge contribution": "Joyoni Dey acknowledges Lingyan Shi's attempt to pronounce her name correctly, indicating recognition of her effort."
+                "acknowledge contribution": "The speaker acknowledges another group member's input, in this case, Lingyan Shi's attempt to correctly pronounce her name."
             }
         },
         {
@@ -4765,7 +4653,7 @@
             "start_time": "64:59",
             "end_time": "65:07",
             "annotations": {
-                "ask clarifying question": "Lingyan is asking which imaging modality is best to visualize exosomes, seeking input from the group after a discussion about various imaging techniques and their potential applications."
+                "ask question": "The speaker is requesting information or opinions from others on the best imaging modality to visualize exosomes."
             }
         },
         {
@@ -4785,9 +4673,7 @@
             "start_time": "65:08",
             "end_time": "65:29",
             "annotations": {
-                "expand on existing idea": "Lisa is expanding on the discussion about visualizing exosomes by mentioning that her colleagues use scattering techniques and interferometry to look at the scattering signature in a background-free way, building upon the previous discussion about imaging modalities.",
-                "explain or define term or concept": "Lisa is explaining the concept of heterodyne interferometry as an example of interferometry that her colleagues have used in the past for visualizing exosomes, providing clarity on a specific technique.",
-                "acknowledge contribution": "Lisa acknowledges the previous discussion about visualizing exosomes and the imaging modalities that could be used."
+                "develop idea": "Lisa is expanding on existing ideas by providing details about her colleagues' approaches to visualizing exosomes, including the use of scattering techniques and interferometry."
             }
         },
         {
@@ -4807,8 +4693,8 @@
             "start_time": "65:30",
             "end_time": "65:49",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the challenges associated with imaging exosomes, specifying that the difficulty lies not just in detecting them, but in determining their contents, which provides context for the discussion.",
-                "acknowledge contribution": "The speaker acknowledges their own experience by stating that they have worked with exosomes and found them easy to detect, which is a way of contributing to the discussion."
+                "signal expertise": "Aniruddha Ray explicitly states his own expertise with exosomes, mentioning 'I've worked with exosomes and it's easy to detect them'.",
+                "identify gap": "Aniruddha Ray identifies a challenge in the field of imaging exosomes, which is 'figuring out what is inside them'."
             }
         },
         {
@@ -4828,7 +4714,7 @@
             "start_time": "65:50",
             "end_time": "65:54",
             "annotations": {
-                "expand on existing idea": "Wei Min is expanding on Aniruddha's statement about the challenges of imaging exosomes, adding that identifying RNA and RNA materials inside them is a specific challenge."
+                "develop idea": "The speaker is expanding on existing ideas or considerations by adding a specific point about RNA and RNA materials."
             }
         },
         {
@@ -4848,7 +4734,7 @@
             "start_time": "65:54",
             "end_time": "65:56",
             "annotations": {
-                "express agreement": "Aniruddha Ray agrees with Wei Min's statement about RNA materials in exosomes, which was in response to Aniruddha's statement about the challenges with imaging exosomes and figuring out what is inside them."
+                "Supportive response": "The utterance 'Exactly. ' expresses agreement or validation for a prior statement made by another group member."
             }
         },
         {
@@ -4868,7 +4754,7 @@
             "start_time": "65:56",
             "end_time": "65:56",
             "annotations": {
-                "express agreement": "Wei Min is explicitly agreeing with Aniruddha's statement about the challenges of imaging exosomes, specifically the difficulty of figuring out what is inside them, which was just mentioned."
+                "Supportive response": "The speaker is expressing agreement with a previous statement."
             }
         },
         {
@@ -4887,11 +4773,9 @@
             "screenshare_content": "The screen is shared by Lingyan Shi. The screen shows a picture of a building.",
             "start_time": "65:57",
             "end_time": "66:03",
-            "annotations": [
-                {
-                    "reject idea": "Sapun rejects the idea of using mass spectrometry for imaging exosomes because it doesn't allow for visualizing individual exosomes, which is a limitation compared to imaging techniques discussed earlier."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker evaluates the approach of doing mass spectrometry on exosomes, pointing out a limitation that it wouldn't allow for the visualization of individual exosomes."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -4910,7 +4794,7 @@
             "start_time": "66:04",
             "end_time": "66:07",
             "annotations": {
-                "expand on existing idea": "Lingyan is expanding on the discussion about exosomes and how to visualize them, suggesting Raman spectroscopy as a method to see signatures of the exosomes, building on Aniruddha's comment about the challenges of figuring out what is inside them."
+                "propose new idea": "Lingyan Shi introduces Raman spectroscopy as a method to see signatures of exosomes, suggesting a new approach for their detection or study."
             }
         },
         {
@@ -4929,11 +4813,10 @@
             "screenshare_content": "None",
             "start_time": "66:07",
             "end_time": "66:10",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses enthusiasm by saying \"we do care\", indicating a positive attitude towards the topic being discussed."
-                }
-            ]
+            "annotations": {
+                "clarify goal": "The speaker is clarifying their perspective on the group's objectives and time constraints.",
+                "supportive response": "The speaker is providing a supportive response to an implied concern, validating the importance and feasibility of the task."
+            }
         },
         {
             "speaker": "Joyoni Dey",
@@ -4952,7 +4835,7 @@
             "start_time": "66:10",
             "end_time": "66:12",
             "annotations": {
-                "ask clarifying question": "Joyoni is asking for confirmation about the remaining time, building on Wei Min's statement about having time."
+                "ask question": "The speaker is seeking confirmation about the time, indicated by the phrase 'right?'."
             }
         }
     ]

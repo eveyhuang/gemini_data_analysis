@@ -1,16 +1,16 @@
 {
     "all_speakers": [
-        "Jennifer Glass",
-        "Rika Anderson",
-        "Aaron Engelhart",
-        "Shannon Mackenzie",
-        "Marc Neveu",
         "Meredith MacGregor",
-        "Stilianos Louca",
-        "Silvia Ronco",
+        "Timothy W Lyons",
+        "Shannon Mackenzie",
+        "Aaron Engelhart",
         "Shannon Mackenzie | JHU APL",
+        "Rika Anderson",
         "Keith Hawkins",
-        "Timothy W Lyons"
+        "Silvia Ronco",
+        "Marc Neveu",
+        "Jennifer Glass",
+        "Stilianos Louca"
     ],
     "total_speaking_length": 3702,
     "all_data": [
@@ -31,10 +31,8 @@
             "start_time": "00:00",
             "end_time": "00:31",
             "annotations": {
-                "encourage particpatioin": "The speaker is encouraging everyone to get involved and share their thoughts.",
-                "explain or define term or concept": "The speaker is explaining the purpose of the meeting and what they will be doing.",
-                "present new idea": "The speaker is presenting the idea of 'riffing' and getting everyone involved to open up their thinking.",
-                "assign task": "The speaker assigns himself the task of reading the group's specific description."
+                "encourage participation": "The speaker invites others to contribute their thoughts and imagine who they might partner with.",
+                "process management": "The speaker is managing the meeting flow by deciding to read out the specific group details before proceeding."
             }
         },
         {
@@ -53,11 +51,13 @@
             "screenshare_content": "None",
             "start_time": "00:31",
             "end_time": "01:27",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the general idea of the group's focus, which is the timescale for the birth of the biosphere, and what 'robust' means in this context."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The utterance introduces the topic and general idea of studying the timescale for the birth of the biosphere.",
+                "develop idea": "The speaker elaborates on the general idea by explaining what is meant by 'robust' and outlines the purposes of the workshop.",
+                "ask question": "The utterance contains questions like 'how long does it take for that to happen?' and 'how long does it take for that to happen in a way that it's robust'",
+                "encourage participation": "The speaker invites discussion by saying 'we can talk about that'.",
+                "clarify goal": "The utterance defines the goal of the workshop, which is to discuss the timescale for the birth of the biosphere and its detectability."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -75,14 +75,11 @@
             "screenshare_content": "None",
             "start_time": "01:27",
             "end_time": "02:44",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is expanding on the initial topic of the biosphere by providing more details and questions related to its development and detection, building upon the previous introduction of the workshop's focus."
-                },
-                {
-                    "ask clarifying question": "The speaker poses several questions about how life establishes a biosphere, how primordial biology diversifies, and how evolutionary innovation alters the planet, seeking to clarify the scope of the research."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on previous ideas by providing more details and questions.",
+                "ask question": "The speaker asks multiple questions about the establishment and evolution of biospheres.",
+                "process management": "The speaker notes they are out of time and suggests starting introductions."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -101,7 +98,7 @@
             "start_time": "02:44",
             "end_time": "02:45",
             "annotations": {
-                "express agreement": "The speaker is expressing agreement with a prior statement or idea, though the specific referent is unclear from this isolated utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -120,11 +117,9 @@
             "screenshare_content": "None",
             "start_time": "02:45",
             "end_time": "03:40",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their background and research interests, including bioinformatics sequencing, ecology, evolution of microorganisms, modern ecosystems, and phylogenetic reconstructions, to provide context for their expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to the task, detailing his background in physics, mathematics, and biology, and his current work in bioinformatics and sequencing."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -143,13 +138,13 @@
             "start_time": "03:40",
             "end_time": "03:41",
             "annotations": {
-                "acknowledge contribution": "The speaker acknowledges the previous speaker's introduction."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
             "speaker": "Timothy W Lyons",
             "timestamp": "03:41-03:56",
-            "transcript": "And so that was perfect and I and and as you did and I think others should do as well, maybe sort of talk a bit about the tools that you bring um to the table. I always refer to it as the PI's toolbox. So um let's talk about that a little bit as well. Uh Jennifer Glass.",
+            "transcript": "And so that was perfect and I and and as you did and I think others should do as well, maybe sort of talk a bit about the tools that you bring um to the table. I always refer to it as the PI's toolbox. So um let's talk about that a little bit as well. Uh Jen Glass.",
             "speaking_duration": 15,
             "nods_others": 0,
             "smile_self": 0.0,
@@ -163,12 +158,8 @@
             "start_time": "03:41",
             "end_time": "03:56",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The phrase \"that was perfect\" acknowledges Stilianos' contribution in providing a good introduction."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "The speaker encourages others to talk about the tools they bring to the table, similar to what Stilianos did, and then calls on Jennifer Glass to speak."
-                }
+                "Supportive response": "The speaker is expressing a positive sentiment towards the previous introduction.",
+                "Encourage participation": "The speaker invites others to contribute by talking about the tools they bring."
             }
         },
         {
@@ -188,9 +179,7 @@
             "start_time": "03:57",
             "end_time": "04:40",
             "annotations": {
-                "explain or define term or concept": "The speaker is defining her area of expertise, geomicrobiology, by describing the activities she performs, such as growing microorganisms and measuring rates.",
-                "provide supporting evidence": "The speaker provides supporting evidence of her expertise by mentioning her work in bioinformatics, metagenomics, and collaboration with biochemists.",
-                "expand on existing idea": "The speaker expands on her research interests by mentioning her interest in methane and nitrous oxide, which builds upon the previous discussion of her geomicrobiology work."
+                "signal expertise": "Jennifer Glass explicitly states her own expertise in geomicrobiology, bioinformatics, and metagenomics, and her work on microorganisms, indicating her qualifications related to the task."
             }
         },
         {
@@ -210,7 +199,8 @@
             "start_time": "04:40",
             "end_time": "04:40",
             "annotations": {
-                "express enthusiasm": "Jennifer expresses enthusiasm with the word \"Great.\""
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "Supportive response": "The message expresses agreement or validation for the previous speaker's contribution."
             }
         },
         {
@@ -230,8 +220,7 @@
             "start_time": "04:40",
             "end_time": "04:43",
             "annotations": {
-                "acknowledge contribution": "Timothy acknowledges Jen's contribution after she described her work and expertise.",
-                "encourage particpatioin": "Timothy encourages Keith to participate after acknowledging Jen's contribution."
+                "process management": "The speaker manages the meeting flow by moving on to the next person, 'Uh Keith.'"
             }
         },
         {
@@ -251,9 +240,8 @@
             "start_time": "04:43",
             "end_time": "05:44",
             "annotations": {
-                "explain or define term or concept": "The speaker explains his field of \"galactic archeologist\" and \"stellar chemist\" to provide context to his background.",
-                "present new idea": "The speaker introduces his work on reconstructing the history and formation of the Milky Way using stellar spectroscopy, which is a new topic in the conversation.",
-                "acknowledge contribution": "The speaker acknowledges that his field is probably the furthest from the topic of the breakout group."
+                "signal expertise": "Keith explicitly states his position, field of work (astronomy), and his specific research area (galactic archeology, stellarscopy).",
+                "identify gap": "Keith mentions he is 'probably the furthest a field from this particular topic,' which can be interpreted as identifying a gap in his expertise related to the topic at hand."
             }
         },
         {
@@ -273,7 +261,7 @@
             "start_time": "05:44",
             "end_time": "05:44",
             "annotations": {
-                "express agreement": "Keith expresses agreement with the previous speaker's introduction, which is Jennifer Glass."
+                "supportive response": "This utterance expresses agreement or acknowledgment, which can be considered a supportive response without adding new content."
             }
         },
         {
@@ -293,7 +281,7 @@
             "start_time": "05:44",
             "end_time": "05:45",
             "annotations": {
-                "acknowledge contribution": "The utterance 'Thank you' acknowledges the previous speaker's contribution."
+                "acknowledge contribution": "The speaker is thanking someone, likely for their introduction or self-description, thereby acknowledging their contribution to the meeting."
             }
         },
         {
@@ -313,7 +301,7 @@
             "start_time": "05:45",
             "end_time": "05:46",
             "annotations": {
-                "encourage particpatioin": "Timothy is inviting Shannon to contribute to the discussion, continuing the round of introductions."
+                "Encourage participation": "The utterance invites Shannon to participate or contribute to the discussion, fitting the definition of encouraging participation."
             }
         },
         {
@@ -333,8 +321,7 @@
             "start_time": "05:48",
             "end_time": "06:24",
             "annotations": {
-                "explain or define term or concept": "The speaker explains their role as a planetary scientist and the methods they use, such as remote sensing and terrestrial analogs, to study icy satellites.",
-                "provide supporting evidence": "The speaker supports their role by mentioning specific examples of icy satellites they study, such as Titan and Enceladus."
+                "signal expertise": "The speaker explicitly states their own expertise as a planetary scientist and describes their work methods and areas of interest."
             }
         },
         {
@@ -354,7 +341,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's contribution."
+                "acknowledge contribution": "The utterance verbally recognizes another group member's input.",
+                "supportive response": "The utterance expresses agreement or validation for the introduction."
             }
         },
         {
@@ -374,7 +362,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous turn, which was Timothy thanking her for her introduction."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -394,7 +382,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous turn, which was an introduction from Keith."
+                "None": "The utterance 'Great.' is a brief acknowledgment that does not add substantial content to the conversation, and according to the guidelines, for very brief expressions like this, 'None' is appropriate."
             }
         },
         {
@@ -414,7 +402,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express enthusiasm": "The speaker expresses enthusiasm with the word \"Great.\""
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -434,7 +422,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "acknowledge contribution": "The speaker is acknowledging a prior statement made by another group member, in this case, Timothy W Lyons, by expressing 'Great.'",
+                "supportive response": "The utterance expresses a positive sentiment, which is supportive of the previous speaker's introduction or the context provided."
             }
         },
         {
@@ -454,7 +443,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Supportive response": "The speaker expresses a positive evaluation with 'Great. ', indicating agreement or validation of previous contributions.",
+                "Acknowledge contribution": "The speaker acknowledges others' inputs or the discussion with a brief 'Great. '."
             }
         },
         {
@@ -474,7 +464,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance as it is a very brief acknowledgment without additional content."
             }
         },
         {
@@ -494,7 +484,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -514,7 +504,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "supportive response": "Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content."
             }
         },
         {
@@ -534,7 +524,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Acknowledge contribution": "The speaker acknowledges a previous statement or context.",
+                "Supportive response": "The speaker expresses agreement or a positive sentiment."
             }
         },
         {
@@ -554,7 +545,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -574,7 +565,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -594,7 +585,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -614,7 +605,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -634,7 +625,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -654,7 +645,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "acknowledge contribution": "The utterance verbally recognizes a prior statement by the group leader.",
+                "supportive response": "The utterance expresses a positive sentiment towards the prior statement."
             }
         },
         {
@@ -674,7 +666,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Supportive response": "The utterance 'Great. ' expresses agreement or validation for the previous statement or introduction, fitting the definition of a supportive response."
             }
         },
         {
@@ -694,7 +686,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "supportive response": "The speaker is expressing agreement or positivity towards a previous statement, which is a characteristic of a supportive response."
             }
         },
         {
@@ -714,7 +706,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance as it is a very brief acknowledgment without additional content that would categorize it under a specific code like supportive response or acknowledge contribution in a more substantial way."
             }
         },
         {
@@ -734,7 +726,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Supportive response": "The utterance expresses a positive evaluation for a prior statement.",
+                "Acknowledge contribution": "The utterance verbally recognizes a prior input from another group member."
             }
         },
         {
@@ -754,7 +747,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express enthusiasm": "Shannon expresses enthusiasm about the previous presentation."
+                "acknowledge contribution": "The speaker verbally acknowledges another group member's input, even if briefly, with 'Great.'"
             }
         },
         {
@@ -774,7 +767,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "acknowledge contribution": "The speaker is verbally recognizing someone's input, in this case, likely an introduction or previous statement made by another group member."
             }
         },
         {
@@ -794,7 +787,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -814,7 +807,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance as it only contains a brief acknowledgment."
             }
         },
         {
@@ -834,7 +827,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance as it's a very brief acknowledgment."
             }
         },
         {
@@ -854,7 +847,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express enthusiasm": "Shannon expresses enthusiasm about the previous presentation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -874,7 +867,8 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express enthusiasm": "Shannon expresses enthusiasm about the previous presentation."
+                "acknowledge contribution": "The speaker verbally recognizes a prior statement, showing awareness of the contribution made.",
+                "supportive response": "The utterance expresses a positive sentiment towards the prior statement, indicating agreement or approval."
             }
         },
         {
@@ -894,7 +888,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Supportive response": "The speaker is expressing agreement or a positive evaluation for previous contributions without adding new content."
             }
         },
         {
@@ -914,7 +908,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express enthusiasm": "Shannon expresses enthusiasm about the previous presentation."
+                "supportive response": "The utterance 'Great.' expresses a positive evaluation of the prior statement, making it a supportive response."
             }
         },
         {
@@ -934,7 +928,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "acknowledge contribution": "The speaker acknowledges a prior statement without adding new content."
             }
         },
         {
@@ -954,7 +948,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "Supportive response": "The utterance 'Great.' expresses agreement and positive acknowledgment of the previous speaker's introduction."
             }
         },
         {
@@ -974,7 +968,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input without adding new content or agreeing."
             }
         },
         {
@@ -994,7 +988,7 @@
             "start_time": "06:24",
             "end_time": "06:24",
             "annotations": {
-                "express agreement": "Shannon expresses agreement with the previous speaker's statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1013,11 +1007,10 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:41",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their research interests, including planet-forming discs, the chemistry of these discs, planet-disc interactions, and stellar activity's impact on exoplanets, providing context for their expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and research background related to the task.",
+                "None": "No other relevant code applies to this utterance as it primarily involves self-introduction and stating one's expertise."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1035,12 +1028,10 @@
             "screenshare_content": "None",
             "start_time": "10:42",
             "end_time": "10:45",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The speaker acknowledges the previous speaker's contribution.",
-                    "encourage particpatioin": "The speaker is inviting the next person, Rica, to participate by introducing them."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges a previous contribution with 'Good. Thank you.'",
+                "process management": "The speaker manages the meeting flow by moving to the next introduction."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -1059,9 +1050,7 @@
             "start_time": "10:45",
             "end_time": "11:28",
             "annotations": {
-                "explain or define term or concept": "Rika explains her background and research interests, including her training as an oceanographer and microbial ecologist, and her use of bioinformatics to understand microbial evolution, providing context for her contributions to the discussion.",
-                "expand on existing idea": "Rika builds on the prompt from Timothy to describe her research interests, including microbial evolution in deep sea hydrothermal vents and microbial metabolism in deep time, adding details about her specific focus areas.",
-                "provide supporting evidence": "Rika mentions her collaboration with geochemists to study how microbial evolution and metabolism have changed biogeochemical cycles, providing evidence of her work in the field."
+                "signal expertise": "Rika Anderson explicitly states her own expertise and qualifications related to microbial evolution, bioinformatics, and her work in astrobiology."
             }
         },
         {
@@ -1080,14 +1069,9 @@
             "screenshare_content": "None",
             "start_time": "11:29",
             "end_time": "11:32",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Timothy acknowledges Rica's contribution after she finished speaking about her background and research interests."
-                },
-                {
-                    "encourage particpatioin": "Timothy invites Morgan to participate by introducing him as the next speaker."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by transitioning to the introduction of the last participant."
+            }
         },
         {
             "speaker": "Silvia Ronco",
@@ -1106,7 +1090,7 @@
             "start_time": "11:32",
             "end_time": "11:34",
             "annotations": {
-                "None": "This utterance does not fit into any of the defined codes, as it is simply stating that a person is not present."
+                "process management": "The utterance manages the meeting flow by noting the absence of a participant, which is a process-related comment."
             }
         },
         {
@@ -1126,7 +1110,7 @@
             "start_time": "11:34",
             "end_time": "11:35",
             "annotations": {
-                "acknowledge contribution": "The utterance acknowledges Silvia Ronco's input that Morgan is not present, showing recognition of her contribution to the conversation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1145,11 +1129,10 @@
             "screenshare_content": "None",
             "start_time": "11:36",
             "end_time": "11:44",
-            "annotations": [
-                {
-                    "encourage particpatioin": "The speaker is asking if there are any other people who need to be introduced, encouraging them to participate in the introductions."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by checking if there are any other people sitting in that need introduction.",
+                "encourage participation": "The speaker is indirectly inviting others to participate by inquiring if there are any other people present who need an introduction."
+            }
         },
         {
             "speaker": "Silvia Ronco",
@@ -1168,7 +1151,7 @@
             "start_time": "11:44",
             "end_time": "11:44",
             "annotations": {
-                "express agreement": "Silvia Ronco's \"Yeah\" expresses agreement with Timothy W Lyons' statement that they all know her, indicating confirmation or acknowledgement of the prior statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1188,7 +1171,7 @@
             "start_time": "11:44",
             "end_time": "11:44",
             "annotations": {
-                "acknowledge contribution": "The utterance 'Okay' acknowledges the previous speaker's contribution without expressing agreement or expanding on the idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1208,7 +1191,7 @@
             "start_time": "11:46",
             "end_time": "11:56",
             "annotations": {
-                "assign task": "The utterance suggests designating or thanking a volunteer for the role of reporter, which implies assigning a task or acknowledging someone's prior contribution to the task of being a reporter."
+                "process management": "The speaker is managing the meeting flow by indicating it's time to move on to the next item, which is designating or thanking a volunteer for a role (reporter)."
             }
         },
         {
@@ -1228,8 +1211,7 @@
             "start_time": "11:57",
             "end_time": "11:59",
             "annotations": {
-                "assign task": "Jennifer volunteers to be the reporter, taking on the task of recording notes for the meeting, which was requested by Tim in the previous utterance.",
-                "acknowledge contribution": "Jennifer acknowledges Tim's request by stating she can do it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1249,7 +1231,7 @@
             "start_time": "12:00",
             "end_time": "12:01",
             "annotations": {
-                "acknowledge contribution": "Tim acknowledges Jennifer's offer to be the reporter, recognizing her input."
+                "acknowledge contribution": "The speaker acknowledges another group member's input, in this case, Jennifer Glass's offer to be the reporter."
             }
         },
         {
@@ -1269,7 +1251,8 @@
             "start_time": "12:01",
             "end_time": "12:02",
             "annotations": {
-                "express enthusiasm": "Tim expresses enthusiasm at Jennifer volunteering to be the reporter and starting already."
+                "acknowledge contribution": "The speaker acknowledges Jennifer Glass's action of volunteering to be the reporter.",
+                "supportive response": "The speaker expresses a positive sentiment towards the efficiency of Jennifer Glass's action."
             }
         },
         {
@@ -1289,7 +1272,7 @@
             "start_time": "12:02",
             "end_time": "12:06",
             "annotations": {
-                "express humor": "Jennifer's statement implies that someone else really wants to be the reporter, but she is already doing it, which is humorous."
+                "express humor": "The utterance 'really wants to but.' is a humorous or lighthearted comment, implying that Jennifer Glass is jokingly saying she cannot or does not want to do something, likely related to taking notes or being the reporter."
             }
         },
         {
@@ -1309,8 +1292,8 @@
             "start_time": "12:06",
             "end_time": "12:11",
             "annotations": {
-                "confirm decision": "Tim confirms Jennifer's offer to be the reporter, solidifying the decision.",
-                "acknowledge contribution": "Tim acknowledges Jennifer's contribution by thanking her for volunteering to be the reporter."
+                "acknowledge contribution": "The speaker verbally recognizes Jennifer Glass's input.",
+                "supportive response": "The speaker is expressing agreement and validation for Jennifer Glass's contribution."
             }
         },
         {
@@ -1329,14 +1312,11 @@
             "screenshare_content": "None",
             "start_time": "12:11",
             "end_time": "15:53",
-            "annotations": [
-                {
-                    "assign task": "The speaker is referring to Jennifer taking notes and reporting, which is a task assignment from the previous turn.",
-                    "explain or define term or concept": "The speaker defines 'robust' as something sustainable, clarifying its meaning in the context of the discussion about biospheres.",
-                    "present new idea": "The speaker introduces the idea of starting with an Earth-centric question and then expanding to space-related topics, setting the stage for the discussion.",
-                    "encourage particpatioin": "The speaker explicitly encourages everyone to participate by sharing their thoughts on the development of a robust biosphere on Earth."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites others to share their thoughts and opinions, explicitly stating a desire to get everyone involved.",
+                "process management": "The speaker guides the discussion flow, transitioning between topics and ensuring participation.",
+                "clarify goal": "The speaker discusses the objective of understanding when Earth developed a robust biosphere and its implications for astrobiology."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -1354,11 +1334,9 @@
             "screenshare_content": "None",
             "start_time": "15:53",
             "end_time": "16:00",
-            "annotations": [
-                {
-                    "express humor": "The speaker makes a self-deprecating joke about talking a lot and raising his hand discreetly, indicating humor."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke about his tendency to talk a lot, attempting to be humorous."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1377,7 +1355,7 @@
             "start_time": "16:00",
             "end_time": "16:01",
             "annotations": {
-                "express humor": "This utterance expresses humor as Tim jokingly threatens to mute Stilianos, who admitted he tends to talk a lot."
+                "express humor": "The speaker is making a joke about muting someone, indicating a humorous tone."
             }
         },
         {
@@ -1396,17 +1374,11 @@
             "screenshare_content": "None",
             "start_time": "16:03",
             "end_time": "18:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stilianos builds on Tim's question about the development of a robust biosphere by focusing on cycles as a key component of sustainability."
-                },
-                {
-                    "explain or define term or concept": "Stilianos explains the importance of elemental cycles, particularly the nitrogen cycle and its redox states, in maintaining sustainability for life."
-                },
-                {
-                    "provide supporting evidence": "Stilianos provides the idea that microbes will eventually evolve to use accumulated energy from incomplete cycles, supporting the idea of inevitability in establishing sustainability."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of cycles being crucial for sustainability, providing examples and reasoning.",
+                "offer feedback": "The speaker is providing specific ideas and perspectives on the topic of sustainability and biosphere development.",
+                "identify gap": "The speaker mentions potential holes in the theory and counterexamples, indicating an awareness of gaps in understanding."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1425,7 +1397,7 @@
             "start_time": "18:09",
             "end_time": "18:11",
             "annotations": {
-                "encourage particpatioin": "Timothy encourages Aaron to speak, as he sees that Aaron has his hand up."
+                "encourage participation": "The speaker invites someone else in the group to contribute their expertise, opinions or ideas by noticing and acknowledging their raised hand."
             }
         },
         {
@@ -1444,17 +1416,11 @@
             "screenshare_content": "None",
             "start_time": "18:11",
             "end_time": "19:38",
-            "annotations": [
-                {
-                    "express agreement": "Aaron agrees with Stilian's previous statement about the importance of cycles for sustainability."
-                },
-                {
-                    "expand on existing idea": "Aaron expands on the idea of local origins by suggesting that precursors could have been built up in one place and transported to another, and that a dry place is needed, but not necessarily a continent."
-                },
-                {
-                    "reject idea": "Aaron rejects the idea that everything had to happen in one place, suggesting that it's not the most productive way to look at it."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "Aaron is expanding on Stilianos' idea about the origins of life and discussing the conditions necessary for it to start.",
+                "Supportive response": "Aaron is supportive of Stilianos' idea and builds upon it.",
+                "Offer feedback": "Aaron provides his perspective on the origins of life, which can be seen as offering feedback on how to consider the problem."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1472,14 +1438,9 @@
             "screenshare_content": "None",
             "start_time": "19:20",
             "end_time": "19:21",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is building upon a discussion from the previous day regarding models for the origin of life, specifically mentioning hotspots and mantle plumes as examples."
-                },
-                {
-                    "explain or define term or concept": "The speaker is clarifying the term 'hotspots' by defining them as mantle plumes."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -1497,11 +1458,9 @@
             "screenshare_content": "None",
             "start_time": "19:26",
             "end_time": "19:26",
-            "annotations": [
-                {
-                    "express agreement": "Aaron is expressing agreement with Tim's previous statement about models that have emerged, including hotspots which are mantle plumes."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The utterance 'Right, right' expresses agreement or validation of a previous statement, making it a supportive response."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1519,11 +1478,9 @@
             "screenshare_content": "None",
             "start_time": "19:26",
             "end_time": "19:27",
-            "annotations": [
-                {
-                    "express agreement": "Timothy agrees with Aaron's point about the origins of life not necessarily needing to happen in one place, building on the discussion about vents versus warm little ponds."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1541,11 +1498,9 @@
             "screenshare_content": "None",
             "start_time": "19:27",
             "end_time": "19:28",
-            "annotations": [
-                {
-                    "encourage particpatioin": "The utterance \"Other comments\" is a direct invitation for others to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites others to contribute their thoughts or comments."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -1564,7 +1519,8 @@
             "start_time": "19:28",
             "end_time": "19:30",
             "annotations": {
-                "express humor": "Rika expresses humor by stating that raising her hand makes her feel awkward, which is a lighthearted comment in response to the previous hand-raising protocol."
+                "process management": "Rika Anderson's comment relates to the process of managing the meeting, specifically the method of indicating a desire to speak.",
+                "express humor": "Rika's statement about feeling awkward with the raising hand thing has a lighthearted tone."
             }
         },
         {
@@ -1583,11 +1539,9 @@
             "screenshare_content": "None",
             "start_time": "19:30",
             "end_time": "19:31",
-            "annotations": [
-                {
-                    "None": "This utterance does not contain any content that can be coded based on the provided codebook."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -1605,13 +1559,10 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:48",
-            "annotations": [
-                {
-                    "present new idea": "Rika introduces the idea that life likely began before the late heavy bombardment and survived it, which implies a certain level of robustness, which is a new idea in the conversation.",
-                    "expand on existing idea": "Rika expands on the existing idea of a robust biosphere by suggesting that the deep sea could have been a location for such a biosphere, building on the previous discussion about the conditions necessary for a robust biosphere.",
-                    "ask clarifying question": "Rika refers back to Timothy's earlier question about when the biosphere would have been detectable and then discusses the conditions necessary for detectability, such as spreading throughout the oceans and producing enough gases."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Rika Anderson expands on the concept of the biosphere's robustness and its implications for the origins of life and detectability.",
+                "ask question": "Rika Anderson poses questions about the timing of life's emergence and its detectability in relation to the late heavy bombardment."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1629,12 +1580,10 @@
             "screenshare_content": "None",
             "start_time": "20:48",
             "end_time": "21:38",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Timothy acknowledges Meredith's raised hand, recognizing her intention to speak, which shows that he acknowledges her contribution.",
-                    "ask clarifying question": "Timothy asks the group about their views on the late heavy bombardment (LHB), seeking their opinions and perspectives on the topic."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information and opinions from group members on the late heavy bombardment.",
+                "develop idea": "The speaker is building upon previous discussions about the late heavy bombardment and its implications for the origins of life."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -1652,20 +1601,10 @@
             "screenshare_content": "None",
             "start_time": "21:38",
             "end_time": "23:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith expands on Rika's point about the late heavy bombardment by providing her perspective from planetary system formation, mentioning that she can see similar dynamics in discs around other planetary systems."
-                },
-                {
-                    "explain or define term or concept": "Meredith explains that 'mass poor' means orders of magnitude less comets and asteroids than the typical exoplanetary system."
-                },
-                {
-                    "present new idea": "Meredith introduces the idea that events like late heavy bombardment and stellar flares can be both necessary and harmful for life, questioning how robust life actually is to these transient events."
-                },
-                {
-                    "ask clarifying question": "Meredith asks how robust life actually is to transient events, seeking input from biologists on the topic."
-                }
-            ]
+            "annotations": {
+                "code name": "signal expertise",
+                "explanation": "She mentions her work and background in planetary system formation."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1684,12 +1623,9 @@
             "start_time": "23:57",
             "end_time": "24:07",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges Meredith's point about the dual nature of astrophysical phenomena, where some amount can be beneficial but too much can be harmful."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker expands on Meredith's idea by providing an example of metals in life and enzymatic processes, illustrating how the principle of 'some is good, but too much is bad' applies in other contexts."
-                }
+                "develop idea": "The speaker is expanding on a previous point about the robustness of life and how some factors can be beneficial in moderation but harmful in excess.",
+                "supportive response": "The speaker is expressing agreement and adding to the discussion, showing a positive and collaborative attitude towards the conversation.",
+                "offer feedback": "The speaker is providing an example (metals in life's enzymatic processes) as feedback to the previous discussion."
             }
         },
         {
@@ -1709,7 +1645,8 @@
             "start_time": "24:07",
             "end_time": "24:19",
             "annotations": {
-                "ask clarifying question": "The speaker is asking Meredith to explain how we know about debris levels in exoplanetary systems, specifically if it's model-based or from detections, following Meredith's discussion about exoplanetary systems and the late heavy bombardment."
+                "ask question": "The speaker is requesting information or clarification from another team member on a prior statement or idea.",
+                "None": "No other relevant code applies to this utterance"
             }
         },
         {
@@ -1728,11 +1665,10 @@
             "screenshare_content": "None",
             "start_time": "24:19",
             "end_time": "25:14",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Meredith provides evidence that we can observe debris levels in exoplanetary systems, explaining that infrared satellites detected stars being brighter than expected in the infrared, indicating the presence of something producing infrared emission other than the star."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Meredith explicitly states her expertise in observing and understanding exoplanetary systems and the methods used (infrared satellites).",
+                "develop idea": "She expands on the idea of observing debris levels in exoplanetary systems, providing specific details about the methods and findings."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1751,7 +1687,7 @@
             "start_time": "25:14",
             "end_time": "25:16",
             "annotations": {
-                "acknowledge contribution": "Tim acknowledges Meredith's detailed explanation about debris levels in exoplanetary systems, indicating he understands the information provided."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1771,7 +1707,7 @@
             "start_time": "25:16",
             "end_time": "25:21",
             "annotations": {
-                "expand on existing idea": "Meredith is expanding on her previous explanation of how we know about debris levels in exoplanetary systems, adding that there are new advances with giant arrays of radio telescopes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1791,7 +1727,7 @@
             "start_time": "25:21",
             "end_time": "25:23",
             "annotations": {
-                "acknowledge contribution": "Tim acknowledges Meredith's explanation about how debris levels in exoplanetary systems are observed, but he is not agreeing or expanding on the idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1810,14 +1746,10 @@
             "screenshare_content": "None",
             "start_time": "25:23",
             "end_time": "26:03",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith is expanding on the previous discussion about debris levels in exoplanetary systems by describing how we can image these systems and resolve details about their structure and composition."
-                },
-                {
-                    "provide supporting evidence": "Meredith provides supporting evidence for the ability to study exoplanetary systems by explaining how radio telescopes allow us to image and resolve the structure, radius, width, surface density, and dynamics of discs, enabling the derivation of mass and size distributions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the capabilities of imaging and analyzing planetary systems, providing details on what can be observed and derived from such analyses.",
+                "signal expertise": "Meredith MacGregor is explicitly stating her expertise in astrophysics, particularly in imaging and analyzing planetary systems."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1836,7 +1768,8 @@
             "start_time": "26:03",
             "end_time": "26:06",
             "annotations": {
-                "express enthusiasm": "The speaker expresses excitement with the statement \"That's awesome\"."
+                "supportive response": "The speaker expresses a positive sentiment towards a previous statement.",
+                "express humor": "The speaker makes a humorous comment about potentially asking more questions but choosing not to."
             }
         },
         {
@@ -1855,11 +1788,10 @@
             "screenshare_content": "None",
             "start_time": "26:06",
             "end_time": "26:10",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Timothy is explicitly inviting Shannon to speak next, as indicated by her raised hand, to ensure everyone gets a chance to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker is explicitly inviting Shannon Mackenzie to contribute to the conversation.",
+                "process management": "The speaker is managing the meeting flow by ensuring everyone gets a chance to speak."
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -1877,11 +1809,9 @@
             "screenshare_content": "None",
             "start_time": "26:10",
             "end_time": "26:15",
-            "annotations": [
-                {
-                    "expand on existing idea": "Shannon's utterance indicates that she is going to build upon the current discussion about the late heavy bombardment and its impact on the early Earth and other planetary systems, as discussed by Rika and Meredith."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -1899,17 +1829,10 @@
             "screenshare_content": "None",
             "start_time": "26:15",
             "end_time": "27:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Shannon expands on the discussion about the late heavy bombardment and its implications for the robustness of life on Earth, building on the previous comments by Rika and Meredith."
-                },
-                {
-                    "express agreement": "Shannon expresses agreement with the idea of 'bouncing back' as a definition of robustness, which was introduced earlier in the conversation."
-                },
-                {
-                    "explain or define term or concept": "Shannon explains her initial understanding of 'robustness' as something that could be observed remotely, contrasting it with the 'bouncing back' definition."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of robustness and its implications for the Earth's biosphere, building upon previous discussions.",
+                "acknowledge contribution": "The speaker is recognizing and appreciating Timothy W Lyons' definition of robustness and its significance in their discussion."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -1928,7 +1851,8 @@
             "start_time": "27:24",
             "end_time": "27:24",
             "annotations": {
-                "explain or define term or concept": "Timothy is suggesting 'resilience' as a possible alternative or more precise term for the concept of 'robustness' that has been discussed in the context of the biosphere's ability to withstand events like the late heavy bombardment."
+                "develop idea": "The speaker is expanding on the concept of robustness by suggesting an alternative term, resilience.",
+                "offer feedback": "The speaker is offering an alternative term, resilience, which can be seen as feedback."
             }
         },
         {
@@ -1947,11 +1871,10 @@
             "screenshare_content": "None",
             "start_time": "27:24",
             "end_time": "27:25",
-            "annotations": [
-                {
-                    "express agreement": "Shannon agrees with Tim's suggestion that 'resilience' might be the word she's looking for, building on the discussion about robustness and the late heavy bombardment."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Acknowledges a prior statement or discussion",
+                "supportive response": "Expresses agreement or validation"
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -1970,7 +1893,8 @@
             "start_time": "27:25",
             "end_time": "27:28",
             "annotations": {
-                "express humor": "Aaron makes a lighthearted observation about the virtual hand-raising feature, suggesting that participants may be forgetting to lower their hands after speaking, which adds a touch of humor to the conversation."
+                "express humor": "The speaker makes a joke about everyone keeping their hands up permanently after using them once.",
+                "encourage participation": "The speaker's comment can also be seen as a way to engage with the group's dynamics, potentially encouraging more mindful participation."
             }
         },
         {
@@ -1990,7 +1914,8 @@
             "start_time": "27:28",
             "end_time": "27:31",
             "annotations": {
-                "express humor": "Timothy makes a joke about the participants keeping their hands raised after they have spoken, which is humorous in the context of the meeting."
+                "process management": "The speaker is managing the meeting flow by addressing participants to bring down their hands.",
+                "express humor": "The speaker makes a light comment about bringing down hands, indicating humor."
             }
         },
         {
@@ -2010,7 +1935,7 @@
             "start_time": "27:31",
             "end_time": "27:34",
             "annotations": {
-                "express humor": "Aaron makes a lighthearted comment about not being used to the virtual hand-raising feature, adding a touch of humor to the conversation."
+                "process management": "The speaker comments on their unfamiliarity with using the 'raising hands' feature in the meeting, which relates to managing the meeting flow or structure."
             }
         },
         {
@@ -2030,7 +1955,8 @@
             "start_time": "27:34",
             "end_time": "27:36",
             "annotations": {
-                "encourage particpatioin": "Timothy encourages the participants to speak up without raising their hands, after a participant mentioned they were not used to using the raise hand function."
+                "Process Management": "The speaker is managing the group discussion process by suggesting an alternative to raising hands.",
+                "Encourage Participation": "By telling participants they can 'just pipe up,' the speaker is encouraging more open participation."
             }
         },
         {
@@ -2050,10 +1976,9 @@
             "start_time": "27:36",
             "end_time": "29:24",
             "annotations": {
-                "present new idea": "Aaron introduces the idea of prebiotic chemistry as a progress bar from non-life to life, which is a novel concept in the discussion.",
-                "expand on existing idea": "Aaron expands on the idea of a robust biosphere by providing the example of membrane formation and how the robustness of membranes increases with longer chain lengths and modern components, building on the earlier discussion about robustness.",
-                "provide supporting evidence": "Aaron provides supporting evidence for the idea of membrane robustness by explaining how different membrane compositions (fatty acids, oleic acid, modern components) affect their ability to hold a pH gradient and their leakiness.",
-                "explain or define term or concept": "Aaron explains the concept of membrane formation and its relation to the robustness of primitive cells, clarifying how different components contribute to membrane stability and function."
+                "propose new idea": "Aaron introduces a new way of thinking about prebiotic chemistry as a continuum or progress bar from non-life to life.",
+                "develop idea": "He elaborates on this idea by providing a specific example (membrane formation) and explains how it relates to robustness and the potential for life to develop and sustain itself.",
+                "offer feedback": "Aaron provides a detailed explanation that could help others understand the development of a robust biosphere, using the example of membrane formation and its implications for life."
             }
         },
         {
@@ -2073,8 +1998,7 @@
             "start_time": "29:24",
             "end_time": "29:37",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the shift in the conversation from the topic of impacts to the concept of robustness, which was previously mentioned by other speakers.",
-                "acknowledge contribution": "The speaker is acknowledging the previous discussion about impacts and robustness."
+                "summarize conversation": "The speaker is reflecting on and summarizing the flow of the conversation, noting the transition from discussing impacts to robustness and mentioning the topic of dry environments."
             }
         },
         {
@@ -2094,9 +2018,7 @@
             "start_time": "30:00",
             "end_time": "30:24",
             "annotations": {
-                "present new idea": "Marc introduces the idea of ocean freezing near the surface, ice forming, and chemicals concentrating at triple junctions as a potential environment for life's origins, which hasn't been explicitly discussed before.",
-                "ask clarifying question": "Marc asks if the proposed scenario of ocean freezing and chemical concentration is feasible, questioning whether the kinetics are too slow, seeking clarification on the viability of these options.",
-                "encourage particpatioin": "Marc explicitly asks what others think about the proposed options, inviting others to share their perspectives on the feasibility of the scenario."
+                "ask question": "Marc Neveu is requesting opinions on the feasibility of the proposed scenario and the kinetics of the processes involved."
             }
         },
         {
@@ -2115,17 +2037,11 @@
             "screenshare_content": "None",
             "start_time": "30:24",
             "end_time": "30:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is building upon the previous discussion about the necessity of wet-dry cycles for the origin of life, which was brought up by Marc Neveu, and is now exploring the implications of this idea for the possibility of life on icy moons."
-                },
-                {
-                    "ask clarifying question": "The speaker is asking what the implications are for the possibility of life on icy moons, given the assumption that wet-dry cycles are essential for the origin of life."
-                },
-                {
-                    "propose decision": "The speaker is suggesting a concrete choice for the group to consider whether they should be investing money in astrobiology looking at icy moons."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking questions about the implications of certain conditions for life on an icy moon.",
+                "encourage participation": "By posing questions, the speaker is encouraging others to contribute their thoughts.",
+                "clarify goal": "The speaker is guiding the discussion towards understanding implications for astrobiology and the origins of life."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -2143,14 +2059,9 @@
             "screenshare_content": "None",
             "start_time": "30:59",
             "end_time": "31:05",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Jennifer acknowledges Mark's contribution by saying she wants to \"play off your your thing\", recognizing his prior statement about dry environments."
-                },
-                {
-                    "encourage particpatioin": "Jennifer asks \"Can I jump in, Mark\", encouraging Mark to allow her to participate in the conversation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code directly applies to this utterance as it doesn't fully fit the criteria for any single category provided."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -2168,11 +2079,9 @@
             "screenshare_content": "None",
             "start_time": "31:05",
             "end_time": "31:06",
-            "annotations": [
-                {
-                    "express agreement": "Tim expresses agreement with Jennifer's offer to jump in and play off Mark's point about dry cycles."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -2191,9 +2100,8 @@
             "start_time": "31:07",
             "end_time": "31:43",
             "annotations": {
-                "expand on existing idea": "Jennifer expands on Marc's idea about dry environments by suggesting that cycles with ice or brines could also facilitate chemical evolution, questioning the necessity of land for such processes.",
-                "present new idea": "Jennifer presents the idea that cycles with ice or brines could be analogous to wet-dry cycles in promoting chemical evolution, suggesting an alternative environment for the origin of life.",
-                "encourage particpatioin": "Jennifer hopes someone in the group will take on the question of whether cycles with ice or brines can drive chemical evolution, encouraging participation in exploring this idea."
+                "propose new idea": "Jennifer Glass is introducing a new idea about considering cycles with ice and brines for chemical evolution.",
+                "ask question": "She is asking if cycles with ice and brines could facilitate chemical evolution, seeking information or clarification."
             }
         },
         {
@@ -2213,7 +2121,8 @@
             "start_time": "31:43",
             "end_time": "31:43",
             "annotations": {
-                "express agreement": "Jennifer Glass is agreeing with Timothy Lyons's question about whether wet-dry cycles are essential for life, following Marc Neveu's comment about chemical concentrations at triple junctions in icy environments."
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "Supportive response": "The speaker expresses agreement or validation for other group members' contributions."
             }
         },
         {
@@ -2232,14 +2141,11 @@
             "screenshare_content": "None",
             "start_time": "31:43",
             "end_time": "32:12",
-            "annotations": [
-                {
-                    "express agreement": "Aaron explicitly agrees with the previous discussion about wet dry cycles."
-                },
-                {
-                    "expand on existing idea": "Aaron expands on the discussion of wet-dry cycles by discussing the challenges and benefits of using utectics and concentration in icy environments, mentioning the concentration effect, the role of minerals, and the promotion of liposome formation and division by ice."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "The speaker is expanding on existing ideas about wet-dry cycles, utectics, and their potential benefits for life.",
+                "Supportive response": "The speaker is expressing agreement with previous discussions.",
+                "Offer feedback": "The speaker provides suggestions on the potential benefits of certain chemical conditions."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -2258,9 +2164,8 @@
             "start_time": "32:12",
             "end_time": "32:38",
             "annotations": {
-                "expand on existing idea": "Jennifer is building on the idea of wet-dry cycles, expanding it to include cycles involving ice or brines instead of just ponds, which was brought up by Mark and Aaron.",
-                "explain or define term or concept": "Jennifer is clarifying that the wet-dry cycles she is referring to can occur in different environments, such as ice, and that the same hydrolysis mechanism could be at play in these different locations.",
-                "express agreement": "Jennifer explicitly states that she is supporting the idea of wet-dry cycles, agreeing with the previous discussion."
+                "develop idea": "This code applies because Jennifer Glass is expanding on the existing idea of wet-dry cycles and their importance, by suggesting they could occur in ice.",
+                "supportive response": "This code applies because Jennifer Glass is agreeing with and supporting the concept of wet-dry cycles."
             }
         },
         {
@@ -2280,7 +2185,7 @@
             "start_time": "32:38",
             "end_time": "32:44",
             "annotations": {
-                "ask clarifying question": "Aaron is asking Jennifer to confirm his understanding of her previous statement about wet-dry cycles potentially occurring in ice via brine concentration, rather than actual drying."
+                "ask question": "The speaker is seeking clarification on whether the concentration of brines in ice serves a similar role to wet-dry cycles on land."
             }
         },
         {
@@ -2300,7 +2205,7 @@
             "start_time": "32:44",
             "end_time": "32:45",
             "annotations": {
-                "express agreement": "Jennifer agrees with the idea of wet-dry cycles happening in ice or brines, as discussed in the previous turn."
+                "Supportive response": "The speaker is expressing agreement or validation."
             }
         },
         {
@@ -2320,8 +2225,8 @@
             "start_time": "32:45",
             "end_time": "32:53",
             "annotations": {
-                "express agreement": "Aaron explicitly agrees with Mark's idea about the concentration of chemicals at triple junctions in ice, indicating agreement with a previously mentioned concept.",
-                "encourage particpatioin": "Aaron encourages Mark to speak by saying \"Mark go ahead\", inviting him to contribute to the discussion."
+                "supportive response": "Aaron agrees with Mark's thoughts and encourages him to continue.",
+                "encourage participation": "Aaron invites Mark to continue sharing his thoughts."
             }
         },
         {
@@ -2341,7 +2246,7 @@
             "start_time": "32:54",
             "end_time": "32:54",
             "annotations": {
-                "express agreement": "Marc Neveu expresses agreement with the previous turn, where Aaron Engelhart asks Mark to go ahead and speak."
+                "acknowledge contribution": "The speaker acknowledges a previous statement or agreement."
             }
         },
         {
@@ -2361,8 +2266,9 @@
             "start_time": "32:56",
             "end_time": "33:41",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the existing idea of wet-dry cycles and their potential to facilitate chemical evolution, by suggesting that similar processes could occur in ice on icy moons, rather than requiring a pond on a continent, which builds on the discussion about the necessity of wet-dry cycles for prebiotic chemistry.",
-                "present new idea": "The speaker presents a new idea of a hydrothermal system on the sea floor of an icy moon spewing out precursor molecules and energy sources, which then become incorporated in the underside of an icy cap, setting up redox gradients and facilitating chemical reactions within the ice, which is a novel concept in the context of the conversation."
+                "propose new idea": "The speaker introduces a scenario for life origins involving hydrothermal systems on icy moons.",
+                "develop idea": "The speaker expands on the concept of water activity in different environments, including ice.",
+                "ask question": "The speaker implicitly seeks feedback on the proposed scenario for life origins on icy moons."
             }
         },
         {
@@ -2382,7 +2288,7 @@
             "start_time": "33:41",
             "end_time": "33:41",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is a simple statement that does not introduce a new idea, expand on an existing one, provide evidence, ask a question, propose a decision, or express an opinion or emotion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2401,11 +2307,10 @@
             "screenshare_content": "None",
             "start_time": "33:41",
             "end_time": "33:47",
-            "annotations": [
-                {
-                    "present new idea": "Marc suggests that the group should discuss the possibility of life arising in icy moons through hydrothermal systems and ice sheet dynamics, which is a novel idea in the context of the conversation."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about whether the idea discussed is something people talk about.",
+                "encourage participation": "The speaker is inviting further discussion on the topic."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -2423,11 +2328,9 @@
             "screenshare_content": "None",
             "start_time": "33:48",
             "end_time": "33:48",
-            "annotations": [
-                {
-                    "express humor": "Rika says \"Well, I'll just throw sorry\", which seems to be a humorous way to interject into the conversation, possibly because she had previously stated that she doesn't like raising her hand to speak."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -2446,8 +2349,8 @@
             "start_time": "33:49",
             "end_time": "34:17",
             "annotations": {
-                "expand on existing idea": "Rika is expanding on the discussion of wet-dry cycles by introducing another perspective from John Baros about drying in the marine subsurface, which is relevant to the ongoing discussion about the origins of life and the conditions necessary for it.",
-                "ask clarifying question": "Rika is asking for more information about the conditions in the marine subsurface, specifically how long the drying events last, the temperature, and other relevant conditions, to better understand the feasibility of this environment for the origins of life."
+                "acknowledge contribution": "Rika Anderson recognizes John Baros' contribution by mentioning his idea and response to wet-dry cycles.",
+                "ask question": "Rika Anderson asks for more information or opinions about the conditions and validity of John Baros' idea regarding drying in the marine subsurface."
             }
         },
         {
@@ -2467,7 +2370,7 @@
             "start_time": "34:17",
             "end_time": "34:18",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is simply an acknowledgement of uncertainty."
+                "identify gap": "Rika Anderson is expressing a lack of knowledge about specific conditions or phenomena."
             }
         },
         {
@@ -2486,11 +2389,9 @@
             "screenshare_content": "None",
             "start_time": "34:19",
             "end_time": "34:23",
-            "annotations": [
-                {
-                    "express agreement": "Tim expresses agreement with the previous point about the possibility of drying in the marine subsurface, indicating he also has evidence or experience supporting this idea."
-                }
-            ]
+            "annotations": {
+                "Supportive Response": "The speaker expresses agreement or confirmation with a previous statement."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -2508,12 +2409,11 @@
             "screenshare_content": "None",
             "start_time": "34:24",
             "end_time": "35:22",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of a \"giant bridge\" between precursor molecules and metabolisms, which is necessary for detectability, and notes that current research often stops before reaching metabolisms, suggesting a gap in the field.",
-                    "ask clarifying question": "The speaker asks the group for their thoughts on when Earth became a detectable biosphere, prompting them to share their perspectives on this issue based on their expertise."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by discussing the bridge between precursor molecules and metabolisms.",
+                "ask question": "The speaker asks for the group's views on when Earth became a detectable biosphere.",
+                "encourage participation": "The speaker asks for others' views, encouraging participation."
+            }
         },
         {
             "speaker": "Marc Neveu",
@@ -2532,7 +2432,8 @@
             "start_time": "35:25",
             "end_time": "35:46",
             "annotations": {
-                "ask clarifying question": "Marc asks what the first sign to look for would be when trying to detect life emerging and taking over a planet, questioning whether to look for microbial byproducts or the components of living things themselves, seeking clarification on the best approach for detecting life."
+                "ask question": "The speaker is requesting information or clarification on what signs to look for to determine if life has emerged and is taking over a planet.",
+                "clarify goal": "The question also seeks to clarify the objectives or goals related to detecting life, specifically what constitutes evidence of life emergence."
             }
         },
         {
@@ -2552,9 +2453,8 @@
             "start_time": "35:46",
             "end_time": "36:25",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that the signs of life depend on the location, specifying that for exoplanets, it would be microbial byproducts like gases in the atmosphere.",
-                "expand on existing idea": "The speaker expands on the idea of detectable signs of life by mentioning that almost all gases have abiotic sources, and then gives the example of methane on Earth, building on the previous discussion about detectability.",
-                "ask clarifying question": "The speaker poses a question about whether life is needed to produce a lot of methane or if geology can do that, which is a question to clarify the source of methane."
+                "develop idea": "The speaker is expanding on previous discussions about detecting life and the implications of abiotic versus biotic sources of gases.",
+                "ask question": "The speaker explicitly asks a question regarding the necessity of life in producing methane compared to geological processes."
             }
         },
         {
@@ -2574,7 +2474,7 @@
             "start_time": "36:25",
             "end_time": "36:26",
             "annotations": {
-                "encourage particpatioin": "Timothy is explicitly inviting Stiliano to speak, encouraging his participation in the discussion."
+                "encourage participation": "The speaker invites Stilianos to contribute to the conversation, indicating he looks like he wants to say something."
             }
         },
         {
@@ -2594,7 +2494,7 @@
             "start_time": "36:26",
             "end_time": "36:26",
             "annotations": {
-                "express humor": "The speaker makes a lighthearted comment about the other participant being highlighted on their screen, which is a form of humor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2614,7 +2514,7 @@
             "start_time": "38:00",
             "end_time": "38:00",
             "annotations": {
-                "acknowledge contribution": "Stilianos Louca is simply acknowledging that he was called on by Timothy Lyons, without adding any new information or agreeing with any prior statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2634,7 +2534,7 @@
             "start_time": "38:01",
             "end_time": "38:01",
             "annotations": {
-                "None": "This utterance does not contain any content that can be categorized by the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2654,7 +2554,7 @@
             "start_time": "38:01",
             "end_time": "38:04",
             "annotations": {
-                "express humor": "Stilianos is making a self-deprecating joke about thinking out loud, which is humorous in the context of a scientific discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2674,7 +2574,7 @@
             "start_time": "38:05",
             "end_time": "38:05",
             "annotations": {
-                "None": "This utterance does not contain any content that can be categorized by the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2694,7 +2594,7 @@
             "start_time": "38:06",
             "end_time": "38:17",
             "annotations": {
-                "ask clarifying question": "Stilianos is thinking about the question of detectability and when it starts, which is a request for further discussion and clarification on the topic of when a biosphere becomes detectable."
+                "ask question": "The speaker is requesting information about when detectability starts."
             }
         },
         {
@@ -2714,9 +2614,7 @@
             "start_time": "38:17",
             "end_time": "38:20",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Stilianos acknowledges that Timothy brought up the topic of detectability, recognizing Timothy's contribution to the conversation."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2735,12 +2633,10 @@
             "screenshare_content": "None",
             "start_time": "38:20",
             "end_time": "38:31",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of questioning the importance of when detectability starts, which is a new direction in the conversation about the development of a robust biosphere.",
-                    "expand on existing idea": "The speaker expands on the existing idea of detectability by bringing up the last universal common ancestor on earth, building on the previous discussion about when Earth became a detectable biosphere."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking if a question is important.",
+                "develop idea": "The speaker is providing context to ponder the importance of a question."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -2759,8 +2655,7 @@
             "start_time": "38:31",
             "end_time": "38:40",
             "annotations": {
-                "provide supporting evidence": "Stilianos provides a timeframe (3.5 to 3.8 billion years ago) for the emergence of the last universal common ancestor (LUCA) to support his point about the timing of detectability, building on the discussion about when Earth became a detectable biosphere.",
-                "explain or define term or concept": "Stilianos is explaining the term LUCA (last universal common ancestor) in the context of the discussion about the timeline from prebiotic chemistry to the emergence of life and its detectability."
+                "develop idea": "The speaker is expanding on the discussion about the timeline of life's emergence on Earth, providing specific details about the time frame from prebiotic chemistry to the last universal common ancestor (Luca)."
             }
         },
         {
@@ -2780,7 +2675,7 @@
             "start_time": "38:40",
             "end_time": "38:40",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous statement about the short time between prebiotic chemistry and the last universal common ancestor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2799,11 +2694,10 @@
             "screenshare_content": "None",
             "start_time": "38:40",
             "end_time": "39:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stilianos is building on the discussion about when Earth became detectable by providing a timeframe relative to Earth's and life's total lifespan, adding context to the discussion."
-                }
-            ]
+            "annotations": {
+                "code name": "develop idea",
+                "explanation": "The speaker is expanding on previous discussions about the timeline of life on Earth, relating it to Earth's lifetime and the future of the planet."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -2822,8 +2716,8 @@
             "start_time": "39:00",
             "end_time": "39:59",
             "annotations": {
-                "expand on existing idea": "Stilianos is expanding on the idea of when detectability starts, building on the previous discussion about the transition from precursor molecules to metabolisms and the question of when Earth became a detectable biosphere.",
-                "present new idea": "Stilianos introduces the idea that the time it takes for the first spark of life to generate an organism with a sufficient impact on Earth is relatively short, suggesting it might be a minority of cases statistically speaking, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is elaborating on the concept of the time frame for life's impact on Earth, relating it to the existence of complex life and Luca.",
+                "summarize conversation": "The utterance attempts to summarize a part of the conversation regarding time frames and life's impact."
             }
         },
         {
@@ -2843,7 +2737,7 @@
             "start_time": "40:00",
             "end_time": "40:09",
             "annotations": {
-                "reject idea": "Stilianos suggests that the group should not worry too much about not being able to detect the first step of life's emergence, rejecting the idea that it is a crucial aspect to focus on."
+                "supportive response": "The speaker expresses a reassuring view, suggesting not to worry about detecting the first steps of life on Earth, which aligns with the definition of a supportive response."
             }
         },
         {
@@ -2863,7 +2757,7 @@
             "start_time": "40:10",
             "end_time": "40:12",
             "annotations": {
-                "ask clarifying question": "Timothy asks for a definition of \"complex life\", which is a clarifying question about Stilianos' previous statement about the time complex life has existed on Earth."
+                "ask question": "The speaker is requesting a definition or clarification on the term 'complex life'."
             }
         },
         {
@@ -2883,9 +2777,8 @@
             "start_time": "40:13",
             "end_time": "41:04",
             "annotations": {
-                "explain or define term or concept": "Stilianos defines what he means by a cellular organism having a \"sufficient impact on the globe\", specifying that it is robust enough to invade new environments, stable as a structure, and able to be dispersed by ocean currents, clarifying the criteria for considering life to have a significant global effect.",
-                "expand on existing idea": "Stilianos expands on his previous point about the timing of detectability by suggesting that the time between prebiotic chemistry and the emergence of LUCA was short, implying that the initial steps might not be as important to focus on for detection.",
-                "provide supporting evidence": "Stilianos provides supporting evidence by stating that cellular organisms emerged early in Earth's history, within a maximum of 1 billion years, to support his argument about the timing of detectability."
+                "develop idea": "The speaker is expanding on the concept of complex life and its characteristics.",
+                "clarify goal": "The speaker is discussing the goal of understanding the timeline of complex life on Earth."
             }
         },
         {
@@ -2905,7 +2798,8 @@
             "start_time": "41:04",
             "end_time": "41:15",
             "annotations": {
-                "explain or define term or concept": "Timothy is explaining that the definition of 'complexity' is important because different people may have different standards, such as eukaryotes or animals, and it depends on the research question."
+                "clarify goal": "The speaker is clarifying the definition of complexity in terms of eukaryotes and animals.",
+                "develop idea": "The speaker is expanding on the concept of complexity by providing specific examples."
             }
         },
         {
@@ -2925,8 +2819,8 @@
             "start_time": "41:15",
             "end_time": "41:55",
             "annotations": {
-                "expand on existing idea": "Stilianos is clarifying his earlier statement about 'complex life' by specifying that he was contrasting cellular organisms with pre-cellular structures like membranes, expanding on the discussion about the timing of life's emergence and detectability.",
-                "provide supporting evidence": "Stilianos supports his idea about early metabolism by referencing Nick Lane's theory about metabolism occurring on a membrane in a proton gradient at hydrothermal vents, providing a theoretical basis for his argument."
+                "develop idea": "The speaker is expanding on their previous thoughts by referencing Nick Lane's theory, elaborating on the concept of early metabolic processes.",
+                "signal expertise": "The speaker explicitly mentions Nick Lane's theory and discusses it in the context of membrane-based metabolism, indicating their familiarity with the subject matter."
             }
         },
         {
@@ -2946,8 +2840,7 @@
             "start_time": "41:55",
             "end_time": "42:08",
             "annotations": {
-                "explain or define term or concept": "Stilianos defines \"complex life\" in the context of the discussion as something that compartmentalizes the world into an inside and an outside, specifically a cell, contrasting it with earlier forms of life like metabolism on a membrane.",
-                "expand on existing idea": "Stilianos is expanding on his previous point about the timing of detectability by clarifying what he means by \"complex life\" in relation to the emergence of cellular organisms."
+                "develop idea": "The speaker is expanding on the concept of complex life by comparing it to a cell's structure, indicating an elaboration of an existing idea."
             }
         },
         {
@@ -2966,20 +2859,11 @@
             "screenshare_content": "None",
             "start_time": "42:09",
             "end_time": "44:05",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains how genomic perspectives have changed the understanding of early Earth's oxygenesis and methanogenesis, contrasting it with previous geochemistry-based evidence."
-                },
-                {
-                    "provide supporting evidence": "The speaker provides evidence related to the timing of biological production of oxygen and methane, referencing biomarkers, metal isotopes, and models for Earth's climate."
-                },
-                {
-                    "present new idea": "The speaker presents the idea that a planet's long history and evolution in a planetary system sense might be critical when choosing a target for astrobiological exploration, building on a point made in the previous day's discussion."
-                },
-                {
-                    "ask clarifying question": "The speaker asks if the idea of considering a planet's long history is a critical question when choosing a target for astrobiological exploration."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas about Earth's history, specifically regarding oxygenesis and methanogenesis, and how genomic perspectives have changed these understandings.",
+                "identify gap": "The speaker explicitly notes that there is a lack of good evidence for when biological production of oxygen and methane began, indicating a gap in current knowledge.",
+                "propose new idea": "The speaker suggests considering a planet's long history and evolution as a critical factor in studying the beginnings of life."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -2998,7 +2882,7 @@
             "start_time": "44:05",
             "end_time": "44:43",
             "annotations": {
-                "ask clarifying question": "Stilianos asks about the distribution of ages of exoplanets, directing the question to astronomers or astrophysicists, seeking information relevant to the discussion about the detectability of life on other planets."
+                "ask question": "The speaker is requesting information about the distribution of ages of exoplanets, indicating a need for clarification or expertise on this topic."
             }
         },
         {
@@ -3018,7 +2902,7 @@
             "start_time": "44:43",
             "end_time": "44:45",
             "annotations": {
-                "encourage particpatioin": "Meredith is encouraging Eve to speak, as Eve has had her hand raised for a while, inviting her to contribute to the discussion."
+                "process management": "The speaker is managing the meeting flow by inviting someone who had their hand raised to contribute."
             }
         },
         {
@@ -3038,9 +2922,7 @@
             "start_time": "44:46",
             "end_time": "44:49",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Timothy acknowledges that he missed Eve raising her hand, recognizing her desire to contribute to the discussion."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3059,17 +2941,9 @@
             "screenshare_content": "None",
             "start_time": "44:50",
             "end_time": "47:07",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the limitations of current telescopes in detecting exoplanet atmospheres and the challenges in measuring the ages of stars, providing context for the subsequent discussion on target selection."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea that biologists should inform astronomers about the most important biosignatures to better target the right type and age of stars for exoplanet research."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the importance of timescale by explaining that the lifespan of stars affects the time available for life to emerge and evolve, suggesting focusing on smaller stars for a higher chance of finding life."
-                }
-            ]
+            "annotations": {
+                "clarify goal": "Keith contributes to clarifying the research goals by discussing the importance of detectability and understanding biosignatures for targeting exoplanet research."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -3087,11 +2961,10 @@
             "screenshare_content": "None",
             "start_time": "47:07",
             "end_time": "47:40",
-            "annotations": [
-                {
-                    "ask clarifying question": "Rika is asking a question to clarify the implications of star size and lifespan on the likelihood of finding life, building on Keith's previous statement about targeting the right type and ages of stars."
-                }
-            ]
+            "annotations": {
+                "ask question": "Rika Anderson requests clarification on the habitability around M stars, questioning the suitability of these stars for life due to tidal locking.",
+                "develop idea": "She is building upon the idea presented by Keith Hawkins about the age of stars and their implications for planetary habitability, specifically considering the case of M stars."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -3109,11 +2982,9 @@
             "screenshare_content": "None",
             "start_time": "47:40",
             "end_time": "47:40",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The utterance acknowledges Meredith MacGregor's presence in the conversation, but does not agree or expand on any idea."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -3132,7 +3003,8 @@
             "start_time": "47:40",
             "end_time": "47:43",
             "annotations": {
-                "ask clarifying question": "Meredith is asking a question to clarify whether a small biosphere would be detectable, following a discussion about the challenges of detecting biosignatures on exoplanets and the limitations of current telescopes."
+                "ask question": "The speaker is explicitly asking a question about the detectability of a biosignature if the biosphere is small.",
+                "identify gap": "The speaker is highlighting a potential challenge in detecting biosignatures, which is a gap in our ability to detect life under certain conditions."
             }
         },
         {
@@ -3151,14 +3023,10 @@
             "screenshare_content": "None",
             "start_time": "50:00",
             "end_time": "50:56",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith expands on the discussion about the ages of stars and their implications for detecting biosignatures, building on Keith's earlier point about the difficulty of measuring star ages and the importance of timescale for biosignature relevance."
-                },
-                {
-                    "provide supporting evidence": "Meredith provides supporting evidence by mentioning that almost all stars with known ages are in moving groups, referencing Keith's earlier statement, and that planet formation timescales are shorter than previously thought based on observations of discs."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Meredith is expanding on the concept of how our understanding of planet formation timelines is changing based on observations of star discs and ages.",
+                "signal expertise": "Meredith explicitly states her knowledge about the challenges in determining star ages, the role of moving groups in estimating ages, and the dynamics of planet formation."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -3176,23 +3044,10 @@
             "screenshare_content": "None",
             "start_time": "50:57",
             "end_time": "51:42",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The speaker acknowledges the importance of the points made by the participants, recognizing their contributions to the discussion."
-                    }
-                },
-                {
-                    "present new idea": {
-                        "Explanation": "The speaker introduces the idea of the M star bias and tidal locking as important factors to consider when discussing exoplanet target selection."
-                    }
-                },
-                {
-                    "encourage particpatioin": {
-                        "Explanation": "The speaker encourages participation by asking for opinions on whether tidal locking precludes a biosphere and what life on such a planet would be like."
-                    }
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites discussion and consideration of topics, encouraging participation.",
+                "ask question": "The speaker asks questions about M star bias, tidal locking, and its implications for a biosphere."
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -3211,7 +3066,7 @@
             "start_time": "51:42",
             "end_time": "51:50",
             "annotations": {
-                "ask clarifying question": "Aaron asks for clarification on why tidal locking is considered detrimental to the start of life, showing he is seeking to understand a concept introduced by Timothy."
+                "ask question": "The speaker is requesting information or clarification on the implications of tidal locking for the origin of life."
             }
         },
         {
@@ -3231,7 +3086,7 @@
             "start_time": "51:50",
             "end_time": "52:04",
             "annotations": {
-                "explain or define term or concept": "Meredith explains the concept of tidal locking, which Aaron asked about in the previous turn, clarifying that it means one side of the planet always faces the star and the other side always faces away."
+                "develop idea": "The speaker is expanding on an existing concept (title locking) to help the group understand its implications for planetary habitability, specifically how it affects the distribution of heat and potentially the existence of life."
             }
         },
         {
@@ -3251,7 +3106,7 @@
             "start_time": "52:04",
             "end_time": "52:07",
             "annotations": {
-                "explain or define term or concept": "Aaron is summarizing the concept of tidal locking, which Meredith just explained, by stating that it means there is no day-night cycle."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3271,9 +3126,8 @@
             "start_time": "52:07",
             "end_time": "52:30",
             "annotations": {
-                "expand on existing idea": "Meredith is expanding on the idea of tidal locking and its implications for a planet's habitability, building on Aaron's question about what is bad about tidal locking.",
-                "explain or define term or concept": "Meredith explains the concept of tidal locking and its potential consequences, such as the lack of rotation, loss of magnetic field, and inability to protect an atmosphere or distribute heat.",
-                "provide supporting evidence": "Meredith provides supporting evidence for why tidal locking could be detrimental to a planet's habitability, explaining how it can lead to the loss of a magnetic field and atmosphere."
+                "develop idea": "Meredith is expanding on the concept of tidal locking and its implications for planetary habitability.",
+                "critical response": "She is questioning the feasibility of life on tidally locked planets by highlighting potential drawbacks."
             }
         },
         {
@@ -3293,7 +3147,7 @@
             "start_time": "52:30",
             "end_time": "52:31",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging the explanation provided by Meredith regarding tidal locking, showing they appreciate the information."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input."
             }
         },
         {
@@ -3312,14 +3166,10 @@
             "screenshare_content": "None",
             "start_time": "52:31",
             "end_time": "52:48",
-            "annotations": [
-                {
-                    "expand on existing idea": "The utterance expands on the previously discussed idea of tidal locking and its potential negative effects on a planet's habitability, by suggesting that heat distribution through the ocean could mitigate these effects."
-                },
-                {
-                    "provide supporting evidence": "The utterance provides supporting evidence by mentioning that people have modeled heat distribution through the ocean on tidally locked planets, and specifically names his colleague Andy Ridgewell and his 'genie model' as examples."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea about heat distribution on tidally locked planets through the ocean, referencing a specific model.",
+                "acknowledge contribution": "The speaker mentions the work of colleague Andy Ridgewell, acknowledging his contribution to the idea."
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -3338,7 +3188,7 @@
             "start_time": "52:49",
             "end_time": "52:50",
             "annotations": {
-                "ask clarifying question": "Shannon is asking a question to clarify the interface between the ocean and the ice on the dark side of a tidally locked planet, which was just mentioned by Timothy."
+                "ask question": "The speaker is requesting information or clarification about an interface."
             }
         },
         {
@@ -3358,7 +3208,7 @@
             "start_time": "52:52",
             "end_time": "52:53",
             "annotations": {
-                "ask clarifying question": "Timothy asks Shannon to repeat what she said, indicating he needs clarification on her previous statement about the interface."
+                "ask question": "The speaker is requesting clarification or repetition of a previous statement, which falls under asking a question."
             }
         },
         {
@@ -3378,7 +3228,7 @@
             "start_time": "52:50",
             "end_time": "53:09",
             "annotations": {
-                "expand on existing idea": "Shannon expands on the discussion about tidally locked planets, using Titan as an example of a tidally locked body with an atmosphere that helps distribute materials, building on the previous discussion about the challenges of tidally locked planets."
+                "develop idea": "The speaker is expanding on the concept of Titan's environment and how its atmosphere aids in distributing materials, which relates to the discussion on planetary science and potential habitability."
             }
         },
         {
@@ -3398,8 +3248,7 @@
             "start_time": "53:09",
             "end_time": "53:27",
             "annotations": {
-                "expand on existing idea": "Aaron is expanding on the discussion about tidally locked planets and the potential issues with the lack of day/night cycles, relating it to energy inputs and wet-dry cycles, which were previously mentioned in the context of the origins of life.",
-                "provide supporting evidence": "Aaron mentions Dieter Braun's work on convective cycling, providing an example of research related to the topic of day/night cycles and energy input."
+                "develop idea": "The speaker is expanding on existing ideas by discussing intermittent inputs of energy in relation to wet-dry cycles and referencing Dieter Braun's work on convective cycling."
             }
         },
         {
@@ -3419,7 +3268,8 @@
             "start_time": "53:27",
             "end_time": "53:29",
             "annotations": {
-                "encourage particpatioin": "Timothy encourages Mark to speak, as Mark's hand is raised."
+                "code name": "process management",
+                "explanation": "The speaker is managing the discussion flow by giving the floor to another participant."
             }
         },
         {
@@ -3439,8 +3289,8 @@
             "start_time": "53:40",
             "end_time": "53:46",
             "annotations": {
-                "expand on existing idea": "Marc is building on the previous discussion about tidal locking and its potential effects on a planet's habitability, adding his perspective that it could be beneficial.",
-                "express agreement": "Marc expresses agreement with the idea that tidal locking can be a good thing for a planet."
+                "propose new idea": "The speaker introduces a new perspective on the potential benefits of title locking in creating planetary heterogeneity.",
+                "supportive response": "The statement supports the idea that diverse conditions might be beneficial for life or planetary science discussions."
             }
         },
         {
@@ -3460,7 +3310,7 @@
             "start_time": "53:48",
             "end_time": "53:50",
             "annotations": {
-                "ask clarifying question": "Aaron asks Marc to elaborate on his statement that tidal locking making a planet more heterogeneous is a good thing, seeking a deeper understanding of Marc's perspective."
+                "ask question": "The speaker is requesting more information or clarification on a previous statement made by Marc Neveu."
             }
         },
         {
@@ -3480,7 +3330,7 @@
             "start_time": "53:50",
             "end_time": "53:52",
             "annotations": {
-                "ask clarifying question": "The utterance indicates that Aaron is about to ask a question, likely seeking clarification on a topic discussed previously."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3499,11 +3349,9 @@
             "screenshare_content": "None",
             "start_time": "53:52",
             "end_time": "53:53",
-            "annotations": [
-                {
-                    "express humor": "The speaker says \"Sorry\" after interrupting, which is a polite way to acknowledge the interruption and can be interpreted as a form of humor or lightheartedness in the context of a collaborative discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -3522,9 +3370,7 @@
             "start_time": "53:53",
             "end_time": "53:55",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Aaron acknowledges Marc's previous statement as provocative, indicating he recognizes Marc's input without necessarily agreeing or disagreeing with it."
-                }
+                "supportive response": "Aaron Engelhart expresses a positive evaluation of Mark Neveu's statement by calling it 'really provocative', indicating appreciation for the contribution."
             }
         },
         {
@@ -3544,7 +3390,7 @@
             "start_time": "53:55",
             "end_time": "53:56",
             "annotations": {
-                "acknowledge contribution": "Aaron acknowledges Marc's point about tidal locking making a planet more heterogeneous, which he found to be a good point."
+                "Supportive Response": "The speaker is expressing agreement and positive evaluation of Marc Neveu's idea that heterogeneity could be beneficial."
             }
         },
         {
@@ -3564,7 +3410,7 @@
             "start_time": "53:56",
             "end_time": "53:57",
             "annotations": {
-                "ask clarifying question": "Aaron asks Marc to elaborate on why tidal locking making a planet more heterogeneous is a good thing, seeking further explanation of Marc's provocative statement."
+                "ask question": "The speaker is requesting more information or clarification on a previous statement made by another group member."
             }
         },
         {
@@ -3584,8 +3430,8 @@
             "start_time": "54:01",
             "end_time": "54:54",
             "annotations": {
-                "expand on existing idea": "Marc is expanding on the idea of tidal locking making a planet more heterogeneous, building on Tim's comment about heat distribution through the ocean on the dark side of a tidally locked planet, by suggesting that the night side could be covered in ice and the day side hot, creating paths for material distribution.",
-                "provide supporting evidence": "Marc supports the idea of tidal locking being beneficial by drawing an analogy to wet-dry cycles, where both wet and dry conditions are helpful, suggesting that having different conditions on a tidally locked planet could also be beneficial for cycling materials and promoting synthesis."
+                "develop idea": "The speaker is expanding on an existing idea about the conditions on a tidally locked planet and how these conditions could influence chemical reactions or life processes.",
+                "propose new idea": "The speaker suggests considering different environmental conditions for chemical synthesis or life processes on a tidally locked planet."
             }
         },
         {
@@ -3605,7 +3451,7 @@
             "start_time": "54:54",
             "end_time": "55:03",
             "annotations": {
-                "express agreement": "Marc is expressing agreement with the idea that tidal locking, by creating heterogeneous environments, could be beneficial for the emergence of life, even though his explanation is not very detailed."
+                "Supportive Response": "Marc Neveu is expressing a positive evaluation of an idea, indicating it makes sense to him, which is a way of validating or showing support for the idea without adding new content."
             }
         },
         {
@@ -3625,7 +3471,8 @@
             "start_time": "55:03",
             "end_time": "55:06",
             "annotations": {
-                "expand on existing idea": "Shannon's statement builds upon Marc's idea that tidal locking creates heterogeneous environments, suggesting that the key challenge then becomes how materials are transported between these different environments."
+                "develop idea": "The speaker is expanding on the idea of heterogeneous environments created by tidal locking, focusing on the aspect of transport.",
+                "supportive response": "The utterance engages with and builds upon previous ideas without expressing disagreement, thereby supporting the discussion."
             }
         },
         {
@@ -3644,11 +3491,9 @@
             "screenshare_content": "None",
             "start_time": "55:06",
             "end_time": "55:11",
-            "annotations": [
-                {
-                    "express agreement": "Tim agrees with Shannon's prior statement about transport being easier, indicating his agreement with her point."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses agreement with a previous statement, showing a positive evaluation."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -3666,11 +3511,11 @@
             "screenshare_content": "None",
             "start_time": "55:12",
             "end_time": "55:27",
-            "annotations": [
-                {
-                    "expand on existing idea": "The utterance builds upon the previous discussion about tidal locking and its effects on planetary environments, adding the idea that gradients, resulting from tidal locking, could be beneficial for life."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "The speaker is expanding on an idea previously discussed, considering the benefits and limitations of gradients.",
+                "Ask question": "The utterance is phrased as a question or a suggestion for consideration, inviting discussion.",
+                "Encourage participation": "By suggesting a way to think about gradients, the speaker is encouraging others to engage with the idea."
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -3689,7 +3534,7 @@
             "start_time": "55:28",
             "end_time": "55:29",
             "annotations": {
-                "expand on existing idea": "Aaron is building upon the ongoing discussion about factors influencing the development of life, specifically mentioning that the impact of these factors will vary."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3709,7 +3554,7 @@
             "start_time": "55:29",
             "end_time": "55:30",
             "annotations": {
-                "encourage particpatioin": "Timothy acknowledges Benjamin's raised hand, indicating he wants to speak, and thus encourages him to participate in the discussion."
+                "process management": "Timothy W Lyons is managing the meeting flow by drawing attention to Benjamin's raised hand."
             }
         },
         {
@@ -3728,11 +3573,9 @@
             "screenshare_content": "None",
             "start_time": "55:30",
             "end_time": "55:31",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Timothy encourages Benjamin to speak, indicating that Benjamin has been waiting to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -3750,11 +3593,9 @@
             "screenshare_content": "None",
             "start_time": "55:31",
             "end_time": "55:32",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Timothy encourages someone to speak, indicating he wants to include more people in the conversation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -3772,11 +3613,9 @@
             "screenshare_content": "None",
             "start_time": "55:32",
             "end_time": "55:33",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Aaron apologizes for not having his hand up, acknowledging that he is speaking out of turn."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Marc Neveu",
@@ -3795,9 +3634,7 @@
             "start_time": "55:33",
             "end_time": "56:11",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Marc acknowledges that others have worked on the topic of pressure density profiles and atmospheric winds on exoplanets, recognizing their contribution to the field."
-                }
+                "None": "No relevant code directly applies to this utterance as it primarily involves a statement of unfamiliarity and reference to others' expertise."
             }
         },
         {
@@ -3816,11 +3653,9 @@
             "screenshare_content": "None",
             "start_time": "56:11",
             "end_time": "56:13",
-            "annotations": [
-                {
-                    "express agreement": "Timothy agrees with a previous statement, indicated by the repetition of \"yeah\"."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -3838,17 +3673,11 @@
             "screenshare_content": "None",
             "start_time": "56:13",
             "end_time": "57:31",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stilianos is expanding on the idea of the interface between the hot and cold sides of a tidally locked planet, building on the previous discussion about the potential for life on such planets."
-                },
-                {
-                    "present new idea": "Stilianos presents the idea that the interface between the hot and cold sides of a tidally locked planet could provide ideal conditions for life due to the gradients and variety of conditions available."
-                },
-                {
-                    "ask clarifying question": "Stilianos is asking for clarification on why the interface between the hot and cold sides of a tidally locked planet is being ruled out as a potential spot for life to develop, given the potential for ideal conditions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of an interface providing ideal conditions for life to start, discussing gradients and mixing mechanisms.",
+                "ask question": "The speaker is seeking clarification on why the interface is ruled out as an excellent spot for life development.",
+                "encourage participation": "The speaker's inquiry invites further discussion and consideration of the interface's potential for life emergence."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -3867,7 +3696,7 @@
             "start_time": "57:31",
             "end_time": "57:32",
             "annotations": {
-                "ask clarifying question": "Tim asks about the wind conditions, likely to understand the atmospheric dynamics and potential for mixing and transport on a tidally locked planet, following a discussion about the potential for life on such planets."
+                "ask question": "The speaker is requesting information about the characteristics of winds on a specific type of celestial body or environment."
             }
         },
         {
@@ -3887,7 +3716,7 @@
             "start_time": "57:32",
             "end_time": "57:57",
             "annotations": {
-                "ask clarifying question": "The speaker is asking about the atmospheric conditions, specifically winds and mixing, on a tidally locked planet, indicating a need for clarification on this topic, which follows a discussion about the potential habitability of tidally locked planets."
+                "ask question": "The speaker is requesting information or clarification on the topic of winds and atmospheric mixing on a tidally locked planet."
             }
         },
         {
@@ -3907,7 +3736,7 @@
             "start_time": "57:57",
             "end_time": "57:57",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "Supportive response": "The utterance expresses agreement with a previous statement."
             }
         },
         {
@@ -3927,9 +3756,7 @@
             "start_time": "60:00",
             "end_time": "60:19",
             "annotations": {
-                "expand on existing idea": "Aaron expands on the discussion about tidally locked planets, adding that gravity and temperature differences would cause convection and wind, which could be useful for mixing, building on the previous discussion about the challenges and potential benefits of tidally locked planets for life.",
-                "explain or define term or concept": "Aaron explains the concept of convection and its relation to wind, clarifying how temperature differences and gravity can lead to atmospheric mixing on a tidally locked planet, which is relevant to the ongoing discussion about the habitability of such planets.",
-                "acknowledge contribution": "Aaron acknowledges that he came into the discussion about tidally locked planets naively, recognizing his limited prior consideration of the topic, which is relevant to the ongoing discussion about the habitability of such planets."
+                "develop idea": "The speaker expands on existing ideas by discussing the potential for convection and mixing on tidally locked planets."
             }
         },
         {
@@ -3949,8 +3776,7 @@
             "start_time": "60:20",
             "end_time": "60:33",
             "annotations": {
-                "encourage particpatioin": "Timothy encourages Jen to speak, noting that her hand has been up for a long time, inviting her to contribute to the discussion about tidally locked planets.",
-                "reject idea": "Timothy dismisses the relevance of questions about tidally locked planets, suggesting they are unimportant if thinking outside the box, following a discussion about the pros and cons of tidally locked planets for the origin of life."
+                "process management": "The speaker is managing the meeting flow by acknowledging Jen's raised hand and implying he will address her soon."
             }
         },
         {
@@ -3969,18 +3795,9 @@
             "screenshare_content": "None",
             "start_time": "60:33",
             "end_time": "61:41",
-            "annotations": [
-                {
-                    "propose decision": {
-                        "Explanation": "Jennifer suggests moving on from the discussion about tidal locking, indicating a desire to shift the conversation's focus."
-                    }
-                },
-                {
-                    "ask clarifying question": {
-                        "Explanation": "Jennifer asks the planetary scientists for more information about the timeline of major meteoritic impacts on exoplanets, building on the previous discussion about the late heavy bombardment and the amount of debris in other systems."
-                    }
-                }
-            ]
+            "annotations": {
+                "ask question": "Jennifer Glass requests information about the timeline of major meteoritic impacts on exoplanets or throughout the universe."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -3998,14 +3815,10 @@
             "screenshare_content": "None",
             "start_time": "61:42",
             "end_time": "63:10",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Meredith acknowledges Jennifer's phrasing of 'junk' as a good one, recognizing her input on the topic of impactors in exoplanetary systems."
-                },
-                {
-                    "expand on existing idea": "Meredith expands on the idea of impactors in exoplanetary systems, detailing how the outer planets' migration and gravitational interactions kick up planetesimals, leading to a rush of impactors in the inner solar system, while Jupiter may have blocked some of these impactors."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Meredith is expanding on the concept of the solar system's history, specifically how outer planets affected the late heavy bombardment and the potential protective role of Jupiter.",
+                "supportive response": "Meredith acknowledges and agrees with the previous speaker's 'junk phrasing', showing support for their contribution."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -4023,13 +3836,11 @@
             "screenshare_content": "None",
             "start_time": "63:10",
             "end_time": "63:44",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith is expanding on the discussion about meteoritic impacts and the amount of junk in exoplanetary systems, building on Jennifer's question about the timeline of major impacts.",
-                    "provide supporting evidence": "Meredith provides evidence that exoplanet systems have more remnant stuff because they started with more massive discs, supporting the idea that there are more impactors in exoplanet systems.",
-                    "explain or define term or concept": "Meredith defines 'planetesimals' as asteroids and comets that got big during planet formation but didn't get planet-sized, clarifying the term for the group."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "Meredith is expanding on existing ideas about how outer planets influence the solar system and comparing it to exoplanet systems.",
+                "Signal expertise": "Meredith is showing her expertise in astrophysics and planet formation.",
+                "Supportive response": "Meredith's contribution adds valuable information to the discussion, supporting a deeper understanding of the topic."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4048,7 +3859,7 @@
             "start_time": "63:44",
             "end_time": "63:56",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the discussion about exoplanetary systems and impactors by introducing the additional complexity of binary star systems, which can significantly alter the dynamics of planet formation and impact rates, expanding on the previous discussion about the dynamics of planetary systems."
+                "propose new idea": "The speaker introduces a new idea about the complexity of stellar systems due to the presence of binary stars, which has not been previously discussed in the meeting."
             }
         },
         {
@@ -4068,7 +3879,7 @@
             "start_time": "63:56",
             "end_time": "63:57",
             "annotations": {
-                "express agreement": "Meredith agrees with the previous statement about the complexity of the dynamics of stars born in pairs."
+                "Acknowledge contribution": "The speaker is acknowledging a prior statement or contribution from another group member with a minimal 'Yeah'."
             }
         },
         {
@@ -4087,11 +3898,10 @@
             "screenshare_content": "None",
             "start_time": "63:57",
             "end_time": "64:45",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith was discussing the impact of remnant material in exoplanetary systems, and Keith expands on this by introducing the complexity of binary star systems and their impact on planetary dynamics, adding another layer to the discussion of factors influencing impact rates."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the complexities of planetary system formation, specifically regarding binary star systems and their impact on system stability and material distribution.",
+                "signal expertise": "Keith implies his expertise in astrophysics and stellar systems by discussing stellar mass, metallicity, and binarity."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -4109,11 +3919,9 @@
             "screenshare_content": "None",
             "start_time": "64:45",
             "end_time": "64:45",
-            "annotations": [
-                {
-                    "express agreement": "Meredith agrees with the previous statement made by Keith Hawkins about the complexity of binary star systems and their impact on planetary dynamics."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4131,11 +3939,9 @@
             "screenshare_content": "None",
             "start_time": "64:45",
             "end_time": "64:46",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Tim acknowledges the complexity and breadth of the discussion about meteoritic impacts on exoplanets, which was initiated by Jennifer's question, but does not agree or expand on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4153,14 +3959,9 @@
             "screenshare_content": "None",
             "start_time": "64:46",
             "end_time": "65:00",
-            "annotations": [
-                {
-                    "assign task": "The speaker is encouraging participation by asking if someone wants to address the topic quickly, which is a way of assigning the task of addressing the topic to someone in the group."
-                },
-                {
-                    "encourage particpatioin": "The speaker is encouraging participation by asking if someone wants to address the topic quickly."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by pointing out the time constraint and suggesting a course of action for the remaining time."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -4178,11 +3979,9 @@
             "screenshare_content": "None",
             "start_time": "65:08",
             "end_time": "65:15",
-            "annotations": [
-                {
-                    "present new idea": "Stilianos indicates he has a question, which introduces a new topic for discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4200,11 +3999,9 @@
             "screenshare_content": "None",
             "start_time": "65:15",
             "end_time": "65:15",
-            "annotations": [
-                {
-                    "express agreement": "Keith Hawkins is agreeing with the previous speaker, Meredith MacGregor, who was discussing the dynamics of exoplanetary systems and the role of outer planets in impacting the inner solar system."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -4222,13 +4019,9 @@
             "screenshare_content": "None",
             "start_time": "65:15",
             "end_time": "66:00",
-            "annotations": [
-                {
-                    "present new idea": "Stilianos introduces the idea that mass extinction events might be caused by internal dynamics of the biosphere, rather than external geological events, which is a novel perspective in the context of the discussion about factors affecting the development and detectability of life.",
-                    "expand on existing idea": "He expands on the idea of internal dynamics causing mass extinctions by suggesting that the biosphere can be a chaotic system with intense fluctuations and cascades of extinction due to changes in keystone species, building on the previous discussion about the impact of external events like meteoritic impacts on the biosphere.",
-                    "reject idea": "Stilianos rejects the idea that mass extinctions are probation periods for life, offering an alternative perspective without suggesting improvements to the rejected idea."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "introducing a new perspective that internal biosphere dynamics could cause mass extinctions"
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -4247,7 +4040,7 @@
             "start_time": "66:00",
             "end_time": "66:00",
             "annotations": {
-                "ask clarifying question": "Stilianos asks about the current status of how seriously the idea of internal biosphere dynamics causing mass extinctions is taken, following a discussion about the role of external factors like meteoritic impacts."
+                "ask question": "The speaker is requesting information about the current status of how seriously something is being taken."
             }
         },
         {
@@ -4266,11 +4059,9 @@
             "screenshare_content": "None",
             "start_time": "66:00",
             "end_time": "66:07",
-            "annotations": [
-                {
-                    "assign task": "Timothy reminds the group that they only have five minutes left, implicitly assigning the task of wrapping up the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing meeting flow by pointing out they have five minutes left."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4288,11 +4079,9 @@
             "screenshare_content": "None",
             "start_time": "66:07",
             "end_time": "66:08",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4310,11 +4099,11 @@
             "screenshare_content": "None",
             "start_time": "66:08",
             "end_time": "66:08",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Timothy is encouraging someone else to contribute to the discussion before he offers his own comments, as the group is running out of time."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking a question about whether someone wants to address a point quickly.",
+                "encourage participation": "The speaker is inviting others to contribute by asking if someone wants to address a point.",
+                "process management": "The speaker is managing the meeting flow by suggesting a quick address or offering to make comments."
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -4332,12 +4121,10 @@
             "screenshare_content": "None",
             "start_time": "70:00",
             "end_time": "70:57",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is implicitly defining what they mean by \"in between\" signatures, contrasting them with techno signatures, by describing chemical signatures and other indicators of life they were searching for in a mission concept study.",
-                    "provide supporting evidence": "The speaker mentions that the search for chemical signatures is well-motivated by Cassini data, providing evidence for the relevance of their approach."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Shannon is elaborating on the strategies employed in a mission concept study for searching life at Enceladus.",
+                "ask question": "Shannon asks 'The question is what are they?' indicating an inquiry about the nature of the chemical signatures found."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4355,14 +4142,10 @@
             "screenshare_content": "None",
             "start_time": "70:57",
             "end_time": "72:03",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker defines techno signatures as including gases in the atmosphere, light relationships, and radio signals, clarifying the scope of the term in the context of the discussion about detecting life on other planets."
-                },
-                {
-                    "encourage particpatioin": "The speaker encourages others to contribute to the discussion, specifically inviting Jen to share organized points for reporting out, aiming to involve more participants in the limited time remaining."
-                }
-            ]
+            "annotations": {
+                "code name": "encourage participation",
+                "explanation": "The speaker invites others, specifically Jen, to contribute and report out in an organized sense."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -4380,11 +4163,9 @@
             "screenshare_content": "None",
             "start_time": "72:03",
             "end_time": "72:03",
-            "annotations": [
-                {
-                    "express agreement": "Jennifer Glass is agreeing to Timothy's question of whether she has things to report out, confirming her willingness to provide a summary."
-                }
-            ]
+            "annotations": {
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input, but not agreeing or expanding."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4402,11 +4183,9 @@
             "screenshare_content": "None",
             "start_time": "72:03",
             "end_time": "72:03",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Timothy acknowledges the previous speaker's contribution, but does not agree or expand on it."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges a previous contribution or statement, showing engagement."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -4424,23 +4203,9 @@
             "screenshare_content": "None",
             "start_time": "72:03",
             "end_time": "73:53",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The initial \"Yes\" acknowledges Tim's request for a summary of the discussion."
-                    }
-                },
-                {
-                    "explain or define term or concept": {
-                        "Explanation": "Jennifer is summarizing the topics that were discussed, including the initial question posed by Tim about when Earth developed a robust and detectable biosphere, wet dry cycles, gradients on tidally locked planets, and major external events that limited life's robustness."
-                    }
-                },
-                {
-                    "encourage particpatioin": {
-                        "Explanation": "Jennifer encourages others to summarize their main points, acknowledging her potential bias."
-                    }
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing what has been previously discussed by the group, recapitulating the main points and topics covered."
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4459,7 +4224,7 @@
             "start_time": "73:53",
             "end_time": "73:53",
             "annotations": {
-                "express agreement": "The speaker explicitly agrees that the previous summary captured everything well."
+                "acknowledge contribution": "The speaker acknowledges Jennifer Glass's summary, indicating it captured the discussion well."
             }
         },
         {
@@ -4479,7 +4244,7 @@
             "start_time": "74:00",
             "end_time": "74:02",
             "annotations": {
-                "acknowledge contribution": "The utterance acknowledges that the group spent a significant amount of time discussing tidal locking, which is a way to recognize the contribution of the team members who participated in that discussion."
+                "summarize conversation": "The speaker summarizes a previous discussion about tidal locking."
             }
         },
         {
@@ -4499,7 +4264,7 @@
             "start_time": "74:02",
             "end_time": "74:03",
             "annotations": {
-                "express agreement": "Jennifer Glass is agreeing with Timothy Lyons's statement that they talked about title locking."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4519,7 +4284,7 @@
             "start_time": "74:03",
             "end_time": "74:03",
             "annotations": {
-                "ask clarifying question": "Jennifer is asking if there are any other topics or points that need to be added to the summary of the discussion, seeking to ensure completeness."
+                "encourage participation": "Jennifer Glass invites others to contribute their thoughts or ideas to the discussion."
             }
         },
         {
@@ -4539,8 +4304,8 @@
             "start_time": "74:03",
             "end_time": "74:13",
             "annotations": {
-                "expand on existing idea": "Meredith is building on the previous discussion about the conditions for life on other planets, specifically expanding on the factors that might influence the search for life on different types of stars.",
-                "propose decision": "Meredith is suggesting that the group should consider what kinds of stars are most promising for finding life, which is a concrete choice for the group to focus on."
+                "propose new idea": "The speaker suggests a new perspective on approaching the question of where to look for life, focusing on the types of stars.",
+                "develop idea": "The speaker elaborates on the challenges of M stars, tidal locking, and radiative flares in the context of searching for life."
             }
         },
         {
@@ -4559,11 +4324,9 @@
             "screenshare_content": "None",
             "start_time": "74:13",
             "end_time": "74:13",
-            "annotations": [
-                {
-                    "express agreement": "Jennifer Glass is agreeing with Timothy W Lyons that her summary captured everything really well."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -4582,9 +4345,7 @@
             "start_time": "74:13",
             "end_time": "74:13",
             "annotations": {
-                "expand on existing idea": "Meredith is expanding on the discussion about the conditions for life on exoplanets, specifically focusing on the type of star that would be optimal for hosting life, building on the previous discussion about M stars, tidal locking, and stellar flares.",
-                "propose decision": "Meredith proposes the idea of defining a \"perfect star\" to focus the search for life on exoplanets, suggesting a concrete choice for the group to consider when looking for life.",
-                "express enthusiasm": "Meredith expresses enthusiasm by describing the discussion as \"really interesting\" and framing the question of an optimal star as a worthwhile pursuit."
+                "develop idea": "The speaker is expanding on a previous idea or discussion about the optimal type of star for hosting exoplanets with life, considering factors such as the age of stars and their characteristics."
             }
         },
         {
@@ -4604,7 +4365,7 @@
             "start_time": "75:14",
             "end_time": "75:14",
             "annotations": {
-                "express agreement": "Jennifer Glass expresses agreement with Meredith MacGregor's summary of the discussion about the optimal star to look for life around, indicating that it was a good point."
+                "supportive response": "The speaker expresses agreement and positive evaluation for a prior statement."
             }
         },
         {
@@ -4624,7 +4385,7 @@
             "start_time": "75:14",
             "end_time": "75:14",
             "annotations": {
-                "encourage particpatioin": "Jennifer Glass is explicitly inviting someone else to contribute to the discussion by giving the summary, encouraging participation."
+                "encourage participation": "The speaker invites others to contribute to the conversation by giving a summary, thereby encouraging participation."
             }
         },
         {
@@ -4643,11 +4404,9 @@
             "screenshare_content": "None",
             "start_time": "75:24",
             "end_time": "75:24",
-            "annotations": [
-                {
-                    "express humor": "The speaker is expressing humor by repeating their name in a surprised or playful manner, possibly in response to being invited to give a summary."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -4666,9 +4425,7 @@
             "start_time": "75:24",
             "end_time": "75:24",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Jennifer acknowledges Meredith's contribution of summarizing the discussion points, but she is not necessarily agreeing or expanding on them."
-                }
+                "supportive response": "The speaker is expressing agreement and positive evaluation of another group member's contribution."
             }
         },
         {
@@ -4688,9 +4445,7 @@
             "start_time": "75:24",
             "end_time": "75:25",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Meredith acknowledges Jennifer's invitation to give the summary, recognizing her contribution to the discussion."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4710,7 +4465,7 @@
             "start_time": "75:25",
             "end_time": "75:25",
             "annotations": {
-                "encourage particpatioin": "Jennifer Glass is inviting Meredith to give the summary, encouraging her participation in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4730,7 +4485,7 @@
             "start_time": "75:25",
             "end_time": "75:26",
             "annotations": {
-                "acknowledge contribution": "Meredith is acknowledging Jennifer's invitation to give the summary."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4750,7 +4505,7 @@
             "start_time": "75:26",
             "end_time": "75:26",
             "annotations": {
-                "confirm decision": "Meredith agrees to Jennifer's request to give the summary, confirming the decision."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4770,7 +4525,7 @@
             "start_time": "75:26",
             "end_time": "75:27",
             "annotations": {
-                "express agreement": "Jennifer is agreeing with Meredith's willingness to give the summary, confirming the decision."
+                "Acknowledge contribution": "The utterance 'Good.' acknowledges a prior statement or contribution."
             }
         },
         {
@@ -4790,7 +4545,7 @@
             "start_time": "75:27",
             "end_time": "75:30",
             "annotations": {
-                "encourage particpatioin": "Jennifer Glass is encouraging others to participate in the task of summarizing the discussion, building on the previous turn where she invited Meredith to give the summary."
+                "encourage participation": "Jennifer Glass invites others to contribute to the summary or report, encouraging their participation."
             }
         },
         {
@@ -4809,11 +4564,9 @@
             "screenshare_content": "None",
             "start_time": "75:30",
             "end_time": "75:30",
-            "annotations": [
-                {
-                    "express agreement": "Meredith is agreeing with Jennifer's invitation to give the summary."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4832,7 +4585,7 @@
             "start_time": "75:30",
             "end_time": "75:42",
             "annotations": {
-                "explain or define term or concept": "The utterance clarifies the discussion around 'complexity of life' by defining what it means and its connection to biosignatures, which is important for the group's understanding of detectability."
+                "summarize conversation": "The speaker summarizes what was previously discussed by the group, specifically about the complexity of life and biosignatures."
             }
         },
         {
@@ -4852,7 +4605,7 @@
             "start_time": "75:42",
             "end_time": "75:42",
             "annotations": {
-                "express agreement": "Meredith is expressing agreement with the previous statement made by Jennifer Glass."
+                "acknowledge contribution": "The speaker acknowledges a previous statement or contribution, showing engagement and agreement."
             }
         },
         {
@@ -4871,11 +4624,9 @@
             "screenshare_content": "None",
             "start_time": "75:42",
             "end_time": "75:47",
-            "annotations": [
-                {
-                    "assign task": "Jennifer is assigning herself the task of putting the notes in, as she is the designated reporter for the group."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is discussing the meeting's progress and her action item regarding note-taking."
+            }
         },
         {
             "speaker": "Aaron Engelhart",
@@ -4894,7 +4645,7 @@
             "start_time": "76:40",
             "end_time": "76:43",
             "annotations": {
-                "acknowledge contribution": "Aaron acknowledges that he has shared information in the chat, recognizing his contribution to the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4913,11 +4664,9 @@
             "screenshare_content": "None",
             "start_time": "76:43",
             "end_time": "76:43",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The speaker is acknowledging that they added something to the chat, but not agreeing or expanding on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Timothy W Lyons",
@@ -4935,11 +4684,10 @@
             "screenshare_content": "None",
             "start_time": "76:47",
             "end_time": "77:35",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the purpose of the meeting and the process of forming partnerships for proposals, clarifying the context for the participants."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by suggesting how to use the meeting time effectively and introducing the idea of doing introductions.",
+                "encourage participation": "The speaker encourages participants to do most of the talking and implies that introductions will help them find partners for their proposals."
+            }
         }
     ]
 }

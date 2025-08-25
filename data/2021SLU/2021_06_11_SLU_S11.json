@@ -1,17 +1,17 @@
 {
     "all_speakers": [
-        "Laura Barge",
-        "Rika Anderson",
-        "Shannon Mackenzie",
-        "Dimitar Sasselov",
-        "Jay Forsythe",
-        "Betul Kacar",
-        "Gregory Fournier",
         "Andro Rios",
-        "Stilianos Louca",
-        "Jochen Marschall | Heising",
+        "Niki Parenteau",
+        "Bet\u00fcl Ka\u00e7ar",
+        "Laura Barge",
+        "Shannon Mackenzie",
+        "Jay Forsythe",
+        "Rika Anderson",
         "Shannon Mackenzie | JHU APL",
-        "Niki Parenteau"
+        "Dimitar Sasselov",
+        "Gregory Fournier",
+        "Jochen Marschall | Heising",
+        "Stilianos Louca"
     ],
     "total_speaking_length": 3281,
     "all_data": [
@@ -32,7 +32,7 @@
             "start_time": "00:00",
             "end_time": "00:05",
             "annotations": {
-                "encourage particpatioin": "The utterance encourages everyone to join, implying an invitation to participate in the meeting."
+                "process management": "The speaker is managing the meeting flow by asking everyone to wait a minute for others to join."
             }
         },
         {
@@ -52,7 +52,7 @@
             "start_time": "00:11",
             "end_time": "00:14",
             "annotations": {
-                "acknowledge contribution": "The greeting \"Hello everybody. Hi Niki\" acknowledges the presence and contribution of the team members, including Niki."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -72,7 +72,7 @@
             "start_time": "00:14",
             "end_time": "00:14",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -92,7 +92,7 @@
             "start_time": "00:15",
             "end_time": "00:19",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges Niki's message, indicating he has received and read it."
+                "acknowledge contribution": "This code applies because Dimitar Sasselov verbally recognizes Niki Parenteau's input by saying 'I just read your message'."
             }
         },
         {
@@ -112,7 +112,7 @@
             "start_time": "00:19",
             "end_time": "00:20",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges Dimitar's apology for not replying earlier, indicating she heard and understood his message."
+                "supportive response": "Niki is expressing a positive sentiment to Dimitar's apology, providing a supportive response."
             }
         },
         {
@@ -132,7 +132,7 @@
             "start_time": "00:21",
             "end_time": "00:26",
             "annotations": {
-                "confirm decision": "Dimitar confirms a decision made in a prior message, indicating agreement to proceed with the same action."
+                "supportive response": "The utterance expresses agreement with a prior statement or proposal, indicating a positive evaluation or validation of the previous contribution."
             }
         },
         {
@@ -152,7 +152,7 @@
             "start_time": "00:26",
             "end_time": "00:27",
             "annotations": {
-                "express agreement": "Niki agrees with Dimitar's statement that they can do the same thing, indicating alignment and understanding."
+                "supportive response": "The utterance expresses agreement with the previous statement, validating the idea or proposal presented."
             }
         },
         {
@@ -171,11 +171,9 @@
             "screenshare_content": "None",
             "start_time": "00:29",
             "end_time": "00:42",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The speaker acknowledges that Betul has joined the meeting."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the flow of communication by mentioning they need to respond to a quick message."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -194,7 +192,9 @@
             "start_time": "00:43",
             "end_time": "00:53",
             "annotations": {
-                "assign task": "Niki is assigning the task of recorder/reporter to someone in the session."
+                "Ask question": "The speaker is requesting information about volunteers for a recorder/reporter role.",
+                "Encourage participation": "The speaker is inviting someone to volunteer, which encourages participation.",
+                "Process management": "The speaker is managing the meeting's flow by organizing roles for the session."
             }
         },
         {
@@ -214,7 +214,9 @@
             "start_time": "00:57",
             "end_time": "01:02",
             "annotations": {
-                "encourage particpatioin": "Niki is asking for a volunteer to be the recorder/reporter, encouraging someone to take on the task."
+                "ask question": "The speaker is requesting volunteers, which involves asking for a response from the participants.",
+                "encourage participation": "By asking for volunteers, the speaker is inviting participants to contribute.",
+                "process management": "The request for a volunteer for a recorder/reporter role relates to organizing the meeting."
             }
         },
         {
@@ -234,7 +236,8 @@
             "start_time": "01:04",
             "end_time": "01:12",
             "annotations": {
-                "encourage particpatioin": "Niki is trying to get someone to volunteer for the recorder/reporter role, so she is encouraging participation."
+                "ask question": "The speaker is requesting information or a response from the group members.",
+                "encourage participation": "The speaker is inviting group members to contribute by volunteering for a task."
             }
         },
         {
@@ -254,7 +257,7 @@
             "start_time": "01:17",
             "end_time": "01:19",
             "annotations": {
-                "assign task": "Dimitar assigns the task of helping with recording/reporting to the entire group at the end of the session, responding to the request for a volunteer recorder/reporter."
+                "process management": "The speaker suggests that everyone will help at the end, which can be seen as managing the task of recording/reporting by implying collective responsibility."
             }
         },
         {
@@ -274,7 +277,8 @@
             "start_time": "01:19",
             "end_time": "01:24",
             "annotations": {
-                "expand on existing idea": "The utterance builds on Dimitar's previous statement that they will all help, adding the detail that they will synthesize bullet points for the report."
+                "supportive response": "Niki is expressing a positive and supportive action by offering help with synthesizing bullet points for the report out.",
+                "process management": "Niki is discussing how to manage the session's output (report out) by offering to help synthesize bullet points."
             }
         },
         {
@@ -294,8 +298,8 @@
             "start_time": "01:28",
             "end_time": "01:32",
             "annotations": {
-                "assign task": "Betul volunteers to be the recorder/reporter, which assigns her the task of documenting the session.",
-                "ask clarifying question": "Betul states she can do it, but needs a link to a collection, which is a request for clarification or resources to complete the task."
+                "acknowledge contribution": "Betul acknowledges the request and volunteers.",
+                "identify gap": "Betul identifies a need for a link to a collection to fulfill the role."
             }
         },
         {
@@ -314,12 +318,9 @@
             "screenshare_content": "None",
             "start_time": "01:33",
             "end_time": "01:38",
-            "annotations": [
-                {
-                    "confirm decision": "Betul volunteered to be the recorder/reporter, and Niki confirms this decision.",
-                    "assign task": "Niki assigns herself the task of pulling up the document and sending the link to Betul."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is facilitating the process by taking a concrete action (sending a document and a link) that helps move the meeting or collaboration forward."
+            }
         },
         {
             "speaker": "Bet\u00fcl Ka\u00e7ar",
@@ -338,9 +339,7 @@
             "start_time": "01:41",
             "end_time": "01:44",
             "annotations": {
-                "acknowledge contribution": "Betul acknowledges Niki's contribution of offering to send the document link.",
-                "express enthusiasm": "Betul expresses enthusiasm by thanking Niki for offering to send the document link.",
-                "express humor": "Betul expresses humor by apologizing to herself for feeling under the weather."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -360,7 +359,7 @@
             "start_time": "01:44",
             "end_time": "01:53",
             "annotations": {
-                "express humor": "Betul makes a humorous statement about the return of illness due to the lifting of mask mandates, using sarcasm to express the situation is 'really great' when it is not."
+                "express humor": "The speaker is making a humorous comment about the return of the 'daycare plague' now that mask mandates have lifted, indicating this code applies because the utterance explicitly makes a joke."
             }
         },
         {
@@ -380,7 +379,7 @@
             "start_time": "01:58",
             "end_time": "02:01",
             "annotations": {
-                "assign task": "Niki is assigning the task of recording/reporting to Betul and is now sending her the link to the document she needs to complete the task, as Betul volunteered to do it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -400,9 +399,8 @@
             "start_time": "02:03",
             "end_time": "02:18",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "The speaker is suggesting a course of action for the group, which is to introduce themselves by stating their name, institution, and specialty areas."
-                }
+                "propose new idea": "The speaker is introducing a new activity for the meeting, which is to go around the room and do introductions.",
+                "process management": "The speaker is managing the meeting flow by suggesting an activity (introductions) to be done during the meeting."
             }
         },
         {
@@ -422,7 +420,7 @@
             "start_time": "02:18",
             "end_time": "02:18",
             "annotations": {
-                "encourage particpatioin": "Niki is directly asking Laurie to speak and provide her introduction to the group."
+                "encourage participation": "The speaker invites Laurie to share with the group, encouraging participation."
             }
         },
         {
@@ -441,11 +439,9 @@
             "screenshare_content": "None",
             "start_time": "02:19",
             "end_time": "02:40",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Laurie introduces herself and her area of expertise, which is prebiotic chemistry and origin of life, and explains that she runs a lab group that does mineral organic chemistry, thus defining her role and expertise for the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Laurie explicitly states her own expertise and qualifications related to her work at NASA Jet Propulsion Laboratory."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -464,7 +460,8 @@
             "start_time": "02:40",
             "end_time": "02:40",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging Laurie's introduction, expressing gratitude for the information shared."
+                "acknowledge contribution": "The speaker acknowledges another group member's input or action, in this case, thanking Niki for inviting her to share her information.",
+                "supportive response": "The utterance expresses a positive and agreeable sentiment in response to a previous action or statement."
             }
         },
         {
@@ -484,7 +481,7 @@
             "start_time": "02:41",
             "end_time": "02:42",
             "annotations": {
-                "encourage particpatioin": "Niki is inviting Betul to introduce herself and her specialty areas, continuing the round of introductions."
+                "process management": "Niki Parenteau is managing the meeting flow by prompting Betul to introduce herself."
             }
         },
         {
@@ -503,11 +500,9 @@
             "screenshare_content": "None",
             "start_time": "02:43",
             "end_time": "03:13",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Betul is explaining her background and research interests to the group, defining her expertise in the context of the project."
-                }
-            ]
+            "annotations": {
+                "Signal Expertise": "The speaker explicitly states her position, institution, and areas of expertise, signaling her qualifications related to the task."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -526,8 +521,8 @@
             "start_time": "03:14",
             "end_time": "03:15",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges Laurie's and Betul's introductions by saying \"Great, thanks.\"",
-                "encourage particpatioin": "Niki encourages Stilian to introduce himself by saying \"Uh, Stilian.\""
+                "encourage participation": "The speaker is inviting Stilian to introduce himself, encouraging participation.",
+                "process management": "The speaker is managing the meeting flow by moving to the next person's introduction."
             }
         },
         {
@@ -547,7 +542,7 @@
             "start_time": "03:20",
             "end_time": "03:20",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit into any of the defined codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -567,7 +562,8 @@
             "start_time": "03:20",
             "end_time": "03:26",
             "annotations": {
-                "encourage particpatioin": "Niki offers Stilianos the option to skip introducing himself if he is still eating, encouraging him to participate when he is ready, building on the previous turn where Niki was going around the room asking people to introduce themselves."
+                "process management": "The speaker is managing the meeting flow by ensuring participants are comfortable and not rushed.",
+                "encourage participation": "The speaker is also encouraging participation by giving one of the participants an option to finish and then contribute."
             }
         },
         {
@@ -587,8 +583,7 @@
             "start_time": "03:26",
             "end_time": "04:14",
             "annotations": {
-                "explain or define term or concept": "Stilian is explaining his background and the focus of his lab, which includes microbial ecology, evolution, bioinformatics, sequencing techniques, mathematical modeling, biogeochemical systems modeling, and phylogenomics, to provide context for his expertise.",
-                "expand on existing idea": "Stilian is expanding on his introduction by adding details about his lab's focus on microbial ecology and evolution, using bioinformatics, sequencing techniques, and mathematical modeling, and describing their work on biogeochemical systems modeling and phylogenomics."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to his field of study and work."
             }
         },
         {
@@ -608,8 +603,7 @@
             "start_time": "04:15",
             "end_time": "04:16",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges the previous speaker's contribution with 'Great, thanks.'",
-                "encourage particpatioin": "Niki invites Enrico to participate by introducing him."
+                "process management": "The utterance helps manage the meeting flow by transitioning to the next person for introduction."
             }
         },
         {
@@ -628,11 +622,9 @@
             "screenshare_content": "None",
             "start_time": "04:19",
             "end_time": "04:40",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Rika is introducing herself and her research interests, which involves explaining her area of expertise to the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise or qualifications related to the task, mentioning her position as an assistant professor and her research focus."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -651,7 +643,8 @@
             "start_time": "04:40",
             "end_time": "04:41",
             "annotations": {
-                "encourage particpatioin": "Niki is inviting Jay to introduce himself, continuing the round of introductions."
+                "supportive response": "The speaker is expressing gratitude, which is a positive evaluation of the previous speaker's contribution.",
+                "encourage participation": "The speaker is addressing another participant, potentially inviting them to contribute."
             }
         },
         {
@@ -671,8 +664,8 @@
             "start_time": "04:44",
             "end_time": "05:20",
             "annotations": {
-                "explain or define term or concept": "The speaker defines their research area by explaining the concepts of wet-dry cycling, protobiopolymers, mass spectrometry, and infrared spectroscopy.",
-                "present new idea": "The speaker introduces the research questions they are interested in, such as why there are 20 canonical amino acids and how to differentiate biotic and abiotic polymers, which are new to the conversation."
+                "signal expertise": "The speaker explicitly states his qualifications and expertise related to his research focus.",
+                "ask question": "The speaker asks questions seeking information on specific topics related to his research."
             }
         },
         {
@@ -692,7 +685,8 @@
             "start_time": "05:21",
             "end_time": "05:21",
             "annotations": {
-                "encourage particpatioin": "Niki is inviting Greg to introduce himself, continuing the round of introductions."
+                "acknowledge contribution": "The speaker is expressing gratitude and acknowledgment to the previous speaker.",
+                "encourage participation": "The speaker is inviting Greg to contribute his introduction."
             }
         },
         {
@@ -711,11 +705,9 @@
             "screenshare_content": "None",
             "start_time": "05:25",
             "end_time": "06:08",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Gregory is explaining his background and research interests to the group, defining his expertise in evolutionary biology, microbial lineages, and horizontal gene transfer."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task, providing detailed information about their role as an evolutionary biologist and their research focus."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -734,7 +726,8 @@
             "start_time": "06:09",
             "end_time": "06:11",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges the previous speaker's contribution with 'Great, thank you' before moving on to the next person."
+                "supportive response": "The speaker expresses agreement and appreciation for the previous participant's introduction.",
+                "encourage participation": "The speaker invites another participant, Shannon, to contribute by introducing herself."
             }
         },
         {
@@ -753,11 +746,9 @@
             "screenshare_content": "None",
             "start_time": "06:13",
             "end_time": "06:47",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is defining their role and expertise as a planetary scientist using remote sensing to characterize icy satellites, which provides context for their contributions to the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications related to her work as a planetary scientist."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -776,7 +767,8 @@
             "start_time": "06:47",
             "end_time": "06:47",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges Laurie's introduction, showing recognition of her input."
+                "Acknowledge Contribution": "The speaker is verbally recognizing the group members' input (their introductions) with gratitude.",
+                "Supportive Response": "The speaker is expressing a positive sentiment and validation for the introductions made by the group members."
             }
         },
         {
@@ -796,7 +788,8 @@
             "start_time": "06:47",
             "end_time": "06:47",
             "annotations": {
-                "encourage particpatioin": "Niki is inviting Yakin to introduce themself, continuing the round of introductions."
+                "encourage participation": "This code applies because Niki is inviting Yakin to contribute by introducing themselves.",
+                "process management": "This code applies because Niki is managing the meeting flow by continuing the introductions."
             }
         },
         {
@@ -816,9 +809,8 @@
             "start_time": "07:29",
             "end_time": "07:40",
             "annotations": {
-                "explain or define term or concept": "The speaker is introducing themself and their role at the Heising Simons Foundation, which serves to clarify their presence and perspective in the meeting.",
-                "acknowledge contribution": "The speaker is acknowledging their presence and role in the meeting, but not agreeing or expanding on any specific idea.",
-                "express enthusiasm": "The speaker expresses enthusiasm by stating they are there to listen and see where the conversation goes, indicating interest and anticipation."
+                "signal expertise": "The speaker explicitly states his role and position.",
+                "process management": "The speaker's introduction helps in organizing the group by making himself known."
             }
         },
         {
@@ -838,7 +830,7 @@
             "start_time": "07:40",
             "end_time": "07:41",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges the previous speaker's introduction."
+                "Supportive response": "The utterance 'Great, thank you' expresses a positive evaluation and agreement with the previous speaker's introduction, fitting the definition of a supportive response."
             }
         },
         {
@@ -858,8 +850,9 @@
             "start_time": "07:41",
             "end_time": "07:50",
             "annotations": {
-                "assign task": "Niki is assigning the task of writing down questions in the Google Doc to the participants.",
-                "provide supporting evidence": "Niki is offering to paste the link to the Google Doc, which serves as supporting evidence or a resource for completing the task."
+                "encourage participation": "The speaker invites participants to write down their questions, encouraging them to contribute.",
+                "process management": "The speaker provides instructions on how to document questions, managing the meeting process.",
+                "assign task": "The speaker instructs participants to write down their questions, assigning them a task."
             }
         },
         {
@@ -878,11 +871,9 @@
             "screenshare_content": "None",
             "start_time": "07:50",
             "end_time": "07:53",
-            "annotations": [
-                {
-                    "assign task": "Niki is assigning herself the task of pasting the link in the chat."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the communication flow by deciding to share information despite potential norms about where to share it."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -901,7 +892,7 @@
             "start_time": "08:55",
             "end_time": "08:57",
             "annotations": {
-                "confirm decision": "Dimitar is confirming Niki's suggestion to paste the link in the Google doc."
+                "Supportive Response": "Dimitar is expressing agreement to a previous suggestion, likely about sharing the Google Doc link."
             }
         },
         {
@@ -920,11 +911,10 @@
             "screenshare_content": "None",
             "start_time": "08:59",
             "end_time": "09:15",
-            "annotations": [
-                {
-                    "assign task": "Niki is assigning the task of writing down questions in the Google Doc to the participants."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by instructing the group on how to share questions using a Google Doc.",
+                "encourage participation": "The speaker is inviting group members to contribute their questions."
+            }
         },
         {
             "speaker": "Andro Rios",
@@ -942,14 +932,11 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:51",
-            "annotations": [
-                {
-                    "present new idea": "Andro introduces a novel concept about chemical systems on the prebiotic earth that can positively respond to environmental changes, rather than being derailed, which hasn't been explicitly discussed before."
-                },
-                {
-                    "provide supporting evidence": "Andro supports his idea by contrasting it with the common experience in synthetic chemistry where changes often derail systems, implying his concept is a potential solution to this problem."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new concept about chemical systems on the prebiotic earth and their potential positive responses to environmental changes.",
+                "ask question": "The speaker asks if this concept could represent a major transition in the origins of life.",
+                "develop idea": "The speaker elaborates on the concept, its implications, and suggests a way to test it."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -968,7 +955,7 @@
             "start_time": "20:51",
             "end_time": "20:53",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges Andro's point about chemical systems responding positively to environmental changes, without necessarily agreeing or expanding on it."
+                "supportive response": "Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content."
             }
         },
         {
@@ -988,7 +975,7 @@
             "start_time": "20:53",
             "end_time": "20:57",
             "annotations": {
-                "ask clarifying question": "Betul asks Andro to clarify what he means by a \"positive positive response\", seeking a more precise definition of the term he used in the previous turn."
+                "ask question": "The speaker is requesting clarification on a previous statement, explicitly asking for more information."
             }
         },
         {
@@ -1008,8 +995,7 @@
             "start_time": "20:57",
             "end_time": "21:40",
             "annotations": {
-                "explain or define term or concept": "Andro is clarifying what he means by a 'positive positive response' in the context of chemical systems and environmental changes, elaborating on how temperature changes or concentration changes can positively influence a chemical system by removing unwanted side reactions or promoting the system's progress, building on his previous statement about chemical systems and environmental changes.",
-                "expand on existing idea": "Andro is expanding on his initial idea about chemical systems and their response to environmental changes, providing specific examples of how temperature or concentration changes can positively influence a chemical system, building on his previous statement about chemical systems and environmental changes."
+                "develop idea": "Andro Rios is expanding on his previous idea about positive changes in environmental conditions and how they might affect chemical systems, providing examples to clarify his point."
             }
         },
         {
@@ -1029,8 +1015,8 @@
             "start_time": "21:40",
             "end_time": "22:11",
             "annotations": {
-                "express alternative decision": "Betul rejects Andro's phrasing of \"positive response\" and suggests \"optimal\" instead, offering a different perspective on the chemical reactions in early earth.",
-                "expand on existing idea": "Betul expands on the discussion of chemical reactions in early earth, adding the idea that there's no rate constant that is not desired, especially in the context of \"messy chemistry.\""
+                "Develop idea": "Betul Kacar is expanding on an existing idea by discussing the concept of optimal conditions for chemical systems on early Earth.",
+                "Ask question": "Betul Kacar asks for clarification on the concept of 'messy chemistry'."
             }
         },
         {
@@ -1050,7 +1036,7 @@
             "start_time": "22:00",
             "end_time": "22:01",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is just a filler word."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1070,9 +1056,9 @@
             "start_time": "22:11",
             "end_time": "22:21",
             "annotations": {
-                "offer constructive criticism": "Betul is critiquing Andro's idea of 'positive response' by suggesting that thinking of current biochemistry and mapping it onto early biochemistry is too much, implying a need to reconsider the approach.",
-                "explain or define term or concept": "Betul explains that in early earth, there was no biology yet, technically, so it was just a bunch of chemical reactions.",
-                "express alternative decision": "Betul rejects the term 'positive' and suggests thinking of 'optimality' instead, offering an alternative perspective on how to frame the chemical reactions in early earth."
+                "identify gap": "Betul Kacar recognizes a gap in directly applying current biochemistry to early biochemistry.",
+                "develop idea": "Betul Kacar expands on the idea that current biochemistry may not be directly applicable to early biochemistry.",
+                "offer feedback": "Betul Kacar suggests considering optimality instead of positive responses in the context of early biochemical systems."
             }
         },
         {
@@ -1092,10 +1078,8 @@
             "start_time": "22:21",
             "end_time": "22:40",
             "annotations": {
-                "acknowledge contribution": "Andro acknowledges Betul's contribution by saying \"that's a good point\" after Betul suggested reframing the concept of 'positive response' to 'optimal'.",
-                "expand on existing idea": "Andro expands on his initial idea about chemical systems responding positively to environmental changes by clarifying that he is thinking about systems that feed back into themselves rather than forming dead-end products, building on his previous explanation of how chemical systems can be derailed by environmental changes.",
-                "express agreement": "Andro explicitly agrees with Betul's suggestion to use \"optimal\" instead of \"positive\" when describing the response of chemical systems to environmental changes.",
-                "explain or define term or concept": "Andro explains that he is thinking about systems that feed back into themselves rather than forming dead-end products, clarifying his concept of a chemical system's response to environmental changes."
+                "supportive response": "Andro Rios expresses agreement with a previous point made by Betul Kacar.",
+                "develop idea": "Andro Rios expands on his thoughts about chemical systems, discussing the concepts of dead end products and optimal responses, building upon the previous discussion."
             }
         },
         {
@@ -1114,12 +1098,11 @@
             "screenshare_content": "None",
             "start_time": "22:40",
             "end_time": "22:50",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dimitar thanks Betul for her input, acknowledging her contribution to the discussion.",
-                    "encourage particpatioin": "Dimitar invites Betul to share her thoughts, encouraging her participation in the conversation."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker thanks Betul, acknowledging her contribution.",
+                "ask question": "The speaker asks Betul if she wants to share her thoughts now or later.",
+                "encourage participation": "The speaker invites Betul to share her thoughts, encouraging her participation."
+            }
         },
         {
             "speaker": "Bet\u00fcl Ka\u00e7ar",
@@ -1138,7 +1121,8 @@
             "start_time": "22:50",
             "end_time": "22:54",
             "annotations": {
-                "encourage particpatioin": "Betul is indicating she is willing to wait to share her thoughts, encouraging others to speak first."
+                "acknowledge contribution": "The speaker acknowledges a previous invitation or request to share her thoughts, indicating she can share if needed.",
+                "supportive response": "The speaker shows a supportive stance by indicating she can share her thoughts despite feeling she has already contributed."
             }
         },
         {
@@ -1158,7 +1142,8 @@
             "start_time": "22:54",
             "end_time": "22:59",
             "annotations": {
-                "encourage particpatioin": "Dimitar is encouraging Laurie to participate by asking her to speak next."
+                "encourage participation": "The speaker invites Laurie to contribute, encouraging participation.",
+                "process management": "The speaker is managing the flow of the conversation by asking what's next."
             }
         },
         {
@@ -1178,9 +1163,8 @@
             "start_time": "23:00",
             "end_time": "24:46",
             "annotations": {
-                "expand on existing idea": "Laurie builds on Shannon's idea about multiple boundaries by framing her questions in those terms, exploring jumps in functionality in prebiotic chemical systems.",
-                "ask clarifying question": "Laurie asks about the extent to which catalytic activity of inorganic substrates can be enhanced by geologically driven organics and the requirement of an inheritance system for reproducing catalysts.",
-                "present new idea": "Laurie introduces the idea of reaction networks optimizing in specific conditions and then being brought together, potentially leading to a boundary and a new state for the system."
+                "ask question": "The utterance is a clear example of requesting information, clarification, or expertise from other team members on prior statements or ideas.",
+                "develop idea": "The speaker is also building upon previous discussions, relating her questions to what was previously said."
             }
         },
         {
@@ -1200,7 +1184,8 @@
             "start_time": "24:46",
             "end_time": "24:47",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges Laurie's contribution by stating that it's a good point and thanking her, without necessarily agreeing or expanding on the idea."
+                "acknowledge contribution": "The speaker is verbally recognizing another group member's input.",
+                "supportive response": "The speaker is expressing agreement and validation for the contribution."
             }
         },
         {
@@ -1219,12 +1204,10 @@
             "screenshare_content": "None",
             "start_time": "24:50",
             "end_time": "25:04",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dimitar acknowledges Laurie's point as a good one, showing recognition of her input.",
-                    "expand on existing idea": "Dimitar expands on Laurie's point by stating that they need to consider the instruments in their discussion, building upon the previous question about boundaries and functionality of prebiotic systems."
-                }
-            ]
+            "annotations": {
+                "Supportive Response": "Dimitar agrees with a previous point, showing support for the idea.",
+                "Clarify Goal": "Dimitar clarifies the overall goal of their dialogue, which is to understand if life is there."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1243,7 +1226,8 @@
             "start_time": "25:04",
             "end_time": "25:05",
             "annotations": {
-                "express agreement": "Dimitar is expressing agreement with the previous point made by Niki, acknowledging its validity."
+                "summarize conversation": "Dimitar Sasselov is concluding the discussion or agreeing to the current state of conversation.",
+                "supportive response": "Dimitar Sasselov is showing agreement or confirmation of what has been discussed."
             }
         },
         {
@@ -1262,17 +1246,11 @@
             "screenshare_content": "None",
             "start_time": "25:17",
             "end_time": "27:07",
-            "annotations": [
-                {
-                    "expand on existing idea": "Rika expands on Greg's previous statement about evolutionary dead ends by discussing how early replicating networks evolve towards greater complexity, referencing the concept of Spiegelman's monster and the importance of environmental dynamism."
-                },
-                {
-                    "present new idea": "Rika presents the idea of linking natural selection with energy acquisition, questioning how these two concepts can be brought together in the context of early life."
-                },
-                {
-                    "ask clarifying question": "Rika asks what methods are needed to answer the questions about linking natural selection with energy acquisition, expressing her limitations with bioinformatics and suggesting experimental approaches."
-                }
-            ]
+            "annotations": {
+                "develop idea": "She expands on existing ideas and concepts related to the origin of life and prebiotic chemistry.",
+                "ask question": "Rika Anderson poses questions about linking natural selection with energy acquisition and the integration of different concepts.",
+                "identify gap": "She identifies a gap in understanding how to link natural selection with energy acquisition in early life stages."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1290,12 +1268,11 @@
             "screenshare_content": "None",
             "start_time": "27:07",
             "end_time": "27:14",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dimitar acknowledges Rika's contribution by thanking her for her points.",
-                    "encourage particpatioin": "Dimitar encourages Greg to speak since he raised his hand, inviting him to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "Acknowledge contribution": "The speaker is verbally recognizing another group member's input.",
+                "Develop idea": "The speaker is expanding on existing ideas by connecting them to other topics.",
+                "Encourage participation": "The speaker is inviting another group member to contribute their thoughts or ideas."
+            }
         },
         {
             "speaker": "Gregory Fournier",
@@ -1314,8 +1291,7 @@
             "start_time": "27:16",
             "end_time": "27:29",
             "annotations": {
-                "acknowledge contribution": "Gregory acknowledges Rika's contribution by stating he wanted to respond to her and that he liked her example of replicators, showing he recognizes her input.",
-                "express agreement": "Gregory expresses agreement with Rika's point about selection by saying he really likes her bringing up the usual selection and that the example she gave is fantastic."
+                "Supportive Response": "The speaker is expressing a positive evaluation and agreement with Rika's contribution, indicating a supportive response."
             }
         },
         {
@@ -1334,14 +1310,10 @@
             "screenshare_content": "None",
             "start_time": "27:29",
             "end_time": "28:41",
-            "annotations": [
-                {
-                    "present new idea": "Gregory suggests focusing on regimes capable of diversification, contrasting with systems under strong selection, which builds upon Rika's point about evolutionary dead ends and Spiegelman's monster."
-                },
-                {
-                    "expand on existing idea": "Gregory expands on Rika's point about evolutionary dead ends by suggesting that diversification requires relaxed selection, otherwise the system will narrow down to one ruthless solution."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about selection pressures and their impact on diversification, providing rationale and conditions necessary for systems to diversify and acquire new functions.",
+                "ask question": "The utterance embeds a challenge to the group's thinking about how diversification occurs, questioning the ability to diversify under certain selection pressures."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1359,11 +1331,9 @@
             "screenshare_content": "None",
             "start_time": "28:41",
             "end_time": "28:42",
-            "annotations": [
-                {
-                    "express agreement": "Dimitar is expressing agreement with Greg's point about the need for diversification and relaxed selection pressures for acquiring new functions."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -1382,8 +1352,7 @@
             "start_time": "28:44",
             "end_time": "28:56",
             "annotations": {
-                "expand on existing idea": "Shannon is expanding on the discussion about selection pressures and evolutionary dead ends brought up by Rika and Greg, suggesting that other evolutionary forces besides selection are also important.",
-                "ask clarifying question": "Shannon is asking if other forces of evolution are always at work, implying that selection is not the only factor to consider."
+                "ask question": "The speaker is asking a question about the role of other forces of evolution beyond selection, seeking clarification or input."
             }
         },
         {
@@ -1402,11 +1371,9 @@
             "screenshare_content": "None",
             "start_time": "28:56",
             "end_time": "29:02",
-            "annotations": [
-                {
-                    "ask clarifying question": "Rika is asking Shannon to elaborate on what she means by 'other forces of evolution at work', indicating a need for clarification on Shannon's statement."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting clarification or expansion on a previous statement, seeking further information."
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -1425,8 +1392,8 @@
             "start_time": "29:03",
             "end_time": "29:35",
             "annotations": {
-                "explain or define term or concept": "Shannon explains that she is not a biologist to contextualize her understanding of evolutionary forces.",
-                "express alternative decision": "Shannon expresses an alternative perspective to Greg's idea that selection will drive evolution to a single solution, suggesting other evolutionary forces are at play."
+                "Critical Response": "The speaker is pushing back on Greg's thought experiment, suggesting that other evolutionary forces like drift, mutation, and migration could influence outcomes, challenging the idea that selection drives to a single solution.",
+                "Ask Question": "The utterance implies a question or an alternative viewpoint to Greg's idea, though it's structured as a statement."
             }
         },
         {
@@ -1445,12 +1412,10 @@
             "screenshare_content": "None",
             "start_time": "29:35",
             "end_time": "29:45",
-            "annotations": [
-                {
-                    "expand on existing idea": "Betul expands on Shannon's idea that there are other forces of evolution at work besides selection, by stating that biological evolution may not be applicable in this context.",
-                    "present new idea": "Betul presents the idea that evolution is not owned by biology, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Betul Kacar explicitly states her own expertise as a biologist.",
+                "develop idea": "Betul Kacar expands on the idea of evolution and its applicability."
+            }
         },
         {
             "speaker": "Bet\u00fcl Ka\u00e7ar",
@@ -1468,11 +1433,10 @@
             "screenshare_content": "None",
             "start_time": "29:46",
             "end_time": "30:01",
-            "annotations": [
-                {
-                    "expand on existing idea": "Betul expands on Shannon's idea that there are other forces of evolution at work besides selection, by stating that chemical systems can have their own evolutionary responses that are not necessarily acting like a biological organism."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "The speaker is expanding on previous ideas about chemical systems and evolution, providing more insight into her perspective.",
+                "Identify gap": "The speaker notes a current limitation or gap in understanding, indicated by 'we are not yet at the'."
+            }
         },
         {
             "speaker": "Bet\u00fcl Ka\u00e7ar",
@@ -1490,14 +1454,11 @@
             "screenshare_content": "None",
             "start_time": "30:00",
             "end_time": "30:24",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Betul encourages Greg to add something to the discussion, building on the previous exchange about selection and evolution."
-                },
-                {
-                    "expand on existing idea": "Betul expands on the discussion about the transition from prebiotic chemistry to biology, mentioning the field's shift towards considering surfaces as the location for this transition, which builds on the previous discussion about chemical systems and evolution."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about the transition from prebiotic chemistry to life.",
+                "identify gap": "The speaker hints at a gap in understanding the transition from chemical mixtures to life.",
+                "offer feedback": "The speaker provides her viewpoint on the progression from prebiotic mixtures to life."
+            }
         },
         {
             "speaker": "Bet\u00fcl Ka\u00e7ar",
@@ -1516,8 +1477,8 @@
             "start_time": "30:24",
             "end_time": "30:44",
             "annotations": {
-                "expand on existing idea": "Betul is expanding on the existing discussion about the transition from prebiotic chemistry to biological systems, adding her perspective on the growing consensus around the locality of these events and the formation of meaningful networks.",
-                "provide supporting evidence": "Betul supports her point by stating that most of the participants in the conversation have mentioned the transition of early chemistries into more meaningful and biological network behavior."
+                "summarize conversation": "The speaker is summarizing her understanding of the previous discussions, focusing on the consensus and the transition of early chemistries into biological networks.",
+                "develop idea": "The speaker is expanding on previous ideas about the formation of networks from early chemistries and their transition into more biological structures."
             }
         },
         {
@@ -1536,17 +1497,11 @@
             "screenshare_content": "None",
             "start_time": "30:44",
             "end_time": "31:27",
-            "annotations": [
-                {
-                    "express frustration": "Betul expresses frustration about the lack of progress in replicating the transition from chemical mixtures to life in the lab, despite being able to synthesize molecules and amino acids."
-                },
-                {
-                    "propose decision": "Betul proposes brainstorming about what is missing in our understanding of the transition from chemical mixtures to life and what kind of experiments can be designed to test this transition."
-                },
-                {
-                    "encourage particpatioin": "Betul encourages others to brainstorm about the transition from chemical mixtures to life, expressing her own interest in the topic."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker recognizes a gap in knowledge or understanding about how to transition from synthesizing molecules to achieving a similar transition in the lab.",
+                "ask question": "The speaker asks questions about what is missing and how to design experiments to test the transition.",
+                "encourage participation": "The speaker invites others to brainstorm and discuss the issue."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1564,15 +1519,10 @@
             "screenshare_content": "None",
             "start_time": "31:27",
             "end_time": "31:46",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dimitar acknowledges Betul's point as very good, recognizing her input in the discussion.",
-                    "encourage particpatioin": "Dimitar encourages Jay to participate by giving him a minute to share his thoughts, promoting inclusivity in the discussion."
-                },
-                {
-                    "propose decision": "Dimitar proposes having a discussion on the topic of boundaries, suggesting a concrete choice for the group to focus on."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Dimitar is expanding on the conversation by suggesting a discussion on the points brought up, particularly by Betul.",
+                "encourage participation": "By mentioning Jay and wanting to give him a chance to speak, Dimitar is explicitly inviting someone else in the group to contribute."
+            }
         },
         {
             "speaker": "Jay Forsythe",
@@ -1590,20 +1540,9 @@
             "screenshare_content": "None",
             "start_time": "31:46",
             "end_time": "33:50",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Jay acknowledges Betul's point about the transition from chemical systems to life as interesting and expresses his desire to follow up on it."
-                },
-                {
-                    "present new idea": "Jay introduces the problem of how to differentiate between something in the middle of life and non-life, and how to measure it, which is a novel concept not previously discussed."
-                },
-                {
-                    "expand on existing idea": "Jay expands on the difficulty of measuring the continuum between life and non-life, building on Betul's point about the transition from chemical systems to life."
-                },
-                {
-                    "ask clarifying question": "Jay is trying to think of ways to differentiate something in the middle versus something that's alive versus not alive, which is a question about how to measure the transition from non-life to life."
-                }
-            ]
+            "annotations": {
+                "offer feedback": "Jay offers feedback on the difficulty of measuring complex systems."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -1622,15 +1561,9 @@
             "start_time": "33:51",
             "end_time": "34:21",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges Jay's contribution by saying \"thank you for bringing that up\"."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker expands on Jay's point by connecting it to Laurie's earlier point about distinguishing prebiotic chemistry with an instrument."
-                },
-                "provide supporting evidence": {
-                    "Explanation": "The speaker provides supporting evidence by mentioning their experience on a New Frontiers mission proposal for Enceladus where they grappled with distinguishing prebiotic chemistry from early life."
-                }
+                "acknowledge contribution": "The speaker acknowledges another's point and builds upon it.",
+                "supportive response": "The speaker is expressing agreement and validation of previous contributions.",
+                "clarify goal": "The speaker touches upon the goal of distinguishing prebiotic chemistry from early life."
             }
         },
         {
@@ -1650,8 +1583,9 @@
             "start_time": "34:21",
             "end_time": "34:39",
             "annotations": {
-                "propose decision": "The speaker proposes to discuss the topic further, building on the previous points made by Jake and others.",
-                "encourage particpatioin": "The speaker is encouraging participation by asking for practical ideas and protocols that the group could try and do."
+                "ask question": "The speaker requests practical ideas, protocols, or things to try and do.",
+                "encourage participation": "The speaker invites others to contribute their ideas and protocols.",
+                "supportive response": "The speaker agrees that the topic is great for discussion and shows a positive attitude towards further discussion."
             }
         },
         {
@@ -1671,7 +1605,8 @@
             "start_time": "34:39",
             "end_time": "34:43",
             "annotations": {
-                "encourage particpatioin": "Jay encourages Laurie to expand on her point, likely referring to her earlier question about distinguishing prebiotic chemistry from early life with instruments."
+                "encourage participation": "The speaker is inviting Laurie Barge to contribute more to the discussion by expanding on her idea.",
+                "ask question": "The speaker is requesting information or clarification from Laurie Barge on her previous statement."
             }
         },
         {
@@ -1691,7 +1626,8 @@
             "start_time": "34:43",
             "end_time": "35:15",
             "annotations": {
-                "expand on existing idea": "Laurie expands on the previous point about distinguishing prebiotic chemistry from early life with instruments, mentioning that instruments only capture a small amount of information and the organics are often degraded or oxidized."
+                "Develop Idea": "Laurie Barge is expanding on a previous idea about the limitations of instruments.",
+                "Identify Gap": "Laurie points out the gap in current analytical capabilities, specifically the limitation to degraded or oxidized organics."
             }
         },
         {
@@ -1711,8 +1647,9 @@
             "start_time": "35:15",
             "end_time": "35:40",
             "annotations": {
-                "expand on existing idea": "Laurie expands on the previous discussion about distinguishing prebiotic chemistry from early life, building on Jay's point about the difficulty of measuring the continuum between life and non-life.",
-                "propose decision": "Laurie proposes to conduct several main categories of prebiotic chemistry and then do directed reactions with minerals or temperature, suggesting a concrete action for the group to consider."
+                "propose new idea": "The speaker suggests a methodological approach to studying prebiotic chemistry and distinguishing it from life.",
+                "develop idea": "The speaker elaborates on the challenges of detecting prebiotic systems versus life and proposes a direction for research.",
+                "offer feedback": "The speaker provides a suggestion for how to approach the problem of distinguishing between prebiotic chemistry and life."
             }
         },
         {
@@ -1732,9 +1669,9 @@
             "start_time": "35:40",
             "end_time": "36:43",
             "annotations": {
-                "expand on existing idea": "Laurie expands on the previous discussion about distinguishing between life and non-life, building on Jay's point about the difficulty of measuring the continuum between them and Niki's experience with the Enceladus mission proposal.",
-                "provide supporting evidence": "Laurie provides supporting evidence by stating that many signs of a prebiotic system would look exactly like life to a Mars Rover, supporting the difficulty in distinguishing between the two.",
-                "explain or define term or concept": "Laurie explains that biology has harnessed geochemical phenomena, clarifying the relationship between the two in the context of distinguishing between prebiotic and biological reactions."
+                "develop idea": "The speaker is elaborating on the challenge of distinguishing between directed chemical reactions and biological reactions, building on previous discussions.",
+                "identify gap": "The speaker is highlighting a gap in understanding or methodology regarding distinguishing between directed and biological reactions.",
+                "offer feedback": "The speaker is providing a perspective on the challenge, emphasizing the role of geochemical phenomena in biology."
             }
         },
         {
@@ -1754,7 +1691,7 @@
             "start_time": "36:44",
             "end_time": "36:51",
             "annotations": {
-                "ask clarifying question": "Shannon is asking Laurie to define \"directed abiotic reactions\", indicating she needs clarification on a term Laurie used in the previous turn."
+                "ask question": "Shannon Mackenzie is requesting clarification from Laurie Barge on the term 'directed abiotic reactions', seeking a definition or explanation."
             }
         },
         {
@@ -1774,8 +1711,8 @@
             "start_time": "36:51",
             "end_time": "37:32",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the concept of directed abiotic reactions and how they can influence the distribution of products in a chemical network, contrasting it with biological reactions, which builds upon Shannon's request for clarification of the term 'directed abiotic reactions'.",
-                "expand on existing idea": "The speaker expands on the idea of distinguishing prebiotic chemistry from early life by describing how directed reactions can alter the distribution of products in a chemical network, building on the previous discussion about the challenges of differentiating between life and non-life with instruments."
+                "develop idea": "The speaker is expanding on an existing idea by providing a specific example and explanation of how chemical networks can be influenced by geochemical conditions.",
+                "offer feedback": "The speaker is providing detailed insights and expertise on understanding abiotic distributions and their variability, which serves as feedback on approaching the problem."
             }
         },
         {
@@ -1794,14 +1731,10 @@
             "screenshare_content": "None",
             "start_time": "37:33",
             "end_time": "38:12",
-            "annotations": [
-                {
-                    "present new idea": "Stilianos introduces the idea of using kinetics over time, specifically autocatalysis, to distinguish between abiotic and biotic reactions, which is a novel approach in the context of the discussion."
-                },
-                {
-                    "explain or define term or concept": "Stilianos explains autocatalysis as a process where a reaction makes more copies of itself, leading to faster reaction rates, clarifying its role in distinguishing biotic from abiotic reactions."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on distinguishing abiotic from biotic reactions through kinetics over time.",
+                "develop idea": "The speaker is expanding on existing ideas by discussing autocatalysis as a feature of life and its implications for distinguishing between abiotic and biotic reactions."
+            }
         },
         {
             "speaker": "Stilianos Louca",
@@ -1820,8 +1753,8 @@
             "start_time": "38:12",
             "end_time": "38:21",
             "annotations": {
-                "present new idea": "Stilianos introduces the idea that autocatalysis could be a signature of life or a biotically driven reaction network, which is a novel concept in the context of distinguishing abiotic from biotic reactions.",
-                "ask clarifying question": "Stilianos poses a question about whether autocatalysis could be considered a signature of life, seeking to clarify its potential role in distinguishing abiotic from biotic reactions."
+                "ask question": "The speaker is asking a question about autocatalysis as a potential signature of life.",
+                "propose new idea": "The speaker is introducing a new idea that autocatalysis could be considered a signature of life."
             }
         },
         {
@@ -1841,7 +1774,7 @@
             "start_time": "38:21",
             "end_time": "38:22",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges that the point Stilianos made about autocatalysis being a signature of life is something he learned from George Whitesides, recognizing Stilianos's input."
+                "acknowledge contribution": "The speaker acknowledges that they learned something from George Whitesides, recognizing his contribution to the field or discussion."
             }
         },
         {
@@ -1861,7 +1794,7 @@
             "start_time": "38:22",
             "end_time": "38:40",
             "annotations": {
-                "provide supporting evidence": "Dimitar is providing evidence to support the idea that distinguishing abiotic from biotic reactions is difficult, stating that we don't know enough about abiotic autocatalysis despite chemists' efforts."
+                "identify gap": "The speaker explicitly states a lack of knowledge about abiotic systems that are close to biotic ones, highlighting a gap in current research."
             }
         },
         {
@@ -1881,9 +1814,8 @@
             "start_time": "38:40",
             "end_time": "38:56",
             "annotations": {
-                "expand on existing idea": "Andrio is expanding on the idea of autocatalysis as a signature of life, building on Stilianos's suggestion and mentioning George Whitesides' work on autocatalytic reactions.",
-                "acknowledge contribution": "Andrio acknowledges Dimitar's connection to George Whitesides, a colleague, indicating he recognizes Dimitar's input or knowledge.",
-                "ask clarifying question": "Andrio is asking Jay if he is referring to time course monitoring, seeking clarification on Jay's earlier point about measuring the continuum between life and non-life."
+                "Ask question": "The speaker asks for clarification with 'is that,' seeking more information.",
+                "Develop idea": "The speaker discusses and relates existing ideas about autocatalytic papers and time course monitoring."
             }
         },
         {
@@ -1903,9 +1835,8 @@
             "start_time": "38:56",
             "end_time": "39:07",
             "annotations": {
-                "expand on existing idea": "Andrio is expanding on Stilianos' idea of using kinetics to distinguish abiotic from biotic reactions, suggesting that monitoring species over time would capture more of the system's behavior than snapshots, building on the idea of time course monitoring.",
-                "provide supporting evidence": "Andrio suggests that monitoring species over time would capture more of an actual system versus snapshots, implying that this approach would provide more comprehensive data.",
-                "present new idea": "Andrio presents the idea of monitoring species over time to capture the dynamics of a chemical system, suggesting that observing the repopulation of starting materials and the effects of adding enriching substances could provide valuable insights."
+                "Develop idea": "The speaker is elaborating on how to study chemical systems, suggesting that monitoring over time allows for the observation of the repopulation of starting materials and the effect of adding enriching substances.",
+                "Offer feedback": "The speaker is offering a suggestion for how to improve the experimental approach (monitoring over time)."
             }
         },
         {
@@ -1925,8 +1856,7 @@
             "start_time": "39:07",
             "end_time": "39:10",
             "annotations": {
-                "propose decision": "Andrio suggests time course monitoring as a way to move forward in distinguishing abiotic from biotic reactions, building on the discussion about kinetics and autocatalysis.",
-                "express frustration": "Andrio acknowledges that time course monitoring is a potential way forward, but expresses frustration by stating that it is a difficult approach."
+                "critical response": "The speaker expresses a challenge to the proposed approach by stating that it's hard, which can be seen as a form of criticism."
             }
         },
         {
@@ -1946,7 +1876,7 @@
             "start_time": "39:10",
             "end_time": "39:11",
             "annotations": {
-                "express agreement": "Dimitar is agreeing with Andrio's suggestion to monitor species over time to capture more of an actual system versus snapshots, which was a good point to discuss."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1966,7 +1896,7 @@
             "start_time": "39:11",
             "end_time": "39:12",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous statement that monitoring species over time to differentiate abiotic from biotic reactions is hard."
+                "supportive response": "The speaker is expressing agreement and validation of the difficulty discussed, without adding new content."
             }
         },
         {
@@ -1986,7 +1916,7 @@
             "start_time": "39:12",
             "end_time": "39:13",
             "annotations": {
-                "express frustration": "Dimitar expresses frustration about the difficulty of distinguishing abiotic from biotic reactions, which was the topic of the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2006,8 +1936,7 @@
             "start_time": "39:13",
             "end_time": "39:25",
             "annotations": {
-                "expand on existing idea": "Laurie is expanding on the previous discussion about distinguishing abiotic from biotic reactions, specifically addressing the idea of robustness as a distinguishing factor.",
-                "provide supporting evidence": "Laurie provides supporting evidence by stating that life, despite being considered robust, requires a cell to tightly control its physiological conditions for reactions to continue, suggesting that robustness alone isn't a clear differentiator."
+                "develop idea": "The speaker is expanding on an existing idea about life's robustness and its requirements at a cellular level."
             }
         },
         {
@@ -2027,7 +1956,8 @@
             "start_time": "39:25",
             "end_time": "39:32",
             "annotations": {
-                "provide supporting evidence": "This sentence provides a reason why prebiotic chemistry fails in geological settings, supporting a claim about the limitations of prebiotic chemistry in such environments."
+                "develop idea": "Laurie Barge is expanding on a previous point about the challenges of prebiotic chemistry, specifically discussing why it fails in geological settings.",
+                "identify gap": "Laurie Barge is highlighting a limitation or challenge (gap) in conducting prebiotic chemistry experiments in geological settings."
             }
         },
         {
@@ -2047,8 +1977,8 @@
             "start_time": "39:32",
             "end_time": "39:40",
             "annotations": {
-                "expand on existing idea": "This sentence expands on the previously discussed topic of distinguishing between prebiotic and biological systems, adding that prebiotic systems have more products than biological systems, which relates to Andro's earlier point about chemical systems responding to environmental changes.",
-                "provide supporting evidence": "The utterance provides supporting evidence for the difficulty in distinguishing between prebiotic and biological systems by stating that prebiotic systems have more products than biological systems, which supports the idea that it's hard to differentiate them with instruments."
+                "Develop idea": "The utterance expands on a previous idea by providing more insight or clarification.",
+                "Supportive response": "The utterance expresses agreement or validation of Andrew's point by further elaborating on it."
             }
         },
         {
@@ -2068,7 +1998,8 @@
             "start_time": "39:40",
             "end_time": "39:43",
             "annotations": {
-                "reject idea": "This utterance rejects the idea that prebiotic systems always have more products than biological systems, which was mentioned in the previous turn."
+                "develop idea": "The speaker is expanding on a previous discussion about biotic and abiotic chemistry by suggesting directed abiotic chemistry as an alternative perspective.",
+                "offer feedback": "The speaker is providing specific feedback by suggesting directed abiotic chemistry as a way to approach the challenge of distinguishing between biotic and abiotic systems."
             }
         },
         {
@@ -2088,9 +2019,8 @@
             "start_time": "40:00",
             "end_time": "40:26",
             "annotations": {
-                "expand on existing idea": "Laurie expands on the discussion about distinguishing abiotic from biotic reactions, building on previous points about the challenges of identifying life and non-life and the role of instruments.",
-                "provide supporting evidence": "Laurie provides supporting evidence based on her experience, stating that prebiotic chemistry often fails in geological settings because changing one parameter causes reactions to go haywire, supporting her point about the robustness of life.",
-                "ask clarifying question": "Laurie poses a rhetorical question about whether life is robust if you remove the cell membrane, prompting further consideration of the conditions required for reactions to continue."
+                "code name": "offer feedback",
+                "explanation": "The speaker provides a perspective on the robustness of reactions under different conditions."
             }
         },
         {
@@ -2110,9 +2040,8 @@
             "start_time": "40:27",
             "end_time": "41:15",
             "annotations": {
-                "present new idea": "The speaker introduces the idea that Darwinian evolution could be a key factor in the robustness of early life forms, contrasting it with abiotic chemistry's lack of adaptability.",
-                "expand on existing idea": "The speaker expands on the idea of robustness in the context of early life, building on Laurie's previous point about the robustness of life versus prebiotic chemistry by suggesting Darwinian evolution as a mechanism for adaptation and robustness in simpler life forms.",
-                "explain or define term or concept": "The speaker explains the concept of Darwinian evolution as a tool for life to adapt to change and ensure robustness, contrasting it with abiotic chemistry that lacks this adaptive capability."
+                "develop idea": "The speaker is expanding on the idea of robustness in simple life forms and the role of Darwinian evolution.",
+                "identify gap": "The speaker identifies a gap in the ability of chemical systems versus living systems to adapt to change."
             }
         },
         {
@@ -2132,7 +2061,8 @@
             "start_time": "41:16",
             "end_time": "41:18",
             "annotations": {
-                "expand on existing idea": "Jay's statement builds upon Stilianos's point about Darwinian evolution being a tool for robustness, adding that it's also a tool for reproducibility."
+                "supportive response": "The speaker is expressing agreement or validation with the previous discussion by highlighting the importance of reproducibility as a tool, likely referring to Darwinian evolution's role in ensuring reproducibility.",
+                "develop idea": "The speaker is expanding on the idea presented about Darwinian evolution and its implications, specifically mentioning reproducibility as a tool."
             }
         },
         {
@@ -2152,9 +2082,8 @@
             "start_time": "41:19",
             "end_time": "41:42",
             "annotations": {
-                "expand on existing idea": "Laurie expands on Stilianos's idea about Darwinian evolution as a tool for robustness, adding that it's also a tool for reproducibility of peptides or proteins.",
-                "express agreement": "Laurie explicitly agrees with Stilianos's point about Darwinian evolution being a tool for robustness.",
-                "provide supporting evidence": "Laurie provides supporting evidence by explaining how heritability and evolution allow for the consistent creation of complex molecules, contrasting this with the statistical outcomes of prebiotic reaction networks."
+                "develop idea": "Laurie Barge is expanding on the idea of reproducibility and its relation to heritability and evolution in a biological context.",
+                "signal expertise": "Laurie Barge demonstrates her expertise in biochemistry and the origin of life by discussing concepts like heritability, evolution, and the complexity of molecular reactions."
             }
         },
         {
@@ -2174,9 +2103,8 @@
             "start_time": "41:43",
             "end_time": "42:58",
             "annotations": {
-                "expand on existing idea": "Jay expands on the idea of robustness brought up by Laurie and Stilianos, suggesting that there can be too much robustness, which can limit chemical evolution.",
-                "provide supporting evidence": "Jay provides supporting evidence from his own work with wet-dry cycling, where hydrolysis (breaking down polymers) is a critical part of the process, suggesting that reactions shouldn't be too efficient.",
-                "express agreement": "Jay explicitly agrees with what Laurie was saying about robustness."
+                "develop idea": "The speaker is expanding on the concept of robustness and its implications for chemical evolution, discussing how a reaction can be too efficient or too robust.",
+                "supportive response": "The speaker is agreeing with previous points and adding his thoughts to the discussion, showing support for the conversation."
             }
         },
         {
@@ -2196,8 +2124,9 @@
             "start_time": "42:59",
             "end_time": "43:49",
             "annotations": {
-                "expand on existing idea": "Rika builds on Greg's earlier point about selection, drawing a parallel to prebiotic chemistry and the balance between sparsity and messiness, adding her own insights and experiences from past conversations and publications.",
-                "provide supporting evidence": "Rika mentions Shelley Copley's papers on sparsity in chemical networks and Steve Benner's analogy of ending up with 'tar' to support the idea that there needs to be a balance between messiness and sparsity in prebiotic chemistry and selection."
+                "develop idea": "Rika Anderson expands on existing ideas about prebiotic chemistry and selection by discussing the balance between messiness and sparsity.",
+                "acknowledge contribution": "She references and builds upon others' work, such as Greg's earlier point and Shelley Copley's publications.",
+                "supportive response": "The tone is constructive, aiming to find a balance between different approaches in a supportive manner."
             }
         },
         {
@@ -2217,7 +2146,7 @@
             "start_time": "43:49",
             "end_time": "43:49",
             "annotations": {
-                "express agreement": "Rika Anderson is agreeing to find the paper that was previously mentioned."
+                "supportive response": "The speaker expresses a positive intention to engage with the requested action, indicating a supportive attitude."
             }
         },
         {
@@ -2237,8 +2166,9 @@
             "start_time": "43:50",
             "end_time": "44:55",
             "annotations": {
-                "expand on existing idea": "Greg is expanding on the previous discussion about the balance between sparsity and messiness in chemical networks, adding that a sparse, autocatalytic system can coexist with other abiotic processes.",
-                "provide supporting evidence": "Greg provides a hypothetical scenario where a sparse autocatalytic system can exist within a backdrop of abiotic processes to support the idea of a balance between sparsity and messiness."
+                "develop idea": "The speaker is expanding on the concept of detection and the coexistence of different states of biological systems.",
+                "offer feedback": "The speaker provides a perspective on the potential for life systems to coexist with prebiotic ones.",
+                "clarify goal": "The speaker contributes to clarifying the understanding or goals in the discussion, specifically regarding the detection of early life forms."
             }
         },
         {
@@ -2258,7 +2188,7 @@
             "start_time": "44:56",
             "end_time": "45:00",
             "annotations": {
-                "ask clarifying question": "Dimitar is asking Greg to clarify his point, indicating he needs more information to understand it fully."
+                "ask question": "The speaker is requesting clarification on a point, indicating a need for more information or understanding."
             }
         },
         {
@@ -2278,8 +2208,7 @@
             "start_time": "45:20",
             "end_time": "46:14",
             "annotations": {
-                "explain or define term or concept": "Dimitar is clarifying Greg's point by framing it as a thought experiment about detecting life on a planet with abundant prebiotic chemistry, where life is using prebiotically produced monomers rather than creating its own.",
-                "ask clarifying question": "Dimitar is asking Greg to confirm his understanding of Greg's point about the coexistence of prebiotic chemistry and early life and its implications for detection."
+                "clarify goal": "The speaker is exploring a thought experiment to clarify the implications for detecting life on a planet with prevalent prebiotic chemistry, which relates to defining objectives or success criteria in origins of life research."
             }
         },
         {
@@ -2299,7 +2228,7 @@
             "start_time": "46:16",
             "end_time": "46:16",
             "annotations": {
-                "express agreement": "The speaker explicitly agrees with the statement made by Dimitar Sasselov in the previous turn."
+                "acknowledge contribution": "The speaker is acknowledging a prior statement or contribution from another group member."
             }
         },
         {
@@ -2319,7 +2248,7 @@
             "start_time": "46:17",
             "end_time": "46:17",
             "annotations": {
-                "express agreement": "Greg agrees with Dimitar's clarification of his point about the coexistence of prebiotic chemistry and early life, which connects to the previous discussion about detection challenges."
+                "supportive response": "The speaker is expressing agreement or confirmation with a previous statement."
             }
         },
         {
@@ -2339,7 +2268,7 @@
             "start_time": "46:38",
             "end_time": "46:46",
             "annotations": {
-                "express agreement": "Betul agrees with Greg's description of a scenario where living things subsist off prebiotically produced monomers, stating that it sounds like a lifelike behavior, indicating agreement with the idea presented."
+                "Supportive response": "The speaker expresses a positive evaluation of the scenario described, indicating agreement with the implications of finding a system with lifelike behavior."
             }
         },
         {
@@ -2359,7 +2288,7 @@
             "start_time": "46:49",
             "end_time": "46:52",
             "annotations": {
-                "reject idea": "Dimitar is rejecting the idea that the behavior described by Greg is lifelike, stating that it doesn't meet NASA's definition of life, which implies a disagreement with Betul's assessment."
+                "clarify goal": "The speaker is highlighting the importance of meeting the NASA definition, thereby clarifying goals or expectations."
             }
         },
         {
@@ -2379,7 +2308,7 @@
             "start_time": "46:52",
             "end_time": "46:57",
             "annotations": {
-                "express agreement": "Betul agrees with the idea that the NASA definition of life would change if we found something that doesn't fit the current definition but exhibits lifelike behavior, building on the discussion about detecting life in the context of prebiotic chemistry."
+                "clarify goal": "The speaker implies that if something lifelike is found, it will challenge and potentially change the current definition of life, reflecting on the goals or criteria for what is considered 'life'."
             }
         },
         {
@@ -2399,7 +2328,7 @@
             "start_time": "46:58",
             "end_time": "46:59",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2418,11 +2347,9 @@
             "screenshare_content": "None",
             "start_time": "47:01",
             "end_time": "47:03",
-            "annotations": [
-                {
-                    "express humor": "The speaker is making a humorous comparison to a mule, likely to lighten the mood after a complex discussion about the definition of life and its detection."
-                }
-            ]
+            "annotations": {
+                "Express humor": "The speaker makes a humorous comment by saying 'I would call it either does a mule,' which seems to be an unconventional or joking way to make a point."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -2441,7 +2368,7 @@
             "start_time": "47:04",
             "end_time": "47:05",
             "annotations": {
-                "express agreement": "Dimitar is agreeing with Greg's previous statement about the coexistence of prebiotic chemistry and early life, and how early life might subsist off of the monomers produced by prebiotic chemistry."
+                "None": "No relevant code strongly applies, but it could be considered a minimal supportive response or acknowledgment."
             }
         },
         {
@@ -2461,8 +2388,9 @@
             "start_time": "47:06",
             "end_time": "47:43",
             "annotations": {
-                "provide supporting evidence": "Gregory provides supporting evidence by relating the scenario to heterotrophy and autotrophy, arguing that the NASA definition of life has a weakness because heterotrophs depend on autotrophs for self-sustainment, similar to life forms subsisting on abiotically produced monomers.",
-                "explain or define term or concept": "Gregory explains the concept of heterotrophy by relating it to the scenario of life forms subsisting on abiotically produced monomers, clarifying how heterotrophs depend on autotrophs for self-sustainment."
+                "develop idea": "Gregory P. Fournier is expanding on previous discussions about life and its definition.",
+                "signal expertise": "He demonstrates his understanding of biological concepts such as heterotrophy and autotrophy.",
+                "critical response": "He is questioning or challenging the implications of a definition of life."
             }
         },
         {
@@ -2482,12 +2410,9 @@
             "start_time": "47:44",
             "end_time": "48:12",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges the value of the previous speaker's point, setting the stage for building upon it."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker builds upon the previous discussion about the definition of life by introducing a hypothesis about early phototrophs being photoheterotrophs, adding a specific example to the conversation."
-                }
+                "develop idea": "The speaker is expanding on the previous conversation by adding another perspective or piece of information, which in this case is an expert's hypothesis.",
+                "acknowledge contribution": "The speaker acknowledges a point made by someone else and adds information.",
+                "supportive response": "The utterance is supportive in nature as it builds upon and adds to the discussion."
             }
         },
         {
@@ -2507,7 +2432,7 @@
             "start_time": "48:13",
             "end_time": "48:35",
             "annotations": {
-                "provide supporting evidence": "Greg provides phylogenomic evidence to support Niki's point that early phototrophs were likely photoheterotrophs, referencing green non-sulfur bacteria as an example."
+                "develop idea": "The speaker is expanding on a previous idea by providing evidence from phylogenomic studies to support the statement about early phototrophs."
             }
         },
         {
@@ -2527,7 +2452,9 @@
             "start_time": "48:35",
             "end_time": "48:40",
             "annotations": {
-                "ask clarifying question": "Rika is asking a clarifying question about the distinction between 'defining life' and 'a living thing', which is relevant to the ongoing discussion about the transition from prebiotic chemistry to life and the challenges in defining life in a non-Earth-specific way."
+                "ask question": "The speaker is asking a question about the distinction between life and a living thing.",
+                "identify gap": "The speaker is highlighting a gap in understanding or terminology between life and a living thing.",
+                "clarify goal": "The speaker is seeking to clarify the goals or understandings related to the discussion on life and living things."
             }
         },
         {
@@ -2546,11 +2473,9 @@
             "screenshare_content": "None",
             "start_time": "48:40",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "express agreement": "Greg agrees with Rika's statement about the problem of defining life versus a living thing."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a minimal expression of agreement and does not add significant content to the discussion."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -2569,8 +2494,8 @@
             "start_time": "50:00",
             "end_time": "50:07",
             "annotations": {
-                "explain or define term or concept": "The speaker is framing the central question of the discussion, which is how to differentiate between abiotic and biotic transitions, setting the stage for further exploration of this concept.",
-                "express agreement": "The speaker agrees that distinguishing between abiotic and biotic transitions is quite difficult, which aligns with the challenges discussed by previous speakers like Jay and Laurie."
+                "ask question": "The speaker is explicitly asking a question about distinguishing between abiotic and biotic transitions.",
+                "identify gap": "The speaker recognizes the difficulty in distinguishing between abiotic and biotic transitions, indicating a gap in current understanding."
             }
         },
         {
@@ -2589,14 +2514,10 @@
             "screenshare_content": "None",
             "start_time": "50:10",
             "end_time": "50:55",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on the existing idea of detecting life by discussing how biology would utilize amino acids in a specific way, contrasting it with abiotic processes that would degrade or randomly polymerize them, building on the previous discussion about distinguishing between abiotic and biotic processes."
-                },
-                {
-                    "provide supporting evidence": "The speaker supports their idea by referencing a previous meeting where they discussed the concept of biology taking amino acids along a specific path, suggesting a consistent and distinct pattern that can be monitored."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on existing ideas about how to distinguish between biotic and abiotic systems.",
+                "offer feedback": "The speaker provides a suggestion on how to approach the problem of detecting life, proposing a method to monitor samples."
+            }
         },
         {
             "speaker": "Jay Forsythe",
@@ -2614,14 +2535,12 @@
             "screenshare_content": "None",
             "start_time": "50:56",
             "end_time": "52:08",
-            "annotations": [
-                {
-                    "present new idea": "Jay suggests that there are ways to differentiate biotic and abiotic molecules, which is a new idea in the context of the discussion about the transition from abiotic to biotic chemistry."
-                },
-                {
-                    "expand on existing idea": "Jay expands on the idea of distinguishing biotic and abiotic molecules by describing his lab's work with abiotic polymers and contrasting their statistical distribution of products with the non-statistical distribution of biological peptides, building on the previous discussion about detection methods."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Jay expands on the idea of distinguishing between biotic and abiotic molecules, providing examples from his experience.",
+                "signal expertise": "Jay mentions his experience making abiotic polymers in the lab.",
+                "identify gap": "Jay points out that the space for differentiating biotic and abiotic molecules hasn't been explored much.",
+                "offer feedback": "Jay provides suggestions for moving forward in understanding and differentiating biotic and abiotic molecules."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -2640,8 +2559,9 @@
             "start_time": "52:08",
             "end_time": "52:36",
             "annotations": {
-                "offer constructive criticism": "Laurie critiques Jay's statement that abiotic polymers have a statistical distribution of products, suggesting that directed reactions in monomer generation or polymerization mechanisms could lead to non-statistical distributions, implying that Jay's view might be oversimplified.",
-                "expand on existing idea": "Laurie expands on the discussion about distinguishing biotic from abiotic molecules by suggesting that directed reactions in monomer generation or polymerization mechanisms could lead to non-statistical distributions, building on Jay's point about statistical distributions in abiotic polymers."
+                "ask question": "The speaker is requesting information or clarification on the statistical nature of experimental distributions.",
+                "develop idea": "The speaker is expanding on an existing idea by providing her perspective based on her experience with experiments.",
+                "signal expertise": "The speaker is explicitly stating her familiarity with the type of experiments being discussed, indicating her expertise in the area."
             }
         },
         {
@@ -2660,17 +2580,11 @@
             "screenshare_content": "None",
             "start_time": "52:36",
             "end_time": "53:10",
-            "annotations": [
-                {
-                    "expand on existing idea": "Jay is expanding on Laurie's point about statistical distributions of abiotic polymers, acknowledging that amino acids have different reactivities due to solubility and sterics, which can affect the distribution of products."
-                },
-                {
-                    "acknowledge contribution": "Jay acknowledges Laurie's point about the potential for directed reactions to influence monomer generation and polymerization, leading to non-statistical distributions."
-                },
-                {
-                    "express agreement": "Jay explicitly agrees with Laurie's point that if monomers are products of other processes (protometabolism), the distribution of polymers would not be statistical."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by providing specific examples of challenges in experiments with amino acids.",
+                "signal expertise": "The speaker mentions his experience with amino acids and experiments in his lab, signaling his expertise.",
+                "supportive response": "The utterance provides a supportive view to previous discussions, agreeing with the points made."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -2689,9 +2603,8 @@
             "start_time": "53:10",
             "end_time": "53:30",
             "annotations": {
-                "provide supporting evidence": "Niki provides an example from her work on lipids, contrasting the distribution of carboxylic acids from Fisher Trope synthesis with biotic fatty acids, supporting the discussion on distinguishing abiotic from biotic molecules.",
-                "explain or define term or concept": "Niki explains that biotic fatty acids maximize longer chain lengths, which is optimal for membrane bilayer formation, clarifying a concept related to lipid distribution.",
-                "acknowledge contribution": "Niki acknowledges that the other participants are probably aware of the example she is about to give, recognizing their expertise."
+                "develop idea": "The speaker provides a specific example related to lipids and their distribution in biotic versus abiotic systems, building on the existing discussion about prebiotic chemistry and life.",
+                "signal expertise": "The speaker explicitly states their area of work (lipids), indicating their expertise in the field."
             }
         },
         {
@@ -2711,9 +2624,8 @@
             "start_time": "53:30",
             "end_time": "54:04",
             "annotations": {
-                "expand on existing idea": "The speaker suggests that the differences in patterns observed in lipids might translate to other building blocks, expanding on the previous discussion about distinguishing biotic from abiotic molecules.",
-                "acknowledge contribution": "The speaker acknowledges Laurie's good point, recognizing her input to the discussion.",
-                "propose decision": "The speaker proposes to circle back to Laurie's point for a few seconds, suggesting a concrete choice for the group to refocus the discussion."
+                "summarize conversation": "The speaker is referring back to a previous point made by Laurie and suggesting they discuss it further.",
+                "process management": "The speaker is managing the meeting flow by mentioning the time left."
             }
         },
         {
@@ -2732,14 +2644,11 @@
             "screenshare_content": "None",
             "start_time": "54:04",
             "end_time": "55:01",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Laurie encourages Laura to share her thoughts on multiple lines of evidence and different types of measurements within the context of a suite of instruments for a mission, building on the previous discussion about distinguishing abiotic from biotic processes."
-                },
-                {
-                    "present new idea": "Laurie presents a new idea that the origin of life and the mission thought process are similar, where you break life down into components and find abiotic ways for each to exist, and then all together it is life."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Laurie Barge expands on the idea of breaking down life into its components to study the origin of life and its implications for mission planning.",
+                "identify gap": "She touches upon the challenge of defining life and understanding its origin, indicating a gap in current knowledge.",
+                "clarify goal": "Laurie Barge reflects on the goals of studying the origin of life and how it informs the design of instruments for life detection missions."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -2758,9 +2667,8 @@
             "start_time": "55:01",
             "end_time": "55:55",
             "annotations": {
-                "expand on existing idea": "Laurie expands on the previous discussion about distinguishing between abiotic and biotic processes, focusing on how multiple lines of evidence are needed for biosignature identification, similar to how origin of life requires abiotic explanations for each component of life.",
-                "explain or define term or concept": "Laurie explains the concept of biosignature identification in the context of a mission, detailing the types of measurements needed, such as organic molecules, carbon isotopes, cell motility, and atmospheric detection.",
-                "provide supporting evidence": "Laurie provides examples of different types of measurements (organic molecules, carbon isotopes, cell motility, atmospheric detection) that can be used as evidence for biosignature identification, drawing parallels to the origin of life research."
+                "develop idea": "The speaker is expanding on the challenges and considerations for detecting biosignatures in a mission context.",
+                "ask question": "The speaker poses a question about the implications of detecting certain signs that could be either biotic or abiotic."
             }
         },
         {
@@ -2780,9 +2688,7 @@
             "start_time": "55:55",
             "end_time": "56:23",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Dimitar proposes focusing the summary on practical advice for colleagues, building on the discussion about distinguishing abiotic from biotic processes and the challenges in doing so."
-                }
+                "process management": "The speaker is suggesting a way to focus the summary in reporting and provide practical advice, which involves managing the meeting's output and flow."
             }
         },
         {
@@ -2802,8 +2708,8 @@
             "start_time": "56:23",
             "end_time": "56:32",
             "annotations": {
-                "express agreement": "Laurie expresses agreement with the 'boundaries concept' that Dimitar proposed, indicating she finds it useful.",
-                "expand on existing idea": "Laurie expands on the idea of 'boundaries concept' by stating that it removes the need to define life for understanding its origin or detecting it, building upon the previous discussion about the difficulties in defining life and the transition from abiotic to biotic chemistry."
+                "supportive response": "The speaker expresses a positive evaluation of the 'boundaries concept', indicating it simplifies the approach to defining life in the context of its origin or detection.",
+                "summarize conversation": "The utterance summarizes a conclusion from the discussion about the utility of the 'boundaries concept' in simplifying the approach to life detection and origin."
             }
         },
         {
@@ -2822,17 +2728,11 @@
             "screenshare_content": "None",
             "start_time": "56:32",
             "end_time": "58:09",
-            "annotations": [
-                {
-                    "reject idea": "Betul rejects the idea that the generation or creation of certain molecules or certain size of molecules can serve as a smoking gun for the origin of life, arguing that molecular size or complexity alone is not a reliable indicator."
-                },
-                {
-                    "present new idea": "Betul presents a new idea that the generation of persistent behavior is a more important indicator of life's potential than the size or complexity of molecules."
-                },
-                {
-                    "propose decision": "Betul proposes that missions should thoroughly analyze what happens over time to observe persistent behavior, but acknowledges the feasibility challenges of staying in one place for extended periods."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the idea of focusing on persistent behavior as an indicator of life.",
+                "develop idea": "The speaker elaborates on the limitations of using molecular size or complexity and explains the concept of persistent behavior.",
+                "critical response": "The speaker critiques the approach of relying on molecular indicators for detecting life."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -2850,11 +2750,9 @@
             "screenshare_content": "None",
             "start_time": "58:10",
             "end_time": "58:10",
-            "annotations": [
-                {
-                    "express agreement": "Niki is agreeing with Betul's point about the generation of certain molecules not serving as a smoking gun for life's origin, and the importance of persistent behavior."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -2873,15 +2771,9 @@
             "start_time": "58:10",
             "end_time": "58:44",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges the value of the discussion for his colleagues, the astronomers, recognizing the importance of the current conversation."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker expands on the idea of the discussion's value by stating that astronomers' approaches to life detection and biosignatures are often naive and simplified, and that this discussion could improve their awareness."
-                },
-                "propose decision": {
-                    "Explanation": "The speaker proposes that the discussion's insights should be a focus in the reporting from the session, suggesting a concrete choice for the group."
-                }
+                "Signal expertise": "Dimitar Sasselov mentions his and his colleagues' experience with writing proposals for life detection and biosignatures.",
+                "Process management": "He suggests focusing on certain aspects in their reporting.",
+                "Clarify goal": "The utterance aims to clarify the goal of discussing and reporting on life detection and biosignatures."
             }
         },
         {
@@ -2900,14 +2792,11 @@
             "screenshare_content": "None",
             "start_time": "58:44",
             "end_time": "59:13",
-            "annotations": [
-                {
-                    "expand on existing idea": "Rika is building on the previous discussion about the need to monitor systems over time to differentiate between biotic and abiotic processes, adding the consideration of the appropriate time scale for monitoring."
-                },
-                {
-                    "ask clarifying question": "Rika is asking about the appropriate time span to monitor something over time, which is a clarifying question related to the previous discussion about monitoring systems over time."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on a previous idea about monitoring something over time.",
+                "ask question": "The utterance contains a question about the time span for observations.",
+                "signal expertise": "Rika mentions her experience with time series work in the microbial world."
+            }
         },
         {
             "speaker": "Rika Anderson",
@@ -2925,11 +2814,9 @@
             "screenshare_content": "None",
             "start_time": "59:13",
             "end_time": "59:14",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance is cut off, but based on the prior turn, Rika was talking about monitoring something over time, so this utterance is likely expanding on that idea."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andro Rios",
@@ -2948,12 +2835,9 @@
             "start_time": "59:14",
             "end_time": "59:40",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Andro acknowledges Laurie's prior contribution about the organic chemical state, indicating recognition of her input."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Andro builds upon Laurie's idea by adding the comparison to existing knowledge of abiotic chemistry, suggesting an additional factor to consider."
-                }
+                "Develop idea": "Andro Rios is expanding on Laurie's idea about the organic chemical state by suggesting a comparison with existing knowledge of abiotic chemistry.",
+                "Ask question": "Andro Rios asks for a comparison with existing knowledge of abiotic chemistry.",
+                "Supportive response": "The utterance is supportive as it engages with and adds to Laurie's point."
             }
         },
         {
@@ -2973,7 +2857,7 @@
             "start_time": "59:40",
             "end_time": "59:43",
             "annotations": {
-                "expand on existing idea": "This utterance expands on Andro's previous statement about comparing the organic chemical state to existing knowledge of abiotic chemistry, adding that biotic chemistry should also be considered."
+                "acknowledge contribution": "The speaker is acknowledging or including biotic chemistry in the discussion, which can be seen as recognizing a contribution or aspect of the conversation."
             }
         },
         {
@@ -2993,7 +2877,8 @@
             "start_time": "59:43",
             "end_time": "59:43",
             "annotations": {
-                "express agreement": "Dimitar agrees with Laurie's previous statement about considering both abiotic and biotic chemistry, indicating his agreement with the point made."
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement.",
+                "acknowledge contribution": "The speaker is also acknowledging a previous statement as true."
             }
         },
         {
@@ -3013,12 +2898,8 @@
             "start_time": "59:43",
             "end_time": "59:50",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges Laurie's contribution by saying \"I think you brought up a good point\", recognizing her input to the discussion."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker expands on the discussion about life detection by stating that it's likely not going to be a binary yes/no detection, building upon the previous points about the difficulty of distinguishing between abiotic and biotic processes."
-                }
+                "acknowledge contribution": "The speaker is acknowledging Laura's previous point.",
+                "supportive response": "The speaker is expressing agreement and validation."
             }
         },
         {
@@ -3038,8 +2919,9 @@
             "start_time": "60:00",
             "end_time": "60:13",
             "annotations": {
-                "express enthusiasm": "Niki expresses excitement about characterizing potential habitability beyond just looking for liquid water and CHNOPS, indicating enthusiasm for advancing the search for life.",
-                "expand on existing idea": "Niki expands on the discussion about life detection by suggesting that characterizing potential habitability is a step further than just looking for basic elements, building on the previous discussion about the challenges of distinguishing biotic from abiotic processes."
+                "Develop idea": "The speaker is expanding on existing ideas about detecting habitability by suggesting moving beyond basic indicators.",
+                "Clarify goal": "The speaker is defining the goal of their research as characterizing potential habitability beyond basic indicators.",
+                "Supportive response": "The speaker is expressing a positive view towards advancing the characterization of habitability."
             }
         },
         {
@@ -3058,11 +2940,9 @@
             "screenshare_content": "None",
             "start_time": "60:14",
             "end_time": "60:14",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance as it is incomplete."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it is too minimal and does not explicitly convey any of the specified actions or content."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -3081,7 +2961,7 @@
             "start_time": "60:15",
             "end_time": "60:22",
             "annotations": {
-                "express enthusiasm": "Dimitar expresses enthusiasm about the Dragonfly mission, suggesting excitement about the possibility of finding something in the lakes of Titan, which aligns with the overall discussion about life detection and prebiotic chemistry."
+                "supportive response": "Dimitar Sasselov expresses a positive evaluation by stating his excitement about the Dragonfly mission."
             }
         },
         {
@@ -3100,17 +2980,10 @@
             "screenshare_content": "None",
             "start_time": "60:23",
             "end_time": "61:16",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Shannon mentions that Dragonfly is not going to the lakes because the sediments are more interesting and complex, providing a reason for a decision."
-                },
-                {
-                    "express agreement": "Shannon expresses agreement with Laurie's definition of placing things back along a spectrum, indicating support for a previously mentioned idea."
-                },
-                {
-                    "expand on existing idea": "Shannon expands on the discussion about distinguishing prebiotic chemistry from early life by suggesting that directed pathways might be part of the prebiotic sequence that we don't know yet, building upon Laurie's earlier points about directed reactions."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks a question about understanding the emergence of life and how it relates to defining prebiotic chemistry.",
+                "develop idea": "The speaker develops or builds upon existing ideas, specifically Laurie's definition and the concept of directed pathways in prebiotic chemistry."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -3128,14 +3001,11 @@
             "screenshare_content": "None",
             "start_time": "61:17",
             "end_time": "61:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laurie expands on the discussion about the challenges of distinguishing between biotic and abiotic processes, suggesting that life today is very specific and tied to its planet's evolution, and that evolution elsewhere could be different."
-                },
-                {
-                    "present new idea": "Laurie presents the idea that the goal should be to characterize organic chemical states of planets and understand what life is, rather than just looking for life elsewhere, because a definition of life is needed for both origin of life and life detection."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of life's specificity and the challenges of its definition for understanding life and its origins.",
+                "offer feedback": "The speaker provides a perspective on how research should be directed, focusing on characterizing organic chemical states and understanding life.",
+                "clarify goal": "The speaker discusses the goal of characterizing organic chemical states of planets and understanding what life is, highlighting the importance of a definition of life for research."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -3154,9 +3024,7 @@
             "start_time": "61:58",
             "end_time": "62:02",
             "annotations": {
-                "reject idea": {
-                    "Explanation": "Laurie expresses that she doesn't think we are ready to definitively say what is life and what is not, rejecting the idea of a binary classification."
-                }
+                "identify gap": "Laurie expresses a gap in current knowledge or readiness to make definitive statements about the origin of life or detection of life, indicating 'we're not ready yet'."
             }
         },
         {
@@ -3176,8 +3044,9 @@
             "start_time": "62:03",
             "end_time": "63:00",
             "annotations": {
-                "present new idea": "Gregory presents a novel concept that a planet with abundant complex organics but no life could be considered an 'anti-biosignature', suggesting the absence of life despite favorable conditions indicates a failure of life to emerge and consume the available resources.",
-                "provide supporting evidence": "Gregory supports his idea by reasoning that if a planet has had billions of years to develop life and abundant organic synthesis, the continued presence of those organics suggests life has not emerged to consume them and establish a biosphere."
+                "propose new idea": "The speaker introduces a new idea about considering a rich inventory of complex organics without life as an 'anti-biosignature'.",
+                "develop idea": "The speaker expands on previous discussions about life detection and biosignatures by proposing a hypothetical scenario.",
+                "identify gap": "The speaker highlights a gap in understanding regarding the origin of life and its detection in the absence of complex life forms."
             }
         },
         {
@@ -3197,7 +3066,9 @@
             "start_time": "63:00",
             "end_time": "63:07",
             "annotations": {
-                "ask clarifying question": "Laurie is asking a question to clarify what a planet would look like 100 million years after the origin of life, which is related to the ongoing discussion about detecting life and distinguishing it from prebiotic chemistry."
+                "ask question": "The utterance is a clear question about the appearance of life or biosignatures 100 million years after its origin.",
+                "develop idea": "It builds upon previous discussions about life detection and biosignatures.",
+                "identify gap": "The question implies a gap in understanding what life would look like at different evolutionary stages."
             }
         },
         {
@@ -3217,8 +3088,8 @@
             "start_time": "63:08",
             "end_time": "63:55",
             "annotations": {
-                "present new idea": "Gregory introduces the idea that even with the emergence of cellular life, abiotic organic synthesis and prebiotic systems would likely persist for some time, rather than immediately vanishing, until the biosphere diversifies enough to consume them, which is a novel concept not previously discussed.",
-                "expand on existing idea": "Gregory expands on the idea of the coexistence of abiotic and biotic processes, building on Laurie's earlier point about the difficulty of distinguishing between them and suggesting that the presence of abundant organics without a clear biosphere could be an 'anti-biosignature'."
+                "code name": "supportive response",
+                "explanation": "The speaker's comment is supportive in nature, providing an additional perspective rather than challenging or criticizing existing ideas."
             }
         },
         {
@@ -3238,8 +3109,8 @@
             "start_time": "63:55",
             "end_time": "64:06",
             "annotations": {
-                "expand on existing idea": "Greg is expanding on the idea of detecting life on a planet with prebiotic chemistry, suggesting that even with the emergence of life, prebiotic systems would likely persist in parallel for a long time, building on the previous discussion about the challenges of distinguishing between prebiotic chemistry and early life.",
-                "present new idea": "Greg introduces the idea that prebiotic and biotic systems can coexist for a long time, suggesting that the emergence of life does not necessarily eliminate prebiotic processes, which is a novel concept in the context of the discussion."
+                "code name": "develop idea",
+                "explanation": "The speaker is expanding on an existing idea by suggesting that different states of matter or systems can coexist over time, providing a perspective on their dynamics."
             }
         },
         {
@@ -3259,7 +3130,7 @@
             "start_time": "64:07",
             "end_time": "64:26",
             "annotations": {
-                "ask clarifying question": "Dimitar is asking Greg to clarify if he is referring to a scenario where Perseverance finds a thick layer of organics on Mars with no signs of life, to better understand Greg's point about detection challenges."
+                "ask question": "The speaker is requesting information or thoughts from Greg on a hypothetical scenario related to the discovery of organic material on Mars."
             }
         },
         {
@@ -3279,7 +3150,8 @@
             "start_time": "64:27",
             "end_time": "64:33",
             "annotations": {
-                "present new idea": "Greg presents the idea of a \"failed prebiotic world\" as a record of abundant organic synthesis that did not lead to life, which is a novel concept in the context of the discussion."
+                "Develop Idea": "The speaker is elaborating on an idea previously mentioned, specifically the concept of a 'failed prebiotic world.'",
+                "Supportive Response": "The speaker's comment engages with and builds upon previous ideas in the discussion."
             }
         },
         {
@@ -3298,11 +3170,9 @@
             "screenshare_content": "None",
             "start_time": "64:33",
             "end_time": "64:34",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code directly applies to this utterance as it seems to be an introductory phrase for a further discussion or point."
+            }
         },
         {
             "speaker": "Gregory Fournier",
@@ -3320,11 +3190,9 @@
             "screenshare_content": "None",
             "start_time": "64:34",
             "end_time": "64:37",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Greg acknowledges that his interpretation relies on several assumptions, recognizing the limitations of his previous statement about a 'failed prebiotic world' on Mars."
-                }
-            ]
+            "annotations": {
+                "critical response": "Gregory P. Fournie questions the interpretation of data by implying that it relies on many assumptions."
+            }
         },
         {
             "speaker": "Gregory Fournier",
@@ -3343,7 +3211,7 @@
             "start_time": "64:37",
             "end_time": "64:46",
             "annotations": {
-                "present new idea": "Greg is presenting a new idea about a possible end-member state of a prebiotic world, building on the discussion about distinguishing abiotic from biotic chemistry and the detection of life on other planets."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3363,7 +3231,8 @@
             "start_time": "64:48",
             "end_time": "64:58",
             "annotations": {
-                "propose decision": "The utterance suggests a concrete choice for the group, which is to start discussing what they should report, given the limited time left."
+                "process management": "The speaker is managing the meeting flow by suggesting what to do with the remaining time.",
+                "None": "No other relevant code applies to this utterance as it primarily focuses on managing the meeting process."
             }
         },
         {
@@ -3382,14 +3251,9 @@
             "screenshare_content": "None",
             "start_time": "64:59",
             "end_time": "65:17",
-            "annotations": [
-                {
-                    "assign task": "Niki mentions that Betul is filling out the slides, assigning her the task of working on them."
-                },
-                {
-                    "encourage particpatioin": "Niki encourages others to help with and view the slides, inviting participation from the team."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is sharing a link to slides and inviting the group to view and contribute to it, which involves managing the flow of information and potentially organizing group activities."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -3408,7 +3272,7 @@
             "start_time": "65:22",
             "end_time": "65:22",
             "annotations": {
-                "ask clarifying question": "Laurie is asking a clarifying question to Niki about which group they belong to, likely in reference to the slides Niki mentioned in the previous turn."
+                "process management": "The speaker is asking about which group they are part of, indicating a need to understand the meeting's organization or structure."
             }
         },
         {
@@ -3428,7 +3292,7 @@
             "start_time": "65:23",
             "end_time": "65:25",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3447,11 +3311,9 @@
             "screenshare_content": "None",
             "start_time": "65:24",
             "end_time": "65:24",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "This code applies because the utterance seems to be related to managing the meeting flow or referencing a specific agenda item or topic for discussion."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -3469,11 +3331,9 @@
             "screenshare_content": "None",
             "start_time": "65:25",
             "end_time": "65:31",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by referencing specific slides or sections."
+            }
         },
         {
             "speaker": "Jay Forsythe",
@@ -3491,11 +3351,10 @@
             "screenshare_content": "None",
             "start_time": "65:36",
             "end_time": "66:01",
-            "annotations": [
-                {
-                    "express agreement": "Jay agrees with the previous speakers that the detection of life or prebiotic chemistry will not be a binary 'yes or no' situation, but rather a spectrum of confidence or a need for further exploration."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement with others and validating the discussion.",
+                "Develop idea": "The speaker is elaborating on the idea that detecting life or prebiotic chemistry is not a straightforward yes/no outcome."
+            }
         },
         {
             "speaker": "Jay Forsythe",
@@ -3513,14 +3372,11 @@
             "screenshare_content": "None",
             "start_time": "66:01",
             "end_time": "67:12",
-            "annotations": [
-                {
-                    "present new idea": "Jay introduces the idea of considering error estimation in the context of differentiating between life and non-life, drawing an analogy from protein research where false discovery rates are used to quantify error, which is a novel concept in the current discussion."
-                },
-                {
-                    "expand on existing idea": "Jay expands on the discussion about distinguishing between life and non-life by suggesting the need to estimate error in assignments, drawing from protein research methods to illustrate how this could be approached quantitatively in the future."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Jay Forsythe is expanding on the idea of quantifying error and its importance in future assessments of life or potential life.",
+                "identify gap": "Jay Forsythe highlights the current limitation in quantifying confidence in life detection and the need for future consideration of error estimation.",
+                "offer feedback": "Jay Forsythe provides a suggestion for considering error estimation in future assessments."
+            }
         },
         {
             "speaker": "Laura Barge",
@@ -3539,7 +3395,7 @@
             "start_time": "67:13",
             "end_time": "67:14",
             "annotations": {
-                "express agreement": "The speaker expresses agreement with the slide's appearance, indicating a positive assessment of the work presented."
+                "supportive response": "The speaker is expressing agreement and a positive evaluation of the slide presentation."
             }
         },
         {
@@ -3558,12 +3414,10 @@
             "screenshare_content": "None",
             "start_time": "67:38",
             "end_time": "67:50",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Betul acknowledges that she took notes during the discussion, showing recognition of her own effort.",
-                    "assign task": "Betul assigns the task of reviewing the slides to others and requests someone else to do the verbal reporting, delegating responsibilities within the group."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses appreciation for the discussion and finds it valuable.",
+                "process management": "The speaker makes requests for help with tasks related to meeting outcomes."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -3582,7 +3436,7 @@
             "start_time": "67:50",
             "end_time": "67:51",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges Betul's contribution to the discussion."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input, in this case, thanking Betul."
             }
         },
         {
@@ -3602,7 +3456,7 @@
             "start_time": "67:51",
             "end_time": "67:53",
             "annotations": {
-                "acknowledge contribution": "Niki acknowledges Betul's contribution of taking notes during the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3622,8 +3476,9 @@
             "start_time": "67:57",
             "end_time": "68:11",
             "annotations": {
-                "encourage particpatioin": "Niki is asking for someone to volunteer to do the report out, encouraging participation from the group.",
-                "assign task": "Niki is trying to assign the task of reporting out to someone other than Betul, who is not feeling well."
+                "encourage participation": "The speaker is inviting others to contribute by volunteering for the report out.",
+                "process management": "The speaker is managing the meeting flow by seeking volunteers for a task.",
+                "assign task": "The speaker is seeking volunteers to do the report out during the session."
             }
         },
         {
@@ -3643,7 +3498,7 @@
             "start_time": "68:11",
             "end_time": "68:12",
             "annotations": {
-                "assign task": "Laurie volunteers to do the second part of the report out, taking on a specific task for the group."
+                "None": "No relevant code directly applies to this utterance as it primarily involves a simple volunteering or task acceptance rather than the explicitly defined codes."
             }
         },
         {
@@ -3663,7 +3518,7 @@
             "start_time": "68:12",
             "end_time": "68:15",
             "annotations": {
-                "acknowledge contribution": "Laurie acknowledges that she is not as familiar with the habitability stuff, recognizing the topic without agreeing or expanding on it."
+                "signal expertise": "The speaker explicitly states her lack of familiarity with a specific topic, signaling her expertise boundaries."
             }
         },
         {
@@ -3683,7 +3538,7 @@
             "start_time": "68:16",
             "end_time": "68:20",
             "annotations": {
-                "express enthusiasm": "Niki expresses enthusiasm and confidence in Laurie's ability to do the report, encouraging her to volunteer."
+                "supportive response": "The speaker expresses a positive evaluation of someone's ability to do a good job, which is a supportive response."
             }
         },
         {
@@ -3703,7 +3558,7 @@
             "start_time": "68:20",
             "end_time": "68:20",
             "annotations": {
-                "express enthusiasm": "Laurie expresses willingness to do the report out, showing a positive attitude towards the task."
+                "supportive response": "The speaker is showing agreement and willingness to take on a task."
             }
         },
         {
@@ -3723,7 +3578,7 @@
             "start_time": "68:21",
             "end_time": "68:22",
             "annotations": {
-                "express humor": "Gregory is making a lighthearted comment by asking Niki about the hot spring in her background, likely to lighten the mood at the end of the meeting."
+                "ask question": "The speaker is requesting information or clarification from another participant about a hot spring visible in the background."
             }
         },
         {
@@ -3743,7 +3598,7 @@
             "start_time": "68:22",
             "end_time": "68:30",
             "annotations": {
-                "explain or define term or concept": "Niki is explaining what the image in the background is, which is the Grand Prismatic Spring in Yellowstone."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3762,11 +3617,9 @@
             "screenshare_content": "None",
             "start_time": "68:31",
             "end_time": "68:41",
-            "annotations": [
-                {
-                    "express humor": "Gregory is making a lighthearted comment about the image Niki has as her background, expressing humor."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -3785,7 +3638,7 @@
             "start_time": "68:41",
             "end_time": "68:53",
             "annotations": {
-                "express humor": "The speaker expresses humor by sarcastically thanking COVID for causing her to miss her first field season in over 20 years."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3805,7 +3658,7 @@
             "start_time": "69:12",
             "end_time": "69:16",
             "annotations": {
-                "acknowledge contribution": "Betul is verbally recognizing her own input by stating that she added a note at the end, but not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3825,7 +3678,7 @@
             "start_time": "69:16",
             "end_time": "69:17",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges Betul's contribution to the discussion."
+                "acknowledge contribution": "The speaker verbally recognizes Betul's input by thanking her."
             }
         },
         {
@@ -3845,7 +3698,7 @@
             "start_time": "69:57",
             "end_time": "69:57",
             "annotations": {
-                "express agreement": "Laurie is expressing agreement with a previous statement, but the specific statement is unclear from the single utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3865,7 +3718,7 @@
             "start_time": "70:06",
             "end_time": "70:07",
             "annotations": {
-                "express agreement": "Jay Forsythe expresses agreement with the discussion that has been taking place, as indicated by his use of \"yes\"."
+                "acknowledge contribution": "Jay Forsythe is verbally recognizing the discussion or input from others with a thank you."
             }
         },
         {
@@ -3884,11 +3737,9 @@
             "screenshare_content": "None",
             "start_time": "70:00",
             "end_time": "70:07",
-            "annotations": [
-                {
-                    "offer constructive criticism": "None"
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -3907,7 +3758,7 @@
             "start_time": "70:11",
             "end_time": "70:14",
             "annotations": {
-                "assign task": "Niki is assigning the task of being named on the report to someone, likely Betul, who had been helping with the report but was feeling unwell."
+                "assign task": "Niki Parenteau is confirming the action item to add Betul Kacar's name to the report."
             }
         },
         {
@@ -3927,7 +3778,7 @@
             "start_time": "70:28",
             "end_time": "70:33",
             "annotations": {
-                "express humor": "Betul makes a humorous comment about the difficulty of understanding heritability, implying that it's a complex topic that many people struggle with."
+                "express humor": "The speaker makes a joke or lighthearted comment about the complexity of heritability, implying that it's not a straightforward concept for anyone to understand."
             }
         },
         {
@@ -3946,11 +3797,9 @@
             "screenshare_content": "None",
             "start_time": "70:36",
             "end_time": "70:47",
-            "annotations": [
-                {
-                    "ask clarifying question": "Dimitar is asking Shannon to clarify the destination of the Dragonfly mission, specifically whether it will target former lake beds instead of existing lakes, building on Shannon's earlier statement about the mission."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification from another group member (Shannon) about the Dragonfly mission's plans."
+            }
         },
         {
             "speaker": "Shannon Mackenzie",
@@ -3968,14 +3817,11 @@
             "screenshare_content": "None",
             "start_time": "70:47",
             "end_time": "72:03",
-            "annotations": [
-                {
-                    "reject idea": "Shannon is responding to Dimitar's question about Dragonfly going to the lakes on Titan by stating 'No', thus rejecting the initial assumption."
-                },
-                {
-                    "provide supporting evidence": "Shannon explains why Dragonfly is not going to the lakes, providing evidence about the spectral diversity and the presence of lake-associated sediments in the interdune areas, supporting the hypothesis that the dunes are more interesting."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker explains the Dragonfly mission's objectives and potential findings, providing details about the areas they will explore and what they hope to discover.",
+                "signal expertise": "The speaker demonstrates knowledge about the Dragonfly mission, its goals, and the geological features they are likely to encounter.",
+                "encourage participation": "The speaker shares her thoughts and hypotheses, inviting discussion and consideration of the mission's potential outcomes."
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -3994,7 +3840,7 @@
             "start_time": "72:04",
             "end_time": "72:25",
             "annotations": {
-                "ask clarifying question": "Niki asks how to distinguish biotic organics from other organics on Titan, given her lack of expertise on the topic, following a discussion about the Dragonfly mission to Titan and the potential for finding life there."
+                "ask question": "The speaker is requesting information on how to distinguish biotic organics from other organics on Titan, which is a clear example of asking a question."
             }
         },
         {
@@ -4014,7 +3860,8 @@
             "start_time": "72:26",
             "end_time": "72:36",
             "annotations": {
-                "ask clarifying question": "Shannon is asking for clarification on what Niki meant by 'potential biotic organics', specifically if she's referring to something lifelike but different from life as we know it, using liquid hydrocarbons instead of water, following Niki's question about distinguishing biotic organics in Titan's lakes."
+                "code name": "ask question",
+                "explanation": "The speaker is requesting information or clarification on a prior statement or idea."
             }
         },
         {
@@ -4034,7 +3881,8 @@
             "start_time": "72:36",
             "end_time": "72:57",
             "annotations": {
-                "ask clarifying question": "Niki is asking Shannon to clarify how to distinguish life in Titan's lakes from the abiotic organics, building on Shannon's previous explanation of Dragonfly's mission and the spectral diversity of the sediments."
+                "ask question": "The speaker is explicitly asking a question about distinguishing life from abiotic organics in certain environments.",
+                "identify gap": "The utterance implies a gap in current understanding or methodology regarding the distinction between biotic and abiotic organics."
             }
         },
         {
@@ -4054,7 +3902,7 @@
             "start_time": "72:57",
             "end_time": "73:01",
             "annotations": {
-                "ask clarifying question": "Shannon is asking Niki to clarify if she is referring to the subsurface ocean, seeking to understand the specific location being discussed in relation to potential life."
+                "ask question": "The speaker is requesting clarification on what was previously stated, indicating they are seeking more information."
             }
         },
         {
@@ -4074,7 +3922,7 @@
             "start_time": "73:01",
             "end_time": "73:02",
             "annotations": {
-                "express agreement": "Niki is agreeing with Greg's statement about heterotrophs and their dependence on autotrophs, which was made in response to Betul's comment about the NASA definition of life."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4094,9 +3942,7 @@
             "start_time": "73:02",
             "end_time": "73:28",
             "annotations": {
-                "expand on existing idea": "Shannon is expanding on Niki's question about distinguishing life in Titan's subsurface ocean by mentioning cryovolcanic eruptions as a potential mechanism for bringing ocean material to the surface, which could then be studied.",
-                "present new idea": "Shannon presents the idea of cryovolcanic eruptions bringing ocean material to the surface of Titan, which is a new concept in the context of the immediate discussion.",
-                "express uncertainty": "Shannon expresses uncertainty about whether cryovolcanic eruptions could bring ocean material to the surface of Titan and how it would interact with the organic chemistry there by saying \"I don't know.\""
+                "ask question": "The speaker is requesting information about a specific geological process on Titan and its potential effects on the planet's chemistry."
             }
         },
         {
@@ -4116,9 +3962,8 @@
             "start_time": "73:29",
             "end_time": "73:33",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Andro acknowledges Niki's question as being complex, recognizing the difficulty of the topic she raised."
-                }
+                "acknowledge contribution": "Andro Rios acknowledges Nikki's question, showing that he is engaged and considering her inquiry.",
+                "supportive response": "Andro Rios responds positively to Nikki's question, indicating a supportive attitude in the discussion."
             }
         },
         {
@@ -4137,11 +3982,9 @@
             "screenshare_content": "None",
             "start_time": "73:33",
             "end_time": "73:34",
-            "annotations": [
-                {
-                    "express humor": "Niki says \"Oh, sorry\" after Andro says that Niki asked the most complex question, which is a lighthearted way to acknowledge the difficulty of the question."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Niki Parenteau",
@@ -4160,7 +4003,7 @@
             "start_time": "73:38",
             "end_time": "73:40",
             "annotations": {
-                "encourage particpatioin": "Niki is encouraging someone else to participate in the conversation, as indicated by the phrase 'not to throw a wrench in the works, but', which suggests she is about to introduce a potentially disruptive or challenging idea and is inviting others to respond."
+                "express humor": "The speaker uses a colloquial and somewhat humorous expression to preface their upcoming statement, indicating a lighthearted way of introducing a potentially complicating factor."
             }
         },
         {
@@ -4180,7 +4023,7 @@
             "start_time": "73:41",
             "end_time": "73:42",
             "annotations": {
-                "express agreement": "Andro Rios expresses agreement with Niki Parenteau after she apologizes for asking a complex question about distinguishing life in Titan's subsurface ocean."
+                "None": "The utterance is a brief response that does not explicitly fit into any of the provided categories."
             }
         },
         {
@@ -4200,7 +4043,7 @@
             "start_time": "73:43",
             "end_time": "73:45",
             "annotations": {
-                "express enthusiasm": "Betul expresses excitement and appreciation for the discussion that has taken place."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4220,7 +4063,7 @@
             "start_time": "73:46",
             "end_time": "73:47",
             "annotations": {
-                "express agreement": "Jay is expressing agreement with the general sentiment of the discussion, indicating that he enjoyed the conversation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4240,7 +4083,7 @@
             "start_time": "73:51",
             "end_time": "73:52",
             "annotations": {
-                "express enthusiasm": "Dimitar expresses enthusiasm at the end of the meeting, saying it was great to see everyone."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4260,7 +4103,7 @@
             "start_time": "73:53",
             "end_time": "73:54",
             "annotations": {
-                "express enthusiasm": "Niki expresses enthusiasm for the discussion, indicating she enjoyed it."
+                "supportive response": "The speaker is expressing a positive evaluation and agreement, showing support for the group discussion."
             }
         },
         {
@@ -4280,8 +4123,7 @@
             "start_time": "73:55",
             "end_time": "73:57",
             "annotations": {
-                "express enthusiasm": "Dimitar expresses enthusiasm for the discussion that just occurred.",
-                "acknowledge contribution": "Dimitar acknowledges the contributions of the participants in the discussion."
+                "supportive response": "The speaker is expressing a positive evaluation of the discussion that has taken place, showing appreciation and satisfaction."
             }
         },
         {
@@ -4301,7 +4143,7 @@
             "start_time": "73:58",
             "end_time": "73:59",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4321,7 +4163,7 @@
             "start_time": "74:00",
             "end_time": "74:01",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         }
     ]

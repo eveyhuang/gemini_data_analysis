@@ -1,21 +1,21 @@
 {
     "all_speakers": [
-        "Sarah MacEachern",
-        "Cesar de la Fuente",
-        "Stephanie Cologna",
-        "Stavroula Hatzios",
-        "Mei Shen",
-        "Sarah Mckachern",
-        "Cesar de la Fuente Ure\u00f1a",
-        "Sarah Mackachern",
-        "Kai Zhang",
-        "Richard Wiener",
         "Amina Schartup",
-        "Erin Longbrake",
-        "Elizabeth Bess",
+        "Shawroulla Hatoum",
+        "Cesar de la Fuente",
         "Sheryl Hozier",
+        "Kai Zhang",
+        "Sarah Mackachern",
+        "Mei Shen",
+        "Elizabeth Bess",
+        "Cesar de la Fuente Ure\u00f1a",
+        "Stavroula Hatzios",
+        "Sarah Mckachern",
+        "Sarah MacEachern",
         "Barbara Bendlin",
-        "Shawroulla Hatoum"
+        "Erin Longbrake",
+        "Richard Wiener",
+        "Stephanie Cologna"
     ],
     "total_speaking_length": 2953,
     "all_data": [
@@ -36,7 +36,8 @@
             "start_time": "00:00",
             "end_time": "00:05",
             "annotations": {
-                "encourage participation": "Barbara is encouraging everyone to introduce themselves, inviting them to participate in the meeting."
+                "process management": "The speaker is managing the meeting flow by suggesting that everyone introduce themselves.",
+                "encourage participation": "The speaker is inviting all participants to contribute to the meeting by introducing themselves."
             }
         },
         {
@@ -56,7 +57,7 @@
             "start_time": "00:05",
             "end_time": "00:06",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -76,7 +77,7 @@
             "start_time": "00:06",
             "end_time": "00:07",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided in the codebook, as it is simply a statement of someone joining the meeting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -96,8 +97,8 @@
             "start_time": "00:08",
             "end_time": "00:11",
             "annotations": {
-                "express humor": "The speaker is making a lighthearted comparison between a person's face and a bot, implying the person's face is more appealing, which is intended as a joke.",
-                "acknowledge contribution": "The speaker thanks the participants for joining, acknowledging their contribution to the meeting."
+                "express humor": "The speaker makes a joke about preferring human faces over bot faces, indicating humor.",
+                "None": "No other relevant code applies to this utterance as it doesn't contain elements of proposing ideas, asking questions, providing feedback, or engaging in discussion about the task at hand."
             }
         },
         {
@@ -117,7 +118,7 @@
             "start_time": "00:11",
             "end_time": "00:14",
             "annotations": {
-                "express humor": "Richard is making a joke about Barbara's comment that his face is more pleasant than a bot, using self-deprecating humor about the low bar for the compliment."
+                "express humor": "The speaker makes a joke about the compliment being of a low threshold but still appreciates it, which is an explicit attempt to be humorous."
             }
         },
         {
@@ -137,7 +138,7 @@
             "start_time": "00:22",
             "end_time": "00:25",
             "annotations": {
-                "propose decision": "Barbara is suggesting a concrete choice for the group, which is to start with Stev Rula."
+                "process management": "This code applies because Barbara Bendlin is managing the meeting flow by suggesting they start with Stev Rula, organizing the group activity."
             }
         },
         {
@@ -156,11 +157,9 @@
             "screenshare_content": "None",
             "start_time": "00:27",
             "end_time": "01:07",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Stavroula introduces herself and her lab's research focus, explaining their work on chemical biology, microbiology, host-microbe interactions in the GI tract, and their study of proteins, enzymes, and metabolites related to H pylori infection and intestinal pathogens."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their position as an assistant professor at Yale and describes their lab's research, indicating their expertise in chemical biology and microbiology."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -179,8 +178,8 @@
             "start_time": "01:07",
             "end_time": "01:08",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges Stavroula's introduction by saying \"Cool, thank you.\"",
-                "encourage participation": "Barbara invites Kai to introduce himself by saying \"Kai.\""
+                "supportive response": "Barbara Bendlin expresses agreement and positive sentiment towards Stavroula's introduction.",
+                "process management": "Barbara Bendlin moves the meeting forward by calling on the next person to introduce themselves."
             }
         },
         {
@@ -200,8 +199,7 @@
             "start_time": "01:10",
             "end_time": "02:00",
             "annotations": {
-                "explain or define term or concept": "Kai is explaining his background and research interests to the group, defining the scope of his work in neuron development, regeneration, repair, and related signaling pathways.",
-                "present new idea": "Kai introduces his work on optogenetic systems and single molecule tracking strategies for visualizing and controlling signaling in live cells and developmental embryos, which is a novel concept in the context of the conversation so far."
+                "signal expertise": "The speaker explicitly states his position as a system professor, his department, and his research area, indicating his expertise."
             }
         },
         {
@@ -221,9 +219,7 @@
             "start_time": "02:00",
             "end_time": "02:06",
             "annotations": {
-                "acknowledge contribution": "Barbara thanks Kai for his introduction, acknowledging his contribution to the introductions.",
-                "express enthusiasm": "Barbara expresses enthusiasm about Kai's work, indicating excitement and positive reception.",
-                "encourage participation": "Barbara welcomes Angela and reminds everyone that they are introducing one another, encouraging her participation."
+                "Process Management": "Managing the introductions and flow of the meeting."
             }
         },
         {
@@ -243,7 +239,7 @@
             "start_time": "02:06",
             "end_time": "02:10",
             "annotations": {
-                "encourage participation": "Barbara Bendlin is inviting Stephanie to introduce herself, continuing the round of introductions."
+                "encourage participation": "This code applies because Barbara Bendlin is directly addressing and inviting Stephanie to contribute by introducing herself."
             }
         },
         {
@@ -263,7 +259,7 @@
             "start_time": "02:11",
             "end_time": "02:31",
             "annotations": {
-                "explain or define term or concept": "Stephanie explains that her lab uses mass spectrometry to understand neurodegeneration, focusing on measuring proteins and lipids, and also does mass spectrometry imaging, which clarifies the lab's research focus and methods."
+                "signal expertise": "The speaker explicitly states their name, position, and the focus of their laboratory, indicating their expertise area."
             }
         },
         {
@@ -283,7 +279,8 @@
             "start_time": "02:31",
             "end_time": "02:34",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges Stephanie's introduction before moving on to the next person, Sarah."
+                "acknowledge contribution": "Barbara Bendlin is verbally recognizing Stephanie's input.",
+                "encourage participation": "By addressing Sarah, Barbara Bendlin is inviting her to contribute or introduce herself."
             }
         },
         {
@@ -302,14 +299,10 @@
             "screenshare_content": "None",
             "start_time": "02:35",
             "end_time": "03:28",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that their lab will be working on precision medicine approaches to understanding neurodevelopmental disorders, like using machine learning applied to big data, to provide context for their research interests."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses excitement about the possibility of their past and present work coming together and the potential links between the microbiome and helping their patients."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke about not wanting to wake up from the excitement of her new position.",
+                "None": "No other codes explicitly apply to this introductory utterance."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -328,7 +321,8 @@
             "start_time": "03:28",
             "end_time": "03:31",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges Sarah's introduction, showing she is listening and appreciates the input."
+                "acknowledge contribution": "The speaker acknowledges Sarah's introduction with 'Thanks Sarah'.",
+                "process management": "The speaker seems to manage the meeting flow by moving to the next person or step with 'May.'"
             }
         },
         {
@@ -348,7 +342,7 @@
             "start_time": "03:32",
             "end_time": "03:33",
             "annotations": {
-                "encourage participation": "Barbara Bendlin is encouraging May to participate by pointing out that she is on mute."
+                "process management": "This code applies because Barbara Bendlin is managing the meeting flow by addressing a technical issue (someone being on mute)."
             }
         },
         {
@@ -367,14 +361,10 @@
             "screenshare_content": "None",
             "start_time": "03:37",
             "end_time": "04:54",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their research focus on developing nanometer scale neurotransmitter sensing probes, providing context for their work."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions that neurodegeneration often involves more than one kind of neurotransmitter, supporting their interest in probing multiple groups of small neurotransmitter molecules."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications related to her research in chemistry, neuroscience, and bioengineering.",
+                "None": "No other code directly applies as the utterance primarily serves as an introduction and statement of expertise without proposing new ideas, asking questions, or engaging in discussion."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -393,7 +383,8 @@
             "start_time": "04:54",
             "end_time": "04:56",
             "annotations": {
-                "acknowledge contribution": "Barbara thanks May for her introduction, acknowledging her contribution to the introductions."
+                "process management": "The speaker is managing the meeting flow by moving from one participant introduction to the next.",
+                "encourage participation": "The speaker is possibly inviting Amina to participate or contribute."
             }
         },
         {
@@ -412,14 +403,10 @@
             "screenshare_content": "None",
             "start_time": "04:57",
             "end_time": "05:51",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Amina explains her background as a chemical oceanographer and the focus of her work on organometallic compounds and trace metals, providing context for her expertise."
-                },
-                {
-                    "provide supporting evidence": "Amina provides supporting evidence by stating that mercury is a neurotoxicant linked to neurodegenerative diseases like Alzheimer's, connecting her work to the meeting's theme."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to their field of study.",
+                "None": "No other code seems to directly apply to the utterance as the primary action is self-introduction and stating one's expertise."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -438,7 +425,8 @@
             "start_time": "05:51",
             "end_time": "05:54",
             "annotations": {
-                "acknowledge contribution": "Barbara thanks Amina for her introduction, acknowledging her contribution to the introductions."
+                "acknowledge contribution": "Barbara Bendlin verbally recognizes Amina's input by thanking her.",
+                "process management": "Barbara Bendlin manages the meeting flow by moving on to the next person."
             }
         },
         {
@@ -457,17 +445,11 @@
             "screenshare_content": "None",
             "start_time": "05:55",
             "end_time": "07:03",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their background as a physical organic chemist and microbiologist, providing context for their research interests."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses excitement about the summaries shared by others and their interest in following up with them."
-                },
-                {
-                    "explain or define term or concept": "The speaker explains their lab's research on the role of gut bacteria in alpha synuclein aggregation, which is relevant to Parkinson's disease, thus explaining a concept."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on her research, providing details about her work on the chemistry of the microbiome and its intersection with neurobiology.",
+                "signal expertise": "The speaker explicitly states her background as a physical organic chemist and a microbiologist and describes her current research.",
+                "supportive response": "The speaker expresses excitement and interest in the summaries provided by others."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -486,8 +468,8 @@
             "start_time": "07:03",
             "end_time": "07:07",
             "annotations": {
-                "acknowledge contribution": "Barbara thanks Elizabeth for her introduction, acknowledging her contribution to the introductions.",
-                "encourage participation": "Barbara calls on Aaron to introduce himself, encouraging his participation."
+                "acknowledge contribution": "Barbara Bendlin is verbally recognizing Elizabeth's input.",
+                "encourage participation": "Barbara Bendlin invites Aaron to contribute by mentioning his name, encouraging him to participate in the discussion."
             }
         },
         {
@@ -506,11 +488,9 @@
             "screenshare_content": "None",
             "start_time": "07:08",
             "end_time": "07:34",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their research focus on the microbiome's role in autoimmune transitions, specifically in multiple sclerosis, to provide context for their expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Erin explicitly states her position as an assistant professor of neurology at Yale University, indicating her expertise."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -529,7 +509,7 @@
             "start_time": "07:42",
             "end_time": "07:43",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges Aaron's introduction, showing she is listening and appreciates his input."
+                "None": "No relevant code applies to this utterance as it is a simple acknowledgment without adding new content or context to the discussion."
             }
         },
         {
@@ -549,8 +529,8 @@
             "start_time": "07:43",
             "end_time": "08:03",
             "annotations": {
-                "propose decision": "Barbara proposes the decision to choose a reporter for the meeting.",
-                "encourage participation": "Barbara encourages participation by asking if anyone would like to volunteer as the reporter."
+                "process management": "The speaker is managing the meeting flow by suggesting to choose a reporter and to take a minute to write down thoughts.",
+                "assign task": "The speaker is assigning the task of being a recorder reporter to a volunteer."
             }
         },
         {
@@ -570,7 +550,8 @@
             "start_time": "08:03",
             "end_time": "08:04",
             "annotations": {
-                "encourage participation": "Barbara Bendlin is explicitly asking May to volunteer as the reporter for the group, encouraging her to participate."
+                "assign task": "Barbara Bendlin is directly asking Mei Shen to take on a specific role within the meeting, which aligns with the definition of assigning responsibility or roles.",
+                "encourage participation": "Barbara Bendlin is also encouraging Mei Shen to participate by offering her a specific role."
             }
         },
         {
@@ -590,7 +571,8 @@
             "start_time": "08:04",
             "end_time": "08:06",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges May and Stephanie's willingness to volunteer as recorder/reporter."
+                "Process Management": "Barbara Bendlin is managing the meeting flow by noting who has volunteered for the recorder reporter role.",
+                "Assign Task": "Barbara Bendlin is recognizing individuals who have volunteered for a specific task, which is related to assigning roles."
             }
         },
         {
@@ -610,8 +592,8 @@
             "start_time": "08:06",
             "end_time": "08:16",
             "annotations": {
-                "assign task": "Barbara assigns May the task of being the reporter and taking notes, and also requests Stephanie and others to take notes as well to help with compiling final thoughts.",
-                "propose decision": "Barbara proposes that May be the reporter and take notes, while Stephanie and others also take notes."
+                "process management": "The speaker is managing the meeting flow by proposing a task assignment and organizing group activities.",
+                "assign task": "The speaker is assigning responsibility to May to be the reporter and taking notes, and also asking others (specifically Stephanie) to take notes."
             }
         },
         {
@@ -631,7 +613,8 @@
             "start_time": "08:16",
             "end_time": "08:20",
             "annotations": {
-                "assign task": "Barbara is assigning the task of taking notes to multiple people, including May and Stephanie, to help with compiling final thoughts."
+                "process management": "This code applies because the utterance involves managing the process of note-taking during the meeting.",
+                "assign task": "This code could also apply as the utterance involves assigning the task of note-taking, albeit to multiple people."
             }
         },
         {
@@ -651,8 +634,8 @@
             "start_time": "08:20",
             "end_time": "09:25",
             "annotations": {
-                "explain or define term or concept": "The utterance explains the questions that the group will be discussing in the biomarker session, providing context for the subsequent discussion.",
-                "propose decision": "The utterance proposes that the group take a minute to reflect on the questions for the biomarker session, suggesting a course of action for the group."
+                "process management": "The speaker is managing the meeting flow by suggesting that the group take a minute to reflect on the questions for the biomarker session.",
+                "clarify goal": "The speaker is defining and clarifying the objectives for the session, specifically for the biomarker session, by stating the questions the group is considering."
             }
         },
         {
@@ -671,11 +654,9 @@
             "screenshare_content": "None",
             "start_time": "09:25",
             "end_time": "09:25",
-            "annotations": [
-                {
-                    "None": "This utterance does not contain any information."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Richard Wiener",
@@ -694,7 +675,7 @@
             "start_time": "09:26",
             "end_time": "09:30",
             "annotations": {
-                "assign task": "Richard is implicitly informing the group that he will not be able to fully participate due to other commitments, which is a form of task assignment where he is limiting his availability."
+                "process management": "The speaker is managing their participation in the meeting by informing the group that they will be jumping in and out of rooms."
             }
         },
         {
@@ -714,7 +695,7 @@
             "start_time": "09:30",
             "end_time": "09:30",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook, as it is simply a farewell."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -734,7 +715,7 @@
             "start_time": "09:31",
             "end_time": "09:32",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook, as it is simply a farewell."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -754,8 +735,8 @@
             "start_time": "09:39",
             "end_time": "09:48",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges Cesar's presence and apologizes for missing him earlier.",
-                "encourage participation": "Barbara invites Cesar to introduce himself to the group."
+                "encourage participation": "Barbara invites Cesar to introduce himself, encouraging his participation in the meeting.",
+                "process management": "Barbara is ensuring that all members, including those who joined late, are introduced, which helps in managing the meeting process."
             }
         },
         {
@@ -774,11 +755,9 @@
             "screenshare_content": "None",
             "start_time": "09:48",
             "end_time": "10:00",
-            "annotations": [
-                {
-                    "None": "This utterance is simply an introduction and does not fit any of the codes."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Cesar de la Fuente",
@@ -796,14 +775,10 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:12",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Cesar explains that his lab is interested in building tools to reprogram microbial communities, which clarifies the specific focus of their microbiome research."
-                },
-                {
-                    "express enthusiasm": "Cesar ends his introduction with \"Great to meet you all,\" which expresses enthusiasm for meeting the group."
-                }
-            ]
+            "annotations": {
+                "Signal expertise": "The speaker is stating their research focus and interests, which implies their expertise.",
+                "Clarify goal": "The speaker is defining their research focus and goals."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -822,12 +797,8 @@
             "start_time": "10:12",
             "end_time": "10:25",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Barbara thanks Cesar for his introduction, acknowledging his contribution to the meeting."
-                },
-                "encourage participation": {
-                    "Explanation": "Barbara encourages Cesar to participate by reflecting on microbial biomarkers and their application to disease, inviting him to write down his thoughts."
-                }
+                "Process Management": "The utterance involves directing the group's attention to a specific task and asking them to write down their thoughts, managing the meeting flow.",
+                "Clarify Goal": "The utterance aims to clarify the objective of the current session, which is to reflect on using microbial biomarkers and their application to disease."
             }
         },
         {
@@ -847,7 +818,7 @@
             "start_time": "10:25",
             "end_time": "10:25",
             "annotations": {
-                "express enthusiasm": "Cesar expresses enthusiasm after Barbara explains that they are reflecting on using microbial biomarkers and how they could be applied to disease."
+                "supportive response": "Cesar is expressing a positive sentiment to the discussion or invitation to reflect."
             }
         },
         {
@@ -867,7 +838,7 @@
             "start_time": "10:29",
             "end_time": "10:30",
             "annotations": {
-                "express agreement": "Cesar expresses agreement with Barbara's suggestion to reflect on microbial biomarkers and their application to disease."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -887,7 +858,8 @@
             "start_time": "10:59",
             "end_time": "11:31",
             "annotations": {
-                "ask clarifying question": "Kai is asking for a definition of 'biomarker of the micro bio' because he hasn't worked with it before, seeking clarification on what constitutes such a biomarker and how to approach the topic."
+                "Ask question": "The speaker is requesting information or clarification on what constitutes a biomarker of the microbiome.",
+                "Identify gap": "The speaker is identifying a gap in their knowledge regarding working with microbiome data and understanding biomarkers."
             }
         },
         {
@@ -907,15 +879,9 @@
             "start_time": "11:31",
             "end_time": "12:29",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Barbara acknowledges that Kai is raising an important question about the definition of a biomarker in the context of the microbiome."
-                },
-                "explain or define term or concept": {
-                    "Explanation": "Barbara explains the definition of a biomarker as a biological marker of a disease process, in response to Kai's question about how to define a biomarker of the microbiome."
-                },
-                "encourage participation": {
-                    "Explanation": "Barbara encourages the group to start the discussion by sharing their thoughts on what is important, relevant, or interesting regarding microbial biomarkers and neurological diseases."
-                }
+                "develop idea": "The speaker elaborates on the concept of a biomarker and its characteristics.",
+                "encourage participation": "The speaker invites others to pose questions and share their thoughts.",
+                "clarify goal": "The speaker defines and clarifies the objectives related to biomarkers."
             }
         },
         {
@@ -935,9 +901,7 @@
             "start_time": "12:29",
             "end_time": "13:17",
             "annotations": {
-                "present new idea": "Cesar introduces the idea of finding individual signatures or biomarkers, specifically secondary metabolites produced by different bacteria, to diagnose diseases, which is a novel approach not explicitly discussed before.",
-                "explain or define term or concept": "Cesar explains that his lab focuses on finding individual signatures or biomarkers, specifically secondary metabolites produced by different bacteria, and detecting them with methods like electrochemical and colorimetric methods.",
-                "expand on existing idea": "Cesar expands on the idea of microbial biomarkers by specifying that they focus on biomarkers of specific bacteria, not the whole microbiome, and mentions the importance of relative abundance within different microbiomes like gut, skin, and oral."
+                "develop idea": "Cesar explains his lab's approach to finding biomarkers, specifically secondary metabolites produced by different bacteria in the microbiome and their detection methods."
             }
         },
         {
@@ -957,7 +921,7 @@
             "start_time": "13:17",
             "end_time": "13:29",
             "annotations": {
-                "ask clarifying question": "Kai is asking Cesar to clarify where the biomarkers are collected from, specifically if it's along the entire GI tract or from specific segments, following up on Cesar's explanation of detecting biomarkers produced by specific bacteria."
+                "ask question": "The speaker is requesting clarification on how Cesar detects biomarkers, specifically about the location within the GI tract."
             }
         },
         {
@@ -977,8 +941,8 @@
             "start_time": "13:29",
             "end_time": "14:02",
             "annotations": {
-                "expand on existing idea": "Cesar expands on his previous statement about detecting biomarkers by clarifying that their current detection methods are in vitro, and he suggests that in vivo detection would be the next step.",
-                "ask clarifying question": "Cesar expresses uncertainty about how in vivo detection would work, which is a question about the feasibility of the next step in biomarker detection."
+                "develop idea": "Cesar is expanding on his previous statement by providing more details about their research approach, specifically about in vitro and potential future in vivo detection methods.",
+                "ask question": "He is also implicitly asking for thoughts on how to track biomarkers in vivo."
             }
         },
         {
@@ -998,7 +962,8 @@
             "start_time": "14:02",
             "end_time": "14:09",
             "annotations": {
-                "ask clarifying question": "Kai is asking Cesar to clarify his method of detecting biomarkers, specifically how he collects and analyzes the microbiome samples, building on Cesar's previous explanation of his approach."
+                "ask question": "The utterance is a question seeking clarification on the methodology used to collect and culture microbiome samples.",
+                "None": "No other relevant codes apply to this utterance."
             }
         },
         {
@@ -1017,14 +982,11 @@
             "screenshare_content": "None",
             "start_time": "14:09",
             "end_time": "14:52",
-            "annotations": [
-                {
-                    "expand on existing idea": "Cesar expands on his previous idea of detecting biomarkers by explaining how electrochemical techniques could be used on fecal or gut samples to assess the contribution of each microbe to the community."
-                },
-                {
-                    "present new idea": "Cesar presents a new idea of using wearable biosensors or pills with biosensors that can be ingested to track biomarkers in vivo, connecting to a cell phone via Bluetooth."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an idea by explaining how electrochemical techniques could be used to detect biomarkers and discussing potential applications.",
+                "offer feedback": "The speaker is providing suggestions for how to proceed with detecting biomarkers, including engineering wearables or pills with biosensors.",
+                "identify gap": "The speaker mentions not knowing how the method would work in vivo, indicating a gap in current knowledge."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -1043,8 +1005,8 @@
             "start_time": "15:03",
             "end_time": "15:44",
             "annotations": {
-                "ask clarifying question": "Mei is asking what kind of model (in vitro or in vivo) would be ideal for detecting biomarkers of microbial origin, building on Cesar's discussion of in vitro detection methods.",
-                "propose decision": "Mei proposes that they should start with in vitro studies and then move on to in vivo studies, suggesting a specific approach to the research."
+                "ask question": "Mei Shen is asking a question about what kind of model would be ideal for their research.",
+                "develop idea": "Mei Shen is expanding on the idea of choosing a research model by discussing in vitro and in vivo studies."
             }
         },
         {
@@ -1064,10 +1026,9 @@
             "start_time": "15:44",
             "end_time": "16:52",
             "annotations": {
-                "present new idea": "Erinn introduces a new approach to identifying biomarkers for early-stage neurological diseases, suggesting starting with patient cohorts and screening them for differences.",
-                "expand on existing idea": "Erinn expands on the discussion about biomarkers by suggesting a specific approach: starting with patient cohorts with early-stage neurological diseases to identify potential biomarkers.",
-                "provide supporting evidence": "Erinn supports her idea by mentioning Elizabeth's work with Alpha synuclein as an example of a disease with a well-defined early phenotype.",
-                "offer constructive criticism": "Erinn offers constructive criticism by pointing out the limitations of models when studying early-stage neurological diseases and suggesting starting with human patients instead."
+                "develop idea": "Erinn is expanding on her approach to finding biomarkers for early-stage neurological diseases, providing details on starting with patient cohorts.",
+                "acknowledge contribution": "Erinn mentions Elizabeth's work with Alpha as an example, acknowledging her contribution.",
+                "critical response": "Erinn expresses concerns about the limitations of models for studying early-stage neurological diseases."
             }
         },
         {
@@ -1087,8 +1048,7 @@
             "start_time": "16:52",
             "end_time": "18:11",
             "annotations": {
-                "expand on existing idea": "Elizabeth expands on the discussion about biomarkers for neurological diseases, particularly Parkinson's, by suggesting that it's multifactorial and unlikely to have a single predictor, building on Erinn's point about starting with patient cohorts.",
-                "acknowledge contribution": "Elizabeth acknowledges Erinn's point about starting with real-life observations in people before moving to models, recognizing her input to the discussion."
+                "supportive response": "The utterance expresses agreement and validation of others' approaches without adding new content."
             }
         },
         {
@@ -1108,9 +1068,8 @@
             "start_time": "18:11",
             "end_time": "19:24",
             "annotations": {
-                "expand on existing idea": "Stephanie is building on the discussion about biomarkers and early stage neurological diseases by adding the importance of considering the design strategy and whether the analysis is hypothesis-driven or discovery-based, expanding on the previous discussion about identifying biomarkers.",
-                "explain or define term or concept": "Stephanie explains the difference between specific assays for specific molecules and a true discovery based analysis, clarifying different approaches to biomarker discovery.",
-                "provide supporting evidence": "Stephanie supports her point by highlighting the importance of considering the origin of molecules (host or bacterium) and the challenge of dealing with previously undescribed molecules, providing further considerations for biomarker research."
+                "develop idea": "Stephanie is expanding on the discussion about how to approach finding biomarkers, considering design strategies and implications of different approaches.",
+                "ask question": "She poses questions about the nature of the analysis (targeted vs. discovery-based) and how to address the origin and novelty of molecules."
             }
         },
         {
@@ -1130,9 +1089,8 @@
             "start_time": "19:24",
             "end_time": "19:59",
             "annotations": {
-                "express agreement": "Kai agrees with Aaron's suggestion to start with the disease when looking for biomarkers, building on the previous discussion about identifying biomarkers of microbial origin for neurological diseases.",
-                "expand on existing idea": "Kai expands on the idea of starting with the disease by explaining that metabolites generated by microbes need to go through multiple layers of information processing, such as epithelial cells and neuronal cells, to become relevant biomarkers, building on the previous discussion about identifying biomarkers of microbial origin for neurological diseases.",
-                "explain or define term or concept": "Kai explains the role of epithelial cells as an information node that processes metabolites and influences neuronal cells, clarifying the complex pathway involved in biomarker generation, building on the previous discussion about identifying biomarkers of microbial origin for neurological diseases."
+                "develop idea": "Kai Zhang is expanding on Aaron's idea about starting from the disease, adding his thoughts on how microbial metabolites are processed through multiple layers of cellular interactions.",
+                "ask question": "Kai Zhang poses questions about the role and function of epithelial cells in processing metabolites and their output."
             }
         },
         {
@@ -1152,9 +1110,9 @@
             "start_time": "20:00",
             "end_time": "20:41",
             "annotations": {
-                "expand on existing idea": "Kai expands on the discussion about biomarkers and neurological diseases by mentioning that different diseases might share a common mechanism, building on the previous discussion about identifying biomarkers for early-stage neurological diseases.",
-                "provide supporting evidence": "Kai provides supporting evidence by stating that in Alzheimer's and Parkinson's disease, the protein trafficking system has some defects, which supports the idea that different diseases might share a common mechanism.",
-                "ask clarifying question": "Kai asks a clarifying question about whether there is a known spectrum of neurological diseases that have a definite connection with the microbiome, seeking to understand the relationship between neurological diseases and the microbiome based on the discussion."
+                "ask question": "The speaker is asking a question about the connection between neurological diseases and the microbiome.",
+                "develop idea": "The speaker is expanding on his thoughts about the relationship between neurological diseases and the microbiome.",
+                "acknowledge contribution": "The speaker acknowledges Elizabeth's contribution by referencing her mention of Parkinson's disease."
             }
         },
         {
@@ -1174,8 +1132,8 @@
             "start_time": "20:41",
             "end_time": "21:06",
             "annotations": {
-                "explain or define term or concept": "Barbara is summarizing and clarifying Kai's point about biomarkers representing dysfunctional mechanisms rather than specific pathologies, ensuring everyone understands the concept being discussed.",
-                "expand on existing idea": "Barbara is building upon Kai's previous statements about the biomarkers and their relation to neurological diseases by rephrasing it and offering a potential implication."
+                "Develop Idea": "The speaker is expanding on previous ideas about biomarkers, clarifying the understanding of how they relate to pathologies and mechanisms.",
+                "Ask Question": "The speaker is seeking confirmation or further clarification on the understanding of biomarkers, even though it's phrased as a statement."
             }
         },
         {
@@ -1195,9 +1153,8 @@
             "start_time": "21:06",
             "end_time": "21:55",
             "annotations": {
-                "expand on existing idea": "Kai is building on the previous discussion about biomarkers and their relationship to neurological diseases, adding details about how biomarkers might trigger a cascade of responses in epithelial cells and then affect neurons.",
-                "explain or define term or concept": "Kai is explaining his understanding of how a biomarker from the microbiome can act as a trigger, leading to a cascade of responses, with the epithelial cell acting as an intermediate effector.",
-                "provide supporting evidence": "Kai provides a mechanistic explanation of how epithelial cells in the intestine, with receptors for both metabolites and neurotransmitters, could act as an information hub, transferring signals from the microbiome to the neuronal system."
+                "develop idea": "The speaker is expanding on an existing idea about biomarkers and their potential mechanisms of action in the body.",
+                "ask question": "The speaker's discussion is inquiring into the mechanisms and roles of biomarkers, although not in the form of a direct question."
             }
         },
         {
@@ -1216,13 +1173,10 @@
             "screenshare_content": "None",
             "start_time": "21:57",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sarah builds on the discussion about biomarkers by introducing the concept of 'bottom-up' versus 'top-down' approaches to biomarker discovery, contrasting basic science and clinical perspectives, which relates to the previous discussion about defining biomarkers.",
-                    "explain or define term or concept": "Sarah explains the 'top-down' approach to biomarker discovery, contrasting it with the 'bottom-up' approach, and defines a biomarker as a collection of things forming a signature rather than a single lab test, which is meant to clarify the concept of biomarkers in the context of the discussion.",
-                    "present new idea": "Sarah introduces the idea that a biomarker could be a collection of things forming a signature, rather than a single lab test, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by discussing approaches to identifying biomarkers, specifically the bottom-up and top-down approaches.",
+                "ask question": "The speaker is seeking to contribute to the discussion and perhaps clarify their thoughts by sharing their perspective on biomarkers."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -1240,11 +1194,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Mei Shen expresses agreement with Sarah's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or validation with the previous statements, without adding new content."
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1263,7 +1215,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker, Sarah Mckachern, who was describing a biomarker as a collection of things that's almost like a fingerprint."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1283,7 +1235,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point about biomarkers being a collection of things, like a fingerprint."
+                "None": "No relevant code applies to this utterance as it's a very brief acknowledgment."
             }
         },
         {
@@ -1303,7 +1255,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Mei Shen expresses agreement with Sarah's point that a biomarker is a collection of things, like a fingerprint."
+                "None": "The utterance is a minimal acknowledgment that does not fit into any specific code category as it does not explicitly support, question, or expand on previous statements."
             }
         },
         {
@@ -1323,7 +1275,8 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point about biomarkers being a collection of things that form a fingerprint."
+                "Supportive response": "The speaker is expressing agreement with a previous statement.",
+                "Acknowledge contribution": "The speaker is also acknowledging a contribution, even if briefly."
             }
         },
         {
@@ -1343,7 +1296,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point about biomarkers being a collection of things that form a fingerprint, rather than a single lab test."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1363,7 +1316,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with Sarah Mckachern's point that a biomarker is a collection of things, like a fingerprint, and not just one thing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1383,7 +1336,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point about biomarkers being a collection of things, like a fingerprint."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1403,7 +1356,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth is agreeing with Sarah's point about biomarkers being a collection of things that form a fingerprint, rather than a single lab test."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1423,7 +1376,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1443,7 +1396,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1463,7 +1416,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point about biomarkers being a collection of things, forming a fingerprint-like signature."
+                "supportive response": "The speaker is expressing agreement or validation to a previous statement."
             }
         },
         {
@@ -1483,7 +1436,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is agreeing with Sarah Mckachern's point about biomarkers being a collection of things that form a fingerprint, rather than a single lab test."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1503,7 +1456,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point."
+                "Supportive response": "The speaker is expressing agreement or validation with a previous statement, which is a supportive response without adding new content."
             }
         },
         {
@@ -1523,155 +1476,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point."
-            }
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth is agreeing with Sarah's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": {
-                "express agreement": "Elizabeth Bess is agreeing with Sarah Mckachern's point about biomarkers being a collection of things that form a fingerprint, as well as the top-down approach to finding biomarkers in the whole person."
-            }
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth is explicitly agreeing with Sarah's point about biomarkers being a collection of things, like a fingerprint."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": {
-                "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point about biomarkers being a collection of things forming a fingerprint, rather than a single entity."
-            }
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is expressing agreement with the previous speaker's point."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth is agreeing with Sarah's point about biomarkers being a collection of things, like a fingerprint, rather than a single lab test."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": {
-                "express agreement": "Elizabeth Bess is explicitly agreeing with Sarah Mckachern's point about biomarkers being a collection of things, like a fingerprint."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1691,7 +1496,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is explicitly agreeing with Sarah Mckachern's point about biomarkers being a collection of things forming a fingerprint."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1711,96 +1516,8 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point."
+                "None": "No relevant code applies to this utterance"
             }
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point, indicating she supports the idea being discussed."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1819,30 +1536,8 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess is explicitly agreeing with Sarah Mckachern's point about biomarkers being a collection of things forming a fingerprint, rather than a single lab test."
+                "None": "No relevant code applies to this utterance"
             }
-        },
-        {
-            "speaker": "Elizabeth Bess",
-            "timestamp": "03:17-03:17",
-            "transcript": "Yes.",
-            "speaking_duration": 0,
-            "nods_others": 0,
-            "smile_self": 0.0,
-            "smile_other": 0.0,
-            "distracted_others": 0,
-            "hand_gesture": "None",
-            "interuption": "No",
-            "overlap": "No",
-            "screenshare": "No",
-            "screenshare_content": "None",
-            "start_time": "23:17",
-            "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1861,7 +1556,7 @@
             "start_time": "23:17",
             "end_time": "23:17",
             "annotations": {
-                "express agreement": "Elizabeth Bess expresses agreement with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1880,11 +1575,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance 'Yes.' is a simple acknowledgment that does not fit into any of the provided codes as it does not convey any specific action, idea, or response beyond acknowledgment."
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1902,11 +1595,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with Sarah Mckachern's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1924,11 +1615,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1946,11 +1635,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1968,11 +1655,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -1990,11 +1675,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2012,11 +1695,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things rather than one single thing."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2034,11 +1715,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things, like a fingerprint."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2056,11 +1735,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth is agreeing with Sarah's point about biomarkers being a collection of things rather than one single thing, as Sarah was discussing a top-down approach to finding biomarkers in autism."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2078,11 +1755,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things, like a fingerprint."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2100,11 +1775,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth explicitly agrees with Sarah's point about biomarkers being a collection of things forming a fingerprint, rather than a single lab test."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2122,11 +1795,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess explicitly agrees with Sarah Mckachern's point about biomarkers being a collection of things forming a fingerprint, rather than a single entity, in the context of neurological diseases like autism."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2144,11 +1815,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with Sarah Mckachern's point about biomarkers being a collection of things rather than a single entity."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2166,11 +1835,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess explicitly agrees with the previous speaker's point about biomarkers being a collection of things rather than a single entity."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance 'Yes.' is a clear expression of agreement or acknowledgment of a previous statement, which aligns with the definition of a supportive response."
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2188,11 +1855,10 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess explicitly agrees with the previous speaker's point."
-                }
-            ]
+            "annotations": {
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "Supportive response": "The speaker expresses agreement or validation for other group members' contributions."
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2210,11 +1876,9 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess is explicitly agreeing with the previous speaker's point about biomarkers being a collection of things rather than a single entity."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Elizabeth Bess",
@@ -2232,11 +1896,250 @@
             "screenshare_content": "None",
             "start_time": "23:17",
             "end_time": "23:17",
-            "annotations": [
-                {
-                    "express agreement": "Elizabeth Bess agrees with Sarah Mckachern's point about biomarkers being a collection of things rather than a single entity, as indicated by the string of 'yes' responses following Sarah's statement."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement or validation for a prior statement."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "Supportive response": "The speaker, Elizabeth Bess, is expressing agreement or acknowledgment with a previous statement, which is a supportive response without adding new content."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "Supportive response": "The utterance 'Yes.' is a simple affirmative response that expresses agreement or validation."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "Acknowledge contribution": "The speaker acknowledges a previous statement.",
+                "Supportive response": "The speaker expresses agreement or validation."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "supportive response": "The speaker, Elizabeth Bess, is expressing agreement with a previous statement, which is a supportive response."
+            }
+        },
+        {
+            "speaker": "Elizabeth Bess",
+            "timestamp": "03:17-03:17",
+            "transcript": "Yes.",
+            "speaking_duration": 0,
+            "nods_others": 0,
+            "smile_self": 0.0,
+            "smile_other": 0.0,
+            "distracted_others": 0,
+            "hand_gesture": "None",
+            "interuption": "No",
+            "overlap": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "start_time": "23:17",
+            "end_time": "23:17",
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or acknowledgment to a prior statement."
+            }
         },
         {
             "speaker": "Stephanie Cologna",
@@ -2255,8 +2158,8 @@
             "start_time": "30:00",
             "end_time": "30:14",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on the discussion about biomarker discovery strategies, specifically addressing the relevance of biomarkers to neurological diseases.",
-                "ask clarifying question": "Stephanie is checking her understanding of Erin's proposal, asking for confirmation about starting biomarker discovery in the brain and working backwards."
+                "ask question": "Stephanie Cologna is seeking clarification on Erin's proposal by stating 'unless I misunderstood Erin, I think what you were proposing was actually starting in the brain and trying to go the other direction.'",
+                "acknowledge contribution": "Stephanie Cologna is referencing Erin's previous statement and showing that she has been paying attention to the discussion."
             }
         },
         {
@@ -2276,9 +2179,9 @@
             "start_time": "30:14",
             "end_time": "31:10",
             "annotations": {
-                "expand on existing idea": "Erin expands on the discussion about biomarkers and neurological diseases by suggesting that the approach depends on the specific disease being studied, building on the previous discussion about different strategies for biomarker discovery.",
-                "propose decision": "Erin proposes a decision to focus on diseases with early phenotypes, such as Parkinson's with sleep disorders, and to compare gut metabolites between affected individuals and healthy controls, suggesting a specific approach for biomarker research.",
-                "provide supporting evidence": "Erin provides supporting evidence for her approach by mentioning that human studies are useful for getting a big picture and clues, while causality is better established through mice and in vitro models, justifying the need to start with human cohorts and then move to models."
+                "develop idea": "Erin is expanding on the idea of how to approach studying early-stage neurological diseases by suggesting starting with diseases that have well-defined early phenotypes and using human studies as a starting point.",
+                "signal expertise": "Erin is sharing her expertise in the field, particularly in studying multiple sclerosis and the microbiome.",
+                "offer feedback": "Erin provides suggestions for how to approach the problem, which can be seen as offering feedback."
             }
         },
         {
@@ -2298,7 +2201,7 @@
             "start_time": "31:10",
             "end_time": "31:13",
             "annotations": {
-                "express agreement": "Stephanie explicitly agrees with Erin's point about the importance of human studies for getting a big picture and clues, and the difficulty of establishing causality without using mice and dishes."
+                "Supportive Response": "The speaker is expressing agreement with a previous statement, showing a positive evaluation without adding new content."
             }
         },
         {
@@ -2318,7 +2221,7 @@
             "start_time": "31:13",
             "end_time": "31:18",
             "annotations": {
-                "present new idea": "Stephanie introduces a new idea by suggesting that the group consider other molecules besides metabolites when searching for biomarkers, as the discussion has focused heavily on metabolites."
+                "ask question": "The speaker is requesting information or consideration of other molecules beyond metabolites, questioning the focus on metabolites."
             }
         },
         {
@@ -2337,17 +2240,10 @@
             "screenshare_content": "None",
             "start_time": "31:22",
             "end_time": "31:37",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stephanie mentioned metabolites, and Stavroula expands on this by mentioning that she focuses on proteins, enzymes, and peptides, suggesting these are also important biomarkers."
-                },
-                {
-                    "acknowledge contribution": "Stavroula acknowledges Stephanie's comment about metabolites before expanding on her own focus on proteins."
-                },
-                {
-                    "express agreement": "Stavroula agrees with Stephanie's comment about metabolites by saying she appreciates the comment."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Stavroula is expanding on the discussion about molecules to consider, shifting focus to proteins, enzymes, and peptides.",
+                "supportive response": "Stavroula is showing agreement and support for considering proteins, enzymes, and peptides as important molecules."
+            }
         },
         {
             "speaker": "Erin Longbrake",
@@ -2366,9 +2262,9 @@
             "start_time": "31:41",
             "end_time": "32:05",
             "annotations": {
-                "expand on existing idea": "Erin expands on the discussion about biomarkers and neurological diseases by introducing the immune system as another important factor to consider, building on the previous discussion about metabolites and proteins.",
-                "provide supporting evidence": "Erin mentions their background as a neuroimmunologist to support the importance of considering the immune system's role in mediating pathology between the microbiome and the brain.",
-                "present new idea": "Erin introduces the concept of the immune system as a 'third party mediator' between the microbiome and the brain, suggesting it plays a role in mediating pathology through metabolites or epitopes."
+                "signal expertise": "The speaker explicitly states her expertise as a neuroimmunologist.",
+                "develop idea": "The speaker expands on the idea by explaining the immune system's role in mediating pathology between the microbiome and the brain.",
+                "offer feedback": "The speaker provides feedback by suggesting that the immune system's role in pathology cannot be ruled out."
             }
         },
         {
@@ -2388,9 +2284,9 @@
             "start_time": "32:09",
             "end_time": "33:12",
             "annotations": {
-                "expand on existing idea": "Stavroula expands on the discussion about biomarkers by introducing the idea of using volatile compounds as biomarkers, inspired by a previous comment and her own research on H. pylori breath tests.",
-                "provide supporting evidence": "She supports her idea by mentioning the existence of super-smelling humans and trained dogs that can detect volatiles associated with Parkinson's and other neuropathologies, as well as the H. pylori breath test based on bacterial urease production.",
-                "express enthusiasm": "Stavroula expresses enthusiasm for the potential of small molecule volatiles as biomarkers."
+                "develop idea": "Stavroula expands on the idea of volatiles as potential biomarkers, discussing their relevance and mentioning related research.",
+                "signal expertise": "Stavroula mentions her work on H pylori and a breath test, signaling her expertise in certain areas.",
+                "offer feedback": "Stavroula provides an example from her research, potentially offering a way to explore volatiles as biomarkers."
             }
         },
         {
@@ -2410,9 +2306,9 @@
             "start_time": "33:13",
             "end_time": "33:59",
             "annotations": {
-                "expand on existing idea": "Elizabeth expands on the discussion about biomarkers by introducing the idea that some metabolites or proteins can have dual effects, being beneficial in some contexts but detrimental in others, building on the previous discussion about the complexity of biomarkers.",
-                "provide supporting evidence": "Elizabeth provides the example of short-chain fatty acids, which are generally considered beneficial but can trigger neuroinflammatory responses in Parkinson's disease, supporting her point about the dual effects of metabolites.",
-                "explain or define term or concept": "Elizabeth explains the concept that biomarkers are not usually one single thing, but rather a 'fingerprint' or collection of things, clarifying the complexity of identifying biomarkers for neurological diseases."
+                "develop idea": "Elizabeth Bess is expanding on the idea that metabolites can have dual effects and are part of a complex system.",
+                "signal expertise": "Elizabeth Bess is showing her expertise in the field, particularly in the context of Parkinson's disease and metabolites.",
+                "offer feedback": "She is providing feedback on how to approach the understanding of metabolites and their effects."
             }
         },
         {
@@ -2431,14 +2327,11 @@
             "screenshare_content": "None",
             "start_time": "34:00",
             "end_time": "35:32",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kai builds on Elizabeth's point about the complexity of biomarkers by suggesting focusing on the circuit involving the microbiome, epithelial cells, and neurons, adding a specific approach to investigate epithelial cell receptors and their ligand preferences."
-                },
-                {
-                    "present new idea": "Kai proposes a two-step process involving identifying relevant biomarkers from human patients and then validating and predicting their effects by transferring fecal samples to germ-free animals to recapitulate the pathology."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new approach for understanding the microbiome's impact on neurological diseases by suggesting starting from the epithelial cell.",
+                "develop idea": "The speaker expands on this idea by proposing a two-step process for identifying and validating biomarkers.",
+                "ask question": "The speaker asks questions about the receptors expressed by epithelial cells and their ligand preferences."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -2457,8 +2350,9 @@
             "start_time": "35:32",
             "end_time": "36:10",
             "annotations": {
-                "expand on existing idea": "Mei is expanding on the idea of using germ-free animals, which was discussed with Star and the team, to study the effects of introducing bacteria and observing changes, such as neurotransmitter release, to gain insights into the process.",
-                "propose decision": "Mei proposes putting bacteria back into germ-free animals to observe changes, such as neurotransmitter release, to gain information about the process."
+                "propose new idea": "Mei Shen suggests a specific experimental approach using germ-free animals to study the effects of bacteria on neurological processes.",
+                "develop idea": "The utterance builds upon previously discussed ideas about studying the microbiome's influence on neurological diseases by suggesting a specific experimental method.",
+                "offer feedback": "Mei Shen offers a suggestion for how to proceed with research."
             }
         },
         {
@@ -2478,7 +2372,8 @@
             "start_time": "36:10",
             "end_time": "36:24",
             "annotations": {
-                "expand on existing idea": "Mei is building on the discussion by adding to the list of factors that influence neurological diseases, mentioning genetic and environmental factors like diet, history, and exercise, which were previously discussed."
+                "Develop idea": "Mei Shen is expanding on the idea by mentioning environmental factors in addition to genetic factors.",
+                "Supportive response": "She is expressing agreement and validation for considering both genetic and environmental factors."
             }
         },
         {
@@ -2498,8 +2393,9 @@
             "start_time": "36:24",
             "end_time": "36:59",
             "annotations": {
-                "present new idea": "Mei Shen introduces a new idea about developing a more complex strategy to normalize environmental factors, which hasn't been discussed before.",
-                "encourage participation": "Mei Shen ends her turn by asking 'Any thoughts here everybody?', which is a direct invitation for others to share their perspectives on the idea of normalizing environmental factors."
+                "propose new idea": "The speaker suggests developing a more complex strategy to normalize environmental factors.",
+                "ask question": "The speaker asks for thoughts from others, 'Any thoughts here everybody?'",
+                "encourage participation": "The speaker invites others to contribute their thoughts."
             }
         },
         {
@@ -2518,14 +2414,13 @@
             "screenshare_content": "None",
             "start_time": "37:01",
             "end_time": "38:10",
-            "annotations": [
-                {
-                    "expand on existing idea": "Elizabeth is expanding on the discussion about models (in vitro, in vivo) by describing her lab's work with germ-free mice and their approach to model selection, building on Mei Shen's previous turn about germ free animals."
-                },
-                {
-                    "offer constructive criticism": "Elizabeth offers constructive criticism by pointing out the limitations of using specific mouse models of disease, suggesting they can create problems due to accelerated processes and general stress, which can modulate the measured fingerprint in the system."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on an existing idea by discussing the use of mouse models in research, specifically in the context of studying Parkinson's disease and the potential drawbacks of these models.",
+                "signal expertise": "The speaker signals her expertise in the area of research involving mouse models and their application in studying disease.",
+                "identify gap": "The speaker highlights the limitations of using specific mouse models of disease, noting that these models can introduce stress and inflammation, which may not accurately represent human disease conditions.",
+                "critical response": "The speaker critically evaluates the use of specific mouse models of disease, pointing out potential drawbacks.",
+                "offer feedback": "The speaker provides feedback on research approaches, specifically discussing the limitations of certain mouse models."
+            }
         },
         {
             "speaker": "Stephanie Cologna",
@@ -2544,8 +2439,7 @@
             "start_time": "38:11",
             "end_time": "39:01",
             "annotations": {
-                "ask clarifying question": "Stephanie is asking Elizabeth to clarify if she is proposing to use healthy animals to understand the role of the microbiome in brain health, building on Elizabeth's previous comments about germ-free mice and Parkinson's models.",
-                "expand on existing idea": "Stephanie expands on Elizabeth's idea of using healthy animals by asking how this approach could be used to identify early signatures for all neurological diseases, building on the discussion about the role of the microbiome in brain health."
+                "develop idea": "Stephanie is discussing and developing the idea of using healthy animals to understand the role of the microbiome in brain health and its potential as an early signature for neurological diseases."
             }
         },
         {
@@ -2565,10 +2459,7 @@
             "start_time": "40:00",
             "end_time": "40:52",
             "annotations": {
-                "expand on existing idea": "Elizabeth is expanding on the discussion about biomarkers and neurological diseases, specifically Parkinson's, by discussing the presence of alpha synuclein in the brain and the work being done to understand its origins.",
-                "provide supporting evidence": "Elizabeth provides supporting evidence by mentioning the discovery that alpha synuclein is found in the intestine years before motor dysfunction, supporting the idea of a gut-brain connection in Parkinson's.",
-                "explain or define term or concept": "Elizabeth explains the concept of Louis bodies, which are found in the brains of Parkinson's patients, to provide context for the discussion.",
-                "present new idea": "Elizabeth presents a new idea by stating that they have a very precise mechanism that shows how gut bacteria are specifically triggering alpha synuclein, suggesting a specific causal link."
+                "clarify goal": "The speaker seems to be aiming to understand the mechanism of how gut bacteria trigger alpha synuclein in Parkinson's disease."
             }
         },
         {
@@ -2588,9 +2479,9 @@
             "start_time": "40:52",
             "end_time": "41:42",
             "annotations": {
-                "propose decision": "Elizabeth proposes moving the system into germ-free mice to observe if a specific state induces alpha synuclein aggregation, which is a concrete choice for the group to consider.",
-                "expand on existing idea": "Elizabeth expands on her previous idea of using healthy animals to understand the role of the microbiome in brain health by suggesting moving the system into germ-free mice and then going back to human studies to validate findings.",
-                "provide supporting evidence": "Elizabeth provides a rationale for her approach by mentioning that this method allows them to identify factors that can push a system in a certain direction, which can then be validated in human populations."
+                "develop idea": "expanding on a research approach and providing specifics on testing a hypothesis related to microbial biomarkers and neurological diseases.",
+                "clarify goal": "explaining the purpose and potential outcomes of the proposed research steps.",
+                "summarize conversation": "outlining a methodological approach that builds on prior discussions."
             }
         },
         {
@@ -2609,11 +2500,10 @@
             "screenshare_content": "None",
             "start_time": "41:43",
             "end_time": "42:40",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stephanie expands on the discussion about disease models by stating that she works on a genetic neurodegenerative disease, which is different from idiopathic diseases discussed earlier, and wonders how the microbiome affects the aging brain in the context of genetically-caused neurodegeneration."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker mentions their work on a genetic neurodegenerative disease, indicating their expertise.",
+                "supportive response": "The speaker is engaging with the discussion, showing interest, and trying to connect their work with the topic at hand."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -2632,12 +2522,9 @@
             "start_time": "42:41",
             "end_time": "43:16",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Barbara acknowledges Stephanie's point about the distinction between microbial states as markers of pathology versus those supportive of health."
-                },
-                "encourage participation": {
-                    "Explanation": "Barbara invites Amina to share her thoughts on how her work might tie into the discussion."
-                }
+                "develop idea": "The speaker is expanding on a previous idea about microbial states.",
+                "process management": "The speaker is managing the meeting flow by giving a time check.",
+                "encourage participation": "The speaker is inviting Amina to contribute."
             }
         },
         {
@@ -2656,17 +2543,10 @@
             "screenshare_content": "None",
             "start_time": "43:19",
             "end_time": "44:20",
-            "annotations": [
-                {
-                    "express frustration": "Amina expresses uncertainty about how her work connects to the discussion, indicating a sense of being lost or unsure how to contribute."
-                },
-                {
-                    "present new idea": "Amina introduces the concept of 'inputs versus outputs' as a framework for understanding the microbiome's role, which is a new perspective in the conversation."
-                },
-                {
-                    "explain or define term or concept": "Amina explains the concept of 'gross rates' within a system, clarifying that these internal processes don't necessarily impact the overall output or external environment."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Amina introduces the concept of inputs versus outputs in systems.",
+                "develop idea": "Amina elaborates on her idea by discussing gross rates and their impact on system outputs."
+            }
         },
         {
             "speaker": "Amina Schartup",
@@ -2685,8 +2565,8 @@
             "start_time": "44:20",
             "end_time": "44:30",
             "annotations": {
-                "explain or define term or concept": "Amina is defining biomarkers as outputs that impact the organism, building on the discussion of biomarkers of microbial origin for neurological diseases.",
-                "expand on existing idea": "Amina expands on the discussion about biomarkers by focusing on the outputs of the system that can impact the organism, which is a continuation of the discussion about biomarkers of microbial origin for neurological diseases."
+                "Ask question": "Amina requests information on how human beings in general respond to environmental contaminants.",
+                "Clarify goal": "Amina clarifies her focus on understanding human responses to environmental contaminants."
             }
         },
         {
@@ -2705,14 +2585,9 @@
             "screenshare_content": "None",
             "start_time": "45:00",
             "end_time": "45:24",
-            "annotations": [
-                {
-                    "express agreement": "Mei Shen expresses agreement with Amina's point about inputs versus outputs in a system and how they relate to biomarkers."
-                },
-                {
-                    "expand on existing idea": "Mei Shen expands on the discussion by relating it to her lab's interests and her background in environmental chemistry, providing an example of how lead affects brain development in children."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement with previous statements, showing a positive evaluation of the discussion."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -2731,8 +2606,8 @@
             "start_time": "45:25",
             "end_time": "45:42",
             "annotations": {
-                "expand on existing idea": "Kai is building on Elizabeth's story about neurological disease and the microbiome, expanding the discussion by suggesting two possible scenarios: food changing the brain and the brain changing the microbiome's response.",
-                "present new idea": "Kai presents the idea of two different scenarios for neurological disease: one where food changes the brain, and another where the brain changes the microbiome's response."
+                "propose new idea": "The speaker introduces a new perspective on the interaction between the microbiome and neurological diseases, suggesting two possible scenarios.",
+                "develop idea": "The speaker builds upon Elizabeth's idea about the microbiome's role in neurological diseases by proposing two scenarios for certain neurological diseases."
             }
         },
         {
@@ -2751,11 +2626,9 @@
             "screenshare_content": "None",
             "start_time": "45:44",
             "end_time": "45:50",
-            "annotations": [
-                {
-                    "express humor": "Mei Shen makes a lighthearted remark about the loss of taste associated with COVID, likely intending to inject some humor into the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -2774,7 +2647,7 @@
             "start_time": "45:50",
             "end_time": "45:51",
             "annotations": {
-                "express agreement": "Kai agrees with Mei's statement about people with COVID losing their sense of taste, indicating agreement with a previously mentioned idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2793,14 +2666,10 @@
             "screenshare_content": "None",
             "start_time": "45:51",
             "end_time": "46:17",
-            "annotations": [
-                {
-                    "present new idea": "Mei Shen introduces the idea that a similar interaction between the brain and gut might occur in people with COVID-19, drawing a parallel to the loss of taste experienced by some COVID-19 patients, which is a novel concept in the context of the current discussion."
-                },
-                {
-                    "expand on existing idea": "Mei Shen expands on the idea of the brain-gut connection by mentioning that many viral infections can have long-term effects on the brain, building upon the previous discussion about the relationship between the brain and the gut microbiome."
-                }
-            ]
+            "annotations": {
+                "Ask question": "The speaker is seeking information or thoughts on the potential connection between COVID-19 and the brain-gut link.",
+                "Propose new idea": "The speaker is introducing a new perspective on COVID-19's potential long-term effects on the brain and its connection to the gut."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -2819,7 +2688,7 @@
             "start_time": "46:17",
             "end_time": "46:18",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2838,12 +2707,10 @@
             "screenshare_content": "None",
             "start_time": "46:19",
             "end_time": "47:26",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kai builds on the discussion about neurological diseases and biomarkers by suggesting two scenarios: food changing the brain and the brain changing the microbiome, expanding on the complexity of the relationship.",
-                    "explain or define term or concept": "Kai explains that they are looking in the literature to see what others have found to be biomarkers, clarifying their approach to identifying biomarkers."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea discussed in the conversation, specifically considering different scenarios for neurological diseases.",
+                "supportive response": "The speaker acknowledges a potential question or point with 'Depends on. Yeah, good question', showing agreement or validation."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -2861,11 +2728,10 @@
             "screenshare_content": "None",
             "start_time": "47:26",
             "end_time": "48:06",
-            "annotations": [
-                {
-                    "ask clarifying question": "Kai is asking whether the Integrative Human Microbiome Project can provide information about the relationship between neurological diseases, disease states, and microbiome features, seeking to understand if this project can offer insights into the topic being discussed."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the 'integrative human microbiome project' as a potential source of information.",
+                "ask question": "The speaker inquires about the project's potential to provide information on neurological diseases and microbiome features."
+            }
         },
         {
             "speaker": "Cesar de la Fuente",
@@ -2884,8 +2750,7 @@
             "start_time": "48:06",
             "end_time": "48:35",
             "annotations": {
-                "provide supporting evidence": "Cesar is explaining their approach to finding biomarkers by referencing existing literature and known examples, such as 'so'.",
-                "explain or define term or concept": "Cesar is defining their approach as a 'brute force approach' to finding biomarkers, implying a straightforward, literature-based method."
+                "develop idea": "The speaker is expanding on his approach to finding biomarkers by explaining that they look in the literature for what others have found to be biomarkers and provides an example."
             }
         },
         {
@@ -2905,12 +2770,7 @@
             "start_time": "48:35",
             "end_time": "48:42",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Cesar acknowledges Kai's question about the integrative human microbiome project, recognizing the value of the input."
-                },
-                "express agreement": {
-                    "Explanation": "Cesar explicitly agrees that Kai raised a good question."
-                }
+                "supportive response": "Cesar is expressing agreement and appreciation for the question, providing a supportive response."
             }
         },
         {
@@ -2930,7 +2790,7 @@
             "start_time": "48:43",
             "end_time": "49:00",
             "annotations": {
-                "expand on existing idea": "Elizabeth is building upon Amina's previous point about inputs and outputs by introducing the concept of redox potential in the microbiome as a valuable factor to consider."
+                "acknowledge contribution": "Elizabeth verbally recognizes Amina's previous input."
             }
         },
         {
@@ -2950,8 +2810,9 @@
             "start_time": "50:00",
             "end_time": "50:40",
             "annotations": {
-                "explain or define term or concept": "The speaker explains the importance of redox conditions when working with environmental samples like sediment or seawater, because changes in redox can alter the metal species and affect the representativeness of the sample.",
-                "provide supporting evidence": "The speaker supports their explanation by referencing their experience working with sediment and seawater, where redox conditions significantly impact metal speciation."
+                "signal expertise": "The speaker is sharing her expertise in handling samples under different conditions.",
+                "identify gap": "The speaker highlights the challenge of maintaining sample representativeness due to changes in redox conditions.",
+                "supportive response": "The speaker provides a supportive comment by sharing a relevant experience."
             }
         },
         {
@@ -2971,8 +2832,8 @@
             "start_time": "50:40",
             "end_time": "51:29",
             "annotations": {
-                "explain or define term or concept": "Amina is explaining the concept of speciation and how it relates to her work with metals, building on the previous discussion about redox potential of the microbiome.",
-                "expand on existing idea": "Amina expands on the discussion about metals and redox potential by describing her work with organometallic compounds and isotope spikes, adding details about her methodology."
+                "code name": "signal expertise",
+                "explanation": "Amina Schartup is explicitly stating her expertise in working with metals and their speciation."
             }
         },
         {
@@ -2992,7 +2853,7 @@
             "start_time": "51:29",
             "end_time": "51:33",
             "annotations": {
-                "expand on existing idea": "Mei Shen's utterance builds upon the discussion about the need for tools to study the microbiome and its connection to neurological diseases, suggesting the development of a range of tools to address this need, following Amina's discussion on the challenges of metal speciation and the need for specific tools."
+                "develop idea": "Mei Shen is suggesting developing a range of tools, which expands on the existing ideas discussed about approaching microbiome research and finding biomarkers for neurological diseases."
             }
         },
         {
@@ -3011,14 +2872,9 @@
             "screenshare_content": "None",
             "start_time": "51:33",
             "end_time": "52:27",
-            "annotations": [
-                {
-                    "expand on existing idea": "Mei Shen expands on Amina's point about environmental contaminants by relating it to the environment and the concept of oxygen levels, building on the previous discussion about environmental factors influencing the microbiome and its impact on health."
-                },
-                {
-                    "explain or define term or concept": "Mei Shen explains the concept of reducing and oxidizing environments by providing the example of different iron compositions in aerobic and anaerobic water environments, clarifying the role of oxygen levels in these processes."
-                }
-            ]
+            "annotations": {
+                "ask question": "Mei Shen references a conversation with a mentor about measuring oxygen, indirectly asking for thoughts or information on the topic."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -3036,11 +2892,9 @@
             "screenshare_content": "None",
             "start_time": "52:29",
             "end_time": "52:37",
-            "annotations": [
-                {
-                    "assign task": "Barbara is asking Andrew to stop the breakout rooms from closing, assigning him the task of preventing the rooms from closing."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by asking someone to stop an action (presumably a timer or virtual room setup) to prevent participants from leaving breakout rooms."
+            }
         },
         {
             "speaker": "Amina Schartup",
@@ -3058,11 +2912,9 @@
             "screenshare_content": "None",
             "start_time": "52:38",
             "end_time": "52:42",
-            "annotations": [
-                {
-                    "express frustration": "Amina expresses frustration because the breakout room is closing unexpectedly, despite being scheduled for 15 minutes."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is questioning the meeting flow and timing, specifically why the breakout rooms were closed earlier than expected."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -3081,7 +2933,7 @@
             "start_time": "52:42",
             "end_time": "52:44",
             "annotations": {
-                "express frustration": "Mei Shen expresses frustration that the group hasn't had time to type their thoughts, likely due to the breakout room closing unexpectedly."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3101,7 +2953,8 @@
             "start_time": "52:45",
             "end_time": "52:47",
             "annotations": {
-                "express agreement": "Barbara agrees that the breakout rooms closing early was a mistake, confirming that the rooms should not have closed yet."
+                "supportive response": "The speaker is expressing understanding and validation regarding a situation that occurred.",
+                "process management": "The speaker is addressing an issue with the meeting flow or structure."
             }
         },
         {
@@ -3121,9 +2974,7 @@
             "start_time": "52:53",
             "end_time": "53:02",
             "annotations": {
-                "propose decision": "Barbara proposes to bring up the slides and start typing, suggesting a concrete action for the group to take in the meeting.",
-                "assign task": "Barbara implicitly assigns the task of bringing up the slides to someone, likely the person responsible for presenting them.",
-                "encourage participation": "Barbara encourages the group to start typing, inviting them to contribute to the discussion or note-taking process."
+                "process management": "The speaker is suggesting an action to manage the meeting flow while they wait for an uncertain situation to resolve."
             }
         },
         {
@@ -3142,11 +2993,9 @@
             "screenshare_content": "None",
             "start_time": "53:02",
             "end_time": "53:05",
-            "annotations": [
-                {
-                    "express agreement": "Mei Shen expresses agreement with Barbara's suggestion to bring up the slides and start typing, indicating she supports the proposed action."
-                }
-            ]
+            "annotations": {
+                "supportive response": "Mei Shen is expressing agreement and a reason for her inaction that supports the group's activities."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -3164,11 +3013,9 @@
             "screenshare_content": "None",
             "start_time": "53:05",
             "end_time": "53:11",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Mei Shen acknowledges that she has been taking notes and enjoying the discussion, recognizing her own contribution to the meeting."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code strongly applies to this utterance"
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -3187,7 +3034,7 @@
             "start_time": "53:12",
             "end_time": "53:15",
             "annotations": {
-                "assign task": "Barbara is assigning the task of sharing the screen to someone, likely Mei, to display the slides for typing up notes from the discussion."
+                "process management": "The speaker is managing the meeting flow by requesting someone to share their screen."
             }
         },
         {
@@ -3207,7 +3054,7 @@
             "start_time": "53:15",
             "end_time": "53:16",
             "annotations": {
-                "ask clarifying question": "Mei Shen is asking if others can see her screen, which is a clarifying question to ensure everyone can follow along with the presentation."
+                "process management": "The speaker is checking if others can see her screen, which is related to managing the meeting's technical flow."
             }
         },
         {
@@ -3227,7 +3074,7 @@
             "start_time": "53:18",
             "end_time": "53:19",
             "annotations": {
-                "express agreement": "Barbara Bendlin is explicitly agreeing with Mei Shen, who asked if everyone could see her screen."
+                "acknowledge contribution": "The speaker is acknowledging a previous statement or agreement, showing awareness and acceptance without adding new content."
             }
         },
         {
@@ -3247,7 +3094,7 @@
             "start_time": "53:19",
             "end_time": "53:20",
             "annotations": {
-                "acknowledge contribution": "This utterance is a simple acknowledgement, similar to agreeing with a statement, but without expressing agreement or expanding on the idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3267,7 +3114,7 @@
             "start_time": "53:22",
             "end_time": "53:25",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is a statement about a technical issue."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3287,7 +3134,8 @@
             "start_time": "53:25",
             "end_time": "53:28",
             "annotations": {
-                "ask clarifying question": "Mei Shen is asking a clarifying question to confirm whether the other participants can see the slides she is sharing, which is relevant to the task of typing up notes from the discussion."
+                "ask question": "The speaker is asking if others can see the slides.",
+                "process management": "The speaker is checking on the technical aspect of content sharing during the meeting."
             }
         },
         {
@@ -3306,11 +3154,9 @@
             "screenshare_content": "The screen shows a message that Mei Shen has started screen sharing.",
             "start_time": "53:29",
             "end_time": "53:29",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -3329,7 +3175,7 @@
             "start_time": "54:03",
             "end_time": "54:05",
             "annotations": {
-                "propose decision": "Mei Shen proposes to start sharing the screen, suggesting a concrete action for the group to take."
+                "supportive response": "The speaker is expressing agreement and willingness to proceed with a task or discussion."
             }
         },
         {
@@ -3349,7 +3195,7 @@
             "start_time": "54:05",
             "end_time": "54:07",
             "annotations": {
-                "ask clarifying question": "Mei Shen is asking a question to confirm whether the other participants can see her monitor, which is a request for clarification."
+                "process management": "The speaker is asking if others can see her monitor, which is related to managing the flow of the meeting, specifically regarding screen sharing."
             }
         },
         {
@@ -3369,7 +3215,7 @@
             "start_time": "54:08",
             "end_time": "54:10",
             "annotations": {
-                "acknowledge contribution": "Cesar acknowledges that he can see Mei's screen, recognizing her effort to share it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3389,7 +3235,7 @@
             "start_time": "54:11",
             "end_time": "54:11",
             "annotations": {
-                "propose decision": "Mei Shen is proposing to move on to the slides, suggesting a concrete choice for the group to shift focus to the presentation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3409,7 +3255,7 @@
             "start_time": "54:12",
             "end_time": "54:13",
             "annotations": {
-                "express agreement": "Cesar confirms that he can see the slides that Mei is sharing, indicating agreement with the shared visual."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3429,7 +3275,7 @@
             "start_time": "54:13",
             "end_time": "54:16",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "process management": "The utterance manages the flow of sharing information by confirming the source of the content."
             }
         },
         {
@@ -3448,14 +3294,9 @@
             "screenshare_content": "The screen shows a Google Slides presentation titled \"Sialog MND Meeting Slides\" with the title \"Room 2.1 - Key points\" and subtitle \"Microbial Biomarkers\".",
             "start_time": "54:16",
             "end_time": "54:45",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Mei Shen acknowledges that she will have someone help her, recognizing their contribution to the task of typing notes."
-                },
-                {
-                    "expand on existing idea": "Mei Shen expands on the discussion by mentioning that environmental and genetic factors should be considered, building on the previous discussion about biomarkers and neurological diseases."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is recalling and summarizing previous discussions about environmental, genetic factors, and the concept of multiple features."
+            }
         },
         {
             "speaker": "Stephanie Cologna",
@@ -3474,7 +3315,7 @@
             "start_time": "54:45",
             "end_time": "54:46",
             "annotations": {
-                "acknowledge contribution": "Stephanie is acknowledging that she was not fully present in the discussion, but not agreeing or expanding on any specific point."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3494,8 +3335,8 @@
             "start_time": "54:46",
             "end_time": "55:12",
             "annotations": {
-                "expand on existing idea": "Stephanie is building on the discussion about biomarkers, adding that the consensus is that it's not a single molecule but a 'fingerprint' representing the microbe or microbial community, expanding on the idea of complex biomarkers.",
-                "express agreement": "Stephanie is expressing agreement with the general direction of the conversation, confirming the idea that the group agreed on the complexity of biomarkers."
+                "summarize conversation": "The speaker summarizes a key conclusion from the discussion about the nature of biomarkers.",
+                "supportive response": "The utterance expresses agreement with the group's approach or conclusion."
             }
         },
         {
@@ -3515,7 +3356,9 @@
             "start_time": "55:17",
             "end_time": "55:28",
             "annotations": {
-                "confirm decision": "Mei is confirming the decision that new biomarkers may still need to be discovered, which was previously discussed."
+                "Ask question": "The utterance is a clear question seeking agreement or confirmation from the group.",
+                "Encourage participation": "By asking 'Are you all okay with that?', the speaker invites the group to contribute their thoughts or agreement.",
+                "Summarize conversation": "The utterance refers back to previous discussions, indicating a summary or recall of what has been talked about."
             }
         },
         {
@@ -3535,7 +3378,7 @@
             "start_time": "55:34",
             "end_time": "55:41",
             "annotations": {
-                "expand on existing idea": "The speaker is reiterating and emphasizing a point that has been discussed multiple times throughout the conversation, which is the importance of starting research with patient populations, building upon the existing discussion about biomarkers and disease models."
+                "summarize conversation": "The speaker is summarizing a key point that emerged from the discussion."
             }
         },
         {
@@ -3555,7 +3398,8 @@
             "start_time": "55:41",
             "end_time": "55:42",
             "annotations": {
-                "expand on existing idea": "Barbara is building upon the previous point made by Shawroulla about starting with the patient population, suggesting to bridge from there, which implies expanding on that idea."
+                "summarize conversation": "The utterance serves as a minimal conclusion or a way to bridge or move forward in the discussion.",
+                "supportive response": "It also acts as a supportive or agreeing response to continue the conversation."
             }
         },
         {
@@ -3575,7 +3419,8 @@
             "start_time": "55:42",
             "end_time": "55:43",
             "annotations": {
-                "expand on existing idea": "This utterance is expanding on the previous statement about starting with the patient population, suggesting a bridge to more basic studies, which builds upon the idea of a top-down approach to biomarker discovery."
+                "process management": "The speaker suggests moving to more basic studies, indicating a direction for research proceedings.",
+                "clarify goal": "The utterance helps clarify the goal of shifting research focus towards basic studies."
             }
         },
         {
@@ -3595,8 +3440,7 @@
             "start_time": "55:44",
             "end_time": "55:52",
             "annotations": {
-                "ask clarifying question": "Stephanie is asking whether the current models are sufficient or if multiple models are needed, seeking clarification on the appropriate approach for studying the problem, building on the discussion about models and their limitations.",
-                "propose decision": "Stephanie is suggesting that the group consider whether they have the right models or if multiple models are needed, proposing a direction for the group to consider."
+                "ask question": "The speaker is requesting information or clarification on whether they have the right models or need multiple models."
             }
         },
         {
@@ -3616,7 +3460,7 @@
             "start_time": "55:52",
             "end_time": "55:53",
             "annotations": {
-                "ask clarifying question": "Mei Shen is asking a question to clarify what the group thinks is the right model to use, given the discussion about different models and approaches."
+                "process management": "Mei Shen is asking about the appropriate model for their research, which relates to managing their research process and methodology."
             }
         },
         {
@@ -3635,11 +3479,9 @@
             "screenshare_content": "The screen shows a Google Slides presentation titled \"Sialog MND Meeting Slides\" with the title \"Room 2.1 - Key points\" and subtitle \"Microbial Biomarkers\".",
             "start_time": "55:53",
             "end_time": "55:53",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stephanie Cologna",
@@ -3658,7 +3500,7 @@
             "start_time": "56:05",
             "end_time": "56:09",
             "annotations": {
-                "express agreement": "Stephanie expresses agreement with the idea that both top-down and bottom-up approaches to biomarker discovery have merit, following a discussion about the merits of each approach."
+                "None": "No relevant code strongly applies to this utterance as it primarily expresses a personal opinion without directly engaging with the content of previous discussions in a substantial way."
             }
         },
         {
@@ -3677,14 +3519,11 @@
             "screenshare_content": "The screen shows a Google Slides presentation titled \"Sialog MND Meeting Slides\" with the title \"Room 2.1 - Key points\" and subtitle \"Microbial Biomarkers\".",
             "start_time": "56:10",
             "end_time": "56:36",
-            "annotations": [
-                {
-                    "express agreement": "Kai agrees with the idea that both top-down and bottom-up approaches might work for identifying biomarkers, building on the discussion about different strategies for biomarker discovery."
-                },
-                {
-                    "expand on existing idea": "Kai expands on the idea of top-down and bottom-up approaches by relating it to the brain-microbiome connection and suggesting starting from the disease to identify specific microbiome features, building on the discussion about different strategies for biomarker discovery."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by suggesting both top-down and bottom-up approaches could work.",
+                "supportive response": "The speaker is expressing agreement with the previous discussion.",
+                "offer feedback": "The speaker provides a suggestion that both approaches could be effective."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -3703,7 +3542,8 @@
             "start_time": "56:36",
             "end_time": "56:37",
             "annotations": {
-                "encourage participation": "Kai is encouraging Elizabeth to participate in the discussion, likely to get her input on the current topic."
+                "ask question": "The utterance is a question directed at Elizabeth, indicating that Kai Zhang is seeking information or clarification from her.",
+                "encourage participation": "By directly addressing Elizabeth, Kai Zhang is also inviting her to participate in the discussion."
             }
         },
         {
@@ -3723,7 +3563,7 @@
             "start_time": "56:37",
             "end_time": "56:37",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous speaker's statement, which was 'Kai Zhang: Yeah, I think that's both both ways might work. The top down, bottom up, if we consider the bring to uh microbiome is top down. I think both will work. starting from disease and then identify the specific feature of the microbiome.'"
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3743,8 +3583,8 @@
             "start_time": "56:37",
             "end_time": "57:00",
             "annotations": {
-                "provide supporting evidence": "Kai provides supporting evidence by mentioning hyperphosphorylation of tau in Alzheimer's, which causes aggregation and changes in protein trafficking and signaling, supporting the idea of common features in neurological diseases.",
-                "expand on existing idea": "Kai expands on the existing idea of common features in neurological diseases by providing a specific example related to Alzheimer's disease and protein aggregation and trafficking defects."
+                "develop idea": "Kai Zhang is expanding on existing ideas by providing a specific example (Alzheimer's disease) and explaining how a mechanism could work.",
+                "offer feedback": "Kai Zhang is suggesting a way to compare features (by inducing protein aggregation or trafficking defects), which can be seen as providing specific suggestions for improvement."
             }
         },
         {
@@ -3764,7 +3604,7 @@
             "start_time": "57:00",
             "end_time": "57:01",
             "annotations": {
-                "encourage participation": "Barbara is encouraging May to speak, likely to contribute to the discussion, as May's name was called out earlier."
+                "process management": "Barbara Bendlin seems to be attempting to manage the meeting process, possibly about to ask a question or make a statement about proceeding with the discussion or next steps."
             }
         },
         {
@@ -3784,7 +3624,9 @@
             "start_time": "57:01",
             "end_time": "57:11",
             "annotations": {
-                "expand on existing idea": "Barbara is building on the previous discussion about biomarkers and mechanisms by suggesting that microbial signatures could reveal shared mechanisms across neurological diseases, which could then be targeted for treatment."
+                "develop idea": "The utterance expands on existing ideas by suggesting that microbial signatures might inform about shared mechanisms across neurological diseases.",
+                "offer feedback": "The utterance provides a suggestion on how to interpret microbial signatures in the context of neurological diseases.",
+                "summarize conversation": "The utterance synthesizes information from the conversation, highlighting a potential conclusion about microbial signatures."
             }
         },
         {
@@ -3803,11 +3645,9 @@
             "screenshare_content": "The screen shows a Google Slides presentation titled \"Sialog MND Meeting Slides\" with the title \"Room 2.1 - Key points\" and subtitle \"Microbial Biomarkers\".",
             "start_time": "57:11",
             "end_time": "57:12",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarah MacEachern",
@@ -3826,7 +3666,7 @@
             "start_time": "57:12",
             "end_time": "57:18",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the idea that having a diverse group of researchers is beneficial, building on the previous discussion about the complexity of neurological diseases and the need for multiple perspectives."
+                "Supportive Response": "The speaker is expressing a positive evaluation for the diversity of researchers working on the problem, indicating agreement and support for the current direction of discussion."
             }
         },
         {
@@ -3846,7 +3686,7 @@
             "start_time": "57:18",
             "end_time": "57:21",
             "annotations": {
-                "express agreement": "The speaker is expressing agreement with the previous speaker's point."
+                "None": "No relevant code applies to this utterance as it is a minimal acknowledgment without additional content."
             }
         },
         {
@@ -3866,7 +3706,7 @@
             "start_time": "60:07",
             "end_time": "60:12",
             "annotations": {
-                "encourage participation": "Mei Shen is directly inviting Kai to speak, encouraging his participation in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3886,7 +3726,7 @@
             "start_time": "60:12",
             "end_time": "60:13",
             "annotations": {
-                "assign task": "Kai volunteers to type, taking on the task of recording or documenting the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3906,7 +3746,7 @@
             "start_time": "60:13",
             "end_time": "60:14",
             "annotations": {
-                "encourage participation": "Mei Shen is encouraging Kai to type, inviting him to contribute to the task at hand, which is summarizing the discussion on the shared slides."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3925,11 +3765,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "60:18",
             "end_time": "60:18",
-            "annotations": [
-                {
-                    "encourage participation": "Kai is encouraging Elizabeth to speak, as he calls her name after making a statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -3948,9 +3786,8 @@
             "start_time": "60:19",
             "end_time": "60:41",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Mei Shen proposes to include methodologies for detecting biomarkers in the discussion, building on the previous discussion about electrochemical sensor probes."
-                }
+                "propose new idea": "Mei Shen suggests discussing methodologies for detecting biomarkers, introducing a new idea.",
+                "ask question": "Mei Shen asks if they should discuss methodologies for detecting biomarkers, seeking input or agreement from the group."
             }
         },
         {
@@ -3970,8 +3807,8 @@
             "start_time": "60:42",
             "end_time": "60:50",
             "annotations": {
-                "expand on existing idea": "Stephanie is building on the discussion about biomarkers and methods for detecting them by highlighting the existence of current technologies while also pointing out the need for new ones.",
-                "present new idea": "Stephanie introduces the idea that there is a need for new technologies and strategies in addition to the existing ones for biomarker detection."
+                "Identify gap": "The speaker recognizes a need for new technologies and strategies, indicating a gap in current capabilities.",
+                "Acknowledge contribution": "The speaker acknowledges the current collection of technologies, showing appreciation for existing work."
             }
         },
         {
@@ -3991,7 +3828,7 @@
             "start_time": "60:51",
             "end_time": "60:52",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous statement about the need for new technologies and strategies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4011,7 +3848,7 @@
             "start_time": "60:54",
             "end_time": "61:01",
             "annotations": {
-                "expand on existing idea": "Cesar is building on the discussion about biomarker detection methods by highlighting the value of in vivo, real-time detection, adding a desirable characteristic to the existing idea of biomarker detection."
+                "supportive response": "Cesar de la Fuente Ure\u00f1a is expressing agreement and highlighting the potential benefits of detecting biomarkers in vivo in real-time, which is a positive evaluation of the idea."
             }
         },
         {
@@ -4030,17 +3867,11 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "61:01",
             "end_time": "61:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is expanding on the limitations of current technologies for detecting biomarkers, building on the previous discussion about the need for new technologies and strategies."
-                },
-                {
-                    "express agreement": "The speaker explicitly agrees with the point made yesterday that dynamics are lacking in current biomarker detection methods."
-                },
-                {
-                    "expand on existing idea": "The speaker is expanding on the limitations of current technologies for detecting biomarkers, pointing out that while they can measure what is present, they cannot track changes over time."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Mei Shen is expanding on existing ideas by discussing limitations in understanding dynamics.",
+                "identify gap": "She highlights a gap in current research, specifically the lack of understanding of dynamics or changes over time.",
+                "offer feedback": "Mei Shen provides a general comment on the limitations of current research, which can be seen as a form of feedback."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -4059,9 +3890,8 @@
             "start_time": "61:28",
             "end_time": "61:42",
             "annotations": {
-                "expand on existing idea": "Kai is adding a point to the discussion about microbial features and their relation to disease states, building upon the previous discussion about biomarkers and disease mechanisms.",
-                "present new idea": "Kai introduces the idea that microbial features can indicate states encompassing multiple biological diseases, which is a novel concept in the context of the discussion.",
-                "propose decision": "Kai proposes to add a point about microbial features indicating states encompassing multiple biological diseases and integrating patient data with germ-free models, suggesting a concrete addition to the discussion's summary."
+                "Develop idea": "The speaker is expanding on existing ideas by suggesting an addition to the points being discussed.",
+                "Propose new idea": "The speaker is introducing a new point related to microbial features indicating states encompassing multiple biological diseases."
             }
         },
         {
@@ -4081,7 +3911,8 @@
             "start_time": "61:43",
             "end_time": "61:46",
             "annotations": {
-                "confirm decision": "Mei is asking for confirmation from the group on the point Kai added, to ensure everyone agrees with the addition."
+                "ask question": "The speaker is requesting confirmation or agreement from the group.",
+                "encourage participation": "The speaker is inviting responses from everyone in the group."
             }
         },
         {
@@ -4101,7 +3932,7 @@
             "start_time": "61:47",
             "end_time": "61:48",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the points that have been made previously."
+                "None": "The utterance 'Mei Shen: Okay.' is a minimal response that does not explicitly fit into any of the provided codes."
             }
         },
         {
@@ -4121,7 +3952,7 @@
             "start_time": "61:48",
             "end_time": "61:49",
             "annotations": {
-                "express agreement": "Cesar explicitly agrees with the point that Kai added, indicating his approval of the statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4141,7 +3972,7 @@
             "start_time": "61:49",
             "end_time": "62:22",
             "annotations": {
-                "expand on existing idea": "Mei is building on the previous discussion about biomarkers and technologies by suggesting to add new technologies for in vivo sensing of biomarkers, expanding the scope of the discussion."
+                "None": "No relevant code directly applies to this utterance based on the provided definitions."
             }
         },
         {
@@ -4161,7 +3992,7 @@
             "start_time": "62:35",
             "end_time": "62:39",
             "annotations": {
-                "expand on existing idea": "Cesar is building upon the previous discussion about methodologies for detecting biomarkers, specifically highlighting the need for new technologies."
+                "supportive response": "The speaker is expressing agreement and support for the discussion on the need for new technologies for sensing biomarkers in vivo and in real-time."
             }
         },
         {
@@ -4181,7 +4012,7 @@
             "start_time": "62:40",
             "end_time": "62:41",
             "annotations": {
-                "express agreement": "Stephanie is agreeing with Cesar's suggestion to add new technologies for in vivo and real time sensing of biomarkers, which was the last thing said."
+                "None": "The utterance 'Yeah' is a minimal response that does not explicitly fit into any of the provided codes in a meaningful way."
             }
         },
         {
@@ -4201,7 +4032,7 @@
             "start_time": "62:41",
             "end_time": "62:41",
             "annotations": {
-                "express agreement": "Cesar expresses agreement with the previous statement about new technologies for in vivo and real time sensing of biomarkers."
+                "supportive response": "Cesar de la Fuente Ure\u00f1a is expressing agreement or positive evaluation for the previous discussion or proposal."
             }
         },
         {
@@ -4221,7 +4052,7 @@
             "start_time": "62:47",
             "end_time": "62:52",
             "annotations": {
-                "expand on existing idea": "Cesar is expanding on the discussion about biomarkers by suggesting that the goal is to identify specific microbiome compositions, building on the previous discussion about biomarkers of microbial origin."
+                "clarify goal": "The speaker is expressing a goal or objective related to identifying specific microbiome compositions."
             }
         },
         {
@@ -4241,7 +4072,7 @@
             "start_time": "62:53",
             "end_time": "62:54",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous discussion, indicating a consensus or confirmation of the points made."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4261,7 +4092,8 @@
             "start_time": "62:57",
             "end_time": "63:03",
             "annotations": {
-                "encourage participation": "Mei Shen is directly asking Barbara and the rest of the group for their opinions on the discussion points, encouraging them to contribute to the conversation."
+                "ask question": "Mei Shen is requesting information or thoughts from others.",
+                "encourage participation": "Mei Shen is inviting others to contribute their thoughts."
             }
         },
         {
@@ -4281,7 +4113,8 @@
             "start_time": "63:05",
             "end_time": "63:12",
             "annotations": {
-                "expand on existing idea": "Kai is adding to the discussion about biomarkers by highlighting the importance of volatile biomarkers, which were previously mentioned by another participant."
+                "propose new idea": "The speaker introduces the concept of 'volatile biomarker' as a new idea.",
+                "supportive response": "The speaker expresses that they think this aspect is absolutely important."
             }
         },
         {
@@ -4301,9 +4134,8 @@
             "start_time": "63:14",
             "end_time": "63:21",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Stephanie proposes that the group should make sure to address the diagnosis, prognosis, and mechanism part, suggesting a concrete action for the group to consider."
-                }
+                "supportive response": "Expressing agreement and validation for the group's approach without adding new content.",
+                "clarify goal": "Implicitly suggesting a focus on diagnosis, prognosis, and mechanisms in their research."
             }
         },
         {
@@ -4322,11 +4154,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "63:21",
             "end_time": "63:23",
-            "annotations": [
-                {
-                    "express agreement": "Mei Shen agrees with Stephanie's previous statement about addressing diagnosis, prognosis, and mechanism."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a minimal agreement and does not specifically fit into any of the provided codes."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -4344,11 +4174,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "63:23",
             "end_time": "63:37",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is about to expand on the previous discussion about biomarkers and related topics."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -4367,7 +4195,8 @@
             "start_time": "63:39",
             "end_time": "63:41",
             "annotations": {
-                "acknowledge contribution": "Barbara acknowledges May's contribution in summarizing the key points of the discussion, showing recognition of her efforts as the reporter."
+                "acknowledge contribution": "Barbara Bendlin acknowledges Mei Shen's contribution by stating that Mei Shen has hit on the key points.",
+                "supportive response": "Barbara Bendlin's statement is supportive as it acknowledges Mei Shen's summary."
             }
         },
         {
@@ -4386,11 +4215,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "63:41",
             "end_time": "63:41",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Mei Shen is acknowledging the previous point made in the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -4409,7 +4236,7 @@
             "start_time": "63:43",
             "end_time": "63:47",
             "annotations": {
-                "confirm decision": "Mei Shen is checking if everyone agrees with the points that have been discussed and added to the slides, aiming to finalize the summary of the discussion."
+                "confirm decision": "Mei Shen is seeking confirmation or agreement from the group on a previous proposal or discussion."
             }
         },
         {
@@ -4428,14 +4255,12 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "63:49",
             "end_time": "64:30",
-            "annotations": [
-                {
-                    "express agreement": "Barbara expresses agreement with the current state of the slides that May is sharing, indicating satisfaction with the progress of summarizing the discussion."
-                },
-                {
-                    "encourage participation": "Barbara encourages others to contribute further by adding more words if they wish, inviting additional input from the group."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges Mei Shen's effort in summarizing.",
+                "supportive response": "The speaker expresses agreement and validation.",
+                "summarize conversation": "The speaker summarizes the discussion and decides on its sufficiency.",
+                "encourage participation": "The speaker invites others to add more if they wish."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -4453,11 +4278,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "64:30",
             "end_time": "64:30",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The speaker is acknowledging the previous point made, signaling the end of that topic and a transition to the next."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -4475,11 +4298,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "64:30",
             "end_time": "64:30",
-            "annotations": [
-                {
-                    "express agreement": "Kai is agreeing with a previous statement, but the specific statement is unclear from the immediate context."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -4497,11 +4318,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "64:33",
             "end_time": "64:37",
-            "annotations": [
-                {
-                    "ask clarifying question": "Mei Shen is asking how to organize their thoughts to have a logical flow, which is a request for clarification on how to structure the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking for information or clarification on how to organize their thoughts to have a logical flow."
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -4520,7 +4339,7 @@
             "start_time": "64:39",
             "end_time": "64:44",
             "annotations": {
-                "express agreement": "Barbara expresses agreement with the current state of the slides, indicating that the key points of the discussion have been captured, and she is satisfied with the progress."
+                "process management": "Barbara Bendlin is managing the meeting flow by deciding what to report and what not to report."
             }
         },
         {
@@ -4540,12 +4359,9 @@
             "start_time": "64:44",
             "end_time": "64:52",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Barbara acknowledges Mei's work in summarizing the discussion points on the slides, recognizing her effort in capturing the main ideas."
-                },
-                "encourage participation": {
-                    "Explanation": "Barbara encourages others to contribute by adding more words or points to the summary, inviting further participation from the group."
-                }
+                "supportive response": "Barbara Bendlin is expressing agreement and validation for the points made.",
+                "summarize conversation": "Barbara Bendlin is summarizing the discussion by acknowledging that main points have been hit.",
+                "encourage participation": "Barbara Bendlin is inviting others to contribute by adding a few more words."
             }
         },
         {
@@ -4565,7 +4381,7 @@
             "start_time": "64:54",
             "end_time": "64:54",
             "annotations": {
-                "express enthusiasm": "Kai expresses enthusiasm about the discussion and the points made, indicating a positive reaction to the ideas being shared."
+                "supportive response": "The speaker expresses agreement and a positive sentiment, indicating support for the previous discussion or statement."
             }
         },
         {
@@ -4585,7 +4401,7 @@
             "start_time": "65:21",
             "end_time": "65:23",
             "annotations": {
-                "acknowledge contribution": "Cesar thanks May for taking notes, acknowledging her contribution to the group's effort."
+                "acknowledge contribution": "The speaker verbally recognizes May's input, which is taking notes, showing appreciation for her contribution."
             }
         },
         {
@@ -4604,14 +4420,10 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "65:23",
             "end_time": "65:26",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Sheryl thanks May for her work, acknowledging her contribution to the discussion."
-                },
-                {
-                    "express agreement": "Sheryl explicitly agrees with the previous statements by saying 'Yes, exactly'."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker is verbally recognizing Mei Shen's input and effort.",
+                "supportive response": "The utterance expresses agreement and positive evaluation for Mei Shen's contribution."
+            }
         },
         {
             "speaker": "Mei Shen",
@@ -4629,11 +4441,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "65:26",
             "end_time": "65:36",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Mei Shen thanks everyone for their help in putting together the document, acknowledging their contributions to the task."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Barbara Bendlin",
@@ -4652,7 +4462,9 @@
             "start_time": "65:36",
             "end_time": "65:43",
             "annotations": {
-                "express enthusiasm": "Barbara expresses enthusiasm for the ideas shared and hopes they will stimulate further discussions, showing excitement and encouragement for the collaboration."
+                "supportive response": "The speaker is expressing agreement and positive evaluation for the discussion.",
+                "acknowledge contribution": "The speaker acknowledges the contributions made during the discussion.",
+                "process management": "The speaker is managing the flow of the meeting by looking forward to smaller group sessions."
             }
         },
         {
@@ -4671,11 +4483,9 @@
             "screenshare_content": "The screen shows a document titled \"Tuesday's Agenda\". The document lists topics for discussion, including \"What are the key challenges?\", \"What are the key opportunities?\", and \"What are the key resources?\". The document is not changed during this segment.",
             "start_time": "65:44",
             "end_time": "65:45",
-            "annotations": [
-                {
-                    "express enthusiasm": "Kai expresses excitement and positive sentiment about the discussion and ideas presented, indicating a favorable reaction to the collaborative effort."
-                }
-            ]
+            "annotations": {
+                "supportive response": "Expressing agreement or positive evaluation of the discussion."
+            }
         }
     ]
 }

@@ -1,16 +1,16 @@
 {
     "all_speakers": [
-        "Christopher Hamilton",
-        "Simon Darroch",
-        "Lisa Kaltenegger(she/her)",
-        "Liming Li",
+        "Bradford Foley",
         "Laura Schaefer",
+        "Christopher Hamilton",
+        "Trinity Hamilton",
+        "Joseph Levy",
+        "Lisa Kaltenegger(she/her)",
+        "Lisa Kaltenegger",
         "Dimitar Sasselov",
         "Stephanie Olson",
-        "Bradford Foley",
-        "Lisa Kaltenegger",
-        "Trinity Hamilton",
-        "Joseph Levy"
+        "Simon Darroch",
+        "Liming Li"
     ],
     "total_speaking_length": 3536,
     "all_data": [
@@ -31,8 +31,8 @@
             "start_time": "00:00",
             "end_time": "00:06",
             "annotations": {
-                "propose decision": "The speaker is proposing a plan for the meeting's structure, suggesting introductions followed by discussion, and asking for confirmation.",
-                "ask clarifying question": "The speaker ends the utterance with 'Would that work?', seeking confirmation and agreement on the proposed plan."
+                "propose new idea": "The speaker is introducing a new approach for the meeting structure, suggesting introductions before starting the discussion.",
+                "ask question": "The speaker is requesting feedback or confirmation on the proposed meeting structure by asking 'Would that work? '"
             }
         },
         {
@@ -52,7 +52,7 @@
             "start_time": "00:06",
             "end_time": "00:09",
             "annotations": {
-                "ask clarifying question": "Dimitar is asking a question to clarify whether they have a recorder, which is essential for documenting the discussion."
+                "ask question": "The speaker is explicitly requesting information about the presence of a recorder, which aligns with the definition of asking a question."
             }
         },
         {
@@ -72,8 +72,8 @@
             "start_time": "00:09",
             "end_time": "00:18",
             "annotations": {
-                "expand on existing idea": "Lisa is building on Dimitar's question about the recorder by confirming they can do it first and referencing their previous meeting's introductions.",
-                "provide supporting evidence": "Lisa justifies the order of introductions and recording by referencing their previous meeting's success in getting people to volunteer after introductions."
+                "process management": "The speaker is suggesting an alternative approach to the meeting process, specifically about when to use the recorder.",
+                "clarify goal": "The speaker is clarifying or building upon previous actions to facilitate participant contribution."
             }
         },
         {
@@ -93,8 +93,8 @@
             "start_time": "00:18",
             "end_time": "00:24",
             "annotations": {
-                "express agreement": "Dimitar agrees with Lisa's idea of introducing each other first.",
-                "encourage particpatioin": "Dimitar is encouraging someone to volunteer for a task."
+                "Supportive Response": "Dimitar explicitly agrees with Lisa's suggestion, showing a positive evaluation of her idea.",
+                "Process Management": "Dimitar starts a discussion about responsibilities, which relates to managing the group's activities."
             }
         },
         {
@@ -114,8 +114,7 @@
             "start_time": "00:24",
             "end_time": "00:28",
             "annotations": {
-                "express humor": "The utterance uses humor by referring to the 'suspense' of who will do the job, implying a lighthearted approach to task assignment.",
-                "encourage particpatioin": "The utterance sets the stage for someone to volunteer, encouraging participation in the task."
+                "process management": "The speaker is managing the meeting flow by trying to move past the suspense of task assignment."
             }
         },
         {
@@ -134,14 +133,11 @@
             "screenshare_content": "None",
             "start_time": "00:28",
             "end_time": "00:34",
-            "annotations": [
-                {
-                    "propose decision": "Lisa suggests starting with short introductions to begin the discussion."
-                },
-                {
-                    "encourage particpatioin": "Lisa invites Dimitar to start the introductions."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on how to proceed with the introductions.",
+                "encourage participation": "The speaker invites Dimitar to contribute by asking him to go first.",
+                "process management": "The speaker is managing the meeting flow by suggesting a way to proceed with the introductions."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -159,11 +155,9 @@
             "screenshare_content": "None",
             "start_time": "00:34",
             "end_time": "00:58",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Dimitar is explaining his role and expertise to the group, defining his background as an astronomer and his current research areas."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Dimitar explicitly states his own expertise and qualifications related to the task, mentioning his position as an astronomer and his work on stars, exoplanets, and photochemistry."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -182,7 +176,7 @@
             "start_time": "00:59",
             "end_time": "01:01",
             "annotations": {
-                "propose decision": "Lisa is suggesting that Dimitar needs to choose one specific area from the multiple areas he mentioned he works on."
+                "express humor": "The speaker is making a joke about Dimitar having to pick one area of focus from his multiple mentioned interests."
             }
         },
         {
@@ -202,7 +196,7 @@
             "start_time": "01:01",
             "end_time": "01:02",
             "annotations": {
-                "assign task": "Dimitar assigns the task of introducing themselves to Laura."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -221,11 +215,9 @@
             "screenshare_content": "None",
             "start_time": "01:03",
             "end_time": "01:47",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Laura is explaining her research area, which involves the formation and evolution of rocky planet atmospheres, including processes like core formation, magma oceans, impacts, atmospheric escape, and surface environment evolution."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Laura Schaefer explicitly states her background and expertise in her field."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -244,7 +236,7 @@
             "start_time": "01:47",
             "end_time": "01:47",
             "annotations": {
-                "assign task": "Laura is assigning the task of introducing themselves to the next person."
+                "process management": "Laura Schaefer is managing the meeting flow by indicating it's someone else's turn to contribute or speak."
             }
         },
         {
@@ -264,7 +256,8 @@
             "start_time": "01:47",
             "end_time": "01:48",
             "annotations": {
-                "assign task": "Laura assigns the task of introducing themselves to Trinity."
+                "process management": "Laura Schaefer is managing the process of selection or participation by picking Trinity.",
+                "assign task": "Laura Schaefer is making a selection that could imply assigning or suggesting a role or task for Trinity."
             }
         },
         {
@@ -283,11 +276,9 @@
             "screenshare_content": "None",
             "start_time": "01:49",
             "end_time": "02:21",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Trinity is explaining her role and research area to provide context for the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The utterance explicitly states the speaker's own expertise and qualifications related to the task."
+            }
         },
         {
             "speaker": "Trinity Hamilton",
@@ -306,7 +297,7 @@
             "start_time": "02:21",
             "end_time": "02:23",
             "annotations": {
-                "assign task": "Trinity is assigning the task of introducing themselves next to Stephanie."
+                "process management": "This code applies because Trinity Hamilton is managing the flow of introductions or discussions by moving the focus to another person, Stephanie."
             }
         },
         {
@@ -325,11 +316,9 @@
             "screenshare_content": "None",
             "start_time": "02:23",
             "end_time": "02:47",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Stephanie is introducing herself and her research interests, which involves explaining her field of study to the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Stephanie explicitly states her position as an assistant professor in Earth, atmospheric and planetary science at Purdue University and her area of interest."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -348,7 +337,7 @@
             "start_time": "02:47",
             "end_time": "02:47",
             "annotations": {
-                "encourage particpatioin": "Stephanie is inviting Simon to introduce himself, continuing the round of introductions."
+                "process management": "Stephanie Olson is managing the meeting flow by deciding whose turn it is next for introductions."
             }
         },
         {
@@ -367,11 +356,9 @@
             "screenshare_content": "None",
             "start_time": "02:48",
             "end_time": "03:07",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Simon is introducing himself and his research interests, which involves explaining his field (paleontology) and the focus of his research program (oldest complex macrofossils and their ecosystems)."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Simon explicitly states his own expertise as a paleontologist and describes his research program."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -390,7 +377,7 @@
             "start_time": "03:08",
             "end_time": "03:11",
             "annotations": {
-                "assign task": "Simon is assigning the task of introducing themselves to Brad Foley, continuing the round of introductions."
+                "None": "No relevant code applies to this utterance in a substantial way."
             }
         },
         {
@@ -409,11 +396,9 @@
             "screenshare_content": "None",
             "start_time": "03:13",
             "end_time": "03:43",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Brad is introducing himself and his research interests, which includes defining his area of expertise as mantle convection on Earth and other planets, plate tectonics, and rocky exoplanet evolution."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states his own expertise as a geophysicist and mentions his research focus."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -432,13 +417,13 @@
             "start_time": "03:43",
             "end_time": "03:47",
             "annotations": {
-                "express enthusiasm": "Brad expresses enthusiasm by stating that it's fun to see Simon back on the call, indicating a positive sentiment."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
             "speaker": "Bradford Foley",
             "timestamp": "03:49-03:53",
-            "transcript": "Oh, and uh, let's see, let's go to Joseph Levy.",
+            "transcript": "Oh, and uh, let's see, let's go to Joe Levy.",
             "speaking_duration": 4,
             "nods_others": 0,
             "smile_self": 0,
@@ -452,13 +437,14 @@
             "start_time": "03:49",
             "end_time": "03:53",
             "annotations": {
-                "encourage particpatioin": "Brad encourages Joseph Levy to participate by inviting him to speak next."
+                "encourage participation": "Bradford James Foley is encouraging Joe Levy to participate by directing attention to him and prompting an introduction.",
+                "process management": "This utterance helps manage the meeting flow by moving the introductions along."
             }
         },
         {
             "speaker": "Joseph Levy",
             "timestamp": "03:54-04:23",
-            "transcript": "Sure, I'm Joseph Levy. I'm an assistant professor in the geology department at Colgate uh University. I have uh sort of two lives. Uh one is a sedimentary geologist and permafrost geologist who's interested in how uh soil formation happens in cold, arid, hyper thermal or hyper thermal deserts uh and how do you go from just sediment to something that's can support a soil ecosystem.",
+            "transcript": "Sure, I'm Joe Levy. I'm an assistant professor in the geology department at Colgate uh University. I have uh sort of two lives. Uh one is a sedimentary geologist and permafrost geologist who's interested in how uh soil formation happens in cold, arid, hyper thermal or hyper thermal deserts uh and how do you go from just sediment to something that's can support a soil ecosystem.",
             "speaking_duration": 29,
             "nods_others": 0,
             "smile_self": 0,
@@ -472,7 +458,7 @@
             "start_time": "03:54",
             "end_time": "04:23",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining his research interests, including sedimentary geology, permafrost geology, and soil formation in specific environments, which serves to define these concepts within the context of his work."
+                "signal expertise": "Joe Levy explicitly states his position, department, and research interests, which can be seen as signaling his expertise."
             }
         },
         {
@@ -492,7 +478,7 @@
             "start_time": "04:23",
             "end_time": "04:23",
             "annotations": {
-                "assign task": "Joe is assigning the task of introducing themselves to Liming, continuing the round-robin introductions."
+                "encourage participation": "The speaker invites Liming to contribute by saying their name, encouraging them to introduce themselves."
             }
         },
         {
@@ -512,8 +498,7 @@
             "start_time": "04:25",
             "end_time": "04:53",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining their research area, which is planetary atmospheres, to provide context for the discussion.",
-                "acknowledge contribution": "The speaker is acknowledging the previous speaker before introducing themselves."
+                "signal expertise": "Liming Li explicitly states his research area and background, signaling his expertise in planetary atmospheres."
             }
         },
         {
@@ -533,8 +518,8 @@
             "start_time": "04:53",
             "end_time": "04:55",
             "annotations": {
-                "assign task": "Liming Li is assigning the task of introducing themselves next to Chris, continuing the round-robin introductions.",
-                "express agreement": "Liming Li expresses agreement that they have finished their introduction."
+                "process management": "The speaker is managing the meeting flow by suggesting to move on to the next person.",
+                "encourage participation": "By saying 'let's go Chris,' the speaker is inviting or encouraging Chris to participate, specifically to introduce himself."
             }
         },
         {
@@ -554,7 +539,7 @@
             "start_time": "04:58",
             "end_time": "05:11",
             "annotations": {
-                "explain or define term or concept": "Christopher Hamilton is explaining his background in planetary volcanology and geologic surface processes, which clarifies his expertise for the group."
+                "signal expertise": "Christopher Hamilton explicitly states his own expertise in planetary volcanology and geologic surface processes."
             }
         },
         {
@@ -574,8 +559,8 @@
             "start_time": "05:11",
             "end_time": "05:23",
             "annotations": {
-                "expand on existing idea": "Building on his introduction, Christopher elaborates on his research interests, focusing on magma water interactions, hydrothermal systems, and habitable environments, particularly microbial ecologies on Earth-like planets like Mars.",
-                "express enthusiasm": "Christopher expresses his interest in magma water interactions, hydrothermal systems, and habitable environments."
+                "develop idea": "Christopher is elaborating on his research interests, which can be seen as developing his idea or introducing his expertise.",
+                "signal expertise": "Christopher is explicitly stating his research interests and background, which can be seen as signaling his expertise."
             }
         },
         {
@@ -595,7 +580,7 @@
             "start_time": "05:23",
             "end_time": "05:24",
             "annotations": {
-                "present new idea": "Given the context of introductions, and the phrase 'in terms of other ideas', it is likely that Christopher is about to introduce a new idea related to the discussion."
+                "None": "No relevant code directly applies to this utterance"
             }
         },
         {
@@ -615,7 +600,7 @@
             "start_time": "05:24",
             "end_time": "05:38",
             "annotations": {
-                "expand on existing idea": "Building on his introduction, Christopher Hamilton expands on his research interests, adding exovolcanology to the list."
+                "signal expertise": "Christopher Hamilton is explicitly stating his interest and potential expertise in exovolcanology, indicating his qualifications or areas of knowledge."
             }
         },
         {
@@ -635,7 +620,7 @@
             "start_time": "05:39",
             "end_time": "05:40",
             "annotations": {
-                "acknowledge contribution": "Lisa thanks everyone for their introductions, acknowledging their participation in the round-robin introductions."
+                "process management": "This code applies because Lisa Kaltenegger is managing the meeting flow by thanking everybody, which signifies the end of the introduction session."
             }
         },
         {
@@ -654,11 +639,9 @@
             "screenshare_content": "None",
             "start_time": "05:40",
             "end_time": "05:52",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa is explaining her research area, which involves studying the atmospheres of rocky planets and using outgassing to understand their composition."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Lisa Kaltenegger summarizes that introductions have been completed."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -677,9 +660,8 @@
             "start_time": "05:52",
             "end_time": "06:13",
             "annotations": {
-                "expand on existing idea": "Lisa is expanding on her introduction by providing more details about her work, specifically mentioning the color catalog of life.",
-                "provide supporting evidence": "Lisa is providing an example of her work by mentioning the color catalog of life, which serves as evidence of her research on atmospheres and surfaces of rocky planets.",
-                "express enthusiasm": "Lisa's description of the color catalog of life and its purpose conveys excitement about her research and its potential to inform telescope observations."
+                "develop idea": "The utterance expands on what Lisa Kaltenegger does by mentioning a specific example of their work related to atmospheres of rocky planets and surfaces.",
+                "signal expertise": "Lisa Kaltenegger is explicitly stating her own area of work and projects, which relates to her expertise."
             }
         },
         {
@@ -699,7 +681,8 @@
             "start_time": "06:13",
             "end_time": "06:17",
             "annotations": {
-                "assign task": "Lisa is assigning the task of sending samples to the team."
+                "offer feedback": "Lisa is providing a specific request for action (sending samples) which can be seen as a form of feedback or contribution to her project.",
+                "encourage participation": "By asking if others have samples they would be willing to send, she is encouraging participation and contribution to her project."
             }
         },
         {
@@ -719,7 +702,8 @@
             "start_time": "06:17",
             "end_time": "06:20",
             "annotations": {
-                "offer constructive criticism": "This utterance is an offer to pay for shipping, which is a helpful suggestion to facilitate the process of receiving samples, thus offering constructive assistance."
+                "offer feedback": "Providing a specific offer to facilitate obtaining biological samples.",
+                "encourage participation": "Encouraging others to contribute by offering to pay for FedEx shipping."
             }
         },
         {
@@ -739,7 +723,8 @@
             "start_time": "06:20",
             "end_time": "06:22",
             "annotations": {
-                "express humor": "Lisa is making a lighthearted comment about sending bacteria, which can be interpreted as humor."
+                "express humor": "The utterance has a humorous tone in its informality and specificity of accepting bacteria that others 'really like'.",
+                "develop idea": "Lisa is elaborating on her previous offer to accept biological samples for measurement by specifying an interest in bacteria."
             }
         },
         {
@@ -759,8 +744,7 @@
             "start_time": "06:22",
             "end_time": "06:29",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the previously mentioned idea of measuring biological samples to see what a planet would look like if covered with them, by stating that they will measure the samples.",
-                "offer constructive criticism": "This utterance offers constructive criticism by suggesting that they will measure the samples to figure out how a planet would look if covered with it."
+                "develop idea": "The speaker expands on her previous idea about measuring biological samples to see how they would appear if a planet were covered with them, providing more details on the purpose and process of measurement."
             }
         },
         {
@@ -780,7 +764,8 @@
             "start_time": "06:29",
             "end_time": "06:37",
             "annotations": {
-                "assign task": "Lisa is assigning the task of writing down what they want out of the session."
+                "process management": "Lisa Kaltenegger is instructing the participants on what to do next, thereby managing the meeting flow.",
+                "encourage participation": "By asking participants to write down what they want out of the session, Lisa Kaltenegger is encouraging them to participate by sharing their thoughts."
             }
         },
         {
@@ -800,7 +785,8 @@
             "start_time": "06:37",
             "end_time": "06:40",
             "annotations": {
-                "ask clarifying question": "Lisa is asking the team to consider the overall goal or vision for the session, seeking clarity on the desired outcome."
+                "Ask question": "The speaker is requesting information or clarification on what the big picture or overall goal would be like.",
+                "Clarify goal": "The speaker is seeking clarity on objectives or outcomes of the session or discussion."
             }
         },
         {
@@ -820,7 +806,7 @@
             "start_time": "06:40",
             "end_time": "06:42",
             "annotations": {
-                "assign task": "Lisa is assigning the task of writing down what they want out of the session, which she mentioned in the previous utterances."
+                "process management": "This code applies because Lisa Kaltenegger is managing the meeting flow by asking participants to continue with the task they were given, which is to write down what they want out of the session."
             }
         },
         {
@@ -840,7 +826,8 @@
             "start_time": "06:42",
             "end_time": "06:47",
             "annotations": {
-                "encourage particpatioin": "Lisa is inviting someone to volunteer as a reporter, encouraging participation in the meeting."
+                "encourage participation": "The utterance invites someone to volunteer for the role of reporter, encouraging participation.",
+                "assign task": "The utterance also involves assigning a task by asking for a volunteer for a specific role."
             }
         },
         {
@@ -860,7 +847,8 @@
             "start_time": "06:47",
             "end_time": "06:50",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Joey's previous contribution as a reporter, explaining why he is not being asked to volunteer again."
+                "acknowledge contribution": "Lisa Kaltenegger recognizes Joe Levy's previous contribution as the reporter.",
+                "process management": "Lisa Kaltenegger is managing the meeting process by determining who can take on a role, specifically referencing Joe Levy's past role as reporter."
             }
         },
         {
@@ -880,7 +868,7 @@
             "start_time": "06:50",
             "end_time": "06:50",
             "annotations": {
-                "express humor": "Joseph Levy is making a lighthearted comment about his previous experience as a reporter, suggesting he enjoyed the task."
+                "Supportive response": "Joe Levy is expressing agreement and a positive sentiment about his previous experience as a reporter, which aligns with the definition of a supportive response."
             }
         },
         {
@@ -900,7 +888,7 @@
             "start_time": "06:50",
             "end_time": "06:53",
             "annotations": {
-                "assign task": "Lisa is assigning the task of summarizing the session to someone, following up on her previous request for a volunteer."
+                "process management": "This code applies because the speaker is managing the meeting flow by directing what they will do next."
             }
         },
         {
@@ -920,7 +908,9 @@
             "start_time": "06:53",
             "end_time": "06:55",
             "annotations": {
-                "encourage particpatioin": "Lisa is asking if anyone wants to volunteer for the role of reporter, encouraging participation from the group."
+                "process management": "The speaker is managing the meeting flow by asking for a volunteer for a specific role.",
+                "assign task": "The speaker is opening the opportunity for someone to take on a specific role (reporter) within the group.",
+                "encourage participation": "The speaker is inviting group members to contribute by volunteering for the reporter role."
             }
         },
         {
@@ -940,7 +930,7 @@
             "start_time": "06:55",
             "end_time": "06:56",
             "annotations": {
-                "express humor": "Christopher Hamilton says \"Oh, sorry\", which is likely a humorous apology for interrupting or speaking out of turn, given the context of introductions and volunteering for roles."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -960,7 +950,7 @@
             "start_time": "06:56",
             "end_time": "07:00",
             "annotations": {
-                "explain or define term or concept": "Christopher is explaining his action of going to the Google Doc, which is a shared document for the group."
+                "process management": "Christopher Hamilton is mentioning an action related to managing the discussion process by going to the Google Doc."
             }
         },
         {
@@ -979,11 +969,9 @@
             "screenshare_content": "None",
             "start_time": "07:00",
             "end_time": "07:03",
-            "annotations": [
-                {
-                    "ask clarifying question": "Christopher is likely asking for clarification on a detail related to the Google Doc, possibly a version number or a section number, as he mentions going to the Google Doc in the previous utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is referencing a specific point in the agenda or timeline, suggesting a concern or question about the meeting's progress."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -1002,7 +990,8 @@
             "start_time": "07:03",
             "end_time": "07:04",
             "annotations": {
-                "explain or define term or concept": "Christopher is likely clarifying or explaining something about the topics being discussed, possibly in relation to the Google Doc he mentioned in the previous utterance."
+                "summarize conversation": "Christopher Hamilton is commenting on the outcome of a previous action (topic submission), which can be seen as summarizing or referring back to a part of the conversation.",
+                "process management": "Christopher Hamilton's comment can also be seen as managing the process by acknowledging the submission of topics and possibly preparing for the next step."
             }
         },
         {
@@ -1022,7 +1011,7 @@
             "start_time": "10:00",
             "end_time": "10:05",
             "annotations": {
-                "assign task": "Christopher Hamilton is assigning himself the task of copying the chat into the document at the end of the session."
+                "process management": "The speaker is managing the meeting flow by mentioning an action to be taken regarding documentation."
             }
         },
         {
@@ -1042,8 +1031,8 @@
             "start_time": "10:05",
             "end_time": "10:06",
             "annotations": {
-                "express agreement": "Lisa expresses agreement with the previous statement about using the chat and copying it into the document.",
-                "acknowledge contribution": "Lisa acknowledges Christopher's contribution of offering to copy the chat into the document."
+                "acknowledge contribution": "Lisa Kaltenegger is verbally recognizing Christopher Hamilton's input.",
+                "supportive response": "The utterance expresses a positive evaluation of Christopher Hamilton's action."
             }
         },
         {
@@ -1063,8 +1052,8 @@
             "start_time": "10:07",
             "end_time": "10:24",
             "annotations": {
-                "encourage particpatioin": "Lisa is directly asking for people to start sharing their thoughts, encouraging participation from the team.",
-                "propose decision": "Lisa is suggesting a way to start the discussion by having people share their thoughts, which is a concrete choice for the group."
+                "encourage participation": "The speaker is explicitly inviting team members to contribute their thoughts or ideas, encouraging participation.",
+                "process management": "The speaker is managing the conversation flow by suggesting that team members can unmute themselves to share their thoughts."
             }
         },
         {
@@ -1084,7 +1073,7 @@
             "start_time": "10:24",
             "end_time": "10:24",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages participation by telling people to unmute themselves when they want to talk, fostering an open conversation."
+                "process management": "The speaker is managing the meeting flow by instructing participants on how to handle background noise."
             }
         },
         {
@@ -1103,14 +1092,10 @@
             "screenshare_content": "None",
             "start_time": "10:24",
             "end_time": "10:36",
-            "annotations": [
-                {
-                    "offer constructive criticism": "Dimitar is offering to moderate the chat, which is a form of constructive criticism to help the meeting run smoothly by managing questions and comments."
-                },
-                {
-                    "assign task": "Dimitar is assigning himself the task of monitoring the chat and other communication channels during the meeting."
-                }
-            ]
+            "annotations": {
+                "process management": "Dimitar Sasselov is managing the meeting flow by offering to monitor and moderate the chat and handle questions or raised hands.",
+                "encourage participation": "Dimitar Sasselov encourages others to participate by inviting them to raise their hands or ask questions in the chat."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1129,7 +1114,7 @@
             "start_time": "10:37",
             "end_time": "10:39",
             "annotations": {
-                "encourage particpatioin": "Lisa is prompting the team to share their initial thoughts and suggestions, encouraging them to contribute to the discussion."
+                "encourage participation": "Lisa Kaltenegger is inviting others to contribute their ideas, encouraging participation in the discussion."
             }
         },
         {
@@ -1149,9 +1134,9 @@
             "start_time": "10:40",
             "end_time": "11:57",
             "annotations": {
-                "present new idea": "Simon introduces the idea of focusing on the emergence of complex life and the challenges in distinguishing it from simple life when searching for life on other planets, which is a novel concept in the context of the discussion so far.",
-                "expand on existing idea": "Simon expands on the idea of water worlds by considering the possibility of other liquids and chemistries that might support life, building upon the general topic of planetary habitability.",
-                "ask clarifying question": "Simon poses a question about how organisms might adapt to life in fluids other than water, seeking to understand the processes that could lead to such adaptations."
+                "propose new idea": "The speaker introduces his research focus on the emergence of complex life and his interest in water worlds, which are new ideas to the discussion.",
+                "ask question": "The speaker asks questions about how organisms might adapt to life in fluids other than water and what processes lead to such adaptations.",
+                "signal expertise": "The speaker mentions his research focus on the emergence of complex life and his study of early organisms, signaling his expertise in the field."
             }
         },
         {
@@ -1171,8 +1156,8 @@
             "start_time": "11:57",
             "end_time": "12:06",
             "annotations": {
-                "explain or define term or concept": "Lisa is clarifying that the current activity is idea collection before moving to discussion, setting expectations for the group.",
-                "propose decision": "Lisa is proposing a plan to collect ideas and then discuss them individually, seeking agreement from the group."
+                "summarize conversation": "Lisa is summarizing the current state of the discussion.",
+                "encourage participation": "Lisa is inviting feedback or agreement from the group."
             }
         },
         {
@@ -1192,7 +1177,8 @@
             "start_time": "12:07",
             "end_time": "12:08",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly inviting someone else to contribute their ideas after Simon finished speaking."
+                "encourage participation": "The speaker invites another participant to contribute to the discussion, aligning with the definition of encouraging participation.",
+                "process management": "The speaker is also managing the discussion flow by determining who will contribute next."
             }
         },
         {
@@ -1211,12 +1197,11 @@
             "screenshare_content": "None",
             "start_time": "12:09",
             "end_time": "12:56",
-            "annotations": [
-                {
-                    "present new idea": "Joe introduces the idea of conceptualizing the relationship between geology and biological systems and coevolution, questioning if it's a tug of war, forcing feedback, or something else, which is a novel concept in the current discussion.",
-                    "ask clarifying question": "Joe asks how deterministic these processes are and what inhabited planets look similar, seeking the group's thoughts on these questions related to geology and biological systems."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Joe Levy introduces his thoughts on the relationship between geology and biological systems, building on previous discussions.",
+                "ask question": "Joe Levy asks for thoughts on how to conceptualize the relationship between geology and biological systems and the determinism of these processes.",
+                "encourage participation": "Joe Levy invites others to share their thoughts on his ideas."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1235,7 +1220,7 @@
             "start_time": "12:56",
             "end_time": "12:57",
             "annotations": {
-                "express agreement": "Lisa expresses agreement with Joe's ideas by saying \"Cool.\""
+                "supportive response": "The speaker is expressing agreement or validation without adding new content."
             }
         },
         {
@@ -1255,7 +1240,7 @@
             "start_time": "12:58",
             "end_time": "12:59",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging someone else to contribute their ideas to the discussion, following Simon and Joe's contributions."
+                "encourage participation": "The speaker is inviting someone else in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -1274,17 +1259,10 @@
             "screenshare_content": "None",
             "start_time": "13:01",
             "end_time": "13:57",
-            "annotations": [
-                {
-                    "present new idea": "Brad introduces his idea about how a planet's tectonic mode influences the origin and evolution of life, which hasn't been discussed yet."
-                },
-                {
-                    "explain or define term or concept": "Brad explains the concept of a planet's tectonic mode by providing examples like plate tectonics, a stagnant lid like Mars, and something in between like Venus."
-                },
-                {
-                    "ask clarifying question": "Brad poses questions about whether the same environments needed for the origin of life can form on planets with different tectonic states and whether plate tectonics is necessary, seeking to understand the relationship between tectonic modes and life."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea he has been interested in for many years.",
+                "develop idea": "The speaker elaborates on his idea through explanations and questions."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1303,7 +1281,8 @@
             "start_time": "13:58",
             "end_time": "13:58",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Brad's contribution of his idea, signaling she heard him."
+                "code name": "supportive response",
+                "explanation": "This code applies because the utterance 'Right.' expresses agreement or validation of a previous statement, which is a key aspect of a supportive response."
             }
         },
         {
@@ -1323,8 +1302,8 @@
             "start_time": "14:01",
             "end_time": "14:10",
             "annotations": {
-                "acknowledge contribution": "Stephanie acknowledges Brad's contribution by stating that he expressed her thoughts more coherently, recognizing his input without necessarily agreeing or expanding on it.",
-                "express enthusiasm": "Stephanie expresses enthusiasm for Brad's idea by saying \"Wow\" and calling it an \"awesome thought.\""
+                "acknowledge contribution": "Stephanie recognizes Brad's input and expresses that he articulated a thought she also had.",
+                "supportive response": "Stephanie expresses agreement and a positive evaluation of Brad's idea."
             }
         },
         {
@@ -1344,7 +1323,7 @@
             "start_time": "14:11",
             "end_time": "14:12",
             "annotations": {
-                "acknowledge contribution": "Stephanie Olson acknowledged Brad's idea as a more coherent expression of her own, and Joseph Levy's utterance acknowledges Stephanie's comment."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1364,9 +1343,8 @@
             "start_time": "14:13",
             "end_time": "14:44",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on Simon's earlier idea about water worlds by expressing her interest in whether water worlds are habitable, building upon the previous discussion.",
-                "present new idea": "Stephanie presents a new idea by questioning the habitability of water worlds, which is a novel consideration in the context of the discussion.",
-                "express alternative decision": "Stephanie expresses an alternative decision by suggesting that water worlds might not be habitable, contrasting with the implicit assumption that they could be."
+                "ask question": "Stephanie is requesting information about the habitability of water worlds.",
+                "critical response": "Stephanie is providing a negative evaluation of water worlds being habitable, expressing her bias."
             }
         },
         {
@@ -1386,7 +1364,8 @@
             "start_time": "14:44",
             "end_time": "14:44",
             "annotations": {
-                "present new idea": "Stephanie is presenting a new idea that continents might be required for certain types of life, which has not been explicitly discussed before."
+                "develop idea": "Stephanie Olson's statement builds upon and develops the idea presented by exploring its implications further.",
+                "offer feedback": "Her statement offers a perspective on the idea of water worlds by suggesting that continents might be required for certain types of life."
             }
         },
         {
@@ -1406,8 +1385,8 @@
             "start_time": "14:44",
             "end_time": "14:44",
             "annotations": {
-                "expand on existing idea": "Stephanie expands on the existing idea of water worlds and habitability, adding the condition that continents might be required for complex life, particularly animal-grade complexity, which builds on Simon's earlier mention of complex life.",
-                "provide supporting evidence": "Stephanie provides a reason to strengthen her idea that continents might be required for certain types of life, stating that animal grade complexity and things that might eventually become communicative need continents."
+                "ask question": "Stephanie asks for clarification on Simon's definition of complex life.",
+                "develop idea": "Stephanie expands on her thoughts about complex life and the requirement of continents for certain types of life."
             }
         },
         {
@@ -1427,7 +1406,7 @@
             "start_time": "14:45",
             "end_time": "14:46",
             "annotations": {
-                "express agreement": "Lisa expresses agreement with Stephanie's interesting point about the habitability of water worlds and the potential requirement of continents for complex life."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input, showing appreciation for their contribution."
             }
         },
         {
@@ -1446,17 +1425,10 @@
             "screenshare_content": "None",
             "start_time": "14:47",
             "end_time": "15:23",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura builds upon the ideas presented by Brad and Joe, as she mentions them directly, and then poses a question about the influence of biology on planetary processes, specifically mantle convection and tectonic activity, which relates to their previous points about geology and planetary habitability."
-                },
-                {
-                    "present new idea": "Laura introduces the novel concept of biology influencing mantle convection and tectonic activity, which hasn't been explicitly discussed in the same way before."
-                },
-                {
-                    "ask clarifying question": "Laura asks how much biology influences planetary processes, mantle convection, and whether it can change tectonic modes, seeking clarification on the extent and nature of this influence."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Laura Schaefer is building off ideas previously mentioned by Brad and Joe.",
+                "ask question": "Laura Schaefer is requesting information on the influence of biology on planetary processes and mantle convection."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1475,7 +1447,7 @@
             "start_time": "15:23",
             "end_time": "15:24",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Laura's contribution by saying \"Cool\", but she is not agreeing or expanding on the idea."
+                "supportive response": "The utterance expresses agreement or validation for previous statements without adding new content."
             }
         },
         {
@@ -1495,7 +1467,7 @@
             "start_time": "15:24",
             "end_time": "15:26",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly inviting someone else to contribute their ideas to the discussion."
+                "encourage participation": "The speaker is inviting others in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -1514,13 +1486,11 @@
             "screenshare_content": "None",
             "start_time": "15:30",
             "end_time": "16:26",
-            "annotations": [
-                {
-                    "present new idea": "Trinity introduces the idea of the transition from less complex to more complex life and how it relates to physiology, which is a new concept in the discussion.",
-                    "acknowledge contribution": "Trinity acknowledges Stephanie's point about the habitability of water worlds, recognizing Stephanie's input without necessarily agreeing or expanding on it.",
-                    "expand on existing idea": "Trinity expands on the existing idea of water worlds by questioning how to get the necessary gradients for life without plate tectonics, building upon the previous discussion about water worlds and habitability."
-                }
-            ]
+            "annotations": {
+                "ask question": "Trinity asks questions about the habitability of water worlds and the necessity of plate tectonics for life.",
+                "develop idea": "Trinity builds upon existing ideas, specifically discussing the transition from less complex to more complex life and referencing Stephanie's point about water worlds.",
+                "acknowledge contribution": "Trinity acknowledges and builds upon Stephanie's idea about water worlds."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1539,8 +1509,7 @@
             "start_time": "16:26",
             "end_time": "16:29",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Trinity's contribution by saying \"That's great.\"",
-                "encourage particpatioin": "Lisa encourages Liming to participate by asking \"Liming, do you want to?\"."
+                "encourage participation": "The speaker is inviting Liming to contribute to the discussion, encouraging participation."
             }
         },
         {
@@ -1559,17 +1528,10 @@
             "screenshare_content": "None",
             "start_time": "16:30",
             "end_time": "17:16",
-            "annotations": [
-                {
-                    "present new idea": "Liming introduces the idea of volcanic activity's role in developing atmospheres and increasing surface temperatures on planets, potentially making them suitable for liquid water and life, which is a novel concept in the current discussion."
-                },
-                {
-                    "provide supporting evidence": "Liming mentions recent studies suggesting volcanic activity on Mars, which supports the idea that volcanoes could play a role in developing atmospheres and increasing surface temperatures."
-                },
-                {
-                    "explain or define term or concept": "Liming explains how volcanic activity can lead to the development of an atmosphere and increase the surface temperature of a planet, making it potentially suitable for liquid water and life."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea about the role of volcanic activities on planetary surfaces and their potential impact on life and liquid water.",
+                "ask question": "The speaker asks for information about the role of volcanic activity in the development of life and liquid water on other planets."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger(she/her)",
@@ -1588,7 +1550,7 @@
             "start_time": "17:17",
             "end_time": "17:19",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly inviting Christopher to share his ideas, continuing the round-robin sharing of initial thoughts."
+                "process management": "Lisa Kaltenegger is managing the meeting flow by indicating it's Christopher's turn to speak."
             }
         },
         {
@@ -1608,7 +1570,7 @@
             "start_time": "17:19",
             "end_time": "17:21",
             "annotations": {
-                "express humor": "Lisa makes a lighthearted comment, implying Christopher is diligently taking notes on everyone's ideas, likely to create a sense of camaraderie and lighten the mood."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1628,7 +1590,7 @@
             "start_time": "17:21",
             "end_time": "17:21",
             "annotations": {
-                "express agreement": "Christopher Hamilton expresses agreement with Lisa's assumption that he is writing down all the other things that have been said."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1647,13 +1609,10 @@
             "screenshare_content": "None",
             "start_time": "17:22",
             "end_time": "18:05",
-            "annotations": [
-                {
-                    "express humor": "The speaker uses the phrase \"this is a frenzy here\" to express humor about the fast-paced idea collection.",
-                    "acknowledge contribution": "The speaker says \"Everybody's going to help. Yeah, thank you\" to acknowledge the contributions of others in the discussion.",
-                    "propose decision": "The speaker proposes that the group focus on ocean worlds, suggesting a specific direction for the discussion based on what he has heard."
-                }
-            ]
+            "annotations": {
+                "Supportive Response": "Christopher Hamilton is showing agreement and a positive sentiment towards the discussion.",
+                "Propose New Idea": "Christopher Hamilton suggests focusing on 'ocean worlds' as a new idea for the group's consideration."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -1672,8 +1631,7 @@
             "start_time": "18:05",
             "end_time": "18:17",
             "annotations": {
-                "expand on existing idea": "The speaker is building on the previous discussion about ocean worlds and their potential habitability, adding his perspective on their compatibility with tectonic activity.",
-                "reject idea": "The speaker rejects the implicit idea that ocean worlds cannot be tectonic, but does not offer a new idea or ways to improve the idea."
+                "develop idea": "The speaker is expanding on his thoughts and relating them to previous discussions about ocean worlds and tectonic worlds."
             }
         },
         {
@@ -1692,14 +1650,11 @@
             "screenshare_content": "None",
             "start_time": "18:17",
             "end_time": "19:45",
-            "annotations": [
-                {
-                    "propose decision": "Christopher proposes focusing the discussion on ocean worlds, considering tectonics, volcanism, and the establishment of life, because he heard oceans mentioned frequently."
-                },
-                {
-                    "expand on existing idea": "He expands on the idea of considering classes of worlds based on information content by introducing the concept of mutual information within an ecosystem, linking geological and biological components."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Christopher suggests focusing on ocean worlds, introducing a new direction for the discussion.",
+                "develop idea": "He expands on this suggestion by detailing aspects to consider such as tectonics, volcanism, and life establishment on ocean worlds.",
+                "clarify goal": "He aims to clarify the discussion's direction by suggesting a focus on ocean worlds and related topics."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -1718,9 +1673,7 @@
             "start_time": "19:45",
             "end_time": "19:46",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges that he has contributed a lot of ideas to the discussion."
-                }
+                "None": "No relevant code directly applies to this utterance as it primarily serves as a transitional statement."
             }
         },
         {
@@ -1740,12 +1693,9 @@
             "start_time": "19:46",
             "end_time": "20:00",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Lisa acknowledges the contributions of the team members by saying \"great ideas everyone\"."
-                },
-                "express enthusiasm": {
-                    "Explanation": "Lisa expresses enthusiasm for the ideas shared by saying \"this sounds really exciting\"."
-                }
+                "summarize conversation": "Lisa Kaltenegger is summarizing the ideas discussed so far and focusing the conversation on ocean worlds and their habitability.",
+                "develop idea": "She is developing the idea of exploring whether ocean worlds could be habitable.",
+                "supportive response": "Lisa Kaltenegger expresses excitement and positive evaluation for the ideas presented by other team members."
             }
         },
         {
@@ -1764,26 +1714,10 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "21:10",
-            "annotations": [
-                {
-                    "expand on existing idea": "This sentence builds on the previous discussion about the role of volcanism and the habitability of ocean worlds, expanding on the idea of how biology interacts with the mantle and the importance of volcanism."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions \"some kind of papers early on\" that suggest bacteria can make it easier to break the crust and start or maintain tectonics, providing evidence for the interaction between biology and geology."
-                },
-                {
-                    "expand on existing idea": "This sentence expands on the idea of the biosphere's influence on a planet, mentioning the tension between the idea that life can have a minimal impact and the idea that life can change everything."
-                },
-                {
-                    "expand on existing idea": "This sentence builds on the previous ideas about the interaction between geology and life, and how this interaction would change in the context of ocean worlds with active cores and ice layers, further exploring the role of volcanoes."
-                },
-                {
-                    "acknowledge contribution": "The speaker acknowledges the value of the ideas presented by the team, setting the stage for further discussion."
-                },
-                {
-                    "encourage particpatioin": "The speaker encourages the team to share their thoughts and engage in a discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about how biology interacts with the mantle and the role of volcanism.",
+                "encourage participation": "The speaker invites others to contribute their thoughts and ideas."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1802,7 +1736,8 @@
             "start_time": "21:10",
             "end_time": "21:13",
             "annotations": {
-                "encourage particpatioin": "Dimitar is encouraging Lisa to share her thoughts by asking her what she wrote down, which is a way to invite her to contribute to the discussion."
+                "ask question": "The speaker is requesting information or clarification from another team member.",
+                "None": "No other codes are applicable to this utterance."
             }
         },
         {
@@ -1821,17 +1756,11 @@
             "screenshare_content": "None",
             "start_time": "21:13",
             "end_time": "22:00",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa is explaining the question that she had written down, which was about the impact of biology on a planet's evolution, including its atmosphere and tectonics, based on a recent discussion that challenged her previous understanding."
-                },
-                {
-                    "present new idea": "Lisa is presenting the idea that biology may not always drastically change a planet, contrasting it with the common belief that it always does."
-                },
-                {
-                    "ask clarifying question": "Lisa is posing a question about whether biology changes tectonics, planet movement, and volcanism, seeking to understand the extent of biology's influence on a planet."
-                }
-            ]
+            "annotations": {
+                "develop idea": "She is expanding on her thoughts and previous discussions about the interaction between biology and planetary processes.",
+                "ask question": "She is explicitly asking questions about the effects of biology on tectonics, planetary movement, and volcanism.",
+                "clarify goal": "She is clarifying her thoughts and the goal of the discussion, seeking to understand and discuss the impact of biology on planetary changes."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -1850,7 +1779,7 @@
             "start_time": "22:00",
             "end_time": "22:04",
             "annotations": {
-                "encourage particpatioin": "Dimitar is encouraging Demeter to contribute to the discussion by asking what Demeter wrote down."
+                "ask question": "The speaker is requesting information about what Lisa Kaltenegger wrote down, seeking clarification on her notes or thoughts."
             }
         },
         {
@@ -1870,7 +1799,7 @@
             "start_time": "22:04",
             "end_time": "22:05",
             "annotations": {
-                "express humor": "Lisa says \"That's funny\" after Dimitar asks Demeter what he wrote down, indicating she found something humorous in the exchange."
+                "express humor": "The speaker is making a humorous remark in response to a previous statement, indicating that they found it amusing."
             }
         },
         {
@@ -1889,17 +1818,10 @@
             "screenshare_content": "None",
             "start_time": "22:05",
             "end_time": "23:30",
-            "annotations": [
-                {
-                    "present new idea": "Dimitar introduces the idea that our understanding of geological processes might be flawed due to the strong influence of the biosphere on Earth's geological record, suggesting we might be fooling ourselves by not accounting for biofeedback."
-                },
-                {
-                    "expand on existing idea": "Dimitar expands on Lisa's question about the influence of biology on planetary processes by suggesting that our geological understanding might be based on false premises due to the strong biosphere on Earth, and that Mars, if lifeless, could provide a clearer picture of geological activity without biofeedback."
-                },
-                {
-                    "provide supporting evidence": "Dimitar supports his idea by mentioning that most of Earth's geological record is from a time with a strong biosphere, and that the early record, while less indicative of strong feedback, is limited, suggesting that our understanding of geological processes might be biased."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker is highlighting a gap in understanding how life influences geological processes and the reliance on Earth's recent biosphere-dominated record.",
+                "critical response": "The speaker is questioning current geological and geophysical practices, suggesting they might be based on false premises due to Earth's strong biosphere."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1918,15 +1840,8 @@
             "start_time": "23:30",
             "end_time": "24:48",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The phrase \"That is great\" acknowledges the previous contributions from the team members."
-                },
-                "present new idea": {
-                    "Explanation": "Lisa introduces the idea that the need for geochemical feedback to maintain habitability might depend on the type of star a planet orbits, specifically contrasting M stars and G stars."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Lisa expands on the discussion about the interaction between biology and geology by introducing the type of star as a factor influencing the need for geochemical feedback for habitability, building on the previous discussion about the role of biology in planetary evolution."
-                }
+                "clarify goal": "The speaker clarifies the goal of considering various factors, such as the type of star, in discussions about planetary habitability and the need for geochemical feedback.",
+                "develop idea": "The speaker develops the idea that the type of star a planet orbits could influence the necessity of geochemical feedback for maintaining habitability, adding nuance to the discussion."
             }
         },
         {
@@ -1946,7 +1861,7 @@
             "start_time": "24:48",
             "end_time": "24:49",
             "annotations": {
-                "propose decision": "Lisa is suggesting that the group begin the discussion, moving the meeting forward."
+                "process management": "The speaker is transitioning to start the main discussion of the meeting."
             }
         },
         {
@@ -1965,14 +1880,11 @@
             "screenshare_content": "None",
             "start_time": "24:49",
             "end_time": "24:57",
-            "annotations": [
-                {
-                    "propose decision": "Brad proposes that the group starts the discussion with water worlds, suggesting a concrete choice for the group."
-                },
-                {
-                    "encourage particpatioin": "Brad encourages Stephanie to share her thoughts on water worlds, inviting her to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker suggests focusing on 'water worlds' as a specific area to discuss, building on previous conversations.",
+                "ask question": "The speaker asks Stephanie for her thoughts on 'water worlds', requesting her input or expertise.",
+                "encourage participation": "By directly asking Stephanie to share her thoughts, the speaker is encouraging her participation in the discussion."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -1991,9 +1903,8 @@
             "start_time": "24:57",
             "end_time": "25:45",
             "annotations": {
-                "encourage particpatioin": "Stephanie asks Christopher and Brad to speak to the viability of plate tectonics and volcanism on water worlds, encouraging them to contribute their expertise.",
-                "provide supporting evidence": "Stephanie provides supporting evidence for her claim about water worlds by stating that the pressure at the base of deep oceans is enough to inhibit melting and stabilize high-density ices, which could shut down volcanism and water-rock interaction.",
-                "present new idea": "Stephanie presents the idea that if volcanism and water rock interaction are shut down on water worlds, it could be a dead end for life."
+                "ask question": "Stephanie Olson is seeking input or discussion from Christopher and Brad on the viability of plate tectonics and volcanism on water worlds.",
+                "develop idea": "Stephanie Olson is expanding on the idea of water worlds and their potential habitability by discussing the effects of deep water columns on plate tectonics and volcanism."
             }
         },
         {
@@ -2012,14 +1923,10 @@
             "screenshare_content": "None",
             "start_time": "25:45",
             "end_time": "26:01",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Christopher acknowledges Stephanie's question about the viability of plate tectonics and volcanism on water worlds by saying it's a good question."
-                },
-                {
-                    "expand on existing idea": "Christopher expands on the discussion about water worlds by stating that there are multiple ways to generate melting and movement of mantle materials, building on Stephanie's question about the viability of volcanism."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "Christopher is expanding on the idea of generating melting and movement of mantle materials on water worlds.",
+                "Offer feedback": "Christopher is providing specific information on how melting and movement of mantle materials could be generated."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -2038,9 +1945,9 @@
             "start_time": "26:01",
             "end_time": "27:34",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the discussion about the viability of volcanism on water worlds, addressing Stephanie's concerns about high pressure inhibiting melting by explaining alternative mechanisms for heat transport and material movement towards the surface.",
-                "explain or define term or concept": "The utterance explains the concept of advective heat transport as a magmatic or volcanic process, clarifying how heat can be transported even under high pressure conditions on water worlds.",
-                "provide supporting evidence": "The utterance provides supporting evidence against the idea that high pressure would shut down volcanism by stating that water cannot be infinitely locked into crystallizing rocks and will be expelled, supporting the idea that volcanic activity can still occur."
+                "develop idea": "The speaker is expanding on existing ideas about geological processes on water worlds, discussing advective heat transport, intrusive to extrusive ratios, and the effects of pressure.",
+                "offer feedback": "The speaker provides specific suggestions for how processes might work on water worlds, addressing concerns about volcanism and water-rock interaction.",
+                "supportive response": "The speaker is providing a positive evaluation of the discussion and suggesting alternative perspectives on geological processes on water worlds."
             }
         },
         {
@@ -2060,7 +1967,7 @@
             "start_time": "27:34",
             "end_time": "27:40",
             "annotations": {
-                "ask clarifying question": "Brad asks for clarification on whether Christopher's description of heat transport is equivalent to a stagnant lid, showing he is trying to understand the implications of Christopher's previous statement."
+                "ask question": "The speaker is requesting clarification or information about whether a concept can be considered equivalent to a 'stagnant lid,' a term used in geology."
             }
         },
         {
@@ -2080,7 +1987,7 @@
             "start_time": "27:40",
             "end_time": "27:42",
             "annotations": {
-                "ask clarifying question": "Dimitar is asking a clarifying question about whether a stagnant lid would be different in the case of water worlds, following a discussion about plate tectonics and volcanism on such worlds."
+                "ask question": "The utterance is a clear example of requesting information or clarification about a prior statement or idea proposed by another group member."
             }
         },
         {
@@ -2100,9 +2007,8 @@
             "start_time": "27:42",
             "end_time": "28:50",
             "annotations": {
-                "expand on existing idea": "Brad is expanding on the discussion about water worlds and the viability of plate tectonics, building on Stephanie and Christopher's points about the pressure inhibiting melting and volcanism.",
-                "explain or define term or concept": "Brad explains that if plate boundaries cannot be made due to the high pressure of the volatile layer, it would act like a stagnant lid, similar to Mars, with a thick cold lithosphere above the convecting mantle.",
-                "provide supporting evidence": "Brad provides Mars as an example of a planet with a stagnant lid, supporting his explanation of how high pressure could inhibit plate tectonics on water worlds."
+                "develop idea": "The speaker is expanding on an existing idea about water worlds and plate tectonics by suggesting a specific scenario.",
+                "offer feedback": "The speaker provides specific thoughts on the scenario of water worlds with high pressure, suggesting it would act like a stagnant lid."
             }
         },
         {
@@ -2122,7 +2028,8 @@
             "start_time": "28:50",
             "end_time": "28:53",
             "annotations": {
-                "expand on existing idea": "Dimitar is building on Brad's idea about the high pressure of the volatile layer preventing plate boundaries and acting like a stagnant lid, and asking if the interior would behave the same way as a stagnant lid without an ocean."
+                "Develop idea": "The speaker is expanding on existing ideas discussed in the conversation, comparing the interior behavior of planets with and without oceans.",
+                "Supportive response": "The utterance supports and builds upon previous discussions, particularly those related to planetary interiors and the role of oceans."
             }
         },
         {
@@ -2142,7 +2049,7 @@
             "start_time": "28:53",
             "end_time": "28:53",
             "annotations": {
-                "confirm decision": "Brad confirms his previous statement about the interior behavior of a water world resembling a stagnant lid, solidifying his initial assessment."
+                "Supportive response": "The speaker is expressing agreement with a previous statement, indicating concurrence without adding new information."
             }
         },
         {
@@ -2162,7 +2069,7 @@
             "start_time": "29:53",
             "end_time": "29:54",
             "annotations": {
-                "confirm decision": "The speaker is confirming that he is Christopher, which is a response to the previous speaker addressing him."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2181,14 +2088,11 @@
             "screenshare_content": "None",
             "start_time": "30:00",
             "end_time": "30:35",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about water worlds and their potential for volcanism and tectonics, Christopher expands on the idea of stagnant lids, suggesting that super-Earth ocean worlds might experience major overturning events due to heat buildup, which would have implications for life."
-                },
-                {
-                    "present new idea": "Christopher introduces the idea of catastrophic overturning events in super-Earth ocean worlds as a potential consequence of heat buildup under a stagnant lid, which could have significant ramifications for any life present."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on ideas previously discussed, specifically considering the characteristics of ocean worlds and their potential for hosting life.",
+                "critical response": "The speaker questions the stability of certain planetary configurations and considers implications for life.",
+                "offer feedback": "The speaker provides speculative ideas about potential outcomes (e.g., overturning events) and their implications."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -2207,7 +2111,7 @@
             "start_time": "30:59",
             "end_time": "31:02",
             "annotations": {
-                "encourage particpatioin": "Dimitar is encouraging Trinity to participate in the discussion, likely to share her thoughts or ideas on the current topic."
+                "encourage participation": "The speaker is inviting Trinity to contribute their thoughts or ideas to the conversation."
             }
         },
         {
@@ -2227,9 +2131,8 @@
             "start_time": "31:02",
             "end_time": "31:38",
             "annotations": {
-                "ask clarifying question": "Trinity is asking a question to clarify the limits of depth for life and cycles in water worlds, building on the discussion about the habitability of water worlds and the potential for volcanism and tectonics in deep ocean environments.",
-                "expand on existing idea": "Trinity is expanding on the existing idea of water worlds by questioning the depth limits for life and cycles, which relates to the earlier discussion about the viability of plate tectonics and volcanism in deep water columns.",
-                "present new idea": "Trinity is presenting a new idea about the existence of a depth limit for life and cycles in water worlds, which has not been explicitly discussed before in the conversation."
+                "ask question": "The speaker is explicitly requesting information or clarification on the topic of depth limits for life in water worlds.",
+                "identify gap": "The question implies a recognition of a gap in understanding how life could exist in deep ocean environments, particularly in a purely water world."
             }
         },
         {
@@ -2248,11 +2151,9 @@
             "screenshare_content": "None",
             "start_time": "31:38",
             "end_time": "31:46",
-            "annotations": [
-                {
-                    "ask clarifying question": "Stephanie is asking Trinity a clarifying question about where life would exist in a deep ocean world, following Trinity's question about the depth limit for life in such an environment."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification from another team member on a prior statement or idea proposed."
+            }
         },
         {
             "speaker": "Trinity Hamilton",
@@ -2271,8 +2172,7 @@
             "start_time": "31:46",
             "end_time": "31:55",
             "annotations": {
-                "expand on existing idea": "Trinity is expanding on her previous question about the depth limit for life in water worlds, now suggesting that life might be more likely to form at the bottom of a deep ocean.",
-                "provide supporting evidence": "Trinity is providing a reason for her previous question, suggesting that life might be more likely to form at the bottom of a deep ocean because of circulation and other factors."
+                "develop idea": "The speaker is expanding on existing ideas about where life might exist in ocean worlds, suggesting that the bottom might be a reasonable place for life to form."
             }
         },
         {
@@ -2292,8 +2192,7 @@
             "start_time": "31:55",
             "end_time": "32:01",
             "annotations": {
-                "express agreement": "Stephanie agrees with Trinity's idea that life would more reasonably form at the bottom of a deep ocean, rather than at the surface.",
-                "expand on existing idea": "Stephanie expands on the idea of where life would form in a deep ocean, suggesting that the photic zone is a tough place to evolve."
+                "supportive response": "The speaker is expressing agreement and validation for the previous discussion about the challenges of evolution in certain environments."
             }
         },
         {
@@ -2313,7 +2212,7 @@
             "start_time": "32:01",
             "end_time": "32:01",
             "annotations": {
-                "expand on existing idea": "Stephanie is about to expand on her previous idea about the photic zone being a tough place to evolve, building on the discussion about where life might exist in a deep ocean."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2333,7 +2232,8 @@
             "start_time": "32:01",
             "end_time": "32:02",
             "annotations": {
-                "express agreement": "The utterance 'Yeah' expresses agreement with the previous statement by Stephanie Olson about the photic zone being a tough place to evolve."
+                "acknowledge contribution": "Dimitar is acknowledging a previous statement or contribution.",
+                "supportive response": "Dimitar is expressing agreement or validation."
             }
         },
         {
@@ -2353,8 +2253,7 @@
             "start_time": "32:02",
             "end_time": "32:08",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on the idea of where life would originate in a deep ocean, building on Trinity's question about the depth limit for life and suggesting that the bottom of a deep ocean might be a difficult place for life to evolve, contrasting with the surface.",
-                "reject idea": "Stephanie rejects the idea that life could easily evolve at the bottom of a really deep ocean."
+                "develop idea": "Stephanie Olson is expanding on the idea of life in deep oceans, discussing the challenges and possibilities, which directly builds upon earlier ideas presented in the conversation."
             }
         },
         {
@@ -2373,11 +2272,9 @@
             "screenshare_content": "None",
             "start_time": "32:09",
             "end_time": "32:10",
-            "annotations": [
-                {
-                    "express agreement": "Dimitar agrees with Stephanie's point about the difficulty of life evolving at the bottom of a deep ocean, following a discussion about the viability of life in water worlds."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -2396,8 +2293,7 @@
             "start_time": "32:10",
             "end_time": "32:24",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on Trinity's idea about life potentially forming at the bottom of a deep ocean, adding that the chemical resources would be there due to hydrothermal activity, but then questions the energy source.",
-                "ask clarifying question": "Stephanie is asking a question about the energy source for life at the bottom of a deep ocean, considering stellar energy and photochemistry."
+                "develop idea": "The speaker is expanding on existing concepts about hydrothermal activity and its implications for life in deep ocean environments, considering the role of different energy sources."
             }
         },
         {
@@ -2416,11 +2312,9 @@
             "screenshare_content": "None",
             "start_time": "32:24",
             "end_time": "32:26",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stephanie is expanding on the idea of where life would originate in a deep ocean, contrasting the bottom (hydrothermal activity) with the top (stellar energy)."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -2439,7 +2333,7 @@
             "start_time": "32:26",
             "end_time": "32:32",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on the idea of where life would originate in a deep ocean, building on Trinity's question about a depth limit for life by considering the physical separation of energy sources and chemical resources."
+                "develop idea": "Stephanie Olson is expanding on existing ideas by considering the implications of physical separation between energy sources and chemical components necessary for life in water worlds."
             }
         },
         {
@@ -2458,17 +2352,11 @@
             "screenshare_content": "None",
             "start_time": "32:32",
             "end_time": "33:48",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dimitar acknowledges Stephanie's contribution by mentioning that he is emphasizing what she is saying and that Laura pointed out a paper that discussed some of these issues in the chat."
-                },
-                {
-                    "expand on existing idea": "Dimitar builds on Stephanie's and Chris's ideas about water worlds by wondering whether there can be overturn events that change the chemistry of the entire ocean despite its large volume."
-                },
-                {
-                    "express agreement": "Dimitar expresses agreement with the idea that hotspot type volcanics should be present in a not so deep water layer."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Dimitar is expanding on ideas previously discussed about water worlds and the role of volcanics.",
+                "ask question": "Dimitar asks a question about the possibility of overturn events in deep ocean environments.",
+                "acknowledge contribution": "Dimitar acknowledges Stephanie's ideas and references a discussion or paper mentioned by Laura."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -2486,11 +2374,10 @@
             "screenshare_content": "None",
             "start_time": "33:49",
             "end_time": "34:04",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Christopher acknowledges Jo's contribution by praising their note-taking from the previous day."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "He acknowledges Jo's contribution by mentioning they did a good job writing notes.",
+                "supportive response": "His tone is supportive and appreciative."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2509,10 +2396,9 @@
             "start_time": "34:04",
             "end_time": "34:50",
             "annotations": {
-                "expand on existing idea": "Lisa builds on the discussion about water worlds and deep oceans, adding the idea that overturn events could mix the ocean and bring new chemistry, addressing concerns about circulation in deep oceans.",
-                "present new idea": "Lisa introduces the novel idea of considering the impact of overturn events on the chemistry and potential for life in deep oceans, suggesting that these events could mix the ocean and bring new chemistry, which hasn't been considered before.",
-                "ask clarifying question": "Lisa poses a question about whether the overturn events would be spotwise or localized for life, seeking to understand the potential impact of these events on the distribution of life.",
-                "express enthusiasm": "Lisa expresses enthusiasm by stating that the question of what could happen when you turn up the energy is a very interesting question."
+                "develop idea": "The speaker is expanding on previous ideas about ocean worlds, discussing the implications of an overturn event on their chemistry and potential for life.",
+                "propose new idea": "The speaker introduces a specific scenario of an overturn event in deep oceans and its implications for chemistry and life.",
+                "ask question": "The speaker asks questions about the localization of life and the effects of overturn events, seeking further information or clarification."
             }
         },
         {
@@ -2532,7 +2418,7 @@
             "start_time": "34:50",
             "end_time": "35:00",
             "annotations": {
-                "ask clarifying question": "Joe asks a clarifying question to Lisa about whether the concern is about cycling in the ocean itself or in the ocean crust mantle system, seeking to understand the specific aspect of ocean cycling that is being discussed."
+                "ask question": "The speaker is requesting clarification on whether the concern is about cycling in the ocean itself or in the ocean crust mantle system."
             }
         },
         {
@@ -2552,7 +2438,7 @@
             "start_time": "35:00",
             "end_time": "35:00",
             "annotations": {
-                "acknowledge contribution": "Lisa is acknowledging Joe's question, but not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2571,14 +2457,10 @@
             "screenshare_content": "None",
             "start_time": "40:00",
             "end_time": "40:31",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is building on the discussion about ocean worlds and their habitability, expanding on the idea of nutrient delivery by suggesting a late accretion scenario where impacts deliver sufficient nutrients."
-                },
-                {
-                    "ask clarifying question": "Laura is asking a question to Joe about what sedimentary processes would look like in a purely ocean world, seeking clarification on the potential for a sedimentary cycle."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks two questions, one about delivering nutrients via impacts and another about sedimentary processes in a purely ocean world.",
+                "develop idea": "The speaker is exploring and possibly expanding on existing ideas about ocean worlds, habitability, and geological processes."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -2596,17 +2478,11 @@
             "screenshare_content": "None",
             "start_time": "40:31",
             "end_time": "41:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Joe is expanding on the discussion about water worlds and their habitability, specifically addressing Laura's question about sedimentary processes by expressing concerns about the efficiency of erosion and sediment transport in purely ocean worlds."
-                },
-                {
-                    "provide supporting evidence": "Joe provides supporting evidence by stating that sedimentation in the open ocean is very small and often biogenic, even on Earth, to support his concern about the lack of recycling in water worlds."
-                },
-                {
-                    "present new idea": "Joe presents a new idea that water worlds might turn into giant closed basin lakes where material builds up and is never recycled, leading to high salinity levels that are uninhabitable."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Joe Levy introduces a new concern about the habitability of ocean worlds related to sedimentation and recycling.",
+                "critical response": "Joe Levy critically evaluates the potential for life in ocean worlds due to issues with sedimentation and material recycling.",
+                "offer feedback": "Joe Levy offers his thoughts on the potential problems with ocean worlds, specifically regarding sedimentation and recycling."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -2625,9 +2501,9 @@
             "start_time": "41:24",
             "end_time": "42:12",
             "annotations": {
-                "expand on existing idea": "Stephanie is building on the discussion about water worlds and their habitability, specifically addressing the issue of nutrient cycling in deep oceans, which was brought up by Joseph Levy.",
-                "provide supporting evidence": "Stephanie provides supporting evidence by comparing nutrient cycling in Earth's relatively shallow ocean (mixing on a thousand-year timescale) to the potential limitations in a really deep ocean (mixing on tens or hundreds of thousands of years or more).",
-                "present new idea": "Stephanie introduces the idea that the connectivity between the bottom and surface of a deep ocean could be significantly different, potentially limiting biospheric productivity due to the slower mixing of nutrients."
+                "develop idea": "Stephanie Olson is expanding on the idea of how ocean depth could affect life by discussing nutrient cycling and ocean circulation.",
+                "identify gap": "She identifies a potential gap in understanding how deep oceans might function differently from Earth's oceans, specifically regarding nutrient cycling and biospheric productivity.",
+                "offer feedback": "Stephanie provides considered insights into the potential limitations of deep ocean worlds for life, based on Earth's ocean processes."
             }
         },
         {
@@ -2647,15 +2523,9 @@
             "start_time": "42:19",
             "end_time": "42:57",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The phrase \"Stephanie, you make a very good point\" acknowledges Stephanie's contribution to the discussion."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Dimitar builds on Stephanie's point about the limitations of deep oceans by suggesting that influx of organics from interstellar space, concentrated by ice layers, could provide necessary elements, relating it to Laura's question about nutrient delivery."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "The phrase \"Christopher, you have your hand raised\" invites Christopher to contribute to the discussion."
-                }
+                "develop idea": "The speaker develops an idea by relating Stephanie's point to Laura's question and expanding on it.",
+                "propose new idea": "The speaker introduces a new concept about the influx of organics from interstellar space and the role of ice layers in concentrating them.",
+                "supportive response": "The tone of the utterance is supportive, engaging positively with previously discussed ideas."
             }
         },
         {
@@ -2675,8 +2545,9 @@
             "start_time": "42:57",
             "end_time": "43:52",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the ongoing discussion about ocean worlds and habitability, adding the idea of stratification of biospheres and movement of methanogens between deep and surface environments, expanding on the discussion of life in deep oceans.",
-                "express enthusiasm": "The speaker expresses enthusiasm by stating that the stratification of two radically different biospheres on a planet is a \"really cool issue.\""
+                "develop idea": "Christopher is expanding on ideas previously discussed about the potential for life in different environments on a planet, specifically discussing the stratification of two radically different biospheres.",
+                "signal expertise": "Christopher explicitly mentions his background as a volcanologist, indicating his expertise in the field.",
+                "supportive response": "Christopher is expressing a positive evaluation of the idea of stratification of biospheres, indicating his support for exploring such concepts."
             }
         },
         {
@@ -2696,9 +2567,8 @@
             "start_time": "44:45",
             "end_time": "45:27",
             "annotations": {
-                "expand on existing idea": "Joe is expanding on the discussion about sedimentary processes in ocean worlds, specifically addressing Laura's question about sedimentary cycles by discussing the challenges of sediment generation and physical weathering in underwater environments.",
-                "provide supporting evidence": "Joe supports his argument about the difficulty of sediment generation by referencing the abundance of terrestrial sediments on Earth's continental shelves and their failure mechanisms, providing a real-world example to strengthen his point.",
-                "express alternative decision": "Joe expresses an alternative perspective by highlighting the challenges of sediment generation and recycling in water worlds, suggesting that they might turn into saline lakes instead of supporting active sedimentary cycles, contrasting with the idea of efficient nutrient cycling."
+                "develop idea": "The speaker expands on existing ideas about water worlds and the challenges of sediment generation.",
+                "critical response": "The speaker questions the feasibility of certain conditions (sediment generation) for life in water worlds."
             }
         },
         {
@@ -2717,17 +2587,10 @@
             "screenshare_content": "None",
             "start_time": "45:27",
             "end_time": "46:28",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Joe explains that the sediment failing on continental shelves is mostly terrestrially derived, not from the shelf itself, clarifying the origin of sediment in that environment."
-                },
-                {
-                    "express humor": "Joe apologizes to \"West Coast folks\" after mentioning turbidites occurring every 500 years in Oregon, adding a humorous touch to the discussion."
-                },
-                {
-                    "expand on existing idea": "Joe expands on the discussion about sedimentary processes in water worlds by describing the type of sediments he would expect to see and where they would be located, building on the previous discussion about sediment recycling."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Joe Levy is expanding on previous discussions about water worlds and sedimentation, providing more details on how he thinks sedimentation would occur in such environments.",
+                "offer feedback": "Joe Levy is providing specific suggestions or ideas on what sedimentation might look like in a water world, which can be seen as offering feedback on the concept of water worlds and their geological processes."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2745,11 +2608,11 @@
             "screenshare_content": "The screen shows a presentation slide with the title EXPLORATION of TO Solar Systems. The slide contains images of various planets and moons.",
             "start_time": "46:28",
             "end_time": "46:49",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is directly inviting Trinity and Simon to contribute to the discussion, given their expressed interest in the transition from simple to complex life."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking Trinity and Simon if they have anything to add, which is a direct question.",
+                "encourage participation": "The speaker is explicitly inviting Trinity and Simon to contribute to the discussion.",
+                "process management": "The speaker is managing the discussion flow by ensuring everyone gets a chance to put their ideas in."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2767,11 +2630,9 @@
             "screenshare_content": "None",
             "start_time": "46:49",
             "end_time": "46:50",
-            "annotations": [
-                {
-                    "express agreement": "Lisa expresses agreement with the discussion about ocean worlds and their potential habitability, which has been the focus of the conversation."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses a positive evaluation of the discussion, indicating interest and agreement."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -2790,8 +2651,8 @@
             "start_time": "46:50",
             "end_time": "47:37",
             "annotations": {
-                "expand on existing idea": "Simon is building on the discussion about water worlds, deep oceans, and sedimentary cycles that Joe and others were discussing.",
-                "ask clarifying question": "Simon is asking if life on a water world can become more complex, building on the discussion about the challenges of nutrient cycling and sediment transport in such environments."
+                "develop idea": "Simon is expanding on existing ideas about water worlds, deep oceans, and the challenges of sedimentary cycles for life.",
+                "ask question": "Simon explicitly asks if life, if started in such a water world, can become more complex."
             }
         },
         {
@@ -2811,7 +2672,8 @@
             "start_time": "47:37",
             "end_time": "47:38",
             "annotations": {
-                "ask clarifying question": "Lisa is asking Simon and Trinity if there are additional requirements for life to evolve into more complex forms on a water world, following their discussion about the challenges of nutrient cycling and sediment transport in such environments."
+                "ask question": "The speaker is explicitly requesting information on what additional conditions are needed for life to continue.",
+                "clarify goal": "The question seeks to understand necessary conditions for life, relating to the goal of determining habitability."
             }
         },
         {
@@ -2831,7 +2693,7 @@
             "start_time": "47:38",
             "end_time": "47:39",
             "annotations": {
-                "express humor": "Lisa is making a joke, implying Simon has spent a very long time thinking about the topic of complexity in water worlds, which is humorous."
+                "express humor": "The speaker makes a joke by exaggerating the amount of time Simon has thought about the topic, indicating humor."
             }
         },
         {
@@ -2851,8 +2713,8 @@
             "start_time": "47:39",
             "end_time": "47:40",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Trinity to share her thoughts on the topic of simple to complex life in water worlds, following a discussion about the challenges of nutrient cycling and sediment transport in such environments.",
-                "assign task": "Lisa assigns Trinity the task of sharing her thoughts on the topic of simple to complex life in water worlds, and promises to return to Simon after Trinity speaks."
+                "ask question": "The speaker directly asks for thoughts or opinions, seeking clarification or insight.",
+                "encourage participation": "The speaker invites Trinity to contribute her ideas, promoting group discussion."
             }
         },
         {
@@ -2872,8 +2734,9 @@
             "start_time": "47:40",
             "end_time": "48:22",
             "annotations": {
-                "expand on existing idea": "Trinity is building on the previous discussion about the conditions necessary for the development of complex life on water worlds, adding the idea of a time threshold for complexity to develop.",
-                "present new idea": "Trinity introduces the idea that a time threshold is needed for complexity to develop, and that mixing and genetic variation are important factors in increasing complexity."
+                "develop idea": "Trinity is expanding on existing ideas about complexity, genetic variation, and the potential for increasing complexity over time.",
+                "acknowledge contribution": "Trinity references others' mentions of mixing on Earth and its effects.",
+                "identify gap": "Trinity touches upon the idea of a potential time threshold for complexity, implying a recognition of current limitations in understanding."
             }
         },
         {
@@ -2893,7 +2756,7 @@
             "start_time": "48:22",
             "end_time": "48:22",
             "annotations": {
-                "encourage particpatioin": "Trinity is encouraging someone else to speak, likely after interrupting them or indicating they can continue after a pause."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2912,14 +2775,11 @@
             "screenshare_content": "None",
             "start_time": "48:23",
             "end_time": "49:32",
-            "annotations": [
-                {
-                    "express enthusiasm": "Dimitar expresses excitement about the current discussion on ocean worlds and their potential relevance to early Earth."
-                },
-                {
-                    "expand on existing idea": "Dimitar builds on the discussion about ocean worlds by suggesting its relevance to the early Earth, where continents might have been absent for a period."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The utterance expands on existing ideas by suggesting a connection to the early Earth.",
+                "acknowledge contribution": "The utterance acknowledges the contributions of others by expressing excitement about the discussion.",
+                "encourage participation": "The utterance encourages further discussion."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -2938,7 +2798,7 @@
             "start_time": "49:33",
             "end_time": "49:34",
             "annotations": {
-                "acknowledge contribution": "Brad acknowledges that the previous discussion points made by others could form the basis of a research paper, recognizing the value of the ideas presented."
+                "Supportive response": "Bradford James Foley expresses a positive evaluation of the idea, suggesting it is worthy of being a paper."
             }
         },
         {
@@ -2957,11 +2817,10 @@
             "screenshare_content": "None",
             "start_time": "50:00",
             "end_time": "50:26",
-            "annotations": [
-                {
-                    "expand on existing idea": "Brad builds on the discussion about water worlds and their habitability by suggesting that even on an early Earth without continents, volcanic activity could create island chains, expanding on the idea of geological features influencing life."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea about early Earth having land exposed due to volcanism.",
+                "develop idea": "The speaker elaborates on this idea by comparing it to the modern Earth scenario."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -2979,13 +2838,10 @@
             "screenshare_content": "None",
             "start_time": "50:26",
             "end_time": "51:21",
-            "annotations": [
-                {
-                    "express agreement": "Dimitar explicitly agrees with Brad's previous statement about the possibility of land exposure on early Earth, indicating agreement with a proposed idea.",
-                    "expand on existing idea": "Dimitar expands on the discussion about ocean planets by suggesting that studying them could provide insights into the early Earth, where there was less dry land, building upon the current topic of discussion.",
-                    "present new idea": "Dimitar presents the idea that studying truly ocean planets could provide insights into the early Earth, which is a novel concept not previously explicitly stated in this way."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses agreement with Brad's previous statement.",
+                "develop idea": "The speaker elaborates on the idea of studying a planet completely covered by a deep ocean and its implications for understanding early Earth."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -3003,13 +2859,11 @@
             "screenshare_content": "None",
             "start_time": "51:21",
             "end_time": "52:33",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker provides evidence about the role of terrestrial clays in carbon burial in oceans, supporting the idea that the presence of land and plants significantly impacts carbon cycling, which is relevant to the discussion about habitability of water worlds.",
-                    "expand on existing idea": "The speaker expands on the discussion about water worlds by introducing the concept of carbon burial and how the lack of terrestrial clays might limit carbon cycling and recycling in water worlds, building on the previous concerns about nutrient availability and ocean circulation.",
-                    "express alternative decision": "The speaker expresses an alternative perspective by suggesting that water worlds might be inherently slow in terms of biological and geological processes due to inefficient carbon cycling, contrasting with the idea that they could potentially harbor complex life."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Joe Levy expands on previous discussions about the interaction between geology and biological systems, specifically focusing on carbon burial in oceans and its implications for water worlds.",
+                "offer feedback": "Joe Levy provides feedback on the potential inefficiencies of carbon burial in water worlds, comparing it to processes on Earth and suggesting that water worlds might be 'really slow' or need 'a lot of time'.",
+                "critical response": "Joe Levy critically evaluates the efficiency of biological processes in water worlds, particularly concerning carbon burial and the generation of effective carbon-bearing clays."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -3027,14 +2881,11 @@
             "screenshare_content": "None",
             "start_time": "52:33",
             "end_time": "53:16",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea that ocean worlds might not be stable if CO2 cannot be sequestered, potentially leading to a Venus-like state, which is a novel consideration in the context of the discussion."
-                },
-                {
-                    "propose decision": "The speaker proposes that the discussion should return to the biological aspects of biogeochemical processes, as the conversation has been primarily focused on physical and chemical aspects."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking a question about the stability of ocean worlds if they cannot sequester CO2.",
+                "propose new idea": "The speaker introduces the idea that ocean worlds might end up like Venus if CO2 is not sequestered.",
+                "process management": "The speaker suggests refocusing the discussion on the biological aspect of the biogeochemical process."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3053,18 +2904,8 @@
             "start_time": "53:17",
             "end_time": "53:45",
             "annotations": {
-                "acknowledge contribution": {
-                    "Code Name": "acknowledge contribution",
-                    "Explanation": "The speaker acknowledges Christopher's point about returning to the biological aspect of the discussion."
-                },
-                "expand on existing idea": {
-                    "Code Name": "expand on existing idea",
-                    "Explanation": "The speaker builds upon the previous discussion by posing the question of how much biology influences tectonics, the atmosphere, and the overall nature of a planet, which was brought up earlier."
-                },
-                "encourage particpatioin": {
-                    "Code Name": "encourage particpatioin",
-                    "Explanation": "The speaker encourages others to offer their thoughts on the question of biology's influence on planetary processes."
-                }
+                "encourage participation": "The speaker invites others to share their thoughts or guesses, encouraging participation in the discussion.",
+                "summarize conversation": "The speaker summarizes previous discussion points about the influence of biology on geological processes and the planet's atmosphere."
             }
         },
         {
@@ -3084,9 +2925,8 @@
             "start_time": "53:47",
             "end_time": "54:46",
             "annotations": {
-                "expand on existing idea": "This utterance builds on the discussion about carbon sequestration in water worlds, specifically addressing Joe's concern about the lack of efficient carbon recycling by considering the limitations of carbonate-building organisms in deep oceans.",
-                "provide supporting evidence": "The speaker provides reasoning based on the carbon compensation depth to suggest that even if carbonate-building organisms existed, their shells would dissolve before reaching the ocean floor, hindering CO2 export.",
-                "ask clarifying question": "The speaker poses a question about whether biology can help with sedimentation and CO2 export, given the limitations of carbonate-building organisms in deep oceans, seeking to understand the potential role of biology in addressing Joe's concerns."
+                "ask question": "The speaker is requesting information or clarification on the role of biology in sedimentation and CO2 export in ocean worlds.",
+                "develop idea": "The speaker is expanding on existing ideas about the interactions between biology and geological processes in deep ocean environments."
             }
         },
         {
@@ -3106,7 +2946,8 @@
             "start_time": "54:46",
             "end_time": "55:02",
             "annotations": {
-                "present new idea": "Stephanie introduces the novel concept of a gain feedback loop involving biological carbon export, dissolution, and surface temperature scaling, which hasn't been explicitly discussed before in this conversation."
+                "ask question": "Requesting information or clarification on the potential for a gain feedback loop with biological carbon export and dissolution return scaling with surface temperature.",
+                "develop idea": "Exploring or expanding on the idea of a feedback loop involving biological carbon export and surface temperature."
             }
         },
         {
@@ -3126,7 +2967,7 @@
             "start_time": "55:03",
             "end_time": "55:04",
             "annotations": {
-                "express agreement": "Christopher expresses agreement with Stephanie's idea about a gain feedback with biological carbon export and dissolution scaling with surface temperature."
+                "supportive response": "The speaker expresses a positive evaluation of a prior statement, indicating agreement or validation."
             }
         },
         {
@@ -3145,14 +2986,9 @@
             "screenshare_content": "None",
             "start_time": "55:13",
             "end_time": "56:04",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Liming provides supporting evidence for the instability of ocean worlds by explaining how increased CO2 leads to a greenhouse effect, raising surface temperature and evaporating liquid water, which further amplifies the greenhouse effect due to water vapor, creating a positive feedback loop."
-                },
-                {
-                    "explain or define term or concept": "Liming explains the concept of a positive feedback loop in the context of CO2 concentration, greenhouse effect, and surface temperature, clarifying how these factors interact to potentially lead to the loss of an ocean."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on an existing idea about the relationship between CO2 concentration, greenhouse effect, and temperature increase, providing a mechanism for a positive feedback loop."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -3170,11 +3006,9 @@
             "screenshare_content": "None",
             "start_time": "56:09",
             "end_time": "56:10",
-            "annotations": [
-                {
-                    "express agreement": "Stephanie is agreeing with a prior statement about something dissolving before reaching a certain point, indicating agreement with the previous speaker's point."
-                }
-            ]
+            "annotations": {
+                "supportive response": "Stephanie's utterance is a supportive response, indicating agreement or acknowledgment of a prior statement about dissolution."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -3193,7 +3027,7 @@
             "start_time": "56:11",
             "end_time": "56:46",
             "annotations": {
-                "expand on existing idea": "Stephanie is expanding on the discussion about carbon export and dissolution in ocean worlds, adding that ocean circulation patterns are important because carbon doesn't need to reach the bottom to be significant if it's carried away from the surface for long periods."
+                "develop idea": "This code applies because Stephanie Olson is elaborating on the concept of ocean circulation patterns and their potential impact on the habitability of deep ocean worlds, building upon previous discussions."
             }
         },
         {
@@ -3213,9 +3047,8 @@
             "start_time": "56:51",
             "end_time": "58:15",
             "annotations": {
-                "present new idea": "Lisa introduces the novel concept of envisioning alternative gain feedbacks in biogeochemical cycles, especially if a pathway is cut off, and speculates about their potential relevance to early Mars or CO2-rich Venus.",
-                "ask clarifying question": "Lisa asks if anyone works on biota that use alternative biogeochemical pathways, such as hydrogen-eating bacteria or methanogens in non-oxygen environments, seeking to understand the diversity of life's metabolic strategies.",
-                "encourage particpatioin": "Lisa encourages participation by asking if anyone works on biota that use other biogeochemical ways to get stuff or eat stuff or not eat stuff."
+                "ask question": "Lisa Kaltenegger is asking if anybody works on biota that use other biogeochemical ways to get stuff, seeking information.",
+                "propose new idea": "Lisa Kaltenegger is suggesting exploring other gain feedbacks and different geochemical or biological geochemical feedbacks that might have worked on early Mars or Venus."
             }
         },
         {
@@ -3234,11 +3067,9 @@
             "screenshare_content": "None",
             "start_time": "60:00",
             "end_time": "60:17",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Liming explains that carbon dioxide concentration is important for surface temperature and ocean development, providing context to the ongoing discussion about ocean worlds and habitability."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by highlighting the significance of carbon or carbon dioxide concentration for surface temperature and ocean development."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3257,9 +3088,9 @@
             "start_time": "60:18",
             "end_time": "60:55",
             "annotations": {
-                "present new idea": "The speaker introduces a new idea about checking if a water world looks like Venus as a concrete test, based on the assumption that there's no way to get rid of CO2 on such planets, building on the discussion about CO2 feedback loops.",
-                "expand on existing idea": "The speaker expands on the existing idea of CO2 feedback loops by suggesting a concrete test for water worlds based on their resemblance to Venus, considering the potential for runaway greenhouse effects.",
-                "propose decision": "The speaker proposes a concrete action: if we find a water world, the first thing we should check is whether or not it looks like Venus, building on the discussion about CO2 feedback loops."
+                "develop idea": "The speaker is expanding on previous ideas about planetary evolution and habitability by suggesting a scenario where water worlds could become Venus-like if they cannot get rid of CO2.",
+                "offer feedback": "The speaker suggests a concrete approach to test the hypothesis about water worlds by comparing them to Venus.",
+                "signal expertise": "The speaker references her perspective as an astronomer, indicating her expertise in the field."
             }
         },
         {
@@ -3278,13 +3109,10 @@
             "screenshare_content": "None",
             "start_time": "60:56",
             "end_time": "62:01",
-            "annotations": [
-                {
-                    "expand on existing idea": "Dimitar is building upon Simon's point in the chat about Gaia-type feedback, expanding on the concept of biogeochemical feedback loops.",
-                    "present new idea": "Dimitar introduces a novel concept of a biofeedback mechanism that could reverse the typical drying trend of rocky planets, leading to them becoming ocean planets over time.",
-                    "ask clarifying question": "Dimitar asks if it's possible for a biofeedback to reverse the drying trend of rocky planets, leading to them becoming ocean planets, seeking input on the feasibility of this idea."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "introducing a new idea about biofeedback potentially reversing planetary trends of water loss",
+                "ask question": "requesting opinions or thoughts on the feasibility of this new idea"
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -3302,14 +3130,10 @@
             "screenshare_content": "None",
             "start_time": "62:03",
             "end_time": "63:11",
-            "annotations": [
-                {
-                    "expand on existing idea": "Brad builds on Dimitar's idea about reversing the drying trend of rocky planets, suggesting it's possible on stagnant lid planets due to the lack of subduction zones to recycle water back into the mantle."
-                },
-                {
-                    "provide supporting evidence": "Brad provides supporting evidence by explaining that stagnant lid planets lack subduction zones, which are necessary for recycling water back into the mantle, thus supporting the idea that these planets could start dry and outgas water over time."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea about planetary formation and the conditions for a planet to have a stagnant lid, discussing how it could start dry and build up an ocean over time.",
+                "identify gap": "The speaker acknowledges gaps in current understanding, such as the initial conditions of planetary formation and the outgassing of volatiles during a magma ocean phase."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3328,7 +3152,7 @@
             "start_time": "63:13",
             "end_time": "63:14",
             "annotations": {
-                "encourage particpatioin": "Lisa is directly asking Laura to share her thoughts on the current discussion, encouraging her participation."
+                "encourage participation": "This code applies because Lisa Kaltenegger is inviting Laura to contribute her thoughts or opinions to the discussion."
             }
         },
         {
@@ -3347,14 +3171,9 @@
             "screenshare_content": "None",
             "start_time": "63:17",
             "end_time": "64:01",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Laura explains the concept of outgassing during a magma ocean stage, specifying that most water and carbon dioxide are released early because they don't remain in the melt."
-                },
-                {
-                    "expand on existing idea": "Laura expands on Brad's idea about water outgassing, adding details about the magma ocean stage and how the reduction state of the mantle affects carbon solubility and outgassing."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Laura Schaefer is expanding on existing ideas about planetary formation and geochemical processes, providing specific examples and mechanisms related to outgassing during magma ocean stages."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3373,7 +3192,8 @@
             "start_time": "64:01",
             "end_time": "64:03",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Christopher to speak, likely because he had his hand raised, inviting him to contribute to the discussion."
+                "code name": "process management",
+                "explanation": "Lisa Kaltenegger is managing the meeting flow by inquiring about Christopher Hamilton's raised hand."
             }
         },
         {
@@ -3392,18 +3212,10 @@
             "screenshare_content": "None",
             "start_time": "64:04",
             "end_time": "65:31",
-            "annotations": [
-                {
-                    "propose decision": {
-                        "Explanation": "Christopher suggests that the group begin thinking about where the synthesis of the discussion comes from, proposing a direction for the conversation."
-                    }
-                },
-                {
-                    "present new idea": {
-                        "Explanation": "Christopher presents a new idea about whether an ocean world can ever get out of an anoxic state and build up enough oxygen to have different forms of metabolism, questioning if not having extrusives could help oxygenate the ocean."
-                    }
-                }
-            ]
+            "annotations": {
+                "ask question": "Christopher Hamilton asks a question about the potential for ocean worlds to transition from an anoxic state to one that can support complex life, and the implications of geological processes on this.",
+                "encourage participation": "Christopher Hamilton encourages discussion by asking questions and suggesting a direction for synthesizing the information discussed."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3422,9 +3234,7 @@
             "start_time": "65:32",
             "end_time": "66:02",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Lisa introduces the idea that UV light can break down water vapor in the atmosphere, leading to the loss of hydrogen and a potential buildup of oxygen, which hasn't been discussed yet."
-                }
+                "propose new idea": "The speaker introduces a new idea about the potential for chemical buildup of oxygen in an atmosphere with lots of water vapor, suggesting a mechanism by which planets could develop oxygen atmospheres through purely chemical processes."
             }
         },
         {
@@ -3444,8 +3254,8 @@
             "start_time": "66:03",
             "end_time": "66:26",
             "annotations": {
-                "expand on existing idea": "Stephanie expands on Lisa's idea about UV light sapping water vapor and creating oxygen, suggesting that abiotic oxygen accumulation, usually seen as a negative, could be an energy source for a biosphere.",
-                "present new idea": "Stephanie presents the new idea that abiotic oxygen accumulation could be an energy source that could stimulate a biosphere that otherwise might not really get off the ground too much."
+                "develop idea": "The speaker is expanding on an existing idea by offering a new perspective on abiotic oxygen accumulation.",
+                "supportive response": "The speaker is providing a positive and constructive response to a previous point, engaging with the discussion."
             }
         },
         {
@@ -3464,11 +3274,9 @@
             "screenshare_content": "None",
             "start_time": "66:28",
             "end_time": "66:33",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is directly asking Trinity and Simon for their input on the topic of oxygen, encouraging them to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Lisa Kaltenegger is directly asking Trinity and Simon for their thoughts, inviting them to contribute their expertise or opinions."
+            }
         },
         {
             "speaker": "Trinity Hamilton",
@@ -3487,7 +3295,8 @@
             "start_time": "66:33",
             "end_time": "66:38",
             "annotations": {
-                "expand on existing idea": "Trinity is building on the previous discussion about oxygen and its role in complex life, suggesting that there might be alternative oxidants that are less energetically favorable but still viable for life."
+                "develop idea": "The speaker is building upon existing ideas about biochemical processes and life, suggesting an alternative approach using less energetically favorable oxidants.",
+                "propose new idea": "The utterance introduces a new perspective on how biochemical processes might be achieved with different oxidants."
             }
         },
         {
@@ -3507,7 +3316,7 @@
             "start_time": "66:56",
             "end_time": "66:57",
             "annotations": {
-                "express enthusiasm": "Dimitar expresses enthusiasm for oxygen, which was brought up in the context of whether ocean worlds can build up enough oxygen to support complex life."
+                "express humor": "The speaker is making a joke about wanting oxygen, adding a humorous tone to the conversation."
             }
         },
         {
@@ -3526,12 +3335,10 @@
             "screenshare_content": "None",
             "start_time": "67:03",
             "end_time": "67:34",
-            "annotations": [
-                {
-                    "ask clarifying question": "Trinity is asking a question about whether complex life can exist without oxygen, which is a request for clarification on the requirements for complex life.",
-                    "encourage particpatioin": "Trinity is encouraging Simon to participate by saying she is killing time until he says something brilliant."
-                }
-            ]
+            "annotations": {
+                "ask question": "Trinity Hamilton is asking for information or clarification on whether complex life can exist without oxygen.",
+                "identify gap": "Trinity Hamilton is expressing her uncertainty or lack of knowledge on the topic of complex life existing without oxygen."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -3549,17 +3356,11 @@
             "screenshare_content": "None",
             "start_time": "67:38",
             "end_time": "68:55",
-            "annotations": [
-                {
-                    "ask clarifying question": "Simon asks Trinity what he missed, indicating he needs clarification due to unstable internet."
-                },
-                {
-                    "provide supporting evidence": "Simon provides supporting evidence by stating that multicellular life existed on Earth before modern oxygen levels, supporting the idea that complex life doesn't necessarily require high oxygen levels."
-                },
-                {
-                    "explain or define term or concept": "Simon explains that if we define complex life as cells acting together to do interesting things, then a lot of oxygen is not needed."
-                }
-            ]
+            "annotations": {
+                "ask question": "Simon asks Trinity what he missed, directly requesting information.",
+                "develop idea": "Simon expands on previous ideas discussing multicellular life and oxygen levels.",
+                "supportive response": "Simon engages in the discussion, sharing his thoughts in a supportive manner."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -3578,7 +3379,7 @@
             "start_time": "69:16",
             "end_time": "69:17",
             "annotations": {
-                "express frustration": "Simon expresses frustration, likely due to his unstable internet connection which has been interfering with his participation in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3598,7 +3399,7 @@
             "start_time": "70:00",
             "end_time": "70:12",
             "annotations": {
-                "expand on existing idea": "Simon is expanding on his previous statement about the oxygen levels needed for complex life, adding that even though multicellular life existed before modern oxygen levels, they are still in the minority in terms of biomass and influence on the geosphere."
+                "develop idea": "The speaker is expanding on existing ideas about the role of life in influencing the planet's geosphere, indicating an effort to develop and elaborate on previous discussions."
             }
         },
         {
@@ -3618,7 +3419,7 @@
             "start_time": "70:12",
             "end_time": "70:15",
             "annotations": {
-                "express humor": "The utterance is a humorous comment, likely referring to someone raising their hand or contributing to the discussion, using a playful analogy of a \"biotic arm\"."
+                "express humor": "Dimitar Sasselov makes a joke about someone having their 'biotic arm up', implying a humorous take on the discussion."
             }
         },
         {
@@ -3637,11 +3438,9 @@
             "screenshare_content": "None",
             "start_time": "70:15",
             "end_time": "70:16",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is expressing agreement with the previous discussion, as indicated by the use of 'Yeah'."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3659,11 +3458,9 @@
             "screenshare_content": "None",
             "start_time": "70:16",
             "end_time": "70:18",
-            "annotations": [
-                {
-                    "assign task": "Lisa is assigning the task of accessing the slides to the participants, so they can follow along with the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is sharing the slides with the group, which is an act of managing the meeting flow and sharing information."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -3682,7 +3479,7 @@
             "start_time": "70:19",
             "end_time": "70:20",
             "annotations": {
-                "acknowledge contribution": "Christopher acknowledges that he has the link to the slides, which is a contribution from someone else."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3702,7 +3499,7 @@
             "start_time": "70:20",
             "end_time": "70:21",
             "annotations": {
-                "express agreement": "Lisa expresses agreement that Christopher has the link to the slides, confirming that he has access to the necessary material."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3721,17 +3518,10 @@
             "screenshare_content": "None",
             "start_time": "70:21",
             "end_time": "70:42",
-            "annotations": [
-                {
-                    "propose decision": "Christopher suggests that the group should help out by assigning roles like facilitator, fellows, and reporter, and review the key points discussed to narrow down the focus, as he is concerned about time."
-                },
-                {
-                    "assign task": "Christopher is assigning the task of helping out with roles and summarizing key points to the group."
-                },
-                {
-                    "express frustration": "Christopher expresses his concern about the limited time available for the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Christopher Hamilton expresses concern about time and suggests summarizing and down-selecting to manage the meeting flow.",
+                "summarize conversation": "Christopher Hamilton suggests going over the key points discussed and down-selecting, aiming to summarize the conversation."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3749,17 +3539,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "70:42",
             "end_time": "71:16",
-            "annotations": [
-                {
-                    "propose decision": "Lisa proposes to summarize the key points of the discussion to focus the group, suggesting a concrete choice for the group to proceed with."
-                },
-                {
-                    "expand on existing idea": "Lisa is building on the previous discussion about ocean worlds and their potential for life, adding that she will summarize the key points to see if they align with the group's goals."
-                },
-                {
-                    "encourage particpatioin": "Lisa encourages Dimitar to chime in after she summarizes the key points, inviting him to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing the conversation, highlighting key ideas discussed, such as the potential for water worlds to provide conditions for life and another unspecified idea."
+            }
         },
         {
             "speaker": "Christopher Hamilton",
@@ -3778,7 +3560,7 @@
             "start_time": "71:16",
             "end_time": "71:19",
             "annotations": {
-                "ask clarifying question": "Christopher is asking Lisa to repeat the first idea she mentioned, indicating he needs clarification on it."
+                "ask question": "The speaker is requesting clarification or repetition of a previous statement."
             }
         },
         {
@@ -3797,17 +3579,11 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "71:19",
             "end_time": "71:41",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lisa is building on the previous discussion about water worlds and their potential habitability, adding the question of their long-term stability and potential to become Venus-like."
-                },
-                {
-                    "ask clarifying question": "Lisa is asking if water worlds can be stable habitats for a long time, considering factors like interior processes, accumulation of elements, and the potential for them to evolve into Venus-like states."
-                },
-                {
-                    "encourage particpatioin": "Lisa ends the utterance by calling on Simon, encouraging him to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new perspective on water worlds being stable habitats, considering their interiors and potential for oxygen accumulation.",
+                "ask question": "The speaker explicitly asks if water worlds can be stable habitats for a while.",
+                "develop idea": "The speaker expands on the idea of water worlds by considering their interiors and potential for oxygen accumulation."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -3826,7 +3602,8 @@
             "start_time": "71:41",
             "end_time": "71:51",
             "annotations": {
-                "expand on existing idea": "Simon is building on Lisa's previous point about water worlds and their potential habitability, adding the specific question of what biological feedbacks could enhance habitability over time."
+                "ask question": "Simon is requesting information about biological feedbacks that could make a water world more habitable over time.",
+                "summarize conversation": "Simon is attempting to recap a previous point about life on a water world and its biological feedbacks."
             }
         },
         {
@@ -3846,7 +3623,8 @@
             "start_time": "71:51",
             "end_time": "71:54",
             "annotations": {
-                "expand on existing idea": "This utterance builds on Lisa's summary of the discussion, specifically the idea of water worlds being stable habitats, by asking if there are any loopholes that could make them more habitable over time."
+                "ask question": "The speaker is asking for potential loopholes or exceptions in the context of water worlds and their habitability.",
+                "identify gap": "The speaker is also implicitly looking for gaps or weaknesses in the current understanding of water worlds."
             }
         },
         {
@@ -3866,7 +3644,7 @@
             "start_time": "71:55",
             "end_time": "71:56",
             "annotations": {
-                "acknowledge contribution": "Dimitar acknowledges Simon's point about biological feedbacks making a water world more habitable over time, but he is not agreeing or expanding on it."
+                "Supportive response": "The utterance expresses agreement or positive evaluation for other group members' contributions without adding new content."
             }
         },
         {
@@ -3885,14 +3663,10 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "71:57",
             "end_time": "72:42",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lisa is building on the previous discussion about water worlds and their potential habitability by introducing the concept of an alternative Gaia feedback, which Simon also mentioned as loopholes, to explore biogeochemical mechanisms that could make these worlds more habitable."
-                },
-                {
-                    "present new idea": "Lisa is suggesting the idea of inventing a new biogeochemical mechanism that nobody knows of, which could potentially enable life to exist on water worlds, expanding the scope of possible solutions for habitability."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Lisa Kaltenegger is summarizing the points discussed in the conversation.",
+                "propose new idea": "She is suggesting exploring the idea of 'alternative Gaia feedback' or 'loopholes' for biogeochemical mechanisms."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -3911,7 +3685,7 @@
             "start_time": "72:42",
             "end_time": "72:47",
             "annotations": {
-                "acknowledge contribution": "Stephanie acknowledges that the idea of Gaia loopholes or biogeochemical mechanisms that nobody knows of, which was just mentioned by Lisa, is also present in the Europa literature."
+                "acknowledge contribution": "Stephanie Olson references existing research on Europa, acknowledging its relevance to the current discussion."
             }
         },
         {
@@ -3930,11 +3704,9 @@
             "screenshare_content": "None",
             "start_time": "72:47",
             "end_time": "72:47",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Lisa acknowledges the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -3952,11 +3724,10 @@
             "screenshare_content": "None",
             "start_time": "72:48",
             "end_time": "73:05",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stephanie is expanding on the idea of \"Gaia loopholes\" or biogeochemical mechanisms that nobody knows of, by mentioning examples in Europa and Titan."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by discussing the possibility of life on Titan and its implications for exoplanets.",
+                "identify gap": "The speaker identifies a gap in her knowledge regarding the prospect of finding life on exoplanets."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3974,14 +3745,10 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "73:06",
             "end_time": "73:44",
-            "annotations": [
-                {
-                    "present new idea": "Lisa introduces a novel concept about the interaction between different biospheres, suggesting that one biosphere could either help or harm another, or that they might not interact at all, which was not previously discussed."
-                },
-                {
-                    "ask clarifying question": "Lisa poses a question about whether the interaction between biospheres will be competitive or if they will be so different that they won't interact, seeking clarification on the nature of their relationship."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea about considering how different biospheres might interact and affect each other.",
+                "ask question": "The speaker asks for thoughts on whether biospheres could be helpful, harmful, or indifferent to each other."
+            }
         },
         {
             "speaker": "Stephanie Olson",
@@ -4000,7 +3767,7 @@
             "start_time": "73:44",
             "end_time": "73:47",
             "annotations": {
-                "express enthusiasm": "Stephanie expresses excitement about the idea of different biospheres interacting or not on a planet, which was just proposed by Lisa."
+                "Supportive response": "The speaker is expressing a positive evaluation of a previous idea, showing agreement and validation without adding new content."
             }
         },
         {
@@ -4019,11 +3786,11 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "73:47",
             "end_time": "73:54",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is asking the group to identify the three key points that have emerged from their brainstorming session, seeking to summarize the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites the group to contribute by recalling discussion points.",
+                "process management": "The speaker manages the discussion flow by checking in on progress and ensuring points are covered.",
+                "summarize conversation": "The speaker seeks a summary of previous discussion points."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4041,14 +3808,10 @@
             "screenshare_content": "None",
             "start_time": "73:54",
             "end_time": "74:12",
-            "annotations": [
-                {
-                    "offer constructive criticism": "Joe expresses concern about framing the discussion as simply whether water worlds are habitable, suggesting instead focusing on their long-term stability and biogeochemical processes, which is a critique of Lisa's summary."
-                },
-                {
-                    "expand on existing idea": "Joe builds on the discussion about water worlds by suggesting that the focus should be on their long-term stability and the biogeochemical processes that promote it, adding to the previous discussion about their habitability."
-                }
-            ]
+            "annotations": {
+                "Critical response": "The speaker is questioning and providing a critical view of the discussion about water worlds.",
+                "Clarify goal": "The speaker is clarifying what they think the discussion should focus on (stability and biogeochemical processes)."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4067,7 +3830,7 @@
             "start_time": "74:12",
             "end_time": "74:13",
             "annotations": {
-                "express agreement": "Lisa explicitly agrees with Joe's point about focusing on the long-term stability and biogeochemical processes of water worlds, rather than simply asking if they are habitable, which was the topic of the discussion."
+                "supportive response": "The speaker is expressing agreement with a previous statement, which is a positive evaluation of the statement."
             }
         },
         {
@@ -4086,11 +3849,10 @@
             "screenshare_content": "None",
             "start_time": "74:13",
             "end_time": "74:17",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy is expressing agreement with Lisa's previous statement."
-                }
-            ]
+            "annotations": {
+                "Acknowledge contribution": "The speaker acknowledges a previous contribution or statement.",
+                "Supportive response": "The speaker expresses agreement or support for a previous statement."
+            }
         },
         {
             "speaker": "Dimitar Sasselov",
@@ -4108,11 +3870,10 @@
             "screenshare_content": "None",
             "start_time": "74:17",
             "end_time": "74:17",
-            "annotations": [
-                {
-                    "express agreement": "Dimitar is expressing agreement with the previous statement made by Joseph Levy."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker is acknowledging a prior statement or contribution from another group member.",
+                "supportive response": "The speaker is expressing agreement or validation for another group member's contribution."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4130,14 +3891,9 @@
             "screenshare_content": "None",
             "start_time": "74:17",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "confirm decision": "Joe is confirming Lisa's summary of the discussion points, specifically focusing on the stability of water worlds as the first key point."
-                },
-                {
-                    "expand on existing idea": "Joe is building on Lisa's summary by elaborating on the Gaia loopholes and biogeochemical mechanisms, adding to the discussion about the key points."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing the conversation, specifically mentioning points discussed about the stability of water worlds and the concept of Gaia loopholes."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4155,11 +3911,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa agrees with Joe's statement about the first point being about stability."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4177,11 +3931,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with Lisa Kaltenegger's statement."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a brief acknowledgment without adding new content."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4199,11 +3951,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa agrees with Joe's statement about the Gaia loopholes and biogeochemical mechanisms."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4221,11 +3971,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with Lisa Kaltenegger's previous statement."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker is acknowledging a prior statement without necessarily agreeing or expanding."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4243,11 +3991,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa agrees with Joe's summarization of the discussion points, specifically that the first point is about the stability of water worlds."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input, but does not agree or expand."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4265,11 +4011,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with a prior statement, indicated by his utterance of 'Yeah'."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4287,11 +4031,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's summarization of the discussion points, indicating alignment on the key themes."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4309,11 +4051,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with a prior statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4331,11 +4071,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's summarization of the discussion points, indicating alignment on the key themes."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4353,11 +4091,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joe agrees with Lisa's summarization of the discussion points."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement with a previous statement."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4375,11 +4111,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's point about the discussion focusing on the stability of water worlds and biogeochemical processes promoting that stability, rather than simply asking if they are habitable."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance 'Yeah.' by Lisa Kaltenegger is a supportive response as it expresses agreement with a prior statement without adding new content."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4397,11 +4131,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with Lisa's previous statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4419,11 +4151,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's summary of the discussion points, indicating alignment on the key themes."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4441,11 +4171,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with a prior statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it only contains a brief acknowledgment ('Yeah.') without explicitly fitting into the detailed categories provided."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4463,11 +4191,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's point about the discussion focusing on the stability of water worlds and biogeochemical processes promoting that stability, rather than simply whether they are habitable."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it is a minimal response."
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4485,11 +4211,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with the point being made by Lisa Kaltenegger."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4507,11 +4231,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's point about the discussion focusing on the stability of water worlds and biogeochemical processes promoting that stability, rather than simply whether they are habitable."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4529,11 +4251,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with a prior statement, indicated by saying 'Yeah'."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4551,11 +4271,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa agrees with Joe's summarization of the discussion points."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joseph Levy",
@@ -4573,11 +4291,9 @@
             "screenshare_content": "None",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Joseph Levy explicitly agrees with a prior statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4595,11 +4311,9 @@
             "screenshare_content": "The screen shows a slide titled \"Exploration of Solar Systems\". The slide contains images of various planets and moons. The content remains static throughout the segment.",
             "start_time": "74:30",
             "end_time": "74:30",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Joe's summarization of the discussion points, indicating alignment on the key takeaways."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         }
     ]
 }
