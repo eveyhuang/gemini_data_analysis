@@ -1,0 +1,835 @@
+[
+    {
+        "utterance": "Alison Ondrus: on understanding human metabolite signaling at the chemical level. So understanding how structurally metabolites use information in chemical structure to communicate in different regulatory pathways. And a couple of the things that I thought of for this particular session were really how do we understand how sort of at the level of transcription, these transcriptional networks within the cell, how do they sense and regulate local membrane environments? So really how do you take the sort of physical chemistry of a membrane and integrate that into the the feedback mechanisms that the cell uses to control how much of each thing is made and what signaling networks are turned on. And the other thing that I thought might be interesting is now that there's a lot of hype around sort of condensed phases or condensates, how do those condensed phases in different parts of the cell interact with different membranes and different organelles. So I thought those both might be interesting topics to discuss. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces new ideas for discussion, specifically about understanding transcriptional networks and the interaction of condensed phases with membranes and organelles.",
+            "identify gap": "The speaker identifies gaps in understanding, such as how transcriptional networks sense and regulate local membrane environments.",
+            "clarify goal": "The speaker is defining what she would like to discuss, which relates to clarifying goals for the session."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Excellent. Yan. Hey Yan. ",
+        "annotations": {
+            "supportive response": "Cathy Murphy expresses agreement or validation with 'Excellent'.",
+            "encourage participation": "Cathy Murphy tries to engage Yan by saying 'Yan. Hey Yan.'"
+        }
+    },
+    {
+        "utterance": "Yan Yu: Hi I'm Yan Yu from Indiana University. I'm a chemist trained as a materials engineer actually at Illinois. So my lab is interested in looking at the biophysics of immune cells, especially the signaling and organization of immune cell membranes as well as intracellular organelle functions during pathogen-host interactions. And so for for this for this discussion, one of the topics that I I come up I mean question I come up with is that can we have can we have more quantitative and direct tools for understanding the interactions and you know and interactions and organization of the intracellular cellular membranes. And the second question that I'm really interested in is how do the intracellular membranes communicate and exchange content as well as information. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his own expertise and background as a chemist trained as a materials engineer.",
+            "identify gap": "The speaker identifies a gap in the availability of quantitative and direct tools for understanding intracellular membrane interactions.",
+            "ask question": "The speaker asks two questions regarding the interactions and communication of intracellular membranes."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: So within one cell you're talking, right? ",
+        "annotations": {
+            "ask question": "This code applies because Cathy Murphy is seeking clarification on Yan Yu's previous statement about intracellular membranes, specifically asking if he is talking about processes within one cell."
+        }
+    },
+    {
+        "utterance": "Yan Yu: Yes, yes. Okay. ",
+        "annotations": {
+            "supportive response": "Yan Yu is expressing agreement with Cathy Murphy's statement."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Excellent. Thank you. Okay Lulu, you're next on my screen. ",
+        "annotations": {
+            "acknowledge contribution": "Cathy Murphy verbally recognizes Yan Yu's input with 'Excellent. Thank you.'",
+            "process management": "Cathy Murphy manages the meeting flow by calling on the next person to speak with 'Okay Lulu, you're next on my screen.'"
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Hi, I'm Lulu Cambronne. I'm at sorry all these things are popping up. I'm at UT Austin in molecular biosciences and my lab studies compartmentalization of metabolites within a cell and we're currently absolutely obsessed with this one metabolite called NAD. We recently found a transporter for it in the mitochondria and that's why I'm in this group. Some of the questions that I've been interested in include a lot of these models that we talk about for organization, subcellular organization depend on concepts of diffusion and and like gradients and so forth. We know that it's extremely highly organized and tightly packed in and all these membranes and so what is the what really is going on very locally on one hand and also if it is so local how can we both what limits does that place on if we want to exploit that or what benefit does that give if we want to exploit this precise compartmentalization in medicine and so forth. ",
+        "annotations": {
+            "ask question": "Lulu requests information about the organization of subcellular structures and the implications of localized compartmentalization.",
+            "signal expertise": "Lulu explicitly states her lab's focus and recent findings.",
+            "identify gap": "Lulu recognizes gaps in understanding the complex organization of subcellular structures and the exploitation of this knowledge."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Super duper, thank you. Okay, uh Lars. Lars, you're next on my screen. ",
+        "annotations": {
+            "acknowledge contribution": "Cathy Murphy verbally recognizes someone's input with 'Super duper, thank you'.",
+            "process management": "Cathy Murphy manages the meeting flow by indicating whose turn it is next with 'Okay, uh Lars. Lars, you're next on my screen.'"
+        }
+    },
+    {
+        "utterance": "Lars Plate: Okay. Hi everyone. I'm Lars Plate. I'm at Vanderbilt University and my lab is generally interested in studying dynamics of protein-protein interactions. So we use a lot of mass spectrometry to probe the dynamics of complex formations, particularly we're looking at protein folding pathways and biogenesis, secretion processes and so that's where the transport aspect comes into play. So yeah this is should be an exciting session. So one yeah maybe two points I I wanted to highlight that I'm curious about. So one the first part was about sort of unknown unknowns what Roberto described and that's related to sort of lipid modifications or structures that we may not even know about yet that might be important for lipid identity, vesicle identity and sort of like yeah the the dynamic assembly processes. And then a little bit related to that related in terms of our research we think a lot about protein complex assembly and but how lipids interact with proteins and kind of influence the process is something that I think is still much less known about and is really hard to study with current techniques because they're either related to analyzing lipids or proteins but studying this in complex is really challenging. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his own expertise and qualifications related to the task.",
+            "propose new idea": "The speaker introduces new ideas and topics for discussion.",
+            "identify gap": "The speaker recognizes the lack of knowledge in certain areas."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Great, thank you. Anna. You're next on my screen. Oh I know it's it's kind of disconcerting when you don't know what I'm seeing. Okay. Oh we can't hear you. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by inviting the next person to speak and addressing technical issues."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: Sorry about that. I'm Anna. I'm here in Urbana-Champaign in Illinois. I'm a cell and developmental biologist and my lab my lab says that we study actin cytoskeleton but actually throughout my career what I found out is when I study actin cytoskeleton what I'm really studying is membrane. So that's why I'm in this group. And so when I'm thinking about membranes I'm I'm usually or very often thinking about actually the the plasma membrane and how the actin cytoskeleton interacts with the plasma membrane and exerts forces on the membrane but also gets signals from the plasma membrane and really what are all the interactions between actin and the membrane. And and the sad thing is is that I I still feel like we really don't know a lot. And and then it gets worse than that because recently we've started thinking about the the the plasma membrane as sort of a composite material because it's really sandwiched between two other materials, the actin cytoskeleton on the inside of the cell and the glycocalyx on the outside of the cell. And unfortunately you know for currently only really two of those materials get any attention, actin and and membrane and we've really so we have like all of these decades of modeling etc etc biology that's all driven by understanding the membrane and the actin but completely ignoring that there's this huge glycocalyx on the outside of the cell and how that would actually influence what's going on with the membrane and you know ultimately why I care about this I I work in embryos so I want to understand how cell shape changes is driving morphogenesis. And so we're also thinking about this in terms of it's not just each of these materials but how do they work together to give you something like cell shape change and ultimately tissue building. So that's me. ",
+        "annotations": {
+            "develop idea": "The speaker elaborates on her research focus, explaining how her study of the actin cytoskeleton relates to membrane interactions and the importance of the glycocalyx.",
+            "signal expertise": "The speaker states her background and expertise in cell and developmental biology.",
+            "identify gap": "The speaker identifies a lack of knowledge in understanding the interactions between the actin cytoskeleton, membrane, and glycocalyx.",
+            "critical response": "The speaker implies a critique of current models for not adequately considering the glycocalyx.",
+            "clarify goal": "The speaker mentions her goal of understanding how cell shape changes drive morphogenesis."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Thanks. Excellent. Okay Grace, you're next on my screen. ",
+        "annotations": {
+            "process management": "The utterance manages the meeting flow by transitioning to the next speaker.",
+            "supportive response": "The utterance expresses a positive sentiment and appreciation for previous speakers."
+        }
+    },
+    {
+        "utterance": "Grace Stokes: Hi everyone, I'm Grace Stokes and I'm a physical chemist who does non-linear optical spectroscopies. So I've been working with undergraduate students at Santa Clara University to use second harmonic generation to monitor the thermodynamics of drug absorption to model plasma membrane systems which is why the membrane is very important to me. We prepare artificial lipid membranes. We ideally want to incorporate some membrane-bound proteins into these membranes to kind of monitor how can drugs bind in the nice thing about our laser spectroscopy method is we don't use any fluorescent tag or any kind of label. We just monitor at the wavelength of for example the drug that binds and absorbs into the lipid bilayer. I think I'm interested in I guess making better models. So right now my models are very simple like physical models not computational models but I'd like to make them more complex and more similar to real world. I know a lot of you work with real cells and I haven't I haven't done any real cell work for plasma membranes. I've just been working on artificial lipid complexes and I'd like to make it kind of connect those things together and be able to with my laser setup we have kind of average we're monitoring or getting signal from everything all within the laser beam and I'd like to be able to kind of have more spatial distribution and better resolution of understanding what's going on with kind of individual things within a thing that I'm studying like the locations of things. ",
+        "annotations": {
+            "signal expertise": "Grace explicitly states her background and expertise in physical chemistry and non-linear optical spectroscopies.",
+            "identify gap": "Grace identifies a gap in her current work, wanting to make her models more complex and connect them better to real-world applications.",
+            "clarify goal": "Grace clarifies her goals in terms of what she wants to achieve with her research, specifically improving her models."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, super duper, thank you. Okay Catherine, you're next on my screen. ",
+        "annotations": {
+            "process management": "This code applies because the utterance manages the meeting flow by indicating whose turn it is to speak.",
+            "encourage participation": "This code applies because the utterance invites someone else in the group to contribute by calling their name and indicating it's their turn."
+        }
+    },
+    {
+        "utterance": "Kathryn Haas: Hi, I'm Catherine Haas. I'm a chemist at Duke University and my group studies metal protein interactions. So mainly I use spectroscopies to characterize metal binding sites. And I'm really interested in metal homeostasis, particularly copper homeostasis and one of the proteins I study is a copper transporter, a transmembrane transporter. So one of the things that's always bugged me about the paradigm for how copper is transported through the cell is there's not really any explanation for how the how metal ions get to the transporter or or are carried away exactly. It doesn't seem to make sense that diffusion is the process involved here. So I I would like to better understand how the membrane itself can be kind of a scaffold for organizing proteins both inside and outside the cell so that pathways work quickly enough for for biology to happen. ",
+        "annotations": {
+            "propose new idea": "Kathryn Haas introduces her interest in understanding how the membrane can be a scaffold for organizing proteins.",
+            "develop idea": "She elaborates on her research interest in metal homeostasis and copper transport.",
+            "identify gap": "She identifies a gap in the current understanding of how copper is transported through the cell.",
+            "clarify goal": "Kathryn Haas clarifies her research goal, which is to understand how the membrane organizes proteins for efficient metal ion transport.",
+            "ask question": "Implicitly, she asks for a better understanding of how metal ions interact with transporters and how the membrane facilitates this process."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Wow, thank you very much. Excellent. Julian, Julian, you're next on my screen. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is verbally recognizing previous group members' input with gratitude and a positive evaluation.",
+            "encourage participation": "The speaker is inviting someone else in the group to contribute their expertise, opinions, or ideas."
+        }
+    },
+    {
+        "utterance": "Julien Berro: Hi everyone. So I'm Julien. I'm a biophysicist/cell biologist just like Anna I'm very interested in actin and the membrane and like Sandy in a former previous life Sandy interested in endocytosis. And so my questions were related to how we think about membranes and how it's a fluid lipid fluid material but actually maybe just a scaffold the support of a protein scaffold and should we just think about the other extreme would be to think about the membrane as just basically a protein membrane because it's so dense there are so many things on the membrane. And so that changes a lot about that would change everything about the way we think about how things are organized, how they move. And there's a very interesting paper came out a couple of years ago that even think maybe think about it as a gel. Maybe it could be the analogy they gave I think is beautiful is if you think about jello it's mostly water but there is a protein meshwork that makes it like a gel. And they think about the same way about a lipid membranes that it could be it's very fluid at first sight but you don't need that much anchors and that much network behind it that could be related to actin but to make it like a gel and so that that changes a lot of mechanical properties and all that stuff so a lot of things to think about I don't know. ",
+        "annotations": {
+            "propose new idea": "Julien introduces new perspectives on membranes, suggesting they could be viewed as a scaffold for proteins or a gel-like structure.",
+            "develop idea": "Julien elaborates on these ideas by comparing membranes to a gel, like jello, and discusses the implications for membrane structure and function.",
+            "ask question": "Julien implicitly asks questions about how membranes are thought of, inviting discussion on their structure and properties."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Oh, okay, very cool. Thank you. Okay, Dmitri, hello. You're next on my screen. ",
+        "annotations": {
+            "acknowledge contribution": "Cathy Murphy verbally acknowledges a previous contribution with a positive interjection.",
+            "supportive response": "Cathy Murphy expresses agreement and positive sentiments towards a previous statement.",
+            "encourage participation": "Cathy Murphy invites Dmitri to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Dmitri Kosenkov: Hi, I'm Dmitri Kosenkov at Monmouth University in New Jersey. My field is computational chemistry so we modeling we model photosynthetic systems and energy transfer in light harvesting proteins. And one question which I'm trying to answer or would be interesting to hear ideas related to membranes is find some maybe beyond to find some operators or methods for simulation of membranes which goes beyond than molecular dynamics something fundamental some operators or methods that describe fundamental processes in membranes. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of exploring beyond molecular dynamics for simulating membranes.",
+            "ask question": "The speaker asks for new methods or operators for simulating membranes.",
+            "signal expertise": "The speaker mentions their field and work, signaling their expertise in computational chemistry."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Thank you, excellent. Okay, Haoran, you're next on my screen. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by transitioning to the next speaker.",
+            "acknowledge contribution": "The speaker verbally recognizes the previous contributions, showing appreciation."
+        }
+    },
+    {
+        "utterance": "Haoran Zhang: Hi everyone. I am Haoran Zhang. I am from chemical and biochemical engineering department of Rutgers University, New Jersey. I am an engineer by training but my lab studies synthetic biology and metabolic engineering. In particular, I'm interested in designing and constructing microbial consortia or co-cultures with novel functions such as biosynthesis of value-added products. I'm also interested in using biosensors to regulate metabolic behaviors of cells as well as the dynamic interactions between cells in the consortia. One of the thoughts I have for this topic session is that how can we study the membrane protein functions to allow for effective transfer of metabolites between different cells inside a community or a consortia. For example, how can we use one membrane protein to secrete one metabolite from one cell and in the meantime use a variance of the same membrane protein to assimilate the metabolites into other cells to facilitate the cell to cell communication. And I would be very interested to hear new ideas about this kind of research direction. Thank you. ",
+        "annotations": {
+            "propose new idea": "Haoran Zhang introduces his research focus on synthetic biology and metabolic engineering, suggesting a new direction for studying membrane protein functions.",
+            "ask question": "Haoran Zhang explicitly asks questions about studying membrane protein functions for effective transfer of metabolites and facilitating cell-to-cell communication."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Thank you. Awesome. Hey, Alex, you're next on my screen. ",
+        "annotations": {
+            "acknowledge contribution": "Cathy Murphy verbally recognizes someone's input with 'Thank you. Awesome.'",
+            "supportive response": "Cathy Murphy expresses agreement and positive evaluation with 'Thank you. Awesome.'",
+            "encourage participation": "Cathy Murphy invites Alex to contribute by saying 'Hey, Alex, you're next on my screen.'"
+        }
+    },
+    {
+        "utterance": "Alex Green: Hello everyone. I'm Alex Green. I'm an assistant professor in biomedical engineering at Boston University. My lab works in synthetic biology and we're focused on research in the area of RNA-based regulation as well as self-assembly and cell-free transcription translation systems. So I guess in terms of membrane research, I'm interested in seeing if we can develop kind of model systems that for instance vesicles that we can kind of incorporate cell-free systems into controlling the dynamics of assembly. So can we get a model system that's a little bit more complicated than in vitro systems but not quite as easier to handle than a cell. So that's where I'm coming from. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests exploring new areas of research involving model systems like vesicles for controlling assembly dynamics.",
+            "develop idea": "The speaker elaborates on potential research interests in membrane research and cell-free systems.",
+            "signal expertise": "The speaker states their background as an assistant professor in biomedical engineering and their lab's focus areas."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Awesome, thank you. And then we have some we have Sandy, Richard and BotB1 with us. BotB1's making us nervous but okay. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by transitioning between different segments of the discussion.",
+            "express humor": "The speaker makes a joke about BotB1 making them nervous."
+        }
+    },
+    {
+        "utterance": "Richard Wiener: BotB1 is just recording and it's a very benign bot. ",
+        "annotations": {
+            "supportive response": "Richard Wiener provides a positive evaluation of BotB1, reassuring the group that it is benign and not a cause for concern."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, okay, good. So what I kind so in terms of what do we need to make progress, I kind of heard quite a few things here like we need better models, right? If you want to do very high-powered stuff like with lasers or something then you know you need a simple system and then if you're doing really complex stuff your methods are you know maybe more general. So so it sounds like we need better models of membranes and then also it's been pointed out that the way to think about membranes is now evolving, right? So the cartoon of the lipid bilayer with a few proteins, I mean we know there's a lot more proteins than that. So I I heard glycocalyx which I assume people know about but maybe they don't. They're just thing on top and then there's the maybe it's more of a protein thing and maybe more of a gel. Okay, so so there's some interesting sort of chemical physical ways to think about membranes which you know if we started from that maybe we get to a very different place. I mean and then there's the question of diffusion that I heard like how do things really get to the membrane? That's actually kind of a lot of things people have talked about signaling and so forth as well. Okay, so I'm going to stop talking. And then what I was anybody like to start to jump in and say well is there you know that's one question should we think about membranes in a totally different way which may then lead to us getting better models for them I suppose. Or are there questions and tools that we can think is a need that should be developed or studied. Okay, so I will I'm going to dial down. Okay, Alison, yes. ",
+        "annotations": {
+            "summarize conversation": "She summarizes the discussion so far about membranes and their models.",
+            "encourage participation": "She invites others to contribute their thoughts and ideas.",
+            "clarify goal": "She helps to clarify the goals of the discussion, which includes understanding membranes better and possibly developing new models or tools."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: I mean I'll I'll start. So I think listening to both Lars and Julian kind of made me also wonder and it goes back to the theme that you brought up is how should we actually think about the the structure of membranes and you know Lars pointed out that there's a lot of lipids and actually our group works on lipids so I was remiss in not mentioning that but it's a it's not necessarily just a fluid bilayer but is it all the way to the extent that we're thinking of of jello where we have cross-linking. I mean what what sort of landscape do we have in between a fluid membrane environment that's regulated by sort of these loose intermolecular associations between lipids and and then once we start to integrate different proteins and different lipid identities and I think this goes to Dmitri's question too is like how do we think about the the actual mechanical fluidity of this membrane and it goes back to Catherine's point how does that either facilitate sort of this two-dimensional diffusion of transport substrates and how does it sort of maintain a physical integrity that will localize certain processes or prevent certain mixing events that might lead to you know undesirable interactions. So I think for me the question is really how do we like how do we parse out the different ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas discussed by Lars and Julian, elaborating on the concept of membrane structure.",
+            "ask question": "Alison is asking questions about how to think about membrane structure, the landscape between fluid and cross-linked environments, and how mechanical fluidity facilitates or maintains certain processes."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: physical types of membranes that exist and how do we understand how those biophysical attributes play into specific processes like stiffness or transportation or colocalization. And so the conceptual understanding and I think this goes back to how do we get better models but even computationally how do we treat these appropriately and how do we sort of classify them so that we can organize them and start to understand which processes might be influenced by these different compositions. ",
+        "annotations": {
+            "develop idea": "Alison is expanding on ideas previously mentioned, specifically about the structure and function of membranes.",
+            "ask question": "She is asking questions about how to understand and classify membranes and their processes.",
+            "identify gap": "Alison points out the need for better models and classification methods for membranes."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Do you think it'd be worth to start with kind of the group saying what are like just what listing what are the different roles of membranes which there's different roles for membranes a barrier a compartment to create a gradient to and then you know even just question whether all membranes have to have the same properties. I mean they might they might not I don't know and what do we know in terms of measurements across membranes or of membranes even yet and what do we not like by almost by defining what we know we can kind of figure out where the holes are. Maybe? I don't know. ",
+        "annotations": {
+            "ask question": "Lulu asks for input on how to approach their discussion about membranes, specifically suggesting listing roles and questioning uniformity."
+        }
+    },
+    {
+        "utterance": "Yan Yu: Yeah I think that's a that's a really interesting question and just to I think just to think about some of the recent studies that have shown like just let's just like just look at like diffusion of lipids right traditionally what we think is the lipids diffuse locally right and then they each seems to have very stochastic move you know diffusion but but recently there have been a couple of studies showing that in certain cell functions there is a very large coordinated like you know like a so-called lipid flow right there's very coordinated like directed collective motion of the lipids. So it's possible I think that the membrane the the scale of the diffusion of the membrane diffusion can vary depending on what cell function is involved. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas about membrane properties and lipid diffusion, providing more information based on recent studies."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Do you think that's directed by the cell or I mean it has if you're saying that things are being put in then ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on a prior statement, directly fitting the definition of this code."
+        }
+    },
+    {
+        "utterance": "Yan Yu: Yeah I mean has to be directed by the cell but but what I mean what drives that I think it's it's unclear right but there are a couple of examples like for example I think Adam Cohen's recent paper showing you know there is a collective large scale lipid flow right and I forgot maybe this was a private conversation with someone I forgot but that person mentioned that in plant cells they have also observed that during certain like division or something the cell the membrane would have like their hypothesis the membrane would have a very large scale of directed flow. And so I think it seems reasonable that in some cell function like like dividing for example it seems reasonable to suspect that the cells the cell membrane would have some collective motion together. But then in some other you know like localized compartmentalized cell signaling then those kind of large scale cell you know membrane flow may not be very effective but rather they want to have localized organized membrane domains and compartments that helps to facilitate you know the the receptor signaling at a local level so I think it might it might vary depending on what cell functions are involved but but we don't know you know why I mean how does the cell know what what what mechanisms to to use and to trigger trigger this right? ",
+        "annotations": {
+            "ask question": "Yan Yu is seeking clarification on what drives directed flow in cell membranes and how cells decide on mechanisms to use.",
+            "develop idea": "Yan Yu expands on the concept of membrane flow, discussing its variability with cell functions and referencing specific research."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: So when you say membrane flow I mean I haven't read Adam's paper so all right do we mean like lateral flow across the cell or do we mean what is that what we mean? ",
+        "annotations": {
+            "final answer": {
+                "ask question": "The speaker is requesting information or clarification on a prior statement or idea proposed by another group member.",
+                "encourage participation": "The question invites further discussion or explanation from others in the group."
+            }
+        }
+    },
+    {
+        "utterance": "Yan Yu: Lateral yeah. ",
+        "annotations": {
+            "Supportive Response": "Yan Yu is expressing agreement with Cathy Murphy's understanding of 'membrane flow' as lateral flow."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Like lateral like like not just little things within the membrane yeah. ",
+        "annotations": {
+            "Ask Question": "The speaker is requesting information or clarification on a prior statement regarding 'membrane flow'."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Like a big surf wave of something. Oh. Oh. Okay. Well that's new information to me. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker verbally recognizes new information provided by another group member.",
+            "supportive response": "The speaker expresses engagement and acknowledgment of the new information."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: I guess the question that I might have for Lars or Alex would be like is that something that one would tend to say you wanted to make a complex of metabolic enzymes that would all process a substrate sequentially is that something you could design into say the constructs the proteins that you generate is like they will be attached to a certain lipid and then co-localize. I mean is that a feasible do people I'm not familiar as much with synthetic biology but is that something that people have used or could leverage to to facilitate these sort of coordinated protein complexes? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the feasibility of designing metabolic enzyme complexes using synthetic biology, specifically about attaching proteins to lipids for co-localization."
+        }
+    },
+    {
+        "utterance": "Lars Plate: I mean I'll maybe address I mean that's an that's a really key point I think in sort of the bigger theme that I that I took away from this is sort of like how do you so these are all really complex processes we're kind of describing right so like is maybe like one way to study it of course would be to to simplify it and to to take away some complexity and then have a really controlled system where we you organize different different membrane regions or some of these I don't know phase phase separated parts or membrane identities and so forth. And so from from the protein side yes I mean different proteins are known to associate with the different or localized to different regions of the the membrane. And you could I mean you could engineer proteins or complexes to stick to different membrane regions maybe on there to localize them and kind of mimic those processes but then again that's a very yeah it's a very reductionist approach of course. The other point maybe to raise too is from the detection side I remember a conversation we had last year I think maybe with at a similar style or topic about in sort of probes to even study different membrane properties and I think there's I mean there's a lot of advances made like different environmental sensitive fluorophores that that exist but they're still I think from what I understand they're relatively crude and sort of like very low resolution that we have an have an understanding of different membrane properties so there's I think a lot of room still to refine those. ",
+        "annotations": {
+            "propose new idea": "Lars suggests simplifying complex membrane processes to study them, which is a new approach to understanding membrane interactions.",
+            "develop idea": "Lars elaborates on the concept of engineering proteins to associate with specific membrane regions, building on existing knowledge of protein-membrane interactions.",
+            "identify gap": "Lars points out the limitations of current detection methods for studying membrane properties, indicating a need for better tools."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: I have a stupid question about synthetic biology that the maybe a synthetic biologist can answer. So okay when people talk about you know engineering cells to do stuff I always think of they're you want to produce chemicals or you want to produce certain proteins right. So do synthetic biologists ever try to redo their membranes like you try to give a cell a new membrane? I have no idea. Maybe that anyway okay that's my role asking stupid questions okay. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information on whether synthetic biologists try to give cells new membranes.",
+            "encourage participation": "The speaker invites a synthetic biologist to answer the question, encouraging participation."
+        }
+    },
+    {
+        "utterance": "Haoran Zhang: I can probably answer sorry can I can I speak? ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance as it's primarily a polite expression of willingness to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yeah go ahead Haoran yeah. ",
+        "annotations": {
+            "supportive response": "Cathy Murphy is expressing agreement and encouragement.",
+            "encourage participation": "Cathy Murphy is inviting Haoran to contribute his thoughts."
+        }
+    },
+    {
+        "utterance": "Haoran Zhang: I was trying to say that from my perspective yes if you would like to engineer the cell membrane it actually helps a lot to a larger degree to facilitate the engineering purposes for example if you want to make a compounds you don't want it to be accumulated inside the cell and make the cell membrane loose actually helps a lot in terms of you know getting a lot of product out easily. And also if from my perspective if you would like to engineer a consortium then making a some kind of this loose structure of the cell membrane help the cell cell mass transfer. And there are some ways to do this there are some engineered proteins they can help the cell membrane to essentially have more holes and that allows for the effective passage of some selective or selected metabolites or compounds with our interest. And I'm not sure if there's anything else Alex can add because he's also a synthetic biologist. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces the idea of engineering the cell membrane for specific purposes.",
+            "develop idea": "The speaker expands on the idea by providing examples and potential applications.",
+            "offer feedback": "The speaker suggests a solution involving engineered proteins to modify the cell membrane."
+        }
+    },
+    {
+        "utterance": "Alex Green: Yeah I mean I think you touched on the main points. There are definitely people who are trying to engineer the membrane for cell-cell communication and also secreting different components. So so there's there are tools that people are developing there. In terms of enzyme assembly it may be hard to to program that well especially kind of to get it into the membrane in a controllable way but it's something you could work towards. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the concept of engineering membranes for specific functions.",
+            "identify gap": "The speaker mentions a challenge in programming enzyme assembly.",
+            "supportive response": "The tone is supportive, agreeing with the previous discussion."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: But no one's making cell no one's doing the synthetic biology to make new lipids it sounds like or modify lipids it's more on the protein side. Is that right? That would be easier right? ",
+        "annotations": {
+            "ask question": "The speaker is asking a question about the focus of synthetic biology efforts on proteins versus lipids and inquiring about the relative ease of modification.",
+            "develop idea": "The speaker is building upon previous discussions by exploring the idea that synthetic biology might focus more on proteins than lipids and questioning the ease of lipid modification."
+        }
+    },
+    {
+        "utterance": "Lars Plate: But but along that point I don't I don't think we fully understand really like what for example what properties on membrane spanning helices would like ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a lack of understanding about certain properties of membrane-spanning helices.",
+            "ask question": "The utterance implies a seeking of information or clarification, even though it's structured as a statement."
+        }
+    },
+    {
+        "utterance": "Lars Plate: govern translocation into a lipid ordered phase or a disordered phase, right? I think there's examples of different proteins doing this, but I think the sort of physical chemical principles that that sort of govern this are still very much very much unknown. I don't know if that is something where yeah, computational chemistry or a merge of like data, like assembling more data on what other example proteins and membrane properties and some computational modeling would help. ",
+        "annotations": {
+            "develop idea": "Lars is expanding on the concept of physical chemical principles in membrane biology.",
+            "identify gap": "He explicitly identifies a gap in knowledge regarding physical chemical principles.",
+            "offer feedback": "Lars suggests a potential approach (computational chemistry) for addressing the gap."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: When we when we try to reconstitute transport in the lab, one of the key experiments is proteoliposomes, which is really synthetic membranes and vesicles. And I know that like you simply change the ratio of like one thing or try another lipid or different combinations and you can get single bilayer, you can get where they all look like almost myelinated. It just changes so many outcomes. And it's kind of curious how how that happens. And that that's even without putting your protein in. That's just pure lipid. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by explaining the effects of changing lipid ratios or types in proteoliposome experiments.",
+            "identify gap": "The speaker expresses curiosity about the mechanisms behind the different outcomes observed with changes in lipid composition, indicating a gap in current understanding."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Oh. Mhm. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: So there's yeah. And I know like tomography, EM has really been especially the new like tomography cryo like the cryo stuff has really been interesting in being able to get into like very to kind of get at these things unperturbed because the problem is like once you put a probe in, you've perturbed it. And that's something that we've always had a challenge with our sensors. An example of a really specialized type is even the cristae in the in the matrix of sorry, even the cristae in a mitochondrion, sorry, that delineates the matrix from the inner membrane space. In order to keep that high proton gradient to keep to keep the ATP synthase going, they you you create like a little invagination and that's all that proton gets pumped in a really small space and so that's how you get that high local concentration of it. And that you know and that's a very specialized shape of the lipid or membrane I should say, not lipid, shape of a membrane. And it was tomography that actually was able to get a lot of this get a lot of this out without perturbing and then like you know the the ETC, the different organizations of the complex, the different complexes and stuff. ",
+        "annotations": {
+            "offer feedback": "Lulu provides feedback on the challenges of studying membranes without perturbing them and discusses the benefits of cryo-tomography.",
+            "identify gap": "Lulu implicitly identifies a gap in current methodologies, specifically the problem of perturbation when using probes to study membranes."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Ah, well for sure cryo-EM is you know good and you know, did for so many cool things on the uh well lots of different parts of science, but I guess I had kind of forgotten about these invaginated membranes inside organelles, right? And uh if getting so getting structural information that way which leads to a very clear gradient, you know, reason to have a gradient like you said, that's uh so again that's an interesting point, right? That the very local structure, well not local, but somewhat local structure of the membrane can really impart and part function, right? ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and validation for the previous discussion points, showing engagement with the topic and acknowledging the contributions of others.",
+            "acknowledge contribution": "The speaker is recognizing and building upon points made by others, showing appreciation for their input."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: But you lose and but then you lose all the dynamic stuff which everyone here is important too. So you get these snapshots. ",
+        "annotations": {
+            "critical response": "The speaker is critiquing the limitation of cryo-EM in capturing dynamic information.",
+            "identify gap": "The speaker is identifying a gap in current methodologies, specifically the lack of dynamic information."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Well hey, we haven't heard from everybody yet, so this is part of my job. Okay. Uh Julian, Dimitri, Grace, uh other people would like to chime in at this point of hmm how are how are the neurons firing over there? Uh some some new directions, new ideas, uh things to consider. Julian looked like you unmuted yourself. ",
+        "annotations": {
+            "encourage participation": "The speaker invites specific group members to contribute their thoughts and ideas, encouraging participation."
+        }
+    },
+    {
+        "utterance": "Julien Berro: Oh yeah, yeah, I was also yeah to to to uh uh comment on the imaging the membrane. It's it's actually something that I realized yeah we don't we don't know how to do it so cleanly because any probe will perturb the system. Um and they are more or less specific anyway. Uh and it may or may not go uh to the right place anyway. I mean there's a lot of potential problems. Uh yeah yeah and and and the dynamics also is another level of problem because we can do cryo, I mean it's very nice, you know, you can imagine cryo so you have a nice snapshot. You could imagine something that's more even more specific and you could imagine inventing probes that would on the cryo like some kind of immuno probes or more fancy things that some of the fellows last time was talking about this EM these markers to do anyway I I I forgot the details I cannot tell but but I mean it's knowing how it is really organized and dynamic it's it's it's really difficult on the at the molecular scale. Right so I don't know if if anybody has any good ideas on advanced you know things we could do. I mean cryo is definitely a good way to go but can we get enough resolution from cryo anyway for ",
+        "annotations": {
+            "ask question": "Julien asks for ideas on advanced methods or probes for better understanding membrane organization and dynamics.",
+            "identify gap": "Julien highlights the gap in knowledge regarding membrane dynamics at the molecular scale and the limitations of current imaging techniques.",
+            "encourage participation": "Julien invites others to contribute their ideas on the topic."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: It'd be fun if these are the opposite. ",
+        "annotations": {
+            "express humor": "The speaker makes a joke or a humorous comment about the situation."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Oh no, go ahead. I'm I'm just facilitating. Go ahead. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by encouraging others to participate and share their thoughts.",
+            "supportive response": "The speaker is providing a supportive response to encourage others to contribute to the conversation."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: I was just gonna say it'd be fun if you know how clarify you take out all the lipids and then you get that structure in neuroscience and then sometimes they they even do the thing where you blow it up with water so you can see it better. It'd be fun if we could do the opposite but get rid of all the keep the lipids ",
+        "annotations": {
+            "express humor": "The speaker makes a joke about research methods, comparing taking out lipids to blowing something up with water, showing a humorous tone.",
+            "None": "No other codes seem to directly apply as the utterance is more about a speculative and humorous comment than a serious contribution to the discussion."
+        }
+    },
+    {
+        "utterance": "Julien Berro: I like it yeah. I like this idea of uh yeah yeah the expansion microscopy but not on proteins but on lipids. Yeah. But you need probes also for different specific kinds of lipids but oh I see what you mean now now I get it. You want to do that expansion microscopy and then cryo and not not just light microscopy right? Something like that. ",
+        "annotations": {
+            "develop idea": "Julien Berro is expanding on the idea of using expansion microscopy, suggesting its application on lipids.",
+            "ask question": "Julien Berro is asking for clarification on the approach, specifically about needing probes for different lipids and combining expansion microscopy with cryo-microscopy."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: I mean Raman is if Raman could make it to the ultimate point you know that it wants to be at, Raman spectroscopy that uses the vibrational modes that are specific to the endogenous lipids. I mean that ultimately if we had enough sensitivity and resolution would be an excellent way to just do an unbiased imaging of lipids. We would like to do it. We have a few probes that are would be Raman active with you know tags on them that would be useful. I think one of the things that's a limitation currently that people are obviously working on and making great strides in is the sensitivity if you're looking at very low abundance molecules the sensitivity is is kind of not nearly as high as if you use fluorescent tags or what have you depending on your system but but I think all of those things with Raman people are very interested in understanding sort of like the endogenous as we've all been talking about probes perturb the system and they're not as versatile as looking at the endogenous lipid metabolites. So I think Raman microscopy is just going to continue to get more powerful and more used but we personally have not used it yet unfortunately. ",
+        "annotations": {
+            "develop idea": "Alison expands on the idea of using Raman spectroscopy for lipid imaging, discussing its benefits and limitations.",
+            "identify gap": "Alison points out the limitation of sensitivity, especially for low-abundance molecules.",
+            "offer feedback": "Alison suggests that improving sensitivity would make Raman spectroscopy more useful."
+        }
+    },
+    {
+        "utterance": "Julien Berro: What what's the resolution of of Raman? I'm I'm kind of naive about that field. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the resolution of Raman spectroscopy, indicating a need for clarification or expertise from others in the group."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: My understanding, although of course I'm not an expert, is that it's you can get good sensitivity on a a few micron scale. You can certainly get sub-micron scale resolution but that's more often when you have say a large population of lipids where you don't need as much sensitivity. So if you're looking at say you know phosphatidylcholine which is a major component of mammalian membranes then you can get better resolution. Um so I think at this point it might be something of a compromise but I would advise you to talk to somebody better at Raman than me because ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Wei is an expert. Wei is probably close enough to you to it's it's an optical technique right so it's sort of optical resolution at the moment right? ",
+        "annotations": {
+            "signal expertise": "The speaker mentions that Wei is an expert, explicitly stating someone's expertise."
+        }
+    },
+    {
+        "utterance": "Grace Stokes: Yeah I don't know the optical the current state of the art for the optical resolution but it's definitely it sounds like it's a going to work well I think they're making progress it seems like. Yeah we I mean a non-linear the techniques that I use are a combination of Raman with IR but I don't do just Raman by itself. ",
+        "annotations": {
+            "Supportive Response": "The utterance expresses agreement and optimism about techniques in membrane studies."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yeah. Um so we've talked about proteins and lipids. I mean do we have any sugars? It's like the other big class of molecules here. So Anna you mentioned the glycocalyx that that sounds like it's got sugars in it. Is that right? Oh you're you're muted. ",
+        "annotations": {
+            "ask question": "The speaker requests information about the classification of sugars as biological molecules and seeks clarification on the glycocalyx's composition."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: Yep yep yep. Yes. So yes yes I mentioned it but no we don't know anything about it in the cell types that most people study when they study actin cytoskeleton and all of the things that people love about actin cytoskeleton like it makes cells crawl and it you know it makes cells change their shape and even in you know something you know we work in the Drosophila embryo so a fruit fly embryo which is like the paradigm embryo ",
+        "annotations": {
+            "identify gap": "The speaker explicitly mentions a lack of knowledge about the glycocalyx in certain cell types.",
+            "develop idea": "The speaker is expanding on previous mentions of the glycocalyx and its relation to actin cytoskeleton studies."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: embryo for all of biology, right? If you're going to learn something about an embryo, you learned it about in the fly embryo first. And we know that there's a we know that there is a glycocalyx there, but have no idea what the composition is, what the regulation is of that, what how the profile changes over developmental time, which has to be incredibly important for when, you know, when those cells start to change their shape in order to build a tissue. So, I mean, really, that is such a it's for for most of the cell biology that I think about, no one has even thought about no one's really thought about that or incorporated it. And it's only now that people are starting some people are starting to pay attention. So I can't tell you anything about it because and I don't think that's just because of my ignorance, it's because we just we don't know. I see Julian's smiling because he must think about this as well. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a lack of knowledge about the glycocalyx, its composition, regulation, and changes over developmental time.",
+            "supportive response": "The speaker is acknowledging the importance of understanding membranes and related structures like the glycocalyx, showing support for the direction of research.",
+            "encourage participation": "By highlighting the gaps in knowledge and the importance of the glycocalyx, the speaker invites others to contribute their expertise or research in this area."
+        }
+    },
+    {
+        "utterance": "Julien Berro: Yeah, yeah, yeah, and it's and you know, it's funny. I I work only with yeast cells and people gave us a lot of you know, bad words because it's just yeast cells, not mammalian cells. And the more time goes, the more we realize that it's a lot the yeast community got it right before the mammalian cell community because a lot of things are actually been done cleaner in in yeast. And yeast have a cell wall that's been there for, you know, studied pretty well for a long time. And for example, for cytokinesis, everybody is focused on the acting contractile ring that generates force, but actually the more it goes, the more we realize that the cell wall assembly is polymerization is actually creating a lot of force that pushes the membrane inwards. And so the the actin ring might be just there just to localize things, not even to generate force. I mean, there are some hypotheses like that. So with the glycocalyx, it's the I've seen things that are that were going along the same lines of like, actually it does a lot of things and everybody's been kind of ignoring it because it's just outside the cell and you know, nobody cares what's outside, but actually more people care these days. So it's good. ",
+        "annotations": {
+            "develop idea": "Julien is expanding on his thoughts about the yeast community's contributions to cellular biology.",
+            "signal expertise": "Julien is stating his experience and perspective on yeast cells.",
+            "identify gap": "Julien mentions the glycocalyx has been overlooked.",
+            "express humor": "Julien uses humor in his statement."
+        }
+    },
+    {
+        "utterance": "Lars Plate: But even it's interesting because you've focused so much on the glycocalyx on the outside of the cell, which yeah, that's where it where it ultimately ends up, but it's also, I mean, it it gets there, some of the glycans are installed extracellularly, but a lot of them also are installed throughout the secretory pathway, right? So there's there's a potential of that also influencing vesicles in I mean in the Golgi and in in the ERGIC and all of the compartments. And I don't I mean it's along the same lines. I don't maybe again it's my ignorance, but I don't know if anyone's even like looked sort of intracellularly how that shapes the membrane structures. ",
+        "annotations": {
+            "develop idea": "Lars is expanding on the idea of the glycocalyx's role, suggesting it could influence vesicles in the Golgi and other compartments.",
+            "ask question": "Lars is asking if anyone has studied how the glycocalyx installation affects membrane structures intracellularly.",
+            "identify gap": "Lars is pointing out a lack of knowledge on the intracellular effects of glycocalyx installation on membrane structures."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: Yes, so I think that's a great point. And and then you bring up yet another great point, which is that while you may look at the plasma membrane, you constantly have, you know, the membrane trafficking pathways that are adding new stuff and taking stuff away at the same time. And so these, you know, so so we talked a lot about structure, which of course is is important. I back up everything that I heard earlier, but then when you start thinking about dynamics, it becomes even more complex because it's it's not a static, you know, it it's not a static thing. It's there's constantly stuff coming in and and stuff coming out. And how you know, how how all of those interactions how all of that is coordinated and how how do these systems handle that? I mean, I just it's it it's so so complex when you just zone in on one thing, but then when you actually think about it in the systems at you know, like at at let's say at the cellular systems level, then the complexity just grows. And so yeah. And I and I loved what Catherine said. Um, she said she said it so nicely, how how do you make membranes work quickly enough to do the stuff that they have to do? And I'm thinking about that constantly in terms of the plasma membrane, like how how would you coordinate all of the incoming traffic and the outgoing traffic as well as changing the shape at the at the same time. And I know that many of you are thinking about it in terms of, you know, like how do you take stuff in? Um, and so how do you make all of that how does the, you know, how how does that interface with the biophysics of the of the membrane of that material and how does it how does it happen? And I just you know, we we see that it's a problem as biologists, but I think we we don't have good tools and all of the things that you said about probes being perturbative, that is that's like that's always the problem for us. It's like anytime anybody comes up with a new probe, it sounds great on paper. One group makes it work, and then, you know, we try to take it into our cell and everything falls apart. So, um, so, you know, I'm I don't I don't have solutions. I mean, of course we're, you know, of course we're doing theory. Of course, we're trying to also, you know, work with material scientists to to come at it from many different directions, but I don't I don't feel like we have good tools yet at all. ",
+        "annotations": {
+            "develop idea": "She is expanding on existing ideas about membrane dynamics and complexity.",
+            "identify gap": "She points out the lack of good tools for studying membranes.",
+            "clarify goal": "She discusses the goal of understanding how membranes work quickly enough to perform their functions."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Well, if we can identify what the needs are, that's going to be a big help, I think, right? Um, in this session. Yeah. ",
+        "annotations": {
+            "clarify goal": "The utterance helps in clarifying the goal of identifying needs.",
+            "supportive response": "The tone is supportive and positive towards the process of discussion.",
+            "summarize conversation": "The utterance attempts to summarize or reflect on the discussion by highlighting the importance of identifying needs."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: I mean, I I can just make a plug for chemistry, I guess. Um, in that, you know, a lot of times when we look at and I'll return to lipids just briefly because I don't I really don't know that much about the glycocalyx, but I think it's an excellent point to consider, you know, intracellular membrane environments that could be influenced similarly to the extracellular side of the membrane. But for lipids, we tend to look at them as just being like this big jungle or tangle of of carbon and hydrogen in cryo-EM when when we see them in cryo-EM structures, which is kind of rarely to be honest. But a lot of times, you know, the key attributes of a certain stretch of a membrane will be whether, you know, how many double bonds are introduced in the phospholipid tails of the lipids in the bilayer. And and I think the fact that so many that in the PDB you don't see the membrane, you know, we're losing a lot of information about how the shape of the lipids influence the types of proteins they interact with and then, you know, even beyond the PDB, how that influences the dynamics of those particular proteins. So I think one thing that would be kind of a pie in the sky is to look at sort of the shape-based complementarity between different types of lipids and different types of membrane proteins that might either localize them in the same place at in the simplest perspective, but also as we're talking about curvature and different scaffolding proteins that interact with lipids to make these invaginations and so forth. Like if we could get a better understanding of exactly how the lipid content complements the types of proteins. ",
+        "annotations": {
+            "propose new idea": "Alison suggests exploring the shape-based complementarity between different types of lipids and membrane proteins as a potential area of research.",
+            "develop idea": "Alison elaborates on the current understanding of lipids in membranes, their structure, and the limitations of current research methods.",
+            "identify gap": "Alison highlights the gap in understanding how lipid content influences protein dynamics and suggests a need for better models or methods."
+        }
+    },
+    {
+        "utterance": "Yan Yu: the intracellular membrane tend to have much more impact on the the chemical reactions inside, not just on the membrane, but actually like the bulk, the chemical reactions in the bulk. For example, like endosomes, right? The lipid composition of the endosome have really big impact on what ions would go in, what enzymes would be activated, for example, at what time. So that's, in a way, I think the membrane composition might be some kind of clock, I guess, that times the the progress, I would say, of those reactions and changes of the organelles inside the cell. ",
+        "annotations": {
+            "develop idea": "The speaker expands on the concept of intracellular membranes' impact on chemical reactions and suggests a new perspective on membrane composition.",
+            "supportive response": "The utterance contributes to the discussion by providing an example and an idea related to the topic."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: So do we think that people I mean, okay, so there's the plasma membrane and then there's all these little vesicular, I'll just call them, I guess, membranes. I mean, people are studying them, but I'm guessing most people when they think of membrane, think of the plasma membrane, right? So is it but is it, I don't know what the state of the art is for looking at people who study membranes, is the are the vesicular membranes now overpowering the plasma membrane or not really? Do we know? I don't know. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the state of research on membranes, specifically comparing vesicular membranes to the plasma membrane.",
+            "encourage participation": "The speaker is inviting others to contribute their thoughts and opinions on the topic."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: I only thought of intracellular. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, you only think, okay. All right, that's good. ",
+        "annotations": {
+            "Supportive Response": "The speaker is expressing agreement and acknowledgment without adding new content to the discussion."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: I just think one really like that Oh, sorry, go ahead, Lars. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lars Plate: No, I'll just make this very quick. I mean one one thing that's challenging is isolation, right? So we can get the we can get to the plasma membrane, that's why it's been studied. We can get to we can isolate microsomes, we can isolate exosomes, like extracellular things, but but having specificity is very challenging. And that's limited also, I think, some of these questions that you just brought up with how how vesicles get dynamically remodeled or or changed in composition with yeah, with with time or even even statically. So if we had ways to that's like a need to to maybe address how to how to label some vesicles in a perturbed way or maybe not better non-perturbed and isolate it through other things than just differential centrifugations or gradient centrifugations, that would be awesome. ",
+        "annotations": {
+            "identify gap": "Lars Plate highlights the challenge of specificity in isolating vesicles or membrane components, indicating a gap in current methodologies.",
+            "propose new idea": "He proposes the idea of finding new ways to label and isolate vesicles, suggesting an improvement over current methods like differential centrifugations or gradient centrifugations."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yeah, and there is there anything better than NTA so nanoparticle tracking analysis is a way to get like concentration of vesicles, right, in a solution. I mean, that's pretty limited. I mean, you can do it, but that's limited by the to a certain concentration range. I mean, so so that's, I mean, as a chemist, right, that's another thing you'd like to know, like, well, how many vesicles do I have, right? And okay, so there's not that many methods there either. But yeah, the isolation is another big pain, right? That's another roadblock. So we think I think we have about five more minutes for our discussion, oh boy, and then and then we have to help Lulu put together our one slide. So, um, okay, are there other points people want to make about problems that need to be overcome, areas of inquiry that are understudied, connections between things we've talked about? Like we haven't mentioned too much about the mechanical nature of membranes, but that's another right, you could have the, you know, maybe a similar chemical composition over some length scale, but the mechanical properties might be different depending on how, you know, I guess I never think about lipids being cross-linked, but maybe they are. Certainly it's easier to think about proteins being cross-linked. So any other thoughts? ",
+        "annotations": {
+            "ask question": "The speaker asks if there are better methods than NTA for analyzing vesicle concentration.",
+            "identify gap": "The speaker highlights the limitations and challenges in current methods for vesicle analysis and isolation.",
+            "process management": "The speaker is managing the discussion flow, mentioning the time constraint and the need to discuss or summarize topics."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: I mean, so I mean, I think that this is an issue when because when we, you know, when I I can't I can't make the models myself, but when I, you know, have a collaborator and we work to make theoretical models of cell shape change or what's happening with the plasma membrane, the, you know, the approach is to take, you know, is to just coarse-grain it, to just which I totally understand because you don't you don't know how to take everything into account, but um, but this, you know, is is that is that the only way? Is that really the only way? And I I don't I again, I don't have the answers to that to that question, but um, it seems like even when we're trying to understand what's going on with membrane, we actually glaze over 95% of what's going on with the membrane. I don't know if anybody knows what I'm talking about, but ",
+        "annotations": {
+            "identify gap": "The speaker highlights that current modeling approaches might oversimplify membrane dynamics, glossing over 95% of what is happening.",
+            "ask question": "The speaker asks if coarse-graining is the only way to model cell shape change or plasma membrane dynamics, seeking input or perspectives."
+        }
+    },
+    {
+        "utterance": "Julien Berro: I know what you're talking about. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance as it is a simple acknowledgment of understanding."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: I'm one of the first ones to be uh ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Julien Berro: I mean, one of the reason is because the the the modeling and the theory is so nice and beautiful on homogeneous membranes. So it's like, okay, let's get homogeneous media and saying that you're at a scale that's high, you know, large enough that the details don't really matter anymore. You can talk about an average property of But I I agree. For example, basically endocytosis is just, I mean, it's breaking the these endocytosis, exocytosis, we still do that, but we know it's not it's not okay because just the thickness of the membrane is 5 nanometers and the shapes we're looking at are 50 nanometer in diameter. So it's still, you know, it's like 10% and and 50 nanometer is the largest, right? So we kind of completely ignore the details. And actually when you try not to ignore the details, the reviewers complain because then the models kind of you're at the limit of the the way you can model this kind of things. You have to create what you call singularities and then the math is not as clean and there's a lot of of things that even reviewers don't feel comfortable with, you know, even that that we add more kind of details in a kind of indirect way. So it's a matter of tools and computational power, I think, that that's missing. ",
+        "annotations": {
+            "identify gap": "Julien highlights the gap in tools and computational power for accurately modeling membrane dynamics.",
+            "critical response": "Julien critiques the current approach to modeling membranes, pointing out limitations.",
+            "develop idea": "Julien expands on the idea that detailed modeling of membranes is complex and often simplified."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: So reviewers are another roadblock to progress. Okay. They always have that idea. And none of us are ever is a reviewer, right? We're not those kind of reviewers, no. That's right. Of course. Hey, okay, it's time for us to figure out what we have, what we want to convey to the rest of the group. Okay, Lulu, how how are you doing? ",
+        "annotations": {
+            "process management": "The speaker is discussing the management of team progress in the context of dealing with reviewers and preparing to communicate with a larger group."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: I've got some notes. I thought maybe I'd share my screen so everyone can see what I'm kind of working on. Um, sorry, give me a second. ",
+        "annotations": {
+            "process management": "The speaker is suggesting an action to manage the meeting flow by offering to share her screen."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Can you share? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting someone to contribute by sharing, which encourages participation.",
+            "process management": "The speaker is managing the flow of the meeting by requesting someone to share."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Yeah, just hold on. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, okay, sure. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Okay, wrong, that's the wrong thing. Are you seeing my whole screen or are you... ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by addressing a technical issue related to screen sharing."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: We're seeing Canada invited Chelsea Manning. Okay, here we go. All right. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by attempting to move past a technical issue."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Are you able to see the Google Doc now? ",
+        "annotations": {
+            "Process Management": "The speaker is checking if others can access a shared Google Doc, which relates to managing meeting flow and tools."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yep. Mhm. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: So this is not in any particular order. The first part was simply just everyone was doing their intro, I just wrote down everything. And then as the discussion went on, okay, so the first one I kind of organized, we started talking about rethinking biophysical mechanical properties of membrane, like what is the range of fluidity and the dynamic, what's it governed by? This is just really broad, but some stuff that I thought was really good started coming out. Structure, this particular point that it's structure plus dynamics to give us the function, I thought, so yeah, so I have that and but you know, there's so many unknowns. How is it regulated? What's the coordination? What's the sensor? How do you model it? And then we had to started getting into how do you study membranes. And then I had this expanded section here on how the shape of the membrane, this should be a separate, shape of the membrane influences the proteins that can interact with and looking at the complementarity between membrane shape and protein complex shape and to like ID possible pairs but kind of map it on a larger scale so that you can make inferences about composition to shape, like this axis, lipid composition shape to protein. And then our conversation went into intracellular membrane, which I thought was really cool because it brings up the different chemistries that are encapsulated with each one. We talked about endosomes, but there was also, you know, peroxisomes have different differential oxidation perhaps bilayers or lysosomes. And then we ended with we need better models for studying complexity. ",
+        "annotations": {
+            "summarize conversation": "The speaker is summarizing what has been previously discussed by the group, highlighting key points and topics covered."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yeah, so they have somewhere in the Google Drive, they have a one PowerPoint slide per group, and we're supposed to do like three, I guess three would be the magic number of either, you know, things people ought to study or questions that are that we just can't answer yet or roadblocks to progress. I mean, something along those lines. It's pretty open what we can put down. But I think I heard a lot of stuff. Okay, I mean, we all heard a lot of stuff. So, I don't know how you want to proceed, Lulu. Do you want to like put up the slide, the blank slide if you can get it and ",
+        "annotations": {
+            "process management": "The speaker is discussing how to proceed with a task assigned to the group, specifically how to create a PowerPoint slide summarizing their discussion."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Yeah, I can I can get that. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, Lulu, how are you doing? ",
+        "annotations": {
+            "None": "The utterance is a simple social inquiry and does not relate directly to the scientific discussion or collaboration."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: slide do how do we decide which ones are the ones to Let's see if it goes on. ",
+        "annotations": {
+            "process management": "The speaker is discussing how to manage the content of a slide, specifically deciding which items to include and testing if they work."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Well I guess we should talk about that. Okay so what's what do what do we think the we have now like five minutes to figure this out. Okay so what are the most important yeah what what I guess the thing what did people strike them the most here? I mean okay so you tell me what if you had to come if everybody had to say one sentence about gee I hadn't thought about this or maybe I thought about it but I hadn't quite realized something what would we say as a result of our discussion? ",
+        "annotations": {
+            "process management": "Cathy Murphy is managing the meeting flow, ensuring they cover important points within the time limit.",
+            "summarize conversation": "She is asking the group to reflect on the discussion, summarizing what has been discussed.",
+            "encourage participation": "Cathy Murphy is explicitly inviting everyone to contribute their thoughts."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: I can start with just the stuff I thought that was cool. So I liked Lulu's idea of sort of the reverse clarity expansion microscopy to look ",
+        "annotations": {
+            "supportive response": "Alison Ondrus is positively evaluating Lulu's idea, showing a supportive response to the discussion."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay that is a specific one okay. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation for a previous contribution."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: Yeah. Um I also like the idea of intracellular glycocalyx and how that might influence um membrane dynamics composition shape and then I think the last one that I thought was pretty cool was Yan's idea of sort of the membrane composition as a clock to regulate the rates of intracellular sort of encapsulated reactions in different membrane vesicles. ",
+        "annotations": {
+            "acknowledge contribution": "Alison Ondrus acknowledges Yan's idea about membrane composition.",
+            "develop idea": "Alison Ondrus expands on the ideas of intracellular glycocalyx and membrane composition as a clock."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Alison oh sorry could you repeat I should I just start writing? ",
+        "annotations": {
+            "ask question": "Lulu is requesting information from Alison, asking her to repeat what she said."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: Oh that's just me so other people I'm sure have another top three. So the reverse clarity intracellular glycocalyx and membrane composition as a clock were my three. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Well yeah we might as well just write these down. Just like just make a big string of them and and then we'll delete as we go if we need to. So we have like a technique we have a phenomenon to study the glycocalyx and the intracellular membranes and then we have um an idea right that the membrane composition might be as might be a clock which I don't think I mean I haven't ever heard of that but that's a super interesting idea. If it if it's actually true then people maybe not have been studying that. Okay so um okay so Yan I'm going down my list here so Yan you're next. Is there something you'd like to add to a point that you're like ooh this is interesting. ",
+        "annotations": {
+            "summarize conversation": "Cathy Murphy is summarizing points to be discussed, including studying the glycocalyx, intracellular membranes, and an idea about membrane composition.",
+            "encourage participation": "Cathy Murphy invites others to contribute their thoughts, asking if there's something they'd like to add."
+        }
+    },
+    {
+        "utterance": "Yan Yu: I think um there was one point talking about the you know there's a urgent need for the development development of tools for imaging um I think imaging the membrane composition and um I think that was and then there's also a a need for imaging the metabolites I think um in membrane-membrane communication. I might have misremembered that. ",
+        "annotations": {
+            "summarize conversation": "Yan Yu is reflecting on previous discussion points about the need for imaging tools for membrane composition and metabolites.",
+            "identify gap": "Yan Yu mentions a urgent need for the development of tools, indicating a gap in current capabilities.",
+            "supportive response": "Yan Yu's utterance supports the discussion by highlighting important topics that need to be addressed."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Oops sorry I'm getting more dings here. Um yeah well so some of our synthetic biology colleagues were talking about cell-cell signaling through the metabolites but I but is imaging a problem for you guys or it's or is it actually a problem? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about whether imaging is a problem for the group, directly asking for their perspective or experiences."
+        }
+    },
+    {
+        "utterance": "Haoran Zhang: It is a problem and I would like to add that in addition to the current challenges we recently realized that there is a community uh heterogeneity issue. That means that for example if you have cell population some cells may behave better or worse than others and how do we take this into account is a big challenge for us. And I mean for for um membrane um for for transportation through membrane for example extracellular space concentration is always uniform so to speak but intracellularly the concentration may not be the same between different cells and that is a big problem. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly identifies a gap in knowledge regarding how to account for cell heterogeneity in membrane transportation studies.",
+            "develop idea": "The speaker expands on previous discussions by highlighting the challenge of cell heterogeneity in studying membrane transportation."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Well I think all the biologists are familiar with how things you know one organism to another is heterogeneous right so there's yes okay so great uh okay we got to speed up here. ",
+        "annotations": {
+            "None": "The utterance does not explicitly fit into any provided code category but serves as a facilitative comment to acknowledge heterogeneity in biological systems and to move the discussion forward."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: I'm going to need so much help with putting these down. Okay so new techniques ideas there was reverse clarity um and then we got the intracellular glycocalyx. What were the challenges that were just mentioned again? ",
+        "annotations": {
+            "ask question": "Lulu requests information or clarification on previous statements.",
+            "summarize conversation": "Lulu recalls and summarizes the new technique ideas discussed."
+        }
+    },
+    {
+        "utterance": "Grace Stokes: I think we were talking about the new technique just thinking about a better imaging tool too for ",
+        "annotations": {
+            "Develop idea": "Grace is referring back to and potentially expanding on a previous idea about needing better imaging tools.",
+            "Acknowledge contribution": "She is recognizing the discussion about new techniques or imaging tools.",
+            "Process management": "Grace is trying to steer the discussion back to a previous topic."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Yeah we always want better imaging. I guess is a general theme. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and validation for the pursuit of better imaging techniques, aligning with previous discussions."
+        }
+    },
+    {
+        "utterance": "Lars Plate: The other point I think that you had already kind of organized on the on your sheet was about how the sort of shape of membranes influences um direct protein interactions and and and binding not at the molecular level necessarily but I think we brought up that it's sort of like it's a composite property right like dynamics play a role and sort of general folding. ",
+        "annotations": {
+            "develop idea": "Lars is expanding on an idea that has been previously mentioned, discussing how the shape of membranes influences protein interactions and binding.",
+            "supportive response": "The utterance is supportive and agrees with previous discussions.",
+            "summarize conversation": "Lars is trying to connect and summarize previous discussions."
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Like structure plus dynamics is that what ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification or confirmation about a concept previously discussed, specifically about the relationship between structure and dynamics."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: I guess we were talking about is like how I guess multiple lipids can influence protein structure is that kind of like ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by reflecting on how multiple lipids can influence protein structure, indicating an effort to understand and clarify membrane biology concepts."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Yeah and and and complex assembly and and signaling right like I mean Alison can since you're you're really closely studying this maybe you have a few other comments to flush it out. ",
+        "annotations": {
+            "encourage participation": "Lars Plate invites Alison to share her comments, encouraging her participation in the discussion."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: Yeah I think that a little bit farther down your list of notes you really encapsulated well the idea of how do we understand lipid shape and protein shape and how that coordinates their interactions and functions and then how that plays out in the ultra structure of the local environment. So you could probably copy paste what you had that was really good. ",
+        "annotations": {
+            "acknowledge contribution": "Alison Ondrus acknowledges Lulu Cambronne's input and suggests it was well done.",
+            "supportive response": "Alison Ondrus expresses agreement and validation for Lulu Cambronne's contribution."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Perfect. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or confirmation with a previous statement."
+        }
+    },
+    {
+        "utterance": "Alison Ondrus: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lulu Cambronne: Okay. All right. All right. Let's see. It's hard to do both. It's hard to listen and try to ",
+        "annotations": {
+            "Express humor": "The utterance makes a lighthearted comment about the difficulty of multitasking.",
+            "Process management": "The utterance comments on the challenge of participating in the discussion."
+        }
+    },
+    {
+        "utterance": "Anna Marie Sokac: Yeah I know that's ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lars Plate: You're doing great. This is awesome. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and positive evaluation for the group discussion or meeting process."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: You're doing fabulous. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing a positive evaluation and encouragement."
+        }
+    },
+    {
+        "utterance": "Cathy Murphy: Okay, I have oops, I think I'm in the wrong Google Doc. ",
+        "annotations": {
+            "process management": "The speaker indicates a technical issue with the current Google Doc, suggesting a need to switch or adjust the document being used."
+        }
+    }
+]

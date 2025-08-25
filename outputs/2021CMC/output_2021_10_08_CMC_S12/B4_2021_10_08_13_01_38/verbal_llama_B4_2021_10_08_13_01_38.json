@@ -1,0 +1,845 @@
+[
+    {
+        "utterance": "Kathy F. Liu: we started in 2008. I feel so lucky that two years before the COVID started. So my lab the main techniques that we are using is we are interested in the function of RNA modifications. The main techniques we are using is CRISPR screening to identify the key enzymes which may regulate the important RNA modifications in certain cellular processes. And we use a liquid chromatography triple quadrupole mass spec to quantify the levels of RNA modifications and we do high throughput sequencing to pinpoint where are those modifications in human genome. And during COVID I got more and more interested in phase separation, this topic. That's why we started to do proximity labeling mass spec to determine the protein and RNA constituents in the phase separated compartment. ",
+        "annotations": {
+            "signal expertise": "The speaker is explicitly stating her lab's expertise and techniques, indicating her qualifications and experience in the field.",
+            "develop idea": "The speaker is elaborating on her lab's research focus and techniques, providing more details about their work."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Oh that's great. All right. And and Lars to take us home. ",
+        "annotations": {
+            "supportive response": "The speaker expresses agreement or validation with 'Oh that's great'.",
+            "encourage participation": "The speaker invites Lars to contribute or present next, 'And and Lars to take us home'."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Okay. Hi everyone. My name is Lars Plate. I'm in the chemistry and biological sciences department at Vanderbilt University and we're a chemical biology group looking at coordination of protein-protein interactions. So we're really interested in how protein interactions play a role in protein folding, biogenesis and protein trafficking. And so applications are protein misfolding diseases, so how those are caused by dysregulation of these processes and then the other aspect is viral infections, so how do viruses take advantage of the protein homeostasis network in the infected cells and kind of use that to to help fold and assemble the virus particles. And so then we use a lot of mass spectrometry as our main main sort of technique of interest to study these protein complexes, so affinity purification mass spec. So this this topic really is kind of very close to home. And I'm really excited because one of the aspects I think that's really kind of challenging for us is sort of we think a lot about sort of temporal resolution, what is the sequence of protein interaction events as proteins get folded and trafficked, but then there's of course also the spatial aspect to this, right? These proteins traverse the secretory pathway or they get get localized to different parts of the cells and how how can we develop techniques that can can capture this efficiently. ",
+        "annotations": {
+            "signal expertise": "Lars Plate explicitly states his name, department, and field of study.",
+            "develop idea": "He elaborates on his group's interests, including how protein interactions play a role in various processes and their applications in diseases and viral infections."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Okay, great. Well, okay so this is my swan song I guess or my last facilitation and I I have this sort of two-step thing in my head when I I was responsible for well me and Romy creating this this thing. But so to Tanya's question about protein biochemistry and proteomics, why is it still a problem, the compositional proteome? The the composition of matter still has not been defined. So that that's a foundational statement that we haven't sequenced the human proteome and that's one of my passions and so I won't hide that, I'll in fact just lay it out. But the supposition is that that if we could do that in in do it with 100% coverage, you know it may shock you to know that proteomics, compositional proteomics is a you know 0.1x coverage science whereas genomics is a 50x coverage. So that you know when you when you look at the modern state of play, that's one of the reasons Tanya we don't have this locked down, not even close. And so that's like a first step but then the supposition is if you do that well, then you can take the second step and you could then invigorate single molecule protein sequencing, single cell proteomics and and in space, do do what we did for what we do single cell RNA-seq now with a depth of about 3 to 4,000 transcripts per cell if you're if you do it you know well and you're successful. Single cell proteomics right now compositionally is about at 1,000, 1,500 proteins per cell but they're little peptides, they're not the full proteoforms. So that's the sort of thing that that I was imagining to to get both compositional and spatial proteomics on the rails and but that I now I've just layered way too much of my own personal bias on these three questions. But at least it tees us up. Maybe the first point, do we need to sequence the proteome in compositional proteomics, just that first point. What are your what are your thoughts or biases or you just tell me to be quiet. ",
+        "annotations": {
+            "develop idea": "Neil expands on his thoughts about proteomics, its current state, and potential future directions, building upon his and possibly others' previous discussions.",
+            "ask question": "Neil explicitly asks for the group's thoughts or biases on sequencing the proteome, directly requesting input.",
+            "encourage participation": "Neil asks for the group's thoughts or biases, inviting them to contribute."
+        }
+    },
+    {
+        "utterance": "Stephen Yi: Just sort of a question or comments, you know along that line. I really think from my perspective that this the spatial aspect of proteomics is very important, especially you know like in my perspective when you come to a translational applications like apply to you know the clinics, medical drug target discovery, all of that. When we were talking about you know kind of these medical tissues like tumors, we want to study the tumor microenvironment, all of that in vivo stuff. Without really spatial resolution, of course imaging is important here for sure, we cannot really know exactly what's going on compared to just basic proteomics sequencing based. A lot of these models were done in cell lines which is great, you know that provide the first draft of information we can you know narrow down, get a prioritize list, but I think this is really getting a step closer to the to the real kind of application that we want to do eventually. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by highlighting the importance of spatial aspects in proteomics.",
+            "supportive response": "The speaker is expressing agreement and support for the discussed topics, particularly the significance of spatial resolution in proteomics applications."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: So maybe let's take the second bullet then in the spatial proteomics because there are you know mass spectrometry and non you know and and codex, all sorts of antibody-based multiplexed imaging technologies to do spatial proteomics. So go ahead Paul. ",
+        "annotations": {
+            "develop idea": "He is expanding on the idea of spatial proteomics by mentioning specific technologies.",
+            "encourage participation": "By saying 'So go ahead Paul,' he is inviting participation.",
+            "process management": "By suggesting to focus on a specific point ('So maybe let's take the second bullet then'), he is managing the discussion flow."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: I I think at least for me you've started at too high of a level of you know first you have to say what mass spectrometry can do for you, what where it's at, what its limitations are in terms of composition or space or whatever. And I I have no idea. And so you know for example if you have two cells that you know they're right next to each other, can you figure out what each cell is doing or do you just get the average? And so ideally not you Neil but one of the other people could explain at least this to me as a real novice, that would be helpful to me and then maybe we can go on. ",
+        "annotations": {
+            "ask question": "Paul requests clarification on the capabilities and limitations of mass spectrometry, specifically about its spatial resolution.",
+            "identify gap": "Paul explicitly states his lack of knowledge about mass spectrometry and its applications.",
+            "encourage participation": "Paul invites others to contribute their expertise by explaining mass spectrometry concepts to him."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: So that's so I think for mass spectrometry and this maybe I'll also just interject too, you know I think it's really good because it's label-free, it can be label-free, it gives you a wide range like of exact you know you can get structure based on exact masses and tandem data. So if you don't know what you're looking for, you can usually get a pretty good idea. It's inherently limited because we have to generate ions, so that's kind of an inefficient process and not everything ionizes in the cell, although proteins pieces of protein should. And I think for spatial imaging mass spectrometry especially when it comes to proteins, there's an inherent limit on it's copy number. So like you know are you ever going to see one protein if that's all a cell makes of it? Like is that enough to get that one thing ionized? I don't think so. So like for the imaging mass spectrometry with proteomics, it's been limited to high copy number small proteins. So the things that the cell abundantly makes and unless the cell is very large, it's not been a high spatial resolution. So like the modern instruments, the best you can kind of get is a five micron image and I think you kind of need that bigger area because again it's copy number, so how many copy numbers in a cell do you expect? ",
+        "annotations": {
+            "develop idea": "Laura expands on the capabilities and limitations of mass spectrometry in proteomics and spatial imaging, providing specific details about its applications and current limitations.",
+            "ask question": "Laura asks rhetorical questions about detecting proteins at low copy numbers, seeking to clarify the limitations of mass spectrometry in spatial imaging."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So the excuse me, a five micron, so you could take a single cell and go and ionize that and at least if there's a good copy number, you can see it? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on the capabilities of mass spectrometry in analyzing single cells.",
+            "develop idea": "The speaker is expanding on previous ideas about spatial proteomics and mass spectrometry capabilities."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: People have done really fancy computational things to get at single cell. ",
+        "annotations": {
+            "develop idea": "This utterance expands on the existing discussion about the capabilities and limitations of mass spectrometry in spatial proteomics, particularly in achieving single-cell resolution, by mentioning computational methods.",
+            "supportive response": "Laura Sanchez's statement supports the ongoing discussion by providing a positive perspective on computational approaches to single-cell analysis, without directly agreeing or disagreeing with a prior statement."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez, UCSC: single cells and I would say the thing that they I have not yet seen it for proteins but for things that ionize abundantly like lipids yeah you can like get a good idea of but it's still kind of an average because that whole area is the single cell so it's like not yet a subcellular technique. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by providing more detail on the limitations of mass spectrometry in single-cell analysis.",
+            "identify gap": "The speaker highlights the current limitations of mass spectrometry for subcellular analysis, indicating a gap in current capabilities."
+        }
+    },
+    {
+        "utterance": "Lars Plate (Vanderbilt): Okay. And I think I mean the important point is that there's sort of like two two different approaches that I think Stephen kind of captured in his comment pretty well but you can take sort of a you can isolate certain certain cells in some ways and you can prep a sample differently and like yes I think the techniques are getting better in terms of multi-cell bottom up proteomics where you essentially take that mixture and digest it see what's all there and and go down all the way to maybe single cell levels if there's multiplexing techniques now where you can kind of barcode individual cells and then you can mix them all together so you increase essentially the the the sample amount but you can use the barcodes like isotope tags to kind of de-convolute how much of of every peptide was in in each individual sample. So that's on the one hand but then if you yeah to do the spatial resolution I think you were really also limited I think in terms of like what the techniques are so with with MALDI ionization then it's really about like how large the laser size is to kind of ionize different regions or I think there's some some interesting sort of nano ESI based techniques on surfaces where you can kind of digest little droplets on on tissue preparations for example but again still I think in the micron range so like nowhere near single cell resolution or subcellular resolution. ",
+        "annotations": {
+            "develop idea": "Lars Plate expands on existing ideas discussed in the conversation, providing more details on approaches and limitations in proteomics.",
+            "identify gap": "Lars Plate explicitly mentions the limitations of current techniques, particularly in achieving single-cell or subcellular resolution."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor (she/her, UCSD): But even with like single cell sequencing technologies you lose all spatial information like you know especially like subcellular localization as well like this all was in the cell we don't know where within the cell or if you have a population of cells we found these cells but we don't know like where they were on the you know in the tissue or wherever they originated from. So so maybe like we can break it down into like you know if we want to come up with some like single molecule or single cell proteomics maybe it's okay that we lose the spatial resolution because we don't we don't really have that with these other technologies that we're trying to like strive for in terms of the the sequencing. ",
+        "annotations": {
+            "identify gap": "The speaker points out the limitation of losing spatial information in single-cell sequencing technologies.",
+            "develop idea": "The speaker expands on the challenge of spatial resolution in the context of developing single-cell proteomics.",
+            "offer feedback": "The speaker suggests potentially accepting the loss of spatial resolution as a trade-off in advancing single-molecule or single-cell proteomics."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: If I could just interject with DNA sequencing in fact they have gotten single a single cell you know for example you take an egg and a sperm and it reproduces and if there's either 16 or 32 cells you then can take out a cell without harming the rest of it you can actually sequence it Sunny Xie in China did this and you can see that you know this cell is or is not okay in terms of the mutation and then continue to grow that up. So that's just a by comparison. ",
+        "annotations": {
+            "supportive response": "Paul Selvin is expressing agreement or validation by providing a comparable example from DNA sequencing, aiming to support the discussion on sequencing technologies.",
+            "develop idea": "Paul Selvin is also building upon the previous discussion by introducing a related concept from DNA sequencing, thereby expanding on the existing ideas about sequencing technologies."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez, UCSC: You know I also think there's an element of like in a lot of things you know in science we've moved to miniaturize everything but like you know in thinking more instead of trying to fit technology into a hole it's not going to fit into you know and some people do this with like single cell stuff they measure very large single cells so maybe like instead of trying to define the entire proteome you want to know what kind of proteome actually has a spatial component to it like if you can work on a larger model system or larger cell or whatever to like better focus how you then re-miniaturize. ",
+        "annotations": {
+            "propose new idea": "The utterance introduces a suggestion to consider larger model systems or cells before miniaturizing, proposing a new approach.",
+            "develop idea": "It builds upon existing discussions about proteomics, spatial resolution, and miniaturization by suggesting an alternative approach."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah and it's it's possible now to do you know cellular single cell proteomics some people understand that to be 40 or 50 plex technologies that can image in a tissue 40 or 50 proteins and and those are those are antibody based approaches so they yeah that's possible to do right now. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous discussions about proteomics by providing specific information on current technological capabilities in single-cell proteomics.",
+            "supportive response": "The speaker is expressing a positive evaluation of current technological capabilities in single-cell proteomics."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor (she/her, UCSD): Right. Okay well that yeah that's kind of like fish or something right where you like you can visualize this particular like where this particular DNA sequence or RNA sequence is within the cell and you don't need to yeah like you don't need any amplification. So yeah I know with like single cell RNA-seq you have to like amplify the nucleic acid to to get to sequence it to get enough of those molecules. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on a previous discussion by providing more details and comparisons.",
+            "supportive response": "The speaker is providing a supportive comment by making a comparison and adding more information to the discussion."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Still still no way yeah. ",
+        "annotations": {
+            "critical response": "The utterance expresses skepticism or disagreement with a previous idea or discussion point, indicating a critical response to what has been discussed."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor (she/her, UCSD): I don't think there's a way to like amplify proteins to boost the signal. ",
+        "annotations": {
+            "identify gap": "The speaker is explicitly recognizing a limitation in current technology, specifically the inability to amplify proteins to boost the signal in proteomics."
+        }
+    },
+    {
+        "utterance": "Lars Plate (Vanderbilt): That's always the big elephant in the room right that protein amplification if we can come up with a way. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a challenge or lack of capability in protein amplification, referring to it as 'the big elephant in the room'.",
+            "None": "No additional codes seem to apply as the utterance primarily serves to highlight a challenge."
+        }
+    },
+    {
+        "utterance": "Ross Wang, Temple U: Yeah I think the limitation is that you cannot amplify proteins so that actually limited the sensitivity of the mass spec into I mean at least we can reach is like single cell level but unlike the single cell RNA-seq one can forever amplify the signal make it be more sensitive for detections. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly states a limitation of mass spec technology, which is the inability to amplify proteins, affecting its sensitivity.",
+            "develop idea": "The speaker elaborates on the limitation by comparing mass spec to single cell RNA-seq, discussing the advantage of signal amplification in RNA-seq."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli, NYU: Yeah I think that would if we're relating the issues with protein detection to why nucleic acid detection is successful it's because of PCR and there isn't a complementary method which I right this is would be you know like a life-changing world-changing technique to be able to amplify proteins but I was just thinking if you the way that you know arrays work is through Watson-Crick base pairs but if we had very specific you know I'm just going to throw out like molecules that detect particular sequences and proteins then you would have a way to to capture particular protein sequences and then start to sort from there. I I mean I think Neil what you said about yeah having antibodies to enrich the limitation would be having an antibody for each protein it's a bias. ",
+        "annotations": {
+            "identify gap": "The speaker recognizes the lack of a complementary method for protein amplification similar to PCR for nucleic acids.",
+            "propose new idea": "The speaker suggests developing a new method or using molecules that detect particular sequences and proteins, similar to how arrays work.",
+            "develop idea": "The speaker elaborates on the potential of the proposed method for capturing protein sequences."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: So yeah and and and some people go further there to say open source antibody you know there's so much of the reproducibility angst around their around and so you could say well we need the sequences for the antibodies to be open source and and one you know one for every gene product family family of proteoforms produced for at least for human or something in that direction yeah. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new suggestion about open-source antibodies to address reproducibility angst.",
+            "develop idea": "The speaker elaborates on the idea by suggesting the need for sequences of antibodies to be open source, specifically for every gene product family or family of proteoforms."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor (she/her, UCSD): Well so with like RNA sequencing you first have to like reverse transcribe is there a way to reverse translate? Could we think of a way to do that is that like ",
+        "annotations": {
+            "ask question": "The speaker is explicitly asking for information or clarification on whether there's a way to reverse translate, similar to reverse transcription in RNA sequencing.",
+            "propose new idea": "The speaker is suggesting exploring a new approach or idea, specifically considering if there's a method to reverse translate, akin to reverse transcription in RNA sequencing."
+        }
+    },
+    {
+        "utterance": "Stephen Yi | UT Austin: Yes. Right. So this is actually you know I was thinking this is actually a very interesting point that back to this George Church technology back in five six years ago I think they are starting to barcode these proteins with a DNA sequence just simply you can actually do a either biochemical reaction we're also thinking whether that can be integrated into a vector when you express the protein is just something that you can do at the same time. So with that I think you can sequence or screen them on a chip or you can you know screen them at a large scale because that's going to be coupled by next-gen sequencing just the same way as RNA-seq and other things. I think I don't know how this can be scaled up and then applied to many different areas but definitely something that can couple with NGS. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea related to barcoding proteins with a DNA sequence.",
+            "develop idea": "The speaker elaborates on the idea and its potential applications.",
+            "identify gap": "The speaker mentions not knowing how the technology can be scaled up."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor (she/her, UCSD): Okay yeah so like somehow genetically encode like a DNA tag on the each protein. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a novel approach of genetically encoding a DNA tag on each protein, suggesting a new method for studying proteins."
+        }
+    },
+    {
+        "utterance": "Stephen Yi | UT Austin: Yes. Right something. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation for a previous idea."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Why why can't you use a DNA aptamer? I mean they in general can bind to a very wide range of things and you can also do combinatorics on them to develop an assay where they're looking at some large number of proteins I don't know a thousand or so thing that they they've developed aptamers for. Now I don't know how big does this antibody have to be is it how big? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about using DNA aptamers and their size compared to antibodies.",
+            "develop idea": "The speaker is expanding on the idea of using DNA aptamers for protein analysis, discussing their potential and limitations."
+        }
+    },
+    {
+        "utterance": "Ross Wang, Temple U: I mean ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Oh there's nanobodies and FCs and whole whole IgG backbones, yeah. ",
+        "annotations": {
+            "signal expertise": "The speaker demonstrates knowledge about specific antibody structures, indicating expertise in the area.",
+            "supportive response": "The speaker provides additional information, contributing to the discussion."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Nanobody can be much smaller now. But Paul since you mentioned about DNA aptamer, so I have actually researched and I did it by myself in the lab for two years previously with DNA aptamer. It's just in terms of the like selectivity and binding affinity, most aptamers will need a longer time to be optimized. It's not so comparable to the antibody. And then even when we talk about antibody, we're like very worried about the specificity and selectivity when we use antibody to enrich proteins for proteomics. So. ",
+        "annotations": {
+            "develop idea": "The speaker is building upon a previous idea (DNA aptamers) and sharing his experience with it.",
+            "signal expertise": "The speaker is sharing his personal experience with DNA aptamers, indicating his expertise in the area.",
+            "critical response": "The speaker is discussing the limitations of DNA aptamers."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Can I Oh, can I jump in and say maybe instead of amplifying the signal because we know you can't, like should we be focusing on amplifying the ionization? So like this is like kind of hot right now in metabolomics to use like a MALDI matrix that covalently binds a certain functional group and then you inherently increase the ionization efficiency by like adding an inherent charge. So like maybe if we can't amplify the signal, can we just like amplify how we take the measurement? Does that make sense? ",
+        "annotations": {
+            "ask question": "Laura asks for validation or clarification on her suggestion."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay. Yeah. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is verbally recognizing a prior statement or discussion point made by another group member."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Because then that's like very like chemical biology, right? Like I don't know. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Well and there's there's also actually if you're interested in high-risk proteomics or protein level biology and tools for it, you have a you know, a large amount of private sector activity in the last 15 months. You know, so like companies like Quantum-Si or Nautilus or you know, there's been a lot of investment or at least promised investment to to not to to go single molecule because we can't amplify. We have no PCR, so we just have to get more sensitive or like what Ion Torrent did or Jonathan Rothberg is in this game with a company called Quantum-Si. But these, you know, these are very high-risk approaches. Um but it's the same yeah, Laura, your yeah, we're we're we go decade every decade and we still can't amplify proteins and and by the way, proteins, that's a myth, right? They're actually proteoforms. And you say, well what's a proteoform? Well, think about that all these technologies are going to run smack into the variation of proteins. When you guys talked about what you did like Ross, you know, post-translational modifications, we we don't we don't have a reference atlas for what proteoforms exist. All these technologies, they might be able to sequence right now a few amino acids using using single molecule approaches, but they're when they hit PTMs, they're going to it's going to delay them by a decade or you know. So, so I don't know if we do it with ion amplification or we go single molecule, um and then you run into what Alexis said about spatial, how do you, you know, even RNA-seq is having a hard time putting in spatial register their information. So those are three major challenges and I'll stop because I'm now rambling. ",
+        "annotations": {
+            "propose new idea": "Neil mentions new approaches and companies working on proteomics, indicating new ideas.",
+            "develop idea": "He elaborates on the challenges and potential future directions in proteomics.",
+            "identify gap": "Neil points out the gaps in current technology, such as the inability to amplify proteins."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: I just have a very naive question. Can we do or maybe it's already existing in the field, can we do something like a split-pool research platform? You first isolate using the Drop-seq kind of thing to separate them into single cells, you barcode those cells, and if resolution is an issue, we will pool the similar cells in the similar cluster at a spatial level and then mass spec them. So although that probably not at a single cell resolution, but there are at least similar functional populations or spatial clusters. ",
+        "annotations": {
+            "propose new idea": "Kathy introduces a new approach for analyzing single cells using a split-pool research platform.",
+            "ask question": "Kathy asks if her proposed approach already exists in the field."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, and people are applying either a low-tech version of what you said is is laser capture microdissection trying to sample or like uh maybe well there's a picosecond laser approach to to to ablate um uh infrared picosecond pulse that activates the water vibration that'll that'll get you a vibrationally cold little speck of tissue, a five micron voxel. Um and that's an approach or like what you said, do sampling or flow cytometry or you know, to try to get each single cell and then read out its proteome, its proteome which would be a million proteoforms or more. So there's a family of approaches there but but I think what people are trying to do is get the detector right, whether it be mass spec like what Laura said or or single molecule protein sequencing. And then your your Drop-seq approach or you know, there's a various families of ways to try to get the sample. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas by discussing different methods and approaches being applied in the field, such as laser capture microdissection and picosecond laser approach."
+        }
+    },
+    {
+        "utterance": "Lars Plate: I mean, I'm going to throw out a whole other idea. Um we're we're focused on sort of proteomics um by mass spectrometry which of course we all um like and love and and definitely also a strong advocate but there are other um I don't know optical techniques or um electrochemical techniques um for for detection of analytes, right? So and I I had some conversations yesterday with one participant using like a really uh really sensitive sort of um optical technique um for single molecule detection. I think um this was Judith Su, I think Laura you've you've worked with her um before, right? And so I I like had no idea about this. This was sort of like very very exciting. Um so should we think outside of mass spec? ",
+        "annotations": {
+            "propose new idea": "Lars Plate introduces the idea to consider optical techniques or electrochemical techniques for detection of analytes beyond mass spectrometry.",
+            "ask question": "Lars Plate asks if they should think outside of mass spec, inviting discussion on alternative techniques."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Yeah, you know, I think though with that with Judy, you know, I think we worked well together because for her technique you still had to know what you were looking for, which I think a lot of these other techniques butt up against. So the question is, you know, do you want to design experiments to look for something like a specific proteoform or are you attempting to capture all of it? So like I think that's where like the goes into what is the research question because I think with there are better techniques other than mass spectrometry that are going to give you that spatial information, but you already had to kind of know what you were trying to look for. So the question is, yeah, do you want to untarget the world or like laser focus zoom in? ",
+        "annotations": {
+            "ask question": "The speaker is asking questions about the approach to take in experiments, specifically about whether to look for something specific or attempt to capture all of it.",
+            "develop idea": "The speaker is expanding on the idea that different techniques have different limitations and are suited for different types of experiments.",
+            "identify gap": "The speaker touches upon the limitation of needing to know what you're looking for with certain techniques."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Yeah, I feel like this goes back to like with you know, with DNA and RNA technologies, like doing, you know, FISH or fluorescence based where you're like, you know, these particular sequences I'm going to look for and then you can retain that spatial resolution, but if it's like, I want to know what, you know, the sequences of everything in the cell are, then you have to go to like either bulk sequencing or single cell sequencing and you lose the spatial resolution. And so here, we could, you know, the antibody-based imaging approaches for looking at proteins, we can retain some of that spatial information, but we have to generate an antibody for each thing that we're looking for. ",
+        "annotations": {
+            "Develop idea": "The speaker is expanding on existing ideas and comparing different techniques.",
+            "Identify gap": "The speaker highlights a limitation of antibody-based imaging approaches.",
+            "Offer feedback": "The speaker provides a comparison and perspective on different techniques."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Speaking about a spatial, I think um we are not worried about the sensitivity right now for the modern mass spec. In general, people can now do organelle-targeted probes. They can functionalize the probe with some certain functional group that can direct to mitochondria, that can direct to membrane or inner membrane. So yeah. And certain probes can be combined with mass spec, it's called chemical proteomics, and to allow for the enrichment of the proteins certainly from that subcellular uh space. So. ",
+        "annotations": {
+            "Develop Idea": "The speaker is expanding on the idea of using modern mass spec for spatial analysis within cells, discussing techniques like organelle-targeted probes and chemical proteomics.",
+            "Offer Feedback": "The speaker provides information on how certain probes can be used with mass spec for specific analysis, offering feedback on methodologies."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, I one thing I think about is like the the genomics revolution didn't happen without a a pretty big investment in early technology. You know, we're talking four to five billion dollars and it was a government role. And I I just I always come back to that reality. Uh ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an existing idea by providing a historical example to support the notion that significant investment in early technology is crucial for scientific advancements.",
+            "supportive response": "The speaker is providing a supportive comment by drawing a parallel that could encourage investment in proteomics technology."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Like the human genome project and not a human proteome, there hasn't been like a human proteome project basically. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes the lack of a human proteome project comparable to the Human Genome Project, indicating a gap in proteomics research.",
+            "clarify goal": "The comparison between the Human Genome Project and the lack thereof for the proteome serves to clarify the current state and goals in proteomics research."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Right, and part of the reason is is because proteins are so context-dependent and you know, if I yeah, there's a lot of re I've tried to pull the community together around and frame a project and so we've done that in the subfield of top-down, like we've got that um for just the compositional piece. But generally it's been hard to get folks to align. ",
+        "annotations": {
+            "identify gap": "The speaker identifies the challenge of proteins being context-dependent and the difficulty in getting the community to align as a gap.",
+            "process management": "The speaker discusses efforts to organize community projects and align folks, which involves managing group activities."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Right. Yeah, I was going to ask if you look at all of the data that you have, you know, the genome, RNA-seq data, ribo-seq data, can you predict proteoforms and then just look for those? ",
+        "annotations": {
+            "Ask question": "The speaker is requesting information on using genome, RNA-seq data, ribo-seq data to predict proteoforms and then looking for those.",
+            "Develop idea": "The utterance explores the idea of predicting proteoforms using existing data types."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: No. No. You the PTMs, that's why in the day one, I think we landed on somebody landed on AlphaFold, like the next big AlphaFold would be one that would yeah, try to do that or but we've never so in the genome project, we created a reference genome. And then you then NGS and and then disruptive genomics came. And so I just feel like we're that's the step that we're missing, right? ",
+        "annotations": {
+            "develop idea": "expanding on existing ideas by comparing genomics and proteomics advancements",
+            "identify gap": "explicitly recognizing the gap in proteomics compared to genomics",
+            "signal expertise": "demonstrating knowledge of both genomics and proteomics fields"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: No, it's true and like Ross said, there's a you know, the sequencing techniques or DNA sequencing all involved the ",
+        "annotations": {
+            "None": "No relevant code explicitly applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: use of chemical probes that were specifically made to detect particular residues which if there's an amplification pretend that you just wanted to know the composition. If you had particular probes that identified each amino acid instead of having to actually ionize each one you'd be able to at least figure out the composition of the sequence but not the order because of that amplification issue that we have. But anyway yeah I think probes to detect particular sequences that aren't antibodies seem important. ",
+        "annotations": {
+            "propose new idea": "Tania Lupoli suggests using chemical probes to detect particular residues or amino acids for improving protein analysis."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah and then you get to the antibody discussion that we had that yeah can be tough. And you got to go at scale. Like like for example the Wallenberg Foundation, the Anne and Knut Wallenberg Foundation. Yeah they're the ones who funded like half a billion so far in the human protein atlas. ",
+        "annotations": {
+            "critical response": "The speaker acknowledges a challenge in the discussion about antibodies, indicating a critical response to previous statements.",
+            "summarize conversation": "The speaker provides an example of funding for the human protein atlas to illustrate the scale of investment in proteomics research, summarizing a point about challenges and funding."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: you could use that to build off same as we did with DNA, build off of that information to predict folds and I mean I guess RNA folding is still its own problem. But yeah I just wanted to clarify that. But yeah I mean the field moved away from Edman sequencing so what's the is the advantage would be to do single molecule. That's the point that you guys were making that it would be ",
+        "annotations": {
+            "ask question": "The speaker directly asks for information about the advantage of single-molecule sequencing.",
+            "develop idea": "The speaker expands on the discussion about sequencing techniques, referencing previous methods and the potential of new approaches."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah because when you when you do Edman at single molecule you then don't have that phase problem where you could only get 30 or 40 amino acids in right because then it would go out of phase and that but single molecule you could in theory ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the challenges and potential of single molecule sequencing in comparison to Edman sequencing.",
+            "identify gap": "The speaker is highlighting a limitation of Edman sequencing (the phase problem) and implying a potential solution or advantage of single molecule approaches."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Yeah. I was thinking about something else you said with right the problem being PTMs, the problems that they present and I was wondering if you could first sort your samples you know by PTM like you know anti- anti-phos antibodies, anti-ubiquitin, whatever, um as a way to kind of at least simplif not simplify that problem but then you'd know what I guess the problem is you have mixed PTMs and you'd have multiple proteins in different ",
+        "annotations": {
+            "code name": "develop idea",
+            "explanation": "The speaker proposes using specific antibodies to sort samples based on PTMs."
+        }
+    },
+    {
+        "utterance": "Ross Wang: I was I was just about to say there are also multiple PTM sites and a lot of times I think mass spec researchers had to deal with cross talk between PTMs and ",
+        "annotations": {
+            "identify gap": "Ross is highlighting a challenge in mass spec research, specifically the issues with multiple PTM sites and crosstalk between them.",
+            "critical response": "Ross is pointing out a limitation in current mass spec research approaches, discussing the challenges of dealing with multiple PTM sites and crosstalk."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: I guess if you found that protein in multiple bins though then you would say whatever ",
+        "annotations": {
+            "develop idea": "She is building upon a previous idea or discussion about protein detection and analysis.",
+            "offer feedback": "She is providing a consideration or potential issue with the approach being discussed."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Then it also goes to a temporal issues so because this is so dynamic and uh I see a lot of recent data on the post trace experiment so the the whole modulations can be a equilibrium and ",
+        "annotations": {
+            "identify gap": "The speaker is discussing the complexity and temporal issues of protein modulations, indicating a recognition of gaps in understanding these dynamic processes."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: But isn't that isn't that the point that every time you do an experiment you're capturing it at a particular time. Yeah I guess it would need to be an imaging technique if it were to be more yeah like for you to actually measure changes over time if you didn't want it to be discontinuous. ",
+        "annotations": {
+            "develop idea": "expanding on the idea that studying proteins and their modifications over time requires techniques that can provide continuous data",
+            "offer feedback": "providing a perspective on how to approach the problem of studying dynamic changes in proteins"
+        }
+    },
+    {
+        "utterance": "Stephen Yi: Yeah I think it's a very important very good point. As long as you can somehow freeze the proteins they don't really do activities anymore going for further changes anything like that. I think yeah that's exactly what we are looking for so that you can really have one time point this is static you know hopefully frozen state we can study that and then time point two and onwards. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an existing idea through reasoning about the importance of freezing proteins for study.",
+            "supportive response": "The speaker is expressing agreement and validation for the previous point made, showing support for the discussion."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah it's it's a tough thing to try to regularize the proteome because it has many so many different dimensions to it um and you can argue that of and then people end up wanting more than the analog of what the genome project did. You know notice what the genome project did it said no we don't want spatial information to start. No we don't want a thousand cancer genomes until we get the technology right. No we don't want genetic variation in the population. We we want 27 people we want a reference atlas and um the field of proteomics doesn't necessarily advertise its limitations first or seek to get composition of matter and and set a firm foundation. It's uh um ",
+        "annotations": {
+            "clarify goal": "The speaker discusses the goals and challenges of proteomics in comparison to the genome project, defining what needs to be accomplished.",
+            "summarize conversation": "The speaker summarizes the approach of the genome project to first create a reference atlas before adding complexities like spatial information or genetic variation."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Also one well we used to have I guess five minutes before we should do the 15 minute makeup of the report. Is there at the level of you know an individual person or a couple of you guys you know have we thought of any possible projects I mean that it's not exactly the purpose of this particular session but ",
+        "annotations": {
+            "process management": "Paul mentions managing the meeting time, referencing 'five minutes before we should do the 15 minute makeup of the report'.",
+            "encourage participation": "Paul asks the group if they have thought of any possible projects, inviting them to contribute ideas."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: we were we were talking about a five billion dollar project which is not not going to occur between two people or three people. Is there anything smaller that is you know the high risk high reward kind of payoff. ",
+        "annotations": {
+            "clarify goal": "The speaker is discussing and clarifying the goal or scale of projects they are considering.",
+            "ask question": "The speaker is explicitly asking for input or suggestions regarding smaller, high-risk, high-reward projects."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Sorry sorry my bad. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: That's one answer. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Alexis brought up reverse translation which I just saw someone wrote a proposal on in 2018 but it never happened so I feel like it's still fair game. What a great what a great proposal that would be I think. ",
+        "annotations": {
+            "supportive response": "The speaker expresses a positive evaluation of an idea (reverse translation), showing support for its potential implementation."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Yeah I was about to say whoever figured out how to amplify proteins is a big shot in there. ",
+        "annotations": {
+            "identify gap": "Ross Wang explicitly states a limitation in the field, which is the inability to amplify proteins.",
+            "propose new idea": "Ross Wang suggests that finding a method to amplify proteins would be a significant achievement, implying a new approach is needed."
+        }
+    },
+    {
+        "utterance": "Lars Plate: I like this idea Alexis that you brought up about the tRNA synthetases right because they're sort of the molecular machines that really have high specificity for particular amino acids and they they link it up to a to a tRNA which is then a nucleic acid code but if you if you can find a way to basically ",
+        "annotations": {
+            "develop idea": "Lars is expanding on Alexis's idea by explaining the relevance of tRNA synthetases.",
+            "acknowledge contribution": "Lars acknowledges Alexis's idea and builds upon it."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Will that even work? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on the viability of an idea proposed by Lars Plate."
+        }
+    },
+    {
+        "utterance": "Lars Plate: somehow yeah if you can evolve or engineer it in some ways to then yeah even just the recognition aspect might be might be a small project and then I don't know then it would still have to be linked up in some ways to some some readout. ",
+        "annotations": {
+            "code name": "develop idea",
+            "explanation": "Lars Plate is expanding on the idea of potentially engineering a solution for protein recognition."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Yeah it's almost just like can we come up with like a code for protein recognition like how there is with nucleic acids because like you know you can say oh just make an antibody for your you know favorite protein but that takes so much longer than just like designing a complementary nucleic acid probe. ",
+        "annotations": {
+            "propose new idea": "The speaker hints at a conceptual approach to solving protein recognition challenges by comparing it with nucleic acid recognition.",
+            "identify gap": "The speaker identifies a gap in current protein recognition methods, highlighting the difficulty compared to nucleic acid recognition.",
+            "develop idea": "The speaker develops a comparison between nucleic acid and protein recognition methods."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Yeah you need something like Watson-Crick base pairing that happening in nucleic acid that can collect the template of protein to your product. ",
+        "annotations": {
+            "propose new idea": "Ross Wang proposes using a mechanism similar to Watson-Crick base pairing for analyzing proteins."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Yeah. I mean the synthetases do it through like a sieve mechanism where they check if the side chain is too big or too small so it could be something so basic because you already know you're at a you know you purify the proteins away from everything else so that you're only dealing with side chains at this point. ",
+        "annotations": {
+            "propose new idea": "Tania suggests using a sieve mechanism like synthetases do for protein recognition or synthesis as a potential approach to deal with protein complexity.",
+            "develop idea": "Tania elaborates on the concept by explaining how synthetases check side chains, providing a concrete example or mechanism."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: denature the proteins. ",
+        "annotations": {
+            "develop idea": "The speaker suggests denaturing proteins as a potential step in experimental procedures related to proteomics analysis."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Right you just need to know maybe the size of the of the side chain. If the sides could be you know if they're different enough which you know they are because they're distinguished that way. ",
+        "annotations": {
+            "develop idea": "She is expanding on an idea related to distinguishing proteins based on side chain size.",
+            "ask question": "Although in a rhetorical manner, she ends with a question."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Right. Should we it's now 2 o'clock and by 2:15 we should have some sort of summary. So Laura I believe you are going to present this on Lars is supposedly made a long list. We should try to get together and make it coherent. ",
+        "annotations": {
+            "process management": "explanation: The speaker is managing the meeting flow by suggesting they need to summarize by 2:15.",
+            "assign task": "explanation: The speaker assigns a task to Laura to present on Lars' list.",
+            "encourage participation": "explanation: The speaker encourages collaboration by suggesting they get together to make the summary coherent."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Sure. Yeah does everyone have the I'm going to copy some of it into the slide. Uh but I think I like the way Lars already laid it out with challenges and solutions so I think I might just take that in as it is because I think there was like an overarching like what are the problems with mass spectrometry what do they butt up and that kind of drove the rest of the discussion. ",
+        "annotations": {
+            "process management": "The speaker is discussing the organization and management of presentation content."
+        }
+    },
+    {
+        "utterance": "Lars Plate: And I had some like we started discussing some limitations of current um approaches so that's kind of what I led up with. Um there were some good points there as well. I can share the link again to the the notes. ",
+        "annotations": {
+            "supportive response": "The speaker is supportive by mentioning 'there were some good points there as well', indicating a positive evaluation of previous contributions.",
+            "encourage participation": "The speaker encourages participation by referencing previous good points and offering to share notes, inviting further discussion.",
+            "process management": "The speaker manages the meeting flow by suggesting a reference to previous discussions and offering to share additional resources."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: This is in group three. Laura you are going to present this and Lars has supposedly made a long list. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Sure. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: point four breakdown or breakout? ",
+        "annotations": {
+            "ask question": "The speaker is requesting clarification or information about 'point four' and its meaning as either 'breakdown' or 'breakout'."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Yeah. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation with a previous statement."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Group 3.4 breakout. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by announcing a breakout session for Group 3.4."
+        }
+    },
+    {
+        "utterance": "Lars Plate: We need to transfer that over into the big the main PowerPoint. ",
+        "annotations": {
+            "process management": "The utterance involves instructing to transfer content into the main PowerPoint, which is about managing the organization of meeting materials."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Yeah, working on it now. ",
+        "annotations": {
+            "process management": "This code applies because Laura Sanchez is responding to a task or request, indicating she is actively working on it."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Do you mind sharing that Laura or maybe just screen share? ",
+        "annotations": {
+            "process management": "The speaker is asking about the logistics of sharing information during the meeting."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: copy link. Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Ross Wang: So Laura, do you mind I ask a live question about spatial limitations you put on? Is that limitation basically decided by the laser beams, the size of laser? You mentioned about five microns. ",
+        "annotations": {
+            "ask question": "Request information or clarification on spatial limitations in mass spectrometry and its relation to laser beam size."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Yeah, for MALDI it's five microns if you want to get molecular information. ",
+        "annotations": {
+            "develop idea": "The utterance expands on an existing idea by providing specific details about the technical limitations of MALDI technology in terms of spatial resolution for obtaining molecular information."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Cool. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Other techniques like MIBI and SIMS and NanoSIMS, it's a different ionization mechanism but it's a different readout. It's like again you're reading out elements not intact masses. Okay cool, thank you. ",
+        "annotations": {
+            "develop idea": "She is elaborating on existing ideas by discussing various techniques and their differences.",
+            "offer feedback": "She is providing specific information about the techniques, which can be seen as feedback on their applications and limitations."
+        }
+    },
+    {
+        "utterance": "Ross Wang: So we haven't mentioned discussed too much on the ionization, but it's very interesting topic. I think could be very important for the sensitivity. I remember like about a decade ago, the ionic liquids become a popular trend for matrix. Is there any technology advancement or there's potential opportunity still to improve the matrix? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about technology advancements or potential opportunities to improve the matrix used in ionization."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: I'm sorry I was typing, what? ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Ross Wang: No, I'm talking about the matrix. You're talking about ionization. Matrix could be a good way, but I remember it was like a decade ago, something like a fancy relatively modern one is called ionic liquids as a matrix. Is there any new technology advancement in that area now or do you think there's still a room for further improvement of the matrix design? ",
+        "annotations": {
+            "ask question": "The speaker is asking for information about new technology advancements or potential improvements in matrix design."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: People definitely that's an active area and I would say it's more people put more energy into the metabolomics and the proteomics because again I think for metabolites it's just more so it's like you have a higher copy number to start with. Cool. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by discussing the focus of research in metabolomics and proteomics.",
+            "supportive response": "The speaker is providing additional information in a supportive manner, contributing to the discussion."
+        }
+    },
+    {
+        "utterance": "Ross Wang: All right. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Okay. So I think for the discussion if everyone has a link how does this sound for like so basically if we start with the obvious which is or mainly because Neil and I are probably sitting in the room, the limitations with mass spectrometry which could be an obvious answer to spatial proteomics is that it has these inherent limitations. So it's limited spatially by copy number, ionization efficiency and we don't really have a defined human protein or proteoform reference or database like we do for other technologies. So because of these things some of the inherent challenges we might hope to address are the amplification problem. And then the solutions we came up for for those and even if you can't amplify some of these don't directly address the proteoforms or the post-translational modifications. So maybe ways in which we can label, enrich or sort those and then sequence. And then the other challenge is do we just need new sequencing techniques other than mass spectrometry for proteins and peptides. And then there was a large discussion on reverse translation, molecular motors and like kind of using that can we use that technology in a creative way to address the challenge. Is there anything else that we should put in? ",
+        "annotations": {
+            "summarize conversation": "This code applies because the utterance summarizes the conversation points and challenges discussed related to mass spectrometry and spatial proteomics."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: That looks good. Thank you. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges another group member's input, in this case, Lars Plate's summary or proposal, indicating that it looks good."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Yeah, thanks Laura. Maybe the only other point that as sort of an open question at the end or or sort of a contrasting approach might be we we talked briefly I forget who brought this up but this sort of I noted this down as targeted versus untargeted. We can do spatial proteomics with alternative techniques if we have a very sort of defined analyte we want or we even brought brought in the MIBI technique for example for multiplexing like 40 or so proteins but it's just the targeted versus untargeted challenge. ",
+        "annotations": {
+            "develop idea": "Lars is expanding on previous discussions by highlighting the contrast between targeted and untargeted approaches in spatial proteomics.",
+            "offer feedback": "Lars is providing a suggestion for consideration regarding the targeted versus untargeted challenge in spatial proteomics."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Yeah. I I can add that. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: And then I will freely say I know very little about DNA and RNA. So if there are questions on that I'm definitely going to defer to Alexis. Because even in describing this I was like is it translation or like I have to think about that every single time. ",
+        "annotations": {
+            "identify gap": "Laura Sanchez explicitly recognizes her lack of knowledge about DNA and RNA.",
+            "encourage participation": "Laura Sanchez encourages Alexis to participate by deferring to her expertise."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: No worries, I got you. ",
+        "annotations": {
+            "Supportive Response": "The speaker provides a reassuring response to alleviate concerns and show support."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: See. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: Just trying to get it all on the slide. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lars Plate: One point we didn't get to address and maybe it's too late to bring it up but it's measuring I guess protein interactions or complexes and organization right I mean we had the two groups about phase separation in the large in the last uh in the last breakout group so then that's like a whole other challenge to even identify like what even if we can map the XY coordinates or XY and Z coordinates of a particular protein in the cell like what state is it in or correlate that to other measurements. ",
+        "annotations": {
+            "identify gap": "Lars is highlighting a gap in understanding or addressing protein interactions and organization.",
+            "develop idea": "He is expanding on the challenges of protein interactions and organization, building on previous discussions."
+        }
+    },
+    {
+        "utterance": "Ross Wang: I thought we kind of mentioned or maybe Neil commented a little bit on that say that is potentially one of the reason factoring to make the atlas or mapping out the whole human proteome so difficult because protein-protein interaction and aggregation. Yeah. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges Neil's previous comment on the challenges of mapping the human proteome.",
+            "identify gap": "The speaker identifies protein-protein interactions and aggregation as reasons why mapping the human proteome is difficult."
+        }
+    },
+    {
+        "utterance": "Laura Sanchez: I'll be right back. I'm going to refill my water bottle. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Ross Wang: Cool. ",
+        "annotations": {
+            "supportive response": "Expressing agreement or positive sentiment without adding new content."
+        }
+    },
+    {
+        "utterance": "Lars Plate: We lost our moderators as well. ",
+        "annotations": {
+            "process management": "The speaker comments on the absence of moderators, relating to the management of the meeting flow."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Wait, we lost both moderators. ",
+        "annotations": {
+            "process management": "The speaker is commenting on the current state of the meeting, specifically that they have lost both moderators, which relates to managing the meeting flow or structure."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: No, I'm still here. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Ross Wang: No, no worries. All right. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Well, we we have all of three minutes. Is there anything anybody would like to add? ",
+        "annotations": {
+            "process management": "Managing the meeting flow and time by indicating its near end.",
+            "encourage participation": "Inviting others to contribute any final thoughts or additions."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: I don't want to add anything but Lars with this disaggregate idea, what do you envision happening as it's coming out that that peptide's just being sequenced just in order to break it? ",
+        "annotations": {
+            "ask question": "The speaker is seeking information or clarification about Lars' idea on disaggregating peptides.",
+            "develop idea": "The utterance is an attempt to understand or seek more information about Lars' idea, which can be seen as developing or exploring the idea further."
+        }
+    },
+    {
+        "utterance": "Lars Plate: Yeah I mean so how does the how does the nanopore again I'm maybe I'm like not too familiar with it either or I'm just I just have sort of the crude biochemistry level understanding of the nanopore approach. Doesn't it's it's one approach is measuring pH changes right reporting on that and ",
+        "annotations": {
+            "ask question": "Lars Plate is seeking clarification on how the nanopore approach works, indicating he is requesting information.",
+            "identify gap": "Lars Plate explicitly states his lack of familiarity with the nanopore approach, identifying a gap in his knowledge."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Oh, as ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Some of them like measures like voltage too. Like as it ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Lars Plate: The changes in voltage as as different nucleotides go through, right? There's a there's a change. So of course it's much more complex with with the 20 amino acids versus four nucleotides but but is there a way to I mean certainly translocation speed varies I think by amino acids for some of these molecular motors. So there has to be a way to read that out and to translate that into a sequence. ",
+        "annotations": {
+            "ask question": "Lars Plate is requesting information on whether it's possible to translate changes in voltage into a sequence, specifically asking if there's a way to read out and translate translocation speed variations into a sequence.",
+            "develop idea": "Lars Plate is expanding on the idea of sequencing proteins by comparing it to nucleotide sequencing, considering the complexity and potential methods for translating voltage changes into a protein sequence."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Right, like based on the stability of the protein. Yeah, but amount of ATP. Right, you could measure the amount of ATP it's consuming and that would you know correlate to the stability of the protein and then I guess you could maybe find connections to exact sequences. ",
+        "annotations": {
+            "propose new idea": "The speaker proposes measuring the amount of ATP consumed by a protein to correlate with its stability and potentially find connections to exact sequences.",
+            "develop idea": "The speaker builds upon previous discussions about understanding protein sequences and stability by suggesting a method to measure protein stability through ATP consumption.",
+            "ask question": "The speaker expresses a speculative thought about finding connections between ATP consumption, protein stability, and exact sequences."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So so you're saying you'd look not only at the voltage which might vary between the amino acids but the rate at which it's going through that it's speculative but the idea ",
+        "annotations": {
+            "critical response": "The speaker is questioning and exploring the implications of an idea presented, indicating a critical engagement with the concept.",
+            "ask question": "The speaker is also seeking clarification or understanding of how an approach might work, which involves asking for information."
+        }
+    },
+    {
+        "utterance": "Lars Plate: The ATP ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: What are the what are the pores made what are the pores made out of? I don't even know that. Like I guess you could change that composition so if it's like you know has tons of hydrogen bond donors or something then like a very polar amino acid would kind of stick more. ",
+        "annotations": {
+            "Ask question": "The speaker is requesting information about the composition of pores, directly asking a question to gain clarity or knowledge on the topic."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: They're mainly hydrophobic pores. But people have swapped the pores to look at you know like changes in specificity. ",
+        "annotations": {
+            "Develop idea": "The speaker is expanding on the existing idea about nanopores, discussing their properties and modifications.",
+            "Signal expertise": "Tania Lupoli is showing her knowledge about the nature of pores and research involving them, indicating her expertise in the area."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Has there been any successful stories in the in terms of engineering of those nanopores just following your question your your comments on that? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on the engineering of nanopores, indicating they are seeking specific knowledge or examples."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Yeah for for sure. I mean for the longest time they did not have for example single base pair sequencing. And the fact that they've gotten this is a tremendous advance. And there it's a combination of getting the proper nanopore and you know it being you know two nanometers or three nanometers across and more importantly is the enzyme that it takes they put in the enzyme and you know it it grabs the DNA and then pulls it through. ",
+        "annotations": {
+            "develop idea": "Paul is elaborating on the achievements in sequencing technology, specifically about nanopore and enzyme advancements.",
+            "supportive response": "Paul is expressing a positive view of the technological advancements."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: And ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Another thing it it can look it can identify like modifications on the bases too. I just remembered that. Sorry to interrupt but then that that bodes well for like um yeah the PTMs and the proteoform. Yeah. ",
+        "annotations": {
+            "Develop idea": "Alexis is expanding on previous ideas by relating the capability of identifying base modifications to potential applications in identifying PTMs and proteoforms.",
+            "Supportive response": "The utterance is supportive as it tries to find positive implications or connections between different technologies or ideas discussed.",
+            "Signal expertise": "Alexis shares her understanding of the technology's capabilities, potentially indicating her familiarity or expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Well we have eight seconds. It's been a pleasure. Laura I'm looking forward to your talk and bye. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by acknowledging the time constraint and bringing the conversation to a close."
+        }
+    }
+]
