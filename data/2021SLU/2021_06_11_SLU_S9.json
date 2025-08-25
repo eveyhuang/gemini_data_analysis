@@ -1,14 +1,14 @@
 {
     "all_speakers": [
-        "Noah Planavsky",
-        "Andrew Vanderburg",
-        "Richard Wiener",
-        "Daniel Huber",
         "Bradford Foley",
+        "Daniel Huber",
         "Meredith MacGregor",
-        "Keith Hawkins",
+        "Katherine de Kleer",
         "Lisa Kaltenegger",
-        "Katherine de Kleer"
+        "Keith Hawkins",
+        "Andrew Vanderburg",
+        "Noah Planavsky",
+        "Richard Wiener"
     ],
     "total_speaking_length": 3608,
     "all_data": [
@@ -29,7 +29,8 @@
             "start_time": "00:04",
             "end_time": "00:05",
             "annotations": {
-                "ask clarifying question": "The utterance is a direct question seeking to clarify the topic of discussion."
+                "ask question": "The speaker is requesting information about the topic of discussion.",
+                "clarify goal": "The speaker is seeking to understand the objectives or focus of the meeting."
             }
         },
         {
@@ -49,7 +50,7 @@
             "start_time": "00:08",
             "end_time": "00:16",
             "annotations": {
-                "explain or define term or concept": "Meredith is explaining the topic of the discussion, which is about external factors impacting the habitability of planetary systems and planets."
+                "clarify goal": "The speaker is defining, clarifying the topic of discussion for the group, which aligns with defining what needs to be accomplished or discussed."
             }
         },
         {
@@ -69,7 +70,8 @@
             "start_time": "00:17",
             "end_time": "00:22",
             "annotations": {
-                "None": "This utterance does not introduce a new idea, build on an existing one, provide evidence, explain a term, ask a question, propose or confirm a decision, express an alternative, assign a task, offer criticism, reject an idea, resolve conflict, acknowledge contribution, encourage participation, express enthusiasm, or express humor; it simply states logistical information about the meeting."
+                "Identify Gap": "Meredith notes that Lisa is not online, which could imply a gap in participation or communication.",
+                "Process Management": "Meredith comments on the expected number of people in the meeting, which relates to managing the meeting process."
             }
         },
         {
@@ -89,7 +91,7 @@
             "start_time": "00:23",
             "end_time": "00:26",
             "annotations": {
-                "present new idea": "Bradford is introducing the idea of who will lead the discussion, which hasn't been explicitly addressed yet."
+                "assign task": "He is offering a role within the group, which is being a 'discussion lead', thereby assigning or suggesting a task to himself or someone else."
             }
         },
         {
@@ -109,7 +111,7 @@
             "start_time": "00:28",
             "end_time": "00:28",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a clear idea or action that fits any of the codes."
+                "None": "No relevant code applies to this utterance in a substantial way"
             }
         },
         {
@@ -129,7 +131,8 @@
             "start_time": "00:29",
             "end_time": "00:32",
             "annotations": {
-                "express agreement": "Katherine agrees with the implied idea that people are late because they are coming back from a break."
+                "express humor": "The speaker attempts to make a light comment about the situation.",
+                "process management": "The utterance relates to managing the meeting flow by mentioning coming back from a break."
             }
         },
         {
@@ -149,7 +152,7 @@
             "start_time": "00:32",
             "end_time": "00:33",
             "annotations": {
-                "express agreement": "Dan Huber agrees with Katherine de Kleer's statement that people are coming back from a break."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -169,8 +172,8 @@
             "start_time": "00:34",
             "end_time": "01:16",
             "annotations": {
-                "acknowledge contribution": "Richard acknowledges Lisa Kaltenegger's role as facilitator.",
-                "encourage particpatioin": "Richard encourages the group to continue even with missing members and expresses hope that more people will join."
+                "encourage participation": "Richard encourages the group by mentioning it's okay if it's a small group and hoping more will join.",
+                "process management": "Richard manages the meeting flow by suggesting they wait for Lisa and possibly other members."
             }
         },
         {
@@ -189,11 +192,10 @@
             "screenshare_content": "The screen shows the logo of the Research Corporation for Science Advancement.",
             "start_time": "01:17",
             "end_time": "01:34",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Richard encourages the group to take a moment to look at the prompt and write down thoughts while waiting for Lisa to join."
-                }
-            ]
+            "annotations": {
+                "process management": "Richard Wiener is managing the meeting flow by suggesting an activity for the group to do while they wait for Lisa to join.",
+                "encourage participation": "Richard Wiener encourages group members to introduce themselves to each other if they haven't met."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -212,8 +214,7 @@
             "start_time": "01:40",
             "end_time": "01:42",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Richard's help in facilitating the meeting while she was away.",
-                "express apology": "Lisa apologizes for being late to the meeting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -233,7 +234,7 @@
             "start_time": "01:44",
             "end_time": "01:44",
             "annotations": {
-                "None": "This utterance does not contain any content that can be categorized by the provided codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -252,17 +253,10 @@
             "screenshare_content": "The screen shows a background with planets and the words 'Exploration, Discovery, and the Search for Life'.",
             "start_time": "01:45",
             "end_time": "02:55",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa explains the process of how the meeting will be conducted, including introductions and individual reflection time, to ensure everyone understands the structure."
-                },
-                {
-                    "assign task": "Lisa asks the participants to consider if they would like to be the reporter, assigning a specific role within the group."
-                },
-                {
-                    "encourage particpatioin": "Lisa invites Brad to go next and then pick the next person, encouraging participation and facilitating the flow of introductions."
-                }
-            ]
+            "annotations": {
+                "process management": "Lisa is managing the meeting flow by suggesting a way to introduce participants and organize the discussion.",
+                "encourage participation": "By asking participants to consider being the reporter and sharing their thoughts, Lisa is encouraging participation."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -280,11 +274,10 @@
             "screenshare_content": "None",
             "start_time": "02:56",
             "end_time": "03:28",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Brad introduces himself and his research area, which involves explaining his expertise in geophysics, planetary interiors, and mantle convection, providing context for his contributions to the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly mentions his position as an assistant professor at Penn State in the Geosciences department and his field of study as a geophysicist, indicating his expertise.",
+                "develop idea": "The speaker elaborates on his research interests, specifically mentioning the study of planetary interiors, mantle convection, and the evolution of planetary atmospheres and climates."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -303,7 +296,7 @@
             "start_time": "03:28",
             "end_time": "03:31",
             "annotations": {
-                "encourage particpatioin": "Brad encourages Meredith to participate by picking her to go next, continuing the round-robin introductions initiated by Lisa."
+                "process management": "The speaker is managing the meeting flow by deciding who will go next."
             }
         },
         {
@@ -322,11 +315,9 @@
             "screenshare_content": "None",
             "start_time": "03:32",
             "end_time": "03:43",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Meredith is introducing herself and her affiliation, which serves to define her background and expertise for the other participants."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Meredith MacGregor explicitly states her position and department, which relates to her expertise."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -344,11 +335,10 @@
             "screenshare_content": "None",
             "start_time": "03:43",
             "end_time": "04:25",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Meredith explains that she does observational astronomy and uses any telescope she can get time on, ranging from radio to X-ray, to observe and understand planetary systems, clarifying her area of expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Meredith explicitly states her background and expertise in observational astronomy.",
+                "identify gap": "Meredith mentions it's the first time she's in a group with not a lot of biologists and a lot of astronomers."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -367,7 +357,7 @@
             "start_time": "04:25",
             "end_time": "04:25",
             "annotations": {
-                "None": "This utterance is incomplete and does not express any specific idea, question, or action, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -387,7 +377,7 @@
             "start_time": "04:26",
             "end_time": "04:28",
             "annotations": {
-                "encourage particpatioin": "Lisa is inviting Andrew to participate by introducing himself, continuing the round-robin introductions."
+                "process management": "This code applies because Lisa Kaltenegger is managing the meeting flow by determining who will go next in the introductions."
             }
         },
         {
@@ -407,8 +397,7 @@
             "start_time": "04:30",
             "end_time": "04:50",
             "annotations": {
-                "explain or define term or concept": "Andrew is explaining his area of expertise, which is exoplanet observation and characterization, to provide context for the discussion.",
-                "present new idea": "Andrew is introducing himself and his research interests, which is new information to the group."
+                "signal expertise": "The speaker explicitly states his professional background and expertise as an astronomer studying exoplanets."
             }
         },
         {
@@ -428,7 +417,7 @@
             "start_time": "04:52",
             "end_time": "04:53",
             "annotations": {
-                "encourage particpatioin": "Lisa is inviting Dan to introduce himself, continuing the round-robin introductions."
+                "ask question": "The speaker is requesting to go with Dan, which is a direct question about the process or next steps."
             }
         },
         {
@@ -448,8 +437,7 @@
             "start_time": "04:56",
             "end_time": "05:37",
             "annotations": {
-                "explain or define term or concept": "Dan is explaining his research area, which involves exoplanet detection and characterization using transits and radial velocities, as well as stellar astrophysics, to provide context for the discussion.",
-                "present new idea": "Dan introduces the idea of understanding the connection between stars and planets, specifically how stellar properties are connected to exoplanet demographics, which is a novel concept in the context of the discussion."
+                "signal expertise": "Dan explicitly states his role, position, and areas of expertise in astronomy, specifically in exoplanet detection and characterization, and stellar astrophysics."
             }
         },
         {
@@ -469,7 +457,7 @@
             "start_time": "05:37",
             "end_time": "05:38",
             "annotations": {
-                "None": "This utterance does not contain any content that can be categorized by the codebook."
+                "None": "No relevant code explicitly applies, but it serves as an acknowledgment."
             }
         },
         {
@@ -489,7 +477,7 @@
             "start_time": "05:39",
             "end_time": "05:40",
             "annotations": {
-                "assign task": "Dan assigns the task of speaking next to Keith, continuing the round-robin introductions."
+                "process management": "Dan Huber is managing the flow of introductions by indicating he will pick Keith next."
             }
         },
         {
@@ -509,7 +497,8 @@
             "start_time": "05:40",
             "end_time": "06:12",
             "annotations": {
-                "explain or define term or concept": "Keith Hawkins introduces himself and his research area, galactic archeology, which explains his focus on the nature and formation of the Milky Way."
+                "signal expertise": "The speaker explicitly states his position as an assistant professor and his research focus, indicating his expertise in galactic archeology and the formation of the Milky Way.",
+                "express humor": "The speaker makes a lighthearted comment about being 'one of the more far flung folks' at the workshop, which can be interpreted as a humorous remark."
             }
         },
         {
@@ -529,8 +518,7 @@
             "start_time": "06:12",
             "end_time": "07:01",
             "annotations": {
-                "explain or define term or concept": "Keith explains that he uses stars as fossils to understand the nature and formation of the Milky Way, clarifying his approach to galactic archeology.",
-                "expand on existing idea": "Keith expands on his introduction by adding details about his work on stellar chemistry, dynamics, and ages to understand Milky Way formation, building on his initial statement about being a galactic archeologist."
+                "signal expertise": "Keith explicitly states his own expertise in stellar chemistry and observational spectroscopy."
             }
         },
         {
@@ -550,7 +538,7 @@
             "start_time": "07:01",
             "end_time": "07:01",
             "annotations": {
-                "None": "This utterance does not contain any complete ideas or actions, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -570,7 +558,7 @@
             "start_time": "07:01",
             "end_time": "07:01",
             "annotations": {
-                "encourage particpatioin": "Keith Hawkins is inviting Catherine to introduce herself, continuing the round-robin introductions."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -590,7 +578,7 @@
             "start_time": "07:02",
             "end_time": "07:07",
             "annotations": {
-                "express enthusiasm": "Katherine expresses that she finds it fun to be in a group with a bunch of astronomers."
+                "express humor": "The speaker makes a lighthearted comment about the group composition being enjoyable."
             }
         },
         {
@@ -610,7 +598,7 @@
             "start_time": "07:07",
             "end_time": "07:26",
             "annotations": {
-                "explain or define term or concept": "Katherine is explaining her specific area of astronomy, which is solar system astronomy, to provide context for her expertise within the group."
+                "signal expertise": "Katherine de Kleer explicitly states her expertise as an astronomer, specifically a solar system astronomer, and her position at Caltech."
             }
         },
         {
@@ -630,8 +618,8 @@
             "start_time": "07:26",
             "end_time": "07:57",
             "annotations": {
-                "expand on existing idea": "Katherine expands on Meredith's earlier statement about using every telescope she can get time on, adding specific examples of the types of telescopes she uses.",
-                "explain or define term or concept": "Katherine explains her research interests, focusing on the atmospheres, surfaces, and geological activity of moons and asteroids in the solar system, which is relevant to the session's topic."
+                "signal expertise": "The speaker is explicitly stating their own expertise and qualifications related to the task, describing their work and areas of interest.",
+                "develop idea": "The speaker is expanding on their introduction by detailing their specific interests and areas of work, which relates to the session topic."
             }
         },
         {
@@ -651,7 +639,7 @@
             "start_time": "07:57",
             "end_time": "07:58",
             "annotations": {
-                "encourage particpatioin": "Katherine is trying to get the next person to introduce themselves, continuing the introductions that Lisa started."
+                "ask question": "The utterance 'Where's.' appears to be an attempt to ask a question, seeking information about something or someone's location."
             }
         },
         {
@@ -671,7 +659,8 @@
             "start_time": "07:58",
             "end_time": "08:00",
             "annotations": {
-                "express humor": "Katherine makes a lighthearted comment about not being able to find the prompt, which expresses humor."
+                "identify gap": "Katherine de Kleer is expressing a lack of access to or knowledge about 'the prompt,' which is necessary for the discussion.",
+                "ask question": "Katherine de Kleer is seeking information about the location or content of 'the prompt,' even though it's not phrased as a direct question."
             }
         },
         {
@@ -691,7 +680,7 @@
             "start_time": "08:00",
             "end_time": "08:00",
             "annotations": {
-                "express apology": "Lisa Kaltenegger expresses an apology, likely for being late to the meeting as mentioned in the previous turns."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -711,7 +700,8 @@
             "start_time": "08:00",
             "end_time": "08:10",
             "annotations": {
-                "explain or define term or concept": "Lisa is explaining the prompt for the discussion, which is about external factors impacting the habitability of planetary systems and planets."
+                "Process management": "Lisa Kaltenegger is managing the flow of the meeting by refocusing on the topic.",
+                "Clarify goal": "Lisa Kaltenegger is defining and clarifying the objective of their discussion."
             }
         },
         {
@@ -731,7 +721,7 @@
             "start_time": "08:10",
             "end_time": "08:11",
             "annotations": {
-                "acknowledge contribution": "Katherine acknowledges Lisa providing the prompt and finding the slide, expressing gratitude for the assistance."
+                "Supportive response": "The utterance expresses agreement and positivity towards Lisa Kaltenegger's facilitation, showing appreciation for her help in finding the slide and understanding the prompt."
             }
         },
         {
@@ -751,7 +741,7 @@
             "start_time": "08:11",
             "end_time": "08:11",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Katherine's thanks for providing the prompt, indicating recognition of Katherine's input."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -771,7 +761,7 @@
             "start_time": "08:12",
             "end_time": "08:12",
             "annotations": {
-                "acknowledge contribution": "Katherine acknowledges Lisa providing the prompt, indicating she received the information."
+                "Supportive response": "The speaker is acknowledging the prompt or previous statement with a minimal response."
             }
         },
         {
@@ -791,12 +781,8 @@
             "start_time": "08:12",
             "end_time": "08:37",
             "annotations": {
-                "assign task": {
-                    "Explanation": "Lisa assigns Brad the task of contributing information about planetary interiors and geology, given the group's composition of mostly astronomers."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Lisa encourages Brad to contribute his expertise, given the group's composition and the topic at hand."
-                }
+                "propose new idea": "The speaker is suggesting a way to proceed with the discussion, indicating a potential approach.",
+                "process management": "The speaker is managing the meeting flow by suggesting who should contribute and how."
             }
         },
         {
@@ -816,7 +802,8 @@
             "start_time": "08:38",
             "end_time": "08:44",
             "annotations": {
-                "express enthusiasm": "Richard expresses optimism about the group, stating that they have a great group, after noting that some people were missing."
+                "Identify gap": "The speaker mentions that a couple of people who were supposed to be in the group are missing.",
+                "Supportive response": "The speaker concludes that the current group is great, expressing a positive sentiment."
             }
         },
         {
@@ -836,7 +823,8 @@
             "start_time": "08:44",
             "end_time": "08:44",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Richard's contribution about the group size, but doesn't agree or expand on it."
+                "acknowledge contribution": "Lisa Kaltenegger is acknowledging Richard Wiener's previous statement.",
+                "supportive response": "The utterance expresses agreement or validation of Richard Wiener's comment."
             }
         },
         {
@@ -856,7 +844,7 @@
             "start_time": "08:44",
             "end_time": "08:45",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided in the codebook, as it is simply a statement of departure."
+                "process management": "This code applies because Richard Wiener is indicating his intention to step out, which relates to managing his participation in the meeting."
             }
         },
         {
@@ -876,7 +864,7 @@
             "start_time": "08:45",
             "end_time": "08:46",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided in the codebook, as it is simply a closing remark."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -895,11 +883,9 @@
             "screenshare_content": "The screen shows a background with planets and the words 'Exploration, Discovery, and the Search for Life'.",
             "start_time": "08:46",
             "end_time": "08:50",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is checking if Noah Ponski is present, which is a way to encourage his participation in the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "Lisa Kaltenegger is requesting information about the presence of Noah Ponski, indicating uncertainty with 'I don't know if I see Noah Ponski is at least.'"
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -918,7 +904,7 @@
             "start_time": "08:50",
             "end_time": "08:51",
             "annotations": {
-                "express agreement": "Brad agrees with Lisa's previous statement about the group composition and the roles people will play in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -937,11 +923,10 @@
             "screenshare_content": "None",
             "start_time": "11:01",
             "end_time": "11:11",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa encourages Noah to introduce himself to the group, inviting him to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Lisa Kaltenegger is managing the meeting flow by asking participants to return to the session.",
+                "encourage participation": "Lisa Kaltenegger invites Noah to introduce himself, encouraging his participation in the session."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -960,7 +945,7 @@
             "start_time": "11:11",
             "end_time": "11:12",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Noah to participate by introducing himself to the group."
+                "None": "No relevant code applies to this utterance as it is a simple call for someone named Noah to respond or introduce themselves."
             }
         },
         {
@@ -980,7 +965,7 @@
             "start_time": "11:12",
             "end_time": "11:12",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Noah to participate by calling his name, hoping he will introduce himself."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1000,7 +985,8 @@
             "start_time": "11:19",
             "end_time": "11:23",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Noah's potential participation, indicating that he will join the discussion when he is able to hear them, without agreeing or expanding on any specific idea."
+                "process management": "Lisa Kaltenegger is managing the meeting flow by deciding to proceed with the discussion when Noah Ponski can hear and join.",
+                "encourage participation": "By waiting for Noah Ponski to join, Lisa Kaltenegger is indirectly encouraging his participation in the discussion."
             }
         },
         {
@@ -1020,7 +1006,8 @@
             "start_time": "11:24",
             "end_time": "11:28",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging the group members to share what they wrote down, inviting them to participate in the discussion."
+                "ask question": "Lisa Kaltenegger is requesting information from the group members about what they wrote down.",
+                "encourage participation": "Lisa Kaltenegger is inviting group members to contribute their thoughts or ideas."
             }
         },
         {
@@ -1040,7 +1027,7 @@
             "start_time": "11:30",
             "end_time": "11:31",
             "annotations": {
-                "propose decision": "Meredith suggests finding a note taker, which is a concrete choice for the group to make before starting the discussion."
+                "process management": "This code applies because Meredith MacGregor is suggesting a procedural step for the meeting, which is to find someone to take notes."
             }
         },
         {
@@ -1060,7 +1047,8 @@
             "start_time": "11:31",
             "end_time": "11:32",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Meredith's suggestion to find a note taker, recognizing it as a good idea."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "supportive response": "The speaker expresses agreement or positive evaluation for another group member's contribution."
             }
         },
         {
@@ -1080,7 +1068,7 @@
             "start_time": "11:32",
             "end_time": "11:33",
             "annotations": {
-                "express agreement": "Lisa agrees with Meredith's suggestion to find a note taker first."
+                "supportive response": "The utterance 'Yes.' expresses agreement with the previous suggestion about finding a note taker, indicating a positive evaluation without adding new content."
             }
         },
         {
@@ -1100,7 +1088,7 @@
             "start_time": "11:33",
             "end_time": "11:35",
             "annotations": {
-                "propose decision": "Lisa is suggesting a concrete action for the group to take, which is to find someone to take notes."
+                "process management": "The speaker is managing the meeting flow by suggesting to find a note taker first."
             }
         },
         {
@@ -1120,7 +1108,8 @@
             "start_time": "11:35",
             "end_time": "11:46",
             "annotations": {
-                "assign task": "Lisa is assigning the task of note taking by excluding Meredith and Daniel who have already performed the task, implying that someone else should volunteer."
+                "process management": "Lisa is managing the meeting flow by deciding who is eligible to be the note taker.",
+                "acknowledge contribution": "Lisa is verbally recognizing Meredith and Daniel's previous contributions (introducing themselves)."
             }
         },
         {
@@ -1140,7 +1129,7 @@
             "start_time": "11:46",
             "end_time": "11:47",
             "annotations": {
-                "assign task": "Andrew volunteers to be the note taker, a task that Lisa requested."
+                "None": "No relevant code perfectly applies to this utterance"
             }
         },
         {
@@ -1160,9 +1149,8 @@
             "start_time": "11:48",
             "end_time": "11:50",
             "annotations": {
-                "confirm decision": "Lisa confirms Andrew as the note taker, building on Meredith's suggestion to find one and her previous exclusion from the role.",
-                "acknowledge contribution": "Lisa acknowledges Meredith's contribution of suggesting to find a note taker.",
-                "express enthusiasm": "Lisa expresses enthusiasm about the decision of Andrew being the note taker."
+                "acknowledge contribution": "Lisa Kaltenegger verbally recognizes Meredith's input with 'Good job, Meredith. Thank you.'",
+                "supportive response": "Lisa Kaltenegger expresses agreement and positive evaluation with 'Okay, good, perfect'"
             }
         },
         {
@@ -1182,14 +1170,10 @@
             "start_time": "11:50",
             "end_time": "11:54",
             "annotations": {
-                "acknowledge contribution": {
-                    "Code Name": "acknowledge contribution",
-                    "Explanation": "Lisa thanks Andrew for volunteering to be the note taker."
-                },
-                "encourage particpatioin": {
-                    "Code Name": "encourage particpatioin",
-                    "Explanation": "Lisa encourages Andrew by saying that the group will help him with note taking."
-                }
+                "acknowledge contribution": "Lisa acknowledges Andrew's agreement to be the note taker.",
+                "supportive response": "Lisa reassures Andrew that he will receive help.",
+                "process management": "Lisa manages the meeting flow by instructing the group on next steps.",
+                "clarify goal": "Lisa clarifies what the group aims to achieve."
             }
         },
         {
@@ -1209,8 +1193,8 @@
             "start_time": "12:04",
             "end_time": "12:10",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Andrew to start the discussion, likely to ease his task of note-taking.",
-                "assign task": "Lisa assigns Andrew the task of starting the discussion, suggesting it will help him focus less on note-taking."
+                "Process management": "Lisa is managing the meeting flow by suggesting who should start and how they should proceed.",
+                "Assign task": "Lisa assigns Andrew the task of taking notes."
             }
         },
         {
@@ -1230,7 +1214,7 @@
             "start_time": "12:10",
             "end_time": "12:13",
             "annotations": {
-                "ask clarifying question": "Andrew is asking a clarifying question to confirm the group number, which is important for note-taking and reporting."
+                "ask question": "The speaker is requesting information or clarification on a prior statement or fact, which is the group number."
             }
         },
         {
@@ -1249,17 +1233,10 @@
             "screenshare_content": "None",
             "start_time": "12:14",
             "end_time": "12:16",
-            "annotations": [
-                {
-                    "confirm decision": "Lisa confirms that Andrew's group is 3.2, finalizing the information."
-                },
-                {
-                    "express agreement": "Lisa explicitly agrees with Andrew's statement."
-                },
-                {
-                    "express enthusiasm": "Lisa expresses enthusiasm with the word 'great'."
-                }
-            ]
+            "annotations": {
+                "confirm decision": "The speaker is confirming the group number as 3.2.",
+                "supportive response": "The speaker expresses a positive sentiment towards the confirmed group number."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -1278,9 +1255,8 @@
             "start_time": "12:17",
             "end_time": "12:47",
             "annotations": {
-                "present new idea": "Andrew introduces the idea that the cluster birth environment could be a factor impacting habitability, including dynamical encounters and ionizing radiation from nearby stars, which is a novel concept not previously mentioned in the conversation.",
-                "explain or define term or concept": "Andrew explains the concept of cluster birth environment and its potential impact, clarifying how dynamical encounters and ionizing radiation from O and B type stars could affect planets.",
-                "expand on existing idea": "Andrew expands on the initial prompt about external factors impacting habitability by providing a specific example related to the cluster birth environment and its effects on planetary systems."
+                "propose new idea": "The speaker introduces a new idea about the cluster birth environment and its potential impact on planetary habitability.",
+                "signal expertise": "The speaker demonstrates their expertise by discussing specific astrophysical phenomena related to O type or B type stars and their effects on planetary systems."
             }
         },
         {
@@ -1300,7 +1276,8 @@
             "start_time": "12:47",
             "end_time": "12:54",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on his previously mentioned idea about the cluster birth environment by acknowledging that he hasn't done calculations to support the idea."
+                "develop idea": "Andrew is expanding on his previously mentioned idea about the cluster birth environment and its potential effects on planetary systems.",
+                "ask question": "Andrew implies a need for information about the proximity required for the effects of nearby stars on planetary systems to be significant."
             }
         },
         {
@@ -1320,7 +1297,7 @@
             "start_time": "12:55",
             "end_time": "12:56",
             "annotations": {
-                "express agreement": "Lisa expresses agreement with Andrew's idea about the cluster birth environment impacting habitability, which he just presented."
+                "supportive response": "Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content."
             }
         },
         {
@@ -1340,7 +1317,8 @@
             "start_time": "12:56",
             "end_time": "12:57",
             "annotations": {
-                "encourage particpatioin": "Lisa is prompting someone to speak next, encouraging participation in the discussion."
+                "encourage participation": "The utterance invites others to contribute their ideas or thoughts.",
+                "process management": "The utterance manages the meeting flow by determining who will speak next."
             }
         },
         {
@@ -1360,7 +1338,7 @@
             "start_time": "13:01",
             "end_time": "13:03",
             "annotations": {
-                "encourage particpatioin": "Brad offers to speak next, encouraging the conversation to continue after Andrew's contribution."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1380,8 +1358,9 @@
             "start_time": "13:03",
             "end_time": "13:26",
             "annotations": {
-                "present new idea": "Brad introduces the idea of galactic habitability, cosmic rays, and high energy events impacting life on a planet, which hasn't been explicitly discussed yet.",
-                "encourage particpatioin": "Brad encourages Keith to participate by suggesting he might know more about the topic of galactic habitability."
+                "ask question": "Bradford is seeking information on galactic habitability, cosmic rays, and high energy events.",
+                "signal expertise": "Bradford suggests that Keith might know more about the topic.",
+                "develop idea": "Bradford starts to explore the idea of galactic habitability and its implications."
             }
         },
         {
@@ -1401,7 +1380,7 @@
             "start_time": "13:26",
             "end_time": "13:27",
             "annotations": {
-                "expand on existing idea": "Brad is expanding on his previously mentioned idea of galactic habitability and cosmic rays by asking what it would take to sterilize a planet, building on the discussion of external factors impacting habitability."
+                "ask question": "The speaker is requesting information on the conditions required for sterilization by high-energy events, which directly relates to the discussion on external factors impacting planetary habitability."
             }
         },
         {
@@ -1421,7 +1400,7 @@
             "start_time": "13:28",
             "end_time": "13:28",
             "annotations": {
-                "express agreement": "Lisa agrees with Bradford's suggestion of galactic habitability and the impact of cosmic rays and high energy events on life on a planet."
+                "Supportive response": "The utterance 'Right.' is a brief agreement or acknowledgment of a previous statement, which aligns with the definition of a supportive response."
             }
         },
         {
@@ -1441,7 +1420,7 @@
             "start_time": "13:31",
             "end_time": "13:31",
             "annotations": {
-                "encourage particpatioin": "Lisa is prompting the next person to share their thoughts after Bradford finished speaking, encouraging participation in the discussion."
+                "Encourage participation": "The speaker is inviting others in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -1461,7 +1440,7 @@
             "start_time": "13:34",
             "end_time": "13:35",
             "annotations": {
-                "present new idea": "Dan is about to share an idea he wrote down, which is a novel concept in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1481,9 +1460,9 @@
             "start_time": "13:35",
             "end_time": "14:00",
             "annotations": {
-                "present new idea": "Dan introduces the idea of stellar evolution as a factor impacting habitability, which hasn't been explicitly discussed yet.",
-                "expand on existing idea": "Dan expands on the prompt of external factors by focusing on stellar evolution and its impact on habitability, building upon the initial topic.",
-                "provide supporting evidence": "Dan supports his idea by mentioning the discovery of planets around evolved stars, providing evidence for the relevance of stellar evolution to habitability."
+                "propose new idea": "The speaker introduces a new idea focusing on stellar evolution and its impact on habitability.",
+                "develop idea": "The speaker develops the idea by specifying the aspect of stellar evolution and its effects on the solar system.",
+                "ask question": "The speaker asks for information on whether calculations have been done regarding the solar system's evolution and its impact on habitability."
             }
         },
         {
@@ -1503,8 +1482,9 @@
             "start_time": "14:00",
             "end_time": "14:07",
             "annotations": {
-                "expand on existing idea": "Dan is expanding on the idea of stellar evolution's impact on habitability, which he introduced in the previous sentence, by acknowledging that calculations have likely been done but he is unsure of the details.",
-                "express humor": "Dan makes a joke about how press releases describe planets around red giants as 'future versions of the solar system', adding a lighthearted tone to the discussion."
+                "ask question": "Dan is seeking information about the detail of previous work on stellar evolution's impact on the solar system.",
+                "identify gap": "Dan identifies a gap in his knowledge about the details of how stellar evolution affects the solar system.",
+                "express humor": "Dan makes a light comment about writing press releases."
             }
         },
         {
@@ -1524,8 +1504,8 @@
             "start_time": "14:07",
             "end_time": "14:24",
             "annotations": {
-                "expand on existing idea": "Dan is expanding on his previously mentioned idea about stellar evolution and its impact on habitability, adding that planets found around red giants are much closer in.",
-                "express enthusiasm": "Dan expresses enthusiasm for exploring the topic of stellar evolution and its impact on habitability within the group, suggesting it would be interesting because the group has the expertise to discuss it."
+                "Develop idea": "The utterance expands on an existing idea (stellar evolution) by suggesting it would be interesting to explore in the group.",
+                "Encourage participation": "The utterance invites the group to engage in a discussion on a specific topic (stellar evolution's impact on habitability)."
             }
         },
         {
@@ -1545,7 +1525,7 @@
             "start_time": "14:25",
             "end_time": "14:26",
             "annotations": {
-                "express agreement": "Lisa expresses agreement with Dan's idea about stellar evolution and its impact on habitability."
+                "supportive response": "The speaker expresses a positive evaluation of the previous speaker's contribution without adding new content."
             }
         },
         {
@@ -1565,7 +1545,7 @@
             "start_time": "14:30",
             "end_time": "14:31",
             "annotations": {
-                "present new idea": "Keith introduces a new factor, metallicity, as a potential influence on habitability, which hasn't been explicitly mentioned by others yet."
+                "propose new idea": "Keith Hawkins introduces 'metallicity' as a potential external factor impacting habitability, suggesting it as a new idea for consideration in the discussion."
             }
         },
         {
@@ -1585,9 +1565,9 @@
             "start_time": "14:31",
             "end_time": "15:01",
             "annotations": {
-                "present new idea": "The speaker introduces the idea that metal content is a large factor in whether you have the raw materials to have rocky planets and life in general, which has not been explicitly mentioned before.",
-                "explain or define term or concept": "The speaker explains that metallicity is a general proxy for where in the galaxy life could exist, clarifying its importance in the context of habitability.",
-                "expand on existing idea": "The speaker expands on the idea of metallicity by stating that it will confine which stellar population, thin disc to halo bulge, that you can find yourself in, building upon the initial idea of metal content influencing the raw materials for rocky planets and life."
+                "propose new idea": "Keith introduces the concept of metallicity as a factor in planetary habitability.",
+                "develop idea": "Keith elaborates on how metallicity affects the existence of rocky planets and life.",
+                "supportive response": "Keith provides a positive evaluation of the importance of metallicity."
             }
         },
         {
@@ -1607,7 +1587,7 @@
             "start_time": "15:02",
             "end_time": "15:04",
             "annotations": {
-                "encourage particpatioin": "Lisa is prompting Catherine and Meredith to share their thoughts on the topic, encouraging them to participate in the discussion."
+                "encourage participation": "Lisa Kaltenegger is inviting Catherine Meredith to contribute, which encourages participation in the discussion."
             }
         },
         {
@@ -1627,7 +1607,7 @@
             "start_time": "15:05",
             "end_time": "15:11",
             "annotations": {
-                "express frustration": "Katherine expresses that her thoughts are chaotic and she needs to organize them, indicating a level of frustration with her current state of mind."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1647,9 +1627,8 @@
             "start_time": "15:11",
             "end_time": "16:22",
             "annotations": {
-                "present new idea": "Katherine introduces the idea of a planet's habitability being affected by the combination of volcanic activity or outgassing from another planet in the system and strong magnetic field activity, which hasn't been explicitly mentioned before.",
-                "provide supporting evidence": "Katherine supports her idea by drawing an analogy to the Jupiter system, where Io's volcanic activity and Jupiter's magnetic field affect the habitability of other moons, providing a real-world example to strengthen her point.",
-                "expand on existing idea": "Katherine expands on the idea of external factors impacting habitability by detailing how material transport via magnetic fields in giant planet systems can affect the habitability of other moons, adding complexity to the discussion."
+                "propose new idea": "Katherine introduces a new idea about the combination of factors (another planet's activity and strong magnetic fields) affecting habitability.",
+                "develop idea": "She builds upon existing knowledge by using the Jupiter system as an analogy and explaining a specific process."
             }
         },
         {
@@ -1669,7 +1648,7 @@
             "start_time": "16:22",
             "end_time": "16:24",
             "annotations": {
-                "expand on existing idea": "Katherine is expanding on her previous idea about the impact of volcanic activity and magnetic fields on planetary habitability, now focusing on the specific example of Europa's surface."
+                "develop idea": "The utterance expands on a previous idea by providing an example, which aligns with this code."
             }
         },
         {
@@ -1689,7 +1668,7 @@
             "start_time": "16:24",
             "end_time": "16:30",
             "annotations": {
-                "expand on existing idea": "Katherine is expanding on her previous idea about the Jupiter system and how material is transported via magnetic fields, adding that radiolytically produced oxidants diffuse through the ice shell and could be nutrients for life."
+                "develop idea": "Katherine de Kleer is expanding on her previous statement about the Jupiter system and IO, providing more details on the process of radiolytically produced oxidants and their potential role in habitability."
             }
         },
         {
@@ -1709,7 +1688,7 @@
             "start_time": "16:30",
             "end_time": "16:31",
             "annotations": {
-                "expand on existing idea": "Katherine is expanding on her idea about the combination of volcanic activity or outgassing from another planet in the system with strong magnetic field activity, building on her previous statements about the Jupiter system and its impact on habitability."
+                "None": "No relevant code applies to this utterance as it appears to be a fragment of a larger thought or discussion without enough context to apply other codes."
             }
         },
         {
@@ -1729,7 +1708,7 @@
             "start_time": "16:31",
             "end_time": "16:31",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1749,7 +1728,7 @@
             "start_time": "16:31",
             "end_time": "16:31",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1769,7 +1748,7 @@
             "start_time": "16:31",
             "end_time": "16:40",
             "annotations": {
-                "expand on existing idea": "Katherine is expanding on her previous idea about the combination of volcanic activity or outgassing from another planet in the system with a strong magnetic field, detailing how the transport of material can affect habitability."
+                "propose new idea": "The speaker introduces a new idea about the transport of material from another planet in the system combined with stellar magnetic fields affecting habitability."
             }
         },
         {
@@ -1789,7 +1768,7 @@
             "start_time": "16:40",
             "end_time": "16:41",
             "annotations": {
-                "express enthusiasm": "Lisa expresses enthusiasm for Katherine's idea about the transport of material from another planet in the system combined with the stellar magnetic field."
+                "supportive response": "The utterance expresses a positive evaluation and agreement with a previous contribution, without adding new content."
             }
         },
         {
@@ -1809,7 +1788,8 @@
             "start_time": "16:41",
             "end_time": "16:42",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Katherine's contribution about the transport of material from another planet in the system combined with the stellar magnetic field, but she is not agreeing or expanding on it."
+                "acknowledge contribution": "Lisa Kaltenegger is verbally recognizing Katherine's input.",
+                "supportive response": "Lisa Kaltenegger is expressing a positive reaction to Katherine's input."
             }
         },
         {
@@ -1829,7 +1809,7 @@
             "start_time": "16:42",
             "end_time": "16:43",
             "annotations": {
-                "express enthusiasm": "Meredith expresses enthusiasm about Katherine's idea of material transport from another planet affecting habitability."
+                "supportive response": "Meredith is expressing agreement and positive evaluation for Katherine's contribution."
             }
         },
         {
@@ -1849,7 +1829,8 @@
             "start_time": "16:43",
             "end_time": "16:44",
             "annotations": {
-                "express agreement": "Meredith expresses agreement with Katherine's explanation of material transport in the Jupiter system and its potential impact on habitability, indicating she was previously unaware of this phenomenon."
+                "acknowledge contribution": "Meredith is recognizing Katherine's contribution and expressing her own lack of prior knowledge.",
+                "identify gap": "Meredith is acknowledging her own lack of knowledge on the topic."
             }
         },
         {
@@ -1869,7 +1850,7 @@
             "start_time": "16:44",
             "end_time": "16:45",
             "annotations": {
-                "present new idea": "Meredith is about to share her ideas, which haven't been discussed yet, so this is the start of her presenting new ideas."
+                "None": "No relevant code directly applies to this utterance as it seems to be a transitional statement."
             }
         },
         {
@@ -1889,7 +1870,7 @@
             "start_time": "16:45",
             "end_time": "16:46",
             "annotations": {
-                "expand on existing idea": "Meredith is adding to the list of factors influencing habitability that have been discussed by others in the group, building on the previous discussion."
+                "None": "No relevant code directly applies to this utterance as it doesn't explicitly fit any of the provided code definitions in a substantial way."
             }
         },
         {
@@ -1908,14 +1889,9 @@
             "screenshare_content": "None",
             "start_time": "16:46",
             "end_time": "17:07",
-            "annotations": [
-                {
-                    "present new idea": "Meredith introduces the idea of the presence of giant planets as a factor influencing habitability, questioning their usefulness in blocking impactors or stirring up impacts, which is a novel concept not previously discussed in the group."
-                },
-                {
-                    "present new idea": "Meredith introduces the idea of the original mass and chemistry of the material in the protoplanetary disk as a factor, and the amount of material left over after planet formation, including the possibility of a late heavy bombardment, which is a novel concept not previously discussed in the group."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Meredith elaborates on her ideas about giant planets and disc material, providing examples of their potential effects."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -1933,11 +1909,9 @@
             "screenshare_content": "None",
             "start_time": "17:07",
             "end_time": "17:08",
-            "annotations": [
-                {
-                    "present new idea": "Meredith introduces stellar activity (flares, coronal mass ejections) and multiple star systems as factors influencing habitability, which are new ideas in the context of the discussion so far."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Meredith introduces new ideas related to stellar activity (flares and coronal mass ejections) and multiple systems as factors impacting planetary habitability."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1956,7 +1930,7 @@
             "start_time": "17:09",
             "end_time": "17:10",
             "annotations": {
-                "express agreement": "Lisa agrees with Meredith's points about various factors influencing habitability, such as the presence of giant planets, the original mass and chemistry of the disc, stellar activity, and multiple systems, which were just mentioned."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1976,9 +1950,8 @@
             "start_time": "20:00",
             "end_time": "20:30",
             "annotations": {
-                "expand on existing idea": "Lisa builds on Meredith's idea about the presence of giant planets and their role in blocking or causing impacts, adding the question of optimal positioning for giant planets to be helpful rather than harmful.",
-                "express agreement": "Lisa expresses agreement with Katherine's idea about material transport in planetary systems, indicating she likes the idea.",
-                "present new idea": "Lisa presents a new idea about positioning giant planets to deliver material, even without sufficient nutrition, building on Katherine's idea of material transport."
+                "develop idea": "The speaker is expanding on existing ideas by discussing the positioning of giant planets and its implications for habitability.",
+                "supportive response": "The speaker expresses liking for Katrine's idea and suggests combining ideas, showing a positive evaluation."
             }
         },
         {
@@ -1997,11 +1970,10 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\" and images of planets.",
             "start_time": "20:30",
             "end_time": "21:23",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa explains the difference between surface and subsurface life and how difficult it is to sterilize a planet completely, clarifying the scope of the discussion regarding habitability."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Lisa Kaltenegger is expanding on the existing discussion about habitability by introducing the concept of surface and subsurface life and its implications for sterilization.",
+                "propose new idea": "Lisa Kaltenegger introduces a new aspect to consider in the discussion, which is the differentiation between surface and subsurface life in the context of planetary habitability."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2019,12 +1991,11 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\" and images of planets.",
             "start_time": "21:23",
             "end_time": "22:07",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa explains that life in the ocean or subsurface would be a different story, and that the galactic habitable zone can be thought of as a place where we can remotely detect life because it has changed the atmosphere considerably.",
-                    "encourage particpatioin": "Lisa encourages Bradford to start the discussion, specifically mentioning that he is the \"one non astronomer\" to get them started."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas about habitability by considering the implications of life on the surface versus subsurface/ocean and its detectability.",
+                "encourage participation": "The speaker invites Bradford, a non-astronomer, to contribute to the discussion.",
+                "process management": "The speaker manages the discussion flow by introducing new ideas and inviting others to participate."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -2042,14 +2013,10 @@
             "screenshare_content": "None",
             "start_time": "22:07",
             "end_time": "23:12",
-            "annotations": [
-                {
-                    "expand on existing idea": "Bradford is expanding on the discussion about metallicity and giant planets, building on previous mentions of these factors and their potential impact on habitability."
-                },
-                {
-                    "ask clarifying question": "Bradford is asking whether there is enough information to start looking for trends related to the impact of Jupiter-like planets on the habitability of rocky planets, seeking clarity on the current state of exoplanet population statistics."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on previous ideas about metallicity and the role of giant planets in planetary systems, discussing their potential impact on habitability.",
+                "ask question": "The speaker asks if there is enough information to start looking for trends in current exoplanet populations regarding the effects of giant planets like Jupiter on habitability."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -2067,11 +2034,10 @@
             "screenshare_content": "None",
             "start_time": "23:12",
             "end_time": "23:15",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Katherine is about to speak but then stops herself and encourages someone else to speak, inviting them to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Katherine de Kleer invites others to contribute to the discussion by saying 'Oh, go ahead'.",
+                "None": "No other relevant code applies to this utterance as it does not explicitly fit into any other category."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -2089,11 +2055,9 @@
             "screenshare_content": "None",
             "start_time": "23:15",
             "end_time": "23:20",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Meredith encourages Katherine to speak first, showing deference and inviting her to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "supportive response": "By saying 'Uh, you can go ahead', Meredith MacGregor is showing agreement or a positive acknowledgment to the previous speaker, allowing them to continue."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -2112,8 +2076,8 @@
             "start_time": "23:20",
             "end_time": "23:52",
             "annotations": {
-                "provide supporting evidence": "Andrew provides evidence from papers that have measured the likelihood of inner planets existing when a Jupiter-like planet is present, supporting Bradford's question about the relationship between Jupiter-like planets and habitable rocky planets.",
-                "expand on existing idea": "Andrew expands on Bradford's idea about the relationship between Jupiter-like planets and habitable rocky planets by providing information about the likelihood of inner planets existing when a Jupiter-like planet is present."
+                "develop idea": "The speaker is expanding on an existing idea by providing specific research findings related to the presence of Jupiter-like planets and inner planets.",
+                "acknowledge contribution": "The speaker is recognizing and building upon the research contributions of other scientists in the field."
             }
         },
         {
@@ -2133,7 +2097,7 @@
             "start_time": "23:52",
             "end_time": "23:52",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2152,14 +2116,10 @@
             "screenshare_content": "None",
             "start_time": "23:53",
             "end_time": "24:16",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith is expanding on the discussion about giant planets and their influence on habitability, specifically addressing the limitations in detecting outer planets and their orbital periods, building on Bradford's question about the Jupiter friend or foe idea."
-                },
-                {
-                    "provide supporting evidence": "Meredith provides supporting evidence for the difficulty in detecting outer planets by stating that we haven't known about exoplanets long enough to observe a full Neptune orbit, which is relevant to the discussion about the influence of giant planets on habitability."
-                }
-            ]
+            "annotations": {
+                "identify gap": "Meredith MacGregor explicitly states that we don't have the statistics to say certain things about outer planets because they are hard to detect.",
+                "ask question": "Meredith MacGregor asks a question about the detectability of outer planets and the limitations of current methods."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -2178,8 +2138,7 @@
             "start_time": "24:17",
             "end_time": "24:24",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on Meredith's question about detecting outer planets by suggesting radial velocities are pushing out to Jupiter's orbit, building on the discussion about the presence of giant planets and their impact on habitability.",
-                "provide supporting evidence": "Andrew is providing supporting evidence by mentioning that microlensing can detect further planets, supporting the idea that there are methods to detect planets beyond Jupiter's orbit."
+                "develop idea": "Andrew Vanderburg is expanding on the discussion about detecting exoplanets and the capabilities of radial velocities and microlensing, which relates to understanding planetary systems and potentially their habitability."
             }
         },
         {
@@ -2199,9 +2158,7 @@
             "start_time": "24:26",
             "end_time": "25:12",
             "annotations": {
-                "present new idea": "Meredith introduces the idea of using the structure of protoplanetary disks to infer the presence of otherwise undetectable planets like Neptunes and Uranus, which is a novel approach to understanding planet populations.",
-                "expand on existing idea": "Meredith expands on the discussion about giant planets and their influence on habitability by suggesting that analyzing the structure of protoplanetary disks can reveal the presence of outer planets that are difficult to detect with current methods, building on the previous discussion about the detectability of Jupiters and other outer planets.",
-                "provide supporting evidence": "Meredith supports her idea by mentioning that the structure and gaps observed in protoplanetary disks can be used to infer the presence of planets, suggesting a method to indirectly detect planets that are otherwise difficult to observe directly."
+                "develop idea": "Meredith is expanding on how discs and their structures can be used to infer the presence of giant planets, showing a process of reasoning and elaboration."
             }
         },
         {
@@ -2220,14 +2177,9 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\" and images of planets.",
             "start_time": "25:13",
             "end_time": "25:38",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is asking Keith to elaborate on the accuracy of metallicity estimates, considering the distances of Kepler and TESS planets and the types of stars observed, building on the previous discussion about metallicity as a factor in habitability."
-                },
-                {
-                    "encourage particpatioin": "Lisa is directly asking Keith for his input on the topic of metallicity estimates, encouraging him to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The utterance is a question asking for information about the accuracy of metallicity estimates, specifically considering the distance of the stars from us and their type (M's), which aligns with the definition of 'ask question'."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -2245,14 +2197,11 @@
             "screenshare_content": "None",
             "start_time": "25:38",
             "end_time": "27:04",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Keith explains that metallicity estimates are pretty good for FGK stars, but much more difficult for M dwarfs due to our limited understanding of molecular capacities."
-                },
-                {
-                    "provide supporting evidence": "Keith mentions recent work done on M dwarf characterization with machine learning and his group's work on white binary pairs to support the idea that M dwarf characterization is improving."
-                }
-            ]
+            "annotations": {
+                "Signal Expertise": "Keith Hawkins explicitly states his group's work and his understanding of metallicity estimates, particularly comparing FGK stars and M dwarfs.",
+                "Develop Idea": "He elaborates on the challenges with M dwarfs, the potential of machine learning techniques, and the approach of using white binary pairs to estimate metallicity.",
+                "Offer Feedback": "Keith provides suggestions for future research directions, such as using machine learning and white binary pairs."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2271,7 +2220,7 @@
             "start_time": "27:05",
             "end_time": "27:15",
             "annotations": {
-                "ask clarifying question": "Lisa is asking Keith a clarifying question about how well they understand the metallicities of disc-hosting stars, linking it back to Meredith's point about discs and planet locations."
+                "ask question": "The speaker is requesting information about the current understanding of disc hosting star metallicities, directly fitting the definition of asking a question."
             }
         },
         {
@@ -2291,7 +2240,7 @@
             "start_time": "27:16",
             "end_time": "27:27",
             "annotations": {
-                "ask clarifying question": "Meredith is asking a clarifying question about what can be said about a really young star, which is a follow-up to the discussion about metallicity estimates and their relation to planet formation in discs."
+                "ask question": "The speaker is requesting information or clarification on a prior statement or idea proposed by another group member, specifically about what can be said regarding a really young star."
             }
         },
         {
@@ -2310,11 +2259,11 @@
             "screenshare_content": "None",
             "start_time": "27:28",
             "end_time": "28:53",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Keith is explaining the challenges in determining the metallicity of young stars, particularly those younger than 100 million years, due to increased activity, rotation, and spectral complexities."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "Keith Hawkins is expanding on the discussion about metallicity estimates, particularly discussing the challenges with young stars.",
+                "Identify gap": "He is highlighting a gap in knowledge regarding estimating metallicity for very young stars.",
+                "Offer feedback": "Providing insights into the challenges of metallicity estimates for young stars, offering a nuanced view of the difficulties involved."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -2333,7 +2282,8 @@
             "start_time": "28:53",
             "end_time": "29:00",
             "annotations": {
-                "reject idea": "Meredith expresses a pessimistic view about the possibility of determining metallicity for stars younger than 100 million years, dismissing the idea as unachievable based on the challenges Keith described."
+                "identify gap": "The speaker highlights a limitation in studying stars younger than 100 million years, indicating a gap in current capabilities.",
+                "critical response": "The statement implies a challenge or difficulty in achieving certain goals in the field, which could be seen as a form of critique on the feasibility of certain studies."
             }
         },
         {
@@ -2352,14 +2302,11 @@
             "screenshare_content": "None",
             "start_time": "30:00",
             "end_time": "30:09",
-            "annotations": [
-                {
-                    "expand on existing idea": "Dan is building on the previous discussion about the difficulty of determining metallicity in young stars, suggesting using stellar associations to estimate age, mass, and temperature."
-                },
-                {
-                    "express agreement": "Dan agrees that determining metallicity is difficult, as Keith mentioned the challenges in characterizing M dwarfs and young stars due to activity and rotational signatures."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker suggests using associations of stars to determine age, mass, and temperature, which can help with metallicity estimates.",
+                "ask question": "The speaker asks for confirmation on using associations with 'is you use associations, right?'",
+                "supportive response": "The speaker acknowledges the difficulty in estimating metallicity with 'But Medley cities, yeah, that's must be really hard.'"
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -2377,14 +2324,10 @@
             "screenshare_content": "None",
             "start_time": "30:09",
             "end_time": "31:11",
-            "annotations": [
-                {
-                    "expand on existing idea": "Meredith is expanding on the discussion about discs and planet formation, adding complexities and observations about A-type stars and their disc properties, building on the previous discussion about metallicity and disc properties."
-                },
-                {
-                    "present new idea": "Meredith presents the idea of relating planet formation efficiency to different spectral type stars based on disc properties, which is a novel concept in the context of the current discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Meredith is expanding on the idea of disc structures and their implications for planet formation, specifically comparing A type stars to later type stars.",
+                "propose new idea": "Meredith suggests a new direction of research by proposing to study planet formation efficiency around different spectral type stars."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -2402,17 +2345,10 @@
             "screenshare_content": "None",
             "start_time": "31:11",
             "end_time": "31:56",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about the difficulty of determining metallicity in young stars, Keith suggests an alternative approach using kinematics to understand the galactic location and its impact on metallicity, thus expanding on the previous discussion."
-                },
-                {
-                    "present new idea": "Keith introduces the idea of using kinematics to study young stars with discs as an alternative to directly measuring metallicity, which is challenging."
-                },
-                {
-                    "encourage particpatioin": "Keith encourages the group to consider kinematics as a factor when studying young stars with discs."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Keith suggests an alternative approach focusing on kinematics and the location of stars within the galaxy.",
+                "develop idea": "Keith elaborates on his suggestion by explaining the challenges with metallicities and ages, and how kinematics could be a viable alternative."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -2430,14 +2366,11 @@
             "screenshare_content": "None",
             "start_time": "31:56",
             "end_time": "32:05",
-            "annotations": [
-                {
-                    "present new idea": "Keith suggests a new approach to analyze discs by examining the kinematics of stars in the inner versus outer galaxy, which hasn't been explicitly discussed before."
-                },
-                {
-                    "expand on existing idea": "This utterance builds upon the previous discussion about the challenges of determining metallicity and ages of young stars with discs, offering an alternative approach using kinematics and spatial position."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Keith Hawkins suggests a new approach to investigate the impact of galactic environment on discs by comparing the inner galaxy to the outer galaxy.",
+                "develop idea": "He builds upon previous discussions by considering the challenges of studying these effects and suggests an alternative approach focusing on spatial position and kinematics.",
+                "ask question": "Keith Hawkins asks if there are any effects on discs when comparing the inner galaxy to the outer galaxy."
+            }
         },
         {
             "speaker": "Meredith MacGregor",
@@ -2455,14 +2388,9 @@
             "screenshare_content": "None",
             "start_time": "32:05",
             "end_time": "32:08",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Meredith acknowledges that what Keith said was interesting."
-                },
-                {
-                    "encourage particpatioin": "Meredith is encouraging Catherine to participate by asking if she still has a question."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Meredith MacGregor is inviting Catherine to contribute her question or thoughts, promoting active participation in the discussion."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2480,11 +2408,9 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of Solar System\". The slide contains colorful illustrations of planets and moons.",
             "start_time": "32:08",
             "end_time": "32:12",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is about to ask a question, indicating she needs clarification or more information on a topic that has been discussed."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker explicitly states that she has a question and now has a new question, indicating a request for information or clarification."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -2503,7 +2429,7 @@
             "start_time": "32:12",
             "end_time": "32:35",
             "annotations": {
-                "ask clarifying question": "Katherine asks if the lack of correlation between elemental abundances in planets versus their host stars is still the case, following Meredith's discussion on stellar versus planet metallicity."
+                "ask question": "The speaker is requesting information or clarification about the correlation between stellar and planetary metallicity, indicating a need for more information on the topic."
             }
         },
         {
@@ -2522,14 +2448,11 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of Solar System\". The slide contains colorful illustrations of planets and moons.",
             "start_time": "32:35",
             "end_time": "33:01",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is asking if there has been progress in understanding the correlation between stellar and planetary metallicity, following up on Meredith's comment about stellar versus planet metallicity."
-                },
-                {
-                    "explain or define term or concept": "Lisa explains that the effectiveness of convection in giant planets can change the ratios of elements like CO, which are used as indicators."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker starts with a question seeking information about progress made on the correlation between stellar and planetary metallicity.",
+                "develop idea": "The speaker expands on the idea of progress made on the correlation between stellar and planetary metallicity, considering both modeling and observational aspects.",
+                "offer feedback": "The speaker offers her perspective as feedback on the progress and challenges related to the correlation between stellar and planetary metallicity."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2548,7 +2471,7 @@
             "start_time": "33:01",
             "end_time": "33:07",
             "annotations": {
-                "explain or define term or concept": "Lisa is explaining that metallicity is used as an indicator, but the accuracy of this indicator is highly dependent on the model used, clarifying the limitations of using metallicity as a direct measure."
+                "develop idea": "The speaker is elaborating on the challenges of metallicity indicators, specifically that they are extremely model-dependent."
             }
         },
         {
@@ -2567,11 +2490,9 @@
             "screenshare_content": "None",
             "start_time": "33:07",
             "end_time": "33:16",
-            "annotations": [
-                {
-                    "express agreement": "Katherine agrees with Lisa's statement about the progress in understanding stellar and planetary metallicity, and how modeling affects the metallicity indicator."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and validation of a previous idea or discussion, indicating that it makes sense to her."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -2590,8 +2511,7 @@
             "start_time": "33:16",
             "end_time": "33:34",
             "annotations": {
-                "provide supporting evidence": "Katherine refers to the differing CO ratios and elemental ratios on giant planets to support her surprise at seeing people try to correlate elemental abundances in exoplanets with their host stars, drawing on her solar system perspective.",
-                "explain or define term or concept": "Katherine explains the concept of CO ratios and elemental ratios on giant planets, clarifying the basis for her perspective on exoplanet research."
+                "critical response": "The utterance implies a critique of others' approaches in discussing exoplanet topics."
             }
         },
         {
@@ -2611,7 +2531,7 @@
             "start_time": "33:34",
             "end_time": "33:45",
             "annotations": {
-                "explain or define term or concept": "Lisa explains that in exoplanet modeling, they often assume an isothermal atmosphere with a certain composition to make inferences, clarifying a common practice in the field."
+                "develop idea": "The speaker is expanding on existing ideas by discussing common assumptions in exoplanet modeling, specifically about assuming an isothermal atmosphere with a certain composition."
             }
         },
         {
@@ -2631,7 +2551,7 @@
             "start_time": "33:45",
             "end_time": "33:51",
             "annotations": {
-                "expand on existing idea": "Lisa is expanding on the discussion about metallicity and elemental abundances in planets versus their host stars, which was initiated by Meredith and Katherine, by adding her perspective from the modeling stage."
+                "develop idea": "Lisa Kaltenegger is expanding on the discussion by suggesting that planets should be considered as complex objects, adding a perspective to the conversation about planetary habitability."
             }
         },
         {
@@ -2651,7 +2571,7 @@
             "start_time": "33:51",
             "end_time": "33:56",
             "annotations": {
-                "explain or define term or concept": "Lisa is explaining that interpreting exoplanet data becomes incredibly difficult when considering the planet as a complex object rather than assuming an isothermal atmosphere, building on the discussion about metallicity and elemental abundances in planets versus their host stars."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2671,7 +2591,7 @@
             "start_time": "33:56",
             "end_time": "33:57",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Andrew to participate in the discussion."
+                "encourage participation": "The speaker, Lisa Kaltenegger, invites Andrew Vanderburg to contribute his thoughts or ideas to the discussion."
             }
         },
         {
@@ -2691,7 +2611,7 @@
             "start_time": "33:57",
             "end_time": "34:01",
             "annotations": {
-                "ask clarifying question": "Andrew asks if they are all talking about the same metallicity, seeking clarification on the term being used in the discussion."
+                "ask question": "The speaker is requesting information or clarification from other team members on a prior statement or idea proposed by another group member."
             }
         },
         {
@@ -2711,8 +2631,7 @@
             "start_time": "34:01",
             "end_time": "34:13",
             "annotations": {
-                "explain or define term or concept": "Andrew is clarifying that the term 'metallicity' can refer to either the star or the planet, which is important for the group's discussion.",
-                "acknowledge contribution": "Andrew acknowledges that there might be a misunderstanding about which metallicity (star or planet) is being discussed, but he does not agree or expand on the idea."
+                "ask question": "The speaker is requesting clarification on whether others are referring to the metallicity of the star or the planet, indicating a need for further information."
             }
         },
         {
@@ -2732,7 +2651,7 @@
             "start_time": "34:13",
             "end_time": "34:14",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Catherine's prior question about the correlation between stellar and planetary metallicity, recognizing her input."
+                "acknowledge contribution": "Lisa Kaltenegger is acknowledging Catherine's previous question or statement about correlation."
             }
         },
         {
@@ -2752,7 +2671,7 @@
             "start_time": "34:14",
             "end_time": "34:15",
             "annotations": {
-                "acknowledge contribution": "Andrew acknowledges that the discussion is about the correlation between the metallicity of the star and the planet, confirming the topic of discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2772,7 +2691,7 @@
             "start_time": "34:15",
             "end_time": "34:21",
             "annotations": {
-                "provide supporting evidence": "Lisa refers to a couple of papers that suggest a correlation between metal-rich stars and giant planets with higher CO ratios, providing evidence to support the discussion on metallicity and planet composition."
+                "develop idea": "Lisa Kaltenegger is building upon existing research findings by mentioning specific studies about the relationship between metal-rich stars and giant planets with higher CO ratios."
             }
         },
         {
@@ -2792,7 +2711,7 @@
             "start_time": "34:21",
             "end_time": "34:23",
             "annotations": {
-                "express agreement": "Andrew expresses agreement with the previous discussion about the correlation between the metallicity of a star and its planets, indicating he understands the point being made."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2812,7 +2731,7 @@
             "start_time": "34:23",
             "end_time": "34:30",
             "annotations": {
-                "provide supporting evidence": "Lisa states that the correlation between a metal-rich star and a giant planet with a higher CO ratio is very model dependent, providing a reason to be skeptical of the correlation."
+                "Critical response": "The speaker questions the validity of certain ideas by highlighting their dependency on models."
             }
         },
         {
@@ -2832,8 +2751,7 @@
             "start_time": "34:30",
             "end_time": "34:37",
             "annotations": {
-                "explain or define term or concept": "Katherine is explaining that the elemental ratios are model dependent because the atmospheric structure and retrievals influence the results, clarifying the limitations of using elemental ratios as metallicity indicators.",
-                "provide supporting evidence": "Katherine is providing supporting evidence for why the elemental ratios are model dependent, referencing the influence of atmospheric structure and retrievals."
+                "offer feedback": "The speaker provides specific feedback on the methodology for interpreting metallicity ratios in planetary science, highlighting model dependency."
             }
         },
         {
@@ -2852,14 +2770,9 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of Solar System\". The slide contains colorful illustrations of planets and moons.",
             "start_time": "34:37",
             "end_time": "34:41",
-            "annotations": [
-                {
-                    "express humor": "Lisa says \"A little bit. Sorry\" which is a lighthearted way to acknowledge the complexity of the topic and transition to greeting Noah."
-                },
-                {
-                    "acknowledge contribution": "Lisa says \"hi Noah\" to acknowledge Noah's presence."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Noah Planavsky",
@@ -2877,11 +2790,9 @@
             "screenshare_content": "None",
             "start_time": "34:41",
             "end_time": "34:44",
-            "annotations": [
-                {
-                    "None": "This utterance does not fit into any of the codes provided."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2900,7 +2811,7 @@
             "start_time": "34:44",
             "end_time": "34:45",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Noah's presence after he apologizes for being late, indicating she recognizes his participation in the group."
+                "None": "No relevant code applies to this is not a code that describes welcoming or a similar action that is explicitly provided in the codebook."
             }
         },
         {
@@ -2920,7 +2831,7 @@
             "start_time": "34:45",
             "end_time": "34:51",
             "annotations": {
-                "express humor": "Lisa makes a lighthearted comment about the challenges of working from home, expressing humor."
+                "express humor": "The speaker makes a joke about the joy of being at home, indicating a lighthearted or humorous tone."
             }
         },
         {
@@ -2940,7 +2851,7 @@
             "start_time": "34:51",
             "end_time": "34:51",
             "annotations": {
-                "express agreement": "Noah agrees with Lisa's statement about the joys of being at home, which was made in response to Noah's apology for being late due to family matters."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2960,7 +2871,8 @@
             "start_time": "34:51",
             "end_time": "34:59",
             "annotations": {
-                "encourage particpatioin": "Lisa is inviting Noah to introduce himself and share his thoughts on the session, encouraging him to participate after he joined late."
+                "encourage participation": "The speaker is explicitly inviting others in the group to contribute their expertise, opinions, or ideas.",
+                "process management": "The speaker is managing the meeting flow by suggesting a structured way for participants to share their introductions and goals."
             }
         },
         {
@@ -2980,7 +2892,7 @@
             "start_time": "34:59",
             "end_time": "35:14",
             "annotations": {
-                "explain or define term or concept": "Noah is explaining his role as an isotope geochemist and his interest in the long-term evolution of global biogeochemical cycles and how life transforms planets, providing context for his contributions to the discussion."
+                "signal expertise": "The speaker explicitly states his own expertise or qualifications related to the task, specifically his work as an isotope geochemist and interest in the evolution of biogeochemical cycles and planetary transformation by life."
             }
         },
         {
@@ -3000,8 +2912,8 @@
             "start_time": "35:14",
             "end_time": "35:22",
             "annotations": {
-                "express humor": "Noah makes a self-deprecating joke about being a 'blank screen,' expressing humor about his late arrival to the conversation.",
-                "acknowledge contribution": "Noah acknowledges that he will now participate in the conversation."
+                "acknowledge contribution": "Noah acknowledges his late entry into the conversation and apologizes for any confusion.",
+                "supportive response": "Noah's response is supportive as he apologizes for his absence and technical issue."
             }
         },
         {
@@ -3021,8 +2933,7 @@
             "start_time": "35:22",
             "end_time": "35:32",
             "annotations": {
-                "express humor": "Lisa makes a lighthearted comment about the shared experience of technical difficulties and emergencies during the past year, using humor to connect with the group.",
-                "acknowledge contribution": "Lisa acknowledges Noah's contribution by excusing his late arrival due to family matters, showing understanding and acceptance."
+                "supportive response": "The speaker expresses empathy and understanding towards Noah Planavsky's situation, providing a supportive comment."
             }
         },
         {
@@ -3042,7 +2953,7 @@
             "start_time": "35:32",
             "end_time": "35:33",
             "annotations": {
-                "acknowledge contribution": "Noah acknowledges that he is late and apologizes for the disruption, recognizing the group's ongoing discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3062,9 +2973,9 @@
             "start_time": "35:40",
             "end_time": "36:56",
             "annotations": {
-                "expand on existing idea": "Dan is building on the previous discussion about metallicity and chemical composition of stars and planets, specifically focusing on the connection between the two.",
-                "provide supporting evidence": "Dan mentions work that tries to tie detailed chemical abundances of stars to the occurrence of terrestrial planets, providing a specific example to support the idea of a connection between stellar and planetary composition.",
-                "ask clarifying question": "Dan asks about the latest developments in connecting the chemical composition of stars and planets, seeking updated information on the topic."
+                "Develop Idea": "Dan Huber is expanding on an existing idea or area of research, discussing the connection between stellar and planetary metallicity/chemical composition.",
+                "Ask Question": "Dan Huber asks about the latest on a specific research area, indicating he is seeking information.",
+                "Critical Response": "Dan Huber notes that the connection between stellar and planetary metallicity is 'still sort of controversial,' indicating some level of critique or skepticism."
             }
         },
         {
@@ -3084,7 +2995,9 @@
             "start_time": "36:56",
             "end_time": "37:31",
             "annotations": {
-                "provide supporting evidence": "Andrew provides supporting evidence by mentioning a paper by Amy Bonser's group that measured the composition of a star and a planetesimal, offering data to support the discussion on the connection between stellar and planetary composition, which was brought up by Dan."
+                "develop idea": "The speaker is expanding on an existing idea by discussing the implications of a research paper.",
+                "signal expertise": "The speaker demonstrates his knowledge of specific research and its implications.",
+                "acknowledge contribution": "The speaker mentions and credits the work of Amy Bonser's group."
             }
         },
         {
@@ -3103,14 +3016,10 @@
             "screenshare_content": "None",
             "start_time": "37:32",
             "end_time": "38:55",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Keith provides supporting evidence by mentioning studies from Jorge Melendez's group and Ivan Ramirez that explore the condensation temperature abundance relation and the signature of enhanced refractories, relating it to planet engulfment."
-                },
-                {
-                    "expand on existing idea": "Keith expands on Dan's idea about the chemical composition of stars and planets by discussing the condensation temperature abundance relation and the potential for planet engulfment to affect stellar abundances."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Keith Hawkins is expanding on an existing idea by discussing studies related to condensation temperature abundance relation and its implications.",
+                "ask question": "Keith Hawkins poses a question regarding the expectation of finding a correlation between planet occurrence and the signature of enhanced refractories."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3129,7 +3038,7 @@
             "start_time": "39:05",
             "end_time": "39:06",
             "annotations": {
-                "expand on existing idea": "Lisa is about to build upon a previously mentioned idea, adding further details or variations to it, as she says \"I think one thing that might also\"."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3149,7 +3058,7 @@
             "start_time": "39:06",
             "end_time": "39:06",
             "annotations": {
-                "encourage particpatioin": "Dan encourages Lisa to continue speaking, as she seemed to be about to say something."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3168,11 +3077,9 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of Solar System\". The slide contains colorful illustrations of planets and moons.",
             "start_time": "39:06",
             "end_time": "39:11",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lisa is reminding the group of the central question they are trying to address, which is about external factors impacting habitability, to refocus the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by attempting to steer the conversation back to the central question about external factors impacting habitability."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3191,9 +3098,8 @@
             "start_time": "40:00",
             "end_time": "40:33",
             "annotations": {
-                "present new idea": "Lisa introduces the idea that the specific makeup of an exoplanet system (tightly packed vs. giant planet dominated) might influence its habitability, which hasn't been explicitly discussed before.",
-                "ask clarifying question": "Lisa is asking whether the presence of a giant planet is sufficient for habitability or if a tightly packed system is preferable, seeking to understand the impact of exoplanet system makeup on habitability.",
-                "propose decision": "Lisa is suggesting the group consider the impact of exoplanet system makeup (tightly packed vs. giant planet dominated) on habitability, guiding the discussion towards this specific factor."
+                "ask question": "The speaker is requesting information or clarification on the role of giant planets and system structure in habitability.",
+                "develop idea": "The speaker is engaging with and probing existing ideas about habitability."
             }
         },
         {
@@ -3213,7 +3119,7 @@
             "start_time": "40:33",
             "end_time": "40:37",
             "annotations": {
-                "ask clarifying question": "Andrew asks Lisa to repeat what she said because the audio was unclear, indicating he needs clarification on her previous statement."
+                "Ask question": "Andrew Vanderburg is requesting information or clarification from Lisa on what she previously said."
             }
         },
         {
@@ -3233,9 +3139,8 @@
             "start_time": "40:37",
             "end_time": "41:28",
             "annotations": {
-                "present new idea": "Lisa introduces the idea of whether a tightly packed system helps bring material from one planet to another, or if a bigger planet is needed, which is a novel consideration in the context of the discussion about metallicity and external factors.",
-                "propose decision": "Lisa proposes the question of whether a tightly packed system or a bigger planet is needed to bring materials between planets, suggesting a direction for the group's discussion.",
-                "expand on existing idea": "Lisa builds on the previous discussion about metallicity and external factors by posing a question about how these factors influence the transfer of materials between planets in a system, specifically considering the arrangement of planets."
+                "ask question": "The speaker explicitly requests information about the implications of different planetary system configurations on material transport between planets.",
+                "develop idea": "The utterance builds upon previous discussions, exploring how different system configurations could influence habitability through material transport."
             }
         },
         {
@@ -3254,11 +3159,9 @@
             "screenshare_content": "None",
             "start_time": "41:28",
             "end_time": "41:30",
-            "annotations": [
-                {
-                    "express humor": "Lisa is making a lighthearted comment about her unstable internet connection, which can be interpreted as a form of self-deprecating humor."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3277,7 +3180,8 @@
             "start_time": "41:30",
             "end_time": "41:30",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging the group to consider a specific direction related to external factors impacting habitability, inviting them to contribute their thoughts on the topic."
+                "process management": "The speaker is managing the direction of the discussion.",
+                "clarify goal": "The utterance seeks to clarify or direct the goal of their discussion regarding external factors that could impact habitability."
             }
         },
         {
@@ -3296,17 +3200,11 @@
             "screenshare_content": "None",
             "start_time": "41:30",
             "end_time": "42:27",
-            "annotations": [
-                {
-                    "expand on existing idea": "Andrew is expanding on the idea of external factors impacting habitability, specifically referencing a previous discussion about panspermia and applying the concept of material transfer in the Jupiter system to M dwarf systems, building on Katherine's earlier point about material transfer in the Jupiter system."
-                },
-                {
-                    "present new idea": "Andrew introduces the idea of material transfer between planets in M dwarf systems due to volcanism and the star's magnetosphere, which is a novel concept in the context of the current discussion."
-                },
-                {
-                    "ask clarifying question": "Andrew wonders how material transfer would work in M dwarf systems, questioning if similar trapping of material could occur with volcanism on one planet affecting others."
-                }
-            ]
+            "annotations": {
+                "ask question": "Andrew Vanderburg asks if similar trapping of material could occur in M dwarf systems with potentially habitable planets close to the star.",
+                "develop idea": "He develops the idea of panspermia by applying it to M dwarf systems and considering the implications of planetary masses versus moon masses.",
+                "encourage participation": "By posing a question, Andrew encourages further discussion and participation from the group."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -3325,9 +3223,8 @@
             "start_time": "42:27",
             "end_time": "43:14",
             "annotations": {
-                "expand on existing idea": "This utterance expands on Andrew's idea about panspermia and material transfer between planets, adding details about the mechanism of material loss from IO's atmosphere due to Jupiter's magnetic field and how a similar process could occur in M dwarf systems with magnetically active stars.",
-                "provide supporting evidence": "The speaker provides supporting evidence by referencing the case of IO and Jupiter's magnetic field to explain how material can be transported between celestial bodies, which supports the idea of material transfer in exoplanetary systems.",
-                "explain or define term or concept": "The speaker explains the process by which material is lost from IO's atmosphere, detailing how the magnetic field and plasma cause ionization and subsequent loss of material, clarifying the mechanism of material transfer."
+                "develop idea": "The utterance expands on existing ideas by explaining how magnetic fields affect atmospheric loss, using IO as a specific example.",
+                "signal expertise": "Katherine de Kleer demonstrates her expertise in planetary science, specifically in the effects of magnetic fields on planetary bodies."
             }
         },
         {
@@ -3347,7 +3244,7 @@
             "start_time": "43:15",
             "end_time": "43:17",
             "annotations": {
-                "express agreement": "Andrew agrees with Katherine's explanation of how volcanism and magnetic fields can lead to material transfer between planets, building on the previous discussion about panspermia and material transfer in the Jupiter system."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3367,7 +3264,7 @@
             "start_time": "43:17",
             "end_time": "43:19",
             "annotations": {
-                "express frustration": "Keith expresses frustration with the direction of the discussion, finding the scenarios being discussed as \"contrived\"."
+                "Critical response": "The speaker expresses skepticism about the ideas discussed, suggesting they seem 'rather contrived.'"
             }
         },
         {
@@ -3387,8 +3284,8 @@
             "start_time": "43:19",
             "end_time": "43:31",
             "annotations": {
-                "offer constructive criticism": "Keith is critiquing the idea of material transfer between planets via volcanism and magnetic fields, suggesting it's too contrived and that heavy bombardment is a more likely mechanism for sharing material between planets.",
-                "expand on existing idea": "Keith is expanding on the discussion about material transfer between planets, offering an alternative mechanism (heavy bombardment) to the previously discussed volcanism and magnetic fields."
+                "critical response": "Keith Hawkins is questioning and challenging the previous idea about the necessity of volcanoes for material transport between planets, suggesting a heavy bombardment as an alternative.",
+                "signal expertise": "Keith Hawkins is stating his perspective based on his understanding of planetary science, implying his expertise in the field."
             }
         },
         {
@@ -3408,7 +3305,7 @@
             "start_time": "43:31",
             "end_time": "43:46",
             "annotations": {
-                "reject idea": "Keith expresses doubt about the idea that volcanism significantly affects a planet's chemistry, implying a rejection of the idea presented by previous speakers."
+                "Critical Response": "The speaker is questioning the idea of volcanism being a significant process for transferring material between planets and affecting their chemistry, expressing skepticism about its importance."
             }
         },
         {
@@ -3428,7 +3325,7 @@
             "start_time": "43:46",
             "end_time": "43:54",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on the idea of volcanism and material transfer between planets in M dwarf systems, adding that tidal heating, especially in resonant chains like Trappist-1, could contribute to volcanism."
+                "develop idea": "The speaker is expanding on the idea of external factors impacting habitability by specifying a condition (tidal heating near M dwarfs) that could affect planetary habitability."
             }
         },
         {
@@ -3448,7 +3345,8 @@
             "start_time": "43:55",
             "end_time": "44:06",
             "annotations": {
-                "reject idea": "Keith expresses doubt about the likelihood of volcanism significantly affecting another planet's chemistry, implying a rejection of the idea that material transfer via volcanism is a significant process."
+                "develop idea": "Keith Hawkins is expanding on a previous idea by offering his perspective on the challenges associated with material transfer between planets.",
+                "critical response": "Keith Hawkins is questioning the practicality of the material transfer idea, citing the issue of cross-section as a limiting factor."
             }
         },
         {
@@ -3468,8 +3366,7 @@
             "start_time": "44:06",
             "end_time": "44:14",
             "annotations": {
-                "express agreement": "Andrew agrees with Keith's point that the scenario involving volcanism and material transfer between planets seems contrived, acknowledging Keith's perspective.",
-                "expand on existing idea": "Andrew expands on Keith's idea by stating that the transfer of material between planets is more commonly discussed in terms of bombardment, building on the discussion about the likelihood of volcanism being a significant process."
+                "None": "The utterance primarily serves as an agreement or acknowledgment without explicitly fitting into another category like proposing a new idea, developing an idea, or asking a question."
             }
         },
         {
@@ -3489,12 +3386,8 @@
             "start_time": "44:14",
             "end_time": "44:33",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Andrew acknowledges Katherine's contribution by stating that he found it very interesting that this has been observed in the solar system, showing he values her input."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Andrew expands on the idea of material transfer between planets by adding that we've observed asteroids or meteors from Mars coming to Earth, building upon the previous discussion about material transfer in the Jupiter system."
-                }
+                "develop idea": "The speaker is expanding on the idea of material transfer between celestial bodies by providing examples from the solar system.",
+                "supportive response": "The speaker is validating the idea by providing relevant examples."
             }
         },
         {
@@ -3514,7 +3407,8 @@
             "start_time": "44:33",
             "end_time": "44:36",
             "annotations": {
-                "encourage particpatioin": "Meredith encourages someone else to speak, as she interrupts herself and says \"go ahead\"."
+                "process management": "The speaker is managing the flow of conversation by yielding the floor to others.",
+                "supportive response": "The utterance is supportive in tone, as the speaker politely allows others to contribute."
             }
         },
         {
@@ -3534,7 +3428,8 @@
             "start_time": "44:36",
             "end_time": "44:53",
             "annotations": {
-                "ask clarifying question": "Meredith asks a clarifying question about whether the magnetic field or volcanism is the dominant factor in material transfer between planets, following a discussion about material transfer in the Jupiter system and M dwarf systems."
+                "ask question": "Meredith MacGregor requests clarification on the relative importance of magnetic fields, volcanism, and tidal heating in affecting planetary habitability.",
+                "develop idea": "She is also expanding the discussion on how these factors interplay to influence habitability."
             }
         },
         {
@@ -3554,7 +3449,9 @@
             "start_time": "44:53",
             "end_time": "45:01",
             "annotations": {
-                "explain or define term or concept": "Katherine explains that volcanism replenishes the atmosphere, which would otherwise be lost quickly due to the magnetic field, clarifying the relationship between these two factors in the context of atmospheric maintenance."
+                "final answer": {
+                    "develop idea": "The speaker is expanding on an existing idea about the interaction between volcanism, atmospheric replenishment, and the effect of a magnetic field on a planet's habitability."
+                }
             }
         },
         {
@@ -3574,7 +3471,7 @@
             "start_time": "45:01",
             "end_time": "45:01",
             "annotations": {
-                "acknowledge contribution": "Meredith acknowledges Katherine's explanation of the interplay between volcanism and magnetic fields in material transfer between planets, without necessarily agreeing or expanding on it."
+                "None": "The utterance is a simple acknowledgment or expression of understanding, which does not fit into any of the provided codes."
             }
         },
         {
@@ -3594,7 +3491,8 @@
             "start_time": "45:01",
             "end_time": "45:40",
             "annotations": {
-                "provide supporting evidence": "Katherine provides examples from the Saturn and Neptune systems, specifically Enceladus and Triton, to support the idea of material transfer between celestial bodies, building on the discussion about volcanism and magnetic fields affecting planetary habitability."
+                "develop idea": "The speaker is expanding on a previous idea about material transfer between celestial bodies.",
+                "supportive response": "The speaker is providing additional information to support or elaborate on a previous point made by others."
             }
         },
         {
@@ -3614,9 +3512,8 @@
             "start_time": "45:40",
             "end_time": "46:22",
             "annotations": {
-                "present new idea": "Meredith suggests a novel calculation comparing the rate of impactors versus magnetic field stripping in an M dwarf system to determine the dominant method of spreading material, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "Meredith builds upon the discussion of material transfer between planets via volcanism and magnetic fields by proposing a calculation to compare it with the more common idea of material transfer via bombardment.",
-                "encourage particpatioin": "Meredith is implicitly encouraging the group to consider and potentially perform the calculation she is suggesting."
+                "propose new idea": "Meredith suggests a calculation to compare the effects of impactors and magnetic field stripping on material distribution in M dwarf systems.",
+                "develop idea": "She expands on previous discussions by considering specific mechanisms for material distribution."
             }
         },
         {
@@ -3635,17 +3532,10 @@
             "screenshare_content": "None",
             "start_time": "46:22",
             "end_time": "47:01",
-            "annotations": [
-                {
-                    "present new idea": "Lisa introduces the idea of considering what kind of planetary systems would be most conducive to material transfer between planets, building on the discussion of magnetic field stripping and volcanism."
-                },
-                {
-                    "ask clarifying question": "Lisa asks Katherine if the observed material transfer mechanism in smaller systems like moons could scale up to larger planetary systems, questioning the limitations imposed by factors like gravity."
-                },
-                {
-                    "encourage particpatioin": "Lisa encourages Katherine to think about the scalability of the material transfer mechanism."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "The speaker is expanding on existing ideas by considering specific scenarios and factors.",
+                "Ask question": "The speaker directly asks for Katherine's thoughts on scalability and the impact of gravity."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -3664,7 +3554,7 @@
             "start_time": "47:02",
             "end_time": "47:02",
             "annotations": {
-                "express agreement": "Katherine agrees with Lisa's question about whether the material transport via magnetic field is scalable by simply saying \"Yeah.\""
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3684,7 +3574,7 @@
             "start_time": "47:02",
             "end_time": "47:02",
             "annotations": {
-                "encourage particpatioin": "Keith is about to express his opinion, encouraging further discussion by signaling his intent to contribute to the conversation."
+                "None": "No relevant code directly applies to this utterance as it stands."
             }
         },
         {
@@ -3703,11 +3593,9 @@
             "screenshare_content": "None",
             "start_time": "47:02",
             "end_time": "47:03",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Katherine de Kleer is acknowledging that someone else wanted to speak, but does not agree or expand on their idea."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Katherine de Kleer acknowledges Keith Hawkins' invitation for her to speak."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -3726,9 +3614,8 @@
             "start_time": "47:03",
             "end_time": "47:34",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Katherine suggests exploring the parameter space of magnetic field, atmospheric density, and ionization ease in a simplified scenario, proposing a direction for further investigation."
-                }
+                "offer feedback": "The speaker provides a suggestion for improving the approach by exploring a parameter space in a simplified scenario.",
+                "develop idea": "The speaker expands on existing ideas by suggesting to focus on specific factors like local magnetic field, atmospheric density, and contents."
             }
         },
         {
@@ -3748,9 +3635,9 @@
             "start_time": "47:34",
             "end_time": "48:16",
             "annotations": {
-                "present new idea": "Keith introduces the idea that losing material from a planet might not be conducive to the robustness and stability of life, contrasting with the previous discussion about material transfer between planets.",
-                "offer constructive criticism": "Keith critiques the idea of volcanism being a significant process affecting a planet's chemistry, suggesting it seems contrived and questioning the robustness of life in such scenarios, which is a critique of the prior discussion.",
-                "reject idea": "Keith expresses doubt about the idea that volcanism significantly affects a planet's chemistry, implying a rejection of the idea without offering an alternative."
+                "develop idea": "Keith Hawkins is expanding on previous ideas discussed in the meeting, specifically considering the implications of material loss from planets for life's existence.",
+                "offer feedback": "Keith is providing a perspective on the implications of material exchange for planetary habitability.",
+                "supportive response": "Keith is expressing a validating opinion regarding the importance of planetary stability for life."
             }
         },
         {
@@ -3770,7 +3657,7 @@
             "start_time": "48:16",
             "end_time": "48:17",
             "annotations": {
-                "express agreement": "Katherine de Kleer is agreeing with Keith Hawkins's previous statement about the robustness of life and not wanting to lose a bunch of stuff from a planet if you want life to exist."
+                "Supportive response": "The speaker is expressing agreement with a previous statement."
             }
         },
         {
@@ -3790,7 +3677,8 @@
             "start_time": "48:17",
             "end_time": "48:24",
             "annotations": {
-                "provide supporting evidence": "Meredith is providing supporting evidence to Keith's argument that losing material from a planet is not good for life, by stating that M dwarfs are magnetically active and throw out bursts of radiation, which seems bad for habitability."
+                "develop idea": "The speaker expands on the existing idea about M dwarfs' magnetic activity and its impact on planetary habitability.",
+                "critical response": "The speaker expresses a negative evaluation of M dwarfs' magnetic activity, stating it 'seems bad' for habitability."
             }
         },
         {
@@ -3810,8 +3698,8 @@
             "start_time": "48:24",
             "end_time": "48:36",
             "annotations": {
-                "present new idea": "Meredith presents a new idea about a scenario where the innermost planet in a system is uninhabitable due to being \"toasted,\" but the next planet out is optimal for life, which is a novel concept in the discussion.",
-                "expand on existing idea": "Meredith expands on the existing discussion about the habitability of planets in M dwarf systems, specifically addressing the potential for an edge case scenario where the innermost planet is uninhabitable but the next one out is optimal for life, building on the previous discussion about the effects of stellar activity and magnetic fields on planetary habitability."
+                "propose new idea": "The speaker introduces a new scenario where the innermost planet is too hostile for life but the next one out could be optimal.",
+                "develop idea": "The speaker builds upon previously discussed ideas about stellar activity and planetary habitability."
             }
         },
         {
@@ -3831,7 +3719,8 @@
             "start_time": "48:36",
             "end_time": "48:50",
             "annotations": {
-                "ask clarifying question": "Andrew is asking a clarifying question about the nature of the particles involved in the material transfer process, building on the discussion about volcanism and magnetic field interactions in planetary systems."
+                "Ask Question": "The speaker is requesting information or clarification on the nature of particles involved in a process.",
+                "Develop Idea": "The question also slightly expands on a previously mentioned idea by seeking specifics."
             }
         },
         {
@@ -3851,9 +3740,7 @@
             "start_time": "48:51",
             "end_time": "48:54",
             "annotations": {
-                "reject idea": {
-                    "Explanation": "Katherine rejects the idea that larger particles like microbes could be transported via the magnetic field stripping mechanism being discussed, indicating disbelief that this mechanism could transport anything larger than ions."
-                }
+                "Critical response": "The speaker expresses skepticism or disagreement towards a proposed mechanism."
             }
         },
         {
@@ -3873,7 +3760,8 @@
             "start_time": "48:54",
             "end_time": "49:14",
             "annotations": {
-                "explain or define term or concept": "Katherine explains that the material is lost from the atmosphere by ionization, followed by recombination, resulting in the transport of small molecules, clarifying the process of material transfer between planets."
+                "develop idea": "The utterance expands on the idea of how material can be transported between planets, specifically discussing ionization and recombination.",
+                "signal expertise": "Katherine de Kleer is showing her expertise in planetary science and atmospheric processes."
             }
         },
         {
@@ -3893,7 +3781,7 @@
             "start_time": "49:14",
             "end_time": "49:14",
             "annotations": {
-                "express frustration": "Andrew expresses frustration that microbes cannot be transported via the mechanism Katherine described, making panspermia harder."
+                "supportive response": "The speaker is expressing agreement or validation of the previous statement, indicating that the scenario discussed makes things more difficult."
             }
         },
         {
@@ -3913,7 +3801,7 @@
             "start_time": "49:14",
             "end_time": "49:15",
             "annotations": {
-                "confirm decision": "Katherine confirms the previous statement about the unlikelihood of microbes being transported via the described mechanism."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input without agreeing or expanding."
             }
         },
         {
@@ -3932,11 +3820,10 @@
             "screenshare_content": "None",
             "start_time": "49:15",
             "end_time": "49:41",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is asking Bradford a question about volcanism, specifically how it relates to the habitability discussion, and referencing Olympus Mons as a special case, implying she wants to understand the conditions under which volcanism could contribute to habitability."
-                }
-            ]
+            "annotations": {
+                "Ask question": "The utterance explicitly asks a question regarding the conditions for volcanism to work on a planet.",
+                "Develop idea": "The utterance expands on an existing idea by discussing conditions for volcanism."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -3955,9 +3842,7 @@
             "start_time": "49:41",
             "end_time": "49:41",
             "annotations": {
-                "ask clarifying question": {
-                    "Explanation": "Keith Hawkins is about to ask a question, but the utterance is cut off, so it is unclear what he will ask."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3977,7 +3862,7 @@
             "start_time": "49:41",
             "end_time": "49:43",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is an incomplete sentence and does not express any idea, question, or decision."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3997,7 +3882,7 @@
             "start_time": "49:43",
             "end_time": "49:45",
             "annotations": {
-                "ask clarifying question": "Lisa is asking if she can ask a question, which is a request for permission to clarify something."
+                "ask question": "The speaker explicitly requests to ask a question, indicating a need for information or clarification."
             }
         },
         {
@@ -4017,7 +3902,7 @@
             "start_time": "50:00",
             "end_time": "50:07",
             "annotations": {
-                "ask clarifying question": "Lisa is asking for clarification on the relationship between volcanism and the mass of a rocky planet, which is relevant to the discussion of external factors impacting habitability."
+                "ask question": "The speaker is requesting information or clarification on how volcanism would scale with the mass of a rocky planet."
             }
         },
         {
@@ -4036,14 +3921,10 @@
             "screenshare_content": "None",
             "start_time": "50:09",
             "end_time": "51:37",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Bradford explains the conditions under which rocky planets are expected to have volcanism, including the role of heat-producing elements, tidal heating, and stagnant lids, in response to Lisa's question about how volcanism scales with the mass of a rocky planet."
-                },
-                {
-                    "provide supporting evidence": "Bradford mentions papers suggesting that massive super-Earth planets with stagnant lids might not have volcanism, providing evidence to support his explanation of the factors influencing volcanism."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about planetary volcanism, discussing conditions under which it might occur or not.",
+                "offer feedback": "The speaker provides insights based on their understanding of planetary science, discussing the likelihood of volcanism on different types of planets."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4061,14 +3942,9 @@
             "screenshare_content": "None",
             "start_time": "51:39",
             "end_time": "52:03",
-            "annotations": [
-                {
-                    "propose decision": "Lisa proposes a decision to either start discussing the impacts of stellar evolution, position in the galaxy, stellar activity, star planet interaction on habitability or to keep going with the current discussion."
-                },
-                {
-                    "encourage particpatioin": "Lisa is encouraging participation by asking the group if they want to start discussing a new topic or continue with the current one."
-                }
-            ]
+            "annotations": {
+                "process management": "Yes, deciding discussion direction"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4087,9 +3963,8 @@
             "start_time": "52:04",
             "end_time": "52:46",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Keith Hawkins introduces a new question about whether planets have different chemistry based on where they formed in the disc, which is a novel idea not previously discussed in this specific context."
-                }
+                "ask question": "The speaker is asking a question about the expectation of planetary chemistry variation based on the location of formation within a disc in early planetary systems.",
+                "develop idea": "The speaker is expanding on previous ideas by inquiring about the relationship between planetary chemistry and the location of formation within a disc."
             }
         },
         {
@@ -4109,15 +3984,8 @@
             "start_time": "52:48",
             "end_time": "53:29",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Lisa introduces the idea that lava worlds could provide insights into the connection between a planet's mantle composition and its atmosphere, which is a novel concept in the context of the discussion."
-                },
-                "provide supporting evidence": {
-                    "Explanation": "Lisa mentions that Laura Kreidberg took the first spectra of a lava world, providing observational evidence to support the potential of lava worlds for research, but also acknowledges that there is not enough information to correlate it yet."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Lisa explicitly invites exoplanet observers to contribute their perspectives on the topic, encouraging participation from specific members of the group."
-                }
+                "code name": "ask question",
+                "explanation": "Lisa invites exoplanet observers to contribute or share their thoughts on the idea."
             }
         },
         {
@@ -4136,14 +4004,9 @@
             "screenshare_content": "None",
             "start_time": "53:29",
             "end_time": "53:39",
-            "annotations": [
-                {
-                    "expand on existing idea": "Andrew is building on the previous discussion about the chemical composition of stars and planets, suggesting that white dwarfs could be a key to understanding this connection, as he has mentioned them before."
-                },
-                {
-                    "express enthusiasm": "Andrew expresses optimism about future research on white dwarfs and their potential to reveal information about planet composition."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4162,8 +4025,10 @@
             "start_time": "53:40",
             "end_time": "54:01",
             "annotations": {
-                "present new idea": "Lisa is presenting a new idea of focusing on white dwarfs to find robust life forms, building on Andrew's previous mention of white dwarfs.",
-                "express humor": "Lisa is expressing humor by suggesting that finding life around a white dwarf would mean it could survive anything, and then uses \"Yes, no, maybe\" to further the joke."
+                "propose new idea": "Lisa suggests focusing on white dwarfs to find life as a new direction for discussion.",
+                "ask question": "Lisa asks a question about the rationale behind focusing on white dwarfs.",
+                "express humor": "Lisa uses analogies and phrases like 'debing in the universe' and 'devil's advocate' that can be interpreted as attempts to express humor or lightness in discussion.",
+                "encourage participation": "Lisa invites others' opinions with 'Yes, no, maybe.'"
             }
         },
         {
@@ -4183,7 +4048,8 @@
             "start_time": "54:01",
             "end_time": "54:05",
             "annotations": {
-                "reject idea": "Andrew is rejecting the idea of focusing solely on white dwarfs, but the utterance is incomplete."
+                "critical response": "The speaker is questioning the feasibility or advisability of relying solely on white dwarfs, which can be seen as a critical response to an idea.",
+                "offer feedback": "The speaker is providing a cautionary perspective on an idea, which can be considered as offering feedback."
             }
         },
         {
@@ -4203,7 +4069,7 @@
             "start_time": "54:05",
             "end_time": "54:07",
             "annotations": {
-                "express humor": "Lisa is making a joke about not putting all eggs in one basket, following Andrew's suggestion of focusing on white dwarfs, to express humor."
+                "supportive response": "The utterance expresses a supportive or cautious sentiment regarding the discussion, aligning with the definition of a supportive response."
             }
         },
         {
@@ -4223,12 +4089,8 @@
             "start_time": "54:08",
             "end_time": "54:47",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Andrew introduces the idea of analyzing the compositions of dead planets from white dwarfs and applying that knowledge to understand the chemical abundances of living planets around main sequence stars, which is a novel approach not previously discussed."
-                },
-                "expand on existing idea": {
-                    "Explanation": "This utterance expands on the previous discussion about the chemical composition of stars and planets by suggesting a method to infer the composition of exoplanets by studying the composition of planetesimals accreted onto white dwarfs."
-                }
+                "propose new idea": "The speaker introduces a novel methodological approach to understanding planetary compositions by suggesting the study of dead planets from white dwarfs to inform about main-sequence worlds.",
+                "develop idea": "The speaker expands on the idea by detailing how the chemical abundances from white dwarf planetary systems can be applied to understand main-sequence star systems."
             }
         },
         {
@@ -4248,7 +4110,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Noah to participate in the discussion, as he has just joined the conversation."
+                "encourage participation": "Lisa Kaltenegger is encouraging Noah to participate in the discussion by addressing him directly."
             }
         },
         {
@@ -4268,7 +4130,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "None": "This utterance is incomplete and does not express any specific idea, question, or action."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4287,11 +4149,9 @@
             "screenshare_content": "None",
             "start_time": "54:47",
             "end_time": "54:47",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is encouraging participation from Noah, who has just joined the conversation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4310,7 +4170,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging someone to participate by saying \"what\", which is likely a prompt for someone to speak."
+                "ask question": "The utterance appears to be a question or a request for information, although it is incomplete."
             }
         },
         {
@@ -4329,11 +4189,9 @@
             "screenshare_content": "None",
             "start_time": "54:47",
             "end_time": "54:47",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance as it is an incomplete sentence."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4352,7 +4210,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging someone to participate in the discussion by calling on them."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4371,11 +4229,9 @@
             "screenshare_content": "None",
             "start_time": "54:47",
             "end_time": "54:47",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is encouraging Noah to participate in the discussion, as she is prompting him to speak."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4394,7 +4250,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or action, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4414,7 +4270,7 @@
             "start_time": "54:47",
             "end_time": "54:47",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Noah to participate in the discussion, as he has just joined the conversation after being late."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4433,12 +4289,11 @@
             "screenshare_content": "None",
             "start_time": "54:47",
             "end_time": "55:07",
-            "annotations": [
-                {
-                    "reject idea": "Noah expresses doubt about conclusively identifying a lava world based solely on its atmospheric signature, rejecting the idea that it is easy to do.",
-                    "expand on existing idea": "Noah builds on the discussion about lava worlds by stating that if a world is molten, the volatile load will be present in the atmosphere, expanding on the idea of studying lava worlds."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the discussion about detecting lava worlds and their characteristics, providing his insights based on his expertise.",
+                "identify gap": "The speaker highlights a challenge in the field, which is the difficulty of conclusively identifying lava worlds from atmospheric signatures.",
+                "offer feedback": "The speaker provides feedback on the idea of detecting lava worlds and implications for volatile loads in atmospheres, sharing his perspective on the feasibility and implications of such detections."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4456,12 +4311,10 @@
             "screenshare_content": "None",
             "start_time": "55:09",
             "end_time": "55:24",
-            "annotations": [
-                {
-                    "present new idea": "Lisa introduces a new thought about the possibility of the non-existence of a galactic habitable zone, which hasn't been discussed before.",
-                    "express humor": "Lisa makes a joke about staying away from a black hole, adding a humorous element to the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea by questioning the existence of a galactic habitable zone.",
+                "express humor": "The speaker makes a joke about avoiding black holes, showing humor."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4479,11 +4332,9 @@
             "screenshare_content": "None",
             "start_time": "55:24",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "express humor": "Lisa ends the conversation with a humorous remark, implying that they should analyze the topic thoroughly, which is a lighthearted way to conclude the discussion."
-                }
-            ]
+            "annotations": {
+                "Express humor": "The speaker is making a joke or being humorous."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4501,11 +4352,9 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "express humor": "Lisa laughs, indicating she is making a joke."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker is making a joke or expressing humor."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4523,11 +4372,9 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "express frustration": "The speaker is cut off mid-sentence, which could indicate frustration with the conversation's direction or pace, but without the full sentence, it is difficult to determine the speaker's intent."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4545,11 +4392,9 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is about to agree with a previous statement, but the utterance is cut off."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4567,11 +4412,9 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "express humor": "The speaker trails off after starting to say \"there\", and given the previous utterance where Lisa makes a joke, it is likely that Keith was also attempting to make a joke."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4589,11 +4432,9 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4611,11 +4452,10 @@
             "screenshare_content": "None",
             "start_time": "55:25",
             "end_time": "55:25",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Keith provides supporting evidence for the existence of a galactic habitable zone by stating that planets cannot form around stars with very low metallicity, such as metallicity minus seven stars, because there aren't enough elements to form them."
-                }
-            ]
+            "annotations": {
+                "code name": "identify gap",
+                "explanation": "Keith Hawkins explicitly recognizes the challenge or limitation in forming planets around a star with very low metallicity (minus seven), indicating a gap in the conditions suitable for planet formation."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4633,11 +4473,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express any idea, agreement, or question."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4655,11 +4493,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4677,11 +4513,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance seems to be cut off, but based on the previous utterance where Andrew was responding to Keith's statement that there is a galactic habitable zone due to metallicity, this utterance is likely expanding on the idea of galactic habitability."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4700,7 +4534,7 @@
             "start_time": "56:27",
             "end_time": "56:27",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4719,11 +4553,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance seems to be cut off, but based on the previous discussion about metallicity and its impact on habitability, Andrew is likely expanding on the existing idea of metallicity as a factor influencing habitability."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4741,11 +4573,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express any complete idea or action."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4763,11 +4593,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4785,11 +4613,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4807,11 +4633,9 @@
             "screenshare_content": "None",
             "start_time": "56:27",
             "end_time": "56:27",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -4830,7 +4654,7 @@
             "start_time": "56:38",
             "end_time": "56:42",
             "annotations": {
-                "explain or define term or concept": "Keith is explaining the typical metallicity in the outer halo, providing context to the ongoing discussion about galactic habitability and metallicity's role in planet formation."
+                "develop idea": "Keith Hawkins is providing a specific detail about the metallicity in the outer halo, which develops the idea of metallicity's impact on planetary formation and habitability."
             }
         },
         {
@@ -4850,9 +4674,7 @@
             "start_time": "56:42",
             "end_time": "56:43",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Andrew is acknowledging Lisa's statement, indicating he understands the point being made."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4871,11 +4693,9 @@
             "screenshare_content": "None",
             "start_time": "56:43",
             "end_time": "56:57",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Andrew provides data points (minus 1.6 and minus 1.2) from SDSS and H3 surveys to support his statement about halo metallicity, building on the discussion about galactic habitability and metallicity."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the discussion about metallicity by providing concrete data from specific studies, thereby developing the idea further."
+            }
         },
         {
             "speaker": "Noah Planavsky",
@@ -4893,11 +4713,10 @@
             "screenshare_content": "None",
             "start_time": "56:58",
             "end_time": "57:25",
-            "annotations": [
-                {
-                    "present new idea": "Noah introduces a new perspective on defining habitable zones, shifting the focus from the presence of life to the potential for a biosphere to transform a planet, which is a novel concept in the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new perspective on how to approach the concept of habitability zones, suggesting a focus on biospheres capable of transforming planets.",
+                "develop idea": "The speaker builds upon the previous discussion by offering an alternative way to think about defining habitability zones, making the concept more manageable."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -4915,33 +4734,10 @@
             "screenshare_content": "None",
             "start_time": "60:00",
             "end_time": "60:42",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The speaker acknowledges the previous discussion about the way that material transport happens in the outer solar system and moon systems."
-                    }
-                },
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The speaker acknowledges the previous discussion about the abundances of stars and connecting that with the abundances of planets."
-                    }
-                },
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The speaker acknowledges the previous discussion about the condensation temperature work that's being done, spectra of lava worlds, and white dwarf planet debris."
-                    }
-                },
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The speaker acknowledges the previous discussion about the galactic habitable zone."
-                    }
-                },
-                {
-                    "encourage particpatioin": {
-                        "Explanation": "The speaker is trying to encourage participation by asking what people think are the most important things that they should discuss with the group."
-                    }
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing the previous conversation topics.",
+                "encourage participation": "The speaker is asking for input from the group on what to discuss next."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -4960,7 +4756,8 @@
             "start_time": "60:42",
             "end_time": "60:46",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly asking if there is anything that the group members think is missing from the discussion, encouraging them to contribute."
+                "Ask question": "The utterance is a clear request for information or input.",
+                "Process management": "The question manages the discussion process by ensuring nothing is missed."
             }
         },
         {
@@ -4980,7 +4777,7 @@
             "start_time": "60:46",
             "end_time": "60:50",
             "annotations": {
-                "express frustration": "Noah expresses regret for missing the first portion of the meeting, indicating frustration."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4999,14 +4796,11 @@
             "screenshare_content": "None",
             "start_time": "60:51",
             "end_time": "61:34",
-            "annotations": [
-                {
-                    "present new idea": "Meredith introduces a novel concept of combining external factors to calculate the probability of life on a star, which hasn't been explicitly discussed before."
-                },
-                {
-                    "expand on existing idea": "Meredith builds on the existing discussion about the galactic habitable zone by suggesting a method to quantify the likelihood of life based on various external factors like star type, age, metallicity, and location in the galaxy."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Meredith suggests a new approach to the galactic habitable zone concept by proposing to combine multiple external factors to calculate the likelihood of life.",
+                "develop idea": "Meredith expands on the idea of a galactic habitable zone by suggesting to incorporate various factors such as the type of star, age, metallicity, and location in the galaxy.",
+                "ask question": "Meredith implicitly asks if it's possible to combine external factors to assess the probability of life."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -5024,14 +4818,10 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"PLANETARY EXPLORATION\". The slide contains colorful illustrations of planets and moons, along with text labels such as \"What is an Exoplanet?\" and \"The Search for Life\". The content remains static during this segment.",
             "start_time": "61:34",
             "end_time": "62:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lisa builds on the previous discussion about the galactic habitable zone by suggesting that people fall into two camps regarding M stars and that mapping the dependence on different factors would be interesting."
-                },
-                {
-                    "present new idea": "Lisa introduces the idea of mapping the dependence on different factors and seeing where they overlap to predict where is good and bad for habitability, and also suggests taking priors to see their impact on the results."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about the galactic habitable zone, discussing how to approach the concept by considering various factors and priors.",
+                "clarify goal": "The speaker is also clarifying the goal of understanding the galactic habitable zone by suggesting to map the dependence on different factors and consider various priors."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5049,14 +4839,10 @@
             "screenshare_content": "None",
             "start_time": "62:57",
             "end_time": "63:14",
-            "annotations": [
-                {
-                    "ask clarifying question": "Dan is asking if anyone knows whether someone has already done a star population synthesis model of the Milky Way, populating them with planets to see how things pan out based on exoplanet dependencies, which is a question seeking information."
-                },
-                {
-                    "present new idea": "Dan is presenting a new idea of using a star population synthesis model of the Milky Way and populating it with planets to see how things pan out based on exoplanet dependencies, which has not been mentioned before."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking if someone has done a specific task, seeking information from others.",
+                "propose new idea": "The speaker suggests a new approach using a star population synthesis model to understand exoplanet dependencies."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -5074,11 +4860,9 @@
             "screenshare_content": "None",
             "start_time": "63:14",
             "end_time": "63:17",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Andrew mentions that \"there are papers\" related to the topic of discussion, which is about the likelihood of inner planets existing if a Jupiter-like planet is present, thus providing evidence to support the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -5096,20 +4880,12 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"PLANETARY EXPLORATION\". The slide contains colorful illustrations of planets and moons, along with text labels such as \"What is an Exoplanet?\" and \"The Search for Life\". The content remains static during this segment.",
             "start_time": "63:17",
             "end_time": "65:38",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on Dan's suggestion of using a star population synthesis model, Lisa suggests that previous analyses haven't explored different priors, and it would be interesting to do so agnostically."
-                },
-                {
-                    "explain or define term or concept": "Lisa explains that the problem with current models is that they assume surface life and a certain threshold for gamma rays, but subsurface life would have different conditions."
-                },
-                {
-                    "encourage particpatioin": "Lisa encourages the group to venture into discussing stellar activity, posing the question of whether it's good or bad for habitability."
-                },
-                {
-                    "present new idea": "Lisa introduces new research from Cambridge showing that a certain UV flux can make reactions more efficient, challenging the notion that quieter stars are better."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Lisa suggests exploring different assumptions (priors) in modeling the galactic habitable zone.",
+                "develop idea": "Lisa expands on the challenges and considerations in modeling planetary habitability, including the effects of stellar activity and ocean layers.",
+                "ask question": "Lisa asks for opinions on stellar activity, indicating a request for input from the group.",
+                "critical response": "Lisa critically evaluates existing notions about stellar activity and its impact on life, referencing new research that challenges previous beliefs."
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -5128,7 +4904,9 @@
             "start_time": "65:39",
             "end_time": "66:13",
             "annotations": {
-                "provide supporting evidence": "Katherine provides evidence from studies on icy satellites to question Lisa's assumption about the effect of UV flux on exoplanets, suggesting that complex molecules are equally likely to be created or destroyed by radiation, based on laboratory studies from past mission concepts."
+                "Ask question": "The speaker asks a question about an assumption regarding research on exoplanets.",
+                "Identify gap": "The speaker identifies a potential gap in knowledge or assumption about research on exoplanets versus icy satellites.",
+                "Critical response": "The speaker critically evaluates an assumption made about the applicability of research findings to exoplanets."
             }
         },
         {
@@ -5148,7 +4926,7 @@
             "start_time": "66:13",
             "end_time": "66:15",
             "annotations": {
-                "ask clarifying question": "Lisa asks for the names of the people who conducted the research on complex molecules being created or destroyed by radiation, seeking more information about the research Katherine mentioned."
+                "ask question": "The speaker is requesting information about who conducted a specific study or research, indicating a need for clarification or details."
             }
         },
         {
@@ -5168,8 +4946,7 @@
             "start_time": "66:15",
             "end_time": "66:40",
             "annotations": {
-                "provide supporting evidence": "Katherine mentions the Europa Lander mission concept study as a source of information, providing evidence to support the idea that complex molecules can be created or destroyed by radiation.",
-                "acknowledge contribution": "Katherine mentions Morgan Cable and her team, acknowledging their contribution to the Europa Lander mission concept study."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -5189,9 +4966,8 @@
             "start_time": "66:40",
             "end_time": "68:31",
             "annotations": {
-                "provide supporting evidence": "Lisa refers to research from Cambridge University and mentions Demetrius and Schalstek as co-authors, providing evidence to support the idea that a certain UV flux can make reactions more efficient for the origins of life, challenging the notion that quieter stars are always better.",
-                "explain or define term or concept": "Lisa explains the implications of the Cambridge University research, stating that a minimum UV flux might be necessary for the origins of life, which redefines the region where life could exist.",
-                "expand on existing idea": "Lisa expands on the discussion about stellar activity by introducing new research that suggests UV radiation might be beneficial for the origins of life, contrary to the common belief that it's harmful."
+                "acknowledge contribution": "Lisa Kaltenegger acknowledges Morgan's potential contribution by stating she will be a good person to talk to.",
+                "develop idea": "Lisa Kaltenegger discusses and develops the idea that a minimum UV flux might be necessary for life, implying this could redefine regions of life."
             }
         },
         {
@@ -5210,11 +4986,9 @@
             "screenshare_content": "None",
             "start_time": "68:31",
             "end_time": "68:33",
-            "annotations": [
-                {
-                    "express frustration": "Meredith expresses frustration about not understanding a previous discussion, indicating a negative sentiment."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Katherine de Kleer",
@@ -5233,7 +5007,8 @@
             "start_time": "68:33",
             "end_time": "68:37",
             "annotations": {
-                "expand on existing idea": "Katherine is building on the previous discussion about whether stellar activity and UV radiation are good or bad for life, suggesting that there is likely a sweet spot where some radiation is beneficial but too much is harmful."
+                "develop idea": "The speaker is elaborating on an idea previously discussed, suggesting there's a balance needed for factors affecting habitability.",
+                "supportive response": "The speaker is expressing agreement or a nuanced view on a previous idea."
             }
         },
         {
@@ -5253,7 +5028,7 @@
             "start_time": "70:00",
             "end_time": "70:02",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -5273,7 +5048,7 @@
             "start_time": "70:04",
             "end_time": "70:15",
             "annotations": {
-                "ask clarifying question": "Lisa is asking if there are estimates for radiation flux, seeking to understand if there's enough radiation to initiate life, building on the discussion about the role of radiation in the origin of life."
+                "ask question": "The speaker is requesting information or clarification on a specific topic, in this case, about estimates of radiation flux and its relation to starting life."
             }
         },
         {
@@ -5293,7 +5068,9 @@
             "start_time": "70:16",
             "end_time": "70:41",
             "annotations": {
-                "provide supporting evidence": "Katherine states that they can calculate the radiation flux because there are good constraints from radio transfer modeling of profiles, species, and temperature pressure, providing evidence to support the possibility of calculating radiation flux."
+                "develop idea": "Katherine de Kleer is expanding on an existing idea by explaining how calculations can be performed using radio transfer modeling.",
+                "propose new idea": "She proposes a specific application of radio transfer modeling to calculate the amount of a given wavelength that reaches the surface.",
+                "signal expertise": "Katherine de Kleer demonstrates her expertise by discussing technical aspects of radio transfer modeling and its applications."
             }
         },
         {
@@ -5313,9 +5090,8 @@
             "start_time": "70:42",
             "end_time": "71:06",
             "annotations": {
-                "expand on existing idea": "The speaker is expanding on the discussion about the role of UV radiation in the origin of life, by suggesting that finding life on Titan could provide constraints on the amount of UV radiation needed to start life.",
-                "present new idea": "The speaker presents a new idea that the number of planets needed to figure out the solution to the puzzle is related to the external factors impacting habitability.",
-                "express enthusiasm": "The speaker expresses enthusiasm about the possibility of finding life on Titan."
+                "develop idea": "Lisa Kaltenegger is building on the idea of finding life on Titan and its implications for understanding UV requirements for life.",
+                "ask question": "Lisa Kaltenegger asks about the number of planets needed to figure out the solution."
             }
         },
         {
@@ -5335,7 +5111,8 @@
             "start_time": "71:07",
             "end_time": "71:14",
             "annotations": {
-                "present new idea": "Katherine presents a novel idea that interesting chemistry and potentially life could be evolving in the upper atmosphere of a planet and then raining out onto the surface, which has not been previously discussed."
+                "propose new idea": "The speaker introduces a speculative idea that interesting chemistry could be happening in the upper atmosphere where life could evolve.",
+                "develop idea": "The speaker expands on existing ideas about life and atmospheric chemistry by suggesting a specific scenario of life evolving in the upper atmosphere and then moving to the surface."
             }
         },
         {
@@ -5355,7 +5132,7 @@
             "start_time": "71:16",
             "end_time": "71:22",
             "annotations": {
-                "present new idea": "Lisa introduces a novel question about whether life can evolve without a solid surface, which hasn't been explicitly discussed before in the conversation."
+                "ask question": "The speaker is requesting information or clarification about whether life can evolve without a solid surface."
             }
         },
         {
@@ -5374,11 +5151,10 @@
             "screenshare_content": "None",
             "start_time": "71:23",
             "end_time": "71:54",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Noah explains that phosphorus is not volatile and is difficult to have in a non-aqueous environment, relating it to the essentiality of phosphorus for life."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of phosphorus's role in life and its challenges in non-aqueous environments.",
+                "ask question": "The speaker poses a question about the essentiality of phosphorus for life and its implications."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -5396,11 +5172,10 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\". The slide contains images of planets and moons, along with text related to exoplanet research and the search for life.",
             "start_time": "71:57",
             "end_time": "72:15",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa asks Andrew if he feels comfortable reporting out, encouraging him to participate in the final stage of the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites Andrew to contribute his thoughts or a report.",
+                "process management": "The speaker is managing the flow of discussion by directing a question to Andrew for a report."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -5419,9 +5194,7 @@
             "start_time": "72:16",
             "end_time": "72:27",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Andrew acknowledges that he missed part of the discussion, recognizing the contributions of others while he was taking notes."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -5440,11 +5213,9 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\". The slide contains images of planets and moons, along with text related to exoplanet research and the search for life.",
             "start_time": "72:28",
             "end_time": "72:42",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa encourages others to contribute any ideas she might have missed during the breakout session, and then she encourages Keith to share his ideas."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites others to contribute their ideas and thoughts, explicitly encouraging participation in the discussion."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -5463,12 +5234,8 @@
             "start_time": "72:43",
             "end_time": "73:07",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Keith introduces a new project idea to map photospheric abundances of elements important for life in stars and correlate them to planets, which hasn't been discussed before."
-                },
-                "express enthusiasm": {
-                    "Explanation": "Keith expresses enthusiasm about the project by stating that it would be interesting to correlate photospheric abundances to planets."
-                }
+                "propose new idea": "introducing a new project idea to study the correlation between stellar photospheric abundances and planetary elements, specifically phosphorus.",
+                "develop idea": "elaborating on the project by specifying phosphorus as a key element of interest and its current study status."
             }
         },
         {
@@ -5488,7 +5255,7 @@
             "start_time": "73:08",
             "end_time": "73:11",
             "annotations": {
-                "ask clarifying question": "Lisa asks Keith if he can measure photospheric abundances for other elements besides phosphorus in G stars, following Keith's statement about mapping photospheric abundances of elements important for life."
+                "ask question": "The speaker is requesting information about the possibility of doing something for G stars."
             }
         },
         {
@@ -5507,11 +5274,11 @@
             "screenshare_content": "None",
             "start_time": "73:11",
             "end_time": "73:19",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on the existing idea of mapping photospheric abundances in stars, specifying that it is possible for G stars but challenging for M stars, which was brought up by Lisa in the previous turn."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Keith Hawkins is showing his knowledge about stellar spectroscopy and the challenges associated with studying G and M stars.",
+                "identify gap": "He is highlighting the difficulty or challenge with studying M stars.",
+                "offer feedback": "Providing a brief comment on the relative ease of studying G stars versus the challenges with M stars."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -5529,14 +5296,10 @@
             "screenshare_content": "The screen shows a presentation slide with the title \"Exploration of the Solar System\". The slide contains images of planets and moons, along with text related to exoplanet research and the search for life.",
             "start_time": "73:20",
             "end_time": "73:28",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses enthusiasm with the word \"Cool\"."
-                },
-                {
-                    "assign task": "The speaker assigns the task of returning to the main room to the participants."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by instructing the group to prepare to return to the main room.",
+                "acknowledge contribution": "The speaker acknowledges the group's discussion and contributions."
+            }
         },
         {
             "speaker": "Bradford Foley",
@@ -5554,11 +5317,9 @@
             "screenshare_content": "None",
             "start_time": "73:30",
             "end_time": "73:31",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5577,7 +5338,7 @@
             "start_time": "73:50",
             "end_time": "73:51",
             "annotations": {
-                "express frustration": "The utterance expresses frustration about the absence of many people, which could impede the meeting's progress."
+                "process management": "This code applies because Dan Huber is commenting on the attendance of people, which relates to the management of the meeting flow or structure."
             }
         }
     ]

@@ -1,14 +1,14 @@
 {
     "all_speakers": [
-        "Tanya Nguyen",
-        "Melanie Gareau",
+        "Elaine Hsiao",
         "Ashley Ross",
         "Sarkis Mazmanian",
         "Kai Zhang",
+        "Camille Nebeker",
         "Marie",
         "Melanie Gareau UC Davis",
-        "Elaine Hsiao",
-        "Camille Nebeker"
+        "Tanya Nguyen",
+        "Melanie Gareau"
     ],
     "total_speaking_length": 3107,
     "all_data": [
@@ -29,7 +29,7 @@
             "start_time": "00:00",
             "end_time": "00:01",
             "annotations": {
-                "propose decision": "The utterance suggests a concrete action to be taken, which is to 'do the reporter then,' indicating a proposed decision."
+                "assign task": "The speaker is assigning or suggesting a task related to 'the reporter'."
             }
         },
         {
@@ -48,14 +48,10 @@
             "screenshare_content": "None",
             "start_time": "00:01",
             "end_time": "00:06",
-            "annotations": [
-                {
-                    "propose decision": "The speaker is suggesting that someone should take notes during the meeting."
-                },
-                {
-                    "encourage participation": "The speaker is asking if anyone wants to take notes, inviting participation from the group."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is explicitly asking questions about reporting and note-taking.",
+                "process management": "The speaker is managing the discussion flow by inquiring about roles such as note-taking."
+            }
         },
         {
             "speaker": "Marie",
@@ -74,7 +70,7 @@
             "start_time": "00:08",
             "end_time": "00:10",
             "annotations": {
-                "reject idea": "Marie-Claire rejects the idea of taking notes because she just did it."
+                "acknowledge contribution": "Marie-Claire Arrieta verbally recognizes her own previous input (taking notes), indicating she has fulfilled the task."
             }
         },
         {
@@ -94,7 +90,7 @@
             "start_time": "00:12",
             "end_time": "00:13",
             "annotations": {
-                "assign task": "Melanie Gareau volunteers to take notes, which assigns her the task of recording the meeting's proceedings."
+                "Process Management": "This code applies because Melanie Gareau is managing the meeting process by volunteering to take notes."
             }
         },
         {
@@ -114,7 +110,7 @@
             "start_time": "00:17",
             "end_time": "00:24",
             "annotations": {
-                "assign task": "Melanie volunteered to take notes, and Sarkis is opening the prompts to facilitate the note-taking process, assigning himself the task of providing the necessary materials."
+                "process management": "This code applies because Sarkis Mazmanian is managing the meeting flow by preparing to open the prompts."
             }
         },
         {
@@ -133,11 +129,10 @@
             "screenshare_content": "None",
             "start_time": "00:28",
             "end_time": "00:35",
-            "annotations": [
-                {
-                    "assign task": "Kai is confirming that Melanie will take notes, assigning her the task of recording the meeting."
-                }
-            ]
+            "annotations": {
+                "assign task": "The speaker is confirming Melanie's responsibility for taking notes.",
+                "process management": "The speaker is organizing the meeting by setting up a recorder."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -156,7 +151,7 @@
             "start_time": "00:36",
             "end_time": "00:44",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking for confirmation about the location of the prompts, which is a clarifying question to ensure everyone is on the same page."
+                "ask question": "The speaker is seeking confirmation or clarification on the current state of their discussion materials, explicitly asking if they are correct about being on slide 50."
             }
         },
         {
@@ -176,7 +171,7 @@
             "start_time": "00:45",
             "end_time": "00:50",
             "annotations": {
-                "explain or define term or concept": "Kai is clarifying the location of the report out card and the question, ensuring everyone is on the same page regarding the document's structure."
+                "process management": "Kai Zhang is managing the meeting flow by referencing specific slides (54 and 50) to clarify the group's discussion points."
             }
         },
         {
@@ -195,17 +190,11 @@
             "screenshare_content": "None",
             "start_time": "00:50",
             "end_time": "02:11",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the mechanisms of communication between the gut and the brain, including immune, neuronal, small molecule, and hormonal pathways, in response to the question on slide 50."
-                },
-                {
-                    "ask clarifying question": "The speaker asks about the relative importance of different communication mechanisms in specific contexts and the level of understanding of which mechanism is at play, inviting others to share their thoughts."
-                },
-                {
-                    "encourage participation": "The speaker explicitly asks if others have thoughts on the level of understanding of the communication mechanisms."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the diversity of messages between the gut microbiome and the brain.",
+                "develop idea": "The speaker is expanding on existing knowledge by referencing a review and listing mechanisms of communication.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts and ideas."
+            }
         },
         {
             "speaker": "Marie",
@@ -224,9 +213,8 @@
             "start_time": "02:15",
             "end_time": "03:07",
             "annotations": {
-                "present new idea": "The speaker introduces the idea that while there are many surveys on metabolites interacting with the host, it's not well-understood which specific microbes produce them, which is important for modulating the microbiome to change metabolic output.",
-                "expand on existing idea": "The speaker expands on the discussion about the diversity of messages between the gut microbiome and the brain by focusing on the need to identify specific microbes producing metabolites that interact with the host.",
-                "provide supporting evidence": "The speaker supports her idea by mentioning the existence of surveys and exploratory studies on metabolism and metabolites, implying that the lack of knowledge about specific microbial producers is a gap in the existing research."
+                "identify gap": "The speaker explicitly recognizes a lack of knowledge in a particular domain, specifically about which microbes or micro groups produce certain metabolites.",
+                "develop idea": "The speaker expands on the topic by sharing her general perceptions and insights into the interaction between the microbiome and the host."
             }
         },
         {
@@ -246,8 +234,8 @@
             "start_time": "03:08",
             "end_time": "03:55",
             "annotations": {
-                "ask clarifying question": "Kai asks whether \"messages\" refer to physical molecules or the response between systems, seeking clarification on the term's definition in the context of microbiome-brain communication, which is relevant because the group is discussing the diversity of messages that pass between the gut microbiome and the brain.",
-                "explain or define term or concept": "Kai suggests defining \"the message\" first, implying a need to clarify the term's meaning in the context of the discussion, which is relevant because the group is discussing the diversity of messages that pass between the gut microbiome and the brain."
+                "ask question": "Kai Zhang is requesting information or clarification on what is meant by 'messages' in the context of the discussion.",
+                "clarify goal": "By asking for a definition of 'message,' Kai Zhang is seeking clarity on the objectives or what needs to be accomplished in the discussion."
             }
         },
         {
@@ -267,7 +255,8 @@
             "start_time": "03:56",
             "end_time": "04:14",
             "annotations": {
-                "explain or define term or concept": "Sarkis is clarifying Kai's comment by rephrasing it as a need to define the specific small molecules produced by gut bacteria or host induction of small molecules by the microbiome, which is explaining the concept of 'message' in the context of microbiome-brain communication."
+                "develop idea": "Sarkis Mazmanian is expanding on Kai Zhang's comment by specifying what kind of messages he thinks Kai Zhang might be referring to.",
+                "offer feedback": "Sarkis Mazmanian is providing specific direction or specification for the idea presented by Kai Zhang."
             }
         },
         {
@@ -287,7 +276,7 @@
             "start_time": "04:15",
             "end_time": "04:16",
             "annotations": {
-                "express enthusiasm": "Ashley expresses enthusiasm with the statement \"that might be awesome\"."
+                "supportive response": "The speaker expresses agreement and a positive evaluation of a previous idea or suggestion."
             }
         },
         {
@@ -307,7 +296,8 @@
             "start_time": "04:16",
             "end_time": "04:17",
             "annotations": {
-                "encourage participation": "Kai encourages Ashley to speak after she apologizes for interrupting, indicating he wants her to contribute to the discussion."
+                "encourage participation": "Kai Zhang is encouraging Ashley Ross to contribute their thoughts by saying 'No, no, go ahead.'",
+                "supportive response": "Kai Zhang's response is supportive as it invites Ashley Ross to continue speaking."
             }
         },
         {
@@ -326,14 +316,10 @@
             "screenshare_content": "None",
             "start_time": "04:17",
             "end_time": "05:07",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Ashley explains that the choice of technique (mass spec vs. sensors) depends on the research question, defining the strengths of each technique in relation to the type of data they provide (snapshot vs. dynamics)."
-                },
-                {
-                    "expand on existing idea": "Ashley expands on Kai's question about defining 'messages' by relating it to the techniques used to study them, adding details about how different techniques are suited for different aspects of studying the messages."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by discussing the importance of choosing the right technique based on the research question and provides examples of different methods.",
+                "ask question": "The speaker asks for thoughts on how to approach defining messengers, specifically whether to look at a snapshot in time or the dynamics of signaling."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -352,9 +338,8 @@
             "start_time": "05:07",
             "end_time": "06:21",
             "annotations": {
-                "expand on existing idea": "Sarkis builds on the discussion about defining messages by suggesting that it's important to ask structure function questions and find ways to identify bioactive molecules produced by the microbiome, expanding on Ashley's point about techniques and Kai's point about defining messages.",
-                "present new idea": "Sarkis introduces the idea of focusing on structure-function relationships and identifying bioactive molecules to narrow down the relevant chemical space, which hasn't been explicitly discussed before.",
-                "provide supporting evidence": "Sarkis supports his idea by mentioning that the microbiome has a metabolic capacity similar to the liver, implying a vast number of molecules are produced, but not all are relevant, thus supporting the need to constrain the chemical space."
+                "develop idea": "The speaker is expanding on existing ideas about the communication between the gut microbiome and the brain, and discussing the challenges of identifying bioactive molecules.",
+                "propose new idea": "The speaker suggests a potential approach to identifying bioactive molecules, which involves setting up experiments to constrain the chemical space."
             }
         },
         {
@@ -373,11 +358,11 @@
             "screenshare_content": "None",
             "start_time": "06:21",
             "end_time": "08:06",
-            "annotations": [
-                {
-                    "expand on existing idea": "Elaine is building on the previous discussion about function and Kai's point about responses, adding to the ongoing conversation about the diversity of messages between the gut and the brain."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Elaine Hsiao is expanding on existing ideas by considering the diversity of messages and molecular messengers.",
+                "ask question": "Elaine Hsiao is implicitly asking a question about the possibility of a discrete number of messages.",
+                "identify gap": "Elaine Hsiao is implicitly identifying a gap in knowledge about the discreteness of the number of messages."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -395,17 +380,11 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:47",
-            "annotations": [
-                {
-                    "expand on existing idea": "Elaine is expanding on the previous discussion about the diversity of messages passing between the gut microbiome and the brain, specifically focusing on whether the messages are continuous or discrete."
-                },
-                {
-                    "present new idea": "Elaine introduces the idea that the messages transmitted via the vagus nerve might be a limited number with defined functional outputs, rather than a continuous spectrum."
-                },
-                {
-                    "expand on existing idea": "Elaine connects her idea to Sarkis's earlier mention of 'bins,' suggesting that at a physiological level, there might be discrete numbers of messages being sent."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Elaine expands on previous discussions about the nature of messages between the gut and brain.",
+                "ask question": "Elaine asks if there's a limited number of messages with defined functional outputs.",
+                "clarify goal": "Elaine seeks to understand the objectives or outcomes related to how messages are transmitted and function between the gut and brain."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -423,17 +402,11 @@
             "screenshare_content": "None",
             "start_time": "10:48",
             "end_time": "12:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sarkis builds on Elaine's idea about the limited number of messages transmitted through the vagus nerve, suggesting that there might be a finite number of physiological responses in the immune system as well."
-                },
-                {
-                    "express agreement": "Sarkis explicitly agrees with Elaine's point about the physiological responses, stating that it is the next step in understanding the communication between the gut and the brain."
-                },
-                {
-                    "expand on existing idea": "Sarkis expands on the idea of chemical initiation of physiological responses, suggesting that the destination of chemicals doesn't have to be the brain but could be an enteric neuron or other cell in the gut, which then triggers the host's response."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of physiological responses and their potential limitations in the context of gut-brain communication.",
+                "propose new idea": "The speaker introduces the idea that the destination of particular chemicals might not necessarily be the brain but could be other cells in the gut.",
+                "ask question": "The speaker implies a need for further understanding of the complexity of chemical and physiological interactions in gut-brain communication."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -451,12 +424,10 @@
             "screenshare_content": "None",
             "start_time": "12:24",
             "end_time": "12:46",
-            "annotations": [
-                {
-                    "present new idea": "Kai suggests that in certain contexts, they should be able to define the messages passing between the gut and the brain, which is a novel suggestion in the context of the discussion.",
-                    "ask clarifying question": "Kai asks whether small molecules physically cross barriers and translocate between different cells, seeking clarification on the mechanisms of molecular communication."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Kai Zhang is building upon previous ideas by suggesting that certain aspects can be defined in specific contexts.",
+                "ask question": "Kai Zhang asks for clarification on whether small molecules physically transpass different barriers and translocate between cells."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -475,7 +446,8 @@
             "start_time": "12:47",
             "end_time": "12:51",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking about the destination of the molecules, which is a request for explanation or elaboration on a prior statement about small molecules."
+                "ask question": "The speaker is explicitly requesting information about the distance or destination of molecules once they reach a particular point.",
+                "develop idea": "The speaker is also expanding on the existing discussion about molecular communication by inquiring about specifics of molecular behavior."
             }
         },
         {
@@ -495,8 +467,8 @@
             "start_time": "12:51",
             "end_time": "13:04",
             "annotations": {
-                "expand on existing idea": "Kai is building on the previous discussion about small molecules and their role in communication between the gut and the brain, adding his understanding of how microbes and their metabolites might interact with epithelial cells.",
-                "provide supporting evidence": "Kai provides his understanding of the microbiome and their metabolites having access to the epithelial cells of the intestine, suggesting that a subpopulation of these cells may act as information hubs."
+                "develop idea": "The speaker is expanding on existing ideas by sharing his understanding of how microbes and their metabolites interact with epithelial cells in the intestine.",
+                "ask question": "The utterance indirectly poses a question about the role of a subpopulation of epithelial cells, inviting further discussion or confirmation."
             }
         },
         {
@@ -516,7 +488,7 @@
             "start_time": "13:04",
             "end_time": "13:04",
             "annotations": {
-                "express agreement": "Sarkis agrees with Kai's previous statement about epithelial cells serving as an information hub."
+                "None": "The utterance is a brief acknowledgment without adding significant content to the discussion."
             }
         },
         {
@@ -536,7 +508,8 @@
             "start_time": "13:04",
             "end_time": "13:15",
             "annotations": {
-                "expand on existing idea": "Kai is expanding on his previous idea about epithelial cells acting as information hubs, adding that they process and relay information to the next level of neuron cells, possibly involving molecules produced by microbes."
+                "develop idea": "The speaker is expanding on the idea of how information is processed and relayed by cells, building on previous discussions about microbe-host interactions.",
+                "ask question": "The speaker is also implicitly asking for clarification or information about the role of molecules produced by microbes in this process."
             }
         },
         {
@@ -556,7 +529,7 @@
             "start_time": "13:15",
             "end_time": "13:22",
             "annotations": {
-                "reject idea": "Sarkis is rejecting Kai's idea that small molecules need to physically translocate between different neurons and epithelial cells, based on the prior discussion about how the gut and brain communicate."
+                "develop idea": "The speaker is expanding on the idea of how small molecules produced by microbes interact with the host, specifically addressing the need for physical translocation."
             }
         },
         {
@@ -575,12 +548,11 @@
             "screenshare_content": "None",
             "start_time": "13:22",
             "end_time": "14:05",
-            "annotations": [
-                {
-                    "express agreement": "Sarkis agrees with Kai's previous statement about small molecules translocating between cells, indicating agreement with the possibility.",
-                    "provide supporting evidence": "Sarkis provides evidence by mentioning the presence of microbial molecules in the brain of mice and rats, and Elaine's discovery of a molecule entering the brain, supporting the idea that molecules can indeed translocate."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas by providing more information and examples regarding microbial molecules and their interaction with the brain.",
+                "acknowledge contribution": "The speaker references Elaine's discovery, acknowledging her contribution.",
+                "supportive response": "The speaker is providing a supportive response by agreeing with the possibility and adding more information to the discussion."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -599,8 +571,8 @@
             "start_time": "14:05",
             "end_time": "14:30",
             "annotations": {
-                "ask clarifying question": "Melanie is asking a series of questions to clarify the location of impact (gut or brain) and the nature of the signals involved, building on the discussion about how small molecules affect the brain.",
-                "expand on existing idea": "Melanie expands on the existing discussion about the role of metabolites and their impact on the brain by questioning whether the impact is local or distant, and whether the signals are interchangeable, adding complexity to the discussion."
+                "ask question": "The utterance is a series of questions seeking clarification on how bacterial metabolites interact with the gut and brain, and their mechanisms of action.",
+                "develop idea": "The speaker is expanding on existing ideas by considering the mechanisms and locations of action for bacterial metabolites."
             }
         },
         {
@@ -619,14 +591,11 @@
             "screenshare_content": "None",
             "start_time": "14:30",
             "end_time": "15:05",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sarkis mentions detecting for sulfate in the brain of mice, which supports the idea that molecules can reach the brain, building on the discussion about how far molecules travel."
-                },
-                {
-                    "expand on existing idea": "Sarkis expands on the idea of molecules affecting the brain by discussing that just because a molecule is present in the brain doesn't necessarily mean it's mediating a behavioral effect, adding nuance to the discussion about the impact of metabolites."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas about metabolites and their effects on the brain, providing more details.",
+                "ask question": "The speaker is seeking clarity on the role of metabolites in mediating behavioral effects, though not in a direct question format.",
+                "critical response": "The speaker is evaluating and providing a nuanced view on the significance of metabolites in the brain."
+            }
         },
         {
             "speaker": "Marie",
@@ -645,9 +614,9 @@
             "start_time": "15:05",
             "end_time": "15:15",
             "annotations": {
-                "present new idea": "Marie-Claire introduces a novel concept by suggesting the development of a multi-array system to test the activity of gut microbiome-derived molecules on brain cells, which hasn't been explicitly discussed before.",
-                "propose decision": "Marie-Claire proposes a concrete choice for the group to consider by suggesting the development of a system to test the activity of molecules on brain cells.",
-                "ask clarifying question": "Marie-Claire is asking what would be the ideal system to test the activity of molecules on brain cells, seeking input from the group."
+                "ask question": "The speaker is explicitly asking for the ideal system to test the activity of molecules from the gut microbiome, seeking methodological clarification.",
+                "identify gap": "The speaker is implicitly identifying a gap in knowledge about how to effectively test the activity of molecules from the gut microbiome on neurons or brain cells.",
+                "clarify goal": "The speaker's question aims at clarifying the goal of understanding how molecules from the gut microbiome interact with brain cells, by seeking an ideal testing system."
             }
         },
         {
@@ -667,9 +636,8 @@
             "start_time": "15:16",
             "end_time": "16:16",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Marie-Claire's question about testing the activity of molecules from the gut microbiome on brain cells, building on the idea of finding a simpler system than testing each molecule in mice.",
-                "propose decision": "Sarkis proposes using high-throughput approaches to define the function of molecules before conducting mouse experiments, suggesting a concrete choice for the group to consider.",
-                "explain or define term or concept": "Sarkis is explaining the concept of using high-throughput approaches to assign function to molecules, clarifying a potential method for the group."
+                "ask question": "The speaker is explicitly asking for information or suggestions on how to efficiently test the function of molecules.",
+                "develop idea": "The speaker is building upon previous discussions by suggesting the use of high throughput approaches to define the function of molecules."
             }
         },
         {
@@ -689,7 +657,7 @@
             "start_time": "16:16",
             "end_time": "16:17",
             "annotations": {
-                "express agreement": "Marie-Claire agrees with Sarkis's suggestion of using high-throughput approaches to define the function of molecules before conducting mouse experiments, which was in response to her question about a simple system to test the activity of molecules from the gut microbiome on brain cells."
+                "supportive response": "The speaker is expressing agreement or acknowledgment of the previous statement without adding new content."
             }
         },
         {
@@ -709,8 +677,8 @@
             "start_time": "16:17",
             "end_time": "16:43",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Marie-Claire's question about how to test the activity of molecules from the gut microbiome on brain cells, suggesting filtering molecules using gut-brain chip technology or cell culture technologies before moving to organism-level experiments.",
-                "propose decision": "Sarkis proposes using gut-brain chip technology or other cell culture technologies to filter out molecules before conducting mouse experiments, suggesting a concrete choice for the group to consider."
+                "Develop idea": "The speaker is expanding on previous discussions by suggesting a method to filter out molecules, which is a way of elaborating on existing ideas.",
+                "Offer feedback": "The speaker is providing a suggestion for how to proceed with studying the effects of molecules produced by the gut microbiome."
             }
         },
         {
@@ -730,8 +698,9 @@
             "start_time": "16:43",
             "end_time": "17:04",
             "annotations": {
-                "expand on existing idea": "Marie-Claire is expanding on Sarkis's suggestion of using high throughput approaches to define the function of molecules by adding computational prediction approaches as another method.",
-                "provide supporting evidence": "Marie-Claire provides supporting evidence for using computational prediction approaches by stating that the data continues to increase based on single cell seek experiments, which allows for better predictions."
+                "propose new idea": "The speaker introduces the idea of using computational prediction approaches to analyze data from single-cell sequencing experiments for better predictions.",
+                "develop idea": "The speaker elaborates on the proposed idea by discussing the necessity of sufficient data for making better predictions.",
+                "ask question": "The speaker seeks confirmation or agreement on the necessity of having enough data for computational prediction approaches."
             }
         },
         {
@@ -751,7 +720,8 @@
             "start_time": "17:05",
             "end_time": "17:08",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Marie-Claire's suggestion of using computational prediction approaches by suggesting that data can also come from the number of samples in their own experiment, building on the idea of using data to improve predictions."
+                "develop idea": "The speaker is expanding on previous ideas about data sources.",
+                "offer feedback": "The speaker is providing a suggestion or an alternative perspective on how data can be gathered or considered."
             }
         },
         {
@@ -771,7 +741,7 @@
             "start_time": "17:08",
             "end_time": "17:09",
             "annotations": {
-                "express agreement": "Marie-Claire agrees with Sarkis's suggestion of using high-throughput approaches to define the function of molecules before mouse experiments, building on the discussion about testing molecules identified from the gut microbiome on neurons or brain cells."
+                "Supportive response": "Expressing agreement or validation for Sarkis Mazmanian's suggestion about using computational prediction approaches."
             }
         },
         {
@@ -791,9 +761,8 @@
             "start_time": "17:09",
             "end_time": "18:14",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Marie-Claire's idea of using a multi-array system to test molecule activity by suggesting filtering molecules with gut-brain chip or cell culture technologies before organism-level testing.",
-                "provide supporting evidence": "Sarkis provides supporting evidence for high-throughput approaches by suggesting gut-brain chip technology or cell culture technologies as ways to filter out molecules before mouse experiments.",
-                "propose decision": "Sarkis proposes a decision to filter out molecules using gut-brain chip technology or other cell culture technologies before conducting mouse experiments."
+                "offer feedback": "The speaker provides specific suggestions for improvement or modification of existing ideas by suggesting the use of gut brain chip technology or other cell culture technologies.",
+                "develop idea": "The speaker is expanding on existing ideas by discussing methodological approaches to studying molecular effects."
             }
         },
         {
@@ -812,11 +781,10 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:46",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Elaine explains that many molecules derived from the microbiome and detectable in the host lack assigned physiological functions, highlighting the need for further study to understand their mechanisms of action, such as receptor binding or diffusion into cells."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing concepts related to microbially derived molecules and their functions.",
+                "identify gap": "The speaker highlights the challenges and gaps in current knowledge regarding the study of these molecules."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -835,7 +803,7 @@
             "start_time": "20:47",
             "end_time": "20:54",
             "annotations": {
-                "ask clarifying question": "Kai is asking a question to clarify whether a molecule is produced by the microbiome or the neuron system, seeking to understand the origin of the molecule in question, building on the discussion about the diversity of messages and molecular messengers between the gut and the brain."
+                "ask question": "The speaker is requesting information or clarification on the origin of a molecule, specifically whether it is made by the microbial or neuron system."
             }
         },
         {
@@ -855,9 +823,7 @@
             "start_time": "20:54",
             "end_time": "21:46",
             "annotations": {
-                "expand on existing idea": "Elaine expands on the discussion about small molecules and their origin (microbial vs. host), providing the example of serotonin and how microbes can both produce it and stimulate the host to produce it, building on Kai's question about the origin of the molecules.",
-                "explain or define term or concept": "Elaine explains the concept of how microbes can make serotonin de novo and stimulate the host to make serotonin, clarifying the different pathways involved in serotonin production and action.",
-                "provide supporting evidence": "Elaine provides the example of serotonin and their work on it as evidence to support the complexity of the pathways and the co-occurrence of neuronal acting and diffusion of serotonin."
+                "develop idea": "The speaker is expanding on existing ideas by providing a concrete example (serotonin) and detailing how it works, including how microbes can influence serotonin production in the host and its potential effects."
             }
         },
         {
@@ -877,10 +843,8 @@
             "start_time": "21:46",
             "end_time": "22:31",
             "annotations": {
-                "expand on existing idea": "Sarkis expands on the discussion about the diversity of messages between the gut microbiome and the brain by mentioning that immune cells have serotonin receptors, which are another way to transmit signals.",
-                "provide supporting evidence": "Sarkis provides supporting evidence by stating that most of our immune cells are in our gut, which supports the idea that immune cells play a role in transmitting signals between the gut and the brain.",
-                "present new idea": "Sarkis presents the idea that identifying molecules gives handles into biological processes, suggesting a new approach to understanding the communication between the gut and the brain.",
-                "express agreement": "Sarkis expresses agreement with the previous discussion by stating that starting with molecules, identifying active ones, and looking for targets and mechanisms makes sense to him, aligning with the overall direction of the conversation."
+                "develop idea": "The speaker is expanding on previous ideas about the interaction between the gut microbiome and the brain, discussing the role of immune cells and serotonin receptors.",
+                "supportive response": "The speaker is expressing agreement and positive evaluation for the approach of identifying molecules to understand biological processes."
             }
         },
         {
@@ -899,13 +863,10 @@
             "screenshare_content": "None",
             "start_time": "22:31",
             "end_time": "22:57",
-            "annotations": [
-                {
-                    "present new idea": "Sarkis introduces a new idea by asking about the communication from the brain to the gut, which hasn't been discussed previously in the conversation.",
-                    "provide supporting evidence": "Sarkis supports his idea by stating that brain-to-gut communication is less studied and technically more challenging, implying a lack of existing research.",
-                    "explain or define term or concept": "Sarkis explains the concept of brain-to-gut communication by contrasting it with the more commonly studied gut-to-brain direction, clarifying the relative lack of research in this area."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker requests information about communications from the brain to the gut.",
+                "identify gap": "The speaker notes that very little has been done in looking at brain to gut communications."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -924,8 +885,7 @@
             "start_time": "23:07",
             "end_time": "23:30",
             "annotations": {
-                "expand on existing idea": "Melanie expands on the discussion about communication between the gut and the brain by providing an example of brain-to-gut communication, specifically the stress response and the release of cortisol.",
-                "provide supporting evidence": "Melanie supports her point by stating that the stress response is the best-studied example of brain-to-gut communication, providing a specific instance to back up her claim."
+                "None": "No relevant code perfectly applies to this utterance"
             }
         },
         {
@@ -944,14 +904,9 @@
             "screenshare_content": "None",
             "start_time": "23:31",
             "end_time": "23:34",
-            "annotations": [
-                {
-                    "ask clarifying question": "Tanya is asking about the adrenergic system, potentially as another example of brain-to-gut communication, similar to the stress response mentioned by Melanie."
-                },
-                {
-                    "encourage participation": "Tanya says 'sorry, go ahead' which is encouraging the previous speaker to continue."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the adrenergic system, which is a clear example of asking a question."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -970,7 +925,7 @@
             "start_time": "23:34",
             "end_time": "23:35",
             "annotations": {
-                "encourage participation": "Sarkis encourages Tanya to continue speaking after she started to ask a question, indicating he wants to hear her contribution."
+                "None": "No relevant code applies to this utterance as it is a polite expression to facilitate conversation flow without adding new content."
             }
         },
         {
@@ -989,14 +944,11 @@
             "screenshare_content": "None",
             "start_time": "23:35",
             "end_time": "24:22",
-            "annotations": [
-                {
-                    "present new idea": "Tanya introduces the idea of using transcranial magnetic stimulation to study the impact of brain interventions on gut functioning, which hasn't been discussed before."
-                },
-                {
-                    "expand on existing idea": "Tanya expands on the discussion about the brain-gut connection by suggesting behavioral interventions and transcranial magnetic stimulation as potential research avenues, building on Melanie's mention of the stress response as a brain-to-gut pathway."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly mentions a lack of literature on manipulating the brain to understand the nervous system or the gut.",
+                "propose new idea": "The speaker suggests a potential area of study involving transcranial magnetic stimulation to see its effects on gut functioning.",
+                "clarify goal": "The speaker suggests a potential goal for research, which is to study whether certain interventions can impact the gut."
+            }
         },
         {
             "speaker": "Camille Nebeker",
@@ -1015,8 +967,8 @@
             "start_time": "24:22",
             "end_time": "24:34",
             "annotations": {
-                "present new idea": "Camille introduces a new idea about the impact of meditation on the gut, which hasn't been discussed before in the conversation.",
-                "expand on existing idea": "Camille's utterance builds upon Tanya's suggestion of behavioral interventions affecting the gut, by specifically mentioning meditation as another example."
+                "ask question": "The speaker is requesting information about the impact of meditation on the gut.",
+                "encourage participation": "The speaker is inviting discussion or information sharing about meditation's effects on the gut."
             }
         },
         {
@@ -1036,7 +988,7 @@
             "start_time": "24:35",
             "end_time": "24:42",
             "annotations": {
-                "provide supporting evidence": "Tanya provides supporting evidence by mentioning studies that show meditation influences markers of inflammation, backing up Camille's suggestion about the impact of meditation on the gut."
+                "None": "No relevant code directly applies to this utterance based on the provided definitions and the explicit content of the utterance."
             }
         },
         {
@@ -1056,7 +1008,7 @@
             "start_time": "24:42",
             "end_time": "24:43",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking for confirmation about whether meditation dampens inflammation, building on Tanya's previous statement about meditation influencing markers of inflammation."
+                "ask question": "The speaker is requesting information about the effect of meditation on inflammation, seeking clarification on whether it dampens inflammation."
             }
         },
         {
@@ -1076,7 +1028,8 @@
             "start_time": "24:43",
             "end_time": "24:43",
             "annotations": {
-                "provide supporting evidence": "Tanya provides supporting evidence by stating that meditation leads to lower levels of HCRP, which supports the idea that meditation influences markers of inflammation, building on Camille's suggestion to consider the impact of meditation on the gut."
+                "develop idea": "The speaker is expanding on a previous idea about meditation influencing inflammation markers by providing specific information.",
+                "supportive response": "The speaker is providing a supportive response by offering specific data in agreement with the previous discussion."
             }
         },
         {
@@ -1096,7 +1049,7 @@
             "start_time": "24:43",
             "end_time": "25:15",
             "annotations": {
-                "provide supporting evidence": "Tanya mentions a study that looked at fecal cow protecting, providing evidence to support the idea that meditation influences markers of inflammation, which was previously mentioned."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1116,7 +1069,7 @@
             "start_time": "25:15",
             "end_time": "25:16",
             "annotations": {
-                "acknowledge contribution": "Sarkis acknowledges Tanya's contribution regarding the impact of meditation on inflammation markers in the gut, without necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1136,9 +1089,8 @@
             "start_time": "25:17",
             "end_time": "25:56",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Tanya's idea of using brain interventions to study gut-brain communication, by suggesting deep brain stimulation as another method.",
-                "ask clarifying question": "Sarkis is asking what is known about using deep brain stimulation to activate something in the brain and its effects on the rest of the body, building on Tanya's suggestion of transcranial magnetic stimulation.",
-                "encourage participation": "Sarkis is encouraging Tanya to share her knowledge about deep brain stimulation and its potential effects on the gut-brain axis, referencing her earlier contributions."
+                "ask question": "Sarkis Mazmanian is asking for information or clarification about deep brain stimulation or other ways to activate something in the brain.",
+                "develop idea": "He is expanding on the idea of understanding the effects of brain stimulation on the body, specifically mentioning the potential to measure immune responses, GI responses, or changes to the microbiome."
             }
         },
         {
@@ -1158,9 +1110,8 @@
             "start_time": "26:00",
             "end_time": "26:17",
             "annotations": {
-                "propose decision": "Tanya proposes that deep brain stimulation (DBS) would be a really interesting study, building on Sarkis's question about deep brain stimulation or other ways to activate something in the brain.",
-                "expand on existing idea": "Tanya expands on the idea of using deep brain stimulation (DBS) by suggesting that the amount of stimulation can be changed, turned off, and then potentially measure activity in the enteric nervous system or changes in composition over time, building on Sarkis's question about deep brain stimulation or other ways to activate something in the brain.",
-                "express enthusiasm": "Tanya expresses enthusiasm for the idea of studying deep brain stimulation (DBS) by stating that it would be a really interesting study."
+                "propose new idea": "The speaker introduces a new study idea using DBS to measure its effects on the enteric nervous system or changes in composition over time.",
+                "develop idea": "The speaker elaborates on the proposed study idea by suggesting ways to conduct it, such as changing the amount of stimulation and measuring effects over time."
             }
         },
         {
@@ -1180,7 +1131,7 @@
             "start_time": "26:17",
             "end_time": "26:27",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there is any research on whether deep brain stimulation improves GI symptoms in Parkinson's patients, seeking to clarify the connection between brain stimulation and gut health."
+                "ask question": "The speaker is requesting information on whether deep brain stimulation improves GI symptoms associated with Parkinson's disease, making this an explicit question."
             }
         },
         {
@@ -1200,7 +1151,7 @@
             "start_time": "26:34",
             "end_time": "26:35",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided in the codebook, as it is simply an expression of uncertainty."
+                "identify gap": "The speaker explicitly states their lack of knowledge or uncertainty about a specific topic."
             }
         },
         {
@@ -1220,8 +1171,7 @@
             "start_time": "26:35",
             "end_time": "26:41",
             "annotations": {
-                "explain or define term or concept": "The speaker is defining their background as a neuropsychologist, which provides context for their subsequent contributions.",
-                "provide supporting evidence": "The speaker supports their expertise by mentioning their experience working with patients with DBS and observing improved cognitive functioning, which adds credibility to their perspective."
+                "signal expertise": "The speaker explicitly states their own expertise or qualifications related to the task by mentioning they are a neuropsychologist and have worked with patients with DBS."
             }
         },
         {
@@ -1241,8 +1191,8 @@
             "start_time": "26:41",
             "end_time": "26:48",
             "annotations": {
-                "express agreement": "Tanya expresses agreement that deep brain stimulation might improve GI function, building on the discussion about the impact of brain interventions on the gut.",
-                "express uncertainty": "Tanya expresses uncertainty about whether deep brain stimulation would improve GI function, acknowledging that she is not sure of that."
+                "identify gap": "She implies there's a gap in knowledge about whether DBS improves GI symptoms in PD patients.",
+                "supportive response": "Her speculation suggests a potentially positive outlook on the effect of DBS on GI function, though with uncertainty."
             }
         },
         {
@@ -1262,7 +1212,9 @@
             "start_time": "26:50",
             "end_time": "27:16",
             "annotations": {
-                "present new idea": "Kai introduces the optogenetic system as a method to stimulate brain activity, which hasn't been discussed previously in the conversation."
+                "propose new idea": "The speaker suggests using the optogenetic system as an alternative method to study the interaction between the gut microbiome and the brain.",
+                "develop idea": "The speaker builds upon the previous discussion by suggesting an alternative approach.",
+                "signal expertise": "The speaker mentions their background in Biochemistry from UIUC."
             }
         },
         {
@@ -1282,7 +1234,8 @@
             "start_time": "27:17",
             "end_time": "27:19",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Kai's suggestion of optogenetics by adding chemogenetics as another method to stimulate brain activity, building upon the previous idea of using methods to stimulate brain activity in model systems."
+                "develop idea": "The speaker is expanding on an idea by suggesting alternative or additional methods (chemogenetics or other ways).",
+                "ask question": "The utterance ends with 'right?' which seeks confirmation or agreement."
             }
         },
         {
@@ -1302,8 +1255,9 @@
             "start_time": "27:19",
             "end_time": "27:35",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on the previous discussion about stimulating brain activity by mentioning AAVs as a method, building upon Kai's mention of optogenetics and chemogenetics.",
-                "explain or define term or concept": "Sarkis is explaining the concept of using AAVs (adeno-associated viruses) to specifically activate the brain, clarifying how they can be used to deliver threads and stimulate through light or chemicals."
+                "Develop idea": "The speaker is elaborating on a method to activate brain cells using AAVs, building on previous discussion.",
+                "Propose new idea": "The speaker introduces the use of AAVs for specific activation in the brain.",
+                "Offer feedback": "The speaker provides a specific suggestion for how to stimulate brain cells."
             }
         },
         {
@@ -1322,14 +1276,10 @@
             "screenshare_content": "None",
             "start_time": "27:35",
             "end_time": "27:56",
-            "annotations": [
-                {
-                    "expand on existing idea": "The utterance builds on the previous discussion about using optogenetics or chemogenetics to stimulate brain activity and observe the effects on the gut, suggesting to look at the rest of the body after activating the brain."
-                },
-                {
-                    "ask clarifying question": "The utterance asks if optogenetic or chemogenetic approaches have been used to activate specific brain regions and observe the effects on the rest of the body."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks a rhetorical or speculative question about previous statements or ideas.",
+                "develop idea": "The speaker is responding to and slightly building upon previous ideas or discussions."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -1348,7 +1298,8 @@
             "start_time": "27:56",
             "end_time": "27:56",
             "annotations": {
-                "expand on existing idea": "Sarkis is building on the discussion about manipulating brain activity to understand its effects on the gut, mentioning that he has seen people use optogenetics or chemogenetics to stimulate brain activity and study the gut-brain vagal system, which is a specific example of the general approach being discussed."
+                "acknowledge contribution": "The speaker acknowledges that they have seen people work on the gut-brain vagal system, recognizing previous contributions.",
+                "supportive response": "The statement supports the idea of using certain approaches for the gut-brain vagal system by mentioning existing work."
             }
         },
         {
@@ -1368,7 +1319,7 @@
             "start_time": "27:56",
             "end_time": "28:13",
             "annotations": {
-                "expand on existing idea": "Elaine is building on the previous discussion about brain-gut communication by suggesting specific methods (chemogenetics or optogenetics) to study afferent and efferent signaling in the NTS, which was mentioned in the previous turn."
+                "develop idea": "Elaine Hsiao is expanding on previous discussions or general knowledge by specifying her approach to studying NTS, afferent and efferent signaling, and the use of chemogenetics or optogenetics."
             }
         },
         {
@@ -1387,17 +1338,11 @@
             "screenshare_content": "None",
             "start_time": "28:13",
             "end_time": "28:55",
-            "annotations": [
-                {
-                    "expand on existing idea": "Elaine expands on the discussion about the vagus nerve and its role in gut-brain communication, building on previous mentions of the vagus nerve and the types of messages being sent between the gut and the brain."
-                },
-                {
-                    "provide supporting evidence": "Elaine provides supporting evidence by mentioning the projections of the vagus nerve to the hippocampus, substantia nigra, and striatum, suggesting its involvement in more functions than just feeding and nausea."
-                },
-                {
-                    "express enthusiasm": "Elaine expresses enthusiasm by stating that she finds the vagus nerve's diverse functions \"really kind of mysterious and and interesting.\""
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas, specifically discussing the functions of the vagus nerve and its projections.",
+                "identify gap": "The speaker mentions that most studies focus on feeding behavior but suggests there are more functions of the vagus nerve to consider.",
+                "supportive response": "The speaker is expressing a positive view towards exploring more functions of the vagus nerve."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -1416,7 +1361,8 @@
             "start_time": "30:00",
             "end_time": "30:05",
             "annotations": {
-                "encourage participation": "Elaine is inviting others in the group to contribute their knowledge, as she acknowledges a gap in her own understanding and suggests that others might know more."
+                "identify gap": "Elaine Hsiao explicitly recognizes a gap in her knowledge.",
+                "encourage participation": "Elaine Hsiao invites others to contribute by suggesting they might know more about the topic."
             }
         },
         {
@@ -1436,12 +1382,8 @@
             "start_time": "30:15",
             "end_time": "30:30",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Sarkis acknowledges the previous discussion about messaging back and forth, indicating he recognizes the contribution of others."
-                },
-                "present new idea": {
-                    "Explanation": "Sarkis introduces the idea that more is known about gut-to-brain communication than brain-to-gut communication, which is a new point in the conversation."
-                }
+                "clarify goal": "The speaker is discussing and clarifying the current understanding and objectives regarding gut-brain and brain-gut communication.",
+                "summarize conversation": "The speaker is also summarizing or referencing previous discussion points (bullet points) and directing the conversation."
             }
         },
         {
@@ -1461,8 +1403,8 @@
             "start_time": "30:30",
             "end_time": "30:53",
             "annotations": {
-                "expand on existing idea": "Sarkis is elaborating on the second bullet point of the discussion, which concerns the unidirectional or bidirectional channels of communication between the gut and the brain, building upon the previous discussion about the directionality of communication.",
-                "ask clarifying question": "Sarkis is questioning the degree of directionality from the brain to the gut, the context in which it occurs, and the mediators involved, seeking clarification on the nature of brain-to-gut communication."
+                "ask question": "The speaker is requesting information or clarification on the directionality and mediators of communication between the brain and the gut.",
+                "develop idea": "The speaker is discussing and evaluating the current understanding of the bidirectional communication between the brain and the gut."
             }
         },
         {
@@ -1481,14 +1423,10 @@
             "screenshare_content": "None",
             "start_time": "30:53",
             "end_time": "31:14",
-            "annotations": [
-                {
-                    "ask clarifying question": "Sarkis is asking what signals the vagus nerve transmits from the brain to the gut, seeking clarification on the effects and responses mediated by the vagus nerve."
-                },
-                {
-                    "encourage participation": "Sarkis encourages others to contribute by saying \"maybe you guys know\" before asking his question."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the signals transmitted by the vagus nerve from the brain to the gut and their effects.",
+                "develop idea": "The speaker is expanding on existing ideas by discussing the HPA example and inquiring about specific mechanisms like gastric motility as potential effects of brain to gut communication via the vagus nerve."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -1506,14 +1444,11 @@
             "screenshare_content": "None",
             "start_time": "31:16",
             "end_time": "32:12",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that classically, the signals transmitted from the brain to the gut via the vagus nerve are motor neurons, leading to motor responses like motility and contractions, clarifying the type of communication typically associated with this pathway."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the discussion about brain-to-gut communication by questioning the established understanding of the vagus nerve's directionality and suggesting a potential imbalance in sensory signals and communication pathways, building on Sarkis's question about the effects of brain-to-gut signals mediated by the vagus nerve."
-                }
-            ]
+            "annotations": {
+                "develop idea": "She is expanding on the idea of how the vagus nerve communicates and its implications.",
+                "ask question": "She asks a rhetorical question about the diversity of sensory signals.",
+                "identify gap": "She points out a gap in understanding efferent communication from the brain to the gut."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -1531,11 +1466,10 @@
             "screenshare_content": "None",
             "start_time": "32:12",
             "end_time": "32:18",
-            "annotations": [
-                {
-                    "present new idea": "Elaine presents the idea that communication from the brain to the gut might not be through nerve fibers but through immune cells or molecules, which is a novel consideration in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The utterance introduces a new idea about the mechanism of communication in the efferent direction, suggesting it could be through immune or molecules instead of fibers.",
+                "develop idea": "The utterance builds upon the existing discussion about gut-brain communication by offering an alternative perspective on efferent communication mechanisms."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -1554,7 +1488,7 @@
             "start_time": "32:21",
             "end_time": "32:23",
             "annotations": {
-                "encourage participation": "Sarkis encourages Kai to speak, inviting him to contribute to the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1573,14 +1507,10 @@
             "screenshare_content": "The screen shows a background image of the University of Illinois campus with trees and a building. The speaker's name and affiliation are displayed at the bottom.",
             "start_time": "32:24",
             "end_time": "32:41",
-            "annotations": [
-                {
-                    "present new idea": "Kai introduces a novel idea of cutting off the central nervous system to observe the gut's fundamental functions, drawing an analogy to frog reflection experiments, which hasn't been discussed before."
-                },
-                {
-                    "ask clarifying question": "Kai is questioning whether the brain is actually needed for certain fundamental functions of the gut, wondering if experiments have been done to test this by cutting off the central nervous system."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests a specific experimental approach to investigate the brain's role in gut functions.",
+                "ask question": "The speaker asks if experiments have been done to see if the brain needs to be involved in certain fundamental functions of the gut."
+            }
         },
         {
             "speaker": "Ashley Ross",
@@ -1599,7 +1529,7 @@
             "start_time": "32:48",
             "end_time": "33:12",
             "annotations": {
-                "provide supporting evidence": "Ashley provides evidence from studies about cutting off sympathetic neural innervation and its effect on lymphocyte proliferation in the gut, supporting the discussion about brain-gut communication."
+                "supportive response": "The speaker is expressing agreement or validation for the discussion by providing evidence from studies."
             }
         },
         {
@@ -1619,7 +1549,8 @@
             "start_time": "33:12",
             "end_time": "33:17",
             "annotations": {
-                "provide supporting evidence": "Ashley provides evidence of studies where sympathetic neural innervation was cut off in the gut using OHDA, which disrupted various functions, supporting the discussion on brain-gut communication."
+                "develop idea": "Ashley is expanding on previous discussions by providing a specific example of an experiment and its effects on the gut.",
+                "signal expertise": "Ashley demonstrates knowledge of specific experimental techniques (OHDA) and their implications for gut function."
             }
         },
         {
@@ -1639,7 +1570,7 @@
             "start_time": "33:13",
             "end_time": "33:14",
             "annotations": {
-                "acknowledge contribution": "Kai acknowledges Ashley's contribution about studies where sympathetic neural innervation was cut off and how it affects the gut."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1659,7 +1590,7 @@
             "start_time": "33:14",
             "end_time": "33:16",
             "annotations": {
-                "express agreement": "Kai agrees with the previous discussion about the brain's involvement in gut function, building on Ashley's comment about cutting off sympathetic neural innervation and its effects on the gut."
+                "develop idea": "The speaker is making a general statement about the brain's involvement, building upon previously discussed ideas."
             }
         },
         {
@@ -1679,7 +1610,7 @@
             "start_time": "33:16",
             "end_time": "33:17",
             "annotations": {
-                "express agreement": "Ashley agrees with Kai's statement that the brain is involved in gut function, building on the discussion about the brain's role in gut function and experiments involving cutting off the central nervous system."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1698,11 +1629,10 @@
             "screenshare_content": "None",
             "start_time": "33:18",
             "end_time": "33:45",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Marie-Claire mentions that experiments focusing on afferent or efferent vagal nerve have been done, supporting the discussion about brain-gut communication."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker references and acknowledges previous physiological experiments related to the vagal nerve.",
+                "identify gap": "The speaker notes they cannot remember the specifics of the experiments and would have to look them up."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -1720,11 +1650,9 @@
             "screenshare_content": "None",
             "start_time": "33:46",
             "end_time": "34:11",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sarkis recalls a study where mice given six hydroxy dopamine developed constipation, supporting the idea that brain-gut communication influences gut function, which was prompted by Ashley's mention of sympathetic neural innervation experiments."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks about the mediation of the effect observed in a study, showing curiosity about the underlying mechanism."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -1743,7 +1671,7 @@
             "start_time": "34:11",
             "end_time": "34:12",
             "annotations": {
-                "encourage participation": "Sarkis says \"Go ahead\" to encourage someone to speak, as Tanya and Sarkis were talking at the same time."
+                "encourage participation": "The speaker is inviting another participant to contribute to the discussion."
             }
         },
         {
@@ -1763,7 +1691,7 @@
             "start_time": "34:12",
             "end_time": "34:16",
             "annotations": {
-                "ask clarifying question": "Kai asks a question to clarify whether dopamine was applied to the brain, following Sarkis's mention of giving six hydroxy dopamine to mice and observing constipation."
+                "ask question": "The speaker is requesting information or clarification on a prior statement or idea proposed by another group member."
             }
         },
         {
@@ -1782,14 +1710,9 @@
             "screenshare_content": "None",
             "start_time": "34:16",
             "end_time": "34:21",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Sarkis explains that six hydroxy dopamine is a neurotoxin, clarifying the term for the group."
-                },
-                {
-                    "assign task": "Sarkis assigns himself the task of looking up the paper right now."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -1808,7 +1731,8 @@
             "start_time": "34:29",
             "end_time": "34:45",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking a question to the group to clarify how to perturb neuronal function to observe the microbial response, which is related to the discussion about brain-gut communication."
+                "ask question": "The speaker is requesting information on methods to perturb neuronal function to watch the microbial response, which is a clear example of asking a question.",
+                "identify gap": "The question implies a recognition of a gap in knowledge regarding methods to study the effect of perturbing neuronal function on the microbial response."
             }
         },
         {
@@ -1827,14 +1751,10 @@
             "screenshare_content": "The screen shows a background image of the University of Illinois campus with trees and a building. The speaker's name and affiliation are displayed at the bottom.",
             "start_time": "34:46",
             "end_time": "35:11",
-            "annotations": [
-                {
-                    "present new idea": "Kai introduces the idea of using an optogenetic system to disturb neuro signaling, which is a novel approach not previously discussed in this specific context."
-                },
-                {
-                    "expand on existing idea": "Kai expands on the idea of perturbing neuronal function by mentioning that his lab is developing an optogenetic system to disturb neuro signaling of neuron cells, building upon the previous question about perturbing neuronal function."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking if others have seen or done similar work related to optogenetic systems.",
+                "propose new idea": "The speaker introduces the idea of developing an optogenetic system to disturb neuronal signaling."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -1853,8 +1773,8 @@
             "start_time": "35:11",
             "end_time": "35:22",
             "annotations": {
-                "expand on existing idea": "Kai is expanding on the idea of perturbing neuronal function to observe the microbial response, by mentioning that his lab has developed an optogenetic system to disturb neuron signaling, which is a way to perturb neuronal function.",
-                "present new idea": "Kai presents the idea of using their optogenetic system in a mouse model to specifically disturb the signaling of a subpopulation of neurons, which is a novel application in the context of the discussion."
+                "develop idea": "The speaker is elaborating on an approach for studying neuron signaling and regeneration.",
+                "offer feedback": "The speaker provides a suggestion for how to specifically disturb the signaling of a population of neurons."
             }
         },
         {
@@ -1874,7 +1794,7 @@
             "start_time": "35:22",
             "end_time": "35:31",
             "annotations": {
-                "expand on existing idea": "Kai is expanding on the previous discussion about perturbing neuronal function, adding transcranial magnetic stimulation as another method, building on Tanya's suggestion of TMS as a potential intervention."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1893,14 +1813,9 @@
             "screenshare_content": "None",
             "start_time": "35:31",
             "end_time": "36:02",
-            "annotations": [
-                {
-                    "ask clarifying question": "Sarkis is asking Kai to provide more details about the context of his optogenetic system experiments, specifically inquiring about the experimental conditions (disease state) and how the brain regions for activation are selected, following Kai's description of using optogenetics to disturb neuron signaling."
-                },
-                {
-                    "encourage participation": "Sarkis is directly asking Kai about his work, encouraging him to elaborate on the specifics of his experiments after Kai mentioned developing an optogenetic system."
-                }
-            ]
+            "annotations": {
+                "ask question": "The utterance is a direct request for information or clarification from Kai Zhang about the context and method of choosing regions for activation."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -1918,14 +1833,9 @@
             "screenshare_content": "The screen shows a background image of the University of Illinois campus with trees and a building. The speaker's name and affiliation are displayed at the bottom.",
             "start_time": "36:02",
             "end_time": "36:26",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the model organism they are using, Xenopus embryo, in their research."
-                },
-                {
-                    "expand on existing idea": "The speaker is elaborating on their previous statement about developing an optogenetic system, adding details about their current use of Xenopus embryo and their confidence in applying the same system to other organisms."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on their research approach by providing details about their methods, specifically mentioning the use of Xenopus embryo and optogenetic systems in studying neuron differentiation and repair."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -1943,11 +1853,10 @@
             "screenshare_content": "The screen shows a background image of the University of Illinois campus with trees and a building. The speaker's name and affiliation are displayed at the bottom.",
             "start_time": "36:26",
             "end_time": "36:38",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kai is expanding on his previous statement about developing an optogenetic system, adding that they are generating AAV to push it to the mouse brain system and are trying to look at spinal cord injury model."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on their ongoing research approach involving AAV in mouse brain systems for spinal cord injury studies.",
+                "identify gap": "The speaker recognizes a challenge or gap in current research, noting that CNS is much harder to regenerate."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -1966,7 +1875,7 @@
             "start_time": "36:38",
             "end_time": "36:40",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1985,12 +1894,11 @@
             "screenshare_content": "None",
             "start_time": "36:40",
             "end_time": "37:27",
-            "annotations": [
-                {
-                    "express enthusiasm": "Sarkis expresses enthusiasm about the discussion, indicating excitement about the topic.",
-                    "provide supporting evidence": "Sarkis provides supporting evidence by mentioning a study from his lab on bio archive that perturbed neuronal function and observed microbial responses, adding credibility to the discussion about perturbing neuronal function to watch the microbial response."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on a specific study, providing details about the methodology and findings.",
+                "signal expertise": "The speaker demonstrates expertise by discussing specific scientific techniques (chemogenetics, DREADs) and research findings.",
+                "supportive response": "The tone is informative and positive, indicating a supportive response to the discussion."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2009,9 +1917,8 @@
             "start_time": "37:27",
             "end_time": "37:38",
             "annotations": {
-                "provide supporting evidence": "Sarkis mentions that there is evidence that neurons signal to epithelial cells that make antimicrobial peptides, supporting the idea that perturbing neuronal function can affect the microbiome.",
-                "expand on existing idea": "Sarkis expands on the idea of perturbing neuronal function to observe the microbial response, building on his previous statement about their study where they delivered dreads to ENS neurons and observed changes in the microbiome and metabolome.",
-                "explain or define term or concept": "Sarkis explains that the changes in the microbiome and metabolome are associated, implying a connection between the two, and also mentions that the changes in motility could be a factor."
+                "develop idea": "The speaker is expanding on the discussion about the effects of neuronal stimulation on the microbiome and metabolome.",
+                "ask question": "The speaker asks a rhetorical question about the reasons behind the observed effects."
             }
         },
         {
@@ -2031,7 +1938,9 @@
             "start_time": "37:38",
             "end_time": "37:42",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on the idea of perturbing neuronal function to observe the microbial response, which he introduced in the previous turn by describing an experiment where activation of cholinergic and dopaminergic neurons led to changes in the microbiome and metabolome of mice."
+                "develop idea": "The speaker is expanding on existing ideas about gut-brain interaction by considering different mechanisms.",
+                "encourage participation": "The speaker invites further thought on the implications of changing gut physiology.",
+                "clarify goal": "The discussion aims to clarify the understanding of gut-brain interaction mechanisms."
             }
         },
         {
@@ -2051,7 +1960,7 @@
             "start_time": "37:42",
             "end_time": "37:42",
             "annotations": {
-                "acknowledge contribution": "Kai acknowledges Sarkis's previous statement about the changes in the microbiome and metabolome of mice after activation of cholinergic and dopaminergic neurons."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2071,8 +1980,9 @@
             "start_time": "37:42",
             "end_time": "38:06",
             "annotations": {
-                "provide supporting evidence": "Sarkis mentions a paper on bioarchive to support the idea that neuronal function can be perturbed to observe microbial responses, providing evidence from his lab's study.",
-                "expand on existing idea": "Sarkis expands on the question of perturbing neuronal function by describing how his lab delivered dreads to specific neurons in the ENS to study the microbial response."
+                "ask question": "The speaker asks a question about perturbing neuronal function to watch the microbial response.",
+                "develop idea": "The speaker is discussing and elaborating on a research approach or idea.",
+                "clarify goal": "The speaker is discussing a research goal or question."
             }
         },
         {
@@ -2092,8 +2002,7 @@
             "start_time": "38:06",
             "end_time": "38:23",
             "annotations": {
-                "provide supporting evidence": "Sarkis is providing evidence from a study in his lab where they perturbed neuronal function and measured the microbial response, supporting the idea that neuronal function can influence the microbiome.",
-                "explain or define term or concept": "Sarkis explains that C21 is a chemogenetic activator, clarifying the method used in the study he is describing."
+                "develop idea": "The speaker is elaborating on an experimental approach and its results, providing details about the use of chemogenetics and the measurement of microbiome and metabolites."
             }
         },
         {
@@ -2112,11 +2021,10 @@
             "screenshare_content": "None",
             "start_time": "38:23",
             "end_time": "38:33",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sarkis is providing details about the microbiome data, mentioning it is longitudinal at the metabo level and the sequence contents are at the last time point, to support the claim that perturbing neuronal function can affect the microbial response."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing the status of their data analysis, mentioning that the microbiome data is longitudinal and sequence contents are at the last time point.",
+                "develop idea": "The speaker is elaborating on previous discussion points regarding the analysis of microbiome data."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2135,7 +2043,8 @@
             "start_time": "38:33",
             "end_time": "39:01",
             "annotations": {
-                "provide supporting evidence": "Sarkis is providing evidence from a study in his lab where activation of cholinergic and dopaminergic neurons led to changes in the microbiome and metabolome of mice, supporting the idea that perturbing neuronal function can affect the microbial response, which was the topic of discussion."
+                "develop idea": "The speaker is discussing and elaborating on specific research findings related to the activation of neurons and their effects on the microbiome and metabolites.",
+                "summarize conversation": "The utterance summarizes a part of the conversation discussing research findings on the effects of neuronal activation on the microbiome."
             }
         },
         {
@@ -2155,7 +2064,7 @@
             "start_time": "39:01",
             "end_time": "39:03",
             "annotations": {
-                "express agreement": "Sarkis is agreeing with the idea that perturbing neuronal function can lead to a microbial response, which was the topic of discussion in the previous utterances."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2175,8 +2084,8 @@
             "start_time": "39:03",
             "end_time": "39:13",
             "annotations": {
-                "provide supporting evidence": "Sarkis mentions that changes in neuronal function can lead to changes in motility, which could explain the observed changes in the microbiome, providing a potential mechanism to support his previous statement about perturbing neuronal function to watch the microbial response.",
-                "explain or define term or concept": "Sarkis explains that changes in motility could be a reason for the changes in the microbiome, clarifying a potential mechanism of action."
+                "ask question": "The speaker is inquiring about the reason behind a phenomenon.",
+                "develop idea": "The speaker is providing a possible explanation related to changes in motility."
             }
         },
         {
@@ -2196,8 +2105,7 @@
             "start_time": "39:13",
             "end_time": "39:31",
             "annotations": {
-                "provide supporting evidence": "Sarkis mentions a paper on bioarchive to support the idea that neuronal function can be perturbed to observe microbial responses, providing evidence from a study where DREADDs were delivered to ENS neurons.",
-                "expand on existing idea": "Sarkis is expanding on the question of perturbing neuronal function to watch the microbial response by describing a specific study conducted in his lab."
+                "develop idea": "The speaker is elaborating on a study from their lab related to neuronal function and microbial response, building on the context of previous discussions."
             }
         },
         {
@@ -2216,14 +2124,10 @@
             "screenshare_content": "None",
             "start_time": "39:31",
             "end_time": "39:40",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Sarkis explains that the activation was done with C21, which is chemogenetics, to clarify the method used in their study."
-                },
-                {
-                    "provide supporting evidence": "Sarkis mentions that the method is pretty specific, implying that the signals are unlikely to originate from the brain, which supports the claim that they are perturbing neuronal function to observe the microbial response."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker questions the role of the brain in signaling, implying skepticism about brain-originating signals.",
+                "develop idea": "The speaker elaborates on the experimental method using chemogenetics to activate neurons."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2241,12 +2145,10 @@
             "screenshare_content": "None",
             "start_time": "39:40",
             "end_time": "39:54",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sarkis mentions \"massive changes for the microbiome and associated metabo\" to support the idea that perturbing neuronal function can affect the microbial response, building on the previous discussion about ways to perturb neuronal function and observe the microbial response.",
-                    "explain or define term or concept": "Sarkis explains that the changes in the microbiome and metabo are linked to changes in motility, clarifying a potential mechanism by which neuronal function affects the microbial response, which is relevant to the discussion about perturbing neuronal function to watch the microbial response."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is discussing and expanding on the findings of a study about perturbing neuronal function and its effects on the microbiome.",
+                "identify gap": "The speaker acknowledges a lack of understanding about why certain changes in the microbiome occur."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2264,11 +2166,9 @@
             "screenshare_content": "None",
             "start_time": "39:54",
             "end_time": "40:00",
-            "annotations": [
-                {
-                    "ask clarifying question": "Sarkis is asking a clarifying question about the method being used to analyze metabolites or quantify species, building on the previous discussion about perturbing neuronal function and observing the microbial response."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on how someone is planning to study or quantify metabolites or microbial species."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2286,14 +2186,10 @@
             "screenshare_content": "None",
             "start_time": "40:00",
             "end_time": "40:15",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sarkis mentions that activation of chat neurons led to experimentally induced diarrhea in mice, supporting the idea that perturbing neuronal function can affect the microbiome and metabolome, building on his previous statement about their study on bioarchive."
-                },
-                {
-                    "express humor": "Sarkis uses the phrase \"experimentally induced diarrhea in the mice\" in a slightly humorous way to describe the effect of activating chat neurons, adding a lighthearted tone to the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on previous statements about the effects of neuronal activation on the microbiome and metabolome.",
+                "offer feedback": "The speaker provides an interpretation (experimentally induced diarrhea) for the observed effects, which can be seen as a form of feedback."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -2312,7 +2208,7 @@
             "start_time": "40:18",
             "end_time": "40:27",
             "annotations": {
-                "ask clarifying question": "Melanie is asking Sarkis for more details about the experiment he described, specifically inquiring about whether they checked for ion transport, permeability, tight junctions, and neuronal responses, to better understand the mechanisms behind the observed microbiome changes."
+                "ask question": "The speaker is requesting information about specific experimental measurements or results, indicating an inquiry about methods or findings."
             }
         },
         {
@@ -2332,12 +2228,8 @@
             "start_time": "40:28",
             "end_time": "40:50",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Sarkis acknowledges Melanie's question about ion transport, permeability, tight junctions, and neuronal responses being checked, indicating he recognizes her input."
-                },
-                "express humor": {
-                    "Explanation": "Sarkis expresses humor by stating that the student graduated and left before they did any real biology, implying that the paper was more focused on tools than biological findings."
-                }
+                "develop idea": "The speaker is expanding on their previous statements about a study they conducted, providing more details about its scope and limitations.",
+                "identify gap": "The speaker explicitly mentions that they did not test certain mechanisms physiologically, indicating a gap in their research."
             }
         },
         {
@@ -2357,7 +2249,7 @@
             "start_time": "40:51",
             "end_time": "40:53",
             "annotations": {
-                "ask clarifying question": "Kai is asking Sarkis to confirm if the paper he mentioned is from Brian Yu, seeking clarification on the source of the information."
+                "ask question": "The speaker is requesting information or confirmation about the paper's authorship."
             }
         },
         {
@@ -2377,7 +2269,7 @@
             "start_time": "40:53",
             "end_time": "40:54",
             "annotations": {
-                "express agreement": "Sarkis explicitly agrees with Kai's statement, confirming their shared understanding."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2397,7 +2289,7 @@
             "start_time": "40:55",
             "end_time": "40:55",
             "annotations": {
-                "acknowledge contribution": "Kai acknowledges Sarkis's previous explanation of his lab's study on perturbing neuronal function and its effect on the microbiome."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2417,8 +2309,8 @@
             "start_time": "41:01",
             "end_time": "41:11",
             "annotations": {
-                "provide supporting evidence": "Sarkis refers to evidence in mice to support the idea that perturbing neuronal function can affect the microbiome, building on the discussion about ways to perturb neuronal function and observe microbial responses.",
-                "express agreement": "Sarkis expresses agreement with the idea that perturbing neuronal function can affect the microbiome, based on evidence from his lab's study."
+                "develop idea": "The speaker is expanding on existing ideas by specifying that for a particular population of enteric neurons, there is some evidence supporting the influence of neuronal manipulation on the microbiome.",
+                "offer feedback": "The speaker provides a nuanced view by mentioning 'a specific population of enteric neurons,' which can be seen as offering feedback on how previous ideas might be refined."
             }
         },
         {
@@ -2438,7 +2330,8 @@
             "start_time": "41:14",
             "end_time": "41:16",
             "annotations": {
-                "ask clarifying question": "Kai is asking about the effects of the brain on the enteric nervous system (ENS), following a discussion about the ENS affecting the brain, thus seeking clarification on the reverse direction of influence."
+                "ask question": "The speaker is requesting information or clarification on the topic of brain to ENS communication.",
+                "None": "No additional codes apply as the utterance primarily functions as a question."
             }
         },
         {
@@ -2458,7 +2351,7 @@
             "start_time": "41:21",
             "end_time": "41:25",
             "annotations": {
-                "ask clarifying question": "Kai is asking a question to clarify the connection between the brain and the ENS system, following a discussion about perturbing neuronal function and its effects on the microbiome."
+                "ask question": "The speaker is requesting information about the connection between the brain and the ENS system, indicating a need for clarification or knowledge on this specific topic."
             }
         },
         {
@@ -2478,7 +2371,8 @@
             "start_time": "41:29",
             "end_time": "41:33",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking for clarification on the connection between the brain and the ENS, specifically if Kai is referring to connections beyond what has already been discussed, seeking to understand the scope of Kai's question."
+                "ask question": "The speaker is requesting clarification or more information on the topic of communication directly to the ENS.",
+                "develop idea": "The speaker is also expanding on a previously discussed topic, indicating interest in further exploration of the idea."
             }
         },
         {
@@ -2497,14 +2391,10 @@
             "screenshare_content": "None",
             "start_time": "41:33",
             "end_time": "41:45",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kai is building on the discussion of the paper by Brian Yu, which showed ENS to gut communication, by asking about what regulates the ENS, thus expanding on the topic of gut-brain communication."
-                },
-                {
-                    "ask clarifying question": "Kai is asking about the upstream connection regulating the ENS, seeking clarification on what controls the enteric nervous system."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker explicitly asks a question about what regulates ENS.",
+                "identify gap": "The speaker highlights a lack of understanding regarding the regulation of ENS."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -2522,11 +2412,10 @@
             "screenshare_content": "None",
             "start_time": "41:46",
             "end_time": "42:04",
-            "annotations": [
-                {
-                    "expand on existing idea": "Elaine is expanding on Kai's question about the connection between the brain and the ENS system by describing the connections from vagal neurons and the spinal path."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The utterance expands on existing ideas about neural connections and pathways, specifically discussing the role of vagal neurons and spinal paths.",
+                "signal expertise": "Elaine explicitly states her knowledge about specific neural pathways and their components."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2545,7 +2434,7 @@
             "start_time": "42:05",
             "end_time": "42:07",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking a question to clarify the type of signaling involved, building on the previous discussion about the connection between the brain and the ENS."
+                "ask question": "The speaker is explicitly asking for information or clarification on whether something is adrenergic signaling."
             }
         },
         {
@@ -2565,7 +2454,7 @@
             "start_time": "42:08",
             "end_time": "42:08",
             "annotations": {
-                "express agreement": "Elaine agrees with the previous statement about the connection between the brain and the ENS system."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2585,8 +2474,7 @@
             "start_time": "42:13",
             "end_time": "42:22",
             "annotations": {
-                "expand on existing idea": "Melanie expands on the discussion about brain-gut communication by stating that the gut can technically function independently, even though it doesn't in reality, building on the previous discussion about the vagus nerve and the connection between the brain and the ENS.",
-                "provide supporting evidence": "Melanie supports her statement by saying that the gut can be severed from the CNS and still maintain some function independently, providing evidence for the gut's independent capabilities."
+                "None": "No relevant code directly applies to this utterance"
             }
         },
         {
@@ -2606,7 +2494,7 @@
             "start_time": "42:22",
             "end_time": "42:23",
             "annotations": {
-                "express agreement": "Melanie expresses agreement with a previous statement, indicated by her saying \"Yeah.\""
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2626,7 +2514,7 @@
             "start_time": "42:25",
             "end_time": "42:28",
             "annotations": {
-                "expand on existing idea": "Sarkis is expanding on Melanie's previous statement that the gut can function independently by adding a caveat that even if neuronally severed, chemical communication likely remains."
+                "develop idea": "The speaker elaborates on the concept of severing connections between the gut and the central nervous system, distinguishing between neuronal and chemical connections."
             }
         },
         {
@@ -2646,9 +2534,8 @@
             "start_time": "42:33",
             "end_time": "43:05",
             "annotations": {
-                "present new idea": "Sarkis introduces the idea of exploring the connection between diarrhea and anxiety, suggesting they might be linked and worth investigating in the context of gut-brain communication.",
-                "ask clarifying question": "Sarkis asks if the mechanism by which diarrhea is associated with anxiety is known, seeking to understand the underlying biological processes.",
-                "expand on existing idea": "Sarkis expands on the idea of gut-brain connection by bringing up examples like IBS, where behavioral and GI responses are coupled, building on the previous discussion about brain-gut communication."
+                "ask question": "The speaker is requesting information or clarification on the mediation of diarrhea and anxiety.",
+                "develop idea": "The speaker is expanding on existing ideas by questioning the mediation of diarrhea and anxiety."
             }
         },
         {
@@ -2668,7 +2555,7 @@
             "start_time": "43:06",
             "end_time": "43:06",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging the previous speaker's point, but not necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2688,9 +2575,9 @@
             "start_time": "43:07",
             "end_time": "43:40",
             "annotations": {
-                "present new idea": "Sarkis suggests that systems like anxiety and IBS, where both behavioral and GI responses are coupled, might be ideal for understanding the directionality of the gut-brain signal, which is a novel suggestion in the context of the discussion.",
-                "expand on existing idea": "Sarkis expands on the idea of bidirectional communication by suggesting that conditions like depression and anxiety, which affect both the brain and the gut, could be used to understand how these two locations communicate, building on the previous discussion about brain-gut connections.",
-                "propose decision": "Sarkis proposes that the team should focus on systems like anxiety and IBS to understand the directionality of the gut-brain signal, suggesting a concrete choice for the group's research focus."
+                "propose new idea": "The speaker proposes considering the brain and gut as a system to understand their interaction, especially in relation to diseases like depression and anxiety.",
+                "develop idea": "The speaker expands on the idea by providing examples of conditions where both the brain and intestines seem to be affected, such as depression and anxiety.",
+                "clarify goal": "The speaker aims to understand the interaction between the brain and gut, suggesting it's crucial for understanding and potentially treating related conditions."
             }
         },
         {
@@ -2710,7 +2597,7 @@
             "start_time": "43:40",
             "end_time": "43:53",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there is any evidence of directionality in systems where both the brain and intestines are affected, such as in cases of depression or anxiety, to understand how these locations communicate."
+                "ask question": "The speaker is requesting information or evidence from others regarding directionality in certain systems."
             }
         },
         {
@@ -2729,11 +2616,10 @@
             "screenshare_content": "None",
             "start_time": "43:54",
             "end_time": "44:52",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Melanie provides evidence from her graduate lab's work on stress and GI function, detailing how stress-related chemicals from the brain can affect ion transport, epithelial cells, and tight junctions in the gut, supporting the idea that the brain can influence gut function."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about the effects of stress on GI function, providing specific mechanisms and research findings.",
+                "signal expertise": "The speaker is explicitly stating her own expertise in the area of stress and GI function from her graduate lab work."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -2751,11 +2637,9 @@
             "screenshare_content": "None",
             "start_time": "44:52",
             "end_time": "44:52",
-            "annotations": [
-                {
-                    "express agreement": "Melanie simply says \"Yeah\", which expresses agreement with the previous speaker."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2774,7 +2658,7 @@
             "start_time": "44:58",
             "end_time": "45:12",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking Melanie to clarify whether corticosterone directly caused the changes in transport or if another system was involved, given Melanie's previous explanation of stress and GI function."
+                "ask question": "The utterance explicitly asks for information or clarification."
             }
         },
         {
@@ -2793,11 +2677,9 @@
             "screenshare_content": "None",
             "start_time": "47:08",
             "end_time": "48:23",
-            "annotations": [
-                {
-                    "expand on existing idea": "Melanie was just describing the effects of stress on GI function, and Camille is expanding on this idea by describing mind-body training to help people recognize and manage stress."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Camille Nebeker",
@@ -2816,7 +2698,7 @@
             "start_time": "48:23",
             "end_time": "48:23",
             "annotations": {
-                "express agreement": "The participant is explicitly agreeing with the previous statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2836,7 +2718,7 @@
             "start_time": "48:24",
             "end_time": "48:27",
             "annotations": {
-                "expand on existing idea": "Tanya's statement builds upon the previous discussion about the connection between stress, anxiety, and GI function, expanding the topic to include emotion theory in general."
+                "supportive response": "The utterance expresses a general agreement or validation by relating the discussion to emotion theory in general."
             }
         },
         {
@@ -2855,11 +2737,9 @@
             "screenshare_content": "None",
             "start_time": "48:27",
             "end_time": "48:55",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining different theories about the relationship between thoughts, emotions, and physiological responses, providing context for understanding the connection between the brain and the gut."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Tanya Nguyen expands on the discussion about the relationship between thoughts, emotions, and physiological responses, discussing different theories on the matter."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -2877,11 +2757,10 @@
             "screenshare_content": "None",
             "start_time": "49:08",
             "end_time": "49:29",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sarkis is building on the previous discussion about the connection between thoughts, emotions, and physiological responses, adding the idea that physiological responses can act as alerts to underlying emotions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of physiological responses and their relationship to emotional awareness and mindfulness.",
+                "supportive response": "The speaker's statement is supportive and positive, contributing to a constructive discussion."
+            }
         },
         {
             "speaker": "Tanya Nguyen",
@@ -2900,7 +2779,7 @@
             "start_time": "49:30",
             "end_time": "49:30",
             "annotations": {
-                "express agreement": "The participant is explicitly agreeing with the previous statement about the physiological response alerting someone to the fact that there may be an emotion triggered."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2920,7 +2799,7 @@
             "start_time": "49:33",
             "end_time": "49:36",
             "annotations": {
-                "express humor": "This utterance is a humorous remark connecting the physiological responses of the gut to the common expression 'gut feeling', suggesting a possible origin of the phrase."
+                "express humor": "The speaker is making a humorous comment by referencing the common phrase 'gut feeling' in the context of discussing the gut-brain connection."
             }
         },
         {
@@ -2940,7 +2819,7 @@
             "start_time": "49:37",
             "end_time": "49:38",
             "annotations": {
-                "express agreement": "Tanya agrees with Sarkis's previous statement about the physiological response alerting someone to the fact that there may be an emotion that triggered that response."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2960,7 +2839,7 @@
             "start_time": "49:39",
             "end_time": "49:40",
             "annotations": {
-                "express humor": "This utterance is a rhetorical question that plays on the phrase \"gut feeling,\" implying a humorous connection between emotions and the gut."
+                "express humor": "The speaker makes a joke or uses a colloquialism about feeling something in the gut, which can be considered a humorous expression."
             }
         },
         {
@@ -2980,7 +2859,8 @@
             "start_time": "49:42",
             "end_time": "49:42",
             "annotations": {
-                "express agreement": "Elaine is explicitly agreeing with the previous statement about gut feeling."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "supportive response": "The speaker expresses agreement with a prior statement."
             }
         },
         {
@@ -2999,17 +2879,10 @@
             "screenshare_content": "None",
             "start_time": "50:00",
             "end_time": "50:32",
-            "annotations": [
-                {
-                    "present new idea": "Elaine introduces the idea of using the timing of messages (fast vs. slow) to understand the diversity of messages between the gut and brain, which is a novel concept not previously discussed."
-                },
-                {
-                    "expand on existing idea": "Elaine expands on the existing discussion about the diversity of messages by suggesting that vagal transmission is fast, while humoral signaling is slower, building on the previous discussion about the different ways signals are transmitted."
-                },
-                {
-                    "ask clarifying question": "Elaine poses a question about what responses need to happen quickly versus slowly, seeking to understand the relationship between timing and the type of response."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing concepts of biological communication, specifically considering the timing and types of signals and responses.",
+                "ask question": "The utterance contains explicit questions about the nature of signal transmission and response times in biological systems."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3028,9 +2901,8 @@
             "start_time": "50:32",
             "end_time": "50:33",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Sarkis acknowledges Elaine's point about the timing of different signaling mechanisms, indicating he recognizes her contribution to the discussion."
-                }
+                "acknowledge contribution": "The speaker acknowledges a previous point made by someone else.",
+                "supportive response": "The speaker expresses agreement or validation with a previous statement."
             }
         },
         {
@@ -3049,14 +2921,10 @@
             "screenshare_content": "None",
             "start_time": "50:34",
             "end_time": "51:12",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sarkis is expanding on Elaine's idea about the diversity of messages based on timing, suggesting that timing can help identify potential mechanisms of communication."
-                },
-                {
-                    "express agreement": "Sarkis explicitly agrees with Elaine's point about timing being a factor in identifying mechanisms of communication between the gut and the brain."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by considering the role of timing in communication mechanisms and suggesting that rapid signals are probably neuronal.",
+                "offer feedback": "The speaker provides a suggestion regarding the nature of rapid signals being probably neuronal."
+            }
         },
         {
             "speaker": "Elaine Hsiao",
@@ -3075,7 +2943,7 @@
             "start_time": "51:12",
             "end_time": "51:12",
             "annotations": {
-                "express agreement": "Elaine is expressing agreement with Sarkis's previous point about timing being a good indicator of the mechanisms of communication between the gut and the brain."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3094,11 +2962,9 @@
             "screenshare_content": "None",
             "start_time": "51:13",
             "end_time": "51:58",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kai expands on Elaine's idea about the timing of communication by relating it to brain synaptic plasticity and different molecular events happening at different timescales, building upon the discussion of communication mechanisms and interactions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of brain synaptic plasticity, explaining the different molecular events that occur at various timescales, thus developing an existing idea."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3116,13 +2982,12 @@
             "screenshare_content": "None",
             "start_time": "51:58",
             "end_time": "52:41",
-            "annotations": [
-                {
-                    "propose decision": "Sarkis suggests they need to start putting their reports together, indicating a shift towards finalizing their work.",
-                    "encourage participation": "Sarkis encourages Tanya and others to contribute their knowledge on the topic of chronic and acute responses.",
-                    "expand on existing idea": "Sarkis expands on the idea of chronic and acute responses by providing an example of how a chronic issue can sensitize a person to an acute response, raising their threshold."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the concept of responses being chronic, acute, or a combination, using an example.",
+                "ask question": "The speaker asks if there are examples or studies on the combination of chronic and acute responses.",
+                "encourage participation": "The speaker invites Tanya's opinion, encouraging participation.",
+                "process management": "The speaker mentions needing to put reports together, which relates to managing the meeting process."
+            }
         },
         {
             "speaker": "Tanya Nguyen",
@@ -3140,11 +3005,10 @@
             "screenshare_content": "None",
             "start_time": "52:41",
             "end_time": "53:14",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on the previously discussed idea of timing as a factor in gut-brain communication by relating it to different behaviors and their underlying mechanisms, such as neural connections for primary emotions and long-term potentiation for cognition."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas about behavior, emotions, and cognition.",
+                "offer feedback": "The speaker provides a perspective on understanding different behaviors."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3163,7 +3027,7 @@
             "start_time": "53:15",
             "end_time": "53:22",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about the timing of responses and the different mechanisms involved (neural, chemical, immune), suggesting that these mechanisms can layer on top of each other."
+                "summarize conversation": "The speaker is synthesizing the discussion by highlighting multiple potential mechanisms of interaction."
             }
         },
         {
@@ -3183,8 +3047,8 @@
             "start_time": "53:22",
             "end_time": "53:33",
             "annotations": {
-                "present new idea": "Sarkis introduces a new idea by posing a question about how communication signals can be monitored, hijacked, or interrupted to achieve desired outcomes, which hasn't been explicitly discussed before.",
-                "propose decision": "Sarkis proposes a direction for the discussion by introducing the last point, suggesting the group should consider how communication signals can be manipulated to achieve desired outcomes."
+                "ask question": "The speaker is asking a question about how communication signals can be monitored, hijacked, or interrupted to drive desired outcomes.",
+                "develop idea": "The speaker is building on previous discussions about communication signals by exploring their potential manipulation."
             }
         },
         {
@@ -3204,8 +3068,9 @@
             "start_time": "53:33",
             "end_time": "54:14",
             "annotations": {
-                "propose decision": "Sarkis proposes that they consider interventions like diet or probiotics to alter gut-brain signaling, suggesting a direction for the discussion.",
-                "encourage participation": "Sarkis asks for other people's thoughts on how to intervene in the gut-brain connection, inviting others to contribute to the discussion."
+                "develop idea": "The speaker is expanding on the idea of studying brain-to-gut interactions and suggesting potential interventions like diet, probiotics, and gut perturbations.",
+                "ask question": "The speaker asks for people's thoughts on how to intervene in the gut-brain connection.",
+                "encourage participation": "The speaker invites others to share their thoughts."
             }
         },
         {
@@ -3225,7 +3090,7 @@
             "start_time": "54:14",
             "end_time": "54:14",
             "annotations": {
-                "propose decision": "Sarkis suggests meditation or mindfulness as a way to intervene in the gut-brain connection, building on the previous discussion about how to intervene in the gut-brain connection."
+                "propose new idea": "The speaker suggests meditation or mindfulness as potential methods for intervention in the gut-brain connection."
             }
         },
         {
@@ -3245,8 +3110,8 @@
             "start_time": "54:15",
             "end_time": "54:28",
             "annotations": {
-                "provide supporting evidence": "Tanya states that meditation techniques activate the parasympathetic nervous system, which is known to have beneficial effects on physiological functioning, thus supporting the idea that meditation can influence gut-brain communication.",
-                "propose decision": "Tanya suggests that meditation could be used to 'hijack' or slow down negative connections in the gut-brain axis, proposing it as a potential intervention."
+                "develop idea": "Tanya is expanding on the idea of how meditation techniques can affect physiological functioning through the parasympathetic nervous system.",
+                "supportive response": "Tanya is expressing a positive view of meditation techniques in influencing physiological processes."
             }
         },
         {
@@ -3266,7 +3131,7 @@
             "start_time": "54:28",
             "end_time": "54:30",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking a question to clarify if there is evidence for something, which is a clarifying question."
+                "ask question": "The speaker is requesting information about the existence of evidence related to people."
             }
         },
         {
@@ -3286,7 +3151,7 @@
             "start_time": "54:30",
             "end_time": "55:00",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there are any measurable differences in infectious disease outcomes or immune system markers in individuals or populations where meditation is prominent, following up on Tanya's suggestion that meditation activates the parasympathetic nervous system and has beneficial effects."
+                "ask question": "The speaker is requesting information about the relationship between meditation and infectious outcomes, and how it relates to the immune system."
             }
         },
         {
@@ -3306,7 +3171,7 @@
             "start_time": "55:00",
             "end_time": "55:03",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there are differences in dietary habits in individuals or populations where meditation is prominent, seeking to understand the connection between meditation and health outcomes, building on the previous discussion about meditation's effects on the parasympathetic nervous system."
+                "ask question": "The speaker is requesting information about potential differences in dietary habits, indicating a need for clarification or knowledge on this topic."
             }
         },
         {
@@ -3326,7 +3191,7 @@
             "start_time": "55:03",
             "end_time": "55:22",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there is any research comparing the immune or GI systems of individuals or populations who meditate versus those who don't, seeking to understand the potential impact of meditation on these systems, building on the previous discussion about meditation and its effects on the parasympathetic nervous system."
+                "ask question": "The speaker is requesting information about the existence of studies comparing the immune or GI systems of individuals who meditate versus those who do not."
             }
         },
         {
@@ -3346,10 +3211,7 @@
             "start_time": "55:23",
             "end_time": "55:23",
             "annotations": {
-                "Tanya Nguyen: I'm not sure. ": {
-                    "13": "reject idea",
-                    "Explanation": "Tanya is responding to Sarkis's question about whether there are differences in immune or GI systems between people who meditate and those who don't, and she is indicating that she does not know, thus rejecting the idea that she has information on this topic."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3369,9 +3231,9 @@
             "start_time": "55:38",
             "end_time": "56:14",
             "annotations": {
-                "provide supporting evidence": "Camille mentions work on Buddhist monks and meditation, and the blue zones, as examples of populations studied for factors influencing health, building on the discussion of meditation's effects on the gut.",
-                "encourage participation": "Camille directly addresses Tanya, asking if she knows about the blue zones, inviting her to contribute to the discussion.",
-                "expand on existing idea": "Camille expands on the discussion of meditation and its effects by bringing up the blue zones and their potential relevance to understanding the microbiome's role in health, building on the previous discussion of meditation and its effects on the gut."
+                "acknowledge contribution": "The speaker recognizes previous work or studies on meditation and illness.",
+                "ask question": "The speaker requests information about the extent of microbiome research.",
+                "propose new idea": "The speaker suggests potentially interesting areas for further research."
             }
         },
         {
@@ -3391,7 +3253,8 @@
             "start_time": "56:14",
             "end_time": "56:23",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking if there are differences in infectious disease or cancer rates that can be attributed to an effect on the immune system in populations where meditation is prominent, seeking to clarify the potential impact of meditation on the immune system."
+                "ask question": "The speaker is requesting information about potential outcomes related to the immune system, microbiome, infectious disease, or cancer rates.",
+                "develop idea": "The speaker is building upon previous discussions about the gut-brain axis and microbiome by inquiring about specific outcomes."
             }
         },
         {
@@ -3411,7 +3274,7 @@
             "start_time": "56:23",
             "end_time": "56:23",
             "annotations": {
-                "acknowledge contribution": "The speaker acknowledges the previous question asked by Sarkis."
+                "supportive response": "The speaker expresses agreement or a positive evaluation of a prior statement."
             }
         },
         {
@@ -3431,10 +3294,7 @@
             "start_time": "56:23",
             "end_time": "56:23",
             "annotations": {
-                "Tanya Nguyen: I'm not sure of that. ": {
-                    "13": "reject idea",
-                    "Explanation": "Tanya expresses uncertainty about the previous question regarding the impact of meditation on the immune or GI systems, indicating a rejection of the idea that there is a clear answer."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3454,7 +3314,7 @@
             "start_time": "56:35",
             "end_time": "56:36",
             "annotations": {
-                "ask clarifying question": "Sarkis is asking who the reporter is, indicating he forgot who was assigned to that role earlier in the conversation."
+                "Ask question": "The utterance is a question seeking information about the reporter's identity."
             }
         },
         {
@@ -3474,7 +3334,7 @@
             "start_time": "56:37",
             "end_time": "56:37",
             "annotations": {
-                "acknowledge contribution": "Sarkis acknowledges Melanie's contribution of recording the meeting, which was established in previous turns."
+                "process management": "The speaker acknowledges that Melanie is recording, which pertains to managing the meeting process."
             }
         },
         {
@@ -3494,7 +3354,7 @@
             "start_time": "56:41",
             "end_time": "56:42",
             "annotations": {
-                "acknowledge contribution": "Camille acknowledges Kai's assigned role as the reporter, recognizing his contribution to the meeting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3513,11 +3373,9 @@
             "screenshare_content": "None",
             "start_time": "56:44",
             "end_time": "56:47",
-            "annotations": [
-                {
-                    "assign task": "Sarkis reminds Kai that he is the reporter for the meeting, assigning him the task of summarizing the discussion."
-                }
-            ]
+            "annotations": {
+                "assign task": "Sarkis Mazmanian explicitly assigns the role of reporter to Kai."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -3535,14 +3393,9 @@
             "screenshare_content": "None",
             "start_time": "56:47",
             "end_time": "56:49",
-            "annotations": [
-                {
-                    "assign task": "Kai confirms that he will report, which is a task assignment that was previously discussed."
-                },
-                {
-                    "acknowledge contribution": "Kai acknowledges Melanie's role as the recorder, recognizing her assigned task."
-                }
-            ]
+            "annotations": {
+                "assign task": "Kai Zhang assigns the task of reporting to himself and mentions Melanie's role as a recorder."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3561,7 +3414,7 @@
             "start_time": "56:50",
             "end_time": "56:53",
             "annotations": {
-                "assign task": "Sarkis is assigning the task of putting together the slides to someone, as the group is about to start putting their reports together."
+                "process management": "The speaker is asking a group member to organize or prepare the slides, which involves managing meeting activities."
             }
         },
         {
@@ -3581,7 +3434,7 @@
             "start_time": "56:53",
             "end_time": "56:56",
             "annotations": {
-                "acknowledge contribution": "Melanie acknowledges Kai's work on putting together the slides in the background, recognizing his contribution to the task."
+                "process management": "This code applies because Melanie Gareau is discussing the organization and distribution of work (slides) within the group."
             }
         },
         {
@@ -3601,7 +3454,7 @@
             "start_time": "56:56",
             "end_time": "56:57",
             "annotations": {
-                "express agreement": "Sarkis is expressing agreement with the previous statement that Kai is the reporter and Melanie is the recorder."
+                "None": "No relevant code applies to this utterance as it is a brief acknowledgment without additional content."
             }
         },
         {
@@ -3620,11 +3473,9 @@
             "screenshare_content": "None",
             "start_time": "56:57",
             "end_time": "57:03",
-            "annotations": [
-                {
-                    "assign task": "Kai is taking responsibility for posting the questions and key messages, which is a task assignment."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is informing the group that he is posting the questions and their key message, which can be seen as managing the flow of information or meeting outcomes."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3642,11 +3493,9 @@
             "screenshare_content": "None",
             "start_time": "57:06",
             "end_time": "57:08",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker references a specific slide number and apologizes, indicating an effort to manage the discussion flow and align with previously discussed materials."
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -3664,11 +3513,9 @@
             "screenshare_content": "None",
             "start_time": "57:08",
             "end_time": "57:08",
-            "annotations": [
-                {
-                    "confirm decision": "Kai confirms that the slide number is 54, as Sarkis previously asked about the location of the report out card."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3686,11 +3533,9 @@
             "screenshare_content": "None",
             "start_time": "57:09",
             "end_time": "57:09",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Kai Zhang",
@@ -3709,7 +3554,7 @@
             "start_time": "57:09",
             "end_time": "57:15",
             "annotations": {
-                "assign task": "Kai is assigning the task of typing the key points of the discussion to someone, likely Melanie who is taking notes."
+                "process management": "The speaker is instructing someone to perform a task related to documenting the group's discussion, which involves managing the flow of information or tasks within the group."
             }
         },
         {
@@ -3729,7 +3574,7 @@
             "start_time": "57:16",
             "end_time": "57:18",
             "annotations": {
-                "explain or define term or concept": "Kai is clarifying that he is simply restating the questions, which helps the group understand what he is doing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3749,7 +3594,7 @@
             "start_time": "57:19",
             "end_time": "57:21",
             "annotations": {
-                "acknowledge contribution": "Melanie acknowledges that Kai is putting the questions back, recognizing his input."
+                "supportive response": "The speaker is acknowledging the questions and showing understanding, which is a way of expressing agreement or validation."
             }
         },
         {
@@ -3768,11 +3613,9 @@
             "screenshare_content": "None",
             "start_time": "57:21",
             "end_time": "57:21",
-            "annotations": [
-                {
-                    "express agreement": "Kai says \"Yeah\" in response to Melanie's statement \"So those are the questions. Okay.\", indicating agreement with her statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Melanie Gareau",
@@ -3790,17 +3633,10 @@
             "screenshare_content": "The screen was shared to show a document titled \"Room 3.2 - Key points Communication between the gut and the brain\". The document listed questions about the diversity of messages, channels of communication, and how these signals can be monitored. The document also listed participants and the recorder/reporter.",
             "start_time": "57:22",
             "end_time": "58:36",
-            "annotations": [
-                {
-                    "expand on existing idea": "Melanie is summarizing the discussion about the diversity of messages, including immune, neuronal, and small molecule types, building on the previous discussion about communication between the gut microbiome and the brain."
-                },
-                {
-                    "explain or define term or concept": "Melanie explains that some messages are peptides, proteins, and induce host responses, meaning they have an indirect effect, clarifying the nature of these messages."
-                },
-                {
-                    "propose decision": "Melanie suggests being succinct in the summary and not putting everything on the slide, proposing a decision about the content of the report."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Melanie Gareau is summarizing the previous discussions regarding the diversity of messages between the gut microbiome and the brain.",
+                "develop idea": "She is expanding on existing ideas by detailing the types of messages and the microbiome's role in modulating metabolites and their impact on host health."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3819,7 +3655,7 @@
             "start_time": "58:36",
             "end_time": "58:41",
             "annotations": {
-                "expand on existing idea": "Sarkis is building on the previous discussion about summarizing key points, suggesting to use keywords to keep the summary succinct."
+                "process management": "The speaker is suggesting a method for efficiently managing their discussion points."
             }
         },
         {
@@ -3839,7 +3675,9 @@
             "start_time": "60:00",
             "end_time": "60:16",
             "annotations": {
-                "expand on existing idea": "Melanie is expanding on the idea of how to study the activity of molecules from the gut microbiome on neurons or other brain cells, by suggesting the use of in vitro capabilities, specifically mentioning microglia as an example, building on Marie-Claire's suggestion of using a multi-array style system to test the activity of molecules."
+                "develop idea": "The speaker is expanding on a previous idea by suggesting using in vitro capabilities to study microglia.",
+                "ask question": "The utterance contains a question about whether they could look at microglia in vitro.",
+                "offer feedback": "The speaker is suggesting a way to proceed with research, implying a methodological suggestion."
             }
         },
         {
@@ -3859,7 +3697,8 @@
             "start_time": "60:17",
             "end_time": "60:20",
             "annotations": {
-                "express humor": "This utterance expresses humor by complimenting Melanie's handwriting in a lighthearted way, acknowledging that handwriting is becoming less common."
+                "supportive response": "The speaker expresses a positive sentiment towards Melanie's action of taking notes by hand.",
+                "acknowledge contribution": "The speaker acknowledges Melanie's effort in taking notes."
             }
         },
         {
@@ -3879,7 +3718,7 @@
             "start_time": "60:21",
             "end_time": "60:30",
             "annotations": {
-                "express humor": "Melanie is making a joke about her handwriting being better than her typing, which is why she uses the whole page to take notes, following Marie-Claire's compliment about her handwriting."
+                "process management": "Melanie Gareau is describing her method for managing notes during the meeting, indicating how she organizes her documentation."
             }
         },
         {
@@ -3898,11 +3737,9 @@
             "screenshare_content": "The screen shows a slide titled \"Figure 3.1: Key points: Communication between the gut and the brain\". The slide lists several points about the communication between the gut and the brain, including the types of messages that the gut sends to the brain, the directionality of communication, and the speed of communication. The slide also mentions the role of stress, meditation, and cognitive behavioral therapy in gut-brain communication.",
             "start_time": "60:58",
             "end_time": "61:05",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by deciding to stop sharing slides, assuming others can access them themselves."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -3920,14 +3757,9 @@
             "screenshare_content": "None",
             "start_time": "61:07",
             "end_time": "61:54",
-            "annotations": [
-                {
-                    "expand on existing idea": "Melanie is summarizing the key points discussed for the first question, building upon the previous discussion about the diversity of messages passing between the gut microbiome and the brain."
-                },
-                {
-                    "expand on existing idea": "Melanie is summarizing the key points discussed for the second question, building upon the previous discussion about the directionality of communication between the brain and the gut."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing what has been previously discussed by the group, specifically mentioning points about directionality and the brain to gut signals."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -3945,11 +3777,9 @@
             "screenshare_content": "None",
             "start_time": "61:54",
             "end_time": "61:54",
-            "annotations": [
-                {
-                    "None": "None"
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -3968,9 +3798,9 @@
             "start_time": "62:08",
             "end_time": "62:34",
             "annotations": {
-                "present new idea": "Sarkis introduces the idea of studying the microbiome of Parkinson's patients undergoing DBS, which hasn't been explicitly discussed before.",
-                "propose decision": "Sarkis suggests that the team should look at the microbiome of Parkinson's patients with DBS, indicating a concrete action for the group to consider.",
-                "provide supporting evidence": "Sarkis mentions having collaborators who are Parkinson's clinicians with access to DBS patients, providing a practical basis for the proposed study."
+                "propose new idea": "Sarkis Mazmanian introduces a new idea to study the microbiome of DBS patients and collect GI markers when they are on and off the stimulation.",
+                "develop idea": "This utterance develops the idea of understanding the gut-brain connection by suggesting a specific experimental approach involving DBS patients.",
+                "ask question": "Implicitly, the suggestion can be seen as questioning how DBS affects the gut microbiome or GI markers."
             }
         },
         {
@@ -3990,7 +3820,7 @@
             "start_time": "62:34",
             "end_time": "62:37",
             "annotations": {
-                "express agreement": "Sarkis expresses agreement with the idea of studying the microbiome of Parkinson's patients with DBS, which was just proposed, indicating his support for the suggestion."
+                "Supportive response": "Sarkis Mazmanian is expressing agreement and validation for the proposed idea, suggesting it is a tangible or feasible study."
             }
         },
         {
@@ -4009,11 +3839,9 @@
             "screenshare_content": "None",
             "start_time": "62:52",
             "end_time": "63:01",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Kai is pointing out that questions three and the second part of question two are essentially asking the same thing, which is about how to perturb and monitor the system."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is discussing the approach to studying the gut-brain connection, specifically how to perturb and monitor, which is about managing the experimental process."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4032,7 +3860,7 @@
             "start_time": "63:03",
             "end_time": "63:11",
             "annotations": {
-                "acknowledge contribution": "Melanie is summarizing the key points of the discussion, and this utterance acknowledges that someone (presumably Kai) wrote down 'meditation' as a key point, recognizing their contribution to the summary."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4052,7 +3880,7 @@
             "start_time": "63:11",
             "end_time": "63:11",
             "annotations": {
-                "express agreement": "The speaker is expressing agreement with the previous statement made by Melanie."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4071,14 +3899,10 @@
             "screenshare_content": "None",
             "start_time": "63:11",
             "end_time": "63:22",
-            "annotations": [
-                {
-                    "expand on existing idea": "Melanie is expanding on the discussion about the last bullet point by suggesting to add gut-to-brain hijacking or interventions, such as probiotics and diet, to the list of topics."
-                },
-                {
-                    "propose decision": "Melanie is proposing to add gut-to-brain hijacking or interventions to the last bullet point."
-                }
-            ]
+            "annotations": {
+                "code name": "acknowledge contribution",
+                "explanation": "Melanie is building upon previous discussions and suggesting an addition."
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -4097,7 +3921,7 @@
             "start_time": "63:22",
             "end_time": "63:33",
             "annotations": {
-                "express agreement": "Sarkis simply agrees with Melanie's suggestion to include gut-to-brain interventions like probiotics and diet, which was mentioned in the previous turn."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4117,7 +3941,7 @@
             "start_time": "63:33",
             "end_time": "63:38",
             "annotations": {
-                "propose decision": "Kai suggests fecal transplants as a potential intervention for gut-brain communication, building on the discussion of probiotics and diet as ways to influence the gut-brain axis."
+                "propose new idea": "Kai Zhang introduces fecal transplants as a potential method for intervening in the gut microbiome, which is a new idea in the context of the conversation."
             }
         },
         {
@@ -4136,14 +3960,10 @@
             "screenshare_content": "None",
             "start_time": "63:43",
             "end_time": "63:52",
-            "annotations": [
-                {
-                    "expand on existing idea": "Melanie is expanding on the previous discussion about interventions by suggesting to include meditation, building on the topic of how to hijack or intervene in the gut-brain connection."
-                },
-                {
-                    "explain or define term or concept": "Melanie is explaining that meditation is related to the parasympathetic nervous system, clarifying the mechanism by which meditation might influence the gut-brain axis."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is explicitly asking if they wanted to include meditation in their discussion.",
+                "propose new idea": "The speaker suggests a connection between meditation and the parasympathetic nervous system."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4162,7 +3982,8 @@
             "start_time": "64:06",
             "end_time": "64:10",
             "annotations": {
-                "ask clarifying question": "Melanie is asking if she has included all the important points in her summary, seeking confirmation from the group."
+                "ask question": "Melanie is requesting information or clarification on whether she covered all the big points.",
+                "process management": "Melanie is managing the flow of information and ensuring completeness of the report."
             }
         },
         {
@@ -4181,11 +4002,10 @@
             "screenshare_content": "None",
             "start_time": "64:11",
             "end_time": "64:16",
-            "annotations": [
-                {
-                    "express agreement": "Kai agrees with Melanie's summary of the key points discussed, specifically mentioning \"Immune neural\" which were part of the discussion."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement regarding the types of communication signals.",
+                "acknowledge contribution": "The speaker is acknowledging a previous contribution by possibly agreeing with the categorization of signals as immune and neural."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4204,7 +4024,7 @@
             "start_time": "64:24",
             "end_time": "64:30",
             "annotations": {
-                "ask clarifying question": "Melanie is asking for help with a technical issue related to Google Slides, which is a clarifying question about how to use the software."
+                "process management": "The speaker is asking for help with a technical issue related to using Google slides during the meeting."
             }
         },
         {
@@ -4223,11 +4043,9 @@
             "screenshare_content": "None",
             "start_time": "64:32",
             "end_time": "64:32",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Marie-Claire is acknowledging the previous speaker's contribution, but not agreeing or expanding on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4245,11 +4063,9 @@
             "screenshare_content": "None",
             "start_time": "64:32",
             "end_time": "64:32",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Melanie is summarizing the key points of the discussion, and 'Okay' acknowledges the previous points made."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Marie",
@@ -4267,11 +4083,9 @@
             "screenshare_content": "None",
             "start_time": "64:32",
             "end_time": "64:38",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4289,11 +4103,9 @@
             "screenshare_content": "None",
             "start_time": "64:39",
             "end_time": "64:41",
-            "annotations": [
-                {
-                    "assign task": "Melanie is assigning the task of reducing the text font size on Google slides to someone else, as she is having trouble doing it herself."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4311,11 +4123,9 @@
             "screenshare_content": "None",
             "start_time": "64:41",
             "end_time": "64:41",
-            "annotations": [
-                {
-                    "assign task": "Melanie is working on the slides and someone else is helping her with formatting, so this is a continuation of that task."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Marie",
@@ -4333,11 +4143,9 @@
             "screenshare_content": "None",
             "start_time": "64:41",
             "end_time": "64:41",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance as it is an incomplete sentence."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4356,7 +4164,7 @@
             "start_time": "64:41",
             "end_time": "64:41",
             "annotations": {
-                "acknowledge contribution": "Melanie is acknowledging that Marie-Claire will figure out how to reduce the text size on the slides."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4376,7 +4184,7 @@
             "start_time": "64:41",
             "end_time": "64:41",
             "annotations": {
-                "acknowledge contribution": "Melanie acknowledges that someone has adjusted the text size on the Google Slides, recognizing their contribution to the task of preparing the report."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4396,7 +4204,7 @@
             "start_time": "64:41",
             "end_time": "64:41",
             "annotations": {
-                "confirm decision": "Melanie confirms that they are done editing the slides, indicating agreement that they are ready to move on."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4415,11 +4223,9 @@
             "screenshare_content": "None",
             "start_time": "64:52",
             "end_time": "64:57",
-            "annotations": [
-                {
-                    "propose decision": "Kai suggests adding their names to the participant list, proposing a concrete action for the group to take."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker suggests an action related to organizing or managing the meeting process, specifically mentioning inputting names to the participant."
+            }
         },
         {
             "speaker": "Melanie Gareau UC Davis",
@@ -4438,7 +4244,7 @@
             "start_time": "64:57",
             "end_time": "64:58",
             "annotations": {
-                "express agreement": "Melanie expresses agreement with Kai's suggestion to input their names to the participant list, building on the prior discussion about finalizing the slides."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4458,7 +4264,7 @@
             "start_time": "65:07",
             "end_time": "65:10",
             "annotations": {
-                "ask clarifying question": "Marie-Claire is confirming the slide number that Kai mentioned earlier in the conversation."
+                "ask question": "The speaker is seeking confirmation or clarification on a specific point (slide 54) discussed in the meeting."
             }
         },
         {
@@ -4478,7 +4284,7 @@
             "start_time": "65:10",
             "end_time": "65:11",
             "annotations": {
-                "confirm decision": "Kai confirms that the slide number is 54, as previously mentioned by Sarkis."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4497,11 +4303,9 @@
             "screenshare_content": "None",
             "start_time": "65:12",
             "end_time": "65:12",
-            "annotations": [
-                {
-                    "express agreement": "Melanie is agreeing with a previous statement, likely related to the ongoing discussion about summarizing key points for the report."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement."
+            }
         },
         {
             "speaker": "Marie",
@@ -4520,7 +4324,7 @@
             "start_time": "65:24",
             "end_time": "65:25",
             "annotations": {
-                "express agreement": "Marie-Claire expresses agreement with the presentation slides that Melanie and Kai are working on, indicating a positive assessment of their work."
+                "supportive response": "The speaker is expressing a positive evaluation and agreement with the work done."
             }
         },
         {
@@ -4540,7 +4344,7 @@
             "start_time": "65:27",
             "end_time": "65:28",
             "annotations": {
-                "express enthusiasm": "Marie-Claire expresses a positive sentiment about the discussion, indicating she enjoyed the interaction with the group."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4560,7 +4364,7 @@
             "start_time": "65:30",
             "end_time": "65:32",
             "annotations": {
-                "express enthusiasm": "The speaker expresses enthusiasm about the discussion that just took place."
+                "Supportive response": "This utterance expresses a positive sentiment towards the conversation, indicating agreement and appreciation."
             }
         },
         {
@@ -4579,11 +4383,9 @@
             "screenshare_content": "None",
             "start_time": "65:33",
             "end_time": "65:34",
-            "annotations": [
-                {
-                    "express agreement": "Melanie agrees with a previous statement, indicated by her saying \"Yeah.\""
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sarkis Mazmanian",
@@ -4602,7 +4404,7 @@
             "start_time": "65:34",
             "end_time": "65:35",
             "annotations": {
-                "express enthusiasm": "Sarkis expresses enthusiasm by saying goodbye and indicating he will see them soon, which shows a positive attitude towards the meeting and future interactions."
+                "process management": "The speaker is ending the meeting, which is a part of managing the meeting flow or structure."
             }
         }
     ]

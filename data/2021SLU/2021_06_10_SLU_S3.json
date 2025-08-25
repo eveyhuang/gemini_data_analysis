@@ -1,16 +1,16 @@
 {
     "all_speakers": [
-        "Daniel Apai / Univ Arizona",
-        "Courtney Dressing",
-        "Andrew Vanderburg",
-        "Nikole Lewis",
-        "Andy Skemer",
         "Daniel Apai",
+        "Courtney Dressing",
         "Eliza Kempton",
+        "Coco Zhang",
+        "Natasha Batalha",
+        "Nikole Lewis",
+        "Daniel Apai",
+        "Andy Skemer",
+        "Andrew Vanderburg",
         "Keith Hawkins",
         "Lisa Kaltenegger",
-        "Natasha Batalha",
-        "Coco Zhang",
         "Leslie Rogers"
     ],
     "total_speaking_length": 3753,
@@ -32,9 +32,8 @@
             "start_time": "00:00",
             "end_time": "00:33",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the procedure for introductions to ensure everyone understands the process.",
-                "assign task": "The speaker is assigning the task of starting the introductions to Leslie Rogers.",
-                "encourage particpatioin": "The speaker is encouraging Leslie Rogers to start the introductions."
+                "Process management": "The speaker is managing the meeting flow and structure by explaining how introductions will be done.",
+                "Encourage participation": "The speaker invites Leslie Rogers to introduce herself, which encourages her participation."
             }
         },
         {
@@ -54,7 +53,7 @@
             "start_time": "00:33",
             "end_time": "00:37",
             "annotations": {
-                "None": "This utterance does not contain any content that fits the provided codes."
+                "None": "No relevant code applies to this utterance as it is a simple introduction."
             }
         },
         {
@@ -74,7 +73,8 @@
             "start_time": "00:37",
             "end_time": "00:44",
             "annotations": {
-                "None": "This utterance is a statement of introduction and does not fit any of the codes."
+                "signal expertise": "The speaker explicitly states their area of study, which can be seen as signaling their expertise.",
+                "process management": "The speaker is managing the meeting flow by indicating whose turn it is next."
             }
         },
         {
@@ -93,14 +93,12 @@
             "screenshare_content": "None",
             "start_time": "00:45",
             "end_time": "01:00",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Andrew is introducing himself and his research area, which involves exoplanets, space telescopes, and ground-based instruments, thus explaining his field of study."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their profession, current and future affiliations, and area of study, which serves to signal their expertise in the field of astronomy and exoplanets."
+            }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "00:27-00:29",
             "transcript": "And you can pick someone. Oh, I need to pick someone. Coco?",
             "speaking_duration": 2,
@@ -115,14 +113,10 @@
             "screenshare_content": "None",
             "start_time": "01:04",
             "end_time": "01:06",
-            "annotations": [
-                {
-                    "assign task": "Daniel is assigning the task of picking the next person to Coco."
-                },
-                {
-                    "encourage particpatioin": "Daniel is encouraging Coco to participate by asking them to pick someone."
-                }
-            ]
+            "annotations": {
+                "ask question": "Daniel is requesting information or confirmation about someone, indicated by 'Coco?'.",
+                "encourage participation": "Daniel is inviting or suggesting someone to participate by saying 'Coco?'."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -141,8 +135,8 @@
             "start_time": "01:07",
             "end_time": "01:37",
             "annotations": {
-                "explain or define term or concept": "Coco explains her research area, which is planet formation environment, using ground-based observations and future JWST studies of circumstellar discs.",
-                "encourage particpatioin": "Coco ends her introduction by passing the turn to Courtney Dressing."
+                "signal expertise": "The speaker explicitly states her position and area of study, signaling her expertise.",
+                "encourage participation": "The speaker transitions to the next person, which can be seen as encouraging participation."
             }
         },
         {
@@ -161,14 +155,10 @@
             "screenshare_content": "None",
             "start_time": "01:38",
             "end_time": "02:08",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the transit method, which is a concept relevant to planet detection, to provide context for their work."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses excitement about spending the summer playing with data, indicating enthusiasm for the work."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications related to the task by introducing herself as an assistant professor and specifying her area of work in the astronomy department.",
+                "develop idea": "The speaker expands on her research, detailing her work on finding planets, understanding stars, and the properties of planets, as well as her group's methods."
+            }
         },
         {
             "speaker": "Andy Skemer",
@@ -187,8 +177,8 @@
             "start_time": "02:09",
             "end_time": "02:29",
             "annotations": {
-                "explain or define term or concept": "Andy is explaining his research area, which involves observational studies of exoplanets, direct imaging, brown dwarfs, and instrument building for exoplanet characterization, providing context for the group.",
-                "encourage particpatioin": "Andy is inviting Nicole to speak next."
+                "signal expertise": "The speaker explicitly states their position, field of study, and specific methods or areas of focus.",
+                "ask question": "The speaker asks for information or clarification about a name."
             }
         },
         {
@@ -207,14 +197,10 @@
             "screenshare_content": "None",
             "start_time": "02:30",
             "end_time": "02:48",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is introducing herself and her research interests, which involves characterizing exoplanet atmospheres, thus explaining her area of expertise."
-                },
-                {
-                    "encourage particpatioin": "The speaker is inviting Natasha to introduce herself next, encouraging her participation in the introductions."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their position and work area, indicating their expertise.",
+                "encourage participation": "The speaker invites Natasha to contribute by saying 'Um, how about oh Natasha? Go ahead.'"
+            }
         },
         {
             "speaker": "Natasha Batalha",
@@ -232,11 +218,10 @@
             "screenshare_content": "None",
             "start_time": "02:49",
             "end_time": "03:12",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining their role as a researcher at NASA Ames and their work in theoretical characterization of exoplanet atmospheres and observations, providing context about their expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their role and area of work, signaling their expertise.",
+                "express humor": "The speaker makes a light comment about being in the 'post pandemic world,' which could be seen as an attempt at humor."
+            }
         },
         {
             "speaker": "Natasha Batalha",
@@ -255,7 +240,7 @@
             "start_time": "03:12",
             "end_time": "03:12",
             "annotations": {
-                "encourage particpatioin": "Natasha is inviting Eliza to introduce herself and contribute to the conversation, continuing the round-robin introductions."
+                "encourage participation": "Natasha is inviting Eliza to contribute by saying her name, indicating it's her turn to speak."
             }
         },
         {
@@ -274,14 +259,11 @@
             "screenshare_content": "None",
             "start_time": "03:13",
             "end_time": "03:39",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is defining their area of expertise, which is modeling exoplanet atmospheres with radiative transfer and photochemistry models."
-                },
-                {
-                    "encourage particpatioin": "The speaker is encouraging Keith to participate by noting that he hasn't gone yet."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Eliza explicitly states her position and area of expertise (associate professor of astronomy, modeling exoplanet atmospheres).",
+                "ask question": "Eliza asks for the status of another participant, Keith, indicating she is seeking information about who hasn't gone.",
+                "process management": "Eliza manages the meeting flow by checking who has not introduced themselves."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -299,11 +281,11 @@
             "screenshare_content": "None",
             "start_time": "03:40",
             "end_time": "04:27",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Keith explains that he focuses on galactic archaeology and galactic science with an emphasis on stellar chemistry, which is different from the exoplanet focus of the other participants."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Keith explicitly states his own expertise and qualifications related to the task, mentioning his focus on galactic archaeology and stellar chemistry.",
+                "express humor": "Keith makes a light comment about his situation, adding a humorous tone to his introduction.",
+                "process management": "Keith informs the group about his need to temporarily leave the call for a meeting, affecting the meeting flow."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -322,7 +304,7 @@
             "start_time": "04:27",
             "end_time": "04:27",
             "annotations": {
-                "encourage particpatioin": "Keith Hawkins is inviting Lisa to introduce herself to the group, continuing the round of introductions."
+                "None": "No relevant code applies to this utterance as it is too brief and does not contain enough information to warrant any specific code."
             }
         },
         {
@@ -341,14 +323,11 @@
             "screenshare_content": "None",
             "start_time": "04:28",
             "end_time": "05:38",
-            "annotations": [
-                {
-                    "present new idea": "Lisa introduces the idea of taking a minute to write down thoughts before starting the discussion to help everyone focus.",
-                    "encourage particpatioin": "Lisa encourages participation by suggesting everyone write down their thoughts and brainstorm.",
-                    "express enthusiasm": "Lisa expresses excitement about working with the group and brainstorming ideas.",
-                    "propose decision": "Lisa proposes that everyone take a minute to write down their thoughts before starting the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Lisa proposes a new approach for the meeting by suggesting everyone take a minute to write down their thoughts before discussing.",
+                "process management": "Lisa manages the meeting flow by suggesting an activity and proposing to set a timer for it.",
+                "encourage participation": "Lisa encourages participation by inviting everyone to write down their thoughts and use them as a start for discussion."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -367,7 +346,7 @@
             "start_time": "05:38",
             "end_time": "05:38",
             "annotations": {
-                "assign task": "Lisa assigns the task of writing down thoughts for one minute to the participants, setting a timer to keep track of the time."
+                "process management": "This code applies because Lisa Kaltenegger is managing the meeting flow by allocating a specific amount of time for an activity."
             }
         },
         {
@@ -387,11 +366,11 @@
             "start_time": "06:51",
             "end_time": "06:57",
             "annotations": {
-                "encourage particpatioin": "Lisa asks Daniel if he introduced himself, inviting him to participate in the introductions."
+                "ask question": "Lisa asks Daniel if he introduced himself, seeking information."
             }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "06:20-07:00",
             "transcript": "Um, I did not just briefly before but I can I can just say a few words. So I'm uh Daniel from the University of Arizona. I work on exoplanet searches, characterization uh and also uh plan formation, atmospheres uh and also I spend a lot of time thinking about what mission architectures and technologies could enable us to do better uh exoplanet exploration and searches for signatures of life. I'm also co leading uh Nexus currently and leading one of the larger Nexus teams.",
             "speaking_duration": 40,
@@ -407,12 +386,12 @@
             "start_time": "06:57",
             "end_time": "07:37",
             "annotations": {
-                "explain or define term or concept": "Daniel is explaining his background and research interests to the group, which includes exoplanet searches, characterization, plan formation, atmospheres, mission architectures, technologies, and searches for signatures of life.",
-                "acknowledge contribution": "Daniel is acknowledging Lisa's comment and then introducing himself."
+                "signal expertise": "The speaker explicitly states his areas of work and roles, signaling his expertise.",
+                "process management": "The speaker's introduction contributes to managing the meeting flow by ensuring everyone knows who he is and what he does."
             }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "07:00-07:00",
             "transcript": "So, and I'm really looking forward to working with you all. I think when I've seen the names and the topic I I was I was hooked. I think that's going to be fun.",
             "speaking_duration": 0,
@@ -428,11 +407,12 @@
             "start_time": "07:37",
             "end_time": "07:37",
             "annotations": {
-                "express enthusiasm": "Daniel expresses his excitement and optimism about working with the group, indicating he is looking forward to the collaboration and finds the topic engaging."
+                "supportive response": "Daniel is expressing agreement and positive evaluation for the group and the topic.",
+                "express humor": "Daniel explicitly mentions that he thinks the collaboration is going to be fun, indicating a lighthearted or humorous tone."
             }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "07:00-07:45",
             "transcript": "One logistical thing that we should do before we start to the fun fun is to select uh someone who records and uh will eventually report back to the main uh main room. So, um, this is an exciting opportunity to volunteer. Um, Nicole, yeah, I thank you. Uh that that would be great. Um,",
             "speaking_duration": 45,
@@ -448,13 +428,12 @@
             "start_time": "07:37",
             "end_time": "08:22",
             "annotations": {
-                "propose decision": "Daniel suggests selecting someone to record and report back, which is a concrete choice for the group.",
-                "assign task": "Daniel assigns the task of recording and reporting back to Nicole.",
-                "acknowledge contribution": "Daniel acknowledges Nicole's volunteering for the task."
+                "process management": "Daniel is managing the meeting flow by suggesting a task that needs to be done before they proceed with the meeting.",
+                "assign task": "Daniel is directly assigning a task to Nicole (recording and reporting back to the main room)."
             }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "07:45-08:05",
             "transcript": "Okay, I don't know Lisa, do you have anything else to add or any other questions from uh from the fellows before we start?",
             "speaking_duration": 20,
@@ -470,7 +449,8 @@
             "start_time": "08:22",
             "end_time": "08:42",
             "annotations": {
-                "encourage particpatioin": "Daniel is asking Lisa and the fellows if they have anything to add or any questions before starting, encouraging them to participate."
+                "process management": "The speaker is managing the meeting flow by checking for any final comments or questions before proceeding.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts or questions, encouraging participation."
             }
         },
         {
@@ -490,7 +470,8 @@
             "start_time": "08:42",
             "end_time": "08:47",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages others to contribute to the discussion, as she says \"I think that you chime in.\""
+                "process management": "Lisa is describing her and Daniel's role in facilitating the meeting, aiming to stay in the background.",
+                "encourage participation": "Lisa invites others to contribute to the discussion by saying 'I think that you chime in'."
             }
         },
         {
@@ -510,7 +491,8 @@
             "start_time": "08:47",
             "end_time": "08:48",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages the group to share their ideas, following up on Daniel's invitation for them to start brainstorming."
+                "supportive response": "Lisa expresses her willingness to help the group with their ideas, which is a positive and supportive stance.",
+                "process management": "Lisa's statement can be seen as part of managing the meeting process by facilitating the sharing of ideas."
             }
         },
         {
@@ -530,7 +512,7 @@
             "start_time": "08:48",
             "end_time": "08:49",
             "annotations": {
-                "explain or define term or concept": "Lisa is defining her role, along with Daniel's, as facilitators who will stay in the background and help the group develop their ideas, which provides clarity on their approach to the meeting."
+                "clarify goal": "Lisa is defining her and Daniel's role in the meeting, which is to stay in the background and help the participants get to their ideas."
             }
         },
         {
@@ -550,7 +532,7 @@
             "start_time": "08:49",
             "end_time": "08:50",
             "annotations": {
-                "express agreement": "Lisa agrees with a question that was asked, indicating agreement with the prior turn."
+                "Supportive response": "The speaker is expressing agreement with a previous statement, indicating a positive evaluation."
             }
         },
         {
@@ -570,7 +552,8 @@
             "start_time": "08:50",
             "end_time": "08:51",
             "annotations": {
-                "ask clarifying question": "Lisa is asking if anyone has any questions before they begin, seeking clarification or further information before proceeding."
+                "ask question": "The speaker is explicitly asking for questions or feedback from the group.",
+                "encourage participation": "The speaker is inviting input or contributions from group members."
             }
         },
         {
@@ -590,7 +573,7 @@
             "start_time": "09:31",
             "end_time": "09:31",
             "annotations": {
-                "express humor": "The phrase \"Okay, going, going, gone\" is used in an attempt to be humorous, mimicking an auctioneer's call to signal the start of the discussion."
+                "process management": "This code applies because Lisa Kaltenegger is managing the meeting flow by concluding a brief activity where participants were asked to write down their thoughts."
             }
         },
         {
@@ -610,7 +593,7 @@
             "start_time": "09:31",
             "end_time": "09:31",
             "annotations": {
-                "express agreement": "Lisa says \"Okay, good\" which expresses agreement with the group being ready to start."
+                "None": "No relevant code applies to this utterance as it is too brief and does not explicitly convey any of the specified actions."
             }
         },
         {
@@ -629,14 +612,9 @@
             "screenshare_content": "None",
             "start_time": "09:31",
             "end_time": "10:25",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is encouraging participation by asking who wants to share what they wrote down, and suggesting a 'free for all' discussion."
-                },
-                {
-                    "assign task": "Lisa assigns the task of sharing his thoughts to Keith, specifically requesting his outside perspective."
-                }
-            ]
+            "annotations": {
+                "express humor": "Lisa uses humor by joking that she and Daniel will randomly appoint people to speak if no one volunteers, describing it as 'really embarrassing'."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -654,11 +632,10 @@
             "screenshare_content": "None",
             "start_time": "10:25",
             "end_time": "10:36",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Keith is explaining his perspective on sample sizes, defining what he considers a small sample size in his field."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Keith is expanding on his thought regarding sample sizes, providing a specific number as a reference point.",
+                "offer feedback": "Keith is providing his viewpoint as feedback on the concept of sample sizes."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -676,14 +653,11 @@
             "screenshare_content": "None",
             "start_time": "10:37",
             "end_time": "11:29",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Keith supports his point about sample sizes by referencing Vicky's keynote address, which mentioned the possibility of obtaining detailed atmospheric information for the nearest few exoplanetary systems."
-                },
-                {
-                    "present new idea": "Keith introduces the idea of correlating exoplanet habitability with properties of the host star, which would allow for larger sample sizes, and he also suggests focusing on the role of phosphorus in the search for life, linking it to measurable properties in stars."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Keith introduces a new idea about looking into phosphorus and its role in the search for life.",
+                "develop idea": "He expands on his thoughts about studying exoplanet atmospheres and biosignatures in relation to stellar properties.",
+                "signal expertise": "Keith states his background as a galactic scientist."
+            }
         },
         {
             "speaker": "Natasha Batalha",
@@ -702,8 +676,8 @@
             "start_time": "12:02",
             "end_time": "12:21",
             "annotations": {
-                "present new idea": "Natasha suggests considering a more general question than focusing on a single molecule, which is a novel approach compared to Keith's suggestion of looking at phosphorus.",
-                "expand on existing idea": "Natasha expands on the initial discussion about what to tackle by suggesting a broader question about the diversity and nature of planets, building upon the prompt given by Lisa."
+                "propose new idea": "Natasha introduces a new perspective by suggesting a more general question than going after a single molecule.",
+                "clarify goal": "Natasha contributes to clarifying the goal by suggesting a broader perspective on what to expect in terms of diversity and nature of planets."
             }
         },
         {
@@ -723,9 +697,9 @@
             "start_time": "12:21",
             "end_time": "12:55",
             "annotations": {
-                "present new idea": "Natasha introduces the idea of focusing on broader questions about planetary atmospheres, such as the fraction of planets with oxidized versus reduced atmospheres, instead of solely searching for specific molecules like oxygen, which is a novel concept not previously mentioned.",
-                "expand on existing idea": "Natasha expands on the idea of defining a focused question by providing examples of basic questions related to the diversity of atmospheres, building upon the previous discussion about sample sizes and atmospheric parameters.",
-                "propose decision": "Natasha proposes focusing on broader questions about planetary atmospheres, such as the fraction of planets with oxidized versus reduced atmospheres, instead of solely searching for specific molecules like oxygen, suggesting a concrete choice for the group's research direction."
+                "Develop idea": "Natasha is expanding on the previous discussion on how to approach the diversity and nature of planets by suggesting they focus on specific questions.",
+                "Ask question": "Natasha is seeking feedback on whether her suggested questions can help understand the diversity of atmospheres.",
+                "Identify gap": "Natasha highlights the need for a focused question in developing a statistical framework, indicating a gap in their current approach."
             }
         },
         {
@@ -745,7 +719,7 @@
             "start_time": "12:56",
             "end_time": "12:57",
             "annotations": {
-                "acknowledge contribution": "Keith Hawkins acknowledges Natasha Batalha's point, indicating he recognizes her input."
+                "Supportive Response": "The speaker is expressing agreement and validation of a previous contribution without adding new content."
             }
         },
         {
@@ -764,11 +738,9 @@
             "screenshare_content": "None",
             "start_time": "13:06",
             "end_time": "13:06",
-            "annotations": [
-                {
-                    "express humor": "Coco Zhang makes a joke about killing the discussion, likely in response to the previous comments by Keith and Natasha."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Natasha Batalha",
@@ -787,7 +759,7 @@
             "start_time": "13:09",
             "end_time": "13:10",
             "annotations": {
-                "encourage particpatioin": "Natasha encourages Coco to speak, indicating that she wants Coco to contribute to the discussion."
+                "encourage participation": "Natasha Batalha invites Coco to contribute to the discussion by saying 'Go ahead Coco.'"
             }
         },
         {
@@ -806,11 +778,9 @@
             "screenshare_content": "None",
             "start_time": "13:12",
             "end_time": "13:41",
-            "annotations": [
-                {
-                    "expand on existing idea": "Coco builds on the discussion about sample sizes, adding that the *type* of system sampled is also important, referencing Keith's earlier mention of stellar compositions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Coco Zhang is expanding on Keith Hawkins' idea about sample sizes by suggesting it's also about the type of system, including stellar compositions and planetary system architecture."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -829,7 +799,7 @@
             "start_time": "13:42",
             "end_time": "13:43",
             "annotations": {
-                "encourage particpatioin": "Lisa is calling on Leslie to speak and share her thoughts, encouraging her participation in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -849,8 +819,8 @@
             "start_time": "13:43",
             "end_time": "14:09",
             "annotations": {
-                "expand on existing idea": "Leslie builds on the ideas of Natasha and Coco, adding that different science questions require different statistical tests and sample sizes, which expands on the discussion about sample sizes and the diversity of planets.",
-                "acknowledge contribution": "Leslie acknowledges the contributions of Natasha and Coco by stating that her ideas echo what they mentioned, recognizing their input in the discussion."
+                "develop idea": "The speaker is expanding on existing ideas by discussing the variety of science questions and the need for different statistical tests and sample sizes.",
+                "acknowledge contribution": "The speaker is verbally recognizing the input of other group members, specifically Natasha and Coco."
             }
         },
         {
@@ -870,9 +840,8 @@
             "start_time": "14:09",
             "end_time": "14:41",
             "annotations": {
-                "expand on existing idea": "Leslie builds on Coco's point about the importance of the type of system sampled, adding that planets are complicated with a many-dimensional parameter space and correlated occurrence rates.",
-                "provide supporting evidence": "Leslie states that larger numbers will always be better when trying to do statistics, supporting the idea that sample size is important.",
-                "present new idea": "Leslie introduces the idea of mapping out the hierarchy of science questions and dependencies, which hasn't been explicitly mentioned before."
+                "develop idea": "Leslie is expanding on previous ideas by adding her thoughts on the complexity of planets and the need for a hierarchy of science questions.",
+                "identify gap": "Leslie points out the challenges in studying planets due to their complexity and the high dimensionality of the parameter space."
             }
         },
         {
@@ -892,8 +861,8 @@
             "start_time": "14:43",
             "end_time": "15:11",
             "annotations": {
-                "expand on existing idea": "Courtney builds upon Leslie's idea of a hierarchy of science questions by suggesting a specific experimental design: keeping most planetary properties constant and varying one at a time to observe the effect on the atmosphere.",
-                "express enthusiasm": "Courtney expresses excitement about the idea of having a small sample of planets where almost all the properties are the same and then you try to change one thing at a time, indicating optimism and encouragement for this approach."
+                "develop idea": "Courtney is expanding on Leslie's idea by providing a specific example of how to apply the concept of a hierarchy of science questions.",
+                "supportive response": "Courtney is expressing agreement with Leslie's idea and showing enthusiasm for it."
             }
         },
         {
@@ -912,17 +881,11 @@
             "screenshare_content": "None",
             "start_time": "15:12",
             "end_time": "15:58",
-            "annotations": [
-                {
-                    "expand on existing idea": "Eliza builds on Natasha's idea of asking general questions about planetary atmospheres (oxidized vs reduced) and chemical equilibrium, adding that defining the right questions is key."
-                },
-                {
-                    "acknowledge contribution": "Eliza acknowledges Coco's point about the types of planets to sample, indicating she is building on Coco's contribution."
-                },
-                {
-                    "present new idea": "Eliza introduces the idea of consulting non-astronomers to help define the right questions for establishing habitability and biological activity."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Eliza is expanding on existing ideas by referencing previous comments and elaborating on the need to define questions and sample sizes.",
+                "ask question": "Eliza is seeking to understand and define what questions should be asked, implying a request for information or clarification.",
+                "supportive response": "Eliza is expressing agreement and support for the direction of the discussion, particularly by mentioning her eagerness to hear from non-astronomers."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -941,9 +904,9 @@
             "start_time": "15:58",
             "end_time": "16:49",
             "annotations": {
-                "encourage particpatioin": "Daniel encourages Andrew, Nicole, and Andy to share their thoughts, as they haven't yet contributed to the discussion.",
-                "expand on existing idea": "Daniel builds on Courtney's idea of a controlled experiment by acknowledging the initial limitations of having a small number of planets with varying properties, which expands on the challenges of exoplanet research.",
-                "acknowledge contribution": "Daniel acknowledges Courtney's contribution by referencing her idea of changing one property at a time in a controlled experiment."
+                "develop idea": "Andy expands on the idea of experimentation in their field, comparing it to a laboratory setting and discussing the limitations and realities of their research situation.",
+                "identify gap": "Andy mentions the limitation of having a 'very, very small number of planets' and the complexity of their properties and stars, which can be seen as identifying a gap in their research.",
+                "offer feedback": "Andy provides a perspective on how they might approach their research, which can be seen as offering feedback on the methodological approach."
             }
         },
         {
@@ -963,7 +926,8 @@
             "start_time": "16:53",
             "end_time": "16:53",
             "annotations": {
-                "express agreement": "Nikole Lewis starts to agree with the previous speaker's point, echoing their sentiment before stopping abruptly."
+                "Supportive response": "The speaker is expressing agreement with previous statements.",
+                "Acknowledge contribution": "The speaker is verbally recognizing a previous contribution, even if briefly."
             }
         },
         {
@@ -983,7 +947,7 @@
             "start_time": "16:53",
             "end_time": "16:53",
             "annotations": {
-                "encourage particpatioin": "Daniel encourages Nicole to speak, inviting her to contribute to the discussion."
+                "encourage participation": "Daniel Apai is inviting Nicole to contribute to the discussion by saying 'Nicole, go ahead.'"
             }
         },
         {
@@ -1003,9 +967,9 @@
             "start_time": "16:57",
             "end_time": "17:48",
             "annotations": {
-                "express agreement": "Andrew agrees with Andy's point that they will be working with a small number of planets with varying properties initially.",
-                "expand on existing idea": "Andrew expands on the idea of working with a small sample size by suggesting that they will need to figure out how to learn from the small sample and evolve their questions as they go to larger ones.",
-                "present new idea": "Andrew introduces the idea of determining what the empirical habitable zone is."
+                "propose new idea": "Andrew suggests evolving the questions that are asked as a way to deal with small sample sizes.",
+                "develop idea": "Andrew builds upon Andy's idea about working with small sample sizes by suggesting they evolve their questions.",
+                "ask question": "Andrew explicitly asks for information or clarification with 'what is the empirical habitable zone?'"
             }
         },
         {
@@ -1025,7 +989,7 @@
             "start_time": "17:48",
             "end_time": "17:48",
             "annotations": {
-                "okay": "This utterance does not fit into any of the codes provided, as it is simply an acknowledgement."
+                "acknowledge contribution": "The speaker is acknowledging the previous speaker or the conversation without adding new content."
             }
         },
         {
@@ -1045,9 +1009,7 @@
             "start_time": "17:53",
             "end_time": "18:11",
             "annotations": {
-                "expand on existing idea": "Nikole agrees with Andrew's point about the limitations of small sample sizes, building on his point about the volume-limited regimes and the need to learn from small samples.",
-                "express agreement": "Nikole explicitly agrees with Andrew's point about the reality of small sample sizes.",
-                "present new idea": "Nikole introduces the idea that a sample of 500 planets is necessary to answer some of the lingering questions."
+                "propose new idea": "She introduces the idea that a sample size of 500 planets is necessary to answer certain questions."
             }
         },
         {
@@ -1067,9 +1029,9 @@
             "start_time": "18:11",
             "end_time": "19:08",
             "annotations": {
-                "expand on existing idea": "Nikole is building on the previous discussion about sample sizes and the limitations of small samples, emphasizing the need to strive for larger samples despite current limitations.",
-                "express alternative decision": "Nikole rejects the idea of passively accepting the limited sample sizes and advocates for actively pursuing a larger sample of 500 planets to address key questions.",
-                "express frustration": "Nikole expresses frustration with the idea of passively accepting the limited sample sizes, suggesting that it will lead to slow progress."
+                "develop idea": "The speaker is expanding on previous ideas by emphasizing the need for a larger sample size and suggesting a two-pronged approach.",
+                "identify gap": "The speaker is highlighting the gap in current knowledge or approach, specifically the need for a larger sample size.",
+                "offer feedback": "The speaker is providing feedback on the approach, suggesting a two-pronged strategy and emphasizing the importance of pushing for a larger sample size."
             }
         },
         {
@@ -1088,11 +1050,9 @@
             "screenshare_content": "None",
             "start_time": "19:08",
             "end_time": "19:08",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Nikole acknowledges Andrew's prior statement, signaling she heard him but not necessarily agreeing or expanding on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -1111,12 +1071,9 @@
             "start_time": "19:09",
             "end_time": "19:52",
             "annotations": {
-                "express alternative decision": {
-                    "Explanation": "Daniel is expressing an alternative decision by making a counterpoint to the idea of starting with a very small sample size, suggesting it might not be the best approach."
-                },
-                "provide supporting evidence": {
-                    "Explanation": "Daniel provides supporting evidence for his counterpoint by referencing the Viking landers' mission to Mars as an example of how starting with a small sample and a specific approach can lead to negative outcomes."
-                }
+                "develop idea": "Daniel is expanding on ideas previously discussed, specifically addressing Nicole's points and adding an example.",
+                "critical response": "Daniel is questioning the approach of starting with a very small sample, using the Viking landers as a counterexample.",
+                "offer feedback": "Daniel is providing specific feedback on the approach of starting with a small sample."
             }
         },
         {
@@ -1135,11 +1092,9 @@
             "screenshare_content": "None",
             "start_time": "19:52",
             "end_time": "19:52",
-            "annotations": [
-                {
-                    "express agreement": "Daniel agrees with the previous point made by Nikole about the need for a larger sample size of planets, confirming the importance of the issue."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1157,13 +1112,11 @@
             "screenshare_content": "None",
             "start_time": "19:53",
             "end_time": "20:37",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Lisa uses the example of 51 Pegasi to support the idea that even a single planet can revolutionize our understanding of planets, contrasting Daniel's point about the Viking landers.",
-                    "express agreement": "Lisa explicitly agrees that there is space for both approaches (small and large samples), indicating agreement with the previous discussion.",
-                    "expand on existing idea": "Lisa expands on the discussion by highlighting the importance of considering what can be achieved with different sample sizes (5, 10, 500, 1000 planets), building on the previous discussion about sample sizes and research questions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker develops an idea by using the example of 51 Pegasi to illustrate the impact of small sample sizes and suggests considering what can be achieved with different sample sizes.",
+                "acknowledge contribution": "The speaker acknowledges previous contributions by agreeing with and building upon them.",
+                "encourage participation": "The speaker encourages participation by suggesting a line of inquiry into the implications of different sample sizes for their research."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1182,8 +1135,8 @@
             "start_time": "20:37",
             "end_time": "20:54",
             "annotations": {
-                "expand on existing idea": "Lisa builds on the previous discussion about sample sizes and the types of systems to sample, adding that the questions we ask and the hierarchies we establish are also important considerations.",
-                "acknowledge contribution": "Lisa acknowledges that the participants have echoed the importance of sample size and the questions we need to ask, recognizing their input on the topic."
+                "develop idea": "The speaker is expanding on existing ideas by emphasizing the need to consider the questions and hierarchies in their research.",
+                "supportive response": "The speaker is showing agreement or validation with previous discussions by aligning her thoughts with what others have said."
             }
         },
         {
@@ -1202,17 +1155,11 @@
             "screenshare_content": "None",
             "start_time": "20:55",
             "end_time": "21:42",
-            "annotations": [
-                {
-                    "expand on existing idea": "Natasha builds upon the previous discussion about sample sizes and the types of systems to sample, adding the idea of an interplay between sample size and the depth of analysis on each planet."
-                },
-                {
-                    "propose decision": "Natasha proposes a decision to consider whether the community is more excited about broad questions with lower precision or more focused questions requiring high precision spectroscopy, linking it back to defining the original science question."
-                },
-                {
-                    "ask clarifying question": "Natasha asks whether people are generally more excited about broad questions or high precision spectroscopy, seeking to understand the community's preferences for defining the science question."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Natasha introduces a new perspective on studying exoplanets by discussing the interplay between sample size and measurement precision.",
+                "develop idea": "Natasha builds upon previous ideas by discussing the trade-off between having a large sample size versus achieving high precision in measurements.",
+                "ask question": "Natasha asks for the group's opinion on whether broad questions or detailed compositions are more exciting and feasible."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -1231,8 +1178,9 @@
             "start_time": "21:44",
             "end_time": "22:29",
             "annotations": {
-                "express agreement": "Leslie expresses agreement with Andrew's idea of empirically testing the habitable zone concept, building on the previous discussion about sample sizes and types of systems to sample.",
-                "expand on existing idea": "Leslie expands on Andrew's idea by mentioning existing work on the topic and highlighting the importance of empirically testing the habitable zone for future mission design and biosignature interpretation."
+                "develop idea": "Leslie Rogers is expanding on Andrew's idea by providing additional context and reasons why empirically testing the habitable zone concept is crucial.",
+                "acknowledge contribution": "Leslie Rogers acknowledges Andrew's contribution by mentioning and building upon his idea.",
+                "supportive response": "This utterance expresses agreement and a positive evaluation of Andrew's suggestion."
             }
         },
         {
@@ -1251,14 +1199,10 @@
             "screenshare_content": "None",
             "start_time": "22:29",
             "end_time": "23:26",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about sample sizes, Keith expands on the idea that understanding correlations between planet properties and other system properties (star, dynamical, architecture) is crucial for future sample selection."
-                },
-                {
-                    "provide supporting evidence": "Keith provides supporting evidence from galactic science, mentioning the transition from small samples to larger ones (Gaia), to emphasize the importance of careful sample selection in exoplanet research."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of working with small samples and the importance of understanding correlations between planet properties and other system properties for future sample selection, using examples from galactic science.",
+                "None": "No other codes seem to directly apply to this utterance based on the provided definitions and analysis."
+            }
         },
         {
             "speaker": "Eliza Kempton",
@@ -1276,14 +1220,11 @@
             "screenshare_content": "None",
             "start_time": "23:26",
             "end_time": "24:05",
-            "annotations": [
-                {
-                    "expand on existing idea": "Eliza builds on Keith and Natasha's comments about the importance of correlations between planet properties and other system properties, and defining sample size, respectively."
-                },
-                {
-                    "present new idea": "Eliza introduces the idea that it's important to have predictions in hand before looking for correlations, using the example of oxidizing vs. reducing atmospheres to illustrate the importance of having predictions in advance."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Eliza is expanding on previous ideas discussed, specifically emphasizing the importance of having predictions in hand.",
+                "ask question": "Eliza poses a question about what the prediction should be, seeking clarity or information.",
+                "supportive response": "Eliza is engaging with and supporting others' ideas, showing agreement on the importance of predictions."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -1301,17 +1242,10 @@
             "screenshare_content": "None",
             "start_time": "24:05",
             "end_time": "24:54",
-            "annotations": [
-                {
-                    "express agreement": "Daniel expresses agreement with the direction of hypothesis testing that Eliza mentioned in the previous utterance."
-                },
-                {
-                    "provide supporting evidence": "Daniel provides supporting evidence by stating that sample size is a fundamental parameter of any telescope and the cost per planet, which strengthens the importance of hypothesis testing."
-                },
-                {
-                    "explain or define term or concept": "Daniel explains why the question of sample size is important by relating it to the cost of building telescopes and the dual nature of missions as both exploratory and hypothesis-testing."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas about sample size and its implications for mission planning and hypothesis testing.",
+                "clarify goal": "The speaker is defining and clarifying the objectives of the discussion, including understanding mission complexity and strategy."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1330,9 +1264,8 @@
             "start_time": "24:55",
             "end_time": "24:55",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Lisa acknowledges Nicole and Natasha's contributions by referring back to their previously mentioned ideas about a two-pronged approach and defining what would be considered 'good'."
-                }
+                "acknowledge contribution": "Lisa Kaltenegger acknowledges Nicole's and Natasha's contributions by referencing their comments.",
+                "supportive response": "Lisa Kaltenegger is providing a supportive response by building upon and showing agreement with previous comments."
             }
         },
         {
@@ -1352,7 +1285,7 @@
             "start_time": "24:55",
             "end_time": "24:57",
             "annotations": {
-                "acknowledge contribution": "Nikole Lewis says \"Oh sorry\", which acknowledges that she may have interrupted someone else who was about to speak."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1372,7 +1305,7 @@
             "start_time": "24:57",
             "end_time": "24:57",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Nikole to speak, after Nikole said \"Oh sorry\"."
+                "encourage participation": "Lisa Kaltenegger invites or allows someone to participate by saying 'Go.'"
             }
         },
         {
@@ -1392,8 +1325,9 @@
             "start_time": "24:57",
             "end_time": "25:44",
             "annotations": {
-                "offer constructive criticism": "Nikole critiques the approach of always aiming for the \"hardest thing\" (like finding O2) in defining capabilities, arguing it doesn't necessarily address other important questions, and suggests a more hierarchical strategy, building on Leslie's idea of hierarchy.",
-                "expand on existing idea": "Nikole expands on Leslie's idea of a hierarchy of science questions, suggesting that strategies should be based on this hierarchy rather than solely focusing on the most difficult goals."
+                "Develop idea": "Nikole Lewis expands on her thoughts about the insistence on aiming for the hardest capabilities and questions the assumption that this approach will naturally yield results for other questions.",
+                "Critical response": "Nikole Lewis questions and challenges the approach of solely focusing on the hardest thing without considering its implications on other questions.",
+                "Offer feedback": "Nikole Lewis provides feedback on the need for a hierarchy of questions and strategies based on that hierarchy."
             }
         },
         {
@@ -1413,7 +1347,7 @@
             "start_time": "25:44",
             "end_time": "25:44",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1432,11 +1366,9 @@
             "screenshare_content": "None",
             "start_time": "25:44",
             "end_time": "25:44",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Courtney encourages herself to speak, after Daniel said 'One', which is likely a signal that someone else wants to speak."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker is inviting another participant, Courtney, to contribute their thoughts or ideas, thereby encouraging participation in the discussion."
+            }
         },
         {
             "speaker": "Courtney Dressing",
@@ -1454,12 +1386,11 @@
             "screenshare_content": "None",
             "start_time": "25:44",
             "end_time": "26:07",
-            "annotations": [
-                {
-                    "ask clarifying question": "Courtney is asking Leslie to elaborate on the 'havoc side' of the topic, indicating a need for more information or clarification on that specific aspect.",
-                    "expand on existing idea": "Courtney expands on the discussion by mentioning the work done on Luvoir, adding details about how they structured science missions to fit within the telescope's lifetime and ensure feasibility, building upon the previous discussion about mission design and feasibility."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information from Leslie.",
+                "acknowledge contribution": "The speaker is referencing and acknowledging past work done on Luvoir.",
+                "encourage participation": "The speaker is inviting Leslie to share more about a topic."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -1478,9 +1409,9 @@
             "start_time": "26:07",
             "end_time": "26:42",
             "annotations": {
-                "expand on existing idea": "Leslie expands on the idea of hypothesis testing, which Daniel mentioned earlier, by relating it to the Havoc report and exploring systems inside and outside the habitable zone.",
-                "provide supporting evidence": "Leslie mentions the Havoc report as an example of a study centered around hypothesis testing, providing evidence for the relevance of this approach.",
-                "explain or define term or concept": "Leslie explains the concept of 'the strength of a non detection or like a null result is less powerful' in the context of smaller sample sizes, clarifying the limitations of such studies."
+                "develop idea": "The speaker is expanding on existing ideas by discussing the Havoc report and the concept of hypothesis testing in the context of planetary exploration.",
+                "identify gap": "The speaker implicitly points out a gap in knowledge or understanding related to the strength of non-detection results with smaller sample sizes.",
+                "supportive response": "The utterance engages with previous ideas and discussions, showing agreement and a willingness to explore them further."
             }
         },
         {
@@ -1499,11 +1430,9 @@
             "screenshare_content": "None",
             "start_time": "26:42",
             "end_time": "26:43",
-            "annotations": [
-                {
-                    "None": "This utterance does not fit any of the codes in the codebook."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Courtney Dressing",
@@ -1522,7 +1451,7 @@
             "start_time": "26:43",
             "end_time": "26:43",
             "annotations": {
-                "encourage particpatioin": "Courtney encourages herself to speak, likely after someone else yielded the floor to her."
+                "encourage participation": "The speaker is inviting herself to contribute to the discussion, which can be seen as a way to encourage participation."
             }
         },
         {
@@ -1541,14 +1470,10 @@
             "screenshare_content": "None",
             "start_time": "26:43",
             "end_time": "27:37",
-            "annotations": [
-                {
-                    "ask clarifying question": "Courtney is curious to hear more from Leslie about the Havoc side of this, indicating a request for further explanation or details on the topic."
-                },
-                {
-                    "expand on existing idea": "Courtney expands on the discussion about mission design and sample sizes by describing the work done on Luvoir, adding details about how they ensured the science missions were feasible within the telescope's lifetime."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Courtney is expanding on her thoughts by comparing past projects (Luvoir and Havoc) and discussing their methodologies.",
+                "acknowledge contribution": "Courtney is referencing and building upon previous work by others (the work done on Luvoir and Havoc)."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -1566,13 +1491,11 @@
             "screenshare_content": "None",
             "start_time": "27:38",
             "end_time": "29:20",
-            "annotations": [
-                {
-                    "expand on existing idea": "Leslie expands on the discussion about sample sizes and mission design by discussing the Havoc report and its focus on hypothesis testing, building on the previous discussion about mission design and sample sizes.",
-                    "provide supporting evidence": "Leslie provides supporting evidence by referencing the Havoc report and comparing it to the Luvoir mission, providing context for the discussion on mission design and sample sizes.",
-                    "explain or define term or concept": "Leslie explains the concept of a 'null result' and its implications for the strength of a mission's findings, clarifying the limitations of smaller missions like Havoc compared to larger ones like Luvoir."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Leslie is expanding on the idea of comparing the Havoc report with Luvoir, discussing the implications of their different approaches to hypothesis testing and the detection of biosignatures.",
+                "supportive response": "Leslie is showing agreement and building upon previous discussions, indicating a supportive stance towards the ideas presented.",
+                "clarify goal": "Leslie is clarifying the goals and limitations of the Havoc mission in comparison to Luvoir, helping to define what can be achieved with each."
+            }
         },
         {
             "speaker": "Andy Skemer",
@@ -1590,11 +1513,9 @@
             "screenshare_content": "None",
             "start_time": "29:20",
             "end_time": "29:20",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1612,11 +1533,9 @@
             "screenshare_content": "The screen shows a presentation with a space theme, featuring planets and stars. The content remains static throughout the segment.",
             "start_time": "29:20",
             "end_time": "29:20",
-            "annotations": [
-                {
-                    "express agreement": "Lisa is acknowledging Andy's presence and readiness to speak, implicitly agreeing to let him contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andy Skemer",
@@ -1634,11 +1553,9 @@
             "screenshare_content": "None",
             "start_time": "29:20",
             "end_time": "29:20",
-            "annotations": [
-                {
-                    "express humor": "Andy says \"Sorry\", which is likely a humorous apology for interrupting the conversation, given the context of the ongoing discussion and the previous utterance where Lisa said \"Oh\" in response to Andy saying \"Hi\"."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1656,12 +1573,11 @@
             "screenshare_content": "The screen shows a presentation with a space theme, featuring planets and stars. The content remains static throughout the segment.",
             "start_time": "29:20",
             "end_time": "30:37",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa asks if there are things people wish they could have done differently with past missions, encouraging them to share their thoughts.",
-                    "present new idea": "Lisa suggests exploring unconventional ideas, such as focusing on white dwarfs to see if life survives stellar explosions, which is a novel concept not previously discussed."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Lisa invites the team to think about and suggest new approaches to their problem.",
+                "summarize conversation": "Lisa summarizes the context of previous missions and their limitations.",
+                "propose new idea": "Lisa proposes considering a novel approach (studying white dwarfs) as an example of unconventional thinking."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -1679,13 +1595,9 @@
             "screenshare_content": "None",
             "start_time": "30:37",
             "end_time": "31:22",
-            "annotations": [
-                {
-                    "express agreement": "Daniel explicitly agrees with Lisa's previous point, indicating alignment on the discussion's direction.",
-                    "propose decision": "Daniel proposes to move away from comparing Habex and Luvoir and instead think freely about designing something new, suggesting a shift in the discussion's focus.",
-                    "encourage particpatioin": "Daniel acknowledges that Andy wanted to speak and encourages him to contribute, promoting inclusivity in the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites Andy to contribute, showing an effort to encourage participation from others."
+            }
         },
         {
             "speaker": "Andy Skemer",
@@ -1703,14 +1615,10 @@
             "screenshare_content": "None",
             "start_time": "31:22",
             "end_time": "31:40",
-            "annotations": [
-                {
-                    "present new idea": "Andy presents a new idea by posing a hypothetical question about the optimal sample composition for finding rocky planets, suggesting a trade-off between diversity and quantity of stellar types."
-                },
-                {
-                    "propose decision": "Andy proposes a decision by asking a 'would you rather' question, prompting the group to consider the best approach to sample selection based on stellar types."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking a question about the approach to studying rocky planets, specifically regarding sample sizes and the characteristics of the stars these planets orbit.",
+                "develop idea": "The question is aimed at exploring or developing a line of thought regarding sample sizes and planetary characteristics, by comparing different strategies for selecting planets for study."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -1729,7 +1637,8 @@
             "start_time": "31:41",
             "end_time": "31:43",
             "annotations": {
-                "expand on existing idea": "Lisa is building on Andy's question about whether to prioritize rocky planets around M stars or G stars by adding another factor to consider: the age of the stars, suggesting to consider old and young stars as well."
+                "develop idea": "The speaker is expanding on previous ideas by suggesting considering different types of planets and stars, such as old and young ones.",
+                "supportive response": "The utterance expresses a positive and constructive contribution to the discussion, aligning with and building on previous suggestions."
             }
         },
         {
@@ -1749,8 +1658,7 @@
             "start_time": "31:43",
             "end_time": "31:52",
             "annotations": {
-                "present new idea": "Andy is presenting a new idea by posing a question about whether it's better to have breadth or depth when considering sample sizes of rocky planets, which is a novel consideration in the context of the discussion.",
-                "propose decision": "Andy is proposing a decision by asking whether it's better to prioritize breadth or depth in the context of sample sizes for rocky planets."
+                "develop idea": "The speaker is expanding on the previous discussion about studying exoplanets by suggesting a fundamental question of whether to prioritize breadth or depth in their research approach."
             }
         },
         {
@@ -1770,10 +1678,8 @@
             "start_time": "31:53",
             "end_time": "32:51",
             "annotations": {
-                "expand on existing idea": "Eliza expands on Andy's question about whether to prioritize breadth or depth in sample sizes by stating that there are questions that need to be addressed with M star planets first, building on the discussion of sample sizes and types of systems to study.",
-                "provide supporting evidence": "Eliza supports her point by stating that they don't know what a rocky M star planet looks like or what its atmosphere is, providing a reason why understanding the context of M star planets is important.",
-                "explain or define term or concept": "Eliza explains the concept of understanding the context first by stating that they don't know what a rocky M star planet looks like, clarifying the importance of understanding the context of M star planets.",
-                "present new idea": "Eliza presents the idea that they need to address questions about M star planets first, introducing a new focus for the discussion."
+                "identify gap": "Eliza explicitly recognizes gaps in their current understanding of rocky M star planets and their atmospheres.",
+                "ask question": "Eliza asks for confirmation with 'That is the problem, right?'"
             }
         },
         {
@@ -1793,9 +1699,9 @@
             "start_time": "32:52",
             "end_time": "33:24",
             "annotations": {
-                "propose decision": "Lisa proposes a decision-making framework based on tradeoffs, specifically suggesting considering the cost-benefit ratio of observing G stars versus M stars when planning a sample of 20 planets, building on the discussion about sample sizes and types of stars.",
-                "expand on existing idea": "Lisa expands on the existing idea of sample size and star type by suggesting a specific tradeoff scenario (1 G star vs. 10 M stars) and asking how to establish a hierarchical thinking to inform such decisions, building on Andy's question about breadth vs depth.",
-                "encourage particpatioin": "Lisa encourages participation by posing a question about the tradeoff between G stars and M stars, inviting the group to consider how to make informed decisions based on statistical means, following the discussion about sample sizes and types of stars."
+                "Develop Idea": "The speaker is expanding on previous discussions about sample sizes and types of stars.",
+                "Ask Question": "The speaker poses a question about what tradeoff one would want to make in terms of sample size and star types.",
+                "Offer Feedback": "The speaker offers a consideration for how to approach experimental design and statistical analysis."
             }
         },
         {
@@ -1815,9 +1721,9 @@
             "start_time": "33:24",
             "end_time": "34:08",
             "annotations": {
-                "expand on existing idea": "Coco builds on Eliza's comments about the importance of understanding the context of M star planets, suggesting a quantitative approach to information metrics.",
-                "present new idea": "Coco introduces the idea of using information metrics to quantify the correlation between stellar composition and planetary properties like water content, to predict the most informative next steps.",
-                "propose decision": "Coco proposes to quantitatively assess information metrics, assuming a correlation between stellar composition and planetary water content, to predict the most informative next steps."
+                "propose new idea": "The speaker suggests a new quantitative approach to analyzing information metrics.",
+                "develop idea": "The speaker is building on previous ideas by suggesting a more quantitative method.",
+                "ask question": "The speaker is seeking information or clarification on implementing the quantitative approach."
             }
         },
         {
@@ -1837,8 +1743,8 @@
             "start_time": "34:08",
             "end_time": "34:43",
             "annotations": {
-                "present new idea": "Lisa introduces the idea that ground-based and space-based observations can be combined, which is not usually the case due to funding constraints, but is possible in this context because it is a private foundation.",
-                "encourage particpatioin": "Lisa encourages Andrew to chime in, inviting him to contribute to the discussion."
+                "propose new idea": "Lisa Kaltenegger suggests that the project could combine ground-based and space-based observations because it's funded by a private foundation, which is a new approach to consider.",
+                "develop idea": "She elaborates on this idea by mentioning the possibility of using small space graphs with ELT (Extremely Large Telescope) in combination, expanding on how they could work within the project's constraints."
             }
         },
         {
@@ -1858,9 +1764,8 @@
             "start_time": "34:43",
             "end_time": "35:32",
             "annotations": {
-                "present new idea": "Andrew introduces a novel concept of using a \"light bucket\" instead of a traditional telescope for transmission spectroscopy, which hasn't been discussed before.",
-                "propose decision": "Andrew ends by asking if using a light bucket is a tradeoff they would make, suggesting a concrete choice for the group to consider.",
-                "explain or define term or concept": "Andrew explains the concept of a \"huge, huge equivalent diameter transmission spectroscopy mission\" in the context of using a light bucket, clarifying the approach."
+                "propose new idea": "The speaker introduces a new, unconventional approach to observational astronomy by suggesting the use of a 'light bucket' for a transmission spectroscopy mission.",
+                "ask question": "The utterance ends with a question seeking input or opinion on the proposed idea."
             }
         },
         {
@@ -1879,17 +1784,10 @@
             "screenshare_content": "None",
             "start_time": "35:33",
             "end_time": "35:51",
-            "annotations": [
-                {
-                    "express agreement": "Daniel expresses agreement with Andrew's idea of using a light bucket instead of a telescope."
-                },
-                {
-                    "provide supporting evidence": "Daniel provides supporting evidence by stating that they have been working on this idea for six years and that there are technologies that would enable it, building on Andrew's idea."
-                },
-                {
-                    "expand on existing idea": "Daniel expands on Andrew's idea by suggesting that using a different technology like transmission spectroscopy could lead to larger samples, adding details to the discussion."
-                }
-            ]
+            "annotations": {
+                "supportive response": "Daniel Apai expresses agreement and support for the idea, discussing potential methodologies.",
+                "develop idea": "He expands on the idea by mentioning ongoing work and potential technological approaches."
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -1908,7 +1806,8 @@
             "start_time": "36:41",
             "end_time": "36:46",
             "annotations": {
-                "ask clarifying question": "Nikole is asking Daniel, who seems to be leading the discussion, for permission to share a link in the chat, seeking clarification on whether it's appropriate to do so."
+                "process management": "Nikole Lewis is managing the meeting flow by asking about sharing information.",
+                "ask question": "Nikole Lewis is asking for permission or clarification on sharing a link."
             }
         },
         {
@@ -1928,8 +1827,7 @@
             "start_time": "36:46",
             "end_time": "36:50",
             "annotations": {
-                "express agreement": "Daniel expresses agreement with Andrew's idea of using a light bucket instead of a telescope for transmission spectroscopy.",
-                "acknowledge contribution": "Daniel acknowledges Andrew's contribution of a novel idea."
+                "Supportive Response": "Daniel Apai is expressing agreement and a positive evaluation of a previous idea."
             }
         },
         {
@@ -1949,9 +1847,9 @@
             "start_time": "36:50",
             "end_time": "37:42",
             "annotations": {
-                "expand on existing idea": "Lisa builds on Daniel's suggestion to move away from instrument-specific thinking by emphasizing the need to consider fundamental questions even with advanced instruments.",
-                "present new idea": "Lisa introduces the idea of prioritizing targets for observation, even with a hypothetical advanced telescope, highlighting the lack of a clear hierarchy for target selection.",
-                "ask clarifying question": "Lisa poses a hypothetical scenario about having a powerful telescope and asks how to prioritize targets, prompting the group to consider the fundamental questions that should guide observation choices."
+                "propose new idea": "Lisa suggests reconsidering the approach to focus on fundamentals rather than instruments.",
+                "develop idea": "She elaborates on the challenge of choosing what to observe with a hypothetical advanced telescope.",
+                "ask question": "Lisa asks rhetorical questions about prioritizing observations."
             }
         },
         {
@@ -1971,9 +1869,9 @@
             "start_time": "37:42",
             "end_time": "38:48",
             "annotations": {
-                "expand on existing idea": "Eliza is expanding on Coco's question about information metrics by discussing flow down charts for bio signature studies and how they could be applied to large numbers of planets, building on the idea of quantifying information gain.",
-                "present new idea": "Eliza presents the idea of creating a systematic approach to building a statistical sample of planets based on guiding questions, suggesting a method for expanding the sample based on initial observations and incorporating factors like stellar age or type.",
-                "ask clarifying question": "Eliza is asking a clarifying question about how to systematically build a statistical sample of planets based on a guiding question, given the current methods focus on single planet analysis."
+                "develop idea": "Eliza is expanding on Coco's question and discussing methodologies for bio signature studies.",
+                "identify gap": "Eliza points out a lack of knowledge on applying flow down charts to large numbers of planets.",
+                "ask question": "Eliza ends with a question about how to build out a statistical sample in a systematic way."
             }
         },
         {
@@ -1993,7 +1891,8 @@
             "start_time": "38:49",
             "end_time": "39:02",
             "annotations": {
-                "present new idea": "Leslie proposes a new guiding question about the delivery or distribution of water throughout planets and planetary systems, which hasn't been explicitly discussed before."
+                "propose new idea": "Leslie introduces a new idea for a guiding question regarding the delivery or distribution of water throughout planets and planetary systems.",
+                "clarify goal": "The proposal of a guiding question helps to clarify or define the goals of their discussion."
             }
         },
         {
@@ -2013,7 +1912,7 @@
             "start_time": "39:02",
             "end_time": "39:02",
             "annotations": {
-                "expand on existing idea": "Leslie is building upon the previous discussion about how to systematically build a statistical sample of planets, and she is about to propose a guiding question related to water delivery and distribution."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2032,11 +1931,10 @@
             "screenshare_content": "None",
             "start_time": "39:02",
             "end_time": "39:17",
-            "annotations": [
-                {
-                    "expand on existing idea": "Leslie is building upon the previous discussion about water delivery and distribution in planetary systems, adding details about the role of planetary architecture and gas giants."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by providing more details about the factors that could influence water distribution in planetary systems.",
+                "supportive response": "The speaker is providing a positive and constructive comment that builds on previous discussions."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -2055,7 +1953,7 @@
             "start_time": "39:17",
             "end_time": "39:17",
             "annotations": {
-                "expand on existing idea": "Leslie is building upon the previous discussion about defining the right questions and strategies for exoplanet research, as well as the interplay between sample size and precision, by proposing an initial guiding question."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2075,7 +1973,7 @@
             "start_time": "39:17",
             "end_time": "39:38",
             "annotations": {
-                "expand on existing idea": "Leslie is expanding on the guiding question of water delivery and distribution proposed in the previous utterance, adding that planetary architecture and the presence of gas giants could play a role."
+                "develop idea": "The speaker is expanding on an idea previously mentioned, discussing factors that could influence the delivery of water in planetary systems."
             }
         },
         {
@@ -2094,11 +1992,9 @@
             "screenshare_content": "None",
             "start_time": "39:38",
             "end_time": "39:41",
-            "annotations": [
-                {
-                    "express humor": "The phrase \"Basically infinite\" is a humorous way to end a thought, implying the complexity of the topic is vast and perhaps overwhelming, following a discussion about the many factors influencing planetary systems."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code directly applies to this utterance as it seems to be an expression of acknowledgment of complexity rather than a direct scientific contribution, question, or feedback."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -2117,7 +2013,8 @@
             "start_time": "40:00",
             "end_time": "40:13",
             "annotations": {
-                "express humor": "The speaker is making a humorous observation about the complexity and uncertainty involved in geological variables, implying that geologists might overwhelm them with a long list of factors that are difficult to validate."
+                "identify gap": "The speaker is pointing out the existence of many variables that are not proven to matter, indicating a gap in knowledge or understanding.",
+                "develop idea": "The speaker is expanding on the idea that there are numerous factors to consider, even if they are not proven to be significant."
             }
         },
         {
@@ -2137,9 +2034,9 @@
             "start_time": "40:17",
             "end_time": "40:40",
             "annotations": {
-                "express humor": "The speaker makes a humorous remark about astronomers' tendency to simplify complex details, suggesting they 'throw out the 50 things' and pick one they can measure, which is intended to be funny.",
-                "explain or define term or concept": "The speaker is explaining the approach that astronomers take when dealing with complex systems, which involves simplifying the problem by focusing on measurable aspects.",
-                "encourage particpatioin": "The speaker is encouraging the group to simplify complex problems and focus on measurable aspects, inviting them to think about how to collapse complicated things."
+                "ask question": "The speaker ends with a question about how to collapse complicated things, seeking information or suggestions.",
+                "offer feedback": "The speaker provides a general suggestion on how to approach the problem by focusing on what can be measured.",
+                "clarify goal": "The speaker reflects on the goal of simplifying complex data to make it measurable."
             }
         },
         {
@@ -2158,14 +2055,11 @@
             "screenshare_content": "None",
             "start_time": "40:37",
             "end_time": "41:32",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lisa builds on the previous discussion about bio signatures and the challenges of interpreting them in the absence of sufficient context, adding that even with the best instruments, a clear strategy for selecting targets is crucial."
-                },
-                {
-                    "present new idea": "Lisa introduces the idea of developing a strategy for target selection based on the number of planets or systems available for observation, suggesting a novel approach to planning observations."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Lisa suggests thinking about biosignature strategies without constraints of existing methods.",
+                "ask question": "Lisa asks for thoughts on strategies for different sample sizes of planets/systems.",
+                "develop idea": "She builds upon previous points about needing context and sample size for biosignature identification."
+            }
         },
         {
             "speaker": "Eliza Kempton",
@@ -2184,7 +2078,9 @@
             "start_time": "41:33",
             "end_time": "41:41",
             "annotations": {
-                "encourage particpatioin": "Eliza encourages the participation of geoscientists to get their perspective on the discussion, building on the previous discussion about the need to define the right questions for habitability and biological activity."
+                "identify gap": "Eliza identifies a gap in their discussion - the lack of a geoscientist's perspective.",
+                "encourage participation": "Eliza encourages participation by suggesting involving Nicole.",
+                "assign task": "Eliza assigns a task or suggests an action item for Nicole."
             }
         },
         {
@@ -2204,7 +2100,8 @@
             "start_time": "41:41",
             "end_time": "41:54",
             "annotations": {
-                "encourage particpatioin": "Eliza encourages participation by suggesting that Nicole include in their report that they would like feedback from those outside of the astronomy community on their approach."
+                "encourage participation": "The speaker invites input from outside the astronomy community.",
+                "process management": "The speaker discusses the process of sharing their report."
             }
         },
         {
@@ -2224,7 +2121,7 @@
             "start_time": "41:57",
             "end_time": "42:01",
             "annotations": {
-                "express humor": "Natasha makes a humorous remark about the lack of geologists in the discussion, implying they might not be interested in the topic of sample size, which is a lighthearted observation."
+                "identify gap": "The speaker is pointing out a lack of interest from geologists in sample size."
             }
         },
         {
@@ -2244,7 +2141,7 @@
             "start_time": "42:02",
             "end_time": "42:04",
             "annotations": {
-                "express humor": "Eliza makes a joke about geoscientists typically dealing with a sample size of one, which is Earth, expressing humor."
+                "express humor": "Eliza Kempton makes a humorous remark about geoscientists usually having a sample size of one."
             }
         },
         {
@@ -2264,7 +2161,8 @@
             "start_time": "42:04",
             "end_time": "42:20",
             "annotations": {
-                "provide supporting evidence": "Lisa refers to Tim's talk about Earth's rocks and history to support the idea of a perfect sample size, implying that Earth's geological record can inform exoplanet studies."
+                "acknowledge contribution": "The speaker references Tim's talk, acknowledging his contribution to the discussion on sample size.",
+                "supportive response": "The speaker's tone is reflective and positive towards the content of Tim's talk."
             }
         },
         {
@@ -2284,9 +2182,8 @@
             "start_time": "42:20",
             "end_time": "42:52",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining that even with detailed data, we don't fully understand oxygen evolution on Earth, highlighting the complexity of the problem.",
-                "reject idea": "The speaker is rejecting the idea that having geologists in the room would necessarily be the most helpful, because geologists focus on detailed data, which hasn't fully explained oxygen evolution on Earth.",
-                "express agreement": "The speaker agrees with the idea of getting as much detailed data as possible."
+                "develop idea": "The speaker is expanding on the idea of how geologists approach data collection and analysis.",
+                "identify gap": "The speaker explicitly mentions a lack of complete understanding of oxygen evolution."
             }
         },
         {
@@ -2306,7 +2203,7 @@
             "start_time": "42:52",
             "end_time": "42:53",
             "annotations": {
-                "assign task": "Lisa assigns Eliza the task of finding a geoscientist to get their perspective on the discussion, following Eliza's expressed wish for a geoscientist's input."
+                "assign task": "Lisa Kaltenegger is assigning a task to Eliza to find someone, likely a geoscientist, to get their input or perspective."
             }
         },
         {
@@ -2325,11 +2222,9 @@
             "screenshare_content": "None",
             "start_time": "42:53",
             "end_time": "42:54",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Natasha Batalha was about to speak, but then stopped to allow someone else to speak, acknowledging their potential contribution."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2348,7 +2243,8 @@
             "start_time": "42:54",
             "end_time": "42:54",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Natasha to speak, indicating that Natasha was about to say something."
+                "acknowledge contribution": "The speaker acknowledges someone's attempt to contribute to the discussion.",
+                "encourage participation": "The speaker encourages someone to participate by inviting them to share their thoughts."
             }
         },
         {
@@ -2368,9 +2264,7 @@
             "start_time": "42:55",
             "end_time": "43:58",
             "annotations": {
-                "provide supporting evidence": "The speaker explains that the idea of oxidized versus reduced atmospheres came from a discussion with a geoscientist, providing context and justification for the idea's relevance.",
-                "expand on existing idea": "The speaker elaborates on the idea of oxidized versus reduced atmospheres by discussing the limitations of current observational constraints and how geologists can still work with dominant molecular absorbers, building upon the previously mentioned concept.",
-                "explain or define term or concept": "The speaker clarifies the concept of focusing on dominant molecular absorbers from a geologist's perspective, explaining how it relates to the composition of outgassing."
+                "develop idea": "Natasha develops the idea of using oxidized versus reduced atmospheres by explaining its origin and potential utility given observational limitations."
             }
         },
         {
@@ -2390,9 +2284,8 @@
             "start_time": "43:59",
             "end_time": "44:11",
             "annotations": {
-                "express agreement": "Lisa explicitly agrees with Natasha's point about oxidized versus reduced atmospheres and the value of geoscientists' perspectives.",
-                "acknowledge contribution": "Lisa acknowledges Natasha's contribution by stating that she completely agrees with her.",
-                "expand on existing idea": "Lisa expands on the idea of involving geoscientists by suggesting Anot, a geoscientist, to review their work and provide her perspective."
+                "code name": "encourage participation",
+                "explanation": "Lisa Kaltenegger invites Anot to contribute her expertise to their discussion."
             }
         },
         {
@@ -2412,7 +2305,7 @@
             "start_time": "44:11",
             "end_time": "44:12",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging participation by indicating that she will say something, prompting others to potentially respond or contribute."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2432,9 +2325,9 @@
             "start_time": "44:30",
             "end_time": "45:04",
             "annotations": {
-                "provide supporting evidence": "Daniel provides a paper about statistics for detecting oxygen rich vs. oxygen free atmospheres, supporting the discussion about oxidized versus reduced atmospheres.",
-                "expand on existing idea": "Daniel's suggestion to think about a potential project builds on the previous discussion about defining a focused question and statistical framework.",
-                "propose decision": "Daniel suggests thinking about a potential project to propose, encouraging the group to move towards concrete actions."
+                "develop idea": "Daniel is developing the idea of exploring statistical requirements for detecting certain atmospheric conditions.",
+                "offer feedback": "Daniel is offering a suggestion for a potential project as feedback.",
+                "encourage participation": "Daniel encourages the group to think about potential projects."
             }
         },
         {
@@ -2454,7 +2347,8 @@
             "start_time": "45:08",
             "end_time": "45:14",
             "annotations": {
-                "propose decision": "Lisa suggests giving everyone a minute or two to write down their thoughts, which is a concrete choice for the group to consider before continuing the discussion."
+                "code name": "process management",
+                "explanation": "The speaker is suggesting a procedural action to manage the meeting flow and encourage participation."
             }
         },
         {
@@ -2474,7 +2368,7 @@
             "start_time": "45:21",
             "end_time": "45:28",
             "annotations": {
-                "assign task": "Lisa assigns the task of thinking about a potential project to everyone in the room, giving them a minute or two to write down their thoughts before discussing them."
+                "process management": "The speaker is managing the meeting flow by allocating time for participants to write down their thoughts before proceeding with the discussion."
             }
         },
         {
@@ -2494,8 +2388,9 @@
             "start_time": "46:46",
             "end_time": "46:58",
             "annotations": {
-                "expand on existing idea": "The utterance builds upon the previous discussion about the need for predictions in exoplanet research, suggesting a predictive framework to simulate different mission designs.",
-                "present new idea": "The utterance introduces the idea of developing a predictive framework to simulate different instrument and mission designs to assess their effectiveness."
+                "propose new idea": "Courtney suggests using a predictive framework to simulate different instrument and mission designs, which is a new idea in the context of the conversation.",
+                "develop idea": "The suggestion builds upon the conversation about needing better approaches for studying exoplanets, specifically regarding predictions.",
+                "identify gap": "Courtney implies a gap in current predictive capabilities, suggesting a need for improvement."
             }
         },
         {
@@ -2515,7 +2410,7 @@
             "start_time": "47:09",
             "end_time": "47:09",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly encouraging Leslie to participate in the discussion, as she calls on her by name after others have spoken."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2535,8 +2430,8 @@
             "start_time": "47:12",
             "end_time": "47:54",
             "annotations": {
-                "expand on existing idea": "Leslie is building upon the previous discussion about the distribution of water in planetary systems, suggesting it as a starting point for mapping out a hierarchy of science questions and developing an information-theoretic framework, which was initially mentioned by Coco.",
-                "present new idea": "Leslie introduces the idea of using the distribution of water throughout planetary systems as an initial science question to map out a hierarchy of science questions and develop an information-theoretic framework."
+                "propose new idea": "Leslie suggests using the distribution of water throughout planetary systems as an initial science question.",
+                "develop idea": "Leslie expands on the idea by suggesting mapping out the hierarchy of science questions and developing an information theoretic framework."
             }
         },
         {
@@ -2556,7 +2451,7 @@
             "start_time": "47:56",
             "end_time": "47:57",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly inviting Natasha to speak next, encouraging her participation in the discussion."
+                "encourage participation": "Lisa Kaltenegger is inviting Natasha to contribute to the discussion."
             }
         },
         {
@@ -2576,9 +2471,9 @@
             "start_time": "47:58",
             "end_time": "48:49",
             "annotations": {
-                "expand on existing idea": "Natasha builds on the previous discussion about defining a hierarchy of science questions by suggesting that this hierarchy should start with big picture, easier questions that can be answered statistically, expanding on the idea of a hierarchical approach.",
-                "propose decision": "Natasha proposes collaborating with geophysicists to develop predictions for different kinds of planetary populations, suggesting a concrete action for the group to take.",
-                "provide supporting evidence": "Natasha suggests basing the predictive framework on the geophysicists' predictions, providing a rationale for the proposed collaboration."
+                "develop idea": "Natasha is expanding on existing ideas by suggesting a hierarchical-based scheme and collaboration with geophysicists.",
+                "identify gap": "Natasha implies a gap in current knowledge regarding predictions for different kinds of planetary populations.",
+                "offer feedback": "Natasha provides suggestions for future directions, including collaboration with geophysicists."
             }
         },
         {
@@ -2598,7 +2493,7 @@
             "start_time": "48:49",
             "end_time": "48:50",
             "annotations": {
-                "encourage particpatioin": "Lisa is encouraging Coco to participate in the discussion, as she is calling on her to speak next."
+                "encourage participation": "The speaker is inviting Coco to contribute to the conversation, encouraging participation."
             }
         },
         {
@@ -2618,8 +2513,9 @@
             "start_time": "48:51",
             "end_time": "49:26",
             "annotations": {
-                "expand on existing idea": "Coco builds upon Leslie's idea of water content distribution and Natasha's idea of reduced or oxidized atmospheres, suggesting to focus on different important questions and consider simple statistical relations for each question.",
-                "present new idea": "Coco introduces the idea of building an information matrix to analyze the statistical relations for different questions related to water content distribution and atmospheric composition."
+                "develop idea": "Coco Zhang expands on existing ideas by suggesting the use of population census models to focus on different important questions.",
+                "ask question": "Coco Zhang asks about the kind of simple statistical relations needed for each question and how to build an information matrix.",
+                "acknowledge contribution": "Coco Zhang references and builds upon the ideas of Leslie and Natasha."
             }
         },
         {
@@ -2639,8 +2535,7 @@
             "start_time": "49:31",
             "end_time": "49:54",
             "annotations": {
-                "expand on existing idea": "Nikole builds upon the previous discussion about the need for interdisciplinary collaboration and the importance of hypothesis testing, synthesizing these ideas and adding Eliza's suggestion of a flow-down guide for sample size adjustment.",
-                "express agreement": "Nikole explicitly expresses agreement with Eliza's idea about having a flow down guide to how we change the sample size as we get more information."
+                "supportive response": "Nikole expresses agreement and positive evaluation of Eliza's idea about having a flow down guide to change sample size as more information is obtained."
             }
         },
         {
@@ -2660,10 +2555,8 @@
             "start_time": "49:58",
             "end_time": "50:37",
             "annotations": {
-                "present new idea": "Eliza proposes a new idea to probe atmospheres at the inner edge of the habitable zone to look for expected changes in atmospheric composition, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "Eliza's idea builds upon the earlier discussion about defining the habitable zone and understanding the diversity of exoplanet atmospheres, suggesting a specific approach to probe atmospheres at the inner edge of the habitable zone.",
-                "propose decision": "Eliza proposes a specific research direction, suggesting to probe atmospheres at the inner edge of the habitable zone, which can be considered a decision on what to focus on.",
-                "encourage particpatioin": "Eliza mentions that the idea would need to be flushed out with help from planetary science colleagues, encouraging their participation and input."
+                "propose new idea": "Eliza proposes a new research direction to probe atmospheres at the inner edge of the habitable zone.",
+                "develop idea": "Eliza elaborates on her proposed idea by discussing measurements of atmospheric composition and the need for collaboration with planetary science colleagues."
             }
         },
         {
@@ -2683,7 +2576,7 @@
             "start_time": "50:39",
             "end_time": "50:40",
             "annotations": {
-                "encourage particpatioin": "Lisa is explicitly inviting Andrew to share his thoughts, as he hasn't spoken recently, to encourage participation in the discussion."
+                "encourage participation": "The speaker is inviting Andrew to contribute to the conversation, encouraging participation."
             }
         },
         {
@@ -2702,14 +2595,11 @@
             "screenshare_content": "None",
             "start_time": "50:41",
             "end_time": "51:13",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon Natasha's earlier point about \"breath versus depth\" in exoplanet research, adding the speaker's perspective on balancing statistical studies with in-depth analysis of promising planets."
-                },
-                {
-                    "propose decision": "The speaker is proposing a decision on how to balance the competing interests of statistical studies and in-depth analysis of promising planets, questioning whether to prioritize broad surveys or deep dives into individual planets."
-                }
-            ]
+            "annotations": {
+                "Ask question": "The speaker is asking how to balance competing interests in scientific investigation.",
+                "Encourage participation": "The question invites others to share their thoughts on the dilemma.",
+                "Express humor": "The comment about being 'here for the aliens' adds a humorous tone."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2728,7 +2618,7 @@
             "start_time": "51:13",
             "end_time": "51:15",
             "annotations": {
-                "acknowledge contribution": "Lisa acknowledges Andrew's turn to speak, but then corrects herself to call on Andy, indicating she was mistaken about who was next."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2748,12 +2638,9 @@
             "start_time": "51:17",
             "end_time": "51:53",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Andy introduces the idea of detecting moons around Earth-like planets and using that to perform statistical tests related to astrobiology, which hasn't been explicitly discussed before."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Andy builds on the previous discussion about sample sizes and statistical tests by suggesting a specific example: detecting moons around Earth-like planets and using that to perform statistical tests related to astrobiology."
-                }
+                "propose new idea": "The speaker introduces a new example and suggestion for research direction, discussing the detection of moons around Earth-like planets.",
+                "develop idea": "The speaker elaborates on the implications of detecting moons for understanding the origin and development of life.",
+                "ask question": "The speaker indirectly asks about the commonality of moons around Earth-like planets."
             }
         },
         {
@@ -2772,13 +2659,9 @@
             "screenshare_content": "None",
             "start_time": "51:53",
             "end_time": "53:29",
-            "annotations": [
-                {
-                    "reject idea": "Lisa rejects the idea that a moon is essential for life, based on conversations with biologists, disagreeing with Andy's prior suggestion about detecting moons around Earth-like planets.",
-                    "expand on existing idea": "Lisa expands on the discussion about the importance of moons by suggesting that the moon's role in initiating plate tectonics might be more significant than its role in stabilizing climate or seasons.",
-                    "encourage particpatioin": "Lisa encourages participation by asking if anyone wants to discuss the ideas presented or if they should proceed with a collection of ideas to be fleshed out later."
-                }
-            ]
+            "annotations": {
+                "ask question": "Lisa is seeking input or discussion on the ideas presented, asking if there's anything to discuss or if these ideas will be fleshed out later."
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -2797,7 +2680,9 @@
             "start_time": "53:30",
             "end_time": "53:37",
             "annotations": {
-                "ask clarifying question": "Nikole is asking a question to confirm the instructions regarding the number of items to include on the slide, seeking clarification from the group."
+                "process management": "The speaker is clarifying task expectations to manage the meeting flow.",
+                "clarify goal": "The speaker is seeking clarity on the objectives or expectations for the task at hand.",
+                "ask question": "The speaker is requesting confirmation or clarification on what is expected of them regarding the content of the slide."
             }
         },
         {
@@ -2817,7 +2702,7 @@
             "start_time": "53:35",
             "end_time": "53:36",
             "annotations": {
-                "express agreement": "Lisa confirms Nikole's understanding of the instructions, indicating agreement with the previous statement."
+                "supportive response": "The speaker is expressing agreement with a previous statement, providing a supportive response without adding new content."
             }
         },
         {
@@ -2837,7 +2722,7 @@
             "start_time": "53:37",
             "end_time": "53:47",
             "annotations": {
-                "propose decision": "Nikole proposes that the group should decide on the three things to put down on the slide, which is a concrete choice for the group."
+                "acknowledge contribution": "The utterance acknowledges a previous suggestion or idea by stating 'come up with what these are', which implies recognition of someone's input."
             }
         },
         {
@@ -2856,14 +2741,11 @@
             "screenshare_content": "None",
             "start_time": "53:47",
             "end_time": "54:21",
-            "annotations": [
-                {
-                    "confirm decision": "Nikole is confirming that the group is converging on the idea of establishing a hierarchy based on the science questions, which has been discussed throughout the conversation."
-                },
-                {
-                    "expand on existing idea": "Nikole is building on Eliza's idea of how sample sizes are guided by a flow down approach in different observing strategies based on what is found, adding that they are approaching it from both observational and theoretical perspectives."
-                }
-            ]
+            "annotations": {
+                "ask question": "Nikole Lewis asks if establishing a hierarchy based on science questions is consistent with others.",
+                "develop idea": "She expands on ideas previously mentioned, specifically about establishing a hierarchy and guiding sample sizes.",
+                "acknowledge contribution": "Nikole Lewis mentions and builds on Eliza's idea."
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -2882,9 +2764,7 @@
             "start_time": "54:21",
             "end_time": "54:24",
             "annotations": {
-                "present new idea": "Nikole is presenting the idea that this discussion needs input from people outside of astronomy.",
-                "provide supporting evidence": "Nikole is providing evidence that the discussion needs to include people outside of astronomy, which is a new idea.",
-                "encourage particpatioin": "Nikole is encouraging participation from other fields by stating that the discussion cannot happen with just astronomers."
+                "encourage participation": "Nikole Lewis is encouraging participation from a broader range of disciplines beyond astronomers."
             }
         },
         {
@@ -2904,10 +2784,7 @@
             "start_time": "54:24",
             "end_time": "54:25",
             "annotations": {
-                "Okay": {
-                    "Code Name": "acknowledge contribution",
-                    "Explanation": "Nikole Lewis is acknowledging the previous discussion and summarizing the key points."
-                }
+                "None": "The utterance is a brief acknowledgment or agreement and does not explicitly convey any specific action or content that matches the provided codes."
             }
         },
         {
@@ -2927,9 +2804,9 @@
             "start_time": "54:26",
             "end_time": "55:03",
             "annotations": {
-                "explain or define term or concept": "The speaker is highlighting the limitation of having only one known example of an inhabited planet (Earth) and how this complicates our understanding of the requirements for life, which is an explanation of a concept.",
-                "expand on existing idea": "The speaker is expanding on the discussion about the moon by pointing out that we don't know which characteristics of Earth are essential for life, building on the previous discussion about the moon's importance.",
-                "present new idea": "The speaker introduces the idea of needing a better understanding of our own solar system to help determine the parameter space for searching for life elsewhere, which is a novel concept in the context of the discussion."
+                "identify gap": "Recognizes the gap in knowledge about essential planetary characteristics for life beyond Earth.",
+                "develop idea": "Expands on the idea that one example of life limits understanding of necessary conditions for life.",
+                "offer feedback": "Suggests studying our solar system for better understanding of life's parameter space."
             }
         },
         {
@@ -2948,14 +2825,11 @@
             "screenshare_content": "None",
             "start_time": "55:04",
             "end_time": "55:52",
-            "annotations": [
-                {
-                    "express agreement": "Lisa explicitly agrees with Courtney's prior statement about the importance of the solar system."
-                },
-                {
-                    "expand on existing idea": "Lisa expands on the idea of the habitable zone by stating that it is where we can find life if it's there, contrasting it with the possibility of finding life outside the habitable zone in our solar system, like on Europa."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges and agrees with Courtney's previous statement.",
+                "supportive response": "The speaker provides a supportive response by agreeing and building upon previous statements.",
+                "clarify goal": "The speaker discusses and clarifies the goals or objectives related to the habitable zone and searching for life."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -2974,8 +2848,9 @@
             "start_time": "55:52",
             "end_time": "55:56",
             "annotations": {
-                "expand on existing idea": "Lisa expands on Courtney's idea about the solar system by highlighting the limitations of searching for life outside the habitable zone in exoplanets compared to the solar system, where life could exist beyond it, adding a nuance to the discussion.",
-                "present new idea": "Lisa introduces the idea of exploring the distinction between where we can look for life in the solar system versus outside of it, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is expanding on previous discussions about the distinction between studying the solar system and exoplanets.",
+                "identify gap": "The speaker highlights the limitation of not being able to study certain objects, implying a gap in knowledge or capability.",
+                "clarify goal": "The speaker is contributing to clarifying the goals of studying the solar system and exoplanets, particularly in the context of their limitations."
             }
         },
         {
@@ -2994,11 +2869,9 @@
             "screenshare_content": "None",
             "start_time": "55:56",
             "end_time": "55:57",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lisa is asking whether finding life on Europa would help in the exoplanet search, seeking to understand the relevance of such a discovery to the broader goal of finding life beyond our solar system."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking a question about the relevance of finding life on Europa to exoplanet search."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3017,7 +2890,7 @@
             "start_time": "55:57",
             "end_time": "55:58",
             "annotations": {
-                "express humor": "Lisa is making a joke by calling her question a \"devil's advocate question\", which is a playful way to introduce a challenging or opposing viewpoint."
+                "encourage participation": "Lisa Kaltenegger is inviting others to consider her previous question or point, encouraging them to participate in the discussion."
             }
         },
         {
@@ -3037,7 +2910,8 @@
             "start_time": "55:57",
             "end_time": "56:07",
             "annotations": {
-                "provide supporting evidence": "Leslie is providing a reason for her agreement, stating that our current understanding of how often life emerges is very uncertain, which supports the idea that finding life elsewhere in our solar system would be relevant to exoplanet searches."
+                "supportive response": "The speaker is expressing agreement with a previous statement regarding the uncertainty of life emergence rates.",
+                "develop idea": "The speaker is elaborating on their stance by mentioning the uncertainty of the prior on the rate of emergence of life."
             }
         },
         {
@@ -3057,8 +2931,9 @@
             "start_time": "56:07",
             "end_time": "56:42",
             "annotations": {
-                "expand on existing idea": "Leslie expands on the discussion about the solar system and exoplanet life detection, suggesting that discovering life elsewhere, even in our solar system, would constrain the uncertain prior on the rate of life's emergence, influencing the interpretation of oxygen detection in exoplanet atmospheres.",
-                "provide supporting evidence": "Leslie provides logical reasoning to strengthen the idea that discovering life elsewhere would constrain the uncertain prior on the rate of life's emergence, influencing the interpretation of oxygen detection in exoplanet atmospheres."
+                "develop idea": "Leslie expands on the concept of how discovering life elsewhere could change our understanding of biosignatures by discussing the impact on priors.",
+                "propose new idea": "Leslie introduces the idea that discovering life elsewhere could change our priors on the emergence of life and thus influence how we interpret biosignatures.",
+                "identify gap": "The utterance implies a gap in current knowledge about the rate at which life emerges elsewhere in the universe."
             }
         },
         {
@@ -3077,14 +2952,9 @@
             "screenshare_content": "None",
             "start_time": "56:48",
             "end_time": "56:59",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is inviting Danielle to contribute to the discussion by asking about the bioverse, encouraging him to share his thoughts on what he would have done differently."
-                },
-                {
-                    "ask clarifying question": "Lisa is asking Danielle a question about the bioverse, specifically what he would have done differently, seeking clarification on his perspective."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code directly applies to this utterance based on the provided definitions and context."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -3103,9 +2973,8 @@
             "start_time": "56:59",
             "end_time": "56:59",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Leslie acknowledges the hierarchical model that has been discussed throughout the conversation, recognizing its importance without necessarily agreeing or expanding upon it."
-                }
+                "code name": "ask question",
+                "explanation": "The speaker is requesting information or clarification on the hierarchical model, implying a need for further explanation or details."
             }
         },
         {
@@ -3124,12 +2993,10 @@
             "screenshare_content": "None",
             "start_time": "56:59",
             "end_time": "57:51",
-            "annotations": [
-                {
-                    "expand on existing idea": "Daniel is expanding on the discussion about sample sizes and strategies for exoplanet research by suggesting incorporating knowledge from planet formation and population-level statistical understanding to interpret observations in a broader context, building on previous discussions about statistical frameworks and sample sizes.",
-                    "provide supporting evidence": "Daniel mentions that they have done exoplanet demographics, providing evidence for the importance of population-level understanding in interpreting individual planet observations, which supports his argument for incorporating planet formation knowledge."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by elaborating on how knowledge from planet formation and population-level statistical understanding can be crucial.",
+                "identify gap": "The speaker mentions a gap in current knowledge regarding planet formation general trends for a specific question."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3147,11 +3014,9 @@
             "screenshare_content": "None",
             "start_time": "57:51",
             "end_time": "57:51",
-            "annotations": [
-                {
-                    "Okay": "This utterance does not fit into any of the codes provided, as it is simply an acknowledgement with no additional meaning."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a brief, non-substantive response that does not fit into any other category."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3169,11 +3034,9 @@
             "screenshare_content": "None",
             "start_time": "57:51",
             "end_time": "57:52",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is commenting on the timing of the discussion, indicating there is still time available, which relates to managing the meeting flow."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3192,7 +3055,7 @@
             "start_time": "57:52",
             "end_time": "57:52",
             "annotations": {
-                "express agreement": "Lisa is expressing agreement with the previous statement, indicating a positive sentiment towards the discussion."
+                "None": "The utterance is a brief acknowledgment that does not explicitly fit into any other provided code category."
             }
         },
         {
@@ -3211,11 +3074,10 @@
             "screenshare_content": "None",
             "start_time": "57:52",
             "end_time": "57:58",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Daniel encourages the group to continue exploring ideas, building on the previous discussion about potential projects and report content."
-                }
-            ]
+            "annotations": {
+                "process management": "Daniel is managing the meeting flow by suggesting they explore further.",
+                "supportive response": "Daniel's response is supportive as he agrees and suggests a next step."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3234,7 +3096,8 @@
             "start_time": "57:58",
             "end_time": "57:59",
             "annotations": {
-                "encourage particpatioin": "Daniel encourages the group to share any ideas they want to explore further, building on the previous discussion about potential projects and research directions."
+                "encourage participation": "invites others to contribute their expertise, opinions or ideas",
+                "process management": "manages the meeting flow by encouraging discussion"
             }
         },
         {
@@ -3254,7 +3117,8 @@
             "start_time": "59:04",
             "end_time": "59:21",
             "annotations": {
-                "ask clarifying question": "Andrew is asking a question to prompt the group to think about what the most important thing to look for would be if they had a large sample of planets to observe, building on the previous discussion about sample sizes and observational strategies."
+                "code name": "ask question",
+                "explanation": "The speaker is requesting information or opinions from others on what they would look at with a sample of 500 planets."
             }
         },
         {
@@ -3274,9 +3138,8 @@
             "start_time": "59:41",
             "end_time": "59:59",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Coco proposes to focus on the property that is easiest to measure in order to obtain a large sample, which is a concrete choice for the group."
-                }
+                "ask question": "The speaker is requesting information about the property where it will be easiest to get a large sample.",
+                "develop idea": "The speaker is contributing to the development of ideas regarding sample sizes and properties of exoplanets by inquiring about the most easily sampled property."
             }
         },
         {
@@ -3296,7 +3159,7 @@
             "start_time": "59:59",
             "end_time": "60:00",
             "annotations": {
-                "expand on existing idea": "Coco is expanding on the previous question of what to look at first with a telescope that can survey 500 planets, suggesting to look at the property that is easiest to obtain a large sample for, which will be informative for future studies."
+                "supportive response": "Coco is expressing a positive sentiment towards an idea's potential usefulness for future studies."
             }
         },
         {
@@ -3316,7 +3179,7 @@
             "start_time": "60:00",
             "end_time": "60:02",
             "annotations": {
-                "expand on existing idea": "Coco is expanding on the idea of what to look at first with a telescope that can survey 500 planets, building on Andrew's question by suggesting to look at properties that are easy to measure and informative for future studies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3336,7 +3199,7 @@
             "start_time": "60:02",
             "end_time": "60:02",
             "annotations": {
-                "expand on existing idea": "Andrew is responding to Coco's question about what properties would be easiest to obtain for a large sample of planets, and he confirms that stellar types would be readily available."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3355,14 +3218,10 @@
             "screenshare_content": "None",
             "start_time": "60:38",
             "end_time": "60:57",
-            "annotations": [
-                {
-                    "ask clarifying question": "Eliza is asking if the hypothetical survey of 500 planets has to be focused on planets in the habitable zone, seeking clarification on the scope of the discussion."
-                },
-                {
-                    "present new idea": "Eliza suggests that there should be big changes in atmospheric composition as a function of insulation, even for small planets, introducing a new idea about focusing on trends with insulation."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new perspective on the focus of the study.",
+                "develop idea": "The speaker elaborates on the introduced idea with reasoning."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3381,9 +3240,9 @@
             "start_time": "60:57",
             "end_time": "61:25",
             "annotations": {
-                "present new idea": "The speaker introduces the novel idea that the long-term stability of liquid water on a planet's surface could be considered a biosignature, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "The speaker expands on the discussion about biosignatures by suggesting a new potential biosignature, the long-term stability of liquid water, building on the previous discussion about biosignatures and their detection.",
-                "express enthusiasm": "The speaker expresses enthusiasm for the idea of long-term water stability as a biosignature by calling it one of the 'really interesting things'."
+                "propose new idea": "The speaker introduces the idea of considering the long-term stability of liquid water on a planet's surface as a potential biosignature.",
+                "develop idea": "The speaker elaborates on the concept of biosignatures by suggesting that the stability of water over a long time could be a factor.",
+                "ask question": "The speaker asks if the stability of water over a long time could be conducted as a kind of biosignature."
             }
         },
         {
@@ -3403,8 +3262,7 @@
             "start_time": "61:29",
             "end_time": "62:04",
             "annotations": {
-                "expand on existing idea": "Leslie builds upon Lisa's idea about stable liquid water as a biosignature, asking how to distinguish between stable and episodic presence of liquid water.",
-                "ask clarifying question": "Leslie asks how to distinguish between a stable climate and episodic presence of surface liquid water oceans, seeking clarification on how to address this question in practice."
+                "ask question": "The speaker is explicitly requesting information or clarification on how to distinguish between a stable climate and episodic presence of surface liquid water oceans on planets."
             }
         },
         {
@@ -3423,14 +3281,11 @@
             "screenshare_content": "None",
             "start_time": "62:04",
             "end_time": "62:51",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on Lisa's idea of stable liquid water as a biosignature, Courtney expands on how to distinguish between stable and episodic presence of liquid water, adding details about planet age and D/H ratio measurements."
-                },
-                {
-                    "provide supporting evidence": "Courtney mentions theoretical studies on planets freezing and melting, providing support for the complexity of determining the presence and stability of liquid water."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Courtney is expanding on existing ideas about planetary study, sample sizes, and the challenges of understanding planetary evolution.",
+                "ask question": "Courtney poses questions about the interpretation of data regarding liquid water presence on planets.",
+                "propose new idea": "Courtney suggests coupling models with specific measurements to understand water loss over time."
+            }
         },
         {
             "speaker": "Eliza Kempton",
@@ -3449,8 +3304,9 @@
             "start_time": "62:51",
             "end_time": "63:12",
             "annotations": {
-                "explain or define term or concept": "Eliza explains that measuring the D to H ratio requires a different observational setup, specifically high spectral resolution and ground-based instruments, which haven't been discussed much in the meeting so far, thus clarifying the observational requirements for measuring D to H ratio.",
-                "provide supporting evidence": "Eliza supports her statement about the D to H ratio requiring a different observational setup by mentioning the need for high spectral resolution and ground-based instruments, thus providing evidence for the observational requirements."
+                "signal expertise": "Eliza is sharing her expertise on observational setups, specifically mentioning high spectral resolution and ground-based instruments.",
+                "identify gap": "Eliza notes that they haven't talked much about observations from the ground, identifying a gap in their discussion.",
+                "develop idea": "Eliza is building on previous discussions about observational strategies, adding the importance of ground-based instruments for certain measurements."
             }
         },
         {
@@ -3470,7 +3326,8 @@
             "start_time": "63:19",
             "end_time": "63:26",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided."
+                "process management": "Nikole Lewis is managing the meeting flow by informing the group about shared information and transitioning to invite others to contribute.",
+                "encourage participation": "Nikole Lewis explicitly invites others to speak up with 'Speak now or forever hold your peace.'"
             }
         },
         {
@@ -3490,8 +3347,8 @@
             "start_time": "63:28",
             "end_time": "63:35",
             "annotations": {
-                "encourage particpatioin": "Lisa encourages Keith, who just returned, to contribute to the discussion.",
-                "express humor": "Lisa uses the phrase \"speak up now or forever hold your peace\" which is a humorous way to encourage final input."
+                "encourage participation": "Lisa Kaltenegger encourages participants to speak up before concluding the discussion.",
+                "summarize conversation": "Lisa Kaltenegger mentions that they have their conclusions, indicating a summary of the discussion."
             }
         },
         {
@@ -3511,7 +3368,7 @@
             "start_time": "63:36",
             "end_time": "63:38",
             "annotations": {
-                "express humor": "Keith's utterance expresses humor, as he acknowledges his return to the meeting at the moment the conclusions are being presented, implying he has good timing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3531,9 +3388,7 @@
             "start_time": "63:42",
             "end_time": "63:50",
             "annotations": {
-                "encourage particpatioin": {
-                    "Explanation": "Lisa encourages Keith to contribute his thoughts before he leaves, showing an effort to include everyone's perspective."
-                }
+                "encourage participation": "The speaker invites Keith, who is about to leave, to contribute any thoughts he might have, encouraging him to participate one last time in the discussion."
             }
         },
         {
@@ -3552,11 +3407,9 @@
             "screenshare_content": "None",
             "start_time": "63:50",
             "end_time": "64:00",
-            "annotations": [
-                {
-                    "express enthusiasm": "Keith expresses excitement to hear the final conclusions of the review, indicating a positive sentiment towards the outcome."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -3574,14 +3427,11 @@
             "screenshare_content": "None",
             "start_time": "64:11",
             "end_time": "64:54",
-            "annotations": [
-                {
-                    "expand on existing idea": "Nikole is summarizing and synthesizing the discussion, building on the previous ideas about hierarchical models and sample sizes that were discussed."
-                },
-                {
-                    "confirm decision": "Nikole is confirming that she has captured everyone's thoughts and is asking for agreement to combine ideas, finalizing the decision to summarize the discussion points."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Nikole Lewis is expanding on existing ideas by detailing the need for a hierarchical model approach and a flow-down methodology strategy.",
+                "encourage participation": "Nikole Lewis invites agreement from Courtney and Leslie, encouraging participation.",
+                "process management": "Her comments contribute to managing the discussion flow."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3600,7 +3450,7 @@
             "start_time": "64:58",
             "end_time": "65:07",
             "annotations": {
-                "express humor": "Lisa makes a joke comparing their contribution to the Drake equation, which is known for its uncertainty, to lighten the mood and encourage further progress."
+                "process management": "Lisa Kaltenegger is managing the discussion flow and responsibilities, indicating it's time for others to take action."
             }
         },
         {
@@ -3619,20 +3469,13 @@
             "screenshare_content": "None",
             "start_time": "65:34",
             "end_time": "66:48",
-            "annotations": [
-                {
-                    "expand on existing idea": "Keith expands on the discussion about sample sizes and methodologies by introducing machine learning as a tool to push resolution and signal-to-noise limits, which builds upon the previous discussion of methodologies and sample sizes."
-                },
-                {
-                    "provide supporting evidence": "Keith provides supporting evidence for the use of machine learning by stating that it has pushed resolution and signal-to-noise limits in the last five years."
-                },
-                {
-                    "present new idea": "Keith presents the new idea of using machine learning tools as an important part of dealing with small and large sample sizes, which had not been explicitly mentioned before."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Keith introduces the idea that machine learning can be crucial for dealing with large volumes of data and small sample sizes.",
+                "develop idea": "He elaborates on the benefits and potential applications of machine learning in atmospheric studies, especially for M dwarf atmospheres."
+            }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "06:11-06:45",
             "transcript": "Since we have still a couple of minutes, maybe I can inject another kind of question just to see what what would be key hypothesis that a mission that that characterizes habitable planets could explore. And of course it was studied in Luar and Habex but um what other um independently of the architectures, what what are the most interesting hypothesis that one would test and what sort of a sample, how many axes would one need to sample for those questions? How many objects you would need on a on an axis.",
             "speaking_duration": 34,
@@ -3648,12 +3491,8 @@
             "start_time": "66:48",
             "end_time": "67:22",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Daniel introduces the idea of discussing key hypotheses that a mission characterizing habitable planets could explore, which hasn't been explicitly discussed in this specific way yet."
-                },
-                "ask clarifying question": {
-                    "Explanation": "Daniel asks what the most interesting hypotheses are to test and what kind of sample size and number of objects would be needed, seeking to clarify the direction of the discussion."
-                }
+                "ask question": "The speaker is requesting information on key hypotheses for a mission characterizing habitable planets and the required sample size.",
+                "develop idea": "The speaker is expanding on existing ideas (referencing Luar and Habex) by seeking additional hypotheses and considering the sample size needed."
             }
         },
         {
@@ -3672,14 +3511,12 @@
             "screenshare_content": "None",
             "start_time": "67:23",
             "end_time": "67:29",
-            "annotations": [
-                {
-                    "express humor": "Lisa makes a humorous comment, referencing Carl Sagan's famous phrase, likely in response to the discussion about sample sizes for exoplanet studies."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke by referencing 'billions and billions,' a phrase famously used by Carl Sagan."
+            }
         },
         {
-            "speaker": "Daniel Apai / Univ Arizona",
+            "speaker": "Daniel Apai",
             "timestamp": "06:52-06:53",
             "transcript": "That's a good answer. I like that.",
             "speaking_duration": 1,
@@ -3695,7 +3532,7 @@
             "start_time": "67:29",
             "end_time": "67:30",
             "annotations": {
-                "express agreement": "Daniel expresses agreement with Lisa's humorous answer of 'billions and billions' to the question of how many axes one would need to sample for key hypotheses."
+                "supportive response": "The speaker is expressing agreement and validation with a previous statement, providing a positive evaluation without adding new content."
             }
         },
         {
@@ -3714,14 +3551,11 @@
             "screenshare_content": "None",
             "start_time": "67:33",
             "end_time": "68:48",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of how to interpret findings given the differences in sampled systems, such as evolution, metallicity, and age, which hasn't been addressed yet."
-                },
-                {
-                    "ask clarifying question": "The speaker is asking how to put the evolution of a system into context when interpreting findings, given the differences in sampled systems, such as evolution, metallicity, and age."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly recognizes the lack of knowledge on how to interpret data from exoplanet systems with different evolutionary paths, metallicities, and ages.",
+                "develop idea": "The speaker is expanding on the idea that understanding exoplanet systems requires not just sample size but also context about each system's evolution, metallicity, and age.",
+                "ask question": "The speaker is requesting insights on how to put differences in systems into context and how to interpret findings without knowing the system's history."
+            }
         },
         {
             "speaker": "Keith Hawkins",
@@ -3739,13 +3573,11 @@
             "screenshare_content": "None",
             "start_time": "68:48",
             "end_time": "69:44",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of increased cross-talk between theorists and observers to improve the utility of observations and address sample size and resolution limits, which is a novel suggestion in the context of the discussion.",
-                    "expand on existing idea": "The speaker expands on the previously mentioned need for interdisciplinary teams by emphasizing the importance of cross-talk between theorists, observers, and experimentalists.",
-                    "provide supporting evidence": "The speaker supports the idea of cross-talk by mentioning its successful application in galactic science, where it helps determine what can be learned from observations and how it relates to theory."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Keith is expanding on the idea of the need for collaboration between theorists, observers, and experimentalists.",
+                "encourage participation": "He is encouraging collaboration across different scientific disciplines.",
+                "clarify goal": "He is also clarifying the goal of achieving better science through interdisciplinary collaboration."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3763,11 +3595,10 @@
             "screenshare_content": "None",
             "start_time": "70:37",
             "end_time": "70:56",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa is encouraging others to share their thoughts and ideas before concluding the discussion, inviting final contributions from Daniel and the rest of the group."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites others to contribute their thoughts, asking them to think differently and share any last words.",
+                "process management": "The speaker is managing the meeting flow by indicating it's time for final comments."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3785,14 +3616,10 @@
             "screenshare_content": "None",
             "start_time": "70:56",
             "end_time": "71:30",
-            "annotations": [
-                {
-                    "express enthusiasm": "Daniel expresses that the discussion was fun and that he learned a lot, showing enthusiasm for the session."
-                },
-                {
-                    "encourage particpatioin": "Daniel encourages the participants to continue working on proposal ideas and thanks them for their willingness to participate, inviting further thoughts and ideas."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Daniel Apai acknowledges the group's contributions and participation, expressing hope that their ideas will move forward.",
+                "process management": "Daniel Apai manages the meeting flow by inquiring if there are any other thoughts or ideas before potentially concluding."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3811,9 +3638,9 @@
             "start_time": "71:30",
             "end_time": "71:53",
             "annotations": {
-                "encourage particpatioin": {
-                    "Explanation": "Lisa encourages the fellows to seek input from others with different expertise, building on the previous discussion about interdisciplinary collaboration."
-                }
+                "encourage participation": "The speaker encourages participants to explore interest from others in contributing to the discussion or project.",
+                "supportive response": "The speaker provides a supportive comment by acknowledging the situation and suggesting a solution.",
+                "express humor": "The speaker makes a lighthearted comment about the difference between in-person and virtual interactions."
             }
         },
         {
@@ -3832,11 +3659,10 @@
             "screenshare_content": "None",
             "start_time": "71:53",
             "end_time": "72:11",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Daniel is explaining a logistical constraint for the collaboration, which is that participants should seek new collaborators and avoid working with people they have worked with in the past."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker encourages collaboration by suggesting that the current group could be a good basis for looking for new collaborators.",
+                "process management": "The speaker discusses the process of collaboration and the limitation of working with people one has worked with in the past."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3854,20 +3680,10 @@
             "screenshare_content": "None",
             "start_time": "72:11",
             "end_time": "73:17",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Lisa encourages the participants to find new collaborators by seeking out people they don't recognize and asking about their interest in the ideas discussed."
-                },
-                {
-                    "express enthusiasm": "Lisa expresses enthusiasm by saying \"what I think is actually pretty cool\" about finding new collaborators."
-                },
-                {
-                    "acknowledge contribution": "Lisa acknowledges Nicole's contribution by thanking her for volunteering and presenting."
-                },
-                {
-                    "propose decision": "Lisa proposes the decision to go back to the main room."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Lisa encourages participants to engage with each other, especially those they don't know, to discuss ideas.",
+                "process management": "Lisa suggests moving back to the main room, managing the flow of the meeting."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3885,11 +3701,9 @@
             "screenshare_content": "None",
             "start_time": "73:17",
             "end_time": "73:17",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Daniel is acknowledging the contributions of the participants in the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker verbally recognizes another group member's or the group's input."
+            }
         },
         {
             "speaker": "Lisa Kaltenegger",
@@ -3907,11 +3721,9 @@
             "screenshare_content": "None",
             "start_time": "73:17",
             "end_time": "73:38",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The utterance manages the meeting flow by suggesting a transition to the main room."
+            }
         }
     ]
 }

@@ -1,15 +1,16 @@
 {
     "all_speakers": [
+        "Qian Liu",
+        "Maryellen Giger UChicago",
+        "Matt Lew",
         "Arnold Hayer",
+        "Fanny Chapelin",
+        "Sapun Parekh",
+        "Maryellen Giger",
         "Qian Liu",
         "Srigokul Upadhyayula",
-        "Maryellen Giger UChicago",
-        "Fanny Chapelin",
-        "Maryellen Giger",
-        "Matt Lew",
-        "Sapun Parekh",
-        "David Van Valen",
-        "Matt Lovett-Barron"
+        "Matt Lovett",
+        "David Van Valen"
     ],
     "total_speaking_length": 3033,
     "all_data": [
@@ -29,14 +30,10 @@
             "screenshare_content": "None",
             "start_time": "00:00",
             "end_time": "00:10",
-            "annotations": [
-                {
-                    "assign task": "The speaker is assigning the task of jotting down thoughts under quantitative imaging to the team members."
-                },
-                {
-                    "propose decision": "The speaker proposes to take a minute to jot down thoughts and then do introductions."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker manages the meeting flow by instructing participants on what to do next.",
+                "assign task": "The speaker assigns a task to participants (to jot down bullet points under quantitative imaging)."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -55,8 +52,7 @@
             "start_time": "00:29",
             "end_time": "00:35",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining to Vivian, who just joined, what the team is currently doing, which is jotting down their own ideas.",
-                "assign task": "The speaker is assigning the task of jotting down ideas to Vivian, who just joined the meeting."
+                "Process management": "The speaker is managing the meeting flow by informing a new participant about the current activity."
             }
         },
         {
@@ -76,7 +72,7 @@
             "start_time": "01:23",
             "end_time": "01:25",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "process management": "The speaker is managing the meeting flow by specifying the remaining time for participants to write down their ideas."
             }
         },
         {
@@ -96,8 +92,7 @@
             "start_time": "01:35",
             "end_time": "01:43",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging the team members to write down their ideas so they don't lose them, which is a way to ensure everyone contributes.",
-                "express enthusiasm": "Maryellen expresses enthusiasm by showing that she values the ideas that the team members are writing down."
+                "process management": "This code applies because the speaker is managing the flow of ideas and ensuring that participants' thoughts are captured and not lost during the collaborative session."
             }
         },
         {
@@ -117,12 +112,8 @@
             "start_time": "01:45",
             "end_time": "02:25",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "The speaker proposes to start off with introductions, suggesting a concrete action for the group to take."
-                },
-                "explain or define term or concept": {
-                    "Explanation": "The speaker introduces herself and her background, explaining her role and expertise in AI and medical imaging."
-                }
+                "process management": "The speaker is managing the meeting flow by suggesting a transition to introductions.",
+                "signal expertise": "The speaker mentions being a professor of radiology and medical physics and having worked on AI for multiple decades, indicating their expertise."
             }
         },
         {
@@ -142,7 +133,7 @@
             "start_time": "02:25",
             "end_time": "02:25",
             "annotations": {
-                "assign task": "Maryellen is directing David's attention to himself, which is a subtle way of assigning him the task of introducing himself next."
+                "process management": "This code applies because the speaker is managing the meeting flow by facilitating introductions among the participants."
             }
         },
         {
@@ -162,7 +153,7 @@
             "start_time": "02:26",
             "end_time": "02:31",
             "annotations": {
-                "ask clarifying question": "David is asking a question to get more information, which is a clarifying question."
+                "ask question": "The speaker is requesting information on how to get the most information, seeking clarification or guidance."
             }
         },
         {
@@ -182,7 +173,7 @@
             "start_time": "02:31",
             "end_time": "02:33",
             "annotations": {
-                "assign task": "Maryellen is about to ask David to introduce himself, assigning him the task of speaking next."
+                "process management": "The speaker is managing the meeting flow by guiding David on how to proceed with his introduction."
             }
         },
         {
@@ -202,7 +193,8 @@
             "start_time": "02:33",
             "end_time": "03:03",
             "annotations": {
-                "explain or define term or concept": "David explains his specialization and the goal of his research, which is to lower the marginal cost of data annotation for imaging data."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications, mentioning his position at Caltech and his specialization in deep learning and data annotation.",
+                "propose new idea": "The speaker introduces a new idea about making the marginal cost of annotation for imaging data very low, almost free, which has not been previously discussed."
             }
         },
         {
@@ -222,7 +214,7 @@
             "start_time": "03:03",
             "end_time": "03:03",
             "annotations": {
-                "ask clarifying question": "David is asking a question about how to achieve the goal of making data annotation almost free, which he mentioned in the previous turn."
+                "ask question": "The speaker is requesting information or clarification on how to achieve the goal they previously mentioned, which is to make the marginal cost of annotation so low it's almost free."
             }
         },
         {
@@ -242,11 +234,11 @@
             "start_time": "03:04",
             "end_time": "03:05",
             "annotations": {
-                "encourage particpatioin": "Maryellen is inviting Matt to introduce himself, continuing the round of introductions."
+                "encourage participation": "Maryellen is inviting Matt to contribute his introduction, thereby encouraging participation in the meeting."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "03:06-03:07",
             "transcript": "Uh thanks yeah I'm",
             "speaking_duration": 1,
@@ -262,7 +254,7 @@
             "start_time": "03:06",
             "end_time": "03:07",
             "annotations": {
-                "acknowledge contribution": "The utterance \"Uh thanks\" acknowledges Maryellen Giger for inviting him to speak."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -282,7 +274,7 @@
             "start_time": "03:07",
             "end_time": "03:11",
             "annotations": {
-                "express humor": "Maryellen makes a lighthearted observation about having two Matts sitting next to each other, which is intended to be humorous."
+                "express humor": "The speaker is making a joke about the coincidence of having two individuals named Matt sitting next to each other."
             }
         },
         {
@@ -302,7 +294,7 @@
             "start_time": "03:11",
             "end_time": "03:12",
             "annotations": {
-                "assign task": "Maryellen is assigning the task of introducing himself to Matt Lou."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -322,8 +314,7 @@
             "start_time": "03:13",
             "end_time": "03:45",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that his lab works on single molecule spectroscopy and aims to engineer fluorescence microscopes to reveal protein confirmations and enzyme activity, clarifying the lab's focus.",
-                "expand on existing idea": "The speaker expands on the capabilities of fluorescence microscopes, adding that they can provide information about protein confirmations and enzyme activity, building on the general understanding of what microscopes do."
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task by introducing themselves and describing their work in single molecule spectroscopy."
             }
         },
         {
@@ -343,7 +334,7 @@
             "start_time": "03:45",
             "end_time": "03:45",
             "annotations": {
-                "acknowledge contribution": "Matt Lew is acknowledging Maryellen Giger for letting him introduce himself."
+                "acknowledge contribution": "The speaker is verbally recognizing Maryellen Giger's input in facilitating the introductions."
             }
         },
         {
@@ -363,11 +354,11 @@
             "start_time": "03:45",
             "end_time": "03:47",
             "annotations": {
-                "encourage particpatioin": "Maryellen is inviting Matt Lovett-Barron to introduce himself, continuing the round of introductions."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "03:48-04:35",
             "transcript": "Uh yeah, I'm Matt Love Baron. I'm I'm an assistant professor at UC San Diego. I've been here almost a year uh and we're really focused on on neuroscience on trying to understand the brain and to understand how neurons work by looking across multiple levels from their activity to how they connect to each other to um what are the biochemical activities within the cell. And so I'm interested in a lot of these ideas that are coming up here as to how to yeah link together all sorts of different types of data sets and this was touched upon in the previous session as well. Um but also how to get more information out of our our images and and set of images and I'm really interested in learning how to optimize this um as we start to collect these really huge data sets. So I'm excited to learn more about that.",
             "speaking_duration": 47,
@@ -383,9 +374,9 @@
             "start_time": "03:48",
             "end_time": "04:35",
             "annotations": {
-                "explain or define term or concept": "Matt Lovett-Barron explains his research focus on neuroscience, aiming to understand the brain and neuron functions across multiple levels, including activity, connections, and biochemical activities.",
-                "expand on existing idea": "Matt Lovett-Barron builds on the ideas discussed in the previous session about linking different types of datasets and extracting more information from images.",
-                "express enthusiasm": "Matt Lovett-Barron expresses excitement about learning how to optimize the process of collecting and analyzing large datasets."
+                "Signal expertise": "The speaker mentions his position as an assistant professor at UC San Diego and his focus on neuroscience, indicating his expertise.",
+                "Identify gap": "The speaker implies a current limitation in optimizing information from large data sets of images.",
+                "Clarify goal": "The speaker defines his objectives and interests in understanding the brain, neurons, and optimizing data from images."
             }
         },
         {
@@ -405,7 +396,7 @@
             "start_time": "04:35",
             "end_time": "04:36",
             "annotations": {
-                "encourage particpatioin": "Maryellen is inviting Goku to introduce themself, continuing the round of introductions."
+                "encourage participation": "The speaker is directly inviting Goku to contribute to the conversation by introducing themselves."
             }
         },
         {
@@ -424,11 +415,9 @@
             "screenshare_content": "None",
             "start_time": "04:38",
             "end_time": "05:15",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Gokul explains his research interests, focusing on instrument development, application, and quantitative image analysis to understand and quantify dynamics across different scales, providing context for his expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their position as an assistant professor and mentions their work focus, signaling their expertise."
+            }
         },
         {
             "speaker": "Srigokul Upadhyayula",
@@ -447,7 +436,7 @@
             "start_time": "05:15",
             "end_time": "05:16",
             "annotations": {
-                "None": "This utterance does not contain any content that can be mapped to the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -467,7 +456,8 @@
             "start_time": "05:16",
             "end_time": "05:17",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Gokul's introduction before moving on to the next person, Arnold."
+                "process management": "She is managing the meeting flow by moving to the next introduction.",
+                "encourage participation": "By saying 'Arnold,' she is encouraging him to participate."
             }
         },
         {
@@ -486,17 +476,9 @@
             "screenshare_content": "None",
             "start_time": "05:19",
             "end_time": "06:27",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their lab's focus on cell biology, imaging, and the relationship between signaling dynamics and cell shape changes, providing context for their research."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of bridging different domains using different modes of microscopy to address the scale issue of molecular organelles, cells, and super cellular structures."
-                },
-                {
-                    "express frustration": "The speaker expresses frustration with the bottleneck of quantitative imaging in their lab, specifically regarding cell edge and cell tracking, indicating a need for better and faster analysis methods."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Arnold expresses his hope to discuss these issues further in the group, inviting others to contribute."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -515,7 +497,7 @@
             "start_time": "06:27",
             "end_time": "06:28",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges the previous speaker's introduction before moving on to the next person, Fanny."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -535,9 +517,9 @@
             "start_time": "06:29",
             "end_time": "07:25",
             "annotations": {
-                "explain or define term or concept": "The speaker explains their work with magnetic resonance imaging, iron oxide nanoparticles, and fluorine imaging.",
-                "present new idea": "The speaker introduces the idea of developing methods to correlate signal changes in iron oxide imaging with the number of cells in the area, which is a current limitation.",
-                "express enthusiasm": "The speaker expresses interest in developing methods to correlate signal changes with cell numbers, indicating enthusiasm for the topic."
+                "Signal expertise": "The speaker mentions their primary work with magnetic resonance imaging, indicating their expertise area.",
+                "Identify gap": "The speaker explicitly mentions a limitation in their work, specifically with iron oxides and correlating signal changes to the number of cells.",
+                "Clarify goal": "The speaker implies a goal of developing something to address the identified limitation."
             }
         },
         {
@@ -557,7 +539,8 @@
             "start_time": "07:25",
             "end_time": "07:26",
             "annotations": {
-                "acknowledge contribution": "The speaker acknowledges the previous speaker's introduction, signaling a transition to the next person."
+                "supportive response": "The speaker expresses a positive sentiment towards the meeting's progress.",
+                "process management": "The utterance helps to transition between segments of the meeting."
             }
         },
         {
@@ -577,9 +560,9 @@
             "start_time": "07:26",
             "end_time": "07:55",
             "annotations": {
-                "express enthusiasm": "Maryellen expresses enthusiasm for the diverse imaging group, indicating optimism for the upcoming conversation.",
-                "acknowledge contribution": "Maryellen acknowledges the presence of people working at different levels (human, cellular), in AI, and in hardware, recognizing their contributions to the group.",
-                "encourage particpatioin": "Maryellen encourages Vivian and Fanny, who recently joined, to jot down their thoughts, inviting them to participate in the brainstorming activity."
+                "supportive response": "She's expressing a positive sentiment towards the group composition and the upcoming conversation.",
+                "encourage participation": "She's inviting newcomers to share their thoughts.",
+                "process management": "She's managing the meeting flow by referring to a previous activity and setting the stage for the next part of the meeting."
             }
         },
         {
@@ -599,7 +582,7 @@
             "start_time": "07:55",
             "end_time": "07:56",
             "annotations": {
-                "assign task": "Maryellen assigns the task of being a recorder to someone in the group."
+                "process management": "The speaker is managing the meeting flow by mentioning the need for a recorder to document the discussion."
             }
         },
         {
@@ -618,11 +601,10 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:09",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is asking for a volunteer to be the recorder, encouraging someone who hasn't done it before to participate."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by ensuring a recorder is assigned.",
+                "assign task": "The speaker is asking for volunteers to take on the role of recorder, which is an action item."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -641,7 +623,7 @@
             "start_time": "10:10",
             "end_time": "10:12",
             "annotations": {
-                "express agreement": "Matt Lew agrees to be the recorder, which was requested by Maryellen in the prior turn."
+                "supportive response": "Matt is expressing agreement and willingness to help by volunteering for the task of being the recorder."
             }
         },
         {
@@ -660,14 +642,10 @@
             "screenshare_content": "None",
             "start_time": "10:12",
             "end_time": "10:27",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges Matt Lew's contribution of volunteering to be the recorder."
-                },
-                {
-                    "express humor": "Maryellen makes a joke about the two Matts having the same first initial to express humor."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a lighthearted comment about the potential confusion between the two Matts, indicating an attempt to express humor.",
+                "process management": "The speaker ensures clarity on who has taken the role of recorder and distinguishes between the two Matts, facilitating smooth interaction."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -686,8 +664,7 @@
             "start_time": "10:28",
             "end_time": "10:39",
             "annotations": {
-                "assign task": "Maryellen assigns the task of leading the discussion to the other participants.",
-                "ask clarifying question": "Maryellen asks the participants to define quantitative imaging, seeking clarification on the term."
+                "ask question": "The speaker explicitly requests definitions of quantitative imaging from the group members, making this an example of asking a question to gather information."
             }
         },
         {
@@ -707,7 +684,8 @@
             "start_time": "10:39",
             "end_time": "10:43",
             "annotations": {
-                "explain or define term or concept": "Maryellen is asking for definitions of quantitative imaging, implying she wants to explain the different kinds she has encountered."
+                "process management": "The speaker is managing the discussion flow by prompting for input after asking for definitions.",
+                "clarify goal": "The utterance seeks to understand the group's perspectives on quantitative imaging, relating to defining or clarifying objectives."
             }
         },
         {
@@ -727,8 +705,8 @@
             "start_time": "10:43",
             "end_time": "10:50",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking for a definition of quantitative imaging, indicating she wants clarification on the term.",
-                "encourage particpatioin": "Maryellen is inviting someone to provide a definition of quantitative imaging, encouraging participation from the group."
+                "ask question": "The speaker is explicitly asking for information or clarification on what quantitative imaging is.",
+                "encourage participation": "The speaker is inviting group members to contribute their thoughts or definitions."
             }
         },
         {
@@ -747,14 +725,9 @@
             "screenshare_content": "None",
             "start_time": "10:50",
             "end_time": "11:11",
-            "annotations": [
-                {
-                    "assign task": "Maryellen is assigning the task of putting the Google Drive link in the chat to someone, likely the recorder, so everyone can access the document."
-                },
-                {
-                    "explain or define term or concept": "Maryellen is explaining why she prefers the recorder not to share their screen, because it bunches up the participants' video feeds, and she is suggesting an alternative way to view the Google Doc and the participants simultaneously."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by discussing technical aspects of collaboration, such as screen sharing and using a Google Doc."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -773,7 +746,7 @@
             "start_time": "11:12",
             "end_time": "11:12",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking if her suggestion of splitting the screen between the Google Doc and the video feed is a good solution for the participants."
+                "Ask question": "The speaker is seeking confirmation or agreement from the group on a proposed arrangement."
             }
         },
         {
@@ -793,8 +766,8 @@
             "start_time": "11:13",
             "end_time": "11:17",
             "annotations": {
-                "assign task": "Matt Lew volunteers to create a document and share the link in the chat, which is a task assigned to him by the group's need for a recorder.",
-                "confirm decision": "Matt Lew confirms the decision to create a document and share the link in the chat by saying 'Yeah, I'll try that right now.'"
+                "Process Management": "The speaker is managing the meeting flow by agreeing to create a doc and share it, which facilitates the group's collaboration process.",
+                "Supportive Response": "The speaker is also providing a supportive response by agreeing to take action that helps the group move forward."
             }
         },
         {
@@ -814,8 +787,8 @@
             "start_time": "11:17",
             "end_time": "11:30",
             "annotations": {
-                "ask clarifying question": "Maryellen asks for the definition of quantitative imaging, seeking clarification on the term.",
-                "encourage particpatioin": "Maryellen asks David what the definition of quantitative imaging reminds him of, inviting him to contribute to the discussion."
+                "ask question": "The speaker is requesting information or clarification on the definition of quantitative imaging.",
+                "encourage participation": "The speaker is inviting someone else in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -835,7 +808,7 @@
             "start_time": "11:31",
             "end_time": "11:48",
             "annotations": {
-                "explain or define term or concept": "David is explaining the definition of quantitative imaging in response to Maryellen's question."
+                "clarify goal": "David is providing a definition of quantitative imaging, which helps in understanding and setting the objectives for their discussion."
             }
         },
         {
@@ -855,7 +828,7 @@
             "start_time": "11:49",
             "end_time": "11:53",
             "annotations": {
-                "expand on existing idea": "Maryellen is going to elaborate further on David's definition of quantitative imaging, building upon his initial explanation."
+                "ask question": "The speaker is prompting for more information or clarification by saying 'I'm going to push on that.'"
             }
         },
         {
@@ -875,12 +848,8 @@
             "start_time": "11:56",
             "end_time": "12:06",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges David's definition of quantitative imaging by saying she is in his 'ballpark', recognizing his input."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Maryellen then invites Arnold to contribute his definition of quantitative imaging by asking him directly."
-                }
+                "ask question": "The speaker is requesting information or clarification on what 'quantitative imaging' means to Arnold.",
+                "encourage participation": "The speaker is inviting Arnold to contribute his thoughts or opinions to the discussion."
             }
         },
         {
@@ -900,8 +869,7 @@
             "start_time": "12:06",
             "end_time": "12:35",
             "annotations": {
-                "explain or define term or concept": "Arnold is explaining quantitative imaging by contrasting it with qualitative imaging, describing how quantitative imaging converts features or intensities into numbers for comparison between experiments.",
-                "expand on existing idea": "Arnold is expanding on the definition of quantitative imaging that was previously requested by Maryellen."
+                "develop idea": "The speaker is expanding on the concept of quantitative imaging by defining it and contrasting it with qualitative imaging, providing a clearer understanding of the term."
             }
         },
         {
@@ -921,8 +889,9 @@
             "start_time": "12:36",
             "end_time": "12:43",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging others to contribute their definitions of quantitative imaging, building on the previous discussion with David and Arnold.",
-                "present new idea": "Maryellen is introducing the idea of hearing different perspectives on the definition of quantitative imaging, which hasn't been explicitly stated as a goal yet."
+                "ask question": "The speaker is requesting input or thoughts from other group members.",
+                "encourage participation": "The speaker is inviting others to contribute their ideas or definitions.",
+                "process management": "The speaker is managing the discussion flow, deciding how to proceed based on group input."
             }
         },
         {
@@ -942,7 +911,7 @@
             "start_time": "12:44",
             "end_time": "12:44",
             "annotations": {
-                "None": "The utterance is incomplete and does not express a complete thought or idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -962,7 +931,7 @@
             "start_time": "12:44",
             "end_time": "12:44",
             "annotations": {
-                "encourage particpatioin": "Maryellen is about to encourage someone to participate by saying \"I\", indicating she is about to call on someone."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -982,8 +951,9 @@
             "start_time": "12:51",
             "end_time": "13:28",
             "annotations": {
-                "expand on existing idea": "Fanny expands on the definition of quantitative imaging, building on previous contributions by David and Arnold, adding the importance of interpreting the numerical values in a meaningful way.",
-                "explain or define term or concept": "Fanny explains the concept of quantitative imaging by highlighting the importance of having a point of reference to interpret the numerical values obtained from imaging, especially in clinical settings."
+                "develop idea": "The speaker expands on existing ideas about quantitative imaging by providing a nuanced view on what it means to have quantitative data, especially in the context of clinical translation.",
+                "signal expertise": "The speaker signals her expertise by offering a detailed perspective on quantitative imaging, showing her understanding of the field.",
+                "acknowledge contribution": "The speaker acknowledges previous discussion by referencing 'earlier' statements about the number of cells."
             }
         },
         {
@@ -1003,11 +973,11 @@
             "start_time": "13:28",
             "end_time": "13:32",
             "annotations": {
-                "encourage particpatioin": "Maryellen is asking if anyone else wants to contribute to the discussion about the definition of quantitative imaging, encouraging participation from the group."
+                "encourage participation": "The speaker invites others to contribute their thoughts or ideas to the discussion on definitions of quantitative imaging."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "03:32-04:00",
             "transcript": "I agree with that and I I'd say that one thing that um I think about with quantitative imaging is something that would be uh able to take something that has meaning in one experiment and be able to actually compare it to something in another experiment. So not only that there are numbers, but that those numbers um are are regular enough that we know how to interpret them with respect to one another.",
             "speaking_duration": 28,
@@ -1023,8 +993,9 @@
             "start_time": "13:32",
             "end_time": "14:00",
             "annotations": {
-                "express agreement": "Matt Lovett-Barron explicitly agrees with Fanny's definition of quantitative imaging.",
-                "expand on existing idea": "Matt Lovett-Barron builds on the definition of quantitative imaging by adding the idea that the numbers obtained should be comparable across different experiments, implying a level of standardization and interpretability."
+                "acknowledge contribution": "The speaker acknowledges a prior contribution with 'I agree with that'.",
+                "develop idea": "The speaker expands on existing ideas about quantitative imaging, focusing on comparability across experiments.",
+                "offer feedback": "The speaker provides his perspective as feedback on the concept of quantitative imaging, emphasizing the aspect of comparability."
             }
         },
         {
@@ -1044,7 +1015,7 @@
             "start_time": "14:00",
             "end_time": "14:01",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges the previous speaker's contribution to the discussion about quantitative imaging, signaling that she has heard and understood the point being made."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1064,7 +1035,7 @@
             "start_time": "14:01",
             "end_time": "14:07",
             "annotations": {
-                "encourage particpatioin": "Maryellen encourages Matt Lew to participate in the discussion by saying she cut him off earlier and now wants to hear his thoughts on quantitative imaging, which is a continuation of the discussion about definitions of quantitative imaging."
+                "encourage participation": "The speaker is inviting Matt Lew to contribute his thoughts or ideas, encouraging participation."
             }
         },
         {
@@ -1084,9 +1055,8 @@
             "start_time": "14:07",
             "end_time": "15:01",
             "annotations": {
-                "expand on existing idea": "Matt Lew builds on the previous Matt's point about quantitative imaging, adding that it should describe the fundamental science and be comparable.",
-                "explain or define term or concept": "Matt Lew explains that quantitative imaging should quantify underlying biological phenomena to become a testable hypothesis.",
-                "provide supporting evidence": "Matt Lew provides examples of biological phenomena like molecular processes, signaling, and phoslation that can be quantified through imaging."
+                "develop idea": "Matt Lew is expanding on the concept of quantitative imaging by discussing the importance of quantifying underlying biological phenomena to make them testable hypotheses.",
+                "clarify goal": "Matt Lew's discussion aims to clarify the goal of quantitative imaging, which is to describe fundamental science and enable comparison."
             }
         },
         {
@@ -1106,7 +1076,7 @@
             "start_time": "15:01",
             "end_time": "15:02",
             "annotations": {
-                "assign task": "Maryellen assigns the task of writing down the definition of quantitative imaging to the recorder, Matt Lew."
+                "process management": "The speaker instructs the recorder to document the discussion, managing the meeting flow and organization of group activities."
             }
         },
         {
@@ -1126,7 +1096,9 @@
             "start_time": "15:02",
             "end_time": "15:02",
             "annotations": {
-                "assign task": "Matt Lew acknowledges the task assigned by Maryellen to record the definitions of quantitative imaging and confirms that he will work on it."
+                "final answer": {
+                    "None": "No relevant code explicitly applies to this utterance as it is a simple agreement to take action."
+                }
             }
         },
         {
@@ -1146,8 +1118,8 @@
             "start_time": "15:02",
             "end_time": "15:20",
             "annotations": {
-                "explain or define term or concept": "Maryellen explains the context of her question by stating that she works with AI on medical images, setting the stage for her example of dynamic contrast enhanced MRI.",
-                "provide supporting evidence": "Maryellen provides an example of dynamic contrast enhanced MRI to support her question about the definition of quantitative imaging."
+                "develop idea": "The utterance expands on the discussion by providing a specific example from the speaker's experience related to AI in medical images.",
+                "signal expertise": "The speaker explicitly mentions her experience with AI in medical images, indicating her expertise in the area."
             }
         },
         {
@@ -1167,8 +1139,7 @@
             "start_time": "15:20",
             "end_time": "15:31",
             "annotations": {
-                "explain or define term or concept": "Maryellen explains that in AI, they try to 'model' something using knowledge of a wisely chosen input image, clarifying their approach in the context of AI and medical imaging.",
-                "expand on existing idea": "Maryellen expands on the discussion of quantitative imaging by describing how AI is used to model the uptake of a contrast agent, building upon the previous discussion of quantitative imaging definitions."
+                "develop idea": "The speaker is expanding on previous ideas about AI and imaging by providing more details on how AI models are used with specific input images."
             }
         },
         {
@@ -1188,9 +1159,8 @@
             "start_time": "15:31",
             "end_time": "16:02",
             "annotations": {
-                "provide supporting evidence": "Maryellen mentions that her colleagues say the number from AI can't be measured, supporting the need for measurable outputs relative to a biomedical situation, which was brought up by someone earlier in the discussion.",
-                "expand on existing idea": "Maryellen expands on the definition of quantitative imaging by providing an example of how it relates to biomedical situations like the likelihood of cancer, building on the previous discussion about the meaning of quantitative imaging.",
-                "explain or define term or concept": "Maryellen explains the concept of measurable outputs in quantitative imaging by relating it to biomedical situations and mentioning the K trans value, clarifying the requirements for quantitative imaging outputs."
+                "develop idea": "The speaker is expanding on the concept of quantitative imaging by discussing the necessity of measurability in biomedical contexts.",
+                "clarify goal": "The speaker is clarifying the goals and requirements for quantitative imaging measurements, emphasizing their need to be meaningful and comparable in biomedical situations."
             }
         },
         {
@@ -1210,8 +1180,8 @@
             "start_time": "16:02",
             "end_time": "16:11",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining the two different perspectives or \"camps\" she has encountered regarding quantitative imaging, one focused on AI modeling and the other on measurable biomedical situations.",
-                "propose decision": "Maryellen proposes that it will be useful for the group to consider these two perspectives as they proceed with their discussion."
+                "summarize conversation": "The speaker reflects on the discussion, mentioning 'those two camps' to highlight different perspectives within the field of quantitative imaging.",
+                "process management": "The speaker indicates her intention to step back and allow others to contribute to the discussion ('I'm going to be quiet in a second')."
             }
         },
         {
@@ -1231,8 +1201,9 @@
             "start_time": "16:11",
             "end_time": "16:35",
             "annotations": {
-                "expand on existing idea": "Maryellen expands on the discussion about the definition of quantitative imaging by stating that measurability is important and that both types of quantitative imaging (AI-based and physiology-based) are useful and can be merged, depending on the task.",
-                "present new idea": "Maryellen presents the idea that the two camps of quantitative imaging can be merged depending on the task, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is expanding on existing ideas by emphasizing measurability and the importance of the task type (clinical or biological).",
+                "supportive response": "The utterance expresses a positive view towards combining different approaches.",
+                "clarify goal": "The speaker is contributing to defining what should be considered in the context of quantitative imaging, relating to clarifying goals or objectives."
             }
         },
         {
@@ -1252,7 +1223,7 @@
             "start_time": "16:35",
             "end_time": "16:36",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook, as it is a transitional phrase."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1272,7 +1243,7 @@
             "start_time": "16:36",
             "end_time": "16:37",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete thought or idea, so no code applies."
+                "process management": "The speaker is transitioning to the next part of the meeting or discussion, managing the flow of conversation."
             }
         },
         {
@@ -1292,7 +1263,7 @@
             "start_time": "16:37",
             "end_time": "16:41",
             "annotations": {
-                "express humor": "Maryellen uses a self-deprecating tone by saying they \"agree, disagree\" on the definition of quantitative imaging, which is humorous given the preceding discussion where multiple definitions were offered."
+                "summarize conversation": "The speaker is summarizing the current state of the discussion about the definition of quantitative imaging, noting that there is both agreement and disagreement among the participants."
             }
         },
         {
@@ -1312,7 +1283,8 @@
             "start_time": "16:41",
             "end_time": "16:45",
             "annotations": {
-                "confirm decision": "Maryellen is confirming the decision to move forward with the discussion, now that they have established a shared understanding of quantitative imaging, building upon the previous discussion about its definition."
+                "summarize conversation": "The speaker indicates that the previous discussion was important and now they can move forward, summarizing the conversation's progress.",
+                "supportive response": "The speaker expresses a positive sentiment about the discussion, indicating agreement or validation of its importance."
             }
         },
         {
@@ -1332,9 +1304,9 @@
             "start_time": "16:47",
             "end_time": "17:22",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of using algorithm scoring, based on physiology, to provide searchable and archivable records, which is a novel concept in the context of the discussion.",
-                "explain or define term or concept": "The speaker explains that algorithm scoring is like the output from machine learning AI or some other algorithmic model, clarifying the term for the group.",
-                "ask clarifying question": "The speaker asks if algorithm scoring based on physiology can provide searchable and archivable records, seeking to explore the potential of this approach."
+                "ask question": "The speaker is explicitly asking if algorithm scoring can provide searchable and archivable records.",
+                "develop idea": "The speaker is expanding on previous discussions about quantitative imaging and now focusing on algorithm scoring.",
+                "clarify goal": "The speaker is exploring what can be achieved with algorithm scoring, relating to the goal of quantitative imaging."
             }
         },
         {
@@ -1354,7 +1326,7 @@
             "start_time": "17:22",
             "end_time": "17:22",
             "annotations": {
-                "propose decision": "The phrase \"So let's\" suggests that Maryellen is about to propose a decision or action for the group to take, likely related to the discussion of quantitative imaging and the bullet points mentioned earlier."
+                "process management": "The speaker is attempting to move the conversation forward, indicating a transition to a next step or action."
             }
         },
         {
@@ -1373,11 +1345,9 @@
             "screenshare_content": "None",
             "start_time": "17:22",
             "end_time": "17:22",
-            "annotations": [
-                {
-                    "Yeah": "This utterance expresses agreement with the previous statement, though the specific point of agreement is unclear without more context."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The utterance 'Yeah' expresses agreement or validation with previous statements, making it a supportive response."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -1396,7 +1366,7 @@
             "start_time": "17:22",
             "end_time": "17:23",
             "annotations": {
-                "propose decision": "Maryellen proposes to start the discussion, moving the meeting forward after the introductions and definition of quantitative imaging."
+                "process management": "The speaker is transitioning the meeting to the discussion phase, managing the meeting flow."
             }
         },
         {
@@ -1416,7 +1386,7 @@
             "start_time": "17:23",
             "end_time": "17:23",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1436,7 +1406,7 @@
             "start_time": "17:23",
             "end_time": "17:23",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging anyone to participate in the discussion."
+                "encourage participation": "The speaker invites others in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -1456,7 +1426,8 @@
             "start_time": "17:23",
             "end_time": "17:24",
             "annotations": {
-                "encourage particpatioin": "Maryellen is explicitly encouraging someone to speak up and contribute to the discussion."
+                "encourage participation": "The speaker is prompting others to contribute or start the discussion.",
+                "process management": "The speaker is managing the meeting flow by prompting the discussion to begin."
             }
         },
         {
@@ -1475,11 +1446,9 @@
             "screenshare_content": "None",
             "start_time": "17:24",
             "end_time": "17:24",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is explicitly inviting Goku to speak, continuing the round of introductions and prompting him to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker is directly addressing Goku, inviting him to contribute to the discussion."
+            }
         },
         {
             "speaker": "Srigokul Upadhyayula",
@@ -1497,14 +1466,10 @@
             "screenshare_content": "None",
             "start_time": "17:24",
             "end_time": "18:31",
-            "annotations": [
-                {
-                    "present new idea": "Gokul introduces the idea that the approach to getting information from images depends on whether the goal is hypothesis testing or hypothesis generation, which is a novel consideration in the context of the discussion so far."
-                },
-                {
-                    "expand on existing idea": "Gokul expands on the idea of hypothesis generation, adding that it is more likely to lead to new discoveries but requires large quantities of data, building on the previous discussion about quantitative imaging and its applications."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea about hypothesis testing and generation in the context of image and data usage.",
+                "clarify goal": "The speaker discusses the goals of making new discoveries and the importance of data quantities for hypothesis generation."
+            }
         },
         {
             "speaker": "Srigokul Upadhyayula",
@@ -1523,7 +1488,7 @@
             "start_time": "18:31",
             "end_time": "18:31",
             "annotations": {
-                "None": "This utterance does not contain any content that can be coded."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1543,7 +1508,7 @@
             "start_time": "18:31",
             "end_time": "18:31",
             "annotations": {
-                "None": "This utterance does not contain any content that can be coded."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1563,7 +1528,7 @@
             "start_time": "18:31",
             "end_time": "18:31",
             "annotations": {
-                "express agreement": "David agrees with the previous statement made by Gokul about hypothesis testing and generation using images."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1582,11 +1547,9 @@
             "screenshare_content": "None",
             "start_time": "18:31",
             "end_time": "18:31",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "David Van Valen",
@@ -1604,13 +1567,11 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:49",
-            "annotations": [
-                {
-                    "present new idea": "David introduces the idea of using machine learning methods to generate vector embeddings from images, where similar images are close in a lower-dimensional embedding space, which is a novel concept not previously mentioned in the discussion.",
-                    "expand on existing idea": "David expands on the idea of image matching by suggesting that images can be optimized to stitch together data sets collected at different times or with different modalities by mapping things to a shared embedding space, building upon the previous discussion about getting the most information out of images.",
-                    "explain or define term or concept": "David explains the concept of vector embedding, stating that images are considered similar if they are close in a lower-dimensional embedding space, clarifying the terminology for the group."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "David introduces a specific approach to image analysis using machine learning, suggesting generating methods to produce vector embeddings from images.",
+                "develop idea": "He develops this idea by explaining that images would be similar if close in a lower-dimensional embedding space and discusses optimizing image matching.",
+                "signal expertise": "David signals his expertise by discussing machine learning methods and vector embeddings."
+            }
         },
         {
             "speaker": "David Van Valen",
@@ -1629,7 +1590,7 @@
             "start_time": "20:49",
             "end_time": "21:01",
             "annotations": {
-                "provide supporting evidence": "David is providing supporting evidence by stating that the machine learning methods he is suggesting are not unusual or far from the norm, implying that they are feasible and grounded in current capabilities."
+                "supportive response": "The speaker is expressing agreement and validation for the approach by stating it's not beyond the current norm of machine learning capabilities."
             }
         },
         {
@@ -1649,12 +1610,13 @@
             "start_time": "21:01",
             "end_time": "21:22",
             "annotations": {
-                "provide supporting evidence": "The speaker mentions contrastive learning methods as powerful for generating useful embeddings and names a researcher, Carolyn Uhler, who is actively working on methods for building shared embeddings, providing evidence to support the idea of using machine learning methods to generate vector embeddings for images.",
-                "expand on existing idea": "This utterance expands on the idea of generating machine learning methods that take images and produce a vector embedding, which was introduced in the previous turn by the same speaker."
+                "develop idea": "The speaker is expanding on the idea of using contrastive learning methods for generating embeddings, providing more details about the approach.",
+                "signal expertise": "The speaker is showing familiarity with the topic by mentioning specific methods and researchers, indicating his expertise.",
+                "acknowledge contribution": "The speaker acknowledges Carolyn Uhler's work, recognizing her contribution."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "01:23-01:28",
             "transcript": "Can I can I ask is that the that is kinds of embeddings can be generated without metadata?",
             "speaking_duration": 5,
@@ -1670,7 +1632,7 @@
             "start_time": "21:23",
             "end_time": "21:28",
             "annotations": {
-                "ask clarifying question": "Matt Lovett-Barron asks a question to clarify whether the embeddings David Van Valen mentioned can be generated without metadata, seeking further explanation on the topic."
+                "Ask Question": "The speaker is requesting information or clarification on whether certain kinds of embeddings can be generated without metadata."
             }
         },
         {
@@ -1690,11 +1652,11 @@
             "start_time": "21:29",
             "end_time": "21:33",
             "annotations": {
-                "ask clarifying question": "Matt Lovett-Barron asked if embeddings can be generated without metadata, and David is asking for clarification on what Matt means by 'without metadata' to better understand the question."
+                "ask question": "The speaker is requesting clarification on what is meant by 'without metadata', directly asking for information or understanding from another team member."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "01:33-01:44",
             "transcript": "Uh like without additional documentation about how the image yeah, I mean, I suppose without maybe without detailed metadata beyond just knowing what what um how big the pixels are, what type of microscope you got it from that type of thing.",
             "speaking_duration": 11,
@@ -1710,7 +1672,8 @@
             "start_time": "21:33",
             "end_time": "21:44",
             "annotations": {
-                "ask clarifying question": "Matt Lovett-Barron is asking David Van Valen to clarify what he means by 'without metadata' in the context of generating embeddings, specifically inquiring if embeddings can be generated without detailed documentation about the image, beyond basic information like pixel size and microscope type, after David proposed generating machine learning methods that produce a vector embedding."
+                "Ask question": "The speaker is explicitly requesting information or clarification on the necessity of detailed metadata for generating embeddings.",
+                "Develop idea": "The speaker is building upon a previous idea (about embeddings and metadata) by asking for more details."
             }
         },
         {
@@ -1730,8 +1693,7 @@
             "start_time": "21:44",
             "end_time": "22:21",
             "annotations": {
-                "expand on existing idea": "David expands on his idea of using vector embeddings for image analysis by stating that metadata is important for generating these embeddings, especially when integrating data from different modalities, building upon his previous explanation of how image matching can be optimized.",
-                "provide supporting evidence": "David provides supporting evidence for the importance of metadata by explaining that the methods he knows require enough metadata to ensure that data sets from different modalities come from the same sample, strengthening his argument for the necessity of metadata in generating useful embeddings."
+                "develop idea": "The speaker is expanding, building upon, or elaborating existing ideas through reasoning and examples, specifically discussing the requirements for machine learning methods to generate embeddings from different modalities."
             }
         },
         {
@@ -1751,11 +1713,12 @@
             "start_time": "22:21",
             "end_time": "22:27",
             "annotations": {
-                "expand on existing idea": "David is expanding on his idea of using vector embeddings for images, explaining that metadata is necessary to ensure the data sets being compared are from the same sample, building upon the previous discussion about image matching and shared embedding spaces."
+                "develop idea": "David is expanding on the concept of generating embeddings and the role of metadata.",
+                "offer feedback": "David is providing specific information on the conditions necessary for generating embeddings."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "02:27-02:28",
             "transcript": "Yeah. Okay.",
             "speaking_duration": 1,
@@ -1770,11 +1733,9 @@
             "screenshare_content": "None",
             "start_time": "22:27",
             "end_time": "22:28",
-            "annotations": [
-                {
-                    "express agreement": "Matt Lovett-Barron expresses agreement with David Van Valen's explanation regarding the need for metadata in generating embeddings, confirming his understanding and acceptance of the point."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or acknowledgment of the previous statements without adding new content."
+            }
         },
         {
             "speaker": "David Van Valen",
@@ -1793,7 +1754,7 @@
             "start_time": "22:28",
             "end_time": "22:30",
             "annotations": {
-                "express agreement": "David agrees with Matt's question about embeddings and metadata."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1813,7 +1774,8 @@
             "start_time": "22:30",
             "end_time": "22:42",
             "annotations": {
-                "None": "This utterance does not fit into any of the defined codes as it is a general statement about the speaker's interests."
+                "signal expertise": "The speaker explicitly states his own expertise or familiarity with data collection practices.",
+                "encourage participation": "The speaker's reflection on his own practices might invite others to share their experiences or insights."
             }
         },
         {
@@ -1833,8 +1795,9 @@
             "start_time": "22:43",
             "end_time": "23:07",
             "annotations": {
-                "expand on existing idea": "David is expanding on the idea of using machine learning methods to generate vector embeddings by suggesting practices that make data more machine learnable, such as including appropriate metadata with the dataset.",
-                "propose decision": "David proposes encouraging practices that make data more machine learnable by packaging metadata with the dataset, so that computational methods can be developed without worrying about metadata issues."
+                "develop idea": "David is expanding on the concept of making data more machine learnable by highlighting the importance of metadata.",
+                "offer feedback": "David is offering a perspective on how to improve data practices, specifically suggesting that having appropriate metadata makes data more machine learnable.",
+                "identify gap": "David points out the issue of not having appropriate metadata, which can be seen as identifying a gap in current practices."
             }
         },
         {
@@ -1854,9 +1817,9 @@
             "start_time": "23:07",
             "end_time": "23:26",
             "annotations": {
-                "expand on existing idea": "David is expanding on the idea of metadata, adding that it is the bare minimum needed for reproducibility, building on the previous discussion about the importance of metadata for image analysis and comparison.",
-                "provide supporting evidence": "David supports his argument about the importance of metadata by stating that it is the bare minimum for reproducibility, providing a reason to strengthen his point.",
-                "present new idea": "David presents the idea that sharing data without sufficient metadata is a community problem, introducing a new perspective on the challenges of data sharing."
+                "Critical response": "The speaker is pointing out a problem with current practices regarding data sharing and metadata, calling it a 'community problem'.",
+                "Identify gap": "The speaker mentions that even sharing data without sufficient metadata is a community problem, implying a gap in current practices.",
+                "Develop idea": "The speaker is building upon the context of metadata and its importance for reproducibility, suggesting that the bare minimum of metadata is needed."
             }
         },
         {
@@ -1876,7 +1839,7 @@
             "start_time": "23:27",
             "end_time": "23:33",
             "annotations": {
-                "expand on existing idea": "Maryellen is expanding on the discussion of searchable and archivable records by asking about the performance of these systems, building on the previous discussion about algorithm scoring and its potential for creating such records."
+                "ask question": "The speaker is requesting information about the performance of certain systems, indicating a question about their capabilities or effectiveness."
             }
         },
         {
@@ -1896,8 +1859,9 @@
             "start_time": "23:34",
             "end_time": "23:51",
             "annotations": {
-                "provide supporting evidence": "The utterance provides a logical reasoning to strengthen the idea that the performance of a search system needs to be high enough, because if the search is wrong, cancer cases could be misclassified, which is a problem.",
-                "offer constructive criticism": "The utterance critiques the performance of a search system, suggesting that it needs to be at a high enough level to avoid misclassifying cancer cases, which is a critique with the intent to improve the system."
+                "Develop idea": "She is elaborating on the existing ideas by highlighting the importance of performance levels in the system.",
+                "Offer feedback": "She is providing specific feedback on the necessity of high performance to avoid misclassification of cancer cases.",
+                "Signal expertise": "She is demonstrating her expertise, especially in AI for medical images, by discussing critical aspects of system performance."
             }
         },
         {
@@ -1917,8 +1881,8 @@
             "start_time": "23:51",
             "end_time": "24:03",
             "annotations": {
-                "provide supporting evidence": "The speaker is providing supporting evidence by mentioning Google's image searching algorithm for cancer cases, which strengthens the discussion about image analysis and searching capabilities.",
-                "expand on existing idea": "The speaker is expanding on the idea of image searching and analysis by providing a real-world example of Google's algorithm for cancer cases, building upon the previous discussion about searchable and archivable records."
+                "develop idea": "The speaker is elaborating on the concept of image searching algorithms using a specific example (Google's algorithm for cancer cases).",
+                "supportive response": "The speaker is providing an example that supports the discussion, showing agreement or validation."
             }
         },
         {
@@ -1938,7 +1902,8 @@
             "start_time": "24:03",
             "end_time": "24:09",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about image searching algorithms for cancer cases, adding the importance of the search metric and algorithm performance to the discussion."
+                "Develop idea": "The speaker is expanding on previous ideas by highlighting the importance of the search metric and algorithm performance.",
+                "Offer feedback": "The speaker is providing feedback on what is important for their work or project, specifically the performance of the search metric and algorithm."
             }
         },
         {
@@ -1958,7 +1923,7 @@
             "start_time": "24:09",
             "end_time": "24:11",
             "annotations": {
-                "express agreement": "David agrees with Maryellen's point about the importance of search metric performance in image searching algorithms for cancer cases, which she brought up in the previous turn."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1978,8 +1943,9 @@
             "start_time": "24:11",
             "end_time": "24:25",
             "annotations": {
-                "express agreement": "David expresses agreement with Maryellen's point about the importance of search metric performance, acknowledging that improvements can be made from an algorithmic perspective.",
-                "expand on existing idea": "David expands on the discussion about the performance of search metrics and algorithms, stating that the algorithmic problems are addressable."
+                "develop idea": "The speaker is expanding on previous discussions by providing his perspective on the challenges and addressability of problems in quantitative imaging and machine learning.",
+                "signal expertise": "The speaker is sharing his viewpoint, which is informed by his expertise in machine learning and data analysis.",
+                "supportive response": "The utterance acknowledges challenges but expresses optimism about addressing them, providing a supportive perspective to the discussion."
             }
         },
         {
@@ -1999,7 +1965,7 @@
             "start_time": "24:25",
             "end_time": "24:27",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about the algorithmic perspective and improvements to be made in image searching algorithms for cancer cases, suggesting that there is always room for further advancements."
+                "supportive response": "Expressing agreement or validation of the previous speaker's contribution without adding new content."
             }
         },
         {
@@ -2019,7 +1985,8 @@
             "start_time": "24:27",
             "end_time": "24:36",
             "annotations": {
-                "expand on existing idea": "David is expanding on the previous discussion about algorithm performance and data search, suggesting that the main challenge is wrangling the data into a usable format, building upon Matt's earlier point about data standardization."
+                "develop idea": "The speaker is expanding on previous ideas about the challenges of data preparation for algorithmic approaches.",
+                "supportive response": "The speaker is showing agreement or alignment with previous points, specifically Matt's, about the importance of data wrangling."
             }
         },
         {
@@ -2039,11 +2006,12 @@
             "start_time": "24:36",
             "end_time": "24:50",
             "annotations": {
-                "provide supporting evidence": "The speaker supports their claim about the most significant pain point in projects by stating that the folks who've been willing to engage in that effort have been the most successful, providing anecdotal evidence based on their experience."
+                "signal expertise": "The speaker shares their experience and insights, implying their expertise in the challenges of data analysis projects.",
+                "identify gap": "The speaker highlights a significant pain point in projects, which is the effort required for data preparation."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "04:50-04:51",
             "transcript": "Mhm.",
             "speaking_duration": 1,
@@ -2059,7 +2027,7 @@
             "start_time": "24:50",
             "end_time": "24:51",
             "annotations": {
-                "express agreement": "Matt Lovett-Barron expresses agreement with David Van Valen's point about the pain point being wrangling the data into a usable format."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2079,8 +2047,7 @@
             "start_time": "24:51",
             "end_time": "25:03",
             "annotations": {
-                "encourage particpatioin": "Maryellen encourages the group to push the boundaries of what's possible, even if it seems like it would require too much data, building on the discussion about quantitative imaging and data wrangling.",
-                "express enthusiasm": "Maryellen expresses enthusiasm about the potential directions the discussion can take, following a conversation about the challenges and possibilities of quantitative imaging and data analysis."
+                "clarify goal": "The speaker is clarifying the goal of the discussion, which is to explore potential ideas without being limited by concerns about data quantity."
             }
         },
         {
@@ -2100,7 +2067,8 @@
             "start_time": "25:03",
             "end_time": "25:07",
             "annotations": {
-                "reject idea": "David rejects the idea that it takes too much data, which Maryellen suggested to push the limits of data handling."
+                "supportive response": "The speaker is expressing a positive view on the feasibility of handling data, indicating it doesn't take too much data, which supports the discussion on potential solutions.",
+                "develop idea": "The speaker is building upon the previous discussion about data requirements, suggesting that it might not be as difficult as implied."
             }
         },
         {
@@ -2120,7 +2088,8 @@
             "start_time": "25:07",
             "end_time": "25:10",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging the team to push the boundaries of what's possible, even if it seems difficult, building on the previous discussion about data manipulation and potential limitations."
+                "develop idea": "The speaker is expanding on the previous idea of handling data to encourage thinking about its potential.",
+                "clarify goal": "The speaker is directing the discussion towards understanding the objectives of data manipulation."
             }
         },
         {
@@ -2140,8 +2109,9 @@
             "start_time": "25:10",
             "end_time": "25:22",
             "annotations": {
-                "encourage particpatioin": "Maryellen encourages the team to not be limited by data constraints and to freely express their ideas, building on the previous discussion about data wrangling and algorithmic improvements.",
-                "express enthusiasm": "Maryellen expresses enthusiasm by encouraging the team to pursue their ideas even if they seem data-intensive, conveying optimism about handling more data."
+                "develop idea": "The speaker is expanding on the idea that the group should not limit themselves by the amount of data they think they can handle.",
+                "supportive response": "The utterance is supportive in nature, encouraging the group not to limit their ambitions due to data handling capabilities.",
+                "encourage participation": "The utterance encourages the group to think about their goals and ambitions without limiting themselves."
             }
         },
         {
@@ -2161,7 +2131,7 @@
             "start_time": "25:22",
             "end_time": "25:23",
             "annotations": {
-                "provide supporting evidence": "Maryellen is referring to the group's history of dealing with large amounts of data, which supports the idea that they can handle more data in the future."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2181,7 +2151,8 @@
             "start_time": "25:23",
             "end_time": "25:27",
             "annotations": {
-                "reject idea": "David rejects the idea that the amount of data is a limiting factor, which Maryellen brought up in the previous utterance."
+                "critical response": "The speaker is downplaying the issue of not being able to collect enough data, providing a counterpoint to the discussion.",
+                "offer feedback": "The speaker is offering a perspective on the challenge of data collection, suggesting it's not the primary issue."
             }
         },
         {
@@ -2201,7 +2172,8 @@
             "start_time": "25:27",
             "end_time": "25:28",
             "annotations": {
-                "express agreement": "David agrees with Maryellen's point that wrangling the data into the right format is a significant pain point, building on the previous discussion about the challenges of using algorithmic approaches due to data formatting issues."
+                "develop idea": "The speaker is elaborating on the challenge of getting data into the right format, building on previous discussions about data analysis difficulties.",
+                "supportive response": "The speaker's comment aligns with and supports the ongoing discussion about the challenges of data analysis and processing."
             }
         },
         {
@@ -2220,11 +2192,9 @@
             "screenshare_content": "None",
             "start_time": "25:28",
             "end_time": "25:28",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2243,8 +2213,8 @@
             "start_time": "25:28",
             "end_time": "25:41",
             "annotations": {
-                "provide supporting evidence": "Maryellen states that data collection is a major problem in the medical imaging field for cultural reasons, not technical ones, supporting her previous point about data wrangling being a significant pain point.",
-                "expand on existing idea": "This utterance expands on the previous discussion about data wrangling and the challenges associated with it, particularly in the context of medical imaging."
+                "identify gap": "The speaker points out a challenge in data collection in the medical imaging field, noting it's a major problem for cultural reasons, not technical ones.",
+                "develop idea": "The speaker is adding a nuanced view to the discussion about data collection challenges across different fields."
             }
         },
         {
@@ -2264,7 +2234,7 @@
             "start_time": "25:41",
             "end_time": "25:42",
             "annotations": {
-                "express agreement": "David agrees with Maryellen's previous statement about the challenges of data wrangling, which is a form of agreement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2284,7 +2254,8 @@
             "start_time": "25:42",
             "end_time": "26:03",
             "annotations": {
-                "encourage particpatioin": "Maryellen invites Vivian to contribute to the discussion, asking about her perspective on quantitative imaging at the molecular level, after hearing from others."
+                "ask question": "The speaker is asking Vivian about her experience with quantitative imaging at the molecular level.",
+                "encourage participation": "By asking Vivian a direct question, the speaker is inviting her to contribute to the discussion."
             }
         },
         {
@@ -2304,9 +2275,9 @@
             "start_time": "26:41",
             "end_time": "27:34",
             "annotations": {
-                "expand on existing idea": "Fanny expands on the definition of quantitative imaging, building on previous discussion by stating that traditional MR imaging relies on differences in contrast but lacks sufficient quantification, needing a baseline measurement that varies between patients.",
-                "present new idea": "Fanny presents the idea of normalizing MR measurements or finding a standard range, similar to blood tests, to improve quantification in the field, which has not been explicitly mentioned before.",
-                "provide supporting evidence": "Fanny provides supporting evidence for the need for better MR quantification by drawing an analogy to blood tests and their established normal ranges, suggesting a similar approach could be valuable for MR imaging."
+                "identify gap": "The speaker recognizes a limitation in traditional MR methods regarding quantification and the need for baseline measurements.",
+                "develop idea": "The speaker expands on the existing idea of MR limitations and potential improvements through normalization.",
+                "propose new idea": "The speaker suggests a new approach by comparing MR quantification to blood tests for establishing a normal range."
             }
         },
         {
@@ -2326,7 +2297,7 @@
             "start_time": "27:34",
             "end_time": "27:41",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Fanny's point about the need for baseline measurements in MR quantification, indicating that it's a valuable contribution to the discussion."
+                "supportive response": "The speaker expresses agreement with a previous point."
             }
         },
         {
@@ -2345,14 +2316,11 @@
             "screenshare_content": "None",
             "start_time": "27:41",
             "end_time": "28:03",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Maryellen explains that 'harmonize' is a term sometimes used to handle data from different institutions, scanners, and populations, clarifying the concept of data normalization in the context of quantitative imaging."
-                },
-                {
-                    "expand on existing idea": "Maryellen expands on Fanny's point about the need for normalization in MR imaging by mentioning that the issue of data variation exists across institutions, scanners, and populations, which is relevant to the discussion of quantitative imaging."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on previous discussions about data variation and its challenges.",
+                "ask question": "The speaker asks how to normalize or harmonize data from different institutions, scanners, and populations.",
+                "signal expertise": "The speaker mentions her own experience with collecting data from around the world and seeing variations in her lab."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2370,11 +2338,9 @@
             "screenshare_content": "None",
             "start_time": "28:03",
             "end_time": "28:04",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2393,7 +2359,8 @@
             "start_time": "28:04",
             "end_time": "28:06",
             "annotations": {
-                "encourage particpatioin": "Maryellen is explicitly inviting Vivian to contribute to the discussion, as she is moving around the group to gather different perspectives."
+                "encourage participation": "The speaker is directly addressing Vivian to include her in the conversation.",
+                "process management": "The utterance helps in managing the discussion flow by ensuring all participants are engaged."
             }
         },
         {
@@ -2413,7 +2380,7 @@
             "start_time": "28:06",
             "end_time": "28:10",
             "annotations": {
-                "encourage particpatioin": "Maryellen Giger is inviting Vivian to contribute to the discussion by directing the conversation towards her area of expertise."
+                "process management": "The speaker guides the discussion by pointing out the level of analysis (molecular level), which can be seen as a form of managing the discussion flow."
             }
         },
         {
@@ -2432,11 +2399,9 @@
             "screenshare_content": "None",
             "start_time": "28:10",
             "end_time": "28:14",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is directly asking Vivian to share her perspective on quantitative imaging at the molecular level, encouraging her to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the current state of quantitative imaging and where it stands, specifically from the perspective of someone working at the molecular level."
+            }
         },
         {
             "speaker": "Qian Liu",
@@ -2455,7 +2420,7 @@
             "start_time": "28:15",
             "end_time": "28:25",
             "annotations": {
-                "ask clarifying question": "Vivian is asking for clarification on the purpose of the algorithm scoring mentioned in the second question, which was brought up by Maryellen in the previous turn."
+                "ask question": "The speaker is requesting clarification or information about a prior statement regarding an algorithm for scoring mentioned in the second question."
             }
         },
         {
@@ -2475,7 +2440,7 @@
             "start_time": "28:25",
             "end_time": "28:40",
             "annotations": {
-                "ask clarifying question": "Vivian is asking for clarification on the purpose of the 'scoring' mentioned in the second question, specifically if it's meant for screening information, and if this understanding aligns with everyone else's or if there's a different definition in the AI world, following a discussion about quantitative imaging and its challenges."
+                "ask question": "The speaker is seeking clarification or information about the concept of scoring in AI and its application, indicating a request for information or expertise from other team members."
             }
         },
         {
@@ -2495,7 +2460,7 @@
             "start_time": "28:46",
             "end_time": "28:49",
             "annotations": {
-                "ask clarifying question": "Maryellen asks Vivian to define \"scoring\" to ensure a shared understanding, following Vivian's question about the purpose of algorithm scoring."
+                "ask question": "Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member."
             }
         },
         {
@@ -2515,7 +2480,7 @@
             "start_time": "28:49",
             "end_time": "28:56",
             "annotations": {
-                "ask clarifying question": "Vivian is asking for clarification on the purpose of \"scoring\" in the context of the discussion, specifically in relation to algorithm scoring mentioned in the second question."
+                "ask question": "Vivian is seeking clarification on the purpose of scoring, indicating she wants to understand it better."
             }
         },
         {
@@ -2535,9 +2500,7 @@
             "start_time": "30:00",
             "end_time": "30:20",
             "annotations": {
-                "present new idea": "Vivian introduces the challenge of not knowing which spots or dots are related to each other in a cloud dataset, which is a novel problem presented to the group.",
-                "explain or define term or concept": "Vivian explains the challenge of working with cloud datasets where the relationships between data points (spots/dots) are unknown, highlighting the need for algorithms to section or group them.",
-                "ask clarifying question": "Although phrased as a statement, Vivian's utterance implicitly raises the question of how to address the challenge of identifying relationships between data points in cloud datasets, seeking potential solutions or approaches from the group."
+                "None": "No"
             }
         },
         {
@@ -2557,7 +2520,7 @@
             "start_time": "30:20",
             "end_time": "30:27",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking Vivian to confirm if she needs lower resolution images to guide her to specific areas in the cloud data set, following Vivian's explanation of the challenge of not knowing which spots are related to each other."
+                "ask question": "The speaker is requesting clarification on how to guide an algorithm to specific areas, seeking more information on a prior statement."
             }
         },
         {
@@ -2576,17 +2539,10 @@
             "screenshare_content": "None",
             "start_time": "30:27",
             "end_time": "31:28",
-            "annotations": [
-                {
-                    "expand on existing idea": "Vivian is expanding on her previous question about algorithm scoring by explaining the challenges in analyzing cloud data sets where the relationships between data points are unknown, building on the discussion about quantitative imaging and data normalization."
-                },
-                {
-                    "present new idea": "Vivian presents the idea that prior knowledge (lower resolution imaging, biology, protein interactions) is needed to guide the analysis of cloud data sets, which is a novel concept in the context of the discussion."
-                },
-                {
-                    "express frustration": "Vivian expresses frustration about the difficulty of using computers to identify protein clusters and interactions in images, which is easy for the human eye, showing her dissatisfaction with the current computational methods."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly recognizes a limitation in their ability to analyze imaging data with computers, specifically in determining protein interactions.",
+                "ask question": "The speaker implies a need for a solution to overcome the challenge of analyzing protein interactions with computers, though not phrased as a direct question."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2605,8 +2561,9 @@
             "start_time": "31:29",
             "end_time": "31:49",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining the problem Vivian is trying to solve, which involves getting the most information out of an image when the specific area of interest is unknown, requiring a lower resolution direction to guide the analysis.",
-                "expand on existing idea": "Maryellen is building on Vivian's previous statements about the challenges of analyzing clustered data in high-resolution images, adding the idea of using lower resolution images to guide the analysis."
+                "develop idea": "The speaker is elaborating on a previous point about the challenges and needs in quantitative imaging, specifically about getting the most information out of an image.",
+                "identify gap": "The speaker highlights a gap in current capabilities - the ability to effectively analyze images without prior knowledge of where to focus.",
+                "offer feedback": "The speaker provides a perspective on how to approach the challenge, which can be seen as feedback."
             }
         },
         {
@@ -2626,9 +2583,8 @@
             "start_time": "31:50",
             "end_time": "32:06",
             "annotations": {
-                "expand on existing idea": "Vivian is expanding on her previous explanation of the challenges she faces with analyzing molecular-level images, building on the idea of needing a lower resolution guide to focus on specific areas within the high-resolution image.",
-                "explain or define term or concept": "Vivian is explaining the concept of using a \"mask\" to first identify a region of interest before focusing on the details within that region, clarifying her approach to image analysis.",
-                "express frustration": "Vivian expresses frustration about the difficulty of getting a computer to identify protein clusters and interactions in images, which is easy for the human eye."
+                "identify gap": "The speaker is explicitly recognizing a challenge or gap in their current approach to image analysis, specifically in analyzing spots on an image.",
+                "develop idea": "The speaker is elaborating on a previous point about the challenge in image analysis, specifically about masking and focusing on certain spots."
             }
         },
         {
@@ -2648,9 +2604,9 @@
             "start_time": "32:06",
             "end_time": "32:32",
             "annotations": {
-                "propose decision": "Maryellen proposes to move on to the next speaker and then address the three bullet points, suggesting a concrete choice for the group.",
-                "resolve conflict": "Maryellen acknowledges that the group has different perspectives on the three bullets due to their different fields, but suggests moving forward to satisfy them, mediating between these different viewpoints to reach a consensus.",
-                "assign task": "Maryellen implicitly assigns the task of addressing the three bullets to the group as a whole by suggesting they move on to satisfy them."
+                "summarize conversation": "The speaker summarizes the current state of discussion and suggests next steps.",
+                "process management": "The speaker manages the discussion flow by suggesting what to do next.",
+                "encourage participation": "The speaker encourages San Pun to contribute to the discussion."
             }
         },
         {
@@ -2669,11 +2625,9 @@
             "screenshare_content": "None",
             "start_time": "32:32",
             "end_time": "32:32",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is encouraging participation by ending her turn and inviting others to speak, following a series of turns by other participants."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker uses 'So?' to encourage or prompt further discussion or responses from the group members."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -2691,11 +2645,9 @@
             "screenshare_content": "None",
             "start_time": "32:32",
             "end_time": "32:35",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The speaker acknowledges the discussion, recognizing the contributions of others without necessarily agreeing or expanding on their points."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement with the previous discussion, indicating they think they are discussing the two questions mentioned."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -2713,14 +2665,11 @@
             "screenshare_content": "None",
             "start_time": "32:35",
             "end_time": "33:41",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Sapun supports his claim about bottlenecks in quantitative imaging by describing a scenario where different researchers analyzing the same sample may not arrive at the same answer, highlighting the lack of standardization and data sharing issues, which aligns with David's earlier point about data practices."
-                },
-                {
-                    "express frustration": "Sapun expresses frustration with the current state of quantitative imaging, stating that the lack of standardization and data sharing is a \"pretty big bottleneck\" and that the answer to whether different researchers get the same result from the same sample is \"a resounding no for 90% of the cases\", which he finds \"kind of sad.\""
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker highlights a significant gap in current quantitative imaging practices regarding data sharing and standardization across different institutions or instruments.",
+                "critical response": "The speaker critiques current practices for not allowing standardization across institutions.",
+                "offer feedback": "The speaker suggests sharing metadata, code, and making data transferable to improve standardization."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2739,12 +2688,8 @@
             "start_time": "33:41",
             "end_time": "33:56",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges Matt Lou's written contribution by referring to it."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Maryellen encourages Vivian to comment on the topic, building on the previous discussion about normalization and multiple stages."
-                }
+                "acknowledge contribution": "The speaker references and builds upon Matt Lou's contribution.",
+                "encourage participation": "The speaker invites Vivian to comment, encouraging participation."
             }
         },
         {
@@ -2763,14 +2708,10 @@
             "screenshare_content": "None",
             "start_time": "33:57",
             "end_time": "34:55",
-            "annotations": [
-                {
-                    "express frustration": "The speaker expresses frustration about the difficulty of validating their algorithm results and comparing them to others, highlighting a challenge in their work."
-                },
-                {
-                    "present new idea": "The speaker presents the idea of using AI or computation to analyze images without prior human judgment or bias, aiming for more unbiased results."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly recognizes a gap in current methodologies for validation and objectivity in algorithm development.",
+                "clarify goal": "The speaker is clarifying the goal of seeking unbiased results through AI or computation."
+            }
         },
         {
             "speaker": "Srigokul Upadhyayula",
@@ -2789,7 +2730,7 @@
             "start_time": "34:55",
             "end_time": "34:55",
             "annotations": {
-                "express agreement": "Gokul says \"Unbiased\", agreeing with Vivian's statement about the need for AI to provide unbiased analysis."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2809,7 +2750,7 @@
             "start_time": "34:55",
             "end_time": "34:58",
             "annotations": {
-                "express agreement": "Vivian is agreeing with Gokul's suggestion of the word 'unbiased' to describe the type of interpretation they are seeking from AI, building on the discussion about validation and the need for algorithms to provide interpretations without previous judgment."
+                "supportive response": "The utterance is an agreement with a previous statement, showing support for the concept of unbiased interpretation."
             }
         },
         {
@@ -2829,7 +2770,7 @@
             "start_time": "35:00",
             "end_time": "35:03",
             "annotations": {
-                "encourage particpatioin": "David is encouraging participation by signaling that he wants to add to the discussion, which is relevant as the group is discussing quantitative imaging."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2848,11 +2789,9 @@
             "screenshare_content": "None",
             "start_time": "35:03",
             "end_time": "35:03",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is indicating the order in which David and Fanny will speak, encouraging them to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The utterance manages the discussion flow by indicating who should speak next."
+            }
         },
         {
             "speaker": "David Van Valen",
@@ -2870,14 +2809,11 @@
             "screenshare_content": "None",
             "start_time": "35:03",
             "end_time": "36:01",
-            "annotations": [
-                {
-                    "expand on existing idea": "David is building on Vivian's point about validation and the need for unbiased interpretation by highlighting the importance of reference datasets for benchmarking algorithms and assessing their actual advancement."
-                },
-                {
-                    "provide supporting evidence": "David supports his point about the value of reference datasets by mentioning his team's experience in creating a reference dataset for cell and nuclear segmentation in human tissues."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the importance of reference data sets in algorithm generation following Vivian's point.",
+                "signal expertise": "The speaker shares their experience of putting together a reference data set for whole cell and nuclear segmentation in human tissues.",
+                "identify gap": "The speaker implies a gap in understanding about the value and use of reference data sets."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -2896,8 +2832,8 @@
             "start_time": "36:01",
             "end_time": "36:14",
             "annotations": {
-                "provide supporting evidence": "Sapun mentions that they released a dataset for segmenting nuclei and cells, similar to what David mentioned, to help others develop algorithms, providing a concrete example of a resource available to the community.",
-                "acknowledge contribution": "Sapun's statement acknowledges David's previous point about the value of reference datasets by mentioning their own similar contribution."
+                "supportive response": "The speaker describes providing a dataset to support others in developing algorithms, showing a supportive action.",
+                "identify gap": "The speaker identifies a gap in their capability by stating 'we are not good at that'."
             }
         },
         {
@@ -2916,11 +2852,9 @@
             "screenshare_content": "None",
             "start_time": "36:15",
             "end_time": "36:16",
-            "annotations": [
-                {
-                    "assign task": "Maryellen is assigning the turn to speak to Fanny, continuing the round of introductions or comments."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the discussion flow by transitioning to the next speaker, Fanny."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2939,9 +2873,7 @@
             "start_time": "36:16",
             "end_time": "36:24",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges the contributions of the research groups by pointing out that it is great that they are putting those datasets out there, recognizing their effort in making data available."
-                }
+                "acknowledge contribution": "The speaker acknowledges and supports the action of research groups sharing data sets, as mentioned in previous comments."
             }
         },
         {
@@ -2961,7 +2893,7 @@
             "start_time": "36:24",
             "end_time": "36:27",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges the contributions of research groups who are putting out data sets, recognizing their input in the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2980,17 +2912,11 @@
             "screenshare_content": "None",
             "start_time": "36:27",
             "end_time": "37:07",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker supports the idea that medical imaging is organized by stating that people use DICOM and can get images from around the world."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of combining the medical imaging field with the microscopy field to improve data sharing and standardization."
-                },
-                {
-                    "acknowledge contribution": "The speaker acknowledges Fanny's patience in waiting to speak."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker identifies a gap in the unification of file formats in microscopy.",
+                "develop idea": "The speaker expands on previous discussions about data sharing and format unification by comparing medical imaging and microscopy.",
+                "signal expertise": "The speaker demonstrates expertise in medical imaging, specifically mentioning DICOM."
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -3008,14 +2934,10 @@
             "screenshare_content": "None",
             "start_time": "37:09",
             "end_time": "37:51",
-            "annotations": [
-                {
-                    "present new idea": "Fanny introduces the idea of reformatting all images onto a fixed intensity scale (0-255) to enable comparison across different datasets, which hasn't been explicitly suggested before in this specific way."
-                },
-                {
-                    "expand on existing idea": "Fanny's idea builds upon the previous discussion about normalizing data across different institutions and scanners, suggesting a specific method for achieving this normalization by reformatting images onto a fixed intensity scale."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Fanny Chapelin suggests developing a method to reformat images onto a fixed scale for comparison.",
+                "ask question": "Fanny Chapelin asks if it's possible to develop such a method on the computational side."
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -3034,7 +2956,8 @@
             "start_time": "37:51",
             "end_time": "37:52",
             "annotations": {
-                "ask clarifying question": "Fanny is asking if her idea of reformatting every image onto a fixed scale is completely crazy, seeking validation or feedback on her suggestion."
+                "Ask Question": "Fanny Chapelin is requesting feedback on the feasibility of her idea.",
+                "Critical Response": "Fanny Chapelin is expressing doubt about her own idea."
             }
         },
         {
@@ -3053,14 +2976,11 @@
             "screenshare_content": "None",
             "start_time": "37:53",
             "end_time": "38:54",
-            "annotations": [
-                {
-                    "reject idea": "Maryellen expresses that while Fanny's idea isn't crazy, it's difficult because imaging aspects might be lost when conforming to a fixed scale, thus rejecting the idea."
-                },
-                {
-                    "provide supporting evidence": "Maryellen supports her rejection by providing the example of dynamic contrast enhanced MRI where timing differences can cause big changes in the data, thus providing evidence against the idea."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the challenges of standardizing image formats, which is an existing idea.",
+                "identify gap": "The speaker is highlighting the challenges and limitations of standardizing image formats.",
+                "offer feedback": "The speaker is providing feedback on the idea of standardizing image formats."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3079,7 +2999,7 @@
             "start_time": "38:54",
             "end_time": "38:55",
             "annotations": {
-                "express uncertainty": "Maryellen expresses uncertainty with 'I don't know', indicating a lack of a definitive answer or opinion on the topic being discussed."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3098,11 +3018,9 @@
             "screenshare_content": "None",
             "start_time": "38:55",
             "end_time": "38:55",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3120,11 +3038,10 @@
             "screenshare_content": "None",
             "start_time": "38:55",
             "end_time": "38:57",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges that two people have their hands raised, indicating they want to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges that two people have their hands raised, indicating they want to contribute to the discussion.",
+                "supportive response": "The speaker's tone is apologetic and acknowledges the group's engagement."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3143,7 +3060,7 @@
             "start_time": "38:57",
             "end_time": "38:58",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Arnold's desire to speak by noting that he has his hand up, recognizing his intention to contribute to the discussion."
+                "process management": "The speaker is managing the meeting flow by acknowledging Arnold's raised hand, indicating he wants to speak."
             }
         },
         {
@@ -3163,7 +3080,7 @@
             "start_time": "38:58",
             "end_time": "38:58",
             "annotations": {
-                "express agreement": "Maryellen acknowledges the previous speaker's point, indicating agreement with the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3182,11 +3099,9 @@
             "screenshare_content": "None",
             "start_time": "38:58",
             "end_time": "38:59",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is calling on Matt Lou to speak, encouraging him to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "This code applies because the utterance manages the meeting flow by introducing the next speaker."
+            }
         },
         {
             "speaker": "Arnold Hayer",
@@ -3204,11 +3119,11 @@
             "screenshare_content": "None",
             "start_time": "40:00",
             "end_time": "40:35",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Arnold explains why standardizing data is difficult, providing evidence that technology and methods are rapidly evolving, with new cameras and cell lines constantly emerging, which supports the idea that standardization is challenging."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker recognizes the lack of standardization in data repositories due to rapidly evolving technologies and methods.",
+                "critical response": "The speaker is questioning the feasibility of implementing a standardized data repository due to several challenges.",
+                "offer feedback": "The speaker provides feedback on the potential and challenges of implementing a standardized data repository."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3226,12 +3141,10 @@
             "screenshare_content": "None",
             "start_time": "40:36",
             "end_time": "40:44",
-            "annotations": [
-                {
-                    "express enthusiasm": "The phrase \"we're coming up with a lot of good problems. We're going to get to solutions real soon\" expresses optimism and encouragement about the progress of the discussion.",
-                    "encourage particpatioin": "Maryellen Giger is inviting Matt Lew to speak after he finishes typing, encouraging him to participate in the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Maryellen is managing the discussion flow by transitioning and inviting specific participation.",
+                "encourage participation": "She explicitly invites Matt Lew to contribute, encouraging his participation."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -3249,14 +3162,11 @@
             "screenshare_content": "None",
             "start_time": "40:45",
             "end_time": "42:13",
-            "annotations": [
-                {
-                    "expand on existing idea": "Matt Lew builds on David's idea of latent space embeddings as a potential solution for harmonizing data, suggesting that instruments map to data collected from a common biological or chemical space."
-                },
-                {
-                    "present new idea": "Matt Lew proposes exploring the possibilities of learning what this common space might be to make comparisons easier on a routine basis, which is a novel suggestion for harmonizing data."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new concept related to using a latent space for data comparison.",
+                "develop idea": "The speaker elaborates on the idea by discussing its implications and potential applications.",
+                "ask question": "The speaker requests information on the possibilities for learning about this common space."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3275,9 +3185,8 @@
             "start_time": "42:14",
             "end_time": "42:18",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges that Goku has been waiting to speak, recognizing his contribution to the discussion."
-                }
+                "Encourage participation": "Maryellen Giger UChicago is encouraging participation by indicating she will recognize the raised hands.",
+                "Process management": "Maryellen Giger UChicago is managing the discussion flow by planning to acknowledge and call on participants."
             }
         },
         {
@@ -3296,14 +3205,11 @@
             "screenshare_content": "None",
             "start_time": "42:19",
             "end_time": "44:35",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Gokul explains that the diversity in cells at cellular and subcellular scales, along with differences in probes and expression levels, makes it difficult to achieve quantitative imaging across different labs, supporting the idea that standardization is challenging."
-                },
-                {
-                    "expand on existing idea": "Gokul expands on the discussion about data formats by explaining why it's difficult to share data and conform to a single format, citing the varying requirements of different labs, such as the need for parallel reads and writes for large volumetric datasets."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Gokul is expanding on the challenges of quantitative imaging at the cellular or subcellular scale, discussing diversity and data formats.",
+                "identify gap": "He identifies the gap in standardization of imaging techniques and data formats.",
+                "offer feedback": "Gokul provides insights on the challenges and potential areas for improvement in quantitative imaging practices."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3322,19 +3228,12 @@
             "start_time": "44:53",
             "end_time": "45:01",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges the points made during the discussion, recognizing the contributions of the participants."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Maryellen is encouraging Matt Lovett-Barron to summarize the discussion."
-                },
-                "express enthusiasm": {
-                    "Explanation": "Maryellen expresses her enthusiasm that the cellular folks are recognizing the value of a standard format."
-                }
+                "process management": "The speaker is managing the discussion flow by guiding the conversation towards synthesizing ideas on standard formats for imaging data.",
+                "summarize conversation": "The speaker is requesting a summary or synthesis of the discussion points related to standard formats, indicating a desire to consolidate information."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "06:25-08:22",
             "transcript": "Uh, yeah, I I I like the idea that David brought up earlier of having some sort of latent embedding space that you can put them in. Um, you know, something that's has tried to take off in in neuroscience or at least the world of neuroscience I'm in where people are recording neural activity from animals or humans and and it's oftentimes really hard to get that data. It's very, you know, challenging and so people want to be able to share and have lots of people use and there's sort of a transition now to try and have things in a common data format and have it open that people can share, but I think there is largely a resistance for this to be widely adopted because as it requires a lot of work from every individual lab because it isn't built in uh by the the corporations that produce various microscopes or electrode arrays and and so forth. So there's not a lot of uh it's not a lot of motivation for people to end up doing this. And it really is a lot of work from an individual scientist to take their data set and make it easy for others to use. And so I I think I I like the idea of having what David brought up and that you, you know, if you have the basic metadata that you need and maybe take some responsible notes as you're collecting data that you can at least put it into a common embedding space uh so that you can try and uh interpret what data can connect to what. Uh, I don't know if that's the solution for my particular field or what, but I've noticed this has been an issue, like more of a sociological issue of of people not all getting on board and maybe the DICOM uh situation where you effectively have the hardware manufacturers, the corporate overlords agreeing to have common formats kind of forces everyone into that world and and maybe that's a a good way to go.",
             "speaking_duration": 117,
@@ -3349,14 +3248,12 @@
             "screenshare_content": "None",
             "start_time": "46:25",
             "end_time": "48:22",
-            "annotations": [
-                {
-                    "express agreement": "Matt expresses agreement with David's idea of using a latent embedding space to harmonize data, building on the discussion about quantitative imaging and data normalization."
-                },
-                {
-                    "expand on existing idea": "Matt expands on the idea of a latent embedding space by discussing the challenges of data sharing in neuroscience and the resistance to adopting common data formats, drawing a parallel to the DICOM standard in medical imaging."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "Matt is expanding on David's idea of using a latent embedding space for data comparison, providing more context and discussing its application and challenges in neuroscience.",
+                "Supportive response": "Matt is expressing agreement and validation for David's idea of using a latent embedding space.",
+                "Identify gap": "Matt highlights the gap in the adoption of common data formats and the challenges in data sharing.",
+                "Encourage participation": "By sharing his insights and experiences, Matt is encouraging further discussion."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3374,11 +3271,11 @@
             "screenshare_content": "None",
             "start_time": "48:23",
             "end_time": "49:01",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is encouraging participation by directing the conversation back to Matt Lou, inviting him to contribute his thoughts after others have spoken."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites Matt Lou to contribute his thoughts, encouraging participation.",
+                "process management": "The speaker manages the discussion flow by directing a question to Matt Lou.",
+                "supportive response": "The utterance expresses agreement and encouragement for discussion."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3397,9 +3294,7 @@
             "start_time": "49:26",
             "end_time": "49:43",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Sapun suggests that the group should clarify the definition of quantitative imaging to ensure everyone is on the same page, building on the earlier discussion about its definition."
-                }
+                "clarify goal": "The speaker is suggesting that the group needs to define or clarify what quantitative imaging means to ensure a common understanding among all members."
             }
         },
         {
@@ -3419,8 +3314,9 @@
             "start_time": "49:44",
             "end_time": "50:00",
             "annotations": {
-                "propose decision": "Maryellen is proposing that one of the discussion points should be defining quantitative imaging, building on the earlier discussion where different definitions were presented.",
-                "assign task": "Maryellen is assigning the task of defining quantitative imaging to the group, as part of the three discussion points."
+                "Summarize conversation": "Maryellen is summarizing previous discussions to highlight the need for a definition of quantitative imaging.",
+                "Encourage participation": "She is encouraging group members to participate in agreeing on a definition.",
+                "Clarify goal": "The utterance aims to clarify the goal of achieving a shared definition of quantitative imaging."
             }
         },
         {
@@ -3440,18 +3336,9 @@
             "start_time": "50:00",
             "end_time": "50:44",
             "annotations": {
-                "ask clarifying question": {
-                    "Explanation": "Maryellen asks if the definition of quantitative imaging covers everyone's perspective in one line, seeking confirmation and agreement on the definition."
-                },
-                "propose decision": {
-                    "Explanation": "Maryellen proposes to summarize the definition of quantitative imaging in one line and asks how to word the second bullet point, suggesting a concrete choice for the group to make."
-                },
-                "assign task": {
-                    "Explanation": "Maryellen assigns the task of defining quantitative imaging and wording the second bullet point to the group."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Maryellen encourages participation by asking \"how do you want to word that folks?\"."
-                }
+                "clarify goal": "The speaker is seeking a definition for quantitative imaging that everyone can agree on.",
+                "process management": "The speaker mentions a time constraint, noting they have 15 minutes left.",
+                "encourage participation": "The speaker invites others to contribute by asking how they want to word something."
             }
         },
         {
@@ -3471,7 +3358,7 @@
             "start_time": "50:44",
             "end_time": "50:49",
             "annotations": {
-                "explain or define term or concept": "Sapun is defining the term 'context' in relation to the discussion about quantitative imaging and data sharing, which is relevant to the previous discussion about standardizing data across different institutions."
+                "ask question": "The speaker is requesting clarification or more information about the context in which the image is being discussed."
             }
         },
         {
@@ -3491,7 +3378,8 @@
             "start_time": "50:49",
             "end_time": "51:14",
             "annotations": {
-                "encourage particpatioin": "Maryellen is asking David for his opinion on how to word the problem of data sharing and context, encouraging him to contribute to the discussion."
+                "process management": "The speaker is suggesting a method for handling or presenting information within the group discussion.",
+                "encourage participation": "The speaker directly asks for another group member's opinion, encouraging them to participate."
             }
         },
         {
@@ -3511,7 +3399,7 @@
             "start_time": "51:14",
             "end_time": "51:19",
             "annotations": {
-                "express agreement": "David agrees with Maryellen, who was asking for a one-liner to describe the problem of sharing data."
+                "supportive response": "The speaker is expressing agreement or validation for a prior statement."
             }
         },
         {
@@ -3530,11 +3418,10 @@
             "screenshare_content": "None",
             "start_time": "51:19",
             "end_time": "51:33",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen encourages the group to finalize the discussion points so they can move on to the scientific aspects, inviting Fanny to speak."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker encourages the group and acknowledges their work, helping to move the discussion forward.",
+                "process management": "The speaker guides the discussion flow, suggesting to finalize certain points to proceed with the meeting."
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -3553,7 +3440,8 @@
             "start_time": "51:33",
             "end_time": "51:47",
             "annotations": {
-                "expand on existing idea": "Fanny is summarizing the discussion by highlighting two main features: the amount of data and the lack of uniformity, which builds on the previous discussion about challenges in quantitative imaging."
+                "Identify gap": "Fanny explicitly recognizes gaps in the data, specifically the amount of data to process and the lack of uniformity.",
+                "Summarize conversation": "Fanny summarizes the conversation by highlighting two main features or challenges."
             }
         },
         {
@@ -3573,9 +3461,8 @@
             "start_time": "51:48",
             "end_time": "52:03",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges Fanny's point about the quantity and lack of standardization of data being a major roadblock, recognizing her input in the discussion."
-                }
+                "summarize conversation": "The speaker is summarizing a point previously discussed.",
+                "process management": "The speaker is guiding the discussion and ensuring that key points are highlighted and addressed."
             }
         },
         {
@@ -3595,7 +3482,8 @@
             "start_time": "52:03",
             "end_time": "52:11",
             "annotations": {
-                "present new idea": "Vivian is presenting the idea that there is a lack of a standard for verification, which has not been explicitly mentioned before in this specific way."
+                "ask question": "The speaker is requesting information or clarification on the topic of standards for verification.",
+                "identify gap": "The speaker explicitly mentions a lack of a standard for verification."
             }
         },
         {
@@ -3615,12 +3503,10 @@
             "start_time": "52:11",
             "end_time": "52:31",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges the points made by the group regarding the quantity, lack of standardization, and lack of reference data, recognizing their collective input."
-                },
-                "express humor": {
-                    "Explanation": "Maryellen makes a lighthearted comment about it taking her over 20 years to consolidate multiple things, adding that she gets a lot of practice, which is a form of self-deprecating humor."
-                }
+                "Signal expertise": "The speaker is stating her own experience and expertise.",
+                "Supportive response": "The speaker is expressing a positive sentiment towards the discussion.",
+                "Summarize conversation": "The speaker is summarizing the key points discussed.",
+                "Process management": "The speaker is managing the discussion by summarizing."
             }
         },
         {
@@ -3639,14 +3525,10 @@
             "screenshare_content": "None",
             "start_time": "52:39",
             "end_time": "53:01",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is encouraging the group to participate and share their thoughts on the next steps, building on the previous discussion about quantitative imaging and data standardization."
-                },
-                {
-                    "propose decision": "Maryellen is proposing that the group move forward with scientific proposals, assuming the data standardization issue is resolved."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by referencing previous discussion points and directing the conversation towards next steps.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts and ideas."
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -3665,10 +3547,7 @@
             "start_time": "53:02",
             "end_time": "53:17",
             "annotations": {
-                "acknowledge contribution": {
-                    "Code Name": "acknowledge contribution",
-                    "Explanation": "The speaker acknowledges that the point about algorithm and metric performance is already present in the document, recognizing a prior contribution."
-                }
+                "acknowledge contribution": "The speaker acknowledges that the topic of algorithm and metric performance is covered in a document."
             }
         },
         {
@@ -3687,12 +3566,10 @@
             "screenshare_content": "None",
             "start_time": "53:19",
             "end_time": "53:48",
-            "annotations": [
-                {
-                    "express enthusiasm": "Sapun expresses his intrigue with the idea of a latent space, showing enthusiasm for the concept that Matt Lew proposed earlier.",
-                    "ask clarifying question": "Sapun asks Dave to summarize the paper and clarify how many different modalities are being put into the latent space, seeking a better understanding of the concept."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the latent space and its application to different modalities.",
+                "develop idea": "The speaker is engaging with the idea of a latent space and exploring its implications for their field."
+            }
         },
         {
             "speaker": "David Van Valen",
@@ -3710,14 +3587,10 @@
             "screenshare_content": "None",
             "start_time": "53:49",
             "end_time": "54:06",
-            "annotations": [
-                {
-                    "expand on existing idea": "David is expanding on the idea of latent space that Sapun brought up, adding details about a paper that describes a framework for integrating different modalities."
-                },
-                {
-                    "provide supporting evidence": "David mentions a paper that describes a framework for integrating an arbitrary number of different modalities, providing evidence to support the feasibility of the latent space idea."
-                }
-            ]
+            "annotations": {
+                "develop idea": "David is expanding on the idea presented in the paper about integrating different modalities.",
+                "supportive response": "David is providing a positive evaluation of the paper's approach."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3735,11 +3608,9 @@
             "screenshare_content": "None",
             "start_time": "54:06",
             "end_time": "54:10",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Sapun is acknowledging David's explanation of the latent space concept, but not necessarily agreeing or expanding on it."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement or acknowledgment with a prior statement."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -3757,14 +3628,13 @@
             "screenshare_content": "None",
             "start_time": "54:10",
             "end_time": "54:50",
-            "annotations": [
-                {
-                    "expand on existing idea": "Maryellen is building on the idea of a latent space, which David introduced earlier, by saying it's different from but requires good data bookkeeping."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea, discussing the relationship between data bookkeeping and using a latent space.",
+                "supportive response": "The tone is supportive and explanatory, providing a perspective on how ideas relate to each other."
+            }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "04:51-05:32",
             "transcript": "I agree with this too because it I mean it allows for a few things. One is that if we all can't agree on labels, then at least having it in a more uh being able to organize our data in a more abstract uh space might be easy in the absence of us all sharing the same words we want to use to describe things. It also might help us see neighboring uh you know, ideas or or data sets that we wouldn't have realized had we decided to call them by, you know, whatever subjective names we decided on.",
             "speaking_duration": 41,
@@ -3780,12 +3650,9 @@
             "start_time": "54:51",
             "end_time": "55:32",
             "annotations": {
-                "express agreement": {
-                    "Explanation": "Matt Lovett-Barron explicitly agrees with the idea of using a latent space, which was previously introduced by David Van Valen."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Matt expands on the idea of using a latent space by explaining that it allows for organization of data in a more abstract space, which is useful when there is disagreement on labels and can help identify connections between data sets that might not be apparent otherwise."
-                }
+                "Develop idea": "Matt is expanding on the idea of using a latent space for organizing data, providing examples of its potential benefits.",
+                "Supportive response": "He is expressing agreement with the idea and providing additional insights.",
+                "Offer feedback": "Matt is offering feedback on the practical applications and benefits of the idea."
             }
         },
         {
@@ -3805,13 +3672,12 @@
             "start_time": "55:32",
             "end_time": "55:37",
             "annotations": {
-                "confirm decision": {
-                    "Explanation": "Maryellen is confirming that the latent space idea addresses the three discussion points (bullets) that were assigned to the group, indicating agreement and finalization of this direction."
-                }
+                "summarize conversation": "The speaker is summarizing how an approach addresses multiple points discussed earlier in the conversation.",
+                "supportive response": "The speaker is expressing a positive view towards the approach by highlighting its comprehensive coverage of the discussed points."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "05:37-05:37",
             "transcript": "If you can do this.",
             "speaking_duration": 0,
@@ -3827,7 +3693,8 @@
             "start_time": "55:37",
             "end_time": "55:37",
             "annotations": {
-                "express enthusiasm": "Matt Lovett-Barron expresses enthusiasm for the latent space idea, building on the discussion about data standardization and integration, indicating his excitement about the potential of this approach."
+                "Supportive response": "The utterance expresses conditional agreement or interest in a previous idea, showing a positive evaluation.",
+                "Acknowledge contribution": "The utterance acknowledges a previous statement or suggestion, showing that the speaker is engaged with the idea."
             }
         },
         {
@@ -3847,7 +3714,9 @@
             "start_time": "55:53",
             "end_time": "56:16",
             "annotations": {
-                "expand on existing idea": "Arnold is expanding on the previously discussed issue of quantity and lack of standardization of data, relating it to the nature of discovery and standardized procedures in medical imaging."
+                "develop idea": "The speaker is elaborating on the challenges and current state of standardization in medical imaging, building on previous discussion.",
+                "identify gap": "The speaker implicitly identifies a gap in the lack of standardization in medical imaging.",
+                "supportive response": "The speaker is expressing a perspective that aligns with and supports the discussion on standardization and quantity in medical imaging."
             }
         },
         {
@@ -3866,14 +3735,11 @@
             "screenshare_content": "None",
             "start_time": "56:16",
             "end_time": "56:24",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen explicitly agrees with Arnold's point about the challenges of standardization in the context of discovery, building on the previous discussion about data standardization and its difficulties."
-                },
-                {
-                    "encourage particpatioin": "Maryellen is transitioning the conversation to Matt Lew, inviting him to contribute to the discussion after acknowledging Arnold's point."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker agrees with a previous statement.",
+                "supportive response": "The speaker expresses agreement with someone.",
+                "process management": "The speaker manages the discussion flow by transitioning to another topic or participant."
+            }
         },
         {
             "speaker": "Arnold Hayer",
@@ -3892,8 +3758,8 @@
             "start_time": "56:24",
             "end_time": "56:50",
             "annotations": {
-                "expand on existing idea": "Arnold is expanding on the discussion about standardization and data sharing, highlighting that in discovery-based research, experiments and data production are not standardized because researchers are constantly evolving their technology and moving on to new experiments, which contributes to data heterogeneity.",
-                "provide supporting evidence": "Arnold supports his point about the lack of standardization in discovery research by explaining that researchers move on to new experiments and evolve technology, leading to heterogeneous data."
+                "identify gap": "The speaker recognizes the gap in standardization and homogeneity in data produced during scientific discovery.",
+                "develop idea": "The speaker expands on the challenges of data standardization in scientific discovery, building on previous context."
             }
         },
         {
@@ -3912,14 +3778,10 @@
             "screenshare_content": "None",
             "start_time": "56:51",
             "end_time": "57:15",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen explicitly agrees with Arnold's point about the challenges of standardization in discovery-based research, before transitioning to Matt Lew."
-                },
-                {
-                    "expand on existing idea": "Maryellen expands on the idea of discovery, stating that even in standardized medical imaging, machine learning AI is used to extract characteristics of cancer, building upon the previous discussion about standardization and discovery."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by discussing the role of machine learning AI in discovery within standardized medical imaging.",
+                "supportive response": "The speaker agrees with previous points before adding more information."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -3937,11 +3799,11 @@
             "screenshare_content": "None",
             "start_time": "57:19",
             "end_time": "58:06",
-            "annotations": [
-                {
-                    "expand on existing idea": "Matt Lew is building upon Arnold's point about the challenges of standardization in discovery-based research, adding that the latent space reflects the experiments used to train the algorithm."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on Arnold's point about latent space and its implications for understanding biological phenomena.",
+                "ask question": "The speaker asks about the possibility of finding the right imaging conditions or probes for certain biological phenomena.",
+                "offer feedback": "The speaker provides a perspective on how to think about mapping to a latent space and its relation to experiments and biological phenomena."
+            }
         },
         {
             "speaker": "Sapun Parekh",
@@ -3960,8 +3822,8 @@
             "start_time": "58:06",
             "end_time": "58:52",
             "annotations": {
-                "expand on existing idea": "Sapun builds on the idea of using a latent space for data integration, adding that it can create new opportunities and allow for the inclusion of fortuitous findings, which expands on the previous discussion about latent space and data standardization.",
-                "express agreement": "Sapun agrees with the previous point made, acknowledging it as a fair point before expanding on the idea of latent space."
+                "develop idea": "The speaker is expanding on an existing idea by elaborating on its implications and potential benefits.",
+                "supportive response": "The speaker's response is supportive and positive, indicating agreement and validation of the previous idea."
             }
         },
         {
@@ -3980,14 +3842,11 @@
             "screenshare_content": "None",
             "start_time": "60:00",
             "end_time": "60:18",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about data standardization and sharing, the speaker expands on the idea of reference datasets, suggesting they are crucial for comparing and validating algorithms, which was brought up by Vivian and David."
-                },
-                {
-                    "provide supporting evidence": "The speaker supports the idea of reference datasets by stating that they provide a ground truth for comparison, allowing researchers to determine if an algorithm is truly an improvement or just specific to their microscope."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on the concept of reference data sets and their significance.",
+                "ask question": "The speaker seeks validation or opinion from the group with 'Either one is fine, right?'.",
+                "clarify goal": "The speaker discusses the importance of reference data sets for achieving comparable and better results."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -4006,8 +3865,7 @@
             "start_time": "60:29",
             "end_time": "60:31",
             "annotations": {
-                "express agreement": "Matt Lew explicitly agrees with the previous statement, indicating alignment with the ideas being discussed.",
-                "express enthusiasm": "Matt Lew expresses enthusiasm with the statement \"That's great\", showing excitement and encouragement for the ideas being discussed."
+                "supportive response": "Matt Lew is expressing agreement and a positive evaluation of a previous statement."
             }
         },
         {
@@ -4027,7 +3885,7 @@
             "start_time": "60:39",
             "end_time": "60:41",
             "annotations": {
-                "express humor": "This utterance expresses humor as Maryellen apologizes for a grammar change, likely in the shared document, in a lighthearted way."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4047,7 +3905,7 @@
             "start_time": "60:42",
             "end_time": "60:44",
             "annotations": {
-                "acknowledge contribution": "Matt Lew acknowledges Maryellen's grammar correction, showing appreciation for her input."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input or contribution."
             }
         },
         {
@@ -4066,11 +3924,9 @@
             "screenshare_content": "None",
             "start_time": "60:45",
             "end_time": "60:58",
-            "annotations": [
-                {
-                    "express humor": "This utterance expresses humor by Maryellen Giger, who jokes about her habit of correcting grammar, stemming from reading student papers, and then clarifies that she is not implying the current participants are students."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker explicitly makes a joke about reading too many student papers and corrects their grammar usage, indicating humor."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4088,11 +3944,9 @@
             "screenshare_content": "None",
             "start_time": "60:59",
             "end_time": "61:13",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses excitement about the discussion and its potential to lead to a proposal, indicating enthusiasm for the progress made."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and a positive evaluation of the discussion, indicating that it has clarified items and has the potential to lead to a necessary proposal."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4110,11 +3964,10 @@
             "screenshare_content": "None",
             "start_time": "61:22",
             "end_time": "61:30",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is explicitly inviting anyone who hasn't spoken yet to contribute to the discussion, encouraging participation from all members."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "invites someone else in the group to contribute their expertise, opinions or ideas",
+                "process management": "Managing meeting flow, time, structure, or organizing group activities"
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -4133,7 +3986,7 @@
             "start_time": "61:42",
             "end_time": "61:47",
             "annotations": {
-                "encourage particpatioin": "Fanny is encouraging Matt to participate by asking if a certain action (typing names in a specific way) would be helpful to him."
+                "ask question": "The speaker is requesting information or clarification from another group member."
             }
         },
         {
@@ -4153,7 +4006,7 @@
             "start_time": "61:48",
             "end_time": "61:50",
             "annotations": {
-                "express agreement": "Matt Lew expresses agreement with Fanny's suggestion to type their names in a specific way, indicating he approves of the idea."
+                "supportive response": "The speaker is expressing agreement and appreciation for the suggestion made."
             }
         },
         {
@@ -4173,11 +4026,11 @@
             "start_time": "61:53",
             "end_time": "61:54",
             "annotations": {
-                "express agreement": "The speaker explicitly agrees with the idea of a team effort, confirming the collaborative nature of the discussion."
+                "supportive response": "Expressing agreement and positivity towards Fanny's suggestion, acknowledging her contribution."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "02:10-02:15",
             "transcript": "Sorry, I still for some reason can't edit it online if someone wouldn't mind throwing my name on there. Thank you.",
             "speaking_duration": 5,
@@ -4192,11 +4045,9 @@
             "screenshare_content": "None",
             "start_time": "62:10",
             "end_time": "62:15",
-            "annotations": [
-                {
-                    "assign task": "Matt Lovett-Barron is asking someone to add his name to the document because he is having technical difficulties editing it himself, thus assigning a task to another person."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Fanny Chapelin",
@@ -4215,11 +4066,11 @@
             "start_time": "62:16",
             "end_time": "62:17",
             "annotations": {
-                "assign task": "Fanny Chapelin is volunteering to add Matt Lovett-Barron's name to the document, as he is having trouble editing it himself."
+                "acknowledge contribution": "The speaker verbally recognizes and agrees to take on a task or action item presented by another group member."
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "02:17-02:18",
             "transcript": "Okay, thank you, Fanny.",
             "speaking_duration": 1,
@@ -4235,9 +4086,7 @@
             "start_time": "62:17",
             "end_time": "62:18",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Matt Lovett-Barron acknowledges Fanny's contribution of adding his name to the document."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4256,14 +4105,10 @@
             "screenshare_content": "None",
             "start_time": "62:34",
             "end_time": "63:12",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen expresses appreciation for the use of \"is related to\" in the definition of quantitative imaging, indicating agreement with the group's choice of words."
-                },
-                {
-                    "expand on existing idea": "Maryellen expands on the definition of quantitative imaging by providing examples of features like texture that may not be directly measurable but are related to biomedical phenomena, building on the previous discussion about the definition of quantitative imaging."
-                }
-            ]
+            "annotations": {
+                "develop idea": "expanding on existing ideas by providing examples and clarifying implications",
+                "offer feedback": "providing specific suggestions for improvement or modification of existing ideas or approaches"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4282,8 +4127,7 @@
             "start_time": "63:13",
             "end_time": "63:21",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining her preference for a broader definition of quantitative imaging, which relates to the earlier discussion about the definition of quantitative imaging.",
-                "acknowledge contribution": "Maryellen acknowledges the prior discussion and the different perspectives on the definition of quantitative imaging."
+                "develop idea": "This code applies because Maryellen Giger is expanding on her thoughts about the definitions of quantitative imaging discussed earlier, sharing her preference for a broader definition."
             }
         },
         {
@@ -4302,11 +4146,9 @@
             "screenshare_content": "None",
             "start_time": "63:26",
             "end_time": "63:32",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Arnold is pointing out that someone listed in the document is not part of the group, acknowledging their presence in the document but not necessarily agreeing with or expanding on their contributions."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4324,11 +4166,9 @@
             "screenshare_content": "None",
             "start_time": "63:32",
             "end_time": "63:33",
-            "annotations": [
-                {
-                    "ask clarifying question": "Maryellen is asking for clarification on the name of someone who is not in the group, as mentioned by Arnold in the previous utterance."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about a specific name, indicating a question being asked."
+            }
         },
         {
             "speaker": "Arnold Hayer",
@@ -4347,9 +4187,9 @@
             "start_time": "63:34",
             "end_time": "63:38",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Arnold is pointing out a factual error regarding the list of participants, acknowledging that someone who is listed was not actually present in the group."
-                }
+                "identify gap": "Arnold identifies a gap or inconsistency in the list of names presented.",
+                "critical response": "Arnold questions the accuracy of the list by pointing out a name that doesn't belong.",
+                "process management": "Arnold is managing the process by ensuring the accuracy of information."
             }
         },
         {
@@ -4368,11 +4208,10 @@
             "screenshare_content": "None",
             "start_time": "63:38",
             "end_time": "63:40",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Maryellen is clarifying the spelling of a name, specifically 'QIAN', and then identifying who that refers to, which is Vivian."
-                }
-            ]
+            "annotations": {
+                "code name": "ask question",
+                "explanation": "The speaker is requesting clarification or information about whether 'QIAN' refers to 'Vivian'."
+            }
         },
         {
             "speaker": "Arnold Hayer",
@@ -4391,9 +4230,7 @@
             "start_time": "63:41",
             "end_time": "63:43",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Arnold acknowledges that Dylan Burnett was present in the group, which is a form of recognizing someone's participation without necessarily agreeing or disagreeing with their contributions."
-                }
+                "process management": "This code applies because the utterance is about clarifying or correcting information regarding group members or attendees, which relates to managing meeting flow or group activities."
             }
         },
         {
@@ -4413,9 +4250,8 @@
             "start_time": "63:44",
             "end_time": "63:50",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Fanny acknowledges that another group has the same topic and that Dylan Burnett is in the next room, recognizing their presence and relevance to the discussion."
-                }
+                "code name": "process management",
+                "explanation": "The utterance discusses the organization of groups and possibly the scheduling of presentations or discussions, which is a form of managing the meeting flow."
             }
         },
         {
@@ -4434,11 +4270,9 @@
             "screenshare_content": "None",
             "start_time": "63:51",
             "end_time": "63:57",
-            "annotations": [
-                {
-                    "express humor": "Maryellen makes a lighthearted comment about the other group discussing the same topic, expressing a bit of amusement and curiosity about their conclusions."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the group assignments and ensuring everyone is in the correct group for the discussion on quantitative imaging."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4457,7 +4291,7 @@
             "start_time": "64:00",
             "end_time": "64:02",
             "annotations": {
-                "express enthusiasm": "Maryellen expresses excitement about the fact that the topic of quantitative imaging is being discussed in two separate groups, indicating her interest in the topic."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4477,7 +4311,7 @@
             "start_time": "64:02",
             "end_time": "64:03",
             "annotations": {
-                "express humor": "Matt Lew makes a lighthearted comment about their group presenting first, implying it's advantageous, which expresses humor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4496,11 +4330,10 @@
             "screenshare_content": "None",
             "start_time": "64:04",
             "end_time": "64:13",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen thanks the group for their participation, acknowledging their contributions to the discussion."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses gratitude and positive sentiment.",
+                "process management": "The speaker indicates the meeting is about to close."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -4519,7 +4352,7 @@
             "start_time": "64:13",
             "end_time": "64:13",
             "annotations": {
-                "acknowledge contribution": "Matt Lew is acknowledging Maryellen Giger's closing remarks and facilitation of the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4539,7 +4372,7 @@
             "start_time": "64:15",
             "end_time": "64:17",
             "annotations": {
-                "acknowledge contribution": "Arnold is acknowledging the value of the discussion that took place."
+                "None": "No relevant code specifically applies to this utterance as it is a general expression of gratitude."
             }
         },
         {
@@ -4559,11 +4392,11 @@
             "start_time": "64:17",
             "end_time": "64:17",
             "annotations": {
-                "express agreement": "Fanny is expressing agreement with the preceding discussion and thanking the group."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
-            "speaker": "Matt Lovett-Barron",
+            "speaker": "Matt Lovett",
             "timestamp": "04:18-04:18",
             "transcript": "Thank you.",
             "speaking_duration": 0,
@@ -4579,7 +4412,7 @@
             "start_time": "64:18",
             "end_time": "64:18",
             "annotations": {
-                "acknowledge contribution": "Matt Lovett-Barron is acknowledging Maryellen Giger's contribution to the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4599,10 +4432,7 @@
             "start_time": "64:19",
             "end_time": "64:20",
             "annotations": {
-                "Matt Lew: Thank you very much. ": {
-                    "10": "express agreement",
-                    "Explanation": "Matt Lew is expressing agreement with Maryellen Giger's closing remarks and thanking the group for the discussion."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4622,9 +4452,7 @@
             "start_time": "64:20",
             "end_time": "64:32",
             "annotations": {
-                "assign task": "The speaker is directing the conversation and implicitly assigning the task of continuing the discussion to the team.",
-                "encourage particpatioin": "The speaker is encouraging the team to move forward with the conversation, implicitly inviting participation.",
-                "express frustration": "The speaker expresses frustration with the limited time available for the meeting."
+                "process management": "The speaker is managing the meeting flow and time by mentioning the need to get moving due to limited time."
             }
         }
     ]
