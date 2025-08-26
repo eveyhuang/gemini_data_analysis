@@ -1,15 +1,15 @@
 {
     "all_speakers": [
-        "Jennifer Glass",
-        "Nicolas Cowan",
-        "Simon Darroch",
-        "Nikole Lewis",
-        "Laura Schaefer",
         "Daniel Apai",
-        "Morgan Raven",
-        "Kimberly Lau",
+        "Nicolas Cowan",
+        "Laura Schaefer",
         "Trinity Hamilton",
-        "Anat Shahar"
+        "Nikole Lewis",
+        "Anat Shahar",
+        "Simon Darroch",
+        "Morgan Raven",
+        "Jennifer Glass",
+        "Kimberly Lau"
     ],
     "total_speaking_length": 3508,
     "all_data": [
@@ -29,11 +29,9 @@
             "screenshare_content": "None",
             "start_time": "00:00",
             "end_time": "00:06",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is explicitly agreeing with a prior statement or sentiment, indicated by the use of 'Yes'."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -52,8 +50,7 @@
             "start_time": "00:11",
             "end_time": "00:42",
             "annotations": {
-                "explain or define term or concept": "The speaker defines two words in the title of the Google Drive notes to avoid confusion due to jargon across different disciplines, which is an effort to clarify terminology.",
-                "provide supporting evidence": "The speaker justifies the definition of terms by stating that jargon can be confusing across different disciplines, providing a reason for the clarification."
+                "process management": "Anat Shahar is managing meeting flow by ensuring everyone has access to the group 3.3 notes template on Google Drive."
             }
         },
         {
@@ -73,7 +70,7 @@
             "start_time": "00:42",
             "end_time": "00:47",
             "annotations": {
-                "propose decision": "Daniel suggests that they should probably get started, indicating a proposal for the group to begin their work."
+                "process management": "The speaker suggests getting started, indicating an effort to manage the meeting flow."
             }
         },
         {
@@ -92,17 +89,10 @@
             "screenshare_content": "None",
             "start_time": "00:48",
             "end_time": "01:22",
-            "annotations": [
-                {
-                    "propose decision": "The speaker suggests doing a round of introductions to start the meeting."
-                },
-                {
-                    "assign task": "The speaker assigns the task of starting the introductions to Kimberly."
-                },
-                {
-                    "explain or define term or concept": "The speaker explains what information should be included in the introduction (institution, field, research field)."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by suggesting a method for introductions.",
+                "encourage participation": "The speaker is inviting Kimberly to start the introductions, encouraging her participation."
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -121,8 +111,8 @@
             "start_time": "01:23",
             "end_time": "01:40",
             "annotations": {
-                "explain or define term or concept": "Kimberly explains her role as assistant professor in the Geosciences Department at Penn State, and her fields of study as geochemist and geologist.",
-                "assign task": "Kimberly assigns the task of introducing themselves next to Trinity, following the instructions given by Daniel in the previous turn."
+                "signal expertise": "The speaker is stating her own expertise and field of research.",
+                "encourage participation": "The speaker is inviting the next person to participate by introducing themselves."
             }
         },
         {
@@ -141,17 +131,15 @@
             "screenshare_content": "None",
             "start_time": "01:41",
             "end_time": "01:58",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is defining their research area as a microbial physiologist and ecologist.",
-                    "encourage particpatioin": "The speaker is inviting Jen to introduce herself next, following the instructions given in the first utterance."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Trinity explicitly states her field of expertise and research focus.",
+                "encourage participation": "Trinity invites someone else to contribute by asking 'how about Jen?'."
+            }
         },
         {
             "speaker": "Jennifer Glass",
             "timestamp": "01:12-01:25",
-            "transcript": "Hi, I'm Jennifer Glass, Georgia Tech and uh similar to Trinity, uh geomicrobiologist but more on the anaerobic uh metabolism side. Uh, and Nicholas.",
+            "transcript": "Hi, I'm Jen Glass, Georgia Tech and uh similar to Trinity, uh geomicrobiologist but more on the anaerobic uh metabolism side. Uh, and Nicholas.",
             "speaking_duration": 13,
             "nods_others": 0,
             "smile_self": 80,
@@ -165,8 +153,9 @@
             "start_time": "01:59",
             "end_time": "02:12",
             "annotations": {
-                "acknowledge contribution": "Jennifer acknowledges Trinity's introduction by saying she is similar to her.",
-                "assign task": "Jennifer assigns the task of introducing themselves to Nicholas."
+                "develop idea": "Jennifer is briefly describing her research area, which is similar to Trinity's but with a specific focus on anaerobic metabolism.",
+                "signal expertise": "Jennifer is stating her field of expertise (geomicrobiologist, specifically in anaerobic metabolism).",
+                "encourage participation": "By saying 'Uh, and Nicholas,' Jennifer invites Nicholas to introduce himself, encouraging participation."
             }
         },
         {
@@ -185,14 +174,11 @@
             "screenshare_content": "None",
             "start_time": "02:13",
             "end_time": "02:33",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that he is an exoplanet observer, clarifying his research area for the group."
-                },
-                {
-                    "assign task": "The speaker assigns the task of introducing themselves next to Simon."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Nicolas explicitly states his own expertise related to the task or field.",
+                "express humor": "Nicolas makes a light comment about forgetting something.",
+                "encourage participation": "Nicolas invites Simon to contribute by introducing himself."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -211,8 +197,8 @@
             "start_time": "02:34",
             "end_time": "02:51",
             "annotations": {
-                "explain or define term or concept": "Simon identifies himself as a paleontologist, defining his research area for the group.",
-                "encourage particpatioin": "Simon invites Nicole to introduce herself next, continuing the round of introductions."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to the task by mentioning his field (paleontologist) and research focus.",
+                "encourage participation": "The speaker invites another group member to contribute by saying 'Um, let's see. Nicole.'"
             }
         },
         {
@@ -232,8 +218,8 @@
             "start_time": "02:52",
             "end_time": "03:07",
             "annotations": {
-                "explain or define term or concept": "The speaker is defining their research area as exoplanet characterization observations and theoretical modeling of their atmospheres, providing context for their expertise.",
-                "encourage particpatioin": "The speaker is inviting Morgan to introduce themselves next, continuing the round of introductions."
+                "signal expertise": "The speaker explicitly states their own expertise and field of work.",
+                "encourage participation": "The speaker invites someone else to contribute by saying 'And I think Morgan.'"
             }
         },
         {
@@ -252,14 +238,11 @@
             "screenshare_content": "None",
             "start_time": "03:08",
             "end_time": "03:37",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker defines their research area as biogeochemistry and explains their work on carbon and sulfur from an organic and life perspective, including preservation of organic matter, fossilization, kerogen, and molecular/isotopic information."
-                },
-                {
-                    "assign task": "The speaker assigns the task of introducing themselves next to Anat, continuing the round of introductions initiated by Daniel."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their field of work and expertise.",
+                "encourage participation": "The speaker indicates who should go next, encouraging participation.",
+                "process management": "The speaker is facilitating the introduction process by indicating who should go next."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -278,7 +261,7 @@
             "start_time": "03:38",
             "end_time": "03:39",
             "annotations": {
-                "encourage particpatioin": "Anat Shahar is inviting Laura to participate by introducing herself, continuing the round of introductions."
+                "process management": "Anat Shahar is managing the meeting flow by prompting Laura to introduce herself."
             }
         },
         {
@@ -297,14 +280,11 @@
             "screenshare_content": "None",
             "start_time": "03:42",
             "end_time": "04:28",
-            "annotations": [
-                {
-                    "ask clarifying question": "Laura asks if they are doing introductions, showing she is trying to understand the current activity."
-                },
-                {
-                    "explain or define term or concept": "Laura explains her research area, which involves the formation and evolution of atmospheres of rocky planets, detailing the processes she considers such as differentiation, core formation, magma oceans, impacts, and atmospheric escape, thus clarifying her research focus for the group."
-                }
-            ]
+            "annotations": {
+                "ask question": "Laura asks if they are doing introductions now, seeking clarification on the current activity.",
+                "signal expertise": "Laura explicitly states her field of work and research area, signaling her expertise.",
+                "develop idea": "Laura elaborates on her research focus, providing details about her work in the field of planetary atmospheres."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -323,8 +303,7 @@
             "start_time": "04:28",
             "end_time": "04:45",
             "annotations": {
-                "explain or define term or concept": "Anat explains her role as a geochemist and cosmochemist, clarifying her research area for the group.",
-                "acknowledge contribution": "Anat acknowledges her own contribution by stating that she is one of the facilitators."
+                "signal expertise": "Anat Shahar explicitly states her own expertise as a geochemist, cosmochemist, and her work in conducting high-pressure and temperature experiments to simulate planetary interiors."
             }
         },
         {
@@ -343,14 +322,12 @@
             "screenshare_content": "None",
             "start_time": "04:47",
             "end_time": "05:28",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Daniel introduces himself, providing his name, affiliation, and research interests, which serves to define his expertise and role in the group."
-                },
-                {
-                    "acknowledge contribution": "Daniel thanks Anat for her introduction, acknowledging her contribution to the meeting's progress."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Daniel mentions his professional background as an astronomer and planetary scientist.",
+                "summarize conversation": "Daniel mentions that they will follow the structure of previous groups.",
+                "process management": "Daniel outlines how they will proceed with the meeting.",
+                "clarify goal": "Daniel implies the goal is to follow a similar structure to previous groups."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -369,9 +346,8 @@
             "start_time": "05:28",
             "end_time": "05:41",
             "annotations": {
-                "propose decision": "The speaker proposes the decision to find someone to report and record the meeting, which is a concrete choice for the group to make before diving into the science discussion.",
-                "assign task": "The speaker is assigning the task of reporting and recording to a volunteer.",
-                "encourage particpatioin": "The speaker is encouraging participation by calling for a volunteer to take on the role of reporter and recorder."
+                "process management": "Anat is managing the meeting flow by identifying a necessary task that needs to be accomplished before moving on to the science discussion.",
+                "assign task": "Anat suggests calling for a volunteer to report and record, which is a step towards assigning or ensuring the task gets done."
             }
         },
         {
@@ -391,7 +367,7 @@
             "start_time": "05:41",
             "end_time": "05:42",
             "annotations": {
-                "encourage particpatioin": "Anat is encouraging someone new to volunteer for the role of reporter, building on her previous request for a volunteer."
+                "process management": "Anat Shahar is managing the meeting flow by finding a volunteer to report and record, specifically looking for someone who hasn't done it in the past."
             }
         },
         {
@@ -411,7 +387,7 @@
             "start_time": "05:42",
             "end_time": "05:42",
             "annotations": {
-                "express agreement": "Anat agrees with the previous suggestion to find a volunteer to report and record."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -431,7 +407,7 @@
             "start_time": "05:42",
             "end_time": "05:43",
             "annotations": {
-                "assign task": "Nick Cowan is volunteering to be the note taker, as Anat Shahar requested a volunteer for the role."
+                "supportive response": "The speaker is providing a positive and minimal response to the request for a volunteer, indicating his agreement or willingness to take on the role."
             }
         },
         {
@@ -450,14 +426,11 @@
             "screenshare_content": "None",
             "start_time": "05:45",
             "end_time": "05:49",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Daniel thanks Nick for volunteering, acknowledging his contribution to the group."
-                },
-                {
-                    "express humor": "Daniel makes a joke about Nick volunteering by accidentally pressing a button, adding a lighthearted tone to the situation."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Daniel Apai verbally recognizes Nick's input by thanking him for volunteering.",
+                "identify gap": "Daniel Apai expresses uncertainty or a lack of knowledge with 'Yeah, I don't know.'",
+                "express humor": "The comment about pressing the button accidentally could be interpreted as an attempt at humor."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -476,8 +449,8 @@
             "start_time": "05:49",
             "end_time": "05:57",
             "annotations": {
-                "acknowledge contribution": "Nick acknowledges that he is already in the document, which is a contribution to the group's effort.",
-                "express frustration": "Nick expresses frustration by admitting he hasn't paid attention to what others have been doing, indicating a lack of engagement or understanding of the group's progress."
+                "identify gap": "The speaker explicitly recognizes his lack of knowledge about what other people have been doing, indicating a gap in his understanding.",
+                "acknowledge contribution": "The speaker acknowledges being in the document and seems to validate some information."
             }
         },
         {
@@ -497,7 +470,8 @@
             "start_time": "05:57",
             "end_time": "06:09",
             "annotations": {
-                "ask clarifying question": "Nick is asking for clarification on how detailed the notes should be, specifically whether to record every idea or only the ones discussed at length."
+                "ask question": "The speaker is requesting information or clarification on how to approach note-taking during the discussion.",
+                "process management": "The speaker is discussing and seeking input on the process of note-taking during the meeting."
             }
         },
         {
@@ -517,8 +491,8 @@
             "start_time": "06:09",
             "end_time": "06:24",
             "annotations": {
-                "explain or define term or concept": "Anat is explaining the note-taking process based on her experience in previous groups, clarifying the expectations for Nicolas who volunteered to take notes.",
-                "expand on existing idea": "Anat is expanding on the task of the note taker, which was brought up by Nicolas, by providing details on how it has been done in previous sessions."
+                "process management": "The speaker is explaining the process of note-taking and summarization to be used during the meeting.",
+                "summarize conversation": "The speaker describes how the group will summarize key points and themes at the end of the discussion."
             }
         },
         {
@@ -538,7 +512,8 @@
             "start_time": "06:24",
             "end_time": "06:25",
             "annotations": {
-                "ask clarifying question": "Anat is asking if the proposed method of note-taking and summarization is acceptable to all participants, seeking confirmation and agreement on the process."
+                "ask question": "The speaker is explicitly seeking feedback or confirmation from the group on whether the proposed approach works for everyone.",
+                "encourage participation": "By asking if the approach works for everyone, the speaker is inviting group members to contribute their thoughts or opinions."
             }
         },
         {
@@ -558,7 +533,7 @@
             "start_time": "06:25",
             "end_time": "06:27",
             "annotations": {
-                "express agreement": "Nicolas Cowan agrees to take on the task of recording notes, indicating his agreement with the request."
+                "Supportive response": "Nicolas Cowan is expressing agreement and willingness to cooperate with the role assigned to him."
             }
         },
         {
@@ -578,7 +553,7 @@
             "start_time": "06:27",
             "end_time": "06:34",
             "annotations": {
-                "express humor": "Nicolas makes a self-deprecating joke about his typing skills after volunteering to take notes, which expresses humor."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -598,7 +573,8 @@
             "start_time": "06:34",
             "end_time": "06:35",
             "annotations": {
-                "express agreement": "Anat expresses agreement with Nick's willingness to take notes, indicating that his approach is acceptable."
+                "acknowledge contribution": "Anat Shahar acknowledges Nicolas Cowan's offer to take notes.",
+                "supportive response": "Anat Shahar expresses agreement and satisfaction with Nicolas Cowan's willingness to take notes."
             }
         },
         {
@@ -618,8 +594,7 @@
             "start_time": "06:38",
             "end_time": "06:48",
             "annotations": {
-                "assign task": "Anat is assigning the task of rereading the description in section 3.3 of the document and thinking about ideas to the group.",
-                "encourage particpatioin": "Anat is encouraging everyone to participate by thinking about ideas after rereading the document."
+                "process management": "The speaker is guiding the group's activity by instructing them on how to proceed with reviewing a document and thinking about ideas, which manages the meeting flow."
             }
         },
         {
@@ -639,7 +614,8 @@
             "start_time": "06:48",
             "end_time": "07:03",
             "annotations": {
-                "explain or define term or concept": "Anat explains that the term 'core' has different meanings for different scientific communities, specifically geochemists studying metallic cores and exoplanetary scientists studying planetary cores, to ensure clarity in the discussion."
+                "signal expertise": "Anat Shahar explicitly states her own area of expertise and contrasts it with others, highlighting the difference in studying 'metallic cores of planets' versus 'cores which are planets'.",
+                "clarify goal": "Anat's statement indirectly aids in clarifying the goals by ensuring a common understanding of terms, though it's not a direct clarification of objectives."
             }
         },
         {
@@ -658,12 +634,11 @@
             "screenshare_content": "None",
             "start_time": "07:03",
             "end_time": "07:12",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is clarifying that the term 'core' can have different meanings depending on the field, highlighting potential jargon differences.",
-                    "encourage particpatioin": "The speaker encourages the group to think about ideas and then 'jump in', inviting them to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a light comment about 'jargon', indicating a humorous tone.",
+                "encourage participation": "The speaker invites the group to think about and share their ideas.",
+                "process management": "The speaker is managing the meeting flow by instructing the group on what to do next."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -682,7 +657,7 @@
             "start_time": "09:16",
             "end_time": "09:17",
             "annotations": {
-                "encourage particpatioin": "Laura volunteers to share her ideas, encouraging the group to move forward with the discussion after Anat invited everyone to think about their ideas."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -701,11 +676,9 @@
             "screenshare_content": "None",
             "start_time": "09:17",
             "end_time": "09:38",
-            "annotations": [
-                {
-                    "present new idea": "Laura introduces a new idea about extremes of tidal heating on a planet, which hasn't been discussed before in the conversation."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker, Laura Schaefer, introduces a new idea about thinking about extremes of tidal heating on a planet."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -723,14 +696,10 @@
             "screenshare_content": "None",
             "start_time": "09:38",
             "end_time": "10:13",
-            "annotations": [
-                {
-                    "present new idea": "Laura introduces a second novel idea about the extremes in bulk chemical diversity of a planet affecting habitability."
-                },
-                {
-                    "expand on existing idea": "Laura expands on the idea of bulk chemical diversity by focusing on volatile elements."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces two new ideas related to factors that might affect the habitability of a planet.",
+                "ask question": "The speaker asks a question about whether an extremely hot planet with potential volcanism could be a limiting factor in habitability."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -749,7 +718,8 @@
             "start_time": "10:13",
             "end_time": "10:20",
             "annotations": {
-                "expand on existing idea": "Laura is expanding on her previous idea about the extremes in bulk chemical diversity of a planet that might affect habitability by giving examples of different volatile elements."
+                "develop idea": "The speaker is expanding on previous discussions by providing a concrete example related to bulk chemical diversity and its potential impact on habitability.",
+                "propose new idea": "The speaker introduces a specific scenario to explore the effects of varying chemical abundances on planetary habitability."
             }
         },
         {
@@ -769,7 +739,8 @@
             "start_time": "10:20",
             "end_time": "10:27",
             "annotations": {
-                "ask clarifying question": "Laura is asking whether the chemical environment on a planet's surface affects its habitability, following up on her previous idea about the extremes in bulk chemical diversity of a planet."
+                "ask question": "The speaker is requesting information on how variations in elemental abundance might affect a planet's chemical environment and habitability.",
+                "develop idea": "The question builds upon previous discussions about factors influencing planetary habitability, seeking to understand the impact of specific elemental variations."
             }
         },
         {
@@ -789,8 +760,8 @@
             "start_time": "10:47",
             "end_time": "11:00",
             "annotations": {
-                "expand on existing idea": "Nicolas is expanding on Laura's idea about volcanism and tidal heating on a planet, questioning whether lava's danger is direct or due to geochemical changes affecting habitability.",
-                "explain or define term or concept": "Nicolas is explaining the concept of how lava could be dangerous to habitability, either directly or through geochemical changes."
+                "ask question": "The speaker is requesting information or clarification on how lava affects a planet's habitability.",
+                "develop idea": "The speaker is expanding on the idea of how certain conditions (like having lava) might impact habitability by discussing potential effects on the atmosphere or surface conditions."
             }
         },
         {
@@ -809,17 +780,11 @@
             "screenshare_content": "None",
             "start_time": "11:00",
             "end_time": "12:04",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura expands on her previously introduced idea about the impact of extreme tidal heating and volcanism on planetary habitability by discussing the lack of stable environments and severe climatic impacts due to constant volcanism."
-                },
-                {
-                    "ask clarifying question": "Laura asks how extreme heating of the ocean bottom changes circulation and impacts climate and habitability, seeking to understand the specific effects of these conditions."
-                },
-                {
-                    "present new idea": "Laura presents the idea that tidal habitability papers often use an arbitrary cutoff for tidal heating, questioning the validity of this approach and suggesting a need for further investigation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Laura expands on her thoughts regarding tidal heating, volcanism, and their impacts on habitability, providing a detailed perspective.",
+                "ask question": "Laura asks several questions regarding the effects of tidal heating on planetary environments and the validity of certain assumptions in the field.",
+                "encourage participation": "Laura expresses her curiosity about other people's thoughts."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -837,12 +802,10 @@
             "screenshare_content": "None",
             "start_time": "12:04",
             "end_time": "12:21",
-            "annotations": [
-                {
-                    "express agreement": "Nicolas agrees with Laura's statement that the cutoff for tidal habitability seems arbitrary, indicating agreement with a previously expressed idea.",
-                    "ask clarifying question": "Nicolas asks what the surface of IO is actually like, seeking clarification on the conditions of IO's surface."
-                }
-            ]
+            "annotations": {
+                "ask question": "Nicolas Cowan is explicitly asking for information about the surface conditions of Io, indicating a request for clarification or expertise.",
+                "develop idea": "Nicolas Cowan is expanding on the previous discussion about tidal heating and its effects on habitability by exploring the example of Io's surface conditions."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -861,8 +824,7 @@
             "start_time": "12:21",
             "end_time": "13:08",
             "annotations": {
-                "provide supporting evidence": "Laura provides details about the surface of IO, including the presence of a crust, localized volcanic centers, and plume deposits, to support her argument that the habitability cutoff based on tidal heating might be arbitrary, building on the previous discussion about tidal heating and habitability.",
-                "explain or define term or concept": "Laura explains the heat transport mechanism on IO as 'heat pipe transported' and clarifies that there is no stagnant lid or plate tectonics, providing context to the discussion about the surface conditions of IO, which was brought up by Nicolas."
+                "develop idea": "Laura is expanding on her previous thoughts and providing more details about Io, including its crust, heat output, and internal heat transport mechanism."
             }
         },
         {
@@ -882,7 +844,7 @@
             "start_time": "13:08",
             "end_time": "13:08",
             "annotations": {
-                "encourage particpatioin": "Anat is encouraging Simon to participate in the discussion, continuing the round-robin format of the meeting."
+                "encourage participation": "This code applies because Anat Shahar is inviting Simon to contribute or introduce himself, encouraging his participation in the discussion."
             }
         },
         {
@@ -901,14 +863,11 @@
             "screenshare_content": "None",
             "start_time": "13:09",
             "end_time": "14:22",
-            "annotations": [
-                {
-                    "expand on existing idea": "Simon is responding to Nicholas's earlier point about life in oceans and expanding on it by considering the adaptations of early eukaryotes to fluid environments and how this might inform our understanding of potential life on water worlds."
-                },
-                {
-                    "present new idea": "Simon introduces the idea of exploring predictable ways organisms might evolve on water worlds, considering factors like chemistry and viscosity of the water, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Simon is expanding on the idea of life in oceans and water worlds, discussing adaptations of early eukaryotes and the implications for life in different fluid environments.",
+                "ask question": "Simon asks questions about the evolution of organisms in water worlds and the effects of different fluid properties on life.",
+                "acknowledge contribution": "Simon is responding to and building upon Nicolas Cowan's idea about life in oceans."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -927,7 +886,7 @@
             "start_time": "14:22",
             "end_time": "14:22",
             "annotations": {
-                "acknowledge contribution": "Simon acknowledges Nick's contribution by saying he needed to get his idea off his chest because Nick mentioned it earlier."
+                "express humor": "The speaker makes a joke about needing to get something off his chest and blur it out, indicating a humorous tone."
             }
         },
         {
@@ -946,17 +905,11 @@
             "screenshare_content": "None",
             "start_time": "14:23",
             "end_time": "15:35",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kimberly builds upon Laura's earlier point about extreme environments and Simon's point about life in oceans, discussing organisms adapted to the edges of extreme environments."
-                },
-                {
-                    "provide supporting evidence": "Kimberly provides the example of organisms that have adapted to live at the edges of extreme environments like oxygen zones to support her point."
-                },
-                {
-                    "explain or define term or concept": "Kimberly explains the concept of environmental gradients and their importance for energy availability, clarifying the context of her discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on previous ideas by Laura Schaefer and Simon Darroch, providing more insight into how organisms adapt to extreme environments.",
+                "ask question": "The speaker poses a question regarding the focus on adaptation to extreme environments or environmental gradients.",
+                "acknowledge contribution": "The speaker acknowledges and builds upon the contributions of Laura Schaefer and Simon Darroch."
+            }
         },
         {
             "speaker": "Trinity Hamilton",
@@ -974,11 +927,10 @@
             "screenshare_content": "None",
             "start_time": "15:36",
             "end_time": "15:58",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the difficulty in determining the cause of death for microbes, which is a new idea not previously discussed in the conversation."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker highlights a challenge in their research, specifically the difficulty in determining the cause of death at a microbial level, which reflects a gap in current knowledge or methodologies.",
+                "ask question": "Although indirectly, the speaker poses a question about the cause of microbial death, seeking insight or thoughts from others."
+            }
         },
         {
             "speaker": "Morgan Raven",
@@ -997,7 +949,8 @@
             "start_time": "15:58",
             "end_time": "15:58",
             "annotations": {
-                "expand on existing idea": "Morgan is building upon the previous utterance by Trinity, who was discussing the difficulty of determining the cause of microbial death."
+                "develop idea": "The speaker is expanding on a previous idea about microbial death.",
+                "ask question": "The speaker seeks agreement with a tag question 'right?'"
             }
         },
         {
@@ -1016,14 +969,10 @@
             "screenshare_content": "None",
             "start_time": "15:58",
             "end_time": "16:53",
-            "annotations": [
-                {
-                    "expand on existing idea": "Morgan is expanding on the idea of microbial death, which Trinity brought up in the previous utterance, by discussing the difficulty of determining the cause of death in microbes and introducing the concept of distinguishing between living, non-living, and dead organisms."
-                },
-                {
-                    "present new idea": "Morgan introduces the idea of a 'dead' category as a useful concept, suggesting that organisms might exist in a quiescent state, neither living nor consuming energy, but maintained over long time scales, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on a previously discussed concept of distinguishing between living, non-living, and dead, by exploring the implications of quiescent life forms.",
+                "propose new idea": "The speaker introduces the idea of looking for quiescent life forms that are not actively growing but are maintained over long time scales as a potentially useful area of study."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1042,7 +991,8 @@
             "start_time": "16:53",
             "end_time": "16:57",
             "annotations": {
-                "encourage particpatioin": "Jennifer is inviting others to discuss brines and their interesting aspects, prompting further contributions to the conversation."
+                "ask question": "Jennifer Glass is requesting information or discussion on the topic of brines and why they're interesting.",
+                "encourage participation": "By asking the group if they want to delve into the topic, Jennifer is also inviting participation and discussion."
             }
         },
         {
@@ -1062,7 +1012,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "express agreement": "Morgan agrees with Jennifer's suggestion to delve into brines and why they're so interesting."
+                "Supportive response": "The speaker is expressing agreement or validation with a previous statement, which is a positive evaluation without adding new content."
             }
         },
         {
@@ -1082,7 +1032,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Jennifer expresses a negative assessment, implying disagreement with a prior idea without providing an alternative or suggesting improvements."
+                "Supportive response": "Jennifer Glass is expressing agreement or validation of the idea to delve into brines as a limit."
             }
         },
         {
@@ -1102,7 +1052,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Jennifer expresses uncertainty about the role of pressure as a limiting factor, thus rejecting the idea without providing an alternative."
+                "identify gap": "The speaker is expressing a lack of knowledge or uncertainty about something related to 'pressure so far'."
             }
         },
         {
@@ -1122,7 +1072,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "provide supporting evidence": "Jennifer states that we find a lot of things really deep, which provides supporting evidence for the idea that pressure is not a limiting factor for life."
+                "supportive response": "The utterance expresses agreement or alignment with previous statements, supporting the discussion without adding new content."
             }
         },
         {
@@ -1142,8 +1092,8 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Jennifer rejects the idea that pressure is a big deal for life, based on the previous discussion about limits to life.",
-                "provide supporting evidence": "Jennifer supports her rejection of pressure as a limiting factor by stating that we find a lot of things really deep, implying that life exists under high pressure conditions."
+                "ask question": "The utterance asks for opinion on the importance of pressure.",
+                "develop idea": "The utterance discusses and slightly expands on the relevance of water activity and pressure in the context of habitability."
             }
         },
         {
@@ -1163,7 +1113,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Jennifer is explaining the concept of water activity, clarifying that 'one' represents pure water and the value decreases from there, building on the previous discussion about brines and their limits."
+                "develop idea": "The speaker is expanding on a previous idea about water activity and its effects, providing more information to the discussion."
             }
         },
         {
@@ -1183,7 +1133,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with the previous discussion about water activity and its limits on life, indicated by his repetition of \"good\"."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1203,7 +1153,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "ask clarifying question": "Jennifer is asking for clarification on the water activity level of seawater, following a discussion about water activity as a limiting factor for life."
+                "ask question": "The speaker is requesting information or clarification regarding the value of seawater in relation to water activity at 0.7."
             }
         },
         {
@@ -1223,7 +1173,8 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "express agreement": "Jennifer Glass is agreeing with a previous statement about the water activity level of seawater being 0.7."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input, in this case, confirming or acknowledging a value or statement made.",
+                "None": "No additional codes seem to apply as the utterance is very minimal and primarily serves as an acknowledgment."
             }
         },
         {
@@ -1243,7 +1194,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "ask clarifying question": "Daniel is asking for clarification on whether the water activity scale is linear or logarithmic, following Jennifer's discussion of water activity limits."
+                "ask question": "The speaker is requesting information or clarification on the nature of a scale, specifically whether it is linear or logarithmic."
             }
         },
         {
@@ -1263,7 +1214,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Daniel Apai is explaining the relationship between water activity and concentration, clarifying that the scale is often anti-logarithmic in concentrations, building on the discussion about water activity as a limiting factor for life."
+                "develop idea": "The speaker is expanding on a previous point about concentrations and their representation, providing additional information on how concentrations are often represented anti-logarithmically."
             }
         },
         {
@@ -1283,7 +1234,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Morgan rejects Daniel's suggestion about the scale of water activity without offering an alternative."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1303,7 +1254,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "expand on existing idea": "Morgan is expanding on the previous discussion about microbial death and the distinction between living, non-living, and dead organisms, building on the idea of a 'dead' category with remaining genes and potential for revival."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1323,7 +1274,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "express agreement": "Jennifer agrees with Morgan's previous statement that water activity is not a simple scale."
+                "supportive response": "The speaker is expressing agreement and validation of the complexity of the topic discussed."
             }
         },
         {
@@ -1343,7 +1294,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Nicolas is trying to understand the concept of water activity by relating it to the familiar example of salt water, which is lower in water activity."
+                "ask question": "The speaker is seeking clarification or understanding of the concept of water activity by drawing an analogy."
             }
         },
         {
@@ -1363,7 +1314,8 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Jennifer is explaining the concept of water activity, stating that pure water has a value of one and the value decreases as the water becomes less pure, building on the previous discussion about brines and water activity as a limiting factor for life."
+                "develop idea": "Jennifer Glass is expanding on an existing idea by providing more details about how the scale of water activity works, specifically that a value of one represents pure water and decreases as the water becomes less pure.",
+                "supportive response": "Jennifer Glass's statement is supportive of the conversation as it provides additional information to help understand the concept being discussed."
             }
         },
         {
@@ -1382,11 +1334,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "express agreement": "Nicolas Cowan expresses agreement with Jennifer Glass's explanation of water activity, indicating he understands the concept."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The utterance expresses agreement or validation for a previous contribution without adding new content."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1404,11 +1354,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "ask clarifying question": "Jennifer is asking for confirmation on whether the water activity of seawater is 0.7, following a discussion about water activity and its impact on life."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification about the water activity level of seawater in relation to a specific value (0.7)."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1426,11 +1374,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "express agreement": "Jennifer Glass confirms the value of water activity in seawater as 0.7, agreeing with the previous discussion about water activity and its relevance to habitability."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it is a simple statement providing a specific value without any of the complex interactions described by the other codes."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -1449,7 +1395,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "ask clarifying question": "Daniel is asking for clarification on whether the water activity scale is linear or logarithmic, following a discussion about water activity and its impact on life."
+                "ask question": "The speaker is requesting information or clarification about prior statement regarding the scale being linear or logarithmic."
             }
         },
         {
@@ -1469,7 +1415,8 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Daniel is explaining the nature of the scale for concentrations, clarifying that it is often anti-logarithmic, following a discussion about water activity and its scale."
+                "develop idea": "This code applies because Daniel is expanding on a previous discussion by providing more detail about the nature of concentration scales, even though it's a brief clarification.",
+                "supportive response": "This code is also applicable as Daniel's response supports the conversation by offering additional information relevant to the discussion about water activity and concentrations."
             }
         },
         {
@@ -1489,7 +1436,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Morgan Raven rejects Daniel Apai's suggestion that the water activity scale is linear or logarithmic, without offering an alternative."
+                "None": "No relevant code directly applies to this utterance as it is a simple statement providing nuance to a concept without explicitly fitting into the provided categories."
             }
         },
         {
@@ -1508,11 +1455,10 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance seems to be cut off, but it appears Morgan is expanding on the discussion of microbial death and the distinction between living, non-living, and dead organisms, which she introduced in the previous turn."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is attempting to engage with the conversation, showing interest and willingness to discuss further.",
+                "Develop idea": "The speaker starts to develop a thought, indicating an attempt to add to the discussion."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1531,7 +1477,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "express agreement": "Jennifer agrees with Morgan's previous statement that the relationship between water activity and concentration is not simple."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1551,7 +1497,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Nicolas is trying to understand the concept of water activity, specifically how it relates to salt water, by stating that salt water would have lower water activity."
+                "Supportive response": "Nicolas Cowan is confirming his understanding and showing agreement with the previous discussion about water activity scale."
             }
         },
         {
@@ -1571,7 +1517,8 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Jennifer is explaining the concept of water activity, stating that pure water has a value of one and the value decreases as the water becomes less pure."
+                "develop idea": "She is expanding on an existing idea about how water activity is measured and understood.",
+                "supportive response": "Her statement supports the ongoing discussion by providing clarification."
             }
         },
         {
@@ -1590,11 +1537,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "express agreement": "Nicolas Cowan expresses agreement with Jennifer Glass's explanation of water activity, indicating he understands the concept."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance expresses agreement or validation of previous statements without adding new content."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1612,11 +1557,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "ask clarifying question": "Jennifer is asking for confirmation on whether the water activity of seawater is 0.7, following a discussion about water activity and its scale."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification about whether 0.7 corresponds to seawater on the water activity scale."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -1634,11 +1577,9 @@
             "screenshare_content": "None",
             "start_time": "16:57",
             "end_time": "16:57",
-            "annotations": [
-                {
-                    "express agreement": "Jennifer Glass confirms that the water activity of seawater is 0.7, agreeing with a previous statement."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement with a previous statement, confirming the value of 0.7."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -1657,7 +1598,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "ask clarifying question": "Daniel is asking for clarification on whether the scale being discussed (likely related to water activity or concentrations) is linear or logarithmic, building on the previous discussion about water activity and its values."
+                "ask question": "The speaker is requesting information or clarification on whether the scale is linear or logarithmic."
             }
         },
         {
@@ -1677,7 +1618,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "explain or define term or concept": "Daniel is explaining the nature of the scale for concentrations, clarifying that it's often anti-logarithmic, following a discussion about water activity and salinity."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1697,7 +1638,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "reject idea": "Morgan rejects Daniel's suggestion about the scale of water activity being linear or logarithmic, without offering an alternative."
+                "critical response": "The speaker is questioning the simplicity of a relationship, expressing skepticism towards the idea that it can be described in a simple way."
             }
         },
         {
@@ -1717,7 +1658,7 @@
             "start_time": "16:57",
             "end_time": "16:57",
             "annotations": {
-                "expand on existing idea": "Morgan is expanding on the discussion about water activity and its complexity, which Jennifer and Nicolas were discussing in the previous turns."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1737,7 +1678,7 @@
             "start_time": "20:51",
             "end_time": "20:53",
             "annotations": {
-                "acknowledge contribution": "Anat acknowledges Simon's contribution by pointing out that he has a question in the chat, without agreeing or expanding on it."
+                "process management": "Anat Shahar is managing the discussion flow by pointing out that Simon has a question."
             }
         },
         {
@@ -1756,11 +1697,10 @@
             "screenshare_content": "None",
             "start_time": "20:55",
             "end_time": "21:32",
-            "annotations": [
-                {
-                    "expand on existing idea": "Simon is expanding on the previous discussion about abiotic gradients and their importance, relating it to deep sea water worlds and the stimulation of life, building on the conversation about extreme environments and habitability."
-                }
-            ]
+            "annotations": {
+                "ask question": "Simon is indirectly asking a question about the existence of information on stimulating life and generating complex ecosystems and communities.",
+                "identify gap": "Simon mentions a gap in his knowledge regarding what he's never read about."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -1778,11 +1718,9 @@
             "screenshare_content": "None",
             "start_time": "21:33",
             "end_time": "21:35",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is about to expand on an idea that Simon brought up, which was about abiotic gradients and their importance, and how it relates to deep sea water worlds."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Laura Schaefer is expanding or relating her thoughts to a previous idea or discussion."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -1801,8 +1739,9 @@
             "start_time": "21:35",
             "end_time": "22:03",
             "annotations": {
-                "expand on existing idea": "Nicolas expands on the idea of abiotic gradients and their importance, which Simon and Kimberly brought up, suggesting that the edges of extreme environments might be good places for life.",
-                "present new idea": "Nicolas presents the idea that if an environment is too perfect, with no chemical or energy gradients, life might not be interested or might never arise."
+                "propose new idea": "The speaker introduces a new perspective on why certain environments might be favorable for life, focusing on the edges of extreme environments.",
+                "develop idea": "The speaker elaborates on the concept of extreme environments and their potential for supporting life.",
+                "express humor": "The utterance contains a humorous analogy ('unicorns and rainbows and stuff everywhere')."
             }
         },
         {
@@ -1822,9 +1761,9 @@
             "start_time": "22:03",
             "end_time": "22:24",
             "annotations": {
-                "expand on existing idea": "Kimberly expands on the idea of chemical gradients and their relevance to life, building on the previous discussion about abiotic gradients and extreme environments.",
-                "provide supporting evidence": "Kimberly provides supporting evidence by stating that chemical gradients would exist in a water world due to differences in temperature and pressure, supporting the idea that gradients are important for life.",
-                "explain or define term or concept": "Kimberly explains the concept of spatial scales of chemical gradients in relation to cellular scales, clarifying the relevance of these gradients for organisms."
+                "develop idea": "The speaker expands on existing ideas about chemical gradients in water worlds and their implications for life.",
+                "ask question": "The speaker requests information or clarification on the relevance of the scale for an organism of interest.",
+                "supportive response": "The tone of the utterance is supportive as it builds upon previous discussion points and encourages further consideration."
             }
         },
         {
@@ -1844,9 +1783,8 @@
             "start_time": "22:26",
             "end_time": "22:55",
             "annotations": {
-                "present new idea": "Laura presents a new idea about whether planets with extreme gradients in temperature or chemistry, like hydrothermal vents, are more habitable than planets with larger, shallower gradients, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "This utterance expands on the existing idea of abiotic gradients and their importance, which was brought up by Simon and Nicolas, by posing a question about the habitability of planets with different types of gradients.",
-                "propose decision": "Laura proposes a decision to consider whether planets with extreme gradients are more habitable than those with larger, shallower gradients, suggesting a direction for the group's discussion."
+                "ask question": "The speaker is requesting information or clarification on the habitability of planets under different conditions.",
+                "develop idea": "The speaker is expanding, building upon, or elaborating existing ideas through reasoning and examples related to planetary habitability and gradients."
             }
         },
         {
@@ -1866,8 +1804,8 @@
             "start_time": "22:55",
             "end_time": "23:11",
             "annotations": {
-                "present new idea": "Morgan presents a new idea by questioning what metric defines habitability, suggesting habitable diversity, habitable biomass, or complex organisms as possibilities, which hasn't been explicitly discussed before.",
-                "ask clarifying question": "Morgan asks a clarifying question about what scale makes a planet more habitable, seeking to understand if it's habitable diversity, biomass, or complex organisms, which requires further explanation from the group."
+                "propose new idea": "The speaker introduces a new line of questioning about habitability, involving diversity, biomass, and complexity of organisms.",
+                "ask question": "The speaker is requesting information or clarification on what makes a planet more habitable, specifically regarding scales and measures of habitability."
             }
         },
         {
@@ -1887,12 +1825,8 @@
             "start_time": "23:11",
             "end_time": "23:27",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges Morgan Raven's question as a great one, recognizing the value of the contribution."
-                },
-                "explain or define term or concept": {
-                    "Explanation": "The speaker explains their definition of habitability, specifying that it requires conditions for both the origin and proliferation of life, clarifying the concept for the group."
-                }
+                "develop idea": "Laura is expanding on the idea of habitability by discussing the conditions necessary for life to originate and proliferate.",
+                "supportive response": "Laura expresses a positive sentiment towards the question, acknowledging its value."
             }
         },
         {
@@ -1912,8 +1846,8 @@
             "start_time": "23:41",
             "end_time": "23:59",
             "annotations": {
-                "expand on existing idea": "Kimberly expands on the idea of habitable diversity and biomass, tying it to the prompt's question about the initiation of proliferation, building on the previous discussion about habitable conditions and gradients.",
-                "provide supporting evidence": "Kimberly provides supporting evidence by stating that evolution requires the ability to have different adaptations, linking the concept of diversity to the fundamental process of evolution."
+                "develop idea": "The speaker is expanding on existing ideas by relating the concept of initiation of proliferation to the necessity of having different adaptations for evolution.",
+                "ask question": "The speaker is seeking clarification or discussion on the necessity of initiation for having a diversity environment."
             }
         },
         {
@@ -1933,9 +1867,8 @@
             "start_time": "23:59",
             "end_time": "24:27",
             "annotations": {
-                "present new idea": "The utterance introduces the idea of whether a planet can have only a small amount of life or if life, once originated, will inevitably diversify and fill all available niches.",
-                "propose decision": "The utterance suggests that the group should focus on searching for planets where life could initially establish itself, implying that subsequent diversification is inevitable.",
-                "ask clarifying question": "The utterance poses a question about whether a planet can sustain a small amount of life or if life's origin leads to complete niche saturation and diversity."
+                "ask question": "The utterance explicitly asks a question about the possibility of life on planets and its spread.",
+                "develop idea": "The utterance expands on existing ideas by questioning and discussing the potential for life on planets."
             }
         },
         {
@@ -1955,7 +1888,7 @@
             "start_time": "24:27",
             "end_time": "24:29",
             "annotations": {
-                "express agreement": "Simon expresses agreement with the previous statement about whether life will fill every niche once it gets a foothold, but it is a soft agreement as indicated by 'hmm'."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1975,7 +1908,7 @@
             "start_time": "24:30",
             "end_time": "24:51",
             "annotations": {
-                "ask clarifying question": "Daniel is asking a question to clarify the previous discussion about habitable diversity and biomass, using Enceladus as an example to understand if life would transform the host world or remain isolated."
+                "ask question": "The speaker is requesting information or clarification on whether Enceladus could be an example of a world with an isolated small pocket of biosphere and its potential for life to transform."
             }
         },
         {
@@ -1995,9 +1928,9 @@
             "start_time": "24:51",
             "end_time": "26:02",
             "annotations": {
-                "provide supporting evidence": "Jennifer argues that detecting life in Enceladus-like environments in other solar systems would be difficult, supporting the idea that focusing on planets with strong biosignatures is more practical for detection.",
-                "propose decision": "Jennifer proposes that the group should focus on finding planets that are habitable enough to produce detectable biosignature gases, suggesting a direction for their search.",
-                "explain or define term or concept": "Jennifer defines habitability in terms of detectability, specifically the ability of a planet to produce biosignature gases or pigments that can be observed from afar."
+                "develop idea": "Jennifer is elaborating on her thoughts regarding the detectability of habitability.",
+                "supportive response": "Jennifer is engaging with the discussion and providing her thoughts, which can be seen as supportive.",
+                "offer feedback": "Jennifer provides her understanding and thoughts on the topic, which can be seen as offering feedback."
             }
         },
         {
@@ -2017,9 +1950,8 @@
             "start_time": "26:02",
             "end_time": "26:29",
             "annotations": {
-                "present new idea": "Nikole introduces the idea of temporal variability as an interesting factor to consider, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "Nikole expands on the discussion of extreme environments and habitability by suggesting that dramatic changes in flux, caused by life entering dormant phases under stress, could be detectable, building on the previous discussion about biosignatures and detectability.",
-                "provide supporting evidence": "Nikole supports her idea by stating that it is easier to measure dramatic changes in flux than the actual flux, implying that temporal variability could be a more practical way to detect life."
+                "ask question": "Nikole Lewis is asking a question about the existence of environments where life could go into dormant phases under stress, making it detectable.",
+                "develop idea": "She is expanding on the idea of detecting life, specifically in the context of temporal variability and extreme environments."
             }
         },
         {
@@ -2038,13 +1970,10 @@
             "screenshare_content": "None",
             "start_time": "26:29",
             "end_time": "27:50",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Nicolas mentions a paper about seasonal variations in carbon dioxide on an exoplanet, similar to the Keeling curve on Earth, to support the idea of using seasonal variations as a biosignature, building on Nikole's suggestion of temporal variability as a biosignature.",
-                    "expand on existing idea": "Nicolas expands on Nikole's idea of temporal variability as a biosignature by providing a specific example of seasonal variations in carbon dioxide on an exoplanet, drawing a parallel to the Keeling curve on Earth.",
-                    "present new idea": "Nicolas introduces the idea of using seasonal variations in carbon dioxide as a potential biosignature, drawing a parallel to the Keeling curve on Earth, which hasn't been explicitly discussed before in this specific context."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by considering the implications of a biosphere on an exoplanet and potential biosignatures.",
+                "critical response": "The speaker considers alternative explanations (abiotic mechanisms) for observed changes in CO2 levels, which is a form of critical evaluation."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -2063,7 +1992,8 @@
             "start_time": "27:50",
             "end_time": "27:56",
             "annotations": {
-                "expand on existing idea": "Jennifer is expanding on Nicolas's idea about seasonal variations in carbon dioxide as a potential biosignature by suggesting that oxygen levels might also fluctuate seasonally, similar to what is observed on Earth."
+                "ask question": "The utterance contains a question about the behavior of oxygen.",
+                "develop idea": "The utterance suggests a specific behavior for oxygen, namely varying in a seasonal way."
             }
         },
         {
@@ -2083,9 +2013,8 @@
             "start_time": "27:58",
             "end_time": "28:21",
             "annotations": {
-                "provide supporting evidence": "Daniel explains that the removal of carbon dioxide is related to precipitation and dissolution, which are in turn related to temperature and relative humidity, providing evidence for abiotic factors influencing CO2 levels.",
-                "expand on existing idea": "Daniel expands on the discussion about seasonal variations in carbon dioxide on exoplanets by providing details about the carbon cycle and how precipitation and dissolution affect CO2 levels.",
-                "ask clarifying question": "Daniel is questioning how much of the observed CO2 variations are due to biology versus temperature fluctuations, seeking clarification on the relative contributions of biotic and abiotic factors."
+                "develop idea": "The speaker is expanding on an idea related to the carbon cycle and its relation to biology and temperature.",
+                "ask question": "The speaker is asking a question about the role of biology versus temperature in CO2 variations."
             }
         },
         {
@@ -2105,8 +2034,7 @@
             "start_time": "28:21",
             "end_time": "28:39",
             "annotations": {
-                "provide supporting evidence": "Jennifer supports her claim that seasonal CO2 variations are due to biology and respiration by stating that this is what they teach in their classes, emphasizing the role of hemispheres and primary production.",
-                "reject idea": "Jennifer rejects the idea that the seasonal CO2 variations are abiotic, based on her understanding of biology and respiration."
+                "offer feedback": "Jennifer Glass provides a nuanced view by discussing the role of biology versus abiotic processes in seasonal CO2 variations."
             }
         },
         {
@@ -2126,7 +2054,7 @@
             "start_time": "28:47",
             "end_time": "29:04",
             "annotations": {
-                "ask clarifying question": "Simon asks Anat to describe the eroded cores of Neptune-like planets mentioned on the slide, seeking clarification on the concept and how to incorporate it into their thinking, building on Anat's earlier mention of the slide."
+                "ask question": "The speaker is requesting clarification or more information about a specific topic (eroded cores of Neptune-like planets) mentioned in the slide."
             }
         },
         {
@@ -2145,12 +2073,10 @@
             "screenshare_content": "None",
             "start_time": "29:05",
             "end_time": "29:43",
-            "annotations": [
-                {
-                    "assign task": "Anat assigns the task of defining an eroded core of a Neptune-like planet to one of the astronomers in the group.",
-                    "explain or define term or concept": "Anat explains that the term 'core' has different meanings in astronomy versus geology/earth science, with astronomers using it to mean a solid planet and geologists using it to refer to the metallic portion of a planet."
-                }
-            ]
+            "annotations": {
+                "ask question": "Anat Shahar is requesting a definition or clarification on the term 'eroded core of a Neptune-like planet'.",
+                "develop idea": "Anat Shahar is expanding on the concept of a 'core' by explaining its different meanings in astronomy versus geology/earth science."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2169,7 +2095,8 @@
             "start_time": "29:43",
             "end_time": "29:54",
             "annotations": {
-                "explain or define term or concept": "Laura is explaining the concept of a sub-Neptune sized planet with a large hydrogen-helium envelope, which is relevant to the discussion about eroded cores of Neptune-like planets that Anat mentioned."
+                "propose new idea": "The speaker introduces a specific idea about sub Neptune-sized planets having a large hydrogen-helium envelope.",
+                "signal expertise": "The speaker demonstrates her knowledge of planetary science, specifically about types of planets and their characteristics."
             }
         },
         {
@@ -2189,7 +2116,7 @@
             "start_time": "30:27",
             "end_time": "30:30",
             "annotations": {
-                "ask clarifying question": "Simon is asking a question to Laura about whether the eroded core of a Neptune-like planet would have any topography, seeking clarification on its physical characteristics."
+                "ask question": "The speaker is requesting information about whether something (likely referring to eroded cores of Neptune-like planets) would have any topography, seeking clarification on this specific topic."
             }
         },
         {
@@ -2209,7 +2136,7 @@
             "start_time": "30:30",
             "end_time": "30:33",
             "annotations": {
-                "acknowledge contribution": "Laura acknowledges Simon's question about the topography of eroded cores of Neptune-like planets, indicating she recognizes his input."
+                "acknowledge contribution": "Laura Schaefer verbally recognizes Simon Darroch's question."
             }
         },
         {
@@ -2228,14 +2155,9 @@
             "screenshare_content": "None",
             "start_time": "30:47",
             "end_time": "31:21",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is expanding on Anat's definition of eroded cores of Neptune-like planets by describing what happens to the hydrogen-helium envelope and how it crystallizes to resemble a rocky planet."
-                },
-                {
-                    "explain or define term or concept": "Laura is explaining the concept of eroded cores of Neptune-like planets, which Anat introduced, by describing the process of the hydrogen-helium envelope crystallizing and resembling a rocky planet."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea about planetary evolution, specifically discussing how planets with a hydrogen-helium envelope can crystallize and develop a tectonic regime and topography."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2253,14 +2175,9 @@
             "screenshare_content": "None",
             "start_time": "31:24",
             "end_time": "32:11",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is expanding on the idea of eroded cores of Neptune-like planets, adding details about the volatile abundance differences compared to Earth."
-                },
-                {
-                    "provide supporting evidence": "Laura provides supporting evidence by comparing the volatile abundance on Earth to that of a planet accreting material similar to its star, highlighting the differences in volatile delivery mechanisms."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by providing more details and comparisons regarding planetary composition and volatile abundance."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2279,7 +2196,7 @@
             "start_time": "32:11",
             "end_time": "32:11",
             "annotations": {
-                "expand on existing idea": "Laura is expanding on the idea of eroded cores of Neptune-like planets, adding the detail that the lighter elements like hydrogen and helium are driven off."
+                "develop idea": "The speaker is expanding on a previous idea about planetary formation, specifically discussing the loss of light elements like hydrogen and helium."
             }
         },
         {
@@ -2299,7 +2216,8 @@
             "start_time": "32:13",
             "end_time": "32:25",
             "annotations": {
-                "expand on existing idea": "Simon is building on the previous discussion about eroded cores of Neptune-like planets and topography by connecting it to the role of plate tectonics and recycling material, which has been discussed in other groups."
+                "acknowledge contribution": "The speaker references discussions in other rooms, showing awareness and consideration of external contributions.",
+                "encourage participation": "The speaker invites further discussion by highlighting the relevance of other discussions to their current conversation."
             }
         },
         {
@@ -2319,8 +2237,8 @@
             "start_time": "32:25",
             "end_time": "32:39",
             "annotations": {
-                "present new idea": "The speaker is presenting a new idea about whether we can create extremes or gradients in tectonics, which hasn't been explicitly discussed before.",
-                "ask clarifying question": "The speaker is asking whether these eroded cores will have any tectonic activity or be cold and dead, seeking clarification on their potential geological activity."
+                "ask question": "The utterance is a clear question seeking information on creating extremes or gradients in tectonics and the potential activity of planetary cores.",
+                "develop idea": "The speaker is engaging with the topic by asking for specific information that could help in understanding or developing ideas related to tectonics and planetary cores."
             }
         },
         {
@@ -2340,7 +2258,8 @@
             "start_time": "32:40",
             "end_time": "32:46",
             "annotations": {
-                "reject idea": "Laura rejects the idea that eroded cores would not have tectonics, based on the previous discussion about the characteristics of eroded cores of Neptune-like planets."
+                "develop idea": "Laura Schaefer is expanding on the idea of planetary characteristics, specifically addressing the possibility of tectonics on eroded cores of Neptune-like planets.",
+                "supportive response": "Laura provides her opinion which supports and contributes to the ongoing discussion about planetary characteristics."
             }
         },
         {
@@ -2360,7 +2279,8 @@
             "start_time": "32:47",
             "end_time": "32:59",
             "annotations": {
-                "expand on existing idea": "Nicolas is building on Laura's explanation of eroded cores of Neptune-like planets by suggesting that these planets might be warmer than naked rocky planets due to the insulating effect of their former hydrogen-helium envelope."
+                "develop idea": "The speaker is expanding on an existing idea about planetary evolution, comparing different scenarios of planetary development.",
+                "ask question": "The utterance is phrased as a question, seeking clarification or discussion on the idea presented."
             }
         },
         {
@@ -2380,7 +2300,8 @@
             "start_time": "33:00",
             "end_time": "33:03",
             "annotations": {
-                "express agreement": "Laura agrees with Nicolas's idea that eroded cores should be warmer than naked rocky planets because they had a blanket that kept them warm longer."
+                "Supportive response": "The utterance expresses agreement with a previous statement.",
+                "Acknowledge contribution": "The utterance acknowledges a previous statement without adding new content."
             }
         },
         {
@@ -2400,7 +2321,7 @@
             "start_time": "33:05",
             "end_time": "33:15",
             "annotations": {
-                "expand on existing idea": "Laura expands on the idea of eroded cores of Neptune-like planets having tectonics, adding that radioactive heating in the interior would help sustain tectonics, building on Nicolas's point that these planets would be warmer."
+                "develop idea": "The speaker is expanding on an existing idea about radioactive heating in the interior of a planet and its role in sustaining tectonics."
             }
         },
         {
@@ -2419,14 +2340,10 @@
             "screenshare_content": "None",
             "start_time": "33:28",
             "end_time": "33:48",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is expanding on the discussion about eroded cores of Neptune-like planets and their atmospheric escape, building on the previous discussion about the conditions and processes on these planets."
-                },
-                {
-                    "explain or define term or concept": "Laura is explaining the concept of photo evaporation as an atmospheric escape process, providing context for the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by discussing the specifics of different atmospheric escape processes (photoevaporation and core-powered mass loss) and their timelines.",
+                "identify gap": "The speaker identifies a gap in their knowledge regarding core-powered mass loss, stating 'I'm much less familiar with this idea.'"
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -2445,7 +2362,7 @@
             "start_time": "33:48",
             "end_time": "33:58",
             "annotations": {
-                "provide supporting evidence": "Anat Shahar provides information about Hilka Schlichting's expertise in core-powered mass loss, which is relevant to the ongoing discussion about eroded cores of Neptune-like planets and atmospheric escape processes."
+                "signal expertise": "The speaker is explicitly stating someone's expertise or area of work, referring to Hilka Schlichting as the person who works on core-powered mass loss."
             }
         },
         {
@@ -2465,8 +2382,8 @@
             "start_time": "34:03",
             "end_time": "34:21",
             "annotations": {
-                "present new idea": "Daniel is introducing a new way to consider habitability by focusing on the differences required to render a planet uninhabitable, which hasn't been explicitly discussed in this way before.",
-                "ask clarifying question": "Daniel is asking whether there's a major difference that would emerge based on the planet's formation pathway that would make it uninhabitable, seeking clarification on the factors influencing habitability."
+                "ask question": "The speaker is requesting information or discussion on how different a planet must be to not be habitable, related to its formation pathway.",
+                "develop idea": "The speaker is expanding on the concept of habitability by considering the impact of different formation pathways on a planet's characteristics."
             }
         },
         {
@@ -2486,7 +2403,7 @@
             "start_time": "34:21",
             "end_time": "34:29",
             "annotations": {
-                "expand on existing idea": "This utterance builds on the previously discussed idea of how different a planet would have to be to be considered uninhabitable, adding a concluding statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2505,14 +2422,10 @@
             "screenshare_content": "None",
             "start_time": "34:30",
             "end_time": "35:14",
-            "annotations": [
-                {
-                    "expand on existing idea": "Simon is building on Laura's description of eroded cores of Neptune-like planets and their potential for habitability, suggesting that there's no reason why life couldn't exist on such a planet based on the rapid emergence of life on Earth."
-                },
-                {
-                    "provide supporting evidence": "Simon uses the example of Earth, where life emerged rapidly after the planet solidified, as evidence to support the idea that life could evolve on eroded cores of Neptune-like planets within a reasonable timeframe."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and validation for Laura's ideas about the possibility of life on certain planets.",
+                "develop idea": "The speaker is expanding on Laura's idea by providing an example (Earth) and further reasoning about the rapid emergence of life."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -2531,7 +2444,7 @@
             "start_time": "35:14",
             "end_time": "35:22",
             "annotations": {
-                "express frustration": "Simon expresses frustration at his inability to find reasons why life couldn't exist on a planet that has lost its gas clouds, after Laura explained that such a planet could still have tectonics and radioactive heating."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2550,14 +2463,10 @@
             "screenshare_content": "None",
             "start_time": "35:24",
             "end_time": "36:02",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nicolas is asking if it's possible for a planet to retain enough of its atmosphere after photoevaporation to support surface habitability, building on the discussion about eroded cores of Neptune-like planets and their potential for habitability."
-                },
-                {
-                    "present new idea": "Nicolas is presenting the idea of a planet that starts as a Neptune or sub-Neptune, loses most of its atmosphere through photoevaporation, but retains enough for surface habitability, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the possibility of a planet having life under certain conditions.",
+                "develop idea": "The speaker is expanding on an idea by discussing the conditions necessary for life on a planet, including the effects of photo-evaporation on a planet's atmosphere."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2576,7 +2485,8 @@
             "start_time": "36:02",
             "end_time": "36:49",
             "annotations": {
-                "express agreement": "Laura agrees with Nicolas's statement that planets start off hot, building on the discussion about the habitability of eroded cores of Neptune-like planets."
+                "Acknowledge contribution": "The speaker acknowledges a previous statement made by another group member.",
+                "Supportive response": "The speaker expresses agreement with a previous statement."
             }
         },
         {
@@ -2596,9 +2506,7 @@
             "start_time": "36:50",
             "end_time": "37:16",
             "annotations": {
-                "present new idea": "Kimberly introduces the idea of calculating whether light volatiles like helium, lost from a planet, could be replenished by radioactive decay in the core, which is a novel concept not previously discussed.",
-                "ask clarifying question": "Kimberly is asking whether it is possible to replenish light volatiles lost from a planet, and if they can be built back up, seeking clarification on the processes involved.",
-                "expand on existing idea": "Kimberly expands on the discussion about the atmospheric composition of eroded cores of Neptune-like planets by considering the possibility of replenishing light volatiles through radioactive decay."
+                "ask question": "The speaker is requesting information or clarification on the possibility of replenishing light volatiles through radioactive decay."
             }
         },
         {
@@ -2618,8 +2526,7 @@
             "start_time": "37:16",
             "end_time": "37:49",
             "annotations": {
-                "expand on existing idea": "Laura expands on Kimberly's idea about replenishing light volatiles, explaining that if enough volatiles are maintained in the interior, they can continue to outgas after the envelope is lost, which is how water is saved.",
-                "provide supporting evidence": "Laura provides supporting evidence by explaining how water is saved through outgassing from a magma ocean after the hydrogen envelope escapes, supporting the idea of replenishing volatiles."
+                "develop idea": "This code applies because Laura Schaefer is expanding on an existing idea by providing more details and examples."
             }
         },
         {
@@ -2638,14 +2545,9 @@
             "screenshare_content": "None",
             "start_time": "37:56",
             "end_time": "38:43",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previous discussion about volatile loss and replenishment in eroded cores, expanding on the question of how much volatiles can be sequestered in the interior and outgassed later, which was brought up by Kimberly and Laura."
-                },
-                {
-                    "present new idea": "The speaker introduces a new idea about determining volcanic activity by looking at outliers or average levels, which has not been previously discussed."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking for clarification or information on the amount of volatiles that can be sequestered in a planet's interior and the potential for outgassing from an eroded core, indicating a request for information or expertise."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2663,14 +2565,11 @@
             "screenshare_content": "None",
             "start_time": "38:50",
             "end_time": "39:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is expanding on the discussion about the habitability of eroded core planets by introducing the concept of radiogenic budgets and tidal heating as factors influencing volcanism and habitability, building on the previous discussion about the conditions on such planets."
-                },
-                {
-                    "present new idea": "Laura introduces the idea of two scenarios: one with early high volcanic fluxes that gradually die off, and another with consistently high volcanism due to tidal heating, presenting a new perspective on how volcanic activity can affect habitability over time."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas about radiogenic budgets and their impact on planetary volcanism and habitability.",
+                "propose new idea": "The speaker presents two scenarios for planetary habitability based on volcanic activity.",
+                "clarify goal": "The speaker discusses factors relevant to habitability, exploring conditions necessary for life."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -2689,8 +2588,9 @@
             "start_time": "39:58",
             "end_time": "40:26",
             "annotations": {
-                "reject idea": "The speaker is questioning the previously discussed idea that too much tidal or radiogenic heating is bad for habitability, suggesting it might be overblown.",
-                "present new idea": "The speaker introduces the idea that IO or a super IO, which can maintain an atmosphere, might be a fine place to look for life, contrary to the previous concerns about excessive heating."
+                "critical response": "The speaker questions the idea that too much tidal or radiogenic heating is bad for habitability.",
+                "offer feedback": "The speaker suggests Io or a super-Io as a potential place to look for life.",
+                "develop idea": "The speaker expands on previous discussions about habitability and heating."
             }
         },
         {
@@ -2709,14 +2609,10 @@
             "screenshare_content": "None",
             "start_time": "40:26",
             "end_time": "40:47",
-            "annotations": [
-                {
-                    "expand on existing idea": "Laura is building on the previous discussion about the habitability of planets with high volcanic activity, specifically IO, by adding the question of climatic stability to the list of factors to consider."
-                },
-                {
-                    "ask clarifying question": "Laura is asking whether a planet with high volcanic activity and outgassing is climatically stable, which is a question related to the overall habitability of such planets, building on the previous discussion about IO."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas by considering additional factors (e.g., climatic stability, volatiles, and volcanic eruptions) in the context of planetary habitability.",
+                "ask question": "The speaker asks questions about the climatic stability of a planet under certain conditions and how volcanic eruptions impact the climate."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2735,7 +2631,8 @@
             "start_time": "40:51",
             "end_time": "40:58",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the existing idea of volcanic activity and its impact on habitability, adding that nutrient fluxes from volcanism could be beneficial, building on the discussion about volcanic activity and its potential effects on a planet's habitability."
+                "develop idea": "Laura is expanding on the concept of how certain conditions (nutrient fluxes) could be beneficial for habitability, building upon previous discussions.",
+                "supportive response": "Laura's statement expresses a positive view on the idea of nutrient fluxes being beneficial for surface habitability, showing agreement or validation of previously discussed ideas."
             }
         },
         {
@@ -2754,11 +2651,10 @@
             "screenshare_content": "None",
             "start_time": "40:59",
             "end_time": "41:17",
-            "annotations": [
-                {
-                    "expand on existing idea": "Nicolas is expanding on Laura's idea about volcanic activity and its impact on climate, adding that fresh rock brought up by volcanism can be weathered, potentially affecting CO2 levels in the atmosphere."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the discussion about habitability and atmospheric conditions by considering the effects of fresh rock on CO2 levels.",
+                "offer feedback": "The speaker provides a consideration about the weathering of fresh rock and its potential impact on CO2 levels."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -2776,14 +2672,10 @@
             "screenshare_content": "None",
             "start_time": "41:18",
             "end_time": "41:53",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Laura refers to the Deccan traps and a model for Venus to support her argument about the climatic impact of volcanism, building on the discussion about volcanic activity and habitability."
-                },
-                {
-                    "expand on existing idea": "Laura expands on the existing idea of volcanism affecting habitability by discussing the climatic impact of global resurfacing versus localized eruptions, building on the discussion about volcanic activity and habitability."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an idea previously mentioned, discussing its implications and comparing different scenarios (large-scale volcanism vs. localized eruptions).",
+                "acknowledge contribution": "The speaker mentions Daniel Apai's previous point, showing awareness and recognition of his contribution."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -2802,8 +2694,10 @@
             "start_time": "42:01",
             "end_time": "42:36",
             "annotations": {
-                "explain or define term or concept": "The speaker is clarifying the idea that extremes might be beneficial for the emergence of life, contrasting it with the notion that extremes are detrimental to life's origin, and further elaborating on the concepts of origination versus proliferation.",
-                "acknowledge contribution": "The speaker acknowledges Nicole's contribution by mentioning the temporal aspect of things, referring to a point Nicole made earlier about temporal variability."
+                "develop idea": "The speaker is expanding on existing ideas by questioning the need for extremes or gradients for life origination and sustainability.",
+                "ask question": "The utterance contains questions about the necessity of extremes or gradients for life origination and sustainability.",
+                "acknowledge contribution": "The speaker references and builds upon previous contributions, especially Nicole's mention of the temporal aspect.",
+                "summarize conversation": "The speaker is summarizing previous discussions to understand and build upon them."
             }
         },
         {
@@ -2823,9 +2717,8 @@
             "start_time": "42:37",
             "end_time": "43:00",
             "annotations": {
-                "expand on existing idea": "This utterance expands on Anat's previous statement about the temporal aspect of habitability, relating it to the idea of shallow ponds drying out and getting wet again being favorable for life.",
-                "provide supporting evidence": "The speaker provides the example of shallow ponds drying out and getting wet again as a temporal phenomenon that is considered good for life, supporting the idea that temporal variability is important for habitability.",
-                "express enthusiasm": "The speaker expresses enthusiasm by stating that the temporal thing is favorable or even necessary for the origin of life."
+                "acknowledge contribution": "The speaker is referencing and building upon previous discussions about temporal aspects and their relation to life.",
+                "develop idea": "The speaker is expanding on the idea of temporal changes being favorable for life by mentioning shallow ponds."
             }
         },
         {
@@ -2844,12 +2737,11 @@
             "screenshare_content": "None",
             "start_time": "43:01",
             "end_time": "43:45",
-            "annotations": [
-                {
-                    "express agreement": "Simon explicitly agrees with Anat's point about extremes potentially being beneficial for life, building on the discussion about origination versus proliferation of life in extreme environments.",
-                    "expand on existing idea": "Simon expands on the idea of gradients, suggesting that the absence of gradients is a bigger problem than the presence of them, and also considers the length scale of gradients, referencing Kim's earlier point about the relevance of spatial scales for organisms."
-                }
-            ]
+            "annotations": {
+                "develop idea": "expanding on the concept of gradients and their importance for life, referencing previous comments.",
+                "supportive response": "agreeing with Anat's comment.",
+                "acknowledge contribution": "referencing and building on comments from Anat and possibly Kim."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -2868,7 +2760,7 @@
             "start_time": "43:45",
             "end_time": "43:47",
             "annotations": {
-                "acknowledge contribution": "Nicolas Cowan acknowledges that Kim Lau had mentioned something previously, but he doesn't specify what it was or agree/disagree with it."
+                "acknowledge contribution": "The speaker is referencing a previous contribution by Kim, showing awareness and consideration of their input."
             }
         },
         {
@@ -2887,14 +2779,10 @@
             "screenshare_content": "None",
             "start_time": "43:47",
             "end_time": "44:19",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kimberly mentioned the length scale of gradients, and Nicolas expands on this idea by considering the relevance of the length scale of temperature gradients on tidally locked planets for life, suggesting that centimeter scales might be more relevant."
-                },
-                {
-                    "ask clarifying question": "Nicolas is unsure about the appropriate length scale for gradients, asking if centimeter scales are more relevant for life."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Nicolas Cowan is expanding on the idea of gradients and their relevance for life by discussing different scales.",
+                "ask question": "Nicolas Cowan is questioning the scale at which gradients are relevant for life, comparing large-scale gradients to smaller scales like centimeter scales."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -2912,14 +2800,10 @@
             "screenshare_content": "None",
             "start_time": "44:19",
             "end_time": "45:20",
-            "annotations": [
-                {
-                    "reject idea": "Jennifer rejects the idea that tidal locking would be on a time scale where life can evolve, disagreeing with the previous discussion about gradients and their relevance to life."
-                },
-                {
-                    "ask clarifying question": "Jennifer is unsure if tidal locking is on a time scale where it would be detectable to us, questioning the detectability of life in tidally locked environments."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Jennifer Glass expands on the discussion about tidally locked planets and their habitability by discussing timescales and spatial scales.",
+                "ask question": "Jennifer Glass asks for clarification on the gradient across a tidally locked planet."
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -2937,14 +2821,10 @@
             "screenshare_content": "None",
             "start_time": "45:20",
             "end_time": "45:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kimberly expands on the discussion about gradients and their importance for life, building on previous comments about abiotic gradients and the edges of extreme environments, by considering the size of the gradient relative to the organism's mobility."
-                },
-                {
-                    "expand on existing idea": "Kimberly expands on the discussion about gradients and their importance for life, building on Nicole's recent comment about temporal gradients, by considering the time scale of changes and how quickly biomolecules degrade."
-                }
-            ]
+            "annotations": {
+                "ask question": "Requesting information or clarification on the size of gradients relative to organisms and their mobility.",
+                "develop idea": "Expanding on the idea of gradients by relating it to temporal gradients and the degradation of bio molecules."
+            }
         },
         {
             "speaker": "Morgan Raven",
@@ -2963,8 +2843,8 @@
             "start_time": "46:00",
             "end_time": "46:18",
             "annotations": {
-                "expand on existing idea": "Morgan is expanding on the existing idea of spatial scales of gradients, which Kimberly and Nicolas were discussing in the previous turns.",
-                "provide supporting evidence": "Morgan provides supporting evidence by mentioning organisms on Earth that can separate their redox half reactions with handy wires, giving a real-world example to support the idea that organisms can adapt to spatial gradients."
+                "develop idea": "The speaker expands on the discussion about gradients, relating their spatial scale to the ease of evolution and mentioning specific biological capabilities.",
+                "offer feedback": "The speaker provides a perspective on the spatial scale of gradients and their implications, which can be seen as a form of feedback."
             }
         },
         {
@@ -2984,7 +2864,8 @@
             "start_time": "46:33",
             "end_time": "46:42",
             "annotations": {
-                "ask clarifying question": "Nicolas asks Morgan to explain the 'separating redox' concept, indicating he didn't understand it, which is a request for clarification."
+                "ask question": "The speaker is requesting information or clarification from another team member (Morgan) on a prior statement or idea proposed by Morgan.",
+                "acknowledge contribution": "The speaker verbally recognizes another group member's (Morgan's) input, showing awareness and consideration of their idea."
             }
         },
         {
@@ -3003,14 +2884,10 @@
             "screenshare_content": "None",
             "start_time": "46:42",
             "end_time": "47:27",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Morgan is explaining the concept of how some organisms can separate their redox half reactions, building on her previous statement about spatial scales for gradients and Nicolas's request for clarification."
-                },
-                {
-                    "provide supporting evidence": "Morgan provides the example of cable bacteria to support her explanation of organisms separating redox reactions, building on her explanation of the concept."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Morgan Raven is expanding on a concept related to how certain bacteria can survive by linking electron sources and acceptors.",
+                "acknowledge contribution": "Morgan Raven is responding to Nicolas Cowan's request for Morgan to explain their previous statement."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3029,7 +2906,8 @@
             "start_time": "47:27",
             "end_time": "47:36",
             "annotations": {
-                "ask clarifying question": "Nicolas asks for clarification on the spatial scale of electron donors and acceptors in cable bacteria, following Morgan's explanation of how these organisms separate redox reactions."
+                "Ask question": "The speaker is requesting information or clarification about the distance between electron donors and acceptors.",
+                "Develop idea": "The speaker is building upon an existing idea by seeking to understand its specifics."
             }
         },
         {
@@ -3049,7 +2927,7 @@
             "start_time": "47:36",
             "end_time": "47:48",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the previous discussion about cable bacteria and their ability to separate redox reactions, adding details about their size and potential for larger sizes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3068,11 +2946,9 @@
             "screenshare_content": "None",
             "start_time": "48:13",
             "end_time": "48:19",
-            "annotations": [
-                {
-                    "present new idea": "Jennifer introduces a new idea about solar flares on M dwarfs, which hasn't been discussed before in the conversation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3091,7 +2967,7 @@
             "start_time": "48:19",
             "end_time": "48:22",
             "annotations": {
-                "acknowledge contribution": "Nicolas Cowan acknowledges Morgan Raven's point about separating redox reactions with handy wires, indicating he recognizes the value of her contribution to the discussion."
+                "Supportive response": "The speaker expresses agreement and validation of a previous point made by Jennifer Glass, indicating a positive evaluation of her contribution."
             }
         },
         {
@@ -3110,17 +2986,10 @@
             "screenshare_content": "None",
             "start_time": "47:48",
             "end_time": "49:11",
-            "annotations": [
-                {
-                    "expand on existing idea": "Simon is expanding on the idea of gradients and their importance for life, building on the previous discussion about abiotic gradients and their role in stimulating life and generating complex ecosystems."
-                },
-                {
-                    "provide supporting evidence": "Simon provides supporting evidence from ecology and the geological record of extinction to strengthen the idea that perturbation and change are necessary for healthy and diverse ecosystems, drawing parallels to the role of short, strong abiotic gradients in driving extinction and creating new ecological opportunities."
-                },
-                {
-                    "present new idea": "Simon presents the new idea that planets with more extremes and dynamic environments are more likely to generate complex and interesting ecosystems because static environments lack the selective pressure needed for natural selection to operate."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about ecological gradients and their effects on ecosystems and evolution, discussing how dynamic conditions can lead to more complex and diverse ecosystems.",
+                "propose new idea": "The speaker introduces a perspective on the role of extreme and ephemeral gradients in fostering biodiversity and complex ecosystems, which could be seen as a novel application of existing concepts to planetary science."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3138,13 +3007,10 @@
             "screenshare_content": "None",
             "start_time": "49:26",
             "end_time": "50:13",
-            "annotations": [
-                {
-                    "present new idea": "Nicolas is presenting the idea that M dwarf planets might be inherently flawed for sustaining life due to their lack of variability, which is a new concept in the discussion.",
-                    "expand on existing idea": "Nicolas expands on the existing idea of the importance of gradients and variability for life, suggesting that M dwarf planets, due to their lack of seasons and diurnal cycles, might not be conducive to the evolution and health of life, building on Simon's point about the need for perturbation and selective pressure.",
-                    "reject idea": "Nicolas is questioning the suitability of M dwarf planets for life, implying a rejection of the idea that they are good candidates, based on their lack of variability and steady-state conditions."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks a question about the habitability of M M dwarf planets.",
+                "develop idea": "The speaker expands on the implications of M M dwarf planets' characteristics for life and habitability."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -3162,11 +3028,9 @@
             "screenshare_content": "None",
             "start_time": "50:13",
             "end_time": "50:19",
-            "annotations": [
-                {
-                    "ask clarifying question": "Jennifer is asking if M dwarf planets experience external impacts like meteorites, which is a clarifying question about the conditions on those planets."
-                }
-            ]
+            "annotations": {
+                "Ask question": "Jennifer Glass is requesting information or clarification about external impactors and meteorites."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3184,11 +3048,10 @@
             "screenshare_content": "None",
             "start_time": "50:19",
             "end_time": "50:22",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Nicolas acknowledges Jennifer's point about M dwarfs having big flares and meteorites, which is a good point."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "supportive response": "The speaker expresses agreement and positive evaluation for another group member's contribution."
+            }
         },
         {
             "speaker": "Morgan Raven",
@@ -3207,9 +3070,10 @@
             "start_time": "50:47",
             "end_time": "51:37",
             "annotations": {
-                "present new idea": "The speaker introduces the idea that frequent, smaller environmental changes (like diurnal or seasonal cycles) might better prepare life to handle larger, catastrophic events, compared to infrequent, massive impacts.",
-                "expand on existing idea": "The speaker expands on the idea of temporal variability, previously mentioned by Nikole, by suggesting that frequent, smaller changes can prepare life for larger challenges, relating it to evolutionary timescales and the development of flexibility in response to environmental stressors.",
-                "provide supporting evidence": "The speaker provides supporting evidence by drawing an analogy to the immune system, suggesting that repeated exposure to smaller changes allows organisms to develop flexibility and preparedness for larger, more catastrophic events."
+                "propose new idea": "The speaker introduces a new concept of how life might adapt to environmental challenges through smaller, frequent changes.",
+                "develop idea": "The speaker elaborates on the idea by discussing the benefits of diurnal or seasonal cycles for life's adaptability.",
+                "express humor": "The speaker uses humor with the phrase 'nothing happens all the time and then the moon runs into you, all right?'",
+                "encourage participation": "The speaker invites broader consideration of these ideas."
             }
         },
         {
@@ -3228,11 +3092,10 @@
             "screenshare_content": "None",
             "start_time": "51:38",
             "end_time": "51:45",
-            "annotations": [
-                {
-                    "express enthusiasm": "Anat expresses excitement and interest in Morgan Raven's point about the temporal scale of environmental changes and how it can prepare life for larger catastrophic events."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and positive evaluation of a previous contribution, showing engagement with the idea.",
+                "None": "No additional codes seem to apply as the utterance primarily serves to express a positive reaction."
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -3250,14 +3113,10 @@
             "screenshare_content": "None",
             "start_time": "51:46",
             "end_time": "52:21",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kimberly builds on Morgan's point about the evolutionary timescale by distinguishing between the evolutionary potential of an organism versus a biosphere, expanding on the idea of temporal variability and its impact on life."
-                },
-                {
-                    "present new idea": "Kimberly introduces the idea of comparing the definition of death for a single-celled organism versus an ecosystem, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on Morgan's idea, discussing the evolutionary potential of organisms versus biospheres/ecosystems.",
+                "acknowledge contribution": "The speaker acknowledges Morgan's contribution by starting with 'I think build out what Morgan is saying too.'"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3275,11 +3134,11 @@
             "screenshare_content": "None",
             "start_time": "52:25",
             "end_time": "52:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon Kimberly's previous statement about the evolutionary potential of an organism versus a biosphere, suggesting that optimal conditions for individual organisms may differ from those for the biosphere's evolution."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Nicolas Cowan introduces a new perspective on optimal conditions for life, distinguishing between individual organisms and the biosphere.",
+                "develop idea": "He elaborates on previous discussions about life conditions and evolution, specifically addressing the impact of extinction events.",
+                "ask question": "Nicolas Cowan poses a question about the type of life we're interested in, implying a query about criteria for habitability."
+            }
         },
         {
             "speaker": "Trinity Hamilton",
@@ -3297,14 +3156,10 @@
             "screenshare_content": "None",
             "start_time": "53:00",
             "end_time": "53:46",
-            "annotations": [
-                {
-                    "expand on existing idea": "This sentence builds upon the previous discussion about temporal variability and its impact on habitability, adding the idea that gradients change over the lifetime of a planet."
-                },
-                {
-                    "expand on existing idea": "This sentence expands on Morgan's point about organisms needing to adapt to smaller changes before handling larger ones, suggesting life needs to start at the right time when gradients are smaller to allow for adaptation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about gradients and their implications for life.",
+                "acknowledge contribution": "The speaker references and builds upon Morgan's point."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -3322,14 +3177,10 @@
             "screenshare_content": "None",
             "start_time": "53:47",
             "end_time": "54:12",
-            "annotations": [
-                {
-                    "present new idea": "Laura introduces a new idea about the extreme of habitability, specifically related to the recent Venus selections driven by the detection of phosphine, which was not previously discussed."
-                },
-                {
-                    "encourage particpatioin": "Laura is encouraging participation from the biologists in the group by asking for their thoughts on the idea of life originating or surviving in clouds."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "introducing a new idea about considering clouds as a potential habitat for life",
+                "ask question": "requesting input from biologists on the idea of life in clouds"
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -3347,14 +3198,11 @@
             "screenshare_content": "None",
             "start_time": "54:13",
             "end_time": "54:27",
-            "annotations": [
-                {
-                    "express alternative decision": "Jennifer expresses doubt about the presence of life in the clouds of Venus and the validity of phosphine as a biosignature, disagreeing with the idea that life could originate or survive in clouds, which Laura proposed in the previous utterance."
-                },
-                {
-                    "reject idea": "Jennifer rejects the idea that phosphine is a good biosignature and that there is life in the clouds of Venus."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker mentions her background as a geologist turned microbiologist, indicating her expertise.",
+                "critical response": "The speaker expresses disagreement with the idea that phosphene is a good biosignature and doubts the existence of life in Venus' clouds.",
+                "offer feedback": "The speaker provides her thoughts on the survival of life in clouds and her skepticism about phosphene."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -3373,8 +3221,8 @@
             "start_time": "54:27",
             "end_time": "54:38",
             "annotations": {
-                "expand on existing idea": "Jennifer is expanding on Laura's idea about life surviving in clouds by stating that life can survive in clouds in general, but not specifically on Venus.",
-                "reject idea": "Jennifer rejects the idea that there is life in the clouds of Venus, which was prompted by the recent Venus selections driven by the detection of phosphene."
+                "Develop idea": "Jennifer Glass is expanding on the idea of habitability in extreme environments by discussing clouds.",
+                "Propose new idea": "She introduces a specific view on clouds of Venus vs Earth."
             }
         },
         {
@@ -3394,7 +3242,7 @@
             "start_time": "54:42",
             "end_time": "54:43",
             "annotations": {
-                "express enthusiasm": "Morgan expresses excitement about the previous statement regarding life potentially existing in clouds."
+                "supportive response": "The speaker expresses interest and a positive evaluation of the previous statement, indicating engagement with the conversation."
             }
         },
         {
@@ -3414,7 +3262,7 @@
             "start_time": "54:43",
             "end_time": "54:48",
             "annotations": {
-                "ask clarifying question": "Morgan is asking a clarifying question about whether we pick up actual living organisms in clouds, following up on Jennifer's statement that life can survive in clouds."
+                "ask question": "The speaker is requesting information or clarification on whether methods can detect actual living organisms beyond just DNA or cell material."
             }
         },
         {
@@ -3434,7 +3282,7 @@
             "start_time": "54:50",
             "end_time": "54:52",
             "annotations": {
-                "express agreement": "Trinity says \"Okay, cool\", which expresses agreement with the previous speaker."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3453,11 +3301,12 @@
             "screenshare_content": "None",
             "start_time": "54:52",
             "end_time": "55:04",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the ongoing debate about whether organisms found in clouds actively live there or are simply transported there, clarifying the context of their presence."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker requests information about the behavior and longevity of organisms in the air.",
+                "identify gap": "The speaker highlights the uncertainty regarding the organisms' preferences and longevity.",
+                "acknowledge contribution": "The speaker acknowledges the existence of cells in the air, referencing a previous discussion.",
+                "supportive response": "The speaker agrees with the notion that there are cells floating around."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -3475,11 +3324,9 @@
             "screenshare_content": "None",
             "start_time": "55:09",
             "end_time": "55:11",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Simon is encouraging someone else to speak, as indicated by \"go ahead\", after apologizing for interrupting."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a lighthearted comment about being British and then allows someone else to speak, using humor to facilitate conversation flow."
+            }
         },
         {
             "speaker": "Morgan Raven",
@@ -3497,12 +3344,10 @@
             "screenshare_content": "None",
             "start_time": "55:12",
             "end_time": "55:15",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Morgan acknowledges the previous discussion about life in clouds and expresses having many questions, recognizing the interesting point made.",
-                    "encourage particpatioin": "Morgan states that she won't derail the conversation and suggests to continue, encouraging others to go on with their contributions."
-                }
-            ]
+            "annotations": {
+                "Express humor": "The speaker makes a humorous comment about not wanting to derail the conversation.",
+                "Encourage participation": "The speaker encourages the conversation to continue."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -3520,12 +3365,10 @@
             "screenshare_content": "None",
             "start_time": "55:15",
             "end_time": "55:48",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Simon provides evidence of scientists collecting material in the stratosphere using helium balloons, supporting the idea that life can exist in clouds, which Laura brought up previously.",
-                    "explain or define term or concept": "Simon clarifies that the scientists collecting material in the stratosphere were proponents of the panspermia hypothesis, which he describes as an absurd extreme, explaining the context of their research."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker shares knowledge about scientific studies related to the origin of life, indicating familiarity with the topic.",
+                "express humor": "The speaker uses the phrase 'absurd extremes' to lighten the tone when discussing a scientific hypothesis."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -3544,7 +3387,7 @@
             "start_time": "55:50",
             "end_time": "56:00",
             "annotations": {
-                "expand on existing idea": "Laura is expanding on the idea of life existing in clouds, which was brought up in the context of Venus, by suggesting it could also exist on giant planets in habitable zones, building upon the previous discussion about the possibility of life in clouds."
+                "develop idea": "The speaker is building upon previous discussions about habitability by suggesting life could exist in clouds of giant planets in habitable zones."
             }
         },
         {
@@ -3564,10 +3407,8 @@
             "start_time": "56:01",
             "end_time": "56:22",
             "annotations": {
-                "present new idea": "Daniel introduces the idea of brown dwarfs as potential sites for life, drawing a parallel to the discussion about Venus's clouds and habitable giant planets.",
-                "expand on existing idea": "Daniel expands on the idea of searching for life in non-traditional locations by providing details about the temperatures and atmospheric conditions of brown dwarfs, building on the previous discussion about Venus and giant planets.",
-                "provide supporting evidence": "Daniel supports the idea of brown dwarfs as potential sites for life by mentioning that some have temperatures similar to or cooler than Earth, and that water can condense in their atmospheres.",
-                "propose decision": "Daniel proposes that brown dwarfs may be easier to access and study than habitable planets, suggesting a shift in focus for research."
+                "propose new idea": "The speaker introduces a new example of brown dwarfs as objects that could be studied for habitability, suggesting they might be easier to access than habitable planets.",
+                "develop idea": "The speaker elaborates on the characteristics of brown dwarfs, such as their temperatures and potential for water condensation in their atmospheres, to support the idea of studying them for habitability."
             }
         },
         {
@@ -3587,7 +3428,7 @@
             "start_time": "56:32",
             "end_time": "56:39",
             "annotations": {
-                "reject idea": "Laura is rejecting the idea that life could originate or survive in clouds on planets like Venus or giant planets, because there would not be enough liquid for prebiotic reactions to occur, building on the previous discussion about life in clouds."
+                "develop idea": "The speaker is expanding on an existing idea about the conditions necessary for prebiotic reactions to occur, discussing the limitation of having only a droplet of liquid."
             }
         },
         {
@@ -3607,9 +3448,7 @@
             "start_time": "56:39",
             "end_time": "57:01",
             "annotations": {
-                "expand on existing idea": "Laura is expanding on the idea of life existing in clouds, which she introduced in the previous utterance, by considering the possibility of prebiotic reactions happening in droplets and the potential for life to originate in a cloud environment.",
-                "present new idea": "Laura presents a new idea about the origins of life in a cloud environment, suggesting that life could be created in droplets that eventually collide.",
-                "express enthusiasm": "Laura expresses enthusiasm by stating she is very curious about what origins of life in a cloud would look like, showing her excitement about this idea."
+                "encourage participation": "Laura expresses curiosity about the origins of life in a cloud, inviting others to contribute their thoughts or ideas."
             }
         },
         {
@@ -3628,14 +3467,11 @@
             "screenshare_content": "None",
             "start_time": "57:02",
             "end_time": "57:15",
-            "annotations": [
-                {
-                    "expand on existing idea": "Daniel is expanding on the idea of life in clouds, which Laura brought up, by suggesting that life doesn't necessarily have to originate in the clouds of brown dwarfs, as they could also have moon systems."
-                },
-                {
-                    "provide supporting evidence": "Daniel provides supporting evidence by stating that brown dwarfs are easily accessible, making them a practical place to look for life."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker builds upon existing ideas by suggesting alternative places to look for life, considering moon systems of celestial bodies like brown dwarfs.",
+                "supportive response": "The response is positive and encouraging towards exploring different options for looking for life.",
+                "offer feedback": "The speaker provides a suggestion on where to look for life, indicating these celestial bodies as potential places."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -3654,7 +3490,7 @@
             "start_time": "57:17",
             "end_time": "57:18",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is an incomplete sentence and lacks sufficient context to determine its intent or meaning within the discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3673,11 +3509,9 @@
             "screenshare_content": "None",
             "start_time": "57:47",
             "end_time": "57:49",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nicolas asks if they are still discussing brown dwarfs, seeking to confirm the current topic of conversation, which was brought up by Daniel in the previous utterance."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker is questioning the current state of discussion or analysis by comparing it to a brown dwarf, implying it may not be fully developed or is unconventional."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -3696,7 +3530,7 @@
             "start_time": "57:49",
             "end_time": "57:50",
             "annotations": {
-                "acknowledge contribution": "The utterance 'Sorry' acknowledges that Laura may have interrupted or spoken out of turn, recognizing the previous speaker's contribution to the conversation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3715,14 +3549,10 @@
             "screenshare_content": "None",
             "start_time": "57:50",
             "end_time": "58:13",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that brown dwarfs do not have surfaces because they are similar to Jupiter, providing context for the discussion."
-                },
-                {
-                    "expand on existing idea": "The speaker builds on the previous discussion about life in clouds by suggesting that life could have originated on the surface of Venus and then migrated to the clouds as the planet became hotter."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker poses a question about the origin and migration of life on Venus.",
+                "develop idea": "The speaker expands on an idea by comparing conditions on brown dwarfs to those on Venus and considering implications for life."
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -3741,7 +3571,8 @@
             "start_time": "58:16",
             "end_time": "58:23",
             "annotations": {
-                "reject idea": "Jennifer rejects the idea of phosphene being a useful biosignature, as it likely doesn't originate from life on Earth, following a discussion about the possibility of life surviving in the clouds of Venus."
+                "critical response": "The speaker is providing a critical view of phosphene as a biosignature.",
+                "offer feedback": "The speaker is providing specific feedback on the idea of using phosphene as a biosignature."
             }
         },
         {
@@ -3761,7 +3592,8 @@
             "start_time": "58:24",
             "end_time": "58:29",
             "annotations": {
-                "reject idea": "Jennifer rejects the idea that phosphine is a good biosignature, based on the fact that its origin is unknown and most biologists don't think it's from life, building on the discussion about life in the clouds of Venus and the detection of phosphine."
+                "critical response": "Jennifer Glass is questioning the validity of phosphene as a biosignature based on the opinion of most biologists.",
+                "identify gap": "She highlights that the origin of phosphene is completely unknown, indicating a gap in knowledge."
             }
         },
         {
@@ -3781,7 +3613,7 @@
             "start_time": "58:31",
             "end_time": "58:37",
             "annotations": {
-                "assign task": "Simon is assigning Nicolas the task of summarizing the discussion about life in clouds on his slide, which is a request to document the key points of the conversation."
+                "process management": "The speaker is managing the discussion flow by asking for a summary of a previous line of inquiry."
             }
         },
         {
@@ -3800,11 +3632,9 @@
             "screenshare_content": "None",
             "start_time": "58:39",
             "end_time": "58:53",
-            "annotations": [
-                {
-                    "express humor": "Nicolas makes a self-deprecating joke about failing to insert a picture into the chat, expressing humor."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke about failing as a note taker, showing a lighthearted and humorous tone."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -3822,11 +3652,9 @@
             "screenshare_content": "None",
             "start_time": "58:53",
             "end_time": "58:54",
-            "annotations": [
-                {
-                    "present new idea": "Laura is about to present a new idea, as indicated by the word 'maybe' at the end of her utterance, but she does not finish her thought."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -3845,7 +3673,7 @@
             "start_time": "58:55",
             "end_time": "59:00",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previously discussed idea of life potentially existing in clouds by adding the condition that sufficient dust suspension is necessary for life to originate there."
+                "propose new idea": "The speaker introduces a new idea about life originating in clouds if there is enough suspended dust."
             }
         },
         {
@@ -3865,7 +3693,7 @@
             "start_time": "59:01",
             "end_time": "59:03",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with the previous speaker's point by saying 'Hmm'."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3885,9 +3713,8 @@
             "start_time": "59:03",
             "end_time": "59:14",
             "annotations": {
-                "expand on existing idea": "Nikole is expanding on the idea of life in clouds, which Laura introduced, by suggesting that hazy and cloudy worlds with photochemistry might not even need a surface for life.",
-                "present new idea": "Nikole presents the idea that life might not need a surface, especially in hazy and cloudy worlds with photochemistry, which is a novel concept in the context of the discussion about habitability.",
-                "ask clarifying question": "Nikole asks a rhetorical question about whether a surface is needed, which is a way of questioning the necessity of a surface for life in hazy and cloudy worlds."
+                "ask question": "The speaker asks a question about the necessity of a surface for life, seeking opinions or information.",
+                "develop idea": "The speaker expands on existing ideas by suggesting that hazy and cloudy worlds could be interesting for studying life and photochemistry, and questions the need for a surface."
             }
         },
         {
@@ -3907,7 +3734,8 @@
             "start_time": "59:14",
             "end_time": "59:17",
             "annotations": {
-                "ask clarifying question": "Nikole is asking if having enough dust floating around in the atmosphere of hazy and cloudy worlds would be good for life, following up on the discussion about life potentially originating or surviving in clouds."
+                "ask question": "The speaker is asking for opinions or clarification on whether having enough dust floating around in a cloudy or hazy planetary environment would be conducive to habitability.",
+                "develop idea": "The question engages with previous ideas about life in cloudy or hazy environments, exploring the role of dust."
             }
         },
         {
@@ -3927,7 +3755,7 @@
             "start_time": "59:17",
             "end_time": "59:18",
             "annotations": {
-                "express humor": "Morgan's utterance \"You're on the surface\" is a humorous remark in response to Nikole's question of whether a surface is needed for life, implying that they are already on a surface."
+                "express humor": "The utterance can be interpreted as making a humorous comment about someone's perspective or focus being 'on the surface'."
             }
         },
         {
@@ -3947,7 +3775,7 @@
             "start_time": "59:18",
             "end_time": "59:19",
             "annotations": {
-                "provide supporting evidence": "Laura mentions lightning on Jupiter, which supports the idea that cloud environments could potentially host life by providing an energy source or other necessary conditions, building on the discussion about life in clouds."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3967,8 +3795,7 @@
             "start_time": "59:24",
             "end_time": "59:29",
             "annotations": {
-                "reject idea": "Jennifer is rejecting the idea that phosphene is a good biosignature, based on her understanding of biology, following a discussion about the possibility of life in the clouds of Venus.",
-                "acknowledge contribution": "Jennifer acknowledges Nicholas's contribution to the discussion about life in the clouds of Venus."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3988,7 +3815,8 @@
             "start_time": "59:31",
             "end_time": "59:37",
             "annotations": {
-                "assign task": "Simon is assigning Nicolas the task of summarizing the discussion about life in clouds on his slide, following up on the previous discussion about the topic."
+                "Process management": "The utterance manages the meeting flow by requesting a summary.",
+                "Assign task": "The utterance assigns a task to Nicholas."
             }
         },
         {
@@ -4007,11 +3835,9 @@
             "screenshare_content": "None",
             "start_time": "59:39",
             "end_time": "59:48",
-            "annotations": [
-                {
-                    "express humor": "Nicolas Cowan makes a humorous remark about trying to add a Care Bears picture to the chat, indicating he was trying to lighten the mood."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4029,11 +3855,9 @@
             "screenshare_content": "None",
             "start_time": "59:48",
             "end_time": "59:53",
-            "annotations": [
-                {
-                    "express frustration": "Nicolas expresses frustration with himself for not being able to insert a picture into the chat, indicating his failure as a note taker."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Nicolas Cowan acknowledges his role as a note taker and expresses regret over not fulfilling the expectations."
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -4051,14 +3875,10 @@
             "screenshare_content": "None",
             "start_time": "60:47",
             "end_time": "61:06",
-            "annotations": [
-                {
-                    "present new idea": "Nikole proposes a new idea of replicating the process of life without a surface in a lab, which hasn't been explicitly discussed before."
-                },
-                {
-                    "ask clarifying question": "Nikole asks if it's possible to replicate the process of life without a surface in a lab, seeking validation or feedback on the feasibility of this idea."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is explicitly requesting information or opinion on the feasibility of an experimental approach.",
+                "propose new idea": "The speaker suggests setting up a lab experiment to study processes without a surface, introducing a new approach to investigating origins of life or chemical processes."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -4077,8 +3897,7 @@
             "start_time": "61:06",
             "end_time": "61:16",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon Nikole's idea of replicating the process of life without a surface in a lab, suggesting that cloud haze labs already exist and could be used to experiment with bacteria in clouds and hazes.",
-                "encourage particpatioin": "Anat is encouraging Nikole to consider the possibility of experimenting with bacteria in cloud haze labs, inviting her to explore this idea further."
+                "propose new idea": "The speaker proposes a new experimental approach to study the habitability of cloud environments by suggesting to drop bacteria into cloud haze labs."
             }
         },
         {
@@ -4097,14 +3916,9 @@
             "screenshare_content": "None",
             "start_time": "61:17",
             "end_time": "61:36",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Nikole is explaining that haze experiments usually involve a photocathode, which she suspects would be harmful to bacteria, clarifying the experimental setup being discussed in the context of cloud habitability."
-                },
-                {
-                    "ask clarifying question": "Nikole is asking if using a UV lamp instead of a photocathode would be a viable alternative in haze experiments, seeking clarification on the experimental conditions suitable for studying life in clouds."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the effects of experimental setups on biological samples."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -4123,8 +3937,7 @@
             "start_time": "61:36",
             "end_time": "61:49",
             "annotations": {
-                "provide supporting evidence": "Anat shares experimental evidence that bugs thrive under high pressure, supporting the idea that pressure may not be a limiting factor for life, which was discussed earlier.",
-                "express enthusiasm": "Anat expresses enthusiasm about the bugs thriving under high pressure by saying \"they love it\" and \"it's pretty impressive.\""
+                "signal expertise": "Anat Shahar is sharing specific experimental results from her work, indicating her expertise in the area."
             }
         },
         {
@@ -4144,9 +3957,8 @@
             "start_time": "61:49",
             "end_time": "62:37",
             "annotations": {
-                "expand on existing idea": "The speaker is expanding on the idea of ponds as a place for life to originate by suggesting that droplets suspended in large-scale circulation could also concentrate ingredients, similar to ponds, which was brought up by Nicolas in the previous utterance.",
-                "present new idea": "The speaker presents a new idea that droplets suspended in large scale circulation can concentrate ingredients and dust grains, serving as condensation nuclei, which is a novel concept not previously discussed.",
-                "express enthusiasm": "The speaker expresses enthusiasm by stating that the experiment would be interesting, showing excitement about the potential of the idea."
+                "propose new idea": "Daniel introduces a new idea about droplets in large-scale circulation potentially concentrating ingredients and serving as condensation nuclei.",
+                "develop idea": "He builds upon the existing idea of ponds concentrating ingredients by suggesting a similar mechanism in droplets."
             }
         },
         {
@@ -4166,8 +3978,9 @@
             "start_time": "62:37",
             "end_time": "62:37",
             "annotations": {
-                "encourage particpatioin": "Daniel encourages the group to help Nick, the note taker, capture the ideas discussed, inviting them to contribute to the note-taking process.",
-                "assign task": "Daniel implicitly assigns the task of ensuring the capture of ideas to the group by encouraging them to help Nick."
+                "process management": "Daniel is managing the meeting flow by mentioning they have 10 minutes left.",
+                "encourage participation": "Daniel is inviting the group to contribute by helping Nick capture ideas.",
+                "assign task": "Daniel is assigning a task to the group to help Nick capture ideas."
             }
         },
         {
@@ -4186,11 +3999,10 @@
             "screenshare_content": "None",
             "start_time": "62:38",
             "end_time": "62:56",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nicolas asks how he should summarize the ideas, seeking guidance on his task as a note taker, following Daniel's suggestion to help him capture the ideas."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is asking for guidance on how to proceed with recording or summarizing the discussion.",
+                "develop idea": "The speaker is elaborating on their previous actions and challenges in keeping up with the discussion."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -4209,7 +4021,7 @@
             "start_time": "62:56",
             "end_time": "62:59",
             "annotations": {
-                "confirm decision": "This utterance confirms the decision to ensure everyone agrees on the key points, solidifying the direction of the discussion, following Nicolas's request for guidance on note-taking and Anat's explanation of summarizing themes."
+                "process management": "The speaker is managing the discussion process by emphasizing the importance of agreement on key points."
             }
         },
         {
@@ -4229,7 +4041,7 @@
             "start_time": "62:59",
             "end_time": "63:04",
             "annotations": {
-                "express agreement": "Jennifer agrees with the idea that the cloud discussion is a key point, which Anat suggested to summarize the key points of the discussion."
+                "supportive response": "Jennifer Glass is expressing agreement and validation for a previous point about the cloud thing being a key point."
             }
         },
         {
@@ -4248,11 +4060,9 @@
             "screenshare_content": "The speaker shared his screen and started scrolling through a document. He mentioned that he would start bolding things that seemed like they were among things that came up often.",
             "start_time": "63:05",
             "end_time": "63:12",
-            "annotations": [
-                {
-                    "propose decision": "Nicolas proposes to review the document and highlight the frequently discussed topics, building on the previous request to summarize key ideas."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing what has been previously discussed by mentioning that they will review the document to identify frequently mentioned topics, such as 'clouds'."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4270,12 +4080,10 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "63:12",
             "end_time": "64:14",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The utterance summarizes the discussion about gradients, including temporal and spatial gradients, and their importance for the origin and evolution of life, clarifying the different types of gradients discussed.",
-                    "expand on existing idea": "The utterance builds upon the previous discussion about gradients, elaborating on the consensus that energy gradients are needed for life to start, while temporal changes may be beneficial for life to evolve and diversify, expanding on the role of gradients in habitability."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Nicolas Cowan is summarizing previous discussions about gradients and their role in life origination and diversification.",
+                "develop idea": "He is expanding on existing ideas about gradients, discussing their necessity for life and their impact on life's origination and diversification."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -4294,7 +4102,7 @@
             "start_time": "64:14",
             "end_time": "64:14",
             "annotations": {
-                "express agreement": "Laura is expressing agreement with Nicolas's summary of the discussion about gradients, time scales, and the conditions needed for life to start and evolve, which he just finished presenting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4313,14 +4121,11 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "64:14",
             "end_time": "64:29",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds on the previous discussion about gradients and their importance for life, adding the idea that life inherently takes advantage of them."
-                },
-                {
-                    "express agreement": "The speaker explicitly agrees with the idea of gradients being important, which was discussed previously."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the concept of gradients and their relationship to life.",
+                "supportive response": "The speaker's statement supports and aligns with the previous discussion on gradients and their importance for life.",
+                "acknowledge contribution": "The speaker is engaging with and validating the concept of gradients in the context of life."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4339,8 +4144,8 @@
             "start_time": "64:29",
             "end_time": "64:48",
             "annotations": {
-                "expand on existing idea": "This utterance builds on the previous discussion about volcanism and the habitability of planets like IO, expanding on the topic by questioning what specific aspects of IO make it habitable or uninhabitable.",
-                "ask clarifying question": "The speaker is asking what specific aspects of IO make it habitable or uninhabitable, seeking clarification on the factors influencing habitability in such extreme environments."
+                "ask question": "The utterance asks for information or clarification on previous topics discussed, specifically about IO's habitability.",
+                "summarize conversation": "The utterance summarizes previous discussions about volcanism, super IOs, and habitability of planets."
             }
         },
         {
@@ -4360,8 +4165,9 @@
             "start_time": "64:48",
             "end_time": "65:24",
             "annotations": {
-                "expand on existing idea": "Nicolas is summarizing the discussion about naked cores of sub-Neptunes, expanding on the idea of their habitability compared to rocky planets, which was previously discussed by Laura.",
-                "ask clarifying question": "Nicolas asks Laura to correct him if he misunderstood the volatile content of naked cores, seeking clarification on a previously discussed point."
+                "Summarize conversation": "The speaker summarizes previous discussions about the habitability of sub Neptunes' cores compared to rocky planets.",
+                "Supportive response": "The speaker's tone suggests agreement or validation of previous ideas.",
+                "Ask question": "The speaker ends with a question to Laura, seeking clarification or confirmation."
             }
         },
         {
@@ -4381,7 +4187,7 @@
             "start_time": "65:24",
             "end_time": "65:30",
             "annotations": {
-                "express agreement": "Laura agrees with Nicolas's summary of the discussion about naked cores of sub-Neptunes potentially having more volatiles, indicating agreement with a previously stated idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4401,7 +4207,8 @@
             "start_time": "65:30",
             "end_time": "65:50",
             "annotations": {
-                "ask clarifying question": "Nicolas is asking if there are any other topics that the group discussed that he may have missed while taking notes, seeking to ensure a comprehensive summary."
+                "ask question": "The speaker is requesting information or clarification on previous discussions.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts or ideas."
             }
         },
         {
@@ -4420,14 +4227,9 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "65:50",
             "end_time": "66:03",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Kimberly acknowledges Nicole's contribution by mentioning her excellent image, recognizing her input to the discussion."
-                },
-                {
-                    "express enthusiasm": "Kimberly expresses enthusiasm by stating that the discussion about clouds is really interesting."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses a positive sentiment towards the discussion about clouds, indicating agreement or validation of the discussion's interest."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4445,14 +4247,10 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "66:03",
             "end_time": "66:17",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses excitement and approval upon discovering an image in the chat, indicating enthusiasm for its potential use in a presentation."
-                },
-                {
-                    "acknowledge contribution": "The speaker acknowledges the image in the chat, recognizing it as a valuable contribution to the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges another group member's input (the image shared in the chat).",
+                "supportive response": "The speaker expresses agreement and positivity towards the image shared."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -4471,7 +4269,7 @@
             "start_time": "66:17",
             "end_time": "66:24",
             "annotations": {
-                "ask clarifying question": "Anat is asking Nicolas whether the image he is referring to was found on Google or created quickly, seeking clarification on its origin."
+                "ask question": "The speaker is requesting information about the origin of an image."
             }
         },
         {
@@ -4491,7 +4289,7 @@
             "start_time": "66:24",
             "end_time": "66:24",
             "annotations": {
-                "express agreement": "Laura agrees with Anat's question about whether the image was found on Google or quickly made, confirming that it is a known thing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4511,7 +4309,7 @@
             "start_time": "66:24",
             "end_time": "66:25",
             "annotations": {
-                "acknowledge contribution": "Anat acknowledges the impressive nature of something, likely a visual or idea shared, without necessarily agreeing or expanding upon it."
+                "acknowledge contribution": "The speaker acknowledges another group member's input, in this case, an image shared in the chat."
             }
         },
         {
@@ -4531,7 +4329,8 @@
             "start_time": "66:25",
             "end_time": "66:28",
             "annotations": {
-                "acknowledge contribution": "Nikole acknowledges the artistic skills of others, specifically in relation to an image shared in the chat, without expressing agreement or disagreement with any scientific idea."
+                "acknowledge contribution": "The speaker acknowledges another person's comment about an image.",
+                "supportive response": "The speaker responds in a supportive and humble manner."
             }
         },
         {
@@ -4551,9 +4350,8 @@
             "start_time": "66:31",
             "end_time": "66:48",
             "annotations": {
-                "assign task": {
-                    "Explanation": "Anat is assigning Nick the task of writing the key points in the slideshow, which is slide 57 in the PPTX."
-                }
+                "process management": "Anat Shahar is managing the meeting flow by ensuring tasks are assigned and completed.",
+                "assign task": "Anat Shahar is assigning Nick the task of writing down key points in the slideshow."
             }
         },
         {
@@ -4572,20 +4370,11 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "66:48",
             "end_time": "66:58",
-            "annotations": [
-                {
-                    "express enthusiasm": "Nicolas expresses enthusiasm for being told where to put the key points in the slideshow."
-                },
-                {
-                    "acknowledge contribution": "Nicolas acknowledges Anat's contribution of telling him where to put the key points in the slideshow."
-                },
-                {
-                    "assign task": "Nicolas is assigned the task of writing the key points in the slideshow, and he says he will start doing this now."
-                },
-                {
-                    "ask clarifying question": "Nicolas asks how much time he has to complete the task of writing the key points in the slideshow."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks for clarification on how much time he has to complete the task.",
+                "acknowledge contribution": "The speaker acknowledges the task and thanks for the opportunity.",
+                "process management": "The speaker is clarifying the details of the task assigned to him."
+            }
         },
         {
             "speaker": "Anat Shahar",
@@ -4604,7 +4393,7 @@
             "start_time": "66:58",
             "end_time": "66:58",
             "annotations": {
-                "assign task": "Anat is assigning Nick the task of summarizing the key points from the discussion and inputting them into the slideshow, and she is telling him that he has six minutes to do it."
+                "process management": "The speaker is reminding the group about the time remaining, which is six minutes, indicating a need to manage the meeting flow."
             }
         },
         {
@@ -4623,12 +4412,9 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "66:58",
             "end_time": "67:05",
-            "annotations": [
-                {
-                    "express frustration": "Nicolas expresses frustration with the limited time to summarize the discussion, using an expletive.",
-                    "express humor": "Nicolas jokingly asks the others to not say anything interesting to avoid being distracted while he summarizes the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by requesting the group to continue discussing but in a way that doesn't distract him from his task."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -4647,7 +4433,7 @@
             "start_time": "67:09",
             "end_time": "67:16",
             "annotations": {
-                "provide supporting evidence": "Simon is providing evidence from an article about aeroplankton to support the idea that life can exist in clouds, which was being discussed in the context of Venus and giant planets."
+                "acknowledge contribution": "The speaker shares information from an article, thereby recognizing and adding to the discussion on the topic of Aeroplankton and the dispersal of organisms."
             }
         },
         {
@@ -4667,9 +4453,8 @@
             "start_time": "67:16",
             "end_time": "67:17",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Nicolas Cowan acknowledges Simon Darroch's contribution about spiders being captured 5 kilometers up, showing he heard and registered the information."
-                }
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "supportive response": "The speaker expresses agreement or validation for other group members' contributions without adding new content."
             }
         },
         {
@@ -4689,7 +4474,7 @@
             "start_time": "67:20",
             "end_time": "67:32",
             "annotations": {
-                "provide supporting evidence": "Simon is providing examples of organisms found at high altitudes, supporting the idea that life can exist in clouds, which was discussed in the previous utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4709,7 +4494,7 @@
             "start_time": "67:32",
             "end_time": "67:34",
             "annotations": {
-                "provide supporting evidence": "Simon is providing additional information about the aeroplankton article, specifically noting that mortality is high, which supports the discussion about life in clouds."
+                "critical response": "The speaker points out a potential issue with the idea, which is the high mortality rate."
             }
         },
         {
@@ -4728,11 +4513,10 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "67:37",
             "end_time": "67:47",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nikole is asking about the reasons for high mortality of organisms found at high altitudes, specifically if it's due to rarefied air, rapid falling, or different atmospheric conditions, following Simon's mention of high mortality among aeroplankton."
-                }
-            ]
+            "annotations": {
+                "code name": "propose new idea",
+                "explanation": "The speaker introduces a new idea by suggesting the consideration of different types of atmospheres that might be more 'cushiony' for organisms."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -4750,14 +4534,10 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "67:48",
             "end_time": "68:12",
-            "annotations": [
-                {
-                    "expand on existing idea": "Simon is expanding on the previous discussion about organisms found at high altitudes, specifically addressing why mortality is high, building on Nikole's question about the reasons for high mortality."
-                },
-                {
-                    "provide supporting evidence": "Simon provides reasoning based on the feeding habits of arthropods versus prokaryotes to support his claim about why organisms at high altitudes have high mortality."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea that the inability to feed at high altitudes is a significant challenge for certain types of organisms, comparing prokaryotes and arthropods.",
+                "supportive response": "The speaker's comment can be seen as supportive in the sense that they are engaging with the topic and providing their thoughts."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -4776,7 +4556,7 @@
             "start_time": "68:13",
             "end_time": "68:23",
             "annotations": {
-                "provide supporting evidence": "Daniel refers to a reading material to support the idea that microorganisms or single cells travel through the air, which is relevant to the ongoing discussion about life in clouds and the potential for airborne life."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4796,7 +4576,7 @@
             "start_time": "68:30",
             "end_time": "68:41",
             "annotations": {
-                "express humor": "Anat makes a humorous remark about the convenience of observing life if it were all concentrated in clouds, following a discussion about the possibility of life existing in clouds and the challenges of detecting it."
+                "supportive response": "The speaker expresses a supportive view towards making observations simpler if life were in clouds, providing a positive perspective on a specific scenario."
             }
         },
         {
@@ -4816,7 +4596,7 @@
             "start_time": "68:41",
             "end_time": "68:43",
             "annotations": {
-                "expand on existing idea": "Kimberly is expanding on the discussion about the habitability of clouds and brown dwarfs by suggesting that heat signatures could be detectable, building on the previous discussion about life in clouds and brown dwarfs."
+                "propose new idea": "The speaker introduces the idea of considering heat signatures as potentially detectable, which could be a new aspect to explore in their research discussion."
             }
         },
         {
@@ -4835,11 +4615,9 @@
             "screenshare_content": "The speaker continued scrolling through the document on the shared screen. He discussed gradients, time scales, length scales, and the need for energy gradients for life to start.",
             "start_time": "68:43",
             "end_time": "68:44",
-            "annotations": [
-                {
-                    "express apology": "Trinity says 'Oh, sorry', which indicates she is apologizing for possibly interrupting or speaking out of turn."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -4858,7 +4636,7 @@
             "start_time": "68:44",
             "end_time": "68:44",
             "annotations": {
-                "encourage particpatioin": "Simon encourages Trinity to speak, as Trinity and Kimberly both started to speak at the same time."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4878,7 +4656,7 @@
             "start_time": "68:44",
             "end_time": "68:47",
             "annotations": {
-                "ask clarifying question": "Trinity asks if heat signatures would be detectable, following a discussion about life in clouds and the possibility of detecting life on exoplanets, seeking clarification on the detectability of heat signatures as a potential biosignature."
+                "ask question": "The speaker is requesting information about whether heat signatures would be detectable."
             }
         },
         {
@@ -4898,7 +4676,7 @@
             "start_time": "68:47",
             "end_time": "68:48",
             "annotations": {
-                "express agreement": "Anat is agreeing with a previous statement, likely in response to a question or suggestion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4918,7 +4696,7 @@
             "start_time": "70:47",
             "end_time": "70:57",
             "annotations": {
-                "expand on existing idea": "Nikole is expanding on the discussion about detecting life in clouds, suggesting that the average particle sizes could have a spectroscopic component detectable at infrared wavelengths, building on the idea of heat signatures being detectable."
+                "develop idea": "The speaker is expanding on an existing idea by discussing the potential for a spectroscopic component at infrared wavelengths."
             }
         },
         {
@@ -4937,14 +4715,10 @@
             "screenshare_content": "None",
             "start_time": "70:57",
             "end_time": "71:29",
-            "annotations": [
-                {
-                    "expand on existing idea": "Morgan is expanding on the idea of particle size in clouds, which was brought up by Nikole, by considering a temporal aspect related to growth and cycles."
-                },
-                {
-                    "present new idea": "Morgan introduces the idea of looking for temporal aspects in particle size, such as growth cycles related to a biosphere responding to a limiting nutrient in the cloud."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "introducing a new idea about using temporal changes in particle size to detect biological activity",
+                "ask question": "inquiring about distinguishing biological growth from crystal growth and its implications"
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -4963,7 +4737,7 @@
             "start_time": "71:29",
             "end_time": "71:32",
             "annotations": {
-                "express agreement": "Kimberly agrees with Morgan's idea of a bloom in the clouds, expressing agreement with the previously mentioned concept."
+                "supportive response": "The speaker is expressing agreement with a previous idea, showing validation and positivity towards the concept of a bloom."
             }
         },
         {
@@ -4982,11 +4756,9 @@
             "screenshare_content": "None",
             "start_time": "71:35",
             "end_time": "71:40",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nikole is asking if the previous discussion about particle size and temporal aspects in clouds implies a sky-based algae bloom, seeking confirmation on the idea."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting clarification or confirmation about the idea of a 'sky-based algae bloom', indicating they are seeking more information or understanding about this concept."
+            }
         },
         {
             "speaker": "Laura Schaefer",
@@ -5005,7 +4777,7 @@
             "start_time": "71:43",
             "end_time": "71:45",
             "annotations": {
-                "express enthusiasm": "Laura expresses enthusiasm about the idea of a sky-based algae bloom that Nikole and Kimberly were discussing."
+                "supportive response": "The speaker is expressing a positive evaluation or agreement with a previous statement."
             }
         },
         {
@@ -5024,11 +4796,10 @@
             "screenshare_content": "None",
             "start_time": "71:47",
             "end_time": "71:50",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kimberly is encouraging someone else to speak, as indicated by \"go ahead\", after a pause."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or a positive sentiment towards the continuation of the conversation.",
+                "encourage participation": "The speaker is inviting others to contribute or proceed with their thoughts."
+            }
         },
         {
             "speaker": "Kimberly Lau",
@@ -5046,11 +4817,10 @@
             "screenshare_content": "None",
             "start_time": "71:51",
             "end_time": "72:03",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kimberly is expanding on the idea of a bloom, which was previously mentioned in the context of cloud-based life, by considering the implications of the death and decomposition of organisms after the bloom."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new perspective on the implications of blooms and the death of organisms.",
+                "develop idea": "The speaker builds upon the existing discussion about blooms by exploring the consequences of organism death on measurements."
+            }
         },
         {
             "speaker": "Simon Darroch",
@@ -5068,11 +4838,9 @@
             "screenshare_content": "None",
             "start_time": "71:57",
             "end_time": "72:00",
-            "annotations": [
-                {
-                    "express agreement": "Simon agrees with the previous statement about the implications of a bloom."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Jennifer Glass",
@@ -5090,11 +4858,10 @@
             "screenshare_content": "None",
             "start_time": "72:03",
             "end_time": "72:20",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Jennifer provides supporting evidence by mentioning how dust from the Sahara causes phytoplankton blooms, suggesting a mechanism by which dust in the atmosphere could stimulate biological activity."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on the idea that dust can stimulate biological processes, suggesting it could do so in the atmosphere before landing.",
+                "supportive response": "The speaker expresses agreement or validation with the potential for dust to have significant biological effects, using an example from Earth."
+            }
         },
         {
             "speaker": "Nikole Lewis",
@@ -5112,14 +4879,10 @@
             "screenshare_content": "None",
             "start_time": "72:20",
             "end_time": "72:34",
-            "annotations": [
-                {
-                    "present new idea": "Nikole proposes a novel idea of using lab-produced hazes from exoplanet regimes to feed to organisms and observe their reaction, which has not been previously discussed."
-                },
-                {
-                    "encourage particpatioin": "Nikole encourages participation by inviting others to express their interest in the proposed experiment."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new experimental approach to study the effects of hazes produced in lab settings that mimic exoplanet conditions on critters.",
+                "encourage participation": "The speaker invites others to participate by expressing interest in feeding hazes to critters to observe their response."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -5138,9 +4901,8 @@
             "start_time": "72:34",
             "end_time": "73:07",
             "annotations": {
-                "present new idea": "Daniel introduces the idea of organisms adapting to living in hazy atmospheres and how that adaptation might be represented in their properties, which is a novel concept not previously discussed.",
-                "expand on existing idea": "Daniel expands on the idea of organisms living in clouds, suggesting that organisms that can float on top of hazy atmospheres to lower optical depth might photosynthesize better, building upon the previous discussion about life in clouds.",
-                "propose decision": "Daniel proposes that organisms that can float on top to lower optical depth, they can photosynthesize better, suggesting a concrete choice for the group to consider the role of photosynthesis in hazy atmospheres."
+                "propose new idea": "The speaker introduces new ideas about how organisms might adapt to living in higher atmospheric layers and speculates about the conditions that might favor such adaptations.",
+                "ask question": "The speaker explicitly asks questions about the properties of organisms that might adapt to higher layers and about the potential for photosynthesis in hazy conditions."
             }
         },
         {
@@ -5160,7 +4922,7 @@
             "start_time": "73:06",
             "end_time": "73:07",
             "annotations": {
-                "assign task": "Daniel is trying to wrap up the discussion and is likely prompting Nicolas to finish his note-taking, which is a task assigned to him earlier."
+                "process management": "Daniel Apai is informing the group about the remaining time (40 seconds), which is an act of managing the meeting flow and time."
             }
         },
         {
@@ -5180,7 +4942,8 @@
             "start_time": "73:07",
             "end_time": "73:10",
             "annotations": {
-                "ask clarifying question": "Anat is checking in with Nick, who is taking notes, to see if he needs any further assistance or information, following up on his task."
+                "supportive response": "Anat Shahar is expressing concern and offering help to Nicolas Cowan.",
+                "encourage participation": "Anat Shahar is inviting Nicolas Cowan to contribute or participate by asking if he needs anything."
             }
         },
         {
@@ -5200,7 +4963,7 @@
             "start_time": "73:10",
             "end_time": "73:17",
             "annotations": {
-                "express frustration": "Nicolas expresses frustration with the time constraint and his ability to capture all the key points as the note taker, as the group is running out of time."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -5220,7 +4983,8 @@
             "start_time": "73:17",
             "end_time": "73:24",
             "annotations": {
-                "express appreciation": "Anat thanks everyone for the conversation, expressing her appreciation for their participation and finding the discussion interesting and fun, showing gratitude for the collaborative effort."
+                "acknowledge contribution": "The speaker verbally recognizes the input and participation of others in the conversation.",
+                "supportive response": "The speaker is expressing agreement, validation, and a positive evaluation for the conversation."
             }
         },
         {
@@ -5240,7 +5004,7 @@
             "start_time": "73:26",
             "end_time": "73:27",
             "annotations": {
-                "acknowledge contribution": "Kimberly thanks Anat and Daniel for leading the session, acknowledging their contribution to the discussion."
+                "acknowledge contribution": "The speaker is acknowledging and expressing gratitude for the leader's role in facilitating the discussion."
             }
         },
         {
@@ -5260,7 +5024,7 @@
             "start_time": "73:31",
             "end_time": "73:34",
             "annotations": {
-                "acknowledge contribution": "Kimberly acknowledges Nick's effort in taking notes during the session, showing appreciation for his work."
+                "acknowledge contribution": "The speaker verbally recognizes Nick's input for scribing, showing appreciation for his role in the discussion."
             }
         },
         {
@@ -5280,7 +5044,7 @@
             "start_time": "73:34",
             "end_time": "73:36",
             "annotations": {
-                "acknowledge contribution": "Anat acknowledges Nick's contribution as the note taker for the session, showing appreciation for his effort."
+                "acknowledge contribution": "The speaker acknowledges and thanks Nick for his contribution to the meeting."
             }
         },
         {
@@ -5299,11 +5063,9 @@
             "screenshare_content": "None",
             "start_time": "73:40",
             "end_time": "73:44",
-            "annotations": [
-                {
-                    "express humor": "The speaker is making a lighthearted comment about saving a link to a Care Bear image, which is humorous in the context of a scientific discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Anat Shahar is taking an action to manage the meeting flow by ensuring information is saved before the meeting ends."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -5322,7 +5084,7 @@
             "start_time": "73:46",
             "end_time": "73:48",
             "annotations": {
-                "express humor": "Nicolas makes a joke about including a Care Bear image in the PowerPoint, following a discussion about clouds and life, which expresses humor."
+                "None": "No relevant code applies to this utterance"
             }
         }
     ]

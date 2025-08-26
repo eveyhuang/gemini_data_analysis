@@ -1,14 +1,14 @@
 {
     "all_speakers": [
-        "Chuck Lewis",
-        "Hongfu Liu",
-        "Maria Fernandez",
         "Matt Erdman",
-        "Matthew Hopken",
-        "Nicole Eikmeier",
-        "Joyce Jose",
+        "Hongfu Liu",
         "Troy Clavell Sutton",
-        "Ana Bento"
+        "Chuck Lewis",
+        "Pilar Fernandez",
+        "Joyce Jose",
+        "Nicole Eikmeier",
+        "Ana Bento",
+        "Matthew Hopken"
     ],
     "total_speaking_length": 2945,
     "all_data": [
@@ -28,14 +28,10 @@
             "screenshare_content": "None",
             "start_time": "00:00",
             "end_time": "00:48",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea that understanding the pathogen or infectious agent should precede discussions about the transmission chain, which is a novel perspective in the context of the discussion."
-                },
-                {
-                    "expand on existing idea": "The speaker builds on the initial point by adding that understanding susceptibility is also crucial, as it affects the reservoir, vector, and host, expanding on the factors to consider in transmission dynamics."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on Pilar's statement by emphasizing the need to understand the pathogen or infectious agent and susceptibility before discussing transmission chains.",
+                "signal expertise": "The speaker explicitly states her background as a modeler, signaling her expertise in the area."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -54,7 +50,7 @@
             "start_time": "00:48",
             "end_time": "00:51",
             "annotations": {
-                "ask clarifying question": "Matt is asking Ana to confirm if she is referring to 'host susceptibility' to ensure he understands her point about the infectious agent and susceptibility in relation to transmission chains."
+                "ask question": "This code applies because Matt Erdman is seeking clarification on Ana Bento's statement regarding host susceptibility."
             }
         },
         {
@@ -74,12 +70,12 @@
             "start_time": "00:51",
             "end_time": "01:12",
             "annotations": {
-                "explain or define term or concept": "The speaker defines susceptibility as a necessary condition for a transmission chain to occur, clarifying its role in the context of the discussion.",
-                "expand on existing idea": "The speaker builds on the previous discussion about host susceptibility by adding vector susceptibility and explaining how it relates to the mode of transmission."
+                "develop idea": "The speaker is expanding on the concept of susceptibility in the context of a transmission chain, which was previously mentioned.",
+                "acknowledge contribution": "The speaker references Pilar's previous statement, acknowledging their contribution."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "01:12-01:55",
             "transcript": "Yeah, and then it I guess going back on that, then you're going to have dead ends. Um and there you're going to have some uh hosts that are not going to contribute to onward transmission. So the pathogen kind of like dies there under certain conditions whether it's because that um because of a behavior that um host cannot pass it on to another host or because let's say if it's a human, they go to the hospital and they cannot pass it on. So it's like what's the contribution to onward transmission and to maintaining that transmission chain. Um we can also think about that.",
             "speaking_duration": 43,
@@ -94,14 +90,11 @@
             "screenshare_content": "None",
             "start_time": "01:12",
             "end_time": "01:55",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar expands on the idea of transmission chains and susceptibility, building on Ana's previous points about the importance of considering the pathogen and host susceptibility by introducing the concept of 'dead ends' in transmission."
-                },
-                {
-                    "explain or define term or concept": "Pilar explains the concept of 'dead ends' in transmission chains, clarifying that some hosts do not contribute to onward transmission due to various factors like behavior or medical intervention."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on a previously discussed idea, providing more details and examples about how certain conditions affect the transmission chain.",
+                "offer feedback": "The speaker provides a perspective on how to consider certain aspects of the transmission chain, which can be seen as a form of feedback.",
+                "encourage participation": "The speaker suggests considering an aspect further, which could be seen as encouraging discussion."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -120,11 +113,11 @@
             "start_time": "01:56",
             "end_time": "02:01",
             "annotations": {
-                "explain or define term or concept": "Joyce is explaining the term 'dead end host' that Pilar mentioned in the previous turn."
+                "acknowledge contribution": "This code applies because Joyce is acknowledging and potentially suggesting a term ('dead end host') previously discussed in the conversation."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "02:01-02:25",
             "transcript": "It doesn't contribute to onward transmission. Uh and and and that's very like we can think about that also in a gradient. It can be uh it stops there. There's no onward transmission or they could be I don't know, let's say it's less infectious. So the probability of passing it to another host is it's diminished.",
             "speaking_duration": 24,
@@ -139,14 +132,10 @@
             "screenshare_content": "None",
             "start_time": "02:01",
             "end_time": "02:25",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Pilar is explaining the concept of a 'dead end host' by describing how it doesn't contribute to onward transmission of a pathogen, building on Joyce's prior utterance that suggested a term for it."
-                },
-                {
-                    "expand on existing idea": "Pilar expands on the idea of dead-end hosts by adding that the contribution to onward transmission can be viewed as a gradient, where some hosts might be less infectious rather than completely stopping transmission, building on her previous utterance about dead ends."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by providing more details and nuances about how hosts may or may not contribute to onward transmission.",
+                "offer feedback": "Pilar provides an explanation that modifies the understanding of the concept of 'dead end hosts' by suggesting a gradient of impact."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -165,7 +154,7 @@
             "start_time": "02:25",
             "end_time": "02:26",
             "annotations": {
-                "express agreement": "Joyce agrees with Pilar's explanation of dead-end hosts and their contribution to onward transmission in the previous utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -185,7 +174,7 @@
             "start_time": "02:26",
             "end_time": "02:28",
             "annotations": {
-                "provide supporting evidence": "Matt Hopken is about to provide an example, which will serve as supporting evidence for the discussion about transmission chains and host susceptibility."
+                "None": "No relevant code applies to this utterance as it is incomplete and does not explicitly express any of the defined codes."
             }
         },
         {
@@ -205,8 +194,8 @@
             "start_time": "02:28",
             "end_time": "02:44",
             "annotations": {
-                "provide supporting evidence": "The speaker provides an example of rabies in horses to support the idea of a dead-end host, which was previously discussed by Pilar and Joyce.",
-                "explain or define term or concept": "The speaker explains the concept of a dead-end host by providing an example of how a horse infected with rabies does not transmit the virus, leading to the virus population going extinct in that host."
+                "develop idea": "The speaker is expanding on the idea of dead-end hosts and their role in transmission chains by providing a concrete example from their work with rabies.",
+                "signal expertise": "The speaker mentions their current work with rabies, which can be seen as signaling their expertise or experience in the area."
             }
         },
         {
@@ -225,11 +214,10 @@
             "screenshare_content": "None",
             "start_time": "02:44",
             "end_time": "03:06",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker uses the word 'cool' to express excitement about the concept of spillovers and dead-end hosts in the context of disease transmission, building on the previous discussion about transmission chains and host susceptibility."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker uses phrases like 'perversely cool' and 'super cool. Um in a weird way' to express humor.",
+                "supportive response": "The speaker is expressing a positive evaluation of the concept discussed, indicating agreement and interest."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -248,8 +236,8 @@
             "start_time": "03:09",
             "end_time": "03:35",
             "annotations": {
-                "expand on existing idea": "Matt is adding another component to the transmission chain, building on the previous discussion of host and vector susceptibility.",
-                "provide supporting evidence": "Matt supports his idea by explaining that the overlapping of pathogen, vector, and host in space and time is necessary for the transmission chain to take off."
+                "develop idea": "The speaker expands on existing ideas by elaborating on factors that contribute to a transmission chain, specifically by introducing 'opportunity' as a component and explaining its significance.",
+                "propose new idea": "The speaker introduces a new aspect to consider in the discussion about transmission chains, which is 'opportunity' and its relation to the overlapping of the pathogen, vector, and host in space and time."
             }
         },
         {
@@ -269,7 +257,8 @@
             "start_time": "03:36",
             "end_time": "03:46",
             "annotations": {
-                "propose decision": "Matt proposes that the group focuses on the overlap of hosts and vectors, which he refers to as a \"little sector\" that Matt Hopken carved out in the previous turn."
+                "process management": "The speaker is attempting to manage the direction of the discussion by suggesting a focus on a specific aspect.",
+                "develop idea": "The speaker is building upon or showing interest in a specific part of a previously discussed idea by referencing the overlap of hosts and vectors."
             }
         },
         {
@@ -289,13 +278,13 @@
             "start_time": "03:46",
             "end_time": "04:26",
             "annotations": {
-                "expand on existing idea": "The speaker expands on Matt Hopken's idea about the importance of the overlap of pathogen, vector, and host in space and time for transmission, by stating that behavior allows for that opportunity.",
-                "provide supporting evidence": "The speaker provides supporting evidence by mentioning that behavior's role in transmission has been observed in COVID, influenza, and other diseases.",
-                "present new idea": "The speaker presents the idea that individual behavior is one of the most challenging but obvious places to enact mitigation or control strategies."
+                "develop idea": "The speaker expands on the idea of opportunity in transmission chains by focusing on behavior, providing examples from COVID and influenza.",
+                "acknowledge contribution": "The speaker acknowledges Matt's contribution by referencing his description.",
+                "supportive response": "The speaker supports the direction of the conversation by building upon and positively engaging with previous ideas."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "04:26-05:10",
             "transcript": "Yeah, and and just to add the spatial component to that, one of the things that I'm I'm really interested in um is that we know that for example in rural areas, maybe those opportunities for overlap or those spillover events to occur may happen with a higher probability, but the actual probability of an outbreak uh might not be there just because there's not enough people around or the other conditions or beyond being detected or not detected, I'm not even like without taking into consideration access to healthcare and having actually detected, but just because of a human density, uh it might not you might not actually get an outbreak.",
             "speaking_duration": 44,
@@ -310,14 +299,10 @@
             "screenshare_content": "None",
             "start_time": "04:26",
             "end_time": "05:10",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar is adding the spatial component to the discussion about transmission chains, building on Matt's point about the overlap of pathogen, vector, and host in space and time."
-                },
-                {
-                    "provide supporting evidence": "Pilar provides supporting evidence by stating that in rural areas, spillover events may occur with higher probability, but the probability of an outbreak might not be there due to lower human density."
-                }
-            ]
+            "annotations": {
+                "Develop Idea": "The speaker is expanding on previous ideas by adding the spatial component, discussing how rural areas and human density affect the transmission chain.",
+                "Propose New Idea": "The speaker introduces the spatial component, specifically highlighting rural areas and human density as factors influencing the probability of an outbreak, as a new aspect to consider in the discussion."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -336,8 +321,8 @@
             "start_time": "05:10",
             "end_time": "05:15",
             "annotations": {
-                "present new idea": "The utterance introduces the idea of an 'intervention point' related to the discussion of transmission chains, which is a novel concept not explicitly mentioned before.",
-                "ask clarifying question": "The utterance ends with 'right?', seeking confirmation or agreement on whether the point being made is valid or understood."
+                "Supportive response": "The speaker is expressing agreement with Pilar's implication that the spatial component and its effects on outbreak probability could be an intervention point.",
+                "Ask question": "The speaker is seeking confirmation or agreement with their interpretation, as indicated by 'right?'."
             }
         },
         {
@@ -356,14 +341,10 @@
             "screenshare_content": "None",
             "start_time": "05:15",
             "end_time": "05:33",
-            "annotations": [
-                {
-                    "expand on existing idea": "The utterance builds upon the previous discussion about transmission chains and spillover events, adding the idea of targeted sampling based on migration patterns to improve detection, which is an expansion of the idea of sampling animals in the environment."
-                },
-                {
-                    "propose decision": "The utterance suggests a concrete choice for the group, which is to sample where the migration is, where people are moving from rural environments into urban environments."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new approach for sampling, focusing on areas of dead migration.",
+                "develop idea": "The speaker expands on previous discussions about sampling challenges and transmission by suggesting a targeted sampling approach."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -382,7 +363,7 @@
             "start_time": "05:33",
             "end_time": "05:36",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about sampling strategies related to migration patterns from rural to urban environments, adding that some people engage in this migration regularly."
+                "develop idea": "The speaker is adding a point to the discussion about intervention points and sampling strategies, building on the previous idea about migration from rural to urban environments."
             }
         },
         {
@@ -402,9 +383,9 @@
             "start_time": "05:36",
             "end_time": "06:06",
             "annotations": {
-                "provide supporting evidence": "The speaker provides the example of farm exhibitions in the US where swine flu is detected to support the idea of targeting intervention strategies.",
-                "propose decision": "The speaker suggests targeting intervention strategies at points like farm exhibitions, which is a concrete choice for the group.",
-                "expand on existing idea": "The speaker expands on the previous discussion about intervention points by suggesting a specific location to target, building on the idea of sampling where migration occurs."
+                "develop idea": "The speaker expands on the idea of identifying strategic points for intervention by mentioning farm exhibitions as places where disease transmission can be monitored and potentially controlled.",
+                "offer feedback": "The speaker provides a suggestion for where to target intervention strategies (farm exhibitions), which can be seen as offering feedback on how to proceed with controlling disease transmission.",
+                "identify gap": "The speaker acknowledges a limitation in detecting disease transmission in animals (\"you just can't detect everything going on in animals\")"
             }
         },
         {
@@ -423,14 +404,9 @@
             "screenshare_content": "None",
             "start_time": "06:06",
             "end_time": "06:33",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker expands on the discussion of behavior in transmission chains by adding that pathogen behavior and mode of transmission should also be considered, building on Ana and Matt's discussion of behavior and transmission."
-                },
-                {
-                    "provide supporting evidence": "The speaker supports the idea that pathogen behavior is important by referencing the previous example of rabies in horses as a dead end, explaining that the mode of transmission is key."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by explaining how pathogen behavior and mode of transmission connect with behavior in the context of disease transmission, using the example of rabies in horses."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -448,17 +424,11 @@
             "screenshare_content": "None",
             "start_time": "06:56",
             "end_time": "08:01",
-            "annotations": [
-                {
-                    "encourage participation": "Ana explicitly invites Nicole to contribute to the discussion, referencing Nicole's work on networks."
-                },
-                {
-                    "expand on existing idea": "Ana builds upon the previous discussion about transmission chains and susceptibility by suggesting that network science can help understand why some populations are more susceptible to epidemics, expanding on the idea of population susceptibility."
-                },
-                {
-                    "express enthusiasm": "Ana expresses excitement about the potential of network science in modeling and understanding epidemic dynamics, showing enthusiasm for the field's application to the current discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas discussed by highlighting the importance of network science in understanding epidemic spread.",
+                "encourage participation": "The speaker explicitly encourages Nicole to contribute her expertise on networks.",
+                "express humor": "The speaker makes a lighthearted comment about putting Nicole on the spot and apologizes in advance, indicating humor."
+            }
         },
         {
             "speaker": "Nicole Eikmeier",
@@ -477,12 +447,7 @@
             "start_time": "08:01",
             "end_time": "09:57",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Nicole acknowledges Ana's contribution by thanking her for calling her out and stating that it is helpful, showing she recognizes Ana's effort to include her in the discussion."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Nicole expands on the discussion about opportunities for disease emergence by adding the factor of human interference with the environment, such as deforestation and forced migration, building upon the previous points about rural areas and medical access."
-                }
+                "ask question": "She ends with 'So I guess I'm I'm curious um', indicating she's seeking more information or clarification."
             }
         },
         {
@@ -501,11 +466,11 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:15",
-            "annotations": [
-                {
-                    "present new idea": "Nicole is presenting a new idea about interventions on a larger scale of human behavior, beyond everyday life, which hasn't been explicitly discussed before."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is inquiring about the potential scale of interventions.",
+                "develop idea": "The speaker is expanding on the idea of interventions, specifically mentioning the scale at which they could be effective.",
+                "offer feedback": "The speaker provides a suggestion for considering interventions on a larger scale."
+            }
         },
         {
             "speaker": "Chuck Lewis",
@@ -523,16 +488,13 @@
             "screenshare_content": "None",
             "start_time": "10:17",
             "end_time": "11:02",
-            "annotations": [
-                {
-                    "present new idea": "Chuck introduces the idea of incorporating medical anthropologists into the discussion, which hasn't been mentioned before in the conversation.",
-                    "provide supporting evidence": "He supports the idea by mentioning that it has become critical in Ebola outbreak responses, providing a real-world example.",
-                    "expand on existing idea": "He expands on the idea of behavior by highlighting the importance of understanding individual behavior of specific populations and determining interventions, building on Ana's earlier point about behavior being a vehicle for epidemic control."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker highlights the importance and critical role of medical anthropologists in understanding human behavior and outbreak responses.",
+                "develop idea": "The speaker expands on the idea that understanding human behavior, specific population behaviors, and rural culture is essential for effective outbreak response and intervention."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "01:03-03:40",
             "transcript": "Yeah, and and on that I can tell you a story. I my work is very interdisciplinary because I'm trying to combine the the social dimension um and trying to understand that. So I've worked with economists, I've worked with um sociologist and most of my work on doing my PhD was in rural communities. And one of the things that we were not really paying attention to was the human movement or that it was a very cultural aspect. Uh so there was indigenous communities in the Gran Chaco region, which is really interesting if we talk about anthropogenic change because that's at the expansion of the agricultural frontier. So there's a lot of deforestation, human displacement happening. But one of the things that caught us our attention, we were like doing yearly uh entomological surveys to collect triatomines. And from one year to the next, people will move. Like they literally destroy their house, they're mud houses and build them somewhere else. We're like, we could not not find the house to do like a longitudinal surveillance. And and then we understood that it was just a cultural thing. It was also enhanced by the socio economic conditions. Um but it they were semi nomadic communities. So you cannot and that had a huge impact on the population of the vector because you didn't give enough time for the vector to um create high densities. But on the other side, you create really um the house are very precarious, so more opportunities for any bug outside bug to invade and have an infestation in that house. So it had a really interesting tradeoff just on without even thinking about how people get exposed to it, just on the vector population. And we were not really thinking about that because culturally to us it's like, well, you've been in this house, you're at least going to be there for a couple years. Uh but they would move frequently. And so we started working with sociologists trying to understand why because if we want to do an intervention and design an intervention strategy to spray the houses, we need to take into account that movement because it's not the same if you're spraying a house and it's going to last for the effect is going to last for this long, whether it's like, no, it's not going to last because in three months they're going to be somewhere else. Um so yeah, I do think that's a really key part of it and that's kind of what it actually drove my interest in trying to incorporate the human, the cultural and behavioral aspects.",
             "speaking_duration": 157,
@@ -547,11 +509,11 @@
             "screenshare_content": "None",
             "start_time": "11:03",
             "end_time": "13:40",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Pilar provides a detailed story about her interdisciplinary work in rural communities, specifically focusing on indigenous communities in the Gran Chaco region and their semi-nomadic lifestyle, to support the idea that cultural and behavioral aspects are crucial for understanding disease transmission and designing effective intervention strategies, building on the previous discussion about the importance of human behavior and cultural factors in outbreak response."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Pilar Fernandez is expanding on existing ideas by providing a specific example from her work on human movement and its impact on vector populations.",
+                "identify gap": "She highlights a gap in understanding the impact of human movement on vector populations and the importance of considering this in intervention strategies.",
+                "signal expertise": "By sharing detailed insights from her interdisciplinary work involving sociologists and economists, Pilar is signaling her expertise in the field."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -570,11 +532,11 @@
             "start_time": "13:41",
             "end_time": "13:45",
             "annotations": {
-                "assign task": "Joyce is asking what aspect of the discussion she should record, assigning herself the task of recording information."
+                "Ask Question": "The speaker is requesting information or clarification on what aspects of the discussion she should record."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "03:46-03:47",
             "transcript": "So I wrote like intervention depends on the movement of people.",
             "speaking_duration": 1,
@@ -590,7 +552,7 @@
             "start_time": "13:46",
             "end_time": "13:47",
             "annotations": {
-                "explain or define term or concept": "Pilar is clarifying what she wrote down, which is that intervention strategies depend on the movement of people, which is a key concept from her previous explanation of her work with rural communities and their semi-nomadic lifestyle."
+                "summarize conversation": "Pilar Fernandez is summarizing a key point from the conversation that intervention depends on the movement of people."
             }
         },
         {
@@ -609,11 +571,10 @@
             "screenshare_content": "None",
             "start_time": "13:49",
             "end_time": "14:17",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar mentioned the importance of cultural and behavioral aspects in intervention strategies, and Joyce expands on this by stating that interventions depend on the context and cultural aspects of the population at risk."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on previous ideas about intervention strategies, emphasizing the need for context-specific approaches.",
+                "offer feedback": "The speaker provides feedback on intervention strategies by highlighting the importance of considering cultural aspects and context."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -631,13 +592,10 @@
             "screenshare_content": "None",
             "start_time": "14:18",
             "end_time": "14:43",
-            "annotations": [
-                {
-                    "acknowledge contribution": "The phrase \"That's good\" acknowledges the previous contributions to the discussion.",
-                    "propose decision": "The speaker proposes to circle back to the topic of wildlife, insects, and the environment, suggesting a shift in focus for the discussion.",
-                    "ask clarifying question": "The speaker asks about potential interventions or strategies further down the transmission chain, seeking input from the group."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker summarizes previous discussion on the end of the transmission chain and shifts focus.",
+                "ask question": "The speaker asks for potential interventions or strategies related to wildlife, insects, and the environment."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -656,7 +614,7 @@
             "start_time": "14:45",
             "end_time": "14:47",
             "annotations": {
-                "ask clarifying question": "Ana asks for clarification on Matt's question about potential interventions further down the transmission chain, specifically asking if he means interventions at the interface between wildlife, insects, the environment, and humans."
+                "ask question": "Ana Bento is asking for clarification on what Matt Erdman meant by his previous statement, specifically if he is referring to the interface between different components of the transmission chain."
             }
         },
         {
@@ -675,11 +633,10 @@
             "screenshare_content": "None",
             "start_time": "14:49",
             "end_time": "15:06",
-            "annotations": [
-                {
-                    "ask clarifying question": "Matt is asking for potential interventions or strategies further down the transmission chain, specifically concerning animals, pathogen habitats, or events prior to transmission, seeking to broaden the scope of discussion beyond the final transmission to people, which is a request for explanation."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting confirmation or clarification on their suggestion.",
+                "develop idea": "The speaker is expanding on previous ideas by suggesting a broader perspective on intervention strategies."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -697,14 +654,10 @@
             "screenshare_content": "None",
             "start_time": "15:18",
             "end_time": "16:13",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea that conservation is key to preventing future pandemics, which is a novel concept in the immediate discussion, though related to prior discussion of spillover events.",
-                    "provide supporting evidence": "The speaker supports the idea of conservation by mentioning land use changes, deforestation, and encroachment of humans in wildlife areas as reasons why these events are happening, referencing Christine's presentation earlier that day.",
-                    "explain or define term or concept": "The speaker explains the concept of 'one health' as a necessary approach to tackle future pandemics, linking it to conservation efforts.",
-                    "expand on existing idea": "The speaker expands on the idea of conservation by linking it to preventing events on the 'left side of the graphs' that Christine showed, referring to the origin or early stages of spillover events."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by explaining the importance of conservation and the one health concept in preventing pandemics.",
+                "clarify goal": "The utterance helps in clarifying the goal by emphasizing that conservation is key to tackling future pandemics."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -723,8 +676,9 @@
             "start_time": "16:52",
             "end_time": "17:17",
             "annotations": {
-                "provide supporting evidence": "The speaker provides supporting evidence for the importance of sequencing viruses by explaining how single amino acid changes in viruses like Chikungunya can affect transmission between mosquitoes and humans, which is relevant to the discussion about interventions further down the transmission chain.",
-                "explain or define term or concept": "The speaker explains the concept of RNA viruses and their rapid mutation rate, which is relevant to the discussion about vector-borne pathogens and their transmission."
+                "propose new idea": "The speaker introduces a new perspective on the importance of sequencing and knowing virus sequences for understanding transmissibility.",
+                "develop idea": "The speaker expands on existing knowledge about RNA viruses, their mutation rates, and the impact on transmissibility.",
+                "offer feedback": "The speaker provides specific information about virus sequences and mutation impacts, which can be used to improve understanding or approaches."
             }
         },
         {
@@ -744,10 +698,8 @@
             "start_time": "17:17",
             "end_time": "17:45",
             "annotations": {
-                "expand on existing idea": "Building on the discussion about interventions and strategies further down the transmission chain, Joyce expands on the idea of sequencing and knowing the sequences of viruses, adding details about mutations and variants.",
-                "provide supporting evidence": "Joyce provides supporting evidence by mentioning how single amino acid changes in viruses like Chikungunya can affect transmission, and how vector specificity contributes to transmission.",
-                "explain or define term or concept": "Joyce explains the concept of vector specificity and its role in viral transmission, clarifying how different vectors transmit the same type of virus.",
-                "present new idea": "Joyce presents the idea of focusing on sequencing and identifying virus variants as a potential intervention strategy, which hasn't been explicitly mentioned before."
+                "offer feedback": "The speaker provides specific suggestions for understanding viral transmission, emphasizing the importance of knowing the virus, its mutations, and variants, and how these specifics impact transmission, especially in the context of vector-borne pathogens.",
+                "develop idea": "The speaker expands on existing ideas about viral transmission by highlighting the importance of specifics about the virus and its variants."
             }
         },
         {
@@ -766,20 +718,14 @@
             "screenshare_content": "None",
             "start_time": "17:46",
             "end_time": "18:43",
-            "annotations": [
-                {
-                    "expand on existing idea": "Troy is building upon Joyce's idea of sequencing viruses by adding that translating the sequencing data into meaningful knowledge is another important step, following Joyce's point about the importance of sequencing and knowing the variations of pathogens."
-                },
-                {
-                    "provide supporting evidence": "Troy supports his point about the importance of sequencing by mentioning that we have learned from SARS that we can now sequence things really well."
-                },
-                {
-                    "offer constructive criticism": "Troy constructively critiques the current state of translating sequencing data into meaningful knowledge, stating that we have an incredibly difficult time doing so, implying a need for improvement."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on the challenge of translating sequencing data into meaningful knowledge for understanding transmission or growth in vectors.",
+                "propose new idea": "The speaker introduces the new aspect of the difficulty in translating sequencing data into actionable knowledge.",
+                "ask question": "The speaker implicitly asks how to translate sequencing data into meaningful knowledge for enhanced transmission or growth understanding."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "08:44-09:04",
             "transcript": "Yeah, and also I feel um I'm always like thinking about where do you do the sampling, right? Um so I I would argue that it's very different if you go to um a zotic transmission where where we know zotic transmission is occurring in the wild in this protected areas or in this like patches that but I the actual chances of humans going into the or getting exposed to that it's very low.",
             "speaking_duration": 20,
@@ -795,8 +741,9 @@
             "start_time": "18:44",
             "end_time": "19:04",
             "annotations": {
-                "expand on existing idea": "Pilar is expanding on the previous discussion about interventions and strategies further down the transmission chain by adding the consideration of where sampling should occur.",
-                "present new idea": "Pilar introduces the idea that the location of sampling (e.g., areas with known zoonotic transmission vs. areas with low human exposure) significantly impacts the relevance of the data collected."
+                "develop idea": "Pilar is expanding on the idea of intervention strategies by highlighting the importance of location in sampling.",
+                "identify gap": "Pilar's statement implies a gap in knowledge about where to sample effectively.",
+                "clarify goal": "Pilar's statement contributes to clarifying the goals of intervention strategies."
             }
         },
         {
@@ -815,14 +762,10 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about wildlife, insects, and the environment in the context of transmission chains, the speaker expands on this idea by describing a heterogeneous network model to measure similarity among different species in terms of different levels of SARS2 infection, adding a specific method to the discussion."
-                },
-                {
-                    "provide supporting evidence": "The speaker provides supporting evidence for the importance of cross-species transmission by describing the deep learning model they built for prediction, which is a concrete example of their work."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new approach involving building a heterogeneous network and a deep model for predicting cross-species transmission.",
+                "develop idea": "The speaker elaborates on their approach by explaining the steps taken and highlights the importance of cross-species transmission in the context of their research."
+            }
         },
         {
             "speaker": "Hongfu Liu",
@@ -840,13 +783,11 @@
             "screenshare_content": "None",
             "start_time": "20:25",
             "end_time": "21:16",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker is building on the previous point about cross-species transmission by adding that transmission and mutation should be jointly considered.",
-                    "provide supporting evidence": "The speaker provides supporting evidence by mentioning the Delta mutation of SARS-CoV-2 and its high infection rate to strengthen the idea that transmission and mutation should be jointly considered.",
-                    "explain or define term or concept": "The speaker explains their role as a computer science scientist by stating that they focus on prediction, prediction, prediction."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of considering transmission and mutation together, providing an example to support the point.",
+                "signal expertise": "The speaker mentions their background as a computer science scientist and what they do, which relates to prediction.",
+                "offer feedback": "The speaker provides an example and discusses prediction, which can be seen as offering a perspective on how to approach the issue."
+            }
         },
         {
             "speaker": "Hongfu Liu",
@@ -864,11 +805,9 @@
             "screenshare_content": "None",
             "start_time": "21:16",
             "end_time": "21:16",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express any specific idea, suggestion, or question."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Hongfu Liu",
@@ -886,11 +825,9 @@
             "screenshare_content": "None",
             "start_time": "21:16",
             "end_time": "21:21",
-            "annotations": [
-                {
-                    "None": "This utterance is empty and does not convey any meaning or action relevant to the codebook."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -908,12 +845,11 @@
             "screenshare_content": "None",
             "start_time": "21:21",
             "end_time": "22:42",
-            "annotations": [
-                {
-                    "express agreement": "The speaker acknowledges the value of the ongoing discussion, indicating agreement with the general direction.",
-                    "present new idea": "The speaker introduces the idea of an early detection system at the interface of livestock, wildlife, and humans, which is a novel concept in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the idea of needing an early detection system for pathogens in the interface area between livestock, wildlife, and humans.",
+                "develop idea": "The speaker expands on the idea by explaining the context of environmental change and the need for early detection to prevent the spread of pathogens.",
+                "identify gap": "The speaker explicitly identifies a gap in current capabilities: the lack of an early detection system for pathogens in these interface areas."
+            }
         },
         {
             "speaker": "Hongfu Liu",
@@ -932,7 +868,8 @@
             "start_time": "22:43",
             "end_time": "22:46",
             "annotations": {
-                "expand on existing idea": "The utterance builds upon the previous discussion about early detection systems and technological advancements for identifying threats in interface areas, suggesting that these efforts should be related to pre-intervention strategies."
+                "identify gap": "The speaker implies a need for something related to pre-intervention, suggesting an identification of a gap in current strategies.",
+                "None": "No other code seems to directly and explicitly apply to the utterance."
             }
         },
         {
@@ -952,7 +889,7 @@
             "start_time": "22:47",
             "end_time": "22:47",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous statement about pre-intervention strategies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -972,7 +909,9 @@
             "start_time": "22:47",
             "end_time": "22:56",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the previous discussion about early detection systems and pre-intervention strategies by listing the fields that are relevant to these systems, such as computation, virology, and ecology."
+                "develop idea": "The speaker is expanding on existing ideas by suggesting an integration of computation, virology, and ecology into detection systems.",
+                "supportive response": "The speaker's tone is supportive of an interdisciplinary approach.",
+                "offer feedback": "The speaker is providing a suggestion for how to approach the problem."
             }
         },
         {
@@ -991,12 +930,11 @@
             "screenshare_content": "None",
             "start_time": "22:57",
             "end_time": "23:14",
-            "annotations": [
-                {
-                    "express agreement": "Ana agrees with Matt Hopken's suggestion for an early detection system at the interface of livestock, wildlife, and humans, which he described as potentially futuristic or 'Star Trekky'.",
-                    "expand on existing idea": "Ana expands on Matt Hopken's idea of an early detection system by stating that the challenge lies in understanding and harnessing early warning signals and translating them at different timings."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker agrees with a previous point, showing support.",
+                "express humor": "The speaker uses 'Star Trekky' in a humorous way to express that an idea is not too futuristic.",
+                "develop idea": "The speaker expands on the idea of understanding early warning signals for disease transmission."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -1014,13 +952,10 @@
             "screenshare_content": "None",
             "start_time": "23:14",
             "end_time": "24:11",
-            "annotations": [
-                {
-                    "ask clarifying question": "The speaker is asking about the nature of early warning signals for spillover events, seeking to understand what constitutes these signals.",
-                    "expand on existing idea": "The speaker expands on the idea of early detection systems, which was introduced by Matt Hopken, by discussing different timings and computational methods for understanding early warning signals.",
-                    "explain or define term or concept": "The speaker is explaining the concept of early warning signals in the context of spillover events and how they can be harnessed and translated at different timings."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about early warning signals for spillover.",
+                "develop idea": "The speaker is expanding on the concept of early warning signals and their significance at different timings, including the role of computational methods."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -1038,17 +973,14 @@
             "screenshare_content": "None",
             "start_time": "24:11",
             "end_time": "24:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on Matt Hopken's idea of early detection systems, Ana expands on the concept of early warning signals, suggesting different signals for different timings of spillover events."
-                },
-                {
-                    "express enthusiasm": "Ana expresses excitement about being part of the group, referring to them as \"Avengers\" and highlighting the potential for collaboration."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The utterance proposes creating different types of signals or early warning ideas to enact a chain of events.",
+                "express humor": "The mention of 'a group of Avengers' is a humorous metaphor.",
+                "encourage participation": "Ana Bento expresses excitement about collaboration and implies a desire for the group to work together effectively."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "04:25-05:14",
             "transcript": "Yeah, and I also want key thing um that I think it's important is how we achieve sustainability of the surveillance system. And and in order to do that, we really need to think um about where would be the most uh places, the most efficient places where we can actually conduct surveillance, collect samples, try to understand what pathogens are circulating and what would the potential like how could they coevolve or they could have the the pathways to spill over but without just going just random and just trying to see like what it's here, try to guide more like actually um empirically informed surveillance.",
             "speaking_duration": 49,
@@ -1064,13 +996,13 @@
             "start_time": "24:25",
             "end_time": "25:14",
             "annotations": {
-                "present new idea": "Pilar introduces the idea of achieving sustainability of the surveillance system, which hasn't been explicitly discussed before.",
-                "expand on existing idea": "Pilar expands on the existing discussion about early detection and intervention strategies by suggesting a focus on efficient places for surveillance and empirically informed surveillance, building on Matt Hopken and Ana Bento's points about early detection systems and early warning signals.",
-                "propose decision": "Pilar proposes that the group needs to think about the most efficient places to conduct surveillance and collect samples, suggesting a direction for the discussion."
+                "Develop idea": "The speaker is expanding on the concept of surveillance and its sustainability, providing more details on how it could be achieved.",
+                "Offer feedback": "The speaker is providing a suggestion for improving surveillance efforts by guiding them empirically.",
+                "Clarify goal": "The speaker is emphasizing the importance of sustainability and effective surveillance."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "05:14-06:24",
             "transcript": "Maybe we don't have any pathogens, maybe it's not a a spillover and hasn't had happened here in the past or maybe I don't know. I think we can use a lot of information from just endemic diseases to try to understand how to guide those um areas where we think there might be at high risk of of those events to happen, um the spillover events and then maybe highlight areas where actually the outbreak could happen because there's a connection between those spaces um the where the um events happen and where they actually take off. Um but we really need to I think sustainability and finding cheap ways to do surveillance is key because otherwise if you think about something super complex but we can only apply to a few places, um then it's just going to defeat the purpose.",
             "speaking_duration": 70,
@@ -1085,13 +1017,11 @@
             "screenshare_content": "None",
             "start_time": "25:14",
             "end_time": "26:24",
-            "annotations": [
-                {
-                    "present new idea": "Pilar suggests using information from endemic diseases to guide surveillance efforts, which is a novel approach to identifying high-risk areas for spillover events.",
-                    "propose decision": "Pilar proposes that sustainability and finding cheap ways to do surveillance is key, suggesting a concrete choice for the group to focus on.",
-                    "provide supporting evidence": "Pilar argues that complex surveillance methods applicable only to a few places would defeat the purpose, supporting the need for sustainable and cheap surveillance methods."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests using information from endemic diseases to guide high-risk areas for spillover events.",
+                "develop idea": "The speaker elaborates on the proposed idea, discussing its implications and the importance of sustainability and cost-effectiveness in surveillance.",
+                "identify gap": "The speaker highlights the need for sustainable and cost-effective surveillance methods."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -1109,11 +1039,9 @@
             "screenshare_content": "None",
             "start_time": "26:25",
             "end_time": "26:46",
-            "annotations": [
-                {
-                    "ask clarifying question": "Matt is asking what the next steps are when surveillance finds a pathogen, seeking clarification on the practical outcomes of surveillance efforts, which builds on the previous discussion about surveillance."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the outcomes of surveillance and the next steps when a pathogen is found, which is a direct question seeking clarification."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -1131,17 +1059,11 @@
             "screenshare_content": "None",
             "start_time": "26:49",
             "end_time": "27:11",
-            "annotations": [
-                {
-                    "express agreement": "The speaker starts by agreeing with the previous discussion about surveillance and its outcomes, acknowledging a problem related to it."
-                },
-                {
-                    "provide supporting evidence": "The speaker provides supporting evidence by referencing the 2009 pandemic and more recent outbreaks to illustrate the problem of not being prepared when viruses are detected, supporting the idea that surveillance findings are not effectively translated into action."
-                },
-                {
-                    "express frustration": "The speaker expresses frustration that when viruses show up, there's a scramble to deal with them, but it's usually already too late, indicating dissatisfaction with the current reactive approach."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by providing specific examples, such as the 2009 pandemic.",
+                "offer feedback": "The speaker is providing critique on past responses to outbreaks, highlighting the issue of being unprepared.",
+                "identify gap": "The speaker is implicitly pointing out a gap in preparedness and response to pandemics and outbreaks."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -1159,11 +1081,9 @@
             "screenshare_content": "None",
             "start_time": "27:11",
             "end_time": "27:11",
-            "annotations": [
-                {
-                    "None": "This utterance is empty and does not convey any meaning."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -1181,17 +1101,11 @@
             "screenshare_content": "None",
             "start_time": "27:12",
             "end_time": "28:09",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about surveillance and its outcomes, Joyce shares her experience with tick-borne pathogens, adding details about the challenges in interpreting sequencing results and the importance of isolating and characterizing viruses to understand their potential effects."
-                },
-                {
-                    "provide supporting evidence": "Joyce supports her argument by providing her experience with tick-borne pathogens, explaining how sequencing results alone are insufficient and how isolating and characterizing viruses reveals differences in their growth kinetics and properties."
-                },
-                {
-                    "propose decision": "Joyce proposes that surveillance should not end with sequencing but should always include isolating pathogens to assess their potential for creating pandemics, building on the discussion about the outcomes of surveillance."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker shares her experience and knowledge about tick-borne pathogens.",
+                "offer feedback": "She provides specific suggestions for improvement in the approach to surveillance.",
+                "develop idea": "By discussing the limitations and suggesting an alternative approach, she is developing the idea of enhanced surveillance."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -1209,11 +1123,9 @@
             "screenshare_content": "None",
             "start_time": "28:10",
             "end_time": "28:10",
-            "annotations": [
-                {
-                    "None": "This utterance does not contain any content."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1232,9 +1144,8 @@
             "start_time": "28:11",
             "end_time": "28:55",
             "annotations": {
-                "provide supporting evidence": "The speaker provides evidence from their work with rabies to support the discussion on surveillance, mentioning that only one-third of positive samples are sequenced and typed, hindering the understanding of the transmission chain.",
-                "expand on existing idea": "The speaker expands on the discussion about surveillance by highlighting the limitations of current surveillance methods, specifically the lack of sequencing and typing of positive samples.",
-                "acknowledge contribution": "The speaker acknowledges Joyce's contribution by referencing her earlier point about the importance of virology in understanding diagnostics and obtaining samples."
+                "identify gap": "The speaker highlights a gap in current surveillance methods for rabies, where only one third of positive samples are sequenced and typed.",
+                "ask question": "The speaker asks if there's an economical way to improve detection and understanding of the organism, from PCR-based detection to more detailed virology work."
             }
         },
         {
@@ -1253,13 +1164,10 @@
             "screenshare_content": "None",
             "start_time": "30:00",
             "end_time": "30:52",
-            "annotations": [
-                {
-                    "express frustration": "The speaker expresses frustration with the current reactive approach to characterizing viruses only after they infect a person, indicating a problem with the existing system.",
-                    "propose decision": "The speaker proposes a change in mentality towards how we view viruses and a change in how we allocate resources, suggesting a shift in approach.",
-                    "expand on existing idea": "The speaker expands on the discussion about surveillance and characterization of pathogens by providing an example of the Sears influenza network focusing on animal-human interfaces, building on the previous comments about surveillance outcomes and limitations."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker is questioning the current approach to dealing with viruses and suggesting that a change is needed.",
+                "offer feedback": "The speaker is providing specific suggestions for improvement, such as changing the mentality towards viruses and how resources are allocated."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1277,11 +1185,9 @@
             "screenshare_content": "None",
             "start_time": "30:53",
             "end_time": "30:53",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is agreeing with the previous statement made by Troy Clavell Sutton about the need for a change in mentality towards how we view viruses and how we allocate resources."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -1299,14 +1205,11 @@
             "screenshare_content": "None",
             "start_time": "30:53",
             "end_time": "31:08",
-            "annotations": [
-                {
-                    "present new idea": "Troy suggests that computer modeling would be a great tool, presenting a novel approach to the discussion."
-                },
-                {
-                    "expand on existing idea": "Troy expands on the idea of characterizing viruses by suggesting that new protein folding programs could be valuable for predicting structures, building upon the previous discussion about sequencing and characterizing viruses."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests using computer modeling and new protein folding programs to predict structures.",
+                "develop idea": "The speaker builds upon previous discussions about enhancing transmission or growth in vectors.",
+                "offer feedback": "The speaker provides a suggestion for a potential approach to overcome experimental limitations."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1324,14 +1227,10 @@
             "screenshare_content": "None",
             "start_time": "31:08",
             "end_time": "31:41",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker supports the discussion on surveillance by providing an example of USDA wild bird surveillance focusing on hotspots of influenza diversity tied to flyways."
-                },
-                {
-                    "offer constructive criticism": "The speaker critiques the current response to detecting high path viruses (killing chickens) and suggests that there are better approaches."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker provides a concrete example from their experience with USDA wild bird surveillance to elaborate on the discussion.",
+                "critical response": "The speaker critiques the current approach to handling high-path viruses, calling it a 'hammer-type approach' that may not be necessary."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -1350,7 +1249,7 @@
             "start_time": "31:41",
             "end_time": "31:45",
             "annotations": {
-                "explain or define term or concept": "The utterance defines depopulation as an example of intervention, clarifying its role in the context of the discussion about surveillance and responses to pathogen detection."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1369,14 +1268,12 @@
             "screenshare_content": "None",
             "start_time": "31:45",
             "end_time": "31:46",
-            "annotations": [
-                {
-                    "express agreement": "Matt Hopken is explicitly agreeing with Matt Erdman's statement that depopulation is an example of intervention."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a brief acknowledgment that doesn't add substantial content to the conversation."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "01:48-02:59",
             "transcript": "Yeah, I have heard it too many times in terms of uh dogs in in the ground tackle region act as um reservoir for many of the sonatic diseases and kind of intermediate pathways for spill over because they do go into the natural areas and they come back and they can bring diseases. And I've heard interventions is like, well, we just is like, let's kill all the dogs as a serious proposal and I'm like, you can't. Uh, but they're the good the good thing is like you can think about targeted interventions. like, okay, we understand that dogs may be a problem for this sonatic diseases, especially for some of them are really infectious um to the vector to other hosts. So maybe we can think about how we limit the trans the onward transmission if we cannot limit the population or if limiting the population just get us to a point but we cannot uh we can't eliminate dogs. So we maybe we can do some population control, but that's not going to be just the only intervention we can do.",
             "speaking_duration": 71,
@@ -1391,17 +1288,11 @@
             "screenshare_content": "None",
             "start_time": "31:48",
             "end_time": "32:59",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker provides evidence of dogs acting as reservoirs for zoonotic diseases and intermediate pathways for spillover, based on what she has heard, supporting the idea that dogs play a role in disease transmission."
-                },
-                {
-                    "express alternative decision": "The speaker rejects the idea of killing all dogs as an intervention and suggests targeted interventions to limit onward transmission, expressing an alternative decision to the initial proposal."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the idea of interventions by suggesting population control as one option, but emphasizes that it should not be the only intervention, building on the discussion of potential interventions."
-                }
-            ]
+            "annotations": {
+                "critical response": "Pilar Fernandez is questioning and providing a negative evaluation of the idea of killing all dogs as an intervention.",
+                "offer feedback": "Pilar Fernandez provides specific suggestions for improvement or modification of existing ideas by suggesting targeted interventions.",
+                "develop idea": "Pilar Fernandez is elaborating on the idea of targeted interventions as a more effective approach than simply killing dogs."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -1419,17 +1310,13 @@
             "screenshare_content": "None",
             "start_time": "32:59",
             "end_time": "33:52",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of conducting human surveillance on people who interact with animals and wild animals, such as farmers in rural locations or people in live animal markets, which is a novel suggestion in the context of the discussion about surveillance strategies."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the existing discussion about surveillance by suggesting specific populations (farmers, people in live animal markets) and locations (rural areas abutting natural habitats) for human surveillance, building upon the previous comments about surveillance strategies."
-                },
-                {
-                    "propose decision": "The speaker proposes a concrete choice for the group by suggesting that surveillance efforts should focus on humans interacting with animals, particularly farmers and people in live animal markets, as a good starting point for intervention."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea of conducting surveillance in people interacting with animals and wild animals, specifically mentioning farmers and live animal markets as key areas to focus on.",
+                "develop idea": "The speaker expands on their idea by providing concrete examples of where surveillance could be conducted, such as in rural farming areas and live animal markets.",
+                "identify gap": "The speaker identifies a gap in current surveillance practices, suggesting that it could be more focused.",
+                "supportive response": "The speaker expresses a positive view towards conducting surveillance in specific groups like farmers and live animal markets.",
+                "offer feedback": "The speaker offers feedback that current surveillance practices could be improved by focusing more on specific areas or groups."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1447,14 +1334,10 @@
             "screenshare_content": "None",
             "start_time": "33:52",
             "end_time": "34:03",
-            "annotations": [
-                {
-                    "expand on existing idea": "This builds on the previous idea of sampling humans interacting with animals by adding that livestock could also be sampled, expanding the scope of surveillance."
-                },
-                {
-                    "propose decision": "The speaker suggests sampling livestock in addition to farmers, which is a concrete choice for the group to consider."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on an existing idea of sampling by suggesting to also sample livestock because they are somewhat sentinel.",
+                "offer feedback": "The speaker provides a suggestion for improvement by recommending the inclusion of livestock sampling."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -1472,11 +1355,9 @@
             "screenshare_content": "None",
             "start_time": "34:03",
             "end_time": "34:03",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is explicitly agreeing with the previous statement made by Matt Hopken about sampling livestock as sentinels, indicating agreement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Chuck Lewis",
@@ -1494,14 +1375,10 @@
             "screenshare_content": "None",
             "start_time": "34:04",
             "end_time": "34:31",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker is providing supporting evidence for the need for quick turnaround in animal sampling by stating that production animals are often sent to slaughter quickly, making follow-up difficult, building on the previous discussion about surveillance and sampling."
-                },
-                {
-                    "propose decision": "The speaker proposes a decision to collect live virus and isolate it for future studies at the same time as sampling animals, addressing the challenge of quick animal turnaround times mentioned earlier."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is discussing the practical aspects of managing the research process, specifically the timing and logistics of collecting and analyzing data from animals.",
+                "offer feedback": "The speaker provides specific suggestions for improving the process of collecting live virus and isolation for future studies, emphasizing the need for speed."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1519,11 +1396,9 @@
             "screenshare_content": "None",
             "start_time": "34:31",
             "end_time": "34:32",
-            "annotations": [
-                {
-                    "express agreement": "The speaker is agreeing with the previous statement made by Troy Clavell Sutton about the need for quick turnaround in surveillance due to animal movement."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance 'Right.' expresses agreement with a previous statement, validating the contribution without adding new content."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -1541,12 +1416,11 @@
             "screenshare_content": "None",
             "start_time": "34:33",
             "end_time": "35:14",
-            "annotations": [
-                {
-                    "express agreement": "Ana agrees with Chuck's point about the need for quick turnaround in animal sampling due to animal movement, building on the discussion about surveillance and pathogen detection.",
-                    "provide supporting evidence": "Ana supports the need for quick turnaround by sharing her experience with bovine tuberculosis in the UK, where satellite imagery was used to track cattle movement and find missing links, providing a real-world example."
-                }
-            ]
+            "annotations": {
+                "Develop idea": "The speaker is expanding on a previous idea by sharing a concrete example from their experience with bovine tuberculosis in the UK.",
+                "Acknowledge contribution": "The speaker acknowledges a prior statement with 'Yeah, I agree,' showing agreement with previous discussion.",
+                "Offer feedback": "The speaker implicitly suggests using satellite imagery and better tracking policies as useful strategies for addressing similar issues."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -1565,11 +1439,11 @@
             "start_time": "35:14",
             "end_time": "35:15",
             "annotations": {
-                "express agreement": "Matt Hopken is agreeing with Ana Bento's previous statement about using satellite imagery to track cattle movement, as indicated by his use of \"Right.\""
+                "supportive response": "The speaker is expressing agreement or acknowledgment with a previous statement."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "05:15-07:11",
             "transcript": "Yeah, I I all comes back. I'm sorry. I'm I'm an ecologist. So to me I always think about about potential bias and like sampling effects. like if what we're seeing is an actually an artifact of our sampling efforts or is it real? So that's where I feel like we can use a lot of modeling techniques to find um like optimization algorithms to have a more robust um sampling effort um to just to start with. just where where's the high risk of detecting this spill over event.",
             "speaking_duration": 116,
@@ -1584,14 +1458,10 @@
             "screenshare_content": "None",
             "start_time": "35:15",
             "end_time": "37:11",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker defines the concept of 'sampling effects' and potential bias in sampling, which is relevant to the discussion on surveillance and pathogen detection."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of using modeling techniques and optimization algorithms to improve sampling efforts and identify high-risk areas for spillover events, which has not been explicitly discussed before."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker highlights the potential for bias and sampling effects in their research, indicating a gap in their current approach.",
+                "offer feedback": "The speaker suggests using modeling techniques to optimize sampling efforts, providing a specific proposal for improvement."
+            }
         },
         {
             "speaker": "Chuck Lewis",
@@ -1609,14 +1479,11 @@
             "screenshare_content": "None",
             "start_time": "37:11",
             "end_time": "37:30",
-            "annotations": [
-                {
-                    "ask clarifying question": "The speaker is asking if there's a way to move beyond focusing on specific target species in surveillance or intervention efforts, seeking a broader approach."
-                },
-                {
-                    "explain or define term or concept": "The speaker explains that rabies is fairly easy to understand because all mammals are susceptible, providing context for the question about moving past the target species approach."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information on alternatives to the target species approach.",
+                "develop idea": "The speaker provides an example from their area of expertise (rabies) to develop their point.",
+                "signal expertise": "The speaker mentions their familiarity with rabies, signaling their expertise in the area."
+            }
         },
         {
             "speaker": "Chuck Lewis",
@@ -1635,13 +1502,14 @@
             "start_time": "37:30",
             "end_time": "38:42",
             "annotations": {
-                "present new idea": "Chuck introduces the idea of using computational methods like neural networks and AI to predict species susceptibility to novel pathogens, moving beyond traditional animal model testing, which is a novel approach not previously discussed.",
-                "provide supporting evidence": "Chuck recalls the use of neural networks and AI in receptor binding estimates for SARS-CoV-2, providing evidence that such computational methods have been successfully applied to predict species susceptibility.",
-                "expand on existing idea": "Chuck expands on the idea of assessing risk and susceptibility by suggesting a way to narrow down the species to test for novel pathogens, building on the previous discussion about surveillance and understanding pathogen transmission."
+                "code name": "develop idea",
+                "explanation": "The speaker implicitly asks if there's a better way to determine species susceptibility beyond testing each species one by one.",
+                "another code": "signal expertise",
+                "additional code": "ask question"
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "08:43-09:54",
             "transcript": "Yeah, I I would say it depends on the endpoint. If we're worried about just human risk or like human disease or just overall um wildlife health. Uh, because we always and and this is a conversation where we're always focusing about human disease. But do we just want to care about that or do we really want to approach like more sustainable health um in general in all populations.",
             "speaking_duration": 71,
@@ -1656,15 +1524,13 @@
             "screenshare_content": "None",
             "start_time": "38:43",
             "end_time": "39:54",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar is expanding on the discussion about surveillance and pathogen detection by introducing the idea that the approach depends on the desired outcome, whether it's focused on human risk or overall wildlife health, building on the previous discussion about surveillance and its outcomes.",
-                    "present new idea": "Pilar presents a new idea by suggesting that the focus should not solely be on human disease but also on overall wildlife health, which hadn't been explicitly stated before in the conversation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the conversation to consider different approaches to health concerns.",
+                "clarify goal": "The speaker is contributing to defining the goals of health approaches, suggesting consideration of human risk, human disease, and wildlife health."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "00:00-00:12",
             "transcript": "animals that are have some contact with humans and forget about the rest. So that's I guess another question.",
             "speaking_duration": 12,
@@ -1680,8 +1546,9 @@
             "start_time": "40:00",
             "end_time": "40:12",
             "annotations": {
-                "present new idea": "Pilar is presenting a new idea by questioning whether the focus should only be on animals with human contact or on overall wildlife health, which introduces a broader perspective on the scope of concern.",
-                "ask clarifying question": "Pilar is asking a question about whether the focus should be solely on human disease or on overall health, seeking clarification on the priorities of the discussion."
+                "propose new idea": "The speaker suggests focusing on animals that have contact with humans and ignoring the rest, proposing a new approach.",
+                "ask question": "The statement ends with 'So that's I guess another question,' indicating a request for input or discussion.",
+                "offer feedback": "The speaker provides a suggestion for how to focus efforts, which can be seen as feedback on the approach to take."
             }
         },
         {
@@ -1701,7 +1568,7 @@
             "start_time": "40:12",
             "end_time": "40:15",
             "annotations": {
-                "present new idea": "The speaker is about to introduce a new idea, indicated by the phrase \"I have a sort of a reductionist idea.\""
+                "propose new idea": "The speaker, Matt Erdman, explicitly states that he has a new idea, described as 'a sort of a reductionist idea', which indicates the introduction of a new approach or perspective."
             }
         },
         {
@@ -1721,13 +1588,11 @@
             "start_time": "40:16",
             "end_time": "41:01",
             "annotations": {
-                "present new idea": "Troy presents a novel approach of comparing protein structures across species to predict human susceptibility to pathogens, without directly analyzing the pathogens themselves, which is a new concept in the discussion.",
-                "expand on existing idea": "Troy expands on the discussion about identifying potential threats to humans by suggesting a specific method involving homology protein structures, building upon the previous discussion about animal-human interfaces and surveillance.",
-                "propose decision": "Troy proposes that they start looking at homology protein structures on cell surfaces and compare them across species as a method to predict what would be threatening to humans, suggesting a concrete action for the group to consider."
+                "propose new idea": "The utterance introduces a new approach of analyzing homology protein structures across species to predict human susceptibility to pathogens."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "01:02-01:07",
             "transcript": "So what are the similarities between potential species interacting?",
             "speaking_duration": 5,
@@ -1743,7 +1608,7 @@
             "start_time": "41:02",
             "end_time": "41:07",
             "annotations": {
-                "ask clarifying question": "Pilar is asking a question to clarify the previous statement about using homology protein structures to predict threats to humans, specifically asking about the similarities between interacting species."
+                "ask question": "The speaker is requesting information about the similarities between potential species interacting."
             }
         },
         {
@@ -1762,17 +1627,14 @@
             "screenshare_content": "None",
             "start_time": "41:07",
             "end_time": "41:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Troy is expanding on the idea of using homology protein structures to predict human susceptibility to pathogens, building on his previous suggestion to compare protein structures across species by giving the example of ACE2."
-                },
-                {
-                    "explain or define term or concept": "Troy is explaining the concept of ACE2 as a known receptor for a virus, clarifying its role in the context of predicting human susceptibility to pathogens."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on an idea by suggesting to explore similarities between proteins on cell surfaces to understand viral infections.",
+                "ask question": "The speaker implies a question about what similarities exist between proteins on cell surfaces.",
+                "signal expertise": "The speaker demonstrates knowledge of virology and cell biology concepts."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "01:25-01:49",
             "transcript": "Yeah. I I I think that would be a very interesting idea of like going from like the other perspective, not waiting for a pathogen to emerge. It's like understanding what it's what interacting species have in common including humans.",
             "speaking_duration": 24,
@@ -1788,8 +1650,7 @@
             "start_time": "41:25",
             "end_time": "41:49",
             "annotations": {
-                "express agreement": "Pilar expresses agreement with Troy's idea of looking at homology protein structures across species to predict potential threats to humans, indicating support for the approach.",
-                "expand on existing idea": "Pilar expands on Troy's idea by suggesting that it's a good approach to understand what interacting species have in common, including humans, instead of waiting for a pathogen to emerge, building upon the concept of identifying potential threats proactively."
+                "develop idea": "The speaker expands on the idea by specifying that this approach involves not waiting for a pathogen to emerge but proactively understanding species interactions."
             }
         },
         {
@@ -1809,11 +1670,12 @@
             "start_time": "41:50",
             "end_time": "42:17",
             "annotations": {
-                "ask clarifying question": "Matt is asking what intervention possibilities exist for indirect modes of transmission, given that direct transmission has been discussed."
+                "ask question": "The speaker is asking for information about intervention possibilities for indirect transmission modes.",
+                "develop idea": "The speaker is expanding on previous ideas by considering other transmission modes."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "02:21-02:48",
             "transcript": "I guess there you can I add the the time variable of like lags uh because that's basically what it is. If we're thinking about something that it's persistent in the environment for whatever reason, um it's going to be a matter of time. Like the the time the the potential window of exposure kind of increases or it's lagged. Um so we can incorporate that into the transmission chain.",
             "speaking_duration": 27,
@@ -1828,14 +1690,9 @@
             "screenshare_content": "None",
             "start_time": "42:21",
             "end_time": "42:48",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar is expanding on the discussion of indirect modes of transmission by adding the time variable of lags, building on Matt's question about intervention possibilities for indirect modes of transmission like foodborne or vector-borne diseases."
-                },
-                {
-                    "explain or define term or concept": "Pilar explains that the time variable of lags is basically the potential window of exposure increasing or being lagged, clarifying the concept in the context of indirect transmission."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about transmission chains by suggesting the incorporation of time variables or lags, especially in the context of environmental persistence of pathogens."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -1854,10 +1711,8 @@
             "start_time": "42:49",
             "end_time": "43:51",
             "annotations": {
-                "express agreement": "Ana agrees with Pilar's previous statement about adding a time variable of lags to the transmission chain.",
-                "expand on existing idea": "Ana expands on the idea of time lags in transmission chains by discussing seasonality, differences in seasonality between hosts and vectors, and how to disrupt these cycles, building on the previous discussion about indirect modes of transmission.",
-                "provide supporting evidence": "Ana supports her point about disrupting transmission cycles by mentioning the exploration of this area for mosquito-borne and tick-borne diseases, and the importance of understanding the ecology of the transmission chain components.",
-                "offer constructive criticism": "Ana offers constructive criticism by acknowledging past failures in sustainably disrupting transmission cycles while avoiding unintended consequences, suggesting a need for improved strategies."
+                "develop idea": "The speaker is expanding on the concept of seasonality and its impact on disease transmission, specifically in the context of vectors and hosts.",
+                "clarify goal": "The speaker is discussing the goal of understanding the ecology of different components in the transmission chain to disrupt them sustainably."
             }
         },
         {
@@ -1877,7 +1732,8 @@
             "start_time": "43:51",
             "end_time": "43:53",
             "annotations": {
-                "acknowledge contribution": "Matt Hopken acknowledges someone for bringing up a point, but does not agree or expand on it."
+                "acknowledge contribution": "Matt Hopken acknowledges a previous point brought up by someone else.",
+                "supportive response": "The tone is polite and appreciative, indicating a supportive response."
             }
         },
         {
@@ -1897,7 +1753,8 @@
             "start_time": "43:53",
             "end_time": "43:53",
             "annotations": {
-                "encourage participation": "Matt Erdman is encouraging Matt Hopken to speak, as Matt Hopken thanked someone for bringing up a point and Matt Erdman then told him to go ahead."
+                "process management": "The speaker is managing the meeting flow by inviting another participant to contribute.",
+                "encourage participation": "The utterance encourages Matt Hopken to participate in the discussion."
             }
         },
         {
@@ -1917,12 +1774,12 @@
             "start_time": "43:53",
             "end_time": "44:44",
             "annotations": {
-                "expand on existing idea": "Matt Hopken expands on the discussion of vector-borne diseases by bringing back the socio-economic side of things and human behavior, which were previously mentioned in the conversation.",
-                "propose decision": "Matt Hopken proposes a proactive intervention that teaches farmers not to deforest in a way that changes the mosquito community, aiming to reduce the risk of vector-borne diseases while remaining economically viable for them."
+                "develop idea": "The speaker expands on existing ideas by providing a specific example (deforestation and mosquito communities) and implications.",
+                "ask question": "The speaker explicitly asks for potential interventions."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "04:44-05:00",
             "transcript": "Yeah, I I would think about interventions in two ways. Uh we want to anticipate. So we discuss kind of almost of things that we discuss we kind of uh mix them but um we definitely there's a point where we try to anticipate spillover events.",
             "speaking_duration": 16,
@@ -1937,11 +1794,9 @@
             "screenshare_content": "None",
             "start_time": "44:44",
             "end_time": "45:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Pilar is expanding on the discussion of interventions, building on the previous discussion about intervention possibilities for different modes of transmission."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by discussing a proactive approach to interventions, specifically mentioning the need to anticipate spillover events."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -1960,11 +1815,11 @@
             "start_time": "45:00",
             "end_time": "45:01",
             "annotations": {
-                "ask clarifying question": "Matt is asking for examples of interrupting, which is a request for clarification on the concept of interruption as an intervention strategy."
+                "ask question": "The speaker is requesting examples or information on interrupting transmission chains."
             }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "05:01-06:17",
             "transcript": "use the words interrupting the transmission after it's identified. So um there's so if we're talking about um like vector borne diseases for example is identify uh a falsi um or a hotspot that it's occurring at that point with uh mosquito borne diseases for example, this is done a lot of the time uh where you have you've identify a cluster and then you spray which is in in a way the population of the vector. Uh but you identify um that um hotspot that cluster and you act upon it before it it spreads to another cluster. Um you can think also about like detecting cases so you can try to stop that transmission to going into um another host. So for example, people uh will quarantine. It's a very old popular intervention to stop the transmission chain.",
             "speaking_duration": 76,
@@ -1979,14 +1834,11 @@
             "screenshare_content": "None",
             "start_time": "45:01",
             "end_time": "46:17",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining what is meant by 'interrupting the transmission' in the context of vector-borne diseases, building on the previous discussion about interventions."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the idea of interrupting transmission by providing examples such as spraying to reduce vector populations and quarantine to stop transmission to another host, building on the previous discussion about interventions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on the idea of interrupting transmission, providing examples and explanations.",
+                "offer feedback": "The speaker provides suggestions for interrupting transmission, such as identifying hotspots and acting upon them.",
+                "clarify goal": "The speaker aims to clarify the concept and methods of interrupting transmission."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -2004,11 +1856,9 @@
             "screenshare_content": "None",
             "start_time": "46:17",
             "end_time": "46:20",
-            "annotations": [
-                {
-                    "expand on existing idea": "Matt Hopken is building upon the points made by previous speakers, indicating he will add more information to the ongoing discussion about interventions for disease transmission."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a transitional phrase with no specific content that adds to the discussion or can be categorized under the provided codes."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -2026,13 +1876,11 @@
             "screenshare_content": "None",
             "start_time": "46:20",
             "end_time": "48:00",
-            "annotations": [
-                {
-                    "present new idea": "Ana introduces the idea of using gene drive systems and genetically modified organisms as a form of interruption to transmission chains, which hasn't been explicitly discussed before.",
-                    "provide supporting evidence": "Ana provides supporting evidence by mentioning researchers at her research center who used case data, genetic sequences, and phylogeography to predict the wave front and wave speed of skunk rabies, suggesting the potential of incorporating multiple data sets into a predictive model.",
-                    "expand on existing idea": "Ana expands on the idea of intervention by suggesting incorporating multiple types of data sets into a single predictive model, building on the previous discussion about intervention strategies."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Ana Bento introduces gene drive systems and genetically modified organisms as potential methods for interrupting transmission chains.",
+                "develop idea": "Ana Bento expands on this by discussing the incorporation of multiple data types into predictive models for disease spread.",
+                "ask question": "Ana Bento asks about finding a proxy sample to understand disease transmission and facilitate early intervention."
+            }
         },
         {
             "speaker": "Matthew Hopken",
@@ -2051,9 +1899,9 @@
             "start_time": "48:00",
             "end_time": "48:57",
             "annotations": {
-                "expand on existing idea": "The speaker is adding to the discussion about interventions, specifically mentioning gene drive systems and genetically modified organisms as potential interruption methods to transmission chains, building on the previous discussion about interventions.",
-                "provide supporting evidence": "The speaker provides supporting evidence by mentioning research at their center that used case data, genetic sequences, and phylogeography to predict the wave front and speed of skunk rabies, supporting the idea of incorporating multiple data sets into predictive models.",
-                "present new idea": "The speaker presents the idea of using proxy samples as an alternative to genetic sequencing to understand wave fronts and transmissions, which is a novel concept in the context of the discussion."
+                "propose new idea": "introducing new concepts such as gene drive systems and genetically modified organisms as potential tools for interrupting transmission chains",
+                "develop idea": "expanding on the idea of predictive models and sampling methods for understanding and interrupting transmission chains",
+                "ask question": "requesting for alternative methods to genetic sequencing for understanding wave fronts and transmissions"
             }
         },
         {
@@ -2072,11 +1920,9 @@
             "screenshare_content": "None",
             "start_time": "48:57",
             "end_time": "49:00",
-            "annotations": [
-                {
-                    "express agreement": "Ana explicitly agrees with the points made in the previous utterance regarding the potential of gene drive systems and genetically modified organisms as interventions, as well as the incorporation of multiple data sets into predictive models."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker explicitly agrees with a prior statement, showing support and validation for another group member's contribution."
+            }
         },
         {
             "speaker": "Ana Bento",
@@ -2094,11 +1940,10 @@
             "screenshare_content": "None",
             "start_time": "50:00",
             "end_time": "50:17",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of finding the best method to incorporate seemingly disparate but complementary datasets, which hasn't been explicitly discussed before in this specific way."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the challenge of incorporating different data sets, reflecting on her research approach.",
+                "identify gap": "The utterance explicitly mentions a gap in knowledge or method regarding how to best incorporate different data sets."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2116,11 +1961,10 @@
             "screenshare_content": "None",
             "start_time": "50:18",
             "end_time": "50:20",
-            "annotations": [
-                {
-                    "encourage participation": "Matt is explicitly encouraging Joyce to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Matt Erdman acknowledges Joyce's previous contributions and offers help.",
+                "supportive response": "Matt Erdman expresses agreement and support for Joyce."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -2138,11 +1982,9 @@
             "screenshare_content": "None",
             "start_time": "50:21",
             "end_time": "50:23",
-            "annotations": [
-                {
-                    "encourage participation": "Troy is encouraging participation by indicating that they only have five minutes left, which implies that others should contribute quickly."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is noting that there are only five minutes left, which is an act of managing meeting time."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2160,11 +2002,11 @@
             "screenshare_content": "None",
             "start_time": "50:23",
             "end_time": "50:28",
-            "annotations": [
-                {
-                    "encourage participation": "Matt is directly asking Joyce to share her slides, encouraging her to participate and contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or action from Joyce regarding sharing her slides.",
+                "encourage participation": "The speaker is inviting Joyce to share her slides, encouraging her participation.",
+                "assign task": "The speaker is assigning a task to Joyce, asking her to share her slides."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2182,11 +2024,9 @@
             "screenshare_content": "None",
             "start_time": "50:28",
             "end_time": "50:33",
-            "annotations": [
-                {
-                    "assign task": "Joyce is asking someone to open the folder, assigning them the task of sharing the slides."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is attempting to manage the meeting flow by addressing an issue with sharing a resource."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2204,11 +2044,9 @@
             "screenshare_content": "None",
             "start_time": "50:33",
             "end_time": "50:34",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2227,7 +2065,7 @@
             "start_time": "50:35",
             "end_time": "50:38",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is a statement of fact about the speaker's technical setup and does not relate to the scientific discussion."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2246,11 +2084,9 @@
             "screenshare_content": "None",
             "start_time": "50:40",
             "end_time": "50:43",
-            "annotations": [
-                {
-                    "express frustration": "Matt expresses frustration that he cannot access the file because he is using USDA and USDA, indicating an issue with file access permissions."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2268,14 +2104,12 @@
             "screenshare_content": "None",
             "start_time": "50:43",
             "end_time": "50:45",
-            "annotations": [
-                {
-                    "offer constructive criticism": "This utterance does not offer constructive criticism."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "Joyce Jose is providing a positive response to an implicit or explicit request to share her screen, indicating her willingness and ability to do so."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "00:46-00:48",
             "transcript": "that's the Google Drive, right?",
             "speaking_duration": 2,
@@ -2291,7 +2125,7 @@
             "start_time": "50:46",
             "end_time": "50:48",
             "annotations": {
-                "ask clarifying question": "Pilar is asking a clarifying question to confirm if the location of the slides is on Google Drive, following a discussion about sharing slides."
+                "ask question": "Pilar Fernandez is seeking confirmation about something being in the Google Drive, which is a direct question."
             }
         },
         {
@@ -2310,14 +2144,9 @@
             "screenshare_content": "None",
             "start_time": "50:48",
             "end_time": "50:51",
-            "annotations": [
-                {
-                    "express agreement": "The speaker explicitly agrees with a prior statement, indicated by the use of \"Yeah, yeah.\""
-                },
-                {
-                    "propose decision": "The speaker proposes to share their screen, suggesting a concrete action for the group to take."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "Joyce is expressing agreement and willingness to facilitate the discussion by sharing her screen."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2336,7 +2165,7 @@
             "start_time": "50:51",
             "end_time": "50:53",
             "annotations": {
-                "None": "This utterance does not present a new idea, expand on an existing one, provide supporting evidence, explain a term, ask a clarifying question, propose or confirm a decision, express agreement or disagreement, assign a task, offer criticism, resolve conflict, express frustration, acknowledge contribution, encourage participation, express enthusiasm, or express humor; therefore, no code applies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2352,17 +2181,15 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "50:55",
             "end_time": "50:59",
-            "annotations": [
-                {
-                    "assign task": "Joyce is indicating which slide number the group should focus on, assigning the task of navigating to that slide to someone."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is directing the group's attention to a specific slide, thereby managing the meeting's flow and ensuring that everyone focuses on the relevant information."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "00:59-01:00",
             "transcript": "Yeah.",
             "speaking_duration": 1,
@@ -2374,14 +2201,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "50:59",
             "end_time": "51:00",
-            "annotations": [
-                {
-                    "express agreement": "Pilar agrees with a previous statement, indicated by the use of 'Yeah'."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is a brief acknowledgment or agreement without adding new content or explicitly fitting into one of the more specific categories."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2396,14 +2221,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:00",
             "end_time": "51:01",
-            "annotations": [
-                {
-                    "express agreement": "The speaker explicitly agrees with the previous statement, confirming its correctness."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement with a previous statement, providing a positive evaluation without adding new content."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2418,11 +2241,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:02",
             "end_time": "51:04",
             "annotations": {
-                "encourage participation": "Joyce is inviting others to contribute to the slides, encouraging participation."
+                "Encourage participation": "The speaker invites others to contribute their thoughts or information, encouraging participation."
             }
         },
         {
@@ -2438,11 +2261,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:05",
             "end_time": "51:06",
             "annotations": {
-                "acknowledge contribution": "Ana acknowledges Joyce's hard work and contributions to the discussion, without necessarily agreeing or expanding on any specific point."
+                "supportive response": "The speaker is expressing a positive sentiment towards Joyce, acknowledging her effort."
             }
         },
         {
@@ -2458,11 +2281,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:08",
             "end_time": "51:12",
             "annotations": {
-                "express frustration": "The speaker is expressing difficulty in understanding and organizing the information that has been presented, indicating a sense of being overwhelmed."
+                "None": "No relevant code directly applies to this utterance as it primarily expresses a personal state of understanding rather than engaging in one of the specified interactional or scientific activities."
             }
         },
         {
@@ -2478,11 +2301,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:16",
             "end_time": "51:17",
             "annotations": {
-                "encourage participation": "Joyce is encouraging Troy to speak, likely to elaborate on a point he was making earlier in the conversation."
+                "ask question": "The speaker is requesting information or clarification on a prior statement made by Troy Clavell Sutton."
             }
         },
         {
@@ -2498,14 +2321,13 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:18",
             "end_time": "51:21",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Troy acknowledges that he was trying to help Joyce, recognizing her effort."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Troy acknowledges his attempt to help and confirms Joyce has what she needs.",
+                "supportive response": "Troy's response is supportive and reassuring, indicating he is trying to help."
+            }
         },
         {
             "speaker": "Troy Clavell Sutton",
@@ -2520,17 +2342,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:24",
             "end_time": "51:27",
-            "annotations": [
-                {
-                    "encourage participation": "Troy is encouraging the group to help Joyce summarize the information, inviting them to participate in the task."
-                },
-                {
-                    "assign task": "Troy is implicitly assigning the task of summarizing the discussion to Joyce, as he mentions that she has to give a summary when they go back."
-                }
-            ]
+            "annotations": {
+                "process management": "Troy Clavell Sutton suggests helping Joyce summarize and condense the information they've discussed, indicating an effort to manage the meeting's output and tasks."
+            }
         },
         {
             "speaker": "Joyce Jose",
@@ -2545,11 +2362,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:27",
             "end_time": "51:28",
             "annotations": {
-                "express agreement": "The speaker is agreeing to the suggestion in the previous utterance to help pair down the summary."
+                "supportive response": "The speaker is expressing agreement or acknowledgment of the previous statement."
             }
         },
         {
@@ -2565,13 +2382,13 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:29",
             "end_time": "51:48",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Matt is suggesting that Joyce summarize the discussion into bullet points, which is a concrete choice for the group to help Joyce with her task."
-                }
+                "summarize conversation": "The speaker is suggesting a way to summarize the discussion into bullet points.",
+                "encourage participation": "The speaker is asking for the group's thoughts and ideas.",
+                "process management": "The speaker is managing the discussion flow by suggesting an organizational method."
             }
         },
         {
@@ -2587,11 +2404,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:48",
             "end_time": "51:49",
             "annotations": {
-                "express agreement": "The participant is agreeing to the previous request to summarize the discussion into bullet points."
+                "None": "The utterance is a brief acknowledgment without adding new content or explicitly fitting into other defined categories."
             }
         },
         {
@@ -2607,12 +2424,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "51:55",
             "end_time": "52:10",
             "annotations": {
-                "present new idea": "Matt is introducing the idea that there are gaps in data sets, which hasn't been explicitly stated as a problem in this way before, though it has been alluded to.",
-                "propose decision": "Matt is suggesting a point to focus on for Joyce's summary, which is a concrete choice for the group."
+                "identify gap": "The speaker explicitly mentions gaps in data sets, showing an awareness of missing information.",
+                "summarize conversation": "The speaker is making a summarizing statement about the state of data sets in the conversation context."
             }
         },
         {
@@ -2628,15 +2445,14 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "52:11",
             "end_time": "52:21",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Matt acknowledges that the gaps in data sets were a good point to share, recognizing the contribution of the group's discussion.",
-                    "encourage participation": "Matt asks 'Others?' to invite further contributions from the group, encouraging participation."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Matt Erdman summarizes his understanding of the discussion and invites further input.",
+                "encourage participation": "By asking 'Others?', Matt encourages others to participate in the discussion.",
+                "supportive response": "The tone of the utterance is supportive, encouraging further sharing and discussion."
+            }
         },
         {
             "speaker": "Nicole Eikmeier",
@@ -2651,20 +2467,18 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "52:26",
             "end_time": "52:56",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of developing cheap technology for testing humans or animals on-site in high-risk areas, which is a novel suggestion for addressing the problem of disease transmission."
-                },
-                {
-                    "expand on existing idea": "The speaker is expanding on the previous discussion about conservation and stopping deforestation by suggesting a practical solution of developing cheap technology for testing in high-risk areas."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker asks questions about solutions and technology development.",
+                "develop idea": "The utterance explores the idea of developing cheap technology for various applications.",
+                "identify gap": "The speaker recognizes a gap in current capabilities, specifically the need for affordable technology.",
+                "encourage participation": "The speaker invites further discussion by posing questions."
+            }
         },
         {
-            "speaker": "Maria Fernandez",
+            "speaker": "Pilar Fernandez",
             "timestamp": "03:30-03:40",
             "transcript": "how do we scale up from the different systems into something that we can actually generalize across pathogens.",
             "speaking_duration": 10,
@@ -2676,11 +2490,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "53:30",
             "end_time": "53:40",
             "annotations": {
-                "propose decision": "Pilar is proposing a direction for the group to consider, which is how to scale up from different systems into something generalizable across pathogens, following a discussion about surveillance and intervention strategies."
+                "ask question": "The speaker is explicitly asking for information or insight into how to scale up from different systems to generalize across pathogens.",
+                "identify gap": "The speaker implicitly recognizes a gap in current knowledge or approaches, which is the ability to generalize solutions or findings across various pathogens."
             }
         },
         {
@@ -2696,11 +2511,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "53:41",
             "end_time": "53:44",
             "annotations": {
-                "ask clarifying question": "Joyce is asking whether the previous statement is a gap or something else, seeking clarification on how to categorize it in the context of the discussion."
+                "ask question": "The speaker is requesting clarification or information on whether something is considered a gap or not."
             }
         },
         {
@@ -2716,11 +2531,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "53:46",
             "end_time": "53:49",
             "annotations": {
-                "propose decision": "Matt is suggesting that further development of risk assessment is a key area to focus on, building on the previous discussion about gaps and problems identified by the group."
+                "ask question": "The speaker is requesting information or thoughts on further developing risk assessment.",
+                "identify gap": "The utterance implies a recognition of a gap or a need for further development in risk assessment."
             }
         },
         {
@@ -2736,11 +2552,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "53:51",
             "end_time": "53:54",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about gaps and problems, adding specific examples of risk assessment modeling and data analysis as areas needing further development."
+                "summarize conversation": "The speaker is summarizing or suggesting key areas of focus (risk assessment modeling, data analysis) that are relevant to the ongoing discussion."
             }
         },
         {
@@ -2756,11 +2572,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "53:58",
             "end_time": "53:59",
             "annotations": {
-                "confirm decision": "The utterance 'Data analysis' confirms the previous suggestion by Matt Erdman to include 'Risk assessment modeling, data analysis' as one of the overarching areas identified by the group."
+                "identify gap": "The speaker is highlighting the need for data analysis, implying a gap in current capabilities or understanding."
             }
         },
         {
@@ -2776,13 +2592,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "54:15",
             "end_time": "54:31",
             "annotations": {
-                "assign task": {
-                    "Explanation": "Matt is assigning the task to Joyce to present the slide, and is preparing her for the presentation by letting her know that she will be asked to give a couple of minutes verbally on the slide."
-                }
+                "process management": "The speaker is discussing the process of how information will be presented or discussed in the meeting."
             }
         },
         {
@@ -2798,14 +2612,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "54:32",
             "end_time": "54:37",
-            "annotations": [
-                {
-                    "encourage participation": "Joyce is encouraging others to contribute to or modify the slide she is working on, inviting collaboration."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2820,13 +2632,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "54:46",
             "end_time": "54:47",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Matt Erdman is acknowledging the previous speaker's contribution, indicating he has heard and understood."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2842,14 +2652,12 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "55:27",
             "end_time": "55:28",
-            "annotations": [
-                {
-                    "ask clarifying question": "Ana is asking for confirmation on whether they are presenting the information immediately, seeking clarification on the timing of the presentation."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is seeking confirmation or clarification about the current mode of presentation, which relates to managing the discussion process."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2864,14 +2672,13 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "55:29",
             "end_time": "55:30",
-            "annotations": [
-                {
-                    "confirm decision": "Matt confirms that the presentation is happening right now, finalizing the decision to proceed."
-                }
-            ]
+            "annotations": {
+                "code name": "Supportive response",
+                "explanation": "The speaker is expressing agreement with a previous statement."
+            }
         },
         {
             "speaker": "Matt Erdman",
@@ -2886,11 +2693,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "55:30",
             "end_time": "55:40",
             "annotations": {
-                "assign task": "Matt is assigning Joyce the task of capturing the bullet points discussed at the end of the session, to summarize the group's identified gaps, problems, or possibilities."
+                "summarize conversation": "The speaker is asking Joyce to capture or summarize the bullet points discussed at the end of their conversation."
             }
         },
         {
@@ -2906,11 +2713,11 @@
             "interuption": "No",
             "overlap": "No",
             "screenshare": "Yes",
-            "screenshare_content": "Maria Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
+            "screenshare_content": "Pilar Fernandez shared her screen, displaying a Google Slides presentation titled \"Boiling MET 2021 Meeting Slides\". The current slide is titled \"Room 1.5 - Key points Transmission Transmission Chains\" and contains a large block of text describing transmission after contact with infectious agents. A list of participants is also visible on the right side of the slide.",
             "start_time": "55:40",
             "end_time": "55:40",
             "annotations": {
-                "express agreement": "The speaker is agreeing with the previous statement."
+                "None": "No relevant code applies to this utterance as it is a minimal response that simply acknowledges a previous statement without adding significant content."
             }
         }
     ]

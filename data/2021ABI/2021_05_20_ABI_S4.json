@@ -1,20 +1,21 @@
 {
     "all_speakers": [
         "Richard Wiener",
-        "Maryellen Giger",
-        "Katy Keenan",
-        "Maryellen Giger UChicago",
-        "Sandra Laney",
-        "Gergis Obaid",
-        "Alexandra Walsh",
-        "Shiva Abbaszadeh",
-        "Ulugbek Kamilov",
-        "Jim Mitchell",
-        "Lu Wei",
-        "Paris Perdikaris",
         "Girgis Obaid",
+        "Katy Keenan",
+        "Alexandra Walsh",
+        "Paris Perdikaris",
+        "Maryellen Giger UChicago",
+        "Shannon Quinn",
+        "Ulugbek Kamilov",
+        "Maryellen Giger",
+        "Shiva Abbaszadeh",
+        "Lu Wei",
+        "Lu Wei",
+        "Sandra Laney",
         "Carolyn Bayer",
-        "Shannon Quinn"
+        "Jim Mitchell",
+        "Gergis Obaid"
     ],
     "total_speaking_length": 3172,
     "all_data": [
@@ -35,8 +36,7 @@
             "start_time": "00:07",
             "end_time": "00:17",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the current activity to someone who just joined the meeting, clarifying what 'we're taking a minute to do' means in this context.",
-                "assign task": "The speaker is assigning the task of jotting down ideas for discussion to the team members."
+                "process management": "The utterance manages the meeting flow by explaining what the group is currently doing to someone who just joined."
             }
         },
         {
@@ -56,9 +56,7 @@
             "start_time": "00:17",
             "end_time": "00:34",
             "annotations": {
-                "explain or define term or concept": "The speaker explains their role as 'a butterfly on the wall as an observer', clarifying their presence as a non-participating observer.",
-                "acknowledge contribution": "The speaker is acknowledging the opportunity to speak, but not agreeing or expanding on any prior idea.",
-                "assign task": "The speaker is assigning the task of understanding their limited participation to the team members."
+                "None": "No relevant code perfectly applies to this utterance as it primarily serves as a self-introduction and does not explicitly fit into any of the provided categories."
             }
         },
         {
@@ -78,7 +76,7 @@
             "start_time": "00:34",
             "end_time": "00:36",
             "annotations": {
-                "express agreement": "Maryellen expresses agreement with Sandra's statement about observing and leaving the meeting early."
+                "None": "The utterance is a brief acknowledgment without adding new content or explicitly fitting into other defined categories."
             }
         },
         {
@@ -98,9 +96,9 @@
             "start_time": "00:36",
             "end_time": "01:11",
             "annotations": {
-                "assign task": "Maryellen assigns the task of introducing herself to Carolyn, directing her to speak next.",
-                "encourage particpatioin": "Maryellen encourages Carolyn to participate by asking her to introduce herself.",
-                "explain or define term or concept": "Maryellen introduces herself as an example of the brief introduction she is requesting from others."
+                "process management": "The speaker is managing the meeting flow by transitioning to the next activity.",
+                "signal expertise": "The speaker is explicitly stating her own expertise and background.",
+                "encourage participation": "The speaker is inviting another group member to contribute their information."
             }
         },
         {
@@ -119,11 +117,10 @@
             "screenshare_content": "None",
             "start_time": "01:12",
             "end_time": "01:29",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Carolyn is introducing herself and her research area, which involves explaining her field of study."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their research area and affiliation, which can be seen as signaling their expertise.",
+                "develop idea": "The speaker is providing information about their research, which can be seen as developing their idea or introducing their area of expertise."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -142,7 +139,7 @@
             "start_time": "01:29",
             "end_time": "01:45",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining their area of expertise and the specific focus within that area, defining the scope of their work for the team."
+                "signal expertise": "The speaker explicitly states his area of expertise and focus within computational imaging, indicating his qualifications."
             }
         },
         {
@@ -162,7 +159,7 @@
             "start_time": "01:45",
             "end_time": "01:46",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Katie's introduction, showing recognition of her input."
+                "acknowledge contribution": "verbally recognizes another group member's input, but not agreeing or expanding."
             }
         },
         {
@@ -182,8 +179,8 @@
             "start_time": "01:50",
             "end_time": "02:22",
             "annotations": {
-                "explain or define term or concept": "The speaker explains NIST's role in imaging, specifically MRI validation across centers, to provide context about their work.",
-                "expand on existing idea": "The speaker expands on NIST's role by mentioning their current expansion into validating techniques and exploring lower magnetic field strengths, building upon the initial description of their work."
+                "signal expertise": "The speaker explicitly states their role and expertise, particularly in the context of MRI and validation of results across centers.",
+                "identify gap": "The speaker mentions a challenge they face ('We don't always get the same answer when we try them places'), which implies a gap in their current capabilities."
             }
         },
         {
@@ -203,7 +200,8 @@
             "start_time": "02:22",
             "end_time": "02:26",
             "annotations": {
-                "express humor": "Maryellen makes a joke about crossing her \"Hollywood squares\", which is a reference to the game show, to express humor."
+                "express humor": "The speaker is making a joke about her situation, comparing it to a game show.",
+                "identify gap": "The speaker implies a lack of knowledge or comfort with the technical aspects of the discussion."
             }
         },
         {
@@ -223,7 +221,8 @@
             "start_time": "02:27",
             "end_time": "02:33",
             "annotations": {
-                "explain or define term or concept": "Shiva is explaining her area of expertise, which is instrumentation for positron emission tomography and x-ray imaging, to provide context for the group."
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task by mentioning their work on instrumentation for positron emission tomography and x-ray imaging.",
+                "None": "No other relevant code applies to this utterance as it primarily focuses on signaling expertise without adding new ideas, asking questions, or engaging in discussions."
             }
         },
         {
@@ -243,8 +242,7 @@
             "start_time": "02:33",
             "end_time": "02:49",
             "annotations": {
-                "present new idea": "Jim introduces his interest in improving sensitivity and quantitative accuracy of imaging modalities, which is a new focus not explicitly mentioned by others before.",
-                "expand on existing idea": "Jim's statement builds upon the previous discussion about imaging techniques and validation, adding a specific interest in improving sensitivity and quantitative accuracy."
+                "None": "No relevant code strongly applies to this utterance"
             }
         },
         {
@@ -264,7 +262,7 @@
             "start_time": "02:49",
             "end_time": "02:53",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger acknowledges Shayna's introduction, recognizing her input to the conversation."
+                "acknowledge contribution": "verbally recognizes another group member's input, but not agreeing or expanding"
             }
         },
         {
@@ -284,7 +282,7 @@
             "start_time": "02:57",
             "end_time": "02:59",
             "annotations": {
-                "ask clarifying question": "Shannon asks if Maryellen was referring to her, seeking clarification on the intended recipient of the previous statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -304,7 +302,7 @@
             "start_time": "02:59",
             "end_time": "03:00",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Shannon's presence after Shannon clarified that she was being referred to, recognizing her participation in the meeting."
+                "None": "No relevant code applies to this utterance as it is a simple name correction without additional content."
             }
         },
         {
@@ -324,7 +322,7 @@
             "start_time": "03:00",
             "end_time": "03:00",
             "annotations": {
-                "express agreement": "Shannon Quinn is explicitly agreeing with Maryellen Giger that she is referring to her."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -343,11 +341,9 @@
             "screenshare_content": "None",
             "start_time": "03:00",
             "end_time": "03:03",
-            "annotations": [
-                {
-                    "express humor": "Maryellen makes a joke about forgetting Shannon's name, indicating she got a new floor, which is a humorous way to acknowledge her mistake."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -366,9 +362,7 @@
             "start_time": "03:04",
             "end_time": "03:26",
             "annotations": {
-                "explain or define term or concept": "Shannon is introducing herself and her background, which serves to explain her expertise and role in the collaboration.",
-                "present new idea": "Shannon mentions developing new artificial intelligence techniques for a unified representation of spatial and temporal signals, which is a novel concept introduced by her.",
-                "expand on existing idea": "Shannon expands on her work in biomedical imaging by adding that she works in computational modeling of cellular and subcellular systems."
+                "signal expertise": "The speaker explicitly states her own expertise or qualifications related to the task, mentioning her position, affiliation, and areas of work."
             }
         },
         {
@@ -388,7 +382,7 @@
             "start_time": "03:27",
             "end_time": "03:29",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger acknowledges Gergis's presence in the meeting, but does not agree or expand on any idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -408,7 +402,7 @@
             "start_time": "03:30",
             "end_time": "03:54",
             "annotations": {
-                "explain or define term or concept": "Gergis is explaining his role and research area to the group, defining his focus on molecular targeted nanoparticles for photodynamic cancer therapy, which is a concept that may be new to some members."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to his work in molecular targeted nanoparticles for photodynamic cancer therapy."
             }
         },
         {
@@ -428,7 +422,7 @@
             "start_time": "03:54",
             "end_time": "03:54",
             "annotations": {
-                "acknowledge contribution": "Gergis acknowledges Alex's contribution, likely for introducing him."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -448,7 +442,8 @@
             "start_time": "03:54",
             "end_time": "03:58",
             "annotations": {
-                "acknowledge contribution": "Maryellen is verbally recognizing Alex's input after he spoke, but not agreeing or expanding on it."
+                "acknowledge contribution": "The speaker verbally acknowledges another group member's input or presence.",
+                "supportive response": "The utterance expresses a positive or appreciative tone towards the other group member."
             }
         },
         {
@@ -468,7 +463,7 @@
             "start_time": "03:58",
             "end_time": "04:21",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that they are looking at label free stuff, which are molecules already in cells like NADH and FAD, to study cellular metabolism, clarifying the type of microscopy they use."
+                "signal expertise": "The speaker explicitly states their area of expertise, including their work on optical microscopy, studying cellular metabolism, and applications in drug response in cancer and laser tissue interactions."
             }
         },
         {
@@ -488,7 +483,7 @@
             "start_time": "04:21",
             "end_time": "04:22",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger is acknowledging Lou's upcoming introduction, similar to how she acknowledged previous speakers."
+                "acknowledge contribution": "The speaker is verbally recognizing another group member's input or presence."
             }
         },
         {
@@ -507,11 +502,9 @@
             "screenshare_content": "None",
             "start_time": "04:25",
             "end_time": "04:51",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is defining their area of expertise, which includes optical imaging and vibrational microscopy on biological cells, clarifying their focus for the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Lu Wei explicitly states his position and area of work, signaling his expertise in the field."
+            }
         },
         {
             "speaker": "Lu Wei",
@@ -530,7 +523,7 @@
             "start_time": "04:51",
             "end_time": "04:51",
             "annotations": {
-                "acknowledge contribution": "Lu Wei is acknowledging Maryellen Giger's contribution of introducing him, but not agreeing or expanding on any ideas."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -550,7 +543,7 @@
             "start_time": "04:52",
             "end_time": "04:53",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger is acknowledging Paris's introduction, but not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -570,7 +563,7 @@
             "start_time": "04:54",
             "end_time": "05:09",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining his expertise in computational science and machine learning, providing context for his contributions to the discussion."
+                "signal expertise": "This code applies because Paris explicitly states his own expertise in computational science and machine learning."
             }
         },
         {
@@ -590,7 +583,8 @@
             "start_time": "05:09",
             "end_time": "05:20",
             "annotations": {
-                "encourage particpatioin": "Maryellen is inviting the five visitors to introduce themselves if they wish to participate."
+                "process management": "The speaker is managing the meeting flow by indicating that they will proceed with the agenda if the visitors do not contribute.",
+                "encourage participation": "The speaker is inviting the visitors to participate by offering them the opportunity to say something."
             }
         },
         {
@@ -610,7 +604,7 @@
             "start_time": "05:20",
             "end_time": "05:20",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger acknowledges the previous speaker's introduction, signaling a transition to the next speaker or topic."
+                "process management": "Managing meeting flow"
             }
         },
         {
@@ -630,7 +624,9 @@
             "start_time": "05:20",
             "end_time": "05:35",
             "annotations": {
-                "propose decision": "The utterance proposes the need for a recorder and someone to present in three minutes, suggesting a concrete choice for the group to make regarding meeting logistics."
+                "ask question": "The utterance contains a question about who would present in three minutes.",
+                "process management": "Maryellen Giger is transitioning the meeting to its next order of business.",
+                "assign task": "The utterance assigns tasks of recording and presenting to group members."
             }
         },
         {
@@ -649,14 +645,10 @@
             "screenshare_content": "None",
             "start_time": "05:35",
             "end_time": "05:51",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen proposes two options for selecting a recorder and presenter: randomly or by volunteer."
-                },
-                {
-                    "encourage particpatioin": "Maryellen encourages someone to volunteer by mentioning that it is great training for facilitating in their senior career cycle."
-                }
-            ]
+            "annotations": {
+                "process management": "Maryellen is managing the meeting process by suggesting methods for selecting someone to record or present.",
+                "encourage participation": "By mentioning that this is great training for facilitating in a senior career cycle, she encourages participation."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -675,7 +667,8 @@
             "start_time": "05:55",
             "end_time": "06:04",
             "annotations": {
-                "express humor": "Maryellen makes a joke about randomly selecting someone to present, congratulating Shannon in advance, which expresses humor."
+                "process management": "The speaker is managing the meeting flow by suggesting a method for randomly selecting a participant.",
+                "assign task": "The speaker assigns a task or role to a participant, Shannon, through a random selection process."
             }
         },
         {
@@ -695,7 +688,7 @@
             "start_time": "06:06",
             "end_time": "06:06",
             "annotations": {
-                "explain or define term or concept": "Shannon is likely going to explain or define a term or concept, as indicated by the phrase \"So we're looking at\", which suggests she is about to introduce a topic or concept."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -715,7 +708,8 @@
             "start_time": "06:06",
             "end_time": "06:09",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging someone to participate by indicating that they are about to start looking at something together, likely prompting the other person to contribute their thoughts."
+                "process management": "The speaker is managing the meeting flow by transitioning to the next item or purpose of the meeting.",
+                "summarize conversation": "The utterance could be seen as an attempt to transition or summarize previous discussions before moving forward, though it's more about transitioning."
             }
         },
         {
@@ -735,7 +729,7 @@
             "start_time": "06:09",
             "end_time": "06:09",
             "annotations": {
-                "ask clarifying question": "Shannon asks a clarifying question to confirm if they should be looking at the PowerPoint deck, given Maryellen's previous statement about 'looking at'."
+                "ask question": "The speaker is requesting information or clarification about the PowerPoint deck."
             }
         },
         {
@@ -754,11 +748,9 @@
             "screenshare_content": "None",
             "start_time": "06:09",
             "end_time": "06:16",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Maryellen is explaining where to find the relevant information in the PowerPoint deck, specifically around slide 20."
-                }
-            ]
+            "annotations": {
+                "process management": "Maryellen Giger is managing the meeting flow by instructing Shannon on how to proceed with the presentation."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -777,7 +769,7 @@
             "start_time": "06:23",
             "end_time": "06:24",
             "annotations": {
-                "explain or define term or concept": "Shannon is clarifying the slide number in the PowerPoint deck that Maryellen is referring to, ensuring everyone is on the same page."
+                "process management": "This code applies because Shannon Quinn's statement helps manage the meeting flow by providing the current slide number, aiding in navigation as instructed by Maryellen Giger."
             }
         },
         {
@@ -797,7 +789,7 @@
             "start_time": "06:24",
             "end_time": "06:30",
             "annotations": {
-                "explain or define term or concept": "Maryellen is clarifying the slide number in the PowerPoint deck that Shannon should be looking at, providing a more precise location than the previous estimate."
+                "process management": "The speaker is managing the meeting flow by directing the presenter to a specific part of the presentation."
             }
         },
         {
@@ -817,7 +809,8 @@
             "start_time": "06:31",
             "end_time": "06:32",
             "annotations": {
-                "express agreement": "Shannon Quinn expresses agreement after Maryellen Giger directed her to slide 23 in the PowerPoint deck."
+                "supportive response": "Expressing agreement or confirmation with the previous statement.",
+                "acknowledge contribution": "Verbally recognizing a prior statement or input from another group member."
             }
         },
         {
@@ -837,7 +830,8 @@
             "start_time": "06:32",
             "end_time": "06:35",
             "annotations": {
-                "acknowledge contribution": "Shannon is acknowledging Maryellen's guidance on the slide number to look at in the PowerPoint deck."
+                "acknowledge contribution": "Shannon Quinn acknowledges Maryellen Giger's instruction and shows understanding of the task.",
+                "supportive response": "Shannon Quinn expresses agreement and confirmation of the task or instruction given."
             }
         },
         {
@@ -857,7 +851,8 @@
             "start_time": "06:36",
             "end_time": "06:39",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking a question to clarify whether the roles of recorder and reporter should be held by different people, which is relevant to the meeting's organization."
+                "ask question": "The speaker is requesting information or clarification on the roles of recorder and reporter.",
+                "process management": "The speaker is managing or inquiring about the meeting's process and organizational structure."
             }
         },
         {
@@ -877,7 +872,7 @@
             "start_time": "06:40",
             "end_time": "06:43",
             "annotations": {
-                "ask clarifying question": "Sandra is asking to clarify if the roles of note-taker and reporter are separate, following Maryellen's request for a recorder and presenter."
+                "ask question": "The speaker is requesting information or clarification on the roles of note-taking and reporting within the meeting."
             }
         },
         {
@@ -896,14 +891,10 @@
             "screenshare_content": "None",
             "start_time": "06:44",
             "end_time": "06:56",
-            "annotations": [
-                {
-                    "propose decision": "Richard is suggesting how the task of recording and reporting can be handled, proposing that one person can do both or that the notes can be taken separately and then condensed."
-                },
-                {
-                    "expand on existing idea": "Richard is elaborating on the process of recording and reporting, adding details about how notes can be taken, shared, and then condensed into a PowerPoint slide."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is suggesting a method for managing meeting tasks, specifically note-taking and reporting.",
+                "assign task": "The speaker is assigning or suggesting how tasks (note-taking and reporting) can be handled, which involves assigning responsibilities."
+            }
         },
         {
             "speaker": "Richard Wiener",
@@ -922,7 +913,7 @@
             "start_time": "06:56",
             "end_time": "06:56",
             "annotations": {
-                "confirm decision": "Richard confirms the decision that one person can take notes and another can report, or one person can do both."
+                "supportive response": "The speaker is expressing agreement with a previous suggestion about note-taking and reporting."
             }
         },
         {
@@ -942,7 +933,8 @@
             "start_time": "06:56",
             "end_time": "07:02",
             "annotations": {
-                "confirm decision": "Maryellen is checking if Shannon is okay with the suggestion that one person can take notes and report, which was just discussed."
+                "ask question": "The speaker is explicitly asking for Shannon's confirmation or agreement with the proposed arrangement.",
+                "encourage participation": "By inquiring about Shannon's comfort level, the speaker is also inviting her to participate in the discussion."
             }
         },
         {
@@ -962,7 +954,7 @@
             "start_time": "07:02",
             "end_time": "07:02",
             "annotations": {
-                "confirm decision": "Shannon confirms that she is okay with taking notes and reporting, as suggested by Richard."
+                "Supportive Response": "The utterance 'Yep.' expresses agreement with a previous statement, fitting the definition of a supportive response."
             }
         },
         {
@@ -982,7 +974,7 @@
             "start_time": "07:02",
             "end_time": "07:05",
             "annotations": {
-                "express agreement": "Maryellen expresses agreement with Shannon's willingness to take on the task of both recorder and reporter, as discussed in the previous turns."
+                "None": "No relevant code applies to this utterance as it simply acknowledges the previous agreement and thanks the person."
             }
         },
         {
@@ -1001,14 +993,10 @@
             "screenshare_content": "None",
             "start_time": "07:05",
             "end_time": "07:44",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen proposes to start with the three listed bullets but also allows for the introduction of other major topics, suggesting a direction for the discussion."
-                },
-                {
-                    "present new idea": "Maryellen introduces the idea that they all do computational science, which is a new observation based on the introductions."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by suggesting they start with listed topics and inviting additional topics.",
+                "summarize conversation": "The speaker summarizes an observation from the introductions, noting that all participants do computational science."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1027,7 +1015,7 @@
             "start_time": "07:44",
             "end_time": "07:48",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining the different scales at which the computational science is being applied, macro and micro, to summarize the introductions."
+                "summarize conversation": "Maryellen Giger is making an observation based on the previous introductions, summarizing the scale at which group members work."
             }
         },
         {
@@ -1046,11 +1034,9 @@
             "screenshare_content": "None",
             "start_time": "07:48",
             "end_time": "07:53",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Maryellen is explaining the commonality between the participants, which is that they all do computational science of images, some in 2D and some in 3D."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing a common theme among the participants' work areas, noting they all deal with computational science of images."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1068,11 +1054,10 @@
             "screenshare_content": "None",
             "start_time": "07:53",
             "end_time": "08:05",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen proposes to start with the first bullet point, which is about 3D imaging yielding massive datasets, to guide the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The utterance manages the meeting flow by suggesting they move on to discuss a specific topic.",
+                "clarify goal": "The utterance defines what will be discussed next, implying a goal of addressing the issue of 3D imaging data sets."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1091,7 +1076,7 @@
             "start_time": "08:05",
             "end_time": "08:10",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking what data is required to train AI/ML algorithms, seeking clarification on the necessary data inputs given the context of 3D imaging producing large datasets."
+                "ask question": "The utterance is a direct question seeking information on the data required to effectively train AI and ML algorithms, fitting the definition of 'ask question'."
             }
         },
         {
@@ -1111,7 +1096,8 @@
             "start_time": "08:10",
             "end_time": "08:14",
             "annotations": {
-                "ask clarifying question": "Maryellen is initiating the discussion on the topic of 3D imaging and massive datasets, and she is asking how many people work with massive datasets to gauge the group's experience with the topic."
+                "ask question": "The speaker is requesting information about how many group members work with massive data sets.",
+                "encourage participation": "The speaker is also inviting group members to contribute their experiences."
             }
         },
         {
@@ -1131,7 +1117,7 @@
             "start_time": "08:15",
             "end_time": "08:18",
             "annotations": {
-                "express agreement": "Maryellen agrees with the implicit question of whether people work with massive datasets, based on the previous turn where she asked \"So how many of you do work with massive data sets?\"."
+                "supportive response": "The speaker is expressing agreement with the previous statement, indicating she works with massive data sets."
             }
         },
         {
@@ -1150,11 +1136,9 @@
             "screenshare_content": "None",
             "start_time": "08:19",
             "end_time": "08:19",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen Giger is acknowledging a previous statement or action, but without necessarily agreeing or expanding on it; this is a general acknowledgement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it is a minimal response with no specific content that matches the provided codes."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -1172,11 +1156,9 @@
             "screenshare_content": "None",
             "start_time": "08:27",
             "end_time": "08:29",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Beck Kamilov acknowledges that he also works with massive datasets, similar to what Maryellen Giger mentioned."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -1194,13 +1176,11 @@
             "screenshare_content": "None",
             "start_time": "11:29",
             "end_time": "12:34",
-            "annotations": [
-                {
-                    "present new idea": "Beck introduces the idea of data or model adaptation to different datasets, which is a novel concept in the context of the discussion about training AI/ML algorithms for large 3D imaging datasets.",
-                    "explain or define term or concept": "Beck explains the concept of adapting models trained on one type of data to another, clarifying what he means by 'data or model adaptation'.",
-                    "expand on existing idea": "Beck expands on the initial idea of data adaptation by discussing the limitations of current adaptation techniques and the challenges of adapting deep learning models, building upon the initial mention of data adaptation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on the challenges and potential approaches to adapting pre-trained models to new applications.",
+                "ask question": "The speaker seeks input from the group on how to reuse and adapt pre-trained models.",
+                "identify gap": "The speaker highlights the current limitation in technology for adapting models to different applications."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1219,8 +1199,8 @@
             "start_time": "12:35",
             "end_time": "12:51",
             "annotations": {
-                "ask clarifying question": "The speaker is asking how to use metrology to measure development and the end product to ensure generalizability, unbiasedness, and fairness, seeking clarification on how to achieve these goals.",
-                "acknowledge contribution": "The speaker acknowledges that her question relates to the previous speaker's point about data or model adaptation."
+                "ask question": "The speaker is explicitly asking for information on how to use metrology for measurement, which directly aligns with the definition of asking a question.",
+                "develop idea": "The speaker is also developing ideas previously discussed by highlighting the need for generalizable, unbiased, and fair outcomes in measurement."
             }
         },
         {
@@ -1240,7 +1220,8 @@
             "start_time": "12:52",
             "end_time": "12:52",
             "annotations": {
-                "express agreement": "Beck Kamilov agrees with Maryellen Giger's summarization of his previous points about using metrology to measure development and ensure generalizability, fairness, and lack of bias."
+                "Supportive Response": "The utterance 'Yeah.' expresses agreement or validation with the previous statement without adding new content.",
+                "None": "Not applicable as Supportive Response applies"
             }
         },
         {
@@ -1260,7 +1241,7 @@
             "start_time": "12:53",
             "end_time": "12:53",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking if the topics discussed are major topics, seeking confirmation and clarity on the direction of the conversation."
+                "ask question": "The speaker is requesting clarification or confirmation on whether certain topics are major topics that need to be addressed."
             }
         },
         {
@@ -1279,12 +1260,10 @@
             "screenshare_content": "The screen shows a whiteboard with handwritten notes and diagrams. The notes include items like 'UV cross talk' and 'Mary write paper on TOF'. There are also some chemical structures drawn on the board.",
             "start_time": "13:01",
             "end_time": "13:21",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea of adding 'explainability' as a key consideration, which hasn't been explicitly mentioned before in the conversation.",
-                    "expand on existing idea": "The speaker builds on the previous discussion about data requirements for training AI/ML algorithms by suggesting the need for explainability to understand how the algorithms are working."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the concept of 'explainability' as a new aspect to consider in their discussion.",
+                "develop idea": "The speaker expands on the existing idea of determining what data are required to effectively train AI/ML algorithms by suggesting the need to understand the algorithm's workings."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -1302,11 +1281,11 @@
             "screenshare_content": "The screen shows a whiteboard with handwritten notes and diagrams. The notes include items like 'UV cross talk' and 'Mary write paper on TOF'. There are also some chemical structures drawn on the board.",
             "start_time": "13:21",
             "end_time": "13:51",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previous discussion about data and model adaptation by suggesting that explainability should be added to the discussion, which is a way to improve the development and generalization of AI/ML models."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of using explainability to improve the models and understand their outputs better.",
+                "propose new idea": "The speaker suggests making algorithms more explainable as a way to understand and improve AI/ML models.",
+                "offer feedback": "The speaker provides a suggestion for how to improve the models by making them more explainable."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1325,8 +1304,9 @@
             "start_time": "13:51",
             "end_time": "13:55",
             "annotations": {
-                "express agreement": "Maryellen explicitly agrees with Shiva's point about the importance of explainability in AI/ML models, building on the previous discussion about training AI/ML algorithms and adapting models to different datasets.",
-                "expand on existing idea": "Maryellen expands on Shiva's idea of explainability by adding the concept of interpretability for the end user, building on the previous discussion about training AI/ML algorithms and adapting models to different datasets."
+                "develop idea": "The speaker is expanding on existing ideas by agreeing with and adding to the concept of explainability.",
+                "supportive response": "The speaker is expressing agreement with the previous suggestion about explainability.",
+                "offer feedback": "The speaker is providing feedback by adding the concept of 'to the end user interpretability,' which builds upon Shiva's suggestion."
             }
         },
         {
@@ -1345,14 +1325,9 @@
             "screenshare_content": "The screen shows a whiteboard with handwritten notes and diagrams. The notes include items like 'UV cross talk' and 'Mary write paper on TOF'. There are also some chemical structures drawn on the board.",
             "start_time": "13:56",
             "end_time": "14:11",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is directly asking Shannon if she wants to share her screen, encouraging her to participate in the discussion."
-                },
-                {
-                    "ask clarifying question": "Maryellen is asking if sharing the screen would be useful for Shannon, seeking clarification on her needs for note-taking."
-                }
-            ]
+            "annotations": {
+                "process management": "Maryellen Giger is managing the meeting flow by suggesting Shannon share her screen for group viewing and feedback."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -1371,7 +1346,7 @@
             "start_time": "14:12",
             "end_time": "14:19",
             "annotations": {
-                "express frustration": "Shannon expresses frustration about her current setup, being on Zoom on an iPad while taking notes on a desktop, which seems inconvenient for screen sharing."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1391,7 +1366,7 @@
             "start_time": "14:19",
             "end_time": "14:21",
             "annotations": {
-                "acknowledge contribution": "Maryellen Giger is acknowledging Shannon's previous statement about her setup with the iPad and desktop, but is not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1411,7 +1386,9 @@
             "start_time": "14:23",
             "end_time": "14:32",
             "annotations": {
-                "propose decision": "Shannon proposes to turn her notes into a Google Doc and share the link, offering a concrete choice for the group on how to share the notes."
+                "propose new idea": "Shannon introduces a new method for sharing notes by suggesting to turn them into a Google Doc.",
+                "ask question": "Shannon asks for the group's preference on the method of sharing notes.",
+                "process management": "Shannon's suggestion is about managing the process of how notes are shared with the group."
             }
         },
         {
@@ -1431,7 +1408,8 @@
             "start_time": "14:32",
             "end_time": "14:51",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging participation by expressing her preference for seeing everyone during the discussion, suggesting it aids visual feedback and thus, better engagement."
+                "process management": "The speaker is managing the meeting flow by expressing a preference for how to visually handle the discussion.",
+                "supportive response": "The speaker is expressing a positive evaluation of the visual aspect of the discussion."
             }
         },
         {
@@ -1451,7 +1429,7 @@
             "start_time": "14:51",
             "end_time": "14:53",
             "annotations": {
-                "propose decision": "Maryellen is suggesting a concrete choice for the group, which is to use a Google Drive for sharing notes, following Shannon's explanation of her note-taking setup."
+                "process management": "The speaker is suggesting a method (using Google Drive) for organizing group activities and collaboration."
             }
         },
         {
@@ -1471,7 +1449,7 @@
             "start_time": "14:53",
             "end_time": "14:55",
             "annotations": {
-                "encourage particpatioin": "Maryellen is asking a question to encourage someone else to contribute to the discussion about how to share notes."
+                "process management": "The speaker is seeking input on how to proceed with organizing note-taking or documentation, which is a part of managing the meeting process."
             }
         },
         {
@@ -1491,7 +1469,8 @@
             "start_time": "14:55",
             "end_time": "14:59",
             "annotations": {
-                "express agreement": "Beck Kamilov expresses agreement with the suggestion of using a Google Doc, which was proposed by Maryellen Giger as a way to share notes during the discussion."
+                "Supportive response": "Beck Kamilov is expressing agreement and support for using Google Drive or Google Doc.",
+                "Process management": "Beck Kamilov is contributing to the management of the meeting process by agreeing on a method for collaboration."
             }
         },
         {
@@ -1511,9 +1490,8 @@
             "start_time": "14:59",
             "end_time": "15:14",
             "annotations": {
-                "confirm decision": "Maryellen confirms the decision to use a Google Doc for note-taking, which was previously suggested by Shannon and agreed upon by Beck.",
-                "explain or define term or concept": "Maryellen clarifies that she meant 'Google Doc' instead of 'Google Drive', ensuring everyone understands the tool being discussed.",
-                "express enthusiasm": "Maryellen expresses that using the Google Doc would be useful for the discussion."
+                "Develop idea": "The speaker is elaborating on how to use a Google Doc for collaboration.",
+                "Process management": "The speaker is managing the meeting process by suggesting a method for sharing and viewing documents."
             }
         },
         {
@@ -1533,7 +1511,7 @@
             "start_time": "15:14",
             "end_time": "15:14",
             "annotations": {
-                "express agreement": "Beck Kamilov agrees with Maryellen Giger's suggestion to use a Google Doc for note-taking, which was proposed in the previous turn."
+                "acknowledge contribution": "Beck Kamilov is verbally recognizing a prior statement without adding new content."
             }
         },
         {
@@ -1553,7 +1531,7 @@
             "start_time": "15:14",
             "end_time": "15:15",
             "annotations": {
-                "None": "This utterance does not fit any of the codes in the codebook because it is an incomplete sentence and does not express any idea, question, or action."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1573,9 +1551,8 @@
             "start_time": "15:15",
             "end_time": "15:53",
             "annotations": {
-                "encourage particpatioin": "Maryellen is asking if anyone has any other thoughts, encouraging others to contribute to the discussion.",
-                "expand on existing idea": "Maryellen is elaborating on the first bullet point by connecting it to the third and discussing errors, performance measurement, variation, bias, and generalization, building upon the initial topic of 3D imaging and massive datasets.",
-                "explain or define term or concept": "Maryellen is explaining the concept of acceptable errors and how they are quantified by the metrology of the system."
+                "ask question": "The speaker is explicitly asking for thoughts or insights from the group, requesting information on additional perspectives.",
+                "develop idea": "The speaker is expanding on existing ideas by probing deeper into aspects like errors, performance measurement, system variation, and unbiased generality."
             }
         },
         {
@@ -1595,8 +1572,7 @@
             "start_time": "15:54",
             "end_time": "16:25",
             "annotations": {
-                "present new idea": "The speaker introduces the challenge of knowing the ground truth when imaging biological processes and clinical images, which is a novel point in the discussion.",
-                "provide supporting evidence": "The speaker supports the idea that knowing the ground truth is challenging by mentioning that pathology, which is often correlated to the result, may not always be accurate."
+                "identify gap": "The speaker is explicitly recognizing a challenge or gap in their work, which is not knowing what 'ground truth' is when imaging biological processes and looking at clinical images."
             }
         },
         {
@@ -1616,7 +1592,7 @@
             "start_time": "16:26",
             "end_time": "16:36",
             "annotations": {
-                "ask clarifying question": "Katy is asking Carolyn a clarifying question about what would make the ground truth more accurate when imaging biological processes and clinical images, after Carolyn mentioned the challenge of knowing what ground truth is."
+                "ask question": "The speaker is requesting information or clarification from another team member on a prior statement or idea proposed by that group member."
             }
         },
         {
@@ -1636,8 +1612,8 @@
             "start_time": "16:37",
             "end_time": "16:44",
             "annotations": {
-                "expand on existing idea": "Carolyn is expanding on the previous discussion about the challenges of knowing the ground truth when imaging biological processes and clinical images, suggesting that better images would improve the situation.",
-                "provide supporting evidence": "Carolyn supports her idea by stating that they are all looking at the problem through the \"image lens\", implying that the quality of the images is a fundamental factor in their work."
+                "develop idea": "The speaker is suggesting a potential improvement (better images) to the discussion on imaging challenges.",
+                "ask question": "The utterance ends with a question seeking agreement or confirmation from others."
             }
         },
         {
@@ -1657,7 +1633,7 @@
             "start_time": "16:48",
             "end_time": "16:54",
             "annotations": {
-                "explain or define term or concept": "Maryellen is defining what she means by 'imaging' to include both acquisition and interpretation, clarifying the scope of the discussion."
+                "develop idea": "The speaker is expanding on the concept of imaging by highlighting two key aspects: acquisition and interpretation."
             }
         },
         {
@@ -1676,14 +1652,10 @@
             "screenshare_content": "The screen shows a stone wall with the words 'TULANE UNIVERSITY' carved into it. The background is slightly blurred.",
             "start_time": "16:54",
             "end_time": "17:45",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the concept of 'truth' in the context of image segmentation and how it relates to the application and task at hand, particularly in relation to pathology as the final truth."
-                },
-                {
-                    "expand on existing idea": "The speaker is expanding on the discussion about ground truth by relating it to segmentation and evaluation metrics like the dice coefficient, building on the previous discussion about the challenges of defining ground truth in biological and clinical images."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by discussing the evaluation of image segments and the concept of 'truth' in pathology.",
+                "ask question": "The speaker indirectly poses questions to frame the discussion on evaluating image segments."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1702,7 +1674,8 @@
             "start_time": "17:45",
             "end_time": "17:52",
             "annotations": {
-                "encourage particpatioin": "Maryellen Giger is asking for someone's opinion on the topic being discussed, which is related to ground truth in imaging and its evaluation, encouraging participation from the group."
+                "encourage participation": "The speaker is inviting others to contribute their thoughts or opinions.",
+                "ask question": "The speaker is requesting information or thoughts from other group members."
             }
         },
         {
@@ -1721,13 +1694,11 @@
             "screenshare_content": "None",
             "start_time": "17:53",
             "end_time": "19:07",
-            "annotations": [
-                {
-                    "express agreement": "Girgis agrees with Carolyn's point about the difficulty of defining ground truth, showing agreement with a previously stated idea.",
-                    "present new idea": "Girgis presents the idea of multiplexing the final yes/no answer by combining pathologist input, molecular markers, proteomics, and genomic data to work towards a more reliable ground truth, which is a novel approach not previously discussed.",
-                    "expand on existing idea": "Girgis expands on the discussion about ground truth by suggesting that multiplexing outputs at the end, such as histology, pathologist input, molecular markers, proteomics, and genomic data, can help train the intermediate steps, building upon the previous discussion about the challenges of defining ground truth."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Girgis Obaid introduces a specific approach (multiplexing the final yes/no answer by incorporating multiple data types) to tackle the issue of ground truth in training AI/ML algorithms.",
+                "develop idea": "He elaborates on his suggestion by explaining how this approach could work and its potential benefits.",
+                "offer feedback": "Girgis Obaid provides a specific suggestion (multiplexing data types) as a way to address the challenge of ground truth."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1746,7 +1717,7 @@
             "start_time": "19:07",
             "end_time": "19:07",
             "annotations": {
-                "confirm decision": "Maryellen Giger confirms a decision that was previously proposed, indicating agreement and finalization."
+                "supportive response": "The speaker is expressing agreement or validation of a previous contribution without adding new content."
             }
         },
         {
@@ -1766,7 +1737,7 @@
             "start_time": "19:08",
             "end_time": "19:09",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1785,12 +1756,10 @@
             "screenshare_content": "None",
             "start_time": "19:10",
             "end_time": "19:50",
-            "annotations": [
-                {
-                    "present new idea": "Beck introduces the concept of tolerable errors in ground truth, suggesting that non-systematic errors that average out can still allow for effective model training, which is a novel idea in the context of the discussion about ground truth challenges.",
-                    "explain or define term or concept": "Beck explains the concept of 'non-systematic errors' in the context of ground truth, clarifying that these are errors that average out across the dataset and do not significantly impact model training, which helps the group understand the nuances of error types in training data."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas about data quality and its impact on machine learning models.",
+                "ask question": "The speaker seeks information on the tolerable level of errors in training data."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -1809,7 +1778,7 @@
             "start_time": "19:50",
             "end_time": "19:50",
             "annotations": {
-                "express agreement": "Maryellen agrees with the point that there are tolerable errors in the training data, which was brought up by Beck in the previous turn."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1828,11 +1797,10 @@
             "screenshare_content": "None",
             "start_time": "19:51",
             "end_time": "20:24",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker supports the idea of training with messy data by providing an example of developing a filter in a continuous domain that doesn't work perfectly when applied to the pixelated and quantized image domain, suggesting that real-world data is inherently messy."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea about dealing with real-world data by providing insights and suggestions on how to approach training and testing with messy data.",
+                "offer feedback": "The speaker is providing a suggestion on how to handle the challenge of messy data, which can be seen as offering feedback on the approach to be taken."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -1851,8 +1819,8 @@
             "start_time": "20:25",
             "end_time": "20:45",
             "annotations": {
-                "expand on existing idea": "Beck expands on Maryellen's point about pixelation in real-world images by suggesting that these systematic changes can be incorporated as non-trainable or adaptable elements in machine learning models, building upon the discussion of training and testing with messy data.",
-                "provide supporting evidence": "Beck provides a potential solution to the problem of pixelation changes in real-world images, suggesting incorporating them as non-trainable or adaptable elements in machine learning models, which supports the idea of adapting models to different data."
+                "develop idea": "The speaker is expanding on a previous discussion about handling changes in data, suggesting a way to incorporate systematic changes into machine learning models.",
+                "offer feedback": "The speaker provides a specific suggestion for how to handle systematic changes, which can be seen as offering feedback on how to approach the problem."
             }
         },
         {
@@ -1871,11 +1839,9 @@
             "screenshare_content": "None",
             "start_time": "20:45",
             "end_time": "20:46",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance as it is incomplete."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -1893,13 +1859,11 @@
             "screenshare_content": "None",
             "start_time": "21:29",
             "end_time": "22:10",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges the importance of the problem of generalizability and bias in AI, which builds upon the previous discussion about errors in ground truth and training data.",
-                    "explain or define term or concept": "Maryellen is defining the problem of generalizability and bias in AI, which is important for the group to understand.",
-                    "encourage particpatioin": "Maryellen encourages Lou to participate by asking what would be needed to make the dream work, even acknowledging that Lou might be more focused on imaging than AI."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by emphasizing the importance of generalizability and bias in AI.",
+                "ask question": "The speaker asks for input on what would be needed to make the 'dream work', which is about addressing the issues of generalizability and bias in AI.",
+                "encourage participation": "The speaker invites Lou to contribute his thoughts, offering him the option to pass or go ahead."
+            }
         },
         {
             "speaker": "Lu Wei",
@@ -1917,17 +1881,11 @@
             "screenshare_content": "None",
             "start_time": "22:10",
             "end_time": "24:14",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Lu Wei explains that they are more focused on imaging but are trying to learn about AI to help with image interpretation and segmentation, clarifying their background and goals."
-                },
-                {
-                    "ask clarifying question": "Lu Wei asks about the lack of benchmarks for comparing different AI networks and the required signal-to-noise ratios and resolution limitations for training and prediction sets, seeking guidance on AI model selection and training parameters."
-                },
-                {
-                    "encourage particpatioin": "Lu Wei states that they are there to ask questions and learn, inviting others to provide insights based on their expertise."
-                }
-            ]
+            "annotations": {
+                "ask question": "Lu Wei is asking questions about AI networks, benchmarks, signal-to-noise ratios, and resolution limitations.",
+                "identify gap": "Lu Wei identifies a gap in their knowledge about AI and a need for benchmarks to compare different networks.",
+                "clarify goal": "Lu Wei is seeking clarity on how to approach their problem with AI for image segmentation and interpretation."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -1945,11 +1903,10 @@
             "screenshare_content": "None",
             "start_time": "24:14",
             "end_time": "24:29",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges Lu Wei's contribution by stating that her input is very useful, recognizing her perspective as an imaging expert seeking AI solutions."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker verbally recognizes Lu Wei's input, showing appreciation for the information provided.",
+                "supportive response": "The utterance expresses a positive evaluation of Lu Wei's contribution, indicating that it is useful."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -1968,9 +1925,9 @@
             "start_time": "24:29",
             "end_time": "25:12",
             "annotations": {
-                "expand on existing idea": "The speaker expands on the previously discussed AI pipeline, specifically segmentation, and how its evaluation depends on the end user.",
-                "explain or define term or concept": "The speaker explains that the endpoint of the AI pipeline depends on the end user, even in autonomous systems, to clarify the importance of the end user perspective.",
-                "present new idea": "The speaker introduces the idea that the AI field is still very young because a lot of the work being done is very focused, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is expanding on existing ideas about AI pipelines, specifically discussing evaluation metrics and the role of the end user.",
+                "summarize conversation": "The speaker refers back to previous discussions about the AI pipeline and segmentation.",
+                "clarify goal": "The speaker is clarifying objectives related to evaluating AI system performance, emphasizing the importance of the end user."
             }
         },
         {
@@ -1989,14 +1946,9 @@
             "screenshare_content": "None",
             "start_time": "25:12",
             "end_time": "26:25",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the concept of an AI pipeline and how it can be extended to include the entire process from patient acquisition to interpretation, which is meant to clarify the scope of AI in imaging."
-                },
-                {
-                    "propose decision": "The speaker proposes that the AI pipeline should be extended to start with acquisition and the patient, suggesting a concrete choice for the group to consider."
-                }
-            ]
+            "annotations": {
+                "identify gap": "Maryellen highlights the gap in current research, such as the lack of a clear list of techniques and metrology."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2014,11 +1966,9 @@
             "screenshare_content": "None",
             "start_time": "26:25",
             "end_time": "26:25",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen explicitly agrees with a prior statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance in a meaningful way that adds substantial insight into the conversation."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -2037,7 +1987,8 @@
             "start_time": "26:25",
             "end_time": "26:26",
             "annotations": {
-                "express enthusiasm": "The speaker expresses excitement and optimism, indicated by the statement \"Yes, that makes me so happy,\" which suggests a positive reaction to the preceding discussion about extending the AI pipeline."
+                "supportive response": "The speaker is expressing a positive sentiment towards a previous idea, indicating agreement and support.",
+                "acknowledge contribution": "The speaker is also acknowledging Maryellen Giger's contribution by expressing happiness with her idea."
             }
         },
         {
@@ -2056,11 +2007,9 @@
             "screenshare_content": "None",
             "start_time": "26:26",
             "end_time": "26:32",
-            "annotations": [
-                {
-                    "express enthusiasm": "Maryellen expresses enthusiasm by saying \"Interesting. Okay, we have a happy group here. Good.\", showing a positive reaction to Shiva's previous statement."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance expresses a positive sentiment and agreement with the group's dynamics or previous discussions, aligning with the definition of a supportive response."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -2078,17 +2027,11 @@
             "screenshare_content": "None",
             "start_time": "26:32",
             "end_time": "27:19",
-            "annotations": [
-                {
-                    "express enthusiasm": "Shiva expresses excitement about reading papers on AI-based image reconstruction, building on Maryellen's suggestion to extend the AI pipeline, indicating enthusiasm for the field's progress."
-                },
-                {
-                    "expand on existing idea": "Shiva expands on the idea of AI in imaging by mentioning its potential for image reconstruction, especially in limited angle problems and low-dose data interpretation, building on the discussion about extending the AI pipeline."
-                },
-                {
-                    "express enthusiasm": "Shiva expresses excitement about the current state of the field and her eagerness to learn and implement AI in her research, reinforcing her positive reaction to the discussion about AI's potential in imaging."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on existing ideas by discussing how AI can be used in their area of research, specifically for limited angle problems and low-dose data.",
+                "supportive response": "The speaker expresses enthusiasm and positive evaluation for the direction of the field and the potential of AI.",
+                "identify gap": "The speaker implies a gap in current capabilities, particularly in handling low-dose data and limited angle problems."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2107,9 +2050,9 @@
             "start_time": "27:19",
             "end_time": "27:23",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Maryellen suggests optimizing the AI pipeline both individually and as a whole, proposing a concrete choice for the group to consider."
-                }
+                "develop idea": "The speaker is expanding on previous ideas about optimizing a pipeline.",
+                "supportive response": "The utterance expresses a positive sentiment towards the discussion or previous ideas.",
+                "offer feedback": "The speaker is providing a suggestion for how to proceed with optimizing the pipeline."
             }
         },
         {
@@ -2129,9 +2072,8 @@
             "start_time": "27:23",
             "end_time": "27:34",
             "annotations": {
-                "expand on existing idea": "Maryellen expands on the idea of optimizing the AI pipeline, adding that it includes acquisition and interpretation, whether by AI, human, or AI-aided human, and extends from the patient's initial imaging exam to the final treatment decision, building upon the previous discussion about extending the AI pipeline.",
-                "present new idea": "Maryellen presents the new idea of considering the entire process from patient exam to treatment as part of the AI pipeline, which hasn't been explicitly mentioned in this comprehensive way before.",
-                "explain or define term or concept": "Maryellen clarifies that the interpretation stage of the AI pipeline can involve AI, humans, or AI-aided humans, explaining the different possibilities for how the interpretation is done."
+                "develop idea": "The speaker is expanding on the idea of extending the AI pipeline to include acquisition, interpretation, and decision-making.",
+                "clarify goal": "The speaker is defining and clarifying objectives by discussing the extension of the AI pipeline throughout the imaging process."
             }
         },
         {
@@ -2150,14 +2092,10 @@
             "screenshare_content": "None",
             "start_time": "27:34",
             "end_time": "27:46",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen proposes that the group should work together on the entire AI pipeline, from patient to treatment, instead of focusing on individual niches, suggesting a concrete choice for the group's approach."
-                },
-                {
-                    "express agreement": "Maryellen explicitly agrees with a previously mentioned idea or decision, indicating alignment and support."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing her understanding of the discussion, emphasizing the need for a comprehensive and collaborative approach.",
+                "supportive response": "The speaker is expressing support for the idea of working together rather than in isolated areas, indicating a positive stance towards collaboration."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2175,12 +2113,11 @@
             "screenshare_content": "None",
             "start_time": "27:49",
             "end_time": "28:12",
-            "annotations": [
-                {
-                    "express enthusiasm": "Beck expresses excitement about the problem of the whole pipeline, indicating enthusiasm.",
-                    "expand on existing idea": "Beck builds on the idea of the whole pipeline by adding the consideration of the system's fragility and generalization, which Maryellen introduced in the previous turns."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by mentioning the importance of considering the 'fragility of the system' and relating it back to 'generalization.'",
+                "offer feedback": "The speaker is providing specific suggestions for consideration, which is about thinking about the fragility of the system and its generalization.",
+                "supportive response": "The speaker is expressing agreement and validation for the discussed approach by showing excitement and suggesting further considerations."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2199,7 +2136,7 @@
             "start_time": "28:12",
             "end_time": "28:12",
             "annotations": {
-                "express agreement": "Beck Kamilov says \"Right\", which indicates agreement with the previous statement made by Maryellen Giger about the importance of considering the entire AI pipeline from patient to treatment."
+                "supportive response": "The utterance 'Right.' is a brief expression of agreement with a previous statement, fitting the definition of a supportive response."
             }
         },
         {
@@ -2218,13 +2155,11 @@
             "screenshare_content": "None",
             "start_time": "28:13",
             "end_time": "29:08",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the idea that there is a high barrier to entry for solving problems related to AI in imaging due to limited access to diverse data types, which has not been explicitly mentioned before.",
-                    "expand on existing idea": "The speaker expands on the existing idea of what data is required to effectively train AI/ML algorithms by stating that access to all data types is needed, which builds on the previous discussion about the challenges of training AI models with limited data.",
-                    "express frustration": "The speaker expresses frustration about the difficulty of accessing diverse data types needed to solve AI problems in imaging, highlighting the limitations of single-institution data and vendor-specific systems."
-                }
-            ]
+            "annotations": {
+                "identify gap": "Katy highlights the gap in access to diverse data sets and the limitations of working within a single institution or vendor system.",
+                "ask question": "Katy implicitly asks about the requirements for training AI/ML algorithms and how to overcome the challenges of limited data access.",
+                "develop idea": "Katy expands on the challenges and implications of limited data access for AI/ML algorithm training."
+            }
         },
         {
             "speaker": "Maryellen Giger UChicago",
@@ -2243,7 +2178,8 @@
             "start_time": "29:08",
             "end_time": "29:10",
             "annotations": {
-                "express agreement": "Maryellen is agreeing with Katy's point in the previous turn that solving the problem of generalizability requires access to all data types."
+                "summarize conversation": "The speaker is summarizing a previously discussed point about the need for comprehensive data.",
+                "clarify goal": "The utterance implicitly clarifies a goal related to the necessity of having all the data for their research."
             }
         },
         {
@@ -2263,9 +2199,8 @@
             "start_time": "29:10",
             "end_time": "29:23",
             "annotations": {
-                "present new idea": "Maryellen introduces the idea that the group wants 'all the data' to solve problems, which hasn't been explicitly stated before, framing it as a requirement.",
-                "express frustration": "Maryellen expresses frustration that they are limited by data and culture, specifically the giving and sharing of data, which is hindering their progress.",
-                "expand on existing idea": "Maryellen expands on Katy's point about the data needed to solve problems, stating that they want all the data but are limited by data access and sharing culture, building on the previous discussion about data limitations."
+                "identify gap": "The speaker explicitly mentions being limited by data and the culture of data sharing, indicating a gap in their current capability.",
+                "clarify goal": "The speaker implies a goal of wanting all the data to advance their work, indicating a desire to overcome current limitations."
             }
         },
         {
@@ -2285,7 +2220,7 @@
             "start_time": "29:23",
             "end_time": "29:23",
             "annotations": {
-                "express agreement": "The utterance 'Right' expresses agreement with the previous statement made by Katy Keenan about the need for all data to solve problems related to AI in imaging."
+                "supportive response": "The speaker is expressing agreement or acknowledgment of a previous statement."
             }
         },
         {
@@ -2305,7 +2240,8 @@
             "start_time": "29:23",
             "end_time": "29:33",
             "annotations": {
-                "encourage particpatioin": "Maryellen Giger saw Paris shaking his head and then asked him what he was thinking about, inviting him to contribute to the discussion."
+                "critical response": "The speaker is questioning or challenging an idea, indicating a potential mistake.",
+                "ask question": "The speaker is seeking thoughts or opinions from others, specifically Paris."
             }
         },
         {
@@ -2325,7 +2261,7 @@
             "start_time": "29:33",
             "end_time": "29:33",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging the previous speaker's point, but not necessarily agreeing or expanding on it, as Maryellen Giger just asked Paris what he was thinking about."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2344,13 +2280,11 @@
             "screenshare_content": "None",
             "start_time": "29:38",
             "end_time": "30:30",
-            "annotations": [
-                {
-                    "express enthusiasm": "Paris expresses enthusiasm about the discussion so far, indicating a positive sentiment towards the ongoing conversation.",
-                    "express alternative decision": "Paris expresses an alternative decision by stating he is less optimistic that data and AI alone will address all the issues, suggesting a different perspective from the previous discussion.",
-                    "present new idea": "Paris presents a new idea by suggesting integrating domain knowledge into the AI pipeline to provide informative prior information, which hasn't been explicitly discussed before."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker expresses a critical view of relying solely on data and AI.",
+                "offer feedback": "The speaker provides feedback on how to improve the approach by integrating domain knowledge.",
+                "develop idea": "The speaker expands on the discussion by suggesting a new aspect to consider (integrating domain knowledge)."
+            }
         },
         {
             "speaker": "Paris Perdikaris",
@@ -2369,7 +2303,7 @@
             "start_time": "30:30",
             "end_time": "30:30",
             "annotations": {
-                "express agreement": "Paris explicitly agrees with the prior statement about the limitations of data and AI alone, and the need to integrate domain knowledge."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2388,14 +2322,10 @@
             "screenshare_content": "None",
             "start_time": "30:31",
             "end_time": "30:43",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen agrees with Paris's point about integrating domain knowledge into the AI pipeline, building on the previous discussion about the limitations of relying solely on data and AI."
-                },
-                {
-                    "expand on existing idea": "Maryellen expands on the idea of domain knowledge by emphasizing the interdisciplinary nature of the field, connecting it to the expertise of the people in the meeting."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The utterance expresses agreement and validation for the discussion on domain knowledge and expertise.",
+                "Signal expertise": "The speaker implicitly signals her expertise in the field by stating her perspective on domain knowledge."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2414,15 +2344,8 @@
             "start_time": "31:29",
             "end_time": "31:49",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges the intelligence and AI capabilities of the group members, recognizing their contributions to the field."
-                },
-                "present new idea": {
-                    "Explanation": "The speaker introduces the idea of bringing all the AI technologies together to address the challenges in the field, which is a novel concept in the context of the discussion."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "The speaker directly addresses Alex, apologizing for not including him in the discussion and inviting him to participate."
-                }
+                "process management": "The speaker is managing the discussion by highlighting a key challenge and attempting to keep the conversation on track.",
+                "encourage participation": "The speaker is encouraging Alex's participation by directly involving him in the conversation."
             }
         },
         {
@@ -2442,7 +2365,8 @@
             "start_time": "31:50",
             "end_time": "31:51",
             "annotations": {
-                "encourage particpatioin": "Beck Kamilov encourages Jim to participate by asking if he has a question, after Maryellen Giger had been calling on other participants."
+                "ask question": "The speaker is inquiring if Jim has a question, requesting information or clarification.",
+                "encourage participation": "By asking Jim directly if he has a question, the speaker is inviting him to contribute to the discussion."
             }
         },
         {
@@ -2461,14 +2385,9 @@
             "screenshare_content": "None",
             "start_time": "31:52",
             "end_time": "32:20",
-            "annotations": [
-                {
-                    "ask clarifying question": "The speaker is asking if there is crowd sourcing of images in the medical imaging domain, similar to Tesla's autopilot work, to improve AI models, which is a request for information."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions Tesla's autopilot work and how crowd sourcing of images has helped them improve, providing an example from another domain to support the potential benefits of crowd sourcing in medical imaging."
-                }
-            ]
+            "annotations": {
+                "ask question": "Jim Mitchell requests information about crowd sourcing of images and where they reside, seeking clarification or expertise from the group."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2486,17 +2405,11 @@
             "screenshare_content": "None",
             "start_time": "32:20",
             "end_time": "33:16",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Maryellen provides an example of crowd sourcing in radiology, where radiologists annotate chest images, to support the idea that technically, a lot can be done."
-                },
-                {
-                    "acknowledge contribution": "Maryellen acknowledges Jim's question about crowd sourcing of images."
-                },
-                {
-                    "encourage particpatioin": "Maryellen encourages those in cellular imaging to talk about their experience and asks Alex about it, inviting them to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges the contribution of crowd sourcing in radiology.",
+                "supportive response": "The speaker provides a supportive response by sharing an example and expressing potential.",
+                "encourage participation": "The speaker encourages participation by asking about experiences in cellular images."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2514,23 +2427,12 @@
             "screenshare_content": "None",
             "start_time": "33:16",
             "end_time": "33:31",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "The phrase \"Good point, Jim\" acknowledges Jim's prior question about crowd sourcing of images."
-                    }
-                },
-                {
-                    "assign task": {
-                        "Explanation": "The phrase \"I'm going to ask Alex about that\" assigns Alex the task of talking about their experience with cellular images."
-                    }
-                },
-                {
-                    "explain or define term or concept": {
-                        "Explanation": "The speaker explains the concept of people manually circling cells to create data, relating it back to the earlier discussion about the amount of data needed for algorithms."
-                    }
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is building on previous discussions, elaborating on the challenges faced in their field.",
+                "ask question": "The speaker asks questions, such as 'How many cells do you have to circle to have enough data to algorithm.'",
+                "express humor": "The speaker uses humor when saying 'crazy just to create data.'",
+                "encourage participation": "The speaker invites Alex to share their experience."
+            }
         },
         {
             "speaker": "Jim Mitchell",
@@ -2549,7 +2451,7 @@
             "start_time": "33:32",
             "end_time": "33:33",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging Beck's contribution for pointing out that Jim had a question."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2568,20 +2470,11 @@
             "screenshare_content": "None",
             "start_time": "33:33",
             "end_time": "35:04",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Alex describes their experience with auto fluorescence imaging and the challenges of low signal-to-noise ratios, supporting the need for AI in processing such data, which was previously discussed."
-                },
-                {
-                    "express agreement": "Alex explicitly agrees with Paris's point about integrating domain knowledge into AI pipelines, indicating agreement with a previously stated idea."
-                },
-                {
-                    "expand on existing idea": "Alex expands on the idea of integrating domain knowledge by providing a specific example of how biological and physical boundaries can be incorporated into AI for cell segmentation, building upon Paris's earlier point."
-                },
-                {
-                    "offer constructive criticism": "Alex offers constructive criticism by suggesting that AI systems should flag segmentation results that violate known biological or physical boundaries, aiming to improve the accuracy and reliability of the AI's output."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on their experience with AI in microscopy, discussing challenges and potential improvements.",
+                "ask question": "The speaker asks about incorporating biological or physical boundaries into AI.",
+                "signal expertise": "The speaker mentions their experience with auto fluorescence imaging and working with AI in microscopy."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2600,12 +2493,9 @@
             "start_time": "35:05",
             "end_time": "35:29",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The phrase \"that's a very good point\" acknowledges Alex's prior contribution about integrating biological and physical boundaries into AI."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Maryellen expands on Alex's point about integrating domain knowledge into AI by suggesting taking advantage of a priori knowledge and the input image during AI training."
-                }
+                "develop idea": "The speaker expands on a previous idea by discussing the importance of a priori knowledge in training AI.",
+                "ask question": "The speaker asks about the approach to training AI, specifically about the role of a priori knowledge and data.",
+                "supportive response": "The speaker acknowledges a previous point and builds upon it."
             }
         },
         {
@@ -2625,8 +2515,8 @@
             "start_time": "35:29",
             "end_time": "35:45",
             "annotations": {
-                "provide supporting evidence": "The utterance provides supporting evidence for the challenges in training AI in the medical field by contrasting it with the availability of annotated data in other fields like ImageNet, where there are abundant labeled images of common objects.",
-                "expand on existing idea": "This utterance expands on the existing idea of the challenges in training AI for medical imaging, which was previously discussed in the context of ground truth and data limitations."
+                "critical response": "The speaker is highlighting a limitation and challenge in the field, which can be seen as a form of critical response to the current state of data availability.",
+                "clarify goal": "The speaker is also contributing to the discussion on what is needed or what the goals should be, in this case, the need for more annotated data in the medical field."
             }
         },
         {
@@ -2645,11 +2535,11 @@
             "screenshare_content": "None",
             "start_time": "35:45",
             "end_time": "35:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "Maryellen expands on the idea of incorporating prior knowledge into AI training, which Alex had just discussed, by emphasizing the importance of helping the AI and thinking like a human."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges and appreciates comments made by others regarding a priori knowledge.",
+                "supportive response": "The speaker expresses validation for previous comments on the importance of a priori knowledge for AI.",
+                "clarify goal": "The speaker clarifies the goal of helping AI by suggesting that it should be able to think like a human when evaluating image presentations."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2668,9 +2558,9 @@
             "start_time": "35:59",
             "end_time": "36:42",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining the concept of using preprocessed images instead of raw data for AI training, drawing an analogy to how humans are trained to read images over many years.",
-                "present new idea": "Maryellen introduces the idea of preprocessing images before feeding them to AI, suggesting it can help the AI learn better with limited data.",
-                "ask clarifying question": "Maryellen is asking how many of the participants consider what image they are giving to the AI and if they preprocess the data to help the AI learn, seeking to understand the current practices of the group."
+                "ask question": "The speaker explicitly asks questions about the approach to providing data to AI.",
+                "offer feedback": "The speaker provides feedback on how to approach training AI, suggesting consideration of preprocessing data.",
+                "encourage participation": "The speaker encourages others to consider and share their thoughts on preprocessing data."
             }
         },
         {
@@ -2690,7 +2580,8 @@
             "start_time": "36:42",
             "end_time": "36:42",
             "annotations": {
-                "encourage particpatioin": "Maryellen Giger is directly asking Caroline for her opinion, encouraging her to contribute to the discussion."
+                "ask question": "The speaker is explicitly asking Caroline for her thoughts or opinions, which implies seeking information.",
+                "encourage participation": "By directly asking Caroline, the speaker is inviting her to contribute to the discussion."
             }
         },
         {
@@ -2709,11 +2600,11 @@
             "screenshare_content": "None",
             "start_time": "36:42",
             "end_time": "37:34",
-            "annotations": [
-                {
-                    "express agreement": "Carolyn agrees with Maryellen's point about preprocessing data to help AI learn, indicating that the idea resonates with her experience."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker verbally recognizes and aligns with a prior statement or idea.",
+                "identify gap": "The speaker explicitly points out a limitation or gap, in this case, the representativeness of datasets for algorithm training.",
+                "supportive response": "The speaker expresses agreement or validation for other group members' contributions."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2731,14 +2622,11 @@
             "screenshare_content": "None",
             "start_time": "37:35",
             "end_time": "37:50",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen asks Shannon about the progress of the list, encouraging her participation."
-                },
-                {
-                    "express enthusiasm": "Maryellen expresses enthusiasm about the list's progress, noting it looks good and longer than three minutes."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of creating a comprehensive database that includes different spatial resolutions and utilizing AI for reconstruction.",
+                "ask question": "The speaker asks Shannon about the status of a list.",
+                "supportive response": "The speaker expresses agreement or positivity towards the list."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -2757,7 +2645,7 @@
             "start_time": "38:00",
             "end_time": "38:03",
             "annotations": {
-                "acknowledge contribution": "Shannon is acknowledging the request to summarize the discussion, but not agreeing or expanding on it."
+                "summarize conversation": "The speaker is trying to get the main points of the discussion, indicating an attempt to summarize or understand the key points."
             }
         },
         {
@@ -2776,11 +2664,10 @@
             "screenshare_content": "None",
             "start_time": "38:03",
             "end_time": "38:10",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen is encouraging Shannon to summarize the points, inviting her to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by asking the group for their preference on how to proceed.",
+                "ask question": "The speaker is requesting information or clarification from the group on what they would like to do next."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -2798,12 +2685,9 @@
             "screenshare_content": "None",
             "start_time": "38:10",
             "end_time": "38:30",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen is proposing a direction for the discussion, asking about the next big thing for the field, which is a concrete choice for the group to discuss.",
-                    "assign task": "Maryellen is assigning the task of thinking about the future of the field to the group."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker invites others to share their thoughts on the future of the field and their aspirations for where it should go, encouraging participation and discussion."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2822,7 +2706,7 @@
             "start_time": "38:30",
             "end_time": "38:32",
             "annotations": {
-                "ask clarifying question": "Beck Kamilov is asking if the current topic of discussion is the \"open question\" that Maryellen Giger mentioned, seeking confirmation on the discussion's focus."
+                "ask question": "The speaker is asking for clarification or information about a previous statement or topic, indicating a request for more information."
             }
         },
         {
@@ -2841,11 +2725,9 @@
             "screenshare_content": "None",
             "start_time": "38:32",
             "end_time": "38:36",
-            "annotations": [
-                {
-                    "ask clarifying question": "Maryellen is asking for clarification on whether the previous statement was a clinical question, seeking to understand the speaker's intention."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the nature of the question being discussed."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2863,11 +2745,9 @@
             "screenshare_content": "None",
             "start_time": "38:36",
             "end_time": "38:43",
-            "annotations": [
-                {
-                    "ask clarifying question": "Beck is asking a clarifying question about the topic of discussion, specifically if they should be discussing big picture ideas."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is seeking clarification or confirmation on the discussion topic or direction, which aligns with requesting information or clarification."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2885,14 +2765,10 @@
             "screenshare_content": "None",
             "start_time": "38:43",
             "end_time": "39:03",
-            "annotations": [
-                {
-                    "present new idea": "Beck introduces the novel concept of having a 'recipe' for determining the amount of data needed for a specific task, which hasn't been explicitly discussed before."
-                },
-                {
-                    "express frustration": "Beck expresses frustration about the lack of a clear method for determining the amount of data needed for a task, highlighting the current uncertainty in the field."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the idea of having a 'recipe' for determining how much data is needed for a task.",
+                "develop idea": "The speaker elaborates on the idea by comparing it to a common problem of segmenting an image and noting the absence of such a recipe."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2910,14 +2786,10 @@
             "screenshare_content": "None",
             "start_time": "39:03",
             "end_time": "39:13",
-            "annotations": [
-                {
-                    "ask clarifying question": "Beck is asking a question about the amount of data needed for a task, building on the previous discussion about the challenges of determining ground truth and the need for messy data for training AI models."
-                },
-                {
-                    "encourage particpatioin": "Beck is encouraging others to answer the question about how much data is needed for a task, inviting others to contribute to the discussion."
-                }
-            ]
+            "annotations": {
+                "code name": "explanation",
+                "another code": "another explanation"
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2935,14 +2807,9 @@
             "screenshare_content": "None",
             "start_time": "39:13",
             "end_time": "39:23",
-            "annotations": [
-                {
-                    "expand on existing idea": "Building on the discussion about the amount of data needed for a task, this utterance expands on the idea by asking how prior information can help reduce the amount of data needed."
-                },
-                {
-                    "ask clarifying question": "This utterance asks how prior information can help reduce the amount of data needed for a task, seeking clarification on the relationship between prior knowledge and data requirements."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is exploring how prior information (e.g., nucleus position) can be used to optimize data collection or analysis."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -2960,11 +2827,9 @@
             "screenshare_content": "None",
             "start_time": "39:23",
             "end_time": "39:23",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Shannon is about to speak, likely responding to a question or prompt from Maryellen or Beck, encouraging her participation in the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -2982,11 +2847,9 @@
             "screenshare_content": "None",
             "start_time": "39:23",
             "end_time": "39:23",
-            "annotations": [
-                {
-                    "express agreement": "Beck Kamilov is agreeing with the previous statement, which was Shannon Quinn beginning to speak."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is acknowledging a previous statement, showing agreement or confirmation."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -3005,7 +2868,7 @@
             "start_time": "39:24",
             "end_time": "39:30",
             "annotations": {
-                "expand on existing idea": "Shannon is building upon the previous discussion about data requirements and expressing a desire to extend the conversation further."
+                "propose new idea": "The speaker is indicating a desire to take the discussion further, potentially introducing a new idea or perspective."
             }
         },
         {
@@ -3025,7 +2888,8 @@
             "start_time": "39:30",
             "end_time": "39:33",
             "annotations": {
-                "present new idea": "Shannon is introducing a novel concept of minimizing the reliance on data, which has not been previously discussed in the conversation."
+                "propose new idea": "The utterance introduces a novel approach to handling data in AI applications, suggesting minimizing or taking data out of the equation entirely.",
+                "offer feedback": "The speaker's suggestion implies a critique of current data-heavy approaches and offers an alternative perspective on how data could be handled in AI applications."
             }
         },
         {
@@ -3045,7 +2909,8 @@
             "start_time": "39:33",
             "end_time": "39:39",
             "annotations": {
-                "explain or define term or concept": "Shannon is about to explain something, likely related to the ongoing discussion about data requirements for AI in imaging."
+                "encourage participation": "The speaker is requesting an opportunity to contribute to the discussion by explaining their point.",
+                "ask question": "Alternatively, it could be seen as indirectly asking for permission or space to speak."
             }
         },
         {
@@ -3064,14 +2929,11 @@
             "screenshare_content": "None",
             "start_time": "39:39",
             "end_time": "41:23",
-            "annotations": [
-                {
-                    "present new idea": "Shannon introduces the idea of using self-supervised learning, few-shot learning, and anomaly detection as alternatives to relying solely on large datasets and ground truth, which is a novel concept in the context of the discussion about data requirements for AI models.",
-                    "expand on existing idea": "Shannon expands on the discussion about data requirements by suggesting that new methods like self-supervised learning and few-shot learning could reduce the need for massive datasets, building upon the previous discussion about the challenges of obtaining sufficient data and ground truth.",
-                    "provide supporting evidence": "Shannon supports the idea of alternative learning methods by mentioning uncertainty quantification as a way to inform the end user even with limited data, providing a practical benefit of these approaches.",
-                    "express alternative decision": "Shannon expresses an alternative to the idea that more data is always the solution, suggesting that new methods like self-supervised learning might be more effective, which goes against the earlier discussion about the need for massive datasets."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces new perspectives on data requirements and model training, questioning the necessity of large amounts of data.",
+                "ask question": "The speaker poses questions about the current approach to model training and data requirements.",
+                "identify gap": "The speaker highlights a potential gap in current methods, suggesting that more data may not be the solution."
+            }
         },
         {
             "speaker": "Ulugbek Kamilov",
@@ -3090,7 +2952,7 @@
             "start_time": "41:23",
             "end_time": "41:27",
             "annotations": {
-                "ask clarifying question": "Beck is asking a question to clarify Shannon's point about uncertainty quantification, specifically if there needs to be a measure of certainty for the certainty itself to ensure trustworthiness."
+                "ask question": "The speaker is requesting information or clarification on the need for certainty about the certainty of AI outputs."
             }
         },
         {
@@ -3110,8 +2972,8 @@
             "start_time": "41:29",
             "end_time": "41:47",
             "annotations": {
-                "expand on existing idea": "Maryellen is expanding on the idea of uncertainty quantification that Shannon introduced, adding the concept of algorithm bias to the uncertainty output.",
-                "present new idea": "Maryellen introduces the idea of an algorithm providing three outputs: the probability of a condition (e.g., cancer), the algorithm's certainty in that probability, and a statement about the algorithm's bias, which is a novel concept in the discussion."
+                "develop idea": "The speaker is elaborating on the concept of AI output, specifically discussing how an algorithm might report its confidence and potential bias in a diagnostic context.",
+                "supportive response": "The speaker is engaging with and building upon previous ideas discussed in the meeting, providing a relevant example."
             }
         },
         {
@@ -3130,12 +2992,10 @@
             "screenshare_content": "None",
             "start_time": "41:48",
             "end_time": "41:51",
-            "annotations": [
-                {
-                    "express agreement": "Beck agrees with the previous statement about the algorithm providing a percentage chance of cancer, but he expresses doubt about the certainty of that percentage.",
-                    "ask clarifying question": "Beck asks how one can trust the certainty (35%) provided by the algorithm, seeking clarification on the reliability of the uncertainty quantification."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker is questioning and expressing concern about trusting the certainty provided by an algorithm, which implies a critical response to the idea of relying on such algorithms.",
+                "ask question": "The speaker is asking a question about how to trust the certainty provided by an algorithm, indicating a request for information or clarification."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3154,7 +3014,7 @@
             "start_time": "41:51",
             "end_time": "41:52",
             "annotations": {
-                "explain or define term or concept": "Maryellen is about to explain what the 35% certainty means in the context of the algorithm's output, building on the previous discussion about uncertainty quantification."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3173,11 +3033,11 @@
             "screenshare_content": "None",
             "start_time": "41:52",
             "end_time": "41:58",
-            "annotations": [
-                {
-                    "ask clarifying question": "Beck is questioning the validity of the 35% certainty mentioned by Maryellen, asking if it has true statistical meaning, which is a request for clarification."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on a previous discussion about data interpretation and statistical meaning.",
+                "ask question": "The speaker poses a question about the statistical interpretation of the algorithm's output.",
+                "critical response": "The speaker is providing a critical view on how the 35% uncertainty should be interpreted."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3195,12 +3055,11 @@
             "screenshare_content": "None",
             "start_time": "41:58",
             "end_time": "42:21",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Maryellen explains the concept of reproducibility and repeatability studies in the context of AI certainty, building on Beck's question about trusting the certainty of AI predictions.",
-                    "express agreement": "Maryellen explicitly agrees with the need for AI to provide a measure of certainty, building on the discussion about the reliability of AI predictions."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on the idea of needing to understand and quantify AI uncertainty.",
+                "supportive response": "The speaker supports the discussion and ideas presented.",
+                "offer feedback": "The speaker provides a way to think about and improve the understanding of AI outputs."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3218,14 +3077,11 @@
             "screenshare_content": "None",
             "start_time": "42:21",
             "end_time": "42:46",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges Shannon's contribution by saying 'that's a' after Shannon spoke about self-supervised learning and uncertainty quantification.",
-                    "explain or define term or concept": "Maryellen explains that the desired outputs from AI will differ depending on whether the AI is used for biological image discovery or for patient output, clarifying the importance of considering the application when designing AI systems.",
-                    "encourage particpatioin": "Maryellen encourages participation by saying 'I'm going to ask more folks to talk here', inviting others to contribute to the discussion.",
-                    "ask clarifying question": "Maryellen asks 'I don't know what when do we finish? I just want to make sure we're not running out of time', seeking clarification on the meeting's end time."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by indicating a plan to solicit more input and expressing a desire to ensure they do not run out of time.",
+                "encourage participation": "The speaker invites more participants to contribute their thoughts and opinions.",
+                "clarify goal": "The speaker is clarifying the goals or objectives related to AI outputs, distinguishing between use cases."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3243,14 +3099,11 @@
             "screenshare_content": "None",
             "start_time": "42:48",
             "end_time": "43:23",
-            "annotations": [
-                {
-                    "present new idea": "Maryellen introduces the idea that AI inputs and outputs should be similar to human inputs and outputs, which is a novel concept in the context of the discussion."
-                },
-                {
-                    "expand on existing idea": "Maryellen expands on the discussion about AI by expressing her preference for handcrafted methods and how she merges them with deep learning, building on the previous discussion about AI pipelines and data requirements."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on her thoughts about AI development, handcrafted methods, and deep learning.",
+                "signal expertise": "The speaker mentions her background with handcrafted and deep learning methods.",
+                "offer feedback": "The speaker shares her viewpoint on the future of AI, which can be seen as providing feedback on current approaches."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -3268,14 +3121,11 @@
             "screenshare_content": "The screen shows a whiteboard with notes related to the discussion, including points about NSF cancer research, energy levels, and UV cross talk. The content remains static throughout the segment.",
             "start_time": "43:23",
             "end_time": "43:49",
-            "annotations": [
-                {
-                    "express frustration": "The speaker expresses frustration about the difficulty of accessing radiologists and their time, especially in hospitals where research isn't the primary focus, indicating a problem they consistently encounter."
-                },
-                {
-                    "express agreement": "The speaker explicitly agrees with Katie's earlier statement about the difficulty of accessing data, reinforcing the shared sentiment."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly recognizes the lack of access to data or resources necessary for their research.",
+                "supportive response": "The speaker agrees with Katie's point that accessing data is hard.",
+                "clarify goal": "The speaker discusses the goal of facilitating research through better access to data or resources."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3294,7 +3144,7 @@
             "start_time": "43:49",
             "end_time": "43:54",
             "annotations": {
-                "explain or define term or concept": "Maryellen is clarifying what she means by \"think like a human\", stating that she is referring to the input and output of the AI system, not necessarily the internal workings."
+                "clarify goal": "The speaker is clarifying her previous statement about thinking like a human, specifically in terms of input and output, which relates to defining or clarifying objectives or expectations for AI development in imaging."
             }
         },
         {
@@ -3313,14 +3163,11 @@
             "screenshare_content": "None",
             "start_time": "43:55",
             "end_time": "44:55",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains how radiologists are trained, starting with textbooks and then learning from attending radiologists, which is relevant to the discussion of AI training and the need for ground truth data."
-                },
-                {
-                    "express humor": "The speaker makes a humorous remark about radiologists who may not be good at finding Waldo, suggesting that some people may not be suited for the profession, similar to how some AI algorithms may not be suitable for certain tasks."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by elaborating on the training of radiologists and comparing it to AI training.",
+                "supportive response": "The speaker provides a positive evaluation of how radiologists learn.",
+                "express humor": "The speaker makes a joke or analogy involving finding Waldo to make a point about variability in skills."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3338,14 +3185,10 @@
             "screenshare_content": "None",
             "start_time": "44:55",
             "end_time": "45:06",
-            "annotations": [
-                {
-                    "expand on existing idea": "This builds upon the previous discussion about the challenges of training AI models with limited data, suggesting that providing AI algorithms with images that are easier for humans to interpret could reduce training time and data requirements."
-                },
-                {
-                    "ask clarifying question": "This asks how many of the participants train on medical images, seeking to understand the prevalence of this practice within the group."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces the idea of using images that are easy for humans to read for training AI algorithms to save time and data.",
+                "ask question": "The speaker asks how many of the participants train on medical images."
+            }
         },
         {
             "speaker": "Katy Keenan",
@@ -3364,7 +3207,7 @@
             "start_time": "45:06",
             "end_time": "45:08",
             "annotations": {
-                "explain or define term or concept": "The utterance explains the term DICOM, which is relevant to the discussion about medical imaging data."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3384,9 +3227,9 @@
             "start_time": "45:08",
             "end_time": "45:55",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining different types of DICOM fields and image processing techniques (subtracted images, MIP) in the context of breast MRI data, clarifying the options available for inputting data into AI algorithms.",
-                "provide supporting evidence": "The speaker mentions that inputting MIP (Maximum Intensity Projection) images gives better performance than inputting just the subtraction image, providing empirical evidence based on their experience.",
-                "ask clarifying question": "The speaker ends the utterance by asking if others have run into the same issues regarding data preprocessing and its impact on AI algorithm performance, seeking to understand if others have similar experiences."
+                "develop idea": "expanding on the idea of preparing data for AI algorithms, discussing specifics of data types and their impact on algorithm performance",
+                "ask question": "requesting information or experience from others in the group regarding their encounters with similar data preparation challenges",
+                "encourage participation": "inviting others to share their experiences or thoughts"
             }
         },
         {
@@ -3406,7 +3249,7 @@
             "start_time": "45:55",
             "end_time": "45:55",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking a question to understand the decision-making process behind selecting inputs for an algorithm, following a discussion about preprocessing images to help AI learn with limited data."
+                "ask question": "The speaker is requesting information on how decisions are made regarding what goes into an algorithm."
             }
         },
         {
@@ -3425,11 +3268,9 @@
             "screenshare_content": "None",
             "start_time": "45:55",
             "end_time": "46:06",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Beck is providing his reasoning for choosing slices over volumetric data, stating that he usually has a limited number of volumetric examples compared to the number of slices, which supports his decision-making process in data selection."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on his approach to using volumetric data versus slices in his work, providing a specific example based on the amount of volumetric examples he has."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3448,7 +3289,7 @@
             "start_time": "46:09",
             "end_time": "46:10",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking for clarification on the format of the data being used for the algorithm, following a discussion about the choice between volumetric data and slices."
+                "ask question": "The speaker is seeking clarification or information about the format of the data."
             }
         },
         {
@@ -3468,7 +3309,7 @@
             "start_time": "46:11",
             "end_time": "46:14",
             "annotations": {
-                "ask clarifying question": "Beck is asking for clarification on what Maryellen meant by 'format', specifically if she is referring to the way the data is stored."
+                "ask question": "The speaker is seeking clarification on the format of the data, which is a direct request for information."
             }
         },
         {
@@ -3488,7 +3329,7 @@
             "start_time": "46:14",
             "end_time": "46:15",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking about what data to input into the algorithm, and is now clarifying that she is not asking about the format of the data, but something else."
+                "ask question": "The speaker is seeking clarification or information about what was previously discussed, indicated by 'Right. What are well, not the format.'"
             }
         },
         {
@@ -3507,11 +3348,9 @@
             "screenshare_content": "None",
             "start_time": "46:15",
             "end_time": "46:25",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Beck is explaining that the format of the data depends on the application and the collaborator, clarifying the factors that influence data storage."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on their approach to considering data format in their work, indicating it depends on the application and collaborator."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3529,11 +3368,10 @@
             "screenshare_content": "None",
             "start_time": "46:25",
             "end_time": "46:26",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen agrees with Beck's previous statement about the format of the data being application and collaborator dependent."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker is acknowledging a prior statement.",
+                "supportive response": "The speaker is expressing agreement with a prior statement."
+            }
         },
         {
             "speaker": "Katy Keenan",
@@ -3551,11 +3389,9 @@
             "screenshare_content": "None",
             "start_time": "46:29",
             "end_time": "46:40",
-            "annotations": [
-                {
-                    "express frustration": "The speaker expresses frustration about the limitations in resources to address certain questions, indicating a barrier to progress."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly mentions a lack of resources to answer some questions."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3574,8 +3410,8 @@
             "start_time": "46:40",
             "end_time": "46:53",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining her process for determining the appropriate input for a neural network, which involves consulting with domain experts.",
-                "provide supporting evidence": "Maryellen is providing her method of consulting with radiologists and domain experts as a way to determine the best input for a network, supporting the idea that domain knowledge is important."
+                "develop idea": "The speaker is expanding on previous ideas by suggesting a practical approach to determining what to input to a network.",
+                "offer feedback": "The utterance provides a suggestion for how to proceed (sitting with experts) which can be seen as a form of feedback."
             }
         },
         {
@@ -3595,7 +3431,7 @@
             "start_time": "46:53",
             "end_time": "46:54",
             "annotations": {
-                "explain or define term or concept": "Maryellen is explaining her approach to AI development, which involves human input and collaboration, building on the previous discussion about the importance of domain expertise and understanding the end user's needs."
+                "develop idea": "The speaker is elaborating on their approach to AI development by mentioning that they use human-aided AI development."
             }
         },
         {
@@ -3614,14 +3450,10 @@
             "screenshare_content": "None",
             "start_time": "46:54",
             "end_time": "47:05",
-            "annotations": [
-                {
-                    "express frustration": "Katy expresses frustration about not having access to resources, specifically not being at a medical institution, which limits her ability to collaborate with radiologists and domain experts, a point that Maryellen emphasized as crucial for determining the best input for AI algorithms."
-                },
-                {
-                    "ask clarifying question": "Katy is asking how to gain access to resources and expertise, specifically how to collaborate with radiologists and domain experts when not affiliated with a medical institution, which is relevant to Maryellen's point about the importance of human-AI collaboration."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker requests information on how to get access to certain resources.",
+                "identify gap": "The speaker highlights a lack of access to medical institutions or domain experts as a limitation."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3639,11 +3471,9 @@
             "screenshare_content": "None",
             "start_time": "47:05",
             "end_time": "47:05",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3661,11 +3491,9 @@
             "screenshare_content": "None",
             "start_time": "47:05",
             "end_time": "47:06",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen Giger is agreeing with the previous speaker, Katy Keenan, who stated that they don't have enough resources to answer some questions and that their work is sometimes driven by what they have access to."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3684,12 +3512,9 @@
             "start_time": "47:06",
             "end_time": "47:41",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges Katy's point about the lack of access to domain experts as a major barrier for AI developers."
-                },
-                "present new idea": {
-                    "Explanation": "Maryellen presents the idea that a network is needed to connect AI developers with domain experts in imaging tasks, which hasn't been explicitly stated before."
-                }
+                "identify gap": "Maryellen Giger recognizes a gap in connecting AI developers with domain experts in imaging tasks.",
+                "critical response": "Maryellen Giger expresses concern about the current state of AI development in imaging, calling it a barrier.",
+                "encourage participation": "Maryellen Giger encourages connecting AI developers with domain experts, promoting collaboration."
             }
         },
         {
@@ -3709,7 +3534,7 @@
             "start_time": "47:41",
             "end_time": "47:42",
             "annotations": {
-                "express enthusiasm": "Maryellen expresses enthusiasm that connecting AI developers with domain experts will save time."
+                "supportive response": "The speaker is expressing agreement and validation for a previous statement, indicating a supportive response."
             }
         },
         {
@@ -3728,14 +3553,9 @@
             "screenshare_content": "None",
             "start_time": "47:42",
             "end_time": "47:44",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen Giger is explicitly asking Shannon and Shiva to share their experiences, encouraging them to contribute to the discussion."
-                },
-                {
-                    "ask clarifying question": "Maryellen Giger is asking Shannon and Shiva how they obtain their images, seeking to understand their data acquisition process."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information from Shannon and Shiva on how they obtain their images."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3754,7 +3574,7 @@
             "start_time": "47:44",
             "end_time": "47:46",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking Shannon and Shiva if they are having issues related to access to domain experts, following a discussion about the importance of domain expertise in AI development."
+                "ask question": "The speaker is requesting information about Shannon and Shiva's access to or issues with domain experts."
             }
         },
         {
@@ -3773,14 +3593,11 @@
             "screenshare_content": "The screen shows a whiteboard with notes related to the discussion, including points about NSF cancer research, energy levels, and UV cross talk. The content remains static throughout the segment.",
             "start_time": "47:47",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "express frustration": "Shiva expresses frustration about the difficulty of accessing radiologists and their expertise, which is critical for her research, especially since the hospital she works with is not research-focused."
-                },
-                {
-                    "expand on existing idea": "Shiva expands on Katie's point about the difficulty of accessing data and resources, emphasizing that it is a critical problem for her research."
-                }
-            ]
+            "annotations": {
+                "identify gap": "Shiva explicitly mentions a problem with accessing data or collaborating with hospitals, which is a gap in their research.",
+                "propose new idea": "Shiva suggests that recognition by funding agencies or hospitals could help solve the access problem.",
+                "supportive response": "Shiva agrees with Katie's statement about the difficulty in getting access, showing support for her viewpoint."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -3798,11 +3615,9 @@
             "screenshare_content": "The screen shows a whiteboard with notes related to the discussion, including points about NSF cancer research, energy levels, and UV cross talk. The content remains static throughout the segment.",
             "start_time": "48:43",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "express agreement": "Shiva is agreeing with the previous statement made by Maryellen Giger about the critical path for success being access to domain experts."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker is verbally recognizing a prior statement or contribution by another group member."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -3820,11 +3635,11 @@
             "screenshare_content": "The screen shows a whiteboard with notes related to the discussion, including points about NSF cancer research, energy levels, and UV cross talk. The content remains static throughout the segment.",
             "start_time": "48:43",
             "end_time": "49:00",
-            "annotations": [
-                {
-                    "express enthusiasm": "Shiva expresses enthusiasm for finding a way to get access to the resources needed for research, building on the prior discussion about the difficulty of accessing data and domain experts."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests having more infrastructure to provide a path for collaboration or data access.",
+                "develop idea": "The speaker builds upon the discussion about challenges in data access and collaboration.",
+                "identify gap": "The speaker implicitly recognizes a gap in current infrastructure or practices."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3843,7 +3658,7 @@
             "start_time": "49:00",
             "end_time": "49:01",
             "annotations": {
-                "express agreement": "Maryellen is agreeing with Shiva's statement about the need for infrastructure to provide a path to access data and domain experts, which is a critical path for success."
+                "None": "The utterance 'Okay, this yeah.' is a minimal response that doesn't explicitly fit into any of the provided categories."
             }
         },
         {
@@ -3862,11 +3677,9 @@
             "screenshare_content": "None",
             "start_time": "49:01",
             "end_time": "49:01",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "The utterance is too brief and does not explicitly convey enough information to apply a specific code from the provided codebook."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3884,11 +3697,9 @@
             "screenshare_content": "None",
             "start_time": "49:01",
             "end_time": "49:02",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen Giger says \"Yeah\" in response to a prior statement, indicating agreement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3907,7 +3718,7 @@
             "start_time": "49:02",
             "end_time": "49:03",
             "annotations": {
-                "express agreement": "Maryellen is explicitly agreeing with the previous statement made by Shiva about the need for infrastructure to provide a path for AI developers to connect with domain experts."
+                "supportive response": "The speaker is expressing agreement or satisfaction with the current state of the conversation, providing a positive but non-substantive response."
             }
         },
         {
@@ -3926,11 +3737,9 @@
             "screenshare_content": "None",
             "start_time": "49:03",
             "end_time": "49:03",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -3948,11 +3757,9 @@
             "screenshare_content": "None",
             "start_time": "49:03",
             "end_time": "49:04",
-            "annotations": [
-                {
-                    "express agreement": "Shannon Quinn says \"Yeah\", which expresses agreement with the previous statement."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -3970,11 +3777,9 @@
             "screenshare_content": "None",
             "start_time": "49:04",
             "end_time": "49:04",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen expresses agreement with the previous statement, likely summarizing or affirming a point made in the discussion."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The speaker is expressing agreement or validation of a previous statement."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -3993,7 +3798,7 @@
             "start_time": "49:04",
             "end_time": "49:05",
             "annotations": {
-                "None": "This utterance does not fit into any of the codes provided in the codebook, as it is simply stating the remaining time."
+                "process management": "The speaker is managing the meeting flow by mentioning the time left."
             }
         },
         {
@@ -4012,11 +3817,9 @@
             "screenshare_content": "None",
             "start_time": "49:05",
             "end_time": "49:06",
-            "annotations": [
-                {
-                    "express enthusiasm": "Shannon expresses relief that they have 20 minutes remaining in the meeting, indicating a positive sentiment about the time available."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -4034,11 +3837,9 @@
             "screenshare_content": "None",
             "start_time": "49:06",
             "end_time": "49:07",
-            "annotations": [
-                {
-                    "express agreement": "Shannon Quinn agrees with Maryellen Giger's statement that the list looks good and longer than three minutes, indicating that she acknowledges the difficulty of summarizing the discussion in a short time."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker uses an idiomatic expression 'throw that together' in a way that can be considered humorous, indicating difficulty in completing a task."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4056,11 +3857,9 @@
             "screenshare_content": "None",
             "start_time": "49:07",
             "end_time": "49:07",
-            "annotations": [
-                {
-                    "Okay": "This utterance simply acknowledges the previous statement, indicating agreement or understanding."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4078,12 +3877,10 @@
             "screenshare_content": "None",
             "start_time": "49:07",
             "end_time": "49:10",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges Shannon's work by saying she is doing a great job.",
-                    "encourage particpatioin": "Maryellen encourages Shannon to participate by asking her where she sees things can be merged."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing a positive evaluation of Shannon's performance.",
+                "encourage participation": "The speaker is inviting Shannon to share her thoughts on where things can be improved or merged."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4102,7 +3899,9 @@
             "start_time": "49:10",
             "end_time": "49:11",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking Shannon to clarify if she has issues accessing domain experts, following a discussion about the importance of domain expertise in AI development and Katy Keenan's statement about not having access to medical experts."
+                "ask question": "The speaker is requesting information about domain expert issues.",
+                "identify gap": "The question implies recognizing a gap in access to domain experts.",
+                "encourage participation": "The speaker is inviting others to share their experiences."
             }
         },
         {
@@ -4121,17 +3920,10 @@
             "screenshare_content": "None",
             "start_time": "51:30",
             "end_time": "52:06",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen Giger is trying to get more people involved in the discussion by asking for their opinions and experiences, specifically directing the question to Alex and Girgis."
-                },
-                {
-                    "acknowledge contribution": "Maryellen Giger acknowledges the difficulty of the situation for those who lack access to domain experts, showing empathy for their challenges."
-                },
-                {
-                    "ask clarifying question": "Maryellen Giger is asking about the challenges faced by those working on biological imaging, specifically inquiring about what is holding them up and whether they have access to the necessary experts."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker encourages Alex and offers to ask Girgis about their access to necessary domain experts, inviting them to contribute.",
+                "process management": "The speaker is managing the discussion by inquiring about challenges faced by subgroups within the team."
+            }
         },
         {
             "speaker": "Alexandra Walsh",
@@ -4149,11 +3941,9 @@
             "screenshare_content": "Alex Walsh is sharing her screen. The screen shows a landscape image of Black Gap Wildlife Management Area with various plants and mountains in the background.",
             "start_time": "52:07",
             "end_time": "52:14",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Alex acknowledges that the question of how much data is needed has already been brought up, recognizing a prior contribution to the discussion."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker explicitly mentions a limitation or gap in their current situation, which is the amount of data needed."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4172,9 +3962,7 @@
             "start_time": "52:15",
             "end_time": "52:18",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Maryellen acknowledges that Alex has access to domain experts and biologists, recognizing his input in the discussion."
-                }
+                "identify gap": "The speaker is pointing out that the person she is talking to already has access to biologists who can serve as domain experts, indicating that there is no gap in this area."
             }
         },
         {
@@ -4193,11 +3981,9 @@
             "screenshare_content": "Alex Walsh is sharing her screen. The screen shows a landscape image of Black Gap Wildlife Management Area with various plants and mountains in the background.",
             "start_time": "52:19",
             "end_time": "52:20",
-            "annotations": [
-                {
-                    "express agreement": "Alex Walsh is expressing agreement with Maryellen Giger's statement about having domain experts, which was confirmed in the previous turn."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The utterance expresses agreement with a prior statement."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4216,7 +4002,7 @@
             "start_time": "52:20",
             "end_time": "52:22",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging Girgis to participate in the discussion, likely asking if he has access to the domain experts he needs, similar to the previous discussion with Alex."
+                "ask question": "The speaker is requesting information from Girgis about his access to domain experts or resources."
             }
         },
         {
@@ -4235,14 +4021,11 @@
             "screenshare_content": "None",
             "start_time": "52:22",
             "end_time": "54:08",
-            "annotations": [
-                {
-                    "expand on existing idea": "Girgis expands on the discussion about domain expertise and data requirements by describing his team's approach to machine learning for nanoparticle accumulation in tumors, building on Maryellen's question about access to domain experts and how to decide what to input into the algorithm."
-                },
-                {
-                    "present new idea": "Girgis presents the idea of incorporating nanotech expertise to identify potential false positives based on the contrast agent used, which is a novel approach not previously discussed."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Girgis is elaborating on their approach to machine learning, focusing on the challenges of nanoparticle accumulation in tumors and the need for nuanced input to their algorithms.",
+                "signal expertise": "Girgis mentions collaboration with nanotechnology experts and their own work in machine learning, signaling expertise in these areas.",
+                "identify gap": "Girgis identifies a gap in domain expertise, specifically in the area of nano-bio interactions, as a challenge in their field."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4261,7 +4044,7 @@
             "start_time": "54:09",
             "end_time": "54:16",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking for confirmation that her understanding of Girgis's approach to AI development, which incorporates knowledge of biology and chemistry, is accurate."
+                "ask question": "The speaker is seeking clarification or confirmation on whether the AI is based on known biology and chemistry."
             }
         },
         {
@@ -4280,13 +4063,13 @@
             "screenshare_content": "None",
             "start_time": "54:16",
             "end_time": "55:16",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the concept of using nanoparticle contrast agents for optical imaging and their application in tumor detection and image-guided surgery, providing context for the subsequent discussion on potential errors.",
-                    "provide supporting evidence": "The speaker mentions clinical trials that suggest the use of nanoparticle contrast agents for positive tumor detection and image-guided surgery, providing evidence for the application of these agents.",
-                    "expand on existing idea": "The speaker expands on the idea of using AI in imaging by discussing secondary biological factors that contribute to errors and how the interaction of the contrast agent with the tissue can lead to false positives, building on the earlier discussion about AI's role in image interpretation."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests considering secondary biological factors to improve AI accuracy in imaging.",
+                "develop idea": "The speaker expands on the idea by explaining the role of secondary biological factors in error contribution and suggesting a solution.",
+                "signal expertise": "The speaker explicitly discusses their area of expertise related to nanoparticle contrast agents and optical imaging.",
+                "identify gap": "The speaker identifies a lack of consideration for secondary biological factors in current approaches.",
+                "offer feedback": "The speaker provides specific suggestions for improving the approach to AI-assisted imaging."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4305,12 +4088,8 @@
             "start_time": "55:18",
             "end_time": "55:43",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Maryellen introduces a novel concept of AI having two types of components: one model-driven with physical and chemical limitations, and another built on biological principles, which hasn't been explicitly discussed in this manner before."
-                },
-                "expand on existing idea": {
-                    "Explanation": "Maryellen expands on the idea of incorporating domain knowledge into AI, building on previous discussions about the importance of a priori knowledge and constraints in AI models."
-                }
+                "develop idea": "The speaker is elaborating on her view of AI, explaining how she thinks of its components and the integration of deep learning within certain constraints.",
+                "clarify goal": "The speaker is defining her perspective on AI, which relates to understanding objectives and expectations for AI development."
             }
         },
         {
@@ -4330,9 +4109,9 @@
             "start_time": "55:43",
             "end_time": "56:21",
             "annotations": {
-                "explain or define term or concept": "The speaker explains the two types of AI: statistical (deep learning) and model-driven (physical limitations), to clarify the different approaches to AI.",
-                "express enthusiasm": "The speaker expresses enthusiasm about the idea of applying both types of AI to Girgis' situation, indicating excitement about the potential of this approach.",
-                "encourage particpatioin": "The speaker encourages Girgis to bring up the point in the Google Doc, inviting him to contribute his perspective to the discussion."
+                "develop idea": "The speaker is expanding on the concept of AI types and their potential applications.",
+                "ask question": "The speaker asks how to bring a point up in the Google Doc, seeking information or clarification.",
+                "encourage participation": "The speaker invites Girgis to share thoughts, encouraging participation."
             }
         },
         {
@@ -4352,7 +4131,8 @@
             "start_time": "56:21",
             "end_time": "56:22",
             "annotations": {
-                "encourage particpatioin": "Maryellen is encouraging someone to contribute to the Google Doc, seeking their input on where and how to incorporate a specific point."
+                "ask question": "The speaker is requesting information or guidance on how to proceed with documenting a point.",
+                "process management": "The speaker is managing the flow of information and documentation by seeking input on how to incorporate a point into a document."
             }
         },
         {
@@ -4372,7 +4152,7 @@
             "start_time": "56:23",
             "end_time": "56:29",
             "annotations": {
-                "expand on existing idea": "Girgis is building upon the previous discussion about ground truth, suggesting his point relates to that topic."
+                "acknowledge contribution": "The speaker acknowledges a previously discussed concept, 'ground truth,' indicating recognition of its relevance to the current discussion."
             }
         },
         {
@@ -4392,8 +4172,8 @@
             "start_time": "56:29",
             "end_time": "56:45",
             "annotations": {
-                "expand on existing idea": "Girgis is expanding on the previous discussion about generalizability, but applying it to the context of contrast agents rather than patient images, building on the topic of generalizability that was already brought up.",
-                "acknowledge contribution": "Girgis acknowledges that others are using patient images, which is a recognition of their work, but he is not agreeing or expanding on their specific approaches."
+                "identify gap": "Girgis explicitly recognizes a gap in the discussion regarding the generalizability of contrast agents and their behavior.",
+                "develop idea": "Girgis expands on the idea of generalizability in the context of contrast agents."
             }
         },
         {
@@ -4413,7 +4193,7 @@
             "start_time": "56:45",
             "end_time": "56:51",
             "annotations": {
-                "explain or define term or concept": "This utterance is defining the relationship between the model and the physics, chemistry, and biology of the imaging situation, which is a concept being discussed."
+                "summarize conversation": "The speaker is summarizing a concept discussed in the conversation about the relationship of the model to the physics, chemistry, and biology of the imaging situation."
             }
         },
         {
@@ -4432,11 +4212,9 @@
             "screenshare_content": "None",
             "start_time": "56:51",
             "end_time": "56:52",
-            "annotations": [
-                {
-                    "express agreement": "Maryellen agrees with Girgis's point about generalizability and the relationship of the model to the physics, chemistry, and biology of the imaging situation."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -4455,7 +4233,7 @@
             "start_time": "56:52",
             "end_time": "56:54",
             "annotations": {
-                "express humor": "Shannon Quinn expresses humor by apologizing for not knowing where her cursor is, which is a lighthearted comment in the context of sharing her screen."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4475,7 +4253,7 @@
             "start_time": "57:29",
             "end_time": "57:32",
             "annotations": {
-                "acknowledge contribution": "Maryellen acknowledges Shannon's cursor position on the Google Doc, recognizing her contribution to the shared document."
+                "process management": "This utterance manages the visual or document flow by commenting on a specific annotation or cue on the screen."
             }
         },
         {
@@ -4494,13 +4272,9 @@
             "screenshare_content": "None",
             "start_time": "57:33",
             "end_time": "57:39",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "Shannon Quinn is acknowledging that the red dock by the word generalizable was not her doing."
-                    }
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4518,11 +4292,9 @@
             "screenshare_content": "None",
             "start_time": "57:39",
             "end_time": "57:40",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen Giger is encouraging everyone to contribute to the Google Doc that Shannon Quinn is sharing, building on the previous discussion about generalizability and the relationship of the model to the physics, chemistry, and biology of the imaging situation."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and validation for a previous suggestion or idea, indicating a positive and inclusive attitude towards collaboration."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -4540,11 +4312,9 @@
             "screenshare_content": "None",
             "start_time": "57:40",
             "end_time": "57:52",
-            "annotations": [
-                {
-                    "express frustration": "Shannon expresses frustration that others are editing the presentation and she is unable to make changes, indicating a problem with the collaborative process."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is discussing a challenge related to the collaborative process of editing a presentation, which is a part of managing group activities."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4562,11 +4332,9 @@
             "screenshare_content": "None",
             "start_time": "57:52",
             "end_time": "58:03",
-            "annotations": [
-                {
-                    "assign task": "Maryellen assigns the task of focusing on the conversation to Shannon, offering to add names to the document herself so Shannon can focus on the conversation."
-                }
-            ]
+            "annotations": {
+                "process management": "Managing the meeting flow by suggesting a way to organize collaboration."
+            }
         },
         {
             "speaker": "Katy Keenan",
@@ -4584,11 +4352,10 @@
             "screenshare_content": "None",
             "start_time": "58:03",
             "end_time": "58:08",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Katy Keenan acknowledges that someone added something, showing recognition of their input."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "verbally recognizes another group member's input",
+                "critical response": "Questioning, challenging, or providing negative evaluation of ideas"
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -4606,11 +4373,9 @@
             "screenshare_content": "None",
             "start_time": "58:08",
             "end_time": "58:12",
-            "annotations": [
-                {
-                    "confirm decision": "Shannon confirms that she can turn the notes into a Google Doc that she can then share a link to with everybody in here, which was proposed in the prior turn."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it is a simple acknowledgment."
+            }
         },
         {
             "speaker": "Katy Keenan",
@@ -4628,11 +4393,9 @@
             "screenshare_content": "None",
             "start_time": "58:12",
             "end_time": "58:15",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Katy Keenan is acknowledging Maryellen Giger's previous statement."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges and thanks another group member for their input or action."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4651,7 +4414,8 @@
             "start_time": "58:15",
             "end_time": "58:21",
             "annotations": {
-                "assign task": "Maryellen is assigning Shannon the task of opening the slide deck and adding the final three points, following up on Shannon's role as the designated note-taker and reporter."
+                "process management": "The speaker is managing the meeting flow by requesting an action related to the slide deck.",
+                "assign task": "The speaker is assigning a task to someone to update the slide deck."
             }
         },
         {
@@ -4670,11 +4434,10 @@
             "screenshare_content": "None",
             "start_time": "58:21",
             "end_time": "58:40",
-            "annotations": [
-                {
-                    "express frustration": "Shannon expresses frustration that she is unable to edit the slide deck, which is interfering with her task of summarizing the discussion."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Shannon acknowledges the previous discussion and responds to it by providing more information about her experience with the Google Doc and slide deck.",
+                "process management": "Shannon discusses the process of editing documents, specifically mentioning her issues with accessing and editing the slide deck."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4692,11 +4455,10 @@
             "screenshare_content": "None",
             "start_time": "58:40",
             "end_time": "58:43",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Maryellen acknowledges the previous discussion and prepares to move on, indicating she has heard and understood the points made."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges a previous suggestion or contribution.",
+                "supportive response": "The speaker is expressing agreement or support for a previous idea."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4714,11 +4476,9 @@
             "screenshare_content": "None",
             "start_time": "58:43",
             "end_time": "59:03",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen proposes downloading the PowerPoint to the computer, suggesting a course of action for Shannon to take."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow and organizing the collaboration process by asking someone to download a PowerPoint and mentioning drafting in a Google Doc."
+            }
         },
         {
             "speaker": "Shannon Quinn",
@@ -4737,7 +4497,7 @@
             "start_time": "58:49",
             "end_time": "58:50",
             "annotations": {
-                "ask clarifying question": "Shannon is asking Maryellen to elaborate on her previous point about generalizability, seeking further information on the topic."
+                "acknowledge contribution": "Shannon Quinn acknowledges Maryellen Giger's previous point about generalizability and invites further discussion."
             }
         },
         {
@@ -4757,7 +4517,8 @@
             "start_time": "59:03",
             "end_time": "59:24",
             "annotations": {
-                "explain or define term or concept": "Maryellen is trying to define or explain the concept of a model being driven by the physics, chemistry, and biology of contrast agents, which is a concept that Girgis was discussing in the prior turn."
+                "Develop idea": "Maryellen Giger is expanding on an idea by suggesting that models could be driven by the physics, chemistry, and biology of contrast agents' properties.",
+                "Ask question": "She is seeking confirmation or clarification on her understanding of the concept with 'I don't know if I got that right.'"
             }
         },
         {
@@ -4776,11 +4537,9 @@
             "screenshare_content": "None",
             "start_time": "59:25",
             "end_time": "59:27",
-            "annotations": [
-                {
-                    "express agreement": "Girgis confirms that Maryellen's summary of his point about AI being model-driven by the physics, chemistry, and biology of contrast agent properties is accurate."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement with the previous statement, showing support without adding new content."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4799,7 +4558,8 @@
             "start_time": "59:27",
             "end_time": "59:29",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking if she got the knowledge wrong, seeking confirmation or correction on her understanding of the previous discussion about model-driven AI and contrast agents."
+                "ask question": "The speaker is seeking clarification or confirmation about a statement regarding knowledge.",
+                "critical response": "The speaker is also expressing a critical view towards existing knowledge or statements made."
             }
         },
         {
@@ -4819,7 +4579,7 @@
             "start_time": "59:37",
             "end_time": "59:38",
             "annotations": {
-                "express agreement": "Maryellen Giger is expressing agreement with a prior statement, likely in response to the ongoing discussion."
+                "supportive response": "The utterance 'Okay, good.' expresses agreement or acknowledgment, indicating a positive evaluation of the previous discussion or statement."
             }
         },
         {
@@ -4838,11 +4598,9 @@
             "screenshare_content": "None",
             "start_time": "59:38",
             "end_time": "59:46",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Maryellen Giger is inviting Paris to contribute to the discussion, as she has done with other participants previously."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker is inviting Paris to contribute to the discussion or share their thoughts."
+            }
         },
         {
             "speaker": "Paris Perdikaris",
@@ -4860,11 +4618,9 @@
             "screenshare_content": "None",
             "start_time": "59:47",
             "end_time": "59:50",
-            "annotations": [
-                {
-                    "express agreement": "Paris is agreeing with a prior statement, indicated by the phrase \"Yeah, I think\"."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement or alignment with a previous statement."
+            }
         },
         {
             "speaker": "Maryellen Giger",
@@ -4882,11 +4638,9 @@
             "screenshare_content": "None",
             "start_time": "59:50",
             "end_time": "59:51",
-            "annotations": [
-                {
-                    "propose decision": "Maryellen is suggesting a concrete choice for the group to summarize the discussion into three main points."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by suggesting to condense discussion points into three bullets."
+            }
         },
         {
             "speaker": "Paris Perdikaris",
@@ -4904,14 +4658,11 @@
             "screenshare_content": "None",
             "start_time": "59:51",
             "end_time": "60:40",
-            "annotations": [
-                {
-                    "express agreement": "Paris agrees with Maryellen's point about the future lying in a hybrid approach of statistical and model-based learning, building on the discussion about integrating domain knowledge into AI pipelines."
-                },
-                {
-                    "expand on existing idea": "Paris expands on the idea of a hybrid approach by stating that algorithms for general classification tasks cannot be directly applied to specialized domains like medical imaging, and that computer scientists cannot be expected to master all the necessary domain knowledge."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "Paris agrees with the previous speaker and supports the idea of a hybrid approach.",
+                "Critical response": "He provides a critical perspective on the limitations of current machine learning approaches and the challenges in developing specialized systems.",
+                "Develop idea": "Paris expands on the idea of a hybrid approach, discussing its potential and the challenges involved."
+            }
         },
         {
             "speaker": "Paris Perdikaris",
@@ -4930,9 +4681,7 @@
             "start_time": "60:40",
             "end_time": "60:52",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "This utterance proposes a concrete choice for the group to consider: who should be trained and how to train them to work at the interface of data-driven and model-based approaches, which is a decision about future training strategies."
-                }
+                "encourage participation": "The speaker invites discussion on who to train and how to train them, encouraging participation and contribution of ideas from others."
             }
         },
         {
@@ -4952,7 +4701,7 @@
             "start_time": "60:52",
             "end_time": "60:55",
             "annotations": {
-                "ask clarifying question": "Maryellen is asking Paris to confirm if he means that the current AI tools are inadequate, following his statement about the need for a hybrid approach and specialized systems."
+                "ask question": "The speaker is seeking clarification on the current state of AI tools, asking for more information about their limitations."
             }
         },
         {
@@ -4971,17 +4720,11 @@
             "screenshare_content": "None",
             "start_time": "60:55",
             "end_time": "61:29",
-            "annotations": [
-                {
-                    "offer constructive criticism": "Paris critiques the current approach of borrowing systems successful in other domains (like classifying dogs and cats) and applying them to segmenting cancer cells, suggesting a need for more specialized systems tailored to specific tasks."
-                },
-                {
-                    "present new idea": "Paris presents the idea of developing more specialized AI systems that incorporate domain knowledge and are tailored to specific tasks, moving beyond simply borrowing systems from other fields."
-                },
-                {
-                    "ask clarifying question": "Paris asks who will develop these specialized systems, who has the expertise, and how will people be trained to acquire the necessary expertise, seeking clarity on the path forward for developing more domain-specific AI tools."
-                }
-            ]
+            "annotations": {
+                "Critical response": "The speaker questions the current approach of borrowing systems from one domain and applying them to another, indicating a critical perspective on current methods.",
+                "Propose new idea": "The speaker suggests a future direction of developing more specialized systems that incorporate domain knowledge.",
+                "Ask question": "The speaker asks questions about who will develop these specialized systems and how they will be trained."
+            }
         }
     ]
 }

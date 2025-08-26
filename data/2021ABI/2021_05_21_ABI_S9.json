@@ -1,25 +1,25 @@
 {
     "all_speakers": [
-        "Molly Bright",
-        "Katharine White",
-        "Katharine Miller",
         "Matt Scruggs",
-        "Katharine White-Andre Danino",
-        "Kevin Carlo",
-        "Kevin Carlo O'Mines",
+        "Kevin Cash",
         "Matt Baggott",
-        "Ping Wang",
-        "Seu Sim",
+        "Katharine White",
+        "Kevin Carlo O'Mines",
         "Andrew Feig",
-        "Allison Dennis",
-        "Lingyan Shi",
-        "Kevin Cavallo",
         "Candace Fleischer",
         "Lu Wei",
-        "Matt Bogyo",
+        "Seunghyun (Seu) Sim",
+        "Jin Zhang",
+        "Molly Bright",
+        "Kevin Cavallo",
         "Kevin Cash",
+        "Katharine Miller",
+        "Ping Wang",
         "Alexandra Walsh",
-        "Jin Zhang"
+        "Matt Bogyo",
+        "Lingyan Shi",
+        "Allison Dennis",
+        "Kevin Cash"
     ],
     "total_speaking_length": 3427,
     "all_data": [
@@ -40,7 +40,7 @@
             "start_time": "00:06",
             "end_time": "00:07",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit any of the defined codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -60,7 +60,7 @@
             "start_time": "00:08",
             "end_time": "00:08",
             "annotations": {
-                "None": "This utterance is a greeting and does not fit any of the codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -80,7 +80,7 @@
             "start_time": "00:09",
             "end_time": "00:09",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit any of the codes in the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -100,7 +100,7 @@
             "start_time": "00:10",
             "end_time": "00:10",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit any of the defined codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -120,7 +120,7 @@
             "start_time": "00:11",
             "end_time": "00:12",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit any of the codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -140,11 +140,11 @@
             "start_time": "00:14",
             "end_time": "00:17",
             "annotations": {
-                "express humor": "The utterance expresses humor by making a lighthearted comment about being unable to wait for lunch, which is a relatable and slightly humorous situation."
+                "process management": "The speaker is discussing a logistical concern related to the meeting schedule, specifically the timing of lunch, which can impact the meeting's flow."
             }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "00:22-00:23",
             "transcript": "Is this everyone?",
             "speaking_duration": 1,
@@ -160,7 +160,7 @@
             "start_time": "00:22",
             "end_time": "00:23",
             "annotations": {
-                "ask clarifying question": "The utterance is a question that seeks to confirm whether all expected participants are present, thus clarifying the current state of the meeting."
+                "ask question": "The speaker is requesting information about whether the current group of people is everyone who is supposed to be there."
             }
         },
         {
@@ -180,7 +180,7 @@
             "start_time": "00:25",
             "end_time": "00:29",
             "annotations": {
-                "encourage particpatioin": "Jin Zhang is inviting Matt to share, encouraging him to participate in the discussion."
+                "encourage participation": "The speaker is inviting Matt to contribute his thoughts or share information, encouraging his participation."
             }
         },
         {
@@ -199,12 +199,11 @@
             "screenshare_content": "None",
             "start_time": "00:30",
             "end_time": "00:34",
-            "annotations": [
-                {
-                    "ask clarifying question": "Matt asks for clarification on what Jin meant by 'share'.",
-                    "express alternative decision": "Matt rejects the idea of 'taking over' and instead proposes 'running the show'."
-                }
-            ]
+            "annotations": {
+                "ask question": "Matt is requesting clarification on Jin's suggestion with 'Do I want to what?'",
+                "critical response": "Matt is questioning and jokingly challenging the idea of taking over",
+                "express humor": "Matt's response is humorous, using 'Take over? No. Run the show.' in a lighthearted manner"
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -223,7 +222,9 @@
             "start_time": "00:36",
             "end_time": "00:42",
             "annotations": {
-                "assign task": "Jin is assigning Matt the task of guiding people through the steps."
+                "ask question": "Jin Zhang is explicitly asking Matt Bogyo if he wants to take on a specific role or task.",
+                "process management": "Jin Zhang is managing the meeting flow by suggesting a specific role for someone.",
+                "assign task": "Jin Zhang is essentially offering Matt Bogyo a task or role."
             }
         },
         {
@@ -243,8 +244,10 @@
             "start_time": "00:43",
             "end_time": "01:30",
             "annotations": {
-                "explain or define term or concept": "The speaker explains his background is in chemistry and synthesis of optical based probes, PET, and ultrasound, which provides context for his expertise.",
-                "present new idea": "The speaker introduces the idea of developing agents that can report on specific biological signatures, namely proteolytic signatures, and expresses interest in lipid metabolites, which is a new direction for the group."
+                "signal expertise": "The speaker explicitly states his background and expertise in chemistry and related areas.",
+                "identify gap": "The speaker mentions they don't do much metabolite work but are getting interested in lipid metabolites.",
+                "encourage participation": "The speaker suggests starting with introductions so everyone knows what others do.",
+                "process management": "The speaker suggests a way to proceed with the discussion (starting with introductions)."
             }
         },
         {
@@ -264,8 +267,8 @@
             "start_time": "01:31",
             "end_time": "01:37",
             "annotations": {
-                "assign task": "Matt assigns the task of introducing themselves to Molly by calling her name.",
-                "encourage particpatioin": "Matt is encouraging Molly to participate by calling her name to start the introductions."
+                "propose new idea": "Matt suggests a new approach to proceed with the discussion by calling out people.",
+                "process management": "Matt is managing the meeting flow by suggesting who to start with."
             }
         },
         {
@@ -285,7 +288,7 @@
             "start_time": "01:38",
             "end_time": "01:40",
             "annotations": {
-                "acknowledge contribution": "Jin Zhang is acknowledging Matt Bogyo's willingness to lead the session, but not necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -305,7 +308,8 @@
             "start_time": "01:40",
             "end_time": "01:42",
             "annotations": {
-                "encourage particpatioin": "Matt is explicitly asking Kevin to participate by introducing himself and his work, continuing the round of introductions he initiated."
+                "encourage participation": "Matt Bogyo invites Kevin to contribute by saying 'Let's go to Kevin, let's let's go to Kevin.'",
+                "process management": "Matt Bogyo is managing the meeting flow by deciding whose turn it is to speak or share, indicated by 'Let's go to Kevin.'"
             }
         },
         {
@@ -325,8 +329,8 @@
             "start_time": "01:43",
             "end_time": "02:10",
             "annotations": {
-                "propose decision": "Jin Zhang is suggesting that the group identify a reporter to record and report on the meeting's proceedings, which is a concrete choice for the group to make.",
-                "ask clarifying question": "Jin Zhang is asking if they can identify a reporter, which seeks to clarify the process of recording and reporting for the group."
+                "process management": "The speaker is managing the meeting flow by asking to identify a reporter/recorder for the group.",
+                "ask question": "The speaker is requesting information or action from the group regarding identifying a reporter/recorder."
             }
         },
         {
@@ -346,7 +350,7 @@
             "start_time": "02:12",
             "end_time": "02:13",
             "annotations": {
-                "confirm decision": "Kevin agrees to Jin's request to identify a recorder/reporter from the group, confirming the decision to have someone take on that role."
+                "supportive response": "Kevin is expressing agreement and willingness to take on the role of reporter/recorder."
             }
         },
         {
@@ -365,12 +369,10 @@
             "screenshare_content": "None",
             "start_time": "02:14",
             "end_time": "02:30",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Jin acknowledges Kevin's agreement to be the reporter.",
-                    "assign task": "Jin assigns Kevin the task of setting up a Google Doc for note-taking."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is suggesting a method for managing meeting notes, which directly relates to managing the flow and organization of group activities.",
+                "assign task": "The speaker is suggesting an action item (setting up a Google Doc), even though it's not explicitly assigned to someone."
+            }
         },
         {
             "speaker": "Kevin Cash",
@@ -389,7 +391,8 @@
             "start_time": "02:31",
             "end_time": "02:32",
             "annotations": {
-                "confirm decision": "Kevin confirms that he can be the recorder/reporter, agreeing to Jin's request."
+                "assign task": "Kevin is accepting the task of setting up a Google Doc as requested.",
+                "process management": "Kevin's acceptance facilitates the management of the meeting's process by ensuring that tasks necessary for the meeting's organization are covered."
             }
         },
         {
@@ -409,9 +412,8 @@
             "start_time": "02:33",
             "end_time": "02:45",
             "annotations": {
-                "assign task": "Jin is assigning Kevin the task of sharing the link to the Google Doc with the rest of the team so they can add comments.",
-                "acknowledge contribution": "Jin acknowledges Matt's contribution by apologizing for the interruption.",
-                "propose decision": "Jin proposes that they should ensure the reporter is sorted out, which implies making sure the reporter has the necessary tools and access."
+                "process management": "The speaker is managing the meeting flow by organizing how group members collaborate on notes.",
+                "assign task": "The speaker is assigning a task to Kevin to share the link to the Google Doc."
             }
         },
         {
@@ -431,7 +433,7 @@
             "start_time": "02:46",
             "end_time": "02:47",
             "annotations": {
-                "encourage particpatioin": "Matt encourages Jin to take control of the meeting, acknowledging Jin's role as moderator."
+                "process management": "The speaker is managing meeting flow by giving permission to control the moderator key."
             }
         },
         {
@@ -450,11 +452,10 @@
             "screenshare_content": "None",
             "start_time": "02:49",
             "end_time": "03:04",
-            "annotations": [
-                {
-                    "propose decision": "Jin suggests taking one minute to write down some thoughts, which is a concrete suggestion for the group's activity."
-                }
-            ]
+            "annotations": {
+                "process management": "Jin Zhang is managing the meeting flow by suggesting the group take a minute to write down thoughts.",
+                "encourage participation": "Jin Zhang is inviting everyone to contribute by writing down their thoughts."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -473,7 +474,7 @@
             "start_time": "03:04",
             "end_time": "03:06",
             "annotations": {
-                "express agreement": "Matt agrees with Jin's suggestion to take a minute to write down some thoughts, indicating his approval of the proposed course of action."
+                "supportive response": "Matt expresses agreement and validation of Jin's suggestion without adding new content."
             }
         },
         {
@@ -492,12 +493,10 @@
             "screenshare_content": "None",
             "start_time": "03:07",
             "end_time": "03:31",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Jin acknowledges Matt's willingness to lead the session and apologizes for the interruption, recognizing his role.",
-                    "propose decision": "Jin proposes that the group take one minute to write down some thoughts about the topic, suggesting a specific action for the group to take."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by suggesting that the group take a minute to write down their thoughts.",
+                "encourage participation": "The speaker is inviting everyone to contribute their ideas by suggesting they write down their thoughts about the topic."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -516,9 +515,8 @@
             "start_time": "03:32",
             "end_time": "04:04",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of using metabolic imaging diagnostically, which is a novel concept in the context of the discussion.",
-                "expand on existing idea": "The speaker builds on the initial idea by suggesting mass spectrometry imaging and its potential combination with other imaging methodologies, expanding on the possibilities for metabolic imaging.",
-                "propose decision": "The speaker proposes the topics of metabolic imaging for diagnostics, combining mass spectrometry with other imaging, and developing aptamers and probes as potential areas of focus for the group."
+                "propose new idea": "The speaker introduces suggested topics for discussion, indicating new ideas or directions for the conversation.",
+                "ask question": "The speaker asks multiple questions about metabolic imaging, its applications, and potential developments."
             }
         },
         {
@@ -538,7 +536,7 @@
             "start_time": "04:04",
             "end_time": "04:04",
             "annotations": {
-                "propose decision": "Jin Zhang is proposing a decision to start the one-minute period for writing down thoughts about the topic."
+                "process management": "The speaker is managing the meeting flow by instructing the group to start a one-minute task of writing down thoughts."
             }
         },
         {
@@ -557,11 +555,10 @@
             "screenshare_content": "None",
             "start_time": "05:34",
             "end_time": "06:17",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Molly explains her research focus, which involves using MRI to image the human brain and combining it with modeling to understand oxygen metabolism, thus clarifying her area of expertise for the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Molly explicitly states her own expertise and qualifications related to the task, mentioning her use of MRI, her focus areas, and her institution.",
+                "develop idea": "Molly elaborates on her research focus, providing details about her work in imaging the human brain and its challenges."
+            }
         },
         {
             "speaker": "Molly Bright",
@@ -580,7 +577,7 @@
             "start_time": "06:17",
             "end_time": "06:17",
             "annotations": {
-                "None": "This utterance does not contain any content that can be mapped to the codebook."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -600,7 +597,7 @@
             "start_time": "06:19",
             "end_time": "06:21",
             "annotations": {
-                "encourage particpatioin": "Matt is inviting Kevin to introduce himself and his work, continuing the round of introductions."
+                "encourage participation": "The speaker is inviting Kevin to contribute his expertise or share his thoughts, encouraging participation in the discussion."
             }
         },
         {
@@ -620,8 +617,8 @@
             "start_time": "06:22",
             "end_time": "06:47",
             "annotations": {
-                "explain or define term or concept": "Kevin explains that his lab uses oxygen dynamics as a proxy for metabolism, clarifying their approach to measuring metabolic activity.",
-                "expand on existing idea": "Kevin expands on the topic of metabolic imaging by describing his lab's specific approach of using nanoparticle-based sensors to measure oxygen dynamics as a proxy for metabolism, adding details about their methodology."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to nanoparticle-based sensors and measuring oxygen dynamics.",
+                "develop idea": "The speaker expands on his work by explaining the specific application of his lab's sensors in measuring oxygen dynamics as a proxy for metabolism."
             }
         },
         {
@@ -641,7 +638,7 @@
             "start_time": "06:48",
             "end_time": "06:49",
             "annotations": {
-                "express agreement": "Matt expresses agreement with the previous speaker's introduction, signaling a positive acknowledgement of the information shared."
+                "supportive response": "The speaker is expressing agreement or a positive evaluation for what was previously said."
             }
         },
         {
@@ -661,11 +658,11 @@
             "start_time": "06:50",
             "end_time": "06:53",
             "annotations": {
-                "encourage particpatioin": "Matt is calling on Sue to participate and share her background, continuing the round of introductions."
+                "encourage participation": "Matt is inviting Sue to contribute her thoughts or ideas, encouraging her participation in the discussion."
             }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "06:54-07:17",
             "transcript": "Hello. So I'm an assistant professor in chemistry at UC Irvine and I'm a soft material chemist, meaning I engineer polymers and proteins with living cells. So I'm currently interested in organizing bacterial communities within three-dimensional mesh or 3D printed architectures and understand their dynamics and interactions.",
             "speaking_duration": 23,
@@ -680,14 +677,12 @@
             "screenshare_content": "None",
             "start_time": "06:54",
             "end_time": "07:17",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their role as a soft material chemist, clarifying their expertise in engineering polymers and proteins with living cells."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task, mentioning their background in chemistry and their work as a soft material chemist."
+            }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "07:17-07:17",
             "transcript": "Nice to meet you all.",
             "speaking_duration": 0,
@@ -703,7 +698,7 @@
             "start_time": "07:17",
             "end_time": "07:17",
             "annotations": {
-                "express enthusiasm": "Seu Sim expresses enthusiasm by saying \"Nice to meet you all.\""
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -723,7 +718,8 @@
             "start_time": "07:19",
             "end_time": "07:21",
             "annotations": {
-                "encourage particpatioin": "Matt Bogyo is inviting Candace to participate by sharing her background and interests, continuing the round of introductions."
+                "encourage participation": "The speaker is inviting Candace to contribute by mentioning her name and indicating it's her turn to share.",
+                "process management": "The speaker is managing the meeting flow by moving on to the next person in the discussion."
             }
         },
         {
@@ -743,7 +739,7 @@
             "start_time": "07:22",
             "end_time": "07:33",
             "annotations": {
-                "explain or define term or concept": "Candace is explaining her background and the focus of her lab's work, which involves in vivo MR spectroscopy and thermometry of the human brain, providing context for the discussion."
+                "signal expertise": "The speaker is explicitly stating her own expertise and qualifications related to the task, by mentioning her lab's primary activities."
             }
         },
         {
@@ -763,7 +759,7 @@
             "start_time": "07:34",
             "end_time": "07:34",
             "annotations": {
-                "encourage particpatioin": "Matt Bogyo is inviting Alex to contribute to the discussion, continuing the round of introductions."
+                "encourage participation": "The speaker, Matt Bogyo, is inviting Alex to contribute their thoughts or expertise, encouraging participation in the discussion."
             }
         },
         {
@@ -783,8 +779,8 @@
             "start_time": "07:36",
             "end_time": "07:55",
             "annotations": {
-                "explain or define term or concept": "Alex explains that NADH and FAD are molecules used in metabolic processes, providing context for their imaging work.",
-                "expand on existing idea": "Alex is building on the topic of metabolic imaging by describing their specific approach of using optical imaging of fluorescence and fluorescence lifetime of NADH and FAD."
+                "signal expertise": "Alex explicitly states his own expertise in optical imaging of NADH and FAD, which are molecules used in metabolic processes.",
+                "develop idea": "Alex expands on his expertise by explaining how his work in optical imaging contributes to understanding metabolic processes."
             }
         },
         {
@@ -804,7 +800,7 @@
             "start_time": "07:57",
             "end_time": "07:58",
             "annotations": {
-                "encourage particpatioin": "Matt is calling on Allison to participate and introduce herself, continuing the round of introductions."
+                "encourage participation": "The speaker is calling out Allison, inviting her to contribute to the discussion."
             }
         },
         {
@@ -824,10 +820,8 @@
             "start_time": "08:02",
             "end_time": "08:37",
             "annotations": {
-                "present new idea": "Allison introduces the idea of using small molecule FRET sensors that use allosteric transcription factors to bind and unbind DNA in response to a small molecule, which is a novel concept in the context of the discussion so far.",
-                "provide supporting evidence": "Allison mentions that her lab has small molecule FRET sensors that use allosteric transcription factors, providing evidence of their capability to develop sensors for metabolites.",
-                "expand on existing idea": "Allison expands on the topic of fluorescent sensors and imaging contrast agents by describing a specific type of sensor they work on, namely small molecule FRET sensors that respond to small molecules.",
-                "offer constructive criticism": "Allison implicitly suggests a potential area for sensor development by mentioning \"if there were favorite transcription factors for metabolites, that would be something we'd be interested in making sensors for\", which is a constructive suggestion for future research."
+                "ask question": "She asks for information about favorite transcription factors for metabolites.",
+                "signal expertise": "She explicitly states her own expertise in fluorescent sensors and fluorescent imaging contrast agents."
             }
         },
         {
@@ -847,7 +841,7 @@
             "start_time": "08:37",
             "end_time": "08:37",
             "annotations": {
-                "acknowledge contribution": "Allison Dennis is ending her turn and acknowledging the conversation."
+                "acknowledge contribution": "The speaker is acknowledging a prior statement or invitation, showing appreciation for it."
             }
         },
         {
@@ -867,8 +861,7 @@
             "start_time": "08:38",
             "end_time": "08:39",
             "annotations": {
-                "express agreement": "Matt expresses agreement with the introductions that have just been completed by saying \"All right, great.\"",
-                "encourage particpatioin": "Matt encourages Ping to participate by calling his name."
+                "encourage participation": "The utterance 'Ping' is used to get someone's attention, likely encouraging them to participate in the discussion."
             }
         },
         {
@@ -887,11 +880,10 @@
             "screenshare_content": "None",
             "start_time": "08:41",
             "end_time": "09:43",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains their background and research focus, including their training as an interventional radiologist and their interest in molecular imaging of diabetes, providing context for their contributions to the discussion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task.",
+                "develop idea": "The speaker expands on their research focus, providing details about their work in molecular imaging of diabetes."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -910,7 +902,7 @@
             "start_time": "09:44",
             "end_time": "09:44",
             "annotations": {
-                "encourage particpatioin": "Matt is calling on Catherine to introduce herself and her work, continuing the round of introductions."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -929,14 +921,12 @@
             "screenshare_content": "None",
             "start_time": "09:45",
             "end_time": "10:15",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Katherine is introducing herself and her lab's focus, which involves optogenetic tools to manipulate intracellular pH, thus explaining the lab's research area."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her position as an assistant professor and describes her lab's focus area, signaling her expertise."
+            }
         },
         {
-            "speaker": "Katharine White-Andre Danino",
+            "speaker": "Katharine White",
             "timestamp": "00:00-00:24",
             "transcript": "in single cells in real time. Um, and as it relates to the kind of concepts here, we're interested in understanding how pH dynamics affect proteins, pathways, cell behaviors and we have some really interesting data uh linking initial pH changes with with metabolic reprogramming that we would like to better understand the dynamics of of that cross talk. So.",
             "speaking_duration": 24,
@@ -951,13 +941,10 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Katherine is building on the topic of metabolic imaging and metabolites by describing her lab's work on intracellular pH and its link to metabolic reprogramming, which is relevant to the discussion.",
-                    "provide supporting evidence": "She mentions having 'really interesting data' linking pH changes with metabolic reprogramming, which serves as evidence for the importance of her research area to the broader discussion.",
-                    "present new idea": "She introduces the idea of manipulating intracellular pH using optogenetic tools and linking it to metabolic reprogramming, which is a novel concept in the context of the discussion so far."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on her research interests and how they relate to the concepts discussed in the meeting.",
+                "propose new idea": "The speaker hints at exploring new areas of research regarding the dynamics of pH changes and metabolic reprogramming."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -976,7 +963,8 @@
             "start_time": "10:25",
             "end_time": "10:27",
             "annotations": {
-                "acknowledge contribution": "Matt acknowledges Lou's contribution after Lou's introduction."
+                "supportive response": "Matt Bogyo is expressing a positive evaluation and gratitude towards Lou's contribution.",
+                "acknowledge contribution": "Matt Bogyo is verbally recognizing Lou's input and thanking them."
             }
         },
         {
@@ -996,9 +984,8 @@
             "start_time": "10:28",
             "end_time": "11:33",
             "annotations": {
-                "explain or define term or concept": "The speaker is introducing their background and expertise in vibrational spectroscopy and microscopy, specifically Raman spectroscopy, which is relevant to the discussion on imaging metabolites and metabolic processes.",
-                "present new idea": "The speaker introduces the idea of pushing Raman spectroscopy into a Raman-guided spatial platform to connect Raman measurements with single-cell transcriptomics and mass spectrometry measurements.",
-                "expand on existing idea": "The speaker expands on their research by mentioning their efforts to identify new signatures from Raman and resolve metabolic control for disease systems, particularly focusing on metabolic vulnerabilities during drug resistance development in non-small cell cancers."
+                "signal expertise": "The speaker explicitly states his position as an assistant professor of chemistry at Caltech, indicating his expertise.",
+                "develop idea": "The speaker elaborates on his research focus, goals, and methods in the field of vibrational spectroscopy and microscopy."
             }
         },
         {
@@ -1018,7 +1005,8 @@
             "start_time": "11:33",
             "end_time": "11:36",
             "annotations": {
-                "encourage particpatioin": "Matt Bogyo is inviting Lingyan to introduce themselves and their work, continuing the round of introductions."
+                "encourage participation": "The speaker is inviting the next person, Lingyan, to contribute.",
+                "process management": "The speaker is managing the meeting flow by moving on to the next person."
             }
         },
         {
@@ -1037,20 +1025,9 @@
             "screenshare_content": "None",
             "start_time": "11:38",
             "end_time": "13:24",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains the optical imaging techniques used in their lab, such as SRS and multiphoton fluorescence microscopy, to visualize metabolic activities."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on their imaging approach by describing two layers: label-free imaging (fluorescence, multiphoton fluorescence) and Raman label-free imaging, detailing what each approach visualizes."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of separating newly synthesized molecules from older endogenous molecules by labeling metabolites with heavy water or labeled glucose amino acids to probe metabolic activities."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses enthusiasm by stating they are very glad to discuss with everyone today."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications related to the task, introducing her background and research focus in bioengineering."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -1069,9 +1046,9 @@
             "start_time": "13:24",
             "end_time": "13:57",
             "annotations": {
-                "express enthusiasm": "Matt expresses enthusiasm about the group's diverse expertise in metabolites and imaging modalities, suggesting it will lead to a good discussion.",
-                "propose decision": "Matt proposes to start the discussion with the first prompt about metabolites being early-stage reporters for biological processes and their potential for diagnostic purposes, suggesting it as a good starting point.",
-                "present new idea": "Matt introduces the idea of metabolites as early-stage reporters for bigger biological processes, which hadn't been explicitly discussed in the same way before."
+                "propose new idea": "Matt Bogyo suggests focusing on the idea of metabolites being early-stage reporters for bigger biological processes and their potential for diagnostic purposes.",
+                "ask question": "Matt Bogyo explicitly asks if metabolites can be used for diagnostic purposes.",
+                "develop idea": "Matt Bogyo's suggestion to discuss the use of metabolites as early-stage reporters can be seen as a starting point for further development of ideas."
             }
         },
         {
@@ -1091,8 +1068,8 @@
             "start_time": "13:57",
             "end_time": "14:28",
             "annotations": {
-                "expand on existing idea": "Kevin builds on Matt's idea of using metabolites for diagnostic purposes by suggesting to broaden the scope to include patterns and variability in metabolic measurements, not just direct measurements.",
-                "present new idea": "Kevin introduces the idea of using patterns and variability in metabolic measurements as diagnostic tools, which is a novel concept not previously mentioned in the discussion."
+                "propose new idea": "The speaker suggests broadening the approach to measuring metabolites by focusing on patterns and variability in measurements.",
+                "ask question": "The speaker asks for ideas on what other things might be diagnostically relevant before physiological impacts are seen."
             }
         },
         {
@@ -1112,13 +1089,13 @@
             "start_time": "14:28",
             "end_time": "16:30",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about using metabolites for diagnostic purposes, expanding on the idea by considering different targets and approaches.",
-                "ask clarifying question": "The speaker asks about the advantages and challenges of targeting different metabolites or metabolic processes, seeking to clarify the best approach for diagnostic purposes.",
-                "acknowledge contribution": "The speaker acknowledges Kevin's contribution by referencing his earlier point about patterns and features of metabolites being used for diagnostic purposes."
+                "develop idea": "The utterance expands on existing ideas by suggesting different targets for studying metabolites and metabolic processes.",
+                "ask question": "The utterance contains questions about the advantages, challenges, and potential for diagnostic purposes of different approaches to studying metabolites.",
+                "encourage participation": "The utterance invites discussion and asks questions, encouraging participation from other team members."
             }
         },
         {
-            "speaker": "Katharine White-Andre Danino",
+            "speaker": "Katharine White",
             "timestamp": "06:31-06:32",
             "transcript": "I can talk about.",
             "speaking_duration": 1,
@@ -1134,7 +1111,7 @@
             "start_time": "16:31",
             "end_time": "16:32",
             "annotations": {
-                "encourage particpatioin": "Katharine is offering to contribute to the discussion, encouraging further participation from herself."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1154,7 +1131,7 @@
             "start_time": "16:33",
             "end_time": "16:33",
             "annotations": {
-                "express agreement": "Matt Bogyo expresses agreement with Katharine White-Andre Danino's offer to talk, indicating he is ready for her to speak."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1174,7 +1151,7 @@
             "start_time": "16:36",
             "end_time": "16:37",
             "annotations": {
-                "encourage particpatioin": "Lingyan Shi is asking for permission to speak, which encourages participation from them."
+                "None": "No relevant code directly applies to this utterance, but it is closest to seeking permission to speak."
             }
         },
         {
@@ -1193,14 +1170,11 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:24",
-            "annotations": [
-                {
-                    "expand on existing idea": "Lingyan is expanding on the discussion about imaging metabolites and metabolic processes by discussing the advantages of Raman spectroscopy imaging, building on the previous discussion of different imaging modalities."
-                },
-                {
-                    "provide supporting evidence": "Lingyan provides supporting evidence for the advantages of Raman spectroscopy imaging by stating that it can go deeper than mass spectrometry and has subcellular resolution, which supports the idea of using it for metabolic imaging."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on the capabilities of Raman-based spectroscopy imaging.",
+                "signal expertise": "The speaker mentions their work in optical imaging techniques, including Raman-based spectroscopy imaging.",
+                "critical response": "The speaker is pointing out limitations of another method (mass spectrometry-based technology)."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -1219,9 +1193,8 @@
             "start_time": "20:25",
             "end_time": "21:10",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of needing better algorithms to separate subtypes of molecules, which is a novel concept in the context of the discussion.",
-                "expand on existing idea": "The speaker expands on the idea of improving resolution, adding that spatial resolution is very important and suggesting ways to achieve subpixel resolution or break the diffraction limit, building upon the previous discussion of imaging metabolites.",
-                "provide supporting evidence": "The speaker provides supporting evidence for the importance of spatial resolution by explaining that multiple molecules can sit in one pixel, highlighting the need for better resolution."
+                "develop idea": "Lingyan Shi is expanding on existing ideas related to improving imaging techniques by discussing specific challenges and potential approaches.",
+                "propose new idea": "She introduces the idea of achieving subpixel resolution or breaking the diffraction limit limitation to improve spatial resolution."
             }
         },
         {
@@ -1240,20 +1213,14 @@
             "screenshare_content": "None",
             "start_time": "21:11",
             "end_time": "23:26",
-            "annotations": [
-                {
-                    "expand on existing idea": "Katharine builds on Lingyan's point about spatial resolution and the limitations of current metabolomics approaches, adding the importance of spatial organization in 3D and in tissues with varying conditions."
-                },
-                {
-                    "acknowledge contribution": "Katharine acknowledges Lingyan's point about subpixel information and Kevin's point about heterogeneity."
-                },
-                {
-                    "ask clarifying question": "Katharine asks about the constraints and needs in terms of probes to make leaps from measurements to diagnosis, phenotype, and outcome, building on the discussion started by Kevin and Lingyan."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Katharine White expands on the idea of spatial resolution of metabolism, emphasizing its importance and connecting it to previous points about the limitations of current approaches and the potential of advanced imaging techniques.",
+                "ask question": "Katharine White poses questions about the constraints and needs in terms of probes and measurement tools to make leaps from maps or measurements to diagnosis, phenotype, and outcome.",
+                "supportive response": "Katharine White expresses agreement and validation of previous contributions, showing her engagement with and support for the ideas presented by others."
+            }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "03:27-04:07",
             "transcript": "I I make polymers. So I something that I wrote down here. I I love the idea of using mass spectrometry to look at the metabolomic processes, but as many of you pointed out, it's a very small scale problem. So we can also imagine using expansion microscopy, but then you have to think of a way to anchor your molecules of interest in a reliable way so that it flies. So have anyone, you know, read anything about it and, you know, any experiences I would love to talk about it.",
             "speaking_duration": 40,
@@ -1268,17 +1235,12 @@
             "screenshare_content": "None",
             "start_time": "23:27",
             "end_time": "24:07",
-            "annotations": [
-                {
-                    "expand on existing idea": "The speaker builds on the previously discussed idea of using mass spectrometry for metabolomic processes, adding the alternative of using expansion microscopy."
-                },
-                {
-                    "ask clarifying question": "The speaker asks if anyone has experience with expansion microscopy and anchoring molecules, seeking further information on the topic."
-                },
-                {
-                    "encourage particpatioin": "The speaker encourages others to share their experiences or knowledge related to expansion microscopy and anchoring molecules."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by suggesting an alternative approach (expansion microscopy) for looking at metabolomic processes.",
+                "ask question": "The speaker requests information from others about experiences with expansion microscopy.",
+                "identify gap": "The speaker identifies a potential problem with mass spectrometry for metabolomic processes, which is the issue of scale.",
+                "encourage participation": "The speaker invites others to share their experiences or knowledge on the topic."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -1296,14 +1258,10 @@
             "screenshare_content": "None",
             "start_time": "24:08",
             "end_time": "24:46",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that mass spec is being used as an imaging technique and is good for small metabolites, but has limitations because of sample processing requirements."
-                },
-                {
-                    "ask clarifying question": "The speaker asks how to integrate technologies into a reasonable diagnostic workflow for a clinical specimen, or if the discussion is about samples that would be biopsied, seeking clarity on the application of metabolic profiling."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information on integrating technologies into a diagnostic workflow for clinical specimens or biopsied samples.",
+                "identify gap": "The speaker is highlighting a lack of understanding on how to apply mass spectrometry or similar technologies in clinical settings for metabolomic profiling."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -1321,14 +1279,10 @@
             "screenshare_content": "None",
             "start_time": "24:47",
             "end_time": "27:22",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Lingyan describes a specific application of SRS in hospitals for differentiating cancer cells from normal tissue during brain tumor removal, providing a real-world example to support the idea of using metabolic imaging for diagnostic purposes, which was brought up by Matt and Kevin."
-                },
-                {
-                    "explain or define term or concept": "Lingyan explains the traditional method of histology image H and E staining and compares it to SRS, clarifying the process for the group."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker elaborates on the application of SRS in a clinical setting, providing specific examples and explanations.",
+                "supportive response": "The speaker provides a positive view of the technology, indicating its potential benefits."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -1347,9 +1301,8 @@
             "start_time": "27:23",
             "end_time": "27:47",
             "annotations": {
-                "encourage particpatioin": "Matt is explicitly asking for input from the other participants, encouraging them to share their expertise on other modalities that could be useful in a clinical setting, following a discussion on Raman spectroscopy.",
-                "expand on existing idea": "Matt is building upon the previous discussion about Raman spectroscopy by asking about other modalities that could be useful, expanding the scope of the conversation beyond just Raman.",
-                "propose decision": "Matt is suggesting that the group consider other modalities besides Raman that could be useful in a clinical setting, which implies a decision-making process about which modalities to focus on."
+                "ask question": "The speaker is requesting information or opinions from other group members about their expertise in different modalities.",
+                "encourage participation": "The speaker is inviting others to contribute by sharing their expertise in various modalities."
             }
         },
         {
@@ -1368,17 +1321,11 @@
             "screenshare_content": "None",
             "start_time": "27:48",
             "end_time": "29:25",
-            "annotations": [
-                {
-                    "provide supporting evidence": "The speaker provides evidence that metabolic imaging is already widely used clinically, especially for cancer diagnosis with FDG PET, supporting the discussion about using metabolic imaging for diagnostic purposes."
-                },
-                {
-                    "expand on existing idea": "The speaker expands on the discussion by mentioning diabetes as another disease where metabolic imaging is relevant, highlighting the challenges and ongoing efforts to improve spatial resolution and sensitivity using MRI and PET."
-                },
-                {
-                    "explain or define term or concept": "The speaker explains that GLP1 glucagon-like peptide one is an example of receptor imaging, which is a big part of metabolic imaging, clarifying a specific concept within the broader discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by discussing applications and limitations of metabolic imaging in diagnostics.",
+                "supportive response": "The speaker builds upon previous ideas and discussions, showing agreement with the direction of the conversation.",
+                "clarify goal": "The speaker discusses the objectives and challenges in using metabolic imaging for diagnostics, clarifying what needs to be achieved."
+            }
         },
         {
             "speaker": "Ping Wang",
@@ -1397,9 +1344,7 @@
             "start_time": "30:00",
             "end_time": "30:16",
             "annotations": {
-                "provide supporting evidence": "This utterance provides an example of GLP-1 analog imaging guiding gastric bypass surgery as a diagnostic application, supporting the idea that metabolic imaging can be used diagnostically, which was a topic introduced earlier by Matt and Jin.",
-                "expand on existing idea": "This utterance expands on the discussion of metabolic imaging for diagnostic purposes by providing a specific example related to diabetes and gastric bypass surgery, building upon the earlier discussion of using metabolic imaging for diagnostics.",
-                "explain or define term or concept": "The utterance explains the application of GLP-1 analogs in imaging to guide gastric bypass surgery for type 2 diabetes, clarifying how this specific imaging technique is used in a diagnostic context."
+                "clarify goal": "The speaker provides an example of using GLP-1 analogs for imaging to guide gastric bypass surgery, which helps clarify a goal of metabolic imaging in diagnostics."
             }
         },
         {
@@ -1419,7 +1364,7 @@
             "start_time": "30:20",
             "end_time": "30:23",
             "annotations": {
-                "express agreement": "Ping Wang is expressing agreement with the ongoing discussion about metabolic imaging and its diagnostic applications, building on the previous points made by Matt Bogyo and others."
+                "supportive response": "The utterance expresses agreement with a previous statement, validating the discussion without adding new content."
             }
         },
         {
@@ -1439,7 +1384,7 @@
             "start_time": "30:24",
             "end_time": "30:30",
             "annotations": {
-                "ask clarifying question": "Ping Wang is asking a question to Kevin, so this is a clarifying question."
+                "ask question": "The speaker, Ping Wang, is explicitly requesting information or clarification from Kevin."
             }
         },
         {
@@ -1459,12 +1404,8 @@
             "start_time": "30:30",
             "end_time": "31:14",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Ping Wang acknowledges Kevin's work on oxygen imaging, referencing a prior statement where Kevin described his lab's work on measuring oxygen dynamics."
-                },
-                "present new idea": {
-                    "Explanation": "Ping Wang introduces a problem related to cell death after islet or stem cell transplantation, which is a new issue not previously discussed in the conversation."
-                }
+                "ask question": "The speaker is requesting information or insight related to their problem with cell transplantation.",
+                "identify gap": "The speaker is explicitly recognizing a problem they are facing in their experiment."
             }
         },
         {
@@ -1484,7 +1425,8 @@
             "start_time": "31:14",
             "end_time": "31:33",
             "annotations": {
-                "provide supporting evidence": "Ping Wang is providing supporting evidence for why cells die after transplantation, mentioning the lack of oxygen and blood supply as major contributors, building on the previous discussion about metabolic imaging and diabetes."
+                "identify gap": "The speaker points out the lack of oxygen and blood supply as contributors to the loss of islet organoids, highlighting a gap in current knowledge or practice.",
+                "develop idea": "The speaker is elaborating on the challenges faced in islet transplantation or stem cell transplantation, discussing the role of oxygen and blood supply."
             }
         },
         {
@@ -1504,9 +1446,8 @@
             "start_time": "31:33",
             "end_time": "32:17",
             "annotations": {
-                "ask clarifying question": "Ping Wang is asking Kevin Cash to comment on the possibility of using his nanoparticle-based sensors to label cells and indicate oxygen levels in transplant sites, building on Kevin's earlier introduction of his work.",
-                "provide supporting evidence": "Ping Wang provides clinical data showing that less than 50% of islet transplant recipients remain insulin independent after five years, supporting the need for improved methods to maintain islet graft function.",
-                "expand on existing idea": "Ping Wang expands on the idea of using oxygen imaging for diagnostic purposes by suggesting a specific application in islet transplantation, where oxygen levels are critical for graft survival."
+                "ask question": "The speaker is asking for comments or information on using nanoparticles as indicators for oxygen levels in transplant sites, showing a clear request for expertise or information.",
+                "identify gap": "The speaker mentions a clinical need for improving islet transplantation success rates, particularly the low success rate of recipients remaining independent of insulin after five years, indicating a recognition of a current limitation or gap in treatment effectiveness."
             }
         },
         {
@@ -1526,9 +1467,8 @@
             "start_time": "32:18",
             "end_time": "32:30",
             "annotations": {
-                "reject idea": {
-                    "Explanation": "Kevin rejects Ping's idea of using his nanoparticle-based oxygen sensors for transplanted cells because his technology is optical and wouldn't be accessible in a transplanted patient."
-                }
+                "identify gap": "The speaker explicitly mentions a limitation of their technology, which is that it cannot be used when optical accessibility is not possible, such as in transplanted cells.",
+                "process management": "The speaker discusses the practical limitations of their technology in a clinical or application setting, specifically in relation to optical accessibility."
             }
         },
         {
@@ -1548,8 +1488,8 @@
             "start_time": "32:30",
             "end_time": "32:47",
             "annotations": {
-                "reject idea": "Kevin rejects the idea of using his lab's optical technology for transplanted cells because it's not optically accessible in deeper tissue, referring to Ping's question about oxygen imaging in islet transplantation.",
-                "expand on existing idea": "Kevin expands on the limitations of his lab's optical technology, clarifying that it's designed for near-surface or in vitro model systems, in response to Ping's question about oxygen imaging in islet transplantation."
+                "Offer feedback": "Kevin provides feedback on the potential use of their technology for deeper tissue imaging, highlighting its limitations.",
+                "Develop idea": "Kevin expands on the idea by providing details about their technology and its applications."
             }
         },
         {
@@ -1569,7 +1509,7 @@
             "start_time": "32:48",
             "end_time": "32:57",
             "annotations": {
-                "expand on existing idea": "Ping Wang is expanding on the previous discussion about imaging modalities by suggesting that probes developed for optical imaging could also be radio labeled for PET/MRI, building on the conversation about combining different imaging techniques to improve sensitivity and spatial resolution."
+                "offer feedback": "The speaker provides a suggestion for a potential approach."
             }
         },
         {
@@ -1589,12 +1529,7 @@
             "start_time": "33:00",
             "end_time": "33:03",
             "annotations": {
-                "Ping Wang: Okay.": [
-                    {
-                        "Code Name": "express agreement",
-                        "Explanation": "Ping Wang is expressing agreement with Kevin Casey's response about the limitations of their optical technology for in vivo islet transplantation."
-                    }
-                ]
+                "supportive response": "The utterance 'Okay.' is a brief acknowledgment that expresses agreement or validation without adding new content."
             }
         },
         {
@@ -1613,14 +1548,9 @@
             "screenshare_content": "None",
             "start_time": "33:04",
             "end_time": "33:36",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains what FDG is, defining it as the uptake of a reporter molecule by cancer cells, to provide context for the subsequent question about other contrast agents."
-                },
-                {
-                    "ask clarifying question": "The speaker asks about other classes of contrast agents that bind, seeking to broaden the discussion beyond FDG and explore other potential imaging modalities."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about classes of contrast agents used in metabolism imaging, beyond the commonly known FDG."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -1639,7 +1569,7 @@
             "start_time": "33:36",
             "end_time": "33:37",
             "annotations": {
-                "express agreement": "Matt Bogyo is agreeing with a prior statement, though the specific statement is not included in this single utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1658,14 +1588,10 @@
             "screenshare_content": "None",
             "start_time": "33:37",
             "end_time": "34:16",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Candace explains MR spectroscopy, a method for measuring quantitative metabolic concentrations, which is relevant to the discussion on metabolic imaging modalities."
-                },
-                {
-                    "provide supporting evidence": "Candace mentions that MR spectroscopy is used in the clinic for cancer and fatty liver disease, providing examples of its clinical application."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is elaborating on MR spectroscopy, its applications, and use in clinical settings, providing more details about its role in measuring metabolic concentrations.",
+                "supportive response": "The speaker is providing a positive and informative response that supports the discussion on metabolic imaging techniques."
+            }
         },
         {
             "speaker": "Matt Bogyo",
@@ -1684,7 +1610,8 @@
             "start_time": "34:17",
             "end_time": "34:21",
             "annotations": {
-                "ask clarifying question": "Matt is asking for confirmation that MR spectroscopy has a sampling error because you need to know where to look, building on Candace's explanation of MR spectroscopy as a method to measure metabolic concentrations."
+                "ask question": "The speaker is seeking confirmation or agreement about the concept of a sampling error.",
+                "critical response": "The speaker is providing a negative evaluation of a method's limitation."
             }
         },
         {
@@ -1704,9 +1631,8 @@
             "start_time": "34:21",
             "end_time": "34:37",
             "annotations": {
-                "expand on existing idea": "Candace is expanding on Matt's question about the utility of MR spectroscopy by explaining that while it can be used to measure metabolic concentrations, in a clinical setting, it is typically used on a small region of interest, building on the discussion of metabolic imaging techniques and their applications.",
-                "explain or define term or concept": "Candace is explaining how MR spectroscopy is used in a clinical setting, clarifying that it typically focuses on a small region of interest, which helps to define the practical application of the technique.",
-                "provide supporting evidence": "Candace provides supporting evidence for the clinical utility of MR spectroscopy by mentioning that it is used for cancer and fatty liver disease, providing examples of its application in real-world scenarios."
+                "develop idea": "The speaker is elaborating on the capabilities and limitations of MR spectroscopy in clinical settings.",
+                "supportive response": "The speaker is providing additional information to support the discussion on MR spectroscopy."
             }
         },
         {
@@ -1726,7 +1652,9 @@
             "start_time": "34:37",
             "end_time": "35:05",
             "annotations": {
-                "present new idea": "Candace introduces the idea of using genetic counseling, specifically gene mutations, to predict disease in relation to metabolic imaging, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is expanding on the concept of genetic counseling and its connection to metabolic imaging.",
+                "identify gap": "The speaker implies a gap in current approaches to metabolic imaging and disease prediction.",
+                "clarify goal": "The speaker discusses the goal of using metabolic imaging in the context of genetic counseling and disease prediction."
             }
         },
         {
@@ -1746,9 +1674,8 @@
             "start_time": "35:05",
             "end_time": "35:30",
             "annotations": {
-                "expand on existing idea": "Candace expands on the idea of metabolic imaging for diagnostics, building on the previous discussion about its use in cancer and suggesting its potential relevance to other diseases like diabetes.",
-                "provide supporting evidence": "Candace provides supporting evidence by stating that metabolism reprogramming is common in cancer, which is a known fact, to support the idea of using metabolic imaging for diagnostics.",
-                "present new idea": "Candace presents a new idea by suggesting that metabolic imaging could be used to understand metabolism reprogramming in various diseases, contrasting it with the current reliance on genetics for diagnosis."
+                "Supportive response": "The speaker is expressing agreement or validation with the previous discussion by broadening the context to include genetics.",
+                "Develop idea": "The speaker is expanding on the concept of metabolism reprogramming and its relation to diseases, which has been discussed previously."
             }
         },
         {
@@ -1768,9 +1695,9 @@
             "start_time": "35:30",
             "end_time": "36:15",
             "annotations": {
-                "provide supporting evidence": "The speaker supports the idea of imaging metabolism by stating that metabolic changes can precede physiological or structural changes, as suggested by the prompt.",
-                "expand on existing idea": "The speaker expands on the discussion about the clinical use of metabolic imaging, mentioning genetic screening and how metabolism is often overlooked despite its potential to indicate changes before physiological or structural changes occur.",
-                "present new idea": "The speaker introduces the idea that metabolic imaging could be used in the clinic beyond cancer, suggesting it could be valuable for other diseases as well."
+                "develop idea": "Candace is elaborating on the concept of metabolic imaging, its applications, and its potential in the clinic.",
+                "identify gap": "She identifies a gap in current practices by mentioning that metabolism is often left out compared to genetic screening.",
+                "supportive response": "Her statement is supportive of the idea that metabolic imaging could be more widely used in the clinic."
             }
         },
         {
@@ -1790,8 +1717,7 @@
             "start_time": "36:15",
             "end_time": "36:26",
             "annotations": {
-                "present new idea": "Candace is presenting the idea that metabolic imaging is largely absent in clinical settings, suggesting a need for large-scale consideration of metabolism in disease diagnosis, which is a novel concept in the conversation.",
-                "express enthusiasm": "Candace expresses enthusiasm for the potential of metabolic imaging on a large scale, indicating excitement about its possibilities."
+                "None": "No relevant code directly applies to this utterance as it doesn't explicitly fit into any category provided, but it could be argued to be closest to a supportive response or an identification of a gap, yet it seems more aligned with simply contributing to the discussion."
             }
         },
         {
@@ -1811,7 +1737,8 @@
             "start_time": "36:27",
             "end_time": "36:39",
             "annotations": {
-                "ask clarifying question": "Matt asks if MRI is routinely done for metabolic imaging in cancer, seeking clarification on its prevalence, time, instrumentation, cost, and potential barriers, following Candace's discussion of MR spectroscopy and its potential in detecting metabolic changes."
+                "ask question": "The speaker is requesting information about the routine use of MRI for metabolic imaging in cancer and inquiring about potential barriers.",
+                "critical response": "The speaker is questioning the feasibility of using MRI for metabolic imaging in cancer, citing concerns about time, instrumentation, cost, and other barriers."
             }
         },
         {
@@ -1831,7 +1758,9 @@
             "start_time": "36:40",
             "end_time": "37:02",
             "annotations": {
-                "provide supporting evidence": "Candace states that MRI is done routinely in many clinics, supporting the idea that metabolic imaging is becoming more common, and she adds that the same instrumentation is used for standard tumor scans, implying that the infrastructure is already in place."
+                "develop idea": "The speaker elaborates on the use of MRI for metabolic imaging in cancer, providing details about its application and routine use in clinics.",
+                "acknowledge contribution": "By discussing current practices, the speaker acknowledges previous contributions to the discussion on metabolic imaging techniques.",
+                "summarize conversation": "The speaker summarizes how MRI is used in clinics for metabolic imaging based on previous discussions."
             }
         },
         {
@@ -1851,8 +1780,9 @@
             "start_time": "37:02",
             "end_time": "37:31",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that spectroscopy is naturally integrated into every MRI if the site pays extra for it when buying the system, clarifying the requirements for using spectroscopy with MRI.",
-                "provide supporting evidence": "The speaker provides the example of fatty liver disease as a case where spectroscopy is routinely used because it's a great way to quickly sample fat distribution that you really can't see extremely well in the deep part of the liver, supporting the idea that metabolic imaging is useful."
+                "Signal expertise": "The speaker is sharing her knowledge about MRI and spectroscopy, indicating her expertise in the field.",
+                "Develop idea": "The speaker is elaborating on how spectroscopy is integrated with MRI, its cost implications, and its specific applications, such as in fatty liver disease.",
+                "Process management": "The speaker discusses practical considerations for using spectroscopy in clinical settings, including its integration with MRI systems and cost factors."
             }
         },
         {
@@ -1872,7 +1802,7 @@
             "start_time": "37:31",
             "end_time": "37:31",
             "annotations": {
-                "express agreement": "Candace agrees with Matt's previous statement about MRI being done routinely for metabolic imaging in cancer."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1892,7 +1822,7 @@
             "start_time": "37:32",
             "end_time": "37:54",
             "annotations": {
-                "ask clarifying question": "Liu Wei is asking Candace to elaborate on the technical challenges of using MRI for metabolic imaging, following up on Candace's previous statements about MRI and metabolic imaging."
+                "ask question": "The speaker is requesting information about the technical challenges associated with using MRI for metabolic imaging, making this an example of asking a question."
             }
         },
         {
@@ -1911,14 +1841,9 @@
             "screenshare_content": "None",
             "start_time": "37:54",
             "end_time": "38:15",
-            "annotations": [
-                {
-                    "ask clarifying question": "Liu Wei is asking Candace about the technical challenges that limit the applications of MRI for metabolic imaging, following up on Candace's previous statements about MRI and metabolic imaging."
-                },
-                {
-                    "explain or define term or concept": "Liu Wei explains the challenges of using FDG for PET imaging, mentioning the fast decay and limited imaging window, providing context for the question about MRI."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the issues encountered in metabolic imaging, citing an example from their experience with FDG for PET imaging."
+            }
         },
         {
             "speaker": "Lu Wei",
@@ -1936,14 +1861,11 @@
             "screenshare_content": "None",
             "start_time": "38:15",
             "end_time": "38:57",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on the discussion of imaging modalities by providing details about the Raman technique, building on the previous discussion of Raman spectroscopy and its applications."
-                },
-                {
-                    "provide supporting evidence": "The speaker provides supporting evidence about the limitations of Raman spectroscopy, specifically mentioning the challenges related to sensitivity at shorter time scales, which supports the discussion about technical challenges across different modalities."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is discussing the specifics of their approach to imaging metabolites using Raman spectroscopy, including the use of deuterated or L versions of glucose and the challenges faced at different time scales.",
+                "signal expertise": "Liu Wei is sharing their experience and knowledge in Raman spectroscopy, indicating their expertise in the field.",
+                "identify gap": "The speaker identifies a limitation of their approach, which is the sensitivity issue at shorter time scales, indicating a gap in their current capability."
+            }
         },
         {
             "speaker": "Lu Wei",
@@ -1962,8 +1884,8 @@
             "start_time": "38:57",
             "end_time": "39:15",
             "annotations": {
-                "encourage particpatioin": "Liu Wei is directly asking Jin Zhang (Jean) a question, inviting them to contribute their expertise on developing biosensors for metabolites.",
-                "ask clarifying question": "Liu Wei is asking Jin Zhang a question about developing biosensors for metabolites or other small molecules inside tissues or cells, seeking clarification or input on this topic."
+                "ask question": "The utterance explicitly asks a question about the development of aptamer-based probes and biosensors for metabolites or other small molecules.",
+                "encourage participation": "The utterance invites participation by asking a specific question to Jean."
             }
         },
         {
@@ -1983,7 +1905,7 @@
             "start_time": "39:16",
             "end_time": "39:17",
             "annotations": {
-                "acknowledge contribution": "Jin Zhang acknowledges Liu Wei's questions as great, recognizing their input in the discussion."
+                "supportive response": "The speaker is expressing agreement and positive evaluation for the questions asked, showing engagement and encouragement without adding new content."
             }
         },
         {
@@ -2003,7 +1925,8 @@
             "start_time": "39:17",
             "end_time": "39:22",
             "annotations": {
-                "propose decision": "Jin Zhang is suggesting a way to proceed with the discussion, proposing to address the questions one by one."
+                "process management": "The speaker is asking about the approach to proceed with their discussion, which is about managing the meeting flow.",
+                "encourage participation": "The question posed by the speaker invites group input, potentially encouraging participation."
             }
         },
         {
@@ -2023,7 +1946,7 @@
             "start_time": "39:22",
             "end_time": "39:23",
             "annotations": {
-                "express agreement": "Liu Wei is agreeing to Jin Zhang's suggestion to answer the questions one by one."
+                "None": "No relevant code applies to this utterance as it is a minimal response."
             }
         },
         {
@@ -2043,8 +1966,8 @@
             "start_time": "39:23",
             "end_time": "39:59",
             "annotations": {
-                "encourage particpatioin": "Jin Zhang is encouraging Candace to answer the question about the limitations of MRI metabolic imaging, following up on Liu Wei's question.",
-                "ask clarifying question": "Jin Zhang is asking a clarifying question about whether MRI metabolic imaging is primarily focused on imaging fat, seeking to understand the scope and limitations of the technique."
+                "ask question": "Jin Zhang is asking Candace a question about the limitations of MRI metabolic imaging.",
+                "develop idea": "Jin Zhang is expanding on the previous discussion about MRI metabolic imaging by inquiring about its specifics."
             }
         },
         {
@@ -2064,7 +1987,7 @@
             "start_time": "40:00",
             "end_time": "40:06",
             "annotations": {
-                "assign task": "Jin Zhang is assigning themself the task of addressing the buffering problem of probe-based methods after discussing the limitations of MRI metabolic imaging, as indicated by the phrase \"I'll come back to the buffering problem of probe based.\""
+                "process management": "Jin Zhang is managing the discussion flow by indicating he will return to a specific topic later."
             }
         },
         {
@@ -2084,8 +2007,9 @@
             "start_time": "40:07",
             "end_time": "40:35",
             "annotations": {
-                "expand on existing idea": "Candace is expanding on the previous discussion about MRI and metabolic imaging, clarifying that MRI can measure more than just fat and listing other metabolites that can be measured.",
-                "explain or define term or concept": "Candace explains that the ability to do spectroscopy depends on whether the scanner is set up for it, clarifying a technical aspect of MRI metabolic imaging."
+                "develop idea": "The speaker is expanding on the capabilities and limitations of MRI spectroscopy in clinical settings.",
+                "identify gap": "The speaker highlights the limitation that not every clinical site has the scanner setup for spectroscopy and that it's a financial issue.",
+                "clarify goal": "The discussion aims to clarify the potential and limitations of MRI spectroscopy for metabolic imaging in clinical settings."
             }
         },
         {
@@ -2105,9 +2029,8 @@
             "start_time": "40:35",
             "end_time": "41:36",
             "annotations": {
-                "explain or define term or concept": "Candace explains that MRI metabolic imaging is slow and has low sensitivity because water is much more concentrated than other metabolites, requiring water suppression.",
-                "provide supporting evidence": "Candace supports her point about the challenges of MRI metabolic imaging by stating that water is a thousand times more concentrated than any other metabolite in the brain, which reduces signal.",
-                "expand on existing idea": "Candace expands on the limitations of MRI metabolic imaging, which was brought up by Liu Wei, by discussing the challenges of cost, speed, sensitivity, and data analysis."
+                "develop idea": "Candace is elaborating on the challenges and limitations of MRI metabolic imaging, an existing approach, by discussing its cost, speed, sensitivity, and analysis complexities.",
+                "critical response": "Candace is also providing a critical perspective on MRI metabolic imaging by highlighting its limitations, which can be seen as questioning its utility in certain contexts."
             }
         },
         {
@@ -2127,8 +2050,8 @@
             "start_time": "41:39",
             "end_time": "41:50",
             "annotations": {
-                "expand on existing idea": "Jin is building on the previous discussion about the limitations of MRI metabolic imaging and whether it's necessary to look at very specific species in that setting, expanding on the topic of technical challenges across different modalities.",
-                "ask clarifying question": "Jin is questioning whether there is a need to look at very specific species in the context of MRI metabolic imaging, seeking clarification on the level of specificity required."
+                "ask question": "The speaker ends with 'right?', which is a question seeking confirmation or agreement.",
+                "clarify goal": "The speaker is discussing the approach to metabolic imaging, relating to clarifying goals."
             }
         },
         {
@@ -2148,7 +2071,7 @@
             "start_time": "41:50",
             "end_time": "42:05",
             "annotations": {
-                "ask clarifying question": "Jin is asking whether MRI metabolic imaging needs to look at very specific species or if looking at overall signals like phosphorus or fat is sufficient, clarifying the limitations of MRI metabolic imaging discussed by Candace."
+                "ask question": "Jin Zhang is asking for clarification on whether they need to look at a specific lipid species or if overall signals like phosphorus or fat would be sufficient for MRI analysis of metabolites."
             }
         },
         {
@@ -2168,7 +2091,8 @@
             "start_time": "42:05",
             "end_time": "42:08",
             "annotations": {
-                "expand on existing idea": "Candace is expanding on Jin's question about whether MRI metabolic imaging needs to look at very specific species, clarifying that while it's not mandatory, most researchers do focus on specific species."
+                "develop idea": "Candace is expanding on the existing idea of necessity and common practice in MRI metabolic imaging by providing her perspective.",
+                "supportive response": "Candace is being supportive by sharing her perspective."
             }
         },
         {
@@ -2188,7 +2112,7 @@
             "start_time": "42:09",
             "end_time": "42:12",
             "annotations": {
-                "explain or define term or concept": "Jin is clarifying what is typically done in MRI metabolic imaging, stating that while it's not mandatory to focus on specific species, most researchers do so."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2208,9 +2132,9 @@
             "start_time": "42:13",
             "end_time": "42:47",
             "annotations": {
-                "provide supporting evidence": "Candace provides evidence for the utility of MR spectroscopy in tumor imaging, stating that it can be used to see the boundary of the tumor and guide radiation therapy in their clinic, supporting the idea that metabolic imaging can be used diagnostically.",
-                "expand on existing idea": "Candace expands on the discussion about metabolic imaging modalities by providing details on how MR spectroscopy is used in their clinic to guide radiation therapy, building on the previous discussion of Raman spectroscopy and other imaging techniques.",
-                "acknowledge contribution": "Candace acknowledges Jin's point about not needing to look at specific species by saying \"you're right, you certainly don't have to.\""
+                "develop idea": "The speaker expands on the application of MR spectroscopy in clinical settings for tumor analysis and radiation therapy guidance.",
+                "signal expertise": "The speaker mentions their clinical experience with MR spectroscopy.",
+                "supportive response": "The speaker provides a positive evaluation of MR spectroscopy's utility in their clinical practice."
             }
         },
         {
@@ -2230,7 +2154,7 @@
             "start_time": "42:47",
             "end_time": "42:55",
             "annotations": {
-                "ask clarifying question": "Jin is asking for clarification on the name of the person who asked the question, showing that he is unsure of the name and wants to address the person correctly."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2250,7 +2174,7 @@
             "start_time": "42:57",
             "end_time": "42:59",
             "annotations": {
-                "acknowledge contribution": "Lou Wei is confirming their name after Jin Zhang mispronounced it, which acknowledges Jin Zhang's attempt to address them."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2270,9 +2194,7 @@
             "start_time": "42:59",
             "end_time": "43:05",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Jin acknowledges Lou's prior question about the buffering effect, recognizing Lou's input to the discussion."
-                }
+                "acknowledge contribution": "The speaker acknowledges another group member's input, in this case, Lou's question about buffering effect."
             }
         },
         {
@@ -2292,9 +2214,9 @@
             "start_time": "43:05",
             "end_time": "43:56",
             "annotations": {
-                "explain or define term or concept": "The speaker explains the potential unwanted effects, such as buffering or perturbation, that can occur when designing probes to bind to specific molecules or replace endogenous molecules with labeled ones.",
-                "expand on existing idea": "The speaker expands on the idea of using probes by suggesting that enhancing sensitivity and using them as tracers, similar to PET imaging, could help overcome the unwanted effects of buffering or perturbation, building on Lou's question about the buffering effect of probes.",
-                "provide supporting evidence": "The speaker provides PET imaging as an example of how enhancing sensitivity and using probes as tracers can be effective, supporting the idea of using probes despite potential buffering effects."
+                "develop idea": "The speaker is elaborating on the concept of using probes as tracers and the importance of sensitivity.",
+                "identify gap": "The speaker mentions unwanted effects, implying a recognition of current limitations.",
+                "offer feedback": "The speaker provides a consideration of how probe design could be effective."
             }
         },
         {
@@ -2314,13 +2236,12 @@
             "start_time": "43:56",
             "end_time": "44:06",
             "annotations": {
-                "encourage particpatioin": "Jin Zhang encourages participation from others by asking if anyone wants to chime in on the topic of enhancing sensitivity and using tracers to detect something without perturbing it much, following up on Lou's question about the buffering effect of probes.",
-                "acknowledge contribution": "Jin Zhang acknowledges that someone has developed probes along this line, recognizing their potential contribution to the discussion.",
-                "present new idea": "Jin Zhang presents the idea of enhancing sensitivity and using tracers to detect something without perturbing it much, building on the discussion about the buffering effect of probes."
+                "develop idea": "The speaker is expanding on the idea of detecting something without perturbing it much.",
+                "encourage participation": "The speaker invites others to contribute by saying 'Anyone want to chime in?'."
             }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "04:07-04:36",
             "transcript": "Oh, I was actually thinking in this domain. I I like the idea of aptamer based, but I also like the idea of like not just a binding event, something that's simplifiable so that we bring like the low concentration of metabolite into readable range. So in the spirit of lowest possible perturbation and something that's simplifiable, not just, oh, it it's bound to like A bound to B and that's definitely not going to be easy to detect.",
             "speaking_duration": 29,
@@ -2336,13 +2257,12 @@
             "start_time": "44:07",
             "end_time": "44:36",
             "annotations": {
-                "expand on existing idea": "Seu Sim builds on the idea of aptamer-based probes, adding the requirement of signal amplification to bring low metabolite concentrations into a readable range, which was previously discussed by Jin Zhang.",
-                "present new idea": "Seu Sim introduces the idea of signal amplification to enhance the detection of metabolites, which is a novel concept not previously mentioned in the conversation.",
-                "offer constructive criticism": "Seu Sim critiques the idea of simple binding events (A bound to B) for metabolite detection, suggesting it might not be easily detectable and implying a need for more sophisticated approaches."
+                "develop idea": "The speaker is expanding on existing ideas by specifying requirements for detecting metabolites, such as the need for methods that are simplifiable and have the lowest possible perturbation.",
+                "offer feedback": "The speaker provides suggestions for improving or considerations in developing detection methods for metabolites, emphasizing the importance of being simplifiable and having low perturbation."
             }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "04:36-04:57",
             "transcript": "So I don't know if it's possible, but if we can think of a way to, you know, bring this or nucleic acid based binding event and lead that into some amplification event so that we have dynamic range to read out rare metabolite that could be of interest can be an interesting direction.",
             "speaking_duration": 21,
@@ -2358,9 +2278,8 @@
             "start_time": "44:36",
             "end_time": "44:57",
             "annotations": {
-                "present new idea": "Seu Sim introduces a novel concept of using nucleic acid-based binding events coupled with an amplification event to enhance the detection of rare metabolites, which has not been previously discussed.",
-                "expand on existing idea": "This utterance builds upon the previous discussion about developing biosensors for metabolites, specifically expanding on the idea of aptamer-based probes by suggesting an amplification strategy to improve detection sensitivity.",
-                "express enthusiasm": "Seu Sim expresses enthusiasm by stating that this approach \"can be an interesting direction.\""
+                "propose new idea": "The speaker suggests a new approach combining nucleic acid-based binding events with amplification events for detecting metabolites.",
+                "identify gap": "The speaker implicitly highlights the challenge of detecting rare metabolites, indicating a gap in current methodologies."
             }
         },
         {
@@ -2380,7 +2299,7 @@
             "start_time": "45:02",
             "end_time": "45:04",
             "annotations": {
-                "express agreement": "Jin Zhang expresses agreement with the previous idea of Seu Sim, which was about bringing a low concentration of metabolite into a readable range, and the idea of nucleic acid based binding event leading to some amplification event."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2399,11 +2318,10 @@
             "screenshare_content": "None",
             "start_time": "45:05",
             "end_time": "45:56",
-            "annotations": [
-                {
-                    "expand on existing idea": "Allison is expanding on the idea of using probes for metabolites, adding details about the trade-offs between amplification and reversible signals, building on the previous discussion about biosensors and metabolite detection."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the idea of designing probes for metabolite sensing, discussing the trade-offs between different design approaches.",
+                "supportive response": "The speaker is engaging with and providing thoughtful considerations on the challenges and design considerations for metabolite sensing probes."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -2422,8 +2340,9 @@
             "start_time": "46:02",
             "end_time": "46:35",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the idea of amplification strategies for metabolite detection, building on Seu Sim's suggestion of bringing low concentrations of metabolites into a readable range and Allison Dennis's comment on signal amplification.",
-                "provide supporting evidence": "The utterance provides supporting evidence for amplification strategies by mentioning enzymatic and transcriptional-based amplification methods, including riboswitches, which Andrew mentioned in the chat."
+                "develop idea": "The speaker is expanding on the concept of amplification techniques for sensing metabolites.",
+                "signal expertise": "The speaker mentions specific amplification methods, showing his familiarity with the field.",
+                "encourage participation": "The discussion invites others to consider different approaches."
             }
         },
         {
@@ -2443,9 +2362,8 @@
             "start_time": "46:36",
             "end_time": "46:56",
             "annotations": {
-                "present new idea": "Andrew suggests considering systems developed by the synthetic biology community, specifically GEM circuits, as a potential approach, introducing a novel concept not previously discussed in the context of metabolite imaging.",
-                "expand on existing idea": "This utterance builds upon the previous discussion about amplification strategies for metabolite detection, suggesting a specific type of system (GEM circuits) that could be used for this purpose.",
-                "provide supporting evidence": "Andrew references the synthetic biology community and GEM circuits, implying that these systems have existing capabilities (modular circuits, integrators, timed phase) that could be relevant to the current discussion on metabolite imaging."
+                "propose new idea": "The speaker introduces the idea of considering gem circuits developed by the synthetic biology community as a potential resource for the group's work.",
+                "offer feedback": "The speaker provides feedback by suggesting a specific direction (looking into gem circuits) for improving or expanding the group's approaches to metabolite imaging or biosensor development."
             }
         },
         {
@@ -2465,11 +2383,11 @@
             "start_time": "46:56",
             "end_time": "47:01",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on the previous discussion about building amplification for metabolite detection by suggesting the use of systems developed by the synthetic biology community, specifically mentioning modular circuits and logic circuits."
+                "propose new idea": "introducing the concept of using developed logic circuits for potential applications in metabolic imaging or biosensing"
             }
         },
         {
-            "speaker": "Seu Sim",
+            "speaker": "Seunghyun (Seu) Sim",
             "timestamp": "07:01-07:33",
             "transcript": "Right, so for, you know, transcriptional activation is going to have like half an hour or hour time scale. So if you it really depends on the event that you are wanting to capture and depends on what you want to look at. But if we don't really, you know, if you want to look at long-term event like one single event and have their recorded in like more amplifiable outcome using switch transcriptional activation, I think that would potentially work.",
             "speaking_duration": 32,
@@ -2484,14 +2402,10 @@
             "screenshare_content": "None",
             "start_time": "47:01",
             "end_time": "47:33",
-            "annotations": [
-                {
-                    "expand on existing idea": "This sentence builds upon the previous discussion about amplification strategies for detecting metabolites, specifically focusing on transcriptional activation and its time scale."
-                },
-                {
-                    "present new idea": "The speaker introduces the idea of using transcriptional activation with a longer time scale for capturing long-term events, which is a novel suggestion in the context of the discussion."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Seu Sim is elaborating on the concept of using transcriptional activation for capturing events, considering the timescale and type of event.",
+                "offer feedback": "Seu Sim is providing a suggestion for how transcriptional activation could be used to capture long-term events."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -2510,8 +2424,7 @@
             "start_time": "47:34",
             "end_time": "47:39",
             "annotations": {
-                "express agreement": "Jin Zhang is agreeing with the previous discussion about different applications requiring different strategies for metabolite sensing, indicating agreement with the idea that application dictates approach.",
-                "expand on existing idea": "Jin Zhang is building on the discussion about different applications requiring different strategies for metabolite sensing, reiterating that the choice of approach depends on the specific application."
+                "supportive response": "The speaker is acknowledging that different approaches might be suitable for different applications, showing agreement and support for the discussion."
             }
         },
         {
@@ -2531,9 +2444,9 @@
             "start_time": "47:39",
             "end_time": "48:15",
             "annotations": {
-                "expand on existing idea": "Candace expands on the idea of amplification of signal for metabolite detection, building on Seu Sim's suggestion of using amplification to bring low concentrations of metabolites into a readable range, by mentioning the use of multiple readouts on the same binding moiety.",
-                "acknowledge contribution": "Candace acknowledges Allison's prior comment about the perturbation of binding when amplifying the signal.",
-                "provide supporting evidence": "Candace provides supporting evidence by mentioning that people have used multiple readouts to generate modality on the same binding moiety for simple amplification."
+                "develop idea": "Candace is elaborating on the concept of using multiple readout generating modalities for amplification.",
+                "supportive response": "She is expressing a positive view on certain approaches by discussing their potential benefits.",
+                "offer feedback": "Candace is providing suggestions for improvement, such as minimizing bulkiness and perturbation."
             }
         },
         {
@@ -2553,7 +2466,7 @@
             "start_time": "48:15",
             "end_time": "48:22",
             "annotations": {
-                "acknowledge contribution": "Jin Zhang acknowledges that someone has posted something in the chat, recognizing their input without necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2573,7 +2486,7 @@
             "start_time": "48:22",
             "end_time": "48:43",
             "annotations": {
-                "present new idea": "Lingyan Shi introduces the idea of using heavy water for MRI metabolic imaging, which is a novel suggestion in the context of the discussion."
+                "ask question": "The speaker is requesting information or clarification on using heavy water for MRI metabolic imaging."
             }
         },
         {
@@ -2592,11 +2505,9 @@
             "screenshare_content": "None",
             "start_time": "48:43",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lingyan Shi is asking a question to clarify a point related to heavy water and MRI metabolic imaging, which she mentioned in the chat."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is attempting to ask a question, seeking information or clarification."
+            }
         },
         {
             "speaker": "Candace Fleischer",
@@ -2614,11 +2525,9 @@
             "screenshare_content": "None",
             "start_time": "48:43",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Candace is encouraging Lingyan to continue speaking, after Lingyan started to say something about heavy water for MRI metabolic imaging."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -2636,11 +2545,9 @@
             "screenshare_content": "None",
             "start_time": "48:43",
             "end_time": "48:43",
-            "annotations": [
-                {
-                    "express agreement": "Lingyan Shi is agreeing with Candace Fleischer, who just told her to go ahead and speak."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "The utterance 'Yeah.' is a minimal expression that acknowledges or agrees with a prior statement, fitting the definition of a supportive response."
+            }
         },
         {
             "speaker": "Candace Fleischer",
@@ -2658,14 +2565,10 @@
             "screenshare_content": "None",
             "start_time": "48:44",
             "end_time": "49:22",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains deuterium metabolic imaging, highlighting its emergence and challenges related to hardware requirements, clarifying the concept for the group."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions that deuterium metabolic imaging is an emerging technique that has exploded in the last five years, supporting the idea that it is a viable method."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Candace is expanding on the concept of MRI for metabolic imaging by discussing deuterium metabolic imaging.",
+                "signal expertise": "Candace is sharing her knowledge about deuterium metabolic imaging, its challenges, and applications, indicating her expertise in the area."
+            }
         },
         {
             "speaker": "Candace Fleischer",
@@ -2683,11 +2586,9 @@
             "screenshare_content": "None",
             "start_time": "49:22",
             "end_time": "49:22",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -2705,11 +2606,9 @@
             "screenshare_content": "None",
             "start_time": "49:22",
             "end_time": "49:26",
-            "annotations": [
-                {
-                    "ask clarifying question": "Lingyan Shi is asking a question related to deuterium-based methods for MRI, which is a request for explanation or elaboration on the topic."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting to ask a question about deuterium-based methods for MRI."
+            }
         },
         {
             "speaker": "Candace Fleischer",
@@ -2728,8 +2627,8 @@
             "start_time": "50:00",
             "end_time": "50:51",
             "annotations": {
-                "explain or define term or concept": "This utterance explains the concept of deuterium metabolic imaging, clarifying that it uses spectroscopy to observe deuterium-labeled compounds and their metabolic byproducts, building on Lingyan Shi's question about heavy water for MRI metabolic imaging.",
-                "expand on existing idea": "This utterance expands on the idea of using heavy water for MRI metabolic imaging, detailing how deuterium-labeled glucose is used and how metabolic byproducts are observed using spectroscopy, following Lingyan Shi's question about heavy water for MRI metabolic imaging."
+                "develop idea": "Candace Fleischer is expanding on the concept of deuterium metabolic imaging, providing details on its application and methodology.",
+                "supportive response": "She is contributing to the discussion by offering information and explanations, supporting the group's goal of understanding metabolic imaging techniques."
             }
         },
         {
@@ -2748,12 +2647,10 @@
             "screenshare_content": "None",
             "start_time": "50:51",
             "end_time": "51:01",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The third sentence explains that in spectroscopy, the focus is on deuterium versus protons in compounds.",
-                    "reject idea": "The second sentence rejects the idea of deuterium labeling for MRI because of the abundance of water in the body, making it an expensive approach."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Candace Fleischer is expanding on the concept of spectroscopic imaging and deuterium labeling, providing more details and insights.",
+                "supportive response": "She is engaging positively with the discussion, offering her viewpoint without challenging others."
+            }
         },
         {
             "speaker": "Candace Fleischer",
@@ -2772,7 +2669,7 @@
             "start_time": "51:01",
             "end_time": "51:01",
             "annotations": {
-                "express agreement": "Candace is agreeing with a previous statement, though the specific statement is not clear from the single utterance, but it is likely in response to the previous turn."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2792,7 +2689,8 @@
             "start_time": "51:11",
             "end_time": "51:19",
             "annotations": {
-                "encourage particpatioin": "Jin Zhang is explicitly inviting Alex and Molly to share their thoughts on the topics discussed, encouraging their participation in the conversation."
+                "encourage participation": "The speaker invites Alex or Molly to contribute their thoughts, encouraging participation.",
+                "process management": "The speaker manages the discussion flow by inviting specific participants to share their insights."
             }
         },
         {
@@ -2811,20 +2709,9 @@
             "screenshare_content": "None",
             "start_time": "51:20",
             "end_time": "52:57",
-            "annotations": [
-                {
-                    "express frustration": "Molly expresses being distracted and apologizes, indicating a level of frustration or difficulty in focusing on the discussion."
-                },
-                {
-                    "explain or define term or concept": "Molly explains that in her type of MRI, the focus is often on neural activity rather than metabolism, highlighting a distinction in the field."
-                },
-                {
-                    "provide supporting evidence": "Molly provides supporting evidence by explaining that they use vascular properties to estimate metabolic properties when looking at the brain, emphasizing the importance of the timeline in inferring one from the other."
-                },
-                {
-                    "offer constructive criticism": "Molly offers constructive criticism by stating that the neuro MRI view of metabolism is a bit superficial, suggesting a need for deeper investigation."
-                }
-            ]
+            "annotations": {
+                "critical response": "Molly critiques the current neuro MRI approach to metabolism, suggesting it may be superficial and not fully interpretable."
+            }
         },
         {
             "speaker": "Alexandra Walsh",
@@ -2842,14 +2729,11 @@
             "screenshare_content": "None",
             "start_time": "53:01",
             "end_time": "53:50",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on the existing idea of metabolic imaging for diagnostic purposes, which was introduced earlier by Matt and Jin, by discussing the importance of understanding the relationship between measured molecules and physiological outcomes."
-                },
-                {
-                    "provide supporting evidence": "The speaker provides supporting evidence by mentioning their work with autofluorescence of NADH and FAD, highlighting the challenge of relating these measurements to actual metabolic understanding."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on the complexities of measuring metabolism and interpreting results.",
+                "identify gap": "The speaker points out the gap in current understanding of the relationship between molecular measurements and physiological outcomes.",
+                "clarify goal": "The speaker emphasizes the importance of understanding this relationship for achieving research goals."
+            }
         },
         {
             "speaker": "Alexandra Walsh",
@@ -2868,9 +2752,9 @@
             "start_time": "53:50",
             "end_time": "54:13",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of being more specific with metabolic pathways in their field, which is a novel concept not previously discussed in such detail.",
-                "expand on existing idea": "The speaker expands on the idea of using endogenous contrast, building on the previous discussion about label problems and highlighting the advantage of measuring dynamics.",
-                "provide supporting evidence": "The speaker provides supporting evidence for using endogenous contrast by stating that they can measure dynamics and are only limited by the frame rate of the imaging microscope."
+                "develop idea": "The speaker is elaborating on the challenges of metabolic imaging and the benefits of endogenous contrast.",
+                "identify gap": "The speaker mentions a challenge (trying to be more specific with metabolic pathways), which implies identifying a gap in current knowledge or methods.",
+                "supportive response": "The speaker is providing a positive evaluation of looking at endogenous contrast."
             }
         },
         {
@@ -2890,7 +2774,7 @@
             "start_time": "54:14",
             "end_time": "54:20",
             "annotations": {
-                "ask clarifying question": "The utterance asks Alex to elaborate on the limitations of using endogenous fluorescence, specifically regarding tissue thickness, which seeks further explanation on a previously mentioned topic."
+                "ask question": "The utterance explicitly requests information or clarification on a specific topic, which is the limit of using endogenous fluorescence in terms of tissue thickness."
             }
         },
         {
@@ -2909,11 +2793,9 @@
             "screenshare_content": "None",
             "start_time": "54:20",
             "end_time": "54:31",
-            "annotations": [
-                {
-                    "ask clarifying question": "Allison is asking for clarification on the limitations of the method being discussed, specifically whether it can be applied beyond monocultures to more complex systems like spheroids, which is a clarifying question about the scope of the method."
-                }
-            ]
+            "annotations": {
+                "ask question": "Allison Dennis is requesting information about the scope and limitations of using endogenous fluorescence for imaging, specifically regarding monoculture and spheroid samples."
+            }
         },
         {
             "speaker": "Alexandra Walsh",
@@ -2932,8 +2814,9 @@
             "start_time": "54:31",
             "end_time": "55:01",
             "annotations": {
-                "expand on existing idea": "Alex is expanding on the previous discussion about the limits of using endogenous fluorescence, detailing the types of samples that can be imaged using their techniques.",
-                "provide supporting evidence": "Alex supports the claim that their technique can be used in various settings by mentioning that they can use single photon for cells on a dish and multiphoton for 3D structures like organoids or in vivo imaging up to a couple of millimeters."
+                "signal expertise": "The speaker is explicitly stating their knowledge about fluorescence techniques and their applications.",
+                "supportive response": "The speaker is providing a positive evaluation of their technique's potential.",
+                "encourage participation": "The speaker is discussing applications and limitations, which can encourage others to participate in the discussion."
             }
         },
         {
@@ -2952,11 +2835,9 @@
             "screenshare_content": "None",
             "start_time": "55:01",
             "end_time": "55:01",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matt Baggott",
@@ -2974,14 +2855,10 @@
             "screenshare_content": "None",
             "start_time": "55:26",
             "end_time": "55:40",
-            "annotations": [
-                {
-                    "propose decision": "Matt suggests checking in with Kevin and summarizing the discussion to prepare for a report out, proposing a concrete action for the group."
-                },
-                {
-                    "encourage particpatioin": "Matt ends the utterance with 'What do you think?' to invite others to contribute their opinions on the proposed course of action."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is suggesting to manage the meeting flow by checking in with Kevin and summarizing discussion points.",
+                "summarize conversation": "The speaker explicitly mentions summarizing the main points discussed in the conversation."
+            }
         },
         {
             "speaker": "Kevin Carlo O'Mines",
@@ -2999,11 +2876,9 @@
             "screenshare_content": "None",
             "start_time": "55:40",
             "end_time": "55:41",
-            "annotations": [
-                {
-                    "express frustration": "Kevin expresses frustration with the current state of the notes, indicating that they are disorganized."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matt Baggott",
@@ -3022,7 +2897,7 @@
             "start_time": "55:41",
             "end_time": "55:41",
             "annotations": {
-                "express agreement": "Matt Baggott is agreeing with Kevin's previous statement that the notes are currently chaotic."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3041,11 +2916,9 @@
             "screenshare_content": "None",
             "start_time": "55:41",
             "end_time": "56:04",
-            "annotations": [
-                {
-                    "ask clarifying question": "Kevin is asking for clarification on how to proceed with summarizing the discussion, given that the notes are chaotic, which is a request for guidance on the next steps."
-                }
-            ]
+            "annotations": {
+                "process management": "Kevin is suggesting ways to organize the discussion or information sharing, inquiring about notes or sharing screens."
+            }
         },
         {
             "speaker": "Kevin Carlo O'Mines",
@@ -3064,7 +2937,7 @@
             "start_time": "56:04",
             "end_time": "56:16",
             "annotations": {
-                "offer constructive criticism": "Kevin is responding to Matt's suggestion to summarize the discussion and is offering to share his screen, which implies he has some notes to share and is willing to help organize the report out."
+                "process management": "Kevin agrees to share his screen, which is a task related to managing the meeting flow."
             }
         },
         {
@@ -3084,9 +2957,7 @@
             "start_time": "56:16",
             "end_time": "56:44",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Kevin is sharing the notes he has been taking, acknowledging his role as the reporter that Jin assigned to him earlier in the conversation."
-                }
+                "summarize conversation": "The speaker is summarizing the notes taken throughout the session, listing targets discussed as good proxies and general comments on tying them together."
             }
         },
         {
@@ -3105,11 +2976,9 @@
             "screenshare_content": "A Google Docs document titled \"Ecology AIB - Breakout Group 3.1\" is shared. The document contains notes on imaging metabolites and metabolic processes, including a list of targets and challenges for different modalities.",
             "start_time": "56:44",
             "end_time": "56:44",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Matt Baggott acknowledges Kevin Carlo O'Mines' contribution of sharing the notes, but does not agree or expand on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matt Baggott",
@@ -3128,9 +2997,10 @@
             "start_time": "56:44",
             "end_time": "57:04",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Matt proposes to bring up the discussion about amplifying the signal to the whole group, suggesting it's a valuable topic."
-                }
+                "develop idea": "The speaker is building upon previous discussions about signal amplification and low concentration signals.",
+                "offer feedback": "The speaker is providing feedback on the discussion topics and potential solutions.",
+                "process management": "The speaker is managing the discussion flow by suggesting what to discuss.",
+                "clarify goal": "The speaker is discussing the goal of detecting low concentration signals."
             }
         },
         {
@@ -3149,12 +3019,10 @@
             "screenshare_content": "A Google Docs document titled \"Ecology AIB - Breakout Group 3.1\" is shared. The document contains notes on imaging metabolites and metabolic processes, including a list of targets and challenges for different modalities.",
             "start_time": "57:56",
             "end_time": "58:36",
-            "annotations": [
-                {
-                    "express agreement": "Katharine agrees with the previous statement about the importance of amplifying the signal, indicating agreement with a proposed idea.",
-                    "expand on existing idea": "Katharine expands on the idea of amplification by highlighting its importance for low abundant metabolites and also acknowledges Allison's point about the need to look at metabolite production dynamically over a longer cellular process."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker is expressing agreement and validation for other group members' contributions.",
+                "develop idea": "The speaker is expanding on existing ideas by discussing the importance of amplification and dynamic measurement of metabolites."
+            }
         },
         {
             "speaker": "Ping Wang",
@@ -3173,9 +3041,9 @@
             "start_time": "58:37",
             "end_time": "59:27",
             "annotations": {
-                "present new idea": "Ping Wang introduces the idea of data integration using AI or deep learning for clinical applications, which hasn't been mentioned before in the discussion.",
-                "propose decision": "Ping Wang proposes that they should have a point for integrated data, including imaging and clinical features, for diagnostic purposes.",
-                "encourage particpatioin": "Ping Wang encourages participation by noting that probably there are not many deep learning people here and that nobody mentioned that."
+                "propose new idea": "The speaker suggests integrating data from various sources for clinical applications.",
+                "develop idea": "The speaker expands on the idea of data integration, including the use of AI or deep learning for diagnosis.",
+                "identify gap": "The speaker notes a potential gap in expertise regarding deep learning."
             }
         },
         {
@@ -3194,14 +3062,11 @@
             "screenshare_content": "A Google Docs document titled \"Ecology AIB - Breakout Group 3.1\" is shared. The document contains notes on imaging metabolites and metabolic processes, including a list of targets and challenges for different modalities.",
             "start_time": "59:28",
             "end_time": "60:15",
-            "annotations": [
-                {
-                    "present new idea": "Lingyan Shi introduces the idea of adding a biomarker to the diagnostic tool, which is a novel concept not previously discussed in this specific context."
-                },
-                {
-                    "provide supporting evidence": "Lingyan Shi supports her idea by providing the example of amyloid beta protein, which has a specific peak in the Raman region, making it separable from other proteins, thus strengthening the idea of using biomarkers."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Lingyuan Shi suggests adding a biomarker into the tool for diagnostic purposes.",
+                "develop idea": "The utterance expands on this idea by providing an example of amyloid beta protein and its specific peak in Raman spectroscopy.",
+                "offer feedback": "Lingyuan Shi provides a specific suggestion for improvement or modification by mentioning the use of a biomarker."
+            }
         },
         {
             "speaker": "Lingyan Shi",
@@ -3219,11 +3084,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "60:05",
             "end_time": "60:22",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the topic of self-supervised learning, which hasn't been explicitly discussed in the prior conversation about metabolic imaging."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by welcoming everyone, introducing themselves, and setting the agenda for the discussion."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -3241,14 +3104,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "60:22",
             "end_time": "60:46",
-            "annotations": [
-                {
-                    "present new idea": "This utterance introduces Jin and their work on self-supervised learning for natural language processing, which is a new topic in the context of the current discussion on metabolic imaging."
-                },
-                {
-                    "express enthusiasm": "Jin expresses excitement about being present and sharing thoughts on the topic, indicating enthusiasm."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -3266,14 +3124,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "60:46",
             "end_time": "61:02",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces self-supervised learning as a promising approach, which is a new topic in the context of the current discussion on metabolic imaging."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses optimism about self-supervised learning by calling it a 'very promising approach'."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The utterance introduces a new idea about self-supervised learning being a promising approach for improving model performance by utilizing large amounts of unlabeled data."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -3291,11 +3144,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "61:02",
             "end_time": "61:16",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The utterance explains the concept of a 'pretext task' in self-supervised learning, clarifying its role in training models on unlabeled data, which is relevant to the discussion on self-supervised learning."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -3313,11 +3164,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "61:16",
             "end_time": "61:39",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the challenge of evaluating self-supervised learning models and the need for new evaluation metrics, which is a novel concept not previously discussed in the conversation."
-                }
-            ]
+            "annotations": {
+                "clarify goal": "The speaker is discussing the challenge of evaluating the performance of self-supervised learning models and the need to develop new evaluation metrics, which involves clarifying goals or objectives for model evaluation."
+            }
         },
         {
             "speaker": "Allison Dennis",
@@ -3335,11 +3184,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "61:40",
             "end_time": "62:05",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses excitement about the topic of self-supervised learning, indicating enthusiasm."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states her own expertise and qualifications, mentioning her position as a professor at Boston University and her work on self-supervised learning for computer vision."
+            }
         },
         {
             "speaker": "Matt Scruggs",
@@ -3357,14 +3204,12 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "62:07",
             "end_time": "62:20",
-            "annotations": [
-                {
-                    "express enthusiasm": "The speaker expresses interest in how the discussion can be applied to challenges they are facing, indicating enthusiasm for the topic."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
-            "speaker": "Kevin Carlo",
+            "speaker": "Kevin Cash",
             "timestamp": "02:20-02:38",
             "transcript": "Hey, everyone, Kevin Carlo from Colorado School of Mines. I'm a professor there. I do a lot of work in machine learning and data science, so I'm excited to be here and learn more about self-supervised learning.",
             "speaking_duration": 18,
@@ -3379,17 +3224,12 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "62:20",
             "end_time": "62:38",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is introducing himself and his affiliation, which provides context for his expertise in machine learning and data science."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses excitement about learning more about self-supervised learning, indicating a positive attitude towards the topic."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states his own expertise in machine learning and data science, and his qualifications as a professor."
+            }
         },
         {
-            "speaker": "Kevin Carlo",
+            "speaker": "Kevin Cash",
             "timestamp": "02:38-03:01",
             "transcript": "I'm curious to hear more about the challenges that people are facing in this area. I think it's a very promising approach, but there are still a lot of open questions.",
             "speaking_duration": 23,
@@ -3404,14 +3244,10 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "62:38",
             "end_time": "63:01",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kevin expresses curiosity to hear more about the challenges people are facing, inviting others to share their experiences and perspectives on the topic of self-supervised learning."
-                },
-                {
-                    "express enthusiasm": "Kevin states that self-supervised learning is a very promising approach, expressing optimism about its potential."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker requests information about challenges others are facing in the area of discussion.",
+                "encourage participation": "The speaker invites others to share their thoughts or experiences, encouraging participation in the discussion."
+            }
         },
         {
             "speaker": "Katharine White",
@@ -3430,7 +3266,7 @@
             "start_time": "63:01",
             "end_time": "63:36",
             "annotations": {
-                "express enthusiasm": "Katharine expresses excitement about the application of self-supervised learning to medical imaging and hearing what everyone has to say, indicating enthusiasm for the topic."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3450,15 +3286,8 @@
             "start_time": "63:37",
             "end_time": "63:52",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges the introductions made by the participants."
-                },
-                "propose decision": {
-                    "Explanation": "The speaker proposes to start with the first question, suggesting a concrete choice for the group to begin the discussion."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "The speaker is inviting the participants to contribute to the discussion by posing a question."
-                }
+                "ask question": "The speaker is explicitly asking for information or opinions from others.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts or ideas."
             }
         },
         {
@@ -3478,16 +3307,11 @@
             "start_time": "63:53",
             "end_time": "64:19",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "The speaker introduces a novel application of self-supervised learning in environmental monitoring, which hasn't been discussed before in the current meeting."
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker builds upon the general discussion of self-supervised learning by suggesting a specific application and explaining how it could be beneficial given the availability of unlabeled data."
-                }
+                "propose new idea": "The speaker introduces a new idea by suggesting that self-supervised learning could be used for environmental monitoring, specifically to make use of unlabeled data from satellites and sensors."
             }
         },
         {
-            "speaker": "Kevin Carlo",
+            "speaker": "Kevin Cash",
             "timestamp": "04:19-04:21",
             "transcript": "Yeah, that's a great point.",
             "speaking_duration": 2,
@@ -3503,7 +3327,8 @@
             "start_time": "64:19",
             "end_time": "64:21",
             "annotations": {
-                "acknowledge contribution": "The speaker explicitly acknowledges the previous speaker's point, but does not necessarily agree or expand upon it."
+                "acknowledge contribution": "The speaker verbally recognizes a prior statement.",
+                "supportive response": "The speaker expresses agreement with a prior statement."
             }
         },
         {
@@ -3522,13 +3347,10 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "64:21",
             "end_time": "64:38",
-            "annotations": [
-                {
-                    "present new idea": "Matt introduces a new application of self-supervised learning in drug discovery, which hasn't been mentioned before in the context of the current discussion on self-supervised learning applications.",
-                    "provide supporting evidence": "Matt supports his idea by mentioning the availability of unlabeled data on molecular structures and properties, suggesting that self-supervised learning can leverage this data.",
-                    "express enthusiasm": "Matt expresses enthusiasm for the application of self-supervised learning in drug discovery, highlighting its potential to improve drug discovery efforts."
-                }
-            ]
+            "annotations": {
+                "Propose new idea": "The speaker introduces drug discovery as a new application area for self-supervised learning.",
+                "Develop idea": "The speaker elaborates on the potential of self-supervised learning to learn from unlabeled data on molecular structures and properties to improve drug discovery."
+            }
         },
         {
             "speaker": "Matt Scruggs",
@@ -3547,7 +3369,8 @@
             "start_time": "64:38",
             "end_time": "64:44",
             "annotations": {
-                "encourage particpatioin": "Matt is explicitly inviting others to share their perspectives on the promising applications of self-supervised learning, following his own contributions."
+                "ask question": "The speaker is requesting information or opinions from others, which is a direct question.",
+                "encourage participation": "The speaker is inviting others to contribute their thoughts, encouraging participation."
             }
         },
         {
@@ -3567,7 +3390,7 @@
             "start_time": "64:44",
             "end_time": "64:48",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about promising applications of self-supervised learning, adding computer vision to the list."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3587,7 +3410,7 @@
             "start_time": "64:48",
             "end_time": "64:50",
             "annotations": {
-                "encourage particpatioin": "Jin Zhang encourages the other speaker to continue, indicating a desire for them to contribute to the conversation."
+                "Supportive response": "The speaker is encouraging another group member to contribute or continue speaking, showing a supportive attitude."
             }
         },
         {
@@ -3606,11 +3429,9 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "64:50",
             "end_time": "65:03",
-            "annotations": [
-                {
-                    "expand on existing idea": "Matt Scruggs is expanding on the discussion about promising applications of self-supervised learning, building on Jin Zhang's previous mention of computer vision by providing specific examples like image recognition and object detection."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on existing ideas by suggesting new applications in computer vision for image recognition and object detection."
+            }
         },
         {
             "speaker": "Jin Zhang",
@@ -3629,7 +3450,8 @@
             "start_time": "65:03",
             "end_time": "65:12",
             "annotations": {
-                "express agreement": "Jin Zhang expresses agreement with Matt Scruggs's point that self-supervised learning is useful for computer vision, building on the discussion of promising applications of self-supervised learning."
+                "acknowledge contribution": "Jin Zhang is acknowledging a previous statement and showing agreement.",
+                "supportive response": "The utterance expresses agreement and a positive evaluation of the approach."
             }
         },
         {
@@ -3648,15 +3470,12 @@
             "screenshare_content": "A document with the title 'Self-Supervised Learning' is being shared.",
             "start_time": "65:12",
             "end_time": "65:24",
-            "annotations": [
-                {
-                    "present new idea": "The speaker introduces the application of self-supervised learning to natural language processing, which is a novel concept in the context of the current discussion on self-supervised learning applications.",
-                    "provide supporting evidence": "The speaker supports the idea by stating that there is a lot of unlabeled text data available, which can be used to train self-supervised learning models, strengthening the argument for its usefulness in NLP."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a new idea about the utility of self-supervised learning in natural language processing, suggesting it could help learn from unlabeled text data."
+            }
         },
         {
-            "speaker": "Kevin Carlo",
+            "speaker": "Kevin Cash",
             "timestamp": "05:25-05:28",
             "transcript": "Yeah, I agree with that.",
             "speaking_duration": 3,
@@ -3672,7 +3491,7 @@
             "start_time": "65:25",
             "end_time": "65:28",
             "annotations": {
-                "express agreement": "Kevin explicitly agrees with Jin's statement that self-supervised learning is very useful for natural language processing."
+                "supportive response": "The utterance expresses agreement with a previous statement, fitting the definition of a supportive response."
             }
         },
         {
@@ -3692,7 +3511,7 @@
             "start_time": "65:28",
             "end_time": "65:31",
             "annotations": {
-                "express agreement": "The speaker explicitly agrees with a prior statement about the usefulness of self-supervised learning for natural language processing."
+                "supportive response": "The utterance expresses agreement with a previous statement."
             }
         },
         {
@@ -3712,7 +3531,7 @@
             "start_time": "65:31",
             "end_time": "65:37",
             "annotations": {
-                "express agreement": "Katharine expresses agreement with the previous speakers who mentioned the usefulness of self-supervised learning in other fields, now extending it to medical imaging."
+                "supportive response": "The speaker is expressing agreement or positive evaluation regarding the application of the technique in medical imaging."
             }
         },
         {
@@ -3732,7 +3551,7 @@
             "start_time": "65:37",
             "end_time": "65:42",
             "annotations": {
-                "express agreement": "Jin Zhang expresses agreement with the previous discussion about self-supervised learning being a promising approach."
+                "Supportive Response": "The speaker is expressing agreement and positive evaluation of a previously discussed approach."
             }
         },
         {
@@ -3752,9 +3571,7 @@
             "start_time": "65:50",
             "end_time": "66:11",
             "annotations": {
-                "ask clarifying question": {
-                    "Explanation": "The speaker is asking about the challenges in self-supervised learning, seeking to clarify what needs to be overcome to make it more widely applicable, following a discussion about promising applications."
-                }
+                "ask question": "The speaker is asking questions about the biggest challenges in the area of self-supervised learning and what needs to be overcome to make it more widely applicable, seeking information from other team members."
             }
         },
         {
@@ -3774,16 +3591,12 @@
             "start_time": "66:11",
             "end_time": "66:23",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Jin Zhang introduces the idea that designing the pretext task is one of the biggest challenges in self-supervised learning, which is a novel concept in the context of the current discussion."
-                },
-                "explain or define term or concept": {
-                    "Explanation": "Jin Zhang explains the concept of a 'pretext task' by defining it as the task used to train the model on unlabeled data, providing clarity for the group."
-                }
+                "develop idea": "The speaker is elaborating on the challenge of designing a pretext task and its significance.",
+                "identify gap": "The speaker recognizes the gap in knowledge or practice regarding how to design an effective pretext task for self-supervised learning."
             }
         },
         {
-            "speaker": "Kevin Carlo",
+            "speaker": "Kevin Cash",
             "timestamp": "06:23-06:26",
             "transcript": "Yeah, I agree with that.",
             "speaking_duration": 3,
@@ -3799,7 +3612,7 @@
             "start_time": "66:23",
             "end_time": "66:26",
             "annotations": {
-                "express agreement": "Kevin agrees with Jin's statement about the challenges in designing the pretext task for self-supervised learning, which was mentioned in the prior turn."
+                "supportive response": "Kevin is expressing agreement with a prior statement."
             }
         }
     ]

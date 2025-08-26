@@ -1,15 +1,15 @@
 {
     "all_speakers": [
-        "Nicolas Cowan",
+        "Daniel Apai",
         "Paul Robertson",
-        "Courtney Dressing",
+        "Nicolas Cowan",
+        "Coco Zhang",
+        "Daniel Huber",
         "Leslie Rogers",
+        "Smadar Naoz",
         "Andrew Vanderburg",
         "Ke Zhang",
-        "Smadar Naoz",
-        "Daniel Apai",
-        "Coco Zhang",
-        "Daniel Huber"
+        "Courtney Dressing"
     ],
     "total_speaking_length": 3618,
     "all_data": [
@@ -30,7 +30,7 @@
             "start_time": "00:02",
             "end_time": "00:04",
             "annotations": {
-                "None": "This utterance is a simple greeting and does not fit any of the codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -50,7 +50,7 @@
             "start_time": "00:05",
             "end_time": "00:05",
             "annotations": {
-                "express agreement": "Paul is greeting Nicolas, which can be interpreted as an agreement to start the meeting or acknowledge Nicolas's presence."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -70,7 +70,7 @@
             "start_time": "00:06",
             "end_time": "00:06",
             "annotations": {
-                "None": "No code applies to this utterance as it is a simple greeting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -90,7 +90,7 @@
             "start_time": "00:09",
             "end_time": "00:09",
             "annotations": {
-                "acknowledge contribution": "The utterance 'Hello' acknowledges the presence of others in the meeting, similar to recognizing their input without necessarily agreeing or expanding on any specific idea."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -110,7 +110,7 @@
             "start_time": "00:12",
             "end_time": "00:13",
             "annotations": {
-                "express enthusiasm": "The speaker is expressing a positive sentiment at the beginning of the meeting."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -130,7 +130,7 @@
             "start_time": "00:14",
             "end_time": "00:17",
             "annotations": {
-                "express humor": "The speaker is making a lighthearted observation about the composition of the room, implying it's heavily populated with people from the astronomy field."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -150,7 +150,8 @@
             "start_time": "00:18",
             "end_time": "00:20",
             "annotations": {
-                "express agreement": "The speaker is explicitly agreeing with the previous statement about the room being astro heavy."
+                "acknowledge contribution": "The speaker verbally recognizes a prior input from another group member.",
+                "supportive response": "The speaker expresses agreement or validation for a prior statement."
             }
         },
         {
@@ -170,8 +171,8 @@
             "start_time": "00:21",
             "end_time": "00:28",
             "annotations": {
-                "express humor": "The speaker makes a lighthearted observation about astronomers having 'very weird interests,' which is intended as a joke.",
-                "express frustration": "The speaker expresses frustration by mentioning 'We had a problem yesterday too,' indicating a recurring issue."
+                "acknowledge contribution": "The speaker shares a personal experience of having a similar problem, which can be seen as acknowledging a shared challenge or experience.",
+                "express humor": "The comment about astronomers having 'very weird interests' is made in a lighthearted or humorous manner."
             }
         },
         {
@@ -191,7 +192,7 @@
             "start_time": "00:30",
             "end_time": "00:32",
             "annotations": {
-                "explain or define term or concept": "Nicolas is clarifying that the interests are astronomical, not weird, to reframe the description of the astronomers' interests."
+                "express humor": "The speaker is making a light-hearted comment to defend astronomers' interests, which can be interpreted as humorous."
             }
         },
         {
@@ -211,7 +212,7 @@
             "start_time": "00:36",
             "end_time": "00:40",
             "annotations": {
-                "None": "This utterance does not fit into any of the defined codes."
+                "process management": "This code applies because Daniel Apai is managing the meeting flow by assessing who has joined."
             }
         },
         {
@@ -231,7 +232,7 @@
             "start_time": "00:42",
             "end_time": "00:43",
             "annotations": {
-                "present new idea": "The utterance introduces the idea that someone is missing from the meeting, which is a new piece of information not previously discussed."
+                "ask question": "The speaker is implicitly requesting information about whether everyone has joined, indicating a question about the group's completeness."
             }
         },
         {
@@ -251,7 +252,7 @@
             "start_time": "00:44",
             "end_time": "00:48",
             "annotations": {
-                "None": "This utterance does not fit into any of the defined codes, as it is simply stating that someone will not be able to attend."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -271,9 +272,9 @@
             "start_time": "00:50",
             "end_time": "01:42",
             "annotations": {
-                "explain or define term or concept": "Daniel Apai is explaining his role as a facilitator for the discussion.",
-                "propose decision": "Daniel Apai is suggesting the group starts with brief introductions.",
-                "assign task": "Daniel Apai is suggesting the group identify a scribe to report back to the main group."
+                "process management": "Daniel is managing the meeting flow by suggesting they get started, outlining the agenda, and facilitating the discussion.",
+                "clarify goal": "Daniel clarifies the general goal of their meeting by stating they will proceed with the science discussion.",
+                "encourage participation": "Daniel encourages participation by suggesting introductions so everybody knows each other."
             }
         },
         {
@@ -293,8 +294,8 @@
             "start_time": "01:43",
             "end_time": "02:02",
             "annotations": {
-                "assign task": "Daniel Apai assigns the task of introducing themselves and then pointing to the next person to keep the introductions moving efficiently.",
-                "encourage particpatioin": "Daniel Apai encourages Paul to start the introductions, prompting him to participate in the discussion."
+                "process management": "The speaker is managing the meeting flow by suggesting a method for efficient introductions.",
+                "encourage participation": "The speaker is inviting Paul to start the introductions, encouraging participation."
             }
         },
         {
@@ -314,8 +315,7 @@
             "start_time": "02:03",
             "end_time": "02:22",
             "annotations": {
-                "explain or define term or concept": "The phrase 'radial velocity technique' is a technical term that Paul is implicitly defining by mentioning his interest in exoplanet detection and characterization through it.",
-                "present new idea": "Paul is introducing himself and his research interests, which is new information to the group in this context."
+                "signal expertise": "Paul mentions his position as an assistant professor and his research interests, which can be seen as signaling his expertise."
             }
         },
         {
@@ -335,7 +335,7 @@
             "start_time": "02:22",
             "end_time": "02:23",
             "annotations": {
-                "express agreement": "Daniel Apai is expressing agreement with Paul's introduction."
+                "None": "No relevant code applies to this utterance as it is a minimal response that does not explicitly fit any of the provided codes."
             }
         },
         {
@@ -355,7 +355,7 @@
             "start_time": "02:23",
             "end_time": "02:25",
             "annotations": {
-                "assign task": "Paul is assigning the task of introducing themselves next to Courtney."
+                "process management": "The speaker is managing the meeting flow by directing the conversation to the next person, Courtney."
             }
         },
         {
@@ -375,9 +375,8 @@
             "start_time": "02:27",
             "end_time": "02:41",
             "annotations": {
-                "acknowledge contribution": "Courtney thanks Paul for passing the turn to her.",
-                "explain or define term or concept": "Courtney explains her research interests, including planet detection and characterization using transits and radial velocity, which clarifies her expertise for the group.",
-                "express enthusiasm": "Courtney expresses excitement about working with transmission spectroscopy this summer, indicating her positive outlook."
+                "acknowledge contribution": "The speaker thanks Paul, acknowledging his introduction.",
+                "signal expertise": "The speaker mentions their work areas, signaling their expertise."
             }
         },
         {
@@ -397,7 +396,7 @@
             "start_time": "02:41",
             "end_time": "02:42",
             "annotations": {
-                "encourage particpatioin": "Courtney is encouraging Smadar to participate by inviting her to introduce herself next."
+                "encourage participation": "Courtney is directly inviting Smadar to introduce herself, encouraging her participation in the discussion."
             }
         },
         {
@@ -417,8 +416,7 @@
             "start_time": "02:43",
             "end_time": "03:05",
             "annotations": {
-                "explain or define term or concept": "Smadar identifies herself as a 'dynamicist', which explains her area of expertise.",
-                "expand on existing idea": "Smadar expands on her general topic by stating her interest in understanding exoplanet architectures and their diversity, building upon the previous discussion of exoplanets."
+                "signal expertise": "Smadar mentions her position as an associate professor and her work as a dynamicist, signaling her expertise."
             }
         },
         {
@@ -438,7 +436,7 @@
             "start_time": "03:05",
             "end_time": "03:07",
             "annotations": {
-                "assign task": "Smadar is passing the turn to Leslie to continue with introductions, which is assigning the task of introducing themselves next."
+                "process management": "Smadar Naoz is managing the meeting flow by transitioning from her introduction to the introduction of the next person, Leslie."
             }
         },
         {
@@ -458,7 +456,7 @@
             "start_time": "03:10",
             "end_time": "03:21",
             "annotations": {
-                "None": "This utterance is a self-introduction, stating name, affiliation, and research interests, which does not fit any of the defined codes."
+                "signal expertise": "The speaker explicitly states their own expertise and qualifications related to the task by mentioning their position as an assistant professor and their area of study."
             }
         },
         {
@@ -478,7 +476,8 @@
             "start_time": "03:21",
             "end_time": "03:21",
             "annotations": {
-                "assign task": "Leslie is assigning the task of introducing themselves next to Coco, continuing the round of introductions."
+                "process management": "Leslie is managing the flow of introductions.",
+                "encourage participation": "Leslie is encouraging participation by calling out 'Coco'."
             }
         },
         {
@@ -498,7 +497,8 @@
             "start_time": "03:22",
             "end_time": "03:41",
             "annotations": {
-                "explain or define term or concept": "The speaker is introducing themself and their research interests, which involves defining their area of study as 'plan information processes'."
+                "process management": "The speaker is following the facilitator's instructions to introduce themselves, which helps in managing the meeting process.",
+                "signal expertise": "The speaker mentions their study focus, indicating their area of expertise."
             }
         },
         {
@@ -518,7 +518,7 @@
             "start_time": "03:41",
             "end_time": "03:47",
             "annotations": {
-                "explain or define term or concept": "The utterance explains the methods (observation and modeling of molecular lines emissions) used to study planet formation and initial conditions, clarifying the research approach."
+                "signal expertise": "The speaker is explicitly stating their own expertise and area of work related to plan information processes, specifically studying how planets form and the initial conditions using observations and modeling of molecular lines emissions."
             }
         },
         {
@@ -538,7 +538,8 @@
             "start_time": "03:47",
             "end_time": "03:48",
             "annotations": {
-                "encourage particpatioin": "Coco is prompting the next person to introduce themselves, continuing the round-robin introductions."
+                "encourage participation": "Coco is inviting the next person to introduce themselves.",
+                "process management": "Coco is managing the meeting flow by indicating it's time for the next introduction."
             }
         },
         {
@@ -558,7 +559,8 @@
             "start_time": "03:50",
             "end_time": "04:16",
             "annotations": {
-                "explain or define term or concept": "The speaker explains his research interests, including exoplanet detection and characterization using transits and radial velocities, characterization of stars, and connections between host star properties and exoplanet demographics, which serves to define his area of expertise for the group."
+                "signal expertise": "Dan explicitly states his research areas, signaling his expertise in exoplanet detection and characterization, and the characterization of stars.",
+                "express humor": "Dan makes a joke about still waking up, which is an attempt to express humor."
             }
         },
         {
@@ -578,7 +580,8 @@
             "start_time": "04:16",
             "end_time": "04:18",
             "annotations": {
-                "encourage particpatioin": "Dan Huber is inviting Andrew to introduce himself next, continuing the round of introductions."
+                "encourage participation": "Dan Huber invites Andrew to introduce himself, encouraging participation.",
+                "process management": "Dan Huber is managing the meeting flow by inviting the next person to speak."
             }
         },
         {
@@ -597,11 +600,9 @@
             "screenshare_content": "None",
             "start_time": "04:19",
             "end_time": "04:27",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Andrew is introducing himself by stating his name and affiliation, which serves to define who he is in the context of the meeting."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their position as an assistant professor, which relates to their expertise or qualifications."
+            }
         },
         {
             "speaker": "Andrew Vanderburg",
@@ -620,7 +621,7 @@
             "start_time": "04:27",
             "end_time": "04:41",
             "annotations": {
-                "explain or define term or concept": "The speaker is defining the general topics they are working on, which include exoplanet detection using transits and radial velocity, as well as technique development."
+                "signal expertise": "Andrew Vanderburg explicitly states his own expertise related to exoplanet detection and technique development."
             }
         },
         {
@@ -640,7 +641,7 @@
             "start_time": "04:41",
             "end_time": "04:42",
             "annotations": {
-                "encourage particpatioin": "Andrew is inviting Nick to introduce himself, encouraging him to participate in the round of introductions."
+                "ask question": "The speaker is requesting information about Nick's status, asking if he has gone."
             }
         },
         {
@@ -659,14 +660,10 @@
             "screenshare_content": "None",
             "start_time": "04:44",
             "end_time": "05:03",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Nicolas Cowan introduces himself, stating his name and affiliation, which serves to clarify who he is within the group."
-                },
-                {
-                    "explain or define term or concept": "Nicolas Cowan explains his research interests, which is studying the atmospheres and climates of exoplanets, clarifying his area of expertise for the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states his area of work and what he does, which can be seen as signaling his expertise.",
+                "express humor": "The speaker makes a light, humorous comment about noodling around with models."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -685,7 +682,7 @@
             "start_time": "05:03",
             "end_time": "05:03",
             "annotations": {
-                "None": "This utterance does not contain any content that fits the defined codes, as it is simply a concluding statement to his introduction."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -705,8 +702,8 @@
             "start_time": "05:04",
             "end_time": "05:25",
             "annotations": {
-                "explain or define term or concept": "Daniel Apai introduces himself and his research interests, which serves to explain his background and expertise to the group.",
-                "acknowledge contribution": "Daniel Apai thanks everyone for their introductions, acknowledging their participation."
+                "signal expertise": "The speaker is explicitly stating his own expertise and work areas related to exoplanets.",
+                "process management": "The speaker is also facilitating the meeting process by example, starting his own introduction to help move the discussion along."
             }
         },
         {
@@ -725,11 +722,10 @@
             "screenshare_content": "None",
             "start_time": "05:25",
             "end_time": "06:14",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Daniel Apai explains the topic of discussion, which is the connection between planetary system properties and the likelihood of habitable worlds, setting the stage for the discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "Daniel manages the process by describing his role in facilitating the discussion and outlining the steps they will take.",
+                "clarify goal": "Daniel clarifies the goal of the discussion by stating the topic they will be discussing, which is to explore which planetary architectures are more likely to include habitable worlds."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -748,8 +744,9 @@
             "start_time": "06:14",
             "end_time": "06:35",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai encourages the group to think about testable hypotheses and projects they could team up to explore, building on the previous day's discussions.",
-                "propose decision": "Daniel Apai suggests that the group should think about testable hypotheses and projects they could team up to explore."
+                "encourage participation": "The speaker encourages the group to think about projects they could team up to explore.",
+                "process management": "The speaker is managing the discussion by reminding them it's the second day and suggesting a direction for their work.",
+                "clarify goal": "The speaker is clarifying the goal or approach for their discussion by suggesting they think about testable hypotheses and potential projects."
             }
         },
         {
@@ -769,8 +766,8 @@
             "start_time": "06:35",
             "end_time": "07:05",
             "annotations": {
-                "assign task": "Daniel Apai is assigning the task of finding a volunteer to record the discussion and report back to the main room, which is a necessary logistical step for the meeting.",
-                "propose decision": "Daniel Apai is suggesting that the group identify specific contributions from beyond astronomy and take notes of those, which is a suggestion for how to approach the discussion."
+                "process management": "The speaker is managing the meeting flow by asking for a volunteer to record the discussion and report back to the main room.",
+                "encourage participation": "The speaker encourages the group to seek out additional input from experts beyond their current group."
             }
         },
         {
@@ -790,7 +787,8 @@
             "start_time": "07:05",
             "end_time": "07:10",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is inviting someone to volunteer as a recorder for the discussion, encouraging participation from the group."
+                "process management": "The speaker is managing the meeting flow by determining who will take on the role of recording the discussion.",
+                "assign task": "The speaker is assigning the task of recording the discussion to the first person to raise their hand."
             }
         },
         {
@@ -810,7 +808,9 @@
             "start_time": "07:15",
             "end_time": "07:19",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai thanks someone for volunteering to record the discussion, acknowledging their contribution to the group."
+                "acknowledge contribution": "Daniel Apai is verbally recognizing someone's input (volunteering).",
+                "supportive response": "Daniel Apai is expressing a positive sentiment towards the volunteer's action.",
+                "process management": "Daniel Apai is managing the meeting flow and organizing group activities."
             }
         },
         {
@@ -830,7 +830,8 @@
             "start_time": "07:20",
             "end_time": "07:28",
             "annotations": {
-                "express humor": "Dan makes a self-deprecating joke about being more efficient at writing due to still waking up, adding a lighthearted tone to volunteering as the scribe."
+                "express humor": "Dan makes a lighthearted comment about being awake, which can be considered as expressing humor.",
+                "process management": "Dan is indirectly contributing to process management by volunteering for a task (recording the discussion)."
             }
         },
         {
@@ -849,11 +850,10 @@
             "screenshare_content": "None",
             "start_time": "07:28",
             "end_time": "07:31",
-            "annotations": [
-                {
-                    "express enthusiasm": "Daniel Apai expresses enthusiasm for Dan Huber volunteering to record the discussion."
-                }
-            ]
+            "annotations": {
+                "assign task": "Daniel Apai is confirming Dan Huber's role in recording the discussion, effectively assigning him the task.",
+                "supportive response": "Daniel Apai expresses a positive response to Dan Huber's offer, indicating agreement and appreciation for his contribution."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -872,8 +872,8 @@
             "start_time": "07:31",
             "end_time": "07:40",
             "annotations": {
-                "acknowledge contribution": "Daniel acknowledges Dan Huber's contribution of volunteering to record the discussion.",
-                "express enthusiasm": "Daniel expresses enthusiasm for Dan Huber volunteering to record the discussion."
+                "supportive response": "The speaker is expressing a positive evaluation of Dan Huber's contribution.",
+                "acknowledge contribution": "The speaker is recognizing Dan Huber's input for volunteering to record the discussion."
             }
         },
         {
@@ -893,7 +893,7 @@
             "start_time": "07:40",
             "end_time": "07:52",
             "annotations": {
-                "assign task": "Daniel Apai is assigning the task of recording the discussion to Dan Huber, and he is providing instructions on how to find or create a file for this purpose."
+                "process management": "The speaker is providing instructions on how to proceed with a task, specifically handling files in the Google Drive, which facilitates the meeting's workflow."
             }
         },
         {
@@ -913,7 +913,7 @@
             "start_time": "07:52",
             "end_time": "07:53",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai thanks Dan Huber for volunteering to record the discussion, acknowledging his contribution."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -933,7 +933,7 @@
             "start_time": "07:53",
             "end_time": "07:53",
             "annotations": {
-                "express agreement": "Dan Huber confirms that he has found the relevant file in Google Drive, agreeing with Daniel Apai's previous statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -953,7 +953,8 @@
             "start_time": "07:53",
             "end_time": "08:05",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is inviting questions or suggestions from the group before starting the discussion, encouraging participation."
+                "process management": "Daniel is managing the meeting flow by checking if there are any questions or suggestions before starting the discussion.",
+                "encourage participation": "Daniel is inviting participants to contribute by asking for questions or suggestions."
             }
         },
         {
@@ -972,14 +973,9 @@
             "screenshare_content": "None",
             "start_time": "10:00",
             "end_time": "10:55",
-            "annotations": [
-                {
-                    "present new idea": "Paul introduces a new idea about the role of exterior giant planets in the habitability of habitable zone planets, which hasn't been discussed yet."
-                },
-                {
-                    "provide supporting evidence": "Paul mentions the controversy in the literature regarding Jupiter's role in protecting Earth from impacts, supporting the complexity of the problem."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the role of exterior giant planets for the habitability of habitable zone planets."
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -997,11 +993,10 @@
             "screenshare_content": "None",
             "start_time": "10:56",
             "end_time": "11:14",
-            "annotations": [
-                {
-                    "expand on existing idea": "Smadar is building on Paul's idea about the role of exterior giant planets for the habitability of habitable zone planets by mentioning stability and shielding."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Smadar is expanding on the idea presented by Paul Robertson, discussing the aspects of stability and shielding effects in the context of exterior giant planets and habitability.",
+                "supportive response": "Smadar's response is supportive of Paul Robertson's question, indicating agreement that the topic is interesting and worth exploring."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -1019,14 +1014,11 @@
             "screenshare_content": "None",
             "start_time": "11:15",
             "end_time": "12:34",
-            "annotations": [
-                {
-                    "present new idea": "Nicolas introduces the idea that the solar system's unique configuration (lack of short-period planets, giant planets at a few AU) might be a condition for habitable planets, contrasting with water worlds, which is a novel concept in the discussion."
-                },
-                {
-                    "expand on existing idea": "Nicolas expands on Paul's point about the role of giant planets by wondering if a giant planet at a few AU can be a signpost for potentially habitable terrestrial worlds, building on the discussion about the influence of giant planets on habitability."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on ideas related to the habitability of planets and the role of giant planets, building on previous discussions.",
+                "ask question": "The speaker asks a question about using a giant planet as a signpost for potentially habitable worlds.",
+                "encourage participation": "The speaker encourages discussion by asking a question."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -1044,14 +1036,10 @@
             "screenshare_content": "None",
             "start_time": "12:35",
             "end_time": "12:58",
-            "annotations": [
-                {
-                    "expand on existing idea": "Coco is building on the previous discussion about the role of giant planets in habitability by introducing a related question about the amount of water needed for a planet to be habitable."
-                },
-                {
-                    "present new idea": "Coco introduces a new question about the maximum and minimum ratio of water to the total planet mass for a planet to be habitable, and how the architecture of a system can impact the water amount."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information on the ratio of water to total planet mass for a planet to be habitable and how the architecture of the system can impact the water amount.",
+                "propose new idea": "The speaker introduces a new question regarding the conditions for planetary habitability, specifically focusing on the water to mass ratio and system architecture."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -1070,8 +1058,9 @@
             "start_time": "12:59",
             "end_time": "13:44",
             "annotations": {
-                "expand on existing idea": "Nicolas expands on Coco's idea about the amount of water needed for a planet to be habitable, adding the constraint of the origin of life and hydrothermal vents, building on previous discussions.",
-                "present new idea": "Nicolas introduces a new idea about the origin of life and the thickness of an ocean and how it relates to hydrothermal vents, which is a novel concept not previously mentioned."
+                "propose new idea": "The speaker introduces a new idea about considering the conditions for habitability and the origin of life, specifically in terms of water content and ocean thickness.",
+                "develop idea": "The speaker builds upon previous discussions and ideas, elaborating on the concept of habitability and the origin of life.",
+                "clarify goal": "The speaker contributes to defining the goal of understanding not just habitability but the specific conditions required for life to originate on a planet."
             }
         },
         {
@@ -1091,7 +1080,7 @@
             "start_time": "13:45",
             "end_time": "13:51",
             "annotations": {
-                "ask clarifying question": "Daniel Apai is asking for clarification on Coco's statement about the amount of water needed for a planet to be habitable, specifically if she means there's a range of water abundance that's neither too little nor too much."
+                "develop idea": "The speaker is building upon a previous idea by suggesting a range of water abundance for habitability, indicating a deeper exploration of the concept."
             }
         },
         {
@@ -1111,8 +1100,8 @@
             "start_time": "13:52",
             "end_time": "14:06",
             "annotations": {
-                "expand on existing idea": "Coco is expanding on Nicolas's idea about the amount of water a planet can have and still be habitable, specifying that there is a range of total water amount, like the depth of the ocean.",
-                "explain or define term or concept": "Coco is explaining the concept of a range for the total amount of water on a planet, using the depth of the ocean as an example to clarify the concept."
+                "develop idea": "The speaker is expanding on existing ideas about the range of water abundance for habitability.",
+                "ask question": "The speaker asks for information about the deepest limit of water abundance for habitability."
             }
         },
         {
@@ -1132,8 +1121,9 @@
             "start_time": "14:06",
             "end_time": "15:15",
             "annotations": {
-                "present new idea": "Smadar introduces the novel concept of exploring extreme places for habitability, moving beyond the traditional 'Goldilocks zone' and considering moons around giant planets or planets in dense galactic regions.",
-                "expand on existing idea": "Smadar expands on the discussion of habitability by suggesting extreme scenarios, such as moons around giant planets with tidal heating or planets in dense galactic regions with radiation, building on the previous discussion about the conditions for habitability."
+                "propose new idea": "The speaker introduces a new perspective on habitability by suggesting they consider extreme places and scenarios.",
+                "develop idea": "The speaker expands on previous discussions by considering various scenarios for habitability.",
+                "ask question": "The speaker poses questions about the possibility of habitability in extreme scenarios."
             }
         },
         {
@@ -1153,8 +1143,8 @@
             "start_time": "15:35",
             "end_time": "16:13",
             "annotations": {
-                "expand on existing idea": "Dan Huber builds on Smadar's idea of extreme places for habitability by mentioning the concept of galactic habitability and how it relates to their focus on our place in the galaxy, expanding the discussion beyond the traditional Goldilocks zone.",
-                "acknowledge contribution": "Dan Huber acknowledges Smadar's contribution by stating that his thoughts on galactic habitability are along the same lines as what Smadar said about extreme places for habitability."
+                "propose new idea": "The speaker introduces the concept of galactic habitability, a new idea not previously discussed in the meeting.",
+                "develop idea": "The speaker elaborates on the idea by mentioning large surveys and the potential for a galactic-centric view of habitability."
             }
         },
         {
@@ -1174,8 +1164,7 @@
             "start_time": "16:13",
             "end_time": "16:15",
             "annotations": {
-                "acknowledge contribution": "Leslie acknowledges the previous speaker's point about galactic habitability, indicating she heard and understood the contribution.",
-                "expand on existing idea": "Leslie expands on the idea of focusing too much on our place in the galaxy by adding that we also focus too much on our own solar system."
+                "supportive response": "Leslie Rogers is expressing agreement or validation with a previous statement, showing a positive evaluation without adding new content."
             }
         },
         {
@@ -1194,11 +1183,10 @@
             "screenshare_content": "None",
             "start_time": "16:15",
             "end_time": "16:29",
-            "annotations": [
-                {
-                    "ask clarifying question": "Leslie is asking for clarification about the direction of transfer between Europa and Earth, implying a previous discussion about transfer mechanisms."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on a prior statement or idea.",
+                "develop idea": "The speaker is also expanding or building upon an existing idea or concept."
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -1217,7 +1205,7 @@
             "start_time": "16:29",
             "end_time": "16:31",
             "annotations": {
-                "provide supporting evidence": "Paul refers to simulations to support the idea of two-way transfer, providing evidence for his claim."
+                "develop idea": "Paul is expanding on a previous discussion point about the transfer between Europa and Earth by providing specific information based on simulations."
             }
         },
         {
@@ -1237,7 +1225,8 @@
             "start_time": "16:31",
             "end_time": "16:32",
             "annotations": {
-                "express enthusiasm": "Leslie expresses excitement and appreciation for the information shared by Paul about the two-way transfer between Europa and Earth."
+                "Supportive response": "The utterance expresses agreement and positive evaluation for Paul Robertson's contribution about simulations showing two-way transfer between Europa and Earth.",
+                "Acknowledge contribution": "The utterance also acknowledges Paul Robertson's input, showing that Leslie is engaged and responsive to the discussion."
             }
         },
         {
@@ -1257,7 +1246,8 @@
             "start_time": "16:33",
             "end_time": "17:10",
             "annotations": {
-                "expand on existing idea": "Paul is expanding on the previous discussion about transfer between Europa and Earth, adding details about the volume of transfer in one direction."
+                "Acknowledge contribution": "Paul is verbally recognizing a previous point made by another group member.",
+                "Supportive response": "Paul's response expresses agreement and supports the previous discussion."
             }
         },
         {
@@ -1277,7 +1267,7 @@
             "start_time": "20:00",
             "end_time": "20:04",
             "annotations": {
-                "expand on existing idea": "Paul is expanding on Leslie's question about transfer between Europa and Earth, adding details about the directionality of the transfer, building on his previous statement that it is two way."
+                "supportive response": "The utterance provides additional information in a supportive manner, engaging with the previous discussion about the transfer between celestial bodies."
             }
         },
         {
@@ -1297,7 +1287,7 @@
             "start_time": "20:05",
             "end_time": "20:17",
             "annotations": {
-                "provide supporting evidence": "Daniel Apai provides supporting evidence for the discussion on habitability by mentioning cross simulations for Trappist-1 by Sebastian Creed, which show that panspermia is very efficient in such a small compact system, thus strengthening the idea of habitability in different systems."
+                "develop idea": "The speaker is expanding on previous discussions by providing a specific example related to panspermia in compact systems."
             }
         },
         {
@@ -1317,8 +1307,9 @@
             "start_time": "20:17",
             "end_time": "20:33",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai acknowledges the previous idea as very interesting.",
-                "expand on existing idea": "Daniel Apai expands on the discussion by introducing the idea of ejected planets and their frequency based on body simulations of planet formation."
+                "develop idea": "Daniel is expanding on previous ideas about planetary systems and their formation by discussing the concept of ejected planets.",
+                "propose new idea": "Daniel introduces the concept of ejected planets and their potential impact on planetary system formation.",
+                "signal expertise": "Daniel signals his expertise by referencing body simulations of planet formation."
             }
         },
         {
@@ -1338,7 +1329,7 @@
             "start_time": "20:34",
             "end_time": "20:37",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is explicitly inviting others to contribute their ideas to the discussion."
+                "encourage participation": "The speaker is inviting others in the group to contribute their expertise, opinions, or ideas."
             }
         },
         {
@@ -1357,14 +1348,9 @@
             "screenshare_content": "None",
             "start_time": "20:41",
             "end_time": "21:41",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previously discussed idea of the role of giant planets in the habitability of other planets, adding the specific aspect of material transport within a disc."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions a recent paper by Bertram Bitch, suggesting that it provides evidence for the effect of a giant planet on material transport within a disc."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas about the correlation between giant planets in a system and the habitability of other planets, and exploring the effect of giant planets on material transport within a disc."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -1383,7 +1369,7 @@
             "start_time": "21:41",
             "end_time": "21:42",
             "annotations": {
-                "None": "This utterance is incomplete and does not express any clear idea, question, or action."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1402,17 +1388,10 @@
             "screenshare_content": "None",
             "start_time": "21:43",
             "end_time": "22:32",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Coco provides supporting evidence for the role of giant planets in habitability by referencing Mab Dalli's paper on the fossilized snow line and its impact on Earth's water content, building on the discussion about the correlation between giant planets and habitability."
-                },
-                {
-                    "expand on existing idea": "Coco expands on the existing idea of the role of giant planets in habitability by discussing how the presence of giant planets relative to the snow line location impacts the water content of the inner region, building on Leslie's mention of the effect of giant planets on material transport within a disc."
-                },
-                {
-                    "present new idea": "Coco presents a new idea about how the water content of planets in a compact system with roughly equal mass super-Earths would differ from a planet inside a giant, which is a novel concept not previously mentioned."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The utterance expands on an existing idea by discussing the role of giant planets in shaping the water content of inner planets, referencing specific research and exploring implications for planetary formation.",
+                "acknowledge contribution": "The utterance references Mab Dalli's paper, acknowledging their contribution to the field."
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -1430,14 +1409,11 @@
             "screenshare_content": "None",
             "start_time": "22:32",
             "end_time": "23:34",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is explaining the methodology used in numerical simulations and the Opic method for studying planetary systems, highlighting the limitations of each approach."
-                },
-                {
-                    "offer constructive criticism": "The speaker critiques the Opic method, expressing annoyance because it originates from our solar system and focuses on Jupiter family comets in a specific location, which may limit its applicability to other systems."
-                }
-            ]
+            "annotations": {
+                "critical response": "Smadar questions and provides negative evaluation of current methodologies.",
+                "identify gap": "Smadar points out limitations in current methodologies.",
+                "offer feedback": "Smadar provides specific criticisms and suggestions for consideration."
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -1456,9 +1432,9 @@
             "start_time": "23:34",
             "end_time": "24:26",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the limitations of the Opic method, particularly when applied to objects not in the same plane as Jupiter, building on the discussion of giant planets and their influence on impact rates.",
-                "offer constructive criticism": "The speaker critiques the Opic method, pointing out its limitations when applied to systems beyond our own solar system, with the intent to improve the methodology used in simulations.",
-                "present new idea": "The speaker introduces a new analytical approach to generalize the Opic method for different configurations and rock origins, aiming to improve understanding of impact rates based on the discussion about the role of giant planets."
+                "develop idea": "Smadar expands on her thoughts about the limitations of the Opic method and hints at developing a new approach.",
+                "identify gap": "She identifies a gap in current methodologies, specifically the limitations of the Opic method.",
+                "critical response": "Smadar critiques the Opic method for its limitations, especially in handling thickness of celestial structures."
             }
         },
         {
@@ -1478,7 +1454,7 @@
             "start_time": "24:30",
             "end_time": "24:39",
             "annotations": {
-                "ask clarifying question": "Leslie is asking Smadar a clarifying question about the methodology she is using, specifically whether it applies after the gas disc has dissipated or to pebbles flowing with it, following Smadar's explanation of the Opic method and its limitations."
+                "ask question": "The speaker is requesting information or clarification on a prior statement or idea proposed by another group member."
             }
         },
         {
@@ -1498,7 +1474,7 @@
             "start_time": "24:39",
             "end_time": "24:46",
             "annotations": {
-                "explain or define term or concept": "Smadar is explaining that gas drag is a separate and complex issue to consider, after discussing the Opic method and its limitations in modeling impact rates on planets."
+                "develop idea": "The speaker is expanding on previous discussions about planetary systems by introducing gas drag as a significant factor to consider for understanding habitability."
             }
         },
         {
@@ -1518,8 +1494,8 @@
             "start_time": "24:46",
             "end_time": "25:01",
             "annotations": {
-                "provide supporting evidence": "Smadar mentions that using numerical simulations to understand the effect of gas drag is very taxing to run, which limits the opportunities to change the parameters, providing a reason for her preference.",
-                "offer constructive criticism": "Smadar is critiquing the use of numerical simulations by pointing out its limitations in exploring different parameters due to its computational cost, with the intent to improve the methodology."
+                "identify gap": "The speaker highlights the limitations of using numerical simulations, specifically the computational cost and limited flexibility.",
+                "process management": "The speaker is discussing the approach to managing the scientific problem of understanding habitability, specifically considering the methodological limitations."
             }
         },
         {
@@ -1539,7 +1515,7 @@
             "start_time": "25:01",
             "end_time": "25:02",
             "annotations": {
-                "expand on existing idea": "This utterance continues Smadar's previous point about the limitations of numerical simulations in understanding the impact of gas giants, specifically mentioning the difficulty in changing the gas giant's position due to computational constraints."
+                "ask question": "The speaker is requesting information about the position of the gas giant in a system, seeking clarification or details."
             }
         },
         {
@@ -1559,7 +1535,7 @@
             "start_time": "25:02",
             "end_time": "25:02",
             "annotations": {
-                "express agreement": "Coco agrees with Smadar's point about the methodology of numerical simulations and the Opic method."
+                "acknowledge contribution": "The speaker is acknowledging a prior statement without adding new information or necessarily agreeing with it."
             }
         },
         {
@@ -1579,7 +1555,7 @@
             "start_time": "25:27",
             "end_time": "26:13",
             "annotations": {
-                "ask clarifying question": "Nicolas asks Smadar to briefly explain the Opic method, indicating he needs clarification on what it is and how it works, after Smadar mentioned its limitations in simulating the impact of giant planets on inner system objects."
+                "ask question": "The speaker requests clarification on the Opic method and its relation to numerical approaches to integrating orbits, explicitly asking for an explanation."
             }
         },
         {
@@ -1598,14 +1574,9 @@
             "screenshare_content": "None",
             "start_time": "26:16",
             "end_time": "26:26",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Smadar explains that the Opic method comes from the restricted three body problem, clarifying the concept for Nicolas who asked about it."
-                },
-                {
-                    "express humor": "Smadar makes a joke by saying \"So I said three body at least once\", which is a lighthearted comment."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing topic by explaining its origin or basis in the restricted three-body problem."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -1624,7 +1595,7 @@
             "start_time": "26:26",
             "end_time": "26:26",
             "annotations": {
-                "acknowledge contribution": "Dan Huber is acknowledging Smadar's explanation of the Opic method, but not necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1643,14 +1614,11 @@
             "screenshare_content": "None",
             "start_time": "27:03",
             "end_time": "28:47",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Smadar explains the Opic method in response to Nicolas's question about how it works, detailing its assumptions and limitations."
-                },
-                {
-                    "offer constructive criticism": "Smadar critiques the Opic method, pointing out its limitations and overestimation of collision probabilities, aiming to improve the understanding and application of the method."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Smadar is explaining and elaborating on the Opic method, its assumptions, and limitations.",
+                "critical response": "Smadar is questioning and critiquing the method's assumptions and limitations.",
+                "offer feedback": "Smadar is providing feedback on the method's limitations and potential improvements."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -1669,9 +1637,8 @@
             "start_time": "28:49",
             "end_time": "29:14",
             "annotations": {
-                "expand on existing idea": "Coco is building upon the previous discussion about the role of giant planets and water delivery by suggesting that pebble flow during the gas disc phase sets an upper limit on water delivery, while late delivery mechanisms set a lower limit, expanding on the idea of water abundance and habitability.",
-                "present new idea": "Coco introduces the idea of constraining the upper and lower limits of water delivery through formation and late delivery mechanisms, presenting a novel approach to understanding habitability.",
-                "propose decision": "Coco proposes that we can try to constrain the upper and lower limits of water delivery based on formation and late delivery mechanisms, suggesting a concrete direction for the group's investigation."
+                "develop idea": "The speaker is expanding on existing ideas about the formation and late delivery mechanisms that can affect a planet's habitability.",
+                "propose new idea": "The speaker suggests trying to constrain the upper and lower limits of formation and late delivery mechanisms to understand planetary habitability."
             }
         },
         {
@@ -1691,9 +1658,9 @@
             "start_time": "29:15",
             "end_time": "29:56",
             "annotations": {
-                "expand on existing idea": "Daniel Apai builds upon the previous discussion about the impact of giant planets on the formation and composition of inner planets, suggesting a hypothesis to compare with exoplanet populations and simulations.",
-                "propose decision": "Daniel Apai proposes formulating a hypothesis about the impact of giant planets on inner planets and testing it via simulations and comparison to exoplanet populations.",
-                "encourage particpatioin": "Daniel Apai is encouraging the group to formulate a hypothesis based on the previous discussion."
+                "propose new idea": "The speaker suggests formulating a hypothesis about the impact of giant planets on the formation, mass distribution, and composition of inner planets.",
+                "develop idea": "The speaker expands on the idea by suggesting it could be compared to existing power populations, tested via simulations, and compared to what is known about exoplanet populations and the solar system.",
+                "ask question": "The speaker is seeking input or thoughts on whether a hypothesis could be formulated regarding the impact of giant planets on inner planets."
             }
         },
         {
@@ -1712,11 +1679,9 @@
             "screenshare_content": "None",
             "start_time": "29:57",
             "end_time": "29:57",
-            "annotations": [
-                {
-                    "express agreement": "Coco is agreeing with Daniel's previous statement about the impact of giant planets on the formation and composition of inner planets."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -1735,7 +1700,7 @@
             "start_time": "29:57",
             "end_time": "30:00",
             "annotations": {
-                "express agreement": "Nicolas Cowan agrees with the previous statement by Daniel Apai about formulating a testable hypothesis, indicating agreement with the idea of observational testing."
+                "supportive response": "The utterance expresses agreement with the idea that hypotheses should be testable observationally, showing a positive and validating attitude towards the discussion."
             }
         },
         {
@@ -1755,8 +1720,9 @@
             "start_time": "30:00",
             "end_time": "30:13",
             "annotations": {
-                "provide supporting evidence": "Dan mentions that Gaia will provide data on giant planets, which supports the idea of observationally testing hypotheses about giant planets' impact on inner planets.",
-                "expand on existing idea": "Dan expands on the idea of testing observationally by mentioning the challenge of detecting water on inner planets, but expresses optimism that it is not too far off."
+                "identify gap": "The speaker highlights the challenge in detecting water and inner planets, implicitly identifying a gap in current capabilities.",
+                "offer feedback": "The speaker suggests that the challenge of detecting water and inner planets is something to think about, offering a direction for future consideration.",
+                "supportive response": "The speaker expresses a positive view on considering the challenges and potential of Gaia for future detections."
             }
         },
         {
@@ -1776,8 +1742,8 @@
             "start_time": "30:14",
             "end_time": "30:21",
             "annotations": {
-                "expand on existing idea": "Daniel Apai is expanding on the previous discussion about the impact of giant planets on the formation and composition of inner planets, suggesting measuring densities as a way to test hypotheses about water content.",
-                "propose decision": "Daniel Apai is suggesting a concrete action (measuring densities) that the group could consider as a way to investigate the habitability of planets."
+                "propose new idea": "Daniel Apai suggests a new approach to understanding inner planets by measuring their densities.",
+                "develop idea": "The suggestion to measure densities builds upon previous discussions about understanding planetary composition and habitability."
             }
         },
         {
@@ -1796,17 +1762,10 @@
             "screenshare_content": "None",
             "start_time": "30:25",
             "end_time": "31:56",
-            "annotations": [
-                {
-                    "present new idea": "Smadar introduces the idea that impacts on planets with existing atmospheres can expel material rather than just delivering water, which challenges the assumption that water delivery can be determined by counting material from beyond the ice line, presenting a new perspective on water delivery."
-                },
-                {
-                    "provide supporting evidence": "Smadar provides supporting evidence by referencing Hilke Schlichting's work, which showed that impacts on planets with existing atmospheres can expel material."
-                },
-                {
-                    "ask clarifying question": "Smadar asks a clarifying question about whether the timing of the impact affects whether water is delivered or expelled, seeking to understand the conditions under which each outcome occurs."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the assumptions made in numerical simulations regarding water delivery on planets.",
+                "develop idea": "The speaker is expanding on existing ideas by discussing the implications of different studies on water delivery and expulsion in planetary formation."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -1825,7 +1784,7 @@
             "start_time": "31:57",
             "end_time": "31:58",
             "annotations": {
-                "acknowledge contribution": "Coco acknowledges the point made by the previous speaker, Smadar, regarding the complexities of water delivery and atmospheric expulsion during planet formation."
+                "supportive response": "The speaker is expressing agreement and positive evaluation of a previous contribution without adding new content."
             }
         },
         {
@@ -1845,7 +1804,8 @@
             "start_time": "32:05",
             "end_time": "32:14",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is explicitly inviting Andrew to share his thoughts on the topic being discussed, which is related to planetary architectures and habitable worlds."
+                "encourage participation": "Daniel Apai is inviting Andrew to contribute his thoughts, ensuring everyone has an opportunity to chime in.",
+                "ask question": "Daniel Apai is asking Andrew if he has thoughts on the topic, requesting his input."
             }
         },
         {
@@ -1865,8 +1825,9 @@
             "start_time": "32:14",
             "end_time": "33:01",
             "annotations": {
-                "present new idea": "Andrew introduces a novel concept of considering a planet's mass increased to that of a star, which would truncate the disc and impact volatile reservoirs, which hasn't been discussed before.",
-                "ask clarifying question": "Andrew is wondering if increasing a planet's mass to that of a star would mean there's no reservoir of volatiles or Kuiper belt anymore, seeking clarification on the implications of this scenario."
+                "propose new idea": "Andrew Vanderburg introduces a new idea by suggesting a thought experiment involving changing the mass of a planet to a star and exploring its implications.",
+                "develop idea": "He expands on this idea by considering its effects on the disc and potential reservoirs of volatiles, particularly in binary star systems.",
+                "ask question": "The utterance ends with a question about the implications for systems like Alpha Centuri, specifically regarding the existence of a Kuiper belt."
             }
         },
         {
@@ -1886,8 +1847,7 @@
             "start_time": "33:02",
             "end_time": "33:08",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai acknowledges Andrew Vanderburg's question as a very good one, recognizing the value of the input.",
-                "encourage particpatioin": "Daniel Apai encourages participation by inviting someone to weigh in on Andrew's question."
+                "encourage participation": "The speaker is inviting others to contribute to the discussion by saying 'let's see if somebody would like to weigh in on this.'"
             }
         },
         {
@@ -1906,17 +1866,10 @@
             "screenshare_content": "None",
             "start_time": "33:08",
             "end_time": "33:30",
-            "annotations": [
-                {
-                    "express agreement": "Dan Huber agrees with Andrew Vanderburg's question about the impact of a binary star system on the volatile reservoir in the disc."
-                },
-                {
-                    "provide supporting evidence": "Dan Huber provides the example of Kepler 444, a system with an M dwarf on an eccentric orbit that has truncated the disc, to support the idea that binary stars can truncate discs."
-                },
-                {
-                    "express agreement": "Dan Huber expresses agreement with the idea that binary stars can truncate discs."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "Dan Huber is expressing agreement and providing a relevant example to support the discussion.",
+                "Develop idea": "Dan Huber is expanding on the discussion by mentioning a specific example (Kepler 444) and its implications for truncated discs in binary star systems."
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -1935,7 +1888,8 @@
             "start_time": "33:31",
             "end_time": "33:33",
             "annotations": {
-                "ask clarifying question": "Smadar is asking a clarifying question about whether a binary star system would eliminate all the rocks in the system, following a discussion about the impact of giant planets on the formation and composition of inner planets and the truncation of discs in binary star systems."
+                "ask question": "The speaker is seeking clarification or confirmation on the idea that the presence of a giant planet would not completely eliminate the possibility of rocks existing elsewhere in the system.",
+                "None": "No other codes are explicitly observed in this utterance."
             }
         },
         {
@@ -1955,7 +1909,7 @@
             "start_time": "33:32",
             "end_time": "33:33",
             "annotations": {
-                "express agreement": "Dan Huber agrees with the previous discussion about the importance of water delivery in the context of planetary habitability."
+                "Supportive response": "Dan Huber is expressing agreement or validation of the importance of water delivery in the context of habitability."
             }
         },
         {
@@ -1975,7 +1929,8 @@
             "start_time": "33:33",
             "end_time": "33:41",
             "annotations": {
-                "expand on existing idea": "Smadar is expanding on the previous discussion about binary stars and truncated discs, suggesting that even with a binary star system, not all rocks would be eliminated, leading to interesting behavior in the Oort cloud."
+                "Ask question": "The utterance contains a question seeking clarification or confirmation.",
+                "Develop idea": "The speaker is building upon a previous discussion thread, adding their thoughts."
             }
         },
         {
@@ -1995,7 +1950,7 @@
             "start_time": "33:41",
             "end_time": "33:41",
             "annotations": {
-                "express agreement": "Andrew Vanderburg is agreeing with the previous statement made by Dan Huber about the importance of water delivery, indicating his agreement with the point being made."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2014,14 +1969,10 @@
             "screenshare_content": "None",
             "start_time": "33:41",
             "end_time": "33:52",
-            "annotations": [
-                {
-                    "expand on existing idea": "Smadar is expanding on the previous discussion about binary stars and truncated disks, adding that the binary star can move things above and below the plane, which is relevant to the discussion of water delivery and habitability."
-                },
-                {
-                    "express humor": "Smadar says \"Sorry, second time. I told myself to minimize the.\" which is a humorous apology for speaking too much."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "She is acknowledging the discussion and contributing a thought.",
+                "supportive response": "She is expressing interest and agreement with the discussion."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -2039,11 +1990,9 @@
             "screenshare_content": "None",
             "start_time": "33:44",
             "end_time": "33:44",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express any idea, question, or action."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -2061,11 +2010,9 @@
             "screenshare_content": "None",
             "start_time": "33:44",
             "end_time": "33:44",
-            "annotations": [
-                {
-                    "None": "There is no content in this utterance."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -2084,7 +2031,7 @@
             "start_time": "33:44",
             "end_time": "33:44",
             "annotations": {
-                "None": "There is no content in this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2103,11 +2050,9 @@
             "screenshare_content": "None",
             "start_time": "33:44",
             "end_time": "33:44",
-            "annotations": [
-                {
-                    "Daniel Apai:": "None"
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -2125,11 +2070,9 @@
             "screenshare_content": "None",
             "start_time": "33:44",
             "end_time": "33:44",
-            "annotations": [
-                {
-                    "None": "There is no content in this utterance to code."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -2147,11 +2090,9 @@
             "screenshare_content": "None",
             "start_time": "33:52",
             "end_time": "33:53",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting references, which implies seeking information or clarification on a previous statement or topic discussed."
+            }
         },
         {
             "speaker": "Coco Zhang",
@@ -2170,7 +2111,7 @@
             "start_time": "33:53",
             "end_time": "33:53",
             "annotations": {
-                "None": "There is no content in this utterance to code."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2190,7 +2131,7 @@
             "start_time": "33:53",
             "end_time": "33:57",
             "annotations": {
-                "express humor": "The statement \"But um at the end everything is triple\" seems to be a humorous remark, possibly referencing the complexities of the discussion or the three-body problem mentioned earlier."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2210,9 +2151,9 @@
             "start_time": "33:59",
             "end_time": "34:33",
             "annotations": {
-                "provide supporting evidence": "Daniel Apai mentions studies from Alma as evidence for the impact of binary stars on protoplanetary discs, supporting the discussion about the influence of stellar companions on planetary system architecture.",
-                "expand on existing idea": "Daniel Apai expands on the idea of binary stars affecting planetary systems by describing how the separation between stars influences the appearance of protoplanetary discs, building upon Andrew Vanderburg's question about the impact of binary stars on volatile reservoirs.",
-                "express agreement": "Daniel Apai agrees that it is a nice idea to look at a sequence or trends and compare to dynamical predictions for which orbits are stable or not in such a system, showing agreement with the previous discussion."
+                "develop idea": "The speaker expands on existing knowledge by suggesting to look at sequences or trends and compare to dynamical predictions.",
+                "encourage participation": "The speaker implies that exploring this line of inquiry could be interesting.",
+                "process management": "The speaker guides the discussion towards a specific research direction."
             }
         },
         {
@@ -2231,11 +2172,9 @@
             "screenshare_content": "None",
             "start_time": "34:34",
             "end_time": "34:40",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nicolas asks Dan to elaborate on the Kepler system he mentioned, seeking more information about it, as Dan had previously brought up the Kepler 444 system as an example of a truncated disc in a binary star system."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker, Nicolas Cowan, is asking Dan Huber for more information about a Kepler system mentioned earlier in the conversation, indicating a request for clarification or additional details."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -2253,11 +2192,10 @@
             "screenshare_content": "None",
             "start_time": "35:01",
             "end_time": "35:55",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Dan is explaining the Kepler 444 system in response to Nicolas's request for more information, detailing its age, planetary composition, and the presence of an M dwarf companion."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Dan Huber shares detailed astronomical information about Kepler 444, demonstrating his expertise.",
+                "summarize conversation": "Dan Huber provides a summary of research findings related to Kepler 444, including its age, planetary configuration, and the presence of an M dwarf companion."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -2276,7 +2214,7 @@
             "start_time": "35:56",
             "end_time": "36:00",
             "annotations": {
-                "ask clarifying question": "Nicolas is asking Dan to clarify whether the M dwarf companion in the Kepler 444 system was close enough to disrupt the orbits of the planets, following Dan's explanation of the system's architecture."
+                "ask question": "The utterance is a question seeking clarification or further information about the impact of the M-dwarf companion on the orbits of planets in the Kepler 444 system."
             }
         },
         {
@@ -2296,7 +2234,7 @@
             "start_time": "36:01",
             "end_time": "36:03",
             "annotations": {
-                "confirm decision": "Dan Huber confirms that the M dwarf companion in the Kepler 444 system was not close enough to disrupt the orbits of the planets, building on Nicolas Cowan's question about whether the companion would mess up the orbits."
+                "supportive response": "Dan Huber is expressing agreement with a previous statement about the dwarf star not being close enough to disrupt the orbits of the planets."
             }
         },
         {
@@ -2316,7 +2254,7 @@
             "start_time": "36:03",
             "end_time": "36:04",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with Dan Huber's explanation of the Kepler 444 system and its M dwarf companion, indicating he finds the information interesting and satisfactory."
+                "supportive response": "The speaker is expressing agreement or confirmation to a previous statement made by another group member."
             }
         },
         {
@@ -2335,11 +2273,7 @@
             "screenshare_content": "None",
             "start_time": "36:12",
             "end_time": "36:42",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the discussion of the Kepler 444 system, adding the point that it demonstrates the existence of old, rocky planets, which is relevant to the Drake equation, expanding on the previous discussion about the system's properties and implications."
-                }
-            ]
+            "annotations": {}
         },
         {
             "speaker": "Nicolas Cowan",
@@ -2358,7 +2292,7 @@
             "start_time": "36:42",
             "end_time": "36:43",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with Leslie Rogers' point about the Kepler system being an existence proof of rocky planet formation around an old, metal-poor star, which is relevant to the Drake equation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2378,7 +2312,7 @@
             "start_time": "36:43",
             "end_time": "36:44",
             "annotations": {
-                "ask clarifying question": "Nicolas is asking a question to clarify whether the rocky planets will have the same metal composition, following Leslie's comment about the Kepler system being an existence proof of rocky planet formation around an old, metal-poor star."
+                "ask question": "The speaker is requesting information or clarification on a specific aspect of exoplanet composition."
             }
         },
         {
@@ -2398,7 +2332,8 @@
             "start_time": "36:44",
             "end_time": "37:57",
             "annotations": {
-                "ask clarifying question": "Nicolas is asking whether old, metal-poor stars will have the same metal composition as other stars, which would affect the composition of rocky planets formed around them, building on the discussion about Kepler 444 and the formation of rocky planets around old, metal-poor stars."
+                "ask question": "The speaker is seeking clarification or information about the composition of planets.",
+                "identify gap": "The speaker recognizes a gap in current knowledge regarding the detailed composition of exoplanets."
             }
         },
         {
@@ -2418,7 +2353,7 @@
             "start_time": "37:44",
             "end_time": "37:44",
             "annotations": {
-                "None": "No code applies to this utterance as it is an empty utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2438,7 +2373,7 @@
             "start_time": "37:44",
             "end_time": "37:44",
             "annotations": {
-                "None": "No code applies to this utterance as it is an empty utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2458,7 +2393,7 @@
             "start_time": "37:44",
             "end_time": "37:44",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2478,7 +2413,7 @@
             "start_time": "37:44",
             "end_time": "37:44",
             "annotations": {
-                "Daniel Apai:": "None"
+                "process management": "The speaker, Daniel Apai, is facilitating the discussion and appears to be managing the meeting flow, even if no specific words are spoken in this utterance."
             }
         },
         {
@@ -2498,7 +2433,7 @@
             "start_time": "37:44",
             "end_time": "37:44",
             "annotations": {
-                "None": "No code applies to this utterance as it is an empty utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2518,8 +2453,8 @@
             "start_time": "37:58",
             "end_time": "38:11",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on the previous discussion about the Kepler 444 system and the composition of planets around old, metal-poor stars by suggesting that older stars will have fewer radiogenic elements, leading to less radioactive decay and heating in the core, which builds upon the prior discussion about the system's age and composition.",
-                "provide supporting evidence": "Andrew is providing a conclusion reached by a group yesterday, suggesting that older stars have fewer radiogenic elements, which results in less radioactive decay and heating in the core, supporting the idea that the composition of planets around older stars might differ."
+                "develop idea": "The speaker is expanding on an idea previously discussed, providing more details about the differences in older stars.",
+                "supportive response": "The speaker is agreeing with or building upon previous discussions, indicating a supportive stance."
             }
         },
         {
@@ -2539,7 +2474,7 @@
             "start_time": "38:11",
             "end_time": "38:11",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with the previous statement about radiogenic elements in older stars."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2559,7 +2494,7 @@
             "start_time": "38:11",
             "end_time": "38:20",
             "annotations": {
-                "explain or define term or concept": "Andrew is explaining the origin of radiogenic elements, which are relevant to the discussion about the composition of planets around old stars."
+                "develop idea": "The speaker is expanding on a previous idea about radiogenic elements and their origin, providing more details."
             }
         },
         {
@@ -2579,8 +2514,7 @@
             "start_time": "38:20",
             "end_time": "38:28",
             "annotations": {
-                "explain or define term or concept": "Andrew is explaining the composition of the very first stars, specifically mentioning the alpha process.",
-                "encourage particpatioin": "Andrew encourages others to correct him if his understanding of the alpha process in the first stars is incorrect."
+                "ask question": "Andrew Vanderburg requests confirmation or correction of his understanding about the very first stars being mostly alpha process."
             }
         },
         {
@@ -2600,8 +2534,7 @@
             "start_time": "38:28",
             "end_time": "39:15",
             "annotations": {
-                "explain or define term or concept": "Andrew is explaining the difference in elemental composition of older stars, specifically focusing on the abundance of radiogenic elements and their impact on planetary heating, building on the discussion about Kepler 444 and metal-poor stars.",
-                "expand on existing idea": "Andrew is expanding on the idea of the composition of planets around older stars, which was brought up by Nicolas and Leslie, by detailing the differences in radiogenic elements and their impact on heating."
+                "develop idea": "The speaker expands on ideas about stellar evolution, composition, and planetary implications."
             }
         },
         {
@@ -2621,7 +2554,7 @@
             "start_time": "39:15",
             "end_time": "39:16",
             "annotations": {
-                "acknowledge contribution": "Andrew acknowledges the previous point made, indicating he recognizes the value of the contribution."
+                "supportive response": "The speaker is expressing agreement and validation of a previous contribution without adding new content."
             }
         },
         {
@@ -2641,9 +2574,8 @@
             "start_time": "39:17",
             "end_time": "39:40",
             "annotations": {
-                "present new idea": "Daniel Apai introduces the idea of forming a hypothesis comparing younger and older planets based on bulk properties.",
-                "propose decision": "Daniel Apai suggests comparing younger planets to older planets based on bulk properties to form a testable hypothesis.",
-                "ask clarifying question": "Daniel Apai asks if there is a bulk property that could be compared statistically between younger and older planets, such as bulk density difference or higher probability of atmospheric loss."
+                "ask question": "The speaker is explicitly asking for hypotheses or ideas regarding the comparison of younger and older planets.",
+                "identify gap": "The speaker implies a gap in knowledge regarding how planetary properties change or correlate with age."
             }
         },
         {
@@ -2663,7 +2595,7 @@
             "start_time": "39:40",
             "end_time": "39:41",
             "annotations": {
-                "propose decision": "Andrew suggests using white dwarf planets to study the differences between younger and older planets, building on the discussion about comparing planets of different ages and their bulk properties."
+                "propose new idea": "The speaker is suggesting using white dwarf planets as a context to test hypotheses, introducing a new approach to the discussion."
             }
         },
         {
@@ -2683,7 +2615,7 @@
             "start_time": "39:41",
             "end_time": "39:41",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai is acknowledging Andrew Vanderburg's point about the radiogenic elements in older stars, without necessarily agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2703,7 +2635,7 @@
             "start_time": "39:41",
             "end_time": "39:56",
             "annotations": {
-                "expand on existing idea": "Andrew is expanding on the idea of comparing younger and older planets, suggesting to study white dwarf planets and their heavy elements as a function of kinematics, building upon the discussion of metal composition and radiogenic elements in older stars."
+                "develop idea": "The speaker is elaborating on a methodological approach to studying planetary systems, specifically suggesting to analyze heavy elements in white dwarf planets as a function of kinematics."
             }
         },
         {
@@ -2723,7 +2655,7 @@
             "start_time": "39:56",
             "end_time": "39:57",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai acknowledges Andrew Vanderburg's point about using white dwarf planets to study heavy elements as a function of kinematics, building on the discussion about comparing younger and older planets."
+                "supportive response": "The speaker is expressing agreement or validation with a previous statement."
             }
         },
         {
@@ -2743,7 +2675,8 @@
             "start_time": "40:00",
             "end_time": "40:13",
             "annotations": {
-                "provide supporting evidence": "Andrew is providing a reason why it will be difficult to compare younger planets to older planets, stating that older planets will have longer to lose their magnetic field and atmospheres, supporting the idea that age and atmospheric properties are linked."
+                "develop idea": "The speaker is expanding on the challenges of comparing planetary properties across different ages, explaining that older planets would have had more time to lose magnetic fields and atmospheres, thus complicating direct comparisons.",
+                "supportive response": "The utterance contributes to the discussion by adding a consideration for why comparing planetary properties might be complicated, which is supportive of a nuanced discussion."
             }
         },
         {
@@ -2763,7 +2696,7 @@
             "start_time": "40:14",
             "end_time": "40:17",
             "annotations": {
-                "expand on existing idea": "Daniel Apai is expanding on the previous discussion about the differences between younger and older planets, adding that rotation will also play a role in atmospheric loss, which was previously mentioned."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2782,11 +2715,9 @@
             "screenshare_content": "None",
             "start_time": "40:17",
             "end_time": "40:17",
-            "annotations": [
-                {
-                    "express agreement": "Daniel Apai expresses agreement with Andrew Vanderburg's point about using white dwarf planets to study heavy elements as a function of kinematics, building on the discussion about comparing younger and older planets."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -2805,9 +2736,9 @@
             "start_time": "40:18",
             "end_time": "41:20",
             "annotations": {
-                "present new idea": "Smadar introduces the idea of using an analytical criteria to determine where a companion planet can be hidden within a multi-planet system, which has not been previously discussed.",
-                "expand on existing idea": "Smadar expands on the discussion about Kepler 444 by relating it to their analytical criteria for predicting the location of hidden companions in multi-planet systems.",
-                "propose decision": "Smadar proposes using their analytical criteria to predict where hidden giant planets might exist in multi-planet systems like Kepler 444, suggesting a direction for future research."
+                "develop idea": "The speaker is expanding on an existing idea or concept, specifically discussing the predictability of hidden companions in multi-planet systems.",
+                "signal expertise": "The speaker mentions having an analytical criteria and discusses specifics of celestial mechanics, indicating a level of expertise.",
+                "offer feedback": "The speaker provides some suggestions or thoughts on how to approach understanding multi-planet systems."
             }
         },
         {
@@ -2827,7 +2758,7 @@
             "start_time": "41:20",
             "end_time": "41:20",
             "annotations": {
-                "express agreement": "The speaker is expressing agreement with the previous statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2847,7 +2778,7 @@
             "start_time": "41:21",
             "end_time": "41:23",
             "annotations": {
-                "acknowledge contribution": "The speaker is acknowledging a previous statement, but not agreeing or expanding on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2867,7 +2798,7 @@
             "start_time": "41:23",
             "end_time": "41:35",
             "annotations": {
-                "reject idea": "Leslie expresses disagreement with the idea that magnetic field helps retain atmosphere in a straightforward manner, without suggesting an alternative."
+                "critical response": "Leslie Rogers is questioning the simplicity of the idea that magnetic fields have a straightforward, positive effect on retaining atmospheres, suggesting the relationship is more complicated."
             }
         },
         {
@@ -2887,7 +2818,8 @@
             "start_time": "41:35",
             "end_time": "41:51",
             "annotations": {
-                "present new idea": "Leslie suggests a new idea to constrain the strengths of the polar magnetic fields with long wavelength radio and empirically test this, which has not been previously mentioned in the discussion."
+                "offer feedback": "Leslie provides a suggestion for a research direction.",
+                "propose new idea": "Leslie suggests a new research idea regarding constraining polar magnetic fields."
             }
         },
         {
@@ -2907,8 +2839,9 @@
             "start_time": "41:52",
             "end_time": "42:13",
             "annotations": {
-                "expand on existing idea": "Leslie is expanding on the idea of magnetic fields and their effect on retaining atmosphere, which was previously discussed, by adding that a bigger magnetosphere can also funnel charged particles onto the planet, potentially hurting it.",
-                "provide supporting evidence": "Leslie provides supporting evidence by explaining how a larger magnetosphere can have a higher cross-section to charged particles and funnel them onto the planet, which can either help or hurt the planet depending on the regime."
+                "develop idea": "The speaker expands on existing ideas about the effects of magnetospheres on planetary habitability, discussing both protective and negative effects.",
+                "signal expertise": "Leslie Rogers demonstrates knowledge about magnetospheres and charged particles.",
+                "supportive response": "The utterance supports the ongoing discussion by adding nuanced views on the effects of magnetospheres."
             }
         },
         {
@@ -2928,7 +2861,7 @@
             "start_time": "42:13",
             "end_time": "42:14",
             "annotations": {
-                "None": "No code applies to this utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2948,8 +2881,8 @@
             "start_time": "42:15",
             "end_time": "42:21",
             "annotations": {
-                "expand on existing idea": "Smadar is expanding on Leslie's idea about magnetic fields and their effect on retaining atmosphere, by suggesting that different magnetic field configurations should also be considered, building upon the discussion of magnetic fields and atmospheric loss.",
-                "ask clarifying question": "Smadar is asking if Leslie is also considering different configurations for the magnetic field, seeking confirmation or elaboration on Leslie's previous statement about magnetic fields."
+                "ask question": "The speaker is asking a question about considering different configurations for the magnetic field.",
+                "develop idea": "The speaker is expanding on the idea of magnetic field configurations by mentioning the possibility of configurations beyond a dipole."
             }
         },
         {
@@ -2969,7 +2902,8 @@
             "start_time": "42:21",
             "end_time": "42:22",
             "annotations": {
-                "express agreement": "Leslie Rogers is agreeing with Smadar's previous statement about different configurations for the magnetic field, indicating agreement with the idea."
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "Supportive response": "The speaker expresses agreement with a previous statement."
             }
         },
         {
@@ -2989,7 +2923,7 @@
             "start_time": "42:22",
             "end_time": "42:23",
             "annotations": {
-                "express enthusiasm": "Smadar expresses enthusiasm for Leslie's point about the complexity of magnetic fields and their configurations, going beyond the simple dipole model."
+                "Supportive response": "The speaker expresses a positive sentiment towards the discussion, indicating engagement and interest."
             }
         },
         {
@@ -3009,7 +2943,7 @@
             "start_time": "42:27",
             "end_time": "42:43",
             "annotations": {
-                "provide supporting evidence": "Daniel Apai provides evidence of aurora radio emission and synchrotron emission from nearby brown dwarfs, supporting the discussion about magnetic fields and their effects on exoplanets."
+                "develop idea": "The speaker is expanding on the discussion by providing specific examples and information related to detections of Aurora radio emission from brown dwarfs, which could be relevant to understanding planetary systems and habitability."
             }
         },
         {
@@ -3029,8 +2963,7 @@
             "start_time": "42:44",
             "end_time": "42:51",
             "annotations": {
-                "expand on existing idea": "Daniel Apai is expanding on the previous discussion about magnetic fields and their effects on planets, suggesting that the mechanism observed in brown dwarfs could potentially be extended to smaller, Earth-sized planets.",
-                "express agreement": "Daniel Apai expresses agreement with the previous discussion by saying \"Right.\""
+                "Supportive response": "The utterance expresses agreement and a positive evaluation of the previous discussion, indicating a supportive stance towards the ideas presented."
             }
         },
         {
@@ -3050,7 +2983,7 @@
             "start_time": "42:51",
             "end_time": "42:51",
             "annotations": {
-                "express agreement": "Leslie is agreeing with a previous statement, though the specific statement is not clear from the single utterance, it is likely in response to the discussion about magnetic fields and their effects on planets."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3069,14 +3002,9 @@
             "screenshare_content": "None",
             "start_time": "42:56",
             "end_time": "43:20",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains how the electron synchrotron emission cutoff frequency scales with magnetic field strength, providing context for understanding magnetic fields of rocky planets."
-                },
-                {
-                    "expand on existing idea": "This utterance expands on the discussion about magnetic fields and their impact on planets, building on the previous discussion about magnetic fields and atmospheric retention."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Leslie Rogers is expanding on an existing idea by explaining how the electron synchrotron like maser emission cutoff frequency scales with magnetic field strength, particularly in the context of rocky planets."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -3095,7 +3023,7 @@
             "start_time": "43:20",
             "end_time": "43:20",
             "annotations": {
-                "express agreement": "Leslie Rogers is agreeing with a previous statement, though the specific statement is not clear from the single utterance."
+                "None": "The utterance is a minimal response that does not explicitly fit into any of the provided codes."
             }
         },
         {
@@ -3115,7 +3043,7 @@
             "start_time": "43:20",
             "end_time": "43:21",
             "annotations": {
-                "None": "This utterance does not express any idea, agreement, question, or task, and seems to be cut off."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3135,7 +3063,7 @@
             "start_time": "43:25",
             "end_time": "43:27",
             "annotations": {
-                "express humor": "Daniel Apai makes a humorous remark about how easier it is to study brown dwarfs compared to smaller planets, given the context of the discussion about the challenges of detecting properties of rocky exoplanets."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3155,7 +3083,8 @@
             "start_time": "43:27",
             "end_time": "43:27",
             "annotations": {
-                "express agreement": "Leslie Rogers expresses agreement with a previous statement, though the specific statement is not clear from the single utterance."
+                "Acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "Supportive response": "The speaker expresses agreement or validation for other group members' contributions."
             }
         },
         {
@@ -3175,12 +3104,8 @@
             "start_time": "43:31",
             "end_time": "44:11",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Daniel proposes that the group spend some time formulating specific hypotheses based on the ideas discussed, suggesting a concrete action for the group to take."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Daniel encourages everyone to take a minute to formulate their favorite hypothesis and share it with the group, inviting participation from all members."
-                }
+                "process management": "Daniel Apai is managing the meeting flow by suggesting a specific exercise for the group to engage in.",
+                "encourage participation": "Daniel Apai is inviting everyone to contribute their ideas and hypotheses."
             }
         },
         {
@@ -3200,7 +3125,9 @@
             "start_time": "44:25",
             "end_time": "44:52",
             "annotations": {
-                "express frustration": "Paul expresses frustration about the difficulty of translating the many good modeling ideas into an observationally constrained proposal, indicating a struggle he's been having all morning."
+                "ask question": "The speaker is requesting information on how to connect modeling initiatives to a proposal for observational constraints.",
+                "identify gap": "The speaker is highlighting a challenge in their current approach, which implies a gap in their methodology or resources.",
+                "clarify goal": "The speaker is discussing the goal of making meaningful observational constraints, seeking clarity on how to achieve it."
             }
         },
         {
@@ -3219,11 +3146,9 @@
             "screenshare_content": "None",
             "start_time": "44:52",
             "end_time": "44:52",
-            "annotations": [
-                {
-                    "express agreement": "Paul is expressing agreement with the previous statement made by Daniel about formulating a hypothesis."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3242,7 +3167,9 @@
             "start_time": "44:56",
             "end_time": "45:00",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is encouraging participation by stating that he wants to go around and see what hypotheses people have come up with, inviting everyone to contribute their ideas."
+                "Ask question": "The speaker is requesting information from others.",
+                "Encourage participation": "The speaker is inviting others to share their ideas.",
+                "Process management": "The speaker is managing the flow of discussion."
             }
         },
         {
@@ -3262,7 +3189,7 @@
             "start_time": "45:00",
             "end_time": "45:00",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai acknowledges Paul's contribution, likely referring to Paul's earlier expression of struggling with connecting modeling initiatives to proposals with meaningful observational constraints."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3282,7 +3209,7 @@
             "start_time": "45:00",
             "end_time": "45:01",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is explicitly encouraging participation from the group by asking for other ideas, after a discussion on planetary architectures and habitability."
+                "encourage participation": "The speaker is inviting others to contribute their ideas or thoughts, encouraging participation in the discussion."
             }
         },
         {
@@ -3302,10 +3229,9 @@
             "start_time": "48:14",
             "end_time": "49:17",
             "annotations": {
-                "present new idea": "Coco presents a new idea to formulate a simple hypothesis about the inner planet water content based on giant planet locations, mass-radius estimations, disc observations, and JWST data.",
-                "expand on existing idea": "Coco expands on the water idea, which was previously mentioned by other participants, by suggesting a specific hypothesis to test.",
-                "propose decision": "Coco proposes a decision to formulate a hypothesis and use observations to constrain the water content of inner planets based on giant planet locations and disc properties.",
-                "provide supporting evidence": "Coco mentions JWST's ability to observe discs with inner water content, providing observational support for the proposed hypothesis."
+                "propose new idea": "Coco suggests a specific approach to testing hypotheses related to the water content in inner planets and its correlation with giant planets and disc observations.",
+                "develop idea": "Coco builds upon Leslie's suggestion by proposing to use mass-radius estimations and JWST observations to constrain the water content in inner planets.",
+                "ask question": "Coco asks if they can do some simple hypothesis testing regarding the relationship between giant planets, disc observations, and the water content of inner planets."
             }
         },
         {
@@ -3325,7 +3251,8 @@
             "start_time": "49:17",
             "end_time": "49:18",
             "annotations": {
-                "express enthusiasm": "Leslie expresses enthusiasm for Coco's idea of correlating giant planet locations with inner planet water content based on mass-radius estimations and JWST observations of discs."
+                "supportive response": "Leslie Rogers expresses agreement and enthusiasm for Coco Zhang's idea.",
+                "acknowledge contribution": "Leslie Rogers verbally recognizes Coco Zhang's input."
             }
         },
         {
@@ -3345,7 +3272,7 @@
             "start_time": "49:21",
             "end_time": "49:21",
             "annotations": {
-                "None": "This utterance does not contain any content that can be coded."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3364,14 +3291,10 @@
             "screenshare_content": "None",
             "start_time": "49:21",
             "end_time": "50:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Nicolas is building on Coco's idea about water content and habitability, adding the aspect of different spectral type stars and their impact on water delivery to the habitable zone, which was brought up in the previous utterance."
-                },
-                {
-                    "present new idea": "Nicolas introduces the idea of considering the impact of water delivery on the planet's geophysics, geochemistry, and biochemistry, which is a novel concept not previously discussed in this specific context."
-                }
-            ]
+            "annotations": {
+                "ask question": "The utterance contains a question about the effects of water delivered to a planet's habitable zone on its geophysics, geochemistry, and biochemistry.",
+                "develop idea": "Nicolas Cowan is expanding on previous ideas by suggesting an estimate of how much water gets delivered to habitable zones around different spectral type stars."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3389,17 +3312,12 @@
             "screenshare_content": "None",
             "start_time": "50:00",
             "end_time": "51:09",
-            "annotations": [
-                {
-                    "expand on existing idea": "Nicolas expands on Coco's water idea by discussing the implications of different water amounts for the origin of life, considering hydrothermal vents and shallow pools as potential origins."
-                },
-                {
-                    "present new idea": "Nicolas presents the idea that the amount of water on a planet could have a Goldilocks zone for the origin of life, suggesting that too much or too little water could be detrimental."
-                },
-                {
-                    "encourage particpatioin": "Nicolas encourages collaboration with experts in hydrothermal systems and life, suggesting a project that combines planet formation with the study of planetary structure and ocean conditions."
-                }
-            ]
+            "annotations": {
+                "code name": "develop idea",
+                "explanation": "Nicolas Cowan is expanding on the idea that the amount of water on a planet could influence the origin of life, considering different environments (hydrothermal vents vs. tidal pools).",
+                "another code": "encourage participation",
+                "another explanation": "He expresses interest in collaborating with experts in hydrothermal systems, inviting others to contribute."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -3417,11 +3335,10 @@
             "screenshare_content": "None",
             "start_time": "51:09",
             "end_time": "51:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previous discussion about water content and habitability, suggesting a specific issue related to water worlds: nutrient transport in expansive oceans, expanding on Nicolas's idea about the amount of water on a planet and its impact on habitability."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "The speaker suggests another person to talk to, encouraging participation and collaboration.",
+                "propose new idea": "The speaker introduces a new idea about the implications of global expansive oceans on water worlds, specifically regarding nutrient transport."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3440,7 +3357,8 @@
             "start_time": "51:25",
             "end_time": "51:28",
             "annotations": {
-                "expand on existing idea": "Nicolas is expanding on Leslie's idea about the challenges of nutrient transport in water worlds, suggesting that the vastness of the oceans would dilute nutrients, building on the discussion about the habitability of water worlds."
+                "supportive response": "The speaker is providing a supportive comment by highlighting a potential issue with water worlds, which aligns with previous discussions.",
+                "develop idea": "The speaker is expanding on the idea about water worlds and their habitability, discussing the issue of nutrient dilution."
             }
         },
         {
@@ -3459,14 +3377,10 @@
             "screenshare_content": "None",
             "start_time": "51:28",
             "end_time": "51:32",
-            "annotations": [
-                {
-                    "express agreement": "Leslie expresses agreement with the idea of talking to Stephanie Olsen about nutrient transport in oceans, which was suggested by Nicolas in the prior turn."
-                },
-                {
-                    "acknowledge contribution": "Leslie acknowledges Nicolas's contribution of the idea to talk to Stephanie Olsen."
-                }
-            ]
+            "annotations": {
+                "supportive response": "Leslie Rogers is expressing agreement and a positive evaluation of a previous idea.",
+                "acknowledge contribution": "Leslie Rogers is also acknowledging someone's input."
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -3485,8 +3399,7 @@
             "start_time": "51:33",
             "end_time": "52:04",
             "annotations": {
-                "present new idea": "Paul introduces a new idea about the impact of tidal locking on habitable zone planets, which hasn't been discussed before in the conversation.",
-                "expand on existing idea": "Paul expands on the existing idea of water content on planets by considering the impact of tidal locking on planets orbiting M dwarfs, suggesting the possibility of water ice or steam atmospheres."
+                "develop idea": "The speaker elaborates on the potential surface conditions of planets experiencing tidal locking, including possibilities of water, ice, and steam atmospheres."
             }
         },
         {
@@ -3506,15 +3419,9 @@
             "start_time": "52:04",
             "end_time": "52:43",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The speaker acknowledges Paul's point about tidal locking by saying \"Yeah, I think that's a very good point.\""
-                },
-                "expand on existing idea": {
-                    "Explanation": "The speaker expands on the idea of tidal locking by mentioning GCM simulations and ocean circulation simulations, and how they are usually exploring earthlike systems, but there are a few for aqua planets."
-                },
-                "present new idea": {
-                    "Explanation": "The speaker presents a new idea that the connection between delivery and the presence of giant planets could lead to a testable hypothesis about planet properties and architecture."
-                }
+                "develop idea": "The speaker is elaborating on previous ideas and suggesting connections between different concepts.",
+                "identify gap": "The speaker notes a direction that is not fully explored in research.",
+                "offer feedback": "The speaker is providing feedback on the direction of research."
             }
         },
         {
@@ -3534,8 +3441,7 @@
             "start_time": "52:43",
             "end_time": "53:13",
             "annotations": {
-                "expand on existing idea": "Nicolas expands on Paul's idea about tidal locking by suggesting that the optimal amount of water for habitability might differ between M-dwarf planets and Earth-like planets due to tidal locking effects, building on the previous discussion about the impact of tidal locking on habitable zone planets.",
-                "present new idea": "Nicolas presents the idea that M-dwarf planets might require more water to compensate for ice locking on the night side, which is a novel concept not previously discussed in the context of water abundance and habitability."
+                "develop idea": "The speaker is expanding on existing ideas about planetary habitability, specifically considering the effects of tidal locking on water content."
             }
         },
         {
@@ -3555,8 +3461,7 @@
             "start_time": "53:13",
             "end_time": "53:30",
             "annotations": {
-                "expand on existing idea": "Nicolas is expanding on Paul's idea about tidal locking and the impact of water on M dwarf planets, adding that the optimal amount of water may differ for M earths due to tidal locking.",
-                "express enthusiasm": "Nicolas expresses enthusiasm by mentioning his postdoc's work and hoping for an answer in the next year or two, showing excitement about the research direction."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3575,17 +3480,11 @@
             "screenshare_content": "None",
             "start_time": "53:31",
             "end_time": "54:04",
-            "annotations": [
-                {
-                    "expand on existing idea": "Nicolas is expanding on Paul's idea about the impact of tidal locking on habitability, specifically focusing on the amount of water needed for M dwarf planets and the initial conditions of the planet's surface."
-                },
-                {
-                    "ask clarifying question": "Nicolas is asking about the initial conditions of the planet's surface, specifically whether it starts with deep ocean basins and high continents or as a dry, barren world with water added later."
-                },
-                {
-                    "express frustration": "Nicolas expresses frustration that the GCMs people are running are very simple and idealized, implying that they are not addressing these simple questions about planet formation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on existing ideas by questioning the initial conditions of planetary formation and highlighting the limitations of current models.",
+                "identify gap": "The speaker explicitly identifies a gap in current modeling capabilities regarding the initial conditions and complexities of planetary formation.",
+                "ask question": "The speaker is asking rhetorical questions about the initial conditions of a planet, which implies seeking clarification or discussion on these ideas."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -3604,7 +3503,7 @@
             "start_time": "54:04",
             "end_time": "54:04",
             "annotations": {
-                "None": "No code applies to this utterance as it is an empty utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3624,7 +3523,7 @@
             "start_time": "54:04",
             "end_time": "54:10",
             "annotations": {
-                "express enthusiasm": "Daniel Apai expresses enthusiasm for the direction of the discussion, building on the previous discussion about the challenges and opportunities in modeling M-Earths and their water content."
+                "supportive response": "The speaker expresses agreement and enthusiasm for a proposed direction of research, providing a positive evaluation without adding new content."
             }
         },
         {
@@ -3644,7 +3543,8 @@
             "start_time": "54:21",
             "end_time": "54:46",
             "annotations": {
-                "present new idea": "Andrew is introducing a new idea about the flux of minor bodies inwards towards the inner solar system as a function of various parameters of a companion, which hasn't been explicitly discussed before, though related to previous discussions about giant planets and their impact on inner planet habitability."
+                "propose new idea": "Andrew Vanderburg introduces a new idea by suggesting a specific calculation or investigation into how certain parameters affect the flux of minor bodies into the inner solar system.",
+                "ask question": "The utterance also contains a question about the effects of certain parameters, indicating an inquiry into the relationship between these parameters and the flux of minor bodies."
             }
         },
         {
@@ -3664,7 +3564,7 @@
             "start_time": "54:46",
             "end_time": "54:46",
             "annotations": {
-                "express agreement": "Andrew is expressing agreement with a previous statement, though the specific statement is not clear from the single utterance."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3684,8 +3584,8 @@
             "start_time": "54:48",
             "end_time": "55:01",
             "annotations": {
-                "express agreement": "Coco expresses agreement with Andrew's idea about the flux of minor bodies, building on the previous discussion about the impact of giant planets and binary stars on inner solar systems.",
-                "expand on existing idea": "Coco expands on the idea by mentioning that they are working on generalizing the concept, indicating they are building upon the existing idea of minor body flux."
+                "acknowledge contribution": "The speaker acknowledges a previous idea or suggestion and shows interest in it.",
+                "develop idea": "The speaker mentions their ongoing work related to generalizing a concept, building upon the previous discussion."
             }
         },
         {
@@ -3705,7 +3605,7 @@
             "start_time": "55:03",
             "end_time": "55:06",
             "annotations": {
-                "acknowledge contribution": "Daniel Apai acknowledges Andrew Vanderburg's question about the flux of minor bodies, but does not agree or expand on it."
+                "supportive response": "The speaker is expressing agreement or validation to a previous statement."
             }
         },
         {
@@ -3725,7 +3625,7 @@
             "start_time": "55:06",
             "end_time": "55:19",
             "annotations": {
-                "explain or define term or concept": "The speaker explains the argument that dust infrared excess comes from dust resulting from the grinding down of planetesimals, implying that a lot of dust means a lot of planetesimals."
+                "develop idea": "The speaker is expanding on an existing concept or discussion point regarding the origin and implications of dust in planetary systems."
             }
         },
         {
@@ -3745,7 +3645,8 @@
             "start_time": "55:19",
             "end_time": "55:30",
             "annotations": {
-                "expand on existing idea": "Smadar is expanding on the discussion about water delivery and the impact of giant planets on the formation and composition of inner planets, by adding the idea that the timing of impacts affects whether they deliver or destroy water, which builds upon the previous discussion about water content and habitability."
+                "ask question": "The speaker is suggesting considering when impacts happen and their effects, which can be seen as questioning the nature of the impacts.",
+                "develop idea": "The speaker is adding another layer of consideration to the discussion about impacts and water content, expanding the idea by suggesting the timing of impacts matters."
             }
         },
         {
@@ -3765,8 +3666,9 @@
             "start_time": "60:00",
             "end_time": "60:27",
             "annotations": {
-                "expand on existing idea": "Dan Huber is expanding on the previous discussion about observational tests by mentioning that TESS will look everywhere, unlike Kepler, and K2 started this, building on the idea of observationally testing hypotheses.",
-                "express enthusiasm": "Dan Huber expresses excitement about thinking more about the idea of TESS looking everywhere and making predictions that can be tested, showing enthusiasm for the forward-thinking nature of the idea."
+                "signal expertise": "The speaker is discussing research approaches and referencing specific projects and groups in the field of exoplanet detection.",
+                "supportive response": "The speaker expresses a positive and encouraging tone towards exploring new ideas and research directions.",
+                "offer feedback": "The speaker suggests a potential direction for future work, which involves making predictions and testing them."
             }
         },
         {
@@ -3785,14 +3687,10 @@
             "screenshare_content": "None",
             "start_time": "60:27",
             "end_time": "61:00",
-            "annotations": [
-                {
-                    "expand on existing idea": "Smadar is expanding on the idea of galactic habitability, building on Dan Huber's earlier comment about the concept and suggesting using steel measurements to map the galaxy and estimate flux, connecting it to observations of our galactic center."
-                },
-                {
-                    "express enthusiasm": "Smadar expresses enthusiasm by stating that the idea is interesting, indicating a positive reaction to the potential of using galactic mapping to understand habitability."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker introduces a suggestion for using steel (possibly stellar) measurements to map the galaxy and understand its populations.",
+                "develop idea": "The speaker expands on this idea by discussing estimating flux and understanding populations at different scales within the galaxy."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3811,8 +3709,8 @@
             "start_time": "61:00",
             "end_time": "61:17",
             "annotations": {
-                "present new idea": "Daniel Apai introduces a new idea of considering globular clusters as extreme environments to study habitability, building on the previous discussion about galactic habitability and extreme places for habitability.",
-                "provide supporting evidence": "He supports this idea by mentioning that globular clusters are very old, have low metallicity, contain a large number of stars, and are relatively accessible for observations, providing reasons why they are interesting to study."
+                "propose new idea": "The speaker introduces a new idea by suggesting to consider globular clusters as an extreme case.",
+                "develop idea": "The speaker elaborates on the idea by mentioning specific characteristics of globular clusters."
             }
         },
         {
@@ -3831,12 +3729,9 @@
             "screenshare_content": "None",
             "start_time": "61:18",
             "end_time": "61:25",
-            "annotations": [
-                {
-                    "provide supporting evidence": "Paul states that exoplanet searches in globular clusters have been fruitless, providing evidence against the idea of searching for habitable planets in globular clusters, which Daniel suggested in the prior turn.",
-                    "express humor": "Paul ends his statement with \"Interesting\", which can be interpreted as a humorous understatement given the context of the discussion about potential research directions."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -3855,7 +3750,7 @@
             "start_time": "61:26",
             "end_time": "61:31",
             "annotations": {
-                "expand on existing idea": "Daniel Apai is expanding on Paul's statement that exoplanet searches in globular clusters have been fruitless, adding the detail that these searches were primarily sensitive to gas giants, implying that other types of planets might still be found."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3875,8 +3770,8 @@
             "start_time": "61:32",
             "end_time": "61:47",
             "annotations": {
-                "expand on existing idea": "Paul is expanding on the discussion about exoplanet searches in globular clusters, building on Daniel's suggestion and Paul's previous comment about the lack of exoplanets found in globular clusters.",
-                "express agreement": "Paul explicitly agrees with the previous statement, indicating alignment with the ongoing discussion."
+                "critical response": "The speaker is reflecting on the implications of the rate of occurrence of gas giants being lower in globular clusters compared to the field, and considering its consequences for planetary systems.",
+                "supportive response": "The speaker is also expressing agreement, showing a supportive stance towards the previous discussion or idea."
             }
         },
         {
@@ -3896,8 +3791,8 @@
             "start_time": "61:48",
             "end_time": "62:01",
             "annotations": {
-                "provide supporting evidence": "Daniel Apai states that metallicity would likely have the largest impact on gas giant occurrence rates, providing a reason for the lower occurrence of gas giants in globular clusters, which Paul mentioned have been fruitless in exoplanet searches.",
-                "express agreement": "Daniel Apai explicitly agrees with Paul's statement about the consequences of the lower gas giant occurrence rate in globular clusters."
+                "acknowledge contribution": "Daniel Apai acknowledges and agrees with a previous speaker's point.",
+                "develop idea": "Daniel Apai expands on the idea by discussing the impact of metallicity on gas giant occurrence rates."
             }
         },
         {
@@ -3917,7 +3812,8 @@
             "start_time": "62:01",
             "end_time": "62:24",
             "annotations": {
-                "provide supporting evidence": "Leslie mentions a recent paper by Jim Josh Winn that reanalyzes the statistics of the HST study of 47 Tuc, providing evidence to support a claim about metallicity effects on exoplanet occurrence rates in globular clusters, which was being discussed in the prior turn."
+                "acknowledge contribution": "The speaker acknowledges a specific paper by Jim Josh Winn and its findings regarding the HST study of 47 Tuc.",
+                "supportive response": "The speaker expresses a positive view of the paper's approach and findings, showing support for the work done."
             }
         },
         {
@@ -3937,7 +3833,7 @@
             "start_time": "62:24",
             "end_time": "62:27",
             "annotations": {
-                "provide supporting evidence": "Dan Huber is providing supporting evidence to the discussion about planet formation and habitability, building on the previous discussion about globular clusters and metallicity's impact on gas giant occurrence rates."
+                "supportive response": "The utterance expresses agreement or validation with a previous idea about small planet occurrences being tied to metallicity."
             }
         },
         {
@@ -3957,7 +3853,7 @@
             "start_time": "62:27",
             "end_time": "62:28",
             "annotations": {
-                "express agreement": "Leslie Rogers says \"Yeah\" in response to a previous statement, indicating agreement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3977,7 +3873,7 @@
             "start_time": "62:28",
             "end_time": "62:36",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about the impact of metallicity on planet formation, suggesting that metallicity might not be as significant for habitable planets as it is for gas giants."
+                "critical response": "Might be seen as slightly critical or questioning the significance of habitable planets in the discussion."
             }
         },
         {
@@ -3997,7 +3893,7 @@
             "start_time": "62:37",
             "end_time": "62:41",
             "annotations": {
-                "express enthusiasm": "Leslie expresses excitement about the dynamics in a globular cluster, building on the discussion about globular clusters as extreme environments for habitability."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4017,7 +3913,7 @@
             "start_time": "62:41",
             "end_time": "62:42",
             "annotations": {
-                "express frustration": "Paul expresses being scared, which indicates frustration or concern about the dynamics in a globular cluster, as mentioned in the previous utterance."
+                "Critical response": "The utterance expresses a negative feeling (fear) regarding the implications or outcomes of an idea or situation discussed, which aligns with questioning or providing negative evaluation."
             }
         },
         {
@@ -4036,14 +3932,11 @@
             "screenshare_content": "None",
             "start_time": "62:43",
             "end_time": "63:31",
-            "annotations": [
-                {
-                    "expand on existing idea": "Smadar is expanding on the idea of extreme places for habitability, previously mentioning globular clusters and now adding the galactic center as another example."
-                },
-                {
-                    "provide supporting evidence": "Smadar provides supporting evidence by mentioning studies on open clusters and a specific study by Kyle Kramer on the dynamics in globular clusters, suggesting that planets are not always completely destroyed in such environments."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker discusses her own thoughts and references existing research, showing her expertise in the field.",
+                "acknowledge contribution": "The speaker mentions Kyle Kramer's work, acknowledging his contribution to the field.",
+                "supportive response": "The speaker is discussing and building upon existing research, showing support for the ideas or methods being considered."
+            }
         },
         {
             "speaker": "Leslie Rogers",
@@ -4062,7 +3955,7 @@
             "start_time": "63:31",
             "end_time": "63:40",
             "annotations": {
-                "ask clarifying question": "Leslie is asking a question to clarify the abundance of Kepler-444-like systems in the globular cluster 47 Tuc, following a discussion about exoplanet searches in globular clusters and the dynamics within them."
+                "ask question": "The speaker is requesting information about the number of Kepler 444 systems in 47 Tuc, seeking data or knowledge from others in the group."
             }
         },
         {
@@ -4081,17 +3974,10 @@
             "screenshare_content": "None",
             "start_time": "63:40",
             "end_time": "64:17",
-            "annotations": [
-                {
-                    "express enthusiasm": "Dan expresses excitement about the topic of galactic archaeology and its connection to the exoplanet field, building on the discussion about Kepler 444 and its implications for planet formation around old, metal-poor stars."
-                },
-                {
-                    "acknowledge contribution": "Dan acknowledges the interesting point about Kepler 444 being close and a seventh magnitude star, which is relevant to the discussion about galactic archaeology."
-                },
-                {
-                    "express enthusiasm": "Dan expresses enthusiasm about the potential of linking galactic archaeology with the exoplanet field, even though it is observationally challenging, building on the discussion about Kepler 444 and its implications for planet formation around old, metal-poor stars."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses agreement and fascination with the topic, showing a positive and encouraging attitude towards the discussion on galactic archaeology and exoplanets.",
+                "None": "No specific code directly applies as the utterance is more of a commentary on the field and its potential."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4110,9 +3996,7 @@
             "start_time": "64:17",
             "end_time": "64:47",
             "annotations": {
-                "ask clarifying question": {
-                    "Explanation": "Nicolas is asking about the current understanding of the relationship between stellar properties and the characteristics of their planets, seeking clarification on the established connections and the level of detail to which these connections have been explored."
-                }
+                "ask question": "The speaker is requesting information about the current status of the connection between a star and the kinds of planets that form around it, indicating a request for clarification or knowledge on this topic."
             }
         },
         {
@@ -4132,8 +4016,9 @@
             "start_time": "64:47",
             "end_time": "65:00",
             "annotations": {
-                "expand on existing idea": "Courtney expands on Nicolas's question about the connection between a star and the planets around it by mentioning that people are looking at abundance ratios to infer planet composition, building on the existing discussion about stellar properties and planet formation.",
-                "ask clarifying question": "Courtney asks whether knowing the abundance ratios for a star can tell us something about the core and mantle composition of its planets, seeking clarification on the connection between stellar and planetary composition."
+                "ask question": "The speaker is asking a question about the current research direction and the relationship between stellar abundance ratios and planetary composition.",
+                "identify gap": "The speaker identifies a gap in knowledge, noting that the sample size is too small to make definitive statements.",
+                "clarify goal": "The speaker is seeking clarity on the goals and directions of current research in the field."
             }
         },
         {
@@ -4152,14 +4037,13 @@
             "screenshare_content": "None",
             "start_time": "65:00",
             "end_time": "65:17",
-            "annotations": [
-                {
-                    "present new idea": "The speaker suggests that a larger sample size and a good database of Kepler, Plato, K2, TESS, plus Gaia could help answer questions about the connection between a star and the planets around it, which is a novel approach to address the problem."
-                },
-                {
-                    "provide supporting evidence": "The speaker mentions the limitations of current data (mass, radius, atmospheric constraints) and suggests that a larger, more comprehensive dataset (Kepler, Plato, K2, TESS, Gaia) would be needed to overcome these limitations and answer the question, thus providing a reason to support the new idea."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on the idea that current limitations could be overcome with more data.",
+                "signal expertise": "The speaker mentions specific missions and implies knowledge of their potential to provide useful data.",
+                "identify gap": "The speaker highlights the limitation of having too many unknowns with current data.",
+                "clarify goal": "The speaker clarifies the goal of being able to answer a question with better data.",
+                "supportive response": "The speaker offers a potential solution to the problem discussed."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -4178,8 +4062,8 @@
             "start_time": "65:18",
             "end_time": "65:54",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining the current state of knowledge regarding the connection between a star and the planets that form around it, mentioning basic parameters like FE on H and spectral type.",
-                "provide supporting evidence": "The speaker supports the explanation by mentioning the C to O ratio and highlighting the difference in understanding between astronomers and solar system scientists, suggesting a more complex view is needed."
+                "clarify goal": "The speaker is discussing the current basic understanding of stellar and planetary properties, indicating an ongoing effort to define and clarify the goals of their research.",
+                "identify gap": "The speaker highlights the limitations of current knowledge, such as the simplistic view of C to O ratios by astronomers compared to solar system scientists, indicating an awareness of gaps in understanding."
             }
         },
         {
@@ -4199,7 +4083,7 @@
             "start_time": "65:54",
             "end_time": "66:13",
             "annotations": {
-                "present new idea": "Smadar introduces the idea that stellar spin can be influenced by planet consumption and leave detectable signatures, which is a new factor to consider in planetary architecture and habitability."
+                "develop idea": "The speaker expands on existing ideas by suggesting that stellar spin could be an additional factor to consider, potentially changing if a star 'eats' a planet and having signatures as it evolves."
             }
         },
         {
@@ -4219,7 +4103,7 @@
             "start_time": "66:13",
             "end_time": "66:20",
             "annotations": {
-                "expand on existing idea": "Smadar is expanding on the previous discussion about stellar spin and its connection to planets by adding that stellar spin can also show signatures of tidal locking if it exists in the system."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4239,7 +4123,7 @@
             "start_time": "66:21",
             "end_time": "67:40",
             "annotations": {
-                "provide supporting evidence": "Daniel Apai recalls past papers claiming correlations between the presence of smaller planets and refractory species in stellar abundance, providing evidence to support the discussion about the connection between a star and the kinds of planets around it."
+                "None": "No relevant code directly applies to this utterance"
             }
         },
         {
@@ -4259,8 +4143,9 @@
             "start_time": "67:40",
             "end_time": "68:15",
             "annotations": {
-                "provide supporting evidence": "Dan Huber is providing supporting evidence for the difficulty in measuring stellar abundances, building on Paul's earlier point about observational constraints.",
-                "expand on existing idea": "Dan Huber expands on the discussion about stellar properties and their connection to planets by mentioning stellar multiplicity as another factor to consider."
+                "signal expertise": "Dan Huber explicitly discusses specific challenges and methodologies, showing his expertise in the field.",
+                "develop idea": "He builds upon previous statements and discusses considerations in the field, elaborating on existing ideas.",
+                "identify gap": "The utterance highlights the difficulty with precise measurements for small samples, identifying a gap in current capabilities."
             }
         },
         {
@@ -4280,9 +4165,9 @@
             "start_time": "68:15",
             "end_time": "68:54",
             "annotations": {
-                "present new idea": "The speaker introduces the idea that stellar multiplicity correlates with planet occurrence, which is a new topic in the discussion.",
-                "explain or define term or concept": "The speaker explains the concept of \"out of the box habitability\" by providing examples such as galactic habitability and habitable zones around planets not traditionally considered habitable.",
-                "acknowledge contribution": "The speaker acknowledges that they have written a lot and identified four main topics, indicating a contribution to the discussion without explicitly agreeing or expanding on a specific idea."
+                "summarize conversation": "Dan is summarizing the topics they have discussed or plan to discuss.",
+                "encourage participation": "Dan is inviting the group to engage with the topics he has outlined.",
+                "process management": "Dan is organizing the meeting's flow and discussion topics."
             }
         },
         {
@@ -4302,12 +4187,8 @@
             "start_time": "68:54",
             "end_time": "69:22",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Daniel suggests focusing on habitability beyond the liquid surface water habitable zone, proposing a specific direction for the discussion."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Daniel encourages Dan to provide suggestions on how to phrase the topic and invites further discussion on project ideas."
-                }
+                "process management": "The speaker is managing the discussion by suggesting a term and inviting others to contribute.",
+                "clarify goal": "The speaker is clarifying or suggesting a goal for the discussion by proposing a specific term to focus on."
             }
         },
         {
@@ -4327,8 +4208,8 @@
             "start_time": "69:22",
             "end_time": "69:36",
             "annotations": {
-                "expand on existing idea": "Courtney suggests expanding on the discussion by incorporating insights from experts in Earth's oceans and the origin of life at vents, building upon the previous discussion about oceans and transport of material in oceans.",
-                "propose decision": "Courtney proposes the decision to include experts on Earth's oceans and the origin of life at vents in the discussion."
+                "code name": "process management",
+                "explanation": "Courtney's suggestion implies managing the discussion process by recommending who to engage with."
             }
         },
         {
@@ -4348,8 +4229,7 @@
             "start_time": "69:36",
             "end_time": "69:54",
             "annotations": {
-                "expand on existing idea": "Daniel Apai is building on the previous discussion about water content and habitability by mentioning the importance of accretion history, water accretion history, efficiency to retain material, and assessment of the accretion and capture processes, which are all related to the water idea that Coco Zhang was interested in.",
-                "present new idea": "Daniel Apai introduces the idea of assessing the efficiency of retaining material during the accretion process, which is a new aspect not explicitly discussed before."
+                "summarize conversation": "The speaker is recalling and summarizing previous discussion points about accretion history and its relevance to the current conversation."
             }
         },
         {
@@ -4369,8 +4249,7 @@
             "start_time": "70:00",
             "end_time": "70:40",
             "annotations": {
-                "encourage particpatioin": "Daniel Apai is encouraging the group to share project ideas and hypotheses, building on the previous discussion about planetary habitability and architecture.",
-                "express enthusiasm": "Daniel Apai expresses enthusiasm for considering ideas that may not be immediately testable but could have a significant impact, encouraging forward-thinking approaches."
+                "process management": "The speaker is guiding the group's discussion on how to approach project ideas and hypotheses, suggesting a method for evaluating and potentially pursuing them."
             }
         },
         {
@@ -4390,7 +4269,7 @@
             "start_time": "70:40",
             "end_time": "70:56",
             "annotations": {
-                "assign task": "Dan Huber is volunteering to copy the discussion notes to the science deck, assigning himself the task of documentation."
+                "process management": "The speaker is discussing an action to copy information to the science deck, which relates to organizing or managing group materials."
             }
         },
         {
@@ -4410,9 +4289,8 @@
             "start_time": "70:56",
             "end_time": "71:54",
             "annotations": {
-                "expand on existing idea": "Daniel is summarizing and expanding on the previously discussed ideas related to deep oceans, circulation in tidally locked planets, temperature, loss of water to permanent ice sheets, and the optimal habitability zone as a function of water depth.",
-                "propose decision": "Daniel is suggesting to test the ideas about smaller bodies bringing in volatiles and expanding the Opic method, which is a concrete choice for the group to consider.",
-                "present new idea": "Daniel is presenting the idea of using the expanded and generalized Opic method to study the delivery of volatiles by smaller bodies, which is a novel approach not explicitly discussed before."
+                "summarize conversation": "The speaker is recalling previous discussions on topics related to habitability, including studies on deep oceans in tidally locked planets and the habitability optimal zone.",
+                "develop idea": "The speaker is elaborating on ideas about testing the delivery of volatiles by smaller bodies and expanding the Opic method."
             }
         },
         {
@@ -4432,7 +4310,8 @@
             "start_time": "71:54",
             "end_time": "72:08",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about observationally testing hypotheses related to planet populations, specifically mentioning using Plato and Gaia data to synthesize planet populations as a function of semi-major axis."
+                "propose new idea": "The speaker proposes a new research idea to synthesize the planet population as a function of semi-major axis using Plato and Gaia.",
+                "develop idea": "The speaker builds upon previous discussions by suggesting a concrete approach to studying the planet population."
             }
         },
         {
@@ -4452,7 +4331,8 @@
             "start_time": "72:09",
             "end_time": "72:20",
             "annotations": {
-                "encourage particpatioin": "Nicolas is encouraging Courtney to participate by asking if she knows the person who worked on a similar project, building on the previous discussion about synthesizing planet populations."
+                "ask question": "The speaker is asking for information about a PhD student of Scott Gaudi who worked on combining microlensing and other methods.",
+                "encourage participation": "The speaker directly engages with Courtney, asking if she knows the person mentioned."
             }
         },
         {
@@ -4471,11 +4351,9 @@
             "screenshare_content": "None",
             "start_time": "72:20",
             "end_time": "72:33",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Courtney acknowledges that Christian Clanton did some interesting work on the project that Nicolas mentioned."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Courtney Dressing acknowledges Christian Clanton's work on a project, showing recognition of his contribution."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4494,7 +4372,7 @@
             "start_time": "72:33",
             "end_time": "72:40",
             "annotations": {
-                "ask clarifying question": "Nicolas is asking if the previous point about the planet population synthesis changing with Plato and Roman is the correct understanding, seeking confirmation on the impact of these new missions."
+                "ask question": "The speaker asks for clarification or confirmation with the question 'is that the idea?'"
             }
         },
         {
@@ -4513,11 +4391,10 @@
             "screenshare_content": "None",
             "start_time": "72:40",
             "end_time": "72:59",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previous discussion about synthesizing planet populations, adding that the Roman telescope will be key to expanding the microlensing sample and radio velocity data, which will improve the constraints on planet properties."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses a positive view of future data and its potential impact on expanding the microlensing sample and improving mass detection limits.",
+                "acknowledge contribution": "The speaker acknowledges the potential contribution of future data from Roman and radio velocity to the field of planetary science."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4536,7 +4413,7 @@
             "start_time": "72:59",
             "end_time": "73:01",
             "annotations": {
-                "express agreement": "Nicolas Cowan expresses agreement with Courtney Dressing's explanation of how Roman will expand the microlensing sample and radio velocity data, as they were discussing synthesizing the planet population as a function of semi-major axis."
+                "supportive response": "The speaker is expressing agreement or acknowledgment with a previous statement."
             }
         },
         {
@@ -4556,7 +4433,7 @@
             "start_time": "73:02",
             "end_time": "73:04",
             "annotations": {
-                "express agreement": "Paul agrees with the idea of using the data science thesis, which was mentioned in the previous turn."
+                "supportive response": "The speaker is expressing agreement or a positive evaluation regarding a data science thesis."
             }
         },
         {
@@ -4576,7 +4453,7 @@
             "start_time": "73:04",
             "end_time": "73:12",
             "annotations": {
-                "express humor": "Nicolas makes a humorous remark about the previous speaker's comment that a PhD student working on combining microlensing and other data ended up working in data science, implying it was an unsurprising career path."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4595,11 +4472,9 @@
             "screenshare_content": "None",
             "start_time": "73:20",
             "end_time": "73:44",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Daniel Apai is encouraging the group to share their ideas, specifically requesting 'other hypothesis, project ideas, anything crazy' to stimulate discussion."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by inviting participants to share their ideas, no matter how crazy they may seem."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4618,8 +4493,7 @@
             "start_time": "73:44",
             "end_time": "73:51",
             "annotations": {
-                "acknowledge contribution": "Nicolas acknowledges Courtney's idea, indicating he was impressed by it, which is a form of recognizing her input.",
-                "express enthusiasm": "Nicolas expresses excitement about Courtney's idea, indicating he was impressed by it."
+                "acknowledge contribution": "The speaker acknowledges and praises Courtney's idea from earlier, showing appreciation for her contribution to the discussion."
             }
         },
         {
@@ -4638,11 +4512,9 @@
             "screenshare_content": "None",
             "start_time": "73:51",
             "end_time": "73:51",
-            "annotations": [
-                {
-                    "express agreement": "Paul is agreeing with Nicolas's statement about Courtney's idea related to the Fermi paradox."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4660,14 +4532,9 @@
             "screenshare_content": "None",
             "start_time": "73:51",
             "end_time": "74:11",
-            "annotations": [
-                {
-                    "express humor": "The speaker is making a joke about rocks from space being dangerous and annihilating everyone, which is intended to be humorous."
-                },
-                {
-                    "express enthusiasm": "The speaker expresses excitement about the Trappist system, referring to it as the 'holy grail' and suggesting that its inhabitants will 'take over the universe', indicating enthusiasm."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker is making a humorous comment about the Trappist system and its potential for long-term survival, comparing it to taking over the universe."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -4686,9 +4553,7 @@
             "start_time": "74:11",
             "end_time": "74:12",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Daniel Apai acknowledges the previous speaker's contribution, signaling the end of that turn and moving the discussion forward."
-                }
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4708,8 +4573,8 @@
             "start_time": "74:16",
             "end_time": "74:26",
             "annotations": {
-                "expand on existing idea": "Leslie is building on the previous discussion about systems with multiple planets that could potentially harbor life for a long time, referencing Kepler 444 as another example of such a system.",
-                "express humor": "Leslie is making a lighthearted remark by calling her addition a \"glib comment\", suggesting a playful or humorous intent."
+                "develop idea": "The speaker is expanding on existing ideas by referencing Kepler 444 as an example of a system with multiple planets that has been around for 11 billion years.",
+                "supportive response": "The utterance expresses a positive sentiment towards the ongoing discussion by adding a relevant example."
             }
         },
         {
@@ -4729,9 +4594,7 @@
             "start_time": "74:26",
             "end_time": "74:42",
             "annotations": {
-                "present new idea": "The speaker introduces a novel concept of correlating magnetic field strength with the presence or absence of an atmosphere, which hasn't been explicitly discussed before in this specific context.",
-                "expand on existing idea": "The speaker is building upon the previous discussion about factors influencing habitability, adding a new factor to consider.",
-                "express enthusiasm": "The speaker expresses excitement about the idea of correlating magnetic field with the presence or absence of an atmosphere, stating it \"would be really interesting in the future.\""
+                "propose new idea": "Leslie Rogers introduces a new idea of correlating magnetic field with presence or absence of an atmosphere as a potentially interesting research area."
             }
         },
         {
@@ -4751,7 +4614,7 @@
             "start_time": "74:42",
             "end_time": "74:43",
             "annotations": {
-                "express agreement": "Daniel Apai says \"Yeah\" to express agreement with a prior statement."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4771,7 +4634,7 @@
             "start_time": "74:51",
             "end_time": "75:06",
             "annotations": {
-                "present new idea": "Paul introduces a novel hypothesis about fast radio bursts being caused by civilizations accelerating photon sails, which hasn't been discussed before in this conversation."
+                "propose new idea": "The speaker is introducing a new idea about explaining fast radio bursts as civilizations accelerating photon sales."
             }
         },
         {
@@ -4790,11 +4653,9 @@
             "screenshare_content": "None",
             "start_time": "75:06",
             "end_time": "75:06",
-            "annotations": [
-                {
-                    "express agreement": "Courtney is agreeing with Nicolas's statement about the Fermi paradox and the Trappist-1 system, indicating she finds his point valid."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -4813,9 +4674,8 @@
             "start_time": "75:06",
             "end_time": "75:27",
             "annotations": {
-                "present new idea": "Paul is introducing a novel idea about observing potential traffic between Trappist-1 planets if one becomes uninhabitable, which hasn't been discussed before.",
-                "propose decision": "Paul is suggesting a thought experiment to consider if there would be any observable signatures of highway traffic between the Trappist-1 planets, which is a concrete suggestion for the group to consider.",
-                "express humor": "Paul's idea about highway traffic between Trappist-1 planets is somewhat humorous and speculative, adding a lighthearted element to the discussion."
+                "ask question": "The speaker requests information about whether highway traffic between planets could produce observable signatures, directly asking for clarification or information.",
+                "develop idea": "The speaker is expanding on an idea about planetary habitability and the potential for movement between planets, building on previous discussions."
             }
         },
         {
@@ -4835,7 +4695,7 @@
             "start_time": "75:27",
             "end_time": "75:27",
             "annotations": {
-                "express agreement": "Courtney agrees with the crazy idea Paul proposed about highway traffic between the TRAPPIST-1 planets."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4855,7 +4715,7 @@
             "start_time": "75:27",
             "end_time": "75:31",
             "annotations": {
-                "express humor": "Paul is expressing humor by calling his idea \"crazy\", which is a lighthearted way to present a speculative concept."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4875,7 +4735,7 @@
             "start_time": "75:31",
             "end_time": "75:32",
             "annotations": {
-                "confirm decision": "Courtney explicitly agrees with Paul's crazy idea about detecting traffic between TRAPPIST-1 planets, finalizing the idea."
+                "Supportive Response": "The speaker is expressing agreement with a previous statement, providing a positive evaluation without adding new content."
             }
         },
         {
@@ -4895,7 +4755,7 @@
             "start_time": "75:32",
             "end_time": "75:32",
             "annotations": {
-                "express agreement": "Paul agrees with Courtney's crazy idea about detecting traffic between TRAPPIST-1 planets, building on the discussion about crazy project ideas."
+                "None": "The utterance is a minimal acknowledgment or agreement without adding substantial content to the discussion."
             }
         },
         {
@@ -4914,12 +4774,10 @@
             "screenshare_content": "None",
             "start_time": "75:32",
             "end_time": "75:55",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance expands on Paul's crazy idea about traffic between TRAPPIST-1 planets by mentioning a study group interested in eavesdropping on potential telecommunications between those planets, building on the discussion of the TRAPPIST-1 system and potential signatures of extraterrestrial activity.",
-                    "express enthusiasm": "The speaker expresses enthusiasm about the possibility of eavesdropping on telecommunications from the TRAPPIST-1 system, indicating excitement about the potential for detecting extraterrestrial signals."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "Courtney Dressing acknowledges another study group's interest in the Trappist-1 system.",
+                "express humor": "The utterance has a lighthearted tone, especially when discussing the potential for eavesdropping on extraterrestrial communications."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -4938,7 +4796,7 @@
             "start_time": "75:56",
             "end_time": "75:59",
             "annotations": {
-                "express enthusiasm": "The speaker expresses excitement about the idea of eavesdropping on telecommunications between planets in the TRAPPIST-1 system, which was just described by Courtney."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4958,7 +4816,9 @@
             "start_time": "75:59",
             "end_time": "76:06",
             "annotations": {
-                "present new idea": "Paul is presenting a new idea about detecting techno signatures from accelerating spacecraft or space elevators, which hasn't been discussed before in this specific context."
+                "propose new idea": "The speaker suggests a new perspective on detecting techno signatures from other civilizations.",
+                "ask question": "The speaker asks if accelerating spacecraft or space elevators could be considered techno signatures.",
+                "offer feedback": "The speaker provides a suggestion for considering certain phenomena as techno signatures."
             }
         },
         {
@@ -4978,7 +4838,7 @@
             "start_time": "76:06",
             "end_time": "76:06",
             "annotations": {
-                "express agreement": "Courtney agrees with Paul's crazy idea about detecting signatures of highway traffic between the TRAPPIST-1 planets."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -4997,14 +4857,9 @@
             "screenshare_content": "None",
             "start_time": "76:06",
             "end_time": "76:42",
-            "annotations": [
-                {
-                    "present new idea": "Paul is presenting a novel idea about detecting technosignatures from space elevators using lasers, which hasn't been discussed before in this specific context."
-                },
-                {
-                    "propose decision": "Paul is suggesting a direction for observation by asking if it would be obvious which microwave wavelengths to look at, proposing a specific observational strategy."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the potential for observing a technological signature, specifically if using lasers with space elevators could be detectable and at what wavelengths."
+            }
         },
         {
             "speaker": "Daniel Apai",
@@ -5023,9 +4878,7 @@
             "start_time": "76:56",
             "end_time": "77:00",
             "annotations": {
-                "propose decision": {
-                    "Explanation": "Daniel Apai suggests a course of action for the group, which is to find enough targets and prioritize them, building on the previous discussion about crazy ideas and techno signatures."
-                }
+                "process management": "The speaker is suggesting a strategy for efficiently managing the task of finding targets, which involves prioritizing them."
             }
         },
         {
@@ -5044,11 +4897,10 @@
             "screenshare_content": "None",
             "start_time": "77:00",
             "end_time": "77:01",
-            "annotations": [
-                {
-                    "express agreement": "Paul is agreeing with Nicolas's previous statement about Courtney's idea regarding the Fermi paradox and the Trappist-1 system."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges a prior statement from another group member.",
+                "supportive response": "The speaker expresses agreement or validation for the prior statement."
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -5067,7 +4919,7 @@
             "start_time": "77:01",
             "end_time": "77:06",
             "annotations": {
-                "express enthusiasm": "Paul expresses enthusiasm about finding the first target, implying optimism about finding more targets in the future."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -5087,7 +4939,7 @@
             "start_time": "77:07",
             "end_time": "77:08",
             "annotations": {
-                "express agreement": "Courtney expresses agreement with Paul's crazy idea about detecting techno signatures from highway traffic between the TRAPPIST-1 planets."
+                "supportive response": "The speaker is expressing agreement or a positive evaluation of a previous idea."
             }
         },
         {
@@ -5107,7 +4959,8 @@
             "start_time": "77:08",
             "end_time": "77:09",
             "annotations": {
-                "express agreement": "Daniel Apai expresses agreement with Paul Robertson's crazy idea about detecting techno signatures from highway traffic between Trappist-1 planets, building on the discussion about potential projects and testable hypotheses."
+                "supportive response": "The speaker is expressing agreement and positive evaluation of a previous idea or suggestion.",
+                "acknowledge contribution": "The speaker is also acknowledging and showing appreciation for someone's contribution, in this case, an idea."
             }
         },
         {
@@ -5126,12 +4979,9 @@
             "screenshare_content": "None",
             "start_time": "77:10",
             "end_time": "77:17",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dan acknowledges Paul's contribution by saying he wrote it down as a kicker, recognizing Paul's idea.",
-                    "assign task": "Dan assigns himself the task of pointing to Paul when the question comes up, indicating he will direct the conversation towards Paul's idea."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code directly applies to this utterance as it primarily serves a procedural or preparatory function in the discussion."
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -5149,11 +4999,9 @@
             "screenshare_content": "None",
             "start_time": "77:17",
             "end_time": "77:17",
-            "annotations": [
-                {
-                    "express agreement": "Paul is agreeing to something that was previously asked or suggested, though the specific request is not explicitly stated in this utterance, it is implied from the context."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -5171,11 +5019,9 @@
             "screenshare_content": "None",
             "start_time": "77:18",
             "end_time": "77:25",
-            "annotations": [
-                {
-                    "ask clarifying question": "Nicolas is asking whether the mention of FRBs (Fast Radio Bursts) is still relevant to the discussion, seeking clarification on its connection to the topic."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the relevance of FRBs to their discussion."
+            }
         },
         {
             "speaker": "Paul Robertson",
@@ -5193,11 +5039,9 @@
             "screenshare_content": "None",
             "start_time": "77:25",
             "end_time": "77:33",
-            "annotations": [
-                {
-                    "reject idea": "Paul states that the FRB community has rejected the idea, indicating a dismissal of the idea."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance as it primarily serves as a transition in thought and acknowledgment of previous discussion rather than a direct contribution to the scientific conversation."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5215,11 +5059,9 @@
             "screenshare_content": "None",
             "start_time": "77:33",
             "end_time": "77:37",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dan Huber is acknowledging that he has tried to synthesize the ideas discussed, which is a contribution to the group's goal of identifying testable hypotheses."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Dan Huber indicates he tried to synthesize as much information as possible, implying an attempt to summarize the conversation."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5237,14 +5079,9 @@
             "screenshare_content": "None",
             "start_time": "77:37",
             "end_time": "77:47",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Dan Huber encourages others to contribute if he has missed anything, inviting further input from the group."
-                },
-                {
-                    "acknowledge contribution": "Dan Huber acknowledges the extensive discussion and thanks the participants for their contributions."
-                }
-            ]
+            "annotations": {
+                "Supportive response": "Dan is expressing agreement and a positive sentiment, and wrapping up the discussion in a collaborative manner."
+            }
         },
         {
             "speaker": "Nicolas Cowan",
@@ -5262,14 +5099,9 @@
             "screenshare_content": "None",
             "start_time": "77:48",
             "end_time": "77:51",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Nicolas acknowledges Dan's effort in taking notes during the discussion."
-                },
-                {
-                    "express humor": "Nicolas makes a lighthearted comment about Dan waking up, implying that taking notes might have helped him become more alert."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke about note-taking being a way to stay awake, indicating humor."
+            }
         },
         {
             "speaker": "Courtney Dressing",
@@ -5287,11 +5119,9 @@
             "screenshare_content": "None",
             "start_time": "77:51",
             "end_time": "77:51",
-            "annotations": [
-                {
-                    "express agreement": "Courtney agrees with Paul's crazy idea about detecting signatures of traffic between TRAPPIST-1 planets."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5309,11 +5139,9 @@
             "screenshare_content": "None",
             "start_time": "77:52",
             "end_time": "77:59",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dan Huber acknowledges that he is now awake, recognizing his role as the note-taker for the discussion."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -5331,11 +5159,9 @@
             "screenshare_content": "None",
             "start_time": "77:59",
             "end_time": "78:03",
-            "annotations": [
-                {
-                    "None": "This utterance is incomplete and does not express a complete idea or action."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is offering to add a link to a document, which can help in organizing or managing the group's resources and information flow."
+            }
         },
         {
             "speaker": "Daniel Huber",
@@ -5353,11 +5179,9 @@
             "screenshare_content": "None",
             "start_time": "78:03",
             "end_time": "78:04",
-            "annotations": [
-                {
-                    "ask clarifying question": "Dan is asking for instructions on how to do something, likely related to his task of taking notes, as he is the designated scribe."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Smadar Naoz",
@@ -5375,11 +5199,9 @@
             "screenshare_content": "None",
             "start_time": "78:04",
             "end_time": "78:07",
-            "annotations": [
-                {
-                    "express frustration": "Smadar expresses frustration about the limited time left in the session, as the group is running out of time to discuss the topic."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by pointing out the time constraint and asking others to wait."
+            }
         }
     ]
 }
