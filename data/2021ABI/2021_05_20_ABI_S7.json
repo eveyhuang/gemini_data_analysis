@@ -1,20 +1,20 @@
 {
     "all_speakers": [
         "Aseema Mohanty",
-        "Joshua Brake",
-        "Kristen Maitland",
-        "Sixian You",
-        "Vivian Qian Liu",
-        "Candace Fleischer",
         "Dylan Burnette",
-        "Matt Lew",
         "Stefan Wilhelm",
+        "Joshua Brake",
+        "Matt Lew",
+        "Sixian You",
         "Shiva Abbaszadeh",
         "Uzay Emir",
+        "Qian Liu",
+        "Kristen Maitland",
         "Silvia Ronco",
         "Andrew Feig",
-        "Richard Weiner",
-        "Luke Mortensen"
+        "Candace Fleischer",
+        "Luke Mortensen",
+        "Richard Weiner"
     ],
     "total_speaking_length": 3755,
     "all_data": [
@@ -35,7 +35,7 @@
             "start_time": "00:00",
             "end_time": "00:10",
             "annotations": {
-                "assign task": "Kristen assigns the task of monitoring the meeting and calling out anything missed to someone, so Josh doesn't have to type their name into the slides."
+                "process management": "This code applies because the speaker is providing instructions on how to manage the meeting or document, specifically on monitoring and participation."
             }
         },
         {
@@ -54,12 +54,10 @@
             "screenshare_content": "None",
             "start_time": "00:10",
             "end_time": "00:17",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker is trying to understand the file structure, which can be seen as defining or clarifying the file organization concept.",
-                    "ask clarifying question": "The speaker is asking a question to clarify how the files are organized within the folder."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification about whether it is separate groups in that folder.",
+                "None": "No additional codes apply as the utterance primarily involves a question."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -78,9 +76,8 @@
             "start_time": "00:17",
             "end_time": "00:37",
             "annotations": {
-                "explain or define term or concept": "The speaker is explaining how to use Google Slides for collaborative editing.",
-                "assign task": "The speaker assigns Josh the task of keeping track of the main bullet points.",
-                "encourage particpatioin": "The speaker encourages everyone to edit the slides and add their names to the list."
+                "process management": "Kristen Maitland is explaining how to use Google slides and organizing the group's activity.",
+                "assign task": "Kristen Maitland assigns a task to Josh to keep track of main bullet points and instructs others to put their names on the list."
             }
         },
         {
@@ -100,8 +97,9 @@
             "start_time": "00:37",
             "end_time": "00:58",
             "annotations": {
-                "ask clarifying question": "The speaker is asking whether ideas that fall outside the key points should be put in the parking lot, kept to themselves, or recorded elsewhere, seeking clarification on the procedure for handling these ideas.",
-                "encourage particpatioin": "The speaker is encouraging Richard to make a comment, inviting him to contribute to the discussion."
+                "propose new idea": "Kristen Maitland introduces a consideration for handling additional topics that might come up during the discussion.",
+                "ask question": "Kristen Maitland requests clarification on what to do with additional ideas that come up during the discussion.",
+                "encourage participation": "Kristen Maitland invites Richard to contribute his thoughts or expertise."
             }
         },
         {
@@ -121,9 +119,9 @@
             "start_time": "00:59",
             "end_time": "01:18",
             "annotations": {
-                "explain or define term or concept": "Richard is explaining what to do with ideas that are not key points, clarifying the options available to the team.",
-                "propose decision": "Richard suggests Josh take notes on the side to share with people, proposing a concrete action for Josh.",
-                "encourage particpatioin": "Richard encourages the team to have fun in the discussion, promoting a positive and collaborative environment."
+                "process management": "Richard is managing the meeting flow by providing instructions on how to handle additional discussion topics.",
+                "assign task": "Richard assigns Josh the task of taking notes on the side.",
+                "express humor": "Richard attempts to lighten the mood by suggesting the group have fun in the discussion."
             }
         },
         {
@@ -143,12 +141,8 @@
             "start_time": "01:18",
             "end_time": "01:25",
             "annotations": {
-                "confirm decision": {
-                    "Explanation": "Kristen confirms that Richard's suggestions about handling additional discussion points are acceptable."
-                },
-                "encourage particpatioin": {
-                    "Explanation": "Kristen invites anyone to ask questions before they take a minute to think, encouraging participation."
-                }
+                "process management": "The speaker is managing the meeting flow by checking for questions before moving on to the next activity.",
+                "encourage participation": "The speaker is inviting participants to contribute their thoughts or ask questions."
             }
         },
         {
@@ -168,7 +162,7 @@
             "start_time": "01:25",
             "end_time": "01:38",
             "annotations": {
-                "ask clarifying question": "Sixian is asking for clarification on where to put their names on the slides, which is a logistical detail related to the meeting."
+                "ask question": "The speaker is requesting information about where to put their names in the presentation slides, indicating a need for clarification."
             }
         },
         {
@@ -188,7 +182,8 @@
             "start_time": "01:38",
             "end_time": "01:42",
             "annotations": {
-                "confirm decision": "Josh confirms that he has already taken care of adding everyone's names to the slides, finalizing the task and indicating that it's been completed."
+                "process management": "Josh is facilitating the group's work by resolving a logistical issue.",
+                "supportive response": "Josh's response helps to move the group forward by addressing a question."
             }
         },
         {
@@ -208,7 +203,8 @@
             "start_time": "01:42",
             "end_time": "01:44",
             "annotations": {
-                "explain or define term or concept": "Kristen is clarifying the location of the slide where names should be placed, which is slide 22, in response to a question about where to put names."
+                "process management": "This code applies because the utterance clarifies a logistical detail about the meeting, specifically about where to find a list of names on the slides.",
+                "supportive response": "This code applies because the utterance provides confirmation or agreement regarding the location of names on the slides, supporting the flow of the meeting."
             }
         },
         {
@@ -228,8 +224,8 @@
             "start_time": "01:45",
             "end_time": "01:47",
             "annotations": {
-                "acknowledge contribution": "Sixian You acknowledges Kristen Maitland's contribution of providing the correct slide number.",
-                "confirm decision": "Sixian You confirms that slide 22 is the correct slide, finalizing the information."
+                "acknowledge contribution": "The speaker verbally recognizes Josh's input with 'Thank you'.",
+                "supportive response": "The speaker expresses agreement or validation with 'Okay, perfect'."
             }
         },
         {
@@ -249,8 +245,7 @@
             "start_time": "01:48",
             "end_time": "01:55",
             "annotations": {
-                "explain or define term or concept": "Richard is explaining his role and actions during the meeting, clarifying that he will be moving between rooms and that his absence should not be a concern.",
-                "encourage particpatioin": "Richard is encouraging the team to continue their discussion without worrying about his presence or absence."
+                "process management": "Richard is informing the group about his movement between rooms and how it will affect his participation, which manages the meeting flow."
             }
         },
         {
@@ -270,7 +265,7 @@
             "start_time": "01:55",
             "end_time": "01:56",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges Richard's contribution after he explained how to handle additional discussion topics and offered logistical support."
+                "None": "The utterance is a brief acknowledgment that doesn't explicitly fit into any of the provided codes, and given its brevity and nature, it seems to simply acknowledge the previous statement without adding significant content."
             }
         },
         {
@@ -289,11 +284,10 @@
             "screenshare_content": "None",
             "start_time": "01:57",
             "end_time": "02:14",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kristen encourages the team to think about their topic and other ideas or questions they might want to ask related to super resolution methods, building on the previous discussion about the meeting's structure and goals."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is managing the meeting flow by setting a timer for a minute of silence for thinking.",
+                "encourage participation": "The speaker is encouraging participants to share their ideas and questions related to the topic."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -311,13 +305,10 @@
             "screenshare_content": "None",
             "start_time": "03:28",
             "end_time": "03:55",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kristen is explicitly asking if anyone would like to start the conversation, encouraging participation.",
-                    "assign task": "Kristen is assigning herself the task of monitoring participation and calling on people to ensure everyone contributes.",
-                    "explain or define term or concept": "Kristen is explaining the expectation of being respectful of other people's time and ensuring everyone has a chance to speak."
-                }
-            ]
+            "annotations": {
+                "process management": "Kristen Maitland is managing the meeting flow by explaining how she will facilitate the discussion.",
+                "encourage participation": "Kristen Maitland invites participants to contribute their thoughts and opinions."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -336,7 +327,8 @@
             "start_time": "03:55",
             "end_time": "03:58",
             "annotations": {
-                "encourage particpatioin": "Kristen is explicitly asking for someone to start the conversation, encouraging participation from the group."
+                "encourage participation": "The speaker is inviting others to contribute their ideas or start the conversation.",
+                "process management": "The speaker is managing the meeting flow by initiating the discussion."
             }
         },
         {
@@ -356,7 +348,7 @@
             "start_time": "03:59",
             "end_time": "04:03",
             "annotations": {
-                "offer constructive criticism": "Sixian You is offering to start the discussion on one of the topics, which can be seen as a constructive way to move the meeting forward."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -376,10 +368,7 @@
             "start_time": "04:03",
             "end_time": "05:27",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of mitigating or utilizing multiple scattering when transitioning super-resolution techniques to in vivo applications, which is a novel concept in the context of the discussion.",
-                "expand on existing idea": "The speaker expands on the initial question by suggesting two ways to think about it: gating/rejecting multiple scattering and using multiple scattering to get more information.",
-                "explain or define term or concept": "The speaker explains that in traditional super-resolution techniques like optics, multiple scattering is detrimental because it scrambles light, providing context for the subsequent discussion.",
-                "provide supporting evidence": "The speaker provides supporting evidence by stating that ballistic photons decay exponentially as you go deeper into the tissue, justifying the need to utilize multiple scattering for more information."
+                "develop idea": "The speaker is expanding on an existing question about mitigating or utilizing multiple scattering in in vivo applications by proposing two directions to consider, thus developing the idea through reasoning and potential solutions."
             }
         },
         {
@@ -399,8 +388,8 @@
             "start_time": "05:27",
             "end_time": "05:28",
             "annotations": {
-                "express agreement": "Sixian expresses agreement with the previous turn, which was Sixian's own contribution, showing self-affirmation.",
-                "acknowledge contribution": "Sixian acknowledges their own contribution, expressing gratitude for their own input."
+                "acknowledge contribution": "The speaker verbally recognizes another group member's input.",
+                "supportive response": "The utterance expresses a positive evaluation for another group member's contribution."
             }
         },
         {
@@ -420,8 +409,7 @@
             "start_time": "05:29",
             "end_time": "05:34",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges Sixian's contribution by saying \"That's great and thank you\" in the previous utterance.",
-                "encourage particpatioin": "Kristen encourages Sixian to start by introducing themselves to the group."
+                "encourage participation": "Kristen Maitland invites Sixian to introduce himself, encouraging his participation in the discussion."
             }
         },
         {
@@ -441,8 +429,8 @@
             "start_time": "05:34",
             "end_time": "05:47",
             "annotations": {
-                "explain or define term or concept": "Kristen is explaining the format of the introductions, specifying that they should include name, institution, background, and perspective on the topic.",
-                "encourage particpatioin": "Kristen is encouraging everyone to introduce themselves and share their perspectives on the topic."
+                "process management": "This code applies because Kristen Maitland is managing the meeting's flow by instructing participants on how to introduce themselves.",
+                "encourage participation": "This code applies because by asking participants to introduce themselves and share their perspectives, Kristen Maitland is encouraging participation."
             }
         },
         {
@@ -462,7 +450,7 @@
             "start_time": "05:50",
             "end_time": "06:08",
             "annotations": {
-                "explain or define term or concept": "Sixian is introducing himself and his lab's focus on optical imaging technologies for microscopy applications, providing context for his perspective on the topic."
+                "signal expertise": "The speaker explicitly mentions their background, lab focus, and interest in optics and algorithms for biomedical problems, signaling their expertise in the area."
             }
         },
         {
@@ -482,8 +470,7 @@
             "start_time": "06:09",
             "end_time": "06:10",
             "annotations": {
-                "acknowledge contribution": "Kristen thanks Sixian for their introduction, acknowledging their contribution to the conversation.",
-                "encourage particpatioin": "Kristen then calls on Dylan to participate, encouraging them to introduce themselves as well."
+                "encourage participation": "This code applies because Kristen Maitland is explicitly inviting Dylan to contribute by saying his name, encouraging him to participate in the discussion."
             }
         },
         {
@@ -502,14 +489,9 @@
             "screenshare_content": "None",
             "start_time": "06:11",
             "end_time": "06:37",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Dylan introduces himself and his position at Vanderbilt University, providing context about his background for the discussion."
-                },
-                {
-                    "express humor": "Dylan makes a lighthearted comment about getting tenure and having 'new people problems', adding a touch of humor to his introduction."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "The speaker explicitly states their own expertise or qualifications related to the task by mentioning their position as an associate professor at Vanderbilt University."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -528,8 +510,7 @@
             "start_time": "06:37",
             "end_time": "06:54",
             "annotations": {
-                "explain or define term or concept": "Dylan is providing background information about his expertise, which includes his training as a cell biologist and his experience with light microscopy, to provide context for his perspective on the topic.",
-                "present new idea": "Dylan introduces his interest in how the heart grows on a single cell level, which is a new topic within the context of his introduction."
+                "signal expertise": "The speaker explicitly states his own expertise and qualifications related to the task, mentioning his background as a cell biologist and his experience with light microscopy."
             }
         },
         {
@@ -549,7 +530,7 @@
             "start_time": "06:54",
             "end_time": "06:56",
             "annotations": {
-                "expand on existing idea": "Dylan is building on the topic of super resolution methods, adding details about his work and imaging techniques."
+                "develop idea": "The speaker is expanding on his existing ideas about his research focus, which involves combining everything from very low mag imaging, building upon his previous statements about using light microscopy."
             }
         },
         {
@@ -569,7 +550,7 @@
             "start_time": "06:56",
             "end_time": "07:00",
             "annotations": {
-                "expand on existing idea": "Dylan is expanding on his introduction by listing the different imaging techniques he uses, building on his earlier statement about his background and research interests."
+                "develop idea": "The speaker is elaborating on their research approach by mentioning the use of super resolution imaging and electron microscopy to tackle problems, building on their previously stated background in cell biology and microscopy."
             }
         },
         {
@@ -589,7 +570,7 @@
             "start_time": "07:00",
             "end_time": "07:02",
             "annotations": {
-                "explain or define term or concept": "Dylan is setting the stage for his contribution by characterizing the problem they are addressing, which is a general concept explanation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -609,7 +590,7 @@
             "start_time": "07:02",
             "end_time": "07:04",
             "annotations": {
-                "explain or define term or concept": "Dylan is explaining his research area, which involves studying heart muscle cells, to provide context for his perspective on super-resolution methods."
+                "ask question": "The speaker is requesting information or clarification about heart muscle cells, which is a direct question."
             }
         },
         {
@@ -629,7 +610,7 @@
             "start_time": "07:04",
             "end_time": "07:06",
             "annotations": {
-                "explain or define term or concept": "Dylan is explaining the problem he is trying to solve, which is how a heart muscle cell gets bigger."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -649,7 +630,7 @@
             "start_time": "07:06",
             "end_time": "07:07",
             "annotations": {
-                "express humor": "Dylan makes a humorous remark about the complexity of the problem he's studying, following his introduction of his research on heart muscle cell growth."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -669,7 +650,7 @@
             "start_time": "07:07",
             "end_time": "07:08",
             "annotations": {
-                "explain or define term or concept": "Dylan is explaining the central question his lab is trying to answer, which is how a heart muscle cell gets bigger, to provide context for his perspective on super-resolution methods."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -689,8 +670,8 @@
             "start_time": "07:39",
             "end_time": "07:40",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges Dylan's introduction and contributions to the discussion.",
-                "encourage particpatioin": "Kristen invites Aseema to introduce herself and contribute to the discussion."
+                "encourage participation": "The speaker invites Aseema to contribute to the discussion, encouraging participation.",
+                "acknowledge contribution": "The speaker briefly acknowledges the previous contributor's input before inviting the next person to speak."
             }
         },
         {
@@ -710,7 +691,7 @@
             "start_time": "07:40",
             "end_time": "07:41",
             "annotations": {
-                "None": "This utterance is a simple introduction and does not fit any of the defined codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -730,7 +711,7 @@
             "start_time": "07:41",
             "end_time": "07:42",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland called on Aseema to introduce herself and her background, so Aseema is starting to speak."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -749,11 +730,9 @@
             "screenshare_content": "None",
             "start_time": "07:42",
             "end_time": "08:00",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains that nanophotonics is like chip scale optics to provide clarity on their area of expertise."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Aseema explicitly states her own expertise and background in nanophotonics."
+            }
         },
         {
             "speaker": "Aseema Mohanty",
@@ -772,7 +751,7 @@
             "start_time": "08:00",
             "end_time": "08:02",
             "annotations": {
-                "None": "This utterance is incomplete and does not express a complete idea, decision, or question, so no code applies."
+                "signal expertise": "The speaker is starting to explain her background and work, indicating her expertise."
             }
         },
         {
@@ -792,7 +771,8 @@
             "start_time": "08:02",
             "end_time": "08:17",
             "annotations": {
-                "present new idea": "Aseema introduces a novel concept of handling limitations of bulk optics or high NA objectives and miniaturizing them for portable applications, which hasn't been discussed before in this specific context."
+                "propose new idea": "The utterance introduces a new perspective on super resolution by questioning the limitations of bulk optics and high NA objectives and suggesting miniaturization.",
+                "ask question": "The utterance explicitly asks for ideas on how to handle the limitations of current optics and objectives."
             }
         },
         {
@@ -812,7 +792,7 @@
             "start_time": "08:17",
             "end_time": "08:18",
             "annotations": {
-                "acknowledge contribution": "The utterance \"Okay\" acknowledges the previous speaker's introduction and perspective on super-resolution, without expressing agreement or expanding on the ideas."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -832,7 +812,7 @@
             "start_time": "08:18",
             "end_time": "08:19",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland is inviting Josh to introduce himself and his background, continuing the round of introductions."
+                "encourage participation": "Kristen Maitland is encouraging Josh to participate by drawing his attention and inviting him to contribute to the discussion."
             }
         },
         {
@@ -852,7 +832,7 @@
             "start_time": "08:39",
             "end_time": "08:41",
             "annotations": {
-                "None": "This utterance is simply introducing himself and does not fit any of the codes."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -872,7 +852,7 @@
             "start_time": "08:41",
             "end_time": "08:43",
             "annotations": {
-                "None": "This utterance is simply introducing himself and does not fit any of the codes."
+                "signal expertise": "The speaker is explicitly stating their own expertise or qualifications related to the task by introducing themselves as an assistant professor at the University of Georgia."
             }
         },
         {
@@ -892,7 +872,8 @@
             "start_time": "08:43",
             "end_time": "08:47",
             "annotations": {
-                "express humor": "Luke makes a lighthearted comment about his upcoming promotion and still feeling new, which is intended to be humorous."
+                "signal expertise": "Luke mentions his current and future professional titles, which relates to stating his expertise or qualifications.",
+                "identify gap": "Luke mentions feeling 'new', which implies a gap in his current experience or knowledge."
             }
         },
         {
@@ -912,7 +893,7 @@
             "start_time": "08:47",
             "end_time": "08:53",
             "annotations": {
-                "explain or define term or concept": "Luke is explaining his lab's focus on multiphoton imaging, which provides context for his perspective on super-resolution methods."
+                "signal expertise": "Luke is signaling his lab's expertise by stating their primary focus area, which is multiphoton imaging."
             }
         },
         {
@@ -932,7 +913,7 @@
             "start_time": "08:53",
             "end_time": "09:01",
             "annotations": {
-                "expand on existing idea": "Luke is building on the topic of super-resolution methods by adding details about the specific types of multiphoton imaging his lab uses, including two-photon, second harmonic, and third harmonic generation."
+                "signal expertise": "The speaker is sharing his background and current work, signaling his expertise in the area of multiphoton imaging."
             }
         },
         {
@@ -952,7 +933,8 @@
             "start_time": "09:01",
             "end_time": "09:15",
             "annotations": {
-                "expand on existing idea": "Luke is expanding on his lab's focus on multiphoton imaging by adding that they are looking at moving to near IR wavelengths to penetrate deeper into tissue and use scattering correction approaches, building upon his earlier introduction of his background."
+                "develop idea": "The speaker is expanding on existing ideas by discussing a specific technical approach to improve imaging depth.",
+                "propose new idea": "The speaker introduces a new technical approach (near IR wavelengths) for achieving deeper tissue imaging."
             }
         },
         {
@@ -972,7 +954,7 @@
             "start_time": "09:15",
             "end_time": "09:26",
             "annotations": {
-                "expand on existing idea": "Luke is expanding on his introduction by providing more details about the applications his lab is working on, specifically bone and muscle regeneration, building upon his earlier mention of multiphoton imaging."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -992,7 +974,8 @@
             "start_time": "09:26",
             "end_time": "09:44",
             "annotations": {
-                "expand on existing idea": "Luke is expanding on his introduction by providing more details about the specific applications of his multiphoton imaging research, including muscle dynamics, mitochondria, and therapeutic stem cells, building upon his earlier statement about bone and muscle regeneration."
+                "signal expertise": "The speaker explicitly states his research focus and areas of interest, indicating his expertise in those areas.",
+                "develop idea": "The utterance expands on the speaker's earlier introduction, providing more details about his research interests and areas of focus."
             }
         },
         {
@@ -1012,7 +995,7 @@
             "start_time": "09:45",
             "end_time": "09:46",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland is explicitly inviting Matt to introduce himself and his background, continuing the round-robin introductions."
+                "encourage participation": "This code applies because Kristen Maitland is inviting Matt to contribute his thoughts or ideas, encouraging participation in the discussion."
             }
         },
         {
@@ -1032,8 +1015,7 @@
             "start_time": "10:00",
             "end_time": "10:36",
             "annotations": {
-                "explain or define term or concept": "The speaker explains their lab's focus on leveraging signals beyond brightness, specifically fluorescence polarization, to understand nanoscale chemical and biochemical dynamics, providing context to their perspective on super-resolution methods.",
-                "expand on existing idea": "The speaker expands on their lab's focus by providing specific examples of applications, such as understanding lipid architectures and amyloid protein structures, building upon the initial explanation of their research interests."
+                "signal expertise": "The speaker is explicitly stating their own expertise and the focus of their work related to understanding chemical and biochemical dynamics at the nanoscale."
             }
         },
         {
@@ -1053,7 +1035,7 @@
             "start_time": "10:36",
             "end_time": "10:39",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland is explicitly inviting Stefan to introduce himself and his background, continuing the round-robin introductions."
+                "encourage participation": "invites someone else in the group to contribute their expertise, opinions or ideas"
             }
         },
         {
@@ -1073,8 +1055,7 @@
             "start_time": "10:40",
             "end_time": "11:29",
             "annotations": {
-                "explain or define term or concept": "Stefan explains his research group's focus on nanomedicine, specifically applying nanotechnology for cancer treatment and diagnosis, which provides context for his perspective on super-resolution methods.",
-                "present new idea": "Stefan introduces the idea of using super-resolution information to understand transport pathways of drug carriers and small molecule drugs, which is a novel application within the context of the discussion."
+                "signal expertise": "He explicitly states his own expertise and qualifications, mentioning his background as a chemist and his current role as an assistant professor in biomedical engineering."
             }
         },
         {
@@ -1094,7 +1075,7 @@
             "start_time": "11:29",
             "end_time": "11:30",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges the previous speaker's introduction, showing recognition of their input."
+                "supportive response": "The utterance expresses a positive evaluation for the previous speaker's contribution, fitting the definition of a supportive response."
             }
         },
         {
@@ -1114,7 +1095,7 @@
             "start_time": "11:30",
             "end_time": "11:34",
             "annotations": {
-                "ask clarifying question": "Kristen is asking Uze to clarify the correct pronunciation of their name, indicating a need for more information."
+                "ask question": "This code applies because Kristen Maitland is requesting information from Uzay Emir about the correct pronunciation of his name."
             }
         },
         {
@@ -1134,7 +1115,7 @@
             "start_time": "11:34",
             "end_time": "11:35",
             "annotations": {
-                "explain or define term or concept": "Uzay is defining how to pronounce his name, which Kristen asked for in the prior turn."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1154,7 +1135,7 @@
             "start_time": "11:35",
             "end_time": "11:35",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges Uzay's response, thanking him for providing the correct pronunciation of his name."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1174,9 +1155,8 @@
             "start_time": "11:36",
             "end_time": "12:54",
             "annotations": {
-                "explain or define term or concept": "The speaker explains their interest in super-resolution techniques by linking lab resolution to in vivo animal resolution, clarifying their perspective on the topic.",
-                "expand on existing idea": "The speaker expands on their background and research interests, building on the initial introduction prompt by Kristen.",
-                "acknowledge contribution": "The speaker thanks Kristen for the opportunity to introduce themselves."
+                "signal expertise": "Uzay Emir explicitly states his own educational background and professional experience, signaling his expertise in biomedical engineering and his work on developing new techniques for diagnostic purposes.",
+                "clarify goal": "Uzay Emir clarifies his research focus on finding the link between lab resolution and in vivo or contact animal resolution, and his interest in super resolution techniques for various applications."
             }
         },
         {
@@ -1196,7 +1176,7 @@
             "start_time": "12:54",
             "end_time": "12:55",
             "annotations": {
-                "acknowledge contribution": "Kristen Maitland acknowledges the previous speaker's introduction."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1216,7 +1196,7 @@
             "start_time": "12:55",
             "end_time": "13:03",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland is explicitly inviting Vivian to introduce herself and contribute to the discussion, as she has done with other participants."
+                "encourage participation": "The speaker is inviting Vivian to contribute her introduction or thoughts, encouraging her participation in the discussion."
             }
         },
         {
@@ -1236,11 +1216,11 @@
             "start_time": "13:00",
             "end_time": "13:03",
             "annotations": {
-                "encourage particpatioin": "Kristen Maitland is prompting Vivian to speak by reminding her to unmute, encouraging her participation in the discussion."
+                "process management": "The speaker is managing the meeting flow by addressing a technical issue that prevents participation."
             }
         },
         {
-            "speaker": "Vivian Qian Liu",
+            "speaker": "Qian Liu",
             "timestamp": "03:05-03:53",
             "transcript": "Hello, uh, I'm Vivian Liu. I'm from McGill University. Uh, I'm at uh the Institute of uh parasitology and also McGill Center for viral diseases. I am trained as a molecular virologist and molecular cell biologist as a PhD student and then in my postdoc, I uh, I joined a biophysical lab where I learned how to build uh single molecule localization microscopy.",
             "speaking_duration": 48,
@@ -1255,11 +1235,10 @@
             "screenshare_content": "None",
             "start_time": "13:05",
             "end_time": "13:53",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Vivian is explaining her background and training, including her experience with single molecule localization microscopy, which clarifies her perspective for the group."
-                }
-            ]
+            "annotations": {
+                "signal expertise": "Vivian explicitly states her own expertise and qualifications related to the task, mentioning her training as a molecular virologist and molecular cell biologist, and her experience with single molecule localization microscopy.",
+                "None": "No relevant additional code applies to this utterance beyond signal expertise."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -1278,7 +1257,7 @@
             "start_time": "13:53",
             "end_time": "13:54",
             "annotations": {
-                "acknowledge contribution": "Kristen acknowledges the previous speaker's introduction."
+                "supportive response": "The speaker is expressing agreement and appreciation for a previous contribution, which aligns with the definition of a supportive response."
             }
         },
         {
@@ -1298,9 +1277,9 @@
             "start_time": "13:54",
             "end_time": "14:20",
             "annotations": {
-                "acknowledge contribution": "Kristen Maitland acknowledges the brief introductions from the participants, indicating she appreciates their input and that it helps provide context for the discussion.",
-                "encourage particpatioin": "Kristen Maitland mentions Candace will introduce herself when she returns, encouraging her future participation.",
-                "propose decision": "Kristen Maitland suggests resuming the discussion where they left off, proposing a concrete choice for the group."
+                "process management": "The speaker is managing the meeting flow by coordinating participation and deciding when to involve someone who is currently unavailable.",
+                "encourage participation": "The speaker invites Candace to introduce herself when she rejoins the meeting, promoting her participation.",
+                "summarize conversation": "The speaker summarizes the brief introduction provided, showing an effort to recap and move the discussion forward."
             }
         },
         {
@@ -1320,7 +1299,8 @@
             "start_time": "14:20",
             "end_time": "14:21",
             "annotations": {
-                "encourage particpatioin": "Kristen is explicitly inviting Josh to speak and contribute to the discussion, building off of what he was saying previously."
+                "ask question": "The speaker is asking Josh a question, inviting him to contribute or build upon his previous statement.",
+                "encourage participation": "The speaker is explicitly encouraging Josh to participate by inviting him to share his thoughts."
             }
         },
         {
@@ -1339,20 +1319,14 @@
             "screenshare_content": "None",
             "start_time": "14:21",
             "end_time": "15:55",
-            "annotations": [
-                {
-                    "present new idea": "Josh introduces the idea of using minimally invasive technologies as a stepping stone to non-invasive imaging, suggesting fiber bundles as an example."
-                },
-                {
-                    "expand on existing idea": "Josh expands on the idea of mitigating or utilizing multiple scattering by questioning the practicality of increasing the number of photons in multiphoton microscopy and suggesting combining super-resolution with deeper tissue imaging techniques."
-                },
-                {
-                    "offer constructive criticism": "Josh offers constructive criticism by pointing out the potential limitations of relying solely on gating out scattered photons in super-resolution microscopy due to its photon-starved nature."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Josh is expanding on previous thoughts and ideas regarding super resolution microscopy and its limitations.",
+                "ask question": "Josh poses questions about advancing to more multiphoton techniques and the application of certain technologies.",
+                "critical response": "Josh questions the practicality of advancing certain technologies."
+            }
         },
         {
-            "speaker": "Vivian Qian Liu",
+            "speaker": "Qian Liu",
             "timestamp": "04:40-05:55",
             "transcript": "Uh I want to add something uh to to uh idea. So she was mentioned about using uh how to uh how to manipulate the scattering interference. So there is something um I was thinking about. Uh, I was doing uh uh super resolution when I was doing super resolution microscope, I always wanted to stabilize the sample so that with a with a long uh long-term imaging, for example, like 30 minutes, I don't get a great uh sample drift. So one way I was thinking while I was a post talk is to use the scattering light from the cell. So we take uh we take the scattering light uh the image using scattering light of the cell at at the beginning of the imaging and after a few minutes, we take another one. So by the end, like by the end of the imaging, we could use those image to align um kind of put to the kind of uh correct the drift. So that's one thing I was thinking about. Uh, but I haven't tested and I'm not sure how precise we can do as my uh uh I claim it 10 nanometer uh uh uh precision. So I'm trying to make sure how I can how precisely I can do that. And uh some thoughts for the first uh question like how can super resolution uh methods can be translated to uh uh organismal applications. Um, I have been thinking about that for the past few years. Um, one thing I found uh uh that could be helpful is maybe uh stabilizing the floor for chemistry because right now uh I put a lot of time on doing uh imaging analysis uh like look at all the localizations and how to cluster them, how to figure out the organization of the proteins. But at the end of the day, I thought if we could use different floor force to map these what I mean is if I put it in a example, see if we have a DNA molecule, they can uh kind of fold into different structure. Like if we wanted to figure out the structure, let's see uh we can use uh maybe the barcoding system, like we can since we know the sequence, we probably can uh use the barcoding to map the entire sequence, then then we label that molecule uh on cells, then we can image that. Maybe we know, we would figure out like uh how they position the spatial. So that's So I think um maybe uh aside from the imaging processing just using AI or deep learning to look at the clusters or organizations, maybe uh uh floor for might be helpful on that. That was my thought.",
             "speaking_duration": 175,
@@ -1367,14 +1341,11 @@
             "screenshare_content": "None",
             "start_time": "14:40",
             "end_time": "15:55",
-            "annotations": [
-                {
-                    "expand on existing idea": "Vivian builds on the idea of manipulating scattering interference, mentioned earlier, by suggesting using scattering light to stabilize samples and correct for drift during long-term super-resolution imaging."
-                },
-                {
-                    "present new idea": "Vivian presents a new idea of stabilizing fluorophore chemistry and using different fluorophores to map molecules, like DNA, to understand their spatial positioning, suggesting a barcoding system based on DNA sequence."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker proposes using scattering light from the cell to correct for sample drift and suggests using different fluorescent proteins to map molecular structures.",
+                "develop idea": "The speaker expands on her previous thoughts and experiences with super resolution microscopy and drift correction.",
+                "signal expertise": "The speaker signals her expertise in super resolution microscopy and imaging analysis through her discussion of technical details and challenges."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -1392,14 +1363,10 @@
             "screenshare_content": "None",
             "start_time": "20:00",
             "end_time": "20:59",
-            "annotations": [
-                {
-                    "present new idea": "Dylan introduces the idea of the challenges of dealing with the amount of data generated from super-resolution imaging of an entire animal, which hasn't been explicitly discussed before."
-                },
-                {
-                    "express concern": "Dylan expresses concern about the feasibility and utility of obtaining super-resolution data from an entire animal due to the overwhelming amount of data and the lack of clear applications for it."
-                }
-            ]
+            "annotations": {
+                "identify gap": "The speaker highlights a gap in their current capabilities, specifically concerning data handling for super resolution in entire animals.",
+                "critical response": "The speaker questions the feasibility of super resolution in entire animals due to data handling concerns."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -1418,8 +1385,7 @@
             "start_time": "20:59",
             "end_time": "21:04",
             "annotations": {
-                "express enthusiasm": "Dylan expresses excitement about the prospect of obtaining super-resolution data from an entire animal, building on the discussion about translating super-resolution methods to organismal applications.",
-                "express frustration": "Dylan expresses being scared about the prospect of obtaining super-resolution data from an entire animal, building on the discussion about translating super-resolution methods to organismal applications."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1439,8 +1405,8 @@
             "start_time": "21:14",
             "end_time": "21:27",
             "annotations": {
-                "expand on existing idea": "Uzay is building on Dylan's previous statement about the challenges of handling large datasets from whole-animal super-resolution imaging, suggesting that his question is related to the problem Dylan raised.",
-                "acknowledge contribution": "Uzay acknowledges Dylan's contribution by stating that his question is similar to Dylan's question."
+                "develop idea": "Uzay Emir is expanding on a previous idea or question by highlighting the issue of data volume when moving to whole animals or big organisms.",
+                "identify gap": "Uzay Emir implicitly points out the challenge of handling large amounts of data, which is a gap in their current approach."
             }
         },
         {
@@ -1460,7 +1426,7 @@
             "start_time": "21:27",
             "end_time": "21:28",
             "annotations": {
-                "present new idea": "Uzay is about to introduce a new question or idea, following up on Dylan's concerns about the amount of data generated from super-resolution imaging in whole animals."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1480,7 +1446,9 @@
             "start_time": "21:30",
             "end_time": "22:07",
             "annotations": {
-                "ask clarifying question": "Uzay is asking how the other researchers, who are working on optical imaging and super-resolution microscopy, plan to translate their techniques to real-life or large animal applications, especially considering the concerns about the size of the data, building on Dylan's concern about the amount of data generated from whole animal imaging."
+                "ask question": "Uzay Emir is requesting information on how others plan to translate their techniques to real-life or bigger animal applications, especially concerning data size.",
+                "identify gap": "Uzay Emir highlights the challenge in translating optical imaging and super-resolution techniques to live animals or bigger models, indicating a gap in current methodologies.",
+                "develop idea": "Uzay Emir's question is built upon comparing his microscopic data with the more complex data from optical imaging and super resolution, slightly expanding on existing ideas."
             }
         },
         {
@@ -1500,7 +1468,7 @@
             "start_time": "22:10",
             "end_time": "22:17",
             "annotations": {
-                "ask clarifying question": "Dylan asks if it's possible to combine structured light and scattering, seeking clarification on the feasibility of this combination, building on the discussion of super-resolution techniques and their application to in vivo imaging."
+                "ask question": "The speaker is requesting information about combining structured light and scattering techniques."
             }
         },
         {
@@ -1520,7 +1488,7 @@
             "start_time": "22:17",
             "end_time": "22:20",
             "annotations": {
-                "explain or define term or concept": "Dylan is clarifying that he is not a physicist, which explains his lack of expertise in the physics-related aspects of the discussion."
+                "identify gap": "Dylan Burnette explicitly recognizes his own lack of expertise in physics, indicating a gap in his knowledge."
             }
         },
         {
@@ -1540,9 +1508,7 @@
             "start_time": "22:21",
             "end_time": "23:13",
             "annotations": {
-                "ask clarifying question": "Dylan asks if it is possible to collect scattered light when using structured light, seeking clarification on the feasibility of combining these techniques.",
-                "present new idea": "Dylan presents the idea of combining structured light with scattered light collection, which he admits he hasn't thought much about before.",
-                "express enthusiasm": "Dylan expresses enthusiasm for the idea of combining structured light and scattered light collection, calling it \"pretty cool.\""
+                "ask question": "The utterance contains a direct question about collecting scattered light from structured light information and inquires about potential complications, fitting the definition of 'ask question'."
             }
         },
         {
@@ -1561,14 +1527,10 @@
             "screenshare_content": "None",
             "start_time": "23:18",
             "end_time": "25:06",
-            "annotations": [
-                {
-                    "present new idea": "Josh introduces the idea of challenging the conventional approach of discarding scattered light in optical engineering and instead exploring how to utilize it, which is a novel concept in the context of the discussion."
-                },
-                {
-                    "expand on existing idea": "Josh expands on the idea of data overload by suggesting that super-resolution might not be necessary everywhere in a sample, proposing a method to distribute resolution efficiently, building on the previous discussion about the challenges of handling large datasets from whole-animal imaging."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "The speaker suggests removing the conventional constraint of discarding scattered light in optical engineering, which is a new idea.",
+                "develop idea": "The speaker expands on this idea by discussing its implications for resolution and data in super resolution microscopy."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -1587,7 +1549,8 @@
             "start_time": "25:07",
             "end_time": "25:07",
             "annotations": {
-                "expand on existing idea": "Matt Lew expresses his intention to build upon Josh's previously stated idea about scattering and resolution, indicating he will add details or variations to it."
+                "supportive response": "Matt Lew is expressing agreement and a desire to build upon Josh's previous statement, showing a positive evaluation of Josh's contribution.",
+                "develop idea": "By saying 'I I'd like to to build off of that', Matt Lew is indicating that he wants to expand on Josh's idea, which aligns with the definition of developing an idea."
             }
         },
         {
@@ -1606,23 +1569,11 @@
             "screenshare_content": "None",
             "start_time": "25:07",
             "end_time": "26:45",
-            "annotations": [
-                {
-                    "acknowledge contribution": {
-                        "Explanation": "Matt acknowledges Josh's point about throwing away scattered light in microscopy and ballistic imaging, recognizing Josh's contribution to the discussion."
-                    }
-                },
-                {
-                    "expand on existing idea": {
-                        "Explanation": "Matt expands on the idea of using scattered light by bringing up diffuse optical tomography (DOT) and how it's used to image the brain, building upon the previous discussion about scattering."
-                    }
-                },
-                {
-                    "present new idea": {
-                        "Explanation": "Matt presents the idea of using existing technologies like PET scans and combining them with optical imaging to solve targeted problems, introducing a new approach to the discussion."
-                    }
-                }
-            ]
+            "annotations": {
+                "develop idea": "Matt Lew is expanding on previous ideas about microscopy and ballistic imaging by suggesting the consideration of diffuse optical tomography.",
+                "propose new idea": "Matt Lew proposes exploring a new approach by suggesting the use of diffuse optical tomography and combining existing technologies with new fluorescent-based reporters.",
+                "ask question": "Matt Lew asks if there's something that optical imaging, engineered the right way, can do to solve more targeted problems, similar to PET."
+            }
         },
         {
             "speaker": "Aseema Mohanty",
@@ -1641,8 +1592,8 @@
             "start_time": "26:46",
             "end_time": "28:14",
             "annotations": {
-                "expand on existing idea": "Aseema wants to build on Matt's idea about leveraging diffuse optics by discussing limitations of current super-resolution microscopy techniques.",
-                "ask clarifying question": "Aseema asks about the limitations of using high NA objective lenses in super-resolution microscopy, specifically regarding field of view and power requirements, seeking to understand the challenges faced by those using these techniques."
+                "ask question": "The speaker is requesting information about the limitations of using super resolution microscopy with high NA objective lenses, specifically regarding field of view and illumination power.",
+                "identify gap": "The speaker identifies a gap in the discussion regarding the limitations of super resolution microscopy with high NA lenses."
             }
         },
         {
@@ -1661,11 +1612,10 @@
             "screenshare_content": "None",
             "start_time": "28:15",
             "end_time": "29:01",
-            "annotations": [
-                {
-                    "express humor": "Dylan makes a self-deprecating joke about his experience developing a technique that was not widely adopted, using humor to lighten the mood."
-                }
-            ]
+            "annotations": {
+                "express humor": "The utterance is making a joke about the speaker's own lack of success in developing a technique that was used.",
+                "acknowledge contribution": "The speaker acknowledges their contribution to the field, albeit in a self-deprecating manner."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -1684,9 +1634,8 @@
             "start_time": "29:01",
             "end_time": "29:55",
             "annotations": {
-                "expand on existing idea": "Dylan is expanding on Aseema's question about the limitations of high NA lenses in super-resolution microscopy by explaining that they are used because they are readily available, despite their limitations.",
-                "provide supporting evidence": "Dylan supports his statement about being addicted to high NA lenses by stating that they are commercially available and easy to order, which is why they are used despite their limitations.",
-                "express frustration": "Dylan expresses frustration with the limitations of high NA lenses, stating that there is no better alternative available for purchase, which limits their work in super-resolution microscopy."
+                "identify gap": "Dylan Burnette explicitly states that there is no better alternative available for purchase, highlighting a gap in technology or resources.",
+                "critical response": "Dylan Burnette critiques the current state of technology by stating that being limited to high NA lenses is 'very limiting', indicating dissatisfaction with current options."
             }
         },
         {
@@ -1706,7 +1655,8 @@
             "start_time": "29:55",
             "end_time": "30:00",
             "annotations": {
-                "explain or define term or concept": "Dylan is clarifying his understanding of super-resolution microscopy by stating that he generally puts the techniques into two categories, while acknowledging that others might have four categories."
+                "supportive response": "Dylan is contributing to the discussion by sharing his viewpoint on categorizing super resolution techniques.",
+                "develop idea": "Dylan is providing his perspective on categorizing super resolution methods, which relates to the existing discussion on the topic."
             }
         },
         {
@@ -1726,7 +1676,8 @@
             "start_time": "30:00",
             "end_time": "30:14",
             "annotations": {
-                "expand on existing idea": "Dylan is expanding on Aseema's question about the limitations of high NA lenses in super-resolution microscopy by explaining that high NA lenses limit the Z depth, or axial dimension, that one can penetrate a sample."
+                "identify gap": "The speaker explicitly recognizes a limitation of high NA lenses in super resolution microscopy, specifically regarding the Z depth or axial dimension that can be penetrated.",
+                "develop idea": "The speaker is expanding on the discussion about limitations of certain microscopy techniques, specifically high NA lenses."
             }
         },
         {
@@ -1746,7 +1697,8 @@
             "start_time": "30:00",
             "end_time": "30:12",
             "annotations": {
-                "express enthusiasm": "Dylan expresses enthusiasm about the current progress, stating that working with a quarter of a cell is good and they are still modern, showing excitement about their work."
+                "identify gap": "The speaker highlights the current limitation of their work, being at a scale of a quarter of a cell.",
+                "develop idea": "The utterance expands on the speaker's current work and its limitations."
             }
         },
         {
@@ -1766,7 +1718,8 @@
             "start_time": "30:12",
             "end_time": "30:27",
             "annotations": {
-                "ask clarifying question": "Aseema is asking if decoupling excitation from collection can improve super-resolution techniques, seeking clarification on potential benefits based on the previous discussion about limitations of high NA lenses."
+                "ask question": "The speaker is requesting information on techniques that decouple excitation from collection and their potential benefits, making this an explicit question.",
+                "develop idea": "The speaker is also exploring and discussing an idea (decoupling excitation from collection), although the primary action is asking a question."
             }
         },
         {
@@ -1786,7 +1739,7 @@
             "start_time": "30:27",
             "end_time": "30:33",
             "annotations": {
-                "reject idea": "Dylan rejects Aseema's idea about decoupling excitation from collection, stating that their microscopes aren't designed for that."
+                "identify gap": "Dylan Burnette is highlighting that their microscopes are not designed to perform a certain task, indicating a gap in their current capabilities."
             }
         },
         {
@@ -1806,9 +1759,7 @@
             "start_time": "30:33",
             "end_time": "30:56",
             "annotations": {
-                "present new idea": "Aseema presents the idea of combining her work with chips that emit light and create patterns with microscopy, suggesting a new approach to overcome limitations of current super-resolution techniques.",
-                "express enthusiasm": "Aseema expresses enthusiasm about the potential of combining her chip-based light manipulation techniques with microscopy, indicating excitement about the possibilities.",
-                "expand on existing idea": "Aseema expands on the discussion about limitations of high NA lenses by suggesting a different approach using chips with light patterns, building on the previous discussion about the challenges of current microscopy techniques."
+                "identify gap": "The speaker recognizes a gap between her field of working with little chips and light patterns and the field of microscopy, and wonders about potential combinations."
             }
         },
         {
@@ -1828,7 +1779,7 @@
             "start_time": "30:57",
             "end_time": "31:03",
             "annotations": {
-                "assign task": "This utterance assigns Dylan the task of capturing the right quarter of a cell at the right time, which is a specific responsibility."
+                "encourage participation": "The speaker is directly engaging Dylan and providing guidance on his task, encouraging his participation in the discussion."
             }
         },
         {
@@ -1848,8 +1799,8 @@
             "start_time": "31:03",
             "end_time": "31:36",
             "annotations": {
-                "expand on existing idea": "Dylan is expanding on the previous discussion about super-resolution microscopy and its limitations by providing an example of expansion microscopy and how it relates to structural elimination.",
-                "explain or define term or concept": "Dylan explains that what they now refer to as 'structure elimination' was previously known as 'low back imaging' to clarify the terminology used in their research."
+                "Develop Idea": "The speaker is elaborating on a specific technique (expansion microscopy and structure elimination) and sharing his experience with it.",
+                "Acknowledge Contribution": "The speaker is referencing his own previous work or experience."
             }
         },
         {
@@ -1869,8 +1820,7 @@
             "start_time": "31:36",
             "end_time": "31:39",
             "annotations": {
-                "express enthusiasm": "Dylan expresses excitement about the topic of discussion, as indicated by the phrase \"I'm really excited\".",
-                "express frustration": "Dylan expresses confusion about the topic of discussion, as indicated by the phrase \"I'm also kind of confused at the same time.\""
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1890,7 +1840,7 @@
             "start_time": "31:43",
             "end_time": "31:51",
             "annotations": {
-                "explain or define term or concept": "Matt Lew is explaining a fundamental limitation of fluorescence, which involves dealing with a standard dipole radiation pattern, to provide context for the discussion."
+                "None": "No relevant code directly applies to this utterance"
             }
         },
         {
@@ -1910,7 +1860,7 @@
             "start_time": "31:47",
             "end_time": "31:49",
             "annotations": {
-                "express humor": "The speaker is making a non-verbal action of drinking, which is likely intended to be humorous in the context of the conversation."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -1930,7 +1880,7 @@
             "start_time": "31:49",
             "end_time": "32:11",
             "annotations": {
-                "explain or define term or concept": "Matt Lew is explaining the fundamental limitation of fluorescence, which is the standard dipole radiation pattern, to clarify why light goes everywhere, building on the discussion about limitations of current microscopy techniques."
+                "develop idea": "The speaker is elaborating on a concept previously discussed, providing more details about the behavior of light and its dispersion in relation to dipole radiation patterns."
             }
         },
         {
@@ -1950,8 +1900,8 @@
             "start_time": "32:11",
             "end_time": "32:33",
             "annotations": {
-                "expand on existing idea": "Matt Lew is expanding on the discussion about limitations of high NA lenses and decoupling excitation and emission, building on Aseema's question about decoupling excitation and collection and Dylan's response that their microscopes aren't designed for that.",
-                "explain or define term or concept": "Matt Lew explains that decoupling excitation and emission in light sheet microscopy becomes a mechanical engineering problem due to the difficulty of placing two high NA objectives next to each other, clarifying a practical challenge related to the technique."
+                "identify gap": "The speaker highlights a technical limitation in microscopy, specifically the mechanical challenge of placing two high NA objectives next to each other.",
+                "develop idea": "The speaker is discussing and elaborating on the challenges of decoupling excitation and emission in light sheet microscopy, providing insight into current technical limitations."
             }
         },
         {
@@ -1971,9 +1921,8 @@
             "start_time": "32:33",
             "end_time": "32:55",
             "annotations": {
-                "expand on existing idea": "Matt Lew is building on the discussion about limitations of high NA lenses and decoupling excitation/emission by mentioning Andrew York's work on remote focusing as a potential solution.",
-                "provide supporting evidence": "Matt Lew mentions Andrew York's work at Calico labs as an example of innovative work combining light sheet scanning with high NA detection, supporting the idea of pushing the boundaries of high-resolution imaging in organisms.",
-                "express enthusiasm": "Matt Lew expresses excitement about Andrew York's work, indicating optimism about its potential to advance high-resolution imaging in organisms."
+                "Supportive response": "Matt Lew is expressing a positive view on recent developments in optical imaging, specifically Andrew York's work on remote focusing.",
+                "Develop idea": "He is expanding on existing ideas by discussing the potential and implications of remote focusing and high NA detection in high-resolution imaging."
             }
         },
         {
@@ -1993,7 +1942,8 @@
             "start_time": "32:57",
             "end_time": "33:34",
             "annotations": {
-                "ask clarifying question": "Aseema is asking about the community's acceptance of semi-invasive techniques to improve light sheet microscopy, building on the discussion about limitations of current high NA lens techniques."
+                "ask question": "The speaker is requesting information about the community's tolerance for certain types of invasive techniques or tools in microscopy and imaging.",
+                "None": "No"
             }
         },
         {
@@ -2013,8 +1963,8 @@
             "start_time": "33:34",
             "end_time": "34:03",
             "annotations": {
-                "express agreement": "Matt agrees with Aseema's question about tolerance in the community for semi-invasive techniques, indicating that head-mounted microscopes and cover slip-based super-resolution methods are already somewhat invasive.",
-                "expand on existing idea": "Matt expands on the idea of semi-invasive techniques by providing examples like head-mounted microscopes and cover slip-based super-resolution methods, suggesting that the community is already somewhat tolerant of such approaches."
+                "Supportive response": "The speaker is expressing agreement and providing examples to support the discussion.",
+                "Develop idea": "The speaker is expanding on a previous idea by providing examples and considerations."
             }
         },
         {
@@ -2034,7 +1984,7 @@
             "start_time": "34:09",
             "end_time": "34:15",
             "annotations": {
-                "ask clarifying question": "Luke is asking for an explanation on how to detect scattered light, showing he wants to understand the practical methods for doing so, which builds on the prior discussion about using scattered light for imaging."
+                "ask question": "Requesting information or clarification on detecting scattered light."
             }
         },
         {
@@ -2053,14 +2003,10 @@
             "screenshare_content": "None",
             "start_time": "34:15",
             "end_time": "34:24",
-            "annotations": [
-                {
-                    "ask clarifying question": "Dylan is asking about the type of detectors needed to detect scattered light, seeking clarification on the practical aspects of implementing the idea of using scattered light for imaging."
-                },
-                {
-                    "encourage particpatioin": "Dylan is encouraging others to contribute by asking what kind of detectors they are imagining."
-                }
-            ]
+            "annotations": {
+                "ask question": "The utterance explicitly asks a question about the kind of detectors needed for imaging techniques.",
+                "develop idea": "The utterance briefly elaborates on the type of detector, suggesting a 'flat CMOS chip'."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -2079,7 +2025,7 @@
             "start_time": "34:24",
             "end_time": "34:44",
             "annotations": {
-                "ask clarifying question": "Dylan is asking what kind of detectors Luke is imagining to capture the scattered light, seeking clarification on the practical aspects of the proposed method."
+                "ask question": "The speaker is requesting information about the feasibility of capturing scattered light, asking if it already exists or if it needs to be invented."
             }
         },
         {
@@ -2099,7 +2045,7 @@
             "start_time": "34:44",
             "end_time": "34:47",
             "annotations": {
-                "encourage particpatioin": "Kristen offers to jump in, which encourages others to participate in the discussion."
+                "None": "No relevant code explicitly applies to this utterance"
             }
         },
         {
@@ -2118,11 +2064,9 @@
             "screenshare_content": "None",
             "start_time": "34:47",
             "end_time": "35:04",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Kristen is explaining the concept of structured illumination and how it relates to capturing images with a camera, clarifying how light scatters during the process."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The utterance expands on the concept of structured illumination and its effects, which seems to be an existing idea being elaborated upon."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -2141,9 +2085,7 @@
             "start_time": "35:04",
             "end_time": "35:55",
             "annotations": {
-                "explain or define term or concept": "Kristen explains how structured illumination captures light and uses algorithms to remove scattered light, and how confocal microscopy uses a pinhole to block scattered light and collect ballistic photons, clarifying the processes involved in each technique.",
-                "expand on existing idea": "Kristen expands on the discussion about detecting scattered light by explaining how structured illumination and confocal microscopy handle it, building on the previous questions about detectors and scattered light.",
-                "provide supporting evidence": "Kristen supports her explanation by describing the specific mechanisms used in structured illumination and confocal microscopy to handle scattered light, providing concrete examples of how these techniques work."
+                "develop idea": "The utterance explains and compares existing microscopy techniques, particularly how they handle scattered light, thereby expanding on current ideas in the field."
             }
         },
         {
@@ -2163,7 +2105,8 @@
             "start_time": "35:55",
             "end_time": "36:00",
             "annotations": {
-                "explain or define term or concept": "Kristen is explaining how the detection of scattered light depends on the imaging strategy and orientation, clarifying the relationship between these factors and light collection."
+                "develop idea": "The speaker is expanding on an existing idea about handling scattered light in imaging and how it depends on the imaging strategy and orientation.",
+                "offer feedback": "The speaker is providing specific suggestions or considerations for improvement in how the team thinks about imaging strategies and their impact on outcomes."
             }
         },
         {
@@ -2183,7 +2126,7 @@
             "start_time": "36:04",
             "end_time": "36:17",
             "annotations": {
-                "ask clarifying question": "Dylan asks if they are still talking about a single detector when using scattered light, seeking clarification on the detection method for scattered light, which Luke asked about in the previous turn."
+                "ask question": "The speaker is requesting information or clarification on whether they are still talking about a single detector when using scattered light."
             }
         },
         {
@@ -2203,7 +2146,7 @@
             "start_time": "36:17",
             "end_time": "36:18",
             "annotations": {
-                "resolve conflict": "Kristen's response of \"Well, it depends\" serves to mediate the discussion by acknowledging that the answer is not straightforward and depends on the specific context, following a discussion about detecting scattered light and imaging strategies."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2223,8 +2166,8 @@
             "start_time": "36:18",
             "end_time": "37:08",
             "annotations": {
-                "explain or define term or concept": "Kristen explains that in multi-photon imaging, one might want to capture all the scattered multi-photon light to collect more signal, clarifying the concept of capturing scattered light in different imaging strategies.",
-                "encourage particpatioin": "Kristen encourages others to contribute to the discussion at any point."
+                "develop idea": "The speaker elaborates on the concept of capturing scattered multi-photon light in imaging strategies.",
+                "encourage participation": "The speaker invites others to contribute to the discussion."
             }
         },
         {
@@ -2243,11 +2186,7 @@
             "screenshare_content": "None",
             "start_time": "37:09",
             "end_time": "37:12",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dylan acknowledges Kristen's explanation of how scattered light is handled in different imaging strategies, but does not agree or expand on it."
-                }
-            ]
+            "annotations": {}
         },
         {
             "speaker": "Luke Mortensen",
@@ -2266,7 +2205,7 @@
             "start_time": "37:09",
             "end_time": "37:12",
             "annotations": {
-                "ask clarifying question": "Luke is asking for an explanation on how to detect scattered light, indicating he needs clarification on this concept, which is a follow up to the discussion about structured illumination and capturing images with a camera."
+                "ask question": "The speaker is requesting information or clarification on how to detect scattered light, which is a direct question seeking expertise or knowledge from other group members."
             }
         },
         {
@@ -2285,11 +2224,9 @@
             "screenshare_content": "None",
             "start_time": "37:13",
             "end_time": "37:27",
-            "annotations": [
-                {
-                    "ask clarifying question": "Dylan is asking what kind of detectors are needed to detect scattered light, following up on Luke's question about how to detect scattered light."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information about the kind of detectors needed."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -2308,7 +2245,8 @@
             "start_time": "37:29",
             "end_time": "37:44",
             "annotations": {
-                "ask clarifying question": "Dylan asks what kind of detectors are being imagined to capture the scattered light, questioning whether existing technology can be used or if new technology needs to be invented, following up on Luke's question about detecting scattered light."
+                "ask question": "The speaker is requesting information about the detectors for scattered light.",
+                "identify gap": "The speaker is highlighting a practical gap in knowledge or tools for capturing scattered light."
             }
         },
         {
@@ -2328,7 +2266,8 @@
             "start_time": "37:44",
             "end_time": "37:47",
             "annotations": {
-                "encourage particpatioin": "Kristen offers to contribute to the discussion, encouraging further participation from others."
+                "encourage participation": "The speaker invites others to contribute to the discussion.",
+                "supportive response": "The speaker expresses willingness to engage further, showing a positive and supportive attitude."
             }
         },
         {
@@ -2348,7 +2287,7 @@
             "start_time": "37:47",
             "end_time": "38:04",
             "annotations": {
-                "explain or define term or concept": "Kristen is explaining the concept of structured illumination and how light scatters when capturing an image with a camera, providing context for the subsequent discussion on detecting scattered light."
+                "develop idea": "This code applies because Kristen Maitland is expanding on an existing idea by explaining how structured illumination works, specifically in relation to light scattering and image capture."
             }
         },
         {
@@ -2367,11 +2306,9 @@
             "screenshare_content": "None",
             "start_time": "38:04",
             "end_time": "38:55",
-            "annotations": [
-                {
-                    "explain or define term or concept": "The speaker explains how structured illumination captures scattered light and removes it algorithmically, and how confocal microscopy uses a pinhole to block scattered light, clarifying the different approaches to handling scattered light in these techniques, in response to a question about detecting scattered light."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding, building upon, or elaborating existing ideas through explanation and examples of how light is collected and processed in different microscopy techniques."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -2390,7 +2327,7 @@
             "start_time": "38:55",
             "end_time": "39:04",
             "annotations": {
-                "explain or define term or concept": "This sentence explains that the method of detecting scattered light depends on the imaging strategy and orientation, clarifying the factors influencing the detection process."
+                "develop idea": "The speaker is expanding on the idea of handling scattered light in imaging by mentioning the importance of imaging strategy and orientation."
             }
         },
         {
@@ -2410,7 +2347,7 @@
             "start_time": "40:00",
             "end_time": "40:11",
             "annotations": {
-                "explain or define term or concept": "This utterance explains how scattering affects both illumination and focusing in tissue samples, clarifying the concept of scattering in the context of imaging."
+                "identify gap": "The speaker is discussing a challenge or limitation (scattering in tissue affecting imaging) that can be considered a gap in current methods."
             }
         },
         {
@@ -2430,7 +2367,9 @@
             "start_time": "40:11",
             "end_time": "40:30",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the previously mentioned idea of scattering in tissue affecting illumination by adding that it also affects light collection, building on the discussion of how scattering impacts imaging."
+                "develop idea": "The speaker expands on existing ideas by discussing approaches to control light for better imaging through tissue.",
+                "offer feedback": "The speaker provides suggestions for improving illumination and focusing in imaging techniques.",
+                "supportive response": "The utterance expresses a positive evaluation of certain approaches to improving imaging techniques."
             }
         },
         {
@@ -2450,7 +2389,8 @@
             "start_time": "40:30",
             "end_time": "40:44",
             "annotations": {
-                "expand on existing idea": "Kristen is expanding on the previous discussion about detecting scattered light and imaging strategies by suggesting using reflectance information alongside fluorescence imaging to gather more data."
+                "develop idea": "The speaker is expanding on existing ideas by suggesting to use both fluorescence and reflectance information for imaging.",
+                "offer feedback": "The speaker is providing a suggestion for how to improve the imaging process."
             }
         },
         {
@@ -2470,8 +2410,7 @@
             "start_time": "40:44",
             "end_time": "41:16",
             "annotations": {
-                "explain or define term or concept": "Kristen is explaining the importance of considering the overall imaging goal, the specific imaging system, and the impact of scattering on image quality, which is a conceptual overview.",
-                "encourage particpatioin": "Kristen is encouraging the group to consider the big picture and how scattering affects their imaging, inviting them to think broadly about the problem."
+                "offer feedback": "Kristen is providing a suggestion for how to approach the problem of scattering in imaging, which can be seen as offering feedback on the methodological approach."
             }
         },
         {
@@ -2491,8 +2430,8 @@
             "start_time": "41:16",
             "end_time": "41:17",
             "annotations": {
-                "explain or define term or concept": "This sentence explains how scattering affects the ability to image at a certain depth, resolution, or field of view, which is a clarification of the concept of imaging limitations.",
-                "expand on existing idea": "This sentence builds upon the previous discussion about scattering in tissue and its effects on imaging, adding details about how it influences resolution, depth, and field of view."
+                "develop idea": "The utterance expands on existing ideas by considering the sample's influence on imaging capabilities.",
+                "clarify goal": "The utterance helps clarify considerations for imaging goals by discussing factors that impact imaging objectives."
             }
         },
         {
@@ -2512,7 +2451,7 @@
             "start_time": "41:17",
             "end_time": "41:23",
             "annotations": {
-                "expand on existing idea": "Matt Lew is building upon the previous discussion about imaging and scattering, referencing Sixian's earlier comments to connect his point to the initial topic."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -2532,7 +2471,7 @@
             "start_time": "41:23",
             "end_time": "41:30",
             "annotations": {
-                "explain or define term or concept": "This sentence explains the concept of light scattering in fluorescence microscopy, which is relevant to the ongoing discussion about super-resolution techniques and their limitations in biological tissues."
+                "develop idea": "The speaker is expanding on previous ideas by discussing the issue of multiply scattered light in fluorescence imaging."
             }
         },
         {
@@ -2552,8 +2491,8 @@
             "start_time": "41:30",
             "end_time": "41:42",
             "annotations": {
-                "expand on existing idea": "Matt is expanding on the previous discussion about detecting scattered light, building on Kristen's explanation of how scattering affects imaging and Sixian's initial question about mitigating or utilizing multiple scattering.",
-                "explain or define term or concept": "Matt is explaining a method of detecting scattered photons by waiting for them to arrive at the detector, as they take longer to reach the detector due to multiple scattering events."
+                "propose new idea": "Matt Lew introduces an approach for detecting scattered photons by suggesting to wait long enough for them to arrive.",
+                "develop idea": "He elaborates on this approach by explaining that multiply scattered photons take longer to arrive and can be detected by waiting and seeing where they landed."
             }
         },
         {
@@ -2573,7 +2512,8 @@
             "start_time": "41:42",
             "end_time": "42:10",
             "annotations": {
-                "acknowledge contribution": "Matt Lew acknowledges Josh's expertise in imaging instruments and deterministic scattering, recognizing his contribution to the discussion."
+                "develop idea": "The speaker is expanding on a previous idea about using scattered light.",
+                "signal expertise": "The speaker mentions Josh as a better expert in the area."
             }
         },
         {
@@ -2593,9 +2533,9 @@
             "start_time": "42:10",
             "end_time": "42:45",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about detecting scattered light and leveraging it for imaging, adding the idea of changing the instrument to better leverage scattering patterns.",
-                "explain or define term or concept": "The speaker explains that changing the instrument to leverage scattering patterns makes the imaging problem harder because it moves away from relying on a perfectly engineered objective.",
-                "provide supporting evidence": "The speaker provides reasoning to strengthen the idea of changing the instrument, stating that it can provide a signature for fixing the image."
+                "propose new idea": "The speaker suggests modifying the instrument to better leverage scattering patterns for improved imaging.",
+                "develop idea": "The speaker elaborates on the idea of using scattering patterns to create a signature for fixing the image.",
+                "offer feedback": "The speaker provides a specific suggestion for improving imaging techniques by leveraging scattering patterns."
             }
         },
         {
@@ -2615,9 +2555,8 @@
             "start_time": "42:45",
             "end_time": "42:46",
             "annotations": {
-                "expand on existing idea": "Matt is building on the previous discussion about detecting scattered light and how to leverage it, adding that the imaging system needs to be reoptimized for the specific sample to account for deterministic scattering.",
-                "explain or define term or concept": "Matt explains that with elastically scattered light, there's no way to identify it because the photon energy remains the same, clarifying a key concept in the discussion.",
-                "provide supporting evidence": "Matt provides the reasoning that the photon energy remains the same with elastically scattered light, supporting the claim that it's difficult to identify."
+                "develop idea": "Matt Lew is expanding on previous discussions about the challenges of super resolution microscopy, specifically discussing the need to reoptimize the imaging system for each sample and the challenges of detecting scattered light.",
+                "clarify goal": "Matt Lew is also clarifying the goal of achieving high-resolution imaging through scattering media and the challenges associated with it."
             }
         },
         {
@@ -2637,7 +2576,7 @@
             "start_time": "42:48",
             "end_time": "42:57",
             "annotations": {
-                "present new idea": "Josh introduces the idea that scattering, contrary to conventional wisdom, can actually be helpful, which is a novel concept in the context of the discussion."
+                "develop idea": "The speaker is expanding on the concept of scattering in relation to numerical aperture, building on previous discussion."
             }
         },
         {
@@ -2657,8 +2596,8 @@
             "start_time": "42:57",
             "end_time": "43:17",
             "annotations": {
-                "explain or define term or concept": "The speaker explains that high numerical aperture (NA) is fundamentally about high spatial frequencies and high angle illumination, clarifying the concept of NA in the context of the discussion.",
-                "expand on existing idea": "The speaker expands on the discussion about scattering by stating that scattering can help achieve high NA because it creates high angle illumination, building on the previous discussion about scattering and its effects on imaging."
+                "develop idea": "The speaker is expanding on an existing idea about the relationship between high NA, spatial frequencies, and scattering in microscopy.",
+                "signal expertise": "The speaker is explicitly demonstrating his expertise in microscopy and optical imaging."
             }
         },
         {
@@ -2678,8 +2617,9 @@
             "start_time": "43:17",
             "end_time": "43:44",
             "annotations": {
-                "expand on existing idea": "Josh is building on the previous discussion about scattering and numerical aperture, suggesting that scattering, traditionally seen as an enemy in imaging, can be leveraged to create high angle illumination, which is related to high numerical aperture, and to decouple traditional lens design constraints.",
-                "present new idea": "Josh presents the idea of making the enemy (scattering) a friend by taking advantage of it and decoupling from the traditional connection with lenses between field of view, working depth, NA, and the geometrical piece of lens design, which was not explicitly mentioned before."
+                "propose new idea": "The speaker introduces a new perspective on handling scattering and its implications for lens design and imaging limitations.",
+                "develop idea": "The speaker builds upon previous discussions, particularly those related to scattering and imaging limitations.",
+                "offer feedback": "The speaker provides his perspective as feedback on how to approach the challenge."
             }
         },
         {
@@ -2699,9 +2639,7 @@
             "start_time": "43:44",
             "end_time": "44:01",
             "annotations": {
-                "expand on existing idea": "This utterance expands on the idea of scattering and high numerical aperture by suggesting a different way to think about lenses, building on the previous discussion about leveraging scattering and high NA to improve imaging.",
-                "acknowledge contribution": "The speaker acknowledges Laura Waller's perspective on lenses as matrices, recognizing her contribution to the field.",
-                "express enthusiasm": "The speaker expresses enthusiasm for the idea of thinking about lenses as matrices, indicating excitement about this perspective."
+                "develop idea": "The speaker is expanding on an idea by referencing a concept from Laura Waller, discussing lenses as matrices, which indicates building upon existing ideas."
             }
         },
         {
@@ -2721,9 +2659,8 @@
             "start_time": "44:01",
             "end_time": "44:21",
             "annotations": {
-                "present new idea": "Josh introduces the idea of replacing a lens with a cube of salt or sugar and leveraging its mathematical matrix properties, which is a novel concept in the context of the discussion.",
-                "expand on existing idea": "Josh expands on the idea of scattering and high numerical aperture (NA) by suggesting that scattering can be helpful and that the traditional connection between lenses, field of view, working depth, and NA can be decoupled.",
-                "provide supporting evidence": "Josh supports his idea by referencing Laura Waller's concept of thinking of a lens as a matrix, providing a basis for leveraging the properties of scattering materials."
+                "propose new idea": "The speaker introduces a new approach from the wavefront shaping community about replacing a lens with a cube of salt or sugar to manipulate light.",
+                "develop idea": "The speaker elaborates on the potential benefits and workings of this approach, discussing the importance of understanding the 'matrix' of the medium."
             }
         },
         {
@@ -2743,7 +2680,7 @@
             "start_time": "44:22",
             "end_time": "44:23",
             "annotations": {
-                "acknowledge contribution": "Sixian acknowledges a previous point made by another participant, showing recognition of their input."
+                "supportive response": "The speaker expresses agreement and positive evaluation of a prior statement."
             }
         },
         {
@@ -2762,11 +2699,9 @@
             "screenshare_content": "None",
             "start_time": "44:23",
             "end_time": "44:27",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Sixian acknowledges Josh's point about scattering and high NA, but does not agree or expand on it."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Sixian You",
@@ -2784,11 +2719,9 @@
             "screenshare_content": "None",
             "start_time": "44:27",
             "end_time": "44:39",
-            "annotations": [
-                {
-                    "expand on existing idea": "This utterance builds upon the previously mentioned idea of thinking about lenses as matrices, adding the analogy of a lens being a 'face mask' that can be reverse-engineered to achieve a desired point spread function."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker expands on a concept related to lenses, suggesting that a lens can be thought of as a 'face mask' that can be reverse-engineered to achieve a desired point spread function."
+            }
         },
         {
             "speaker": "Sixian You",
@@ -2807,9 +2740,8 @@
             "start_time": "44:39",
             "end_time": "44:52",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "The phrase \"back to Dylan's question, that's actually really um, uh, I think it's also a very good point\" acknowledges Dylan's prior question."
-                }
+                "supportive response": "The speaker is expressing agreement and validation for Dylan's question.",
+                "offer feedback": "The speaker is providing a suggestion on how to proceed with the discussion."
             }
         },
         {
@@ -2829,7 +2761,7 @@
             "start_time": "44:52",
             "end_time": "45:01",
             "annotations": {
-                "present new idea": "This sentence introduces a novel concept of reassigning photons based on their properties, which hasn't been explicitly discussed in this specific way before, though the general idea of leveraging scattered light has been discussed."
+                "ask question": "The speaker is requesting information or clarification on how to reassign photons based on different properties or characteristics, which is a direct question."
             }
         },
         {
@@ -2848,14 +2780,10 @@
             "screenshare_content": "None",
             "start_time": "45:01",
             "end_time": "45:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sixian is expanding on the previous point about detection by introducing a second approach to address the problem of scattering, building upon the discussion of reassigning photons based on their properties."
-                },
-                {
-                    "present new idea": "Sixian presents a new idea of using wavefront engineering or scattering compensation to improve illumination in light sheet microscopy, which is a novel approach not explicitly mentioned before."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is suggesting a specific approach (using wavefront engineering or scattering compensation) to overcome the challenge of getting a nice light sheet after scattering in light sheet microscopy.",
+                "ask question": "The speaker is asking how to form the beam for light sheet microscopy to achieve a nice illumination."
+            }
         },
         {
             "speaker": "Sixian You",
@@ -2873,14 +2801,9 @@
             "screenshare_content": "None",
             "start_time": "45:25",
             "end_time": "45:38",
-            "annotations": [
-                {
-                    "present new idea": "Sixian is presenting a new idea about not worrying about detection later by focusing on beam formation, which hasn't been explicitly discussed in this way before."
-                },
-                {
-                    "ask clarifying question": "Sixian is asking a clarifying question about the fundamental limits in either direction (detection or beam formation), seeking to understand the constraints of each approach."
-                }
-            ]
+            "annotations": {
+                "ask question": "The speaker is requesting information or clarification on the fundamental limit in either direction."
+            }
         },
         {
             "speaker": "Sixian You",
@@ -2899,9 +2822,7 @@
             "start_time": "45:38",
             "end_time": "46:01",
             "annotations": {
-                "ask clarifying question": "Sixian is asking if the effort to increase imaging depth by 10% using various methods is worthwhile, given the limitations in both detection and illumination, following a discussion about leveraging scattered light and wavefront engineering.",
-                "expand on existing idea": "Sixian expands on the previous discussion about detection and illumination methods by questioning the fundamental limits and trade-offs involved in pushing imaging depth further, building on the conversation about numerical aperture and scattering.",
-                "provide supporting evidence": "Sixian provides supporting evidence for the limitations of both detection and illumination by mentioning photon starvation and noise issues in detection, and the limits of compensation in illumination, following a discussion about the challenges of imaging deeper into tissue."
+                "ask question": "The speaker is requesting information or discussion on the feasibility or worth of a certain approach."
             }
         },
         {
@@ -2921,8 +2842,7 @@
             "start_time": "46:01",
             "end_time": "46:12",
             "annotations": {
-                "explain or define term or concept": "The speaker explains the concept of losing correlation between photons and the point where it becomes a random walk, which is important for understanding the limits of imaging techniques.",
-                "ask clarifying question": "The speaker is asking what the fundamental challenge in the field is right now, seeking to understand the limitations of current methods."
+                "ask question": "The speaker is requesting information or clarification on the fundamental challenges in the field of super resolution microscopy."
             }
         },
         {
@@ -2942,7 +2862,8 @@
             "start_time": "46:13",
             "end_time": "46:16",
             "annotations": {
-                "encourage particpatioin": "Kristen is explicitly inviting Luke to contribute to the discussion, ensuring everyone has a chance to speak, as she mentioned earlier."
+                "ask question": "The speaker is requesting information or input from Luke.",
+                "encourage participation": "The speaker is inviting Luke to contribute to the discussion."
             }
         },
         {
@@ -2962,7 +2883,7 @@
             "start_time": "46:18",
             "end_time": "46:20",
             "annotations": {
-                "acknowledge contribution": "Luke is responding to Kristen's request to hear from him, acknowledging her invitation for him to speak."
+                "Supportive response": "The utterance 'Um, yeah, sure.' expresses agreement or acknowledgment of previous statements without adding new content."
             }
         },
         {
@@ -2982,7 +2903,8 @@
             "start_time": "46:20",
             "end_time": "46:35",
             "annotations": {
-                "present new idea": "Luke introduces the idea that a major challenge is how much deeper one can image, which hasn't been explicitly stated as a primary challenge in the immediately preceding conversation, though depth has been mentioned as a limitation."
+                "ask question": "Luke Mortensen is requesting information about the limitations of super-resolution methods, specifically how deep or far they can go.",
+                "identify gap": "Luke Mortensen is explicitly recognizing a gap in the capability of super-resolution methods, questioning how much deeper or further they can go."
             }
         },
         {
@@ -3002,8 +2924,8 @@
             "start_time": "46:35",
             "end_time": "47:17",
             "annotations": {
-                "expand on existing idea": "Luke is building on the previous discussion about the challenges of imaging deeper into tissue, adding that the time required to acquire enough photons to overcome SNR problems is a significant issue.",
-                "present new idea": "Luke introduces the problem of long acquisition times needed to get enough photons and overcome SNR issues when imaging deeper, which hasn't been explicitly discussed before."
+                "ask question": "The speaker is asking a question about the time required to get enough photons and overcome SNR problems.",
+                "identify gap": "The speaker is pointing out a challenge or gap in current methods related to the time needed for detection and SNR."
             }
         },
         {
@@ -3023,8 +2945,8 @@
             "start_time": "47:17",
             "end_time": "47:41",
             "annotations": {
-                "expand on existing idea": "Luke is expanding on the previous discussion about the challenges of imaging deeper into tissue, adding that the time required for correction factors is a significant problem, especially for whole organisms.",
-                "express frustration": "Luke expresses frustration with the time it takes to perform correction factors, implying that it is a significant limitation to current methods."
+                "identify gap": "The speaker highlights the limitations of current best-in-class technology for imaging whole organisms.",
+                "critical response": "The speaker discusses the challenges and limitations, providing a critical view of current capabilities."
             }
         },
         {
@@ -3044,7 +2966,7 @@
             "start_time": "47:41",
             "end_time": "47:50",
             "annotations": {
-                "expand on existing idea": "Luke is building on the previous discussion about the challenges of imaging deeper into tissue, adding that signal, movement, and time are major issues to consider, expanding on the challenges of pushing the depth of imaging."
+                "critical response": "The speaker is questioning the feasibility or practicality of certain approaches by highlighting major issues related to signal, movement, and time."
             }
         },
         {
@@ -3064,9 +2986,8 @@
             "start_time": "47:50",
             "end_time": "48:17",
             "annotations": {
-                "expand on existing idea": "Luke is building on the previous discussion about the challenges of imaging deeper into tissue and the trade-offs between resolution, depth, and time, adding the point that the time required for correction and detection is a significant issue.",
-                "express alternative decision": "Luke is expressing an alternative to the approach of full deconstruction of the organism, suggesting that it would be more useful to understand how things are altering with time in a dynamic setting.",
-                "present new idea": "Luke is presenting the idea of bridging the gap between full deconstruction of the organism and dynamic imaging, which is a new concept in the context of the discussion."
+                "critical response": "Luke questions the feasibility or practicality of fully deconstructing an organism, highlighting the challenge of transitioning to a dynamic setting.",
+                "supportive response": "Luke acknowledges that full deconstruction is a 'useful and insightful approach', showing agreement with its value."
             }
         },
         {
@@ -3085,11 +3006,10 @@
             "screenshare_content": "None",
             "start_time": "48:18",
             "end_time": "48:25",
-            "annotations": [
-                {
-                    "expand on existing idea": "Dylan is building on Luke's point about the challenges of imaging deeper and the time it takes to get there, adding the dimension of time to the discussion."
-                }
-            ]
+            "annotations": {
+                "critical response": "The speaker is expressing a concern or challenge regarding the detection of things in multiple dimensions, specifically over time.",
+                "None": "No additional codes seem to apply as the utterance primarily functions as a critical response."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -3107,14 +3027,10 @@
             "screenshare_content": "None",
             "start_time": "48:25",
             "end_time": "48:47",
-            "annotations": [
-                {
-                    "expand on existing idea": "Dylan is expanding on the discussion of detecting scattered light and improving imaging depth by suggesting the use of multiple detectors, building upon the previous discussion about challenges in detecting scattered light and the limitations of current imaging techniques."
-                },
-                {
-                    "ask clarifying question": "Dylan is asking if using multiple detectors is a viable solution to improve detection in multiple dimensions, building upon the previous discussion about challenges in detecting scattered light and the limitations of current imaging techniques."
-                }
-            ]
+            "annotations": {
+                "Ask Question": "The speaker is requesting information about the possibility of using multiple detectors.",
+                "Develop Idea": "The speaker is expanding on an idea related to experimental setup, specifically discussing the use of multiple detectors in microscopy."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -3133,9 +3049,8 @@
             "start_time": "48:47",
             "end_time": "49:03",
             "annotations": {
-                "present new idea": {
-                    "Explanation": "Dylan suggests alternating detectors or moving the camera closer to detect signals that take longer to arrive, presenting a novel approach to signal detection."
-                }
+                "ask question": "The speaker is requesting information on the feasibility of alternating detectors.",
+                "propose new idea": "The speaker suggests an alternative approach to detect things that take longer to get there."
             }
         },
         {
@@ -3155,9 +3070,8 @@
             "start_time": "49:03",
             "end_time": "49:14",
             "annotations": {
-                "reject idea": {
-                    "Explanation": "Dylan rejects the idea that the problem can be solved with one camera, implying it will take too long to image an organism, building on the prior discussion about the challenges of imaging depth and time."
-                }
+                "critical response": "The speaker is questioning the feasibility of using one camera to image an organism, implying a negative evaluation of this approach.",
+                "identify gap": "The speaker is highlighting a limitation in the current approach, specifically the time it would take to image an organism with one camera."
             }
         },
         {
@@ -3177,7 +3091,7 @@
             "start_time": "49:15",
             "end_time": "49:17",
             "annotations": {
-                "express agreement": "Sixian You expresses agreement with Dylan Burnette's idea that multiple detectors might be needed for imaging an organism, indicating support for the idea."
+                "supportive response": "The speaker is expressing agreement and validation for Dylan Burnette's previous statement, providing a supportive comment."
             }
         },
         {
@@ -3197,8 +3111,7 @@
             "start_time": "50:00",
             "end_time": "50:12",
             "annotations": {
-                "expand on existing idea": "Sixian is expanding on Dylan's idea of using multiple detectors by pointing out the trade-off between multiplexing and photon availability, building on the discussion about detection methods and their limitations.",
-                "provide supporting evidence": "Sixian supports the idea of trade-offs by stating that the more multiplexed the system, the fewer photons are available, providing a reason why using multiple detectors might not be a straightforward solution."
+                "offer feedback": "The speaker provides a consideration of trade-offs involved in multiplexing and photon availability, offering a perspective on challenges in imaging."
             }
         },
         {
@@ -3218,7 +3131,7 @@
             "start_time": "50:21",
             "end_time": "50:34",
             "annotations": {
-                "encourage particpatioin": "Kristen is directly asking Candace to introduce herself and her interests, which encourages her to participate in the discussion."
+                "encourage participation": "The speaker invites Candace to introduce herself and share her expertise related to super resolution, encouraging her participation in the discussion."
             }
         },
         {
@@ -3237,14 +3150,10 @@
             "screenshare_content": "None",
             "start_time": "50:35",
             "end_time": "51:11",
-            "annotations": [
-                {
-                    "explain or define term or concept": "Candace is explaining that while her group doesn't do super-resolution in the optical sense, they have similar techniques in MR spectroscopy, clarifying the term 'super resolution' in the context of her work."
-                },
-                {
-                    "acknowledge contribution": "Candace acknowledges that she heard the term multiplexing, recognizing the contribution of the previous speakers."
-                }
-            ]
+            "annotations": {
+                "ask question": "Candace asks about compressed sensing and mentions hearing 'multiplexing', indicating she is seeking information.",
+                "signal expertise": "Candace shares her background in MR spectroscopy and optical imaging, signaling her expertise."
+            }
         },
         {
             "speaker": "Uzay Emir",
@@ -3263,7 +3172,7 @@
             "start_time": "51:12",
             "end_time": "51:15",
             "annotations": {
-                "acknowledge contribution": "Uzay acknowledges Candace's introduction and contribution, but does not agree or expand on it."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3283,7 +3192,7 @@
             "start_time": "51:16",
             "end_time": "51:18",
             "annotations": {
-                "express agreement": "Candace is explicitly agreeing with Uzay's statement that their resolution levels are not the same, indicating agreement with the prior speaker."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3303,8 +3212,8 @@
             "start_time": "51:19",
             "end_time": "51:51",
             "annotations": {
-                "present new idea": "Uzay introduces the idea of using magnetic properties to change optical behavior for multimodal imaging, which hasn't been discussed before.",
-                "encourage particpatioin": "Uzay ends the utterance by asking if anyone is interested in this perspective, inviting others to contribute to the discussion."
+                "propose new idea": "Uzay Emir introduces a new idea of using magnetic properties to change optical behavior for multimodality imaging.",
+                "ask question": "Uzay Emir asks if others are interested in using ultra-high field magnets to change optical properties from their perspective."
             }
         },
         {
@@ -3323,14 +3232,10 @@
             "screenshare_content": "None",
             "start_time": "51:52",
             "end_time": "52:54",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kristen encourages collaboration and knowledge sharing between participants from different modalities, specifically MR and optical imaging, to bridge the gaps between fields and improve resolution approaches, building on Candace's introduction of MR spectroscopy."
-                },
-                {
-                    "propose decision": "Kristen proposes to continue the discussion for another five minutes and then revisit the key points to narrow them down for Josh's report, managing the remaining time in the meeting."
-                }
-            ]
+            "annotations": {
+                "encourage participation": "Kristen Maitland encourages participants from different modalities to discuss and learn from each other.",
+                "process management": "Kristen Maitland manages the meeting flow by mentioning the time left and planning for summarizing key points."
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -3348,11 +3253,9 @@
             "screenshare_content": "None",
             "start_time": "53:06",
             "end_time": "53:07",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Matt Lew is encouraging someone else to contribute to the conversation, as Kristen Maitland mentioned they would talk for another five minutes and then revisit key points."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Matt Lew",
@@ -3371,9 +3274,8 @@
             "start_time": "53:08",
             "end_time": "53:51",
             "annotations": {
-                "present new idea": "Matt introduces a novel concept of engineering photons or coupled photons to reduce their scattering probability in tissues, which hasn't been discussed before.",
-                "expand on existing idea": "Matt builds upon the previous discussion about scattering and detection by suggesting a specific approach using engineered or entangled photons to overcome limitations in classical detection methods.",
-                "propose decision": "Matt proposes exploring the use of engineered or entangled photons to improve optical tissue probing, suggesting a direction for future investigation."
+                "propose new idea": "The speaker proposes a new idea to engineer photons or coupled photons to reduce their probability of scattering in tissues.",
+                "ask question": "The speaker asks if there are ways to engineer photons or use specific types like entangled photons to make them more robust to classical detection failures."
             }
         },
         {
@@ -3393,8 +3295,8 @@
             "start_time": "53:51",
             "end_time": "55:21",
             "annotations": {
-                "expand on existing idea": "Sixian expands on Vivian's earlier comments about fluorophores, suggesting that innovations in fluorophores, such as sparse labeling, could help move the field forward.",
-                "express enthusiasm": "Sixian expresses enthusiasm for Matt's idea of using entangled photons, calling it a \"very high risk, high reward\" notion."
+                "propose new idea": "The speaker introduces new ideas such as using entangled photons and collaborating with chemists to design fluorophores.",
+                "develop idea": "The speaker expands on existing ideas, such as avoiding scattering by going to longer wavelengths and building on Vivian's comments about fluorophores."
             }
         },
         {
@@ -3414,8 +3316,9 @@
             "start_time": "55:22",
             "end_time": "56:18",
             "annotations": {
-                "expand on existing idea": "Stefan is building on the previous discussion about fluorophores by suggesting that engineering nanoparticles with tunable luminescence lifetimes could be used as labels for features of interest, expanding on the idea of fluorophore innovations.",
-                "provide supporting evidence": "Stefan provides supporting evidence by mentioning upconversion nanoparticles with anti-Stokes emission and their luminescence lifetimes in the millisecond or microsecond range, which is significantly different from commercial fluorophores, to support the idea of using engineered nanoparticles."
+                "propose new idea": "Stefan introduces the concept of using nanoparticles with tunable luminescence lifetimes as labels for imaging.",
+                "develop idea": "He expands on this idea by discussing the potential of luminescence lifetime as an additional property for labels.",
+                "offer feedback": "Stefan offers a specific suggestion for improving current imaging approaches by using up-conversion nanoparticles."
             }
         },
         {
@@ -3435,9 +3338,7 @@
             "start_time": "56:24",
             "end_time": "56:45",
             "annotations": {
-                "present new idea": "Matt introduces a novel concept of using magnetic fields to modulate nanoparticles, influencing their scattering or up-conversion properties for improved deep tissue imaging, building on Stefan's comment about tuning the lifetime of nanoparticles.",
-                "expand on existing idea": "Matt builds upon Stefan's idea of engineering nanoparticles with tunable lifetimes by suggesting the use of magnetic fields to control their scattering or up-conversion properties, aiming to enhance their effectiveness as emitters for deep tissue imaging.",
-                "encourage particpatioin": "Matt directly addresses Stefan, inviting him to consider the potential of magnetic fields in modulating nanoparticle properties."
+                "propose new idea": "The speaker introduces a new idea of using magnetic fields to modulate the properties of materials to make them better emitters for deep tissue imaging."
             }
         },
         {
@@ -3456,14 +3357,11 @@
             "screenshare_content": "The screen share shows the Wilhelm Lab logo and the text \"Biomedical Nano-Engineering Lab\" and the lab's website address. The screen share remains static throughout the segment.",
             "start_time": "56:46",
             "end_time": "57:41",
-            "annotations": [
-                {
-                    "expand on existing idea": "Stefan expands on Matt Lew's idea of using magnetic fields to control scattering, suggesting assembling nanoscale objects that scatter light efficiently when they come together, building upon the previous discussion about modulating light scattering with magnetic fields."
-                },
-                {
-                    "expand on existing idea": "Stefan expands on the idea of engineering fluorophores, suggesting tuning the luminescence lifetime of nanomaterials as labels, building on Vivian and Sixian's comments about fluorophore innovation."
-                }
-            ]
+            "annotations": {
+                "propose new idea": "Stefan Wilhelm introduces new ideas about assembling objects at the nanoscale and engineering luminescence lifetime.",
+                "develop idea": "He expands on these ideas by discussing material engineering and the potential impact of external fields.",
+                "ask question": "Stefan Wilhelm asks about changing luminescence lifetime with external fields, specifically magnetic fields."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3481,12 +3379,10 @@
             "screenshare_content": "None",
             "start_time": "57:42",
             "end_time": "58:20",
-            "annotations": [
-                {
-                    "propose decision": "Kristen suggests the group should summarize and identify key points from the discussion, which is a concrete choice for the group to focus on reporting out.",
-                    "assign task": "Kristen assigns the task of summarizing and identifying key points to the group."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is summarizing the discussion and focusing on key points.",
+                "process management": "The speaker is managing the discussion flow and directing the group towards specific goals."
+            }
         },
         {
             "speaker": "Silvia Ronco",
@@ -3504,11 +3400,9 @@
             "screenshare_content": "None",
             "start_time": "58:11",
             "end_time": "58:22",
-            "annotations": [
-                {
-                    "ask clarifying question": "The speaker is asking a question to clarify where the main points of the discussion should be placed in the PowerPoint presentation."
-                }
-            ]
+            "annotations": {
+                "process management": "Silvia Ronco is asking about the process for organizing main discussions in the PowerPoint, which is a procedural question about managing the meeting's output."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3526,11 +3420,9 @@
             "screenshare_content": "None",
             "start_time": "58:27",
             "end_time": "59:07",
-            "annotations": [
-                {
-                    "propose decision": "Kristen proposes narrowing down the discussion to three topic areas for the report out, suggesting focusing on the most exciting ideas rather than what was discussed the most, to make the report more focused."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "Kristen Maitland is facilitating the summarization of the group's discussion to determine key points for reporting."
+            }
         },
         {
             "speaker": "Joshua Brake",
@@ -3549,9 +3441,7 @@
             "start_time": "59:08",
             "end_time": "59:59",
             "annotations": {
-                "present new idea": "The speaker introduces the idea of using multimodal, non-traditional contrast agents that respond to biological or chemical changes within the organism to enhance detection, building on Stefan's point about engineering materials with tunable lifetimes.",
-                "expand on existing idea": "The speaker expands on the idea of using new reporters, similar to G-camp, but modulated by modalities like ultrasound or magnetism for deeper tissue penetration, connecting it to the earlier discussion about contrast agents and their properties.",
-                "express enthusiasm": "The speaker expresses excitement about the idea of multimodal contrast agents, indicating a positive reaction to the potential of this approach."
+                "supportive response": "Josh's tone is positive and encouraging, supporting the exploration of new ideas in the discussion."
             }
         },
         {
@@ -3571,7 +3461,7 @@
             "start_time": "60:00",
             "end_time": "60:08",
             "annotations": {
-                "express enthusiasm": "The speaker expresses excitement about the potential of exploring a general class of ideas related to multimodal contrast agents, building on the previous discussion about using magnetic or ultrasonic modalities for deeper tissue penetration."
+                "supportive response": "The speaker is expressing interest and a positive evaluation of an idea, indicating it as an exciting area to explore."
             }
         },
         {
@@ -3591,8 +3481,9 @@
             "start_time": "60:17",
             "end_time": "60:37",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous idea of multimodal contrast by suggesting a specific multimodal analysis using an MR probe with super-resolution capabilities, adding a concrete example to the discussion.",
-                "present new idea": "The utterance introduces the novel concept of a multimodal probe that combines MR and super-resolution capabilities, which hasn't been explicitly mentioned before."
+                "propose new idea": "The speaker introduces a new idea of using a multimodal approach that combines MR probes with super resolution capabilities.",
+                "develop idea": "The speaker builds upon previous ideas by suggesting a specific application of combining different imaging modalities.",
+                "offer feedback": "The speaker provides a suggestion for how to advance the field by proposing a new type of probe."
             }
         },
         {
@@ -3612,7 +3503,9 @@
             "start_time": "60:52",
             "end_time": "60:55",
             "annotations": {
-                "encourage particpatioin": "Kristen is explicitly asking if anyone has any further ideas to contribute to the discussion, encouraging participation from the group."
+                "ask question": "The speaker is seeking additional ideas from the group.",
+                "encourage participation": "The speaker invites others to contribute their thoughts.",
+                "process management": "The speaker manages the discussion flow by soliciting ideas for reporting."
             }
         },
         {
@@ -3631,14 +3524,11 @@
             "screenshare_content": "None",
             "start_time": "61:02",
             "end_time": "62:12",
-            "annotations": [
-                {
-                    "expand on existing idea": "Sixian is building upon the ideas of adaptive imaging and combining low-resolution and high-resolution techniques, which were previously mentioned by Josh and others in the conversation."
-                },
-                {
-                    "present new idea": "Sixian presents a novel concept of combining portable low-field MRI with minimally invasive optical cellular resolution imaging for real-time point-of-procedure diagnosis, which has not been explicitly discussed before."
-                }
-            ]
+            "annotations": {
+                "develop idea": "The speaker is expanding on an existing idea by providing more details on how adaptive imaging with MRI and optical imaging could work for diagnostic purposes.",
+                "propose new idea": "The speaker is discussing a specific application of combining low-resolution and high-resolution imaging techniques, potentially integrating MRI for a more comprehensive diagnostic tool.",
+                "clarify goal": "The speaker aims to clarify the goal of combining different imaging techniques, which is to enhance diagnostic capabilities through real-time, high-resolution imaging at points of interest identified by non-invasive MRI scans."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3656,14 +3546,11 @@
             "screenshare_content": "None",
             "start_time": "62:19",
             "end_time": "63:45",
-            "annotations": [
-                {
-                    "expand on existing idea": "Kristen is building on the idea of adaptive imaging that Sixian brought up, providing her own experience in developing optical imaging techniques for tissue and oral cavity using fluorescence lifetime imaging and confocal microscopy."
-                },
-                {
-                    "present new idea": "Kristen introduces the idea of using photoacoustic imaging for increased depth, which hadn't been discussed previously in the conversation."
-                }
-            ]
+            "annotations": {
+                "develop idea": "Kristen Maitland expands on her experience with fluorescence lifetime imaging and confocal microscopy, providing specifics on their applications and development.",
+                "acknowledge contribution": "She mentions another group's work on using lens distortion for better resolution, acknowledging their contribution.",
+                "clarify goal": "Kristen Maitland discusses specific applications and technologies in optical imaging, aiming to clarify objectives within the field."
+            }
         },
         {
             "speaker": "Uzay Emir",
@@ -3682,8 +3569,9 @@
             "start_time": "63:46",
             "end_time": "64:12",
             "annotations": {
-                "expand on existing idea": "The speaker is building on the previous discussion about multimodality imaging, specifically photoacoustic imaging, and suggesting its feasibility with MRI.",
-                "express enthusiasm": "The speaker expresses excitement about the potential of combining photoacoustic imaging with MRI, indicating a positive outlook on this approach."
+                "propose new idea": "The speaker suggests using photoacoustic imaging with MRI, a new idea.",
+                "develop idea": "The speaker expands on the idea with a specific example and potential application.",
+                "supportive response": "The speaker shows enthusiasm for exploring new imaging approaches."
             }
         },
         {
@@ -3702,14 +3590,10 @@
             "screenshare_content": "None",
             "start_time": "64:14",
             "end_time": "64:50",
-            "annotations": [
-                {
-                    "encourage particpatioin": "Kristen encourages the team to continue brainstorming and contributing ideas to the 'parking lot' for future discussions, even beyond this meeting."
-                },
-                {
-                    "express enthusiasm": "Kristen expresses optimism that this discussion is just the beginning of their collaboration and idea formation."
-                }
-            ]
+            "annotations": {
+                "process management": "Kristen Maitland is encouraging participants to contribute ideas now with the possibility of revisiting them in future meetings, thereby managing the discussion process.",
+                "encourage participation": "She encourages participants to put ideas in the parking lot and hopes for future discussions, both within the group and with new individuals at the conference, thereby encouraging participation."
+            }
         },
         {
             "speaker": "Joshua Brake",
@@ -3728,8 +3612,7 @@
             "start_time": "64:55",
             "end_time": "65:06",
             "annotations": {
-                "encourage particpatioin": "Josh is asking for feedback from the group on the slide he has prepared, encouraging them to contribute their thoughts.",
-                "present new idea": "Josh is presenting the slide he created, which is a new synthesis of the group's discussion."
+                "encourage participation": "Josh Brake invites feedback from the group on his slide, explicitly asking if people want to give him any feedback."
             }
         },
         {
@@ -3749,7 +3632,7 @@
             "start_time": "65:44",
             "end_time": "65:46",
             "annotations": {
-                "expand on existing idea": "This utterance builds upon the previous discussion about key points to report out, specifically relating the second point to the issue of big data, which was brought up when discussing the challenges of super-resolution imaging in whole organisms."
+                "None": "No relevant code strongly applies to this utterance"
             }
         },
         {
@@ -3768,11 +3651,9 @@
             "screenshare_content": "None",
             "start_time": "65:46",
             "end_time": "65:50",
-            "annotations": [
-                {
-                    "acknowledge contribution": "This utterance acknowledges the prior discussion about handling data, without adding new information or expanding on it."
-                }
-            ]
+            "annotations": {
+                "summarize conversation": "The speaker is reflecting on the conversation by mentioning that they have talked about how to deal with the data, indicating a summary of previous discussion points."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3791,9 +3672,7 @@
             "start_time": "66:05",
             "end_time": "66:41",
             "annotations": {
-                "expand on existing idea": "Kristen Maitland expands on the previous point about big data by discussing how different light sheet microscopes and their software handle large data sizes, building on the conversation about the challenges of dealing with large datasets in imaging.",
-                "provide supporting evidence": "Kristen Maitland provides supporting evidence for the challenges of big data by mentioning that different light sheet microscopes from different companies have different approaches to managing the large data size, and that the approach to the data makes a difference in being able to work with it.",
-                "express enthusiasm": "Kristen Maitland expresses enthusiasm by saying that the approach to the data makes a difference in being able to work with it, and that it is a lot of data."
+                "None": "No relevant code applies to this utterance"
             }
         },
         {
@@ -3813,7 +3692,7 @@
             "start_time": "67:46",
             "end_time": "67:54",
             "annotations": {
-                "acknowledge contribution": "Matt Lew acknowledges Kristen's contribution in facilitating the discussion and ensuring everyone had a chance to speak, showing appreciation for her role in the meeting."
+                "supportive response": "The utterance expresses agreement and gratitude for the facilitation of the meeting, indicating a positive evaluation of the discussion process."
             }
         },
         {
@@ -3832,14 +3711,11 @@
             "screenshare_content": "None",
             "start_time": "67:55",
             "end_time": "68:51",
-            "annotations": [
-                {
-                    "express agreement": "Sixian expresses agreement with the questions that guided the discussion, indicating a positive sentiment towards the structure provided."
-                },
-                {
-                    "offer constructive criticism": "Sixian offers constructive criticism by suggesting a different format for the discussion, proposing a round table introduction followed by a more fluid conversation to improve coherence."
-                }
-            ]
+            "annotations": {
+                "supportive response": "The speaker expresses a positive evaluation for a more coherent conversation.",
+                "offer feedback": "The speaker offers a suggestion for improving the discussion format.",
+                "encourage participation": "The speaker suggests a format that could encourage more people to participate."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3858,9 +3734,7 @@
             "start_time": "68:54",
             "end_time": "69:01",
             "annotations": {
-                "acknowledge contribution": {
-                    "Explanation": "Kristen acknowledges that the virtual format makes the discussion feel like it's each person's turn to talk, recognizing the limitations of the format."
-                }
+                "process management": "The speaker is commenting on the dynamics of the virtual meeting, specifically how it feels like participants are taking turns talking."
             }
         },
         {
@@ -3879,14 +3753,9 @@
             "screenshare_content": "None",
             "start_time": "69:01",
             "end_time": "69:40",
-            "annotations": [
-                {
-                    "propose decision": "Kristen suggests a different meeting structure where each person briefly states their interests after introductions, which is a concrete choice for the group to consider for future meetings."
-                },
-                {
-                    "expand on existing idea": "Kristen is building on Sixian's suggestion to improve the flow of the discussion by proposing a specific structure for future meetings, adding details on how to group topics."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker suggests a method for organizing the discussion after introductions, indicating a focus on managing meeting flow."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3904,14 +3773,11 @@
             "screenshare_content": "None",
             "start_time": "70:00",
             "end_time": "70:31",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Kristen acknowledges that each person added something different, recognizing their individual inputs to the discussion."
-                },
-                {
-                    "encourage particpatioin": "Kristen encourages the participants to continue their discussions in other venues, promoting further engagement and collaboration."
-                }
-            ]
+            "annotations": {
+                "acknowledge contribution": "The speaker acknowledges the contributions of others.",
+                "encourage participation": "The speaker encourages others to continue discussing.",
+                "summarize conversation": "The speaker summarizes the discussion and its outcomes."
+            }
         },
         {
             "speaker": "Kristen Maitland",
@@ -3929,14 +3795,10 @@
             "screenshare_content": "None",
             "start_time": "70:36",
             "end_time": "70:48",
-            "annotations": [
-                {
-                    "confirm decision": "Kristen suggests that the group is done and can head back to the main room, confirming the end of the discussion."
-                },
-                {
-                    "acknowledge contribution": "Kristen thanks Josh for taking notes and reporting out for the group."
-                }
-            ]
+            "annotations": {
+                "process management": "Kristen Maitland is managing the meeting flow by concluding the session and suggesting participants head back to the main room.",
+                "summarize conversation": "She summarizes the session by thanking Josh for his contributions and wrapping up the discussion."
+            }
         },
         {
             "speaker": "Dylan Burnette",
@@ -3954,11 +3816,9 @@
             "screenshare_content": "None",
             "start_time": "70:48",
             "end_time": "70:49",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Dylan Burnette is acknowledging the discussion or the facilitation of the meeting, expressing gratitude."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         },
         {
             "speaker": "Andrew Feig",
@@ -3976,11 +3836,9 @@
             "screenshare_content": "None",
             "start_time": "72:10",
             "end_time": "72:12",
-            "annotations": [
-                {
-                    "None": "No code applies to this utterance."
-                }
-            ]
+            "annotations": {
+                "process management": "The speaker is informing the group about the arrival of Andrew Feig and the current status of the room, which pertains to organizing group activities or managing the meeting flow."
+            }
         },
         {
             "speaker": "Shiva Abbaszadeh",
@@ -3998,11 +3856,9 @@
             "screenshare_content": "None",
             "start_time": "72:14",
             "end_time": "72:17",
-            "annotations": [
-                {
-                    "express humor": "The speaker uses a humorous analogy of their brain 'creaking' to express the mental effort required during the discussion."
-                }
-            ]
+            "annotations": {
+                "express humor": "The speaker makes a joke about their brain feeling like it needs to 'creek on it', which is a humorous way of expressing the difficulty of the discussion."
+            }
         },
         {
             "speaker": "Andrew Feig",
@@ -4020,11 +3876,9 @@
             "screenshare_content": "None",
             "start_time": "72:19",
             "end_time": "72:30",
-            "annotations": [
-                {
-                    "acknowledge contribution": "Andrew Feig acknowledges the great conversations that took place in the breakout rooms, recognizing the participants' input."
-                }
-            ]
+            "annotations": {
+                "None": "No relevant code applies to this utterance"
+            }
         }
     ]
 }

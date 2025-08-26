@@ -1,0 +1,144 @@
+{
+    "meeting_annotations": [
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "00:00-00:25",
+            "transcript": "language there. So how important is it that we have the things at the atomic scale, at the quantum scale, at the non-equilibrium scale? What does that mean? How explicit do we have to be for us to then at the end be able to predict what the overall performance would be at the nanometer scale or micrometer scale or whatever you want.",
+            "speaking duration": 25,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Gary F. Moore",
+            "timestamp": "00:25-01:37",
+            "transcript": "But I think this is a nice segue from the question Carlos was just sort of the point Carlos was just bringing up of in molecular systems and and homogeneous systems you have well-defined architectures where you have a better handle and then you want to translate that information to some heterogeneous material. And there's the other extreme that you end up studying just perfect surfaces that are well-defined crystals, no defect sites where catalysis are typically occurring. And so where do you find that sort of intermediate of addressing things like you're pointing out, the environment, pH, heterogeneous architectures, the presence of defect sites. And it's not clear to me that we're there at an experimental level or a theory level as a community, but that's something we're striving for and you know, Carlos brings up the point of how fast will we move towards something like that versus be critical and hesitant to make those leaps and extensions and our ability to model and our ability to measure. And those are tough questions to address. I'm not sure.",
+            "speaking duration": 72,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Ananya Renuka Balakrishna",
+            "timestamp": "01:37-02:56",
+            "transcript": "No, definitely I agree. One of the simplest, so when we are trying to model something, for example, a defect interaction with a diffusing species, it's still a challenge to capture what really happens in experiment when we do this in the continuum level, we are again simplifying it, right? So for example, you have a range of defects with complex topologies with multiple physics that interplay in that locality. And at the end of the day, we're trying to model the very simplest idealized version of this defect and then trying to understand how this affects certain fundamental, if it's the diffusion kinetics we're thinking of, how does that change in the presence of a defect? But I think although it's kind of simple, I still do think introducing a small seed of that heterogeneity gives us a lot of knowledge and understanding what perhaps happens in a complex system, but it is a challenge to implement that in a computational framework. And the simplest one is to sort of idealize that heterogeneity, I think.",
+            "speaking duration": 79,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Valentina Prigiobbe",
+            "timestamp": "02:56-03:35",
+            "transcript": "I think one approach that for example we have when we study brines is to we model, we want to model brines behavior is to create a brine, a synthetic brine and see essentially that we know what is inside and we see therefore which are the that which is the complexity that actually doesn't affect so much the the phenomenon or the processes. So maybe create experimentally synthetic systems that catch some part of the complexity and then compare behaviors.",
+            "speaking duration": 39,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "03:35-04:05",
+            "transcript": "So then just kind of trying to play the devil's advocate here. So this this topic of bridging scales has existed for a long time and multi-scale modeling has been promised on for many decades. Where do we stand today compared to, you know, 20, 30, 40 years ago? Is this something that is reachable, achievable now compared to 20, 30, 40 years ago? What are your thoughts on that?",
+            "speaking duration": 30,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "George Shields",
+            "timestamp": "04:05-04:09",
+            "transcript": "Are you suggesting it's like fusion, it's always 20 or 30 years in the future?",
+            "speaking duration": 4,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "04:09-05:02",
+            "transcript": "No, I'm not suggesting that. I think that we've made a lot of as we mentioned in the I'm not sure if you were here then, but that I think that we've all seen that there have been bridges between scales, but typically one or two, potentially even three length scales or time scales at the time. But truly to go from the smallest to the really, really longest scales, it's very rare for any given process or any given whatever you're interested in looking at. So I'm just again, trying to play the devil's advocate is how closer to the end goal are we? And are we, of course we are better positioned now than what we were before, but why and what should the next steps really be for us to actually achieve this basically is what I'm trying to to kind of provoke out of this discussion. I see Venkat has unmuted himself, so feel free to.",
+            "speaking duration": 53,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "05:02-07:14",
+            "transcript": "Yeah, no, this has been a great discussion to listen into. So it's funny that George mentioned fusion 20 years away. It's actually a perfect analogy in that if you now today ask anyone working in fusion, and I think there's a number of entrepreneurs working in fusion, they will definitely disagree with you strongly that it's 20 years away and Commonwealth Fusion has sort of demonstrated a lot of cool things. I think in the same sense, I think we're at a cusp for like multi-scale modeling to completely sort of make a big breakthrough. And the key innovation I think is differentiable programming. What has become possible now is you can basically differentiate through full codes. So which means that Emily can build a phase field model, I could differentiate through her code, and then Ananya can build something in the meso scale, I can differentiate through that, and then I can differentiate then through molecular dynamics. So there is a natural way in which now we can do scale bridging. And there's a sort of longer article that I wrote, I'll post to the chat, but I think that's the key enabler which now before we had to we all had to sort of infer output measurement to like, okay, what is happening at the molecular scale or the meso scale or things like that. I think this is the big game changer. And I think with this, we're at the sort of very, very beginning of being able to pull all this off, but there's now reliable differentiable frameworks in various spaces. There's JAX-MD which can do differentiable molecular dynamics, there's JAX-CFD which can do differentiable CFD. There's now startings of a differentiable DFT with Mohammed Qasim's work. So if you can chain all of these things together, basically it's a slam dunk in terms of how you take how you can connect the scales and how you can bridge the scales. I mean, we have decades of work left for any of these things to like sort of fully get production scale. But I think that is the key enabler. I think that I'm very, very optimistic. I mean, this will, I think this will change the game.",
+            "speaking duration": 132,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "07:14-07:52",
+            "transcript": "I agree with you Venkat on that one, but the key question here is then how can this, how can modeling across scales then help to actually solve these, in this case, I'm going to just tie it back to negative emissions. How can it help to solve the negative emissions questions if it will take us a so long time? I mean, again, we're not 20 years out, we might be 10 years out. Will it be able to make an impact if it's five or 10 years out? Right? So just as a tool, again, a provocative question back because that's what I was asked to do here.",
+            "speaking duration": 38,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "George Shields",
+            "timestamp": "07:52-08:17",
+            "transcript": "You really never know how far you're out, right? Because you never know when a new discovery is going to come in and be a game changer. I mean, it's just unknowable, right? I would just like to point out we have 10 minutes left and we're supposed to have ideas written out. So we might want to start thinking about putting together the document of the ideas that the group's going to present in 10 minutes.",
+            "speaking duration": 25,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "08:17-08:55",
+            "transcript": "Yes. So let's see here. I know that Ananya and Valentina have been taking notes. Would one of you mind sharing one of the documents that you have and then we can just make sure that the group agrees on the big big points and just making sure that we haven't missed anything. Or if you just share that document, I think it might be easier. You can walk us through it and that way we are",
+            "speaking duration": 38,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Carlos Morales Guio",
+            "timestamp": "08:55-09:39",
+            "transcript": "And in the meantime, if I can just add, I think something that I did not hear, I think is parameterization. Because when you can bridge a lot of scales and if you have a lot of errors in some of them, right, they will sort of cancel out in that process, right? So how do you actually parameterize these different models so that you're not just as long as we do fitting of linking theory or models to some experimental observations, we will not be able to be predictive. Right? So the only way to me of being predictive is if you actually have a system that you can trust that is well parameterized.",
+            "speaking duration": 44,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "Valentina Prigiobbe starts sharing her screen at 09:01. The screen shows a Google Doc titled \"Group 3.5 Rough Notes\" with a list of bullet points under the heading \"Key puzzle\". The content is static during this segment.",
+            "other": "None"
+        },
+        {
+            "speaker": "Aleksandra Vojvodic",
+            "timestamp": "09:39-09:57",
+            "transcript": "Yes, and I think that's that's probably where ML will be able to actually help out if if you are if you're going down the parameterization route. I think that definitely is is one one route. So let's see here. I see either Valentina, yes, I think it's Valentina who's doing the",
+            "speaking duration": 18,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The Google Doc is still shared. The speaker scrolls down the document, revealing more bullet points related to the scientific discussion. The content itself is not edited.",
+            "other": "None"
+        },
+        {
+            "speaker": "Valentina Prigiobbe",
+            "timestamp": "09:57-10:00",
+            "transcript": "Yes, it's my screen. So I just copy-pasted what",
+            "speaking duration": 3,
+            "interuption": "No",
+            "screenshare": "Yes",
+            "screenshare_content": "The Google Doc is still shared on the screen. No changes are made to the content.",
+            "other": "None"
+        }
+    ]
+}

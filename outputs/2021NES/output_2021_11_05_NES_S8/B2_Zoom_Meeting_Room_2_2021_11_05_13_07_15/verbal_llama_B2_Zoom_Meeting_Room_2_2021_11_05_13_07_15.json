@@ -1,0 +1,984 @@
+[
+    {
+        "utterance": "Emily Carter: Linsey nice to see you on the screen. We've exchanged emails before but nice to virtually meet you. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Nice to virtually meet you as well. Looking forward to hosting you. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Emily Carter: I'm looking forward. I'm going to do my best to be there in person finally. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance as it is a simple expression of personal intention and anticipation."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: That would be lovely. But definitely no pressure, okay, if it just doesn't happen. These are wild times. ",
+        "annotations": {
+            "supportive response": "The utterance expresses a positive and supportive sentiment towards Emily's possibility of being there in person.",
+            "express humor": "The phrase 'These are wild times' can be interpreted as an attempt to make a lighthearted comment about the current situation."
+        }
+    },
+    {
+        "utterance": "Emily Carter: It should be I think it should be okay by then. As God willing. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Fingers crossed. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing a positive sentiment towards a previously discussed topic, in this case, the hope for a successful meeting in person.",
+            "express humor": "The use of 'Fingers crossed' can be seen as a lighthearted or humorous expression."
+        }
+    },
+    {
+        "utterance": "Emily Carter: It's a little bizarre we have two bots. Anyway, Jordy's going to be joining us late so I you're stuck with me as the as the single facilitator for the first bit. And I see familiar faces in at least three of you have been in sessions with me before but I think we should do a round of introductions. So I'll just start really quickly and just say I'm Emily Carter, I'm the Executive Vice Chancellor and Provost at UCLA and I work on a variety of of sustainable energy technologies including carbon dioxide reduction which is what we're here to discuss today. So it's not actually I shouldn't say that it shouldn't be limited right to just carbon dioxide. It's also methane and other possible greenhouse gases. So with that, can I ask Caroline for you to introduce yourself and just say which department you're in at Utah and your and your interests? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by mentioning Jordy's late arrival and taking on the facilitator role.",
+            "encourage participation": "The speaker invites Caroline to contribute by introducing herself and sharing her interests."
+        }
+    },
+    {
+        "utterance": "Caroline Saouma: Yeah so I'm Caroline Saouma. I'm an assistant professor at the University of Utah in the Department of Chemistry. And my interests are really thinking about I guess most of us are here, you know CO2 conversion to higher products and really thinking about bridging the the classical or the you know more traditional hydrogenation literature and knowledge with that for electrocatalysis. And then moreover thinking how do we interface you know like captured CO2 with CO2 catalysis since we always just use you know a clean stream of CO2 gas when we do catalysis. Is that the best approach to study these problems? ",
+        "annotations": {
+            "Identify gap": "Caroline identifies a gap in current practices, 'we always just use... a clean stream of CO2 gas when we do catalysis'."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Great, thank you. Kelsey? ",
+        "annotations": {
+            "encourage participation": "Emily Carter is inviting Kelsey to contribute by introducing herself.",
+            "process management": "Emily Carter is managing the flow of introductions in the meeting."
+        }
+    },
+    {
+        "utterance": "Kelsey Hatzell: Hi. I think I've met most people here at this point but I'm Kelsey Hatzell, assistant professor at Princeton in Mechanical Engineering and the Andlinger Center. My group works on electrochemical systems both from the conversion side and the storage side and so we are interested in some small molecule activation and really looking at how we can use electrochemical systems to get dynamic interfaces and how we can design interrogation and diagnostic tools to look at interfaces in operando conditions. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states her position and her group's work, signaling her expertise in the field."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Great. Linsey? ",
+        "annotations": {
+            "encourage participation": "The speaker is explicitly inviting Linsey to contribute by saying 'Linsey?', encouraging them to introduce themselves or share their thoughts.",
+            "acknowledge contribution": "The speaker acknowledges the previous participants with a 'Great', showing a minimal level of acknowledgment before moving to the next person."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Hi, I'm Linsey Seitz. I'm an assistant professor at Northwestern, the Department of Chemical and Biological Engineering. My group's experimental, so we work on a variety of electrocatalytic processes, so CO2 reduction, a lot of fun selective oxidations to make chemicals and fuels, mostly on mixed metal oxide catalysts as a really highly tunable platform. Also looking at tuning and understanding the structure of that electrochemical double layer, how that influences our catalysis. And finally, heavy emphasis on in situ and operando spectroscopy, so mostly synchrotron-based but a little bit of vibrational to be looking at dynamic catalyst response to reaction conditions. ",
+        "annotations": {
+            "signal expertise": "Linsey explicitly states her position as an assistant professor and her group's expertise in electrocatalytic processes, including CO2 reduction and selective oxidations."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Great. Jose? ",
+        "annotations": {
+            "encourage participation": "The utterance invites Jose to contribute by saying 'Jose?', which encourages participation.",
+            "process management": "The utterance manages the meeting flow by moving to the next person's introduction."
+        }
+    },
+    {
+        "utterance": "Jose Mendoza: Hi everyone. I'm Jose Mendoza. I do atomistic and quantum simulations especially for low dimensional materials and my interest is on carbon capture in different different ways and lately has I have been doing a lot of catalysis multiscale simulations especially oriented for machine learning and property structure-property relationships. ",
+        "annotations": {
+            "signal expertise": "Jose explicitly states his background and what he does, which relates to his expertise."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Great. Wilson? ",
+        "annotations": {
+            "process management": "This code applies because Emily Carter is managing the flow of the meeting by inviting the next person to introduce themselves.",
+            "encourage participation": "This code also applies as Emily Carter is encouraging Wilson to participate by inviting him to introduce himself."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: Everyone, Wilson Smith. I have a joint appointment at CU Boulder in the Department of Chemical and Biological Engineering and at NREL as a senior scientist. At NREL we focus on scaling up electrochemical technologies to the megawatt-ish scale in terms of reactor design and implementation. And between CU and NREL we do a lot of operando spectroelectrochemistry and microscopy for reaction mechanisms. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his own qualifications and expertise, including his joint appointment at CU Boulder and his position as a senior scientist at NREL.",
+            "develop idea": "The speaker provides a brief overview of the work done at NREL, which can be seen as expanding on existing ideas or providing context."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Jimmy? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting Jimmy to contribute his introduction, encouraging participation in the meeting."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: Hi everyone. I'm Jimmy Jiang from University of Cincinnati. My research interest is about how to design molecular catalysts for small molecule activation and conversion including carbon dioxide. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his research interest, indicating his area of expertise."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Shu? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting someone else in the group to contribute their expertise or opinion by introducing themselves."
+        }
+    },
+    {
+        "utterance": "Shu Hu: Hi everyone. This is Shu, Shu Hu from Yale University, Chemical Engineering. I'm also joined with the Energy Science Institute on the West Campus. My group works on the heterogeneous photocatalysts. So these are the reactions that under solar photochemistry and we initially work on the solar hydrogen production but now we are extending the reaction systems to methane oxidation and other carbon-carbon coupling processes and also recently working on the photoredox organic synthesis but on photocatalyst surfaces. So what we're aspired to is actually the the practical side of photocatalysis, heterogeneous catalysis where you can ease the reactor design but also drive chemistry at room temperature by using light and other means. So the relevance to this is actually we also work on electrocatalysis but actually in the context of comparing the electron transfer processes for photo versus electro. So really nice to meet all of you. I think especially for Professor Carter, this is the first time we met. So really honored to be here. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his own expertise and qualifications related to the task.",
+            "encourage participation": "The speaker introduces himself and his work, which can encourage others to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Emily Carter: It's very nice to meet you. Eva? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting Eva to contribute her introduction, thereby encouraging participation in the meeting."
+        }
+    },
+    {
+        "utterance": "Eva Nichols: Hi everyone. I'm Eva Nichols. I'm an assistant professor at the University of British Columbia in Canada. My lab works on electrochemical CO2 reduction catalysis, both molecular catalysts, largely metalloporphyrin systems, as well as molecularly modified metal surfaces. I also have an interest in vibrational spectroscopies at the interface and in solution. So working on ATR-SEIRAS approaches as well as time-resolved IR in solution. Nice to meet you. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states her position, affiliation, and areas of interest, which includes her expertise."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Great. So our next job is to pick a scribe and a reporter and I know Wilson is off limits since he did it with me last time and I think Kelsey's already done it. And so I don't remember if you've done it or not but I'd really like you to step up if possible. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by assigning tasks and considering team members' availability.",
+            "assign task": "The speaker is assigning responsibility for the roles of a scribe and a reporter."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Sorry, I also already went yesterday. ",
+        "annotations": {
+            "process management": "The speaker is referring to having already participated in a similar capacity the previous day, implying a management of roles or tasks within the group."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Eva Nichols: Me too. As did I. ",
+        "annotations": {
+            "acknowledge contribution": "Eva Nichols acknowledges her previous role as scribe and reporter, aligning with her statement that she too has done it."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Oh that's right. Okay so Jose, Jimmy and Shu, have you done it before? Okay so by process of elimination. ",
+        "annotations": {
+            "ask question": "Emily Carter is explicitly asking for information about whether Jose, Jimmy, and Shu have done the task before.",
+            "process management": "Emily Carter is managing the meeting process by trying to assign roles based on who has not done the task before."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: I can do the recording. ",
+        "annotations": {
+            "process management": "Jianbing Jiang is facilitating the meeting process by offering to do the recording."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Sorry, who's who said that? Jimmy? The recorder? Yeah. Okay, so you'll take notes. ",
+        "annotations": {
+            "ask question": "Emily Carter is seeking clarification on who offered to take notes.",
+            "assign task": "Emily Carter confirms that Jimmy will take notes, assigning him the task."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: Yeah, I'll take notes. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay, so you should be able to make sure that you can access the Google Drive. It's I think section 3.2 you need to be taking notes on. Do you want me to share a screen to show you where it is? ",
+        "annotations": {
+            "Process Management": "Emily Carter is managing the meeting flow by instructing Jianbing Jiang on how to access the Google Drive for note-taking.",
+            "Assign Task": "Emily Carter is assigning specific instructions to Jianbing Jiang for the task of note-taking, ensuring he can access the correct section."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: Is it slide 43? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about the current slide being discussed."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: I sent a link to the rough notes, or if you want you can do it directly in the slides, but you can start with longer format in the rough notes section. ",
+        "annotations": {
+            "process management": "The speaker is providing instructions on how to access and contribute to the meeting notes, guiding the group on how to organize their note-taking process."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, let's definitely start I think with the rough notes. ",
+        "annotations": {
+            "supportive response": "Emily Carter is expressing agreement with the suggestion to use rough notes for note-taking.",
+            "process management": "Emily Carter is managing the meeting process by agreeing to start with rough notes, which helps in organizing their group activity.",
+            "confirm decision": "Emily Carter is confirming the decision to use rough notes for note-taking."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: Excuse me, sorry. So my first time working on this. So I need to create a Google Doc first? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information on what he needs to do, specifically if he needs to create a Google Doc first.",
+            "identify gap": "The speaker indicates a lack of knowledge about the specific process of working on this task, particularly regarding the use of Google Docs."
+        }
+    },
+    {
+        "utterance": "Emily Carter: No no no, the Google Doc is there. I'm going to show you. I'm going to I have way too many things open but let me see if I can show you what it looks like. Okay. Okay, let me I'm going to stop sharing. And so if you can share your screen then you can start you are already well at least I'm seeing you're doing things you're not sharing the screen yet. ",
+        "annotations": {
+            "process management": "Emily Carter is managing the meeting flow by assisting Jianbing Jiang with accessing a Google Doc for note-taking.",
+            "offer feedback": "Emily Carter is providing specific guidance on how to access and use the Google Doc, which can be seen as offering feedback."
+        }
+    },
+    {
+        "utterance": "Jianbing Jiang: Okay, I'm going to type your names here. ",
+        "annotations": {
+            "process management": "Jianbing Jiang is taking action to start note-taking as instructed by Emily Carter, which is a part of managing the meeting process."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Actually, you know, everyone could put in their name. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by suggesting a way to organize participant information.",
+            "encourage participation": "The speaker is encouraging all participants to contribute by putting in their name."
+        }
+    },
+    {
+        "utterance": "Emily Carter: right? You could so that you don't have to type them in. ",
+        "annotations": {
+            "Supportive response": "Providing a helpful suggestion on how to use the Google Doc.",
+            "Offer feedback": "Offering a specific suggestion for improvement on collaboration process.",
+            "Process management": "Managing how the group collaborates on notes."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Oh okay. Thank you. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing agreement and appreciation for the instructions or help offered by Emily Carter."
+        }
+    },
+    {
+        "utterance": "Emily Carter: And ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: [typing sounds] ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Emily Carter: So you can put yourself in as as the reporter and and I don't know whether Jose and Shu, do you want to be also involved as both recorder and recorder and or reporter? ",
+        "annotations": {
+            "Assign Task": "The speaker is assigning or suggesting roles (recorder and reporter) to team members.",
+            "Encourage Participation": "The speaker is inviting team members (Jose and Shu) to contribute or participate in the roles of recorder and/or reporter."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Jimmy, are you comfortable doing both? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information from Jimmy about his comfort level with taking on both roles.",
+            "process management": "The question is related to managing the meeting process by ensuring that roles are assigned appropriately."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Yeah, I can do that. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing agreement with the request to take on a role."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay. Okay. Well we'll then we won't uh so you can put yourself down as the reporter, Jimmy. ",
+        "annotations": {
+            "assign task": "This code applies because Emily Carter is assigning the role of reporter to Jimmy."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Okay. You can type type in your name. Good. ",
+        "annotations": {
+            "supportive response": "The speaker is providing a positive and encouraging response to Emily's instructions."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay. Okay, I think we've got the logistics sorted as long as everybody is able to access it independently of the Zoom. And then what I'm going to do is I will use this to share screen in in a different place. Again, I have way too many things open. Let me see. It's weird. Oh, no that's the screen. Why is that? Just a second here. Oh, there it is. No, that's not it. Is it the case that when you're in the Google you can't you can't also show the the the PowerPoint? You should be able to, right? ",
+        "annotations": {
+            "ask question": "She asks for clarification on using Google Docs and sharing screens.",
+            "process management": "She is managing the meeting flow and technical aspects."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Uh I have access to the PowerPoint. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Emily Carter: Somehow it's not showing up on my as an option. So ",
+        "annotations": {
+            "process management": "The speaker is addressing a technical issue related to the meeting's process, specifically about screen sharing or document access."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Do you want me to share it? Because Jimmy, you're writing notes, so you might not want to have that pulled up. ",
+        "annotations": {
+            "ask question": "The speaker is asking if they should share something.",
+            "supportive response": "The speaker is offering help by suggesting to share it.",
+            "process management": "The speaker is managing the meeting flow by offering to share a screen."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah. Go ahead. ",
+        "annotations": {
+            "supportive response": "Expressing agreement or validation for another group member's contribution, in this case, Linsey Seitz's offer to share the screen."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Is this this is what you want to look at? ",
+        "annotations": {
+            "ask question": "The speaker is requesting confirmation or clarification about the content being shared.",
+            "process management": "The speaker is managing the meeting flow by confirming the correct content to share."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yes, exactly. Thank you. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges Linsey Seitz's input by thanking them.",
+            "supportive response": "The speaker expresses agreement and validation for Linsey Seitz's action."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay. So these are the prompts and what I'd like to do is just encourage all of all each of you to spend the next couple of minutes just writing down a few thoughts that you'd like to share with everyone to get the discussion rolling. ",
+        "annotations": {
+            "encourage participation": "The speaker is encouraging all participants to contribute by writing down their thoughts.",
+            "process management": "The speaker is managing the meeting flow by instructing participants on what to do next.",
+            "assign task": "The speaker is assigning a task to the group (writing down thoughts)."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Okay. So who would like to to start? ",
+        "annotations": {
+            "Encourage Participation": "The speaker is inviting others to contribute their thoughts or start the discussion."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Um I'll throw one thing out. One of the questions is, what are some promising strategies for controlling local chemical activity at electrodes? And so thinking about that local environment actually is something I've been quite interested in lately. So measuring and really quantifying the interaction relationship between bulk reactor scale conditions and local conditions, but then also really quantifying what local means for each experiment. So there's a number of different ways to measure local pH and folks have looked at cation impacts, proton impacts, kinetic isotope effects, but how local is local? So we're still really mostly if you're using these rotating disk electrode type formats, you're still measuring microns to millimeters away and we're really interested in that nanometer scale, right? So I think pushing experimental techniques to be able to probe those relevant length scales is kind of interesting. ",
+        "annotations": {
+            "ask question": "The speaker poses a question about promising strategies for controlling local chemical activity at electrodes.",
+            "develop idea": "The speaker expands on their question by discussing the local environment, the interaction between bulk and local conditions, and the challenges of measurement at different scales."
+        }
+    },
+    {
+        "utterance": "Emily Carter: I completely agree. ",
+        "annotations": {
+            "supportive response": "Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: And Wilson, I've read your paper a bunch of times on the modeling for it. ",
+        "annotations": {
+            "acknowledge contribution": "Linsey Seitz verbally recognizes Wilson's input by mentioning she has read his paper on modeling."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Anyone else want to jump in? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting others in the group to contribute their expertise, opinions, or ideas."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: Maybe to build off of that is, you know, to get the nanometer resolution, optimizing a reactor to characterize that, you know, in the context of what you're saying, Lindsey, which I agree, is like, you know, does the reactor we build to probe the spectroelectrochemical properties, does that relate to a bulk scale reactor? And I think to me that's one of the biggest challenges because you know, we had this discussion last time, there's certain conditions that you want to characterize in and there's very different conditions you want to use them in. So, you know, finding ways, you know, probably for spectroscopy, you want more of a bulk electrolyte to get signal to make everything stable and good, but most likely in a large scale reactor, you don't want bulk liquids flowing around these things. So to me that that's one of these challenges is how to devise a cell to really probe this nanometer locality. And I also agree how local is local, we ask that question like every day. I mean, local is all relative, but focusing on the nanometer scale, designing a cell for characterization that can give you nanoscale information that also represents a large scale reactor, I think that's a super important thing to do and a challenge that we need to work on. ",
+        "annotations": {
+            "develop idea": "Wilson Smith is expanding on Linsey Seitz's idea about understanding local chemical activity at the nanometer scale, discussing the challenges of reactor design for nanoscale characterization.",
+            "identify gap": "Wilson Smith identifies a gap in current capabilities, specifically the challenge of designing reactors that can effectively probe nanometer locality and provide nanoscale information representative of bulk-scale reactors."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Actually, that brings up a really interesting point which I I'm just I'm ignorant, I don't know the answer to this. If you if you look at conventional commercial electrolyzers, are there different designs that are used in terms of, you know, whether or not they're yeah, I mean different obviously there are different reactor designs, right? And the question is, does that what does that depend on? Does it depend on Anyway, maybe Wilson, do you know something about this you could share with with us? ",
+        "annotations": {
+            "ask question": "The speaker, Emily Carter, is requesting information about conventional commercial electrolyzers and their designs.",
+            "encourage participation": "Emily Carter is directly asking Wilson if he knows something about the topic, inviting his participation and expertise."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: Yeah, it's a really good question that opens up a Pandora's box. So if we look at, you know, some things we want to learn directly from water electrolysis and fuel cells. And in general, those electrochemical processes at scale typically don't ever have a bulk liquid electrolyte. They're all in the kind of membrane electrode assembly with humidified gas streams more or less. And the issue with translating that to CO2 reduction is that those systems have no problem with selectivity. They're unity selectivity either way. You're making hydrogen and oxygen out of water or the reverse process. Here for CO2 reduction, the sensitivity to selectivity is I think more paramount. And so in terms of reactor design, in general, we can see if you want to make a gaseous product, you probably want to have a membrane electrode assembly without a liquid. But if you want to make a liquid product, there's huge benefits to having a even a small flowing electrolyte which can use partial pressures and pull the liquid out. So this comes to, you know, separations, what are the steps we need to do afterwards? What what could be tolerant in the next step? You know, sometimes if we, you know, make formate and we have it in a bunch of electrolyte mixed in, well if we feed that to a biological process, that can withstand that. But if we send that to a thermochemical process, you need to do a separation step to to get that out. So, you know, the the the niceness that that field hasn't been explored yet is that there's so many options and that we don't really know. So I think that, you know, the reactor configuration at scale, we don't know what it will look like yet specifically for CO2 reduction chemistry. And there's some things that align with the water electrolyzers and some things that don't. So I think we need to learn from them but then also define design criteria for CO2 electrolyzers. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by comparing CO2 reduction to water electrolysis and fuel cells, and discussing implications for reactor design.",
+            "ask question": "The speaker is implicitly asking for more information or clarification on steps needed for separations and tolerance in the next steps."
+        }
+    },
+    {
+        "utterance": "Emily Carter: That's a that's a really good point. The other thing what you said got me thinking about is when you think about feeding the outcome of an of an electrolyzer, electrocatalyst, whatever, to a biological system that, you know, of course depending on the biological system, it could be faster, it could be slower. And so it brings up the issue of matching fluxes. And that's that is something that again, you know, we've had various discussions about complexity. This is another level of complexity is if you if you have multiple units that that have to to work together, how to match those fluxes in an optimal way. ",
+        "annotations": {
+            "Develop idea": "Emily Carter is expanding on previous ideas by introducing the concept of matching fluxes as a level of complexity.",
+            "Acknowledge contribution": "Emily Carter is acknowledging and building upon Wilson Smith's point."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: Yeah, one one step further than that is, you know, so so totally how to match in terms of electricity, needing batteries to make these things run on the front end. The back end, do you need, you know, vats that that concentrate things and let it go. But the other thing that's relevant, you know, back to the kind of characterization question is the conditions that these things are run at. So for example, if we want a CO2 electrolyzer that makes syngas or CO, and we want to feed that to a Fischer-Tropsch synthesis plant which is operating at 50 bar, then the question is, do we need to operate the electrolysis at 50 bar so there's a direct connection? Which is the answer because thermodynamics says you don't want to make a gas then pressurize it. ",
+        "annotations": {
+            "develop idea": "The speaker expands on previous discussions about system integration and operational conditions.",
+            "ask question": "The speaker asks if the electrolysis needs to be operated at 50 bar.",
+            "offer feedback": "The speaker provides considerations for integrating a CO2 electrolyzer with a Fischer-Tropsch synthesis plant."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: in another step. So then coming back to learning then the integration tells us relevant conditions for the pressure and then back to Lindsey's point is you know having local identification under high pressures makes an even more challenge. But but I think it's necessary and I think we're all here to address the challenges. ",
+        "annotations": {
+            "develop idea": "Wilson Smith is expanding on previous ideas discussed, specifically building upon Lindsey's point about local identification under high pressures.",
+            "supportive response": "Wilson Smith is expressing agreement and validation for the challenges discussed, indicating that he thinks addressing these challenges is necessary."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah. Excellent. ",
+        "annotations": {
+            "Supportive Response": "The utterance 'Yeah. Excellent.' expresses agreement and a positive evaluation of the previous discussion, fitting the definition of a supportive response."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: I think it ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Emily Carter: Go ahead. ",
+        "annotations": {
+            "encourage participation": "Emily Carter invites Linsey Seitz to contribute their thoughts or continue their discussion."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Yeah, sorry. I mean even just to summarize, right? It's it's all about compromise. So every time we design a new cell for a new in situ spectroscopy technique or a new diagnostic, optimizing for that diagnostic is a completely different set of conditions, constraints than what you're talking about optimizing for products. And so being explicitly aware of what those compromises are is almost a study within itself. And unfortunately, it's often what's in that supplemental info and kind of glossed over and it's it's so tricky to piece things together. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by highlighting the importance of being aware of compromises in designing new cells for diagnostics and optimizing for products.",
+            "supportive response": "The speaker is expressing agreement and validation of previous discussions.",
+            "summarize conversation": "The speaker attempts to summarize the discussion by highlighting the importance of compromises."
+        }
+    },
+    {
+        "utterance": "Emily Carter: So let's uh maybe I'll just I'll just uh pick on people um and go around and see what what you wrote down. So Jose. ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting participants to share their thoughts, encouraging contribution.",
+            "process management": "The speaker is managing the discussion by deciding who will contribute and in what order."
+        }
+    },
+    {
+        "utterance": "Jose Mendoza: Uh well, I I wrote many things. I don't know. Maybe um maybe following up on the discussion that uh Linsey I think last year we also had some discussion about the the locality of things and and and I guess the gradient was one of the topics and and to quantify it and now that I was hearing you guys discussing this in in more detail and of course this is your expertise but I was thinking on um diagrams, right? So all all these diagrams that you know it's like the uh phase diagrams I I guess it's like the wave function of of of all these compounds. Um but if we go for CO2 or methane or any of the of the things that we would like to to um to transform, I guess there's so so we're usually on on the liquids or or but then there is an interactions, right? With with if we have some something um gas. So so I was thinking on on not only the phase diagrams of all these components on the on the condensed phase but also how that's in equilibrium with um something that is let's say in the gas phase, right? So um if you do a simple back of the envelope calculations you can you can estimate that um you know if um you change like 70 ppm of CO2 um in the atmosphere that would be a pH change on on seawater let's say of 0.05 and that's um that's about 10.6% of changes on concentration of protons. So um but then that's just CO2 and that's just you just need the vapor pressure of that CO2 and then you can get the um the amount of of of other components that you will have in the solution. So just going back to all these different components, I guess um it's it just keep me thinking about the the the um the phase diagrams of these things and also the vapor pressure and and how these phase diagrams changes on the liquid versus the gas and how they are interconnected if we were to to do some um some gradients for that going to the to the basic um point that was uh brought forward by Linsey. But yeah, that's one of my thoughts that I don't know it's just uh ",
+        "annotations": {
+            "develop idea": "Jose Mendoza is expanding on existing ideas by discussing phase diagrams and their relevance to understanding locality and gradients in the context of CO2 or methane transformation.",
+            "propose new idea": "Jose Mendoza suggests using phase diagrams to understand the interactions between different components in liquid and gas phases for CO2 or methane transformation, proposing a new approach for addressing the challenges discussed."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, it's interesting because you know, it's it's obviously thermodynamics is important but dynamics is also incredibly important, the solvent dynamics um and actually change many things uh can change the kinetics um of of reactions. Um anyway, we're actually working on on on this with respect to CO2 dissolution in in um to make carbonic acid and and seeing huge differences actually in whether or not you take into account the solvent dynamics. So. Um okay, Caroline. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the discussion of thermodynamics and dynamics in reactions, highlighting the importance of solvent dynamics.",
+            "supportive response": "The speaker is expressing agreement or validation with previous discussions about the importance of dynamics in reactions."
+        }
+    },
+    {
+        "utterance": "Caroline Saouma: Yeah, so I guess I was just kind of like broadly thinking just kind of all over the place and um you know actually the discussion of scale and and scaling up sort of broadened things I didn't really think about before. I'd say is just um is like what we do in just a little CV experiment and you know our little bulk electrolysis cells is that really um reflective of of a larger scale system. Um but also just thinking more like broadly, you know like we do stuff in acetonitrile but what solvent should be we really be working in? Does it really matter you know for scaling up um or if we just don't even want solvent or water and how all that impacts um thinking about the the local chemical activity at electrodes specifically and yeah I just I don't have any like good concrete idea I just was kind of all over the place with this prompt I don't know why. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a gap in understanding between small-scale experiments and larger scale systems.",
+            "develop idea": "The speaker is expanding on her thoughts regarding scaling up experiments and the relevance of small-scale experiments to larger systems."
+        }
+    },
+    {
+        "utterance": "Emily Carter: No, I think I think you know this is an important point. I mean when people talk about uh for example using ionic liquids um because CO2 can um you can get higher concentrations of CO2 into ionic liquids than you can for example into water which initially sounds very exciting and good. Um but ionic liquids are expensive. How how is that going to really scale up? It's not clear to me. Um Eva. ",
+        "annotations": {
+            "develop idea": "Emily is expanding on the idea of using ionic liquids for CO2 capture by highlighting a potential drawback (cost) and questioning its scalability.",
+            "ask question": "Emily asks a question about the scalability of using ionic liquids.",
+            "critical response": "Emily is questioning the practicality of using ionic liquids due to their expense and scalability issues.",
+            "offer feedback": "Emily is providing feedback on the idea of using ionic liquids by pointing out potential issues with cost and scalability."
+        }
+    },
+    {
+        "utterance": "Eva Nichols: Hi. I have a a guess a different question to change the topic a little bit. Um I'm wondering if there's any role that electrochemistry can play in terms of um allowing us to do CO2 conversion from an impure CO2 stream or CO2 containing stream because I think one thing that you know my lab does and I think pretty much all labs do uh is we take our CO2 tank and turn it on and bubble in 5.0 UHP CO2, right? Um and that's not necessarily going to be relevant or useful in terms of real life conversion. So uh yeah I just wanted to sort of throw that as an open question here if that's something that's interesting and worth pursuing and and using electrochemistry as like I don't know or or electrode interfaces as a sieve to sort of sort out the CO2 and do something with that and exclude oxygen from air perhaps. ",
+        "annotations": {
+            "ask question": "Eva is requesting information on the role of electrochemistry in CO2 conversion from impure streams.",
+            "propose new idea": "Eva suggests exploring the use of electrochemistry for CO2 conversion from impure streams, which is a new idea in the context of the discussion."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, that's also I mean again I think you're absolutely right. Um you know in in real life there's going to be competition for absorption and then and then reaction and how do you control the competition for absorption? Are there ways to do that both with the electrode material and and the and the conditions that you run the electrolysis and the and the choice of electrolyte and membranes. So all of these are open open issues. Um Jimmy. ",
+        "annotations": {
+            "acknowledge contribution": "Acknowledges a previous point made by someone else.",
+            "ask question": "Requests information on how to control competition for absorption.",
+            "identify gap": "Implicitly recognizes a lack of knowledge on controlling competition for absorption."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Yeah, I think I'm so focused on this. Um I can just talk a little bit more about you know the gap between basic research and industrial application. So as mentioned several times we should really bear that in mind when we do fundamental research. And every time when at least for my lab we we we do a lot of homogeneous catalysis we use organic solvents like acetonitrile or DMF right? But thinking about industrial application would people really be interested or at least the investors really be interested in using acetonitrile or DMF right? So cost wise it's really not attractive. Other other uh parameters like for basic research we we use um we use H cell typically for electrolysis right? But for industrial electrolysis it is probably more uh attractive to use a flow cell. So would it be possible that for fundamental researchers we can also think about using you know the the smaller scale flow cell. So even though the parameters for a smaller flow cell could be quite different from a bigger flow cell but at least the difference is smaller than uh H cell and and a flow cell. So that's that's a point I would like to make. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the existing idea of the gap between basic research and industrial applications, discussing the practicality of research methods.",
+            "identify gap": "The speaker explicitly identifies the gap between basic research practices and industrial application requirements, highlighting differences in materials and setups used.",
+            "ask question": "The speaker asks a question about the feasibility of using smaller scale flow cells in fundamental research to bridge the gap with industrial applications."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Thank you. Shu. ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting Shu to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Shu Hu: Yeah, so I I think um my point was actually a good um follow up to this. And I was thinking about we have a um a nice combination of theorists and experimentalists here and also fundamental people science and engineers. And um the scale actually come out a lot of times actually how to how does current models bridge couple of scales from microscopic scale all the way down to molecular scale during catalysis and that's one. And also Emily you mentioned about the dynamics so how does the model actually handle the time scale from from various points. Um so one of the things that we've been studying is recently studying is how um so in a in a photocatalysis you actually can have the localized redox reactions. You can one type of size doing reduction and the other side can kind of doing oxidation and actually that can ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas about scales and models in catalysis.",
+            "ask question": "The speaker is asking questions about how current models handle scales and time scales in catalysis.",
+            "signal expertise": "The speaker is mentioning their work, indicating their expertise."
+        }
+    },
+    {
+        "utterance": "Shu Hu: kind of the land scale can give you a different reactive transport mechanism than the electrocatalyst. The point is for example, the CO2 reaction, CO2 equilibrium is actually pretty slow. So you can have the CO2 transient reacting in the pH 9 or pH 8 solutions on the order of minutes to be able to convert that to bicarbonates and vice versa. And how does that actually play a role across multiple scales in the electrolysis process or in a photocatalysis process. So that's something that we actually don't quite know, the reason we find out. And then what the model can do is actually kinetics but how does the kinetics, is the kinetics right across multiple scales? How does the kinetics works out near the near the catalyst at a nano scale. So those are the things actually probably require more of the characterizations and actually to close the loop. So that's the thing I'm thinking about. ",
+        "annotations": {
+            "develop idea": "The speaker expands on the concept of reactive transport mechanisms, CO2 equilibrium, and the challenges of scaling, providing examples and insights into the process.",
+            "ask question": "The utterance contains questions about the role of these processes across multiple scales and the accuracy of kinetics at the nanoscale.",
+            "identify gap": "The speaker identifies a gap in understanding how kinetics work across multiple scales and near catalysts at a nanoscale."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Kelsey? ",
+        "annotations": {
+            "encourage participation": "The speaker, Emily Carter, is inviting Kelsey to contribute to the discussion by saying her name, thus encouraging her participation."
+        }
+    },
+    {
+        "utterance": "Kelsey Hatzell: Yeah, so I think we're covering quite a lot of topics across many different length scales and I feel like some thread between a lot of different comments have been time, kind of how do we understand mechanisms, how do we design experiments, how do we translate a bulk electrolysis measurement for a material property to a cell. And that's something that we think a lot about in terms of I come from a battery field where batteries are extremely mature and so the question about reality is very much kind of always on the tip of what we're studying. And I think that this field of CO2 electrolysis has a lot to learn from fuel cells in just in the past in terms of there's been quite a lot of work on how you test something on a rotating disc electrode and how you make an ink and how you formulate that composition and how that impacts reaction kinetics, your the morphology of your electrode. But just kind of an aside to this conversation in terms of characterizing interfaces and I think it was Lindsey who was mentioning the importance of chemical micro environments and how do we probe these length scales that are in the nano scale. And of course we have the opportunity to go to the nano scale moving from optical techniques to x-ray techniques but really if you're going to get to the nano scale techniques you're really limited to electrons really to probe those particular micro environments. But that's going to be an exceedingly hard challenge. Understanding the nano scale for these micro environments is I think just very very challenging to detect. ",
+        "annotations": {
+            "develop idea": "Kelsey expands on previous discussions by highlighting the challenges of translating bulk electrolysis measurements to a cell level and the importance of understanding mechanisms.",
+            "identify gap": "Kelsey identifies a gap in current capabilities, noting that understanding the nano scale for micro environments is very challenging to detect.",
+            "supportive response": "Kelsey's utterance is supportive as it acknowledges previous comments and builds upon them, showing agreement with the direction of the conversation."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yep, definitely. Eva? ",
+        "annotations": {
+            "supportive response": "The utterance 'Yep, definitely' expresses agreement and validation.",
+            "encourage participation": "The utterance 'Eva?' invites Eva to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Eva Nichols: Hi. I wanted to bring in another comment about length scales and what how local is local. And this is something I haven't really thought too deeply about but I wonder along similar lines. I know that there's a technique for crystallographic determination of disorder or order called PDF. So I don't know if anyone here is familiar with that but it's basically a way to use crystallography to map out potential disorders on not immediate length scales like bond scales and not long range for example like something you could get from x-ray diffraction patterns but you can look at maybe several nanometer length scales. So I'm curious if anyone is interested about using this PDF technique in order to look at electrode surfaces and maybe understand how under operating conditions the electrode may be restructuring and creating some medium range disorder. ",
+        "annotations": {
+            "ask question": "Eva asks if anyone is interested in using the PDF technique to look at electrode surfaces, which is a direct question seeking opinions or information from the group."
+        }
+    },
+    {
+        "utterance": "Emily Carter: So is PDF not pair distribution function? Is it not referring to that? I assume that's what it was. ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification on the meaning of 'PDF' and its relation to 'pair distribution function'.",
+            "acknowledge contribution": "The speaker is also acknowledging Eva's contribution by engaging with her mention of PDF."
+        }
+    },
+    {
+        "utterance": "Eva Nichols: That's right, yeah, it is. So there are now it used to be to my knowledge and I'm not an expert that this was mostly confined to synchrotron radiation but nowadays I think it's becoming more accessible just from a laboratory scale diffractometer and so you might be able to start doing more operando type experiments. ",
+        "annotations": {
+            "develop idea": "Eva is expanding on a previous idea by providing more details about PDF and its accessibility.",
+            "supportive response": "Eva is providing additional information in a supportive manner."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, I mean, the probe though is still x-ray, is that right or what? Yeah. So so ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification or information about the probe being used, specifically whether it is still an x-ray probe."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: I do think to do it in situ you would still need a synchrotron source for to have enough photons in and even get enough photons out for an operando thing though. But PDF I still I mean for I don't know, I don't think synchrotrons, you do have to fly to them, but it still is really possible I think to do those techniques. ",
+        "annotations": {
+            "Develop idea": "The speaker expands on previous discussions about experimental techniques, specifically regarding in situ and operando experiments.",
+            "Offer feedback": "Linsey Seitz provides her opinion on the practicality of using synchrotrons for certain experiments.",
+            "Identify gap": "The utterance touches on the limitation of accessing synchrotrons, implying a gap in accessibility."
+        }
+    },
+    {
+        "utterance": "Emily Carter: I mean there are people that right are doing that at light sources or at least are trying to do those kinds of in operando experiments at light sources. So ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: We've used EXAFS more than PDF and we still get really nice information on kind of local local order or disorder, right? And so you get a Debye-Waller factor would tell you something like increasing disorder with testing. ",
+        "annotations": {
+            "Signal expertise": "The speaker mentions their experience with EXAFS and PDF, indicating expertise in these techniques.",
+            "Develop idea": "The utterance develops the idea of using EXAFS and PDF for understanding local chemical activity by providing specific examples of what these techniques can reveal."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Kelsey? ",
+        "annotations": {
+            "ask question": "The utterance is a question addressed to Kelsey, requesting her input or response.",
+            "encourage participation": "The utterance invites Kelsey to contribute to the discussion."
+        }
+    },
+    {
+        "utterance": "Kelsey Hatzell: Yeah, pair so PDF is great for basically amorphous materials. So it really can capture heterogeneity in materials. From my understanding it's very very good for heterogeneous materials. And so synchrotrons are great. The reason you go to synchrotron is time scale, that temporal scale and as synchrotrons get upgraded to femto, free electron lasers, that's going to be the benefit. But a lot of techniques that introduce coherence, like coherent diffraction imaging breaks the laws of wavelength and so your resolution is governed by the wavelength. And so coherent diffraction imaging is I think even it's the challenge with PDF and coherent diffraction imaging, these are both reciprocal space techniques. That means I need a model to interpret my data. And so that really opens the scale in as someone who does a lot of reciprocal and real space imaging, it is super dependent on having good models, good data analysis and you know which is going to be coupling machine learning, artificial intelligence. But yeah it's like any experiment if you're dependent on a model, that's a whole another body of work that has to be done to interpret that data set. But I like the idea of PDF though. It's a very powerful technique. ",
+        "annotations": {
+            "develop idea": "Kelsey is expanding on existing ideas about PDF and its applications, discussing its use in characterizing materials.",
+            "signal expertise": "Kelsey is showing her knowledge about materials science techniques, specifically PDF and coherent diffraction imaging.",
+            "supportive response": "She expresses a positive view of PDF as a technique, calling it 'very powerful'."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Shu? ",
+        "annotations": {
+            "ask question": "The utterance is a direct question to Shu, seeking input or thoughts.",
+            "encourage participation": "The question invites Shu to participate in the discussion, encouraging contribution."
+        }
+    },
+    {
+        "utterance": "Shu Hu: Yeah, I agree with all of you are said and I'm excited about this idea too. My suggestion is maybe we also need to look at the time resolved PDF because these things are moving, labile. So if we couldn't do that you are going to see average effect which actually wash out all the features. So I wonder if anyone knows that the people actually have looked into that maybe at SLAC and I don't know. So that's an interesting technique to think about. Essentially it gets down to the spatial and temporal resolved characterization. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests using time-resolved PDF for spatial and temporal resolved characterization.",
+            "develop idea": "The speaker explains the potential benefits of time-resolved PDF, such as avoiding average effects that wash out features.",
+            "ask question": "The speaker asks if anyone knows about previous work on time-resolved PDF, possibly at SLAC."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, and it's what Kelsey said, it's going to require the FEL presumably. Yeah. Linsey, is that an old hand or is that a new hand? ",
+        "annotations": {
+            "ask question": "The speaker asks Linsey to clarify if something is an old hand or a new hand.",
+            "supportive response": "The speaker agrees with Kelsey's statement.",
+            "encourage participation": "The speaker invites Linsey to contribute by asking for clarification."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Sorry, I had actually originally wanted to respond to Eva's first question or to the group about if we consider the complexity, right, of having a co-fed stream of not just CO2 but with oxygen or things present. But then I actually wanted to flip it on its head. Do we actually have an opportunity to make more interesting products if you co-feed CO2 and oxygen? Do we get more oxygenates that we're not seeing as much right now? What if we specifically co-evolved peroxide and CO2 reduction products and then to specifically use that peroxide you could throw in some molecular facilitated catalyst because we do some molecular facilitated like a tungsten peroxyacetate, right? So you could do a selective oxidation of a CO2 reduction product. A little out there with mechanism, but is that a way to get ethylene carbonate which we're going to need at huge scales for lithium ion batteries or do we have some more tunability for complex mechanisms that might be fun? ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of co-feeding CO2 and oxygen to make more interesting products.",
+            "develop idea": "The speaker elaborates on the idea by discussing potential products and methods, such as using peroxide and molecular facilitated catalysts."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah, that's a great that's a great point and a great idea. I think, you know, one of the things we often talk about selectivity as being the gold standard, but in fact there are, you know, for example, if you think about making fuels, especially if you know the only, my hope is that we electrify all land-based vehicles full stop. You know, and then the question is what do we do about jet fuel? Well, jet fuel is is in fact ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a previous point made by another group member.",
+            "develop idea": "The speaker expands on the idea of selectivity by considering different applications like jet fuel production."
+        }
+    },
+    {
+        "utterance": "Emily Carter: a mixture right now. So you don't need to be that selective when you're thinking about making jet fuel. So it's that's just an example of of the fact that you could think about about the messiness as a as a as an advantage in some instances. Jose. ",
+        "annotations": {
+            "develop idea": "This code applies because Emily Carter is expanding on previous ideas about selectivity in CO2 conversion, providing an example of how lack of selectivity might be advantageous for making jet fuel."
+        }
+    },
+    {
+        "utterance": "Jose Mendoza: Yeah I guess I somehow related to what has been discussed but something that has been also in the back of my mind for for some time which is the life cycle and the composition mechanisms right? So let's say that we make this dream catalyst and it's earth abundant but then it dies after a few cycles right and it's selective and it's but then I guess the we we don't know at least as far I know the the decomposition mechanism that many things have right? And that will help us to understand if we reach that dream material dream catalyst or dream interface and we try to stop the way it decomposes right? Because let's say that's what it's trying to be what is happening probably in the battery fields or any other big application subfield where you you have something but you want to extend the lifetime and you realize that if you have something that lasts let's say 10 years or 50 years doesn't matter that it's the most expensive things because it will recover over time all that investment that you did. And on that on this direction I was thinking if if we do that on these electrochemistry or these interfaces what could be the ways to characterize the composition mechanisms right? So what Emily was saying earlier is that well you you you can also get the dynamics the the the the solvent but also there is a lot of things happening let's say in the electrode interface right? You have an electric field there and there is a lot of things happening in between at the theoretical level you know you have to do different approximations let's say a grand canonical Monte Carlo or something to change the number of particles on that interface and even you have to have that polarization. So from the theoretical point of view you you you know it's a it's a problem that that it's there that is related to the composition but from the experimental point of view something that that you were discussing with how you measure those things that are happening there. So I wonder if if if people look at the composition from the experimental point of view how would you check those things right? So how would you still do RDF would you have to change the mechanism do you have to do a probe and yeah it was some sort of open question related to summary what you were discussing but also something that I have been thinking about for you know if we can get something that it lasts a very long time probably that could also be a way to to go even though it might be more expensive. Thank you. ",
+        "annotations": {
+            "develop idea": "Jose expands on the concept of material durability and the importance of understanding decomposition mechanisms.",
+            "ask question": "Jose asks for perspectives on characterizing composition mechanisms, both theoretically and experimentally.",
+            "identify gap": "Jose identifies a gap in understanding decomposition mechanisms and how to characterize them.",
+            "summarize conversation": "Jose summarizes his thoughts and relates them back to previous discussions."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Yeah I mean it it anything that dies after a few cycles is not not useful. And you're right if there was a way to to preserve and stabilize what was working that that is that would be very interesting. Kelsey. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and validation for the previous discussion on material durability."
+        }
+    },
+    {
+        "utterance": "Kelsey Hatzell: I have a question kind of for those of you who are deep into this CO2 electrocatalysis area and this is getting to the end the last question on this prompt is what is everyone think about methane and methane conversion through electrochemical means? So I'm just I'm just probing the audience here. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification from other team members on a prior statement or idea proposed, specifically asking about methane and methane conversion through electrochemical means."
+        }
+    },
+    {
+        "utterance": "Emily Carter: It's really tough. ",
+        "annotations": {
+            "None": "The utterance is a brief expression of sentiment and does not clearly fit into any of the provided codes as it does not actively engage in discussion, provide feedback, or add substantial content."
+        }
+    },
+    {
+        "utterance": "Wilson Smith: I like I like in general the idea of alternative oxidative chemistries. So just pairing CO2 reduction with something that's other than water oxidation. The issues with selecting what you want to oxidize in this case methane has a lot of boundary conditions. So one would would say if you talk to an energy company and you say you want to do valorization of methane they take that as a signal to say well we can keep our methane infrastructure alive longer. And there's pros and cons to that so it's kind of it can enable one thing while addressing another. But it it comes into I think the systems integration which is super interesting because it's not just you know optimize CO2 reduction optimize methane oxidation put them together. There's there's integration issues of products or intermediates of one can cross over and oxidize or reduce at the other end making the system not stable. So I think in in looking at a different chemistry to pair with CO2 reduction on the anode side it's not just the efficiency or selectivity of that reaction but how the integration would work. You know if one works in a very alkaline system very very well and the other one prefers an acidic medium then you need good membrane selectivity or good electrolyte that reduces crossover. So I really like the idea of of a different oxidative chemistry but the pairing of it I think is is the key question rather than just the the efficiency of that one reaction. ",
+        "annotations": {
+            "propose new idea": "Wilson Smith introduces the idea of exploring alternative oxidative chemistries to pair with CO2 reduction.",
+            "develop idea": "He elaborates on the considerations and challenges of integrating CO2 reduction with methane oxidation or other chemistries.",
+            "identify gap": "Wilson highlights the gap in current approaches regarding the integration of different chemistries with CO2 reduction, particularly concerning their compatibility."
+        }
+    },
+    {
+        "utterance": "Emily Carter: People have been working on CH activation for decades since I was an undergraduate. Certainly probably even before that but when I was an undergraduate at Berkeley there was a big group I was in discovered this iridium catalyst that bit into the CH bond for the first time Bob Bergman's group and but it's it's just not not trivial at all. And you know I think I mean there's some really interesting things that unfortunately the things that I that I think are in some in some ways most interesting we have to figure out if we can use either waste heat or at least renewable electricity to use them. I mean and so I don't really see electrochemistry as the route to doing to taking care of methane. I hope I'm wrong but there are really interesting ways of using plasmas to to essentially take methane to hydrogen and carbon. So that I think is an interesting route as well as actually some high temperature routes involving metal chlorides that can take methane to hydrogen chloride which then can be you can recycle into hydrogen essentially and carbon. So I think there are other ways to do it but again that involves another set of another reactor that you're going to couple to. So I'm just looking at these questions we we have a like five more minutes where I think until we should try to synthesize look at what Jimmy's notes have to say and see whether we can extract the agree on on the extraction of what he he should say to the larger group but so I just want to go through these questions again. How can we take advantage of the increasing competitiveness of clean sources of electricity to valorize greenhouse gases? So to me the answer for that is of course you know first of all every amount of clean source of electricity should be used as electricity first and foremost because every other use of it for electrolysis or something else is not going to be 100% efficient so it wouldn't be the best use of it but in the case that you have excess wind or excess solar you know midday in California nighttime in in the Midwest for wind I think we should be thinking about having ways to have distributed electrolysis. I don't know I mean I don't know how practical it is but but essentially just making sure that we don't waste any electricity that we make because right now we are wasting it. Anyway I don't know if anybody has any comments on that but oh Jordi welcome. ",
+        "annotations": {
+            "process management": "She attempts to manage the discussion flow, suggesting a synthesis of Jimmy's notes and further discussion."
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Hi thank you. Sorry to miss the fun. I was just finishing teaching. ",
+        "annotations": {
+            "process management": "Jordi is managing the meeting flow by announcing his arrival and apologizing for missing part of the discussion."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Understood. Okay and then we spent a lot of time talking about fundamental questions arising from the transition from laboratory to implementation and scale so I think we've we've pretty much addressed that. We talked about local chemical activity so we addressed that issue. And I think Shu brought up the issue of coupling oxidative and reductive possibilities so we addressed that a little bit more. But there's you know the whole issue I suppose of of what should the oxidative side be that's come up before. And I don't know do you have any does anyone have anything else they want to add? Otherwise we can go we can look at at Jimmy's notes. ",
+        "annotations": {
+            "summarize conversation": "The speaker is summarizing what has been previously discussed by the group, mentioning specific topics covered.",
+            "encourage participation": "The speaker is inviting others to contribute their thoughts or ideas before proceeding."
+        }
+    },
+    {
+        "utterance": "Shu Hu: I just to follow up sorry go ahead. ",
+        "annotations": {
+            "None": "The utterance is a polite expression to let others speak and does not contain substantial content that fits into any of the other categories."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Go ahead Shu. ",
+        "annotations": {
+            "encourage participation": "The speaker invites Shu to contribute to the discussion, encouraging participation."
+        }
+    },
+    {
+        "utterance": "Shu Hu: Oh thanks yeah. So just follow up Emily your point on the coupling oxidative to reductive. So I see lots first of all I see lots of opportunities for fundamental electrochemistry study which paves the way for many other reaction or reactor designs. So in terms of the oxidative plan B you can you can think about generating reactive oxygen species from water for example making ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on a previous idea about coupling oxidative and reductive possibilities by suggesting specific applications.",
+            "acknowledge contribution": "The speaker is acknowledging and building upon Emily's previous point.",
+            "supportive response": "The tone of the utterance is supportive and constructive."
+        }
+    },
+    {
+        "utterance": "Shu Hu: selective water oxidation to hydrogen peroxide and then the hydrogen peroxide can work with other things and you can generate some other oxygenates or other products. And also we talk about CH activation but methane CH activation is the hardest one. But I'm sure there are like millions other compounds that are easier than methane activation and and if we think about a very fine niche markets and making fine chemicals or even for example drug discovery and how do you actually couple those electron driven organic synthesis with the CO2 reduction and to make chemicals and that I think that would be something to think about too. ",
+        "annotations": {
+            "encourage participation": "The speaker invites further discussion and thought on the ideas presented, encouraging others to participate."
+        }
+    },
+    {
+        "utterance": "Emily Carter: Linsey, did you want to say something? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information from Linsey about whether she wanted to say something.",
+            "encourage participation": "The speaker is inviting Linsey to contribute her thoughts or ideas to the discussion."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: I was just going to throw other emissions out there at a smaller scale and think about something like NOx SCR which is done thermochemically right in zeolites and it's done very well and an exciting area of study. Is there something we could play around with with NOx and ammonia natural I think equilibria that then exist in water and then if you coupled something like that with in urban areas right the concentrations of like NO and NO2 are approximately also 400 ppm so you could almost even have a one to one ratio if you're doing air capture of NOx species and CO2. I don't have a particular direction just throwing some interesting thing I was trying to jumble around in my head. ",
+        "annotations": {
+            "propose new idea": "Linsey introduces a new idea of exploring NOx emissions and its connection to CO2 capture and ammonia equilibria.",
+            "ask question": "Linsey asks if there's something that could be done with NOx and ammonia natural equilibria in water."
+        }
+    },
+    {
+        "utterance": "Emily Carter: That's that's really I like that. That's great. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and positive evaluation for a previous contribution, which aligns with the definition of a supportive response."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Hi. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Okay. And our group number is 3.2, right? ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Mhm. And you'll probably do us in concert with the other ones because there were three different rooms with the same topic. So we'll probably all go in order. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a previous statement with 'Mhm'.",
+            "process management": "The speaker explains the procedure for their group and others, managing the meeting flow."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Okay. Do they have the same 3.2 room number or they have a different room number? ",
+        "annotations": {
+            "process management": "The speaker is asking for clarification on logistical details (room numbers) for organizing a task or activity."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: No they have a different room number. They just have the same prompt the same questions to start from. But they probably have very different answers so we'll see. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by clarifying how different groups are structured and how they will proceed with the same prompts.",
+            "supportive response": "The utterance provides information and clarity in a supportive manner regarding the structure and expectations."
+        }
+    },
+    {
+        "utterance": "Jianbing \"Jimmy\" Jiang: Got it. Got it. Thanks. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: No problem. ",
+        "annotations": {
+            "supportive response": "The speaker provides a supportive response to acknowledge the previous speaker without adding new content."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Good to see you Jordi. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Hi friends. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Hi. Fung's been doing very well. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Oh that's good. I'm glad to hear. He keeps telling me about all the beam times that you that you have. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Yeah we I think we've still collaborated with your group a few times. I think we sent you a few samples and you guys sent us a few samples so that's really great to uh ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a past interaction or contribution, specifically referencing previous collaborations and sample exchanges with Jordi Cabana's group."
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Something like that. Yeah I've heard something similar. You know I I keep hearing that he's around in the in the lab like you know using our glove box. ",
+        "annotations": {
+            "Supportive response": "Jordi is expressing agreement and validation with his statement, acknowledging a similar situation."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Oh okay I didn't know he was using your glove box. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: You know I told him that he could so it's okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Okay as long as you're okay with it. ",
+        "annotations": {
+            "supportive response": "Linsey is expressing agreement or acceptance to Jordi's statement about his son using her lab equipment."
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: No no no it's not an issue whatsoever. But it was it was interesting because I was talking to one of my group members last week and he mentioned yeah Haifang was doing something and I was like oh he's still showing up. Okay that's good. Yeah so yeah he's been sharing beam time with with my group very kindly and so you know we kind of return the favor when we can so. That's great. That's great. Hopefully some some of the stuff that he's doing is you know bubbling up into into a study that you can publish. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Yeah I hope so. So he I I threw some DEMS at him too. So he was excited to get it set up and and running but it's a it's a tricky thing to do. So he's doing that and the spectroscopy so I feel like he's got momentum right? He's very comfortable with the spectroscopy and helping students in my group and the DEMS and the catalysis aspect just has been a new idea to kind of approach instead of the battery ",
+        "annotations": {
+            "develop idea": "The speaker is discussing and elaborating on an existing project or task involving DEMS and spectroscopy.",
+            "signal expertise": "The speaker mentions being comfortable with spectroscopy and implies knowledge about DEMS and catalysis."
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Yeah he told me he told me that he was learning a lot about catalysis that he already mentioned which is great because that's what you want out of a postdoc right? You want to learn something. ",
+        "annotations": {
+            "Supportive response": "The speaker expresses a positive sentiment about the postdoc learning experience, indicating agreement and support."
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: Yeah yeah very good. So alright we'll get to catch up in the other room. ",
+        "annotations": {
+            "process management": "Managing the meeting flow by suggesting to continue the conversation in a different room."
+        }
+    },
+    {
+        "utterance": "Jordi Cabana: Good to see you. Yep. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Dr. Lena Petrova: Okay, so I think we can get started. Thanks everyone for joining. I'm excited to dive into these challenges. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Dr. Ben Carter: Yeah, me too. I was looking over the preliminary data last night, and there are some really interesting patterns, but also some confusing ones. ",
+        "annotations": {
+            "Supportive Response": "The speaker expresses agreement and a positive evaluation of the preliminary data, indicating engagement with the discussion."
+        }
+    },
+    {
+        "utterance": "Dr. Aris Thorne: The confusing ones are what I'm interested in. Specifically, the anomaly in the protein folding simulation. It doesn't align with any of the existing models. I think that's where the novelty is. ",
+        "annotations": {
+            "identify gap": "The speaker implies there's a gap in current knowledge or models since the anomaly in the protein folding simulation doesn't align with existing ones."
+        }
+    },
+    {
+        "utterance": "Dr. Kenji Tanaka: I agree, Aris. But we have to be careful not to chase a ghost. It could be a data artifact or a calibration error in the sensor array. Before we build a new theory, we need to be absolutely certain the data is robust. ",
+        "annotations": {
+            "critical response": "The speaker is cautioning against interpreting the data without ensuring its robustness, suggesting potential flaws.",
+            "identify gap": "The speaker is pointing out potential gaps or issues with the data, such as artifacts or calibration errors."
+        }
+    },
+    {
+        "utterance": "Dr. Lena Petrova: That's a fair point, Kenji. So, what's our first step to validate it? Ben, since you were looking at the raw data, do you have any ideas on how we could stress-test this particular anomaly? ",
+        "annotations": {
+            "ask question": "Dr. Petrova is asking Ben for ideas on how to stress-test the anomaly.",
+            "acknowledge contribution": "Dr. Petrova acknowledges Kenji's contribution by agreeing with his point.",
+            "process management": "Dr. Petrova is guiding the discussion towards validating the anomaly."
+        }
+    },
+    {
+        "utterance": "Dr. Ben Carter: We could try running the simulation with a different set of initial parameters, ones that should theoretically prevent that fold from occurring. If it still shows up, that would suggest it's not a simple parameter-based error. I can start setting that up. ",
+        "annotations": {
+            "propose new idea": "introducing a new approach to validate the anomaly observed"
+        }
+    },
+    {
+        "utterance": "Dr. Aris Thorne: Great idea, Ben. While you do that, maybe Kenji and I can review the sensor calibration logs from that time period. Just to cover all our bases on the hardware side. ",
+        "annotations": {
+            "supportive response": "Dr. Thorne expresses agreement and support for Dr. Carter's idea by offering to review the sensor calibration logs.",
+            "assign task": "Dr. Thorne assigns a specific task to himself and Kenji, which is to review the sensor calibration logs from that time period."
+        }
+    },
+    {
+        "utterance": "Dr. Kenji Tanaka: Sounds like a plan. ",
+        "annotations": {
+            "supportive response": "Dr. Tanaka expresses agreement with the proposed plan."
+        }
+    },
+    {
+        "utterance": "Dr. Lena Petrova: Perfect. Okay, let's move on to the second challenge then: the issue with the gene sequencing algorithm. Aris, I know you had some initial thoughts on this. Do you want to maybe share your screen and walk us through what you were thinking? ",
+        "annotations": {
+            "ask question": "Dr. Petrova is explicitly asking Aris for their initial thoughts on the issue with the gene sequencing algorithm.",
+            "process management": "Dr. Petrova is managing the meeting flow by transitioning to a new topic and inviting discussion.",
+            "clarify goal": "Dr. Petrova is clarifying the objective of the next discussion segment, which is the issue with the gene sequencing algorithm."
+        }
+    },
+    {
+        "utterance": "Dr. Aris Thorne: Sure, one second. Okay, can everyone see my screen? So this is the output from the current algorithm. You can see here, in this region, the base-pair matching confidence drops significantly. My hypothesis is that the algorithm is overly sensitive to repetitive sequences, which are common in this sample. I've sketched out a potential modification to the weighting function here. ",
+        "annotations": {
+            "propose new idea": "Dr. Thorne suggests a potential modification to the weighting function as a new approach to solve the algorithm's issue.",
+            "develop idea": "Dr. Thorne explains his hypothesis about the algorithm's sensitivity to repetitive sequences and discusses a potential solution."
+        }
+    },
+    {
+        "utterance": "Dr. Ben Carter: That makes sense. Have you tried... ",
+        "annotations": {
+            "ask question": "Dr. Ben Carter is requesting information or clarification on whether an attempt has been made to try something.",
+            "supportive response": "Dr. Ben Carter acknowledges the previous statement by saying 'That makes sense'."
+        }
+    },
+    {
+        "utterance": "Dr. Kenji Tanaka: Before we modify the code, could we see the raw sequence data for that region? I want to see the repeats for myself. ",
+        "annotations": {
+            "ask question": "Dr. Kenji Tanaka is requesting information or clarification on the raw sequence data for a specific region to see the repeats for himself."
+        }
+    },
+    {
+        "utterance": "Dr. Aris Thorne: Yep, pulling it up now. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    }
+]

@@ -1,0 +1,840 @@
+[
+    {
+        "utterance": "Brenda Rubenstein: I'm Brenda Rubenstein, assistant professor of chemistry at Brown. Um, I've been spending a lot of time um basing basically evolutionary models on on biophysical characteristics uh that that one can compute. Um, my broader interest and and Angad basically hit it experimentally is is trying to actually create um models that that would actually predict how evolution would proceed on different viruses and how they would change. And the key issue and this is where it connects to his is um we have terrible models of what's going on in the cells. Um, you know, one I I can I can give you binding affinities also wazu to screen compounds, but I can tell you that half of that is meaningless. Um, you know, yes, it could bind in this in this very clean setup, but then is it is it down regulated? Are other proteins expressed? What what is going on? Um, and I really think we need more work that is cross theoretical and and experimental there where we we do actually have genotypic platforms where we can quickly come up with models and design models so that we can do some some level of prediction rapidly. Um, so so I think that's very important. Um, from the prompt, um, I guess I'm most interested in in the notion of of uh, you know, how do you prevent jumping? Uh, you know, can can you think of uh, for example, differences in binding to different glyco proteins um on cell surfaces um that differentiate different species that one can then target. Um, you know, from the theoretical perspective, it's hard to model glyco proteins, it's still a challenge. Um, but but maybe that's that's one place where where people could could jump. ",
+        "annotations": {
+            "propose new idea": "Brenda suggests a new approach by emphasizing the need for cross-theoretical and experimental work.",
+            "develop idea": "She elaborates on her current work, challenges, and interests in evolutionary models and preventing viral jumping.",
+            "ask question": "Brenda asks for thoughts on preventing viral jumping and potential strategies like targeting glyco proteins.",
+            "signal expertise": "Brenda establishes her background and expertise in chemistry and evolutionary models.",
+            "identify gap": "She highlights the current limitations in modeling cellular processes and glyco proteins.",
+            "critical response": "Brenda critiques the current state of models in the field.",
+            "offer feedback": "She suggests a potential direction for research focusing on glyco proteins.",
+            "encourage participation": "Brenda invites others to think about preventing viral jumping.",
+            "clarify goal": "Brenda discusses her research interests and goals."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Thank you. The next on my uh screen is uh Dr. Huet from uh University of Georgia and please correct me if I mispronounced that. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Diego Huet: It's it's actually French so I I'm it's it's pronounced usually but like Huet it's fine in English. Um, yeah, I'm I work with parasites with eukaryotic parasites so like um same thing uh as uh Danny on as well. I work with parasites that produce malaria. So this class of parasites called complexans. And we use in my lab uh model like a cousin of malaria, it's called Toxoplasma gondi as a as a yeast model for these very divergent organisms. And just thinking about the the prompts that we got and one of them is uh can one target genes that allow cross species infections so as to target pathogens in humans or hosts or limiting jumping events. Uh someone in my lab kind of like is trying to do that at least with my parasite and that I don't know if that can be applied to broader a broader approach but basically we use CRISPR to basically infect cells this you use your pathogen of interest and you infect cells of different hosts, let's say humans, bats, you name it. And then you those cells need to be crispered so those cells need to have uh need to lack certain genes because you basically you prepare them as a library and then you you infect them and then you just look at which ones did infect, which ones did not. And that way you can realize, okay, gene X was missing from these cells, so therefore gene X is used for entry in these cells and so on and so forth. So that's also that's that's something that the CRISPR biology just open up for us. Um, so I think that's something that's pretty pretty feasible. ",
+        "annotations": {
+            "propose new idea": "Diego introduces a new idea related to using CRISPR to target genes for cross-species infections.",
+            "develop idea": "He elaborates on the CRISPR method and its application in studying cross-species infections.",
+            "signal expertise": "Diego signals his expertise by explaining his work with parasites and the specific methods his lab uses."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Thank you. Uh next on the screen is uh Dr. Medina from USDA. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by introducing the next speaker, Dr. Medina from USDA."
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: Hello everybody, my name is Gisselle Medina and I am a molecular biologist at um ARS USDA. I work at Plum Island Animal Disease Center. Um, and uh the work that I have been doing in the past has been focused in understanding virus host interactions in order for um developing better life attenuated vaccine candidates. And so at Plum Island we can actually design these uh alternative vaccines and then test it in animals and our focus is mainly to control um viral diseases in livestock animals, mainly uh pigs and cows. And something that caught my attention from the talk this morning was that um a lot of the domesticated animals including pigs are serving as amplifiers of uh these uh viruses. And something that I just thought based on the prompt uh questions is to understand perhaps the transcriptomics of these animals and and what I'm mostly interested is the interferon pathway because this is a um restriction natural restriction element that is found in um all mammals and but there is a significant variability among them. So as we compare bats or pigs, there are some evolutionary uh distinction that uh perhaps can help us uh in developing uh better uh biotherapeutics against a specific diseases. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states her own expertise and qualifications related to the task.",
+            "develop idea": "The speaker expands on her existing research and interests, providing more details.",
+            "propose new idea": "The speaker introduces new ideas for research, such as studying the transcriptomics of certain animals and the interferon pathway."
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: Uh and that's all what I have for now. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Thank you. Um, we'll go to another uh member of the Illinois faculty who's joined us and uh that's Dr. Witola. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by transitioning to the next participant.",
+            "encourage participation": "The speaker is inviting Dr. Witola to contribute by mentioning their name and indicating it's their turn."
+        }
+    },
+    {
+        "utterance": "William Witola: Yeah, nice to meet you everyone. Sorry, I I didn't have my video fixed. Uh, you know, every time I tried to connect it is crashing my computer, but I have a picture of myself there. I look exactly like that. Yeah, so I'm a parasitologist and uh I know uh Dr. Van Dunk Donk very well because my my wife works as a technician in uh his wife's lab. So we we live in the same neighborhood. Uh, so uh what I do in my lab is um I work on uh protozoan parasites, particularly those that are intracellular. And then on the other side I also work on uh nematode parasites. Those are uh multi cellular organisms. So in the case of uh protozoan parasites, I'm specifically interested in uh you know, identifying small inhibitor molecules for essential enzymes that can further be developed into therapeutics. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his own expertise and qualifications as a parasitologist and his research focus.",
+            "None": "No other code primarily applies as the utterance mainly serves as an introduction."
+        }
+    },
+    {
+        "utterance": "William Witola: Uh then also talking about protozoan parasites, I look at uh how the host molecules can actually be used to kill the pathogens, uh particularly intracellular pathogens. For this I use uh Toxoplasma gondi as my model of study. And so what what we have found is uh uh there are certain animal species uh that are inherently resistant to toxoplasma. And so in that regard we've identified uh host molecules called uh small GTPs immunity associated uh proteins. So what these do is they kind of activate if they are expressed in substantial amounts, they kind of activate the host immune uh system, innate immune system uh such as pyroptosis which kills off the infected cells themselves. So um that kind of relates to one of the prompts um where they say are there biologics uh that can be easily reprogrammed with common delivery platform. So what we've seen is these small GTPs are kind of highly conserved among all mammalian species and the active motif is pretty much the same in all mammals. The only difference is that uh some mammals express them actively after getting infected by an intracellular pathogen and those mammals we found that they tend to be more resistant to uh intracellular pathogens. ",
+        "annotations": {
+            "develop idea": "He's expanding on his research findings by providing details on small GTPs and their function.",
+            "signal expertise": "He's stating his background and expertise in parasitology."
+        }
+    },
+    {
+        "utterance": "William Witola: can have a platform where we can get um those peptides are expressed or rather you know introduced in an infected host and upregulated in expression that would trigger expulsion or killing of uh pathogens. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of using a platform to express peptides that could trigger the killing of pathogens.",
+            "develop idea": "The speaker is expanding on previous ideas related to using biological mechanisms to combat pathogens by suggesting a specific platform for peptide expression."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: So sorry Will just quick follow up so have you found that this pyroptosis mechanism works against like a broad range of bacteria viruses like in addition to the toxo model wasn't? ",
+        "annotations": {
+            "ask question": "The utterance is a request for information or clarification regarding the pyroptosis mechanism's effectiveness against a broad range of pathogens, beyond the toxo model."
+        }
+    },
+    {
+        "utterance": "William Witola: Yeah, yeah, it appears to be not specific for a particular pathogen, but it kind of targets intracellular pathogens, particularly those pathogens that form uh like a vacuum once they get into a host cell because it's that vacuum that those peptides tend to latch onto and then on top of pyroptosis they also activate acidification of the vacuum which also tends to kill the intracellular pathogens. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on a previously mentioned idea about pyroptosis and how certain peptides work against intracellular pathogens, providing more details and examples."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: Thanks. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Thank you. We've got one more um member of the the team here, uh Dr. Procko. ",
+        "annotations": {
+            "process management": "This code applies because the utterance manages the meeting flow by introducing the next participant."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Hello. Um I apologize that there might be bad audio on my end. I'm in the midst of traveling for a COVID themed conference and and on a subway car right now. Um but in my group, um we are interested in big data methods, experimental large scale mutagenesis to understand interactions between viral receptors and viral spike proteins. We use all of that data to engineer the viral receptors as possible. Um again, I apologize for the background noise. Um but to engineer them as as soluble decoy receptors for therapeutic and diagnostic applications, but the methods can also be turned around, we've done a little bit of that and um we can look at how mutations in the the viral spike proteins might impact their um evolution, how they they interact with receptors, how they might become more or less infectious over time. ",
+        "annotations": {
+            "signal expertise": "Erik explicitly states his group's interest and work in big data methods and experimental mutagenesis, indicating their expertise.",
+            "express humor": "Erik makes a light-hearted comment about his situation, showing humor.",
+            "clarify goal": "Erik clarifies his group's work and goals in the context of viral research."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Thank you. Uh Will, do you want to uh introduce yourself as well and maybe throw out another question or or respond to some of the things that are very able uh scribe and uh has been collecting on the uh on the PowerPoint slide. ",
+        "annotations": {
+            "encourage participation": "The speaker invites Will to contribute to the discussion by introducing himself or responding to points collected on the PowerPoint slide."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: I see that I was muted. I'm a chemist. Uh my lab works on discovery of new antibiotics from natural sources since most of our current antibiotics are from natural sources. Um and so uh I would actually like the the fellows to start talking to each other. And so based on what you have heard because at some point you have to start getting together in teams. whether you have questions for each other, whether you heard something that you're interested in. Uh we have the prompts and we can always go back to the prompts but since we have gone one round uh going around, I think it would be useful to see if there's any discussion uh based on what we've heard so far. ",
+        "annotations": {
+            "signal expertise": "He explicitly states his own expertise as a chemist and his lab's focus on the discovery of new antibiotics from natural sources.",
+            "encourage participation": "He encourages the fellows to start talking to each other, suggesting they discuss what they have heard or if they have questions.",
+            "process management": "He manages the meeting flow by suggesting a discussion based on what has been heard so far."
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: So I have a question for Eric. I'm not sure if I understood correctly but um uh is related to the receptor and the and the viral protein I guess interaction. Uh there's a lot of viruses that whose receptor is not known. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification from Eric regarding the interaction between viral receptors and proteins."
+        }
+    },
+    {
+        "utterance": "Brenda Rubenstein: question for me Eric. I I think that's an interesting question, you know, was mentioning like proteins before. I mean, can one not really create an atlas of these things? Uh you know, in in in in protein space, you can go through a variety of amino acid sequences. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information from Eric about creating an atlas of proteins, directly asking a question.",
+            "develop idea": "The speaker is building upon a previous mention of proteins, suggesting the idea of creating an atlas of these things."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Uh yes and and people people absolutely do. Um you know, they have essentially libraries where you can display in different ways virtually every extracellular domain of of every human membrane protein and test them against different viral spikes. ",
+        "annotations": {
+            "develop idea": "Erik Procko is expanding on the idea of using libraries to study protein interactions with viral spikes, providing more details on how this can be done.",
+            "signal expertise": "Erik Procko is implicitly signaling his expertise in the field of protein engineering and viral interactions."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: One comment on this scaffolds that can be universal, right? ",
+        "annotations": {
+            "supportive response": "The speaker is aligning with and slightly building upon a previous idea about scaffolds.",
+            "ask question": "The utterance ends with 'right?', indicating the speaker is seeking confirmation or agreement."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Yeah, thank you. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: So based on that answer Eric, I guess the the prompt here, can there be molecular scaffolds that can be rapidly diversified? ",
+        "annotations": {
+            "propose new idea": "The speaker introduces the idea of exploring molecular scaffolds that can be rapidly diversified based on a previous answer.",
+            "ask question": "The speaker explicitly asks if there can be molecular scaffolds that can be rapidly diversified, seeking information or clarification."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Yes, that would be my take as well. ",
+        "annotations": {
+            "supportive response": "Erik is expressing agreement with the previous statement, showing support without adding new content."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: One comment on this scaffolds that can be universal, right? I mean, yes, I think for receptor targeted strategies, maybe there may not be universal and maybe it's sort of family specific. ",
+        "annotations": {
+            "develop idea": "Angad is expanding on the concept of scaffolds and their potential universality in receptor-targeted strategies, adding nuance to the discussion.",
+            "supportive response": "Angad is generally agreeing with the concept of scaffolds while adding his viewpoint on their universality."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): capping RNA polymerase dependent RNA replication and lot of the small molecules scaffolds as I think Peter had pointed out right in the beginning tend to be sort of generic right like Remdesivir was never really developed for SARS COV2 it was developed for like HCV and Ebola right and so I think there are mechanisms beyond just receptor targeting that can be essentially targeted to develop what one what might be more broad spectrum therapies. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of targeting mechanisms beyond receptor targeting for broad-spectrum therapies.",
+            "develop idea": "The speaker develops the idea by explaining that small molecule scaffolds can be generic and using Remdesivir as an example.",
+            "acknowledge contribution": "The speaker acknowledges Peter's contribution by referencing his previous point."
+        }
+    },
+    {
+        "utterance": "Erik Procko: I 100% agree with you. 100% agree with you Angad. Yes. Yeah. ",
+        "annotations": {
+            "Supportive Response": "The speaker is expressing agreement and validation of another group member's contribution without adding new content."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: So in the parasite space and several of you work in that area, um what is the picture there in terms of having generic starting points? So maybe William. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the current state of research in the parasite space, specifically regarding generic starting points.",
+            "encourage participation": "The speaker invites a specific group member (William) to contribute their thoughts or expertise, encouraging participation."
+        }
+    },
+    {
+        "utterance": "William Witola, University of Illinois at Urbana-Champaign: Yeah, so uh that depends on what we're looking at like uh in case of parasites, you know, uh the aspect of vaccine development has been very challenging uh because parasites uh for instance uh plasmodium, the causative agent of malaria, you know, they keep on switching their antigen. You know, once uh so if you have a population of these parasites when they get into the host, uh a large number of them, you know, express a particular antigen that then the immune system will sense and you know, try to uh raise antibodies and clear them off. Now, out of those parasites, there will be a tiny amount of them that will switch uh their surface antigen and then escape the immune system. So that has been the challenge with vaccine development. So uh uh it it would actually be interesting to see how, you know, for example, we can develop molecular scaffolds that can be rapidly diversified. For example, if you detect that the parasite has switched their antigen, can you quickly change the vaccine, for example, on an already existing scaffold. Now, when we talk about therapeutics against parasites, um again, they tend to mostly develop resistance quite quickly to drugs that are out there. Um there, for example, let's take an example of uh malaria again. Um there are quite a number of drugs that have been uh developed in the recent past, they don't last long before the parasite develops resistance. Uh because these parasites tend to, you know, salvage a lot of uh their nutrients from their host. So even if they are, you know, mechanism of survival, let's say you shut down an essential enzyme for the parasite, it will start salvaging the same nutrients from the host directly. Yeah, so so those are some of the challenges we've been facing. But um the other thing is to look at some of the very unique enzymes that uh you know, drive the generation of maybe uh nutrients that the parasite cannot salvage from the host. And uh then those enzymes are kind of very conserved, they don't change over time. Um yeah, then the other aspect would be obviously also to look at how, you know, we can use the host innate immunity to resist uh the parasite as well. ",
+        "annotations": {
+            "Develop Idea": "The speaker expands on existing ideas by discussing the challenges with parasites and potential strategies for overcoming these challenges.",
+            "Propose New Idea": "The speaker suggests new approaches, such as developing molecular scaffolds that can be rapidly diversified.",
+            "Identify Gap": "The speaker identifies gaps in current approaches, such as the challenge of parasites developing resistance to drugs."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Uh William, I had a question for you. Uh hi and maybe I I don't know whether I understood it completely uh but uh as I understand uh what you were mentioning was if one develops inhibitors for certain essential enzymes. ",
+        "annotations": {
+            "ask question": "The speaker, Angad Mehta, is requesting clarification on William Witola's previous statement about developing inhibitors for certain essential enzymes."
+        }
+    },
+    {
+        "utterance": "William Witola, University of Illinois at Urbana-Champaign: Yes. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing agreement with a previous statement."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): So it's very likely that given the privileged environment in which these parasites are present, they are able to uptake nutrients from the host. Is that right? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on a prior statement regarding the ability of parasites to uptake nutrients from their host."
+        }
+    },
+    {
+        "utterance": "William Witola, University of Illinois at Urbana-Champaign: Yeah, somehow that's what makes them survive when they develop resistance too. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing agreement and providing a slight elaboration on a previous point, showing support for the discussion.",
+            "Develop idea": "The speaker is briefly expanding on a previous idea, providing a bit more insight into the survival of parasites when they develop resistance."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Right. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is acknowledging a prior statement, showing awareness and agreement without adding new content."
+        }
+    },
+    {
+        "utterance": "Arenas, Angela M: And I I I don't know. I I work with bacteria which is not sexy at all. It's the boring thing. But like the problem is that the way I I try to approach it is like a virus is kind of simple compared to a bacteria. Think about it. tuberculosis. We still have the problem 100 years later. Brucella. All of these. So, so I I think all these new approaches have been very focused on virus which is kind of in the simple spectrum. Uh uh bacteria or a parasite like William said needs multiple receptors, multiple mechanisms involved. So I don't know how do everything it's it's going towards this but we're we're we're kind of like narrowing our spectrum versus am I making sense of what I'm I'm I'm trying to say like yes. So it's kind of like complicated that way. So I don't think we can narrow it just to one specific receptor, one specific pathway or one specific area. So that's where it becomes challenging like to to me. ",
+        "annotations": {
+            "identify gap": "The speaker highlights the gap in current approaches that focus too much on viruses and not enough on bacteria or parasites.",
+            "critical response": "The speaker implicitly critiques the current focus on viruses, suggesting it's too narrow.",
+            "express humor": "The speaker uses humor when referring to bacteria as 'not sexy' and 'boring.'"
+        }
+    },
+    {
+        "utterance": "Diego Huet (University of Georgia): Everything that I can add about working with parasites when you talk about parasites, right? Parasites can be worms that are animals or protozoa that are in unicellular eukaryotes. they all have, some are extracellular, toxoplasma and plasmodium are intracellular mostly. So there's so many different things that I don't think you can virus, I don't know anything about virus phylogeny but I think there as as um as was saying is like they're they're more simpler in their approach of entering a cell than uh than any other any other parasites that might enter a cell or might enter might infect a host, right? So and for example, toxoplasma speeds out its own receptors. So there's no there's no natural receptor and that's why toxoplasma infects a third of world population and every single warm blooded animal you can think of. So there's not a universal component. It just it just goes and does its thing. So yeah, it's it's way harder for parasites. ",
+        "annotations": {
+            "identify gap": "The speaker recognizes the complexity and challenges of working with parasites, indicating a gap in current understanding or approaches.",
+            "develop idea": "He expands on the diversity of parasites and their complex infection mechanisms, comparing them to viral infections.",
+            "supportive response": "His contribution supports the discussion by adding more context and perspective on parasitic infections."
+        }
+    },
+    {
+        "utterance": "Danae Schulz (Harvey Mudd College): Um I was just going to say in the parasite space, one strategy we've taken is to try to harness the immune system um do things that will help the immune system get rid of the pathogen. And so it seems like both Will and Shazelle have ideas about how to harness various mechanisms involved in their immune response, the interferons and this pyroptosis pathway. And I'm wondering about sort of like delivery of the stuff that's going to activate those responses, like have you is that it seems like delivery to the right place in the animal is always a problem and have you thought about ",
+        "annotations": {
+            "ask question": "The speaker asks for thoughts on delivery mechanisms, explicitly seeking information from others.",
+            "develop idea": "The speaker expands on existing ideas by discussing strategies to harness the immune system and mentioning specific mechanisms.",
+            "acknowledge contribution": "The speaker acknowledges the ideas and contributions of Will and Shazelle."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: strategies there. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or suggestions on strategies for delivery, indicating a need for further information or ideas."
+        }
+    },
+    {
+        "utterance": "William Witola: Yeah, that that's a good question. Um, so I I did mention about uh, you know, using what I called uh self-assembling nanoparticles. So if if for example, we talk about toxoplasma, which is intracellular. So if you have to deliver these peptides that activate uh, uh, pyroptosis for example, they have to be able to enter the cells. ",
+        "annotations": {
+            "Develop idea": "The speaker is elaborating on how his approach could work for intracellular pathogens, providing more details about the challenge of delivering peptides into cells.",
+            "Offer feedback": "The speaker is providing specific suggestions for how to address the challenge of delivering peptides into cells.",
+            "Clarify goal": "The speaker is discussing a specific goal (delivering peptides into cells to activate pyroptosis) and how to achieve it."
+        }
+    },
+    {
+        "utterance": "William Witola: And so these nanoparticles, uh, some of them have platforms that will expose. So you you basically, um, engineer, they coding sequences of those peptides in this platform. ",
+        "annotations": {
+            "develop idea": "The utterance expands on an existing idea by providing more details on how nanoparticles can be engineered for therapeutic use.",
+            "offer feedback": "The utterance provides a specific suggestion on how to utilize nanoparticles, which can be seen as offering feedback on how to approach the problem."
+        }
+    },
+    {
+        "utterance": "William Witola: And then the platform has its own uh sequences that allow uh creation of this uh small a little molecule um with those peptides exposed on its surface.  ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an existing idea, providing more details about how the platform works to deliver peptides."
+        }
+    },
+    {
+        "utterance": "William Witola: And then there are certain features on this uh nanoparticle that allows it to uh readily penetrate uh cell membranes and get into the cytoplasm or even into the uh nucleus. That way then you can actually uh target your peptides to the actual uh pathogen in the cell. So that that can be like a delivery mechanism. And uh if you do it that way, it's like the RNA vaccine that's being used against uh uh COVID, uh whereby you're not just introducing peptides, but you are introducing coding sequences that once they get into the cell, you know, uh they'll express uh, you know, the actual proteins or the actual peptides in uh significant amounts. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on an existing idea by providing more details on the mechanism of nanoparticles penetrating cell membranes and delivering peptides or coding sequences, which can be used to target pathogens."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: Okay, thanks. And then so Giselle for the interference, have you thought about this? ",
+        "annotations": {
+            "ask question": "The speaker, Danae Schulz, is explicitly asking Giselle for her thoughts on a particular topic, specifically regarding 'interference'."
+        }
+    },
+    {
+        "utterance": "Giselle Medina: Yeah, so we have used uh in the past the adenovirus um platform. So these are replication defective adenovirus um that can be propagated in um a cell substrates like heck 293 cells. And what you do is basically you clone your favorite uh let's say interferon or your interference stimulated gene that previously has been tested to know that it has some inhibitory uh function. And the good thing about the adenovirus is that you can um introduce this to the animal uh by injection subcutaneously or intramuscularly. And the only thing is that the the actual agent, so the molecule has to be able to be secreted so that at least uh it's um it kind of becomes systemic so that it can provide protection to the animal.  ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an idea by explaining how adenovirus platforms work and their application in delivering genes or molecules to animals.",
+            "signal expertise": "The speaker is showing expertise in the area of adenovirus platforms and their applications.",
+            "offer feedback": "The speaker is providing insights into the application and limitations of adenovirus platforms, which can be seen as offering feedback on how to use these platforms effectively."
+        }
+    },
+    {
+        "utterance": "Giselle Medina: So in the case of interferon, we know that this is kind of the the universal uh inhibitory uh molecule for not just viruses, uh also for um parasites as well. ",
+        "annotations": {
+            "Develop idea": "The speaker is expanding on existing ideas about interferon, describing its role as a universal inhibitory molecule.",
+            "Supportive response": "The speaker is expressing a positive view of interferon by describing its universal inhibitory effects.",
+            "Signal expertise": "The speaker is explicitly stating their knowledge about interferon and its role in inhibiting viruses and parasites."
+        }
+    },
+    {
+        "utterance": "Giselle Medina: Um, I think the the something that is universal is to activate these um pathogen uh recognizing molecules. So those can be activated by different ways even utilizing pieces of the bacteria itself so that the cells can be activated and then induce uh the interferon. But interferon using the adenovirus uh platform has been very successful for some viruses. I'm not sure for others, yes. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the concept of using interferon and the adenovirus platform.",
+            "ask question": "The speaker seeks clarification on the applicability of the adenovirus platform for other viruses.",
+            "identify gap": "The speaker identifies a gap in knowledge regarding the effectiveness of the adenovirus platform for viruses other than those they've tested."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: So I'd like to go back to uh a couple of things that Dr. Schultz and Dr. Huet had shared earlier particularly around um cast nine and CRISPR, some of these technologies. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by referring back to previous discussions, specifically mentioning Dr. Schultz and Dr. Huet's contributions."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Um, uh I I think one of you described this as kind of like um I don't know, almost like hiding hiding the key to the door under the mat somewhere so that only the right things could get into uh a cell and maybe I'm distilling that down a little too fine. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on an existing idea using a metaphor to explain or understand it better.",
+            "supportive response": "The speaker is engaging with and showing support for a previous idea by rephrasing it.",
+            "express humor": "The speaker uses a metaphor that could be interpreted as an attempt to add humor to the discussion."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Um and and in others that was was a lot more um uh proactive at at really designing um designing something would go in and effectively either turn off a response or turn on a response. I I think that was some of your thoughts, Dr. Schultz. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is recognizing Dr. Schultz's input by referencing their thoughts.",
+            "summarize conversation": "The speaker is attempting to reflect on previous discussions or ideas presented."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Um can can you expand on some of those? ",
+        "annotations": {
+            "ask question": "The speaker is requesting more information or clarification on previous statements, which aligns with the definition of asking a question."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: Um, yeah, I think so assuming it seems like a difficult challenge to figure out what is the relevant gene that lets the things hop, right? So that seems like a very difficult problem, but if we could find that gene, then maybe with these adenovirus or nanoparticle um delivery mechanisms that folks have been talking about, we can deliver the genomic information to code for the RNA that will and the cast nine protein that will go in and target that gene, um perhaps in these domestic animals before it's hopped to people. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by suggesting a specific application of gene targeting technology to prevent species jumping.",
+            "offer feedback": "The speaker provides a potential approach to solving the problem by suggesting the use of adenovirus or nanoparticle delivery mechanisms.",
+            "identify gap": "The speaker highlights the difficulty in identifying the relevant gene as a challenge."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: So that was kind of my idea if we could get the delivery to get the CRISPR cast nine to the right to the viral target um to inactivate the viral replication mechanisms, which I guess uh Angad might be great at telling us what would be the correct target. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests using CRISPR to target viral replication mechanisms.",
+            "ask question": "The speaker asks for Angad's expertise on the correct target for inactivating viral replication mechanisms.",
+            "encourage participation": "The speaker invites Angad to contribute by asking for his thoughts on the correct target."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: Just to elaborate a bit more of on what uh Dr. Schultz was saying, uh people are trying to develop CRISPR cast based systems that target uh sort of RNA replication for coronaviruses. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on a previous idea discussed by Dr. Schultz, providing more information on CRISPR-based systems for targeting RNA replication in coronaviruses."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: And so typically what's been tested there to the best of my knowledge uh is uh the RNA polymerase uh and the RNA capping enzymes which tend to be uh essential for the propagation of the virus. ",
+        "annotations": {
+            "Develop Idea": "The speaker is expanding on a previously mentioned idea about using CRISPR-Cas systems to target viral replication mechanisms by specifying particular enzymes (RNA polymerase and RNA capping enzymes) that are essential for viral propagation.",
+            "Supportive Response": "The speaker's contribution supports and builds upon previous suggestions or ideas regarding CRISPR-Cas systems for viral targeting by providing specific details."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: But most of them are sort of post cellular entry uh mechanisms. And so uh the the pathogen has to get within the cell and then one has to target the host cell to actually uh prevent the replication from occurring. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas about viral replication mechanisms, discussing the challenges of targeting post-cellular entry mechanisms."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: And so uh the problems are similar to what uh uh Dr. Medina uh described, you know. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges Dr. Medina's previous comments and relates them to the current discussion."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: So given you describe, why don't you write that down? ",
+        "annotations": {
+            "process management": "The speaker is instructing someone to write down what has been described, which relates to managing the documentation or flow of information discussed in the meeting."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: Um sure. I I have written a whole bunch of things if everyone wants to look at it because uh I'm not sure if everything is relevant, but uh uh I would probably write targeted delivery of uh I've probably written down as well. It's already there actually. Targeted delivery of small molecules and oligonucleotides uh to intracellular pathogens and viruses. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea related to targeted delivery of small molecules and oligonucleotides to intracellular pathogens and viruses.",
+            "supportive response": "The speaker offers to share his written ideas, contributing to the discussion in a supportive manner."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: Richard, since you're on and you're probably going to pop back out, can you tell us again what the timing is? So till when do we have? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by asking about the timing and deadline."
+        }
+    },
+    {
+        "utterance": "Richard Wiener: I think we're extending it to 11:55. I was trying to communicate with Andrew because we started about 10 minutes late, so that's what I'm going on, but Andrew got um he's got to uh facilitate another group, so he hasn't given me an answer back, but I think it's going to be 11:55. ",
+        "annotations": {
+            "process management": "Richard Wiener is managing the meeting flow by updating the group on the extended deadline and the reason for the extension."
+        }
+    },
+    {
+        "utterance": "Richard Wiener: So you guys have a few more minutes to talk and then do the summary. But we're going to broadcast a 10 minute warning. ",
+        "annotations": {
+            "process management": "The speaker is informing the team about the time they have left to discuss and announcing that a 10-minute warning will be broadcast, which manages the meeting flow and time."
+        }
+    },
+    {
+        "utterance": "Richard Wiener: So that will that will be good. you'll know. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or positivity regarding the timing and scheduling of the meeting.",
+            "process management": "The speaker is managing the meeting flow by commenting on the timing and schedule."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Okay, so I got why don't you continue what you have so far just to brief everybody. ",
+        "annotations": {
+            "encourage participation": "The speaker is encouraging participants to share what they have so far.",
+            "process management": "The speaker is managing the meeting flow by encouraging continuation of the discussion."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: Can I can I screen share? ",
+        "annotations": {
+            "process management": "The speaker is asking to share their screen, which is a request to manage the meeting flow or how information is presented."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: Um why don't you try it? ",
+        "annotations": {
+            "encourage participation": "The speaker is encouraging someone to take action by suggesting they try it.",
+            "process management": "The utterance helps in managing the meeting flow by prompting someone to take a step forward."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: I I okay, it seems like I can. Give me a second. Let me just screen share what I have got here. Okay. ",
+        "annotations": {
+            "process management": "The speaker is attempting to manage the meeting flow by trying to share their screen to present information."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: Can you see my screen? ",
+        "annotations": {
+            "process management": "The speaker is checking the technical setup for screen sharing during the meeting."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: Yeah. ",
+        "annotations": {
+            "None": "The utterance is a simple acknowledgment without adding new content or context."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: Yes. ",
+        "annotations": {
+            "supportive response": "The utterance 'Danae Schulz: Yes.' expresses agreement with a previous statement, fitting the definition of a supportive response."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: Up to now are we missing something? If so, just speak up and in real time Angad can add it. ",
+        "annotations": {
+            "ask question": "The speaker is asking if there are any points or topics that have been missed during the discussion.",
+            "encourage participation": "The speaker invites others to contribute by speaking up if they have something to add.",
+            "process management": "The speaker is managing the discussion flow by checking for completeness and inviting further input."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: But I'm wondering if Dr. what some of the things that Dr. Procko was talking about might help with this delivery, like targeted delivery problem that we were just discussing, like maybe he could weigh in. ",
+        "annotations": {
+            "ask question": "The speaker is directly asking Dr. Procko for his input or thoughts on a specific topic, seeking his expertise.",
+            "encourage participation": "The speaker is inviting Dr. Procko to contribute his thoughts or ideas, encouraging his participation in the discussion."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Um possibly, um you you could imagine ways to deliver to certain cell types as something to payload for example on an antibody and because the targeting factor is is not after a virus or a bacterium or a pathogen but the the targeting factor is is searching out for a human surface molecule to send it where it's meant to go then you wouldn't run into any problems of resistance or anything. Um yes, quite possibly. ",
+        "annotations": {
+            "develop idea": "Erik Procko is expanding on the idea of using antibodies as a payload to deliver to certain cell types, suggesting a method to avoid resistance by targeting human surface molecules."
+        }
+    },
+    {
+        "utterance": "William Witola: So uh the other thing that I think we because all these things are exogenous to the host. So uh perhaps we also need to uh target, you know, activating the host uh innate uh responses. You know, um introducing molecules that will activate the host responses because this will kind of have a more broad uh application to different pathogens. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests targeting and activating the host's innate responses as a strategy for broad-spectrum therapies.",
+            "develop idea": "The speaker builds upon previous discussions, suggesting a broader application of targeting host responses.",
+            "clarify goal": "The speaker discusses the goal of developing broad-spectrum therapies applicable to different pathogens."
+        }
+    },
+    {
+        "utterance": "Danae Schulz: Yeah, and I don't see any reason why you couldn't do both at once. So if you're using, you know, if you can just package all the genetic information to turn on the host innate responses and the CRISPR cas9 to target the virus at the same time, um provided you could fit it all into your delivery all together then it could work. Like a combination approach could work. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by providing a potential solution that combines two approaches.",
+            "offer feedback": "The speaker provides a suggestion for how an approach could work.",
+            "supportive response": "The speaker expresses a positive view towards combining approaches."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: So so far we have talked about uh activating the uh the native immune response. We've talked about inhibiting enzymes, we've talked about inhibiting protein protein interactions and hence preventing the pathogen to get in. What are the the possibilities of of another approach? Uh I was thinking about this when William was saying like, well, you can inhibit something but uh if the host still makes the molecule that you're preventing being made, the pathogen still has another way. And I also was thinking about it when Angela was talking about uh um bacteria. So Murk a number of years ago was developing a molecule that actually disregulated protein degradation in bacteria. So rather than inhibiting something, essentially in that case they would turn on protein degradation so much that the the the bacterium was killing itself. Are there any any similar ideas that either are already pursued or that could be pursued in the space of viruses uh and uh parasites and I realized parasite is a very broad term. But in other words, can you use small molecules or or or or large molecules that uh turn something on, disregulate something in the pathogen such that now it isn't missing something, it is it is too active and it starts killing itself. Uh are there are there possibilities in that space that you guys think? ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new approach of using small or large molecules to disregulate something in the pathogen, making it too active and causing it to kill itself.",
+            "develop idea": "The speaker builds upon previous ideas discussed in the conversation, trying to expand on them and explore new avenues.",
+            "ask question": "The speaker seeks opinions or ideas from others on the possibility of pursuing this approach in the context of viruses and parasites."
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: Uh I think uh there is some evidence of the use of um the ubiquitin pathway. Um so activate certain ubiquitination events that will actually um I guess in a very targeted fashion. I know that there is some work related to that because you don't want to degrade everything either that the cell has. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an idea previously mentioned, relating to using the ubiquitin pathway for targeted degradation or modification.",
+            "offer feedback": "The speaker provides a suggestion or an idea for how to proceed with targeting pathogens, which can be seen as offering feedback.",
+            "clarify goal": "The speaker helps clarify the goal of using targeted approaches to affect pathogens."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: Yeah, just to add to that, uh one can even think about doing sort of nucleotide protag based approach. say um RNA polymerase quickly to uh degradation, right? Uh and that links that first idea which was about nucleotide analogs to all the other ideas of tackling conserved enzymes essentially. ",
+        "annotations": {
+            "final answer": {
+                "propose new idea": "The speaker proposes a new approach by suggesting a 'nucleotide protag based approach' to target RNA polymerase for degradation."
+            }
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: And so these nucleotide analogs can actually uh change the confirmation, let's say of the polymerase so that now the polymerase doesn't make that many mistakes. And so it's now more there's high fidelity when the replication happens and then this can lead to viral extinction. So we we we would like to target that so that uh so that the viruses doesn't adapt to the changes to the selection pressure that is let's say stimulated by the production of antibodies or the treatment with other biotherapeutics uh because you know you always have the problems of resistance and the generation of of of new mutations as we have seen with the different variants for for uh COVID or for SARS-CoV-2. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a specific approach using nucleotide analogs to target viral polymerase.",
+            "develop idea": "The speaker elaborates on how nucleotide analogs can work to change the polymerase's function, leading to viral extinction.",
+            "identify gap": "The speaker mentions the problem of viral resistance and the generation of new mutations.",
+            "clarify goal": "The speaker discusses the goal of preventing viral adaptation to selection pressures."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout: So is that basically you're playing the statistical game of of it will replicate it much more quickly and and more precisely in order to be attacked by you know, the immune system as opposed to evolve through um through errors created within the um uh within this um replication process. ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification on a strategy to combat viral replication by making it replicate more quickly and precisely to be attacked by the immune system."
+        }
+    },
+    {
+        "utterance": "Gisselle Medina: Yes. ",
+        "annotations": {
+            "acknowledge contribution": "Acknowledges a prior statement or idea, showing agreement",
+            "supportive response": "Expresses agreement or validation"
+        }
+    },
+    {
+        "utterance": "Brenda Rubenstein: I know that this is really an addition but but really um emphasis on on high throughput platforms that that are accurate uh so that one can rapidly screen a variety of different situations. ",
+        "annotations": {
+            "develop idea": "The speaker expands on existing ideas by emphasizing the need for high-throughput and accurate platforms.",
+            "offer feedback": "The speaker offers perspective on the importance of high-throughput platforms that are accurate.",
+            "clarify goal": "The utterance helps clarify the importance of having such platforms for rapidly screening different situations."
+        }
+    },
+    {
+        "utterance": "Diego Huet: want me to share again? Uh happy to share. ",
+        "annotations": {
+            "ask question": "The speaker is asking if he should share again.",
+            "process management": "The speaker is managing the flow of the meeting by asking if they should share."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk: Uh we can first discuss and then go back since we have 10 minutes. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by suggesting a plan for how to proceed with their discussion given the time constraint."
+        }
+    },
+    {
+        "utterance": "Angad Mehta: So essentially developing approaches to reduce the gain of function or escape mutation essentially. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an existing idea about developing approaches to reduce the gain of function or escape mutation.",
+            "summarize conversation": "The speaker is also summarizing a part of the conversation regarding strategies to deal with pathogens."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout - Iowa State: improved process through either microfluidic devices or through you know the next generation of multi well capabilities for for doing those high throughput analysis. ",
+        "annotations": {
+            "process management": "The utterance discusses improving the process of high-throughput analysis.",
+            "offer feedback": "Peter Dorhout suggests improving processes through either microfluidic devices or next-generation multi-well capabilities for high-throughput analysis, offering a way to enhance the analysis process."
+        }
+    },
+    {
+        "utterance": "Brenda Rubenstein (Brown): I mean other people might have more experimental experience with this but um, you know I think the the bottleneck is is actually uh creating the the model systems not necessarily the high throughput technology. I I mean I feel like microfluidic people have a handle on that. Um, you know yes there's some drawbacks for 96 well plates or 15 whatever plates. Um, but but that's I I think that's not the barrier here. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly states that creating model systems, not high-throughput technology, is the bottleneck.",
+            "offer feedback": "The speaker offers their perspective on what they believe is not the barrier to the research."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yeah having I'll second that uh especially with viral research the barrier has typically been that you need to either do an in vitro screen or you need to do a viral replicon screen and that's a major limitation uh for actually academic labs pursuing these approaches uh for high throughput screening. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker seconds a previous statement, acknowledging the challenge in viral research.",
+            "summarize conversation": "The speaker summarizes a perspective on the challenges faced in high throughput screening in viral research.",
+            "identify gap": "The speaker points out a limitation in current research methodologies for viral studies."
+        }
+    },
+    {
+        "utterance": "Brenda Rubenstein (Brown): Totally agree. ",
+        "annotations": {
+            "supportive response": "The speaker expresses agreement with a previous statement."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout - Iowa State: So you you talk about that as as uh, you know a major roadblock to kind of what you would envision for um being necessary to do these high throughput screenings. So is there is there a key technology or a key um advancement in that space that you think is necessary in order to get to um the ideal. ",
+        "annotations": {
+            "code name": "ask question",
+            "explanation": "The utterance is a clear request for information about a key technology or advancement needed for high throughput screenings, fitting the definition of asking a question."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yeah, I think there's quite a bit of need for developing the right pseudo viral systems for not just receptors but for actually enzymes that are essential for replication of these viruses. ",
+        "annotations": {
+            "identify gap": "The speaker recognizes a need for developing pseudo viral systems, indicating a gap in current research tools.",
+            "propose new idea": "The speaker proposes developing pseudo viral systems as a solution for studying viral replication."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: I think I think it's a good thing to add. So if we put things on our list that is kind of like a wish list other groups might actually uh really uh look at that and and start discussing, okay, uh this group needs certain technology that isn't there. So I would add it to the summary. ",
+        "annotations": {
+            "summarize conversation": "The speaker suggests adding needed technologies to a summary, directly referring to summarizing the conversation."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Uh yes. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: add something that is needed that this group couldn't think of a way to do it but maybe one of the other groups do. ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting others, potentially from other groups, to contribute their ideas or insights that might be beneficial."
+        }
+    },
+    {
+        "utterance": "Erik Procko: Yeah, I think ways to screen for therapeutics against whether it's it's viruses or other pathogens, um parasitic pathogens which are select agents or need BSL3 containment alternatives so that you can actually do those screens in in a BSL2 lab um under the the working conditions which most most of us have access to rather than than under BL3. That would be very valuable. ",
+        "annotations": {
+            "propose new idea": "Erik suggests a new approach for screening therapeutics against pathogens in a BSL2 lab setting.",
+            "identify gap": "Erik highlights the limitation of current screening methods that require BSL3 containment.",
+            "offer feedback": "Erik offers a suggestion for improving the therapeutic screening process by finding BSL3 containment alternatives."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yeah, uh just I briefly mentioned this but our lab actually has been doing for just two types of enzymes uh which are involved in RNA capping system uh for viruses. ",
+        "annotations": {
+            "signal expertise": "The speaker is sharing their lab's work on specific enzymes involved in RNA capping for viruses, indicating their expertise in the area."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): But we don't really have a system for intracellular pathogens for example. There's no system as yet for RNA polymerase and so I think uh uh I I I don't have enough space to write all of this down. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a gap in current systems for dealing with intracellular pathogens and RNA polymerase.",
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Do you know if I can go beyond that? ",
+        "annotations": {
+            "ask question": "The utterance is a clear request for information or clarification.",
+            "develop idea": "The question seeks to expand or go beyond a previously discussed idea."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: I'll just add a slide, yeah. ",
+        "annotations": {
+            "process management": "The speaker is indicating that he will add a slide, which is an action to manage the meeting flow or presentation."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout - Iowa State: make the font smaller. ",
+        "annotations": {
+            "process management": "This code applies because the speaker is giving a directive to adjust the font size, which relates to managing the meeting or presentation flow."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Oh make the font smaller? Okay, let's do that. ",
+        "annotations": {
+            "Supportive response": "The speaker agrees to make the font smaller, showing agreement with a previous suggestion.",
+            "Process management": "The speaker is managing the meeting flow by agreeing to adjust display settings."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: And we can we can get screamed at but we have already done it so. ",
+        "annotations": {
+            "Express humor": "The speaker makes a humorous comment about potentially getting criticized, indicating a lighthearted tone."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: So there's nobody here on the call to stop us. ",
+        "annotations": {
+            "express humor": "The speaker is making a humorous comment about proceeding with their discussion without external interference."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: So they're going to be closing the rooms. ",
+        "annotations": {
+            "process management": "The speaker is discussing the logistics of the meeting, specifically the closure of the rooms."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout - Iowa State: So this is this has been a wonderful conversation for. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yes. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: can also do uh if if possible to see if we can combine certain points or if there are points that perhaps uh we don't believe are as pressing as others. ",
+        "annotations": {
+            "process management": "The speaker is suggesting a method to organize and prioritize points discussed in the meeting.",
+            "summarize conversation": "The utterance implies a need to review and possibly consolidate the points made during the conversation."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: Uh smaller font of course does mean that some people that are on laptops might have a hard time reading things. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by considering the practical aspects of presenting information.",
+            "supportive response": "The speaker is expressing a supportive consideration for participants who might struggle with reading smaller text."
+        }
+    },
+    {
+        "utterance": "Brenda Rubenstein (Brown): And can I also just ask a quick question in the phenotypic platforms that that you've been developing for example on God's um, you know how compatible are they with AI iteration? Uh, so you know you use your platform you identify things you now you got to iterate back. ",
+        "annotations": {
+            "ask question": "Request information about the compatibility of phenotypic platforms with AI iteration.",
+            "develop idea": "Exploring the capabilities or applications of existing platforms (phenotypic platforms) in relation to AI iteration."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Yeah, since some cases they are compatible because the crystal structures of those enzymes are known. In cases where crystal structures are not known they are not compatible. And so uh to directly answer your question for most coronaviruses yes it's definitely compatible. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on a previous idea by providing more details and examples, specifically about the compatibility of platforms with AI iteration."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): For other systems like flaviviruses and filoviruses in some cases the answer is yes in some cases the level of conservation in the enzyme is not high enough. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the compatibility of the platform with AI iteration for different viral systems.",
+            "identify gap": "The speaker identifies a limitation of the platform related to the level of conservation in enzymes for certain viruses.",
+            "clarify goal": "The utterance provides information relevant to understanding the platform's capabilities and limitations, aiding in goal clarification."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Or want to actually predict what the active site might look like if these molecules bind to the active site and so uh it that is limited by the information of the the AI approach essentially is limited by uh the structure of the enzyme. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas by explaining the limitations of AI approaches in predicting molecular structures.",
+            "signal expertise": "The speaker demonstrates knowledge about AI approaches and their limitations in biochemistry.",
+            "identify gap": "The speaker points out that AI approaches are limited by the structure of the enzyme, indicating a gap in current capabilities."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: And how how much does alpha fold and Rosetta fold the you know the newest versions thereof. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about alpha fold and Rosetta fold, specifically about the newest versions thereof."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: Perhaps just a matter of time and they can overcome those those hurdles. ",
+        "annotations": {
+            "supportive response": "The speaker expresses optimism about future technological advancements overcoming current hurdles, providing a positive and supportive comment."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Uh yes, I think the major problem is uh predicting the ligand binding site uh for essentially the active site. ",
+        "annotations": {
+            "identify gap": "The utterance explicitly mentions a gap in current capabilities, which is predicting the ligand binding site for the active site.",
+            "develop idea": "The utterance elaborates on the challenges of predicting ligand binding sites, which is an idea previously touched upon in the conversation."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): Of many of these enzymes uh has been challenging because the RNA threads through those enzymes. And so the active site is typically more complex than simply a nucleotide binding active site. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea that the active sites of enzymes are complex due to the RNA threading through them.",
+            "identify gap": "The speaker highlights the difficulty in predicting the active sites due to the RNA threading through the enzymes, indicating a gap in current understanding or methods."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): And so given that they form protein protein complexes which change their confirmations. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on a concept that has been previously discussed, suggesting that the formation of protein-protein complexes and their conformational changes are relevant to understanding viral or parasitic behavior."
+        }
+    },
+    {
+        "utterance": "Angad Mehta (UIUC): And so these are not really standalone proteins unfortunately which makes it harder to to predict. I can write for for what we do. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the challenges of predicting protein structures, building on prior discussions about the complexity of proteins and prediction methods."
+        }
+    },
+    {
+        "utterance": "Wilfred van der Donk UIUC/HHMI: No, I I have nine seconds so I second all of that and a really nice conversation I enjoyed it and hopefully you did too. See you in the in the main room. ",
+        "annotations": {
+            "supportive response": "The speaker expresses agreement and appreciation for the conversation.",
+            "process management": "The speaker mentions moving to the main room, indicating a management of the meeting process."
+        }
+    },
+    {
+        "utterance": "Peter Dorhout - Iowa State: Thank you. So this is this has been a wonderful conversation for I think for pretty much everybody in here. This has been your your first experience with a silog I'm assuming. So um the the rest of the the events throughout the course of the you know the next half day, you know the rest today and and then of course going into tomorrow we're going to be very similar in terms of conversation. ",
+        "annotations": {
+            "summarize conversation": "The speaker summarizes the conversation and provides an overview of what to expect in the rest of the events."
+        }
+    }
+]

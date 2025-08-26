@@ -1,0 +1,984 @@
+[
+    {
+        "utterance": "Neil Kelleher: Okay, 90 seconds and just look at the questions. I'll put them in the chat as well. Just quiet time, I guess. And just have a peek at this and jot down some thoughts or your how you parse this in the context of your own experience. And then we'll we'll we'll come back together and start to mix it up. So take take 90 seconds till 10:44. I'm going to stop talking, which is hard for me, but I will stop talking. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by instructing the group to take a 90-second quiet time to review questions and jot down thoughts before reconvening."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Okay, so so hopefully that triggered some thoughts within you and I'm keenly interested in the topics at the fore here today. So we're and it's really aligned with the CMC theme for the the whole meeting and so you know in in the year 2121 thinking about 2025 and beyond, you know what do you what what thoughts come to mind? Does someone have a you know really want to go on a riff and you you've you know this hits a hot button or want to share something very directed? ",
+        "annotations": {
+            "encourage participation": "The speaker explicitly invites participants to share their thoughts and ideas, using phrases like 'what thoughts come to mind' and 'Does someone have a you know really want to go on a riff'.",
+            "clarify goal": "The speaker mentions aligning with the CMC theme for the meeting and considers the future (2025 and beyond), which helps in understanding the context and goal of the discussion."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: We had a couple of people talk about in vitro being their focus and switching to in vivo, you know are are the methods like why are you in vitro? Is it is it necessary for the methods that you use or could you assess enzyme activity in in cells, living cells even in real time? Or is it a tool problem or a choice? ",
+        "annotations": {
+            "ask question": "The speaker is explicitly requesting information and clarification on why certain methods are chosen.",
+            "develop idea": "The speaker is expanding on previous discussions by asking questions about the necessity and reasons behind using in vitro methods and exploring the possibility of using in vivo methods.",
+            "critical response": "The speaker is questioning the reasons behind certain methodological choices, which can be seen as a form of critical inquiry."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: I guess in many cases it is a tool problem. Is it okay if I'm just jumping in? ",
+        "annotations": {
+            "develop idea": "Masha is expanding on the discussion by providing a perspective ('I guess in many cases it is a tool problem')",
+            "ask question": "Masha asks a question ('Is it okay if I'm just jumping in?') seeking permission to contribute further"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, 100%. Yeah, crack the ice, break it wide open. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and encouragement for Masha to contribute her thoughts.",
+            "encourage participation": "The speaker is inviting Masha to freely contribute her thoughts and opinions."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: We want you to. Yeah, just go, take us on your journey. What are your thoughts? ",
+        "annotations": {
+            "encourage participation": "The speaker explicitly invites Masha Kamenetska to contribute her thoughts and ideas, using phrases like 'We want you to' and 'take us on your journey.'",
+            "supportive response": "The speaker expresses a positive and supportive attitude towards Masha Kamenetska's potential contribution, creating a safe space for her to share her thoughts."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: I guess one of the problems that you know one can think of as a problem for an experimentalist who's trying to make a clean experiment is the heterogeneity of the cell which is exactly what we want to study but that also means that it's hard to control your conditions, your experimental conditions. So ",
+        "annotations": {
+            "develop idea": "Masha is expanding on the idea of challenges in experimental research, specifically discussing the heterogeneity of cells and its implications.",
+            "identify gap": "Masha explicitly recognizes a problem or challenge in experimental research, which is the difficulty in controlling conditions due to cellular heterogeneity."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, and and that's I mean people have a reductionist approach or when you certainly when you go into peer review, you have to defend whether proposals or papers and that's yeah and and so maybe it's a career stage thing where you know once you have tenure you're like okay now I can do something. But you still have to get funding for it. So but but this is the place you know high risk thoughts welcome. It's okay to be off you know no one's going to come at you critically. This is a safe space so ",
+        "annotations": {
+            "develop idea": "The speaker expands on previous discussions about research approaches and challenges.",
+            "encourage participation": "The speaker creates a safe space for open discussion, encouraging high-risk thoughts."
+        }
+    },
+    {
+        "utterance": "Gabriela Schlau-Cohen: I would just add on to that. I think there are two fundamental problems. One is the hidden variables problem which is what Masha brought up and then the second is a synchronization problem. So if you're measuring dynamics, if you can't control the synchronization, the cell is controlling it, you are inherently averaging over many stages of the enzymatic cycle. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding and elaborating on existing ideas by discussing two fundamental problems related to measuring dynamics in cells.",
+            "acknowledge contribution": "The speaker acknowledges Masha's contribution by referencing 'which is what Masha brought up'."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: So does does a single molecule approaches could does that change the synchronization calculus? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on how single molecule approaches could change the synchronization calculus, which was mentioned as a problem in the discussion."
+        }
+    },
+    {
+        "utterance": "Gabriela Schlau-Cohen: Well the problem is that I think again we get back to a tool problem. With the single molecule aspect, you don't have the spatial resolution. If you're using an optical readout, you're essentially limited to the point spread function which is several hundred nanometers, the fundamental limit of light. And then there are some ways to get around that but those are very challenging to work with in sort of warm, wet, and noisy biological systems. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas through reasoning and providing details about the limitations of single molecule approaches.",
+            "identify gap": "The speaker highlights a limitation of single molecule approaches in terms of spatial resolution."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, so let's keep it on light as a readout. That's such that so many different assays are captured that way. Yeah so STORM or other super resolution approaches still couldn't get you to single molecule enzymology? ",
+        "annotations": {
+            "develop idea": "Neil Kelleher is expanding on previous ideas by suggesting a focus on light as a readout method and questioning the capabilities of STORM or other super-resolution approaches.",
+            "ask question": "Neil Kelleher asks if STORM or other super-resolution approaches can achieve single-molecule enzymology, seeking information."
+        }
+    },
+    {
+        "utterance": "Gabriela Schlau-Cohen: So here's the fundamental thing. Those sorts of single molecule those sorts of approaches are structural. You essentially assume a static structure, do a sequential build up bits of that structure through sequential images and then combine them to reconstruct the structure. It is a reconstruction method not an imaging method. But if you want to follow dynamics, you know, it's much much slower than like say a catalytic cycle. It looks at sort of slow structural rearrangements by building up a reconstruction. ",
+        "annotations": {
+            "develop idea": "Gabriela is expanding on her previous thoughts and providing more details about the limitations of single-molecule approaches."
+        }
+    },
+    {
+        "utterance": "Stephanie Gupton: So maybe you could look at the product of a reaction but not the actual timing of the reaction. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous ideas by suggesting a specific approach to studying enzymatic reactions, which is to look at the product of a reaction but not the actual timing of the reaction.",
+            "offer feedback": "The speaker provides specific suggestions for how to proceed with the research, offering a potential solution to the challenges discussed."
+        }
+    },
+    {
+        "utterance": "Gabriela Schlau-Cohen: Totally. ",
+        "annotations": {
+            "supportive response": "Expressing agreement with Stephanie Gupton's suggestion without adding new content."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: That's great. I feel our group is definitely anti-Heisenberg. We want time resolution, we want spatial resolution, we want function, we want spectroscopy. Let's ignore Heisenberg for the time being. So how many of you from the rest have the idea to be an anti-Heisenberg behavior? ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new perspective or approach by suggesting the group aims to be 'anti-Heisenberg', implying a desire for multiple simultaneous aspects.",
+            "develop idea": "The speaker elaborates on the 'anti-Heisenberg' concept by specifying the desired aspects (time resolution, spatial resolution, function, spectroscopy).",
+            "ask question": "The speaker requests input from others on the idea of being 'anti-Heisenberg'."
+        }
+    },
+    {
+        "utterance": "Stephanie Gupton: I mean as a as a cell biologist I'm more kind of interested in the product of the reaction and where it is in the cell and like what situations does it happen. So I feel like for for that like biosensors that would recognize different products would be awesome. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests using biosensors that could recognize different products, which is a new idea in the context of the conversation.",
+            "develop idea": "The speaker builds upon previous discussions by specifying their interest as a cell biologist and how it relates to the topic.",
+            "signal expertise": "The speaker mentions their background as a cell biologist."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: That's great. That's give you the location and the functionality in inside the cell with subcellular resolution on that. Yeah. ",
+        "annotations": {
+            "Supportive Response": "The speaker is expressing agreement and positive evaluation for another group member's contribution.",
+            "Develop Idea": "The speaker is expanding on an existing idea by highlighting its benefits, specifically the ability to obtain location and functionality information within the cell with subcellular resolution."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Sorry Neil. No, I was just trying well it's it's always when you smash together people who think across scales or maybe it's good to define a scale. Like some people are thinking like super detailed physical organic chemistry concepts along the reaction channel, highly controlled in vitro. And there's incredible smarts that go into that to get down to like the hydrogen bond level thinking and when you just heard the cell biologist talk it's like okay we're willing to sacrifice a lot of those things. And so if you you know to to maybe just look at the product as a particular product of a reaction and know where it is because it moves from the nucleus to the cytoplasm or whatever. So what along that axis you know where what would you have to sacrifice to get it to get to let's say single molecule what does that mean single molecule enzymology in a living cell? But not you know you have to sacrifice some things right? And so what are those things and how much would you have to sacrifice? ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by discussing the challenges of integrating different scales of research.",
+            "ask question": "The speaker is seeking input or discussion on what is sacrificed when moving towards single molecule enzymology in a living cell."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: I do some like in-cell enzymatic activity but I definitely in some ways I kind of cheat so that the sacrifice isn't really like I study DNA repair proteins. They're like always in the nucleus. That's where the genomic DNA is. So I kind of cheat with like the subcellular localization. But yeah I was thinking about the readout and like for all of our assays the readout is fluorescence in some way and so we we usually use like flow cytometry to to look at fluorescence and that's like related back to to enzymatic activity. We don't do in vitro stuff because there's like 50 repair proteins that are all involved in a given pathway and so we can't like express and purify all of those. So that's why we like have to do it in the context of a cell. But then like our DNA substrate is one that we like made in a test tube and then put into the cell so it's not actually genomic DNA. And then people have issues with that. They're like it's not chromosomal, it's like not wrapped up in histones. So we have to sacrifice that. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states their experience and expertise in in-cell enzymatic activity and DNA repair proteins.",
+            "identify gap": "The speaker mentions challenges and limitations, such as the complexity of studying multiple repair proteins and the limitations of their methods.",
+            "develop idea": "The speaker expands on their research approach, explaining how they study DNA repair proteins in-cell, the challenges, and the methods they use."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: And that's great. Yeah, that's great. ",
+        "annotations": {
+            "acknowledge contribution": "verbally recognizes another group member's input",
+            "supportive response": "expressing agreement or positive evaluation for other group members' contributions"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: That's a good cheat. That's a good cheat. With that would the be advantageous to enable you to visualize those binding site within the nucleus? ",
+        "annotations": {
+            "Ask question": "The speaker is requesting information about the potential advantages of enabling the visualization of binding sites within the nucleus.",
+            "Supportive response": "The speaker expresses a positive evaluation of Alexis C Komor's approach by calling it a 'good cheat'."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Yeah that would be that's that's tough. I have we haven't yeah gone into like super resolution or even like like cryo-electron like tomography and stuff. We haven't even thought about that. ",
+        "annotations": {
+            "identify gap": "The speaker explicitly recognizes a gap in their approach or knowledge, stating they haven't considered or used super resolution or cryo-electron tomography techniques."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Would it would it help your hot field there of of DNA editing to know because it's just one edit one molecule on the chromosome would give you the phenotypic change. So knowing when it occurred would that help your field? ",
+        "annotations": {
+            "ask question": "The utterance explicitly asks for information or clarification on whether knowing when a DNA edit occurs would help the field of DNA editing.",
+            "develop idea": "The utterance expands on existing ideas by probing the potential benefits of temporal knowledge of DNA edits in the field of DNA editing.",
+            "clarify goal": "The utterance seeks clarity on objectives by understanding the implications of knowing when a DNA edit occurs."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: Yeah well so the problem is yeah with like the DNA damage we can't like introduce a specific DNA damage at like this particular site in the genome. That's why we like generate a large piece of DNA with that piece of damage like in a test tube and then kind of like transfect it into the cell. But then it gets like many many copies of that like lots of those DNA molecules get into the cell and then you would again end up with like multiple substrates. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on their research approach and the challenges they face in introducing specific DNA damage at a particular site in the genome.",
+            "identify gap": "The speaker explicitly mentions a limitation in their research methodology, specifically the inability to introduce specific DNA damage at a particular site in the genome."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah. No no you're cool it's cool. There it's a small enough group that we can go on those journeys for sure. But it gives specificity gives people a chance to think about it from a different perspective so really welcomed thoughts. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is verbally recognizing Alexis C Komor's input.",
+            "supportive response": "The speaker is expressing agreement and positive evaluation for the previous speaker's contribution."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Could I chime in with a kind of weird question? So I I've I've been I was thinking about a lot of the same things that other people have said. I also like my lab does a lot of in vitro biochemistry and we're starting to think about how you look at our favorite enzymes in in the cell and you know we it seems like a lot of the in-cell enzymology techniques that are out there I think as maybe Stephanie pointed out first it's really focused on the products. Like what are the enzymes making can you detect the formation of a product in space and time and that's the information a lot of people are after from a cell biology point of view. But like you know our lab we're largely interested in you know when this thing is happening or a particular product is forming in the cell at a particular space and time what does the enzyme look like how is its conformation changing is that information we care about? And I kind of want to pose that question to the group that do we care actually is this an enzyme-centric discussion or is it a product-centric discussion? I I'm I don't care either way I just think it's an interesting thing to... ",
+        "annotations": {
+            "ask question": "The speaker explicitly asks a question about the focus of the discussion.",
+            "propose new idea": "The speaker introduces a new perspective on how to approach the topic."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Well let's do both. Let's take the enzyme first. ",
+        "annotations": {
+            "supportive response": "The utterance expresses agreement with the idea of considering multiple approaches.",
+            "process management": "The speaker is directing the discussion flow by suggesting what to focus on next.",
+            "clarify goal": "The utterance helps clarify the objective by specifying the next focus of discussion."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Yeah and I guess like sort of what I would be curious to know from other people is what would you want to know about your enzyme in in the context of this discussion your favorite enzyme let's say you're studying a DNA repair enzyme or we study kinases and phosphatases. Like I kind of want to know what it looks like you know what conformation it's in when it's bound to these proteins in the cell and how that dictates its enzyme activity. But I also want to know what this enzyme is acting on because in the case of the enzymes we study they're relatively promiscuous they don't just make one product but they phosphorylate a dozen proteins or something. So everyone's system is different so I'm just curious where we all stand and whether we have a common set of things we want to learn about enzymes you know in the cell or not. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or opinions from other group members about what they would want to know about their favorite enzymes.",
+            "encourage participation": "The speaker is inviting others to contribute their thoughts and perspectives on the topic of enzymology in cells."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Well I'm basically a big fan of the single molecule detections. I think there are some special tools available right now because of the advancement of the hardware. I think now people make the single molecule FRET spectroscopy and also have the high photon based single atom imaging inside cells. For to answer your question about the enzyme I'm very big fan of the enzyme activity but I also in another different angle was very interesting a very fundamental question about protein folding. So it's always takes like picosecond to nanosecond it's very quick dynamics and the folding and denaturing in in the cell environment that's something very interesting too. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces new approaches or techniques such as single molecule detections, single molecule FRET spectroscopy, and high photon based single atom imaging inside cells.",
+            "develop idea": "The speaker elaborates on his thoughts about enzyme activity and introduces protein folding as an area of interest, building upon his previous statements."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah that's great input. I know Stephanie has some comment. Speak out. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges the input received as great.",
+            "supportive response": "The speaker is expressing a positive evaluation of the previous input.",
+            "encourage participation": "The speaker invites Stephanie to share her comments."
+        }
+    },
+    {
+        "utterance": "Stephanie Gupton: I was just seconding the substrate specificity versus promiscuity. ",
+        "annotations": {
+            "acknowledge contribution": "Stephanie Gupton is verbally recognizing another group member's input (implicitly, Neel Shah's discussion about enzyme activity and specificity)."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: I wanted to follow up on something Alexis said in that if you work with proteins that work with a lot of other proteins which most of us do you know we just end up if we work in vitro purifying one protein at a time. I feel like my biggest questions relate to how other proteins affect the function of the protein that I'm studying or we're studying. And so that's where being able to do it in a cellular environment is of course ideal. And I think for enzymes that are well well enzyme classes that are better studied I would say like you know enzymes that modify DNA or enzymes like kinases we have more chemical tools but for other enzyme families it's very hard to study them sometimes because you know you can't there's not a good toolbox of substrates. And a lot of the like you were saying when fluorescence is a readout a lot of the chemical tools that we have access to are just labels they're not substrates or analogs or products. So yeah I think we're somewhat limited there. ",
+        "annotations": {
+            "develop idea": "Tania elaborates on the challenges of studying enzymes in vitro, particularly when they interact with many other proteins, and discusses the limitations of current tools.",
+            "identify gap": "Tania mentions the limitation of current chemical tools, specifically that they are mostly just labels and not substrates or analogs or products."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah one of the important aspect of this discussion topic is label-free tool which Tania also mentioned. Can we think of any label-free tools or approaches in doing the enzyme profiling in a subcellular level? ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges Tania's previous comment about label-free tools.",
+            "encourage participation": "The speaker invites others to contribute their thoughts on label-free tools.",
+            "develop idea": "The speaker is expanding on the idea of using label-free tools for enzyme profiling."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Well I'm a chemical biologist but I do see now is the hot trend to develop some like substrate not directly labeling the enzyme from using GFP or using fusion technology or using chemical labeling but instead working on the substrate of the enzyme and develop some analogs like fluorescent analogs. It's still basically the readout is still fluorescence but you're not perturbing enzyme's intrinsic activity so. ",
+        "annotations": {
+            "develop idea": "Ross Wang is expanding on existing ideas by discussing current trends in enzyme studies, specifically about developing substrates without directly labeling the enzyme.",
+            "offer feedback": "Ross suggests an approach of working on the substrate of the enzyme and developing analogs like fluorescent analogs, which implies a suggestion for improving or proceeding with enzyme studies."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah I've heard of something called PEARL a picosecond infrared laser. It's like a little puff of very fast light to excite water and it like little little like two two micron little voxels on a side poof you can liberate the material without much vibrational excitation. That might be a way to to get the sample that is minimally perturbed without labels and then I don't know what you do with it but maybe that could be scaled down and made smaller. But I really I really violently agree with what you were talking about Neel not just because you have a great name Neel. But your your thoughts around like a kinase okay kinase is hitting its its serine and phosphorylating it right very promiscuous in vitro. But boy when you have 10 or 20 of its friends in a complex it gets very specific. And that's my view of the proteome or enzymes in it and it's all this so I don't necessarily want to study for 20 years biochemical you know in vitro I want to get at the function I want to get at the relevance. And so you know how do I do that I guess. ",
+        "annotations": {
+            "propose new idea": "The utterance introduces the PEARL method as a new approach for liberating material without much vibrational excitation.",
+            "develop idea": "The speaker builds upon previous discussions about studying enzymes, particularly in complex environments.",
+            "ask question": "The utterance ends with a question about how to achieve the goal of studying enzymes in their natural environment."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Could I I wanted to jump on that you know so when in in the kinase field there's a lot of I mean as Tania pointed out it's a well-studied class of proteins and so people have developed these really phenomenal biosensors right they're proteins usually based on two fluorescent proteins that undergo some sort of change in FRET intensity as a function of the kinase phosphorylating that that sensor. And so that's like a really common design that a lot of groups use. And what I've and I think they're great because you know you can see some sort of FRET signal change throughout the cell as a function of space and time and but those are not the endogenous substrates of that kinase right? And so I I often find myself wondering whether we miss something about the specific product that yields some functional outcome for the cell and whether that's being phosphorylated at the same sort of like time and in the same space that these sensors are. Because you see an uptake in the actual intrinsic activity of the enzyme somewhere at some point in time is that really where functional outcomes are produced in the cell? I think that's a big open question. And so we can map in optics and enzyme activity but if if the substrates that ultimately produce a phenotype are not there what like it doesn't matter right? And so I think like an ideal sensor would be one that is effectively on the endogenous product or is the endogenous product and somehow you'd be able to visualize that product forming the true product forming as a as a function of whatever parameters you're interested in which which I appreciate is like a tall order and that's the point of this conversation but yeah. ",
+        "annotations": {
+            "develop idea": "Neel Shah expands on existing ideas by discussing the limitations and potential of biosensors in kinase studies.",
+            "ask question": "Neel Shah poses questions about the relevance and accuracy of current biosensor approaches.",
+            "critical response": "He offers a critical perspective on current biosensor technologies and their limitations."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah a lot of thoughts. I wonder from technology perspective or from protein ",
+        "annotations": {
+            "ask question": "The speaker is seeking perspectives or information by wondering from technology perspective or from protein."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: perspective if Marsha, Nathan, Stefano and Wenjing have any input on those? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or input from others.",
+            "encourage participation": "The speaker is inviting specific individuals to contribute their thoughts."
+        }
+    },
+    {
+        "utterance": "Wenjing Wang: Yeah, I also just want to add to what Nia just mentioned. So it is sometimes it is important maybe to only look at the substrate, the product. But I guess often times this enzymatic activity or signaling processes are so complex, so there's just no single tool that can answer all the questions. So that's why we have these in vitro method and in vivo method. Even for in vivo method for one enzyme, so you want to study the substrate input and the enzyme itself and its product, and product is affecting even like downstream enzyme or other proteins. So the nice thing is I guess it's possible to develop a sensor or method for at each step or each level and then so we cannot in the end eventually possibly we can combine all these views together and to have a more complete holistic picture of the whole process. Like for the problem I'm studying GPCR signaling, so we need to study when the ligand for GPCR is being released, time and space is important, and the GPCR itself whether it responds to it because whether the concentration is right or not. So you not only need to look at the ligand, you also need to look at the GPCR, and then once it's being activated and then its own post-translational modifications and it affects G proteins and downstream like secondary messenger effects. So all the good thing is there are people designing sensors for like each step of this process that I guess enable to to study like all of these together. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding, building upon, and elaborating existing ideas through reasoning and examples about the complexity of enzymatic activity or signaling processes and the need for comprehensive approaches."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I just wanted to say I think that's a great point. I really like that really resonated with me very intensely. ",
+        "annotations": {
+            "Supportive Response": "The speaker expresses agreement and positive evaluation of a previous point, indicating that it resonated with them intensely."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: was it then one a question of integration of different domain information like that is what might move the field. I mean there are there are places that are trying to do that like the Allen Institute of the cell what is it the Allen Institute for Cell Science where they're just trying to integrate across scales, time scales, length scales and and generate a movie basically and you would be able to sit there and watch your favorite enzyme at work. ",
+        "annotations": {
+            "ask question": "The speaker is asking a question about the integration of different domain information.",
+            "develop idea": "The speaker is building upon previous ideas by suggesting integration as a potential way forward."
+        }
+    },
+    {
+        "utterance": "Nathan DeYonker: And I mean that was a that was a on the wish list from from last year's meeting is is that yeah like the with the messiness inherent in biological processes is like the more you constrain it in vitro or in silico, the farther away it goes from what's really happening. And then and then there's you know there's this other kind of wall that you hit in terms of like reference data and how to improve multiscale simulations and sort of bottom up simulations that are you know so simplistic that you have to get the simple thing correct to get to start to have a chance of qualitatively describing the soup. So like you know it's a it's a it's such a multi-dimensional problem that where where do you get started kind of bridging these gaps. ",
+        "annotations": {
+            "identify gap": "Nathan recognizes the gap in current methods for studying biological processes, specifically the limitations of in vitro or in silico approaches and the challenges with multiscale simulations.",
+            "develop idea": "Nathan expands on the challenges of studying biological processes, discussing the trade-offs between control and relevance to in vivo conditions, and the complexity of simulations."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Very true. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous statement, showing a positive evaluation without adding new content."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: to the enzyme turnover as a probe through development. Is that is that feasible? ",
+        "annotations": {
+            "ask question": "The speaker is explicitly asking for information or clarification on the feasibility of using enzyme turnover as a probe through development.",
+            "develop idea": "The speaker is exploring or expanding on an idea of using enzyme turnover in the context of development."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: If I could just ask so and also echo what people have been saying. We've been talking about kind of spatial resolution, resolving the substrate, and now I think we're talking about dynamics. So I think which of those or and there's probably more aspects of enzyme activity you're most interested in would determine the probe, kind of going back to what Gabriella was saying, there are trade-offs, there are some fundamental physics limitations. But do you care more about dynamics and time resolution or do you care more about spatial resolution or specificity would determine maybe the kind of tool you'd want to use. ",
+        "annotations": {
+            "develop idea": "Masha is expanding on previous ideas about enzyme activity, specifically about the aspects of spatial resolution, dynamics, and specificity.",
+            "ask question": "Masha is asking the group to consider which aspects of enzyme activity they are most interested in, which will determine the kind of tool they would use."
+        }
+    },
+    {
+        "utterance": "Stefano Di Talia: Yeah I guess depends on the biology I would say. I mean for us the resolution is the cell, right? So because we work in multicellular tissue and we really can't. So you don't need that much more that standard resolution is plenty but it may not be the case for more complex question or question of how signal propagate within a cell, right? ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea of resolution in their work context.",
+            "signal expertise": "The speaker is stating their perspective based on their experience in multicellular tissue, signaling their expertise in this area.",
+            "offer feedback": "The speaker is providing a considered perspective on the necessity and sufficiency of resolution in different biological contexts."
+        }
+    },
+    {
+        "utterance": "Stephanie Gupton: And the same goes for time, right? Like how much time like if you're thinking about growing part of a cell or part of an organ that's much that's a long time scale. ",
+        "annotations": {
+            "develop idea": "She is expanding on the idea of time scales in biological processes.",
+            "ask question": "She is asking a question about time scales indirectly."
+        }
+    },
+    {
+        "utterance": "Stefano Di Talia: Yeah and we have done we work with embryos where things happen in minutes and we zebrafish adults where things happen in days. So so it's been very very different. It's been sort of interesting on a theoretical point of view we see similar principle of waves as a mechanism to propagate signals but there is almost a four order of magnitude in the speed of the waves we have in fly embryos versus zebrafish adults which in itself it's interesting how they can control all those time scales. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the idea of comparing time scales in different biological systems, discussing the differences between embryos and zebrafish adults.",
+            "supportive response": "The speaker is providing a supportive view by sharing similar observations and experiences.",
+            "signal expertise": "The speaker is implicitly stating expertise in working with embryos and zebrafish adults, discussing specific aspects of their research."
+        }
+    },
+    {
+        "utterance": "Ross Wang: From what I have seen I think both spatial and temporal resolution are very important. Usually in most proposal or papers, spatial temporal has been combined as even a single word. So I just want to chime in regarding Neil's question. Then you ask about enzyme turnover. So it's also related to where inside the cell, which specific organelle and in certain space. And then you have to a certain detection or the tool will have to differentiate that enzyme's fluorescence level like substrate fluorescence level from the other counterpart or the rest of the cells. Because probes could be everywhere but although nowadays there's a trend to develop organelle specific probe, organelle targeted probes too. ",
+        "annotations": {
+            "develop idea": "Ross Wang is elaborating on the importance of spatial and temporal resolution in the context of studying enzyme turnover and activity within specific cellular locations."
+        }
+    },
+    {
+        "utterance": "Stephanie Gupton: I guess I one thing that this has kind of made me think of is like we have all this data like from you know looking at genomes of enzymes and then we have all these data from proteomic screens of like this is the phosphorylated proteins in the cell and this is the ubiquitinated proteins in the cell but there's not really been a linkage between enzymes and all those substrates and I wonder if there if that would be something that like computational biology could start to bring together those two sides and that that might reveal more I don't know a lot more biology for all of us and chemistry. ",
+        "annotations": {
+            "propose new idea": "The speaker proposes using computational biology to link enzymes with their substrates, suggesting a new approach to address the identified gap in knowledge.",
+            "develop idea": "The speaker develops the idea by explaining the current state of data on enzymes and proteomic screens, and how computational biology could bridge the gap.",
+            "ask question": "The speaker asks for thoughts on whether computational biology could bring together data on enzymes and substrates, revealing more biology and chemistry."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Wow 100%. I mean you know there's so many of these lists right and but how do you make them functional? I heard the word in a conference a year ago junk phosphorylation. I was like oh wow that expresses what I've been feeling in the proteomics community. It's just like I have 30,000 phosphorylation sites. Good for you. Which ones are functional versus bystander? ",
+        "annotations": {
+            "ask question": "Neil Kelleher is asking for a way to make the lists of phosphorylation sites functional and to identify which sites are functional versus bystanders.",
+            "identify gap": "Neil Kelleher is highlighting the gap in understanding which phosphorylation sites are functional versus bystanders."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: probably call them. Everybody's a little shy now. Neil? ",
+        "annotations": {
+            "express humor": "The statement 'Everybody's a little shy now' can be seen as an attempt to lighten the mood or make a humorous observation about the group's dynamics.",
+            "encourage participation": "The utterance ends with 'Neil?', which can be seen as an invitation for Neil to contribute or participate in the discussion."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah I can I'll I'll take I'll riff on that. I do imagine a direct imaging of of biomolecules and so you know so an atom scope, a full atom scope of the entire cell is that's a a little bit far out there for me. So I'll I'll hedge and say, okay, if we could image at one micron and actually really do a very detailed inventory of what's in a one micron voxel or one micron cubed voxel, you know and and actually deliver that in five to eight years and and you know compositionally detailed, you would get the endogenous proteoforms that are the enzymes, that information. You would collect the substrates and products present in that voxel. So it would be somewhat local. And then the computational support, I think there are big efforts to say, well now I can layer known protein complex information onto this knowledge and and that's now I'm not now I'm not sounding particularly well thought out but that's kind of anyway that's what came out Gang-Yu. ",
+        "annotations": {
+            "clarify goal": "Neil Kelleher clarifies the goal of the proposed imaging approach, which is to achieve a detailed understanding of cellular contents and their interactions."
+        }
+    },
+    {
+        "utterance": "Taras Pogorelov: But I think Neil I think it's I think it's actually works now very nicely already with computational technology. We are almost there in some ways once we have the list, right? As of course you know right talking with Romie and then Shulten right from Urbana of course is working on that and so this is right I mean I think it's a very nice spatial plan or spatial scale we can reach hopefully soon enough. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and optimism about the potential of computational technology.",
+            "signal expertise": "The speaker mentions being in conversation with experts (Romie and Shulten), signaling their connection to relevant expertise.",
+            "develop idea": "The speaker is elaborating on the feasibility of using computational technology for their goals, referencing conversations with other experts."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah in five to eight years I think you you know and throw in some really good enzymology concepts and data from the in vitro world is necessary and yeah. Anyway, okay I'm getting myself excited but not sure about it. ",
+        "annotations": {
+            "code name": "supportive response",
+            "explanation": "Neil Kelleher is commenting on and showing enthusiasm for the integration of enzymology concepts and data from the in vitro world.",
+            "another code": "develop idea"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: That's great. You can coach with any group who want to do this. So we want also to hear the fellows' input, converge your idea. I myself is a technologist. So several of the fellows here heard me talking about label-free atomic scale optical imaging in among live cells with atomic resolution. I think that's far down the road but it's coming. So with that we let fellows to converge with your thought. We got about six minutes left. One each. We will start harassing Neil because he has to representing us. ",
+        "annotations": {
+            "encourage participation": "The speaker invites fellows to share their input and ideas.",
+            "process management": "The speaker mentions a time constraint and organizes the discussion.",
+            "express humor": "The speaker makes a light, humorous comment about 'harassing Neil'."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: I mean ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neel Shah: Sorry, go ahead. You want to say something? ",
+        "annotations": {
+            "encourage participation": "The speaker invites someone else in the group to contribute their expertise, opinions, or ideas."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Go ahead. No, no, no, go ahead. ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting someone else to contribute their thoughts or continue speaking."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Yeah I I just I I keep coming back to what Wenjing said earlier on about really making a series of measurements that probe different aspects of an enzyme's function and then basically figuring out how to integrate them. And so like from my perspective as somebody who studies kinases and phosphatases, I would want to be able to say over the course of some cellular process, can I do one experiment where I measure you know subcellular localization as a function of that process, another where I overlay on top of that intrinsic enzyme activity as a function of that same process, right, which may not necessarily be correlated because in some locale maybe the enzyme's inhibited or whatever, right? And then um so that second thing may come from like a product producing biosensor or something like that. And then the third thing might be mapping uh what it's interacting with as a function of you know space and time. And so whether that's products or that are being formed, other substrates that are being acted upon, or uh regulatory proteins or something. If you had those three pieces of measurement um over the same like sort of biological process, I think you could learn an enormous amount about what um that enzyme is actually doing and how it operates. And then the fourth kind of dream thing would be to be able to map onto that the conformational dynamics of the protein as a function of all these things but uh and that's something as a structural biologist I would love to be able to do but um you know we wear different hats in our lab so um yeah I I none of those are a proposal for a specific technology but if there are four technologies that we could merge into one thing, that would be like for example if I was going to pitch a project to this group, that's what I would pitch and I would just pitch my favorite enzyme because it would help us out. Um but yeah, that's my thought. ",
+        "annotations": {
+            "propose new idea": "Neel Shah introduces a new approach to studying enzyme function by suggesting the integration of multiple measurements.",
+            "develop idea": "Neel Shah elaborates on his idea by detailing specific measurements and their potential to provide a comprehensive understanding of enzyme function.",
+            "clarify goal": "Neel Shah contributes to clarifying the goal of achieving a comprehensive understanding of enzyme function through integrated measurements."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Neel, don't you love our fellows? You ask for one, they give us four. It's always good. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker verbally recognizes the input of Neel Shah and the fellows.",
+            "supportive response": "The utterance expresses a positive sentiment towards the contributions made by the fellows.",
+            "express humor": "The remark is made in a lighthearted and humorous tone."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah. No, it's big thinking time. Yeah. ",
+        "annotations": {
+            "Supportive response": "The speaker is expressing agreement and validation for the approach of big thinking."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: What's your favorite enzyme, Neel? ",
+        "annotations": {
+            "ask question": "The speaker is explicitly asking Neel a question about his favorite enzyme.",
+            "encourage participation": "The question invites Neel to contribute his thoughts or opinions, encouraging participation."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Uh these days it's a tyrosine phosphatase called SHP2 but it changes day to day. I don't know. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: I like that one. Okay. Sorry we had another Masha ",
+        "annotations": {
+            "supportive response": "The speaker expresses approval for a previous statement.",
+            "acknowledge contribution": "The speaker acknowledges a previous comment or contribution."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Masha wants to chime in. ",
+        "annotations": {
+            "encourage participation": "Gang-Yu Liu invites Masha to contribute to the discussion, encouraging her participation."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Sure. ",
+        "annotations": {
+            "acknowledge contribution": "Masha Kamenetska is acknowledging a prior statement or suggestion with a brief agreement."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I have ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: several thoughts. So first I just want to say I think some of what we were talking about before this last comment by Neel could be called chemical imaging or has been called by other people and where you have atomic scale resolution so you're imaging specific bonds and I don't know of a technique that can do that label-free or on small number of molecules right that's that's the challenge. So you can do chemical imaging but you need a lot of the same number of molecules so that you have high signal. If you have a very heterogeneous environment like the cell with it's you know that's harder to do and then you need a probe but then you need to get the probe into the cell so that's the challenge. But I also had another thought so I hope it's okay I'm totally changing direction. So you know in some sense we want kind of cellular or sorry atomic resolution or molecular resolution be able to to tell structure of individual molecules within the cell. On the other hand fundamentally I think processes within cells must be stochastic so that many random events are happening at once and not each of those events is meaningful right maybe it's binding non-specifically. So in that sense we actually want to be able to probe many different molecules so that we can see what the average behavior is. So it just something that came to mind maybe it's obvious to people who regularly think about biological processes but you know that's kind of a dichotomy just mapping what one individual molecule is doing for some very small amount of time may not give you an actually true any sort of information it might just be random. ",
+        "annotations": {
+            "propose new idea": "Masha discusses new perspectives on challenges in chemical imaging at atomic scale resolution.",
+            "develop idea": "She expands on existing concepts related to probing molecular behavior.",
+            "identify gap": "Masha highlights the technological gap in imaging specific bonds label-free."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Great. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is acknowledging and appreciating the contribution made by Neel Shah.",
+            "supportive response": "The speaker is expressing a positive sentiment towards the discussion or the idea presented."
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: You know I was going to say ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Alexis C Komor: like all of us all the technologies that we have that give us like molecular information about proteins have to be done in vitro pretty much right because you need so many like yeah you need a homogeneous mixture all the same molecule and then even with like cryo-EM you have to like you average what all the molecules look like and then is that even so yeah there's a lot of questions to think about but are all of these you know all these data points of what these molecules look like in vitro and purified and only with like other proteins that are like the same protein does it then like when it goes into the cell does it look like totally different? And then I think yeah one of the questions on this session was thinking about like oh single cell technologies versus in bulk is that like the same thing happening on a molecular level here where you know cryo-EM or whatever we're like averaging we like lose all that information like what Masha was just saying of like this one's doing one thing and something's doing another thing and then if we average it are we like we don't have any information about what actually is happening like the average structure is like not even what other ones look like or I don't even know. ",
+        "annotations": {
+            "identify gap": "The speaker highlights a gap in current methodologies, specifically the challenge of translating in vitro findings to in cell behaviors.",
+            "ask question": "The utterance is questioning the representativeness of in vitro and bulk data for understanding molecular behavior in cells."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Okay. We want it all. We want single time space we want it all. This group want to integrate it. Any other thoughts? Right now it's 11:30. We do want to give Neil and Tanya some time. Any other thoughts? We want to take two more thoughts hopefully. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow, noting the time and indicating a desire to allow certain individuals to contribute before closing.",
+            "encourage participation": "The speaker explicitly invites others to contribute their thoughts."
+        }
+    },
+    {
+        "utterance": "Ross Wang: I just see Masha sorry. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Sorry. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Ross Wang: Let me just quickly finish this. But I just think what Masha mentioned is so many interesting biology signaling we want to study in an integrated way of a cascade of biology process including protein translocation or enzymatic activity and also within a very ideally a small compartments and to avoid the heterogeneity in the cells maybe just in a small level. But question is to study those complex process we are constantly testing or challenging the bandwidth of multiplex imaging because the read out is only one you know people rely on FRET or fluorescence and we might need to use like multiple probes to track different protein or even for protein at different organelles right? And then so can we do that actually like people doing flow cytometry to study just cell surface marker people can put 12 different biomarkers detecting 12 different fluorescence channels right? Is the current probe design available now to like a toolkit allow us to simultaneously track more than a dozen interesting points there. ",
+        "annotations": {
+            "develop idea": "Ross Wang is expanding on Masha's previous point about studying biological processes in an integrated way.",
+            "identify gap": "Ross Wang highlights the limitation of current imaging techniques in studying complex processes.",
+            "ask question": "Ross Wang poses a question about the availability of probe designs that can simultaneously track multiple points of interest."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Okay. Wenjing? ",
+        "annotations": {
+            "code name": "encourage participation",
+            "explanation": "The speaker is inviting Wenjing to contribute their thoughts or ideas."
+        }
+    },
+    {
+        "utterance": "Wenjing Wang: Yeah I just want to add that I think it's great that we have studied these several processes and then so one thing that we mentioned before all this information on proteomics and genomics single cell that we have all this information but the problem is a lot of these enzymatic activity or modifications might just are ",
+        "annotations": {
+            "identify gap": "The speaker points out a problem or gap in understanding or utilizing enzymatic activity or modifications despite having extensive information from proteomics, genomics, and single-cell analysis."
+        }
+    },
+    {
+        "utterance": "Wenjing Wang: by standard effect. So I think besides visualizing, so it'll be really cool if that we have this data for all these perturbations either mutations that cause like the phenotypes or at a higher level kind of output so that we actually know that perturbation certain processes or these enzyme dynamics or interactions regulations are actually important disease relevant. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of correlating perturbation data with disease relevance.",
+            "develop idea": "The speaker builds upon existing ideas by suggesting a comprehensive approach to understanding biological processes.",
+            "offer feedback": "The speaker provides a suggestion for a future research direction."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Okay. ",
+        "annotations": {
+            "None": "The utterance is a brief acknowledgment without adding new content or explicitly exhibiting any of the behaviors described in the codebook."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yeah, we need a functional filter there. I see Sandy, I got your hand up there. ",
+        "annotations": {
+            "process management": "Neil Kelleher is managing the meeting flow by noticing and addressing someone who wants to speak.",
+            "acknowledge contribution": "Neil Kelleher is acknowledging a contribution (the need for a functional filter) made by someone else."
+        }
+    },
+    {
+        "utterance": "Sandy Schmid: Yeah, I'm just thinking a lot of the probes we have now, biosensors, for example the classic calcium biosensors or lipid biosensors from phosphatidylinositol are binding proteins that bind calcium or bind to a phospholipid. And we have this amazing technology now of nanobodies and nanobody libraries that can be displayed on yeast and and then also this technology of taking two different binding sites and putting them together so that you could have heterozygous binding sites as opposed to the classic antibody that has exactly the same antigen for both things and that would bring proteins together. So I'm wondering if anybody's thought about using nanobodies and screening for creating molecules that bind to your favorite chemical or would be called a hapten as opposed to an antigen. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests using nanobodies and screening for creating molecules that bind to specific chemicals (haptens), which is a new idea in the context of the conversation.",
+            "develop idea": "The speaker elaborates on existing technologies such as biosensors, nanobodies, and their potential for new applications, building on previously mentioned ideas and concepts."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah, that's interesting thought. Yeah, your substrate or enzymes. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement and validation for another group member's contribution, showing interest in their idea."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: I think people are starting to use those for multiplexed antibody-based imaging, like 40, 50-plex, you know, the CODEX, MIBI kinds of readouts and they're getting all these multi-color images at subcellular resolution. So that's one area. Inside the cell or in the living cell, that's harder, but I'm sure it's going on. ",
+        "annotations": {
+            "identify gap": "The utterance identifies a limitation or gap in current technological capabilities, specifically the challenge of applying multiplexed antibody-based imaging inside the cell or in living cells."
+        }
+    },
+    {
+        "utterance": "Ross Wang: Yeah, I have seen people starting to use nanobody to track to see the glycosylation intracellularly. ",
+        "annotations": {
+            "supportive response": "The speaker provides an example of using nanobody to track glycosylation intracellularly, supporting the discussion on advanced techniques for studying biological processes."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah, so also Sandy, we actually can do single cell surgery just in case the nanobody couldn't enter living cell, we can deliver them in. ",
+        "annotations": {
+            "develop idea": "The speaker is building upon a previous idea about using nanobodies by suggesting a method to deliver them into living cells.",
+            "offer feedback": "The speaker provides a specific solution (doing single cell surgery) to a previously mentioned challenge (nanobodies not entering living cells)."
+        }
+    },
+    {
+        "utterance": "Sandy Schmid: Well the nanobodies of course are very small, the size of GFP and they can be genetically you know the genetic they can be genetically encoded and are being expressed inside cells, conformational specific nanobodies, they can be expressed in regulated ways inside cells. So this is completely genetically tractable. That's not the issue, it's the binding specificity and off and on rates. ",
+        "annotations": {
+            "develop idea": "The speaker is elaborating on the characteristics and potential of nanobodies, building upon previous discussion.",
+            "signal expertise": "The speaker demonstrates knowledge about nanobodies, their size, genetic encodability, and expression inside cells.",
+            "identify gap": "The speaker mentions that binding specificity and off and on rates are issues, implying a gap in current technology.",
+            "offer feedback": "The speaker provides specific comments on the use and limitations of nanobodies."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Yeah. ",
+        "annotations": {
+            "None": "The utterance is a simple acknowledgment or expression of agreement, and does not explicitly exhibit any of the defined behaviors."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: And the readout, right? The fluor- there must be a nanobody fluorophore that's been expressed that has the fluorescent probe responsive to binding in vivo. ",
+        "annotations": {
+            "ask question": "The speaker is seeking clarification on the necessity of a fluorophore for readout in vivo.",
+            "develop idea": "The speaker is expanding on the concept of using nanobodies with a fluorophore for imaging or tracking molecules within living cells."
+        }
+    },
+    {
+        "utterance": "Stefano Di Talia: One practical thing, I mean we we thought about one approach like that once in the lab but we were really worried that the binding of the nanobody to the receptor would just mess it up. So there's also like there are some of these sensor, one of the nice thing of the FRET sensor and some of these that were mentioned before is that at least in first approximation are inert. So you could put it in there and your cell is still going to do what it's supposed to do. So that's another frontier I guess, making sure that they work and they work without messing up the cell I guess. ",
+        "annotations": {
+            "identify gap": "The speaker identifies a potential gap or limitation in the approach of using nanobodies, which is the possibility of interference with cellular processes.",
+            "offer feedback": "The speaker offers a consideration that could be seen as feedback on the use of certain approaches, specifically highlighting the inert nature of FRET sensors as a beneficial characteristic."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Right. I hate to cut it up but we do want to give reporter and scribe some time to represent the group, prepare the slide. So you're welcome to stay and help out or you're welcome to stay to take a break and join us, don't log out, and join us in the main room for report. So what I recommend is Tania if you can send your note to Neil and CC to Neil me myself and Neil and we will stay with you for the prep if you need us but we will hide in the background for you two to get the report ready. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow, deciding it's time for reporters and scribes to prepare.",
+            "assign task": "The speaker assigns a task to Tania, instructing her to send a note to Neil and CC them."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Great, yeah. We already have the notes on the slide so ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a previous action or statement, indicating they already have the necessary notes on the slide."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: We did it already online. Yeah. ",
+        "annotations": {
+            "acknowledge contribution": "Neil Kelleher acknowledges an action taken by possibly himself or others ('We did it already online'), confirming that a task or action has been completed.",
+            "supportive response": "The utterance has a supportive tone with 'Yeah', agreeing with or affirming a previous statement."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Okay, maybe one of you can share screen. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by asking a participant to share their screen."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Sure, I can share screen. Paw prints. ",
+        "annotations": {
+            "process management": "Tania Lupoli is offering to share her screen, which is an action related to managing the meeting flow or presentation process."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: I can I can see your paw prints online there Tania. That's what we call it. We we're the wildcats so we talk anyway. Sorry. ",
+        "annotations": {
+            "express humor": "Neil Kelleher makes a humorous comment about seeing Tania's 'paw prints' online, referencing his group as 'wildcats'."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I hope other people if they're still in the room, you guys can chime in if I'm like contorting what the theme of the discussion was. I think we went in a lot of different directions and I'm afraid that I'm saying things that are just I'm like parroting my own thoughts here. So... ",
+        "annotations": {
+            "encourage participation": "Neel Shah invites others to contribute their thoughts and opinions."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: This comes up a lot. Let me um... ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: By the way, you can just at the end a little bit, that's your reporter's privilege. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Yes. Okay. ",
+        "annotations": {
+            "None": "The utterance is a minimal response that does not explicitly exhibit any of the defined behaviors."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I think that once I start talking, I apply a filter that I don't have control over either. So let's just see what happens. ",
+        "annotations": {
+            "Supportive response": "Neel Shah is contributing to the conversation in a supportive manner by sharing his thoughts."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Oh no, no, not overall, but just at the end. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: Don't worry about it. Just roll. ",
+        "annotations": {
+            "supportive response": "Neil Kelleher is reassuring Neel Shah, making him feel more at ease.",
+            "express humor": "The use of 'Just roll.' has a casual, somewhat humorous tone."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: That's why being a reporter, you do have a little bit of privilege, not a whole lot. ",
+        "annotations": {
+            "express humor": "The speaker makes a lighthearted comment about the privileges of being a reporter, indicating humor."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I'm trying to understand whether I actually volunteered for this or not, but that's a separate issue. ",
+        "annotations": {
+            "Express humor": "The utterance makes a joke about Neel Shah's volunteering status for reporting or summarizing the discussion."
+        }
+    },
+    {
+        "utterance": "Neil Kelleher: You kind of did. ",
+        "annotations": {
+            "express humor": "The speaker is making a humorous comment in response to Neel Shah's volunteering."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: You're gonna you're gonna solve it. ",
+        "annotations": {
+            "supportive response": "The utterance expresses a positive sentiment towards solving the problem.",
+            "encourage participation": "The utterance encourages someone to take action or participate in solving the problem."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Yeah, I I and I eagerly, you know, I like stupidly raised my hand. I was like, I don't know. ",
+        "annotations": {
+            "Express humor": "The speaker makes a humorous comment about raising his hand."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Oh no, no, we if not, we'll push you out anyway. So all you need is to solve this problem based on the group's proposed suggestions. That's all. And you know, our group member can solve it in one week, you know. ",
+        "annotations": {
+            "express humor": "The speaker uses a lighthearted and humorous tone to make a point.",
+            "assign task": "The speaker assigns Neel Shah the task of reporting, suggesting it can be solved based on the group's suggestions."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Yeah. As someone mentioned, yeah, trying to kind of make a movie almost with all of this information, which I think is a good... ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: the 3D, yeah, good idea. Visualization of the enzymatic profile. ",
+        "annotations": {
+            "Supportive response": "Gang-Yu Liu is expressing agreement or validation for the idea of visualization of the enzymatic profile."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Can we think of label-free tools? I don't know if we came up with any real label-free tools. ",
+        "annotations": {
+            "ask question": "Tania Lupoli is requesting information about label-free tools.",
+            "identify gap": "The question implies a recognition of a gap in their current knowledge or tools regarding label-free options."
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Yeah, one thing we didn't mention was like some frequency generation and other, I wonder if anyone's applied that, so that would be label-free. It would be only selective to like a membrane or an interface. I don't know if anyone's tried that within cells. Yeah, it just came to me after the discussion ended. ",
+        "annotations": {
+            "propose new idea": "Masha suggests considering 'some frequency generation' as a label-free approach.",
+            "ask question": "Masha asks if anyone has applied this approach within cells."
+        }
+    },
+    {
+        "utterance": "Neel Shah: So we don't need to add it but... ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: No, but they did try to great discussion. They did try a little bit, may not be the whole cell, but at least the cellular membrane, they have tried that. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Right. They have tried that in vivo? Okay. ",
+        "annotations": {
+            "ask question": "Masha is requesting information or clarification about whether they have tried a certain approach in vivo."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: They have tried it in vitro for sure. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: In vitro, yeah, yes. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: In vivo, I think it's somewhat limited, but I think the in vitro has been tried a lot, especially on the on the membrane side. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Masha Kamenetska: Yeah, for the sum frequency. Yeah. Yeah, in vivo it's always the small signal. Yeah. ",
+        "annotations": {
+            "identify gap": "Masha Kamenetska explicitly recognizes a limitation of sum frequency generation technique in vivo, stating that 'in vivo it's always the small signal', which indicates a challenge or gap in using this method within living organisms."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: I know. That's always the complex and dirty one. You might not want to use that word for this, but... ",
+        "annotations": {
+            "Express humor": "The speaker uses a colloquial and somewhat humorous expression 'complex and dirty one' to describe a complex situation.",
+            "None": "No other code directly applies to this utterance as it does not explicitly propose an idea, ask a question, signal expertise, identify a gap, acknowledge a contribution, provide a supportive or critical response, offer feedback, summarize the conversation, encourage participation, manage the process, assign a task, clarify a goal, or confirm a decision."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Yeah. It's okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: But by the way, definitely put your name there, Tania, as a scribe. It's very important role. ",
+        "annotations": {
+            "process management": "The speaker is directing the process of documenting or assigning roles within the group.",
+            "assign task": "The speaker is assigning Tania the role of a scribe, which is a specific task."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Oh yeah, absolutely. None of this would be coherent if you weren't taking notes this way. ",
+        "annotations": {
+            "acknowledge contribution": "Neel Shah verbally recognizes Tania Lupoli's input (note-taking), showing appreciation for her role.",
+            "supportive response": "Neel Shah expresses a positive sentiment towards Tania Lupoli's effort, highlighting its importance."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: It's all going to make sense. Okay, so a lot of people talked about heterogeneous environment, you know, the challenge of being in a heterogeneous environment, which I feel like is important. ",
+        "annotations": {
+            "Summarize conversation": "Tania is summarizing previous discussions about heterogeneous environments.",
+            "Acknowledge contribution": "Tania acknowledges the discussions and contributions of other group members regarding heterogeneous environments."
+        }
+    },
+    {
+        "utterance": "Neel Shah: I also kind of I got the impression that in some ways that is like it's a drawback, but there's also a sort of benefit. Maybe we don't need to know with an extreme level of granularity like what every single molecule is doing differently, but rather like maybe a collection of molecules in a small subcellular compartment, maybe averaging across their activities is actually what's interesting. This sort of like sprinkled into the conversation a little bit towards the end. ",
+        "annotations": {
+            "identify gap": "The speaker recognizes the potential drawback of needing to know the detailed behavior of every single molecule, indicating a gap in current understanding or methodology.",
+            "develop idea": "The speaker expands on existing ideas by suggesting an alternative approach of studying molecular activities at a less granular level, focusing on collections of molecules in subcellular compartments."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: That's right. They're gonna they're gonna get us soon, so... ",
+        "annotations": {
+            "express humor": "The speaker is making a joke about the group being asked to prepare a report or presentation, indicating humor."
+        }
+    },
+    {
+        "utterance": "Neel Shah: Are we going to be kicked out or kicked in to the big room? ",
+        "annotations": {
+            "process management": "The speaker is inquiring about the next steps regarding the meeting arrangement, indicating a concern with the management of the meeting flow or logistics."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: I think we have two minutes. ",
+        "annotations": {
+            "process management": "The speaker is indicating the time remaining, which is a direct aspect of managing the meeting flow and time."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: We still have a little bit of time. ",
+        "annotations": {
+            "process management": "The speaker is checking the time and indicating that there is still some time left, which is a managerial aspect of the meeting."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: At the... ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Nathan DeYonker: So so in terms of the like the critical role of computation in terms of maybe like formulating a question... ",
+        "annotations": {
+            "ask question": "The speaker is discussing and seeking information about the role of computation in formulating a question."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Mhm. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Nathan DeYonker: it seems like it seems like there's solid connections between like one layer in terms of spatial scales and maybe like the next layer out or the next layer in, but the the challenges are connecting like connecting data and results between one spatial scale and like two or three levels zoomed out. ",
+        "annotations": {
+            "Identify gap": "The speaker explicitly recognizes a challenge or gap in current research practices, specifically in connecting data across different spatial scales.",
+            "Process management": "The utterance discusses the challenge of managing research processes, specifically the integration of data across different spatial scales."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: We got the 60 seconds warning now. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by informing the group that they have 60 seconds left, which is a clear example of process management."
+        }
+    },
+    {
+        "utterance": "Nathan DeYonker: Does that make sense? Yes. It's like it's like not just the immediate next layer, but but connecting information across multiple layers at once. ",
+        "annotations": {
+            "Ask question": "The speaker is seeking clarification or confirmation with 'Does that make sense?'",
+            "Develop idea": "The speaker is expanding on the idea of connecting information across multiple layers"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Okay, I wrote it down. I don't know what Neil will say about that. ",
+        "annotations": {
+            "None": "No relevant code strongly applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Neel Shah: We'll find out. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Nathan DeYonker: There's not a lot of time to like pick at that, but I mean, I think it goes with the challenge of being in a heterogeneous environment as well. ",
+        "annotations": {
+            "supportive response": "The utterance expresses agreement or validation for previous contributions by relating his thought to the challenge mentioned."
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: Yeah, connecting different environments too. Okay, Neil, I just also added that averaging versus single cell or single molecule type of thing. ",
+        "annotations": {
+            "acknowledge contribution": "Tania acknowledges a prior point about connecting different environments.",
+            "propose new idea": "Tania introduces a new idea about considering averaging versus single cell or single molecule type of thing."
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: All right. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Tania Lupoli: See what happens. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gang-Yu Liu: Okay, awesome. They're going to take us, but you guys are doing great. ",
+        "annotations": {
+            "Supportive Response": "The speaker expresses a positive sentiment and encouragement to the group, indicating that they are doing great."
+        }
+    }
+]
