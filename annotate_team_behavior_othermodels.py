@@ -434,7 +434,7 @@ def is_valid_json_file(file_path):
     except (json.JSONDecodeError, FileNotFoundError, IOError):
         return False
 
-def annotate_and_merge_outputs(llm, output_dir, codebook):
+def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
     """
     Annotate and merge outputs for all subfolders in the output directory.
     Args:
@@ -473,8 +473,8 @@ def annotate_and_merge_outputs(llm, output_dir, codebook):
             json_dir_name = os.path.basename(folder)
             
             # Create verbal and all files in the JSON directory
-            verbal_file = os.path.join(folder, f"verbal_llama_{json_dir_name}.json")
-            all_file = os.path.join(folder, f"all_llama_{json_dir_name}.json")
+            verbal_file = os.path.join(folder, f"verbal_{fileName}_{json_dir_name}.json")
+            all_file = os.path.join(folder, f"all_{fileName}_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
                 print(f"No existing/valid verbal_llama file in {folder}, annotating now...")
@@ -520,7 +520,7 @@ def main():
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(llm, args.output_dir, codebook)
+    annotate_and_merge_outputs(llm, args.output_dir, codebook, 'llama_2')
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':
