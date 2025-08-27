@@ -4,6 +4,8 @@ import numpy as np
 from collections import defaultdict
 import pandas as pd
 import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def calculate_features(data):
     """Calculate all features specified in the feature guide."""
@@ -47,7 +49,12 @@ def calculate_features(data):
     
     # Store basic counts
     features['num_interruption'] = num_interruption
-    features['time_screenshare'] = time_screenshare
+    
+    # Calculate percentage of time spent on screenshare
+    if features['meeting_length'] > 0:
+        features['percent_time_screenshare'] = (time_screenshare / features['meeting_length']) * 100
+    else:
+        features['percent_time_screenshare'] = 0.0
     
     # Store annotation counts
     features['num_propose_new_idea'] = annotation_counts.get('propose new idea', 0)
@@ -102,7 +109,7 @@ def main():
     
     data_dir = f'data/{dataset}/session_data'
     for filename in os.listdir(data_dir):
-        if filename.endswith('.json') and filename != f'{dataset}_outcome.json':
+        if filename.endswith('.json') and 'person_to_team' not in filename and 'outcome' not in filename:
             input_path = os.path.join(data_dir, filename)
             output_path = os.path.join(output_dir, f'features_{filename}')
             
