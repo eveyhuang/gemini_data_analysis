@@ -477,7 +477,7 @@ def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
             all_file = os.path.join(folder, f"all_{fileName}_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
-                print(f"No existing/valid verbal_llama file in {folder}, annotating now...")
+                print(f"No existing/valid {fileName} file in {folder}, annotating now...")
                 try:
                     merged_output = merge_output_json(folder)
                 except InvalidJsonContentError as e:
@@ -491,7 +491,7 @@ def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
                 verbal_annotations = annotations
                 output_file = verbal_file
                 with open(output_file, "w") as f:
-                    print(f"Saved verbal_llama annotations to {output_file}")
+                    print(f"Saved {fileName} annotations to {output_file}")
                     json.dump(annotations, f, indent=4)
                 
                     
@@ -502,11 +502,11 @@ def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
                         all_anno[i]['annotations'] = anno
                     
                     with open(all_file, "w") as f:
-                        print(f"Merged verbal_llama annotations with existing video annotations to {all_file}")
+                        print(f"Merged {fileName} annotations with existing video annotations to {all_file}")
                         json.dump(all_anno, f, indent=4)
                 
             else:
-                print(f"Already annotated verbal_llama files in {folder}, skipping...")
+                print(f"Already annotated {fileName} files in {folder}, skipping...")
         
 def main():
     # Set up argument parser
