@@ -38,10 +38,10 @@ def init():
     code_book_v2 = """
     (1) propose new idea: introducing NEW ideas, suggestions, solutions, or approaches that have not been previously discussed in the meeting. Key Distinguisher: NEWNESS - the content has not been mentioned before. Example: "I think we should try a completely different approach..."; "Here's a new idea - what about..." ;
     (2) develop idea: expanding, building upon, or elaborating existing ideas through reasoning, examples, clarification, and evidence.  Example: "This appraoch would work for our problem because... "; "Let me give you a concrete example of how that would look..."; "A Nature paper showed this method outperforms others.";
-    (3) ask question: Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member. Example:"Can you explain what you mean by 'latent variable modeling'?"; "do we have data that is needed to train this model?"; "what is your thought on this approach?";
+    (3) ask question: Request information, clarification, or expertise from other team members on a prior statement or idea proposed by another group member. Example:"Can you explain what you mean by 'latent variable modeling'?"; "do we have data that is needed to train this model?"; "what is your thought on this approach?"; NOT this code if the speaker is identifying a gap or offering critiques.
     (4) signal expertise: Explicitly stating one's own or others' expertise or qualifications related to the task. Example: "Emily is our expert in bio-engineering, she could take the lead here"; "I came from a bio-chemistry background and have worked on.. ";
     (5) identify gap: explicitly recognizing one's own or the group's lack of knowledge, skill, resource, or familiarity in a particular domain, approach or topic. Examples: "I'm not very familiar with this topic"; "This isn't really my area of expertise"; "we don't have the data for that".
-    (6) acknowledge contribution: verbally recognizes another  group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material";
+    (6) acknowledge contribution: verbally recognizes another group member's input, but not agreeing or expanding. Example: "Lisa has previously brought up the idea of using oxygen as the core material"; Not this code if the utterance only has a few words such as "okay", "mhm", "I see" or acknowledge one's own input, such as "I wrote down some ideas".
     (7) supportive response: Expressing agreement, validation, or positive evaluation for other group members' contributions without adding new content. NOT this code if the speaker simply says "yep" or "yes" to acknowledge a prior statement. Example: "I agree with your approach"; "You made agreat point".
     (8) critical response: Questioning, challenging, disagreeing with, or providing negative evaluation of ideas, approaches, or information provided by other group members.  Example: "I'm concerned about the feasibility of..."; "Have we considered the risks of...?"; "You might be missing a very important limitation of this approach". 
     (9) offer feedback: Provide specific suggestions for improvement, modification of existing ideas or approaches proposed by other group members. NOT This Code If: Pure criticism without suggestions or simple agreement. Examples: "here's how we could strengthen the idea..."; 
@@ -90,7 +90,7 @@ def save_path_dict(path_dict, file_name, destdir):
         json.dump(path_dict, json_file, indent=4)
 
 # Annotate utterances with Gemini
-def annotate_utterances(client, merged_list, codebook):
+def annotate_utterances(client, merged_list, codebook, type='deductive'):
     """
     Iterates over each utterance, using the full list as context.
     Returns structured annotations in JSON format.
@@ -100,36 +100,93 @@ def annotate_utterances(client, merged_list, codebook):
 
     for i, utterance in enumerate(merged_list):
         # Prepare the prompt
-        comm_prompt = f"""
-        You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook. 
-        Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
-        Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
+        if type == 'deductive':
+            comm_prompt = f"""
+            You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook. 
+            Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
+            Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
 
-        **Annotation Guidelines:** 
-        - If no code applies, write 'None' as the code name.
-        - Only choose multiple codes (no more than 3)if they are all explicitly observed in the utterance.
-        - If the utterance only has a few words such as "yep", "umm", "I see", always choose the code "None".
-        - For each code you choose, provide a json object with the following fields:
-            code name: the name of the code from the codebook that applies to the utterance;
-            explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
-        - Ensure that each annotation follows the structured JSON format.
+            **Annotation Guidelines:** 
+            - If no code applies, write 'None' as the code name.
+            - Only choose multiple codes (no more than 3)if they are all explicitly observed in the utterance.
+            - If the utterance only has a few words such as "yep", "umm", "I see", always choose the code "None".
+            - For each code you choose, provide a json object with the following fields:
+                code name: the name of the code from the codebook that applies to the utterance;
+                explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
+            - Ensure that each annotation follows the structured JSON format.
 
-        ** Codebook for Annotation:**
-        {codebook}
+            ** Codebook for Annotation:**
+            {codebook}
 
-        ** Full Conversation Context:**
-        {json.dumps(merged_list[:i+1], indent=2)}  # Include past utterances up to the current one
+            ** Full Conversation Context:**
+            {json.dumps(merged_list[:i+1], indent=2)}  # Include past utterances up to the current one
 
-        ** Utterance to Annotate:**
-        "{utterance}"
+            ** Utterance to Annotate:**
+            "{utterance}"
 
-        **Expected Output:**
-        Output ONLY a single JSON object where each coded category is a key and the explanation is the value. 
-        If multiple codes apply, include the most relevant codes and explanationsto in the same JSON object.
-        If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
-        Do not include any explanatory text or reasoning outside the JSON. Do not provide multiple JSON blocks.
-        Example format: {{"code_name": "explanation", "another_code": "another explanation"}}
+            **Expected Output:**
+            Output ONLY a single JSON object where each coded category is a key and the explanation is the value. 
+            If multiple codes apply, include the most relevant codes and explanationsto in the same JSON object.
+            If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
+            Do not include any explanatory text or reasoning outside the JSON. Do not provide multiple JSON blocks.
+            Example format: {{"code_name": "explanation", "another_code": "another explanation"}}
+            """
+        else:
+            
+            comm_prompt = f"""
+                You are assisting with inductive qualitative coding of a long multi-speaker meeting transcript. These transcripts come from recorded meetings between groups of scientists 
+                who are meeting for the first time. They have been assigned to discuss ideas within pre-determined scientific problem domains. After these meetings, 
+                some subset of participants may choose to form teams and submit grant proposals together. Your job is to analyze the transcripts to understand communication behaviors, predict possible team formation, and estimate funding likelihood.
+                
+                You will analyze ONLY the provided utterance (not the whole meeting) and output structured JSON.
+
+                GOAL
+                - Identify communication strategies/behaviors relevant to collaboration, team formation, and likelihood of grant success.
+                - Multiple strategies can appear in one utterance; code each distinctly.
+                - If an utterance has no relevant behavior, record "none" for it.
+
+                INPUTS
+                - Utterance to annotate: {utterance}.
+                - Context (The 4 previous and following utterances): {json.dumps(merged_list[max(0, i-4):min(len(merged_list), i+5)], indent=2)} 
+                
+                TASKS
+                (1) INDUCTIVE CODING
+                For each providedutterance:
+                - Identify zero or more behaviors or strategies(codes), take into consideration the provided context.
+                - For each code:
+                * code_name: short (e.g., "ask question", "offer criticism", "propose idea" .... etc).
+                * definition: 1–2 sentence definition (your words).
+                * justification: justify your chosen code with rationales and exact quote (verbatim substring from the utterance) as evidence.
+                - If no relevant behavior for an utterance, include a single item: {{"code_name":"none"}} for that utterance.
+
+                (2) QUALITY ASSESSMENT (Behavior-Level)
+                For each identified code, rate the QUALITY of the communication behavior based on its potential to lead to team formation and funding success:
+                - Consider: Relevance to group goals; Constructiveness (moves discussion forward vs. blocks); Clarity/Specificity; Impact on team dynamics. And any thing else you think may 
+                be predictive and relevant to forming teams and funding success.
+                - quality: "High" / "Medium" / "Low" / "Unsure"
+                - justification: one sentence grounded in rationale and utterance context.
+
+                CONSTRAINTS
+                - Do NOT invent content beyond the utterance text.
+                - Keep code_name controlled and short; prefer reusing existing names if possible.
+                - Max 3 behaviors per utterance (pick the most salient).
+                - Use provided char offsets as-is; include them on each coded behavior.
+
+                OUTPUT JSON SCHEMA (STRICT):
+                {{
+                    "codes": [
+                        {{
+                        "code_name": "<short>",
+                        "definition": "<1-2 sentences>",
+                        "justification": "<1-2 sentences with verbatim quote>",
+                        "quality": "High|Medium|Low|Unsure",
+                        "justification": "<one sentence>"
+                        }}, 
+                        {{"code_name":"none"}} (if none apply)
+                    ]
+                }}
         """
+
 
         # Call Gemini API (adjust depending on your implementation)
         response = client.models.generate_content(
@@ -137,9 +194,9 @@ def annotate_utterances(client, merged_list, codebook):
             contents=[comm_prompt],
             config={
                 'response_mime_type':'application/json',
-                'temperature':0,
-                'max_output_tokens':8192,      
+                'temperature':0     
             },)
+
         annotation = json.loads(response.text)  # Parse response as JSON
 
         annotations.append({
@@ -324,7 +381,7 @@ def is_valid_json_file(file_path):
     except (json.JSONDecodeError, FileNotFoundError, IOError):
         return False
 
-def annotate_and_merge_outputs(client, output_dir, codebook):
+def annotate_and_merge_outputs(client, output_dir, codebook, fileName, type='deductive'):
     """
     Annotate and merge outputs for all subfolders in the output directory.
     Args:
@@ -363,8 +420,8 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
             json_dir_name = os.path.basename(folder)
             
             # Create verbal and all files in the JSON directory
-            verbal_file = os.path.join(folder, f"verbal_v2_{json_dir_name}.json")
-            all_file = os.path.join(folder, f"all_v2_{json_dir_name}.json")
+            verbal_file = os.path.join(folder, f"verbal_{fileName}_{json_dir_name}.json")
+            all_file = os.path.join(folder, f"all_{fileName}_{json_dir_name}.json")
             
             if not is_valid_json_file(verbal_file):
                 print(f"No existing/valid verbal file in {folder}, annotating now...")
@@ -377,7 +434,7 @@ def annotate_and_merge_outputs(client, output_dir, codebook):
                 verbal_annotations = []
                 
                 # print(f"Annotating verbal behaviors for {json_dir_name}")
-                annotations = annotate_utterances(client, merged_output[1], codebook)
+                annotations = annotate_utterances(client, merged_output[1], codebook, type=type)
                 verbal_annotations = annotations
                 output_file = verbal_file
                 with open(output_file, "w") as f:
@@ -410,7 +467,7 @@ def main():
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(client, args.output_dir, codebook)
+    annotate_and_merge_outputs(client, args.output_dir, codebook, 'gm_ind', type='inductive')
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':

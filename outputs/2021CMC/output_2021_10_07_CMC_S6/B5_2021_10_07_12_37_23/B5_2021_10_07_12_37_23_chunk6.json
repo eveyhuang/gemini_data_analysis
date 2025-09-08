@@ -1,126 +1,124 @@
-
 {
-  "meeting_annotations": [
-    {
-      "speaker": "Abhishek Singharoy",
-      "timestamp": "00:00-01:39",
-      "transcript": "is what feature to choose. I think that is one place. And then once the training is done, what do I do with that trained set? If I end up getting back the same training set, I haven't done anything. Essentially, I haven't discovered anything. So how do we get to the known unknowns? The known unknowns are good because we know that we have expectations. So there is a there's a validation for that that we know. And then more importantly, when we go to unknown unknowns, how do we validate the unknown unknowns? So I was just trying to frame the question that it's a question of training and generation. So in the training, how do we how do we how do we train? Like what is the channel of training? How good an educator am I? That's the question that I often ask when I think of training somebody. How good of an educator am I? Like when I write an equation on a board, how do I teach my students that? So it's so that that that is exactly the problem I I I face all the time. If there are any thoughts about it, then I would be very then once I've trained it, I find okay, the students have learned exactly what I have given them. How would they how would they overcome my limitations? I have not found the first answer is possibly people have thought about it. The second answer I have not not found in any way. How does the how do I get out of the training set in a credible way? There are so many ways in which I can get out of the training set and it's not credible enough. I can even train my program to say don't predict in the training set, go outside. But then what I am getting, how good is that? That problem I have found.",
-      "speaking_duration": 99,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "The speaker uses frequent hand gestures to emphasize his points about training, generation, and validation."
-    },
-    {
-      "speaker": "Rigoberto Hernandez",
-      "timestamp": "01:39-01:43",
-      "transcript": "Did you want to oh Stephen wants to jump in. Stephen E. So I'm going to put Stephen E.",
-      "speaking_duration": 4,
-      "interuption": "Yes",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "He acts as a moderator, directing the conversation flow to the next speaker."
-    },
-    {
-      "speaker": "Stephen Yi",
-      "timestamp": "01:43-02:11",
-      "transcript": "Just add one quick point. I think it's coming back to the question of data quality. So I think there's no way that we can change the data quality if we don't know anything about them. So I think the only way that typically we do as a field in general is to cross-validate using an independent data set or independent cohorts of patients or something of totally independent done from a different institution or university.",
-      "speaking_duration": 28,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "He has a virtual background of a university campus."
-    },
-    {
-      "speaker": "Abhishek Singharoy",
-      "timestamp": "02:11-02:12",
-      "transcript": "Mhm.",
-      "speaking_duration": 1,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "This is a brief affirmative backchannel."
-    },
-    {
-      "speaker": "Rigoberto Hernandez",
-      "timestamp": "02:12-02:22",
-      "transcript": "Jimin, did you want to jump in? No? Okay. Davide on the inversion problem?",
-      "speaking_duration": 10,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "He is again moderating, trying to bring other participants into the conversation."
-    },
-    {
-      "speaker": "Davide Donadio",
-      "timestamp": "02:22-02:40",
-      "transcript": "Yeah, mine mine was a the way I deal with it is like I want a certain function, what's how should I design the system or how should I what would the system what what would be the the molecular features of the system?",
-      "speaking_duration": 18,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "He adjusts his camera angle at the beginning of his turn."
-    },
-    {
-      "speaker": "Abhishek Singharoy",
-      "timestamp": "02:40-02:41",
-      "transcript": "Features, yes, yeah.",
-      "speaking_duration": 1,
-      "interuption": "Yes",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "A brief affirmative backchannel."
-    },
-    {
-      "speaker": "Davide Donadio",
-      "timestamp": "02:41-03:47",
-      "transcript": "Which is I mean at the materials level you have a there are these databases which more or less bring you there but they are very they are oversimplified. They are either crystals and and so on and we know that matter is actually and especially biological matter is complex. So the it's is an open question. I don't know how to answer that but can we use a combination of molecular modeling both traditional and and machine learning techniques which is very vague at the moment to design a mesoscale system which does what we want it to do which has the properties that we want it to have. And then you can think about any any kind of problem. I'm I'm more into in like energy materials or or stuff like that. But we are trying to go towards something that is not like the five atoms per cell that we we used to deal with in material science.",
-      "speaking_duration": 66,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "None"
-    },
-    {
-      "speaker": "Stephen Fried",
-      "timestamp": "03:47-04:32",
-      "transcript": "I mean something that I'm kind of curious to get the opinion of on the people in the room like Abhishek, Davide, and Romi that do a lot more simulation is that you know when you do these like cryo-EM experiments of course like you get lots of particles and each one is sort of like trapped in some different state and in principle like that encodes like you know a Boltzmann weight of a different distribution of what the particle can be in and of course what the cryo-EM doesn't know is time it doesn't have any way of like threading those together so it's kind of like a Monte Carlo in a sense and it seems like that's sort of a very good opportunity to try to like train a model to figure out how do you sort of like interpolate and like thread together and put like an arrow of time between them.",
-      "speaking_duration": 45,
-      "interuption": "No",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "He uses hand gestures to illustrate the concept of many particles and threading them together."
-    },
-    {
-      "speaker": "Davide Donadio",
-      "timestamp": "04:32-04:33",
-      "transcript": "That goes in the non-equilibrium realm.",
-      "speaking_duration": 1,
-      "interuption": "Yes",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "None"
-    },
-    {
-      "speaker": "Abhishek Singharoy",
-      "timestamp": "04:33-04:34",
-      "transcript": "That's correct.",
-      "speaking_duration": 1,
-      "interuption": "Yes",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "None"
-    },
-    {
-      "speaker": "Stephen Fried",
-      "timestamp": "04:34-04:36",
-      "transcript": "Assuming it's equilibrium, yeah.",
-      "speaking_duration": 2,
-      "interuption": "Yes",
-      "screenshare": "No",
-      "screenshare_content": "None",
-      "other": "None"
-    }
-
-  ]
+    "meeting_annotations": [
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "00:00-01:39",
+            "transcript": "is what feature to choose. I think that is one place. And then once the training is done, what do I do with that trained set? If I end up getting back the same training set, I haven't done anything. Essentially, I haven't discovered anything. So how do we get to the known unknowns? The known unknowns are good because we know that we have expectations. So there is a there's a validation for that that we know. And then more importantly, when we go to unknown unknowns, how do we validate the unknown unknowns? So I was just trying to frame the question that it's a question of training and generation. So in the training, how do we how do we how do we train? Like what is the channel of training? How good an educator am I? That's the question that I often ask when I think of training somebody. How good of an educator am I? Like when I write an equation on a board, how do I teach my students that? So it's so that that that is exactly the problem I I I face all the time. If there are any thoughts about it, then I would be very then once I've trained it, I find okay, the students have learned exactly what I have given them. How would they how would they overcome my limitations? I have not found the first answer is possibly people have thought about it. The second answer I have not not found in any way. How does the how do I get out of the training set in a credible way? There are so many ways in which I can get out of the training set and it's not credible enough. I can even train my program to say don't predict in the training set, go outside. But then what I am getting, how good is that? That problem I have found.",
+            "speaking_duration": 99,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "The speaker uses frequent hand gestures to emphasize his points about training, generation, and validation."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:39-01:43",
+            "transcript": "Did you want to oh Stephen wants to jump in. Stephen E. So I'm going to put Stephen E.",
+            "speaking_duration": 4,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He acts as a moderator, directing the conversation flow to the next speaker."
+        },
+        {
+            "speaker": "Stephen Yi",
+            "timestamp": "01:43-02:11",
+            "transcript": "Just add one quick point. I think it's coming back to the question of data quality. So I think there's no way that we can change the data quality if we don't know anything about them. So I think the only way that typically we do as a field in general is to cross-validate using an independent data set or independent cohorts of patients or something of totally independent done from a different institution or university.",
+            "speaking_duration": 28,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He has a virtual background of a university campus."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "02:11-02:12",
+            "transcript": "Mhm.",
+            "speaking_duration": 1,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "This is a brief affirmative backchannel."
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:12-02:22",
+            "transcript": "Jimin, did you want to jump in? No? Okay. Davide on the inversion problem?",
+            "speaking_duration": 10,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He is again moderating, trying to bring other participants into the conversation."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "02:22-02:40",
+            "transcript": "Yeah, mine mine was a the way I deal with it is like I want a certain function, what's how should I design the system or how should I what would the system what what would be the the molecular features of the system?",
+            "speaking_duration": 18,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He adjusts his camera angle at the beginning of his turn."
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "02:40-02:41",
+            "transcript": "Features, yes, yeah.",
+            "speaking_duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "A brief affirmative backchannel."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "02:41-03:47",
+            "transcript": "Which is I mean at the materials level you have a there are these databases which more or less bring you there but they are very they are oversimplified. They are either crystals and and so on and we know that matter is actually and especially biological matter is complex. So the it's is an open question. I don't know how to answer that but can we use a combination of molecular modeling both traditional and and machine learning techniques which is very vague at the moment to design a mesoscale system which does what we want it to do which has the properties that we want it to have. And then you can think about any any kind of problem. I'm I'm more into in like energy materials or or stuff like that. But we are trying to go towards something that is not like the five atoms per cell that we we used to deal with in material science.",
+            "speaking_duration": 66,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "03:47-04:32",
+            "transcript": "I mean something that I'm kind of curious to get the opinion of on the people in the room like Abhishek, Davide, and Romi that do a lot more simulation is that you know when you do these like cryo-EM experiments of course like you get lots of particles and each one is sort of like trapped in some different state and in principle like that encodes like you know a Boltzmann weight of a different distribution of what the particle can be in and of course what the cryo-EM doesn't know is time it doesn't have any way of like threading those together so it's kind of like a Monte Carlo in a sense and it seems like that's sort of a very good opportunity to try to like train a model to figure out how do you sort of like interpolate and like thread together and put like an arrow of time between them.",
+            "speaking_duration": 45,
+            "interuption": "No",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "He uses hand gestures to illustrate the concept of many particles and threading them together."
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "04:32-04:33",
+            "transcript": "That goes in the non-equilibrium realm.",
+            "speaking_duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "04:33-04:34",
+            "transcript": "That's correct.",
+            "speaking_duration": 1,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "04:34-04:36",
+            "transcript": "Assuming it's equilibrium, yeah.",
+            "speaking_duration": 2,
+            "interuption": "Yes",
+            "screenshare": "No",
+            "screenshare_content": "None",
+            "other": "None"
+        }
+    ]
 }

@@ -61,6 +61,10 @@ def init():
 
     """
 
+
+    
+
+
     return llm, code_book_v2
 
 # Save the path dictionary to a JSON file
@@ -202,7 +206,7 @@ def extract_json_from_response(response_content):
         return {}
 
 # Annotate utterances with AI-VERDE API via LangChain
-def annotate_utterances(llm, merged_list, codebook):
+def annotate_utterances(llm, merged_list, codebook, type='deductive'):
     """
     Iterates over each utterance, using the full list as context.
     Returns structured annotations in JSON format.
@@ -212,37 +216,94 @@ def annotate_utterances(llm, merged_list, codebook):
 
     for i, utterance in enumerate(merged_list):
         # Prepare the prompt
-        comm_prompt = f"""
-        You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook.
-        Each utterance is structured with "speaker name: what the speaker said".
-        Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
-        Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
+        if type == 'deductive':
+            comm_prompt = f"""
+            You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook.
+            Each utterance is structured with "speaker name: what the speaker said".
+            Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
+            Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
 
-        **Annotation Guidelines:** 
-        - If no code applies, write 'None' as the code name.
-        - Only choose multiple codes (no more than 3)if they are all explicitly observed in the utterance.
-        - If what the speaker said only has a few words such as "yep", "umm", "I see", always default to the code "None".
-        - For each code you choose, provide a json object with the following fields:
-            code name: the name of the code from the codebook that applies to the utterance;
-            explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
-        - Ensure that each annotation follows the structured JSON format.
+            **Annotation Guidelines:** 
+            - If no code applies, write 'None' as the code name.
+            - Only choose multiple codes (no more than 3) if they are all explicitly observed in the utterance.
+            - If what the speaker said only has a few words such as "yep", "umm", "I see", always default to the code "None".
+            - For each code you choose, provide a json object with the following fields:
+                code name: the name of the code from the codebook that applies to the utterance;
+                explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
+            - Ensure that each annotation follows the structured JSON format.
 
-        ** Codebook for Annotation:**
-        {codebook}
+            ** Codebook for Annotation:**
+            {codebook}
 
-        ** Full Conversation Context:**
-        {json.dumps(merged_list[:i+1], indent=2)}  # Include past utterances up to the current one
+            ** Full Conversation Context:**
+            {json.dumps(merged_list[:i+1], indent=2)}  # Include past utterances up to the current one
 
-        ** Utterance to Annotate:**
-        "{utterance}"
+            ** Utterance to Annotate:**
+            "{utterance}"
 
-        **Expected Output:**
-        You may reason through your analysis and provide multiple JSON blocks if needed to show your thinking process.
-        However, your FINAL answer should be a single JSON object where each coded category is a key and the explanation is the value.
-        If multiple codes apply, include the codes and explanations in the same JSON object.
-        If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
-        Make sure your final answer JSON black is clearly marked as the final answer.
-        Example format: {{"code name": "explanation", "another code": "another explanation"}}
+            **Expected Output:**
+            You may reason through your analysis and provide multiple JSON blocks if needed to show your thinking process.
+            However, your FINAL answer should be a single JSON object where each coded category is a key and the explanation is the value.
+            If multiple codes apply, include the codes and explanations in the same JSON object.
+            If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
+            Make sure your final answer JSON black is clearly marked as the final answer.
+            Example format: {{"code name": "explanation", "another code": "another explanation"}}
+            """
+        
+        else:
+
+            comm_prompt = f"""
+                You are assisting with inductive qualitative coding of a long multi-speaker meeting transcript. These transcripts come from recorded meetings between groups of scientists 
+                who are meeting for the first time. They have been assigned to discuss ideas within pre-determined scientific problem domains. After these meetings, 
+                some subset of participants may choose to form teams and submit grant proposals together. Your job is to analyze the transcripts to understand communication behaviors, predict possible team formation, and estimate funding likelihood.
+                
+                You will analyze ONLY the provided utterance (not the whole meeting) and output structured JSON.
+
+                GOAL
+                - Identify communication strategies/behaviors relevant to collaboration, team formation, and likelihood of grant success.
+                - Multiple strategies can appear in one utterance; code each distinctly.
+                - If an utterance has no relevant behavior, record "none" for it.
+
+                INPUTS
+                - Utterance to annotate: {utterance}.
+                - Context (The 4 previous and following utterances): {json.dumps(merged_list[max(0, i-4):min(len(merged_list), i+5)], indent=2)} 
+                
+                TASKS
+                (1) INDUCTIVE CODING
+                For each providedutterance:
+                - Identify zero or more behaviors or strategies(codes), take into consideration the provided context.
+                - For each code:
+                * code_name: short (e.g., "ask question", "offer criticism", "propose idea" .... etc).
+                * definition: 1–2 sentence definition (your words).
+                * justification: justify your chosen code with rationales and exact quote (verbatim substring from the utterance) as evidence.
+                - If no relevant behavior for an utterance, include a single item: {{"code_name":"none"}} for that utterance.
+
+                (2) QUALITY ASSESSMENT (Behavior-Level)
+                For each identified code, rate the QUALITY of the communication behavior based on its potential to lead to team formation and funding success:
+                - Consider: Relevance to group goals; Constructiveness (moves discussion forward vs. blocks); Clarity/Specificity; Impact on team dynamics. And any thing else you think may 
+                be predictive and relevant to forming teams and funding success.
+                - quality: "High" / "Medium" / "Low" / "Unsure"
+                - justification: one sentence grounded in rationale and utterance context.
+
+                CONSTRAINTS
+                - Do NOT invent content beyond the utterance text.
+                - Keep code_name controlled and short; prefer reusing existing names if possible.
+                - Max 3 behaviors per utterance (pick the most salient).
+                - Use provided char offsets as-is; include them on each coded behavior.
+
+                OUTPUT JSON SCHEMA (STRICT):
+                {{
+                    "codes": [
+                        {{
+                        "code_name": "<short>",
+                        "definition": "<1-2 sentences>",
+                        "justification": "<1-2 sentences with verbatim quote>",
+                        "quality": "High|Medium|Low|Unsure",
+                        "justification": "<one sentence>"
+                        }}, 
+                        {{"code_name":"none"}} (if none apply)
+                    ]
+                }}
         """
 
         # Call AI-VERDE API via LangChain
@@ -434,7 +495,7 @@ def is_valid_json_file(file_path):
     except (json.JSONDecodeError, FileNotFoundError, IOError):
         return False
 
-def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
+def annotate_and_merge_outputs(llm, output_dir, codebook, fileName, type='deductive'):
     """
     Annotate and merge outputs for all subfolders in the output directory.
     Args:
@@ -487,7 +548,7 @@ def annotate_and_merge_outputs(llm, output_dir, codebook, fileName):
                 verbal_annotations = []
                 
                 # print(f"Annotating verbal behaviors for {json_dir_name}")
-                annotations = annotate_utterances(llm, merged_output[1], codebook)
+                annotations = annotate_utterances(llm, merged_output[1], codebook, type=type)
                 verbal_annotations = annotations
                 output_file = verbal_file
                 with open(output_file, "w") as f:
@@ -520,7 +581,7 @@ def main():
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(llm, args.output_dir, codebook, 'llama_2')
+    annotate_and_merge_outputs(llm, args.output_dir, codebook, 'lm_ind', type='inductive')
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':
