@@ -13,7 +13,7 @@ def calculate_features(data):
     
     # Get all speakers
     all_speakers = data.get('all_speakers', [])
-    features['num_members'] = len(all_speakers)
+    features['num_members'] = len(set(all_speakers))
     
     # Get meeting length
     features['meeting_length'] = data.get('total_speaking_length', 0)
