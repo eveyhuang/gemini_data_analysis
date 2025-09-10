@@ -138,7 +138,7 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 who are meeting for the first time. They have been assigned to discuss ideas within pre-determined scientific problem domains. After these meetings, 
                 some subset of participants may choose to form teams and submit grant proposals together. Your job is to analyze the transcripts to understand communication behaviors, predict possible team formation, and estimate funding likelihood.
                 
-                You will analyze ONLY the provided utterance (not the whole meeting) and output structured JSON.
+                You will analyze ONLY the provided utterance (not the context) and output structured JSON.
 
                 GOAL
                 - Identify communication strategies/behaviors relevant to collaboration, team formation, and likelihood of grant success.
@@ -151,25 +151,26 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 
                 TASKS
                 (1) INDUCTIVE CODING
-                For each providedutterance:
-                - Identify zero or more behaviors or strategies(codes), take into consideration the provided context.
+                For each utterance:
+                - Identify zero or more behaviors or strategies(codes) that appears in this utterance. Apply code based on what is explicitly observed from the utterance, not inferred intent or motivation.
+                Use the provided context to understand what has been previously or later discussed but do not code the behaviors in the context.
                 - For each code:
                 * code_name: short (e.g., "ask question", "offer criticism", "propose idea" .... etc).
                 * definition: 1–2 sentence definition (your words).
                 * justification: justify your chosen code with rationales and exact quote (verbatim substring from the utterance) as evidence.
                 - If no relevant behavior for an utterance, include a single item: {{"code_name":"none"}} for that utterance.
 
-                (2) QUALITY ASSESSMENT (Behavior-Level)
-                For each identified code, rate the QUALITY of the communication behavior based on its potential to lead to team formation and funding success:
-                - Consider: Relevance to group goals; Constructiveness (moves discussion forward vs. blocks); Clarity/Specificity; Impact on team dynamics. And any thing else you think may 
-                be predictive and relevant to forming teams and funding success.
-                - quality: "High" / "Medium" / "Low" / "Unsure"
-                - justification: one sentence grounded in rationale and utterance context.
+                (2) QUALITY ASSESSMENT
+                For each identified code (that is not "none"), choose a code to describe the QUALITY of the communication behavior based on its potential to lead to team formation and funding success:
+                - evaluate and code quality of the behavior based on it's possibility to indicate successful collaboration and lead to forming teams and funding success.
+                - quality_code: a short phrase (1-3 words) description of the quality of the behavior.
+                - quality_justification: one sentence grounded in rationale and utterance context.
 
                 CONSTRAINTS
                 - Do NOT invent content beyond the utterance text.
                 - Keep code_name controlled and short; prefer reusing existing names if possible.
-                - Max 3 behaviors per utterance (pick the most salient).
+                - You can choose more than 1 behavior (maximum 3) but only the additional ones are or exteremely salient.
+                - If the utterance only has a few words such as "yep", "umm", "I see", always choose the code "none".
                 - Use provided char offsets as-is; include them on each coded behavior.
 
                 OUTPUT JSON SCHEMA (STRICT):
@@ -179,10 +180,10 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                         "code_name": "<short>",
                         "definition": "<1-2 sentences>",
                         "justification": "<1-2 sentences with verbatim quote>",
-                        "quality": "High|Medium|Low|Unsure",
-                        "justification": "<one sentence>"
+                        "quality_code": "<short phrase (2-3 words)>",
+                        "quality_justification": "<one sentence>"
                         }}, 
-                        {{"code_name":"none"}} (if none apply)
+                        {{"code_name":"none"}} (if no code applies, no quality code is needed)
                     ]
                 }}
         """
@@ -197,7 +198,13 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 'temperature':0     
             },)
 
-        annotation = json.loads(response.text)  # Parse response as JSON
+        try:
+            annotation = json.loads(response.text)  # Parse response as JSON
+            print("utterance: ", utterance)
+            print("annotation: ", annotation)
+        except Exception as e:
+            print(f"Error parsing response: {e}")
+            annotation = {"code_name": "Error"}
 
         annotations.append({
             "utterance": utterance,
