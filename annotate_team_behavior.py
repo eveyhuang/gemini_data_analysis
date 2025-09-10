@@ -48,14 +48,35 @@ def init():
     (10) summarize conversation: Summarize what has been previously discussed by the group. For example: "So far we have talked about the possibility of training an AI model and limitations of data for traininig."
     (11) express humor: makes a joke. example: "well, at least this model isn't as bad as our last one!" Not this code if the speaker is simply laughing, such as "haha" or if only the tone sounds humorous but not explicitly making a joke.
     (12) encourage participation: invites someone else in the group to contribute their expertise, opinions or ideas. "Alex, what do you think?"; "Anyone has any thoughts?";
-    (13) process management: Managing meeting flow, time, structure, or organizing group activities. Examples: “Let’s keep to the agenda”;“We have 5 minutes left.” NOT This Code If: Clarifying goals or assigning tasks, or simply greeting the group.
+    (13) process management: Managing meeting flow, time, structure, or organizing group activities. Examples: "Let's keep to the agenda";"We have 5 minutes left." NOT This Code If: Clarifying goals or assigning tasks, or simply greeting the group.
     (14) assign task: assigns responsibility, roles, deadlines, or action items to the group or a group member. Example: "Alex, can you handle data processing?"; NOT This Code If: Defining what needs to be accomplished (goals);
     (15) clarify goal:  Defining, clarifying, or seeking clarity on objectives, outcomes, expectations, or success criteria for the group to achieve. Key Distinguisher: DEFINING what needs to be accomplished by the group. Examples: "Let's be clear about what we're trying to achieve here..."; "our goal is to ...";
-    (16) confirm decision: Explicitly committing to, choosing, or confirming a single idea, approach, goal, or course of action as a group outcome. NOT This Code If: The group is still brainstorming or discussing multiple options without clear closure or commitment. Examples: “It sounds like everyone agrees we’ll proceed with the third option.”
+    (16) confirm decision: Explicitly committing to, choosing, or confirming a single idea, approach, goal, or course of action as a group outcome. NOT This Code If: The group is still brainstorming or discussing multiple options without clear closure or commitment. Examples: "It sounds like everyone agrees we'll proceed with the third option."
 
     """
 
-    return client, code_book_v2
+    code_book_v3 = """
+    (1) Idea Generation & Development: Introducing a new idea OR expanding on an existing idea with reasoning, examples, or evidence. Do not apply if: Utterance only affirms, acknowledges, or critiques without adding content. Examples: "What if we run a pilot with undergraduates?"; "Building on Alex's point, we could also test this in a different context."
+
+    (2) Information Seeking & Gap Identification: Asking a direct question OR highlighting missing knowledge/resources, either for the group or oneself. Do not apply if: The utterance proposes a solution instead of identifying a gap. Examples: "Do we have the dataset needed for this?"; "I'm not familiar with this method, can someone explain it?"
+
+    (3) Knowledge Contribution & Expertise Signal: Providing factual information, sharing prior experience, or explicitly stating one's own/others' expertise, role, or goals. Examples: "My group has been working on this problem…"; "Last year someone published a paper to confirm the possibility of this method."
+
+    (4) Evaluation & Feedback: Expressing judgment of an idea's content — agreement, disagreement, critique, or suggestion for improvement. Do not apply if: Utterance only thanks or praises the person (→ Code 5). Examples: "Maybe more data isn't exactly the problem that we're looking at."; "That hesitation by itself says our models aren't quite there yet."
+
+    (5) Acknowledgment, Support, & Interest: Recognizing or affirming another's contribution/effort OR expressing enthusiasm, curiosity, or positive affect toward an idea or person. Includes appreciation and positive humor. Do not apply if: Utterance evaluates the content of an idea (→ Code 4). Examples: "Thanks for pulling those numbers together."; "I was really interested in what Lisa said."
+
+    (6) Participation & Inclusion: Explicitly inviting or encouraging others to contribute. Examples: "Anyone want to chime in?"; "Alex, what do you think?"
+
+    (7) Process & Task Management: Managing meeting flow (time, agenda, topic), assigning tasks, OR clarifying team goals/expectations. Examples: "We have 10 minutes left, let's wrap up."; "Lisa, can you draft the methods section?"
+
+    (8) Decision & Confirmation: Explicitly confirming consensus or commitment to a course of action for the group. Do not apply if: Group is still exploring options. Examples: "So the decision is to submit jointly."; "It sounds like we're all going with option B."
+
+    (9) Summarization & Integration: Synthesizing or restating multiple prior contributions into a coherent summary. Do not apply if: New ideas are introduced (→ Code 1). Examples: "I'm just making notes here. So I guess we talked about…"; "So far, we've discussed two main approaches and their limitations."
+
+    """
+
+    return client, code_book_v3
 
 # Save the path dictionary to a JSON file
 def save_path_dict(path_dict, file_name, destdir):
@@ -102,34 +123,95 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
         # Prepare the prompt
         if type == 'deductive':
             comm_prompt = f"""
-            You are an expert in interaction analysis, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook. 
-            Apply code based onwhat is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
+            You are an expert in deductive qualitative coding, team science, and qualitative coding. Your task is to analyze an utterance from a scientific collaboration meeting and annotate it using the codes in the provided codebook, then score each code based on quality criteria. 
+            Apply code based on what is explicitly observed from the utterance, not inferred intent or motivation. Do not force a code that is not explicitly observed in the utterance.
             Use the full conversation context to understand what has been previously discussed when deciding the most accurate code that applies to the utterance.
 
             **Annotation Guidelines:** 
             - If no code applies, write 'None' as the code name.
-            - Only choose multiple codes (no more than 3)if they are all explicitly observed in the utterance.
+            - Only choose multiple codes (no more than 3) if they are all explicitly observed in the utterance.
             - If the utterance only has a few words such as "yep", "umm", "I see", always choose the code "None".
             - For each code you choose, provide a json object with the following fields:
-                code name: the name of the code from the codebook that applies to the utterance;
+                code_name: the name of the code from the codebook that applies to the utterance;
                 explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
-            - Ensure that each annotation follows the structured JSON format.
+                score: a numerical score (0, 1, 2, or 3) based on the quality criteria below;
+                score_justification: explain why you gave this score in 1 sentence;
 
             ** Codebook for Annotation:**
             {codebook}
 
-            ** Full Conversation Context:**
-            {json.dumps(merged_list[:i+1], indent=2)}  # Include past utterances up to the current one
+            ** Scoring Criteria (0-3 scale for each code):**
+            0 = Negative/dysfunctional (hurts the process)
+            1 = Minimal/weak (barely functional)
+            2 = Adequate/average (functional, but not special)
+            3 = High-quality/exceptional (moves team forward and makes team more effective, very concrete and specific)
+
+            Idea Generation & Development:
+            0 = Negative/dysfunctional. Example: "That's a stupid idea." (dismissive, hurts collaboration)
+            1 = Minimal/weak. Example: "We should try something different." (vague, no detail, not actionable)
+            2 = Adequate/average. Example: "Let's use more data for this." (clear direction but undeveloped)
+            3 = High-quality/exceptional. Example: "Building on Alex's idea, we could run a small pilot study with undergraduates to check feasibility." (novel, relevant, elaborated)
+
+            Information Seeking & Gap Identification:
+            0 = Negative/dysfunctional. Example: "I don't care about that." (dismissive, blocks information flow)
+            1 = Minimal/weak. Example: "I don't know." (stated, no follow-up)
+            2 = Adequate/average. Example: "Do we have the dataset?" (clear but general)
+            3 = High-quality/exceptional. Example: "Do we have the labeled MRI dataset from 2020?" (clear + specific)
+
+            Knowledge Contribution & Expertise Signal:
+            0 = Negative/dysfunctional. Example: "That's not how it works in my field." (dismissive, creates barriers)
+            1 = Minimal/weak. Example: "My favorite class was statistics." (off-topic, not relevant to task)
+            2 = Adequate/average. Example: "I used clustering in my lab" (relevant fact/expertise)
+            3 = High-quality/exceptional. Example: "In my lab we used hierarchical clustering with 500 samples and got 85% accuracy" (relevant + concrete detail)
+
+            Evaluation & Feedback:
+            0 = Negative/dysfunctional. Example: "That's completely wrong." (dismissive, harsh, no constructive value)
+            1 = Minimal/weak. Example: "That's wrong." (dismissive, no reason, harsh)
+            2 = Adequate/average. Example: "That could work because it's efficient." (judgment with minimal reason)
+            3 = High-quality/exceptional. Example: "I don't think this will scale because it is very expensive. Instead, we could test with a smaller subset first." (constructive critique with reasoning + suggestions)
+
+            Acknowledgment, Support, & Interest:
+            0 = Negative/dysfunctional. Example: "Whatever." (dismissive, undermines others)
+            1 = Minimal/weak. Example: "Yeah." / "Okay." (token acknowledgment)
+            2 = Adequate/average. Example: "That's a good point, Alex." / "Interesting idea." (explicit thanks, praise, or mild curiosity)
+            3 = High-quality/exceptional. Example: "I really appreciate how you explained that—it cleared things up for me." (strong acknowledgment/enthusiasm)
+
+            Participation & Inclusion:
+            0 = Negative/dysfunctional. Example: "I don't want to hear from anyone else." (excludes others, blocks participation)
+            1 = Minimal/weak. Example: "Any thoughts?" (generic invite)
+            2 = Adequate/average. Example: "Alex, what do you think?" (direct invite, general)
+            3 = High-quality/exceptional. Example: "Shannon, since you worked on the dataset, what's your view?" (direct invite + topic/expertise specified)
+
+            Process & Task Management:
+            0 = Negative/dysfunctional. Example: "This meeting is a waste of time." (undermines process)
+            1 = Minimal/weak. Example: "Let's stay on track" (vague)
+            2 = Adequate/average. Example: "Let's move to the next agenda item" (clear structuring)
+            3 = High-quality/exceptional. Example: "Our goal is to finish methods by Friday, and Lisa will draft it" (clear structuring + detail)
+
+            Decision & Confirmation:
+            0 = Negative/dysfunctional. Example: "I don't care what we decide." (undermines decision-making)
+            1 = Minimal/weak. Example: "I guess that's fine." (ambiguous closure, unclear if all agree)
+            2 = Adequate/average. Example: "So maybe we'll go with option B?" (suggested decision, unclear consensus)
+            3 = High-quality/exceptional. Example: "Okay, we all agree on option B. That's the plan." (explicit confirmation of consensus)
+
+            Summarization & Integration:
+            0 = Negative/dysfunctional. Example: "This whole discussion was pointless." (dismissive, undermines progress)
+            1 = Minimal/weak. Example: "So yeah, we talked about some things." (incomplete/inaccurate summary)
+            2 = Adequate/average. Example: "We've talked about data collection, but not analysis yet." (accurate but partial)
+            3 = High-quality/exceptional. Example: "So far, we've considered A and B approaches. Alex raised feasibility, Lisa added cost concerns." (accurate, comprehensive, integrating multiple inputs)
+
+            ** Prior Conversation Context (previous 5 utterances):**
+            {json.dumps(merged_list[max(0, i-4):i+1], indent=2)}  # Include previous 5 utterances up to the current one
 
             ** Utterance to Annotate:**
             "{utterance}"
 
             **Expected Output:**
-            Output ONLY a single JSON object where each coded category is a key and the explanation is the value. 
-            If multiple codes apply, include the most relevant codes and explanationsto in the same JSON object.
-            If no code applies, use {{"None": "No relevant code applies to this utterance"}}.
+            Output ONLY a single JSON object where each coded category is a key and contains an object with explanation, score, and score_justification.
+            If multiple codes apply, include the most relevant codes in the same JSON object.
+            If no code applies, use {{"None": {{"explanation": "No relevant code applies to this utterance", "score": 0, "score_justification": "No code to score"}}}}.
             Do not include any explanatory text or reasoning outside the JSON. Do not provide multiple JSON blocks.
-            Example format: {{"code_name": "explanation", "another_code": "another explanation"}}
+            Example format: {{"code_name": {{"explanation": "explanation", "score": 2, "score_justification": "score reason"}}, "another_code": {{"explanation": "another explanation", "score": 1, "score_justification": "another score reason"}}}}
             """
         else:
             
@@ -474,7 +556,7 @@ def main():
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(client, args.output_dir, codebook, 'gm_ind', type='inductive')
+    annotate_and_merge_outputs(client, args.output_dir, codebook, 'gm_v3', type='deductive')
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':
