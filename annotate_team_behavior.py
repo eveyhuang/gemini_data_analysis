@@ -271,22 +271,75 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
         """
 
 
-        # Call Gemini API (adjust depending on your implementation)
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=[comm_prompt],
-            config={
-                'response_mime_type':'application/json',
-                'temperature':0     
-            },)
-
-        try:
-            annotation = json.loads(response.text)  # Parse response as JSON
-            print("utterance: ", utterance)
-            print("annotation: ", annotation)
-        except Exception as e:
-            print(f"Error parsing response: {e}")
-            annotation = {"code_name": "Error"}
+        # Call Gemini API with retry logic for server errors
+        max_retries = 3
+        retry_delay = 5  # seconds
+        final_wait = 300  # 5 minutes
+        
+        for attempt in range(max_retries):
+            try:
+                response = client.models.generate_content(
+                    model='gemini-2.5-flash',
+                    contents=[comm_prompt],
+                    config={
+                        'response_mime_type':'application/json',
+                        'temperature':0     
+                    },)
+                
+                annotation = json.loads(response.text)  # Parse response as JSON
+                print("utterance: ", utterance)
+                print("annotation: ", annotation)
+                break  # Success, exit retry loop
+                
+            except ServerError as e:
+                if "503" in str(e) or "overloaded" in str(e).lower():
+                    if attempt < max_retries - 1:  # Not the last attempt
+                        wait_time = retry_delay * (2 ** attempt)  # Exponential backoff
+                        print(f"Server overloaded (503 error). Waiting {wait_time} seconds before retry {attempt + 2}/{max_retries}...")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        # Final attempt failed, wait 5 minutes and try one more time
+                        print(f"Max retries reached. Server still overloaded. Waiting {final_wait} seconds (5 minutes) for final attempt...")
+                        time.sleep(final_wait)
+                        
+                        try:
+                            response = client.models.generate_content(
+                                model='gemini-2.5-flash',
+                                contents=[comm_prompt],
+                                config={
+                                    'response_mime_type':'application/json',
+                                    'temperature':0     
+                                },)
+                            
+                            annotation = json.loads(response.text)  # Parse response as JSON
+                            print("utterance: ", utterance)
+                            print("annotation: ", annotation)
+                            break  # Success after final wait
+                            
+                        except ServerError as final_e:
+                            if "503" in str(final_e) or "overloaded" in str(final_e).lower():
+                                print(f"Server still overloaded after 5-minute wait. Exiting program.")
+                                print(f"Failed utterance: {utterance}")
+                                exit(1)
+                            else:
+                                print(f"Server error after final wait: {final_e}. Exiting program.")
+                                print(f"Failed utterance: {utterance}")
+                                exit(1)
+                        except Exception as final_e:
+                            print(f"Error after final wait: {final_e}. Exiting program.")
+                            print(f"Failed utterance: {utterance}")
+                            exit(1)
+                else:
+                    # Other server errors
+                    print(f"Server error: {e}. Exiting program.")
+                    print(f"Failed utterance: {utterance}")
+                    exit(1)
+                    
+            except Exception as e:
+                print(f"Error parsing response or other error: {e}. Exiting program.")
+                print(f"Failed utterance: {utterance}")
+                exit(1)
 
         annotations.append({
             "utterance": utterance,
