@@ -1,0 +1,562 @@
+[
+    {
+        "utterance": "Jane Zelikova: No, she is a baroness. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The utterance provides a factual piece of information about someone's title, which aligns with providing factual information as per the code definition.",
+                "score": 2,
+                "score_justification": "The utterance provides a clear factual statement, which is a relevant piece of knowledge, but lacks further detail or context to be considered high-quality."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: In fact my son just got a job working for Cambridge Zero which she funds and she she reports to. It's like this incredible small world. I'm like Ethan I'm talking to your boss right now. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Roger shares a personal anecdote about his son working for Cambridge Zero, which is funded by the baroness previously mentioned, providing factual information and a personal connection to the ongoing discussion.",
+                "score": 2,
+                "score_justification": "The utterance provides a relevant personal fact that connects to the ongoing discussion, making it an adequate contribution of knowledge."
+            }
+        }
+    },
+    {
+        "utterance": "Jane Zelikova: Nice. ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The utterance 'Nice.' acknowledges Roger's personal story with a positive, albeit brief, expression of support or interest, aligning with the definition of recognizing another's contribution or expressing positive affect.",
+                "score": 1,
+                "score_justification": "The utterance is a minimal, token acknowledgment of the previous speaker's contribution, similar to 'Yeah' or 'Okay' in its brevity and lack of specific detail."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: So good morning. The way I did this yesterday worked out fine is we went around did our introductions then somebody volunteered to be the reporter. I'd like to add to the a sentence to the introduction this morning is there's something you'd like to see done in this breakout that you know as an outcome or as a process or whatever if there's something about the way that we do this that you'd like to add please add it. So I'll start. I'm Roger Aines. I am the chief scientist of the energy program at Lawrence Livermore National Lab which is one of the US national labs. And I work pretty much full time on negative emissions technologies and pertinent to this breakout one of our biggest efforts is in electrochemical reduction although we don't do much on the actual catalysis we build the catalysis the the catalyst into bigger reactors mostly using additive manufacturing. So that's my background. We'll go next to Feng. ",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "Roger manages the meeting flow by describing the introduction process, setting expectations for participant input on outcomes/process, and directing the next speaker.",
+                "score": 3,
+                "score_justification": "The utterance provides clear structuring for the meeting, sets expectations for participant input on process/outcomes, and explicitly manages the speaker transition."
+            },
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly invites others to contribute their thoughts on the desired outcomes or process for the breakout session.",
+                "score": 3,
+                "score_justification": "The utterance directly invites participants to contribute specific ideas about the meeting's process or desired outcomes, making it high-quality."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Roger shares his professional background, role, institution, and specific areas of expertise relevant to the meeting's topic.",
+                "score": 3,
+                "score_justification": "Roger provides concrete and relevant details about his role, institution, and specific expertise in negative emissions technologies and electrochemical reduction."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: Oh we have a two. Which one? ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Feng asks 'Which one?' to clarify who Roger is referring to for the next introduction, indicating a gap in understanding the current speaker order.",
+                "score": 2,
+                "score_justification": "The question is clear and directly seeks specific information to resolve a gap in understanding the current process."
+            },
+            "Process & Task Management": {
+                "explanation": "Feng's question 'Which one?' directly addresses the meeting flow by seeking clarification on the order of introductions, which is a task management aspect of the meeting.",
+                "score": 2,
+                "score_justification": "The utterance clearly seeks to manage and clarify the meeting's current task (introductions) by identifying the next speaker."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Feng Lin. ",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly invites Feng Lin to contribute by calling their name, clarifying who should speak next in the introduction round.",
+                "score": 3,
+                "score_justification": "This is a high-quality direct invitation, specifically addressing an individual by name to take their turn, which is crucial for structured participation."
+            },
+            "Process & Task Management": {
+                "explanation": "Roger manages the meeting flow by clarifying which 'Feng' should proceed with their introduction, resolving an ambiguity and directing the next step in the agenda.",
+                "score": 3,
+                "score_justification": "This is a high-quality act of process management, providing specific clarification that efficiently moves the meeting forward according to the established agenda (introductions)."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Lin: We were in the same room yesterday as well. This is Feng Lin. I'm an assistant professor of chemistry at Virginia Tech. I started my position here in 2016 so this is my fifth year as an assistant professor. My research focuses on energy storage and conversion including batteries and electrocatalysis and a little bit of smart windows trying to use electrical fields to control the optical properties. My research groups uses a lot of synchrotron x-ray related techniques to understand the the electrochemical interfaces and the and the solid state reactions in in in bulk materials as well. Thank you. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Feng Lin explicitly states their academic role, years of experience, and detailed research focus, including specific techniques and areas of study, which clearly signals their expertise to the group as requested by the meeting facilitator.",
+                "score": 3,
+                "score_justification": "The speaker provides concrete and specific details about their role, experience, and research expertise, which is highly relevant and valuable for team collaboration."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Oana. ",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly invites Oana to contribute to the meeting by calling her name, signaling it is her turn to introduce herself.",
+                "score": 2,
+                "score_justification": "The invitation is direct and clear, similar to the example 'Alex, what do you think?', but does not specify a topic or expertise."
+            },
+            "Process & Task Management": {
+                "explanation": "Roger is managing the meeting flow by directing who speaks next in the structured introduction process he initiated.",
+                "score": 2,
+                "score_justification": "The utterance clearly structures the meeting flow by indicating the next speaker, which is functional but not highly detailed or strategic."
+            }
+        }
+    },
+    {
+        "utterance": "Oana Luca: Hi everyone. My name is Oana Luca. I am an assistant professor of chemistry. Let's see I'm in my fourth year. I am a chemist by training an organic chemist by training and my research interests are related to the interface of direct air capture technologies with molecular catalysis for the conversion of carbon dioxide to fuels. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information about her name, academic position, and explicitly details her training as an organic chemist and her specific research interests in direct air capture technologies and molecular catalysis, aligning with stating one's expertise and goals.",
+                "score": 3,
+                "score_justification": "The speaker provides highly relevant and concrete details about her specific training and research interests, which is crucial for establishing her expertise in a team science context."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Feng Jiao. ",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "Roger Aines explicitly invites Feng Jiao to contribute by calling their name, which is a direct invitation to speak during the introductions.",
+                "score": 2,
+                "score_justification": "The utterance is a clear and direct invitation to a specific person, similar to the 'adequate/average' example."
+            },
+            "Process & Task Management": {
+                "explanation": "The utterance manages the meeting flow by indicating whose turn it is to speak next in the sequence of introductions.",
+                "score": 2,
+                "score_justification": "The utterance clearly structures the meeting flow by moving to the next participant for introductions, aligning with an 'adequate/average' level of detail."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: Hello everyone. My name is Feng Jiao. I'm from University of Delaware Chemical Engineering department. Our research mostly focuses on CO2 electrocatalysis including catalyst development, reactor engineering and we also develop some operando techniques to probe the electrochemical interface. In addition to those topics we also recently got involved in techno-economic analysis and life cycle assessment. Nice to talk to everyone here. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information about their affiliation, research focus, methodologies, and recent involvement in specific analyses, explicitly signaling their expertise to the group.",
+                "score": 3,
+                "score_justification": "The speaker offers concrete and specific details about their research areas, techniques, and recent projects, which is highly relevant and detailed for a scientific collaboration."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Thank you. Marcel. ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Roger explicitly thanks the previous speaker, Feng Jiao, for their introduction, which acknowledges their contribution.",
+                "score": 2,
+                "score_justification": "The utterance provides an explicit 'Thank you,' which is a clear and adequate acknowledgment of the prior contribution."
+            },
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly calls 'Marcel' by name, inviting them to contribute their introduction to the group.",
+                "score": 2,
+                "score_justification": "The utterance directly invites a specific person to speak, which is an adequate way to encourage participation."
+            },
+            "Process & Task Management": {
+                "explanation": "Roger calls on 'Marcel' to speak next, which manages the meeting flow by directing the sequence of introductions.",
+                "score": 2,
+                "score_justification": "The utterance clearly structures the meeting by moving to the next speaker in the agenda of introductions."
+            }
+        }
+    },
+    {
+        "utterance": "Marcel Schreier: Hi I'm Marcel. I'm an assistant professor at the University of Wisconsin Madison. My research focuses on understanding electrocatalytic processes at the molecular level. In doing so I strongly rely on kinetic studies and model systems. In my previous research PhD research focused quite strongly on improving the efficiency of sunlight driven CO2 reduction reactions. In this process set twice the world record for sunlight driven CO2 reduction. And I also look forward to this discussion. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Marcel provides factual information about his role, research focus, methods, and past achievements, explicitly signaling his expertise in electrocatalytic processes and CO2 reduction.",
+                "score": 3,
+                "score_justification": "The utterance provides highly relevant and concrete details about the speaker's expertise, research focus, and specific achievements, making it exceptional."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Marcel expresses enthusiasm and positive affect towards the upcoming discussion by stating, 'And I also look forward to this discussion.'",
+                "score": 2,
+                "score_justification": "The utterance explicitly expresses positive interest in the discussion, which is adequate and functional."
+            }
+        }
+    },
+    {
+        "utterance": "Will Bowman: oxide interfaces. So in polycrystalline ceramics, we look at many types of grain boundaries. We also study metal oxide interfaces which are primarily relevant in lithium and sodium conducting oxides at the interface with the pure metals. For this conference, I'm pretty interested in looking at electrical and electrochemical properties of interfaces as they pertain to reactions with CO2. So we do various types of high resolution structural imaging in the electron microscope and spectroscopy. Nice to meet you all. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker details their research areas, specific methods like \"high resolution structural imaging,\" and their interests for the conference, clearly contributing factual information and signaling their expertise.",
+                "score": 3,
+                "score_justification": "The utterance provides highly specific and concrete details about the speaker's research, methodologies, and relevant interests, making it an exceptional contribution of knowledge."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker concludes their introduction with \"Nice to meet you all,\" expressing a general positive sentiment and acknowledgment towards the other participants.",
+                "score": 1,
+                "score_justification": "The phrase \"Nice to meet you all\" is a generic social pleasantry, providing only minimal positive affect or acknowledgment."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Okay. Marcel will be back in a moment. He's restarting to see if he can fix his sound, which I appreciate being old. Thank you all. That's great introductions, much more tightly clustered interests than in the group we had yesterday on decarbonizing the economy, so I think we'll have an entirely different kind of conversation. Do we have a volunteer to be the reporter? If somebody doesn't volunteer then I have to assign somebody. ",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "Roger manages a technical issue with Marcel's sound and then explicitly asks for a volunteer for the reporter role, stating he will assign it if no one volunteers, which are both aspects of managing meeting flow and tasks.",
+                "score": 3,
+                "score_justification": "The utterance clearly addresses a specific technical issue and explicitly outlines a task assignment process, making it highly concrete and effective for managing the meeting."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Roger explicitly thanks the participants for their introductions and praises them as 'great introductions'.",
+                "score": 2,
+                "score_justification": "The utterance provides explicit thanks and positive feedback on the introductions, which is functional but not exceptionally detailed or enthusiastic."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Roger evaluates the content of the introductions by comparing the 'tightly clustered interests' to a previous group, suggesting a different kind of conversation will result.",
+                "score": 2,
+                "score_justification": "The utterance offers a clear judgment about the introductions and their implications for the meeting, providing a reason for the assessment."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: I can do it. Let me pull up the PowerPoint. ",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "Jenny volunteers to be the 'reporter' and states a concrete action ('Let me pull up the PowerPoint') related to managing the meeting's documentation, directly responding to Roger's request for a volunteer for a task management role.",
+                "score": 3,
+                "score_justification": "The utterance is a clear and specific commitment to a task and includes a concrete action to fulfill that role, effectively moving the team forward."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Thank you Jenny, I owe you a favor now. And it's good to collect those as you go through your career. Okay. So Peter made a request. I'll make one that is sort of the reflection of that is what are the barriers to success here? There's an enormous amount of literature around catalysis, a lot of it's electrochemistry. What are the barriers to moving that into you know really cleaning up the atmosphere? So that's my request. Do we have other thoughts on the sort of what you want to get out of this right now? ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Roger explicitly thanks Jenny for volunteering to be the reporter and adds a supportive, encouraging remark about collecting favors.",
+                "score": 3,
+                "score_justification": "Roger provides strong acknowledgment and support to Jenny, fostering a positive team dynamic beyond a simple thank you."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Roger introduces a new idea for the group's discussion by posing the broad question, 'What are the barriers to moving that into you know really cleaning up the atmosphere?', setting a direction for the meeting.",
+                "score": 3,
+                "score_justification": "Roger introduces a clear, relevant, and elaborated question that sets a significant direction for the discussion, building on previous context."
+            },
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly invites other team members to contribute their thoughts or goals for the meeting by asking, 'Do we have other thoughts on the sort of what you want to get out of this right now?'.",
+                "score": 2,
+                "score_justification": "Roger provides a clear and direct invitation for general input from the group, which is functional but not specific to an individual or their expertise."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: I think if we think about barriers to success, we have to think about what metrics we're looking for. So what needs to happen and then you know of the things that we know right now, what are we most far from to make those metrics? So in my opinion, it's better catalysts but also being able to deal with either the low concentration of CO2 in the air, right because we're talking about CO2 reduction and we in our lab look at catalysts using a tank that we buy that's high purity. And I know firsthand that if we have less high purity or oxygen in our system that everything goes to hell. So we want to move towards more practicality, we have to think about the low concentration in our feedstock so that the process becomes more efficient. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jenny asks direct questions about 'what metrics we're looking for' and 'what are we most far from to make those metrics,' explicitly identifying gaps in the group's understanding or current capabilities.",
+                "score": 3,
+                "score_justification": "The questions are clear and specific, guiding the discussion towards defining success metrics and identifying specific areas of deficiency."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Jenny introduces the idea of focusing on 'better catalysts' and 'dealing with low concentration of CO2 in the air' as solutions to the barriers, expanding on these ideas with reasoning about practicality and efficiency.",
+                "score": 3,
+                "score_justification": "The utterance introduces specific, relevant ideas ('better catalysts,' 'low concentration of CO2') and elaborates on them with clear reasoning and implications for practicality and efficiency."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Jenny shares factual information and prior experience from her lab regarding the challenges of using high-purity CO2 tanks versus low-concentration CO2 in real-world applications.",
+                "score": 3,
+                "score_justification": "Jenny provides concrete details from her lab experience, including specific conditions and outcomes, which is highly relevant and adds specific, actionable knowledge to the discussion."
+            }
+        }
+    },
+    {
+        "utterance": "Oana Luca: So just to add to that, so depending on the concentration of your feedstock, you might want to be looking in a different kind of chemical space for your capture thermodynamics, right? So that's one thing. And then in addition to that, you also have the issue of oxygen tolerance, right? If you're going to try to do direct air capture and air kills your your capturing chemical locus, then that's that's a huge problem. So there's some some hurdles there in thermodynamics and then also kind of stability of the systems that we're studying. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Oana expands on Jenny's previous point about barriers to success by elaborating on specific technical challenges like the need for different chemical spaces based on feedstock concentration and the issue of oxygen tolerance and system stability in direct air capture.",
+                "score": 3,
+                "score_justification": "The utterance builds on a previous idea with highly specific and concrete technical details, significantly developing the understanding of the problem space."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Oana provides factual information regarding specific technical hurdles in CO2 reduction, such as the impact of feedstock concentration on capture thermodynamics, the challenge of oxygen tolerance, and the stability of systems.",
+                "score": 3,
+                "score_justification": "The contribution offers relevant and concrete technical details about the challenges, demonstrating expertise and moving the discussion forward with specific knowledge."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Other thoughts on either things you want to succeed at or things that are keeping you from succeeding? ",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "The utterance explicitly invites other team members to contribute their thoughts on the previously discussed topics of success and barriers, aligning with the definition of Participation & Inclusion.",
+                "score": 1,
+                "score_justification": "The invitation is generic, asking for 'Other thoughts' without directing it to a specific person or linking it to specific expertise, making it a minimal/weak invitation."
+            }
+        }
+    },
+    {
+        "utterance": "Carlos Morales-Guio Guio: Oh please go ahead. I just wanted to say that I think we don't know how to handle gases to do chemistry. So most of the chemistry that we're interested in is in liquids, includes liquid electrodes, electrolytes, and I don't think we really know how to manage those gases. We can do it at some level in the lab scale, but then when you try to scale up any of these processes, we don't really have an understanding of how to put electrons, ions, how to put CO2, how to put liquid water, how to put a solid electrode and how to make this at a large scale. You make a product, how do you get your product out and so on. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Carlos explicitly identifies a significant gap in the scientific community's understanding of how to handle gases for chemistry, especially when scaling up processes, providing specific examples of what is not understood.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies a critical knowledge gap related to handling gases for chemistry at scale, providing concrete examples of the challenges."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Carlos shares his knowledge about the current state of the field, stating that most chemistry is liquid-based and that the community lacks understanding in managing gases for large-scale processes, drawing on his expertise.",
+                "score": 3,
+                "score_justification": "The speaker provides relevant and concrete details about the current state of chemical processes (liquid-based) and the specific challenges in scaling up gas-phase chemistry, demonstrating expertise."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: So I would like to add something kind of is not directly related to the technology itself but also think about at a higher level what kind of a product we're trying to make and what kind of scale we're trying to get. So CO2 is so big, the scale is just not the same scale as the chemicals we're trying to make. Probably fuel is the only thing we actually produce at a similar scale. So it's really a question about where's the energy coming from, is the life cycle actually make sense for whatever we're trying to do here. I think have a good understanding of from the economic side, from the life cycle side will definitely help us to really think about what kind of technology we really need. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Feng Jiao introduces a new, higher-level perspective for the team to consider, focusing on product scale, energy source, economics, and life cycle, and expands on this idea with reasoning about the scale of CO2 and chemical production.",
+                "score": 3,
+                "score_justification": "The utterance introduces a novel and relevant higher-level idea, elaborates on it with specific reasoning and examples (CO2 scale, fuel production), and clearly states its importance for technology selection."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker highlights critical missing knowledge by posing questions about the energy source and the life cycle's economic viability, emphasizing the need for a good understanding of these aspects to inform technology choices.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies critical knowledge gaps related to energy sources, economic viability, and life cycle analysis, which are essential for making informed technological decisions."
+            }
+        }
+    },
+    {
+        "utterance": "Tianbiao Leo Liu: Yeah, I'm sorry. Can I share something? Please. Yeah, so I think the I think the I still I think the most challenging problem is the life of a catalyst. So if you think about the scalable conversion of carbon dioxide at meaningful industry scale, you have to think about the lifetime of your catalyst and associated with the cost of catalyst. I don't have too much experience with industry but maybe someone can chime in. What type of lifetime we want to achieve for catalyst for CO2 conversion? So I think the to me my limited knowledge seems the testing time for CO2 catalyst right now is about maybe I guess up to 100 hours at the moment which is apparently not good enough for scale up or long-term application. And also the I would add a different comment to Feng's comment. I think the the product selectivity, like you are doing any catalysis, selectivity is a very important, it's key, and which affects the ending purification, right? Purification is a very costly, expensive step towards final product. So I think that's two cents I would like to share. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces 'the life of a catalyst' and 'product selectivity' as critical challenges for scalable CO2 conversion, elaborating on their implications for cost and purification.",
+                "score": 3,
+                "score_justification": "The utterance introduces two distinct, relevant, and elaborated ideas (catalyst lifetime and product selectivity) with clear reasoning for their importance in industrial scale-up."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question about the desired lifetime for CO2 conversion catalysts and explicitly states his limited experience with industry.",
+                "score": 3,
+                "score_justification": "The speaker asks a specific, high-quality question about a critical parameter (catalyst lifetime) and explicitly identifies his own knowledge gap, which is highly functional for the team."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares specific information about current CO2 catalyst testing times (up to 100 hours) and explicitly signals his limited industry experience.",
+                "score": 3,
+                "score_justification": "The speaker provides concrete, relevant factual information about current catalyst testing durations and clearly signals his own expertise level, which is valuable for the team."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: Yeah, certainly with carbon, the carbon dioxide to carbon products, selectivity is is maybe the biggest problem we face. ",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "Roger expresses strong agreement with Tianbiao's point and evaluates the significance of selectivity as 'maybe the biggest problem we face' in carbon conversion.",
+                "score": 3,
+                "score_justification": "It's a strong, clear, and high-quality judgment that reinforces a critical challenge, moving the team's understanding forward."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Roger contributes knowledge by stating that selectivity is a significant problem in the conversion of carbon dioxide to carbon products, reflecting expertise in the field.",
+                "score": 3,
+                "score_justification": "It's a concrete and highly relevant piece of information about a major challenge in the field, contributing to the shared understanding of the problem space."
+            }
+        }
+    },
+    {
+        "utterance": "Oana Luca: And if I may add to that, one of the things that we've learned recently in some of our work is that if one were to try to run your electrolysis for a long time, we also observe these thermal effects that are localized around the places of maximum resistance in our reactors. And once your experiment is no longer isothermal, then any sort of mechanistic analysis that you're doing does have this unknown factor that can lead to irreproducibility. And so long lifetime catalysts are great, but trying to study them may have all of these additional factors that people have not yet fully understood or flushed out. So it's also a matter of having the basic chemistry being interfaced with engineering. Chemical engineers ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the previous discussion about catalyst lifetime by introducing a new, related challenge of thermal effects during long-term electrolysis, providing specific details about irreproducibility.",
+                "score": 3,
+                "score_justification": "The speaker introduces a specific, detailed problem (thermal effects leading to irreproducibility) that expands on the prior discussion about catalyst lifetime, making it a high-quality contribution."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares specific findings from 'some of our work' regarding thermal effects in reactors during long-term electrolysis, providing factual information based on their experience.",
+                "score": 3,
+                "score_justification": "The speaker provides concrete, detailed findings from their own research ('we've learned recently in some of our work') directly relevant to the discussion, demonstrating high-quality knowledge contribution."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance explicitly highlights a gap in understanding by stating that 'people have not yet fully understood or flushed out' the additional factors related to studying long-lifetime catalysts.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies a gap in the field's understanding regarding the factors affecting the study of long-lifetime catalysts."
+            }
+        }
+    },
+    {
+        "utterance": "Carlos Morales-Guio Guio: is that if we use H cells and we use frits the thickness of the frit will have an effect everything will have an effect it will add add add to the resistance but it it are things these are things that people that work in the electrolyzer field have have been working around for a long time that's why they use acids it's either strong acids or strong bases they do not work in in in neutral pH systems where the conductivity is not very good right. Thank you. It's because the conductivity is low and then you have a lot of resistance in the electrolyzer field. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Carlos provides specific technical details about the effects of H cells and frits on resistance, and explains established practices in the electrolyzer field (using strong acids/bases due to conductivity issues), explicitly signaling expertise in the field.",
+                "score": 3,
+                "score_justification": "The utterance provides highly relevant and concrete technical details, explaining established practices and their underlying reasons within a specific field, which is very specific and moves the discussion forward."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Carlos explicitly says 'Thank you,' acknowledging a previous contribution or the opportunity to speak.",
+                "score": 2,
+                "score_justification": "The utterance includes an explicit 'Thank you,' which is a clear acknowledgment."
+            }
+        }
+    },
+    {
+        "utterance": "Roger Aines: This is an interesting topic and I and I I guess I would focus it as heat management what are the tool sets we're supposed to be talking about that would allow you to interrogate heat and I I can tell you as somebody who works on trying to scale these things up heat gets to be a real problem. Other thoughts on that? ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Roger asks a direct and specific question about the 'tool sets' needed to 'interrogate heat,' clearly identifying a knowledge gap for the group.",
+                "score": 3,
+                "score_justification": "The question is clear and highly specific, asking about particular 'tool sets' for 'interrogating heat,' which is relevant and actionable."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Roger shares his prior experience and expertise by explicitly stating 'as somebody who works on trying to scale these things up' and providing the relevant fact that 'heat gets to be a real problem.'",
+                "score": 3,
+                "score_justification": "Roger explicitly signals his expertise and provides a concrete, relevant piece of information based on his experience, which directly moves the discussion forward."
+            },
+            "Participation & Inclusion": {
+                "explanation": "Roger explicitly invites others to contribute their thoughts by asking, 'Other thoughts on that?'",
+                "score": 2,
+                "score_justification": "It is a clear and direct invitation for others to contribute, but it is general rather than targeting a specific person or expertise."
+            }
+        }
+    },
+    {
+        "utterance": "Carlos Morales-Guio Guio: I would think the current so we are also in CO2 transformation we'll focus on the gas diffusion electrodes that operate at high current we can get good selectivity to alcohols for example but at low current densities the faradaic efficiencies are very good but then the question is is there a trade-off between current densities and selectivity that we know that there is and is there any case that you can make to actually operate at a locally at low current density but a high faradaic efficiency because if we go with the same metrics of water electrolyzers you will always try to push for very high current densities. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares specific details about their work in CO2 transformation, focusing on gas diffusion electrodes, their operation at high current for selectivity to alcohols, and good faradaic efficiencies at low current densities.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete details about their lab's work, including specific conditions and outcomes."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker poses a direct question about the trade-off between current densities and selectivity and whether operating at low current density with high faradaic efficiency can be justified, considering standard water electrolyzer metrics.",
+                "score": 3,
+                "score_justification": "The question is clear, specific, and identifies a nuanced knowledge gap or a point for strategic discussion, linking it to established practices."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: Carlos can I ask you a question when you have low faradaic efficiency are you talking about H2 or carbon-based products? ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jenny asks a direct and specific question to Carlos to clarify whether his previous statement about low faradaic efficiency refers to H2 or carbon-based products, thereby identifying a gap in understanding.",
+                "score": 3,
+                "score_justification": "The question is highly specific, directly addressing a technical detail from the previous speaker's contribution, which helps to clarify the discussion and move it forward effectively."
+            }
+        }
+    },
+    {
+        "utterance": "Carlos Morales-Guio Guio: So you can get high faradaic efficiency to alcohols or acetaldehyde but at low current densities less than 1 milliamp. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Carlos provides specific factual information about the products (alcohols or acetaldehyde) and the conditions (low current densities less than 1 milliamp) under which high faradaic efficiency can be achieved, directly answering Jenny's question.",
+                "score": 3,
+                "score_justification": "The utterance provides highly specific and concrete details (specific products, exact current density range) which makes it an exceptional knowledge contribution."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: So when you lose your product selectivity at high high current densities is that to multiple carbon-based products or is that to hydrogen paired with hydrogen? ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jenny is asking a direct and specific question to Carlos to clarify the nature of product selectivity loss at high current densities, seeking to understand if it pertains to multiple carbon-based products or hydrogen.",
+                "score": 3,
+                "score_justification": "The question is highly specific, building on prior context and offering clear alternatives for the information sought, making it very concrete and effective in identifying a knowledge gap."
+            }
+        }
+    },
+    {
+        "utterance": "Carlos Morales-Guio Guio: No typically ethylene I mean you can get high current high faradaic efficiencies to ethylene but it will not be... ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Carlos provides specific factual information about the product (ethylene) and the conditions (high current, high faradaic efficiencies) in response to Jenny's question, demonstrating his expertise in CO2 transformation.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, concrete, and specific, directly answering a technical question with detailed information about a specific product and conditions."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: So I think one of the things I always think about that when people say that is you know depending on the application if we're making liquid fuels and we have all liquid fuels that are that are distribution of products does that matter because for example JP-8 is a fuel or the stuff that we pump out and it's a mixture of products right and and it just has the right combustion properties to work in for us to use it and so I I've always wondered when people say you know making one carbon-based product I feel like if they're all liquid and they all have various fuel properties then as long as that mixture is consistent can we use it as is and I I don't I'm not an engineer so I can't answer or an engine person so I can't answer that question but I just know the things that we use right now as fuels are not pure right and I don't know if anyone knows more about that than I do. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Jenny introduces a new idea about the relevance of product purity in liquid fuels, elaborating with the example of JP-8 being a mixture and questioning if a consistent mixture of liquid fuels could be used.",
+                "score": 3,
+                "score_justification": "Jenny introduces a novel perspective on fuel purity, elaborating with a concrete example (JP-8) and reasoning about its application, which moves the discussion forward."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jenny explicitly asks 'I don't know if anyone knows more about that than I do,' directly seeking information from the group to fill a knowledge gap.",
+                "score": 3,
+                "score_justification": "Jenny clearly and specifically asks if anyone has more knowledge on the topic of fuel mixtures, directly inviting relevant expertise."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Jenny explicitly states her lack of expertise by saying 'I don't I'm not an engineer so I can't answer or an engine person,' signaling her own knowledge boundaries.",
+                "score": 2,
+                "score_justification": "Jenny explicitly states her lack of expertise in engineering, which is relevant to the context of her question about fuel properties."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: I I can talk about this so when you when you design a process usually you have some side reaction and byproducts. The challenge the practical challenge is when you're trying to sell a product your byproduct will become an issue a reliability to your company for example if you operate a company. So you have to find is usually you will do is to find some someone will willing to take it and often time you will run into certain troubles so you have to sell at lower than the market price that will become a big issue when you're trying to operate a business. You know for for scientific speaking of course we are we are scientists we are very interested in how to how to play with the selectivity how to improve the production rate but for business it's totally different thing. And also you know if you look at the current chemical industry how people really doing these kind of process design usually they produce multiple products and they do the separation process and then separate out and they sell them separately or they integrate into a downstream process trying to make a high value chemicals. This is what why usually if you look at a chemical plant they have so many processes going on at the same time. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Feng Jiao provides detailed factual information and shares expertise on the practical challenges of byproducts in industrial processes and how the chemical industry handles multiple products, directly responding to Jenny's question about product mixtures.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, provides concrete details about business challenges and industry practices, and elaborates on the topic, making it exceptional."
+            }
+        }
+    },
+    {
+        "utterance": "Marcel Schreier: I think it's important that that Jenny brought this up because I think it depends on what the goal is. I think there is a mismatch because the current narrative for CO2 reduction is we want to make a product that is high enough in value so that doing this transformation which is not super efficient makes sense. So then everyone runs for ethylene and a few other products where there is an economic case. But then if we think a little bit forward like like Jenny suggested if we actually want to make a fuel product then that is a whole different story right because I think Jenny has a point if we have like ethanol propanol we all know that these can be fuel additives. Then selectivity might not matter so much anymore. ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Marcel explicitly recognizes Jenny's contribution by stating 'I think it's important that that Jenny brought this up' and affirms her point by saying 'I think Jenny has a point'.",
+                "score": 3,
+                "score_justification": "The utterance strongly acknowledges Jenny's contribution and explicitly affirms her point, fostering a supportive and collaborative environment."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Marcel critiques the 'current narrative for CO2 reduction' by identifying a 'mismatch' between the focus on high-value products and the potential for fuel products.",
+                "score": 3,
+                "score_justification": "The utterance provides a clear and constructive critique of the current scientific narrative, offering reasoning for the identified mismatch."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Marcel expands on Jenny's idea of making fuel products by suggesting that selectivity might not matter as much in that context and provides examples like ethanol and propanol as fuel additives.",
+                "score": 3,
+                "score_justification": "The utterance builds upon an existing idea with specific examples and clear reasoning, significantly developing the concept for the team."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: Alcohol is really tough for separation particularly at the low concentration. This is a practical issue for CO2 electrolyzers and also a kind of another challenge is membrane usually don't like alcohols. They just don't stable in alcohols they will dissolve so that's that's another kind of durability issue linked to the membrane materials we currently using. Most of time using anion exchange membranes they just don't like alcohols. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Feng Jiao provides specific factual information about the practical challenges of alcohol separation at low concentrations and the instability of anion exchange membranes in alcohols, directly contributing expertise to the discussion about using alcohols as fuel products.",
+                "score": 3,
+                "score_justification": "The speaker provides highly relevant and concrete details about specific technical challenges (low concentration separation, membrane instability, anion exchange membranes) related to the topic."
+            }
+        }
+    },
+    {
+        "utterance": "Jenny Yang: Is that a is that a technological issue where like someone you know people could okay so people could make better membranes. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jenny asks a direct and specific question about whether the membrane stability issue with alcohols is a technological problem that could be solved by developing better membranes, directly seeking information about a specific gap in knowledge or capability.",
+                "score": 3,
+                "score_justification": "The question is highly specific, referring to a particular problem (membrane stability with alcohols) and proposing a specific type of solution (better membranes), which makes it very concrete and moves the discussion forward."
+            }
+        }
+    },
+    {
+        "utterance": "Tianbiao Leo Liu: Feng can you tell us a little bit more why the anion exchange membrane is not stable with alcohol? ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance is a direct question to Feng Jiao, seeking more detailed information about the instability of anion exchange membranes with alcohol, which identifies a specific knowledge gap.",
+                "score": 3,
+                "score_justification": "The question is highly specific, asking for a detailed explanation ('a little bit more why') about a particular technical issue (anion exchange membrane stability with alcohol), which is concrete and moves the discussion forward by seeking deeper understanding."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Jiao: You know when you when you make a membrane I don't know how many of you have make this MEA membrane electrode assembly you basically dissolve or not dissolve disperse your ionomer and your particles catalyst particles make a ink then you coat on the membrane or coat on the GDL. Once you have alcohol they come off just go away they don't stick and also membranes are polymer they tend to dissolve in in high concentration of alcohols so. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Feng provides detailed factual information about the process of making membrane electrode assemblies (MEAs) and the specific reasons (ionomer dispersion, polymer dissolution) why membranes are not stable with alcohols, directly answering a previous question.",
+                "score": 3,
+                "score_justification": "The utterance provides highly specific and concrete technical details about membrane manufacturing and the chemical interactions with alcohol, demonstrating deep expertise and moving the team's understanding forward."
+            }
+        }
+    },
+    {
+        "utterance": "Tianbiao Leo Liu: So you are kind of saying so it's a solubility issue there. Yes durability issues. Solubility not it's not a chemical problem right it's a solubility issue I guess you're kind of saying. ",
+        "annotations": {
+            "Summarization & Integration": {
+                "explanation": "The utterance restates Feng's detailed explanation about membrane instability, synthesizing it into the core concept of a 'solubility issue' and clarifying it's not a chemical problem, thereby confirming understanding of prior contributions.",
+                "score": 3,
+                "score_justification": "The utterance provides an accurate, focused, and clarifying summary of a specific technical point from the previous speaker's detailed explanation, ensuring shared understanding."
+            }
+        }
+    }
+]

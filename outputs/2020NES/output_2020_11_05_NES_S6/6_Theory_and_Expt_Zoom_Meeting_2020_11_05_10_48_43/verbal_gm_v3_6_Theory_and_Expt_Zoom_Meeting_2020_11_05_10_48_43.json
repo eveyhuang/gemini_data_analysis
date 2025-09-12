@@ -1,0 +1,247 @@
+[
+    {
+        "utterance": "Sarbajit Banerjee: sort of have to have theory, right? To and this is getting into the scaling and stuff. So what are I mean what is missing now from that that theorists could provide us, the rest of us. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question about what is missing from the theoretical contributions that theorists could provide, explicitly identifying a knowledge gap for the group.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, identifying a particular type of missing knowledge (theory) and specifying the group expected to provide it (theorists), which moves the team forward by pinpointing a concrete area for discussion."
+            }
+        }
+    },
+    {
+        "utterance": "Shaama M Sharada: Oh boy, where do I begin? ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Shaama's rhetorical question 'Oh boy, where do I begin?' in response to a query about what theorists could provide, signals her extensive knowledge and expertise on the topic, indicating she has many points to contribute.",
+                "score": 2,
+                "score_justification": "The utterance is a relevant signal of expertise, indicating a readiness to contribute significant knowledge, but it does not yet provide concrete details."
+            }
+        }
+    },
+    {
+        "utterance": "Sarbajit Banerjee: It doesn't have to be just for you or like for folks I mean if you think about how you take a reaction down one route versus the other, right? ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Sarbajit expands on his previous question about what theorists could provide by clarifying the scope of the request and offering a concrete example ('how you take a reaction down one route versus the other') to illustrate the type of theoretical input needed.",
+                "score": 3,
+                "score_justification": "The utterance is high-quality because it elaborates on an existing idea with a relevant and specific example, making the request for theoretical input more concrete and actionable for the team."
+            }
+        }
+    },
+    {
+        "utterance": "Shaama M Sharada: Right and it's it's a couple of things right it depends on who you talk to and what they're specifically interested in as far as experimentalists go. So synthetic chemists would like to make those materials and they focus on getting a certain product distributions but not necessarily the mechanisms or rates. So I think that there's like a there's a difference in strategy which gives us less information that we can potentially benchmark to. But I think theory can definitely pitch in when it comes to identifying product distributions the various pathways selectivities and so on. It's just finding the right match in terms of like finding this one experimentalist group that is interested in going the whole way right right from synthesizing what you think works to to showing that that is indeed the pathway. So I think it's nice that like most fields are moving towards teams of people but yeah I think you need a team because each person has their own individual interests as far as experimentalists go and while theorists have the ability to bridge all these gaps you can't just work with one person at least from what I've seen in my limited experience. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Shaama shares factual information about the specific interests of synthetic chemists and the capabilities of theory, and explicitly references her 'limited experience' to support her points.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, detailed, and grounded in the speaker's expertise, providing concrete insights into the field."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker identifies a gap in current practices, noting that the difference in strategy leads to 'less information that we can potentially benchmark to' and highlights the challenge of finding suitable experimentalist groups.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies critical knowledge and collaborative gaps that directly address the prior question about what is missing."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The speaker evaluates the current 'difference in strategy' among experimentalists as leading to 'less information' and critiques the idea of working with only one person, advocating for a team approach.",
+                "score": 3,
+                "score_justification": "The utterance provides a reasoned critique of existing scientific strategies and collaborative models, offering implicit suggestions for improvement by highlighting the need for teams."
+            }
+        }
+    },
+    {
+        "utterance": "Sarbajit Banerjee: That's great so this is I mean where SciLog comes in right you can have teams of up to three right and and this is major opportunities from lots of the topics we've talked about. Can I just pull another thread machine learning Jose you talked about that what are your you know opportunities there challenges. ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Sarbajit expresses positive affect and support for Shaama's previous point about the need for teams by stating 'That's great'.",
+                "score": 3,
+                "score_justification": "The phrase 'That's great' is a clear and enthusiastic acknowledgment, fostering a positive collaborative environment."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Sarbajit provides factual information about the SciLog program and its structure, stating 'SciLog comes in right you can have teams of up to three', connecting it to the ongoing discussion about team science.",
+                "score": 3,
+                "score_justification": "Sarbajit provides concrete, relevant information about the SciLog program, directly linking it to the discussion on team collaboration."
+            },
+            "Participation & Inclusion": {
+                "explanation": "Sarbajit explicitly invites Jose to contribute to the discussion on a new topic (machine learning) by asking for his insights on opportunities and challenges.",
+                "score": 3,
+                "score_justification": "Sarbajit directly invites Jose by name to contribute on a specific topic (machine learning), clearly asking for opportunities and challenges, which is highly effective for inclusion and information gathering."
+            }
+        }
+    },
+    {
+        "utterance": "Jose Mendoza-Cortes: Well this would be I think it's it's a very interesting topic as you know it's it's a very hot topic and everybody is probably trying to do it I don't know if anybody of us really understands it I don't nobody does but we can we can make with the glasses of usefulness right so it's definitely useful it has been proven to be useful and it's just a natural thing of you know a multi-dimensional analysis especially for structure property relationships is just so you can see it how it works right so it's a multi-dimensional thing that it's I don't know 12 13 dimensions but you can reduce it to a component that it could be understood by understood by a human brain. So one of the things I I think I will have to go back to the original comment that I give which is the negative results right so there was a very beautiful paper recently well not recently two years ago where it was an organic synthesis but you can train a machine learning model that takes into account the negative results of experiments so at the end of the day you were able to predict the the right reaction path and the right conditions that are the most optimal right so I think that's where machine learning could be used because if you ever do any simple models for machine learning you will learn that the more data the better right so the more data that is accurate the better the more data that it's you know that you can reproduce the better so basically any data is good so I think that it's something missing that we can explore both as experimentalists and as a computational theoretician minded scientist that we might be discarding a lot of data that could be useful. One quick example for theory could be you know when you do your your simulation of MD you're throwing away all these different snapshots that could be so useful. One example for experiments those negative results or where where we were seeing is the all this decay maybe that decay can give you the the next design principle but you know those bottom line is I think the current thing in machine learning probably that it could be useful is just we need to find a ways to get more information more data that is more accurate and maybe look at places that we thought you know they were they were rubbish they were waste but maybe they are useful. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces and elaborates on the idea of leveraging machine learning by incorporating 'negative results' and discarded data from experiments and simulations, providing reasoning and concrete examples.",
+                "score": 3,
+                "score_justification": "The speaker presents a novel and relevant idea (using negative/discarded data in ML) and elaborates on it with specific examples (a paper on organic synthesis, MD snapshots, experimental decay), making it highly actionable."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information about machine learning's utility in multi-dimensional analysis for structure-property relationships, references a specific paper, and explains a method for using negative results.",
+                "score": 3,
+                "score_justification": "The speaker contributes highly relevant and concrete knowledge by referencing a specific paper and detailing how machine learning can be applied to a complex problem using previously overlooked data."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker explicitly identifies a gap in current scientific practice, stating that valuable data (like negative results or simulation snapshots) is often discarded and emphasizes the need to find ways to utilize this information.",
+                "score": 3,
+                "score_justification": "The speaker clearly and specifically identifies a critical gap in data utilization within both experimental and theoretical contexts, pointing to a concrete area for the team to address."
+            }
+        }
+    },
+    {
+        "utterance": "Yuanyue Liu: Yeah I would like to follow up on Jose's point. I find machine learning is very useful to my research because I'm doing the so-called ab initio molecular dynamics to study the heterogeneous catalysis and for this type of calculation we basically need to sample for example hundreds of thousands structures in order to get one averaged quantity instead of just using one snapshot to tell you the the property. And in order to sample all these numerous structures if you want to calculate all these structures using for example density functional theory it will be extremely computationally expensive. So machine learning can help us in a way so that we do not need to do explicit quantum mechanical calculation for all these structures we just need to do calculation for a set for a selective set of structures and use these structures to train the machine learning model so that you can predict the of other structures without doing the heavy DFT calculations. So I find this is very helpful and useful to my research. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Yuanyue shares specific factual information about their research, detailing how machine learning helps overcome computational expense in ab initio molecular dynamics for heterogeneous catalysis.",
+                "score": 3,
+                "score_justification": "The utterance provides highly relevant and concrete details about the application of machine learning in their specific research, including methods and benefits."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Yuanyue expands on the existing idea of machine learning's usefulness, providing detailed reasoning and a specific example from their research on how it addresses computational challenges.",
+                "score": 3,
+                "score_justification": "The utterance elaborates on the idea of machine learning's utility with a novel, relevant, and highly detailed example from their specific research context."
+            }
+        }
+    },
+    {
+        "utterance": "Sarbajit Banerjee: What about machine learning for experimentalists? Uh sorry who was Yeah go ahead. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question to explore the application of machine learning specifically for experimentalists, identifying a potential gap in the current discussion which has focused more on theoretical applications.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, directing the discussion to a particular group (experimentalists) within the broader topic of machine learning."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The speaker explicitly invites someone to contribute to the discussion by saying 'go ahead'.",
+                "score": 2,
+                "score_justification": "The speaker directly invites someone to speak, which is functional, but does not specify a person or topic expertise."
+            }
+        }
+    },
+    {
+        "utterance": "Rebecca Gieseking: Yeah I just wanted to build on that. I think we're doing a bit of machine learning too but the challenge is just the amount of high quality reference data you need. So Jose was talking about machine learning based on experimental data at least to some extent the amount of experimental data you need to have an actually predictive model is massive. Yuanyue was talking about machine learning based on quantum chemistry and the amount of reference data you need there is massive and so yes it can help but it's also one of those that it only works if you have good reference data for something very similar to what you're trying to predict. ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Rebecca expands on the discussion about machine learning by introducing the critical challenge of needing massive amounts of high-quality reference data, building on previous points from Jose and Yuanyue.",
+                "score": 3,
+                "score_justification": "The utterance builds on prior ideas, introduces a specific and crucial challenge (high-quality reference data), and elaborates on its implications for both experimental and computational ML, making the discussion more concrete and nuanced."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Rebecca signals her group's engagement with machine learning ('we're doing a bit of machine learning too') and provides specific factual information about the substantial data requirements and conditions for effective ML models.",
+                "score": 3,
+                "score_justification": "The utterance explicitly states her group's involvement and provides concrete, relevant details about the challenges and conditions for ML, directly contributing to the shared knowledge."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Rebecca provides a critical evaluation of machine learning's applicability by highlighting the significant challenge of acquiring sufficient high-quality reference data and stating the condition that it 'only works if you have good reference data for something very similar.'",
+                "score": 3,
+                "score_justification": "The utterance offers a constructive critique with clear reasoning (the need for massive, high-quality, similar reference data) and specifies the conditions under which ML is effective, moving the team's understanding forward."
+            }
+        }
+    },
+    {
+        "utterance": "Yuanyue Liu: Yeah I fully agree with that. So I also often see many machine learning papers especially on predicting new materials with certain properties. So those papers are usually done in a way that the first study a limited set of number a limited number of materials and calculate the properties of those materials and then they use the use the data set to train the machine learning model and then they use this machine learning model for other materials which then they can predict the properties. So I think we need to be very careful because I often find that the the computational methods used to predict the properties are problematic they are not very accurate to predict the properties. So if you use wrong data not very high quality data to train your machine learning model then you will end up with wrong predictions. So I think that's the that's an issue we need to be we need to pay more attention to in the machine learning field yeah. ",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker explicitly affirms and agrees with the previous speaker's point about the challenge of needing high-quality reference data by stating, 'Yeah I fully agree with that.'",
+                "score": 2,
+                "score_justification": "The utterance provides explicit agreement, which is adequate support for the previous speaker's point."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares his observations and experience from the field regarding common practices in machine learning papers and identifies a recurring issue with the quality of computational methods, stating 'I also often see many machine learning papers...' and 'I often find that the the computational methods used to predict the properties are problematic'.",
+                "score": 3,
+                "score_justification": "The speaker provides relevant and concrete details about his observations and expertise regarding issues in ML papers, making it a high-quality contribution."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The speaker critiques the quality of computational methods and data used in many machine learning papers, stating they are 'problematic' and 'not very accurate,' and explains the consequence of using 'wrong data' leading to 'wrong predictions.'",
+                "score": 3,
+                "score_justification": "The speaker offers a clear and constructive critique of existing methods, providing reasoning and highlighting an important issue for the field."
+            }
+        }
+    },
+    {
+        "utterance": "Sarbajit Banerjee: Yeah so but maybe here again the collation of or curation of data is a point a touch point for experiment and theory to sort of feed off each other. Um I mean Caleb Lindsey like in terms of like large scale measurements what do you think about machine learning for your experiments imaging or spectroscopy or Feng uh ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the existing discussion about data quality by proposing that 'collation of or curation of data is a point a touch point for experiment and theory to sort of feed off each other,' suggesting a collaborative approach to address the challenge.",
+                "score": 3,
+                "score_justification": "The idea is novel, relevant, and elaborated by suggesting a specific collaborative mechanism (data collation/curation) between experiment and theory, moving the team forward on a previously identified problem."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The speaker explicitly invites specific individuals, Caleb Lindsey and Feng, to contribute their thoughts on machine learning for their experiments, specifying the relevant areas of 'large scale measurements, imaging or spectroscopy'.",
+                "score": 3,
+                "score_justification": "The invitation is direct to specific individuals and clearly specifies the topic and their relevant expertise, making it a high-quality contribution to inclusion."
+            }
+        }
+    },
+    {
+        "utterance": "Linsey Seitz: based on averages over over extremely large data sets. But yeah, I'm not really sure I guess how the the intersection of the two would be most optimal. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Linsey provides factual information by stating that their work is 'based on averages over over extremely large data sets,' which is relevant to the discussion about machine learning and experimental data.",
+                "score": 2,
+                "score_justification": "The contribution is a relevant fact about the nature of their data, providing adequate detail without being highly specific or detailed."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Linsey highlights missing knowledge by stating, 'I'm not really sure I guess how the the intersection of the two would be most optimal,' indicating uncertainty about the best way to integrate machine learning with their experiments.",
+                "score": 2,
+                "score_justification": "The statement clearly identifies a gap in understanding regarding optimal integration, making it clear but general rather than highly specific."
+            }
+        }
+    },
+    {
+        "utterance": "Feng Lin: So speaking of the the big data sets, actually we are sitting on we are sitting on data that has been sitting in our computer for years, unanalyzed. Let me give you one example that we are probing the for example solid state materials and probing the redox reactions inside solid state materials with the with a three-dimensional spatial resolution. Now with a with a particle of 10 micron size, we are collecting 1.25 million XAS, X-ray absorption spectroscopy for for metal cations. So 1.25 million. So every time we do the experiment with over a week, we we get back with a 8 to 10 terabyte data. So it's at a point that we we we have to develop our own machine learning or other advanced data analysis method to analyze data. Unfortunately, we are still very slow on that end. We are still analyzing data that we collected a few years back. Now speaking of the other high throughput capability that there are a lot of experimental opportunities at at different synchrotron facilities where you can collect a thousand high quality, very high quality X-ray absorption spectroscopy spectra just in one day. Again, beamline scientists and and myself, we have been talking about how to streamline the data analysis using high throughput mode, but we are we are still not making progress on that yet. So the data analysis is still mostly just by hand individually. ",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Feng Lin provides extensive factual information about their lab's data collection, including specific experimental methods (XAS), data volume (1.25 million spectra, 8-10 terabytes), and the challenges they face with analyzing this data.",
+                "score": 3,
+                "score_justification": "The speaker provides highly relevant and concrete details about their lab's data collection and challenges, including specific numbers and methods, which significantly enriches the group's understanding."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker explicitly highlights a significant gap in their current capabilities, stating they 'have to develop our own machine learning or other advanced data analysis method' and are 'still very slow on that end' with data analysis.",
+                "score": 3,
+                "score_justification": "The speaker clearly articulates a specific and critical gap in their data analysis capabilities, detailing the problem (slow, manual analysis of large datasets) and the need for advanced methods, which is highly actionable for the team."
+            }
+        }
+    },
+    {
+        "utterance": "Sarbajit Banerjee: Yeah, no this is so yeah, especially for large synchrotron, I think this is a really effective means to start collating together negative data, positive data, whatever data you don't know what it is and and starting to do stuff. Since it's the 15-minute point, um, Jose, do you feel like you're getting enough to sort of talk about in our three-minute, uh, you've got your thing up there and it seems pretty it's fairly detailed. Um, anything you're missing Jose that you that we should quickly get you information on? ",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker expands on the idea of using machine learning for large synchrotron data by suggesting a specific approach: 'collating together negative data, positive data, whatever data you don't know what it is'.",
+                "score": 3,
+                "score_justification": "The idea is relevant to the ongoing discussion and is elaborated with specific types of data to collate, making it concrete and actionable."
+            },
+            "Process & Task Management": {
+                "explanation": "The speaker explicitly manages the meeting flow by noting the '15-minute point' and checking on Jose's upcoming 'three-minute' presentation, clarifying expectations.",
+                "score": 3,
+                "score_justification": "The management is highly specific and concrete, referencing time limits and a specific person's task, which effectively moves the team forward."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker directly asks Jose if he is 'missing' any information that the group should 'quickly get' him, identifying a potential knowledge gap for an individual.",
+                "score": 3,
+                "score_justification": "The question is clear and highly specific, directly addressing a potential information need for a named individual, which is actionable and helps ensure preparedness."
+            }
+        }
+    },
+    {
+        "utterance": "Jose Mendoza-Cortes: Yeah, I would actually ask help from you if you can just quickly go through the points. I did my best on on writing everything on paper. Oh, I discovered something from Zoom. You can be like Harry Potter, look. ",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Jose explicitly asks for help to \"quickly go through the points,\" indicating a need for information or clarification regarding the content for his presentation, directly responding to Sarbajit's inquiry about missing information.",
+                "score": 2,
+                "score_justification": "The request is clear and directly asks for help to review specific 'points,' making it functional, but lacks further detail on the specific nature of the missing information."
+            },
+            "Process & Task Management": {
+                "explanation": "Jose asks Sarbajit to \"quickly go through the points,\" which is a request for Sarbajit to manage the review of content for Jose's upcoming presentation, aligning with assigning tasks or clarifying team goals/expectations.",
+                "score": 2,
+                "score_justification": "The utterance clearly assigns a task to Sarbajit related to preparing for Jose's presentation, making it functional but not exceptionally detailed in its execution plan."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Jose shares a lighthearted discovery about Zoom and makes a humorous comparison to Harry Potter, expressing positive affect and interest.",
+                "score": 2,
+                "score_justification": "The utterance explicitly expresses positive affect and humor through sharing a discovery, which is more than minimal acknowledgment but not a strong appreciation for a contribution."
+            }
+        }
+    }
+]

@@ -1,0 +1,2514 @@
+[
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "00:00-00:31",
+        "transcript": "very dense network of of objects that we've detected and be able to assign, you know, the trajectories for merges or splits and things like that. The biggest challenge I think uh for tracking in a label free setting is being able to identify the object. To be able to segment the object first, to be able to classify the object because again it's a label free setting, right? So that means that you're picking up lots of uh non specific um um uh changes um within your detection or imaging method.",
+        "speaking duration": 31,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "30:00",
+        "end_time": "30:31",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker explicitly identifies 'the biggest challenge' in their tracking method, detailing the difficulties in identifying, segmenting, and classifying objects in a label-free setting, which highlights a critical gap in their current capabilities.",
+                "score": 3,
+                "score_justification": "The speaker clearly and specifically identifies a core challenge in their method, detailing the specific steps that are difficult and providing a reason, which is highly actionable and moves the team forward."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides detailed factual information about the complexities and specific challenges of tracking objects in a label-free setting, drawing on their understanding of the domain and the issues involved.",
+                "score": 3,
+                "score_justification": "The speaker offers highly relevant and concrete technical details about the specific challenges in their research area, significantly enhancing the team's shared understanding of the problem."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "00:31-01:33",
+        "transcript": "Um and then uh the other uh okay I just kind of noted down a couple of other points, right? Which is okay, well are we doing this in two dimensions or three dimensions because obviously the problem is much easier in three dimensions than it is in two dimensions. Um and what happens uh when you are using whatever modality you're using to to detect the object which changes um potentially the um uh it it's properties which now does not allow you to be able to record it. So for example when you're doing like QPI or some sort of phase imaging, you know, it's tracking the refractive index changes um in these in these images, but um uh even though the object is present, but it changes its kind of uh physical like bending properties, you're no longer able to detect it from a uh label free context. So how do you deal with these kinds of problems, right? So um yeah, so those are my general thoughts and and happy to kind of um uh work through and refine some of these things with you guys.",
+        "speaking duration": 62,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Raising Hand",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "30:31",
+        "end_time": "31:33",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks direct questions about the dimensionality of the problem and how to deal with detection issues when object properties change, explicitly highlighting gaps in understanding or challenges.",
+                "score": 3,
+                "score_justification": "The questions are highly specific, detailing the problem of 2D vs 3D and providing concrete examples of detection challenges with QPI/phase imaging, which moves the team forward by identifying critical issues."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information by explaining why 3D is easier than 2D and shares expertise by detailing specific technical challenges related to QPI/phase imaging, refractive index changes, and object bending properties.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete, specific technical details about imaging modalities and their limitations, demonstrating expertise and enriching the discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "01:33-02:48",
+        "transcript": "Yeah, I mean I see label free imaging as as a possibility if you're if you're trying to track things that are organelles or you know, larger structures within cells that are detectable and identifiable with label free methods. Um some of the questions that I'm most interested in involve tracking individual proteins, right? So when it comes to tracking individual proteins inside cells, how do you do that in a label free way? Um and and you know, have enough contrast or molecular specificity, how do you know which protein you're tracking? Uh even if you had the contrast, I think is the big challenge. Um but I I mean I just want to kind of maybe pull people about how perturbative do people think is labeling? Um is it really that big of a problem? I mean, Jin showed beautiful examples of, you know, biosensors that you all kinds of amazing information um about activity of um enzymes inside cells. Um uh and and we're using this type of modalities to to extract a lot of really, you know, uh deep information. Is it really that big of a problem the labeling?",
+        "speaking duration": 75,
+        "nods_others": 0,
+        "smile_self": 20,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "31:33",
+        "end_time": "32:48",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Melike asks multiple direct questions about how to track individual proteins in a label-free way and how perturbative labeling is, explicitly identifying gaps in knowledge or challenges like contrast and molecular specificity.",
+                "score": 3,
+                "score_justification": "The questions are specific and highlight concrete challenges, making them high-quality for identifying gaps and seeking information."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Melike expresses judgment by questioning the severity of labeling as a problem ('how perturbative do people think is labeling? Um is it really that big of a problem?') and stating that contrast/specificity is 'the big challenge'.",
+                "score": 3,
+                "score_justification": "The utterance provides a constructive critique by questioning a common assumption and offers reasoning by referencing Jin's examples, making it high-quality."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Melike shares her understanding of label-free imaging's applicability for larger structures and provides factual information by referencing 'Jin showed beautiful examples of, you know, biosensors'.",
+                "score": 3,
+                "score_justification": "The contribution is relevant and includes concrete details by specifying types of structures and referencing specific examples from prior work."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati",
+        "timestamp": "02:50-03:51",
+        "transcript": "Yeah, I've always wondered and I don't know if this exists, but combining, I mean, you could probably really reduce the amount of light. I I agree with you. I don't see a way because I do single protein imaging as well and I I can't conceptualize how to do that without labeling. So it's just something that I can't envision. But with something like QPI, I mean, can you combine QPI with, you know, some of these new more sensitive reporters and just really go very, very low on the fluorescent side. So go low excitation, very, very fast detection times and then combine the QPI readout with fluorescence to facilitate some of these things. So it's not really getting rid of labeling, it's just really minimizing labeling.",
+        "speaking duration": 61,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "32:50",
+        "end_time": "33:51",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Nick introduces a new idea to minimize labeling by combining QPI with sensitive reporters, low excitation, and fast detection times, providing specific technical details.",
+                "score": 3,
+                "score_justification": "The idea is novel, highly relevant to the discussion about labeling, and elaborated with concrete, specific technical details (QPI, sensitive reporters, low excitation, fast detection)."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Nick asks a direct question (\"can you combine QPI with...\") and highlights a potential knowledge gap (\"I don't know if this exists\") regarding a specific technical combination to minimize labeling.",
+                "score": 3,
+                "score_justification": "The question is specific and detailed, directly addressing a technical possibility and identifying a clear information gap relevant to the problem."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Nick shares his prior experience by stating \"I do single protein imaging as well,\" explicitly signaling his expertise in a relevant area.",
+                "score": 2,
+                "score_justification": "Nick explicitly states his relevant expertise (\"I do single protein imaging as well\") which is directly applicable to the problem being discussed, though without further detail on his specific methods or findings."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati",
+        "timestamp": "03:51-04:11",
+        "transcript": "Um, and the other thing I I I I I I just I don't have the computational brain to think about it, but I see particle tracking going down the path of like the genome sciences where it's like, okay, first we, you know, we sequence one gene and now we sequence everything and we wind up with these huge data sets, how do you ever infer that two different networks of particles are interacting with one another or constraining the movement of one another? Um, because you know, you have a homogeneous population of like this is all the GFP particles and they're all moving and we get beautiful tracks.",
+        "speaking duration": 20,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "33:51",
+        "end_time": "34:11",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Nick explicitly asks 'how do you ever infer that two different networks of particles are interacting with one another or constraining the movement of one another?', identifying a significant methodological or conceptual gap in particle tracking, especially with large datasets.",
+                "score": 3,
+                "score_justification": "The question is highly specific and addresses a complex, fundamental challenge in particle tracking, making it exceptional in identifying a gap."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Nick contributes his perspective on the future challenges of particle tracking by drawing an analogy to genome sciences and describing the current state of data ('homogeneous population of like this is all the GFP particles'), signaling his expertise and understanding of the field's complexities.",
+                "score": 3,
+                "score_justification": "The utterance provides a relevant and concrete analogy (genome sciences) and specific details about the nature of particle tracking data (GFP particles), demonstrating high-quality knowledge contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "04:12-05:14",
+        "transcript": "Yeah, I agree with you on that. I was actually thinking about when Gokul mentioned AI based, you know, high density tracking. I feel like and this was one of the original questions I think in the PowerPoint, how do how many things do we need to track to be able to, you know, extract information about interactions. But the challenge there is again, I'm thinking from like the bias of tracking individual proteins, um this relies on sparse labeling. So you're labeling maybe 1% of the proteins that you're tracking. Um and then you label 1% of one protein in red and 1% of another protein in green, even if they're interacting, how do you really know they're interacting if you only label 1% of each um population.",
+        "speaking duration": 62,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "34:12",
+        "end_time": "35:14",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks direct questions about the number of things needed to track and how to know if interactions are occurring with sparse labeling, explicitly identifying a knowledge gap or challenge.",
+                "score": 3,
+                "score_justification": "The utterance poses specific, detailed questions that highlight a concrete and critical limitation or gap in the method for inferring interactions."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The speaker explicitly agrees with a previous point and then provides a detailed critique of sparse labeling, explaining why it presents a challenge for tracking protein interactions.",
+                "score": 3,
+                "score_justification": "The utterance offers both clear agreement and a highly constructive critique with specific reasoning and examples for the limitations of a method."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares their perspective from 'the bias of tracking individual proteins' and provides concrete details about sparse labeling (e.g., 'labeling maybe 1% of the proteins'), signaling their expertise and contributing factual information.",
+                "score": 3,
+                "score_justification": "The speaker provides relevant and concrete details about sparse labeling, explicitly framing the discussion from their specific domain of expertise in protein tracking."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "05:14-05:15",
+        "transcript": "Um",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "35:14",
+        "end_time": "35:15",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'Um' is a filler word and does not explicitly convey any codable content according to the codebook.",
+                "score": 0,
+                "score_justification": "The utterance is a filler word and does not contain any substantive information to be scored against the quality criteria."
+            }
+        }
+    },
+    {
+        "speaker": "Yevgenia/Genia Kozorovitsky",
+        "timestamp": "05:16-06:04",
+        "transcript": "Building upon what uh Melika said, I think this question of real time analysis is really important, right? And it also may allow if you're able, it may solve some of Catherine's problems, I think, because if you are able to identify interesting interactions efficiently using some kind of uh you know, less perturbative imaging modalities that do not bleed bleach your let's say fluorescent based probes, then you're able to kind of zoom in and track those specific things, you know, with your higher power applications.",
+        "speaking duration": 48,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "35:16",
+        "end_time": "36:04",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker expands on the idea of real-time analysis, building on a previous point by Melike, and provides reasoning for its importance and how it could solve problems using 'less perturbative imaging modalities' to 'zoom in and track specific things'.",
+                "score": 3,
+                "score_justification": "The idea is elaborated with specific mechanisms ('less perturbative imaging modalities') and benefits ('solve some of Catherine's problems', 'zoom in and track those specific things'), making it high-quality and moving the team forward."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The speaker explicitly states 'I think this question of real time analysis is really important,' which is a judgment of the idea's content, and then provides reasoning for this importance by explaining its potential to solve problems.",
+                "score": 3,
+                "score_justification": "The utterance provides a clear judgment ('really important') with detailed reasoning and suggestions for how it could work and its benefits, making it a high-quality, constructive evaluation."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "06:06-06:35",
+        "transcript": "The awesome part is that I feel like I really believe that we're really right now at the perfect moment in time to be able to address all of these things, right? Because over the past decades, you know, the math and the computational algorithms have have been developed and implemented and it's only recently that it's becoming more and more accessible um or accessible in the sense sense of computationally accessible to be able to do this in real time in um um in a robust way, especially the robustness comes from the fact that, you know, your algorithms may be completely tunable.",
+        "speaking duration": 29,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "36:06",
+        "end_time": "36:35",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker expresses strong enthusiasm and belief that the current time is ideal for addressing the discussed scientific challenges, demonstrating positive affect and support for the team's potential.",
+                "score": 3,
+                "score_justification": "The utterance provides a strong, elaborated expression of enthusiasm and belief in the team's current opportunity, significantly boosting morale and forward momentum."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides specific factual information regarding the decades-long development and recent computational accessibility of relevant math and algorithms, contributing valuable context and expertise to the discussion.",
+                "score": 3,
+                "score_justification": "The utterance offers concrete and relevant details about the state of the field's computational capabilities, directly informing and advancing the technical discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "06:35-06:59",
+        "transcript": "But when and how to tune that is basically still a human endeavor at this moment, right? And that's basically where the these massive, you know, you know, either white neural nets or deep neural nets are kind of, you know, uh basically going to make my job obsolete, I think. Well, I hope. So.",
+        "speaking duration": 24,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "36:35",
+        "end_time": "36:59",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Gokul shares factual information about the current state of AI tuning requiring human endeavor and projects the future impact of neural nets on his own role, signaling his expertise in the field.",
+                "score": 3,
+                "score_justification": "The utterance provides a specific observation about the current state of AI tuning and a personal, informed projection based on his expertise, making it concrete and relevant."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Gokul provides a critique of the current state where AI tuning is still a 'human endeavor' and offers a judgment on the future impact of neural nets, suggesting they will make his job obsolete.",
+                "score": 3,
+                "score_justification": "The utterance offers a clear critique of the current state of AI tuning and a reasoned judgment about the future impact of neural nets on human roles."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "07:03-08:00",
+        "transcript": "Because coming back to this like do we need a label how perturbating how much perturbation is a label? I mean I'm definitely in the label camp um and you know what we're working with in terms of our floor force are really big right now and that does give us some limitations. So I do think that there is a need for how small of a label can we go and there have been some papers out about uniquely fluorescent biomolecules like really thinking about what is that autofluorescence, you know, can we you know start to decipher specific molecular identities. I think some carbohydrates in a certain orientations are going to be fluorescent.",
+        "speaking duration": 57,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "37:03",
+        "end_time": "38:00",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Ellen asks direct questions about the necessity and perturbation of labels, and explicitly identifies a need for smaller labels due to current limitations with large fluorophores.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies multiple related gaps and needs, such as the need for smaller labels and understanding perturbation."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Ellen shares her stance on labels, provides specific information about the limitations of current fluorophores in her work, and references existing research on uniquely fluorescent biomolecules and autofluorescence.",
+                "score": 3,
+                "score_justification": "Ellen provides relevant factual information, shares specific experience from her lab, and cites related research with concrete details and examples."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "08:00-08:01",
+        "transcript": "And",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "38:00",
+        "end_time": "38:01",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'And' is a short, incomplete word that does not explicitly convey any meaning related to the provided codes.",
+                "score": 0,
+                "score_justification": "No code to score as the utterance is too minimal to apply any specific code."
+            }
+        }
+    },
+    {
+        "speaker": "Anna-Karin Gustavsson",
+        "timestamp": "08:01-08:33",
+        "transcript": "Yeah, because I feel like there's always this trade off. You want to have the label as small and you know, both the label and the floor for as small as possible and less the least perturbative as possible, but at the same time you want to have the long tracks and the bright bright labels. So like for chromatin tracking, you can, you know, consider maybe some arrays and you know, these different schemes where you have multiple floor force but for a single protein.",
+        "speaking duration": 32,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "38:01",
+        "end_time": "38:33",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The utterance provides factual information by articulating a fundamental trade-off between label size/perturbation and track length/brightness in scientific imaging.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically details a known, relevant scientific trade-off, demonstrating high-quality expertise."
+            },
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the discussion about labels and fluorophores by suggesting specific schemes like arrays and multiple fluorophores for chromatin tracking to manage the inherent trade-off.",
+                "score": 3,
+                "score_justification": "The utterance provides concrete examples and approaches (arrays, multiple fluorophores for a single protein) for a specific application (chromatin tracking), making it a high-quality contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Anna-Karin Gustavsson",
+        "timestamp": "08:33-08:34",
+        "transcript": "Tracking, you know, you don't want to weigh that down with a a big brick, right?",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "38:33",
+        "end_time": "38:34",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the existing idea of the trade-off in label size by providing a specific example (single protein tracking) and a vivid metaphor (\"big brick\") to illustrate the negative impact of large labels.",
+                "score": 3,
+                "score_justification": "The utterance is a relevant and elaborated expansion of an idea, using a concrete and specific metaphor to effectively convey the problem."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The utterance offers a critique of using large labels for single protein tracking, stating that \"you don't want to weigh that down with a big brick,\" which is a negative judgment with clear reasoning.",
+                "score": 3,
+                "score_justification": "The utterance provides a strong, constructive critique with clear reasoning (\"weigh that down\") and a vivid metaphor, effectively highlighting a problem with a specific approach."
+            }
+        }
+    },
+    {
+        "speaker": "Anna-Karin Gustavsson",
+        "timestamp": "08:34-08:41",
+        "transcript": "Uh that would be very perturbative to the motion. Um, so yeah, it's um other ways of thinking kind of outside of those strategies are really interesting to see, you know, how can you actually get longer tracks.",
+        "speaking duration": 7,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "38:34",
+        "end_time": "38:41",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "The speaker critiques the idea of using a large label ('big brick') by stating it 'would be very perturbative to the motion,' providing a reason for the negative judgment.",
+                "score": 2,
+                "score_justification": "The critique is clear and provides a reason for the negative impact, making it functional but not offering an alternative solution in this specific phrase."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker explicitly expresses curiosity and positive affect towards exploring 'other ways of thinking kind of outside of those strategies' by stating they are 'really interesting to see.'",
+                "score": 2,
+                "score_justification": "The phrase 'really interesting to see' is an explicit and clear expression of curiosity and positive affect."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker highlights a gap in current strategies by expressing a desire to find 'other ways of thinking kind of outside of those strategies' to achieve 'longer tracks,' framed as a question.",
+                "score": 2,
+                "score_justification": "The utterance clearly identifies a need for new approaches to solve a specific problem ('get longer tracks'), but it doesn't specify what kind of information is needed or ask a direct, highly specific question."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "08:53-09:00",
+        "transcript": "Uh just out of curiosity, how many of us are in the label free camp versus the label camp? Just just curious.",
+        "speaking duration": 7,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "38:53",
+        "end_time": "39:00",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question to gauge the group's preferences or expertise regarding 'label free' versus 'label' approaches, explicitly seeking information from the team.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, directly asking for information about the group's stance on two distinct, relevant approaches."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The speaker explicitly invites the group to contribute by asking 'how many of us are in the label free camp versus the label camp?', encouraging members to share their positions.",
+                "score": 2,
+                "score_justification": "The utterance is a direct invitation for the group to contribute their views, but it is a general invitation to the whole group rather than targeting specific individuals or expertise."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "09:03-09:05",
+        "transcript": "I I'm definitely for label if that.",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Raising Hand",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "39:03",
+        "end_time": "39:05",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "Gokul expresses a strong preference for the 'label' approach, which is a judgment on the content of one of the discussed technical strategies in response to his own question about group preferences.",
+                "score": 2,
+                "score_justification": "The utterance clearly states a judgment/preference but does not provide reasoning or suggestions for improvement, making it adequate but not exceptional."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "09:08-09:10",
+        "transcript": "For label?",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "39:08",
+        "end_time": "39:10",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance 'For label?' is a direct question seeking to confirm or clarify the previous speaker's statement about being 'for label', which aligns with seeking information.",
+                "score": 2,
+                "score_justification": "The question is clear and directly seeks to confirm specific information from the immediate context, making it adequate."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "09:10-09:11",
+        "transcript": "Do we have to be in one?",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "39:10",
+        "end_time": "39:11",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "Katharine's utterance questions the implicit expectation that participants must choose between the 'label free' and 'label' camps, thereby clarifying the framework or rules of the discussion.",
+                "score": 2,
+                "score_justification": "The question is clear and directly addresses a potential constraint on the discussion, helping to clarify the team's approach to the topic, which is an adequate form of process management."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "09:11-09:12",
+        "transcript": "I mean, my opinion is is that",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "39:11",
+        "end_time": "39:12",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance is an incomplete sentence and does not explicitly convey any codable information such as an idea, question, knowledge, evaluation, or process management.",
+                "score": 0,
+                "score_justification": "No code applies as the utterance is an incomplete thought and lacks explicit content for any category."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "09:14-09:57",
+        "transcript": "The label needs to be as small as it needs to be to study the biology. And so if and it needs to be as bright as it needs to be in order for you to track whatever phenotype or whatever behavior you're you're looking for. Um, I mean, I I did my PhD in a lab that was developing new approaches to fluorescently tagging proteins inside cells and we I still remember I was presenting for my postdoc interview and I said, you know, GFP is too bulky, it's too large, it affects biology. And then, you know, later on in the day I hear, oh, we tagged it with three GFPs because it doesn't affect the protein and it's really bright and everything works. And so, you know, it needs to be as as as as good as it needs to be for the biology you're studying and so for some people label free is going to be a requirement.",
+        "speaking duration": 43,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document with the title \"Team 2.1: Key Questions\". The document contains a list of questions related to the project. [low confidence]",
+        "start_time": "39:14",
+        "end_time": "39:57",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker explicitly shares a detailed personal anecdote from her PhD research on fluorescently tagging proteins, signaling her expertise and providing relevant prior experience to the discussion about labels.",
+                "score": 3,
+                "score_justification": "The speaker provides a highly relevant and concrete personal experience from her PhD, including specific details (GFP, three GFPs, affecting biology), which significantly enriches the discussion."
+            },
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces and expands on the idea that the quality of a label (size, brightness) must be appropriate for the specific biological study, explaining how this dictates whether 'label free' is a requirement.",
+                "score": 3,
+                "score_justification": "The utterance introduces a well-developed principle regarding label requirements, providing reasoning and connecting it to the specific biological context and the 'label free' discussion, making it a high-quality contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "00:00-00:12",
+        "transcript": "But for other people and for people that you know, have proteins that are more permissive, it needs to be as small and as bright as it needs to be for not affecting the biology you're interested in.",
+        "speaking duration": 12,
+        "nods_others": 0,
+        "smile_self": 25,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "40:00",
+        "end_time": "40:12",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the existing idea of label requirements by specifying conditions for 'other people' with 'more permissive proteins,' detailing how label size and brightness should be chosen to avoid affecting biology.",
+                "score": 3,
+                "score_justification": "The utterance provides a specific, elaborated condition for label choice, building on the previous discussion and adding valuable detail to the idea."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information and practical considerations regarding the selection of biological labels, drawing on their implied expertise in the field.",
+                "score": 3,
+                "score_justification": "The utterance offers concrete and relevant details about how to select labels based on biological context, demonstrating specific expertise."
+            }
+        }
+    },
+    {
+        "speaker": "Seu Sim",
+        "timestamp": "00:14-01:25",
+        "transcript": "I'm a polymer chemist, so I think of cells as a polymeric network with the spatial heterogeneity, for example, near nucleus or let's say bacterial cells as simple as you get near DNA, you know, nucleus then you are going to have a different types of mesh and near membrane you're going to have different types of mesh and there's everything in the middle. And when I was writing it down, I wrote down, you know, microreology in bacterial cells and how this spatial heterogeneity will affect to multiple different particle tracking and in terms of understanding how they interact in different spatial context, different polymeric network as you say. This is not really, when you think about it, it's so many things are floating, it's just so crowded. In that crowded spatial media, can we deduce, you know, reology of a really simplistic cells and can we decouple that.",
+        "speaking duration": 71,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "40:14",
+        "end_time": "41:25",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Seu Sim explicitly states their professional background as a 'polymer chemist' and uses this expertise to frame their understanding of cells.",
+                "score": 3,
+                "score_justification": "The expertise is clearly stated and immediately applied to introduce a relevant and detailed conceptual framework, moving the discussion forward with a new perspective."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Seu Sim introduces a new conceptual framework by describing cells as a 'polymeric network with the spatial heterogeneity' and elaborates on how this relates to microreology and particle tracking.",
+                "score": 3,
+                "score_justification": "The idea is novel in the context of the conversation, highly relevant, and elaborated with specific concepts, providing a concrete direction for discussion."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Seu Sim asks specific questions ('can we deduce, you know, reology of a really simplistic cells and can we decouple that') that highlight challenges or missing knowledge within the complex idea they just presented.",
+                "score": 3,
+                "score_justification": "The questions are highly specific and directly related to the complex idea just introduced, identifying concrete challenges or gaps in understanding that are crucial for moving the scientific discussion forward."
+            }
+        }
+    },
+    {
+        "speaker": "Seu Sim",
+        "timestamp": "01:25-01:25",
+        "transcript": "This is not really",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "41:25",
+        "end_time": "41:25",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance is an incomplete sentence fragment and does not explicitly convey a complete idea, question, or statement that aligns with any of the provided codebook categories.",
+                "score": 0,
+                "score_justification": "No code to score as the utterance is an incomplete thought and does not fit any defined category."
+            }
+        }
+    },
+    {
+        "speaker": "Seu Sim",
+        "timestamp": "01:25-01:25",
+        "transcript": "I was wondering how biologists think about these types of types of problems.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "41:25",
+        "end_time": "41:25",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance 'I was wondering how biologists think about these types of types of problems' explicitly asks for information about how a specific group (biologists) approaches the problems previously discussed, indicating a desire to fill a knowledge gap.",
+                "score": 3,
+                "score_justification": "The question is highly specific, targeting a particular disciplinary perspective ('how biologists think') on the complex problems just outlined, which is crucial for interdisciplinary understanding and moves the team forward effectively."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "01:28-01:42",
+        "transcript": "So is it useful to just again broadly summarize that label free is great for anything that is not molecular or doesn't require molecular specificity, right? Um and then of course",
+        "speaking duration": 14,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "Yes",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "41:28",
+        "end_time": "41:42",
+        "annotations": {
+            "Summarization & Integration": {
+                "explanation": "Gokul attempts to synthesize previous discussions by proposing a broad summary about the utility of 'label free' techniques, framed as a question to the group.",
+                "score": 2,
+                "score_justification": "The utterance provides a clear, broad statement attempting to summarize a concept, but it is presented as a question rather than a definitive summary."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Gokul asks a direct question to the group, seeking confirmation on the utility and accuracy of his proposed summary regarding 'label free' techniques.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, seeking confirmation on the usefulness and accuracy of the proposed summary."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "01:42-02:12",
+        "transcript": "Potentially, there are some molecules that could be tracked by itself, right? Or or or or identified by itself based on some unique property, then that will still give the molecular identity and the um kind of label free metabolites, you know, as Ellen mentioned a little bit and some of the sugar molecules. Uh so label free could be for some molecules with molecular identity.",
+        "speaking duration": 30,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "41:42",
+        "end_time": "42:12",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the concept of 'label free' by introducing the idea that it could apply to certain molecules with unique properties, providing reasoning and examples like metabolites and sugar molecules.",
+                "score": 3,
+                "score_justification": "The utterance introduces a novel and specific condition for 'label free' tracking, elaborating on the concept with concrete examples, which significantly develops the idea."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information by giving specific examples of molecules (metabolites, sugar molecules) that could be tracked label-free, referencing a previous mention by 'Ellen.'",
+                "score": 3,
+                "score_justification": "The utterance provides concrete, relevant examples of molecules that fit the discussed criteria, demonstrating specific knowledge and building on prior contributions."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "02:12-02:13",
+        "transcript": "But again for majority of the proteins it's going to be hard.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "42:12",
+        "end_time": "42:13",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "The utterance expresses a judgment about the difficulty of applying label-free methods to the majority of proteins, thereby critiquing the general applicability of the previously discussed idea.",
+                "score": 2,
+                "score_justification": "The utterance provides a clear judgment of difficulty but does not offer explicit reasoning or suggestions for improvement within this statement."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "02:13-02:25",
+        "transcript": "So so I mean I think Jin uh if I understood correctly you're saying you can identify a class of molecules but not a very specific molecule with label free imaging or did I misunderstand that?",
+        "speaking duration": 12,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "42:13",
+        "end_time": "42:25",
+        "annotations": {
+            "Summarization & Integration": {
+                "explanation": "Gokul synthesizes Jin's previous contributions about label-free imaging into a coherent summary to confirm his understanding.",
+                "score": 3,
+                "score_justification": "The summary is accurate, comprehensive, and integrates multiple inputs from Jin's previous utterances, effectively restating complex points."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Gokul asks a direct question ('or did I misunderstand that?') to clarify his understanding of Jin's previous statements, identifying a potential gap in his knowledge.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, directly seeking to confirm understanding of a detailed point, which moves the team forward by ensuring shared understanding."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "02:26-03:23",
+        "transcript": "I guess if I well, I I'm definitely a label like we do a lot of labeling. Um but for some, you know, from what I um have seen, you know, a sub yeah, indeed, a subclass uh of uh sugar molecules. some of the unique metabolites. There could be, you know, unique metabolites that give you certain uh, you know, Raman characteristics that are um visible, right? So it doesn't have to be a a whole class of molecules. There could be some really unique cases where this is uh um this is could this could be specific enough for you to uh get uh uh specific biology out of that label free. Um",
+        "speaking duration": 57,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "42:26",
+        "end_time": "43:23",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Jin shares specific examples and details about unique metabolites and sugar molecules that can be identified by label-free imaging, drawing on their expertise and observations to clarify a previous question.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, specific, and provides concrete details (e.g., 'Raman characteristics,' 'sugar molecules,' 'unique metabolites') to clarify a complex point."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Jin expands on the discussion about label-free imaging by providing specific examples (sugar molecules, unique metabolites) and reasoning (Raman characteristics) to explain how it can be specific enough for individual molecules in unique cases.",
+                "score": 3,
+                "score_justification": "The utterance elaborates on an existing idea (label-free imaging capabilities) with specific examples and reasoning, providing a nuanced and detailed explanation that develops the team's understanding."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "03:23-03:23",
+        "transcript": "Do I, you know, is that how people I wonder if uh people more people have uh experience with the label free.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "43:23",
+        "end_time": "43:23",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance 'I wonder if uh people more people have uh experience with the label free' explicitly seeks information about others' experience with a specific technique, indicating a knowledge gap.",
+                "score": 2,
+                "score_justification": "The question is clear in what information is sought (experience with label-free) but remains general rather than highly specific."
+            },
+            "Participation & Inclusion": {
+                "explanation": "By asking 'I wonder if uh people more people have uh experience with the label free', Jin is implicitly inviting others to contribute their knowledge and experience to the discussion.",
+                "score": 1,
+                "score_justification": "The invitation is implicit and generic, not directly addressing specific individuals or their particular expertise."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati",
+        "timestamp": "03:23-04:30",
+        "transcript": "I I I've started doing so so I I've looked into doing some Raman and some Flim imaging and so with Flim imaging you can look at metabolites like NADPH and NAD ratios and things like that. It's not particle tracking per se. It's more just trying to get a, you know, like a metabolic view of the cell. And with the Raman stuff, we've got a group that's working on surface enhanced Raman probes, which I think could potentially be tagged to to molecules. But what we've like it's just I I'd interested if anybody's actually gone further with Raman. We can't get around the integration time. So to study fast things, we just have to integrate for so long that it's not really a particle tracking thing. It might be more of a a cell migration type time scale on the minutes kind of time scale, but on this the second particle tracking in a cell type stuff, we haven't we haven't been able to do it. We we can characterize lipids and and DNA and things like that and mitochondria produce a pretty strong Raman signal.",
+        "speaking duration": 67,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "43:23",
+        "end_time": "44:30",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Nick shares his personal experience and his group's work with Raman and Flim imaging, detailing what they can and cannot achieve with these techniques, such as characterizing metabolites and lipids but facing limitations with integration time for fast particle tracking.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete, specific details about the techniques, their applications, and their limitations based on direct experience."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Nick asks if anyone else has gone further with Raman, directly seeking information from the group about their experiences.",
+                "score": 3,
+                "score_justification": "The question is clear and specific, directly asking about further experience with Raman, which is highly relevant to the ongoing discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Morteza Mahmoudi",
+        "timestamp": "04:31-06:07",
+        "transcript": "I just want to add one thing from like a nanotechnology point of view, similar to what Jean mentioned is that like we have some particles that have some characteristics that can be probed by themselves. Like we have quantum dots that we can track them by like fluorescence microscopy or we have like magnetic nanoparticles that can be used like I mean we can use like uh magnetic resonance imaging big technologies to basically track them. But uh at least at like at the nano site part of view when I basically try to tag other type of nanoparticles with a small molecules, what I see is that like the interaction of proteins with the surface of these nanoparticles gets changed. So what happens is that I have different nanoparticles in terms of their biological identity.",
+        "speaking duration": 96,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "44:31",
+        "end_time": "46:07",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker explicitly shares knowledge from a 'nanotechnology point of view,' providing specific examples of trackable particles (quantum dots, magnetic nanoparticles) and methods (fluorescence microscopy, MRI), and detailing a challenge with tagging nanoparticles and its effect on biological identity.",
+                "score": 3,
+                "score_justification": "The speaker provides relevant and concrete details from their expertise, including specific examples of nanoparticles, tracking methods, and a detailed explanation of a challenge encountered when tagging."
+            },
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces new specific examples of particles and tracking technologies (quantum dots, magnetic nanoparticles, fluorescence microscopy, MRI) and elaborates on a challenge related to tagging nanoparticles, expanding the discussion on what can be tracked and its limitations.",
+                "score": 3,
+                "score_justification": "The utterance introduces novel and relevant examples of tracking methods and elaborates on a specific, detailed challenge, significantly expanding the discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Morteza Mahmoudi",
+        "timestamp": "06:07-06:59",
+        "transcript": "So my question here is that like for protein labeling, how do you ensure that the kind of labeling doesn't like at it mentioned in the question perturb the interactions or protein protein interactions that you uh basically expect to see. I mean, what is the correct control for that if there's no label free approach for do like some evaluation of like if you do the labeling, there's no changes or no alteration in protein protein interactions or like the functionality of that particular protein.",
+        "speaking duration": 52,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Pointing",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "46:07",
+        "end_time": "46:59",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Morteza asks a direct and specific question about how to ensure protein labeling does not perturb interactions and what controls are appropriate, highlighting a gap in knowledge or methodology for the group.",
+                "score": 3,
+                "score_justification": "The question is highly specific and detailed, identifying a critical methodological gap regarding protein labeling and controls, which is crucial for the scientific discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "07:00-07:47",
+        "transcript": "Um, I can chime in on the first question or just uh from what we do um in our lab, um is, you know, and again it depends on what level you want to probe uh the perturbation, but um, you know, if you have a protein that you're tagging and you knock down or knock out the endogenous protein or you mutate the endogenous protein and you have a phenotype and now you express the tagged protein and the tagged protein can rescue the phenotype and",
+        "speaking duration": 47,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "47:00",
+        "end_time": "47:47",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Melike explicitly shares a method used 'in our lab' to address the question of protein labeling perturbation, demonstrating her group's expertise and providing relevant factual information.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, concrete, and detailed, explaining a specific experimental approach to control for labeling effects."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Melike expands on the discussion about controlling for protein labeling perturbation by detailing a specific experimental approach (knocking down/out endogenous protein and rescuing phenotype with tagged protein) as a solution to the problem.",
+                "score": 3,
+                "score_justification": "The utterance provides a very concrete and elaborated method to address a previously identified problem, offering a clear and actionable approach."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "07:47-07:47",
+        "transcript": "You know, um rescue the cell function then the tagging is probably not perturbing.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "47:47",
+        "end_time": "47:47",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Melike is providing factual information and sharing prior experience from her lab by explaining a specific method (phenotype rescue) to determine if protein tagging perturbs cell function, directly addressing Morteza's question.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete, detailed information about a specific experimental approach used in her lab to address a technical challenge."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali",
+        "timestamp": "07:47-07:47",
+        "transcript": "Perturbative.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "47:47",
+        "end_time": "47:47",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance consists of a single word, 'Perturbative', which is a fragment and does not constitute a complete thought or a distinct contribution, aligning with the guideline for short utterances like 'yep' or 'umm'.",
+                "score": 0,
+                "score_justification": "No code applies to this utterance based on the provided guidelines for short, fragmented utterances."
+            }
+        }
+    },
+    {
+        "speaker": "Yevgenia/Genia Kozorovitskiy",
+        "timestamp": "07:49-09:04",
+        "transcript": "Sometimes also you actually don't really want the normal interactions if in case for example you're interested in how particular protein um production may be affected by some specific stimulus. So in some cases we've actually we may crisper in the tag on one copy of the gene, spare the the other copy and then modify take away the most highly active interacting domains so that we can see changes in production of a protein uh downstream of some biological event.",
+        "speaking duration": 75,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "47:49",
+        "end_time": "49:04",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces a new idea that sometimes normal interactions are not desired, and expands on this by providing a detailed example of a CRISPR-based method to achieve this.",
+                "score": 3,
+                "score_justification": "The utterance introduces a novel perspective relevant to the discussion and elaborates on it with a concrete, detailed experimental approach."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares specific factual information and prior experience from their field, detailing a CRISPR-based method for manipulating protein interactions for specific research goals.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete, specific details about an advanced experimental technique used in their lab or field."
+            }
+        }
+    },
+    {
+        "speaker": "Yevgenia/Genia Kozorovitskiy",
+        "timestamp": "09:04-09:05",
+        "transcript": "So people have tried to",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "49:04",
+        "end_time": "49:05",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance is an incomplete sentence fragment that does not explicitly provide factual information, seek information, evaluate, or perform any other codable action according to the codebook definitions.",
+                "score": 0,
+                "score_justification": "No code applies to this incomplete utterance, thus no score can be assigned for a specific code."
+            }
+        }
+    },
+    {
+        "speaker": "Yevgenia/Genia Kozorovitskiy",
+        "timestamp": "09:05-09:05",
+        "transcript": "Solve this problem in lots of different ways, but it always ends up depending on exactly what your biological question is what will be the right thing.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "49:05",
+        "end_time": "49:05",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares a general principle about problem-solving in the scientific domain, stating that solutions depend on the specific biological question, which reflects an expert's understanding of the field.",
+                "score": 2,
+                "score_justification": "The utterance provides a relevant and useful general principle derived from expertise, but it lacks concrete, specific details to be considered high-quality."
+            }
+        }
+    },
+    {
+        "speaker": "Yevgenia/Genia Kozorovitskiy",
+        "timestamp": "09:05-09:05",
+        "transcript": "Sometimes you don't want that protein to interact and sometimes you want it to interact as natively as possible. Um and of course endogenous levels of expression versus over expression, um, you know, is is kind of a problem. We've actually come across situations where we've carefully created nice crisper tagged things and they look beautiful in cell culture and we can't really use them even in acute brain slices very well at all because of some incompatibility between imaging modalities.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "A document is being shared on the screen. The document appears to be a scientific paper or proposal with text and formatting. No changes are made to the content during this segment.",
+        "start_time": "49:05",
+        "end_time": "49:05",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares specific prior experience from their lab, detailing challenges encountered with CRISPR-tagged proteins in different experimental contexts due to imaging modality incompatibility.",
+                "score": 3,
+                "score_justification": "The utterance provides concrete details about a specific problem encountered in the speaker's lab, including the methods used ('crisper tagged things') and the specific issue ('incompatibility between imaging modalities'), making it highly relevant and detailed."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker identifies 'endogenous levels of expression versus over expression' as a general problem and 'incompatibility between imaging modalities' as a specific challenge that prevented the use of their CRISPR-tagged constructs.",
+                "score": 2,
+                "score_justification": "The utterance clearly identifies a known problem and a specific technical challenge, highlighting gaps or difficulties in experimental design and application."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "00:00-00:57",
+        "transcript": "that that captured the some of the polymer uh features and um very heterogeneity and very dynamic could allow things to to exchange. So this goes back to what we were talking about earlier in terms of the heterogeneity. I think actually single cell life cell imaging, single life cell imaging is where single cell behaviors all of a sudden showed up very very strongly. This is in the 19 um I think uh 80s.",
+        "speaking duration": 57,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "50:00",
+        "end_time": "50:57",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information about the historical development and impact of single-cell life cell imaging, including a specific time frame (1980s), which contributes relevant knowledge to the discussion about heterogeneity.",
+                "score": 3,
+                "score_justification": "The utterance provides concrete and specific historical and technical details about single-cell imaging and its impact, making it a high-quality knowledge contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "00:57-01:35",
+        "transcript": "So if you look at a single molecule behaviors or single particle behaviors, whether that particular particles are near nucleus or near the plasma membrane or actually in a very confined uh micro compartment, that could affect the heterogeneity of that particle.",
+        "speaking duration": 38,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "50:57",
+        "end_time": "51:35",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides specific factual information about how the location of single molecules or particles (near nucleus, plasma membrane, or micro compartment) can affect their heterogeneity, demonstrating expertise in the topic.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and provides concrete, specific details about the scientific phenomenon, moving the discussion forward with valuable information."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "01:35-01:36",
+        "transcript": "Uh so I guess that's why I think uh you know I I I um echo what Sue mentioned a little bit.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "51:35",
+        "end_time": "51:36",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "The utterance explicitly states agreement by saying 'I echo what Sue mentioned,' which is an expression of judgment on the content of an idea.",
+                "score": 2,
+                "score_justification": "The utterance clearly expresses agreement with a previous point, which is functional, but it does not provide further reasoning or elaboration, making it adequate but not exceptional."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati, West. Wash. Univ.",
+        "timestamp": "01:37-02:26",
+        "transcript": "Yeah, I think that was one of the most interesting things about your talk, Shin, was the the the modeling of being three to four orders of magnitude different than what was observed for the cyclic AMP diffusion. So I think one way to start is to just do those back of the envelope calculations with the observed data and say, well, what would need to be the diffusion constant to match that? I think that's a very kind of simple thing that we we could do with a lot of the particles that we've already tracked and measured is to just say like, you know, what constraints must be imposed to slow this thing down to the observed rate. Um, and that could be, you know, the polymeric nature of the cytosol, it could be a lot of different things. So I thought that was a, you know, maybe maybe simple modeling is is one way to just approach it from from the ground up.",
+        "speaking duration": 49,
+        "nods_others": 1,
+        "smile_self": 10,
+        "smile_other": 10,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "51:37",
+        "end_time": "52:26",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker explicitly praises Jin's talk by stating, \"I think that was one of the most interesting things about your talk, Shin,\" showing positive affect and recognition.",
+                "score": 3,
+                "score_justification": "This is a strong acknowledgment that is specific and positive, setting a collaborative tone before offering a new idea."
+            },
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces a new approach by suggesting \"back of the envelope calculations\" to determine the \"diffusion constant\" and \"constraints\" needed to match observed rates, expanding on this idea with potential factors like \"polymeric nature of the cytosol.\"",
+                "score": 3,
+                "score_justification": "The idea is novel, relevant to the discussion, and elaborated with concrete steps and potential considerations, moving the team forward."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "02:27-02:49",
+        "transcript": "Yeah, I definitely um believe the computational biology, the modeling aspect has a lot to contribute to uh imaging uh this uh like today's imaging science. Uh for some of the heterogeneity that Catherine mentioned.",
+        "speaking duration": 22,
+        "nods_others": 0,
+        "smile_self": 70,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "52:27",
+        "end_time": "52:49",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker expands on the existing idea of computational modeling, previously suggested by Nick, by providing reasoning for its significant contribution to imaging science and understanding heterogeneity.",
+                "score": 2,
+                "score_justification": "The utterance provides relevant reasoning for the value of an existing idea, making it a clear but generally developed contribution."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The speaker expresses strong agreement and a positive judgment on the value of computational biology and modeling, which was previously suggested by Nick.",
+                "score": 2,
+                "score_justification": "The utterance provides a clear positive judgment and agreement with the idea of modeling, supported by a relevant reason for its contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "02:49-03:57",
+        "transcript": "I wonder, you know, are there hints that could be uh used from some of the the modeling um studies as well. So uh do we covered some, you know, some of the points that you wrote at the beginning of the session? Does anyone want to uh share uh a few thoughts that you wrote down but we haven't really uh discussed?",
+        "speaking duration": 68,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "52:49",
+        "end_time": "53:57",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks if there are 'hints' from modeling studies and if previously written points have been covered, directly seeking information and identifying potential knowledge gaps.",
+                "score": 3,
+                "score_justification": "The questions are clear and specific, asking about potential insights from a particular domain (modeling studies) and the status of specific discussion points, which effectively moves the team forward."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The speaker explicitly invites others to share their thoughts that have not yet been discussed, directly encouraging contribution.",
+                "score": 3,
+                "score_justification": "The invitation is direct and specific by referring to 'thoughts that you wrote down but we haven't really discussed,' providing clear context for the desired contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali, UPenn",
+        "timestamp": "04:13-04:21",
+        "transcript": "Since I'm going to be doing the reporting, I wonder if we should try to sort of summarize everything that we have discussed um.",
+        "speaking duration": 8,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:13",
+        "end_time": "54:21",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Melike explicitly states her role of 'doing the reporting,' which is a relevant contribution about her responsibilities within the collaboration.",
+                "score": 2,
+                "score_justification": "The statement of her role is clear and relevant to the task, providing a functional piece of information."
+            },
+            "Process & Task Management": {
+                "explanation": "Melike suggests summarizing the discussion, which is a clear action to manage the meeting's flow and ensure the topic is being handled effectively.",
+                "score": 2,
+                "score_justification": "The suggestion is clear and directly addresses the meeting's progress, providing adequate structuring for the discussion."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "04:21-04:23",
+        "transcript": "Exactly. if no um additional, you know, topics we could summarize.",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 100,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:21",
+        "end_time": "54:23",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker uses 'Exactly' to explicitly affirm and support Melike's prior suggestion to summarize the discussion.",
+                "score": 2,
+                "score_justification": "The utterance provides explicit support ('Exactly') for a previous contribution, which is adequate and functional."
+            },
+            "Process & Task Management": {
+                "explanation": "The utterance confirms the group's readiness to move to the summarization phase of the meeting, contingent on no new topics, thereby managing the meeting flow.",
+                "score": 2,
+                "score_justification": "The utterance clearly structures the meeting by confirming the next step (summarization), making it an adequate contribution to process management."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "04:23-04:31",
+        "transcript": "So uh are we are we looking at our notes?",
+        "speaking duration": 8,
+        "nods_others": 0,
+        "smile_self": 100,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:23",
+        "end_time": "54:31",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance asks if the group is looking at their notes, which is a question about managing the current task of reviewing notes for potential summarization or further discussion, as previously suggested by Melike and agreed upon by Jin.",
+                "score": 2,
+                "score_justification": "The question clearly directs the group's attention to a specific action (looking at notes) relevant to the ongoing task of summarizing, making it an adequate attempt to manage the process."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "04:38-04:43",
+        "transcript": "Uh something happened with uh the version of the document. It's just been it's been updated and I can't.",
+        "speaking duration": 5,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:38",
+        "end_time": "54:43",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "Gokul highlights a problem with a shared document, stating it has been updated and he 'can't' (presumably access or use it), which identifies a gap in resources or ability to proceed with the task of looking at notes or summarizing.",
+                "score": 2,
+                "score_justification": "The utterance clearly identifies a problem with a specific resource (the document) that creates a gap, but it is general about the exact nature of the issue."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten (UCLA)",
+        "timestamp": "04:43-04:44",
+        "transcript": "Yeah, it keeps changing.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:43",
+        "end_time": "54:44",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The utterance 'Yeah, it keeps changing' explicitly affirms and supports Gokul's previous statement about the document's version issues, recognizing his contribution to identifying a problem.",
+                "score": 2,
+                "score_justification": "The utterance provides an explicit affirmation and slight elaboration on a shared problem, making it more than a minimal acknowledgment but not a strong expression of support or enthusiasm."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten (UCLA)",
+        "timestamp": "04:44-04:50",
+        "transcript": "Maybe Gokul do you want to share since you're mostly working on.",
+        "speaking duration": 6,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:44",
+        "end_time": "54:50",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "The utterance explicitly invites Gokul to contribute by asking 'do you want to share', and specifies the reason for this invitation by referencing his direct involvement ('since you're mostly working on').",
+                "score": 3,
+                "score_justification": "This is a high-quality invitation because it is direct and specifies the reason for inviting Gokul, linking it to his expertise/involvement, which makes the team more effective."
+            },
+            "Process & Task Management": {
+                "explanation": "The utterance suggests a specific action (Gokul sharing his screen/document) to resolve a technical issue (document version problems) that is hindering the team's ability to review notes, thereby managing the task flow.",
+                "score": 3,
+                "score_justification": "This is a high-quality instance as it provides a concrete and specific action to manage a task-related blocker, moving the team forward effectively."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "04:50-04:52",
+        "transcript": "No, I'm having the same issue as.",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "54:50",
+        "end_time": "54:52",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "Gokul's 'No' directly rejects Ellen's suggestion to share his screen, and 'I'm having the same issue as' provides the reason for this critique, indicating the suggestion is not feasible due to an ongoing problem.",
+                "score": 3,
+                "score_justification": "The utterance provides a clear rejection of a proposed action with specific reasoning, which is a constructive critique that clarifies a roadblock for the team."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Gokul provides factual information by stating 'I'm having the same issue as', confirming that the previously discussed document problem is still affecting him and preventing him from performing the suggested task.",
+                "score": 3,
+                "score_justification": "The utterance provides a concrete and highly relevant detail about his current technical status, which directly impacts the team's ability to proceed with the task."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten (UCLA)",
+        "timestamp": "05:03-05:04",
+        "transcript": "It says you can go to version history.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:03",
+        "end_time": "55:04",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Ellen provides factual information about the 'version history' feature, which is a concrete and relevant detail to help resolve the ongoing document versioning issue.",
+                "score": 3,
+                "score_justification": "The utterance provides a concrete and specific piece of factual information that is directly relevant and actionable for solving the team's current document versioning problem."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali, UPenn",
+        "timestamp": "05:06-05:10",
+        "transcript": "Copy the notes and then hopefully.",
+        "speaking duration": 4,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:06",
+        "end_time": "55:10",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance introduces a concrete action, 'Copy the notes,' as a new idea or solution to address the ongoing issue with changing notes, aligning with the definition of introducing a new idea.",
+                "score": 2,
+                "score_justification": "The idea is clear and actionable, providing a specific direction to address the problem, but it is not fully elaborated or justified beyond the implied hope for a solution."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "05:21-05:26",
+        "transcript": "Yes, Ed Mclusky is messing it up for all of us.",
+        "speaking duration": 5,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:21",
+        "end_time": "55:26",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The utterance begins with \"Yes\", explicitly affirming or acknowledging the previous speaker's statement or suggestion regarding the issue.",
+                "score": 1,
+                "score_justification": "The \"Yes\" is a minimal, token acknowledgment without further elaboration or enthusiasm."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Gokul provides factual information by identifying \"Ed Mclusky\" as the specific cause of the shared issue, contributing knowledge about the problem's origin.",
+                "score": 3,
+                "score_justification": "The utterance provides a specific and concrete detail about the source of the problem, which is highly relevant and helps the team understand the current impediment."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "05:26-05:27",
+        "transcript": "Oh.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:26",
+        "end_time": "55:27",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'Oh.' is a minimal, short response similar to 'yep' or 'I see', and according to the guidelines, such utterances should be coded as 'None'.",
+                "score": 0,
+                "score_justification": "No code to score as the utterance is too minimal to apply any specific code."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "05:27-05:31",
+        "transcript": "Yeah we got our notes back. Thanks.",
+        "speaking duration": 4,
+        "nods_others": 0,
+        "smile_self": 100,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:27",
+        "end_time": "55:31",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The utterance explicitly expresses gratitude with 'Thanks' and acknowledges the successful resolution of the notes issue, affirming the efforts of others.",
+                "score": 2,
+                "score_justification": "The utterance provides explicit thanks and confirms a positive outcome, which is an adequate level of acknowledgment and support."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "05:31-05:55",
+        "transcript": "So what are the three major points we want to share with the group? Is it um sufficient or do we have another uh point?",
+        "speaking duration": 24,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "55:31",
+        "end_time": "55:55",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks 'what are the three major points we want to share' and 'is it sufficient or do we have another point,' directly seeking information about the content and identifying a potential gap in the completeness of the points.",
+                "score": 2,
+                "score_justification": "The question is clear and directly seeks information about the content, but it is general ('three major points') rather than highly specific."
+            },
+            "Process & Task Management": {
+                "explanation": "The utterance clarifies the team's goal of identifying and structuring 'three major points we want to share with the group,' which is a task-oriented objective for external communication.",
+                "score": 2,
+                "score_justification": "The utterance provides clear structuring for the content to be shared with another group, defining a specific output goal, but lacks further detail like assigned roles or deadlines."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali, UPenn",
+        "timestamp": "06:04-06:11",
+        "transcript": "We had a major discussion around heterogeneity and how to make sense of heterogeneity, right? That was a major um point that we discussed.",
+        "speaking duration": 7,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:04",
+        "end_time": "56:11",
+        "annotations": {
+            "Summarization & Integration": {
+                "explanation": "The utterance synthesizes a prior discussion point about heterogeneity, directly responding to the prompt to identify major points for the group.",
+                "score": 2,
+                "score_justification": "The summary is accurate and clearly identifies a specific major discussion point, making it adequate but not comprehensive of all potential points."
+            }
+        }
+    },
+    {
+        "speaker": "Anna-Karin Gustavsson (Rice)",
+        "timestamp": "06:11-06:17",
+        "transcript": "Yeah and that we discussed both taking require ways to require higher proof of data versus analysis schemes to address that question.",
+        "speaking duration": 6,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:11",
+        "end_time": "56:17",
+        "annotations": {
+            "Summarization & Integration": {
+                "explanation": "The utterance elaborates on a previously mentioned major discussion point (heterogeneity) by restating the different approaches discussed ('higher proof of data versus analysis schemes'), thereby synthesizing prior contributions as requested by Jin.",
+                "score": 3,
+                "score_justification": "The summary is accurate, specific, and integrates two distinct approaches discussed, effectively moving the team forward in identifying key takeaways."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali, UPenn",
+        "timestamp": "06:17-06:26",
+        "transcript": "I'm sorry, potentially modeling and you know, combining modeling with maybe even um AI based approaches.",
+        "speaking duration": 9,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:17",
+        "end_time": "56:26",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Melike expands on the previous discussion about 'analysis schemes to address heterogeneity' by suggesting specific methods like 'modeling' and 'AI based approaches'.",
+                "score": 2,
+                "score_justification": "The utterance provides a clear and relevant direction by suggesting specific methods for analysis, making it an adequate contribution to idea development."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati, West. Wash. Univ.",
+        "timestamp": "06:34-06:41",
+        "transcript": "Did we also kind of converge that we we we think that like flexible single molecule imaging is going to require a label of some sort.",
+        "speaking duration": 7,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:34",
+        "end_time": "56:41",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question to clarify if the group reached a consensus on a specific technical point, thereby seeking information about the outcome of a prior discussion.",
+                "score": 3,
+                "score_justification": "The question is clear, specific, and directly addresses a particular technical detail, aiming to confirm a group's convergence on that point, which is a high-quality way to seek information."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang (UC San Diego)",
+        "timestamp": "06:41-06:42",
+        "transcript": "Yeah.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:41",
+        "end_time": "56:42",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'Yeah' consists of only a few words, which, according to the annotation guidelines, should always be coded as 'None'.",
+                "score": 0,
+                "score_justification": "No code to score based on the explicit guideline for short utterances."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati, West. Wash. Univ.",
+        "timestamp": "06:44-06:44",
+        "transcript": "I mean.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:44",
+        "end_time": "56:44",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'I mean.' is a short, incomplete phrase that does not explicitly convey any codable action such as generating an idea, seeking information, or providing feedback.",
+                "score": 0,
+                "score_justification": "No code to score as the utterance is too minimal to apply any specific code."
+            }
+        }
+    },
+    {
+        "speaker": "Melike Lakadamyali, UPenn",
+        "timestamp": "06:56-07:03",
+        "transcript": "And that, you know, we want these labels to be as small and as bright as possible.",
+        "speaking duration": 7,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "56:56",
+        "end_time": "57:03",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the existing idea of requiring labels for single molecule imaging by specifying desired characteristics ('as small and as bright as possible').",
+                "score": 2,
+                "score_justification": "The utterance provides a clear and specific characteristic for the labels, but it does not elaborate with reasoning, examples, or a detailed plan, making it adequate but not exceptional."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten (UCLA)",
+        "timestamp": "07:06-07:16",
+        "transcript": "Yeah, I think the speed requirement we should also bring up and that we want to be able to do real time tracking.",
+        "speaking duration": 10,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:06",
+        "end_time": "57:16",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance introduces a new critical requirement, 'speed requirement,' and elaborates on it by specifying the need for 'real time tracking,' expanding the scope of the discussion beyond just labels and brightness.",
+                "score": 3,
+                "score_justification": "The utterance introduces a specific and critical requirement ('speed requirement' and 'real time tracking') that is highly relevant and elaborated, moving the team's discussion forward with a concrete design constraint."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "07:16-07:17",
+        "transcript": "Oh sorry guys one second.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:16",
+        "end_time": "57:17",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The speaker briefly interrupts the meeting flow by asking for a moment, which is a form of managing the immediate process.",
+                "score": 1,
+                "score_justification": "The utterance is a minimal, informal intervention to pause the meeting flow without providing specific details or structured management."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "07:22-07:24",
+        "transcript": "Well, I managed to rescue our slide.",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:22",
+        "end_time": "57:24",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance 'Well, I managed to rescue our slide' indicates the speaker resolved a technical issue related to the presentation, which directly manages the meeting's resources and flow.",
+                "score": 2,
+                "score_justification": "The utterance clearly communicates the resolution of a technical problem, which is an adequate action to maintain the meeting's functionality and flow."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "07:24-07:26",
+        "transcript": "To some extent.",
+        "speaking duration": 2,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:24",
+        "end_time": "57:26",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance qualifies the success of the previous action of rescuing the slide, which is a task related to managing the meeting flow, thus providing a minimal update on the task's status.",
+                "score": 1,
+                "score_justification": "It's a vague and minimal update on the status of a process-related task, offering little concrete detail about the extent of the rescue."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "07:26-07:27",
+        "transcript": "Okay.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:26",
+        "end_time": "57:27",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "Following his statements about rescuing a slide, Gokul's 'Okay' signals that he is ready to proceed with the meeting, thereby managing the meeting flow.",
+                "score": 1,
+                "score_justification": "The utterance is a vague and implicit signal to resume the meeting, making it a minimal contribution to process management."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula (UC Berkeley)",
+        "timestamp": "07:27-07:30",
+        "transcript": "Uh if you go to the next slide.",
+        "speaking duration": 3,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Session 1.3: Key Ideas\". The document lists several points related to the session's objectives and discussion topics. The content remains static throughout the segment.",
+        "start_time": "57:27",
+        "end_time": "57:30",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance 'Uh if you go to the next slide' explicitly manages the meeting flow by directing the presentation to advance, aligning with the definition of managing the agenda.",
+                "score": 2,
+                "score_justification": "The instruction is clear and functional for moving the meeting forward, representing adequate structuring of the meeting flow."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "00:02-00:07",
+        "transcript": "I think that sounds good, you know, two major points and we had lots of constructive discussions.",
+        "speaking duration": 5,
+        "nods_others": 0,
+        "smile_self": 20,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "60:02",
+        "end_time": "60:07",
+        "annotations": {
+            "Evaluation & Feedback": {
+                "explanation": "The utterance expresses a positive judgment ('sounds good') about the 'two major points' and the quality of the group's interaction ('lots of constructive discussions'), which aligns with expressing judgment of an idea's content or process.",
+                "score": 2,
+                "score_justification": "The utterance provides a positive judgment with a brief reason ('two major points' and 'constructive discussions'), making it functional but not highly detailed or offering suggestions for improvement."
+            }
+        }
+    },
+    {
+        "speaker": "Samuel Achilefu",
+        "timestamp": "00:11-00:38",
+        "transcript": "I mean as you guys reflect on this, I'm not sure if you some of you have noticed that leveling can actually be your friend in discovery. Sometimes they don't give you what you want, they give you something completely different. Have you observed that in your research where you level something and instead of doing what it's supposed to do, it did completely something else. But that something else turned out to be exciting.",
+        "speaking duration": 27,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "60:11",
+        "end_time": "60:38",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The speaker introduces the idea that 'leveling can actually be your friend in discovery' and elaborates on how unexpected outcomes can be exciting, providing a new perspective on research findings.",
+                "score": 3,
+                "score_justification": "The idea is novel, relevant to scientific discovery, and elaborated with a clear example of unexpected but exciting results."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct question, 'Have you observed that in your research...', explicitly seeking shared experiences and knowledge from the group regarding unexpected discoveries.",
+                "score": 3,
+                "score_justification": "The question is clear, specific, and directly invites the team to share concrete observations from their research."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker shares an observation from research experience, stating that 'leveling can actually be your friend in discovery' and describing how unexpected results can be exciting, contributing a piece of knowledge.",
+                "score": 3,
+                "score_justification": "The contribution is relevant to the discussion and provides a concrete observation about a specific phenomenon in research experience."
+            }
+        }
+    },
+    {
+        "speaker": "Gokul Upadhyayula",
+        "timestamp": "00:45-01:31",
+        "transcript": "Absolutely, yeah. I mean especially because we know molecules exist, but we don't really understand fully how they interact with each other in terms of dynamics, right? Especially in the context of processes that either self assemble or um that need to have uh or at least in the biological schemes or the textbooks, they always have, you know, molecule A comes, then molecule B comes, then molecule C comes, right? And I'm always thinking, how does molecule B know when to get there, you know? Um the stochasticity is completely lost in in in quantifications of of these biological systems, right? Is is that yes, anything is possible, but it's also the probability that's defining a particular process. And it's it's it's yeah, anyways, yeah. Sorry.",
+        "speaking duration": 46,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "60:45",
+        "end_time": "61:31",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Gokul explicitly agrees with Samuel's observation about unexpected discoveries in research by starting his utterance with \"Absolutely, yeah.\"",
+                "score": 2,
+                "score_justification": "It's an explicit agreement, more than a minimal 'yeah,' but not a strong, elaborated expression of enthusiasm or appreciation."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Gokul provides detailed scientific information about molecular interactions and the role of stochasticity in biological systems, drawing on his expertise to illustrate Samuel's point.",
+                "score": 3,
+                "score_justification": "He offers relevant and concrete details, including a specific example of molecule interactions (A, B, C) and a scientific concept (stochasticity), making it a high-quality contribution."
+            },
+            "Idea Generation & Development": {
+                "explanation": "Gokul expands on Samuel's general idea of unexpected discoveries by introducing and elaborating on the specific concept of stochasticity in molecular interactions as a mechanism for such outcomes.",
+                "score": 3,
+                "score_justification": "He takes an existing idea and develops it with specific reasoning, a detailed example, and a relevant scientific concept, making it elaborated and highly relevant."
+            }
+        }
+    },
+    {
+        "speaker": "Domenico (Nick) Galati",
+        "timestamp": "01:32-02:03",
+        "transcript": "I I just wanted to say that as somebody that, you know, I I teach undergraduates, I'm at a mostly undergraduate institution and the textbook models of A leading to B leading to C, my goal I feel is as as as when I'm teaching seniors is to undo that thought process because it limits them so much and I feel like I I try to undo everything they've learned by getting them to stop thinking like that. And so I yeah, it's a really wonderful point.",
+        "speaking duration": 31,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "61:32",
+        "end_time": "62:03",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Nick shares his professional experience as an undergraduate educator and his pedagogical approach to challenging linear thinking, directly relating to the discussion about scientific models.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant, providing concrete details about his role and specific teaching philosophy, making it high-quality."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Nick expresses agreement with the previous speaker's critique of linear models and provides a detailed justification from his teaching experience, explaining how such models 'limit them so much'.",
+                "score": 3,
+                "score_justification": "The evaluation is constructive, clearly states agreement, and provides specific reasoning based on his professional experience."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Nick explicitly expresses positive affirmation and support for the previous speaker's idea by stating, 'it's a really wonderful point'.",
+                "score": 3,
+                "score_justification": "The utterance provides strong and explicit positive affirmation, clearly valuing the previous contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "02:04-02:07",
+        "transcript": "Do we have any any more minutes left?",
+        "speaking duration": 3,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:04",
+        "end_time": "62:07",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance explicitly asks about the remaining time in the meeting, which directly relates to managing the meeting flow and time, as per the code definition.",
+                "score": 2,
+                "score_justification": "The question is clear and directly addresses a functional aspect of meeting management (time), making it adequate/average."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "02:09-02:13",
+        "transcript": "Yeah, uh five minutes left, right? Ellen was going to say something.",
+        "speaking duration": 4,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:09",
+        "end_time": "62:13",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The utterance explicitly states 'five minutes left', which manages the meeting flow by indicating the remaining time.",
+                "score": 2,
+                "score_justification": "The utterance clearly states the remaining time, which is a functional act of managing the meeting process."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The utterance 'Ellen was going to say something' explicitly prompts Ellen to contribute to the discussion.",
+                "score": 2,
+                "score_justification": "The utterance directly invites a specific person to speak, which is an adequate act of inclusion."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "02:14-02:35",
+        "transcript": "Oh, I was just going to add to that and then it brings you to the question of which of these unexpected findings are are worth following and which ones are not and I feel like that is kind of the the biggest challenge of of our job. you know, we sort of started there with with Catherine's question.",
+        "speaking duration": 21,
+        "nods_others": 0,
+        "smile_self": 20,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:14",
+        "end_time": "62:35",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Ellen expands on the previous discussion about challenging rigid models by introducing the idea of discerning which unexpected findings are worth pursuing, framing it as a significant challenge.",
+                "score": 3,
+                "score_justification": "The utterance introduces a novel and relevant challenge, elaborating on its significance ('biggest challenge of our job') and connecting it to the broader context of the meeting."
+            },
+            "Information Seeking & Gap Identification": {
+                "explanation": "Ellen highlights a critical knowledge gap or unresolved problem regarding how to evaluate and prioritize unexpected scientific findings, posing it as a fundamental question.",
+                "score": 3,
+                "score_justification": "The utterance clearly and specifically identifies a crucial, complex gap in the scientific process (evaluating unexpected findings), making it a high-quality contribution."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "02:35-02:38",
+        "transcript": "Right, back to the circle.",
+        "speaking duration": 3,
+        "nods_others": 0,
+        "smile_self": 100,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:35",
+        "end_time": "62:38",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The word 'Right' explicitly acknowledges and affirms Ellen's preceding contribution.",
+                "score": 1,
+                "score_justification": "It is a token acknowledgment without further elaboration or strong positive affect."
+            },
+            "Summarization & Integration": {
+                "explanation": "The phrase 'back to the circle' synthesizes Ellen's point about returning to Catherine's initial question, integrating the current discussion with a previous theme.",
+                "score": 2,
+                "score_justification": "It accurately captures the cyclical nature of the discussion by linking the current point to a previous one, but it is very concise rather than comprehensive."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "02:39-02:39",
+        "transcript": "And any um",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:39",
+        "end_time": "62:39",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance 'And any um' is too short and incomplete to explicitly observe any code from the codebook, aligning with the guideline for utterances with only a few words like 'umm'.",
+                "score": 0,
+                "score_justification": "No code to score as the utterance is too minimal and incomplete to convey a clear meaning or function."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "02:40-02:54",
+        "transcript": "Additional thoughts that people want to share with the group?",
+        "speaking duration": 14,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:40",
+        "end_time": "62:54",
+        "annotations": {
+            "Participation & Inclusion": {
+                "explanation": "The utterance 'Additional thoughts that people want to share with the group?' explicitly invites all participants to contribute, aligning with the definition of inviting or encouraging others to contribute.",
+                "score": 1,
+                "score_justification": "The invitation is generic, asking for 'additional thoughts' from 'people' without specifying individuals or topics, making it a minimal/weak invitation."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "02:54-03:22",
+        "transcript": "In terms of the label and like the problems that come with the label, do we think it is the floor for itself and then it's hydrophobic? Do we think it is the large protein that we drag along? Do we think it's even a peptide that we append to the protein? Like if there was something that we wanted to focus on getting rid of in terms of the label, what would it be?",
+        "speaking duration": 28,
+        "nods_others": 0,
+        "smile_self": 10,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "62:54",
+        "end_time": "63:22",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The utterance asks multiple direct and specific questions, such as 'do we think it is the floor for itself and then it's hydrophobic?' and 'what would it be?', to identify the precise nature of the problem with the 'label' and guide the group's focus.",
+                "score": 3,
+                "score_justification": "The utterance is high-quality because it asks clear and specific questions, offering concrete possibilities to pinpoint the exact problem, which effectively moves the team forward."
+            }
+        }
+    },
+    {
+        "speaker": "Anna-Karin Gustavsson",
+        "timestamp": "03:25-04:07",
+        "transcript": "Yeah, I think people already touched upon the smaller the better, especially on the super resolution side, you know, you want to reduce that offset error uh and of course functionality, keep the functionality. Um but also, yeah. So when now more towards I guess super resolution imaging then and tracking too. But yeah, cell talking about synthetic dyes, uh you know, smaller dyes, photostable dyes, how to get those into live cells in a non-perturbative way and you know, optimize those and yeah.",
+        "speaking duration": 42,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Pointing",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "63:25",
+        "end_time": "64:07",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance expands on the existing idea of 'smaller the better' for labels by providing specific reasoning (reducing offset error in super-resolution) and concrete examples of challenges and desired characteristics for synthetic dyes (photostable, non-perturbative delivery).",
+                "score": 3,
+                "score_justification": "The idea is elaborated with specific technical details, reasoning, and concrete examples (offset error, synthetic dyes, photostable, non-perturbative delivery), making it high-quality and moving the discussion forward."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides specific technical information and expertise related to super-resolution imaging, offset error, functionality of labels, and the characteristics and challenges of synthetic dyes in live cells.",
+                "score": 3,
+                "score_justification": "The contribution is highly relevant and includes concrete, specific technical details (e.g., 'reduce that offset error,' 'smaller dyes, photostable dyes,' 'non-perturbative way into live cells') that demonstrate expertise and move the discussion forward."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "04:08-04:55",
+        "transcript": "I was going to mention maybe um for the different questions uh that that that we're looking at. Um some of the feature, you know, some of the features are more important to get rid of than others. Um we're looking at I guess diffusion uh within the cells, uh you know, maybe the size definitely we want a smaller and single molecule tracking we don't want the the error. Um but for some of the I guess when we look at some of the um uh separation process, we do want we do consider the hydrophobic uh aspect, you know, whether that's going to be perturbed.",
+        "speaking duration": 47,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "64:08",
+        "end_time": "64:55",
+        "annotations": {
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "Jin provides specific details about what their group considers important for different scientific questions, such as the impact of size on diffusion and single molecule tracking, and the consideration of hydrophobicity for separation processes.",
+                "score": 3,
+                "score_justification": "The utterance provides relevant and concrete details about specific scientific considerations and their implications for different experimental contexts, demonstrating high-quality expertise sharing."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "Jin evaluates the importance of different label features, stating that some are 'more important to get rid of than others,' and provides specific critiques regarding size for single molecule tracking and considerations for hydrophobicity in separation processes.",
+                "score": 3,
+                "score_justification": "The utterance offers a nuanced evaluation of label features, providing specific reasons and contextual considerations for their importance in different scientific applications, which is highly constructive."
+            }
+        }
+    },
+    {
+        "speaker": "Seu Sim",
+        "timestamp": "05:24-05:54",
+        "transcript": "For a small molecule labeling, are you more thinking towards endogenous machinery, hijacking them and then using that as you know, way to way to sparsely label your particles? I mean, I just wanted to know what people think and like obviously you can't just like force feed the cells a lot of fluorophores and hope that you've achieved selective labelings and defined populations.",
+        "speaking duration": 30,
+        "nods_others": 0,
+        "smile_self": 30,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "65:24",
+        "end_time": "65:54",
+        "annotations": {
+            "Information Seeking & Gap Identification": {
+                "explanation": "The speaker asks a direct and specific question about a particular method (endogenous machinery for small molecule labeling) and explicitly states the desire to know what others think, identifying a gap in shared understanding or direction.",
+                "score": 3,
+                "score_justification": "The question is highly specific, detailing a particular method for small molecule labeling, which makes it very concrete and effective in seeking targeted information."
+            },
+            "Knowledge Contribution & Expertise Signal": {
+                "explanation": "The speaker provides factual information about a known limitation or challenge in cell labeling, demonstrating expertise and contributing relevant background knowledge to the discussion.",
+                "score": 3,
+                "score_justification": "The statement provides concrete and relevant factual information about the limitations of a labeling approach, which is valuable for the team's understanding and problem-solving."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "06:00-06:01",
+        "transcript": "I think a lot of people will",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "66:00",
+        "end_time": "66:01",
+        "annotations": {
+            "None": {
+                "explanation": "The utterance is an incomplete sentence and does not explicitly convey enough information to apply any of the provided codes.",
+                "score": 0,
+                "score_justification": "The utterance is too short and incomplete to be scored against any specific code criteria."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "06:24-07:13",
+        "transcript": "In an ideal world, oh, I was just going to say in an ideal world though, you could imagine developing like an endogenous protein ligase or something that would be able to tag a little fluorophore on every protein that it encounters and then you would get a bright fluorescent tag on your protein of interest and you could track it and that would be, you know, a teeny tiny little tag on a single on a single protein so you could imagine in an ideal world that that would be possible but the amount of evolution in terms of protein evolution to evolve something that's specific for your protein of interest is kind of problematic on on a kind of global scale if you envision doing this for like 20,000 proteins that exist inside the cell to get 20,000 specific ligases um",
+        "speaking duration": 49,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "Open Palms",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "66:24",
+        "end_time": "67:13",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "The utterance introduces a new, albeit hypothetical, idea of developing an endogenous protein ligase to tag proteins, expanding on the ongoing discussion about labeling strategies.",
+                "score": 3,
+                "score_justification": "The idea is novel, relevant to the discussion, and elaborated with specific details about its function and desired outcome (teeny tiny tag, tracking)."
+            },
+            "Evaluation & Feedback": {
+                "explanation": "The utterance immediately critiques the feasibility of the proposed ideal-world solution by highlighting the significant problem of evolving specific ligases for 20,000 proteins.",
+                "score": 3,
+                "score_justification": "The critique is constructive, provides clear reasoning for why the idea is problematic (amount of protein evolution, global scale for 20,000 proteins), and is highly specific."
+            }
+        }
+    },
+    {
+        "speaker": "Ellen Sletten",
+        "timestamp": "07:13-07:16",
+        "transcript": "We need like a a protag for fluorophores.",
+        "speaking duration": 3,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "Yes",
+        "overlap": "Yes",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "67:13",
+        "end_time": "67:16",
+        "annotations": {
+            "Idea Generation & Development": {
+                "explanation": "Ellen proposes a novel conceptual solution, 'a protag for fluorophores,' which builds on Katharine's discussion of the challenges in developing specific protein ligases for labeling.",
+                "score": 3,
+                "score_justification": "The idea is novel, highly relevant to the specific problem discussed, and conceptually specific by using the term 'protag' to suggest a targeted molecular engineering approach."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "07:16-07:17",
+        "transcript": "Yeah.",
+        "speaking duration": 1,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "67:16",
+        "end_time": "67:17",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "Katharine's 'Yeah' serves as a minimal affirmation of Ellen's preceding statement, recognizing her contribution without adding further content.",
+                "score": 1,
+                "score_justification": "The utterance is a token acknowledgment, directly matching the example for a minimal/weak score."
+            }
+        }
+    },
+    {
+        "speaker": "Katharine White",
+        "timestamp": "07:17-07:17",
+        "transcript": "Yeah.",
+        "speaking duration": 0,
+        "nods_others": 0,
+        "smile_self": 0,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "67:17",
+        "end_time": "67:17",
+        "annotations": {
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The utterance 'Yeah.' serves as a simple affirmation, acknowledging and agreeing with the previous speaker's contribution.",
+                "score": 1,
+                "score_justification": "The utterance is a token acknowledgment, fitting the 'Minimal/weak' criterion for this code."
+            }
+        }
+    },
+    {
+        "speaker": "Jin Zhang",
+        "timestamp": "07:23-08:47",
+        "transcript": "I hope yeah, I think our group everyone uh has uh discussed, you know, presented uh viewpoints and uh participated in discussion and we have uh 59 seconds to go back and then thank you uh Gokul for you know, recording and Melika for reporting and I think if people can chime in also a little bit if there are some points that you want to add at the end of Melika's uh reporting. Great. Thank you so much and thank you for great discussion. We'll see you at the um in the main meeting room.",
+        "speaking duration": 84,
+        "nods_others": 0,
+        "smile_self": 50,
+        "smile_other": 0,
+        "distracted_others": 0,
+        "hand_gesture": "None",
+        "interuption": "No",
+        "overlap": "No",
+        "screenshare": "Yes",
+        "screenshare_content": "The screen shows a document titled \"Transformative Physics Questions\". The document contains text and formatting, but no changes are made during this segment.",
+        "start_time": "67:23",
+        "end_time": "68:47",
+        "annotations": {
+            "Process & Task Management": {
+                "explanation": "The speaker manages the meeting flow by noting the remaining time and directing participants to the next meeting room, clarifying expectations for the meeting's conclusion.",
+                "score": 2,
+                "score_justification": "The utterance provides clear structuring by managing time and directing participants to the next meeting location."
+            },
+            "Acknowledgment, Support, & Interest": {
+                "explanation": "The speaker explicitly thanks specific individuals (Gokul and Melika) for their contributions and expresses gratitude for the group's discussion.",
+                "score": 2,
+                "score_justification": "The speaker explicitly thanks specific individuals for their contributions and the group for the discussion, which is a clear and direct acknowledgment."
+            },
+            "Participation & Inclusion": {
+                "explanation": "The speaker explicitly invites others to 'chime in' if they have additional points, encouraging further contribution from the group.",
+                "score": 2,
+                "score_justification": "The utterance provides a general invitation for anyone to contribute, which is a clear but not highly specific encouragement for participation."
+            }
+        }
+    }
+]
