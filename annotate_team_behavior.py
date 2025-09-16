@@ -218,7 +218,8 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
             comm_prompt = f"""
                 You are assisting with inductive qualitative coding of a long multi-speaker meeting transcript. These transcripts come from recorded meetings between groups of scientists 
                 who are meeting for the first time. They have been assigned to discuss ideas within pre-determined scientific problem domains. After these meetings, 
-                some subset of participants may choose to form teams and submit grant proposals together. Your job is to analyze the transcripts to understand communication behaviors, predict possible team formation, and estimate funding likelihood.
+                some subset of participants may choose to form teams and submit grant proposals together. 
+                Your job is to analyze the transcripts to understand communication behaviors that may be detrimental to possible team formation, and estimate funding likelihood.
                 
                 You will analyze ONLY the provided utterance (not the context) and output structured JSON.
 
@@ -242,16 +243,10 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 * justification: justify your chosen code with rationales and exact quote (verbatim substring from the utterance) as evidence.
                 - If no relevant behavior for an utterance, include a single item: {{"code_name":"none"}} for that utterance.
 
-                (2) QUALITY ASSESSMENT
-                For each identified code (that is not "none"), choose a code to describe the QUALITY of the communication behavior based on its potential to lead to team formation and funding success:
-                - evaluate and code quality of the behavior based on it's possibility to indicate successful collaboration and lead to forming teams and funding success.
-                - quality_code: a short phrase (1-3 words) description of the quality of the behavior.
-                - quality_justification: one sentence grounded in rationale and utterance context.
-
                 CONSTRAINTS
                 - Do NOT invent content beyond the utterance text.
                 - Keep code_name controlled and short; prefer reusing existing names if possible.
-                - You can choose more than 1 behavior (maximum 3) but only the additional ones are or exteremely salient.
+                - You can choose more than 1 behavior (maximum 3) but only the additional ones are all explicitely observed in the utterance.
                 - If the utterance only has a few words such as "yep", "umm", "I see", always choose the code "none".
                 - Use provided char offsets as-is; include them on each coded behavior.
 
@@ -262,8 +257,6 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                         "code_name": "<short>",
                         "definition": "<1-2 sentences>",
                         "justification": "<1-2 sentences with verbatim quote>",
-                        "quality_code": "<short phrase (2-3 words)>",
-                        "quality_justification": "<one sentence>"
                         }}, 
                         {{"code_name":"none"}} (if no code applies, no quality code is needed)
                     ]
