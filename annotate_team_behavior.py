@@ -76,7 +76,28 @@ def init():
 
     """
 
-    return client, code_book_v3
+    code_book_v4 = """
+    (1) Idea Management: Behaviors that introduce, elaborate, or block the flow of ideas. Focus = idea flow (are ideas being generated, elaborated, or stifled?). Examples: "Let's run a pilot with undergraduates to test feasibility."; "That's a stupid idea, let's not waste time."
+
+    (2) Information Exchange: Asking questions or surfacing knowledge gaps — or discouraging inquiry. Focus = idea flow (are ideas being generated, elaborated, or stifled?). Examples: "Do we have the 2020 MRI dataset with patient metadata?"; "Why are you even asking that? Everyone should already know."
+
+    (3) Knowledge Sharing: Providing relevant facts/expertise, or withholding/misleading info. Focus = questions asked / gaps raised (how information is sought). Examples: "In my lab we used hierarchical clustering on 500 samples, accuracy was 85%."; "I know everything about this, so there's no need to discuss further."
+
+    (4) Evaluation Practices: Assessing the merit, quality, or feasibility of ideas. Focus = information given (what knowledge is being shared, accurate or not). Examples: "This won't scale because of data size — let's test it on 10% first."; "That idea is garbage, it'll never work."
+
+    (5) Relational Climate: Expressing acknowledgment, support, enthusiasm, or sarcasm/mocking. Focus = interpersonal tone (how people treat each other socially). Examples: "Thanks, Alex, that explanation really helped me."; "Yeah, whatever you say." / "That's a dumb question."
+
+    (6) Participation Dynamics: Including/excluding members; balancing or dominating contributions. Focus = interpersonal tone (how people treat each other socially). Examples: "Shannon, since you worked on preprocessing, what's your take?"; "We don't need your input here." / Constant interruptions.
+
+    (7) Coordination & Decision Practices: Structuring process, setting goals, confirming decisions, or derailing/forcing closure. Focus = who gets to speak (how participation is distributed). Examples: "Our goal is to finish methods by Friday. Lisa will draft, Alex will review. We all agree on option B."; "Forget the agenda, we're doing it my way, end of discussion."
+
+    (8) Integration Practices: Summarizing/synthesizing contributions, or distorting/misrepresenting them. Focus = how contributions are combined (accurately or inaccurately). Examples: "So far, we've considered Alex's clustering idea and Lisa's supervised method, with pros and cons of each."; "Everyone agrees with my idea" (false).
+
+    """
+
+    
+
+    return client, code_book_v4
 
 # Save the path dictionary to a JSON file
 def save_path_dict(path_dict, file_name, destdir):
@@ -134,75 +155,68 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
             - For each code you choose, provide a json object with the following fields:
                 code_name: the name of the code from the codebook that applies to the utterance;
                 explanation: Justify your reasoning on why this code applies in 1 sentence, using evidence from the utterance and context, and definitions from the codebook;
-                score: a numerical score (0, 1, 2, or 3) based on the quality criteria below;
+                score: a numerical score (-1, 0, 1, or 2) based on the quality criteria below;
                 score_justification: explain why you gave this score in 1 sentence;
 
             ** Codebook for Annotation:**
             {codebook}
 
-            ** Scoring Criteria (0-3 scale for each code):**
-            0 = Negative/dysfunctional (hurts the process)
-            1 = Minimal/weak (barely functional)
-            2 = Adequate/average (functional, but not special)
-            3 = High-quality/exceptional (moves team forward and makes team more effective, very concrete and specific)
+            ** Scoring Criteria (-1 to 2 scale for each code):**
+            -1 = Blocks/dismisses ideas or hurts the process
+            0 = Vague/minimal contribution (barely functional)
+            1 = Clear contribution with some detail (functional, but not special)
+            2 = Novel, elaborated, reasoned contribution (moves team forward and makes team more effective)
 
-            Idea Generation & Development:
-            0 = Negative/dysfunctional. Example: "That's a stupid idea." (dismissive, hurts collaboration)
-            1 = Minimal/weak. Example: "We should try something different." (vague, no detail, not actionable)
-            2 = Adequate/average. Example: "Let's use more data for this." (clear direction but undeveloped)
-            3 = High-quality/exceptional. Example: "Building on Alex's idea, we could run a small pilot study with undergraduates to check feasibility." (novel, relevant, elaborated)
+            Idea Management:
+            -1 = Blocks/dismisses ideas. Example: "That's a stupid idea, let's not waste time." (dismissive, hurts collaboration)
+            0 = Vague/minimal idea. Example: "We should try something else." (vague, no detail, not actionable)
+            1 = Clear idea with some detail. Example: "Let's use more data for this." (clear direction but undeveloped)
+            2 = Novel, elaborated, reasoned idea building on others. Example: "Building on Alex's idea, we could run a small pilot study with undergraduates to check feasibility." (novel, relevant, elaborated)
 
-            Information Seeking & Gap Identification:
-            0 = Negative/dysfunctional. Example: "I don't care about that." (dismissive, blocks information flow)
-            1 = Minimal/weak. Example: "I don't know." (stated, no follow-up)
-            2 = Adequate/average. Example: "Do we have the dataset?" (clear but general)
-            3 = High-quality/exceptional. Example: "Do we have the labeled MRI dataset from 2020?" (clear + specific)
+            Information Exchange:
+            -1 = Dismissive/rhetorical/accusatory questions. Example: "Why are you even asking that? Everyone should already know." (dismissive, blocks information flow)
+            0 = Vague. Example: "I don't know." (stated, no follow-up)
+            1 = Clear but general. Example: "Do we have the dataset for this project?" (clear but general)
+            2 = Precise, targeted, highly relevant question/gap. Example: "Do we have the labeled MRI dataset from 2020 with patient metadata?" (clear + specific)
 
-            Knowledge Contribution & Expertise Signal:
-            0 = Negative/dysfunctional. Example: "That's not how it works in my field." (dismissive, creates barriers)
-            1 = Minimal/weak. Example: "My favorite class was statistics." (off-topic, not relevant to task)
-            2 = Adequate/average. Example: "I used clustering in my lab" (relevant fact/expertise)
-            3 = High-quality/exceptional. Example: "In my lab we used hierarchical clustering with 500 samples and got 85% accuracy" (relevant + concrete detail)
+            Knowledge Sharing:
+            -1 = Irrelevant, misleading, or withholding. Example: "I know everything about this, so there's no need to discuss further." (dismissive, creates barriers)
+            0 = General claim. Example: "I've done clustering before." (off-topic, not relevant to task)
+            1 = Relevant contribution with some detail. Example: "I used clustering in my lab" (relevant fact/expertise)
+            2 = Accurate, detailed, directly useful knowledge. Example: "In my lab we used hierarchical clustering with 500 samples and got 85% accuracy" (relevant + concrete detail)
 
-            Evaluation & Feedback:
-            0 = Negative/dysfunctional. Example: "That's completely wrong." (dismissive, harsh, no constructive value)
-            1 = Minimal/weak. Example: "That's wrong." (dismissive, no reason, harsh)
-            2 = Adequate/average. Example: "That could work because it's efficient." (judgment with minimal reason)
-            3 = High-quality/exceptional. Example: "I don't think this will scale because it is very expensive. Instead, we could test with a smaller subset first." (constructive critique with reasoning + suggestions)
+            Evaluation Practices:
+            -1 = Harsh/dismissive judgment, no reasoning. Example: "That idea is garbage, it'll never work." (dismissive, harsh, no constructive value)
+            0 = Simple approval/disapproval. Example: "That's fine." (dismissive, no reason, harsh)
+            1 = Judgment with some reasoning. Example: "That could work because it's efficient." (judgment with minimal reason)
+            2 = Constructive, reasoned, actionable feedback. Example: "I don't think this will scale because it is very expensive. Instead, we could test with a smaller subset first." (constructive critique with reasoning + suggestions)
 
-            Acknowledgment, Support, & Interest:
-            0 = Negative/dysfunctional. Example: "Whatever." (dismissive, undermines others)
-            1 = Minimal/weak. Example: "Yeah." / "Okay." (token acknowledgment)
-            2 = Adequate/average. Example: "That's a good point, Alex." / "Interesting idea." (explicit thanks, praise, or mild curiosity)
-            3 = High-quality/exceptional. Example: "I really appreciate how you explained that—it cleared things up for me." (strong acknowledgment/enthusiasm)
+            Relational Climate:
+            -1 = Sarcasm, belittling, dismissive of person. Example: "Yeah, whatever you say." / "That's a dumb question." (dismissive, undermines others)
+            0 = Token acknowledgment. Example: "Yeah." / "Okay." (token acknowledgment)
+            1 = Explicit thanks/praise/interest. Example: "That's a good point, Alex." / "Interesting idea." (explicit thanks, praise, or mild curiosity)
+            2 = Strong acknowledgment that fosters trust or curiosity. Example: "I really appreciate how you explained that—it cleared things up for me." (strong acknowledgment/enthusiasm)
 
-            Participation & Inclusion:
-            0 = Negative/dysfunctional. Example: "I don't want to hear from anyone else." (excludes others, blocks participation)
-            1 = Minimal/weak. Example: "Any thoughts?" (generic invite)
-            2 = Adequate/average. Example: "Alex, what do you think?" (direct invite, general)
-            3 = High-quality/exceptional. Example: "Shannon, since you worked on the dataset, what's your view?" (direct invite + topic/expertise specified)
+            Participation Dynamics:
+            -1 = Excluding others or dominating talk. Example: "We don't need your input here." / Constant interruptions. (excludes others, blocks participation)
+            0 = Generic invite. Example: "Any thoughts?" (generic invite)
+            1 = Direct invite. Example: "Alex, what do you think?" (direct invite, general)
+            2 = Targeted invite tied to expertise/topic. Example: "Shannon, since you worked on the dataset, what's your view?" (direct invite + topic/expertise specified)
 
-            Process & Task Management:
-            0 = Negative/dysfunctional. Example: "This meeting is a waste of time." (undermines process)
-            1 = Minimal/weak. Example: "Let's stay on track" (vague)
-            2 = Adequate/average. Example: "Let's move to the next agenda item" (clear structuring)
-            3 = High-quality/exceptional. Example: "Our goal is to finish methods by Friday, and Lisa will draft it" (clear structuring + detail)
+            Coordination & Decision Practices:
+            -1 = Derails process, dominating/premature closure. Example: "Forget the agenda, we're doing it my way, end of discussion." (undermines process)
+            0 = Vague/ignored process comments. Example: "Let's stay on track" (vague)
+            1 = Clear agenda/goals/decisions, partly enacted. Example: "Let's move to the next agenda item" (clear structuring)
+            2 = Explicit goals, effective coordination, consensus decisions linked to tasks. Example: "Our goal is to finish methods by Friday, and Lisa will draft it" (clear structuring + detail)
 
-            Decision & Confirmation:
-            0 = Negative/dysfunctional. Example: "I don't care what we decide." (undermines decision-making)
-            1 = Minimal/weak. Example: "I guess that's fine." (ambiguous closure, unclear if all agree)
-            2 = Adequate/average. Example: "So maybe we'll go with option B?" (suggested decision, unclear consensus)
-            3 = High-quality/exceptional. Example: "Okay, we all agree on option B. That's the plan." (explicit confirmation of consensus)
+            Integration Practices:
+            -1 = Distorted, biased, inaccurate summary. Example: "Everyone agrees with my idea" (false). (dismissive, undermines progress)
+            0 = Incomplete recap. Example: "So yeah, we talked about some things." (incomplete/inaccurate summary)
+            1 = Accurate summary of some contributions. Example: "We've talked about data collection, but not analysis yet." (accurate but partial)
+            2 = Balanced, comprehensive integration used for closure. Example: "So far, we've considered A and B approaches. Alex raised feasibility, Lisa added cost concerns." (accurate, comprehensive, integrating multiple inputs)
 
-            Summarization & Integration:
-            0 = Negative/dysfunctional. Example: "This whole discussion was pointless." (dismissive, undermines progress)
-            1 = Minimal/weak. Example: "So yeah, we talked about some things." (incomplete/inaccurate summary)
-            2 = Adequate/average. Example: "We've talked about data collection, but not analysis yet." (accurate but partial)
-            3 = High-quality/exceptional. Example: "So far, we've considered A and B approaches. Alex raised feasibility, Lisa added cost concerns." (accurate, comprehensive, integrating multiple inputs)
-
-            ** Prior Conversation Context (previous 5 utterances):**
-            {json.dumps(merged_list[max(0, i-4):i+1], indent=2)}  # Include previous 5 utterances up to the current one
-
+            ** Prior Conversation Context (previous and following 3 utterances):**
+            {json.dumps(merged_list[max(0, i-3):min(len(merged_list), i+3)], indent=2)} 
             ** Utterance to Annotate:**
             "{utterance}"
 
@@ -224,7 +238,7 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 You will analyze ONLY the provided utterance (not the context) and output structured JSON.
 
                 GOAL
-                - Identify communication strategies/behaviors relevant to collaboration, team formation, and likelihood of grant success.
+                - Identify communication strategies/behaviors that are exclitely observed in the utterance and may be detrimental to collaboration, team formation, and likelihood of grant success.
                 - Multiple strategies can appear in one utterance; code each distinctly.
                 - If an utterance has no relevant behavior, record "none" for it.
 
@@ -235,10 +249,10 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
                 TASKS
                 (1) INDUCTIVE CODING
                 For each utterance:
-                - Identify zero or more behaviors or strategies(codes) that appears in this utterance. Apply code based on what is explicitly observed from the utterance, not inferred intent or motivation.
+                - Identify zero or more behaviors or strategies(codes) that are explicitly observed in this utterance and may be detrimental to collaboration, team formation, and likelihood of grant success. Apply code based on what is explicitly observed from the utterance, not inferred intent or motivation.
                 Use the provided context to understand what has been previously or later discussed but do not code the behaviors in the context.
                 - For each code:
-                * code_name: short (e.g., "ask question", "offer criticism", "propose idea" .... etc).
+                * code_name: short (e.g., "shut down idea", "personal attack" .... etc).
                 * definition: 1–2 sentence definition (your words).
                 * justification: justify your chosen code with rationales and exact quote (verbatim substring from the utterance) as evidence.
                 - If no relevant behavior for an utterance, include a single item: {{"code_name":"none"}} for that utterance.
@@ -602,7 +616,7 @@ def main():
     
     # Process the output directory
     print(f"Processing outputs in: {args.output_dir}")
-    annotate_and_merge_outputs(client, args.output_dir, codebook, 'gm_v3', type='deductive')
+    annotate_and_merge_outputs(client, args.output_dir, codebook, 'gm_v4', type='deductive')
     print("\nAnnotation and merging complete!")
 
 if __name__ == '__main__':
