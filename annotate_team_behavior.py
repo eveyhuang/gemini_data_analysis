@@ -79,19 +79,19 @@ def init():
     code_book_v4 = """
     (1) Idea Management: Behaviors that introduce, elaborate, or block the flow of ideas. Focus = idea flow (are ideas being generated, elaborated, or stifled?). Examples: "Let's run a pilot with undergraduates to test feasibility."; "That's a stupid idea, let's not waste time."
 
-    (2) Information Exchange: Asking questions or surfacing knowledge gaps — or discouraging inquiry. Focus = idea flow (are ideas being generated, elaborated, or stifled?). Examples: "Do we have the 2020 MRI dataset with patient metadata?"; "Why are you even asking that? Everyone should already know."
+    (2) Information Seeking: Asking questions, surfacing gaps, or discouraging inquiry. Focus = questions asked / gaps raised (how information is sought). Examples: "Do we have the 2020 MRI dataset with patient metadata?"; "Why are you even asking that? Everyone should already know."
 
-    (3) Knowledge Sharing: Providing relevant facts/expertise, or withholding/misleading info. Focus = questions asked / gaps raised (how information is sought). Examples: "In my lab we used hierarchical clustering on 500 samples, accuracy was 85%."; "I know everything about this, so there's no need to discuss further."
+    (3) Knowledge Sharing: Providing relevant facts/expertise, or withholding/misleading info. Focus = information given (what knowledge is being shared). Examples: "In my lab we used hierarchical clustering on 500 samples, accuracy was 85%."; "I know everything about this, so there's no need to discuss further."
 
-    (4) Evaluation Practices: Assessing the merit, quality, or feasibility of ideas. Focus = information given (what knowledge is being shared, accurate or not). Examples: "This won't scale because of data size — let's test it on 10% first."; "That idea is garbage, it'll never work."
+    (4) Evaluation Practices: Assessing the merit, quality, or feasibility of ideas. Focus = judgments of ideas (are ideas being critiqued, supported, or shut down?). Examples: "This won't scale because of data size — let's test it on 10% first."; "That idea is garbage, it'll never work."
 
-    (5) Relational Climate: Expressing acknowledgment, support, enthusiasm, or sarcasm/mocking. Focus = interpersonal tone (how people treat each other socially). Examples: "Thanks, Alex, that explanation really helped me."; "Yeah, whatever you say." / "That's a dumb question."
+    (5) Relational Climate: Expressing acknowledgment, support, enthusiasm, or sarcasm/mocking/attacks. Focus = interpersonal tone (how people treat each other socially). Examples: "Thanks, Alex, that explanation really helped me."; "Yeah, whatever you say." / "That's a dumb question."
 
-    (6) Participation Dynamics: Including/excluding members; balancing or dominating contributions. Focus = interpersonal tone (how people treat each other socially). Examples: "Shannon, since you worked on preprocessing, what's your take?"; "We don't need your input here." / Constant interruptions.
+    (6) Participation Dynamics: Including/excluding members; balancing or dominating contributions. Focus = who gets to speak (how participation is distributed). Examples: "Shannon, since you worked on preprocessing, what's your take?"; "We don't need your input here." / Constant interruptions.
 
-    (7) Coordination & Decision Practices: Structuring process, setting goals, confirming decisions, or derailing/forcing closure. Focus = who gets to speak (how participation is distributed). Examples: "Our goal is to finish methods by Friday. Lisa will draft, Alex will review. We all agree on option B."; "Forget the agenda, we're doing it my way, end of discussion."
+    (7) Coordination and Decision Practices: Structuring process, setting goals, confirming decisions, or derailing/forcing closure. Focus = workflow and closure (how the team organizes and decides). Examples: "Our goal is to finish the methods by Friday. Lisa will draft, Alex will review. We all agree on option B."; "Forget the agenda, we're doing it my way, end of discussion."
 
-    (8) Integration Practices: Summarizing/synthesizing contributions, or distorting/misrepresenting them. Focus = how contributions are combined (accurately or inaccurately). Examples: "So far, we've considered Alex's clustering idea and Lisa's supervised method, with pros and cons of each."; "Everyone agrees with my idea" (false).
+    (8) Integration Practices: Summarizing/synthesizing contributions, or distorting/misrepresenting them. Focus = how contributions are combined. Examples: "So far, we've considered Alex's clustering idea and Lisa's supervised method, with pros and cons of each."; "Everyone agrees with my idea" (false).
 
     """
 
@@ -173,7 +173,7 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
             1 = Clear idea with some detail. Example: "Let's use more data for this." (clear direction but undeveloped)
             2 = Novel, elaborated, reasoned idea building on others. Example: "Building on Alex's idea, we could run a small pilot study with undergraduates to check feasibility." (novel, relevant, elaborated)
 
-            Information Exchange:
+            Information Seeking:
             -1 = Dismissive/rhetorical/accusatory questions. Example: "Why are you even asking that? Everyone should already know." (dismissive, blocks information flow)
             0 = Vague. Example: "I don't know." (stated, no follow-up)
             1 = Clear but general. Example: "Do we have the dataset for this project?" (clear but general)
@@ -192,7 +192,7 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
             2 = Constructive, reasoned, actionable feedback. Example: "I don't think this will scale because it is very expensive. Instead, we could test with a smaller subset first." (constructive critique with reasoning + suggestions)
 
             Relational Climate:
-            -1 = Sarcasm, belittling, dismissive of person. Example: "Yeah, whatever you say." / "That's a dumb question." (dismissive, undermines others)
+            -1 = Sarcasm, belittling, dismissive of person, or attacks. Example: "Yeah, whatever you say." / "That's a dumb question." (dismissive, undermines others)
             0 = Token acknowledgment. Example: "Yeah." / "Okay." (token acknowledgment)
             1 = Explicit thanks/praise/interest. Example: "That's a good point, Alex." / "Interesting idea." (explicit thanks, praise, or mild curiosity)
             2 = Strong acknowledgment that fosters trust or curiosity. Example: "I really appreciate how you explained that—it cleared things up for me." (strong acknowledgment/enthusiasm)
@@ -203,7 +203,7 @@ def annotate_utterances(client, merged_list, codebook, type='deductive'):
             1 = Direct invite. Example: "Alex, what do you think?" (direct invite, general)
             2 = Targeted invite tied to expertise/topic. Example: "Shannon, since you worked on the dataset, what's your view?" (direct invite + topic/expertise specified)
 
-            Coordination & Decision Practices:
+            Coordination and Decision Practices:
             -1 = Derails process, dominating/premature closure. Example: "Forget the agenda, we're doing it my way, end of discussion." (undermines process)
             0 = Vague/ignored process comments. Example: "Let's stay on track" (vague)
             1 = Clear agenda/goals/decisions, partly enacted. Example: "Let's move to the next agenda item" (clear structuring)
