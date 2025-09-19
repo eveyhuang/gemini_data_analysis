@@ -140,7 +140,7 @@ class BatchAnnotator:
             pass
         return False
     
-    def run_annotation_for_folder(self, folder_path, timeout=3600):
+    def run_annotation_for_folder(self, folder_path, timeout=36000):
         """Run the annotation script for a specific folder."""
         folder_name = os.path.basename(folder_path)
         self.log(f"Starting annotation for: {folder_name}")
