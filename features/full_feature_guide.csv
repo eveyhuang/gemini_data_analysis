@@ -1,32 +1,36 @@
 Feature,How to Compute
+meeting_length,total speaking length from session data
 num_members,number of unique names in 'all_speakers'
 num_interruption,count number of times where "interruption" has value of "Yes"
-time_screenshare,sum the value of "speaking_duration" where "screenshare" is "Yes"
-num_propose_new_idea,count number of "propose new idea"
-num_develop_idea,count number of "develop idea"
-num_ask_question,count number of "ask question"
-num_signal_expertise,count number of "signal expertise"
-num_identify_gap,count number of "identify gap"
-num_acknowledge_contribution,count number of "acknowledge contribution"
-num_supportive_response,count number of "supportive response"
-num_critical_response,count number of "critical response"
-num_offer_feedback,count number of "offer feedback"
-num_summarize_conversation,count number of "summarize conversation"
-num_express_humor,count number of "express humor"
-num_encourage_participation,count number of "encourage participation"
-num_process_management,count number of "process management"
-num_assign_task,count numer of "assign task"
-num_clarify_goal,count number of "clarify goal"
-num_confirm_decision,count number of "confirm decision"
-num_people_ask_question,count number of unique speakers who have used "ask question"
-num_people_identify_gap,count numer of unique speakers who have used "identify gap"
-num_people_supportive_response,count numer of unique speakers who have used "supportive response"
-num_people_critical_response,count numer of unique speakers who have used "critical response"
-num_people_offer_feedback,count numer of unique speakers who have used "offer feedback"
-num_people_summarize_conversation,count numer of unique speakers who have used "summarize conversation"
-num_people_express_humor,count numer of unique speakers who have used "express humor"
-num_people_encourage_participation,count numer of unique speakers who have used "encourage participation"
-num_people_process_management,count numer of unique speakers who have used "process management"
-num_people_assign_task,count numer of unique speakers who have used "assign task"
-num_people_clarify_goal,count numer of unique speakers who have used "clarify goal"
-num_people_confirm_decision,count numer of unique speakers who have used "confirm decision"
+percent_time_screenshare,percentage of meeting time spent on screenshare (sum speaking_duration where screenshare="Yes" / meeting_length * 100)
+num_idea_management,count number of "Idea Management" annotations
+num_information_seeking,count number of "Information Seeking" annotations
+num_knowledge_sharing,count number of "Knowledge Sharing" annotations
+num_evaluation_practices,count number of "Evaluation Practices" annotations
+num_relational_climate,count number of "Relational Climate" annotations
+num_participation_dynamics,count number of "Participation Dynamics" annotations
+num_coordination_decision,count number of "Coordination and Decision Practices" annotations
+num_integration_practices,count number of "Integration Practices" annotations
+num_people_idea_management,count number of unique speakers who have used "Idea Management"
+num_people_information_seeking,count number of unique speakers who have used "Information Seeking"
+num_people_knowledge_sharing,count number of unique speakers who have used "Knowledge Sharing"
+num_people_evaluation_practices,count number of unique speakers who have used "Evaluation Practices"
+num_people_relational_climate,count number of unique speakers who have used "Relational Climate"
+num_people_participation_dynamics,count number of unique speakers who have used "Participation Dynamics"
+num_people_coordination_decision,count number of unique speakers who have used "Coordination and Decision Practices"
+num_people_integration_practices,count number of unique speakers who have used "Integration Practices"
+mean_score_idea_management,mean score of all "Idea Management" annotations
+mean_score_information_seeking,mean score of all "Information Seeking" annotations
+mean_score_knowledge_sharing,mean score of all "Knowledge Sharing" annotations
+mean_score_evaluation_practices,mean score of all "Evaluation Practices" annotations
+mean_score_relational_climate,mean score of all "Relational Climate" annotations
+mean_score_participation_dynamics,mean score of all "Participation Dynamics" annotations
+mean_score_coordination_decision,mean score of all "Coordination and Decision Practices" annotations
+mean_score_integration_practices,mean score of all "Integration Practices" annotations
+mean_score_overall,mean score of all annotations across all codes
+negative_utterance_ratio,proportion of utterances that contain at least one -1 score
+positive_intensity,proportion of utterances that contain at least one score of 2
+num_facilitator,number of unique facilitators in the session
+facilitator_dominance_ratio,proportion of utterances from facilitators (facilitator utterances / total utterances)
+facilitator_high_quality_ratio,proportion of facilitator utterances that contain at least one score of 2
+facilitator_average_score,mean score of all annotations from facilitator utterances
