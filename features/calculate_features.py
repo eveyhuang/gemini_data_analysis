@@ -145,8 +145,14 @@ def calculate_features(data):
         all_scores.extend(code_scores)
     features['mean_score_overall'] = np.mean(all_scores) if all_scores else 0.0
     
-    # Calculate negative utterance ratio (proportion of utterances with -1 scores)
+    # Calculate total score (sum of all scores)
+    features['total_score'] = sum(all_scores) if all_scores else 0.0
+    
+    # Calculate total utterances
     total_utterances = len(utterances)
+    features['total_utterances'] = total_utterances
+    
+    # Calculate negative utterance ratio (proportion of utterances with -1 scores)
     features['negative_utterance_ratio'] = negative_utterances / total_utterances if total_utterances > 0 else 0.0
     
     # Calculate positive intensity (proportion of utterances with score 2)
