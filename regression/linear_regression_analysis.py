@@ -14,7 +14,7 @@ from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
-def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num_funded_teams']):
+def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num_funded_teams'], control_vars=None):
     """
     Run individual regressions for each feature against each outcome variable.
     
@@ -22,6 +22,7 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
         df: DataFrame containing the data
         feature_cols: List of feature column names
         outcome_vars: List of outcome variable names
+        control_vars: List of control variable names (optional)
     
     Returns:
         DataFrame with detailed regression results
@@ -29,7 +30,18 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
     
     results = []
     
+    # Handle control variables
+    if control_vars is None:
+        control_vars = []
+    else:
+        # Filter out control variables from feature columns to avoid double inclusion
+        feature_cols = [col for col in feature_cols if col not in control_vars]
+        print(f"Control variables: {control_vars}")
+        print(f"Features (excluding controls): {len(feature_cols)}")
+    
     print(f"Running regressions for {len(feature_cols)} features against {len(outcome_vars)} outcomes...")
+    if control_vars:
+        print(f"With {len(control_vars)} control variables included in all models")
     print("="*60)
     
     for feature in feature_cols:
@@ -38,14 +50,31 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
         for outcome in outcome_vars:
             print(f"  -> {outcome}")
             
-            # Prepare data - remove rows with missing values
-            valid_data = df[[feature, outcome]].dropna()
+            # Prepare data - include control variables if specified
+            required_cols = [feature, outcome]
+            if control_vars and len(control_vars) > 0:
+                required_cols.extend(control_vars)
             
-            if len(valid_data) < 3:  # Need at least 3 points for regression
-                print(f"    Skipping {feature} vs {outcome}: Insufficient data ({len(valid_data)} points)")
+            # Check if all required columns exist in the dataframe
+            missing_cols = [col for col in required_cols if col not in df.columns]
+            if missing_cols:
+                print(f"    Skipping {feature} vs {outcome}: Missing columns {missing_cols}")
                 continue
             
-            X = valid_data[feature].values.reshape(-1, 1)
+            valid_data = df[required_cols].dropna()
+            
+            # Need more data points when including control variables
+            min_points = 3 + len(control_vars) if control_vars else 3
+            if len(valid_data) < min_points:
+                print(f"    Skipping {feature} vs {outcome}: Insufficient data ({len(valid_data)} points, need {min_points})")
+                continue
+            
+            # Prepare X matrix with feature and control variables
+            if control_vars:
+                X = valid_data[[feature] + control_vars].values
+            else:
+                X = valid_data[feature].values.reshape(-1, 1)
+            
             y = valid_data[outcome].values
             
             # Fit the regression model
@@ -58,7 +87,7 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
             # Calculate metrics
             r_squared = r2_score(y, y_pred)
             n = len(valid_data)
-            p = 1  # number of predictors (just the feature)
+            p = 1 + len(control_vars)  # number of predictors (feature + controls)
             
             # Calculate adjusted R-squared
             adj_r_squared = 1 - (1 - r_squared) * (n - 1) / (n - p - 1)
@@ -68,25 +97,39 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
             mse = np.mean(residuals**2)
             rmse = np.sqrt(mse)
             
-            # Calculate standard error of coefficients
-            # For simple linear regression: SE = sqrt(MSE / sum((x - x_mean)^2))
-            x_mean = np.mean(X)
-            ss_x = np.sum((X.flatten() - x_mean)**2)
-            se_coef = np.sqrt(mse / ss_x) if ss_x > 0 else np.nan
-            
-            # Calculate t-statistic and p-value for coefficient
-            t_stat = model.coef_[0] / se_coef if se_coef > 0 else np.nan
-            p_value = 2 * (1 - stats.t.cdf(abs(t_stat), n - 2)) if not np.isnan(t_stat) else np.nan
-            
-            # Calculate confidence intervals (95%)
-            alpha = 0.05
-            t_critical = stats.t.ppf(1 - alpha/2, n - 2)
-            ci_lower = model.coef_[0] - t_critical * se_coef
-            ci_upper = model.coef_[0] + t_critical * se_coef
+            # Calculate standard error of coefficients for the main feature
+            # For multiple regression, we need the variance-covariance matrix
+            try:
+                # Calculate the variance-covariance matrix
+                X_with_intercept = np.column_stack([np.ones(n), X])
+                XtX_inv = np.linalg.inv(X_with_intercept.T @ X_with_intercept)
+                var_cov_matrix = mse * XtX_inv
+                
+                # Standard error for the main feature (first predictor after intercept)
+                se_coef = np.sqrt(var_cov_matrix[1, 1])
+                
+                # Calculate t-statistic and p-value for the main feature coefficient
+                t_stat = model.coef_[0] / se_coef if se_coef > 0 else np.nan
+                degrees_of_freedom = n - p - 1  # degrees of freedom
+                p_value = 2 * (1 - stats.t.cdf(abs(t_stat), degrees_of_freedom)) if not np.isnan(t_stat) else np.nan
+                
+                # Calculate confidence intervals (95%)
+                alpha = 0.05
+                t_critical = stats.t.ppf(1 - alpha/2, degrees_of_freedom)
+                ci_lower = model.coef_[0] - t_critical * se_coef
+                ci_upper = model.coef_[0] + t_critical * se_coef
+                
+            except np.linalg.LinAlgError:
+                # Fallback for singular matrix
+                se_coef = np.nan
+                t_stat = np.nan
+                p_value = np.nan
+                ci_lower = np.nan
+                ci_upper = np.nan
             
             # Calculate F-statistic and its p-value
-            f_stat = (r_squared / (1 - r_squared)) * (n - 2) if r_squared < 1 else np.inf
-            f_p_value = 1 - stats.f.cdf(f_stat, 1, n - 2) if not np.isinf(f_stat) else 0
+            f_stat = (r_squared / (1 - r_squared)) * (n - p - 1) / p if r_squared < 1 else np.inf
+            f_p_value = 1 - stats.f.cdf(f_stat, p, n - p - 1) if not np.isinf(f_stat) else 0
             
             # Store results
             result = {
@@ -105,10 +148,12 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
                 'CI_Upper_95': ci_upper,
                 'F_Statistic': f_stat,
                 'F_P_Value': f_p_value,
-                'Mean_X': np.mean(X),
-                'Std_X': np.std(X),
+                'Mean_X': np.mean(X[:, 0]),  # Mean of main feature
+                'Std_X': np.std(X[:, 0]),    # Std of main feature
                 'Mean_Y': np.mean(y),
-                'Std_Y': np.std(y)
+                'Std_Y': np.std(y),
+                'Num_Control_Vars': len(control_vars),
+                'Control_Vars': ', '.join(control_vars) if control_vars else 'None'
             }
             
             results.append(result)
@@ -161,6 +206,8 @@ def save_results_to_excel(results_df, filename):
     print(f"  - Significant_Results: Only significant results (p < 0.05)")
     print(f"  - Results_[outcome]: Results grouped by outcome variable")
 
+
+
 def main():
     """
     Main function to run the regression analysis.
@@ -174,6 +221,9 @@ def main():
     except FileNotFoundError:
         print("Data file not found. Please ensure 'data/all_data_df.xlsx' exists.")
         print("Or modify the file path in the script.")
+        return
+    except Exception as e:
+        print(f"Error loading data: {e}")
         return
     
     # Define feature columns - adjust these based on your actual column names
@@ -190,11 +240,17 @@ def main():
     if len(feature_cols) > 10:
         print(f"  ... and {len(feature_cols) - 10} more")
     
+    
+    # Define control variables (modify this list as needed)
+    # Example: control_vars = ['conference_year', 'session_duration']
+    # You can use suggested_controls or define your own list
+    control_vars = ['meeting_length', 'num_members', 'num_facilitator']  # Add your control variables here
+   
     # Run regressions
-    results_df = run_individual_regressions(df, feature_cols)
+    results_df = run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num_funded_teams'], control_vars=control_vars)
     
     # Save results
-    save_results_to_excel(results_df, 'regression/regression_results_all_data.xlsx')
+    save_results_to_excel(results_df, 'regression/linear_regression_results_with_controls.xlsx')
     
     # Print summary
     print("\n" + "="*60)
