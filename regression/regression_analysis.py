@@ -121,7 +121,7 @@ def run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num
     print(f"\nCompleted {len(results_df)} regressions")
     return results_df
 
-def save_results_to_excel(results_df, filename='regression_results.xlsx'):
+def save_results_to_excel(results_df, filename):
     """
     Save regression results to an Excel file with multiple sheets.
     
@@ -169,7 +169,7 @@ def main():
     # Load your data - adjust this path as needed
     try:
         # Try to load the data - you may need to adjust this path
-        df = pd.read_excel('data/all_data_df_sm.xlsx')
+        df = pd.read_excel('data/all_data_df.xlsx')
         print(f"Loaded data with shape: {df.shape}")
     except FileNotFoundError:
         print("Data file not found. Please ensure 'data/all_data_df.xlsx' exists.")
@@ -194,7 +194,7 @@ def main():
     results_df = run_individual_regressions(df, feature_cols)
     
     # Save results
-    save_results_to_excel(results_df)
+    save_results_to_excel(results_df, 'regression/regression_results_all_data.xlsx')
     
     # Print summary
     print("\n" + "="*60)

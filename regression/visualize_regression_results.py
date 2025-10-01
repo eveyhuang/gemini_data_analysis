@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 plt.style.use('default')
 sns.set_palette("husl")
 
-def load_regression_results(file_path='regression_results.xlsx'):
+def load_regression_results(file_path, sheet_name):
     """
     Load significant regression results from Excel file.
     
@@ -30,7 +30,7 @@ def load_regression_results(file_path='regression_results.xlsx'):
     
     try:
         # Load the Excel file - only significant results
-        df = pd.read_excel(file_path, sheet_name='Significant_Results')
+        df = pd.read_excel(file_path, sheet_name)
         print(f"✅ Loaded {len(df)} SIGNIFICANT regression results from {file_path}")
         print(f"Features: {df['Feature'].nunique()}")
         print(f"Outcomes: {df['Outcome'].nunique()}")
@@ -120,7 +120,7 @@ def create_significance_matrix(results_df, figsize=(12, 8)):
     plt.tight_layout()
     return fig
 
-def create_coefficient_comparison(results_df, figsize=(15, 10)):
+def create_coefficient_comparison(results_df, figsize=(18, 12)):
     """
     Create a comprehensive comparison of coefficients with confidence intervals.
     """
@@ -129,7 +129,8 @@ def create_coefficient_comparison(results_df, figsize=(15, 10)):
     outcomes = results_df['Outcome'].unique()
     n_outcomes = len(outcomes)
     
-    fig, axes = plt.subplots(1, n_outcomes, figsize=figsize, sharey=True)
+    # Create subplots without shared y-axis to ensure all labels show
+    fig, axes = plt.subplots(1, n_outcomes, figsize=figsize, sharey=False)
     if n_outcomes == 1:
         axes = [axes]
     
@@ -154,11 +155,16 @@ def create_coefficient_comparison(results_df, figsize=(15, 10)):
         # Add vertical line at zero
         axes[i].axvline(x=0, color='black', linestyle='--', alpha=0.5)
         
+        # Set y-axis labels for each subplot individually
         axes[i].set_yticks(y_pos)
         axes[i].set_yticklabels(outcome_data['Feature'], fontsize=10)
         axes[i].set_xlabel('Coefficient Value')
+        axes[i].set_ylabel('Features', fontsize=12, fontweight='bold')
         axes[i].set_title(f'{outcome}\nCoefficients with 95% CI')
         axes[i].grid(True, alpha=0.3)
+        
+        # Ensure y-axis labels are visible
+        axes[i].tick_params(axis='y', labelsize=10)
     
     plt.suptitle('Coefficient Comparison Across Features and Outcomes', 
                  fontsize=16, fontweight='bold')
@@ -167,7 +173,7 @@ def create_coefficient_comparison(results_df, figsize=(15, 10)):
 
 def create_r_squared_comparison(results_df, figsize=(12, 8)):
     """
-    Create a bar chart comparing R-squared values across features and outcomes.
+    Create a bar chart comparing R-squared values across features and outcomes, sorted by values.
     """
     
     fig, ax = plt.subplots(figsize=figsize)
@@ -177,16 +183,28 @@ def create_r_squared_comparison(results_df, figsize=(12, 8)):
     outcomes = results_df['Outcome'].unique()
     colors = ['skyblue', 'lightcoral', 'lightgreen', 'gold']
     
+    # Calculate maximum R-squared value for each feature across all outcomes for sorting
+    feature_max_r2 = {}
+    for feature in all_features:
+        feature_data = results_df[results_df['Feature'] == feature]
+        if len(feature_data) > 0:
+            feature_max_r2[feature] = feature_data['R_Squared'].max()
+        else:
+            feature_max_r2[feature] = 0
+    
+    # Sort features by their maximum R-squared value (descending)
+    sorted_features = sorted(all_features, key=lambda x: feature_max_r2[x], reverse=True)
+    
     # Create grouped bar chart
-    x = np.arange(len(all_features))
+    x = np.arange(len(sorted_features))
     width = 0.35
     
     for i, outcome in enumerate(outcomes):
         outcome_data = results_df[results_df['Outcome'] == outcome]
         
-        # Create arrays for this outcome, filling missing features with 0
+        # Create arrays for this outcome, using sorted features
         r_squared_values = []
-        for feature in all_features:
+        for feature in sorted_features:
             feature_data = outcome_data[outcome_data['Feature'] == feature]
             if len(feature_data) > 0:
                 r_squared_values.append(feature_data['R_Squared'].iloc[0])
@@ -205,12 +223,108 @@ def create_r_squared_comparison(results_df, figsize=(12, 8)):
     
     ax.set_xlabel('Features')
     ax.set_ylabel('R-squared')
-    ax.set_title('R-squared Comparison - Significant Results Only', 
+    ax.set_title('R-squared Comparison - Sorted by Maximum R² Value', 
                  fontsize=14, fontweight='bold')
     ax.set_xticks(x + width/2)
-    ax.set_xticklabels(all_features, rotation=45, ha='right')
+    ax.set_xticklabels(sorted_features, rotation=45, ha='right')
     ax.legend()
     ax.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    return fig
+
+def create_coefficient_comparison_barplot(results_df, figsize=(12, 8)):
+    """
+    Create a bar chart comparing coefficient values across features and outcomes with significance indicators, sorted by values.
+    """
+    
+    fig, ax = plt.subplots(figsize=figsize)
+    
+    # Get all unique features and outcomes
+    all_features = results_df['Feature'].unique()
+    outcomes = results_df['Outcome'].unique()
+    colors = ['skyblue', 'lightcoral', 'lightgreen', 'gold']
+    
+    # Calculate maximum absolute coefficient value for each feature across all outcomes for sorting
+    feature_max_coef = {}
+    for feature in all_features:
+        feature_data = results_df[results_df['Feature'] == feature]
+        if len(feature_data) > 0:
+            feature_max_coef[feature] = abs(feature_data['Coefficient']).max()
+        else:
+            feature_max_coef[feature] = 0
+    
+    # Sort features by their maximum absolute coefficient value (descending)
+    sorted_features = sorted(all_features, key=lambda x: feature_max_coef[x], reverse=True)
+    
+    # Create grouped bar chart
+    x = np.arange(len(sorted_features))
+    width = 0.35
+    
+    for i, outcome in enumerate(outcomes):
+        outcome_data = results_df[results_df['Outcome'] == outcome]
+        
+        # Create arrays for this outcome, using sorted features
+        coefficient_values = []
+        p_values = []
+        for feature in sorted_features:
+            feature_data = outcome_data[outcome_data['Feature'] == feature]
+            if len(feature_data) > 0:
+                coefficient_values.append(feature_data['Coefficient'].iloc[0])
+                p_values.append(feature_data['P_Value'].iloc[0])
+            else:
+                coefficient_values.append(0)  # No data for this feature-outcome combination
+                p_values.append(1.0)  # Non-significant
+        
+        bars = ax.bar(x + i * width, coefficient_values, width, 
+                     label=outcome, color=colors[i % len(colors)], alpha=0.8)
+        
+        # Add coefficient values and significance indicators on bars
+        for j, (bar, coef, p_val) in enumerate(zip(bars, coefficient_values, p_values)):
+            if coef != 0:  # Only label non-zero values
+                height = bar.get_height()
+                
+                # Determine significance level
+                if p_val < 0.001:
+                    sig_text = '***'
+                    sig_color = 'darkgreen'
+                elif p_val < 0.01:
+                    sig_text = '**'
+                    sig_color = 'green'
+                elif p_val < 0.05:
+                    sig_text = '*'
+                    sig_color = 'orange'
+                else:
+                    sig_text = 'ns'
+                    sig_color = 'gray'
+                
+                # Position text above or below bar based on sign
+                if coef >= 0:
+                    ax.text(bar.get_x() + bar.get_width()/2., height + 0.01,
+                           f'{coef:.3f}', ha='center', va='bottom', fontsize=9, fontweight='bold')
+                    # Add significance indicator above the coefficient
+                    ax.text(bar.get_x() + bar.get_width()/2., height + 0.05,
+                           sig_text, ha='center', va='bottom', fontsize=10, 
+                           fontweight='bold', color=sig_color)
+                else:
+                    ax.text(bar.get_x() + bar.get_width()/2., height - 0.01,
+                           f'{coef:.3f}', ha='center', va='top', fontsize=9, fontweight='bold')
+                    # Add significance indicator below the coefficient
+                    ax.text(bar.get_x() + bar.get_width()/2., height - 0.05,
+                           sig_text, ha='center', va='top', fontsize=10, 
+                           fontweight='bold', color=sig_color)
+    
+    # Add horizontal line at zero
+    ax.axhline(y=0, color='black', linestyle='-', alpha=0.3, linewidth=0.5)
+    
+    ax.set_xlabel('Features')
+    ax.set_ylabel('Coefficient Value')
+    ax.set_title('Coefficient Comparison - Sorted by Maximum |Coefficient| Value\n*** p<0.001, ** p<0.01, * p<0.05', 
+                 fontsize=14, fontweight='bold')
+    ax.set_xticks(x + width/2)
+    ax.set_xticklabels(sorted_features, rotation=45, ha='right')
+    ax.legend()
+    ax.grid(True, alpha=0.3, axis='y')
     
     plt.tight_layout()
     return fig
@@ -371,64 +485,24 @@ def create_coefficient_barplot_by_outcome(results_df, figsize=(15, 8)):
     plt.tight_layout()
     return fig
 
-def create_effect_size_comparison_plot(results_df, figsize=(16, 10)):
+
+
+def create_side_by_side_coefficient_comparison(results_df, figsize=(20, 12)):
     """
-    Create a comprehensive plot showing effect size, direction, and p-values for both outcomes.
-    This allows quick comparison and interpretation of all relationships at once.
+    Create side-by-side horizontal bar charts for easy comparison of coefficients between outcomes.
     """
-    
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize, sharey=True)
     
     outcomes = results_df['Outcome'].unique()
-    colors = ['#2E86AB', '#A23B72']  # Distinct colors for each outcome
+    n_outcomes = len(outcomes)
     
-    for i, outcome in enumerate(outcomes):
-        outcome_data = results_df[results_df['Outcome'] == outcome].copy()
-        outcome_data = outcome_data.sort_values('Coefficient', ascending=True)
-        
-        # Create scatter plot with size based on effect size and color based on p-value
-        scatter = ax1.scatter(outcome_data['Coefficient'], range(len(outcome_data)), 
-                             c=outcome_data['P_Value'], s=abs(outcome_data['Coefficient']) * 200 + 50,
-                             cmap='RdYlBu_r', alpha=0.8, edgecolors='black', linewidth=1,
-                             label=outcome)
-        
-        # Add coefficient values as text
-        for j, (coef, p_val) in enumerate(zip(outcome_data['Coefficient'], outcome_data['P_Value'])):
-            # Color text based on significance
-            text_color = 'darkgreen' if p_val < 0.01 else 'green' if p_val < 0.05 else 'orange'
-            ax1.text(coef + (0.1 if coef >= 0 else -0.1), j, f'{coef:.3f}', 
-                    ha='left' if coef >= 0 else 'right', va='center', fontsize=9, 
-                    fontweight='bold', color=text_color)
-        
-        # Add significance indicators
-        for j, (coef, p_val) in enumerate(zip(outcome_data['Coefficient'], outcome_data['P_Value'])):
-            if p_val < 0.001:
-                sig_text = '***'
-            elif p_val < 0.01:
-                sig_text = '**'
-            elif p_val < 0.05:
-                sig_text = '*'
-            else:
-                sig_text = ''
-            
-            if sig_text:
-                ax1.text(coef + (0.2 if coef >= 0 else -0.2), j, sig_text, 
-                        ha='left' if coef >= 0 else 'right', va='center', fontsize=12, 
-                        fontweight='bold', color='red')
+    # Create subplots - one for each outcome (no shared y-axis to ensure all labels show)
+    fig, axes = plt.subplots(1, n_outcomes, figsize=figsize, sharey=False)
+    if n_outcomes == 1:
+        axes = [axes]
     
-    # Customize first subplot
-    ax1.set_xlabel('Coefficient Value (Effect Size)', fontsize=12, fontweight='bold')
-    ax1.set_ylabel('Features', fontsize=12, fontweight='bold')
-    ax1.set_title('Effect Size, Direction & Significance\n(Bubble size = Effect size, Color = P-value)', 
-                  fontsize=14, fontweight='bold')
-    ax1.axvline(x=0, color='gray', linestyle='--', alpha=0.7)
-    ax1.grid(True, alpha=0.3, axis='x')
+    # Define colors for each outcome
+    outcome_colors = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D']  # Distinct colors for each outcome
     
-    # Add colorbar for p-values
-    cbar = plt.colorbar(scatter, ax=ax1, shrink=0.8)
-    cbar.set_label('P-value', fontsize=10, fontweight='bold')
-    
-    # Create second subplot for detailed comparison
     for i, outcome in enumerate(outcomes):
         outcome_data = results_df[results_df['Outcome'] == outcome].copy()
         outcome_data = outcome_data.sort_values('Coefficient', ascending=True)
@@ -445,29 +519,48 @@ def create_effect_size_comparison_plot(results_df, figsize=(16, 10)):
             else:
                 bar_colors.append('lightgray')
         
-        bars = ax2.barh(range(len(outcome_data)), outcome_data['Coefficient'], 
-                       color=bar_colors, alpha=0.8, label=outcome)
+        bars = axes[i].barh(range(len(outcome_data)), outcome_data['Coefficient'], 
+                           color=bar_colors, alpha=0.8, edgecolor=outcome_colors[i], 
+                           linewidth=2, label=outcome)
         
-        # Add coefficient values
-        for j, (bar, coef) in enumerate(zip(bars, outcome_data['Coefficient'])):
+        # Add coefficient values and significance indicators
+        for j, (bar, coef, p_val) in enumerate(zip(bars, outcome_data['Coefficient'], outcome_data['P_Value'])):
             width = bar.get_width()
-            ax2.text(width + (0.01 if width >= 0 else -0.01), bar.get_y() + bar.get_height()/2,
-                    f'{coef:.3f}', ha='left' if width >= 0 else 'right', va='center', 
-                    fontsize=9, fontweight='bold')
-    
-    # Customize second subplot
-    ax2.set_xlabel('Coefficient Value (Effect Size)', fontsize=12, fontweight='bold')
-    ax2.set_title('Effect Size Comparison\n(Color = Significance level)', 
-                  fontsize=14, fontweight='bold')
-    ax2.axvline(x=0, color='gray', linestyle='--', alpha=0.7)
-    ax2.grid(True, alpha=0.3, axis='x')
-    
-    # Set y-axis labels for both subplots
-    all_features = results_df['Feature'].unique()
-    ax1.set_yticks(range(len(all_features)))
-    ax1.set_yticklabels(all_features, fontsize=10)
-    ax2.set_yticks(range(len(all_features)))
-    ax2.set_yticklabels(all_features, fontsize=10)
+            
+            # Determine significance level
+            if p_val < 0.001:
+                sig_text = '***'
+            elif p_val < 0.01:
+                sig_text = '**'
+            elif p_val < 0.05:
+                sig_text = '*'
+            else:
+                sig_text = 'ns'
+            
+            # Position text based on coefficient sign
+            if width >= 0:
+                axes[i].text(width + 0.01, bar.get_y() + bar.get_height()/2,
+                           f'{coef:.3f} {sig_text}', ha='left', va='center', 
+                           fontsize=9, fontweight='bold')
+            else:
+                axes[i].text(width - 0.01, bar.get_y() + bar.get_height()/2,
+                           f'{coef:.3f} {sig_text}', ha='right', va='center', 
+                           fontsize=9, fontweight='bold')
+        
+        # Customize subplot
+        axes[i].set_xlabel('Coefficient Value (Effect Size)', fontsize=12, fontweight='bold')
+        axes[i].set_ylabel('Features', fontsize=12, fontweight='bold')
+        axes[i].set_title(f'{outcome}\nCoefficient Comparison with Significance', 
+                          fontsize=14, fontweight='bold')
+        axes[i].axvline(x=0, color='gray', linestyle='--', alpha=0.7)
+        axes[i].grid(True, alpha=0.3, axis='x')
+        
+        # Set y-axis labels with proper spacing
+        axes[i].set_yticks(range(len(outcome_data)))
+        axes[i].set_yticklabels(outcome_data['Feature'], fontsize=10)
+        
+        # Ensure y-axis labels are visible
+        axes[i].tick_params(axis='y', labelsize=10)
     
     # Add legend for significance levels
     from matplotlib.patches import Patch
@@ -477,9 +570,9 @@ def create_effect_size_comparison_plot(results_df, figsize=(16, 10)):
         Patch(facecolor='orange', label='p < 0.05 (*)'),
         Patch(facecolor='lightgray', label='p ≥ 0.05 (ns)')
     ]
-    ax2.legend(handles=legend_elements, loc='upper right', fontsize=10)
+    axes[0].legend(handles=legend_elements, loc='upper right', fontsize=10)
     
-    plt.suptitle('Comprehensive Effect Size Analysis: Direction, Magnitude & Significance', 
+    plt.suptitle('Side-by-Side Coefficient Comparison by Outcome', 
                  fontsize=16, fontweight='bold', y=0.98)
     plt.tight_layout()
     return fig
@@ -589,7 +682,7 @@ def create_comprehensive_dashboard(results_df, save_path='regression_dashboard.p
     plt.tight_layout()
     return fig
 
-def create_summary_plots(results_df, save_dir='regression_plots'):
+def create_summary_plots(results_df, save_dir='regression/regression_plots'):
     """
     Create all summary plots and save them.
     """
@@ -623,6 +716,12 @@ def create_summary_plots(results_df, save_dir='regression_plots'):
     fig4.savefig(f'{save_dir}/r_squared_comparison.png', dpi=300, bbox_inches='tight')
     plt.show()
     
+    # 4.5. Coefficient comparison barplot
+    print("  📊 Creating coefficient comparison barplot...")
+    fig4_5 = create_coefficient_comparison_barplot(results_df)
+    fig4_5.savefig(f'{save_dir}/coefficient_comparison_barplot.png', dpi=300, bbox_inches='tight')
+    plt.show()
+    
     # 5. P-value distribution
     print("  📊 Creating p-value distribution...")
     fig5 = create_p_value_distribution(results_df)
@@ -647,10 +746,11 @@ def create_summary_plots(results_df, save_dir='regression_plots'):
     fig8.savefig(f'{save_dir}/coefficient_barplot_by_outcome.png', dpi=300, bbox_inches='tight')
     plt.show()
     
-    # 9. Effect size comparison plot
-    print("  📊 Creating comprehensive effect size comparison plot...")
-    fig9 = create_effect_size_comparison_plot(results_df)
-    fig9.savefig(f'{save_dir}/effect_size_comparison.png', dpi=300, bbox_inches='tight')
+
+    # 9.5. Side-by-side coefficient comparison
+    print("  📊 Creating side-by-side coefficient comparison...")
+    fig9_5 = create_side_by_side_coefficient_comparison(results_df)
+    fig9_5.savefig(f'{save_dir}/side_by_side_coefficient_comparison.png', dpi=300, bbox_inches='tight')
     plt.show()
     
     # 10. Comprehensive dashboard
@@ -729,7 +829,7 @@ def main():
     print("🔍 Loading significant regression results from Excel file...")
     
     # Load results
-    results_df = load_regression_results()
+    results_df = load_regression_results(file_path='regression/regression_results_all_data.xlsx', sheet_name='Significant_Results')
     if results_df is None:
         return
     
