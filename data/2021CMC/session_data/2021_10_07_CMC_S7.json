@@ -28,7 +28,8 @@
                 "Information Seeking": {
                     "explanation": "Rigoberto is surfacing a specific gap in the information provided by the team, noting the absence of 'numbers between one and a hundred' from others.",
                     "score": 2,
-                    "score_justification": "The utterance precisely identifies a specific missing piece of information, making it a precise and targeted surfacing of a gap."
+                    "score_justification": "The utterance precisely identifies a specific missing piece of information, making it a precise and targeted surfacing of a gap.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -48,12 +49,14 @@
                 "Participation Dynamics": {
                     "explanation": "The phrase 'So here's your chance' directly invites all participants to contribute, explicitly encouraging their involvement in the discussion.",
                     "score": 1,
-                    "score_justification": "It is a clear and direct invitation for the group to participate, but it is not targeted to specific individuals or expertise."
+                    "score_justification": "It is a clear and direct invitation for the group to participate, but it is not targeted to specific individuals or expertise.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "The instruction 'Into the chat box' clearly structures the process by specifying the method for participants to provide their input.",
                     "score": 1,
-                    "score_justification": "It provides a clear procedural instruction for how to contribute, which helps organize the workflow."
+                    "score_justification": "It provides a clear procedural instruction for how to contribute, which helps organize the workflow.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -73,7 +76,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance explicitly observes the lack of participation in the chat, directly addressing the 'who gets to speak' aspect of Participation Dynamics by noting that 'no one's speaking' despite previous prompts.",
                     "score": 1,
-                    "score_justification": "It is a clear observation about the current state of participation, which is functional in highlighting the lack of response to previous prompts, but it is not a targeted invite or a solution."
+                    "score_justification": "It is a clear observation about the current state of participation, which is functional in highlighting the lack of response to previous prompts, but it is not a targeted invite or a solution.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -93,12 +97,14 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance explicitly observes the presence of bots and a 'bot backup' in the chat, which, in the context of 'no one's speaking,' highlights a significant lack of human participation and an imbalance in contributions.",
                     "score": 0,
-                    "score_justification": "The utterance clearly observes a problematic participation dynamic but does not actively include/exclude members or offer a solution, making it a functional but minimal contribution to improving participation."
+                    "score_justification": "The utterance clearly observes a problematic participation dynamic but does not actively include/exclude members or offer a solution, making it a functional but minimal contribution to improving participation.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "The 'Wow' and the slightly sarcastic comment about 'bot backup' express a lighthearted, yet critical or exasperated, interpersonal tone regarding the lack of human engagement in the meeting.",
                     "score": -1,
-                    "score_justification": "The sarcastic nature of the comment, even if lighthearted, highlights a negative social situation and does not foster a positive or trusting relational climate."
+                    "score_justification": "The sarcastic nature of the comment, even if lighthearted, highlights a negative social situation and does not foster a positive or trusting relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -118,12 +124,14 @@
                 "Idea Management": {
                     "explanation": "The speaker introduces the idea of integrating experimental data into theoretical databases to improve scientific understanding.",
                     "score": 2,
-                    "score_justification": "This is a novel and elaborated idea that proposes a specific direction for future work, moving the team's thinking forward."
+                    "score_justification": "This is a novel and elaborated idea that proposes a specific direction for future work, moving the team's thinking forward.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares relevant information about existing 'materials project' and other 'purely theoretical' databases, providing context for the proposed idea.",
                     "score": 2,
-                    "score_justification": "The information provided is accurate, detailed, and directly useful as it establishes the current landscape before proposing a new approach."
+                    "score_justification": "The information provided is accurate, detailed, and directly useful as it establishes the current landscape before proposing a new approach.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -143,7 +151,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance explicitly thanks Lu and offers a positive comment ('Nice'), demonstrating acknowledgment and support for their contribution, which aligns with the focus of interpersonal tone in Relational Climate.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks and a positive comment, which is a clear contribution to a positive relational climate, fitting the criteria for a score of 1."
+                    "score_justification": "The utterance provides explicit thanks and a positive comment, which is a clear contribution to a positive relational climate, fitting the criteria for a score of 1.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -163,17 +172,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Lu shares detailed information about their current research project, including their interests in hydrogen bonds, the machine learning model developed, its limitations due to data scarcity, and future research directions.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing a comprehensive overview of their expertise and project."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing a comprehensive overview of their expertise and project.",
+                    "when": "beginning"
                 },
                 "Evaluation Practices": {
                     "explanation": "Lu assesses the merit of their machine learning model by stating its 'prediction power was not that great' and provides a clear, reasoned explanation for this limitation (lack of experimental data).",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive and reasoned, identifying a specific limitation and its cause, which can inform future steps."
+                    "score_justification": "The evaluation is constructive and reasoned, identifying a specific limitation and its cause, which can inform future steps.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Lu elaborates on their current project and introduces future research directions, detailing their interest in moving beyond mere prediction to understanding the impact of hydrogen bonds on their environment.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel and elaborated idea for future work, clearly outlining the next steps and their reasoning."
+                    "score_justification": "The utterance presents a novel and elaborated idea for future work, clearly outlining the next steps and their reasoning.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -193,12 +205,14 @@
                 "Relational Climate": {
                     "explanation": "Rigoberto expresses explicit thanks to Lu Wang for their contribution, acknowledging their turn.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear but general acknowledgment."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear but general acknowledgment.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rigoberto directly invites Stephen to speak next, indicating a shift in speakers.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, direct invitation to a specific team member to contribute."
+                    "score_justification": "The utterance is a clear, direct invitation to a specific team member to contribute.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -218,7 +232,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance acknowledges that the speaker's turn has arrived, directly responding to the facilitator's action of calling on them to speak, which relates to the distribution of participation.",
                     "score": 0,
-                    "score_justification": "The utterance is a minimal, functional acknowledgment of the turn-taking, but does not actively invite, exclude, or manage participation in a more elaborate way, making it a barely functional contribution."
+                    "score_justification": "The utterance is a minimal, functional acknowledgment of the turn-taking, but does not actively invite, exclude, or manage participation in a more elaborate way, making it a barely functional contribution.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -238,12 +253,14 @@
                 "Relational Climate": {
                     "explanation": "The speaker apologizes for misidentifying the previous speaker, which explicitly acknowledges a social misstep and helps maintain a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The explicit apology and clarification foster trust and a positive climate by correcting a social error."
+                    "score_justification": "The explicit apology and clarification foster trust and a positive climate by correcting a social error.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "The speaker clarifies the identity of the next presenter, ensuring the correct individual is included in the speaking turn and managing the flow of contributions.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear and direct action to manage who speaks by correcting an identification, but it's not a targeted invite based on expertise."
+                    "score_justification": "The utterance is a clear and direct action to manage who speaks by correcting an identification, but it's not a targeted invite based on expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -263,17 +280,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares his lab's expertise in machine learning and deep learning for big data in biology, providing specific examples of applications like immune response predictions and genome mutation impact, and detailing a clinical problem they aim to solve.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about his lab's capabilities and a relevant problem in precision medicine."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about his lab's capabilities and a relevant problem in precision medicine.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Stephen introduces the idea of generating a chemical genetic interaction map as an immediate goal and elaborates on its purpose to facilitate precision medicine through a mutation-drug lookup table.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea, detailing its application and the problem it aims to solve."
+                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea, detailing its application and the problem it aims to solve.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Stephen explicitly states an 'immediate goal' for the near future, which is to 'generate a chemical genetic interaction map,' thereby setting a clear objective for potential collaboration.",
                     "score": 2,
-                    "score_justification": "The utterance clearly articulates a specific goal, providing a direction for future work and potential team coordination."
+                    "score_justification": "The utterance clearly articulates a specific goal, providing a direction for future work and potential team coordination.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -293,17 +313,20 @@
                 "Relational Climate": {
                     "explanation": "Rigoberto expresses explicit thanks to Stephen Yi, acknowledging his contribution and fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear acknowledgment of the previous speaker's contribution."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear acknowledgment of the previous speaker's contribution.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rigoberto directly invites Cheemeng to speak, ensuring their inclusion and contribution to the discussion.",
                     "score": 1,
-                    "score_justification": "Rigoberto directly invites a specific individual to speak, which is a clear act of including a member."
+                    "score_justification": "Rigoberto directly invites a specific individual to speak, which is a clear act of including a member.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto structures the meeting's workflow by calling on the next speaker, Cheemeng, to continue the discussion.",
                     "score": 1,
-                    "score_justification": "The utterance clearly enacts a part of the meeting's structure by moving to the next speaker in sequence."
+                    "score_justification": "The utterance clearly enacts a part of the meeting's structure by moving to the next speaker in sequence.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -323,17 +346,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Cheemeng provides detailed information about his lab's research focus on protein synthesis, their interest in AI/ML, and a specific challenge they encountered regarding the lack of data for studying membrane proteins.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, providing context about his lab's work and a significant research challenge."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, providing context about his lab's work and a significant research challenge.",
+                    "when": "beginning"
                 },
                 "Evaluation Practices": {
                     "explanation": "Cheemeng assesses the feasibility of applying AI/ML in situations where there is a lack of data, explicitly stating that 'when there's no data it's hard to do AI ML'.",
                     "score": 2,
-                    "score_justification": "This is constructive, reasoned feedback that identifies a critical limitation and provides a clear reason for the difficulty in applying AI/ML."
+                    "score_justification": "This is constructive, reasoned feedback that identifies a critical limitation and provides a clear reason for the difficulty in applying AI/ML.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "Cheemeng surfaces a critical gap by implicitly asking 'when there's no systematic database how do you get that spiral feedback to get started,' highlighting a fundamental challenge in initiating AI/ML research without foundational data.",
                     "score": 2,
-                    "score_justification": "This is a precise, targeted, and highly relevant question/gap that points to a significant methodological challenge in the field."
+                    "score_justification": "This is a precise, targeted, and highly relevant question/gap that points to a significant methodological challenge in the field.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -353,17 +379,20 @@
                 "Relational Climate": {
                     "explanation": "The speaker expresses gratitude ('thank you') and positive sentiment ('I'm glad that you got a new a new set of words for me') towards the previous speaker, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance contains explicit thanks and an expression of gladness, which is a clear contribution to a positive relational climate."
+                    "score_justification": "The utterance contains explicit thanks and an expression of gladness, which is a clear contribution to a positive relational climate.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly invites Jim to contribute by acknowledging his chat message and stating 'we are always happy to bring in all voices in the room' and then directly asking him to elaborate.",
                     "score": 1,
-                    "score_justification": "The speaker directly invites a specific team member (Jim) to speak, which is a clear contribution to participation dynamics."
+                    "score_justification": "The speaker directly invites a specific team member (Jim) to speak, which is a clear contribution to participation dynamics.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "The speaker asks precise and targeted questions, requesting Jim to 'tell us what that is' regarding his chat contribution and 'where the slide 1.5 A and E are', indicating a clear effort to surface specific information.",
                     "score": 2,
-                    "score_justification": "The speaker asks precise and targeted questions about specific content (chat box and slide references), which is a highly relevant way to seek information."
+                    "score_justification": "The speaker asks precise and targeted questions about specific content (chat box and slide references), which is a highly relevant way to seek information.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -383,17 +412,20 @@
                 "Information Seeking": {
                     "explanation": "Jim asks precise, targeted questions about the realistic expectations for AlphaFold structures and the potential availability of Tesla's ML engine, seeking specific information relevant to scientific collaboration.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant to potential research directions and resources, moving the discussion forward effectively."
+                    "score_justification": "The questions are precise, targeted, and highly relevant to potential research directions and resources, moving the discussion forward effectively.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jim provides accurate and detailed knowledge about Tesla's neural machine learning engine, stating it's 'very good' and 'quite a bit faster than some of the things like the GPUs,' which is directly useful context for his inquiry.",
                     "score": 2,
-                    "score_justification": "The knowledge shared is accurate, detailed, and directly useful, providing concrete information to support the discussion."
+                    "score_justification": "The knowledge shared is accurate, detailed, and directly useful, providing concrete information to support the discussion.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Jim introduces specific ideas for discussion, such as the realistic expectations for AlphaFold structures in the next 5-10 years and the potential availability of Tesla's fast neural machine learning engine.",
                     "score": 2,
-                    "score_justification": "The ideas introduced are novel, elaborated, and reasoned, building on the prompt to clarify specific and relevant topics for the team's consideration."
+                    "score_justification": "The ideas introduced are novel, elaborated, and reasoned, building on the prompt to clarify specific and relevant topics for the team's consideration.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -413,12 +445,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto provides relevant information by sharing that Tesla's neural machine learning engine will be made available for a fee, directly addressing Jim's previous question about its availability.",
                     "score": 2,
-                    "score_justification": "The information is accurate, detailed (mentions a presentation and a fee), and directly useful in response to a specific inquiry."
+                    "score_justification": "The information is accurate, detailed (mentions a presentation and a fee), and directly useful in response to a specific inquiry.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "Rigoberto shares a personal anecdote about owning a Tesla, creating a connection with Jim who also mentioned owning one, which fosters a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The comment expresses a shared experience and mild enthusiasm, contributing to a positive climate without being a strong acknowledgment that fosters deep trust."
+                    "score_justification": "The comment expresses a shared experience and mild enthusiasm, contributing to a positive climate without being a strong acknowledgment that fosters deep trust.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -438,7 +472,8 @@
                 "None": {
                     "explanation": "The utterance 'Oh.' is a single word and falls under the guideline to choose 'None' for utterances with only a few words like 'yep', 'umm', or 'I see'.",
                     "score": 0,
-                    "score_justification": "No code to score as per the specific annotation guideline for short utterances."
+                    "score_justification": "No code to score as per the specific annotation guideline for short utterances.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -458,12 +493,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto shares relevant information about the potential availability of Tesla's neural machine learning engine for a fee, responding to Jim's earlier inquiry.",
                     "score": 1,
-                    "score_justification": "Rigoberto provides relevant information with some detail (it will be available for a fee) but lacks specifics on the fee or timeline."
+                    "score_justification": "Rigoberto provides relevant information with some detail (it will be available for a fee) but lacks specifics on the fee or timeline.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rigoberto explicitly invites Sandra and Gary to contribute by asking if they have questions, making an effort to ensure they feel included in the discussion.",
                     "score": 2,
-                    "score_justification": "Rigoberto makes a direct and explicit effort to include specific team members (Sandra and Gary) by inviting their questions and stating the intention to ensure they don't feel excluded, actively balancing participation."
+                    "score_justification": "Rigoberto makes a direct and explicit effort to include specific team members (Sandra and Gary) by inviting their questions and stating the intention to ensure they don't feel excluded, actively balancing participation.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -483,12 +520,14 @@
                 "Idea Management": {
                     "explanation": "Gary introduces two distinct areas ('thermodynamic simulations' and 'image analysis using AI') as new topics or ideas for the team to consider and potentially discuss.",
                     "score": 1,
-                    "score_justification": "Gary clearly presents two distinct areas of interest, providing specific topics that generate new ideas for potential discussion."
+                    "score_justification": "Gary clearly presents two distinct areas of interest, providing specific topics that generate new ideas for potential discussion.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "Gary responds to an invitation to bring in questions by identifying two specific areas of interest, implicitly indicating topics where he seeks information or discussion.",
                     "score": 1,
-                    "score_justification": "Gary clearly identifies two specific areas of interest, which serves as a clear, albeit general, indication of topics for information seeking, directly addressing the previous speaker's prompt."
+                    "score_justification": "Gary clearly identifies two specific areas of interest, which serves as a clear, albeit general, indication of topics for information seeking, directly addressing the previous speaker's prompt.",
+                    "when": "beginning"
                 }
             },
             "role": "Program Officer"
@@ -508,12 +547,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto offers his expertise to help Gary with the first area of interest he mentioned, which is a direct provision of relevant knowledge or skill.",
                     "score": 1,
-                    "score_justification": "The offer is clear and relevant to Gary's stated interest but lacks specific details on how the help will be provided, making it a clear but not fully elaborated contribution."
+                    "score_justification": "The offer is clear and relevant to Gary's stated interest but lacks specific details on how the help will be provided, making it a clear but not fully elaborated contribution.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto suggests taking the discussion about his offer of help offline, which structures the process for addressing Gary's need.",
                     "score": 1,
-                    "score_justification": "This is a clear suggestion for managing the workflow by moving a specific discussion out of the current meeting, but it's a partial decision rather than a comprehensive coordination plan."
+                    "score_justification": "This is a clear suggestion for managing the workflow by moving a specific discussion out of the current meeting, but it's a partial decision rather than a comprehensive coordination plan.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -533,7 +574,8 @@
                 "Information Seeking": {
                     "explanation": "The speaker explicitly states they have a question and identifies a knowledge gap about 'Dojo,' then asks for an explanation, which aligns with asking questions and surfacing gaps.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, directly asking for an explanation of a specific technical term ('Dojo') that is relevant to the ongoing scientific discussion, moving the team forward by clarifying a concept."
+                    "score_justification": "The question is precise and targeted, directly asking for an explanation of a specific technical term ('Dojo') that is relevant to the ongoing scientific discussion, moving the team forward by clarifying a concept.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -553,7 +595,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto provides a detailed and relevant explanation of what 'Dojo' is, clarifying its purpose and nature as a specialized processing environment created by Tesla, in response to a direct question.",
                     "score": 2,
-                    "score_justification": "The explanation is accurate, detailed, and directly useful, moving the team forward by clarifying a key concept."
+                    "score_justification": "The explanation is accurate, detailed, and directly useful, moving the team forward by clarifying a key concept.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -573,7 +616,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares accurate and detailed knowledge by defining Dojo as an 'alternative processor architecture,' which clarifies and refines the previous explanation provided by Rigoberto.",
                     "score": 2,
-                    "score_justification": "The utterance provides a precise, technical, and directly useful piece of knowledge that elaborates on the nature of Dojo, moving the team's understanding forward."
+                    "score_justification": "The utterance provides a precise, technical, and directly useful piece of knowledge that elaborates on the nature of Dojo, moving the team's understanding forward.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -593,7 +637,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto provides specific details about Dojo's function, stating it is 'specifically set up for machine like creating neural nets,' which is relevant expertise about the topic.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, clarifying the specific purpose of Dojo beyond a general description."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, clarifying the specific purpose of Dojo beyond a general description.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -613,12 +658,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Jim provides a specific and relevant fact about Dojo's purpose, clarifying that it is designed to solve the 'training problem' in machine learning.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by specifying the core function of Dojo."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by specifying the core function of Dojo.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Jim elaborates on the previously introduced idea of Dojo's function (creating neural nets) by specifying its role in solving the 'training problem'.",
                     "score": 2,
-                    "score_justification": "The utterance provides an elaborated and reasoned contribution by adding specific detail to the function of Dojo, building on prior discussion."
+                    "score_justification": "The utterance provides an elaborated and reasoned contribution by adding specific detail to the function of Dojo, building on prior discussion.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -638,12 +685,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto provides detailed and accurate information about how Tesla's Dojo platform functions in a car, explaining its learning and correction mechanisms with specific examples like camera triangulation and object detection over time.",
                     "score": 2,
-                    "score_justification": "The utterance provides concrete details about the system's learning process, how it corrects for imperfections, and its real-world application in a car, making it highly informative and directly useful."
+                    "score_justification": "The utterance provides concrete details about the system's learning process, how it corrects for imperfections, and its real-world application in a car, making it highly informative and directly useful.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Rigoberto expresses strong enthusiasm for the technology ('really super cool') and attempts to connect the information to the listener's expertise ('this might be useful as you as an experimentalist'), fostering engagement and curiosity.",
                     "score": 2,
-                    "score_justification": "The speaker uses enthusiastic language and explicitly links the shared knowledge to the listener's professional context, which fosters engagement and curiosity, moving beyond simple acknowledgment."
+                    "score_justification": "The speaker uses enthusiastic language and explicitly links the shared knowledge to the listener's professional context, which fosters engagement and curiosity, moving beyond simple acknowledgment.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -663,17 +712,20 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides detailed historical context on the 'protein folding problem' and shares recent scientific information about a preprint on AlphaFold's ability to predict protein complexes, demonstrating relevant expertise.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, offering both historical perspective and a timely scientific update relevant to the discussion."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, offering both historical perspective and a timely scientific update relevant to the discussion.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "The speaker assesses AlphaFold as an 'amazing tool' and 'truly revolutionary technology,' and highlights the 'remarkable rate of progress' in its development.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive and reasoned, providing strong positive judgment with implicit reasoning about the technology's utility and impact."
+                    "score_justification": "The evaluation is constructive and reasoned, providing strong positive judgment with implicit reasoning about the technology's utility and impact.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "The speaker elaborates on the semantic evolution of the 'protein folding problem' and introduces new information about AlphaFold's recent preprint, thereby expanding on existing concepts and introducing new developments.",
                     "score": 2,
-                    "score_justification": "The contribution elaborates on a key concept and introduces novel, relevant information about the tool's capabilities, moving the discussion forward effectively."
+                    "score_justification": "The contribution elaborates on a key concept and introduces novel, relevant information about the tool's capabilities, moving the discussion forward effectively.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -693,17 +745,20 @@
                 "Relational Climate": {
                     "explanation": "Stephen Yi explicitly acknowledges and agrees with Stephen Fried's previous statement, stating 'That was exactly what I was trying to say,' and expresses strong enthusiasm for the AlphaFold platform and its future potential.",
                     "score": 2,
-                    "score_justification": "The speaker provides strong acknowledgment of a previous speaker's point and expresses clear enthusiasm for the technology, fostering a positive and collaborative climate."
+                    "score_justification": "The speaker provides strong acknowledgment of a previous speaker's point and expresses clear enthusiasm for the technology, fostering a positive and collaborative climate.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen Yi shares detailed knowledge about AlphaFold's initial limitations, his lab's historical work on protein interaction networks, and recent advancements in predicting protein complexes, providing context and expertise.",
                     "score": 2,
-                    "score_justification": "The speaker provides highly relevant and detailed information about AlphaFold's capabilities, historical context from his lab's research, and a recent preprint, which is directly useful to the discussion."
+                    "score_justification": "The speaker provides highly relevant and detailed information about AlphaFold's capabilities, historical context from his lab's research, and a recent preprint, which is directly useful to the discussion.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Stephen Yi elaborates on a novel application for AlphaFold, proposing a detailed approach to study mutational effects and model patient-level outcomes by integrating with PDB.",
                     "score": 2,
-                    "score_justification": "The speaker presents a novel and elaborated idea for leveraging AlphaFold's new capabilities to study mutational effects and patient-level modeling, providing a clear and reasoned path forward."
+                    "score_justification": "The speaker presents a novel and elaborated idea for leveraging AlphaFold's new capabilities to study mutational effects and patient-level modeling, providing a clear and reasoned path forward.",
+                    "when": "middle"
                 }
             },
             "role": "unknown"
@@ -723,7 +778,8 @@
                 "Information Seeking": {
                     "explanation": "Stephen Fried explicitly asks Stephen Yi a precise and detailed hypothetical question to confirm his understanding of AlphaFold's capabilities regarding disease-causing mutations and protein destabilization, directly building on Stephen Yi's previous discussion.",
                     "score": 2,
-                    "score_justification": "The question is highly precise, targeted, and relevant, using a detailed hypothetical scenario to seek specific information and confirm understanding, which moves the discussion forward effectively."
+                    "score_justification": "The question is highly precise, targeted, and relevant, using a detailed hypothetical scenario to seek specific information and confirm understanding, which moves the discussion forward effectively.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -743,12 +799,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen Yi shares detailed expertise about his lab's ongoing work using AlphaFold to detect structural differences caused by single point mutations, including the use of quantitative scores and structural alignment scores.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific methods and findings from his lab's research on AlphaFold's application to mutational effects."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific methods and findings from his lab's research on AlphaFold's application to mutational effects.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Stephen Yi elaborates on the idea of using AlphaFold to predict the effects of single point mutations on protein structure, explaining their current approach and observations.",
                     "score": 2,
-                    "score_justification": "The utterance provides a novel and elaborated explanation of how to approach the problem of predicting mutational effects with AlphaFold, building on the previous discussion and offering specific details about their methodology."
+                    "score_justification": "The utterance provides a novel and elaborated explanation of how to approach the problem of predicting mutational effects with AlphaFold, building on the previous discussion and offering specific details about their methodology.",
+                    "when": "middle"
                 }
             },
             "role": "unknown"
@@ -768,7 +826,8 @@
                 "Participation Dynamics": {
                     "explanation": "Rigoberto explicitly invites Abhishek to contribute to the discussion, referencing that he has been 'called out a couple of times' by others, which targets the invitation based on his perceived relevance to the ongoing topic.",
                     "score": 2,
-                    "score_justification": "The invitation is direct and targeted, explicitly linking Abhishek's participation to previous mentions and his implied expertise on the topic."
+                    "score_justification": "The invitation is direct and targeted, explicitly linking Abhishek's participation to previous mentions and his implied expertise on the topic.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -788,17 +847,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares extensive and detailed knowledge about the history of machine learning, different conceptual 'entry points' beyond neural networks, and specific technical details about AlphaFold's training hardware and limitations in dynamics.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing a broad historical and conceptual framework for machine learning and specific technical insights about AlphaFold."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing a broad historical and conceptual framework for machine learning and specific technical insights about AlphaFold.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Abhishek introduces several novel and elaborated ideas, including shifting focus from AlphaFold to Google's broader strategy, exploring 'six other tracks' of machine learning, and prioritizing the study of 'dynamics' using potentially alternative ML approaches.",
                     "score": 2,
-                    "score_justification": "The ideas are novel, well-elaborated with reasoning, and build significantly on the previous discussion, proposing new directions for research and collaboration."
+                    "score_justification": "The ideas are novel, well-elaborated with reasoning, and build significantly on the previous discussion, proposing new directions for research and collaboration.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Abhishek provides an initial positive assessment of AlphaFold ('fantastic, very, very good') and then offers a reasoned critique of the current machine learning bias towards neural networks and AlphaFold's limitations in dynamics, leading to suggestions for alternative approaches.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, well-reasoned, and actionable, providing both support and critical feedback that opens avenues for further discussion and research."
+                    "score_justification": "The evaluation is constructive, well-reasoned, and actionable, providing both support and critical feedback that opens avenues for further discussion and research.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -818,12 +880,14 @@
                 "Relational Climate": {
                     "explanation": "Abhishek expresses politeness by apologizing and encourages the other speaker to continue, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance explicitly shows politeness and encourages the other speaker, which is a clear contribution to the relational climate."
+                    "score_justification": "The utterance explicitly shows politeness and encourages the other speaker, which is a clear contribution to the relational climate.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Abhishek directly invites the previous speaker to continue their contribution, managing the turn-taking in the conversation.",
                     "score": 1,
-                    "score_justification": "The utterance provides a direct invitation for the other person to speak, which is a clear contribution to managing participation."
+                    "score_justification": "The utterance provides a direct invitation for the other person to speak, which is a clear contribution to managing participation.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -843,17 +907,20 @@
                 "Participation Dynamics": {
                     "explanation": "Rigoberto explicitly manages who speaks next by stating he will \"push on some of the others who haven't spoken\" and directly inviting Davide, Lu, or Cheemeng to contribute, indicating a targeted invite.",
                     "score": 2,
-                    "score_justification": "The speaker uses a targeted invite by calling on specific individuals (Davide, Lu, Cheemeng) and mentioning Davide's \"thoughts,\" linking the invitation to their potential expertise or prior engagement."
+                    "score_justification": "The speaker uses a targeted invite by calling on specific individuals (Davide, Lu, Cheemeng) and mentioning Davide's \"thoughts,\" linking the invitation to their potential expertise or prior engagement.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Rigoberto asks a precise and targeted question about exploring \"a different way in which we could think about dynamics\" to gain \"more information or different information,\" explicitly asking for the team's thoughts.",
                     "score": 2,
-                    "score_justification": "The question is precise and highly relevant, seeking alternative approaches to understanding dynamics beyond current methods, which moves the discussion forward."
+                    "score_justification": "The question is precise and highly relevant, seeking alternative approaches to understanding dynamics beyond current methods, which moves the discussion forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto provides relevant background information on protein folding, AlphaFold's role, and the use of machine learning for propagating structures, building on Abhishek's previous suggestion.",
                     "score": 2,
-                    "score_justification": "The speaker shares accurate and detailed knowledge about the current state of protein folding research, AlphaFold, and ML applications, directly contributing to the team's understanding of the problem space."
+                    "score_justification": "The speaker shares accurate and detailed knowledge about the current state of protein folding research, AlphaFold, and ML applications, directly contributing to the team's understanding of the problem space.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -873,12 +940,14 @@
                 "Idea Management": {
                     "explanation": "Davide introduces the idea of applying AlphaFold as a 'new set of tools' to 'more complex questions' and elaborates on a specific application: looking at metastability in different environments, providing reasoning for its importance.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel and elaborated idea for applying AlphaFold, building on previous discussion and providing specific, reasoned details about metastability and environmental factors."
+                    "score_justification": "The utterance presents a novel and elaborated idea for applying AlphaFold, building on previous discussion and providing specific, reasoned details about metastability and environmental factors.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Davide shares his personal expertise and context by stating his 'limitation' in the field, clarifying his research focus ('not trying to fold anything'), and explaining his theoretical framework ('still in the Boltzmann world'), which informs his proposed ideas.",
                     "score": 2,
-                    "score_justification": "Davide provides accurate and detailed knowledge about his own expertise, limitations, and theoretical perspective, which is directly useful for understanding his contribution and potential research directions."
+                    "score_justification": "Davide provides accurate and detailed knowledge about his own expertise, limitations, and theoretical perspective, which is directly useful for understanding his contribution and potential research directions.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -898,7 +967,8 @@
                 "Participation Dynamics": {
                     "explanation": "Rigoberto explicitly invites specific team members, Lu and Cheemeng, to contribute, demonstrating an effort to balance contributions and manage turn-taking before another member (Stephen) speaks.",
                     "score": 2,
-                    "score_justification": "The invite is targeted to specific individuals whom Rigoberto previously indicated might have relevant thoughts, and it actively manages the speaking order, making it a highly effective contribution to participation dynamics."
+                    "score_justification": "The invite is targeted to specific individuals whom Rigoberto previously indicated might have relevant thoughts, and it actively manages the speaking order, making it a highly effective contribution to participation dynamics.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -918,17 +988,20 @@
                 "Information Seeking": {
                     "explanation": "Lu asks a precise and relevant question about the existence of equivalent structure prediction tools for nucleic acids, specifically RNAs, building on the discussion about protein structure prediction.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion, exploring a related domain and moving the team forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion, exploring a related domain and moving the team forward.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Lu expresses positive interest and enthusiasm for the discussed protein structure prediction tool by stating it \"sounds really cool.\"",
                     "score": 1,
-                    "score_justification": "This is an explicit expression of interest and positive sentiment, contributing to a supportive interpersonal tone."
+                    "score_justification": "This is an explicit expression of interest and positive sentiment, contributing to a supportive interpersonal tone.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Lu shares information about her own expertise by stating she is \"not an expert at all at machine learning,\" which provides context for her subsequent question.",
                     "score": 1,
-                    "score_justification": "Lu provides a clear and relevant statement about her personal expertise, which helps contextualize her contribution to the discussion."
+                    "score_justification": "Lu provides a clear and relevant statement about her personal expertise, which helps contextualize her contribution to the discussion.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -948,17 +1021,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares specific knowledge about a relevant \"science paper that came out from Rhiju Das\" that addresses Lu's question about nucleic acid prediction tools.",
                     "score": 2,
-                    "score_justification": "Stephen provides specific, relevant details about a scientific paper that directly answers the previous question, making it highly useful."
+                    "score_justification": "Stephen provides specific, relevant details about a scientific paper that directly answers the previous question, making it highly useful.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Stephen explicitly invites Abhishek to contribute by stating \"you might be more familiar Abhishek,\" indicating a targeted invitation based on perceived expertise.",
                     "score": 2,
-                    "score_justification": "Stephen directly invites Abhishek to contribute, specifically acknowledging his potential greater familiarity with the topic."
+                    "score_justification": "Stephen directly invites Abhishek to contribute, specifically acknowledging his potential greater familiarity with the topic.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Stephen evaluates the quality of the mentioned paper/tool by stating \"I don't think it's as good but it's like in the right direction,\" offering a nuanced judgment.",
                     "score": 2,
-                    "score_justification": "Stephen provides a reasoned evaluation of the tool's progress, acknowledging both its current limitations and its positive direction."
+                    "score_justification": "Stephen provides a reasoned evaluation of the tool's progress, acknowledging both its current limitations and its positive direction.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -978,7 +1054,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares his expertise by confirming that research is ongoing in nucleic acid prediction, explaining conditions where it works better (protein nucleic acid complex), and providing an update on funding (HHMI).",
                     "score": 2,
-                    "score_justification": "Abhishek provides accurate and detailed knowledge about the specific conditions for nucleic acid prediction tools and mentions recent funding, making it a highly useful contribution."
+                    "score_justification": "Abhishek provides accurate and detailed knowledge about the specific conditions for nucleic acid prediction tools and mentions recent funding, making it a highly useful contribution.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -998,17 +1075,20 @@
                 "Relational Climate": {
                     "explanation": "Lu Wang acknowledges the information provided by Stephen and Abhishek with the phrase 'Good to know'.",
                     "score": 1,
-                    "score_justification": "The phrase 'Good to know' is a clear and explicit acknowledgment of the information shared by previous speakers."
+                    "score_justification": "The phrase 'Good to know' is a clear and explicit acknowledgment of the information shared by previous speakers.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Lu Wang elaborates on the idea of protein folding tools by introducing the need to consider environmental factors and suggesting ways to propagate structures into much longer time scales.",
                     "score": 2,
-                    "score_justification": "Lu Wang elaborates on the complexity of protein folding by introducing specific environmental factors and suggesting a method to propagate structures, which is a detailed and reasoned contribution."
+                    "score_justification": "Lu Wang elaborates on the complexity of protein folding by introducing specific environmental factors and suggesting a method to propagate structures, which is a detailed and reasoned contribution.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Lu Wang assesses the potential of a tool that considers environmental factors as 'really powerful' while also acknowledging the challenge of obtaining training data.",
                     "score": 2,
-                    "score_justification": "Lu Wang provides a reasoned assessment of the tool's potential, highlighting both its power and the challenge of training data, and suggests a constructive path forward."
+                    "score_justification": "Lu Wang provides a reasoned assessment of the tool's potential, highlighting both its power and the challenge of training data, and suggests a constructive path forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1028,7 +1108,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance is a direct invitation from Rigoberto to Cheemeng, explicitly asking him if he wants to contribute to the discussion, thereby including a team member.",
                     "score": 1,
-                    "score_justification": "It is a clear and direct invitation to a specific team member to participate, which is functional but not specifically tied to their expertise or a particular topic."
+                    "score_justification": "It is a clear and direct invitation to a specific team member to participate, which is functional but not specifically tied to their expertise or a particular topic.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -1048,12 +1129,14 @@
                 "Idea Management": {
                     "explanation": "Cheemeng introduces a reasoned idea about the philosophical dynamics of AI/ML development, highlighting how commercial interest and data availability lead to tools like AlphaFold and the challenges for academic labs.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea that provides a broader perspective on the discussion, effectively moving the team's understanding forward."
+                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea that provides a broader perspective on the discussion, effectively moving the team's understanding forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Cheemeng shares his expertise and understanding of the field dynamics, explaining how commercial interest and data availability influence AI/ML development and create competition challenges for academic labs.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the competitive landscape and drivers of AI/ML development in science."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the competitive landscape and drivers of AI/ML development in science.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1073,12 +1156,14 @@
                 "Evaluation Practices": {
                     "explanation": "Rigoberto expresses simple agreement with Cheemeng's assessment of the 'field dynamic' regarding the difficulty for academic labs to compete with large companies.",
                     "score": 0,
-                    "score_justification": "The utterance is a simple approval of an idea or assessment without further reasoning or elaboration."
+                    "score_justification": "The utterance is a simple approval of an idea or assessment without further reasoning or elaboration.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Rigoberto explicitly acknowledges and supports Cheemeng's contribution by stating that his thoughts align with the point made about the 'field dynamic'.",
                     "score": 1,
-                    "score_justification": "The utterance provides an explicit acknowledgment of shared perspective, showing interest and support for the speaker's contribution."
+                    "score_justification": "The utterance provides an explicit acknowledgment of shared perspective, showing interest and support for the speaker's contribution.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -1098,17 +1183,20 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares detailed expertise about their lab's efforts to generate high-throughput data on protein function and interaction, and identifies a specific type of data that is currently missing from databases.",
                     "score": 2,
-                    "score_justification": "This contribution is accurate, detailed, and directly useful by highlighting a specific data gap and a method to address it, which can advance the team's understanding and potential research directions."
+                    "score_justification": "This contribution is accurate, detailed, and directly useful by highlighting a specific data gap and a method to address it, which can advance the team's understanding and potential research directions.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "The speaker introduces an elaborated idea for a research direction, proposing to generate specific high-throughput data to study protein function and interaction to advance the field.",
                     "score": 2,
-                    "score_justification": "This is a novel and elaborated idea, providing a reasoned approach for generating new data that could significantly move the team's research forward."
+                    "score_justification": "This is a novel and elaborated idea, providing a reasoned approach for generating new data that could significantly move the team's research forward.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "The speaker explicitly seeks information by inviting others to correct their understanding regarding the current existence of a specific type of data in databases.",
                     "score": 1,
-                    "score_justification": "This is a clear and relevant request for verification of information, contributing functionally to the discussion by ensuring accuracy."
+                    "score_justification": "This is a clear and relevant request for verification of information, contributing functionally to the discussion by ensuring accuracy.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1128,12 +1216,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen Fried confirms the accuracy of Cheemeng Tan's statement that a specific type of protein data does not yet exist in databases, thereby providing accurate and directly useful knowledge by validating the shared information.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and directly useful knowledge by confirming a specific factual claim about data availability, which is crucial for the subsequent discussion."
+                    "score_justification": "The utterance provides accurate and directly useful knowledge by confirming a specific factual claim about data availability, which is crucial for the subsequent discussion.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Stephen Fried expresses explicit acknowledgment and support for Cheemeng Tan's understanding of the data landscape by stating 'You're right,' which validates the previous speaker's contribution.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit acknowledgment and validation of the previous speaker's statement, contributing positively to the interpersonal tone."
+                    "score_justification": "The utterance provides explicit acknowledgment and validation of the previous speaker's statement, contributing positively to the interpersonal tone.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1153,12 +1243,14 @@
                 "Idea Management": {
                     "explanation": "The speaker proposes building a new database by combining experimental and high-throughput technology to generate data in a new direction, elaborating on a novel approach.",
                     "score": 2,
-                    "score_justification": "The idea is novel, elaborated with details on how to build the database (experimental, high-throughput), and reasoned by connecting it to generating data in a new direction."
+                    "score_justification": "The idea is novel, elaborated with details on how to build the database (experimental, high-throughput), and reasoned by connecting it to generating data in a new direction.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "The speaker connects his proposed database idea to a similar concept previously mentioned by Abhishek regarding protein prediction in living cells or a living cell database for PDB.",
                     "score": 1,
-                    "score_justification": "The speaker accurately links his proposed database idea to a prior contribution from Abhishek, showing a clear connection between different ideas."
+                    "score_justification": "The speaker accurately links his proposed database idea to a prior contribution from Abhishek, showing a clear connection between different ideas.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1178,12 +1270,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto structures the meeting by stating the need to move to other topics, assigning Stephen E the task of wrapping up the current discussion and bringing up his questions, and delegating the choice of the next topic to Rommie, which focuses on workflow and how the team organizes.",
                     "score": 2,
-                    "score_justification": "The utterance explicitly sets clear goals, effectively coordinates by assigning specific roles, and structures the process for moving forward, making it a highly effective contribution to team coordination."
+                    "score_justification": "The utterance explicitly sets clear goals, effectively coordinates by assigning specific roles, and structures the process for moving forward, making it a highly effective contribution to team coordination.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rigoberto explicitly invites Stephen E to speak and wrap up the discussion, and Rommie to choose the next topic, thereby including specific members and balancing contributions.",
                     "score": 2,
-                    "score_justification": "The utterance provides targeted invitations to specific individuals (Stephen E and Rommie) to contribute, directly influencing who gets to speak and how participation is distributed, making it a highly effective contribution to participation dynamics."
+                    "score_justification": "The utterance provides targeted invitations to specific individuals (Stephen E and Rommie) to contribute, directly influencing who gets to speak and how participation is distributed, making it a highly effective contribution to participation dynamics.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1203,17 +1297,20 @@
                 "Integration Practices": {
                     "explanation": "Stephen explicitly states his intention to summarize and then synthesizes the discussion by identifying a key limitation in data quality and completeness, connecting it to previous points made by Lu and external evidence.",
                     "score": 2,
-                    "score_justification": "The summary is accurate, comprehensive, and integrates multiple inputs (previous discussion, Lu's points, external conference findings) to provide a clear synthesis of the core issue."
+                    "score_justification": "The summary is accurate, comprehensive, and integrates multiple inputs (previous discussion, Lu's points, external conference findings) to provide a clear synthesis of the core issue.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen provides detailed and relevant information about the limitations of data for protein modeling, referencing specific factors (environment, chaperone binding), his personal expertise (working with Susan Lindquist), and findings from a recent ISMB meeting.",
                     "score": 2,
-                    "score_justification": "The knowledge shared is accurate, highly detailed, directly useful, and supported by both personal expertise and external evidence, significantly enriching the discussion."
+                    "score_justification": "The knowledge shared is accurate, highly detailed, directly useful, and supported by both personal expertise and external evidence, significantly enriching the discussion.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Stephen assesses the current state of protein modeling by identifying a 'key limitation' regarding the quality and completeness of data for tools like AlphaFold, providing reasoning based on various factors and external findings.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, reasoned, and actionable, clearly identifying a critical flaw in current data and implicitly suggesting areas for future improvement."
+                    "score_justification": "The evaluation is constructive, reasoned, and actionable, clearly identifying a critical flaw in current data and implicitly suggesting areas for future improvement.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1233,12 +1330,14 @@
                 "Idea Management": {
                     "explanation": "Stephen Fried introduces a new idea for generating relevant data by describing his lab's proteomic experiments, which could address the data quality and completeness limitations previously discussed.",
                     "score": 2,
-                    "score_justification": "This is a novel and elaborated idea, building on the previous discussion about data limitations by proposing a concrete experimental approach to generate data for machine learning models."
+                    "score_justification": "This is a novel and elaborated idea, building on the previous discussion about data limitations by proposing a concrete experimental approach to generate data for machine learning models.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen Fried shares specific and relevant knowledge about his lab's active proteomic experiments, detailing their focus on surveying chaperone effects and their potential to generate data for training machine learning models.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about ongoing research that is highly relevant to the team's discussion on data availability and modeling."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about ongoing research that is highly relevant to the team's discussion on data availability and modeling.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1258,12 +1357,14 @@
                 "Evaluation Practices": {
                     "explanation": "Lu assesses the merit of the collaborative approach between experimentalists and theoreticians, explicitly stating it's a \"great opportunity\" and \"the way forward.\"",
                     "score": 2,
-                    "score_justification": "The utterance provides a constructive and reasoned positive judgment, endorsing a collaborative approach as \"the way forward,\" which moves the discussion forward by highlighting a valuable direction."
+                    "score_justification": "The utterance provides a constructive and reasoned positive judgment, endorsing a collaborative approach as \"the way forward,\" which moves the discussion forward by highlighting a valuable direction.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Lu elaborates on the idea of collaboration between experimentalists and theoreticians by framing it as a \"great opportunity\" and \"the way forward,\" thereby supporting and advancing the flow of ideas.",
                     "score": 2,
-                    "score_justification": "The utterance elaborates on the previously introduced idea of collaboration, building on it by providing a clear, reasoned direction and positive framing for future work."
+                    "score_justification": "The utterance elaborates on the previously introduced idea of collaboration, building on it by providing a clear, reasoned direction and positive framing for future work.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1283,7 +1384,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yeah.' serves as a token acknowledgment, indicating minimal engagement or agreement with the previous speaker's statement.",
                     "score": 0,
-                    "score_justification": "The utterance is a token acknowledgment, directly matching the example for a score of 0 in the codebook for Relational Climate."
+                    "score_justification": "The utterance is a token acknowledgment, directly matching the example for a score of 0 in the codebook for Relational Climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1303,12 +1405,14 @@
                 "Relational Climate": {
                     "explanation": "Cheemeng's 'Yeah, you're right' explicitly acknowledges and supports Abhishek's previous statement, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit acknowledgment and agreement with the previous speaker's point, which is a clear contribution to a positive relational climate."
+                    "score_justification": "The utterance provides explicit acknowledgment and agreement with the previous speaker's point, which is a clear contribution to a positive relational climate.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Cheemeng's statement 'Yeah, you're right' assesses and affirms the merit of Abhishek's preceding explanation about the value of machine learning in interdisciplinary collaboration.",
                     "score": 0,
-                    "score_justification": "The utterance offers a simple approval of the previous speaker's point without further elaboration or reasoning."
+                    "score_justification": "The utterance offers a simple approval of the previous speaker's point without further elaboration or reasoning.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1328,12 +1432,14 @@
                 "Idea Management": {
                     "explanation": "The speaker elaborates on the idea that interactions between experimentalists and theoreticians are a great opportunity by explaining how machine learning can help address 'known unknowns'.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea, building on the general sentiment by providing a specific mechanism (ML) and a problem it solves (known unknowns), moving the discussion forward with detail."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea, building on the general sentiment by providing a specific mechanism (ML) and a problem it solves (known unknowns), moving the discussion forward with detail.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares expertise on how machine learning can be used to address 'known unknowns' in interactions between experimentalists and theoreticians, providing a specific application and benefit.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge, explaining a specific application and benefit of ML in the context of collaboration."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge, explaining a specific application and benefit of ML in the context of collaboration.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1353,12 +1459,14 @@
                 "Participation Dynamics": {
                     "explanation": "Rigoberto directly invites Rommie to contribute by choosing the next discussion topic, thereby distributing participation among team members.",
                     "score": 1,
-                    "score_justification": "It is a clear, direct invitation to a specific person to speak, but it is not specifically targeted to their unique expertise."
+                    "score_justification": "It is a clear, direct invitation to a specific person to speak, but it is not specifically targeted to their unique expertise.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto structures the meeting's flow by asking Rommie to decide the next topic, which is an act of guiding the agenda and process.",
                     "score": 1,
-                    "score_justification": "It is a clear act of structuring the meeting process by deciding the next agenda item, but it lacks further detail or explicit goal setting."
+                    "score_justification": "It is a clear act of structuring the meeting process by deciding the next agenda item, but it lacks further detail or explicit goal setting.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1378,17 +1486,20 @@
                 "Idea Management": {
                     "explanation": "Rommie introduces a new topic for discussion, 'what will be the most useful areas for AI and ML application for molecules in cells?', and elaborates with specific examples like virtual screening and decorating proteins.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea, providing specific examples that move the team forward by proposing a focused discussion point."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea, providing specific examples that move the team forward by proposing a focused discussion point.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rommie responds to Rigoberto's request to choose a topic by proposing a specific discussion point, thereby structuring the meeting's agenda and flow.",
                     "score": 1,
-                    "score_justification": "This is a clear structuring of the discussion by proposing an agenda item, but it does not include detailed coordination or task assignments."
+                    "score_justification": "This is a clear structuring of the discussion by proposing an agenda item, but it does not include detailed coordination or task assignments.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rommie implicitly invites participation from the group by asking 'Do folks have I thought that was maybe an interesting it pulls in another dimension in a more focused way' after introducing a new discussion topic.",
                     "score": 1,
-                    "score_justification": "This is a clear but general invitation for others to contribute, not targeted to a specific person or expertise."
+                    "score_justification": "This is a clear but general invitation for others to contribute, not targeted to a specific person or expertise.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1408,7 +1519,8 @@
                 "Participation Dynamics": {
                     "explanation": "Rigoberto is inviting general participation from anyone in the group to contribute to the discussion on the topic Rommie just introduced.",
                     "score": 0,
-                    "score_justification": "The utterance is a generic invitation for anyone to speak, fitting the 'Generic invite' example for a score of 0."
+                    "score_justification": "The utterance is a generic invitation for anyone to speak, fitting the 'Generic invite' example for a score of 0.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1428,12 +1540,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares relevant knowledge about ongoing research efforts to predict PTMs based on sequence using mass spec data, directly addressing Rommie's suggested topic.",
                     "score": 2,
-                    "score_justification": "He provides accurate and detailed information about current research, including the method (mass spec data) and the goal (predicting PTMs based on sequence), which is directly useful to the discussion."
+                    "score_justification": "He provides accurate and detailed information about current research, including the method (mass spec data) and the goal (predicting PTMs based on sequence), which is directly useful to the discussion.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Stephen explicitly acknowledges Rommie's previous contribution by stating he is \"riffing off something that you said very directly Rommie.\"",
                     "score": 1,
-                    "score_justification": "He provides explicit acknowledgment of Rommie's contribution, which fosters a positive interpersonal tone."
+                    "score_justification": "He provides explicit acknowledgment of Rommie's contribution, which fosters a positive interpersonal tone.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1453,17 +1567,20 @@
                 "Idea Management": {
                     "explanation": "The utterance elaborates on the idea of using models to predict PTMs and introduces the critical factor of experimental data quality as a prerequisite for successful AI/ML applications, building on a previously mentioned idea.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned contribution that builds on the initial idea of PTM prediction by identifying a key challenge (data quality) and implicitly suggesting a solution (community data aggregation)."
+                    "score_justification": "This is a novel, elaborated, and reasoned contribution that builds on the initial idea of PTM prediction by identifying a key challenge (data quality) and implicitly suggesting a solution (community data aggregation).",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides detailed and accurate knowledge about the PDB's role in AlphaFold's success and contrasts it with the general lack of high-quality experimental data for other AI/ML applications.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge, providing a concrete example (PDB) and a clear explanation of its impact on AI/ML model performance."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge, providing a concrete example (PDB) and a clear explanation of its impact on AI/ML model performance.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "The speaker assesses the merit and feasibility of current PTM prediction models by comparing their potential to AlphaFold and identifying the quality of experimental data as the primary limiting factor.",
                     "score": 2,
-                    "score_justification": "This provides constructive, reasoned, and actionable feedback by clearly identifying a core problem (data quality) and its impact on the success of AI/ML predictions."
+                    "score_justification": "This provides constructive, reasoned, and actionable feedback by clearly identifying a core problem (data quality) and its impact on the success of AI/ML predictions.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1483,12 +1600,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto shares specific knowledge about a group's efforts to make trajectories available for data mining, directly addressing the previous speaker's point about the lack of high-quality experimental data.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing concrete information about an ongoing community effort relevant to the problem discussed."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing concrete information about an ongoing community effort relevant to the problem discussed.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Rigoberto assesses the feasibility of using these trajectories by highlighting the significant problem of expense and storage space, providing reasoning for this challenge.",
                     "score": 2,
-                    "score_justification": "The feedback is constructive and reasoned, identifying a major constraint (cost/storage) with detailed justification (terabytes for small trajectories), which moves the discussion forward by clarifying limitations."
+                    "score_justification": "The feedback is constructive and reasoned, identifying a major constraint (cost/storage) with detailed justification (terabytes for small trajectories), which moves the discussion forward by clarifying limitations.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1508,7 +1627,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yeah.' serves as a minimal, token acknowledgment of the previous speaker's contribution, indicating passive listening.",
                     "score": 0,
-                    "score_justification": "This is a token acknowledgment, matching the example for a score of 0 in the Relational Climate scoring criteria."
+                    "score_justification": "This is a token acknowledgment, matching the example for a score of 0 in the Relational Climate scoring criteria.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1528,7 +1648,8 @@
                 "Idea Management": {
                     "explanation": "Rigoberto introduces a new idea by proposing a scenario where experimentalists record and deposit accurate trajectories, thereby expanding the types of data available beyond computationally generated ones.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel and elaborated idea for improving data quality and availability by suggesting the inclusion of experimentally generated trajectories, which builds on the prior discussion about data challenges."
+                    "score_justification": "The utterance presents a novel and elaborated idea for improving data quality and availability by suggesting the inclusion of experimentally generated trajectories, which builds on the prior discussion about data challenges.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1548,12 +1669,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares relevant facts about PDB submission requirements and practices, including the common submission of molecular dynamics trajectories and coarse-grain simulations, and provides expertise on the tendency for data skewing.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about PDB submission practices and their potential pitfalls, moving the discussion forward with concrete information."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about PDB submission practices and their potential pitfalls, moving the discussion forward with concrete information.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Abhishek provides a constructive critique of the practice of submitting data to PDB, highlighting the negative consequence of people skewing their data to look good for the PDB, which compromises interpretation.",
                     "score": 2,
-                    "score_justification": "The utterance offers a constructive and reasoned critique of current data submission practices, explaining the negative impact of data skewing on interpretation."
+                    "score_justification": "The utterance offers a constructive and reasoned critique of current data submission practices, explaining the negative impact of data skewing on interpretation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1573,12 +1696,14 @@
                 "Evaluation Practices": {
                     "explanation": "Stephen evaluates the controversial nature of the data submission practice described by Abhishek by explaining the underlying conflict between established knowledge (Ramachandran diagram) and new data, providing a reasoned assessment of the situation's complexity.",
                     "score": 2,
-                    "score_justification": "The utterance provides a constructive and reasoned evaluation of the controversial practice, explaining the underlying conflict with a clear example, which moves the team's understanding forward."
+                    "score_justification": "The utterance provides a constructive and reasoned evaluation of the controversial practice, explaining the underlying conflict with a clear example, which moves the team's understanding forward.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Stephen acknowledges Abhishek's point (\"Right.\") and explicitly expresses understanding and interest in the controversial nature of the data submission practice, fostering a supportive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance explicitly acknowledges and expresses understanding of the complex point raised, showing interest in the topic."
+                    "score_justification": "The utterance explicitly acknowledges and expresses understanding of the complex point raised, showing interest in the topic.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1598,12 +1723,14 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares their expert perspective on the necessity of 'integrative modeling approaches' and explains why relying on a single data source might not provide the full story, offering directly useful knowledge.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, advocating for a specific methodological approach with reasoning."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, advocating for a specific methodological approach with reasoning.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "The speaker constructively evaluates the limitation of relying solely on one type of data ('just one might not give you the full story') and proposes 'integrative modeling approaches' as a reasoned solution.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, reasoned, and offers an actionable alternative, moving the discussion towards a more robust methodology."
+                    "score_justification": "The evaluation is constructive, reasoned, and offers an actionable alternative, moving the discussion towards a more robust methodology.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1623,7 +1750,8 @@
                 "None": {
                     "explanation": "The utterance 'But I get' is an incomplete thought and too minimal to explicitly observe any specific coding behavior from the codebook.",
                     "score": 0,
-                    "score_justification": "The utterance is vague and incomplete, providing no functional contribution to any specific code category."
+                    "score_justification": "The utterance is vague and incomplete, providing no functional contribution to any specific code category.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1643,7 +1771,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto shares relevant expertise by introducing Andre's work and explaining how it addresses a previously discussed question about 'multiple structure or complexes,' providing specific and useful information.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge (Andre's work, the link, and the concept of 'multiple structure or complexes') that explicitly addresses a prior team question, moving the discussion forward."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge (Andre's work, the link, and the concept of 'multiple structure or complexes') that explicitly addresses a prior team question, moving the discussion forward.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1663,7 +1792,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yes yes' serves as a minimal acknowledgment and agreement with Rigoberto's preceding statement, indicating support for his point.",
                     "score": 0,
-                    "score_justification": "The utterance is a token acknowledgment and agreement, providing minimal contribution without further elaboration or strong positive sentiment."
+                    "score_justification": "The utterance is a token acknowledgment and agreement, providing minimal contribution without further elaboration or strong positive sentiment.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1683,7 +1813,8 @@
                 "None": {
                     "explanation": "The utterance 'because they are yeah.' is too minimal and vague to explicitly observe any specific coding behavior from the codebook, aligning with the guideline for short, non-substantive utterances.",
                     "score": 0,
-                    "score_justification": "No code applies to this utterance as it is too brief and lacks explicit content for any category."
+                    "score_justification": "No code applies to this utterance as it is too brief and lacks explicit content for any category.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1703,7 +1834,8 @@
                 "Evaluation Practices": {
                     "explanation": "The speaker assesses the merit of the PDB's strict QC standards, stating that AlphaFold's success confirms it is 'a good idea'.",
                     "score": 2,
-                    "score_justification": "The utterance provides a clear, reasoned judgment about the value of PDB's QC standards, linking it to the success of AlphaFold, which constructively validates a practice."
+                    "score_justification": "The utterance provides a clear, reasoned judgment about the value of PDB's QC standards, linking it to the success of AlphaFold, which constructively validates a practice.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1723,12 +1855,14 @@
                 "Evaluation Practices": {
                     "explanation": "Rommie assesses the merit of strict QC standards by stating 'it's necessary' and provides reasoning by explaining that one needs to 'know the bounds of the data and be ingesting enough in a way that you can learn from it.'",
                     "score": 2,
-                    "score_justification": "The utterance provides a clear judgment ('necessary') supported by detailed reasoning about data bounds and learning, which constructively elaborates on the importance of QC standards."
+                    "score_justification": "The utterance provides a clear judgment ('necessary') supported by detailed reasoning about data bounds and learning, which constructively elaborates on the importance of QC standards.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rommie shares expertise by explaining why strict QC standards are necessary, detailing the importance of understanding 'the bounds of the data' and 'ingesting enough in a way that you can learn from it.'",
                     "score": 2,
-                    "score_justification": "The utterance provides detailed and relevant knowledge about the fundamental reasons for strict QC standards, linking them to data understanding and learning."
+                    "score_justification": "The utterance provides detailed and relevant knowledge about the fundamental reasons for strict QC standards, linking them to data understanding and learning.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1748,7 +1882,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Exactly.' explicitly acknowledges and agrees with Rommie Amaro's preceding statement, contributing positively to the interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear and explicit agreement, which is a functional contribution to the relational climate."
+                    "score_justification": "The utterance provides a clear and explicit agreement, which is a functional contribution to the relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1768,12 +1903,14 @@
                 "Idea Management": {
                     "explanation": "Rommie elaborates on the idea of developing standards by describing the historical process as taking many years and involving continuous discussion.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear detail about the process of developing standards, elaborating on the previous discussion about the necessity of QC standards."
+                    "score_justification": "The utterance provides clear detail about the process of developing standards, elaborating on the previous discussion about the necessity of QC standards.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rommie shares detailed knowledge about the historical and collaborative nature of developing community standards, emphasizing the time and discussion required.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed knowledge about the complex, time-consuming, and collaborative nature of developing community standards, which is highly relevant to the ongoing discussion."
+                    "score_justification": "The utterance provides accurate and detailed knowledge about the complex, time-consuming, and collaborative nature of developing community standards, which is highly relevant to the ongoing discussion.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1793,7 +1930,8 @@
                 "Evaluation Practices": {
                     "explanation": "The speaker assesses the previously discussed challenges of developing data standards and ongoing discussions as having positive merit by reframing them as 'opportunities'.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear positive judgment of the situation, offering a different perspective on the challenges, which is functional but not deeply reasoned or actionable."
+                    "score_justification": "The utterance provides a clear positive judgment of the situation, offering a different perspective on the challenges, which is functional but not deeply reasoned or actionable.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1813,17 +1951,20 @@
                 "Relational Climate": {
                     "explanation": "Rommie explicitly agrees with Rigoberto's previous statement by saying 'Absolutely,' which is a clear acknowledgment and support.",
                     "score": 1,
-                    "score_justification": "It's an explicit acknowledgment and agreement, which is functional but not a strong, trust-fostering statement."
+                    "score_justification": "It's an explicit acknowledgment and agreement, which is functional but not a strong, trust-fostering statement.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rommie shares relevant information about external efforts, stating that 'a lot of folks lobbying very you know various agencies to try to develop that within different domains,' providing context about ongoing work in the field.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge about the broader scientific landscape related to the discussion, moving the team's understanding forward."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge about the broader scientific landscape related to the discussion, moving the team's understanding forward.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Rommie assesses the merit of developing standards in certain areas by stating 'where the rewards may be particularly promising,' indicating a positive judgment of their potential.",
                     "score": 1,
-                    "score_justification": "It's a judgment with some reasoning (promising rewards), but it's not a highly constructive or actionable critique/suggestion for the team's specific work."
+                    "score_justification": "It's a judgment with some reasoning (promising rewards), but it's not a highly constructive or actionable critique/suggestion for the team's specific work.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1843,17 +1984,20 @@
                 "Idea Management": {
                     "explanation": "The utterance introduces a new topic, 'inverse design,' and a specific idea for discussion, 'how do we learn from the AI,' which elaborates on the flow of ideas.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a novel and elaborated idea ('how do we learn from the AI?') that builds on the general AI discussion and proposes a new direction for exploration."
+                    "score_justification": "The utterance introduces a novel and elaborated idea ('how do we learn from the AI?') that builds on the general AI discussion and proposes a new direction for exploration.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "The utterance explicitly asks a precise and targeted question, 'how do we learn from the AI?', seeking specific information or discussion on a new aspect of AI.",
                     "score": 2,
-                    "score_justification": "The question 'how do we learn from the AI?' is precise, targeted, and highly relevant, aiming to surface a specific gap in understanding or discussion."
+                    "score_justification": "The question 'how do we learn from the AI?' is precise, targeted, and highly relevant, aiming to surface a specific gap in understanding or discussion.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance attempts to structure the meeting by suggesting a transition to a new topic ('inverse design') and acknowledging a time constraint ('I don't know how much more time we have').",
                     "score": 1,
-                    "score_justification": "The utterance clearly suggests moving to a new agenda item and acknowledges a time constraint, providing some structure to the discussion."
+                    "score_justification": "The utterance clearly suggests moving to a new agenda item and acknowledges a time constraint, providing some structure to the discussion.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1873,17 +2017,20 @@
                 "Idea Management": {
                     "explanation": "Abhishek introduces and elaborates on several complex ideas and problems, such as validating generated models, the concept of generative dynamics, the bottleneck of feature selection in training, and the challenge of validating 'known unknowns' and 'unknown unknowns'.",
                     "score": 2,
-                    "score_justification": "The utterance presents novel and elaborated ideas, building on the previous discussion about AI and learning, and clearly moves the team's conceptual understanding forward by framing complex challenges in detail."
+                    "score_justification": "The utterance presents novel and elaborated ideas, building on the previous discussion about AI and learning, and clearly moves the team's conceptual understanding forward by framing complex challenges in detail.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Abhishek repeatedly asks precise and targeted questions about how to validate generated models, how to handle 'known unknowns' and 'unknown unknowns', and how to effectively train models, explicitly inviting 'thoughts about it'.",
                     "score": 2,
-                    "score_justification": "The questions are highly precise, targeted, and relevant to the core challenges of AI model validation and training, surfacing critical gaps in understanding and methodology."
+                    "score_justification": "The questions are highly precise, targeted, and relevant to the core challenges of AI model validation and training, surfacing critical gaps in understanding and methodology.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Abhishek provides detailed and accurate information, referencing Rommie's 'spike work' with Arvind, explaining non-generative vs. generative models, and later detailing specific tools like manifold EM and Polaris, citing Rommie's Nature Chem paper and its pioneers.",
                     "score": 2,
-                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge, including specific examples, technical concepts, and relevant literature, significantly enriching the team's understanding."
+                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge, including specific examples, technical concepts, and relevant literature, significantly enriching the team's understanding.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1903,7 +2050,8 @@
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly acknowledges Stephen's desire to speak and directly invites him to contribute, thereby managing the flow of participation in the meeting.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear, direct invitation to a specific individual to speak, which is functional but not tied to specific expertise or topic."
+                    "score_justification": "The utterance provides a clear, direct invitation to a specific individual to speak, which is functional but not tied to specific expertise or topic.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1923,12 +2071,14 @@
                 "Idea Management": {
                     "explanation": "Stephen introduces the idea of addressing data quality through cross-validation using independent datasets or cohorts from different institutions, which is an elaborated and reasoned contribution to the discussion on validation.",
                     "score": 2,
-                    "score_justification": "The utterance presents a clear, elaborated, and reasoned idea for validation, building on the previous discussion about challenges in validating generative models."
+                    "score_justification": "The utterance presents a clear, elaborated, and reasoned idea for validation, building on the previous discussion about challenges in validating generative models.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares expertise on how the scientific field typically ensures data quality and validates models by using independent datasets and cross-validation, providing detailed and directly useful information.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about standard practices in the field for validating models and ensuring data quality."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about standard practices in the field for validating models and ensuring data quality.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1948,7 +2098,8 @@
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly invites two specific team members, Che-Meng and Davide, to contribute to the discussion, with Davide's invitation being tied to a specific topic ('the inversion problem').",
                     "score": 2,
-                    "score_justification": "The utterance provides targeted invitations to specific individuals, with one linked to a particular topic, effectively balancing contributions and moving the discussion forward by seeking relevant input."
+                    "score_justification": "The utterance provides targeted invitations to specific individuals, with one linked to a particular topic, effectively balancing contributions and moving the discussion forward by seeking relevant input.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -1968,7 +2119,8 @@
                 "Idea Management": {
                     "explanation": "Davide introduces his approach to the 'inversion problem' by framing it as a design challenge focused on achieving a certain function by determining molecular features, which is a clear idea for problem-solving.",
                     "score": 1,
-                    "score_justification": "The utterance presents a clear idea for how to approach the problem, providing some detail about the focus (function, system design, molecular features), making it a functional contribution."
+                    "score_justification": "The utterance presents a clear idea for how to approach the problem, providing some detail about the focus (function, system design, molecular features), making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1988,7 +2140,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Features yes yeah.' serves as a minimal acknowledgment and agreement with Davide's previous mention of 'molecular features,' indicating engagement with the discussion.",
                     "score": 0,
-                    "score_justification": "It is a token acknowledgment, providing minimal contribution to the discussion beyond simple agreement."
+                    "score_justification": "It is a token acknowledgment, providing minimal contribution to the discussion beyond simple agreement.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2008,12 +2161,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Davide shares relevant facts about the limitations of existing materials databases (oversimplified, ideal crystals) and the complexity of real-world matter, providing crucial context for the problem.",
                     "score": 2,
-                    "score_justification": "He provides accurate and detailed knowledge about the shortcomings of current approaches and the nature of the problem, which is directly useful for understanding the challenge."
+                    "score_justification": "He provides accurate and detailed knowledge about the shortcomings of current approaches and the nature of the problem, which is directly useful for understanding the challenge.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Davide introduces an idea for a research direction, proposing to use a combination of molecular modeling and machine learning techniques to design mesoscale systems with desired properties.",
                     "score": 1,
-                    "score_justification": "The idea is clear in its general direction (combining techniques for system design) but is acknowledged as 'very vague at the moment,' lacking specific elaboration."
+                    "score_justification": "The idea is clear in its general direction (combining techniques for system design) but is acknowledged as 'very vague at the moment,' lacking specific elaboration.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2033,17 +2188,20 @@
                 "Participation Dynamics": {
                     "explanation": "Stephen explicitly invites specific team members (Abhishek, Davide, Rommie) to share their opinions, highlighting their expertise in simulation.",
                     "score": 2,
-                    "score_justification": "This is a targeted invite tied to specific individuals' expertise ('that do a lot more simulation'), which is a highly effective way to foster participation."
+                    "score_justification": "This is a targeted invite tied to specific individuals' expertise ('that do a lot more simulation'), which is a highly effective way to foster participation.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen provides detailed background information about cryo-EM experiments, particle states, Boltzmann weights, and the challenge of incorporating time, setting the context for his idea.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a complex concept and its limitations."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a complex concept and its limitations.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Stephen introduces a novel idea to train a model to interpolate and thread together cryo-EM states to introduce an arrow of time, building on the previous discussion about combining molecular modeling and machine learning.",
                     "score": 2,
-                    "score_justification": "The idea is novel, elaborated with context, and reasoned, clearly moving the team's discussion forward by proposing a specific approach to a problem."
+                    "score_justification": "The idea is novel, elaborated with context, and reasoned, clearly moving the team's discussion forward by proposing a specific approach to a problem.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2063,12 +2221,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Davide shares the relevant fact that the systems being discussed (cryo-EM data) often exist in a 'non-equilibrium realm,' which is crucial context for Stephen's proposal.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies a fundamental aspect of the problem, making the team more effective by correcting a potential misconception."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies a fundamental aspect of the problem, making the team more effective by correcting a potential misconception.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Davide implicitly critiques Stephen's assumption of equilibrium by stating that the systems are in a 'non-equilibrium realm,' thereby assessing the feasibility of Stephen's idea under that assumption.",
                     "score": 1,
-                    "score_justification": "It's a judgment with implicit reasoning (the non-equilibrium nature of the systems), but it doesn't offer an alternative or more elaborated constructive feedback."
+                    "score_justification": "It's a judgment with implicit reasoning (the non-equilibrium nature of the systems), but it doesn't offer an alternative or more elaborated constructive feedback.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2088,7 +2248,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares a critical technical premise ('Assuming equilibrium') that underlies his previous suggestion, directly responding to Davide's point about the 'non-equilibrium realm' of cryo-EM data.",
                     "score": 2,
-                    "score_justification": "The utterance provides an accurate and directly useful piece of knowledge by clarifying a fundamental technical assumption relevant to the ongoing scientific discussion."
+                    "score_justification": "The utterance provides an accurate and directly useful piece of knowledge by clarifying a fundamental technical assumption relevant to the ongoing scientific discussion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2108,7 +2269,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek provides detailed and relevant information about existing methods and research for extracting dynamics and free energy pathways from 2D cryo-EM data, including specific tools and their limitations regarding kinetics, directly addressing Stephen's inquiry.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, highly detailed, and directly useful, citing specific researchers, publications, and tools (manifold EM, Polaris) to explain the state of the art in the field."
+                    "score_justification": "The contribution is accurate, highly detailed, and directly useful, citing specific researchers, publications, and tools (manifold EM, Polaris) to explain the state of the art in the field.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2128,12 +2290,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares detailed knowledge about using Markov state modeling for kinetics and different experimental methods (single molecule, cryo-EM) to obtain free energy surfaces, which is directly useful and relevant to the ongoing technical discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides specific technical methods (Markov state modeling, single molecule experiments, cryo-EM images) and their applications (recovering kinetics, experimental free energy plots), making it a highly detailed and useful contribution."
+                    "score_justification": "The utterance provides specific technical methods (Markov state modeling, single molecule experiments, cryo-EM images) and their applications (recovering kinetics, experimental free energy plots), making it a highly detailed and useful contribution.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Abhishek elaborates on the idea of obtaining free energy surfaces and kinetics by detailing specific methods like Markov state modeling and using cryo-EM images, which expands on the technical approach being discussed.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear details on methods to achieve the goal of recovering kinetics and free energy surfaces, making it a functional elaboration of the overall approach."
+                    "score_justification": "The utterance provides clear details on methods to achieve the goal of recovering kinetics and free energy surfaces, making it a functional elaboration of the overall approach.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2153,7 +2317,8 @@
                 "Information Seeking": {
                     "explanation": "Stephen explicitly asks 'how does that work?' and then provides specific, targeted questions about the methodology, inquiring whether it uses the standard cryo-EM pipeline or goes directly from the image, which aligns with the definition of Information Seeking.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, asking for specific details about the method's implementation (canonical pipeline vs. direct from image), which is highly relevant to the ongoing discussion about cryo-EM dynamics."
+                    "score_justification": "The question is precise and targeted, asking for specific details about the method's implementation (canonical pipeline vs. direct from image), which is highly relevant to the ongoing discussion about cryo-EM dynamics.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2173,7 +2338,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek provides accurate and detailed information about how the method works, specifying that it goes directly from the image and mentioning specific tools and techniques like cryoSPARC, RELION, and 3D variational analysis, directly answering Stephen's question.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by explaining the technical specifics of the method, including tools and techniques, in response to a precise question."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by explaining the technical specifics of the method, including tools and techniques, in response to a precise question.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2193,12 +2359,14 @@
                 "Evaluation Practices": {
                     "explanation": "Stephen assesses the merit and utility of the discussed cryo-EM dynamics extraction, stating that molecular dynamicists \"should then definitely be like taking advantage of\" it.",
                     "score": 2,
-                    "score_justification": "The utterance provides a constructive evaluation of the method's utility for a specific scientific community (molecular dynamicists) and implicitly suggests an actionable path forward."
+                    "score_justification": "The utterance provides a constructive evaluation of the method's utility for a specific scientific community (molecular dynamicists) and implicitly suggests an actionable path forward.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Stephen proposes a synthesis of different scientific approaches, suggesting that after AI has advanced understanding, they should \"go back to like you know Newton and try to figure out how these things thread together.\"",
                     "score": 2,
-                    "score_justification": "The utterance offers a comprehensive and reasoned suggestion for combining distinct scientific methodologies (AI and fundamental physics) to achieve a deeper understanding."
+                    "score_justification": "The utterance offers a comprehensive and reasoned suggestion for combining distinct scientific methodologies (AI and fundamental physics) to achieve a deeper understanding.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2218,7 +2386,8 @@
                 "Information Seeking": {
                     "explanation": "Abhishek states a lack of understanding of Stephen's previous statement, which implicitly surfaces a gap in information and prompts clarification from Stephen.",
                     "score": 0,
-                    "score_justification": "The utterance is vague in what specific information is sought, but it clearly indicates a gap in understanding, making it a minimal contribution to information seeking."
+                    "score_justification": "The utterance is vague in what specific information is sought, but it clearly indicates a gap in understanding, making it a minimal contribution to information seeking.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2238,7 +2407,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Stephen is providing information by clarifying that his previous statement about molecular dynamicists taking advantage of certain techniques was referring to Abhishek's work, which helps align understanding in the conversation.",
                     "score": 1,
-                    "score_justification": "The utterance is a relevant contribution that clarifies a specific point of confusion, providing information about the speaker's understanding of the other person's activities."
+                    "score_justification": "The utterance is a relevant contribution that clarifies a specific point of confusion, providing information about the speaker's understanding of the other person's activities.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2258,12 +2428,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares relevant expertise by describing current practices in the field, noting that many researchers, including 'Rommie,' are combining AI with molecular dynamics, and explains how the mindset regarding fixed structures has evolved due to AlphaFold.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining current practices and a significant shift in the field's mindset regarding molecular structures."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining current practices and a significant shift in the field's mindset regarding molecular structures.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Abhishek expresses agreement and acknowledgment with Stephen's previous statement by starting with 'Exactly,' which supports a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The use of 'Exactly' provides explicit acknowledgment and agreement, contributing positively to the interpersonal tone."
+                    "score_justification": "The use of 'Exactly' provides explicit acknowledgment and agreement, contributing positively to the interpersonal tone.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2283,12 +2455,14 @@
                 "Information Seeking": {
                     "explanation": "Stephen asks a clear question, 'what do you think is next?', to elicit information about potential future directions or developments in the scientific domain.",
                     "score": 1,
-                    "score_justification": "The question is clear but general, asking about a broad 'next' step rather than a precise, targeted piece of information."
+                    "score_justification": "The question is clear but general, asking about a broad 'next' step rather than a precise, targeted piece of information.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "By asking 'what do you think is next?', Stephen explicitly prompts Abhishek to introduce and generate new ideas or directions for future research and development.",
                     "score": 1,
-                    "score_justification": "The utterance clearly introduces the opportunity for new ideas, providing a clear prompt for idea generation."
+                    "score_justification": "The utterance clearly introduces the opportunity for new ideas, providing a clear prompt for idea generation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2308,17 +2482,20 @@
                 "Idea Management": {
                     "explanation": "Abhishek introduces several ideas, including a 'technology of Tesla inside a molecular dynamics simulation,' the need for 'a computer science friend,' and the concept of 'unlearning noise,' elaborating on their challenges and implications.",
                     "score": 2,
-                    "score_justification": "The utterance introduces multiple novel and elaborated ideas, such as integrating Tesla technology into MD simulations and the concept of 'unlearning noise,' and proposes a concrete next step (writing a DP2), making it a highly reasoned contribution."
+                    "score_justification": "The utterance introduces multiple novel and elaborated ideas, such as integrating Tesla technology into MD simulations and the concept of 'unlearning noise,' and proposes a concrete next step (writing a DP2), making it a highly reasoned contribution.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares his expertise on the challenges of integrating new technologies (software/hardware), the importance of machine learning and interdisciplinary collaboration (CS friend), and the fundamental problem of noise in experimental data, linking it to the historical role of PDB.",
                     "score": 2,
-                    "score_justification": "The speaker provides accurate and detailed knowledge regarding the technical challenges of new technologies, the necessity of machine learning expertise, and the critical issue of noise in experimental data, drawing on relevant examples like PDB."
+                    "score_justification": "The speaker provides accurate and detailed knowledge regarding the technical challenges of new technologies, the necessity of machine learning expertise, and the critical issue of noise in experimental data, drawing on relevant examples like PDB.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Abhishek explicitly asks 'how would you unlearn noise?' and expresses uncertainty about the future direction of the field ('I don't know where this thing is going'), surfacing a gap in collective understanding or strategy.",
                     "score": 2,
-                    "score_justification": "The question 'how would you unlearn noise?' is precise, targeted, and highly relevant to the ongoing discussion about data quality and machine learning, effectively surfacing a critical gap."
+                    "score_justification": "The question 'how would you unlearn noise?' is precise, targeted, and highly relevant to the ongoing discussion about data quality and machine learning, effectively surfacing a critical gap.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2338,7 +2515,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto shares specific knowledge about autoencoders as a standard machine learning technique for denoising data, directly addressing the problem of noise raised by Abhishek.",
                     "score": 2,
-                    "score_justification": "The utterance provides a specific, relevant, and detailed example (autoencoders) of how to address the previously discussed problem of noise in data, making it highly useful."
+                    "score_justification": "The utterance provides a specific, relevant, and detailed example (autoencoders) of how to address the previously discussed problem of noise in data, making it highly useful.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2358,17 +2536,20 @@
                 "Idea Management": {
                     "explanation": "Stephen elaborates on the idea of noise removal, specifying its relevance to unstructured data like proteomics and linking it to the need for well-curated databases and quality standards.",
                     "score": 2,
-                    "score_justification": "The utterance provides a detailed elaboration of the problem of noise in specific data types and proposes a solution path involving curated databases and standards, moving the discussion forward."
+                    "score_justification": "The utterance provides a detailed elaboration of the problem of noise in specific data types and proposes a solution path involving curated databases and standards, moving the discussion forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen shares relevant expertise by citing specific unstructured data types from his work, such as ribosome profiling and proteomics, to exemplify the challenge of noise.",
                     "score": 2,
-                    "score_justification": "The utterance offers specific, detailed examples of unstructured data from his expertise, directly illustrating the problem of noise in a relevant and useful way."
+                    "score_justification": "The utterance offers specific, detailed examples of unstructured data from his expertise, directly illustrating the problem of noise in a relevant and useful way.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Stephen asks a precise question about how to handle noise once data quality standards are in place, seeking further information or solutions.",
                     "score": 2,
-                    "score_justification": "The question is specific and directly relevant to the ongoing discussion about managing noise in data, seeking a concrete next step or solution."
+                    "score_justification": "The question is specific and directly relevant to the ongoing discussion about managing noise in data, seeking a concrete next step or solution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2388,17 +2569,20 @@
                 "Relational Climate": {
                     "explanation": "The speaker acknowledges a previous point made by Stephen ('as you said non-standard noise') and explicitly yields the floor with an apology ('Sorry, go ahead.'), fostering a polite and respectful interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance contains explicit acknowledgment and politeness, which is a clear contribution to the relational climate."
+                    "score_justification": "The utterance contains explicit acknowledgment and politeness, which is a clear contribution to the relational climate.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "The phrase 'Sorry, go ahead' explicitly invites another participant to continue speaking, thereby facilitating turn-taking and balancing contributions.",
                     "score": 1,
-                    "score_justification": "This is a direct and clear invitation for another person to speak, contributing functionally to participation dynamics."
+                    "score_justification": "This is a direct and clear invitation for another person to speak, contributing functionally to participation dynamics.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "The speaker elaborates on the concept of noise by specifying 'non-standard noise,' building on the previous discussion about data quality and noise removal.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear elaboration on an existing idea by adding a specific detail ('non-standard noise')."
+                    "score_justification": "The utterance provides a clear elaboration on an existing idea by adding a specific detail ('non-standard noise').",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2418,17 +2602,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto structures the meeting by stating a time constraint and assigning Stephen the task of figuring out what to report out from the conversation.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear goals and process structuring for the meeting, making it a functional contribution."
+                    "score_justification": "The utterance provides clear goals and process structuring for the meeting, making it a functional contribution.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Rigoberto assesses the current discussion by expressing concern that it has narrowed to only needing more data and computer time, providing reasoning for his critique.",
                     "score": 2,
-                    "score_justification": "The utterance offers constructive, reasoned feedback by critiquing the discussion's narrow focus and implicitly suggesting a broader approach."
+                    "score_justification": "The utterance offers constructive, reasoned feedback by critiquing the discussion's narrow focus and implicitly suggesting a broader approach.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Rigoberto attempts to broaden the flow of ideas by asking for 'something more' than just data/databases and suggesting an emphasis on 'different types of unknowns'.",
                     "score": 1,
-                    "score_justification": "The utterance introduces a clear direction for new ideas, moving beyond the current narrow focus, making it a functional contribution to idea flow."
+                    "score_justification": "The utterance introduces a clear direction for new ideas, moving beyond the current narrow focus, making it a functional contribution to idea flow.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2448,12 +2635,14 @@
                 "Idea Management": {
                     "explanation": "Stephen elaborates on the previously discussed idea of 'needing more data' by reframing it as a broader need for communities to collaborate, cooperate, and establish standards for data quality.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a novel and elaborated idea about community collaboration and standards, building on previous discussion and offering a constructive path forward."
+                    "score_justification": "The utterance introduces a novel and elaborated idea about community collaboration and standards, building on previous discussion and offering a constructive path forward.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Stephen synthesizes the conversation, particularly Rigoberto's critique about the focus on 'more data,' by identifying a 'broader lesson' and a 'big takeaway' about community-wide standards and cooperation.",
                     "score": 2,
-                    "score_justification": "The utterance offers a balanced and comprehensive integration of the conversation, reframing a previous point into a broader, more insightful takeaway for the team."
+                    "score_justification": "The utterance offers a balanced and comprehensive integration of the conversation, reframing a previous point into a broader, more insightful takeaway for the team.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2473,17 +2662,20 @@
                 "Information Seeking": {
                     "explanation": "Rigoberto asks a precise and targeted question about the specific 'objects' needed in a database to accelerate understanding of the cell, building on the prior discussion about data.",
                     "score": 2,
-                    "score_justification": "The question is highly specific ('what are the objects that we would want in that database') and directly relevant to the team's goal of accelerating understanding."
+                    "score_justification": "The question is highly specific ('what are the objects that we would want in that database') and directly relevant to the team's goal of accelerating understanding.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto structures the discussion by explicitly setting a boundary ('We don't want to talk about materials') and then posing a question to define the content of a database, which is a step towards a collective decision or goal.",
                     "score": 2,
-                    "score_justification": "He effectively coordinates the discussion by narrowing the scope and setting a clear, actionable goal to identify specific database components."
+                    "score_justification": "He effectively coordinates the discussion by narrowing the scope and setting a clear, actionable goal to identify specific database components.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Rigoberto introduces the idea of focusing on 'assemblies or complexes' as types of datasets and then prompts the team to generate further ideas for specific 'objects' to include in the database.",
                     "score": 2,
-                    "score_justification": "He elaborates on the general need for data by suggesting specific categories ('assemblies or complexes') and then actively solicits novel ideas for database content."
+                    "score_justification": "He elaborates on the general need for data by suggesting specific categories ('assemblies or complexes') and then actively solicits novel ideas for database content.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2503,12 +2695,14 @@
                 "Idea Management": {
                     "explanation": "Abhishek introduces 'imaging data' as a desired object for the database and elaborates on it by specifying the need for 'imaging raw data' over processed movies.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a specific type of data (imaging) and elaborates on its desired form (raw data), providing a clear and detailed contribution to the discussion."
+                    "score_justification": "The utterance introduces a specific type of data (imaging) and elaborates on its desired form (raw data), providing a clear and detailed contribution to the discussion.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares specific knowledge by clarifying that 'raw imaging data' is needed, not just the final processed movie, which is relevant expertise for the database content.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed knowledge by specifying the need for 'raw imaging data' over processed movies, which is directly useful for defining database content."
+                    "score_justification": "The utterance provides accurate and detailed knowledge by specifying the need for 'raw imaging data' over processed movies, which is directly useful for defining database content.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2528,12 +2722,14 @@
                 "Evaluation Practices": {
                     "explanation": "Rigoberto assesses the feasibility of including imaging data by highlighting a known problem that Google faces, implicitly critiquing the complexity of the idea.",
                     "score": 1,
-                    "score_justification": "The utterance identifies a known problem as a reason for potential difficulty with the idea, providing some reasoning for the implicit critique."
+                    "score_justification": "The utterance identifies a known problem as a reason for potential difficulty with the idea, providing some reasoning for the implicit critique.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Rigoberto explicitly asks a precise and targeted question about how to search images, directly addressing a challenge related to the proposed imaging data.",
                     "score": 2,
-                    "score_justification": "The question is precise and directly targets a key challenge related to the proposed idea of including imaging data, seeking a specific solution or understanding."
+                    "score_justification": "The question is precise and directly targets a key challenge related to the proposed idea of including imaging data, seeking a specific solution or understanding.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2553,12 +2749,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek provides detailed expertise on how to train and discriminate imaging data, specifically suggesting pixel intensity as a good indicator, directly addressing the challenge of searching images.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, offering a concrete technical approach to a previously raised problem."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge, offering a concrete technical approach to a previously raised problem.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Abhishek elaborates on the idea of including imaging data in the database by detailing a method for training and discrimination based on pixel intensity, making the idea more concrete and feasible.",
                     "score": 2,
-                    "score_justification": "The utterance provides a novel, elaborated, and reasoned approach to an existing idea, building on previous contributions and moving the discussion forward."
+                    "score_justification": "The utterance provides a novel, elaborated, and reasoned approach to an existing idea, building on previous contributions and moving the discussion forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2578,7 +2776,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance explicitly acknowledges Davide's non-verbal cue to speak, thereby inviting him to contribute and facilitating his participation in the discussion.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, direct invitation for a specific person to speak, which is functional but not tied to their specific expertise or a particular topic."
+                    "score_justification": "The utterance is a clear, direct invitation for a specific person to speak, which is functional but not tied to their specific expertise or a particular topic.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2598,17 +2797,20 @@
                 "Idea Management": {
                     "explanation": "Davide introduces a novel idea for model simplification by incorporating more physics, elaborating on how this reduces the need for deep neural networks and extensive data.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea that directly addresses previous concerns about data and computer time."
+                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea that directly addresses previous concerns about data and computer time.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Davide shares his expertise on how integrating physics into models can simplify them and reduce data dependency, providing a detailed alternative approach.",
                     "score": 2,
-                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge about an alternative modeling strategy."
+                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge about an alternative modeling strategy.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Davide constructively assesses the limitations of deep neural networks under data constraints and proposes a reasoned, actionable alternative by simplifying models with physics.",
                     "score": 2,
-                    "score_justification": "The utterance provides constructive, reasoned feedback by critiquing an existing approach and offering a detailed, actionable alternative."
+                    "score_justification": "The utterance provides constructive, reasoned feedback by critiquing an existing approach and offering a detailed, actionable alternative.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2628,17 +2830,20 @@
                 "Idea Management": {
                     "explanation": "The speaker introduces the novel idea of allowing additional metadata to grow and be annotated by others, building on Abhishek's point about PDB limitations.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that proposes a concrete solution to a perceived limitation, moving the team forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that proposes a concrete solution to a perceived limitation, moving the team forward.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly invites Rommie to contribute to the discussion by saying 'Go ahead Rommie.'",
                     "score": 1,
-                    "score_justification": "This is a clear, direct invitation for a specific person to speak."
+                    "score_justification": "This is a clear, direct invitation for a specific person to speak.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "The speaker accurately references Abhishek's previous contribution regarding PDB limitations on metadata, using it as a foundation for the new idea.",
                     "score": 1,
-                    "score_justification": "The speaker accurately summarizes a specific previous contribution, linking it to the current discussion, but it's not a comprehensive integration for closure."
+                    "score_justification": "The speaker accurately summarizes a specific previous contribution, linking it to the current discussion, but it's not a comprehensive integration for closure.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2658,7 +2863,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Rommie explicitly structures the meeting process by noting the upcoming transition to 'reporting out' in three minutes and suggests sharing a slide with Stephen to facilitate this transition, which directly relates to workflow and how the team organizes.",
                     "score": 2,
-                    "score_justification": "The utterance provides explicit information about the meeting's schedule and proposes a concrete action to effectively coordinate the transition to the next agenda item, making the team more effective."
+                    "score_justification": "The utterance provides explicit information about the meeting's schedule and proposes a concrete action to effectively coordinate the transition to the next agenda item, making the team more effective.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2678,7 +2884,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance confirms Stephen is performing the action of sharing the slide, which was suggested by Rommie as a coordination step for the upcoming reporting out, thus structuring the process.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear and direct action that enacts a suggested coordination step, making it a functional contribution to the team's workflow."
+                    "score_justification": "The utterance is a clear and direct action that enacts a suggested coordination step, making it a functional contribution to the team's workflow.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2698,12 +2905,14 @@
                 "Relational Climate": {
                     "explanation": "Rigoberto expresses support for Rommie's suggestion by stating 'I'm on board with Rommie,' which contributes to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance explicitly shows support for a team member's contribution, which is a clear positive acknowledgment."
+                    "score_justification": "The utterance explicitly shows support for a team member's contribution, which is a clear positive acknowledgment.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto explicitly agrees with Rommie's suggestion to share the slide and switch to reporting out, confirming a decision to proceed with the proposed process.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear agreement to a proposed coordination step, helping to structure the team's workflow."
+                    "score_justification": "The utterance provides a clear agreement to a proposed coordination step, helping to structure the team's workflow.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2723,12 +2932,14 @@
                 "Information Seeking": {
                     "explanation": "Rigoberto asks Stephen direct questions to ascertain his preparedness and content for the upcoming presentation, explicitly seeking information about his readiness.",
                     "score": 1,
-                    "score_justification": "The questions are clear and directly seek information about Stephen's presentation, but they are general about the content rather than highly precise."
+                    "score_justification": "The questions are clear and directly seek information about Stephen's presentation, but they are general about the content rather than highly precise.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Rigoberto's questions to Stephen serve to check his readiness for the 'reporting out' phase, thereby structuring the meeting's workflow and ensuring the process can proceed as planned.",
                     "score": 1,
-                    "score_justification": "The utterance clearly aims to coordinate the next step in the meeting's agenda by checking on a team member's preparedness for a planned activity."
+                    "score_justification": "The utterance clearly aims to coordinate the next step in the meeting's agenda by checking on a team member's preparedness for a planned activity.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2748,17 +2959,20 @@
                 "Information Seeking": {
                     "explanation": "Stephen explicitly asks for input from others to identify any gaps in his understanding of previous discussions, which is a precise way of seeking information.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, aiming to surface highly relevant information about what might be missing from the discussion."
+                    "score_justification": "The question is precise and targeted, aiming to surface highly relevant information about what might be missing from the discussion.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Stephen states his intention to provide specific examples and expertise related to imaging and proteomics data, linking it to previous points.",
                     "score": 1,
-                    "score_justification": "He outlines a relevant contribution with some detail about the specific types of data and expertise he plans to share."
+                    "score_justification": "He outlines a relevant contribution with some detail about the specific types of data and expertise he plans to share.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Stephen attempts to summarize a key point of agreement among the team, synthesizing previous contributions into a shared understanding.",
                     "score": 1,
-                    "score_justification": "He provides an accurate summary of a perceived common agreement, which is a partial integration of contributions."
+                    "score_justification": "He provides an accurate summary of a perceived common agreement, which is a partial integration of contributions.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2778,12 +2992,14 @@
                 "Relational Climate": {
                     "explanation": "Rigoberto expresses feeling 'slighted' due to an oversight in attribution, which is a direct comment on the interpersonal tone, even if delivered playfully.",
                     "score": 0,
-                    "score_justification": "The expression of feeling 'slighted' is a mild negative contribution to the relational climate, but the 'that's another story' softens its impact, making it a minimal contribution."
+                    "score_justification": "The expression of feeling 'slighted' is a mild negative contribution to the relational climate, but the 'that's another story' softens its impact, making it a minimal contribution.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Rigoberto corrects Stephen's previous summary by stating that he also emphasized 'dynamics,' indicating a misrepresentation of his contribution.",
                     "score": 1,
-                    "score_justification": "Rigoberto provides an accurate correction to a specific detail within a previous summary, making it a clear but partial correction of contributions."
+                    "score_justification": "Rigoberto provides an accurate correction to a specific detail within a previous summary, making it a clear but partial correction of contributions.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2803,12 +3019,14 @@
                 "Evaluation Practices": {
                     "explanation": "Abhishek offers a judgment (\"that's fine\") on Rigoberto's contribution about emphasizing dynamics, providing a contextual reason (\"in the scheme of cell level\").",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear judgment with some contextual reasoning, moving beyond simple approval."
+                    "score_justification": "The utterance provides a clear judgment with some contextual reasoning, moving beyond simple approval.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Abhishek provides a mild affirmation (\"that's fine\") in response to Rigoberto's playful complaint, acknowledging his point and fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance offers a direct and mildly supportive acknowledgment to a personal comment, contributing positively to the team's climate."
+                    "score_justification": "The utterance offers a direct and mildly supportive acknowledgment to a personal comment, contributing positively to the team's climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2828,7 +3046,8 @@
                 "Relational Climate": {
                     "explanation": "Rommie uses humor to acknowledge a misattribution and then explicitly redirects credit to the rightful person (likely Rigoberto), fostering a positive and supportive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "Rommie's humorous acceptance of misattribution and subsequent redirection of credit to the rightful person fosters a positive and trusting relational climate, directly addressing a previous slight."
+                    "score_justification": "Rommie's humorous acceptance of misattribution and subsequent redirection of credit to the rightful person fosters a positive and trusting relational climate, directly addressing a previous slight.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2848,7 +3067,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Rommie attempts to structure the discussion by prompting for additional points or topics to discuss, which helps manage the workflow of the meeting.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear, general prompt to continue the discussion, which is a functional way to structure the meeting flow."
+                    "score_justification": "The utterance provides a clear, general prompt to continue the discussion, which is a functional way to structure the meeting flow.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2868,17 +3088,20 @@
                 "Idea Management": {
                     "explanation": "Rigoberto introduces and elaborates on the idea of needing databases that allow for growth and the discovery of 'unknown unknowns,' contrasting it with the limitations of highly curated databases.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on a potential problem and suggests a new direction, moving the team forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on a potential problem and suggests a new direction, moving the team forward.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Rigoberto evaluates the current practice of highly curated databases by critiquing their potential to limit the discovery of 'unknown unknowns.'",
                     "score": 2,
-                    "score_justification": "This is constructive, reasoned feedback on an existing approach, identifying a specific limitation and implicitly suggesting a need for change."
+                    "score_justification": "This is constructive, reasoned feedback on an existing approach, identifying a specific limitation and implicitly suggesting a need for change.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Rigoberto integrates Abhishek's previous contribution by explicitly referencing it ('I think Abhishek noted that') to support his point about the importance of allowing for 'unknown unknowns.'",
                     "score": 2,
-                    "score_justification": "This is an accurate and balanced integration of a previous contribution, linking it to the current discussion and showing how it informs the speaker's idea."
+                    "score_justification": "This is an accurate and balanced integration of a previous contribution, linking it to the current discussion and showing how it informs the speaker's idea.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2898,7 +3121,8 @@
                 "None": {
                     "explanation": "The utterance 'Yes' is a very short, minimal contribution and does not explicitly demonstrate any of the defined coding behaviors.",
                     "score": 0,
-                    "score_justification": "As per guidelines, short utterances like 'Yes' should be coded as 'None' and receive a score of 0."
+                    "score_justification": "As per guidelines, short utterances like 'Yes' should be coded as 'None' and receive a score of 0.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2918,12 +3142,14 @@
                 "Idea Management": {
                     "explanation": "The speaker elaborates on the idea of needing 'room for unknown unknowns' in databases by providing a specific example of the PDB's capacity for multi-domain structures.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on previous points by providing a concrete example and moving the discussion forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on previous points by providing a concrete example and moving the discussion forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides specific and detailed information about the PDB's capabilities regarding the deposition of protein pairs or multi-domain structures, which is relevant to the discussion about database design.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge about the PDB's functionality, enhancing the team's understanding."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge about the PDB's functionality, enhancing the team's understanding.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2943,12 +3169,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares his expertise by clarifying that 'dev' in the context of PDB means 'deviation' rather than 'developed,' providing relevant information to the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful as it clarifies a specific term ('dev') that was used in the prior conversation, enhancing the team's shared understanding."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful as it clarifies a specific term ('dev') that was used in the prior conversation, enhancing the team's shared understanding.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Abhishek asks for confirmation ('right?') after providing his clarification, seeking to verify the accuracy of the information he just shared.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, as it seeks to confirm the correct meaning of a specific term ('dev') central to the discussion."
+                    "score_justification": "The question is precise, targeted, and highly relevant, as it seeks to confirm the correct meaning of a specific term ('dev') central to the discussion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2968,7 +3196,8 @@
                 "None": {
                     "explanation": "The utterance 'Yeah.' is a minimal contribution and does not explicitly demonstrate any of the defined coding behaviors.",
                     "score": 0,
-                    "score_justification": "As per guidelines, utterances with only a few words like 'yeah' should be coded as 'None'."
+                    "score_justification": "As per guidelines, utterances with only a few words like 'yeah' should be coded as 'None'.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -2988,7 +3217,8 @@
                 "Idea Management": {
                     "explanation": "Cheemeng introduces a novel and elaborated idea for a future AI service that could generate hypotheses from observations, contributing to the generation of new ideas.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea for an AI service, clearly moving the discussion forward with a detailed vision for future capabilities."
+                    "score_justification": "The utterance presents a novel, elaborated, and reasoned idea for an AI service, clearly moving the discussion forward with a detailed vision for future capabilities.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3008,17 +3238,20 @@
                 "Idea Management": {
                     "explanation": "Rigoberto elaborates on the complex scientific idea of 'inverting the inverse design problem' and the challenge of 'learning rules' from machines, building on the previous discussion about AI and hypothesis generation.",
                     "score": 2,
-                    "score_justification": "The utterance provides a novel, elaborated, and reasoned explanation of a complex scientific idea, moving the team's understanding forward."
+                    "score_justification": "The utterance provides a novel, elaborated, and reasoned explanation of a complex scientific idea, moving the team's understanding forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rigoberto shares his expertise and knowledge about the scientific community's interest and the challenges associated with 'inverting the inverse design problem' and the difficulty in obtaining answers.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about the state of a complex scientific problem within the community."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge about the state of a complex scientific problem within the community.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Rigoberto surfaces a precise and targeted gap in current capabilities by asking if machines can 'also learn rules' in addition to providing answers.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the complex scientific problem being discussed, highlighting a key challenge."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the complex scientific problem being discussed, highlighting a key challenge.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -3038,12 +3271,14 @@
                 "Idea Management": {
                     "explanation": "Abhishek elaborates on the idea of learning from inversion by describing a specific method involving introducing perturbations and observing responses.",
                     "score": 2,
-                    "score_justification": "The utterance provides a novel, elaborated, and reasoned method for learning from inversion, building on the previous discussion."
+                    "score_justification": "The utterance provides a novel, elaborated, and reasoned method for learning from inversion, building on the previous discussion.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Abhishek shares specific, detailed knowledge about a common technique ('introducing perturbations') used for learning from inversion, directly relevant to the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a specific method in the field."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a specific method in the field.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3063,7 +3298,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance explicitly states that a participant, Stephen, has left the meeting, which directly informs the team about the current composition of participants and who is available to speak.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear and functional piece of information about a change in team participation, which is necessary for team awareness."
+                    "score_justification": "The utterance provides a clear and functional piece of information about a change in team participation, which is necessary for team awareness.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -3083,7 +3319,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rommie provides a relevant and detailed explanation for Stephen's accidental departure from the meeting, clarifying that he was trying to dismiss a pop-up.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed knowledge about why a team member left the meeting, which is directly useful for understanding the situation."
+                    "score_justification": "The utterance provides accurate and detailed knowledge about why a team member left the meeting, which is directly useful for understanding the situation.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -3103,7 +3340,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance acknowledges Rommie's previous comment about Stephen's accidental departure by elaborating on the common frustration of hitting the wrong button on a pop-up, contributing to a lighthearted and relatable interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear, relatable observation that acknowledges a shared experience, contributing positively to the relational climate without being overly strong or deep."
+                    "score_justification": "The utterance provides a clear, relatable observation that acknowledges a shared experience, contributing positively to the relational climate without being overly strong or deep.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -3123,7 +3361,8 @@
                 "Relational Climate": {
                     "explanation": "The speaker explicitly and repeatedly thanks all participants for their engagement and specifically mentions Sandra and Jim for listening, which fosters a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The utterance provides strong and explicit acknowledgment of multiple team members' contributions and presence, fostering a positive and appreciative team climate."
+                    "score_justification": "The utterance provides strong and explicit acknowledgment of multiple team members' contributions and presence, fostering a positive and appreciative team climate.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -3143,7 +3382,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Thank you' expresses explicit acknowledgment and gratitude, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate, aligning with a score of 1."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate, aligning with a score of 1.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3163,7 +3403,8 @@
                 "Relational Climate": {
                     "explanation": "Lu Wang expresses explicit thanks to the group and specifically to Rigoberto for leading the discussion, which falls under expressing acknowledgment and support.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear and explicit thanks and praise, aligning with a functional contribution to the relational climate."
+                    "score_justification": "The utterance provides clear and explicit thanks and praise, aligning with a functional contribution to the relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3183,7 +3424,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'My pleasure' is a polite and brief acknowledgment in response to being thanked, contributing to a positive interpersonal tone.",
                     "score": 0,
-                    "score_justification": "The utterance is a polite, functional acknowledgment, but it is a minimal contribution to fostering trust or a strong positive climate."
+                    "score_justification": "The utterance is a polite, functional acknowledgment, but it is a minimal contribution to fostering trust or a strong positive climate.",
+                    "when": "end"
                 }
             },
             "role": "unknown"

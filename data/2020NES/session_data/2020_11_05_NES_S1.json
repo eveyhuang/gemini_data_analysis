@@ -32,12 +32,14 @@
                 "Idea Management": {
                     "explanation": "Emily introduces the idea of leveraging existing city sensors, originally deployed for biological or terrorist attack monitoring, to obtain CO2 measurements for placement and optimization of a city-wide system.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel and elaborated idea for repurposing existing city infrastructure for CO2 measurement, offering a concrete and actionable suggestion that moves the discussion forward."
+                    "score_justification": "The utterance presents a novel and elaborated idea for repurposing existing city infrastructure for CO2 measurement, offering a concrete and actionable suggestion that moves the discussion forward.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares relevant information about the current deployment of numerous sensors in cities for biological or terrorist attack monitoring, providing context for her proposed idea.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed knowledge about existing city sensors, which is directly useful and relevant as a foundation for the subsequent idea."
+                    "score_justification": "The utterance provides accurate and detailed knowledge about existing city sensors, which is directly useful and relevant as a foundation for the subsequent idea.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -59,17 +61,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides detailed facts about higher CO2 concentration inside buildings and the logistical benefits of co-locating DAC with storage sites in rural areas, which are directly relevant to the discussion of DAC placement.",
                     "score": 2,
-                    "score_justification": "The information is accurate, detailed (e.g., 'much higher than 410 ppm,' 'eliminate the transportation'), and directly useful for understanding the pros and cons of urban vs. rural DAC."
+                    "score_justification": "The information is accurate, detailed (e.g., 'much higher than 410 ppm,' 'eliminate the transportation'), and directly useful for understanding the pros and cons of urban vs. rural DAC.",
+                    "when": "beginning"
                 },
                 "Evaluation Practices": {
                     "explanation": "Alissa assesses the feasibility of urban DAC by presenting a reasoned counter-argument based on the historical development and logistical benefits of rural co-location with CO2 storage, concluding there are 'pros and con in both.'",
                     "score": 2,
-                    "score_justification": "She provides constructive critique with clear reasoning (transportation savings, co-location) and offers a balanced perspective ('pros and con in both')."
+                    "score_justification": "She provides constructive critique with clear reasoning (transportation savings, co-location) and offers a balanced perspective ('pros and con in both').",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Alissa introduces a new, related idea for CO2 capture, suggesting 'direct air capture inside of buildings' as another approach, elaborating on its relevance due to higher CO2 concentrations.",
                     "score": 2,
-                    "score_justification": "She introduces a novel and elaborated idea, building on the general topic of CO2 capture and providing reasoning for its consideration."
+                    "score_justification": "She introduces a novel and elaborated idea, building on the general topic of CO2 capture and providing reasoning for its consideration.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -91,17 +96,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Kristen shares detailed technical knowledge about the thermal energy requirements for DAC, explaining why modular deployment in cities might be inefficient if run off electricity.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate and detailed technical information that is highly relevant to the discussion about deploying DAC in urban settings."
+                    "score_justification": "The contribution provides accurate and detailed technical information that is highly relevant to the discussion about deploying DAC in urban settings.",
+                    "when": "beginning"
                 },
                 "Evaluation Practices": {
                     "explanation": "Kristen evaluates the feasibility of deploying DAC in cities by highlighting the significant challenge of thermal energy requirements and its impact on efficiency.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive and reasoned, providing a clear explanation of why urban deployment might be less efficient due to specific energy needs."
+                    "score_justification": "The evaluation is constructive and reasoned, providing a clear explanation of why urban deployment might be less efficient due to specific energy needs.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "Kristen asks 'Is that correct?' to confirm her understanding of the thermal energy requirements for DAC, which is a critical factor in the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, seeking to confirm a key technical detail that impacts the feasibility of the discussed idea."
+                    "score_justification": "The question is precise, targeted, and highly relevant, seeking to confirm a key technical detail that impacts the feasibility of the discussed idea.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -123,17 +131,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Emily shares relevant factual knowledge about local heat sources in cities ('a lot of cities also have local plants that are doing steam heat or some other source of heat') to address the energy requirement challenge for DAC.",
                     "score": 2,
-                    "score_justification": "Emily provides specific, relevant information about local heat sources in cities, directly addressing a technical challenge and moving the discussion forward."
+                    "score_justification": "Emily provides specific, relevant information about local heat sources in cities, directly addressing a technical challenge and moving the discussion forward.",
+                    "when": "beginning"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the feasibility of deploying DAC in cities by stating 'there are a lot of cities where it could work,' providing reasoning by referencing local heat sources.",
                     "score": 2,
-                    "score_justification": "Emily provides a constructive judgment of feasibility, offering a reasoned counter-point to a challenge and suggesting a path forward."
+                    "score_justification": "Emily provides a constructive judgment of feasibility, offering a reasoned counter-point to a challenge and suggesting a path forward.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "Emily expresses acknowledgment of Kristen's concern by stating, 'I understand that problem,' which fosters a supportive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "Emily explicitly acknowledges Kristen's point, showing she heard and understood the concern."
+                    "score_justification": "Emily explicitly acknowledges Kristen's point, showing she heard and understood the concern.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -155,7 +166,8 @@
                 "Information Seeking": {
                     "explanation": "Gary asks a precise and targeted question to Alissa about the most current approaches for CO2 storage and future directions in that field, explicitly seeking specific knowledge.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion about CO2 storage, moving the team forward by seeking detailed information."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion about CO2 storage, moving the team forward by seeking detailed information.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -177,17 +189,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides extensive, detailed, and relevant information regarding CO2 capture materials, energy requirements, regeneration methods, storage approaches (EOR), tax credits, market dynamics, and utilization (cement production) in response to previous questions.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific examples (e.g., 120-140 degrees C, 45Q tax credit, EOR, cement production) and current research context."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific examples (e.g., 120-140 degrees C, 45Q tax credit, EOR, cement production) and current research context.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa explicitly states her plan to address Kristen's comments first, then Gary's question, which structures her response and manages the flow of the conversation.",
                     "score": 1,
-                    "score_justification": "This is a clear act of structuring her contribution, providing a partial enactment of an agenda for her speaking turn."
+                    "score_justification": "This is a clear act of structuring her contribution, providing a partial enactment of an agenda for her speaking turn.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Alissa introduces several novel ideas and questions regarding alternative, non-thermal regeneration methods for CO2 capture (e.g., microwave, plasma, radio frequency), elaborating on them as a significant research direction.",
                     "score": 2,
-                    "score_justification": "The utterance introduces novel, elaborated, and reasoned ideas for future research directions, moving the discussion forward with specific examples of non-thermal approaches."
+                    "score_justification": "The utterance introduces novel, elaborated, and reasoned ideas for future research directions, moving the discussion forward with specific examples of non-thermal approaches.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -209,12 +224,14 @@
                 "Information Seeking": {
                     "explanation": "George explicitly asks the group a precise and targeted question about who is working on specific CO2 capture materials or molecular separation technology to gather relevant information.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing discussion, seeking specific knowledge from the group."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing discussion, seeking specific knowledge from the group.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "George explicitly invites participation from the group by asking who possesses specific expertise related to CO2 capture materials or molecular separation technology.",
                     "score": 2,
-                    "score_justification": "The utterance serves as a targeted invitation for individuals with specific expertise to contribute, fostering relevant participation."
+                    "score_justification": "The utterance serves as a targeted invitation for individuals with specific expertise to contribute, fostering relevant participation.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -236,7 +253,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Christopher is providing relevant expertise by stating his current work on 'electrochemical direct air capture' and specifying the materials are 'usually in aqueous solutions,' directly responding to George's question about who is working on CO2 capture materials.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific information about his work and materials in response to a targeted question, which helps the team identify relevant expertise."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific information about his work and materials in response to a targeted question, which helps the team identify relevant expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -258,7 +276,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Fateme shares specific knowledge about her team's expertise in 'solid materials for CO2 capture, mainly sorbent materials,' directly responding to George's inquiry about who works on such materials.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful by precisely identifying her team's specific area of expertise in response to a targeted question, moving the team forward in understanding available expertise."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful by precisely identifying her team's specific area of expertise in response to a targeted question, moving the team forward in understanding available expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -280,7 +299,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Valentina shares her expertise by explicitly stating her work on 'mineral carbonation and algae growth' and her interest in 'direct air capture using algae,' which directly responds to the group's discussion on CO2 capture materials.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed information about her specific research areas (mineral carbonation and algae growth) and a relevant application (direct air capture using algae), directly addressing the prompt for relevant expertise."
+                    "score_justification": "The utterance provides accurate and detailed information about her specific research areas (mineral carbonation and algae growth) and a relevant application (direct air capture using algae), directly addressing the prompt for relevant expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -302,7 +322,8 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides detailed information about their current and past research expertise in molecular simulation, porous materials, and different types of carbon capture, which is highly relevant to the meeting's topic.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific methods and applications that establish the speaker's expertise for the team."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific methods and applications that establish the speaker's expertise for the team.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -324,7 +345,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Praveen is sharing relevant information about his research expertise in materials for CO2 absorption and conversion, which is a direct contribution of knowledge to the group.",
                     "score": 1,
-                    "score_justification": "The contribution is relevant and provides some detail about his specific areas of work, but lacks the concrete, detailed examples or results that would warrant a higher score."
+                    "score_justification": "The contribution is relevant and provides some detail about his specific areas of work, but lacks the concrete, detailed examples or results that would warrant a higher score.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -346,12 +368,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Gary shares specific details about his group's involvement in electrochemical and photoelectrochemical CO2 reduction, providing relevant expertise to the group.",
                     "score": 2,
-                    "score_justification": "This contribution is accurate, detailed, and directly useful knowledge, clearly stating his group's specific methods and expertise."
+                    "score_justification": "This contribution is accurate, detailed, and directly useful knowledge, clearly stating his group's specific methods and expertise.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "Gary introduces a novel idea for collaboration by expressing interest in exploring avenues for integrating Direct Air Capture (DAC) with solar fuels and artificial photosynthesis for CO2 utilization.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the general theme of the Scialog, suggesting a specific interdisciplinary research direction."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the general theme of the Scialog, suggesting a specific interdisciplinary research direction.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -373,7 +397,8 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides relevant facts and expertise about their research, detailing their work on photoelectrochemical and electrochemical CO2 reduction and hierarchically porous materials, which is directly relevant to the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The speaker provides accurate, detailed, and directly useful knowledge about their specific research area and methods, building on a previous speaker's contribution."
+                    "score_justification": "The speaker provides accurate, detailed, and directly useful knowledge about their specific research area and methods, building on a previous speaker's contribution.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -395,17 +420,20 @@
                 "Information Seeking": {
                     "explanation": "Fateme explicitly asks Alissa for her thoughts on CO2 utilization relative to storage, providing specific context about DAC systems and point sources, which is a precise and targeted question.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, building on previous discussion and providing specific context about DAC and point sources."
+                    "score_justification": "The question is precise, targeted, and highly relevant, building on previous discussion and providing specific context about DAC and point sources.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Fateme shares relevant facts by stating that converting CO2 from point sources is a 'very hot topic' and by mentioning the 'energy intensive nature of DAC already,' providing useful context for her question.",
                     "score": 2,
-                    "score_justification": "Fateme provides accurate, detailed, and directly useful knowledge about current trends in CO2 utilization and the energy intensity of DAC, which is highly relevant to the discussion."
+                    "score_justification": "Fateme provides accurate, detailed, and directly useful knowledge about current trends in CO2 utilization and the energy intensity of DAC, which is highly relevant to the discussion.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Fateme directly addresses Alissa by name, stating 'I have a question for Alissa,' which is a targeted invitation for Alissa to contribute to the discussion.",
                     "score": 2,
-                    "score_justification": "Fateme provides a targeted invite to Alissa, explicitly linking the question to Alissa's previous mention of CO2 storage, which encourages her specific expertise."
+                    "score_justification": "Fateme provides a targeted invite to Alissa, explicitly linking the question to Alissa's previous mention of CO2 storage, which encourages her specific expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -427,12 +455,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa explicitly states her intent to make the discussion 'more open-ended' and that she will answer 'quick' to allow for 'following questions,' thereby structuring the interaction process.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear structuring for how the discussion will proceed, moving away from a simple Q&A and encouraging broader input."
+                    "score_justification": "The utterance provides clear structuring for how the discussion will proceed, moving away from a simple Q&A and encouraging broader input.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares her expertise by clarifying a common misconception about CO2 utilization and storage ('it's one or the other, which is really not true') and provides context on the reality of achieving zero emissions.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge by addressing a key debate and offering a realistic perspective on climate change."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge by addressing a key debate and offering a realistic perspective on climate change.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -452,17 +482,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker defines the main question for the session and outlines critical considerations for future technology development, structuring the team's focus and workflow.",
                     "score": 2,
-                    "score_justification": "The utterance explicitly sets the goal/focus for the session and provides clear guidance on what questions to ask for next steps, making it an effective coordination contribution."
+                    "score_justification": "The utterance explicitly sets the goal/focus for the session and provides clear guidance on what questions to ask for next steps, making it an effective coordination contribution.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "The speaker raises a series of precise and relevant questions about the impact and monitoring of new technologies, surfacing critical areas for inquiry for the team.",
                     "score": 2,
-                    "score_justification": "The questions posed are precise, targeted, and highly relevant to the core problem, moving the team towards a deeper understanding of the challenges."
+                    "score_justification": "The questions posed are precise, targeted, and highly relevant to the core problem, moving the team towards a deeper understanding of the challenges.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares detailed and accurate knowledge regarding the energy density and transfer limitations of hydrocarbons versus biomass, providing concrete examples and reasoning.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge, providing specific examples and reasoning that moves the team's understanding forward."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge, providing specific examples and reasoning that moves the team's understanding forward.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -482,7 +515,8 @@
                 "Information Seeking": {
                     "explanation": "Valentina explicitly asks a precise and targeted question about the most promising options for direct air capture, specifying different implementation environments like urban areas or open spaces.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, seeking specific information about existing promising options and their suitability for different environments."
+                    "score_justification": "The question is precise, targeted, and highly relevant, seeking specific information about existing promising options and their suitability for different environments.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -502,7 +536,8 @@
                 "Information Seeking": {
                     "explanation": "Alissa asks 'Oh, in solution?' to clarify the scope of Valentina's previous question about promising direct air capture options, seeking more specific information.",
                     "score": 1,
-                    "score_justification": "The question is clear in its intent to seek clarification but remains general, fitting the criteria for a score of 1."
+                    "score_justification": "The question is clear in its intent to seek clarification but remains general, fitting the criteria for a score of 1.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -523,7 +558,8 @@
                     "code_name": "Information Seeking",
                     "explanation": "Valentina clarifies her previous information-seeking question by rejecting a narrower interpretation ('in solution?') and re-emphasizing her interest in 'direct air capture' in general, which refines the scope of the information being sought.",
                     "score": 2,
-                    "score_justification": "The clarification is precise and targeted, ensuring that the subsequent information shared will be relevant to the general topic of direct air capture, thus making the information seeking more effective."
+                    "score_justification": "The clarification is precise and targeted, ensuring that the subsequent information shared will be relevant to the general topic of direct air capture, thus making the information seeking more effective.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -543,12 +579,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides relevant facts and expertise by explaining the current challenges in direct air capture (material side, integration) and detailing the chemical differences between direct air capture and point source capture.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, offering specific technical insights into the challenges and distinctions of direct air capture."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, offering specific technical insights into the challenges and distinctions of direct air capture.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Alissa asks a series of precise and targeted questions (\"What's in air versus flue gas? What's the major difference? ... Direct air capture, what's in air? We do have nitrogen, but what else do we have?\") to prompt the team to consider the specific challenges of direct air capture.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, designed to surface specific information and encourage deeper inquiry into the technical aspects of direct air capture."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, designed to surface specific information and encourage deeper inquiry into the technical aspects of direct air capture.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -568,7 +606,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Rob shares accurate and detailed knowledge by listing specific components of air (Oxygen, water, argon) in response to Alissa's question about what else is in the air besides nitrogen for direct air capture.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific facts that are crucial for understanding the challenges of direct air capture materials, thus moving the team's understanding forward."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific facts that are crucial for understanding the challenges of direct air capture materials, thus moving the team's understanding forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -588,12 +627,14 @@
                 "Relational Climate": {
                     "explanation": "The speaker explicitly acknowledges and affirms the correctness of the previous speaker's contribution by saying 'Exactly.', fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit acknowledgment of the previous contribution, which is a clear but not strong form of positive relational climate."
+                    "score_justification": "The utterance provides explicit acknowledgment of the previous contribution, which is a clear but not strong form of positive relational climate.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides accurate, detailed, and directly useful knowledge regarding the challenges (oxidative thermal or photo degradation) and opportunities for direct air capture materials, including a relevant DOE call.",
                     "score": 2,
-                    "score_justification": "The contribution is highly detailed, accurate, and directly useful, providing specific technical information and relevant external context that moves the team's understanding forward."
+                    "score_justification": "The contribution is highly detailed, accurate, and directly useful, providing specific technical information and relevant external context that moves the team's understanding forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -613,7 +654,8 @@
                 "Information Seeking": {
                     "explanation": "Rob explicitly asks a precise and targeted question to clarify the meaning of 'DAC simulations' in the prompt, offering specific alternatives (techno-economics vs. CO2 diffusion) to surface a gap in understanding.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, seeking to clarify a key concept for the team's understanding and progress."
+                    "score_justification": "The question is precise, targeted, and highly relevant, seeking to clarify a key concept for the team's understanding and progress.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -633,7 +675,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides a direct and accurate answer to Rob's question about the meaning of 'DAC simulations', clarifying the scope of the simulations.",
                     "score": 1,
-                    "score_justification": "The contribution is a clear and relevant fact that directly answers a question, but it is concise and lacks further detail or elaboration."
+                    "score_justification": "The contribution is a clear and relevant fact that directly answers a question, but it is concise and lacks further detail or elaboration.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -653,17 +696,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Emily shares her interpretation of the prompts regarding CO2 distribution, mentions other groups working on economic/life cycle aspects, and provides the relevant fact that global simulations are 'hugely expensive'.",
                     "score": 2,
-                    "score_justification": "Emily provides accurate, detailed, and directly useful knowledge about the prompt's focus, related research, and the significant cost implications of the simulations."
+                    "score_justification": "Emily provides accurate, detailed, and directly useful knowledge about the prompt's focus, related research, and the significant cost implications of the simulations.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Emily asks a precise question about the necessity of simulating CO2 dynamics globally and proposes an alternative of using distributed sensors.",
                     "score": 2,
-                    "score_justification": "Emily asks a precise, targeted, and highly relevant question that challenges an assumption and suggests an alternative approach, moving the discussion forward effectively."
+                    "score_justification": "Emily asks a precise, targeted, and highly relevant question that challenges an assumption and suggests an alternative approach, moving the discussion forward effectively.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the feasibility and merit of global CO2 simulations by questioning their necessity and explicitly stating that 'these simulations are hugely expensive'.",
                     "score": 2,
-                    "score_justification": "Emily provides constructive, reasoned feedback by highlighting the high cost of global simulations and implicitly suggesting a more feasible alternative, thereby assessing the idea's practicality."
+                    "score_justification": "Emily provides constructive, reasoned feedback by highlighting the high cost of global simulations and implicitly suggesting a more feasible alternative, thereby assessing the idea's practicality.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -683,7 +729,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares relevant information by clarifying that the DAC simulations, despite their expense, would be 'more local,' addressing Emily's concern about global scale and cost.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and directly useful knowledge by specifying the local scope of the simulations, which helps refine the team's understanding of the problem in response to a previous concern."
+                    "score_justification": "The utterance provides accurate and directly useful knowledge by specifying the local scope of the simulations, which helps refine the team's understanding of the problem in response to a previous concern.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -703,7 +750,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Emily provides relevant information by explicitly quoting the project prompts, stating that 'global scale dynamics' is one of the requirements, which is a factual contribution to the discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed information directly from the project prompts, which is highly useful for the team's understanding of the project scope and moves the discussion forward by clarifying a factual basis."
+                    "score_justification": "The utterance provides accurate and detailed information directly from the project prompts, which is highly useful for the team's understanding of the project scope and moves the discussion forward by clarifying a factual basis.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -723,12 +771,14 @@
                 "Idea Management": {
                     "explanation": "Alissa introduces the idea of focusing on 'local atmospheric simulation' and elaborates on its importance by linking it to the efficiency of DAC unit spacing, similar to wind farms.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the previous discussion and provides a specific, justified direction for the team."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the previous discussion and provides a specific, justified direction for the team.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares relevant expertise by explaining that local atmospheric simulation is needed because the spacing of DAC units, similar to wind farms, will impact their efficiency.",
                     "score": 2,
-                    "score_justification": "This provides accurate, detailed, and directly useful knowledge that supports the proposed idea and moves the discussion forward."
+                    "score_justification": "This provides accurate, detailed, and directly useful knowledge that supports the proposed idea and moves the discussion forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -748,17 +798,20 @@
                 "Information Seeking": {
                     "explanation": "Emily asks a clarifying question to confirm her understanding of Alissa's previous statement regarding the placement of DAC units in a farm.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, seeking to confirm a specific detail of Alissa's idea."
+                    "score_justification": "The question is precise and targeted, seeking to confirm a specific detail of Alissa's idea.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares her expertise in computational modeling, specifically CFD and machine learning approaches, to provide relevant information about the feasibility of the local simulations Alissa discussed.",
                     "score": 2,
-                    "score_justification": "Emily provides detailed and accurate knowledge about specific computational modeling techniques and their applicability, making it directly useful for the team."
+                    "score_justification": "Emily provides detailed and accurate knowledge about specific computational modeling techniques and their applicability, making it directly useful for the team.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the feasibility of conducting the local atmospheric simulations, stating that they are 'not that bad' and 'not horrible to do' based on her computational modeling expertise.",
                     "score": 2,
-                    "score_justification": "Emily provides a constructive evaluation of the simulation's feasibility, backed by her expertise and suggesting specific approaches (ML, reduced order models)."
+                    "score_justification": "Emily provides a constructive evaluation of the simulation's feasibility, backed by her expertise and suggesting specific approaches (ML, reduced order models).",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -778,12 +831,14 @@
                 "Idea Management": {
                     "explanation": "Rob introduces the idea of making DAC technologies mobile to optimize their placement, offering an alternative to the previously discussed need for local atmospheric simulations for fixed units.",
                     "score": 1,
-                    "score_justification": "The utterance presents a clear idea for optimizing DAC units by making them mobile, offering a distinct approach to the problem of placement."
+                    "score_justification": "The utterance presents a clear idea for optimizing DAC units by making them mobile, offering a distinct approach to the problem of placement.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Rob asks precise questions about the feasibility of making DAC technologies mobile and capable of self-optimization.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, directly addressing the core feasibility of the proposed mobile DAC units."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, directly addressing the core feasibility of the proposed mobile DAC units.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -803,17 +858,20 @@
                 "Idea Management": {
                     "explanation": "Alissa elaborates on Rob's idea of mobile DAC units by describing their function ('run around to get to the CO2'), contributing to the flow of ideas.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear, albeit brief, elaboration on a previously introduced idea, making it functional."
+                    "score_justification": "The utterance provides a clear, albeit brief, elaboration on a previously introduced idea, making it functional.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Alissa assesses the merit of Rob's suggestion for mobile DAC units by explicitly stating, 'Good idea,' following a brief implicit reasoning.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear judgment of approval for the idea, with a minimal implicit reason for its merit."
+                    "score_justification": "The utterance provides a clear judgment of approval for the idea, with a minimal implicit reason for its merit.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Alissa expresses support and acknowledgment for Rob's contribution by stating, 'Good idea.'",
                     "score": 1,
-                    "score_justification": "The utterance offers explicit praise for Rob's idea, contributing positively to the interpersonal tone."
+                    "score_justification": "The utterance offers explicit praise for Rob's idea, contributing positively to the interpersonal tone.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -833,17 +891,20 @@
                 "Evaluation Practices": {
                     "explanation": "Kristen provides constructive, reasoned feedback by identifying a significant issue (atmospheric chemistry changes) that needs to be considered for distributed DACs.",
                     "score": 2,
-                    "score_justification": "Kristen offers constructive, reasoned feedback by highlighting a critical, complex issue that moves the team's understanding forward."
+                    "score_justification": "Kristen offers constructive, reasoned feedback by highlighting a critical, complex issue that moves the team's understanding forward.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Kristen surfaces a precise and highly relevant gap in understanding regarding the atmospheric chemistry changes caused by distributed DACs.",
                     "score": 2,
-                    "score_justification": "Kristen asks a precise, targeted, and highly relevant question that identifies a crucial knowledge gap for the project."
+                    "score_justification": "Kristen asks a precise, targeted, and highly relevant question that identifies a crucial knowledge gap for the project.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Kristen introduces and elaborates on a novel and reasoned idea (global simulation or sensor network) to model the complex atmospheric impacts.",
                     "score": 2,
-                    "score_justification": "Kristen presents a novel, elaborated, and reasoned idea for a global simulation or sensor network to address the identified issue."
+                    "score_justification": "Kristen presents a novel, elaborated, and reasoned idea for a global simulation or sensor network to address the identified issue.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -863,12 +924,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares her expertise by providing a relevant fact about the operational complexity of technologies sensitive to environmental changes (temperature, humidity) compared to the stable operation of power plants, which is directly relevant to the discussion about mobile/distributed technologies.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed knowledge about operational challenges due to environmental factors, offering a useful comparison to power plants."
+                    "score_justification": "The utterance provides accurate and detailed knowledge about operational challenges due to environmental factors, offering a useful comparison to power plants.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Alissa assesses the feasibility and operational complexity of the discussed mobile/distributed technologies by highlighting that environmental changes (temperature, humidity) make them 'not as easy to operate' compared to stable power plants.",
                     "score": 2,
-                    "score_justification": "The utterance provides a reasoned critique of the operational complexity of the discussed technologies by comparing them to power plants, highlighting specific environmental challenges that move the team forward."
+                    "score_justification": "The utterance provides a reasoned critique of the operational complexity of the discussed technologies by comparing them to power plants, highlighting specific environmental challenges that move the team forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -888,12 +951,14 @@
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the complexity of the discussed ideas by stating 'you're definitely adding a level of complexity' and provides detailed reasoning through an analogy to wind farms, highlighting challenges like humidity and mobility.",
                     "score": 2,
-                    "score_justification": "This is constructive, reasoned feedback that uses a detailed analogy to explain the challenges and move the team's understanding forward."
+                    "score_justification": "This is constructive, reasoned feedback that uses a detailed analogy to explain the challenges and move the team's understanding forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares relevant expertise by drawing a detailed analogy to wind farms, explaining their operational characteristics and how they compare to the current discussion on mobility and environmental factors.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge that provides concrete examples to illustrate the complexity of the topic."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge that provides concrete examples to illustrate the complexity of the topic.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -913,7 +978,8 @@
                 "Information Seeking": {
                     "explanation": "Rob asks a general question seeking confirmation that the applicability of previous points depends on the specific technology, which aligns with seeking information or agreement.",
                     "score": 1,
-                    "score_justification": "The question is clear in its intent to seek agreement on a general point but is not precise or targeted with specific details."
+                    "score_justification": "The question is clear in its intent to seek agreement on a general point but is not precise or targeted with specific details.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -933,17 +999,20 @@
                 "Idea Management": {
                     "explanation": "Valentina introduces the novel idea of wetlands and blue carbon as a method for CO2 capture, elaborating on its nature as natural science and its relevance to the topic.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a novel idea that expands the scope of the discussion beyond engineering solutions and elaborates on its mechanism and relevance."
+                    "score_justification": "The utterance introduces a novel idea that expands the scope of the discussion beyond engineering solutions and elaborates on its mechanism and relevance.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Valentina asks a clear question, 'Does this fits in this in this topic?', to determine the relevance of the introduced idea of wetlands and blue carbon to the ongoing discussion.",
                     "score": 1,
-                    "score_justification": "The question is clear and relevant to the discussion, seeking to establish the conceptual fit of a new idea."
+                    "score_justification": "The question is clear and relevant to the discussion, seeking to establish the conceptual fit of a new idea.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Valentina provides information and justification for why wetlands and blue carbon fit the topic, explaining it as a direct capture method in soil and relating it to natural science.",
                     "score": 1,
-                    "score_justification": "The contribution is relevant and provides some detail about the mechanism and disciplinary focus of the proposed idea."
+                    "score_justification": "The contribution is relevant and provides some detail about the mechanism and disciplinary focus of the proposed idea.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -963,17 +1032,20 @@
                 "Integration Practices": {
                     "explanation": "Alissa accurately summarizes Valentina's previous contribution about natural CO2 sinks, using it as a foundation for further discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides a balanced and comprehensive integration of Valentina's input, setting the stage for new questions and ideas."
+                    "score_justification": "The utterance provides a balanced and comprehensive integration of Valentina's input, setting the stage for new questions and ideas.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Alissa assesses the potential merit of reducing CO2 around natural sinks by raising a concern about whether it would lead to a net positive outcome or if positive and negative impacts would cancel out.",
                     "score": 2,
-                    "score_justification": "The utterance provides constructive, reasoned feedback by critiquing a potential approach and highlighting a crucial scientific question related to its overall effectiveness."
+                    "score_justification": "The utterance provides constructive, reasoned feedback by critiquing a potential approach and highlighting a crucial scientific question related to its overall effectiveness.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Alissa explicitly asks several precise and targeted scientific questions related to the impact of CO2 removal around natural sinks, such as location, distance, and integration into the energy grid.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, surfacing critical gaps in understanding that can move the team's research forward."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, surfacing critical gaps in understanding that can move the team's research forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -993,17 +1065,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Kristen shares her expertise in modeling wind power and renewable energy forecasting, detailing a base analysis on DAC siting using variable renewable power and economic findings from the California grid.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing concrete findings from her research relevant to the discussion on DAC."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing concrete findings from her research relevant to the discussion on DAC.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Kristen explicitly identifies two precise and targeted open questions regarding the real costs of DAC systems and their process models, including how ramping up/down with renewable power affects the process and degradation.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, surfacing critical knowledge gaps that move the team's understanding forward."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, surfacing critical knowledge gaps that move the team's understanding forward.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Kristen concludes her utterance with 'Good point,' explicitly acknowledging a previous contribution in the conversation.",
                     "score": 1,
-                    "score_justification": "This is an explicit acknowledgment of a previous point, showing mild interest and support, which is more than a token acknowledgment."
+                    "score_justification": "This is an explicit acknowledgment of a previous point, showing mild interest and support, which is more than a token acknowledgment.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1023,7 +1098,8 @@
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly notes that some members have not spoken and then issues a general invitation for their thoughts on the topic, broadening the scope to encourage participation.",
                     "score": 1,
-                    "score_justification": "The utterance clearly attempts to include members and balance contributions by inviting those who haven't spoken to share thoughts, providing context to make the invitation more accessible."
+                    "score_justification": "The utterance clearly attempts to include members and balance contributions by inviting those who haven't spoken to share thoughts, providing context to make the invitation more accessible.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1043,12 +1119,14 @@
                 "Information Seeking": {
                     "explanation": "Li-Chiang asks a precise and targeted question about the diffusion rate of CO2 to replenish concentration after DAC, elaborating on the importance for amine adsorbents and their concentration thresholds.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, elaborated with specific technical details, moving the discussion forward by identifying a critical knowledge gap."
+                    "score_justification": "The question is precise, targeted, and highly relevant, elaborated with specific technical details, moving the discussion forward by identifying a critical knowledge gap.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Li-Chiang prefaces their question with 'I might have a really dumb question. Hopefully you guys don't mind,' which explicitly expresses a concern for how their contribution will be perceived and seeks to maintain a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance includes an explicit attempt to mitigate potential negative reception, showing a clear effort to foster a positive relational climate by being polite and self-deprecating."
+                    "score_justification": "The utterance includes an explicit attempt to mitigate potential negative reception, showing a clear effort to foster a positive relational climate by being polite and self-deprecating.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1068,7 +1146,8 @@
                 "Integration Practices": {
                     "explanation": "The utterance synthesizes Li-Chiang's detailed question about CO2 diffusion and local concentration by framing it as 'the core of the local atmospheric simulation challenge,' accurately integrating his contribution into a broader scientific problem.",
                     "score": 2,
-                    "score_justification": "The statement provides a balanced and accurate integration of a previous contribution, effectively summarizing its core essence and framing it as a significant challenge, which helps move the discussion forward."
+                    "score_justification": "The statement provides a balanced and accurate integration of a previous contribution, effectively summarizing its core essence and framing it as a significant challenge, which helps move the discussion forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1088,12 +1167,14 @@
                 "Idea Management": {
                     "explanation": "Alissa elaborates on the 'local atmospheric simulation challenge' by providing specific environmental factors (wind, air pressure, CO2 concentration) that would vary by location, detailing the complexity of the problem.",
                     "score": 2,
-                    "score_justification": "The utterance provides a reasoned and elaborated explanation of the challenge, building on previous contributions by detailing specific environmental factors that influence the problem."
+                    "score_justification": "The utterance provides a reasoned and elaborated explanation of the challenge, building on previous contributions by detailing specific environmental factors that influence the problem.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares relevant knowledge by explaining how environmental factors like wind, air pressure, and CO2 concentration vary by location, which is directly useful for understanding the local atmospheric simulation challenge.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the environmental variables that impact the problem being discussed."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the environmental variables that impact the problem being discussed.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1113,7 +1194,8 @@
                 "Information Seeking": {
                     "explanation": "The speaker is asking a precise and targeted question about the diffusion rate of CO2 and its influence on local concentration, explicitly stating a knowledge gap about the 'diffusion time scale and length scale'.",
                     "score": 2,
-                    "score_justification": "The question is highly specific and targeted, clarifying a critical technical detail about CO2 diffusion rates that directly impacts the feasibility of DAC."
+                    "score_justification": "The question is highly specific and targeted, clarifying a critical technical detail about CO2 diffusion rates that directly impacts the feasibility of DAC.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1133,12 +1215,14 @@
                 "Knowledge Sharing": {
                     "explanation": "George shares his expertise by stating that CO2 diffusion will likely be fast due to wind dynamics and suggests it won't be the rate-limiting step, directly addressing Li-Chiang Lin's question about diffusion speed.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge provided in response to a specific, precise question."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge provided in response to a specific, precise question.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "George evaluates the significance of CO2 diffusion speed by stating it's \"probably not going to be the rate limiting step,\" providing a reasoned judgment on its impact on the overall process.",
                     "score": 2,
-                    "score_justification": "This is constructive, reasoned feedback, explaining why it might not be a problem (due to wind dynamics) and offering an actionable implication."
+                    "score_justification": "This is constructive, reasoned feedback, explaining why it might not be a problem (due to wind dynamics) and offering an actionable implication.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1158,7 +1242,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance \"I see. Yep. That makes sense.\" expresses explicit acknowledgment and understanding of the previous speaker's explanation, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear acknowledgment and agreement, which is more than a token response but does not reach the level of strong enthusiasm or trust-building."
+                    "score_justification": "The utterance provides clear acknowledgment and agreement, which is more than a token response but does not reach the level of strong enthusiasm or trust-building.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1180,7 +1265,8 @@
                 "None": {
                     "explanation": "The utterance 'background' is a single, vague word that does not explicitly align with any of the defined codes for idea management, information seeking, knowledge sharing, evaluation, relational climate, participation, coordination, or integration.",
                     "score": 0,
-                    "score_justification": "The utterance is too minimal and vague to provide any functional contribution that could be scored positively or negatively against the specific criteria."
+                    "score_justification": "The utterance is too minimal and vague to provide any functional contribution that could be scored positively or negatively against the specific criteria.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1202,12 +1288,14 @@
                 "Idea Management": {
                     "explanation": "Alissa introduces and elaborates on the idea that a wide range of technologies should be considered for direct air capture, rather than a 'one technology fits all' approach.",
                     "score": 2,
-                    "score_justification": "The utterance presents a clear, well-reasoned idea for a strategic approach to technology selection, supported by a detailed example, which moves the team forward."
+                    "score_justification": "The utterance presents a clear, well-reasoned idea for a strategic approach to technology selection, supported by a detailed example, which moves the team forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares her expertise by explaining that direct air capture technologies need to vary by environment, using the specific example of differences between New York and Beijing.",
                     "score": 2,
-                    "score_justification": "The utterance provides specific, relevant, and detailed knowledge about the environmental dependency of direct air capture technologies, directly supporting her idea."
+                    "score_justification": "The utterance provides specific, relevant, and detailed knowledge about the environmental dependency of direct air capture technologies, directly supporting her idea.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1229,17 +1317,20 @@
                 "Idea Management": {
                     "explanation": "Fateme introduces a specific idea to modify the PowerPoint slide by replacing 'Concentration issue' with 'thermodynamic limitation'.",
                     "score": 2,
-                    "score_justification": "The idea is clearly articulated, elaborated with a specific suggestion, and supported by scientific reasoning, moving the team forward."
+                    "score_justification": "The idea is clearly articulated, elaborated with a specific suggestion, and supported by scientific reasoning, moving the team forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Fateme shares relevant technical knowledge by explaining that the DAC problem is thermodynamically limited and mass flux is an issue, justifying the proposed change.",
                     "score": 2,
-                    "score_justification": "The knowledge shared is accurate, detailed, and directly useful in providing a strong rationale for the suggested modification."
+                    "score_justification": "The knowledge shared is accurate, detailed, and directly useful in providing a strong rationale for the suggested modification.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Fateme provides constructive feedback by evaluating the current phrasing 'Concentration issue' as less accurate and proposing 'thermodynamic limitation' with scientific reasoning.",
                     "score": 2,
-                    "score_justification": "The feedback is constructive, well-reasoned with scientific principles, and actionable by suggesting a specific, improved alternative."
+                    "score_justification": "The feedback is constructive, well-reasoned with scientific principles, and actionable by suggesting a specific, improved alternative.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1261,12 +1352,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Rob grants Fateme explicit permission to modify the PowerPoint slide as she suggested, which is a clear decision linked to a task and contributes to structuring the team's workflow.",
                     "score": 2,
-                    "score_justification": "This is a clear authorization for a specific task (changing the slide) that enables effective coordination and implementation of a team member's suggestion."
+                    "score_justification": "This is a clear authorization for a specific task (changing the slide) that enables effective coordination and implementation of a team member's suggestion.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Rob's phrase 'feel free' expresses support and trust in Fateme to make the suggested change, fostering a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The utterance strongly acknowledges Fateme's contribution and empowers her, fostering trust and a positive climate."
+                    "score_justification": "The utterance strongly acknowledges Fateme's contribution and empowers her, fostering trust and a positive climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1288,12 +1381,14 @@
                 "Information Seeking": {
                     "explanation": "Fateme asks a clear and targeted question to confirm if she has permission to modify the PowerPoint slide, directly following Rob's statement.",
                     "score": 2,
-                    "score_justification": "The question 'Can I?' is precise, targeted, and highly relevant to the immediate task of modifying the slide, seeking explicit confirmation of permission."
+                    "score_justification": "The question 'Can I?' is precise, targeted, and highly relevant to the immediate task of modifying the slide, seeking explicit confirmation of permission.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Fateme's question 'Can I?' serves to confirm a decision regarding the process of modifying the shared PowerPoint slide, clarifying who has the authority to make changes.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear attempt to confirm a process decision, but it is not an elaborate structuring or detailed coordination."
+                    "score_justification": "The utterance is a clear attempt to confirm a process decision, but it is not an elaborate structuring or detailed coordination.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1315,12 +1410,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares the relevant fact that everyone has access to the document, directly answering Fateme's implicit question about her ability to modify the slide.",
                     "score": 2,
-                    "score_justification": "The information provided is accurate and directly useful, enabling Fateme to proceed with her proposed modification to the slide."
+                    "score_justification": "The information provided is accurate and directly useful, enabling Fateme to proceed with her proposed modification to the slide.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa clarifies the process for modifying the shared document by stating that everyone has access, which facilitates the team's workflow and enables Fateme to take action.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear statement about the process for making changes, which is functional for the team's workflow."
+                    "score_justification": "The utterance provides a clear statement about the process for making changes, which is functional for the team's workflow.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1342,7 +1439,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance clarifies the nature and origin of the notes being discussed, contributing to the team's understanding of the meeting's documentation process and how the shared document is managed.",
                     "score": 1,
-                    "score_justification": "The statement provides a clear explanation of a procedural aspect (note-taking) that helps manage the team's workflow, making it a functional contribution."
+                    "score_justification": "The statement provides a clear explanation of a procedural aspect (note-taking) that helps manage the team's workflow, making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1364,17 +1462,20 @@
                 "Information Seeking": {
                     "explanation": "Emily asks precise, targeted questions about the availability and limitations of data regarding demonstration plants and CO2 capture, directly seeking information to address a perceived gap.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant to the project's needs, moving the team towards understanding a critical information gap."
+                    "score_justification": "The questions are precise, targeted, and highly relevant to the project's needs, moving the team towards understanding a critical information gap.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Emily explicitly refers back to a previously discussed point about different technologies and locations, attempting to integrate past contributions into the current discussion.",
                     "score": 1,
-                    "score_justification": "It's an accurate re-engagement with a previous topic, providing clear direction to revisit that specific point."
+                    "score_justification": "It's an accurate re-engagement with a previous topic, providing clear direction to revisit that specific point.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares the knowledge that understanding technology performance in different locations is dependent on data, and recalls a previous statement about the lack of such data.",
                     "score": 1,
-                    "score_justification": "It's a relevant contribution providing a foundational piece of knowledge about the necessity of data for understanding technology performance."
+                    "score_justification": "It's a relevant contribution providing a foundational piece of knowledge about the necessity of data for understanding technology performance.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1396,7 +1497,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides a direct and accurate confirmation that there is a lack of data regarding the performance of demonstration plants, which directly answers Emily's question and is relevant to the ongoing discussion about modeling.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by confirming a critical data gap, which is essential for the team's understanding of the problem and subsequent discussion on developing models."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by confirming a critical data gap, which is essential for the team's understanding of the problem and subsequent discussion on developing models.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1418,17 +1520,20 @@
                 "Idea Management": {
                     "explanation": "Emily proposes the idea of 'working together to understand what these sites actually look like and what the data coming out is' as critical for developing models, elaborating on a collaborative approach to address the data gap.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the previous discussion about data scarcity and suggests a concrete path forward for the team."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on the previous discussion about data scarcity and suggests a concrete path forward for the team.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the current state of simulation, stating that without data, models cannot be validated ('if there's no data to know if we're doing it right or wrong then I can give you a model tomorrow right? Because nobody's going to tell me I'm wrong').",
                     "score": 2,
-                    "score_justification": "This is a constructive and reasoned critique of the feasibility and validity of developing models without sufficient data, providing a strong rationale for her subsequent idea."
+                    "score_justification": "This is a constructive and reasoned critique of the feasibility and validity of developing models without sufficient data, providing a strong rationale for her subsequent idea.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares her expertise as a computational worker, explaining that the absence of data makes it impossible to validate models, thus making any model acceptable ('if there's no data to know if we're doing it right or wrong then I can give you a model tomorrow right? Because nobody's going to tell me I'm wrong').",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge from her expertise, highlighting a critical implication of data scarcity for model development."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge from her expertise, highlighting a critical implication of data scarcity for model development.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1450,17 +1555,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares specific knowledge about DAC processes, stating they also capture water and that some companies claim to make clean water while doing CO2 capture.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed information about DAC processes and their interaction with water, including a specific company example, which is directly useful to the discussion."
+                    "score_justification": "The utterance provides accurate and detailed information about DAC processes and their interaction with water, including a specific company example, which is directly useful to the discussion.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Alissa asks a precise and targeted question about the impact of DAC processes drying up air while removing CO2, indicating a gap in understanding.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the technical aspects of DAC, seeking specific information about its environmental impact."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the technical aspects of DAC, seeking specific information about its environmental impact.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Alissa introduces a new idea for consideration by highlighting the dual effect of DAC processes on both CO2 and water, leading to a new line of inquiry for the team.",
                     "score": 2,
-                    "score_justification": "Alissa introduces a novel and elaborated idea about the dual impact of DAC on water, which expands the scope of the discussion and presents a new, reasoned area for investigation."
+                    "score_justification": "Alissa introduces a novel and elaborated idea about the dual impact of DAC on water, which expands the scope of the discussion and presents a new, reasoned area for investigation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1482,17 +1590,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa suggests that the team's report out can be structured as a series of questions, providing a clear direction for a deliverable.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear suggestion for the format of the report, which is a process-related comment, but it's not highly elaborated or linked to specific tasks beyond the format."
+                    "score_justification": "The utterance provides a clear suggestion for the format of the report, which is a process-related comment, but it's not highly elaborated or linked to specific tasks beyond the format.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Alissa proposes an idea to treat DAC as a 'black box' for simulation purposes, offering a concrete approach to proceed despite the team's lack of simulation expertise.",
                     "score": 1,
-                    "score_justification": "This is a clear idea with some detail on how to simplify a complex problem, providing a functional direction for the team."
+                    "score_justification": "This is a clear idea with some detail on how to simplify a complex problem, providing a functional direction for the team.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Alissa explicitly praises the team members by stating, 'all you guys are rising stars in your field,' fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "This is an explicit expression of praise, contributing positively to the team's relational climate."
+                    "score_justification": "This is an explicit expression of praise, contributing positively to the team's relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1514,7 +1625,8 @@
                 "Idea Management": {
                     "explanation": "George introduces the idea of making written articles available on a site for people to access later, which is a new idea for managing and disseminating information.",
                     "score": 1,
-                    "score_justification": "The idea is clear and provides some detail (written articles, on a site, for later access), making it a functional contribution."
+                    "score_justification": "The idea is clear and provides some detail (written articles, on a site, for later access), making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1536,7 +1648,8 @@
                 "Information Seeking": {
                     "explanation": "Alissa is asking a clear question to clarify which articles George is referring to, seeking more specific information about his suggestion.",
                     "score": 1,
-                    "score_justification": "The question is clear and functional, seeking specific information, but it is a general clarification rather than a highly precise or targeted inquiry."
+                    "score_justification": "The question is clear and functional, seeking specific information, but it is a general clarification rather than a highly precise or targeted inquiry.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1558,7 +1671,8 @@
                 "Idea Management": {
                     "explanation": "George elaborates on his previous idea by specifying the type of content ('anything on CO2 capture') and the platform ('Research Corporation's website') for the articles to be shared.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear elaboration of an existing idea with some specific details about the content and platform, making it a functional contribution."
+                    "score_justification": "The utterance provides a clear elaboration of an existing idea with some specific details about the content and platform, making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1580,12 +1694,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Alissa shares detailed knowledge about specific reports related to CO2 capture, including their content, publication details, and relevance, directly addressing George's request for articles.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific report names, their content, and their relevance to the team's understanding of carbon management."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, providing specific report names, their content, and their relevance to the team's understanding of carbon management.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa explicitly states her intention to share the mentioned reports with the team, which is a clear action for coordinating information dissemination.",
                     "score": 1,
-                    "score_justification": "The statement provides a clear, actionable step for sharing resources, contributing to the team's practical coordination."
+                    "score_justification": "The statement provides a clear, actionable step for sharing resources, contributing to the team's practical coordination.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1607,7 +1723,8 @@
                 "Relational Climate": {
                     "explanation": "George expresses explicit thanks and appreciation for Alissa's offer to share important reports, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks for the shared information, contributing positively to the relational climate."
+                    "score_justification": "The utterance provides explicit thanks for the shared information, contributing positively to the relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1629,7 +1746,8 @@
                 "Relational Climate": {
                     "explanation": "The speaker expresses gratitude ('thanks') in response to Alissa Park's offer to share important reports, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate, but it is not a strong acknowledgment that fosters deep trust or curiosity."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate, but it is not a strong acknowledgment that fosters deep trust or curiosity.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -1651,12 +1769,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Alissa explicitly structures the remaining 20 minutes of the meeting by proposing to shift from looking at deck simulations to discussing individual proposal ideas based on personal interests.",
                     "score": 2,
-                    "score_justification": "This is an explicit and effective coordination, setting a clear goal and direction for the team's activity for the remaining time."
+                    "score_justification": "This is an explicit and effective coordination, setting a clear goal and direction for the team's activity for the remaining time.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Alissa invites all team members to share their proposal ideas based on their personal interests, encouraging broad participation in the discussion.",
                     "score": 1,
-                    "score_justification": "This is a clear invitation for contributions from anyone, providing a general opportunity for participation."
+                    "score_justification": "This is a clear invitation for contributions from anyone, providing a general opportunity for participation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1678,7 +1798,8 @@
                 "Idea Management": {
                     "explanation": "Fateme introduces a new research idea, elaborating on integrating Direct Air Capture (DAC) with downstream utilization, specifically mentioning a modular process to capture and convert CO2, in response to Alissa's prompt for proposal ideas.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a novel and elaborated idea for integrating DAC with downstream utilization, providing specific details about a modular process for CO2 capture and conversion, which directly responds to the prompt and moves the discussion forward."
+                    "score_justification": "The utterance introduces a novel and elaborated idea for integrating DAC with downstream utilization, providing specific details about a modular process for CO2 capture and conversion, which directly responds to the prompt and moves the discussion forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1700,7 +1821,8 @@
                 "Participation Dynamics": {
                     "explanation": "The speaker explicitly invites other team members to contribute their ideas, balancing contributions after one person has spoken, which aligns with the focus on who gets to speak.",
                     "score": 0,
-                    "score_justification": "The utterance 'Anybody else?' is a generic invitation for others to speak, fitting the description for a score of 0."
+                    "score_justification": "The utterance 'Anybody else?' is a generic invitation for others to speak, fitting the description for a score of 0.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1722,7 +1844,8 @@
                 "Information Seeking": {
                     "explanation": "Praveen asks a precise and targeted question to Fateme, seeking specific information about candidate molecules for the direct air capture and conversion process that Fateme previously suggested.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, directly building on a previous idea to elicit specific technical details."
+                    "score_justification": "The question is precise, targeted, and highly relevant, directly building on a previous idea to elicit specific technical details.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1744,17 +1867,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Fateme shares detailed technical knowledge about the complexities of CO2 conversion after DAC, including factors like concentration levels, throughput, energy input, specific chemical reactions, and the need for life cycle analysis.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, highly detailed, and directly useful, providing concrete technical considerations for the problem."
+                    "score_justification": "The contribution is accurate, highly detailed, and directly useful, providing concrete technical considerations for the problem.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Fateme evaluates the feasibility and difficulty of coupling DAC with CO2 conversion, stating it's 'very difficult' and 'very hard to answer,' and provides extensive reasoning based on engineering aspects, flow rates, and process requirements.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, reasoned, and provides actionable criteria (e.g., life cycle analysis, energy input) for assessing the idea, moving the team forward by highlighting critical challenges."
+                    "score_justification": "The evaluation is constructive, reasoned, and provides actionable criteria (e.g., life cycle analysis, energy input) for assessing the idea, moving the team forward by highlighting critical challenges.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Fateme expresses positive acknowledgment by stating, 'I think this is a very good question,' in response to Praveen's inquiry.",
                     "score": 1,
-                    "score_justification": "This is an explicit praise or acknowledgment of the question, contributing positively to the interpersonal tone."
+                    "score_justification": "This is an explicit praise or acknowledgment of the question, contributing positively to the interpersonal tone.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1776,12 +1902,14 @@
                 "Relational Climate": {
                     "explanation": "Praveen explicitly agrees with Fateme's detailed explanation about the difficulty of the question, which acknowledges her contribution and fosters a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "This is a strong acknowledgment that validates Fateme's complex contribution, fostering trust and understanding within the team by showing deep comprehension of her point."
+                    "score_justification": "This is a strong acknowledgment that validates Fateme's complex contribution, fostering trust and understanding within the team by showing deep comprehension of her point.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Praveen assesses the quality of potential solutions or answers to the problem, stating his judgment that there are no good ones, which aligns with Fateme's detailed explanation.",
                     "score": 1,
-                    "score_justification": "This is a clear judgment about the quality of ideas/answers, with the reasoning implied by the preceding complex discussion, making it a functional contribution."
+                    "score_justification": "This is a clear judgment about the quality of ideas/answers, with the reasoning implied by the preceding complex discussion, making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1803,7 +1931,8 @@
                 "None": {
                     "explanation": "The utterance 'Yeah.' is a minimal contribution and does not explicitly demonstrate any of the defined coding behaviors.",
                     "score": 0,
-                    "score_justification": "As per guidelines, short utterances like 'Yeah' that are not elaborated or specific should be coded as 'None'."
+                    "score_justification": "As per guidelines, short utterances like 'Yeah' that are not elaborated or specific should be coded as 'None'.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1825,7 +1954,8 @@
                 "Information Seeking": {
                     "explanation": "Alissa is asking a precise and targeted question to identify individuals or groups involved in CO2 catalytic conversion, seeking to surface specific information relevant to the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, seeking specific information about who is working on 'CO2 catalytic conversion,' which is highly relevant to the previous discussion about CO2 conversion challenges."
+                    "score_justification": "The question is precise and targeted, seeking specific information about who is working on 'CO2 catalytic conversion,' which is highly relevant to the previous discussion about CO2 conversion challenges.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1847,12 +1977,14 @@
                 "Information Seeking": {
                     "explanation": "Rob asks Gary if he is also involved in CO2 conversion, seeking specific information about his participation in the topic introduced by Alissa.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted at a specific individual (Gary) to gather highly relevant information about his involvement in the discussed topic."
+                    "score_justification": "The question is precise and targeted at a specific individual (Gary) to gather highly relevant information about his involvement in the discussed topic.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Rob directly addresses Gary with a question, inviting him to contribute to the discussion about CO2 conversion, thereby including him in the conversation.",
                     "score": 2,
-                    "score_justification": "The utterance is a direct and targeted invite to Gary, linking his potential participation to the specific topic of CO2 conversion."
+                    "score_justification": "The utterance is a direct and targeted invite to Gary, linking his potential participation to the specific topic of CO2 conversion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1874,7 +2006,8 @@
                 "Information Seeking": {
                     "explanation": "The utterance asks a direct question, 'what is the product?', to seek specific information about the output of the CO2 conversion process being discussed.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the scientific work being discussed, moving the team forward by clarifying a key aspect."
+                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the scientific work being discussed, moving the team forward by clarifying a key aspect.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1896,12 +2029,14 @@
                 "Idea Management": {
                     "explanation": "Rob introduces and elaborates on a specific idea for CO2 conversion, 'taking CO2 and turning it into something that's much more easy to get rid of. Like the electrodeposition of of carbon from CO2,' building on a previous comment.",
                     "score": 2,
-                    "score_justification": "The utterance presents a novel and elaborated idea with a specific technical approach, explicitly building on a prior contribution, which moves the team forward."
+                    "score_justification": "The utterance presents a novel and elaborated idea with a specific technical approach, explicitly building on a prior contribution, which moves the team forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rob shares his specific technical interest and expertise regarding 'the electrodeposition of of carbon from CO2' as a method for CO2 conversion, which is relevant to the discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a specific technical approach for CO2 conversion, making it a strong contribution."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a specific technical approach for CO2 conversion, making it a strong contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1923,17 +2058,20 @@
                 "Evaluation Practices": {
                     "explanation": "Alissa assesses the merit of carbon as a product, stating 'I think carbon is a great product for sure,' which is a positive judgment of an idea.",
                     "score": 1,
-                    "score_justification": "This is a clear judgment with some enthusiasm ('great product') but lacks detailed reasoning or constructive feedback."
+                    "score_justification": "This is a clear judgment with some enthusiasm ('great product') but lacks detailed reasoning or constructive feedback.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Alissa directly invites Gary to contribute to the discussion by asking 'How about you Gary what do you make?', balancing contributions among team members.",
                     "score": 1,
-                    "score_justification": "This is a direct invitation to Gary, but it is general and not specifically tied to a particular expertise or topic beyond the general context of 'what do you make'."
+                    "score_justification": "This is a direct invitation to Gary, but it is general and not specifically tied to a particular expertise or topic beyond the general context of 'what do you make'.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Alissa asks 'How about you Gary what do you make?' to gather information about Gary's work or ideas related to products.",
                     "score": 1,
-                    "score_justification": "This is a clear question, but it is general in nature ('what do you make') rather than a precise or highly targeted inquiry."
+                    "score_justification": "This is a clear question, but it is general in nature ('what do you make') rather than a precise or highly targeted inquiry.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1955,12 +2093,14 @@
                 "Idea Management": {
                     "explanation": "Gary introduces and elaborates on several ideas for developing materials for CO2 reduction and incorporation, including specific chemical processes and potential products, in response to Alissa's question 'what do you make?'.",
                     "score": 2,
-                    "score_justification": "Gary provides novel, elaborated, and reasoned ideas, detailing specific materials and chemical routes, which moves the team's discussion forward."
+                    "score_justification": "Gary provides novel, elaborated, and reasoned ideas, detailing specific materials and chemical routes, which moves the team's discussion forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Gary shares detailed and relevant expertise about his lab's work on high surface area polymeric coatings and electrocatalytic reduction of CO2, providing specific chemical processes and potential products.",
                     "score": 2,
-                    "score_justification": "Gary provides accurate, detailed, and directly useful knowledge about specific methods and potential outcomes related to CO2 conversion."
+                    "score_justification": "Gary provides accurate, detailed, and directly useful knowledge about specific methods and potential outcomes related to CO2 conversion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1982,7 +2122,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Cool.' serves as a token acknowledgment of the previous speaker's detailed contribution about CO2 reduction methods.",
                     "score": 0,
-                    "score_justification": "It is a token acknowledgment, similar to 'Yeah' or 'Okay,' providing minimal positive feedback without further elaboration."
+                    "score_justification": "It is a token acknowledgment, similar to 'Yeah' or 'Okay,' providing minimal positive feedback without further elaboration.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2004,7 +2145,8 @@
                 "Information Seeking": {
                     "explanation": "The utterance is a precise and targeted question directed at Christopher, seeking specific information about his electrochemical regeneration method's potential for downstream conversion, which is highly relevant to the team's discussion on CO2 utilization.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion, directly asking about a specific method and its potential, thus moving the team's understanding forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the ongoing scientific discussion, directly asking about a specific method and its potential, thus moving the team's understanding forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2026,7 +2168,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Praveen shares detailed scientific knowledge about the chemical requirements and challenges of CO2 hydrogenation to methanol, specifically mentioning the need for high pressures and a source of hydrogen.",
                     "score": 2,
-                    "score_justification": "Praveen provides accurate, detailed, and directly useful knowledge by explaining specific chemical conditions (high pressures) and their impact on equilibrium conversions, which moves the team forward."
+                    "score_justification": "Praveen provides accurate, detailed, and directly useful knowledge by explaining specific chemical conditions (high pressures) and their impact on equilibrium conversions, which moves the team forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2048,17 +2191,20 @@
                 "Relational Climate": {
                     "explanation": "Alissa expresses strong acknowledgment and support for Praveen's points, reassuring him that discussing challenges is valuable for the session.",
                     "score": 2,
-                    "score_justification": "The utterance provides strong acknowledgment and reassurance ('No no no this is good... it's okay. Praveen has very good points') which fosters trust and a positive discussion environment."
+                    "score_justification": "The utterance provides strong acknowledgment and reassurance ('No no no this is good... it's okay. Praveen has very good points') which fosters trust and a positive discussion environment.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Alissa provides detailed and relevant information about the critical role of hydrogen in CO2 conversion, different types of hydrogen, and the logistical challenges of hydrogen production for remote conversion sites.",
                     "score": 2,
-                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge, elaborating on the complexities of hydrogen sourcing and its impact on sustainability and logistics."
+                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge, elaborating on the complexities of hydrogen sourcing and its impact on sustainability and logistics.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Alissa constructively evaluates the feasibility and sustainability of CO2 conversion to chemicals and fuels by highlighting the critical challenge of hydrogen sourcing and the logistical need for co-located hydrogen production.",
                     "score": 2,
-                    "score_justification": "The utterance provides constructive, reasoned feedback by identifying a significant challenge (hydrogen sourcing and logistics) and its implications for the feasibility of conversion processes."
+                    "score_justification": "The utterance provides constructive, reasoned feedback by identifying a significant challenge (hydrogen sourcing and logistics) and its implications for the feasibility of conversion processes.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2080,12 +2226,14 @@
                 "Idea Management": {
                     "explanation": "Christopher introduces a new idea of seawater capture coupled with hydrogen production, elaborating on a potential solution to the previously discussed challenges of hydrogen sourcing and co-location for CO2 conversion.",
                     "score": 2,
-                    "score_justification": "This is a novel and elaborated idea that directly builds on the prior discussion about hydrogen challenges, offering a reasoned approach to move the team forward."
+                    "score_justification": "This is a novel and elaborated idea that directly builds on the prior discussion about hydrogen challenges, offering a reasoned approach to move the team forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Christopher shares detailed knowledge about the field of seawater capture, explaining its advantage of easy coupling with hydrogen production via electrolysis and acknowledging associated challenges.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge that is highly relevant to the ongoing discussion about sustainable hydrogen sources for CO2 conversion."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge that is highly relevant to the ongoing discussion about sustainable hydrogen sources for CO2 conversion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"

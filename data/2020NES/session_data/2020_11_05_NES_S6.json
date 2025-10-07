@@ -29,7 +29,8 @@
                 "Information Seeking": {
                     "explanation": "The speaker asks a precise and targeted question about what specific contributions (theory) are missing and could be provided by a particular group (theorists) to address a gap in the current discussion or project.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, aiming to surface specific gaps and identify potential contributions from a defined group, which moves the team forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant, aiming to surface specific gaps and identify potential contributions from a defined group, which moves the team forward.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -51,7 +52,8 @@
                 "Knowledge Sharing": {
                     "explanation": "The utterance signals the speaker's readiness to provide a comprehensive and detailed response to a question about what theorists could provide, setting the stage for extensive knowledge sharing.",
                     "score": 1,
-                    "score_justification": "The utterance clearly indicates an upcoming relevant contribution of knowledge, functioning as a preamble to a detailed explanation."
+                    "score_justification": "The utterance clearly indicates an upcoming relevant contribution of knowledge, functioning as a preamble to a detailed explanation.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -73,12 +75,14 @@
                 "Idea Management": {
                     "explanation": "Sarbajit elaborates on the scope of his previous question, clarifying that the discussion about theoretical contributions is not limited to Shaama's specific work but applies more broadly to how reactions proceed.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear elaboration on the initial idea of the question, offering a more general direction for the discussion."
+                    "score_justification": "The utterance provides a clear elaboration on the initial idea of the question, offering a more general direction for the discussion.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "Sarbajit explicitly states \"It doesn't have to be just for you or like for folks,\" which broadens the focus of the question and potentially alleviates pressure on Shaama, fostering a more inclusive and comfortable discussion environment.",
                     "score": 1,
-                    "score_justification": "The utterance makes an explicit effort to broaden the question's target, contributing positively to the interpersonal tone by making the inquiry less personal and more inclusive."
+                    "score_justification": "The utterance makes an explicit effort to broaden the question's target, contributing positively to the interpersonal tone by making the inquiry less personal and more inclusive.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -100,17 +104,20 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides detailed information about the differing focuses of synthetic chemists (product distributions) and theorists (mechanisms, rates, pathways), and how theory can contribute to identifying product distributions and selectivities.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies the roles and potential contributions of different scientific approaches."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies the roles and potential contributions of different scientific approaches.",
+                    "when": "beginning"
                 },
                 "Idea Management": {
                     "explanation": "The speaker introduces the idea that theory can \"definitely pitch in\" to identify product distributions and pathways, and elaborates on the idea that a \"team\" is needed to bridge individual interests and gaps in collaboration.",
                     "score": 2,
-                    "score_justification": "The utterance presents novel and elaborated ideas about how theory can contribute and the necessity of team-based collaboration, moving the discussion forward."
+                    "score_justification": "The utterance presents novel and elaborated ideas about how theory can contribute and the necessity of team-based collaboration, moving the discussion forward.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker argues for the necessity of a team-based approach to collaboration, explaining that individual interests require a team to bridge gaps, which is a reasoned statement about structuring the collaborative process.",
                     "score": 2,
-                    "score_justification": "This is a clear and reasoned argument for an effective coordination strategy (team-based work) that addresses the challenges of individual interests and moves the team towards understanding how to organize."
+                    "score_justification": "This is a clear and reasoned argument for an effective coordination strategy (team-based work) that addresses the challenges of individual interests and moves the team towards understanding how to organize.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -132,17 +139,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Sarbajit explicitly structures the discussion by introducing a new topic, 'machine learning,' and directing the conversation flow, effectively setting a new agenda item.",
                     "score": 2,
-                    "score_justification": "The utterance clearly sets a new agenda item and effectively coordinates the discussion by transitioning to a new, relevant topic."
+                    "score_justification": "The utterance clearly sets a new agenda item and effectively coordinates the discussion by transitioning to a new, relevant topic.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Sarbajit directly invites Jose to contribute, specifically referencing Jose's prior mention of machine learning, which is a targeted invitation.",
                     "score": 2,
-                    "score_justification": "The invitation is direct and targeted to Jose, explicitly linking it to his expertise/previous contribution, making it a highly effective way to include a specific member."
+                    "score_justification": "The invitation is direct and targeted to Jose, explicitly linking it to his expertise/previous contribution, making it a highly effective way to include a specific member.",
+                    "when": "beginning"
                 },
                 "Information Seeking": {
                     "explanation": "Sarbajit asks a precise and targeted question to Jose about the 'opportunities there challenges' in machine learning, seeking specific information.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to the new topic, directly asking for specific insights from Jose."
+                    "score_justification": "The question is precise, targeted, and highly relevant to the new topic, directly asking for specific insights from Jose.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -164,17 +174,20 @@
                 "Idea Management": {
                     "explanation": "Jose introduces and elaborates on the idea of machine learning's usefulness, providing detailed examples of its application in handling negative results, MD snapshots, and decay data.",
                     "score": 2,
-                    "score_justification": "The idea is novel in its specific applications (negative results, discarded data), highly elaborated with concrete examples, and reasoned, moving the team forward by suggesting new avenues for data utilization."
+                    "score_justification": "The idea is novel in its specific applications (negative results, discarded data), highly elaborated with concrete examples, and reasoned, moving the team forward by suggesting new avenues for data utilization.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jose shares detailed and accurate knowledge about machine learning, including its multi-dimensional analysis capabilities, a specific paper on negative results in organic synthesis, and examples from theoretical and experimental data.",
                     "score": 2,
-                    "score_justification": "The knowledge shared is accurate, highly detailed, and directly useful, providing concrete examples and insights into how machine learning can leverage previously discarded data."
+                    "score_justification": "The knowledge shared is accurate, highly detailed, and directly useful, providing concrete examples and insights into how machine learning can leverage previously discarded data.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Jose assesses the merit of machine learning as a 'very interesting' and 'useful' topic, providing reasoning for its utility in multi-dimensional analysis and identifying a constructive opportunity to explore discarded data.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive and reasoned, offering a positive assessment of machine learning's potential while also identifying an actionable area for improvement and exploration."
+                    "score_justification": "The evaluation is constructive and reasoned, offering a positive assessment of machine learning's potential while also identifying an actionable area for improvement and exploration.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -196,17 +209,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Yuanyue shares detailed, specific knowledge about how machine learning is applied in their research (ab initio molecular dynamics) to overcome computational expense, providing a concrete example of its utility.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a specific, complex application of ML with clear benefits."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a specific, complex application of ML with clear benefits.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Yuanyue explicitly evaluates machine learning as 'very useful' and 'helpful' for their research, providing extensive reasoning by detailing its application and the computational benefits it provides.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, reasoned, and actionable, clearly explaining why ML is useful with specific examples of its impact."
+                    "score_justification": "The evaluation is constructive, reasoned, and actionable, clearly explaining why ML is useful with specific examples of its impact.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Yuanyue elaborates on the general idea of machine learning's usefulness, initially introduced by Jose, by providing a specific, detailed example from their own research context.",
                     "score": 2,
-                    "score_justification": "The contribution is novel, elaborated, and reasoned, building on a previous idea with specific details and a clear application."
+                    "score_justification": "The contribution is novel, elaborated, and reasoned, building on a previous idea with specific details and a clear application.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -228,12 +244,14 @@
                 "Information Seeking": {
                     "explanation": "Sarbajit asks a precise and targeted question about the application of machine learning for experimentalists, seeking to gather specific information on this aspect.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, shifting the discussion to a specific area (experimentalists) within the broader machine learning topic."
+                    "score_justification": "The question is precise, targeted, and highly relevant, shifting the discussion to a specific area (experimentalists) within the broader machine learning topic.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Sarbajit explicitly invites someone to speak by saying 'Uh sorry who was Yeah go ahead.', indicating an attempt to manage the flow of contributions.",
                     "score": 1,
-                    "score_justification": "This is a direct invitation for someone to speak, but it is not specifically targeted by name or expertise."
+                    "score_justification": "This is a direct invitation for someone to speak, but it is not specifically targeted by name or expertise.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -255,17 +273,20 @@
                 "Idea Management": {
                     "explanation": "Rebecca builds on previous points by Jose and Yuanyue, elaborating on the critical challenge of needing massive amounts of high-quality reference data for machine learning models to be predictive.",
                     "score": 2,
-                    "score_justification": "This contribution is elaborated and reasoned, building directly on prior ideas by introducing a crucial constraint (data quality/quantity) that moves the team's understanding of ML forward."
+                    "score_justification": "This contribution is elaborated and reasoned, building directly on prior ideas by introducing a crucial constraint (data quality/quantity) that moves the team's understanding of ML forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Rebecca provides specific, detailed knowledge about the practical requirements for effective machine learning, highlighting the necessity for \"massive\" amounts of \"high quality reference data\" in both experimental and quantum chemistry contexts.",
                     "score": 2,
-                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge regarding the essential data requirements for predictive machine learning models, making the team more effective."
+                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge regarding the essential data requirements for predictive machine learning models, making the team more effective.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Rebecca assesses the feasibility and limitations of machine learning, concluding that \"it only works if you have good reference data for something very similar to what you're trying to predict,\" providing a reasoned condition for its application.",
                     "score": 2,
-                    "score_justification": "This provides constructive, reasoned feedback by clearly stating a critical condition for the successful application of machine learning, thereby offering actionable insight."
+                    "score_justification": "This provides constructive, reasoned feedback by clearly stating a critical condition for the successful application of machine learning, thereby offering actionable insight.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -287,17 +308,20 @@
                 "Relational Climate": {
                     "explanation": "Yuanyue explicitly agrees with Rebecca's previous point about the need for high-quality reference data, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear agreement, which is an explicit acknowledgment, but not a strong, trust-building statement."
+                    "score_justification": "The utterance provides clear agreement, which is an explicit acknowledgment, but not a strong, trust-building statement.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Yuanyue shares detailed expertise about common practices in machine learning papers and highlights the critical issue of using problematic computational methods or low-quality data, which leads to inaccurate predictions.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a common ML workflow and a significant pitfall in the field."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, explaining a common ML workflow and a significant pitfall in the field.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Yuanyue evaluates existing computational methods and data quality in machine learning papers as \"problematic\" and \"not very accurate,\" providing reasoning that poor data leads to wrong predictions and suggesting caution.",
                     "score": 2,
-                    "score_justification": "The utterance offers a constructive and reasoned critique of current practices, explaining the problem and its consequences, and implicitly suggesting an area for improvement."
+                    "score_justification": "The utterance offers a constructive and reasoned critique of current practices, explaining the problem and its consequences, and implicitly suggesting an area for improvement.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -319,12 +343,14 @@
                 "Idea Management": {
                     "explanation": "Sarbajit introduces the idea that data collation and curation could serve as a crucial intersection point for experimental and theoretical approaches, building on the previous discussion about data quality challenges.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that proposes a solution to the data quality/quantity problem previously discussed, moving the team forward by suggesting a collaborative approach."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that proposes a solution to the data quality/quantity problem previously discussed, moving the team forward by suggesting a collaborative approach.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Sarbajit directly invites Caleb Lindsey and Feng to share their perspectives on machine learning in the context of their specific experimental work (imaging or spectroscopy), linking it to large-scale measurements.",
                     "score": 2,
-                    "score_justification": "This is a targeted invite tied to specific individuals and their areas of expertise, effectively fostering participation and making the team more effective."
+                    "score_justification": "This is a targeted invite tied to specific individuals and their areas of expertise, effectively fostering participation and making the team more effective.",
+                    "when": "middle"
                 }
             },
             "role": "Facilitator"
@@ -346,12 +372,14 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker shares a relevant fact about their experimental data, stating that their work is 'based on averages over over extremely large data sets' in response to a question about machine learning applications.",
                     "score": 1,
-                    "score_justification": "The contribution provides relevant context and some detail about their data, making it a functional piece of information."
+                    "score_justification": "The contribution provides relevant context and some detail about their data, making it a functional piece of information.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "The speaker surfaces a gap in understanding by stating their uncertainty about 'how the the intersection of the two would be most optimal' regarding machine learning and their experimental work.",
                     "score": 1,
-                    "score_justification": "The statement clearly identifies a specific area of uncertainty, which functions as surfacing a gap, though not as a direct, precise question."
+                    "score_justification": "The statement clearly identifies a specific area of uncertainty, which functions as surfacing a gap, though not as a direct, precise question.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -373,17 +401,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Feng provides relevant facts and expertise by detailing the immense volume of unanalyzed experimental data (1.25 million XAS, 8-10 terabytes per week) and the current manual, slow data analysis methods.",
                     "score": 2,
-                    "score_justification": "The utterance offers accurate, detailed, and directly useful knowledge with concrete examples and quantitative figures, which moves the team forward by providing critical context."
+                    "score_justification": "The utterance offers accurate, detailed, and directly useful knowledge with concrete examples and quantitative figures, which moves the team forward by providing critical context.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Feng describes ongoing discussions about streamlining data analysis that have not resulted in progress, explicitly stating 'we are still not making progress on that yet,' which indicates a failure in structuring process or confirming decisions.",
                     "score": -1,
-                    "score_justification": "The utterance highlights a failure in the team's process to move forward on a discussed solution, indicating that coordination efforts are not leading to effective decisions or progress."
+                    "score_justification": "The utterance highlights a failure in the team's process to move forward on a discussed solution, indicating that coordination efforts are not leading to effective decisions or progress.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Feng introduces the idea that they 'have to develop our own machine learning or other advanced data analysis method' to address the challenge of analyzing their large datasets.",
                     "score": 1,
-                    "score_justification": "The utterance clearly states a need for new methods (machine learning or advanced data analysis) to solve a problem, providing a clear direction for idea generation."
+                    "score_justification": "The utterance clearly states a need for new methods (machine learning or advanced data analysis) to solve a problem, providing a clear direction for idea generation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -405,17 +436,20 @@
                 "Idea Management": {
                     "explanation": "Sarbajit introduces an idea for managing large, diverse datasets by suggesting a method of collation, building on the previous discussion about data challenges.",
                     "score": 1,
-                    "score_justification": "The idea provides a clear direction for handling data but lacks specific details on implementation, making it a clear but not highly elaborated contribution."
+                    "score_justification": "The idea provides a clear direction for handling data but lacks specific details on implementation, making it a clear but not highly elaborated contribution.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Sarbajit explicitly references the meeting's timeline (\"15-minute point\", \"three-minute\") and checks on Jose's readiness for his scheduled contribution, demonstrating active management of the meeting's workflow.",
                     "score": 2,
-                    "score_justification": "The speaker explicitly manages the meeting's time and checks on a participant's readiness for a scheduled agenda item, effectively coordinating the process and moving the team forward."
+                    "score_justification": "The speaker explicitly manages the meeting's time and checks on a participant's readiness for a scheduled agenda item, effectively coordinating the process and moving the team forward.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Sarbajit directly asks Jose to identify any missing information he might need, precisely targeting potential gaps to facilitate his contribution.",
                     "score": 2,
-                    "score_justification": "The question is precise and directly targets potential information gaps relevant to Jose's upcoming task, aiming to make the team more effective."
+                    "score_justification": "The question is precise and directly targets potential information gaps relevant to Jose's upcoming task, aiming to make the team more effective.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -437,12 +471,14 @@
                 "Information Seeking": {
                     "explanation": "Jose explicitly asks for help to 'quickly go through the points,' which is a request for review or confirmation of information related to his upcoming presentation, directly responding to Sarbajit's inquiry about missing information.",
                     "score": 1,
-                    "score_justification": "The request is clear in its intent to review points but general in terms of the specific information being sought, making it a clear but general contribution."
+                    "score_justification": "The request is clear in its intent to review points but general in terms of the specific information being sought, making it a clear but general contribution.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Jose makes an off-topic, lighthearted comment about discovering a Zoom feature ('You can be like Harry Potter, look'), which contributes to a positive and engaging interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The comment is an explicit, positive social interaction that shows interest in sharing a discovery, but it does not deeply foster trust or curiosity."
+                    "score_justification": "The comment is an explicit, positive social interaction that shows interest in sharing a discovery, but it does not deeply foster trust or curiosity.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -464,7 +500,8 @@
                 "None": {
                     "explanation": "The utterance 'and then' is a short, incomplete phrase that does not explicitly convey any of the behaviors described in the codebook.",
                     "score": 0,
-                    "score_justification": "The utterance is too minimal to be scored against any specific code, aligning with the guideline for short filler words."
+                    "score_justification": "The utterance is too minimal to be scored against any specific code, aligning with the guideline for short filler words.",
+                    "when": "end"
                 }
             },
             "role": "unknown"
@@ -486,7 +523,8 @@
                 "None": {
                     "explanation": "The utterance consists of only a few words like 'Right', 'yeah', 'exactly', and 'matter', which are minimal acknowledgments or fillers and do not explicitly demonstrate behaviors related to any specific code in the codebook.",
                     "score": 0,
-                    "score_justification": "The utterance is too brief and vague to be scored against any specific code, aligning with the guideline for utterances with only a few words."
+                    "score_justification": "The utterance is too brief and vague to be scored against any specific code, aligning with the guideline for utterances with only a few words.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -508,17 +546,20 @@
                 "Idea Management": {
                     "explanation": "Eva introduces and elaborates on the idea of using time-resolved spectroscopy as a method to observe species binding, contributing to the generation of ideas.",
                     "score": 1,
-                    "score_justification": "The utterance presents a clear technical approach with specific details about the method and its potential outcome."
+                    "score_justification": "The utterance presents a clear technical approach with specific details about the method and its potential outcome.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Eva shares her expertise by identifying a complex scientific question regarding substrate orientation and suggesting that theoretical approaches could be helpful.",
                     "score": 2,
-                    "score_justification": "Eva provides detailed and relevant knowledge by pinpointing a specific, complex challenge in the field and suggesting a valuable scientific avenue (theory) to address it."
+                    "score_justification": "Eva provides detailed and relevant knowledge by pinpointing a specific, complex challenge in the field and suggesting a valuable scientific avenue (theory) to address it.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Eva assesses the difficulty of the scientific problem concerning substrate orientation, explicitly stating it is a 'really complicated question.'",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear judgment about the complexity of the problem, offering a qualitative assessment of its difficulty."
+                    "score_justification": "The utterance provides a clear judgment about the complexity of the problem, offering a qualitative assessment of its difficulty.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -540,12 +581,14 @@
                 "Participation Dynamics": {
                     "explanation": "Sarbajit directly informs Feng that they are muted, which is an explicit action to enable Feng's participation and include them in the discussion.",
                     "score": 1,
-                    "score_justification": "This is a clear and direct action to include a team member by addressing a technical barrier, making it a functional contribution to participation."
+                    "score_justification": "This is a clear and direct action to include a team member by addressing a technical barrier, making it a functional contribution to participation.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "The phrase \"so the other thing I was thinking that\" indicates an explicit intention to introduce a new idea, even though the utterance is cut off before the idea is fully articulated.",
                     "score": 0,
-                    "score_justification": "The contribution is vague and minimal because it signals an intent to introduce an idea but does not fully articulate or elaborate on it."
+                    "score_justification": "The contribution is vague and minimal because it signals an intent to introduce an idea but does not fully articulate or elaborate on it.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -567,17 +610,20 @@
                 "Information Seeking": {
                     "explanation": "Feng asks precise questions about learning from protein crystallography and the feasibility of freezing electrochemical systems to enable observation, seeking specific information and methods.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant to the scientific discussion, seeking specific knowledge and experimental approaches."
+                    "score_justification": "The questions are precise, targeted, and highly relevant to the scientific discussion, seeking specific knowledge and experimental approaches.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Feng introduces the idea of freezing the electrochemical system to allow for sufficient observation time and reach a steady state, elaborating on its purpose.",
                     "score": 2,
-                    "score_justification": "The idea is novel, elaborated with its purpose and potential benefits, and builds on the ongoing discussion about observing complex systems."
+                    "score_justification": "The idea is novel, elaborated with its purpose and potential benefits, and builds on the ongoing discussion about observing complex systems.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Feng immediately evaluates the proposed idea by raising a concern about degradation in electrochemical reactions, suggesting that a true steady state might never be achieved.",
                     "score": 2,
-                    "score_justification": "The evaluation is constructive, reasoned, and identifies a specific, actionable challenge or limitation for the proposed experimental approach."
+                    "score_justification": "The evaluation is constructive, reasoned, and identifies a specific, actionable challenge or limitation for the proposed experimental approach.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -599,7 +645,8 @@
                 "None": {
                     "explanation": "The utterance 'That's a it's always that' is an incomplete sentence and too vague to explicitly observe any of the defined coding behaviors, aligning with the guideline for short, non-substantive utterances.",
                     "score": 0,
-                    "score_justification": "The utterance lacks sufficient content or clarity to be scored against any specific code criteria."
+                    "score_justification": "The utterance lacks sufficient content or clarity to be scored against any specific code criteria.",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"
@@ -621,17 +668,20 @@
                 "Relational Climate": {
                     "explanation": "Linsey expresses explicit support for Feng's previous point by stating 'I like that point,' fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear positive feedback on a previous contribution, aligning with explicit praise/interest."
+                    "score_justification": "The utterance provides clear positive feedback on a previous contribution, aligning with explicit praise/interest.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Linsey shares detailed scientific knowledge about how experimental perturbations, such as shooting x-rays or freezing, inherently alter electrochemical systems, providing specific examples and context.",
                     "score": 2,
-                    "score_justification": "Linsey provides specific, detailed, and accurate scientific information about the challenges of probing electrochemical systems, directly building on the previous discussion."
+                    "score_justification": "Linsey provides specific, detailed, and accurate scientific information about the challenges of probing electrochemical systems, directly building on the previous discussion.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Linsey evaluates the implications of experimental perturbations on the system, specifically mentioning how freezing would change it, and then judges the idea of understanding these impacts as 'really interesting.'",
                     "score": 2,
-                    "score_justification": "Linsey provides a reasoned critique of how experimental methods alter the system and offers a constructive re-evaluation of a related research direction as valuable."
+                    "score_justification": "Linsey provides a reasoned critique of how experimental methods alter the system and offers a constructive re-evaluation of a related research direction as valuable.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -653,17 +703,20 @@
                 "Relational Climate": {
                     "explanation": "Sarbajit explicitly acknowledges Linsey's previous contribution by starting his statement with \"And to that point Linsey.\"",
                     "score": 1,
-                    "score_justification": "The utterance provides an explicit acknowledgment of a previous speaker's point, which is more than a token acknowledgment."
+                    "score_justification": "The utterance provides an explicit acknowledgment of a previous speaker's point, which is more than a token acknowledgment.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Sarbajit assesses the feasibility and difficulty of modeling the discussed systems, stating it \"becomes a difficult problem for modeling\" and providing reasoning.",
                     "score": 2,
-                    "score_justification": "The utterance offers a clear, reasoned judgment about the difficulty of the modeling problem, explaining the technical challenges involved."
+                    "score_justification": "The utterance offers a clear, reasoned judgment about the difficulty of the modeling problem, explaining the technical challenges involved.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Sarbajit provides specific technical details and expertise about why modeling is difficult, mentioning \"excited state systems,\" \"TDDFT,\" and the need to \"start modeling spectra.\"",
                     "score": 2,
-                    "score_justification": "The utterance shares accurate, detailed, and directly useful technical knowledge, including specific concepts like \"excited state systems\" and \"TDDFT.\""
+                    "score_justification": "The utterance shares accurate, detailed, and directly useful technical knowledge, including specific concepts like \"excited state systems\" and \"TDDFT.\"",
+                    "when": "end"
                 }
             },
             "role": "Facilitator"

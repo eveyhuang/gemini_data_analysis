@@ -34,7 +34,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance structures the start of the meeting by indicating readiness to begin and a brief waiting period, which falls under structuring process.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear statement about the immediate process of starting the meeting, aligning with clear structuring but without extensive detail or long-term goals."
+                    "score_justification": "The utterance provides a clear statement about the immediate process of starting the meeting, aligning with clear structuring but without extensive detail or long-term goals.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -56,7 +57,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker is structuring the meeting's start by stating the decision to wait for more participants to return and turn on their cameras, which is a clear coordination practice.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear, functional statement about the current process and a decision to wait, aligning with a clear but general coordination practice."
+                    "score_justification": "The utterance provides a clear, functional statement about the current process and a decision to wait, aligning with a clear but general coordination practice.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -78,7 +80,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Okay' serves as a token acknowledgment of the previous speaker's statement about waiting for people to return, indicating a basic level of engagement.",
                     "score": 0,
-                    "score_justification": "This is a token acknowledgment, which aligns with the definition for a score of 0 in Relational Climate."
+                    "score_justification": "This is a token acknowledgment, which aligns with the definition for a score of 0 in Relational Climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -100,7 +103,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker is providing a clear instruction for participants to turn on their cameras, which serves as a coordination mechanism to determine when to proceed with sending people to breakout rooms, thereby structuring the meeting's workflow.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear instruction for coordinating the group's readiness for the next activity, which is a functional contribution to process structuring."
+                    "score_justification": "The utterance provides a clear instruction for coordinating the group's readiness for the next activity, which is a functional contribution to process structuring.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -122,7 +126,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance explicitly states an action ('I'll share my screen') that structures the meeting's process by presenting information about the upcoming breakouts, which is a key part of the meeting's coordination.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear statement of intent to coordinate the meeting's flow by presenting the next steps, making it a clear contribution to structuring the process."
+                    "score_justification": "The utterance is a clear statement of intent to coordinate the meeting's flow by presenting the next steps, making it a clear contribution to structuring the process.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -144,7 +149,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance explicitly lists the names of the upcoming breakout rooms, which structures the meeting process and informs participants about the next activity.",
                     "score": 2,
-                    "score_justification": "The utterance provides explicit and detailed information about the upcoming breakout rooms, effectively coordinating the transition and moving the meeting forward."
+                    "score_justification": "The utterance provides explicit and detailed information about the upcoming breakout rooms, effectively coordinating the transition and moving the meeting forward.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -166,12 +172,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker is structuring the process of transitioning to breakout rooms by announcing the opening of rooms and providing clear instructions for participants, which aligns with structuring workflow and organizing the team.",
                     "score": 2,
-                    "score_justification": "The utterance provides explicit goals and detailed instructions for effective coordination of the breakout room transition, including a contingency plan."
+                    "score_justification": "The utterance provides explicit goals and detailed instructions for effective coordination of the breakout room transition, including a contingency plan.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "The speaker expresses a positive and supportive tone by wishing participants 'a great conversation' as they transition to breakout rooms.",
                     "score": 1,
-                    "score_justification": "The utterance includes an explicit positive sentiment, wishing participants well, which is a clear contribution to a positive relational climate."
+                    "score_justification": "The utterance includes an explicit positive sentiment, wishing participants well, which is a clear contribution to a positive relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -193,12 +201,14 @@
                 "Knowledge Sharing": {
                     "explanation": "The utterance provides a specific and relevant fact about the meeting's schedule, informing participants of the end time for the current activity.",
                     "score": 2,
-                    "score_justification": "The information provided is accurate, detailed ('12:20 Mountain time'), and directly useful for participants to manage their time in the breakout rooms."
+                    "score_justification": "The information provided is accurate, detailed ('12:20 Mountain time'), and directly useful for participants to manage their time in the breakout rooms.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance sets a clear time boundary for the ongoing breakout rooms, which is a practice of structuring the process and managing the workflow.",
                     "score": 2,
-                    "score_justification": "It's an explicit and clear statement of a time boundary, contributing to effective coordination by informing participants of the schedule and duration of the activity."
+                    "score_justification": "It's an explicit and clear statement of a time boundary, contributing to effective coordination by informing participants of the schedule and duration of the activity.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -220,12 +230,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance explicitly confirms the precise end time of the session, serving as an explicit and effective act of coordinating the meeting's schedule.",
                     "score": 2,
-                    "score_justification": "It provides explicit and effective coordination by confirming a specific time boundary for the session, moving the team forward in managing the meeting flow."
+                    "score_justification": "It provides explicit and effective coordination by confirming a specific time boundary for the session, moving the team forward in managing the meeting flow.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The utterance provides the specific end time of the session, which is accurate, detailed, and directly useful knowledge for the participants.",
                     "score": 2,
-                    "score_justification": "It is accurate, detailed (specific time and timezone), and directly useful knowledge, making the team more effective by clarifying the schedule."
+                    "score_justification": "It is accurate, detailed (specific time and timezone), and directly useful knowledge, making the team more effective by clarifying the schedule.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -247,12 +259,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker explicitly directs Richard to unshare his screen to enable seeing participants for breakout room assignments, which is a clear action to structure the meeting's workflow.",
                     "score": 2,
-                    "score_justification": "The request is precise, targeted, and provides a clear rationale directly linked to effectively managing the ongoing meeting process of assigning participants to breakout rooms."
+                    "score_justification": "The request is precise, targeted, and provides a clear rationale directly linked to effectively managing the ongoing meeting process of assigning participants to breakout rooms.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "The utterance includes 'Thank you,' which is an explicit expression of politeness and acknowledgment towards Richard for the requested action.",
                     "score": 1,
-                    "score_justification": "The 'Thank you' is a clear expression of politeness, fitting the criteria for a score of 1."
+                    "score_justification": "The 'Thank you' is a clear expression of politeness, fitting the criteria for a score of 1.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -274,7 +288,8 @@
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides a relevant factual observation about the current state of meeting attendance, informing the team that participants are rejoining quickly, which is a relevant piece of information for the meeting's logistics.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear and relevant contribution of a fact, directly useful for understanding the meeting's status, but it is a simple observation rather than detailed expertise."
+                    "score_justification": "The utterance is a clear and relevant contribution of a fact, directly useful for understanding the meeting's status, but it is a simple observation rather than detailed expertise.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -296,7 +311,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker observes a technical issue affecting a participant's presence, which is a clear contribution to managing the meeting's logistics and ensuring all members are able to participate, aligning with structuring the process.",
                     "score": 1,
-                    "score_justification": "The utterance clearly identifies a technical issue impacting a participant's presence, which is a clear, functional contribution to managing the meeting's process."
+                    "score_justification": "The utterance clearly identifies a technical issue impacting a participant's presence, which is a clear, functional contribution to managing the meeting's process.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -318,7 +334,8 @@
                 "Information Seeking": {
                     "explanation": "The utterance 'Andrew you're talking to me?' is a direct question seeking clarification on who Andrew is addressing, which aligns with asking questions to surface information about the current communication flow.",
                     "score": 1,
-                    "score_justification": "The question is clear and directly seeks information, but it is general in nature, clarifying who is being addressed rather than a precise, targeted question about project content or a specific knowledge gap."
+                    "score_justification": "The question is clear and directly seeks information, but it is general in nature, clarifying who is being addressed rather than a precise, targeted question about project content or a specific knowledge gap.",
+                    "when": "beginning"
                 }
             },
             "role": "Facilitator"
@@ -340,7 +357,8 @@
                 "Participation Dynamics": {
                     "explanation": "Tianbiao directly addresses Marta to re-engage her in the conversation after she was noted to have been 'dropped off', which is a behavior aimed at including a member.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, direct address to a specific person, serving as an invite to participate, but it lacks further detail or specific topic linkage."
+                    "score_justification": "The utterance is a clear, direct address to a specific person, serving as an invite to participate, but it lacks further detail or specific topic linkage.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -362,7 +380,8 @@
                 "Relational Climate": {
                     "explanation": "Marta's 'Yeah.' serves as a token acknowledgment in response to Tianbiao calling her name, indicating she is present and listening.",
                     "score": 0,
-                    "score_justification": "The utterance is a minimal, token acknowledgment, matching the example for a score of 0 in the codebook."
+                    "score_justification": "The utterance is a minimal, token acknowledgment, matching the example for a score of 0 in the codebook.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -384,7 +403,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The utterance explicitly structures the meeting by assigning participants to specific groups ('3-5', '3-6') and addresses a technical issue by re-assigning a participant who 'got dropped off,' which aligns with coordinating the workflow and participant organization.",
                     "score": 2,
-                    "score_justification": "The utterance provides explicit and effective coordination by assigning participants to specific groups and resolving a technical issue to maintain the meeting's structure, moving the team forward in its organization."
+                    "score_justification": "The utterance provides explicit and effective coordination by assigning participants to specific groups and resolving a technical issue to maintain the meeting's structure, moving the team forward in its organization.",
+                    "when": "beginning"
                 }
             },
             "role": "unknown"
@@ -406,7 +426,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance acknowledges the strong representation of Rochester in the meeting, which contributes to a positive interpersonal tone by recognizing a shared affiliation or presence.",
                     "score": 1,
-                    "score_justification": "The utterance is an explicit positive observation about the group's composition, serving as an acknowledgment that fosters a positive relational climate."
+                    "score_justification": "The utterance is an explicit positive observation about the group's composition, serving as an acknowledgment that fosters a positive relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -428,7 +449,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yeah.' serves as a token acknowledgment, indicating minimal engagement or agreement with the previous statement.",
                     "score": 0,
-                    "score_justification": "The utterance is a 'token acknowledgment' as per the codebook example for a score of 0, providing a vague/minimal contribution."
+                    "score_justification": "The utterance is a 'token acknowledgment' as per the codebook example for a score of 0, providing a vague/minimal contribution.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -450,12 +472,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen shares the fact that she spoke with Jeff's postdoc, providing a relevant piece of information that sets the stage for further discussion about potential collaboration.",
                     "score": 1,
-                    "score_justification": "It's a clear and relevant contribution of a fact, but lacks the detailed scientific or project-specific knowledge for a higher score."
+                    "score_justification": "It's a clear and relevant contribution of a fact, but lacks the detailed scientific or project-specific knowledge for a higher score.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "The utterance initiates a personal connection by mentioning a shared acquaintance (Jeff's postdoc), contributing to a positive and engaging interpersonal tone.",
                     "score": 1,
-                    "score_justification": "It's an explicit social interaction that shows interest and builds rapport, going beyond a mere token acknowledgment."
+                    "score_justification": "It's an explicit social interaction that shows interest and builds rapport, going beyond a mere token acknowledgment.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -477,7 +501,8 @@
                 "Information Seeking": {
                     "explanation": "The utterance 'Which one?' is a clear question asking for specific information (the identity of the postdoc) to clarify Ellen Matson's previous statement, aligning with the definition of Information Seeking.",
                     "score": 1,
-                    "score_justification": "The question is clear and directly seeks specific information to move the conversation forward, making it a functional contribution, but it is not highly precise or targeted beyond identifying a person."
+                    "score_justification": "The question is clear and directly seeks specific information to move the conversation forward, making it a functional contribution, but it is not highly precise or targeted beyond identifying a person.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -499,7 +524,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen is sharing information about which postdoc she was talking to (Brandon) and vaguely mentioning future work ('doing some stuff') when he joins, which is relevant to the team's understanding of potential collaborations.",
                     "score": 1,
-                    "score_justification": "The contribution is relevant by identifying the postdoc and hinting at future work, but the details are vague ('some stuff'), making it a clear but general contribution rather than detailed knowledge."
+                    "score_justification": "The contribution is relevant by identifying the postdoc and hinting at future work, but the details are vague ('some stuff'), making it a clear but general contribution rather than detailed knowledge.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -521,12 +547,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares relevant information about Brandon, specifically his positive quality as a 'great hire' and his enthusiasm to join Ellen's team.",
                     "score": 1,
-                    "score_justification": "The utterance provides a relevant positive assessment of a team member with some detail, which is a functional contribution of knowledge."
+                    "score_justification": "The utterance provides a relevant positive assessment of a team member with some detail, which is a functional contribution of knowledge.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses explicit praise for Brandon as a 'great hire' and acknowledges his excitement to join Ellen, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance contains explicit praise and acknowledgment, contributing positively to the relational climate."
+                    "score_justification": "The utterance contains explicit praise and acknowledgment, contributing positively to the relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -548,7 +576,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance expresses shared enthusiasm and a personal sentiment about Brandon, contributing to the positive interpersonal tone of the conversation.",
                     "score": 1,
-                    "score_justification": "The utterance explicitly expresses enthusiasm ('We're excited too') and a personal sentiment, which is a clear contribution to the relational climate."
+                    "score_justification": "The utterance explicitly expresses enthusiasm ('We're excited too') and a personal sentiment, which is a clear contribution to the relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -570,12 +599,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses strong praise for Brandon ('he's been really fantastic') and offers empathetic support for the challenges of starting a lab, contributing to a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The utterance provides strong praise and explicit empathy, fostering a positive and supportive relational climate."
+                    "score_justification": "The utterance provides strong praise and explicit empathy, fostering a positive and supportive relational climate.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares his positive assessment of Brandon's performance and a general observation about the difficulties of starting a lab, which are relevant facts/expertise in the context of the discussion.",
                     "score": 1,
-                    "score_justification": "The utterance provides relevant information about Brandon's quality and a general observation, offering some detail to the ongoing discussion."
+                    "score_justification": "The utterance provides relevant information about Brandon's quality and a general observation, offering some detail to the ongoing discussion.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -597,7 +628,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey Long structures the meeting by introducing himself as the facilitator, stating the first order of business (selecting a recorder/reporter), and explicitly asking for a volunteer for that role, which aligns with structuring process and setting goals.",
                     "score": 2,
-                    "score_justification": "The utterance explicitly states the facilitator's role, sets a clear first goal for the meeting, and initiates a specific task (finding a recorder), demonstrating effective coordination and goal-setting."
+                    "score_justification": "The utterance explicitly states the facilitator's role, sets a clear first goal for the meeting, and initiates a specific task (finding a recorder), demonstrating effective coordination and goal-setting.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -619,7 +651,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Ellen volunteers for the recorder/reporter role, which is a clear action to structure the meeting's process and assign a task, aligning with Coordination and Decision Practices.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear and direct action to take on a specific role, contributing to the meeting's coordination and decision-making process."
+                    "score_justification": "The utterance is a clear and direct action to take on a specific role, contributing to the meeting's coordination and decision-making process.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -641,7 +674,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance expresses strong gratitude and appreciation to Ellen for volunteering, which explicitly falls under expressing acknowledgment and support, fostering a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The speaker provides strong, elaborated acknowledgment and appreciation ('very very kind of you and we're all appreciative'), which fosters a positive and trusting relational climate."
+                    "score_justification": "The speaker provides strong, elaborated acknowledgment and appreciation ('very very kind of you and we're all appreciative'), which fosters a positive and trusting relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -663,7 +697,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "This code applies because Ellen is stating a practical step she needs to take to fulfill her newly accepted role as recorder, which is a part of the meeting's coordination and workflow.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, functional statement about enacting a decision (her role) and preparing for the meeting's workflow, making it a clear contribution to coordination."
+                    "score_justification": "The utterance is a clear, functional statement about enacting a decision (her role) and preparing for the meeting's workflow, making it a clear contribution to coordination.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -685,12 +720,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey offers help to Ellen ('if you can't let me know and I'll send you the link,' 'we'll help you craft the slide'), which expresses support and fosters a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "Jeffrey explicitly offers practical help to Ellen, which is a strong act of support and fosters a collaborative and trusting environment."
+                    "score_justification": "Jeffrey explicitly offers practical help to Ellen, which is a strong act of support and fosters a collaborative and trusting environment.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey offers assistance to Ellen to ensure she can access the necessary document and complete a future task (crafting a slide), which helps structure the workflow and coordinate tasks.",
                     "score": 2,
-                    "score_justification": "Jeffrey explicitly offers practical help to Ellen to facilitate her task of finding the document and crafting a slide, demonstrating effective coordination for future tasks."
+                    "score_justification": "Jeffrey explicitly offers practical help to Ellen to facilitate her task of finding the document and crafting a slide, demonstrating effective coordination for future tasks.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -712,12 +749,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker explicitly structures the meeting by proposing and initiating an introduction round, defining its scope and duration.",
                     "score": 1,
-                    "score_justification": "The utterance clearly sets an agenda item and process for the meeting, which is a clear but general structuring of the workflow."
+                    "score_justification": "The utterance clearly sets an agenda item and process for the meeting, which is a clear but general structuring of the workflow.",
+                    "when": "beginning"
                 },
                 "Knowledge Sharing": {
                     "explanation": "The speaker provides relevant information about his name, affiliation, and specific research interests and expertise.",
                     "score": 1,
-                    "score_justification": "The speaker shares relevant facts and expertise about his background and work, providing some detail for the introduction."
+                    "score_justification": "The speaker shares relevant facts and expertise about his background and work, providing some detail for the introduction.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -739,7 +778,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Christopher shares detailed and relevant facts about his professional background, affiliation, and specific research expertise in environmental electrochemistry and carbon capture, directly responding to the request for introductions and interests.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about Christopher's background and specific research interests in carbon capture, which is highly relevant to the meeting's implied purpose."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about Christopher's background and specific research interests in carbon capture, which is highly relevant to the meeting's implied purpose.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -761,17 +801,20 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses acknowledgment and appreciation ('Great thanks') to the previous speaker, Christopher Gorski, contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution to a positive relational climate.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites Charles to speak next ('And Charles?'), ensuring balanced participation in the introduction round.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, direct invitation for a specific team member to contribute."
+                    "score_justification": "The utterance is a clear, direct invitation for a specific team member to contribute.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey structures the meeting by explicitly calling on the next person for introductions, following the established process of the meeting.",
                     "score": 1,
-                    "score_justification": "The utterance clearly enacts a part of the meeting's agenda by moving to the next speaker in a structured manner."
+                    "score_justification": "The utterance clearly enacts a part of the meeting's agenda by moving to the next speaker in a structured manner.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -793,12 +836,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles shares detailed and relevant information about his research group's focus on electrocatalysis, CO2 reduction, and controlling chemical microenvironments, which is directly useful for understanding his expertise in the context of the meeting.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the speaker's specific research expertise, moving the team forward by establishing relevant backgrounds."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the speaker's specific research expertise, moving the team forward by establishing relevant backgrounds.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "The utterance begins with a polite and explicit greeting, 'Hi everyone,' which contributes positively to the interpersonal tone of the meeting.",
                     "score": 1,
-                    "score_justification": "The explicit greeting 'Hi everyone' is a clear positive social interaction, contributing to a functional relational climate."
+                    "score_justification": "The explicit greeting 'Hi everyone' is a clear positive social interaction, contributing to a functional relational climate.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -820,12 +865,14 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Great thanks Charles' expresses explicit thanks and acknowledgment for Charles's contribution, aligning with the definition of expressing acknowledgment or support.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution of acknowledgment."
+                    "score_justification": "The utterance provides explicit thanks, which is a clear contribution of acknowledgment.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "The utterance 'Uh Gary?' directly invites Gary to speak, which is an act of including a member in the conversation.",
                     "score": 1,
-                    "score_justification": "The utterance is a direct invitation for Gary to contribute, which is a clear act of including a member."
+                    "score_justification": "The utterance is a direct invitation for Gary to contribute, which is a clear act of including a member.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -847,12 +894,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Gary shares relevant facts about his affiliation and detailed expertise in synthetic methodology development, electrocatalysis, and photoelectrochemistry, which is directly useful for team members to understand his background.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge for establishing a collaborative foundation by outlining specific research interests."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge for establishing a collaborative foundation by outlining specific research interests.",
+                    "when": "beginning"
                 },
                 "Relational Climate": {
                     "explanation": "Gary expresses explicit thanks at the beginning of his introduction, acknowledging the facilitator's invitation to speak.",
                     "score": 1,
-                    "score_justification": "The utterance includes an explicit 'Thanks,' which is a clear positive acknowledgment."
+                    "score_justification": "The utterance includes an explicit 'Thanks,' which is a clear positive acknowledgment.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -874,17 +923,20 @@
                 "Relational Climate": {
                     "explanation": "The speaker explicitly thanks the previous contributor, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance contains a clear and explicit expression of thanks."
+                    "score_justification": "The utterance contains a clear and explicit expression of thanks.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "The speaker directly invites Ellen to contribute, ensuring balanced participation in the introduction round.",
                     "score": 1,
-                    "score_justification": "The speaker directly addresses and invites a specific individual to speak, but without tying it to expertise or a specific topic."
+                    "score_justification": "The speaker directly addresses and invites a specific individual to speak, but without tying it to expertise or a specific topic.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "The speaker structures the meeting by acknowledging the completion of one introduction and clearly directing the turn to the next person, managing the flow of the introduction process.",
                     "score": 1,
-                    "score_justification": "The utterance clearly enacts the process of moving through introductions, structuring the meeting's flow."
+                    "score_justification": "The utterance clearly enacts the process of moving through introductions, structuring the meeting's flow.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -906,7 +958,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen is providing detailed and specific information about her research group's expertise, including the materials they study and the scientific areas they focus on, which is relevant knowledge for a scientific collaboration.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, elaborating on her specific research areas and expertise, which moves the team forward by establishing her scientific profile."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, elaborating on her specific research areas and expertise, which moves the team forward by establishing her scientific profile.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -928,17 +981,20 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses thanks and acknowledgment to Ellen for her introduction, contributing positively to the interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance explicitly thanks Ellen, which is a clear positive acknowledgment."
+                    "score_justification": "The utterance explicitly thanks Ellen, which is a clear positive acknowledgment.",
+                    "when": "beginning"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites Emily to speak, ensuring her participation in the introduction round.",
                     "score": 1,
-                    "score_justification": "The utterance directly invites Emily to contribute, which is a clear, general invitation."
+                    "score_justification": "The utterance directly invites Emily to contribute, which is a clear, general invitation.",
+                    "when": "beginning"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey is structuring the meeting by moving to the next person in the introduction round, which is a clear coordination practice.",
                     "score": 1,
-                    "score_justification": "Jeffrey is clearly moving the meeting forward by calling on the next person for introductions, which is a clear structuring action."
+                    "score_justification": "Jeffrey is clearly moving the meeting forward by calling on the next person for introductions, which is a clear structuring action.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -960,7 +1016,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Emily is providing accurate and detailed information about her expertise in computational modeling of multi-phase systems for carbon capture, batteries, and fuel cells, which is directly useful for understanding her potential contributions to the team.",
                     "score": 2,
-                    "score_justification": "The utterance provides specific, detailed, and highly relevant knowledge about her research area and applications, making it a directly useful contribution for team understanding."
+                    "score_justification": "The utterance provides specific, detailed, and highly relevant knowledge about her research area and applications, making it a directly useful contribution for team understanding.",
+                    "when": "beginning"
                 }
             },
             "role": "Fellow"
@@ -982,12 +1039,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Will shares his specific research focus on atomic and nanoscale characterization of structure, electronic structure, and chemistry, providing relevant expertise to the group.",
                     "score": 2,
-                    "score_justification": "Will provides accurate and detailed knowledge about his specific expertise, which is directly useful for understanding his potential contributions to the team."
+                    "score_justification": "Will provides accurate and detailed knowledge about his specific expertise, which is directly useful for understanding his potential contributions to the team.",
+                    "when": "middle"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Will informs the team about his need to leave at a specific time, which helps the team coordinate the meeting's workflow and manage his participation.",
                     "score": 1,
-                    "score_justification": "Will provides clear information about his availability, which helps the team structure the meeting, but it is not a goal, decision, or complex coordination effort."
+                    "score_justification": "Will provides clear information about his availability, which helps the team structure the meeting, but it is not a goal, decision, or complex coordination effort.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1009,12 +1068,14 @@
                 "Participation Dynamics": {
                     "explanation": "Jeffrey explicitly states an intention to ensure Will's contributions ('get your ideas before you have to go') despite his upcoming departure, and then directly invites Daniel to speak, actively managing who participates.",
                     "score": 2,
-                    "score_justification": "The facilitator proactively ensures a specific member's input despite a time constraint and then directly invites the next speaker, demonstrating effective management of participation."
+                    "score_justification": "The facilitator proactively ensures a specific member's input despite a time constraint and then directly invites the next speaker, demonstrating effective management of participation.",
+                    "when": "middle"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey structures the meeting's flow by acknowledging Will's need to leave and planning to get his input before then, and subsequently moves the meeting forward by inviting Daniel to speak.",
                     "score": 2,
-                    "score_justification": "The utterance demonstrates clear structuring of the meeting process by accommodating a participant's constraint and explicitly moving to the next speaker, showing effective coordination."
+                    "score_justification": "The utterance demonstrates clear structuring of the meeting process by accommodating a participant's constraint and explicitly moving to the next speaker, showing effective coordination.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1036,12 +1097,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Daniel provides relevant and specific information about his organization, Climate Pathfinders Foundation, identifying them as a new philanthropic funder in the climate space with an interest in negative emissions, which is directly useful for understanding potential resources and collaboration areas.",
                     "score": 2,
-                    "score_justification": "The information is accurate, detailed, and directly useful, clearly outlining his organization's role and specific area of interest, which moves the team forward by clarifying potential resources."
+                    "score_justification": "The information is accurate, detailed, and directly useful, clearly outlining his organization's role and specific area of interest, which moves the team forward by clarifying potential resources.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Daniel initiates with a friendly greeting ('Hi again everybody') and expresses strong interest in 'helping move things forward on negative emissions,' contributing to a positive and collaborative interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The utterance includes a warm greeting and a clear expression of enthusiasm and willingness to contribute to the team's goals, which fosters a positive and trusting climate."
+                    "score_justification": "The utterance includes a warm greeting and a clear expression of enthusiasm and willingness to contribute to the team's goals, which fosters a positive and trusting climate.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1063,12 +1126,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses explicit thanks to Daniel for his introduction, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance includes an explicit 'thanks,' which is a clear acknowledgment."
+                    "score_justification": "The utterance includes an explicit 'thanks,' which is a clear acknowledgment.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey explicitly includes Andrew in the meeting by stating his presence and role as an observer, ensuring he is acknowledged by the group.",
                     "score": 1,
-                    "score_justification": "The utterance directly names and includes Andrew, clarifying his presence and role, which is a clear act of including a member."
+                    "score_justification": "The utterance directly names and includes Andrew, clarifying his presence and role, which is a clear act of including a member.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1090,7 +1155,8 @@
                 "Participation Dynamics": {
                     "explanation": "Andrew explicitly states his intended level of participation, informing the team that his contributions will be intermittent, which directly relates to how participation is distributed.",
                     "score": 1,
-                    "score_justification": "The utterance clearly communicates Andrew's intermittent presence, providing functional information about his participation without being vague or highly elaborated."
+                    "score_justification": "The utterance clearly communicates Andrew's intermittent presence, providing functional information about his participation without being vague or highly elaborated.",
+                    "when": "middle"
                 }
             },
             "role": "unknown"
@@ -1112,17 +1178,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey explicitly structures the breakout session by stating its geared-around questions, reading them aloud to ensure everyone knows the topic, and then outlining a process for initial contributions by asking everyone to write down a question or idea.",
                     "score": 2,
-                    "score_justification": "The utterance provides explicit goals (the topic questions) and effective coordination by detailing a specific task for all participants to start the session, moving the team forward."
+                    "score_justification": "The utterance provides explicit goals (the topic questions) and effective coordination by detailing a specific task for all participants to start the session, moving the team forward.",
+                    "when": "middle"
                 },
                 "Information Seeking": {
                     "explanation": "Jeffrey surfaces the key areas of inquiry for the breakout session by explicitly stating and reading aloud the specific, targeted questions that define the topic for discussion.",
                     "score": 2,
-                    "score_justification": "The questions presented are precise, targeted, and highly relevant, clearly defining the information to be sought by the group during the session."
+                    "score_justification": "The questions presented are precise, targeted, and highly relevant, clearly defining the information to be sought by the group during the session.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Jeffrey introduces a structured method for generating ideas by asking everyone to take a minute or two to write down a question or idea pertaining to the topic.",
                     "score": 2,
-                    "score_justification": "This is an elaborated and reasoned approach to generate ideas, providing a clear and actionable method for participants to contribute their thoughts."
+                    "score_justification": "This is an elaborated and reasoned approach to generate ideas, providing a clear and actionable method for participants to contribute their thoughts.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1144,12 +1213,14 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey is structuring the meeting's workflow by initiating the sharing of ideas after the brainstorming period, asking who wants to start the discussion.",
                     "score": 1,
-                    "score_justification": "The utterance provides clear structuring for the next step of the meeting by inviting participants to begin sharing their ideas."
+                    "score_justification": "The utterance provides clear structuring for the next step of the meeting by inviting participants to begin sharing their ideas.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites members to contribute, specifically targeting those 'particularly close to this topic' to initiate the discussion.",
                     "score": 2,
-                    "score_justification": "The utterance offers a direct and targeted invitation for participation, specifying a type of expertise ('particularly close to this topic') to encourage relevant contributions."
+                    "score_justification": "The utterance offers a direct and targeted invitation for participation, specifying a type of expertise ('particularly close to this topic') to encourage relevant contributions.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1171,7 +1242,8 @@
                 "Participation Dynamics": {
                     "explanation": "Charles is volunteering to speak first, directly responding to the facilitator's open invitation for someone to start, which influences the distribution of participation.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear and functional offer to initiate participation, directly addressing the facilitator's prompt and moving the discussion forward."
+                    "score_justification": "The utterance is a clear and functional offer to initiate participation, directly addressing the facilitator's prompt and moving the discussion forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1193,7 +1265,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance expresses explicit thanks and positive acknowledgment for Charles McCrory volunteering to start, despite misnaming him as Kevin.",
                     "score": 1,
-                    "score_justification": "It is a clear expression of thanks and positive sentiment, but the misnaming of the person prevents it from being a stronger contribution."
+                    "score_justification": "It is a clear expression of thanks and positive sentiment, but the misnaming of the person prevents it from being a stronger contribution.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1215,17 +1288,20 @@
                 "Idea Management": {
                     "explanation": "Charles introduces two distinct and detailed ideas for CO2 reduction, specifically vapor-fed catalysis and the use of overlayers/polymers, elaborating on their mechanisms and potential.",
                     "score": 2,
-                    "score_justification": "Charles presents novel, elaborated, and reasoned ideas with significant detail, clearly moving the scientific discussion forward."
+                    "score_justification": "Charles presents novel, elaborated, and reasoned ideas with significant detail, clearly moving the scientific discussion forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Charles provides detailed scientific expertise on vapor-fed catalysis and the use of overlayers/polymers, explaining their mechanisms and applications, which is highly relevant to the meeting's topic.",
                     "score": 2,
-                    "score_justification": "Charles shares accurate, detailed, and directly useful scientific knowledge, including specific technical approaches and their underlying principles."
+                    "score_justification": "Charles shares accurate, detailed, and directly useful scientific knowledge, including specific technical approaches and their underlying principles.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Charles assesses the merit of the ideas by stating they are 'really interesting' and 'underexplored in this area,' indicating a positive judgment of their potential.",
                     "score": 1,
-                    "score_justification": "Charles provides a clear judgment of the ideas' merit by calling them 'really interesting' and 'underexplored,' offering some implicit reasoning for their value."
+                    "score_justification": "Charles provides a clear judgment of the ideas' merit by calling them 'really interesting' and 'underexplored,' offering some implicit reasoning for their value.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1247,12 +1323,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses explicit acknowledgment and positive feedback ('that's that's great') for Charles's contribution, fostering a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit positive acknowledgment and praise, fitting the criteria for a clear contribution."
+                    "score_justification": "The utterance provides explicit positive acknowledgment and praise, fitting the criteria for a clear contribution.",
+                    "when": "middle"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey invites general participation ('anybody follow up on that?') and then directly invites Ellen to contribute, encouraging broader involvement.",
                     "score": 1,
-                    "score_justification": "The utterance includes both a generic and a direct invitation for participation, representing a clear but not explicitly expertise-tied contribution."
+                    "score_justification": "The utterance includes both a generic and a direct invitation for participation, representing a clear but not explicitly expertise-tied contribution.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1274,17 +1352,20 @@
                 "Idea Management": {
                     "explanation": "Ellen elaborates on the idea of controlling microenvironments, building on Charles's suggestion of polymers and adding 'enzymatic use' as another method, thereby expanding the discussion of the idea.",
                     "score": 2,
-                    "score_justification": "The utterance provides an elaborated idea, building on a previous contribution and adding a specific new method ('enzymatic use'), which moves the team's conceptualization forward."
+                    "score_justification": "The utterance provides an elaborated idea, building on a previous contribution and adding a specific new method ('enzymatic use'), which moves the team's conceptualization forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Ellen shares specific knowledge about methods for controlling microenvironments, explicitly mentioning 'polymers' (referencing Charles) and 'enzymatic use,' which are relevant facts/expertise.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge regarding specific methods for controlling microenvironments."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge regarding specific methods for controlling microenvironments.",
+                    "when": "middle"
                 },
                 "Evaluation Practices": {
                     "explanation": "Ellen assesses the merit of the discussed idea by stating, 'I think that that's really an interesting space as well.'",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear positive judgment of the idea, indicating interest, but without extensive reasoning."
+                    "score_justification": "The utterance provides a clear positive judgment of the idea, indicating interest, but without extensive reasoning.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1306,17 +1387,20 @@
                 "Idea Management": {
                     "explanation": "Gary introduces a novel idea of using three-dimensional, potentially bio-inspired, morphologies to break traditional scaling relationships in catalysis, building on the prior discussion of microenvironments and polymers.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on previous contributions, moving the team's conceptualization forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on previous contributions, moving the team's conceptualization forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Gary shares his expertise by proposing a specific technical approach (three-dimensional morphologies) to address a fundamental challenge in catalysis (breaking scaling relationships involving tradeoffs between overpotential and activities).",
                     "score": 2,
-                    "score_justification": "This contribution provides accurate, detailed, and directly useful knowledge, offering a concrete direction for research."
+                    "score_justification": "This contribution provides accurate, detailed, and directly useful knowledge, offering a concrete direction for research.",
+                    "when": "middle"
                 },
                 "Relational Climate": {
                     "explanation": "Gary explicitly acknowledges and builds upon the previous speaker's point by stating, 'Yeah I would follow on that too,' which fosters a collaborative and supportive tone.",
                     "score": 2,
-                    "score_justification": "This is a strong acknowledgment that fosters trust and collaboration by explicitly linking his contribution to the preceding discussion."
+                    "score_justification": "This is a strong acknowledgment that fosters trust and collaboration by explicitly linking his contribution to the preceding discussion.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1338,17 +1422,20 @@
                 "Idea Management": {
                     "explanation": "Katie elaborates on a previous idea by proposing a specific strategy involving the electronic properties and morphology of an electrode to increase surface area for CO2 capture and conversion.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on Gary's contribution by providing specific mechanisms and details for CO2 capture and conversion, moving the team forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on Gary's contribution by providing specific mechanisms and details for CO2 capture and conversion, moving the team forward.",
+                    "when": "middle"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Katie provides detailed and relevant expertise on a strategy for CO2 capture and conversion, specifying the use of electronic properties, morphology, and surface area to volume ratio of an electrode.",
                     "score": 2,
-                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge about a specific technical approach, making it highly relevant to the discussion."
+                    "score_justification": "The contribution offers accurate, detailed, and directly useful knowledge about a specific technical approach, making it highly relevant to the discussion.",
+                    "when": "middle"
                 },
                 "Integration Practices": {
                     "explanation": "Katie explicitly links her contribution to Gary's previous statement by saying 'to build on what Gary said,' demonstrating an effort to connect and synthesize ideas.",
                     "score": 1,
-                    "score_justification": "This is an accurate connection of contributions, explicitly acknowledging and building upon a previous speaker's idea, which is functional but not a comprehensive integration."
+                    "score_justification": "This is an accurate connection of contributions, explicitly acknowledging and building upon a previous speaker's idea, which is functional but not a comprehensive integration.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1370,7 +1457,8 @@
                 "Information Seeking": {
                     "explanation": "Jeffrey asks a clarifying question to understand Katie's idea about electrode morphology and surface area, specifically inquiring if she means 'building porosity into the electrode itself'.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, seeking specific clarification on a technical aspect of the discussed idea, which moves the understanding forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant, seeking specific clarification on a technical aspect of the discussed idea, which moves the understanding forward.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1392,12 +1480,14 @@
                 "Information Seeking": {
                     "explanation": "Katie is asking a precise, targeted question about the characteristics of porosity in an electrode, specifically regarding the electrochemical activity of the surface area and the ability to flow charge through it.",
                     "score": 2,
-                    "score_justification": "The question is precise and highly relevant, specifying key conditions for the proposed porous electrode, which moves the discussion forward with specific details."
+                    "score_justification": "The question is precise and highly relevant, specifying key conditions for the proposed porous electrode, which moves the discussion forward with specific details.",
+                    "when": "middle"
                 },
                 "Idea Management": {
                     "explanation": "Katie is elaborating on the idea of building porosity into the electrode by specifying conditions for its effectiveness, such as the surface area remaining electrochemically active and connected for charge flow.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear elaboration of an existing idea with some specific details, making it a functional contribution to the idea's development."
+                    "score_justification": "The utterance provides a clear elaboration of an existing idea with some specific details, making it a functional contribution to the idea's development.",
+                    "when": "middle"
                 }
             },
             "role": "Fellow"
@@ -1419,7 +1509,8 @@
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites Christopher to contribute his thoughts or questions, balancing participation by including another team member in the discussion.",
                     "score": 1,
-                    "score_justification": "The utterance is a clear, direct invitation to a specific team member to contribute, aligning with the description for a score of 1."
+                    "score_justification": "The utterance is a clear, direct invitation to a specific team member to contribute, aligning with the description for a score of 1.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1441,12 +1532,14 @@
                 "Information Seeking": {
                     "explanation": "Christopher explicitly asks 'what metric are you actually aiming for? Is it higher selectivity? Is it the energy that you need to put in to make that product?' to surface gaps in understanding the project's goals and evaluation criteria.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, providing specific examples of metrics and articulating a struggle to connect material development to clear objectives, which moves the team forward."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, providing specific examples of metrics and articulating a struggle to connect material development to clear objectives, which moves the team forward.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "By asking 'what the goals are' and 'what metric are you actually aiming for?', Christopher is seeking to clarify the fundamental objectives and criteria that will structure the team's work and guide future decisions.",
                     "score": 2,
-                    "score_justification": "His inquiry into the core goals and metrics is a clear and effective contribution that helps define the project's strategic direction and provides a basis for effective coordination and decision-making."
+                    "score_justification": "His inquiry into the core goals and metrics is a clear and effective contribution that helps define the project's strategic direction and provides a basis for effective coordination and decision-making.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1468,7 +1561,8 @@
                 "Participation Dynamics": {
                     "explanation": "Jeffrey explicitly invites Charles and Gary to contribute, identifying them as 'experts' who can answer Christopher's previous question about metrics, thereby balancing participation by drawing on specific expertise.",
                     "score": 2,
-                    "score_justification": "The utterance provides a targeted invitation to specific individuals (Charles, Gary) based on their identified expertise ('experts here') to address a specific topic (Christopher's question), which effectively moves the team forward by leveraging relevant knowledge."
+                    "score_justification": "The utterance provides a targeted invitation to specific individuals (Charles, Gary) based on their identified expertise ('experts here') to address a specific topic (Christopher's question), which effectively moves the team forward by leveraging relevant knowledge.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1490,12 +1584,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles provides accurate, detailed, and directly useful knowledge about CO2 conversion, explaining the critical role of oxygen concentration, technical challenges, and key metrics like energy conversion efficiency, drawing on his expertise and information from other sessions.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge, including specific technical challenges, solutions, and metrics, which significantly clarifies the discussion for the team."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge, including specific technical challenges, solutions, and metrics, which significantly clarifies the discussion for the team.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Charles explicitly invites Gary to contribute at the beginning and encourages 'other people' to share their views at the end, demonstrating an effort to balance contributions.",
                     "score": 1,
-                    "score_justification": "The utterance includes clear, direct invitations for others to contribute, but they are general rather than targeted to specific expertise or topics."
+                    "score_justification": "The utterance includes clear, direct invitations for others to contribute, but they are general rather than targeted to specific expertise or topics.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1517,7 +1613,8 @@
                 "Participation Dynamics": {
                     "explanation": "The utterance explicitly invites other team members to contribute their thoughts or additional information, balancing the speaking time after a detailed contribution from Charles.",
                     "score": 1,
-                    "score_justification": "It is a clear and direct invitation for group participation, making a functional contribution to balancing speaking time, but it is not targeted to a specific individual or expertise."
+                    "score_justification": "It is a clear and direct invitation for group participation, making a functional contribution to balancing speaking time, but it is not targeted to a specific individual or expertise.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1539,12 +1636,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Gary shares detailed information and expertise from other breakout sessions regarding the challenges of CO2 product types (fuels, plastics, building materials, rocks) and their market capacity in achieving net negative carbon goals.",
                     "score": 2,
-                    "score_justification": "Gary provides accurate, detailed, and directly useful knowledge by outlining specific product categories and their market implications for CO2 reduction."
+                    "score_justification": "Gary provides accurate, detailed, and directly useful knowledge by outlining specific product categories and their market implications for CO2 reduction.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Gary assesses the merit and feasibility of different CO2 product strategies by discussing their market capacity and effectiveness in making a significant impact on CO2 levels.",
                     "score": 2,
-                    "score_justification": "Gary offers a constructive and reasoned evaluation of various CO2 product strategies, explaining their limitations regarding market capacity and overall impact on CO2 reduction."
+                    "score_justification": "Gary offers a constructive and reasoned evaluation of various CO2 product strategies, explaining their limitations regarding market capacity and overall impact on CO2 reduction.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1566,12 +1665,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey acknowledges Gary's previous contribution with 'Yeah. Fair enough.', indicating a basic level of interpersonal acknowledgment.",
                     "score": 0,
-                    "score_justification": "The phrase 'Yeah. Fair enough' is a token acknowledgment of the previous speaker's contribution without further elaboration or strong positive sentiment."
+                    "score_justification": "The phrase 'Yeah. Fair enough' is a token acknowledgment of the previous speaker's contribution without further elaboration or strong positive sentiment.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites Jose to contribute by explicitly noting his silence ('Jose you've been quiet'), aiming to balance participation in the discussion.",
                     "score": 2,
-                    "score_justification": "This is a targeted invitation to a specific individual, explicitly addressing their lack of participation to encourage broader contribution, which effectively moves the team forward by balancing speaking turns."
+                    "score_justification": "This is a targeted invitation to a specific individual, explicitly addressing their lack of participation to encourage broader contribution, which effectively moves the team forward by balancing speaking turns.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1593,12 +1694,14 @@
                 "Information Seeking": {
                     "explanation": "Emily surfaces a critical gap by stating the need to understand expected behavior and questioning if proposed answers reflect reality, which is a precise and targeted inquiry.",
                     "score": 2,
-                    "score_justification": "The utterance raises a precise and highly relevant gap in understanding, emphasizing the need for foundational knowledge to ensure proposed solutions are grounded in reality."
+                    "score_justification": "The utterance raises a precise and highly relevant gap in understanding, emphasizing the need for foundational knowledge to ensure proposed solutions are grounded in reality.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily provides a constructive criterion for assessing ideas by highlighting the importance of understanding expected behavior to ensure proposed solutions are reflecting reality.",
                     "score": 2,
-                    "score_justification": "The utterance offers constructive, reasoned feedback by establishing a crucial standard (reflecting reality/expected behavior) for judging the merit of ideas."
+                    "score_justification": "The utterance offers constructive, reasoned feedback by establishing a crucial standard (reflecting reality/expected behavior) for judging the merit of ideas.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1620,12 +1723,14 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey acknowledges the positive quality of the ongoing discussions, fostering a supportive interpersonal tone by stating, 'Good. Yeah, so these are good discussions.'",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit praise for the general quality of the discussions, which is a clear contribution to the relational climate."
+                    "score_justification": "The utterance provides explicit praise for the general quality of the discussions, which is a clear contribution to the relational climate.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey explicitly defines the two-part mission for the team's discussion, structuring the workflow by outlining the key topics: 'both novel materials and novel architectures and maybe how those connect.'",
                     "score": 2,
-                    "score_justification": "The utterance sets clear and explicit goals for the discussion, providing a detailed framework for the team's focus and moving the process forward effectively."
+                    "score_justification": "The utterance sets clear and explicit goals for the discussion, providing a detailed framework for the team's focus and moving the process forward effectively.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1647,12 +1752,14 @@
                 "Idea Management": {
                     "explanation": "Emily introduces and elaborates on a specific idea for designing porous materials and their components, detailing how it could benefit from modeling and experimental collaboration.",
                     "score": 2,
-                    "score_justification": "The idea is novel, highly elaborated with specific details about porous materials, layering, and flow properties, and includes a reasoned approach for collaboration, moving the team forward."
+                    "score_justification": "The idea is novel, highly elaborated with specific details about porous materials, layering, and flow properties, and includes a reasoned approach for collaboration, moving the team forward.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily assesses the merit and potential of the problem she introduced, stating it's 'interesting' and could 'really benefit' from collaborations between modeling and experiments.",
                     "score": 2,
-                    "score_justification": "The judgment is constructive and reasoned, explaining why the problem is interesting and how it could benefit from collaboration, providing actionable direction for the team."
+                    "score_justification": "The judgment is constructive and reasoned, explaining why the problem is interesting and how it could benefit from collaboration, providing actionable direction for the team.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1674,12 +1781,14 @@
                 "Idea Management": {
                     "explanation": "Jeffrey elaborates on Emily's idea of novel materials and architectures by connecting it to the specific application of 'capture from air,' providing a potential direction for the discussion.",
                     "score": 1,
-                    "score_justification": "This is a clear idea with some detail, as it connects a general concept to a specific application, providing a clear direction for discussion."
+                    "score_justification": "This is a clear idea with some detail, as it connects a general concept to a specific application, providing a clear direction for discussion.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares a relevant piece of expertise by stating that 'capture from air' is typically a 'very slow extraction usually.'",
                     "score": 1,
-                    "score_justification": "This is a relevant contribution with some detail, providing a specific fact related to the discussed application."
+                    "score_justification": "This is a relevant contribution with some detail, providing a specific fact related to the discussed application.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1701,7 +1810,8 @@
                 "Information Seeking": {
                     "explanation": "Ellen asks precise questions to Emily, seeking clarification on how her previously discussed idea of 'capture' aligns with the session's topic and prompts, explicitly stating she's 'trying to figure out where to put' it, which surfaces a gap in understanding.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, aiming to clarify the scope and relevance of an idea within the session's framework, thereby moving the team forward effectively."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, aiming to clarify the scope and relevance of an idea within the session's framework, thereby moving the team forward effectively.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1723,12 +1833,14 @@
                 "Idea Management": {
                     "explanation": "Emily elaborates on her idea of novel materials by proposing a \"multi-phase architecture\" and \"porous material\" as a way to connect her previous thoughts to the session's theme of \"electrode architectures and materials.\"",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear elaboration of an idea with some detail, connecting it to the discussion prompt."
+                    "score_justification": "The utterance provides a clear elaboration of an idea with some detail, connecting it to the discussion prompt.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Emily shares her interpretation of \"electrode architectures and materials\" by proposing a \"multi-phase architecture\" and \"porous material\" as a relevant concept within that framework.",
                     "score": 1,
-                    "score_justification": "The utterance provides a relevant contribution with some detail, explaining her perspective on how her idea fits the topic."
+                    "score_justification": "The utterance provides a relevant contribution with some detail, explaining her perspective on how her idea fits the topic.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1750,7 +1862,8 @@
                 "Information Seeking": {
                     "explanation": "Katie is asking a precise and targeted question to clarify the nature of the electrochemical interface ('solid gas interface instead of like a solid liquid') when the term 'vapor fed' is used, which is crucial for understanding the technical details of the discussion.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, seeking specific clarification on a technical detail ('solid gas interface instead of like a solid liquid') that moves the team's understanding forward."
+                    "score_justification": "The question is precise and targeted, seeking specific clarification on a technical detail ('solid gas interface instead of like a solid liquid') that moves the team's understanding forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1772,12 +1885,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles provides detailed technical information about the proposed electrochemical system, describing its components, structure, and operating conditions in response to a clarification question.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by elaborating on the technical specifics of the vapor-fed electrochemical system."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by elaborating on the technical specifics of the vapor-fed electrochemical system.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Charles elaborates on the previously introduced idea of a 'vapor fed' electrochemical system by providing specific details about its architecture and function.",
                     "score": 2,
-                    "score_justification": "The utterance provides a novel, elaborated, and reasoned description of the vapor-fed system, building on the prior discussion and making the idea more concrete."
+                    "score_justification": "The utterance provides a novel, elaborated, and reasoned description of the vapor-fed system, building on the prior discussion and making the idea more concrete.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1799,7 +1914,8 @@
                 "Information Seeking": {
                     "explanation": "Katie asks a precise question to clarify if the system Charles described still involves an aqueous electrolyte, directly seeking specific information about the proposed architecture.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the technical details of the system being discussed, moving the team's understanding forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the technical details of the system being discussed, moving the team's understanding forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1821,7 +1937,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles provides specific technical details about the system, clarifying that it uses a hydrated polymer as a proton shuttle, which directly answers Katie's question about the nature of the electrolyte.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, clarifying a key technical aspect of the system's design."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, clarifying a key technical aspect of the system's design.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1843,12 +1960,14 @@
                 "Information Seeking": {
                     "explanation": "Katie asks a precise question, 'correspond to which defects,' to clarify specific information about the defects being discussed, indicating a gap in understanding.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, seeking specific details to clarify a point, which helps to move the discussion forward by identifying a knowledge gap."
+                    "score_justification": "The question is precise and targeted, seeking specific details to clarify a point, which helps to move the discussion forward by identifying a knowledge gap.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Katie assesses the difficulty of the topic by stating, 'Because I think a really big challenge,' which is a judgment about the complexity of the problem.",
                     "score": 1,
-                    "score_justification": "She provides a judgment about the difficulty of the topic ('a really big challenge') with a minimal reason ('Because I think'), making it a functional assessment of the problem's scope."
+                    "score_justification": "She provides a judgment about the difficulty of the topic ('a really big challenge') with a minimal reason ('Because I think'), making it a functional assessment of the problem's scope.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1870,12 +1989,14 @@
                 "Evaluation Practices": {
                     "explanation": "Jeffrey assesses the merit and difficulty of the goal ('in situ characterization... is a great difficult goal') and the potential of a method ('computational methods to facilitate that would be powerful'), providing reasoned feedback.",
                     "score": 2,
-                    "score_justification": "The utterance offers constructive, reasoned feedback by acknowledging the difficulty of the goal and proposing a powerful solution (computational methods), moving the team forward effectively."
+                    "score_justification": "The utterance offers constructive, reasoned feedback by acknowledging the difficulty of the goal and proposing a powerful solution (computational methods), moving the team forward effectively.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Jeffrey begins with 'Good,' expressing explicit acknowledgment and support for the previously discussed topic or idea.",
                     "score": 1,
-                    "score_justification": "The word 'Good' provides an explicit positive acknowledgment, contributing to a supportive interpersonal tone."
+                    "score_justification": "The word 'Good' provides an explicit positive acknowledgment, contributing to a supportive interpersonal tone.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1897,7 +2018,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yeah.' serves as a minimal acknowledgment of the previous speaker's statement, indicating passive reception rather than active engagement.",
                     "score": 0,
-                    "score_justification": "This is a token acknowledgment, providing minimal contribution to the interpersonal tone of the conversation."
+                    "score_justification": "This is a token acknowledgment, providing minimal contribution to the interpersonal tone of the conversation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1919,17 +2041,20 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses positive acknowledgment and support for Ellen's contribution or work by stating 'this looks really good'.",
                     "score": 1,
-                    "score_justification": "The utterance provides explicit praise ('this looks really good'), which is a clear positive acknowledgment."
+                    "score_justification": "The utterance provides explicit praise ('this looks really good'), which is a clear positive acknowledgment.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Jeffrey asks Ellen a precise and targeted question to identify any specific topics where she feels more text or input is needed.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted at Ellen, seeking specific information about her needs for additional input on topics, moving the discussion forward."
+                    "score_justification": "The question is precise and targeted at Ellen, seeking specific information about her needs for additional input on topics, moving the discussion forward.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey directly invites Ellen to contribute by asking if there are other topics she needs input on, ensuring her voice is heard.",
                     "score": 1,
-                    "score_justification": "Jeffrey directly asks Ellen for her input, which is a clear invitation for her to participate."
+                    "score_justification": "Jeffrey directly asks Ellen for her input, which is a clear invitation for her to participate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1951,12 +2076,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen provides relevant information by observing that the 'Electrocatalyst' topic is 'pretty light' and that others are focusing on 'material architecture design,' sharing facts about the current state of discussion.",
                     "score": 1,
-                    "score_justification": "Ellen shares a clear and relevant observation about the distribution of content and focus within the discussion."
+                    "score_justification": "Ellen shares a clear and relevant observation about the distribution of content and focus within the discussion.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "In response to a question about needing more input, Ellen updates the team on the status of topics and implicitly accepts the current focus by stating 'So that's okay,' contributing to the team's understanding of the discussion's direction.",
                     "score": 1,
-                    "score_justification": "Ellen provides a clear update on the status of topics and implicitly accepts the current direction, which aids in coordinating the meeting's flow."
+                    "score_justification": "Ellen provides a clear update on the status of topics and implicitly accepts the current direction, which aids in coordinating the meeting's flow.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -1978,17 +2105,20 @@
                 "Idea Management": {
                     "explanation": "Jeffrey explicitly invites participants to introduce new ideas that have not yet been discussed, aiming to generate new content for the meeting.",
                     "score": 1,
-                    "score_justification": "Jeffrey provides a clear call for new ideas, which is a functional contribution to generating ideas."
+                    "score_justification": "Jeffrey provides a clear call for new ideas, which is a functional contribution to generating ideas.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Jeffrey issues a general invitation for any team member to contribute their thoughts or ideas, aiming to include all members in the discussion.",
                     "score": 0,
-                    "score_justification": "The invitation is generic, not targeted to a specific person or expertise, making it a minimal contribution to participation dynamics."
+                    "score_justification": "The invitation is generic, not targeted to a specific person or expertise, making it a minimal contribution to participation dynamics.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey structures the meeting by suggesting Ellen stop sharing her screen and proposing a shift in the agenda to discuss other ideas.",
                     "score": 1,
-                    "score_justification": "Jeffrey provides clear direction for structuring the meeting process by suggesting a screen-sharing change and a shift in discussion topics."
+                    "score_justification": "Jeffrey provides clear direction for structuring the meeting process by suggesting a screen-sharing change and a shift in discussion topics.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2010,12 +2140,14 @@
                 "Idea Management": {
                     "explanation": "Katie introduces and elaborates on the idea of integrating functionalities into single components through architecture or materials design to decrease the number of components, building on a previous concept of modular design.",
                     "score": 2,
-                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on a previous concept and offers a specific direction for solving a design challenge, moving the team forward."
+                    "score_justification": "This is a novel, elaborated, and reasoned idea that builds on a previous concept and offers a specific direction for solving a design challenge, moving the team forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Katie references 'Jose's drawing' and the concept of modular design with components for capture, separation, and conversion, which serves as a shared knowledge base for her new idea.",
                     "score": 1,
-                    "score_justification": "This is a relevant contribution with some detail, referencing a specific prior discussion point to provide context for her idea, making it functional."
+                    "score_justification": "This is a relevant contribution with some detail, referencing a specific prior discussion point to provide context for her idea, making it functional.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2037,17 +2169,20 @@
                 "Information Seeking": {
                     "explanation": "Jeffrey asks a precise and targeted question to identify specific expertise within the group regarding gas diffusion electrodes, which is relevant to the discussion on integrating functionality.",
                     "score": 2,
-                    "score_justification": "The question is highly specific ('gas diffusion electrodes') and directly relevant to the ongoing discussion about integrating functionalities, seeking precise expertise."
+                    "score_justification": "The question is highly specific ('gas diffusion electrodes') and directly relevant to the ongoing discussion about integrating functionalities, seeking precise expertise.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey provides relevant external knowledge by mentioning existing research groups and a specific expert (Alex Bell) working on the topic of gas diffusion electrodes.",
                     "score": 2,
-                    "score_justification": "Jeffrey shares accurate and detailed knowledge about external research and a specific expert, which is directly useful for the team's understanding of the field."
+                    "score_justification": "Jeffrey shares accurate and detailed knowledge about external research and a specific expert, which is directly useful for the team's understanding of the field.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Jeffrey elaborates on Katie's earlier idea of integrating functionality by emphasizing the critical interplay and necessity for both components and architecture to function effectively.",
                     "score": 1,
-                    "score_justification": "This statement provides a clear elaboration on the complexity of the existing idea, adding detail about the necessary conditions for its success."
+                    "score_justification": "This statement provides a clear elaboration on the complexity of the existing idea, adding detail about the necessary conditions for its success.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2069,12 +2204,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles shares his expertise by detailing the numerous and diverse knowledge bases (e.g., modelers, device builders, catalyst designers, TEA/LCA experts) required for successful integration in complex scientific projects, emphasizing the need for these experts on the same team.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by listing specific expert roles and explaining why their integration is crucial for meaningful project outcomes."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by listing specific expert roles and explaining why their integration is crucial for meaningful project outcomes.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Charles evaluates the current Scialog group structure by identifying a significant challenge: the insufficient diversity of knowledge bases in small teams, which he argues hinders meaningful integration and leads to siloed work.",
                     "score": 2,
-                    "score_justification": "The utterance offers constructive, reasoned feedback by critiquing the current team composition model and explaining its negative impact on project integration and meaningful outcomes."
+                    "score_justification": "The utterance offers constructive, reasoned feedback by critiquing the current team composition model and explaining its negative impact on project integration and meaningful outcomes.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2096,17 +2233,20 @@
                 "Relational Climate": {
                     "explanation": "Emily explicitly acknowledges Charles's previous contribution and expresses active engagement and thought about his point, fostering a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The statement 'I've been kind of ruminating on that' demonstrates strong acknowledgment and deep engagement with the previous speaker's ideas, which fosters trust and encourages further collaboration."
+                    "score_justification": "The statement 'I've been kind of ruminating on that' demonstrates strong acknowledgment and deep engagement with the previous speaker's ideas, which fosters trust and encourages further collaboration.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Emily proposes a specific idea for increasing team size to four or five people, directly building on Charles's previous point about the need for diverse knowledge bases in Scialog groups.",
                     "score": 2,
-                    "score_justification": "The idea is specific, elaborated (suggesting a number), and directly builds on the previous speaker's contribution, moving the discussion forward."
+                    "score_justification": "The idea is specific, elaborated (suggesting a number), and directly builds on the previous speaker's contribution, moving the discussion forward.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Emily evaluates the feasibility of her proposed larger group size by identifying a financial constraint, stating there isn't enough money for such a big group.",
                     "score": 2,
-                    "score_justification": "This is constructive, reasoned feedback that identifies a practical, actionable constraint on the proposed idea, moving the team towards considering real-world limitations."
+                    "score_justification": "This is constructive, reasoned feedback that identifies a practical, actionable constraint on the proposed idea, moving the team towards considering real-world limitations.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2128,7 +2268,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen is providing a specific, relevant fact about the current funding structure for Scialog groups ('50k per person'), which directly addresses Emily's concern about the lack of money for larger groups.",
                     "score": 2,
-                    "score_justification": "The information provided is accurate, detailed, and directly useful, clarifying the funding model and moving the discussion forward on a previously raised concern."
+                    "score_justification": "The information provided is accurate, detailed, and directly useful, clarifying the funding model and moving the discussion forward on a previously raised concern.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2150,12 +2291,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles shares his expertise by mentioning \"big algae plants that do this for H2,\" providing a relevant example of existing technology.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge by providing a concrete example of a relevant application."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful knowledge by providing a concrete example of a relevant application.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Charles surfaces a gap in his knowledge by stating he doesn't know if similar processes are being done for \"harder multi-electron transformations,\" implicitly inviting others to provide information.",
                     "score": 2,
-                    "score_justification": "The question/gap raised is precise, targeted, and highly relevant to the discussion about what's currently feasible or being explored in the field."
+                    "score_justification": "The question/gap raised is precise, targeted, and highly relevant to the discussion about what's currently feasible or being explored in the field.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2177,7 +2320,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Right.' serves as a minimal acknowledgment of Charles McCrory's previous statement, aligning with the definition of Relational Climate as expressing acknowledgment.",
                     "score": 0,
-                    "score_justification": "This is a token acknowledgment, providing minimal contribution without further elaboration or strong positive sentiment."
+                    "score_justification": "This is a token acknowledgment, providing minimal contribution without further elaboration or strong positive sentiment.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2199,17 +2343,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Katie shares specific scientific knowledge about Dan Nocera's work on H2 production and growing radishes, providing a relevant example to the ongoing discussion about multi-electron transformations.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by referencing a specific scientist's work and its application."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by referencing a specific scientist's work and its application.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Katie asks a precise and targeted question about finding a system for CO2 reduction, building on the previously shared knowledge.",
                     "score": 2,
-                    "score_justification": "The question 'can we find a system that does it for CO2 reduction?' is precise, targeted, and highly relevant to extending the discussion to a new application."
+                    "score_justification": "The question 'can we find a system that does it for CO2 reduction?' is precise, targeted, and highly relevant to extending the discussion to a new application.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Katie introduces the idea of exploring systems for CO2 reduction, elaborating on the previous discussion by suggesting a new direction for research.",
                     "score": 2,
-                    "score_justification": "The utterance introduces a novel and relevant idea (CO2 reduction systems) by building on the shared knowledge and proposing a new area of investigation."
+                    "score_justification": "The utterance introduces a novel and relevant idea (CO2 reduction systems) by building on the shared knowledge and proposing a new area of investigation.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2231,7 +2378,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Gary shares a general observation about the complexity of radishes, which is a general claim rather than detailed scientific knowledge directly relevant to the CO2 reduction discussion.",
                     "score": 0,
-                    "score_justification": "The comment is a general claim that is not directly relevant or detailed enough to advance the scientific discussion."
+                    "score_justification": "The comment is a general claim that is not directly relevant or detailed enough to advance the scientific discussion.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2253,7 +2401,8 @@
                 "None": {
                     "explanation": "The utterance is an incomplete thought and too brief to explicitly observe any of the defined coding behaviors, aligning with the guideline for short, few-word utterances.",
                     "score": 0,
-                    "score_justification": "The utterance is minimal and does not provide enough content to apply any code meaningfully."
+                    "score_justification": "The utterance is minimal and does not provide enough content to apply any code meaningfully.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2275,7 +2424,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Katie is providing information about Dan Nocera's work, clarifying that she believes it involves fertilizer production rather than CO2 reduction, which is relevant to the ongoing discussion about CO2 systems.",
                     "score": 1,
-                    "score_justification": "The utterance provides a relevant clarification with some detail about a specific scientific example, even though the speaker expresses uncertainty."
+                    "score_justification": "The utterance provides a relevant clarification with some detail about a specific scientific example, even though the speaker expresses uncertainty.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2297,12 +2447,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares relevant knowledge from a previous session and an expert's opinion that the specific coupling of photosynthetic pathways to create fuel for CO2 conversion is an 'open area.'",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate and detailed information from a previous discussion and an expert, directly informing the team about the novelty of the research area."
+                    "score_justification": "The utterance provides accurate and detailed information from a previous discussion and an expert, directly informing the team about the novelty of the research area.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Jeffrey introduces the idea that the specific coupling of photosynthetic pathways with CO2 conversion is an 'open area,' suggesting it as a potential avenue for new ideas or research.",
                     "score": 2,
-                    "score_justification": "The utterance identifies a novel and open research area, providing a reasoned direction for future work based on expert input, thus moving the team forward."
+                    "score_justification": "The utterance identifies a novel and open research area, providing a reasoned direction for future work based on expert input, thus moving the team forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2324,12 +2476,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Charles shares specific technical knowledge about the challenges of CO2 conversion, explaining that CO2 acidifies the solution, making pH and electrolyte control difficult, and also states his personal lack of expertise in how to do it.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the technical difficulties of CO2 conversion, specifically mentioning acidification, pH, and electrolytes, which is highly relevant to the ongoing discussion about CO2 conversion."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about the technical difficulties of CO2 conversion, specifically mentioning acidification, pH, and electrolytes, which is highly relevant to the ongoing discussion about CO2 conversion.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Charles evaluates the idea of CO2 conversion by stating it is 'hard' and 'really challenging' due to the acidification of the solution, while also expressing strong interest in the idea ('I think it's super interesting').",
                     "score": 2,
-                    "score_justification": "The utterance provides a reasoned evaluation of the idea's feasibility by detailing specific technical challenges (acidification, pH control) and offers a strong positive judgment of its merit, which helps the team understand the scope and potential of the idea."
+                    "score_justification": "The utterance provides a reasoned evaluation of the idea's feasibility by detailing specific technical challenges (acidification, pH control) and offers a strong positive judgment of its merit, which helps the team understand the scope and potential of the idea.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2351,7 +2505,8 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey provides a token acknowledgment ('Good.') in response to Charles's detailed explanation and expression of interest in the topic.",
                     "score": 0,
-                    "score_justification": "The utterance is a token acknowledgment, providing minimal social support without elaboration."
+                    "score_justification": "The utterance is a token acknowledgment, providing minimal social support without elaboration.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2373,12 +2528,14 @@
                 "Information Seeking": {
                     "explanation": "Ellen asks a precise and highly relevant question, seeking to understand if the discussed concept of using photosynthetic pathways for CO2 conversion is analogous to how plants naturally process CO2.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant, directly connecting the scientific discussion to a known biological process, which moves the team's understanding forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant, directly connecting the scientific discussion to a known biological process, which moves the team's understanding forward.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Ellen shares accurate and detailed biological knowledge about plants consuming CO2, providing a concrete example (radishes) to support her point.",
                     "score": 2,
-                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge that is highly relevant to the ongoing discussion about CO2 conversion and photosynthetic pathways."
+                    "score_justification": "The contribution provides accurate, detailed, and directly useful knowledge that is highly relevant to the ongoing discussion about CO2 conversion and photosynthetic pathways.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2400,7 +2557,8 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey's laughter acknowledges Ellen's creative connection between CO2 and plants, expressing amusement or interest in her contribution.",
                     "score": 1,
-                    "score_justification": "The laughter serves as an explicit acknowledgment of Ellen's point, showing interest or amusement, which is a clear positive relational contribution."
+                    "score_justification": "The laughter serves as an explicit acknowledgment of Ellen's point, showing interest or amusement, which is a clear positive relational contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2422,12 +2580,14 @@
                 "Evaluation Practices": {
                     "explanation": "Katie assesses the merit of Ellen's statement by affirming it as \"really true,\" indicating approval of the idea.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear judgment of approval for Ellen's statement, affirming its truthfulness."
+                    "score_justification": "The utterance provides a clear judgment of approval for Ellen's statement, affirming its truthfulness.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Katie expresses strong acknowledgment and support for Ellen's contribution by affirming her statement and directly addressing her, fostering a positive interpersonal tone.",
                     "score": 2,
-                    "score_justification": "The utterance provides strong, explicit acknowledgment and validation of Ellen's point, directly addressing her and emphasizing the truth, which fosters a positive relational climate."
+                    "score_justification": "The utterance provides strong, explicit acknowledgment and validation of Ellen's point, directly addressing her and emphasizing the truth, which fosters a positive relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2449,7 +2609,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Ellen provides a relevant scientific fact ('That is photosynthesis') that clarifies and elaborates on her previous statement about plants eating CO2, aligning with the definition of providing relevant facts/expertise.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by naming the specific biological process (photosynthesis) that explains her earlier analogy."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by naming the specific biological process (photosynthesis) that explains her earlier analogy.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2471,17 +2632,20 @@
                 "Evaluation Practices": {
                     "explanation": "Charles assesses the stability of photosynthesis as a carbon capture method by stating 'not stably' and providing the reasoning that 'They decompose and regenerate'.",
                     "score": 2,
-                    "score_justification": "This is a constructive, reasoned critique that identifies a limitation and provides a clear explanation, moving the team forward by highlighting a problem."
+                    "score_justification": "This is a constructive, reasoned critique that identifies a limitation and provides a clear explanation, moving the team forward by highlighting a problem.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Charles provides the relevant biological fact that photosynthetic organisms 'decompose and regenerate,' which is crucial for understanding the stability of carbon capture.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge that supports the evaluation and informs the discussion."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge that supports the evaluation and informs the discussion.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Charles asks 'right?' to seek confirmation or further information regarding the stability of photosynthesis in the context of the discussion.",
                     "score": 2,
-                    "score_justification": "This is a precise, targeted, and highly relevant question that surfaces a potential gap in understanding or agreement."
+                    "score_justification": "This is a precise, targeted, and highly relevant question that surfaces a potential gap in understanding or agreement.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2503,7 +2667,8 @@
                 "Idea Management": {
                     "explanation": "Katie elaborates on Charles's implied idea of wanting something stable by adding the phrase 'to have like a lifetime,' contributing to the flow of ideas.",
                     "score": 1,
-                    "score_justification": "The utterance clearly elaborates on a previously mentioned idea by adding a desired characteristic ('lifetime'), making it a functional contribution."
+                    "score_justification": "The utterance clearly elaborates on a previously mentioned idea by adding a desired characteristic ('lifetime'), making it a functional contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2525,12 +2690,14 @@
                 "Integration Practices": {
                     "explanation": "Jeffrey synthesizes the previous fragmented contributions about growing things, capturing CO2, and stability by identifying them as describing the known concept of BECCS.",
                     "score": 2,
-                    "score_justification": "The utterance provides a balanced and comprehensive integration by framing previous contributions within a specific, named concept (BECCS) and then elaborating on it."
+                    "score_justification": "The utterance provides a balanced and comprehensive integration by framing previous contributions within a specific, named concept (BECCS) and then elaborating on it.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey provides relevant expertise by naming the concept as BECCS and detailing its process of growing, burning trees, and capturing CO2.",
                     "score": 2,
-                    "score_justification": "The utterance offers accurate, detailed, and directly useful knowledge by defining BECCS and explaining its mechanism."
+                    "score_justification": "The utterance offers accurate, detailed, and directly useful knowledge by defining BECCS and explaining its mechanism.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2552,12 +2719,14 @@
                 "Knowledge Sharing": {
                     "explanation": "The utterance adds the crucial detail of storing CO2 to the previously described BECCS process, providing relevant and accurate information that completes the understanding of the concept.",
                     "score": 2,
-                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies and completes the team's understanding of the BECCS process."
+                    "score_justification": "This is accurate, detailed, and directly useful knowledge that clarifies and completes the team's understanding of the BECCS process.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "The phrases 'Yep. Alright.' serve as a token acknowledgment of the previous speaker's description of BECCS.",
                     "score": 0,
-                    "score_justification": "It's a minimal and vague acknowledgment without further elaboration or enthusiasm."
+                    "score_justification": "It's a minimal and vague acknowledgment without further elaboration or enthusiasm.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2579,7 +2748,8 @@
                 "None": {
                     "explanation": "The utterance is a personal observation about the speaker's note-taking ability and does not explicitly align with any of the defined collaborative behaviors such as idea management, information seeking, knowledge sharing, evaluation, relational climate, participation, coordination, or integration.",
                     "score": 0,
-                    "score_justification": "No code applies to this utterance, so a score of 0 is assigned as per guidelines for 'None'."
+                    "score_justification": "No code applies to this utterance, so a score of 0 is assigned as per guidelines for 'None'.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2601,12 +2771,14 @@
                 "Idea Management": {
                     "explanation": "The utterance \"Radishes that eat CO2. Photosynthesis on steroids\" elaborates on the concept of carbon capture through plants (BECCS) in a novel and descriptive way, contributing to the flow of ideas.",
                     "score": 2,
-                    "score_justification": "The phrasing \"Photosynthesis on steroids\" is a novel and elaborated way of describing the mechanism of CO2 capture, moving the team's understanding or framing of the idea forward."
+                    "score_justification": "The phrasing \"Photosynthesis on steroids\" is a novel and elaborated way of describing the mechanism of CO2 capture, moving the team's understanding or framing of the idea forward.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "The phrase \"I like that\" explicitly assesses the merit of the previously discussed idea (BECCS or the concept of plant-based CO2 capture) in a positive light.",
                     "score": 1,
-                    "score_justification": "It is a clear positive judgment of the idea, but it lacks further reasoning or detail beyond simple approval."
+                    "score_justification": "It is a clear positive judgment of the idea, but it lacks further reasoning or detail beyond simple approval.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2628,17 +2800,20 @@
                 "Relational Climate": {
                     "explanation": "Jeffrey expresses acknowledgment and praise for Ellen's past contribution by stating \"you did come up with BECCS.\"",
                     "score": 1,
-                    "score_justification": "The utterance explicitly praises Ellen for her contribution, which is a clear acknowledgment."
+                    "score_justification": "The utterance explicitly praises Ellen for her contribution, which is a clear acknowledgment.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey provides relevant information about BECCS, detailing its significance as \"the biggest one of the biggest wedges for NET currently\" and \"one of the ideas people think is most viable.\"",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about BECCS's importance and viability."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about BECCS's importance and viability.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Jeffrey assesses the merit and feasibility of BECCS by describing it as \"the biggest one of the biggest wedges for NET currently\" and \"one of the ideas people think is most viable.\"",
                     "score": 1,
-                    "score_justification": "The utterance provides a positive judgment of BECCS, explaining its significance as a \"biggest wedge\" and \"most viable\" idea."
+                    "score_justification": "The utterance provides a positive judgment of BECCS, explaining its significance as a \"biggest wedge\" and \"most viable\" idea.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2660,7 +2835,8 @@
                 "Information Seeking": {
                     "explanation": "Ellen is asking a clear question to understand the name of the concept 'BECCS' that was just introduced, which aligns with surfacing a gap in information.",
                     "score": 1,
-                    "score_justification": "The question is clear and directly seeks a specific piece of information (the name of BECCS), making it a clear but general contribution."
+                    "score_justification": "The question is clear and directly seeks a specific piece of information (the name of BECCS), making it a clear but general contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2682,7 +2858,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey Long provides the full definition of the acronym 'BECCS', which is a relevant fact directly addressing Ellen Matson's question and clarifying a key term in the ongoing discussion.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by defining the acronym BECCS, which clarifies a key concept for the team."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge by defining the acronym BECCS, which clarifies a key concept for the team.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2704,7 +2881,8 @@
                 "Information Seeking": {
                     "explanation": "Katie asks precise and targeted questions about the purpose of burning trees within the BECCS process, indicating a specific gap in her understanding of the concept that was just introduced.",
                     "score": 2,
-                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the BECCS process, moving the team's collective understanding forward."
+                    "score_justification": "The question is precise, targeted, and highly relevant to understanding the BECCS process, moving the team's collective understanding forward.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2726,7 +2904,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey provides a direct and relevant fact ('You burn the trees to generate electricity') in response to Katie's question about the purpose of burning trees in the BECCS process.",
                     "score": 2,
-                    "score_justification": "The utterance provides a precise and directly useful piece of knowledge that accurately answers a specific question from the previous turn."
+                    "score_justification": "The utterance provides a precise and directly useful piece of knowledge that accurately answers a specific question from the previous turn.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2748,7 +2927,8 @@
                 "None": {
                     "explanation": "The utterance 'Oh I see. I see.' consists of only a few words, specifically 'I see', which falls under the guideline to choose 'None' for such short utterances.",
                     "score": 0,
-                    "score_justification": "No code to score based on the annotation guidelines for short utterances."
+                    "score_justification": "No code to score based on the annotation guidelines for short utterances.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2770,17 +2950,20 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares factual information about the process of burning wood for electricity, specifically that it's often co-fired with fossil fuel and creates other pollutants besides CO2.",
                     "score": 2,
-                    "score_justification": "He provides accurate and detailed knowledge about the process and its environmental impact, which is directly useful for understanding the topic."
+                    "score_justification": "He provides accurate and detailed knowledge about the process and its environmental impact, which is directly useful for understanding the topic.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Jeffrey assesses the merit of burning plants for fuel by highlighting the issue of creating other pollutants, concluding that it's 'not necessarily so great'.",
                     "score": 2,
-                    "score_justification": "He offers a constructive critique with clear reasoning by pointing out a significant drawback (other pollutants) to the discussed method."
+                    "score_justification": "He offers a constructive critique with clear reasoning by pointing out a significant drawback (other pollutants) to the discussed method.",
+                    "when": "end"
                 },
                 "Idea Management": {
                     "explanation": "Jeffrey introduces the idea of exploring 'other ways to get to fuels from plants,' suggesting a new direction for generating ideas beyond burning.",
                     "score": 1,
-                    "score_justification": "He provides a clear direction for generating alternative ideas, though the suggestion itself is general and not elaborated upon."
+                    "score_justification": "He provides a clear direction for generating alternative ideas, though the suggestion itself is general and not elaborated upon.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2802,12 +2985,14 @@
                 "Idea Management": {
                     "explanation": "Jose introduces and elaborates on the idea of regenerative and flexible systems, contrasting them with perfectly stable systems, which contributes to the flow of ideas.",
                     "score": 2,
-                    "score_justification": "Jose presents a novel and elaborated idea about flexible, regenerative systems, building on the previous discussion about sustainable energy, which moves the team forward."
+                    "score_justification": "Jose presents a novel and elaborated idea about flexible, regenerative systems, building on the previous discussion about sustainable energy, which moves the team forward.",
+                    "when": "end"
                 },
                 "Information Seeking": {
                     "explanation": "Jose asks multiple precise questions about the widespread adoption of regenerative systems, the existence of systems that balance regeneration with other outputs, and clarifies terminology.",
                     "score": 2,
-                    "score_justification": "The questions are precise, targeted, and highly relevant, seeking specific information and clarification on the proposed idea, which makes the team more effective."
+                    "score_justification": "The questions are precise, targeted, and highly relevant, seeking specific information and clarification on the proposed idea, which makes the team more effective.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2829,12 +3014,14 @@
                 "Information Seeking": {
                     "explanation": "Jeffrey asks a precise, targeted question to clarify Jose's concept of regeneration, specifically asking if he means 'repair mechanisms'.",
                     "score": 2,
-                    "score_justification": "The question is precise and targeted, directly seeking to clarify a key concept in the ongoing discussion, which moves the team forward in understanding."
+                    "score_justification": "The question is precise and targeted, directly seeking to clarify a key concept in the ongoing discussion, which moves the team forward in understanding.",
+                    "when": "end"
                 },
                 "Evaluation Practices": {
                     "explanation": "Jeffrey assesses the merit of the idea of 'repair mechanisms' by stating that he believes it is 'hugely important'.",
                     "score": 1,
-                    "score_justification": "This is a clear judgment of the idea's importance, providing a positive assessment with some reasoning (it's 'hugely important'), but without further elaboration or actionable feedback."
+                    "score_justification": "This is a clear judgment of the idea's importance, providing a positive assessment with some reasoning (it's 'hugely important'), but without further elaboration or actionable feedback.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2856,7 +3043,8 @@
                 "Knowledge Sharing": {
                     "explanation": "Jose shares specific knowledge about OEC (Oxygen Evolving Complex) in nature, detailing its cycles, water splitting function, self-healing capability, and efficiency, which is relevant to the ongoing discussion about regenerative systems.",
                     "score": 2,
-                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a natural system (OEC) to illustrate the concept of regeneration, making it a highly valuable contribution."
+                    "score_justification": "The utterance provides accurate, detailed, and directly useful knowledge about a natural system (OEC) to illustrate the concept of regeneration, making it a highly valuable contribution.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2878,12 +3066,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey shares relevant expertise by connecting the discussion of natural regeneration to engineering concepts like recovering catalysts or reusing membranes, providing specific examples.",
                     "score": 2,
-                    "score_justification": "The contribution is accurate, detailed, and directly useful, elaborating on the previous discussion with concrete engineering analogies."
+                    "score_justification": "The contribution is accurate, detailed, and directly useful, elaborating on the previous discussion with concrete engineering analogies.",
+                    "when": "end"
                 },
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey structures the meeting by noting the remaining time and checking with Ellen to ensure she has what she needs for her report out, demonstrating effective process management.",
                     "score": 2,
-                    "score_justification": "The utterance explicitly states a time constraint, sets a clear goal for Ellen's report out, and asks a targeted question to facilitate effective coordination."
+                    "score_justification": "The utterance explicitly states a time constraint, sets a clear goal for Ellen's report out, and asks a targeted question to facilitate effective coordination.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2905,17 +3095,20 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Ellen confirms she has what she needs for her report and is managing her task, directly responding to Jeffrey's check-in about the report out and her ability to stay on task.",
                     "score": 1,
-                    "score_justification": "The utterance provides a clear confirmation of her status regarding a task/goal, aligning with 'Clear agenda/goals/decisions, partly enacted'."
+                    "score_justification": "The utterance provides a clear confirmation of her status regarding a task/goal, aligning with 'Clear agenda/goals/decisions, partly enacted'.",
+                    "when": "end"
                 },
                 "Participation Dynamics": {
                     "explanation": "Ellen explicitly invites other team members to add further input to her report, encouraging their participation.",
                     "score": 1,
-                    "score_justification": "The utterance includes a direct, general invitation for others to contribute, fitting the 'Direct invite' criterion."
+                    "score_justification": "The utterance includes a direct, general invitation for others to contribute, fitting the 'Direct invite' criterion.",
+                    "when": "end"
                 },
                 "Integration Practices": {
                     "explanation": "Ellen states that she has captured most of the discussion, indicating she has accurately summarized or integrated the team's contributions for her report.",
                     "score": 1,
-                    "score_justification": "The utterance provides an accurate but general statement about capturing the discussion, aligning with 'Accurate summary of some contributions'."
+                    "score_justification": "The utterance provides an accurate but general statement about capturing the discussion, aligning with 'Accurate summary of some contributions'.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2937,7 +3130,8 @@
                 "Coordination and Decision Practices": {
                     "explanation": "Jeffrey asks Ellen to adjust her screen so that 'everybody can take a look' because 'it's cut off on the right side,' which is a clear action to structure the meeting's workflow and ensure effective coordination for shared viewing.",
                     "score": 2,
-                    "score_justification": "The utterance provides a clear, specific, and reasoned instruction to improve the shared viewing experience, directly facilitating effective coordination and moving the team forward in its ability to engage with the content."
+                    "score_justification": "The utterance provides a clear, specific, and reasoned instruction to improve the shared viewing experience, directly facilitating effective coordination and moving the team forward in its ability to engage with the content.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2959,7 +3153,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance 'Yeah.' serves as a minimal acknowledgment of Jeffrey Long's request to adjust the screen, indicating a token acknowledgment.",
                     "score": 0,
-                    "score_justification": "The utterance is a token acknowledgment, which aligns with the definition for a score of 0 in the Relational Climate code."
+                    "score_justification": "The utterance is a token acknowledgment, which aligns with the definition for a score of 0 in the Relational Climate code.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -2981,12 +3176,14 @@
                 "Knowledge Sharing": {
                     "explanation": "Jeffrey provides specific, accurate information about the spelling of the acronym 'BECCS' by stating 'Just two C's for BECCS,' which is a relevant fact.",
                     "score": 2,
-                    "score_justification": "The information provided is accurate, detailed, and directly useful for clarifying the acronym."
+                    "score_justification": "The information provided is accurate, detailed, and directly useful for clarifying the acronym.",
+                    "when": "end"
                 },
                 "Relational Climate": {
                     "explanation": "Jeffrey uses a lighthearted and encouraging tone with 'You rediscovered it,' which expresses acknowledgment and support for Ellen's process.",
                     "score": 2,
-                    "score_justification": "The phrase 'You rediscovered it' is a strong, positive acknowledgment that fosters a supportive and trusting relational climate."
+                    "score_justification": "The phrase 'You rediscovered it' is a strong, positive acknowledgment that fosters a supportive and trusting relational climate.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3008,12 +3205,14 @@
                 "Relational Climate": {
                     "explanation": "Ellen uses 'Okay' and 'Yeah' as token acknowledgments in response to Jeffrey's previous statement.",
                     "score": 0,
-                    "score_justification": "The utterance contains token acknowledgments without further elaboration or strong positive sentiment."
+                    "score_justification": "The utterance contains token acknowledgments without further elaboration or strong positive sentiment.",
+                    "when": "end"
                 },
                 "Knowledge Sharing": {
                     "explanation": "Ellen provides the relevant term 'Carbon capture,' confirming her understanding of 'BECCS' mentioned by Jeffrey.",
                     "score": 1,
-                    "score_justification": "Ellen provides a relevant term that clarifies or confirms the topic previously mentioned, showing understanding."
+                    "score_justification": "Ellen provides a relevant term that clarifies or confirms the topic previously mentioned, showing understanding.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3035,7 +3234,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance is a playful, personalized comment directed at Ellen, acknowledging her in a humorous way and contributing to a positive interpersonal tone.",
                     "score": 1,
-                    "score_justification": "The comment is an explicit, positive, and personalized acknowledgment of Ellen, fostering a good relational climate through humor."
+                    "score_justification": "The comment is an explicit, positive, and personalized acknowledgment of Ellen, fostering a good relational climate through humor.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
@@ -3057,7 +3257,8 @@
                 "Relational Climate": {
                     "explanation": "The utterance continues the lighthearted, humorous exchange initiated by the previous speaker, contributing positively to the interpersonal tone and fostering a comfortable relational climate.",
                     "score": 2,
-                    "score_justification": "The utterance is an elaborated, humorous contribution that actively builds on the previous joke, fostering a positive and engaging interpersonal tone which helps build rapport and a good climate for collaboration."
+                    "score_justification": "The utterance is an elaborated, humorous contribution that actively builds on the previous joke, fostering a positive and engaging interpersonal tone which helps build rapport and a good climate for collaboration.",
+                    "when": "end"
                 }
             },
             "role": "Fellow"
