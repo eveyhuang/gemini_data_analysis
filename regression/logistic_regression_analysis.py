@@ -9,12 +9,97 @@ saving detailed results to an Excel file.
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
 from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
-def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_teams', 'has_funded_teams']):
+def analyze_outcome_distributions(df, outcome_vars=['num_teams', 'num_funded_teams', 'has_teams', 'has_funded_teams']):
+    """
+    Analyze the distribution of outcome variables to recommend appropriate regression models.
+    
+    Args:
+        df: DataFrame containing the data
+        outcome_vars: List of potential outcome variable names
+    
+    Returns:
+        Dictionary with analysis results and recommendations
+    """
+    
+    print("=== OUTCOME VARIABLE DISTRIBUTION ANALYSIS ===")
+    print(f"Dataset shape: {df.shape}")
+    
+    available_outcomes = [var for var in outcome_vars if var in df.columns]
+    print(f"Available outcome variables: {available_outcomes}")
+    
+    analysis_results = {}
+    
+    for var in available_outcomes:
+        print(f"\n--- {var} ---")
+        print(f"Data type: {df[var].dtype}")
+        print(f"Unique values: {sorted(df[var].unique())}")
+        print(f"Value counts:")
+        value_counts = df[var].value_counts().sort_index()
+        print(value_counts)
+        
+        mean_val = df[var].mean()
+        std_val = df[var].std()
+        min_val = df[var].min()
+        max_val = df[var].max()
+        zero_count = (df[var] == 0).sum()
+        zero_pct = (df[var] == 0).mean() * 100
+        
+        print(f"Mean: {mean_val:.3f}")
+        print(f"Std: {std_val:.3f}")
+        print(f"Min: {min_val}")
+        print(f"Max: {max_val}")
+        print(f"Zero values: {zero_count} ({zero_pct:.1f}%)")
+        
+        # Determine variable type and recommend model
+        unique_vals = df[var].nunique()
+        is_integer = df[var].dtype in ['int64', 'int32', 'int16', 'int8']
+        is_binary = unique_vals == 2 and set(df[var].unique()).issubset({0, 1})
+        is_count = is_integer and min_val >= 0 and max_val > 0
+        
+        # Model recommendations
+        if is_binary:
+            model_type = "Binary Logistic Regression"
+            reason = "Binary outcome (0/1 values)"
+        elif is_count and zero_pct > 20:
+            model_type = "Zero-Inflated Poisson/Negative Binomial"
+            reason = f"Count data with high zero inflation ({zero_pct:.1f}% zeros)"
+        elif is_count:
+            model_type = "Poisson/Negative Binomial Regression"
+            reason = "Count data (non-negative integers)"
+        elif is_integer and min_val >= 0:
+            model_type = "Ordinal Logistic Regression"
+            reason = "Ordinal categorical data"
+        else:
+            model_type = "Linear Regression"
+            reason = "Continuous outcome variable"
+        
+        print(f"Recommended model: {model_type}")
+        print(f"Reason: {reason}")
+        
+        analysis_results[var] = {
+            'data_type': df[var].dtype,
+            'unique_values': unique_vals,
+            'is_binary': is_binary,
+            'is_count': is_count,
+            'is_integer': is_integer,
+            'zero_percentage': zero_pct,
+            'mean': mean_val,
+            'std': std_val,
+            'min': min_val,
+            'max': max_val,
+            'recommended_model': model_type,
+            'reason': reason
+        }
+    
+    return analysis_results
+
+def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_teams', 'has_funded_teams'], control_vars=None, normalize=True):
     """
     Run individual logistic regressions for each feature against each binary outcome variable.
     
@@ -22,6 +107,8 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
         df: DataFrame containing the data
         feature_cols: List of feature column names
         outcome_vars: List of binary outcome variable names
+        control_vars: List of control variable names (optional)
+        normalize: Boolean, whether to normalize features (default: True)
     
     Returns:
         DataFrame with detailed logistic regression results
@@ -29,7 +116,14 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
     
     results = []
     
+    # Initialize scaler for normalization
+    scaler = StandardScaler() if normalize else None
+    
     print(f"Running logistic regressions for {len(feature_cols)} features against {len(outcome_vars)} outcomes...")
+    if control_vars:
+        print(f"Control variables: {control_vars}")
+    if normalize:
+        print("Features will be normalized (standardized)")
     print("="*60)
     
     for feature in feature_cols:
@@ -38,8 +132,19 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
         for outcome in outcome_vars:
             print(f"  -> {outcome}")
             
-            # Prepare data - remove rows with missing values
-            valid_data = df[[feature, outcome]].dropna()
+            # Prepare data - include control variables if specified
+            if control_vars:
+                # Check if all control variables exist
+                missing_controls = [var for var in control_vars if var not in df.columns]
+                if missing_controls:
+                    print(f"    Skipping {feature} vs {outcome}: Missing control variables: {missing_controls}")
+                    continue
+                
+                # Include feature, outcome, and control variables
+                all_vars = [feature, outcome] + control_vars
+                valid_data = df[all_vars].dropna()
+            else:
+                valid_data = df[[feature, outcome]].dropna()
             
             if len(valid_data) < 10:  # Need sufficient data for logistic regression
                 print(f"    Skipping {feature} vs {outcome}: Insufficient data ({len(valid_data)} points)")
@@ -51,8 +156,17 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
                 print(f"    Skipping {feature} vs {outcome}: Only one class present")
                 continue
             
-            X = valid_data[feature].values.reshape(-1, 1)
+            # Prepare features (main feature + control variables)
+            if control_vars:
+                X = valid_data[[feature] + control_vars].values
+            else:
+                X = valid_data[feature].values.reshape(-1, 1)
+            
             y = valid_data[outcome].values
+            
+            # Normalize features if requested
+            if normalize:
+                X = scaler.fit_transform(X)
             
             # Fit the logistic regression model
             try:
@@ -103,7 +217,7 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
                 # Calculate standard errors and confidence intervals for coefficients
                 # Using the Hessian matrix approach
                 n = len(y)
-                p = 1  # number of predictors
+                p = X.shape[1]  # number of predictors (main feature + controls)
                 
                 # Calculate standard error of coefficients
                 # For logistic regression, we need to use the inverse of the Hessian
@@ -111,13 +225,13 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
                 try:
                     # Calculate the variance-covariance matrix
                     # This is a simplified approach - in practice, you'd use the full Hessian
-                    x_mean = np.mean(X)
-                    x_var = np.var(X)
+                    x_mean = np.mean(X, axis=0)
+                    x_var = np.var(X, axis=0)
                     
-                    # Approximate standard error (this is simplified)
-                    se_coef = np.sqrt(1 / (n * x_var)) if x_var > 0 else np.nan
+                    # Approximate standard error for the main feature (first coefficient)
+                    se_coef = np.sqrt(1 / (n * x_var[0])) if x_var[0] > 0 else np.nan
                     
-                    # Calculate z-statistic and p-value
+                    # Calculate z-statistic and p-value for the main feature
                     z_stat = model.coef_[0][0] / se_coef if se_coef > 0 else np.nan
                     p_value = 2 * (1 - stats.norm.cdf(abs(z_stat))) if not np.isnan(z_stat) else np.nan
                     
@@ -134,7 +248,7 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
                     ci_lower = np.nan
                     ci_upper = np.nan
                 
-                # Calculate odds ratio and its confidence interval
+                # Calculate odds ratio and its confidence interval for the main feature
                 odds_ratio = np.exp(model.coef_[0][0])
                 or_ci_lower = np.exp(ci_lower)
                 or_ci_upper = np.exp(ci_upper)
@@ -174,12 +288,15 @@ def run_individual_logistic_regressions(df, feature_cols, outcome_vars=['has_tea
                     'False_Negatives': fn,
                     'AIC': aic,
                     'BIC': bic,
-                    'Mean_X': np.mean(X),
-                    'Std_X': np.std(X),
+                    'Mean_X': np.mean(X[:, 0]),  # Mean of main feature
+                    'Std_X': np.std(X[:, 0]),    # Std of main feature
                     'Mean_Y': np.mean(y),
                     'Std_Y': np.std(y),
                     'Positive_Class_Count': np.sum(y),
-                    'Negative_Class_Count': len(y) - np.sum(y)
+                    'Negative_Class_Count': len(y) - np.sum(y),
+                    'Num_Control_Vars': len(control_vars) if control_vars else 0,
+                    'Control_Vars': ', '.join(control_vars) if control_vars else 'None',
+                    'Normalized': normalize
                 }
                 
                 results.append(result)
@@ -279,18 +396,38 @@ def main():
     if len(feature_cols) > 10:
         print(f"  ... and {len(feature_cols) - 10} more")
     
-    # Check if outcome variables exist and are binary
+    # Analyze outcome variable distributions to recommend appropriate models
+    print("\n" + "="*60)
+    outcome_analysis = analyze_outcome_distributions(df)
+    print("="*60)
+    
+    # Check if binary outcome variables exist
     outcome_vars = ['has_teams', 'has_funded_teams']
     available_outcomes = [var for var in outcome_vars if var in df.columns]
     
     if not available_outcomes:
         print("No binary outcome variables found. Please check your data.")
+        print("Available outcome variables:", [var for var in df.columns if 'team' in var.lower() or 'fund' in var.lower()])
         return
     
-    print(f"Using outcome variables: {available_outcomes}")
+    print(f"Using binary outcome variables: {available_outcomes}")
     
-    # Run logistic regressions
-    results_df = run_individual_logistic_regressions(df, feature_cols, available_outcomes)
+    # Define control variables (modify this list as needed)
+    # Example: control_vars = ['meeting_length', 'num_members', 'num_facilitator']
+    # You can use suggested_controls or define your own list
+    control_vars = ['meeting_length', 'num_members', 'num_facilitator', 'total_utterances']  # Add your control variables here
+    
+    # Check if control variables exist in the dataset
+    available_controls = [var for var in control_vars if var in df.columns]
+    if available_controls != control_vars:
+        missing_controls = [var for var in control_vars if var not in df.columns]
+        print(f"Warning: Some control variables not found: {missing_controls}")
+        print(f"Using available control variables: {available_controls}")
+        control_vars = available_controls
+    
+    # Run logistic regressions with control variables and normalization
+    results_df = run_individual_logistic_regressions(df, feature_cols, available_outcomes, 
+                                                     control_vars=control_vars, normalize=True)
     
     if results_df.empty:
         print("No valid logistic regressions could be performed.")

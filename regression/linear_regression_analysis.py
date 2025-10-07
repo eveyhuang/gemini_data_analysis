@@ -244,7 +244,7 @@ def main():
     # Define control variables (modify this list as needed)
     # Example: control_vars = ['conference_year', 'session_duration']
     # You can use suggested_controls or define your own list
-    control_vars = ['meeting_length', 'num_members', 'num_facilitator']  # Add your control variables here
+    control_vars = ['meeting_length', 'num_members', 'num_facilitator', 'total_utterances']  # Add your control variables here
    
     # Run regressions
     results_df = run_individual_regressions(df, feature_cols, outcome_vars=['num_teams', 'num_funded_teams'], control_vars=control_vars)
