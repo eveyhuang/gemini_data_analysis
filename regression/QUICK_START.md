@@ -225,3 +225,9 @@ python temporal_analysis.py
 Then open `temporal_beginning_to_end_results.xlsx` and look at the **Significant_Results** sheet!
 
 This shows which beginning features significantly predict end features. Sort by R_Squared to see the strongest predictors.
+
+
+
+
+
+

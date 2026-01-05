@@ -52,7 +52,7 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
     features = {}
     
     # Add basic session info
-    features['num_members'] = num_members
+    features['count_members'] = num_members
     features['meeting_length'] = meeting_length
     features['segment'] = segment_name
     features['conf_name'] = conf_name
@@ -67,6 +67,10 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
     speaker_annotations = defaultdict(set)
     annotation_scores = defaultdict(list)
     
+    # Track high/low quality codes per code type
+    has_high_quality = defaultdict(bool)  # Track if any score=2 for each code
+    has_low_quality = defaultdict(bool)   # Track if any score=-1 for each code
+    
     # Facilitator-specific counters
     facilitator_utterances = 0
     facilitator_high_quality_utterances = 0
@@ -78,7 +82,7 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
     positive_utterances = 0
     
     # Count interruptions and screenshare
-    num_interruption = 0
+    count_interruption = 0
     time_screenshare = 0
     
     # Track unique speakers in this segment
@@ -87,7 +91,7 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
     for utterance in utterances:
         # Count interruptions
         if utterance.get('interruption') == 'Yes':
-            num_interruption += 1
+            count_interruption += 1
         
         # Calculate screenshare time
         if utterance.get('screenshare') == 'Yes':
@@ -125,6 +129,12 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
                 if isinstance(score, (int, float)):
                     annotation_scores[annotation_type].append(score)
                     
+                    # Track high/low quality per code type
+                    if score == 2:
+                        has_high_quality[annotation_type] = True
+                    if score == -1:
+                        has_low_quality[annotation_type] = True
+                    
                     # Track facilitator scores
                     if is_facilitator:
                         facilitator_scores.append(score)
@@ -149,7 +159,7 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
             facilitator_high_quality_utterances += 1
     
     # Store basic counts 
-    features['num_interruption'] = num_interruption
+    features['count_interruption'] = count_interruption
     
     # Calculate percentage of time spent on screenshare for this segment
     segment_length = sum(float(u.get('speaking_duration', 0)) for u in utterances)
@@ -159,24 +169,44 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
         features['percent_time_screenshare'] = 0.0
     
     # Store annotation counts for codebook v4
-    features['num_idea_management'] = annotation_counts.get('Idea Management', 0)
-    features['num_information_seeking'] = annotation_counts.get('Information Seeking', 0)
-    features['num_knowledge_sharing'] = annotation_counts.get('Knowledge Sharing', 0)
-    features['num_evaluation_practices'] = annotation_counts.get('Evaluation Practices', 0)
-    features['num_relational_climate'] = annotation_counts.get('Relational Climate', 0)
-    features['num_participation_dynamics'] = annotation_counts.get('Participation Dynamics', 0)
-    features['num_coordination_decision'] = annotation_counts.get('Coordination and Decision Practices', 0)
-    features['num_integration_practices'] = annotation_counts.get('Integration Practices', 0)
+    features['count_idea_management'] = annotation_counts.get('Idea Management', 0)
+    features['count_information_seeking'] = annotation_counts.get('Information Seeking', 0)
+    features['count_knowledge_sharing'] = annotation_counts.get('Knowledge Sharing', 0)
+    features['count_evaluation_practices'] = annotation_counts.get('Evaluation Practices', 0)
+    features['count_relational_climate'] = annotation_counts.get('Relational Climate', 0)
+    features['count_participation_dynamics'] = annotation_counts.get('Participation Dynamics', 0)
+    features['count_coordination_decision'] = annotation_counts.get('Coordination and Decision Practices', 0)
+    features['count_integration_practices'] = annotation_counts.get('Integration Practices', 0)
     
     # Count unique speakers for each annotation type
-    features['num_people_idea_management'] = len(speaker_annotations.get('Idea Management', set()))
-    features['num_people_information_seeking'] = len(speaker_annotations.get('Information Seeking', set()))
-    features['num_people_knowledge_sharing'] = len(speaker_annotations.get('Knowledge Sharing', set()))
-    features['num_people_evaluation_practices'] = len(speaker_annotations.get('Evaluation Practices', set()))
-    features['num_people_relational_climate'] = len(speaker_annotations.get('Relational Climate', set()))
-    features['num_people_participation_dynamics'] = len(speaker_annotations.get('Participation Dynamics', set()))
-    features['num_people_coordination_decision'] = len(speaker_annotations.get('Coordination and Decision Practices', set()))
-    features['num_people_integration_practices'] = len(speaker_annotations.get('Integration Practices', set()))
+    features['count_people_idea_management'] = len(speaker_annotations.get('Idea Management', set()))
+    features['count_people_information_seeking'] = len(speaker_annotations.get('Information Seeking', set()))
+    features['count_people_knowledge_sharing'] = len(speaker_annotations.get('Knowledge Sharing', set()))
+    features['count_people_evaluation_practices'] = len(speaker_annotations.get('Evaluation Practices', set()))
+    features['count_people_relational_climate'] = len(speaker_annotations.get('Relational Climate', set()))
+    features['count_people_participation_dynamics'] = len(speaker_annotations.get('Participation Dynamics', set()))
+    features['count_people_coordination_decision'] = len(speaker_annotations.get('Coordination and Decision Practices', set()))
+    features['count_people_integration_practices'] = len(speaker_annotations.get('Integration Practices', set()))
+    
+    # Binary features for high quality (score=2) per code
+    features['has_high_quality_idea_management'] = 1 if has_high_quality.get('Idea Management', False) else 0
+    features['has_high_quality_information_seeking'] = 1 if has_high_quality.get('Information Seeking', False) else 0
+    features['has_high_quality_knowledge_sharing'] = 1 if has_high_quality.get('Knowledge Sharing', False) else 0
+    features['has_high_quality_evaluation_practices'] = 1 if has_high_quality.get('Evaluation Practices', False) else 0
+    features['has_high_quality_relational_climate'] = 1 if has_high_quality.get('Relational Climate', False) else 0
+    features['has_high_quality_participation_dynamics'] = 1 if has_high_quality.get('Participation Dynamics', False) else 0
+    features['has_high_quality_coordination_decision'] = 1 if has_high_quality.get('Coordination and Decision Practices', False) else 0
+    features['has_high_quality_integration_practices'] = 1 if has_high_quality.get('Integration Practices', False) else 0
+    
+    # Binary features for low quality (score=-1) per code
+    features['has_low_quality_idea_management'] = 1 if has_low_quality.get('Idea Management', False) else 0
+    features['has_low_quality_information_seeking'] = 1 if has_low_quality.get('Information Seeking', False) else 0
+    features['has_low_quality_knowledge_sharing'] = 1 if has_low_quality.get('Knowledge Sharing', False) else 0
+    features['has_low_quality_evaluation_practices'] = 1 if has_low_quality.get('Evaluation Practices', False) else 0
+    features['has_low_quality_relational_climate'] = 1 if has_low_quality.get('Relational Climate', False) else 0
+    features['has_low_quality_participation_dynamics'] = 1 if has_low_quality.get('Participation Dynamics', False) else 0
+    features['has_low_quality_coordination_decision'] = 1 if has_low_quality.get('Coordination and Decision Practices', False) else 0
+    features['has_low_quality_integration_practices'] = 1 if has_low_quality.get('Integration Practices', False) else 0
     
     # Calculate mean scores for each code
     features['mean_score_idea_management'] = np.mean(annotation_scores.get('Idea Management', [])) if annotation_scores.get('Idea Management') else 0.0
@@ -201,20 +231,20 @@ def calculate_segment_features(utterances, segment_name, num_members, meeting_le
     total_utterances = len(utterances)
     features['total_utterances'] = total_utterances
     
-    # Calculate negative utterance ratio for this segment
-    features['negative_utterance_ratio'] = negative_utterances / total_utterances if total_utterances > 0 else 0.0
+    # Calculate low quality ratio for this segment (proportion of utterances with -1 scores)
+    features['low_quality_ratio'] = negative_utterances / total_utterances if total_utterances > 0 else 0.0
     
-    # Calculate positive intensity for this segment
-    features['positive_intensity'] = positive_utterances / total_utterances if total_utterances > 0 else 0.0
+    # Calculate high quality ratio for this segment (proportion of utterances with score 2)
+    features['high_quality_ratio'] = positive_utterances / total_utterances if total_utterances > 0 else 0.0
     
     # Calculate facilitator-specific features for this segment
-    features['num_facilitator'] = len(facilitator_speakers)
+    features['count_facilitator'] = len(facilitator_speakers)
     features['facilitator_dominance_ratio'] = facilitator_utterances / total_utterances if total_utterances > 0 else 0.0
     features['facilitator_high_quality_ratio'] = facilitator_high_quality_utterances / facilitator_utterances if facilitator_utterances > 0 else 0.0
     features['facilitator_average_score'] = np.mean(facilitator_scores) if facilitator_scores else 0.0
     
     # Add number of unique speakers in this segment
-    features['num_segment_members'] = len(segment_speakers)
+    features['count_segment_members'] = len(segment_speakers)
     
     # Calculate segment length (time span from first to last utterance in seconds)
     if utterances:
@@ -257,14 +287,14 @@ def get_zero_features(segment_name, num_members, meeting_length, conf_name=None,
     features = {}
     
     # Add basic session info
-    features['num_members'] = num_members
+    features['count_members'] = num_members
     features['meeting_length'] = meeting_length
     features['segment'] = segment_name
     features['conf_name'] = conf_name
     features['session'] = session_name
     
     # Basic counts
-    features['num_interruption'] = 0
+    features['count_interruption'] = 0
     features['percent_time_screenshare'] = 0.0
     
     # Annotation counts
@@ -275,25 +305,27 @@ def get_zero_features(segment_name, num_members, meeting_length, conf_name=None,
     ]
     
     for annotation_type in annotation_types:
-        features[f'num_{annotation_type}'] = 0
-        features[f'num_people_{annotation_type}'] = 0
+        features[f'count_{annotation_type}'] = 0
+        features[f'count_people_{annotation_type}'] = 0
         features[f'mean_score_{annotation_type}'] = 0.0
+        features[f'has_high_quality_{annotation_type}'] = 0
+        features[f'has_low_quality_{annotation_type}'] = 0
     
     # Overall scores
     features['mean_score_overall'] = 0.0
     features['total_score'] = 0.0
     features['total_utterances'] = 0
-    features['negative_utterance_ratio'] = 0.0
-    features['positive_intensity'] = 0.0
+    features['low_quality_ratio'] = 0.0
+    features['high_quality_ratio'] = 0.0
     
     # Facilitator features
-    features['num_facilitator'] = 0
+    features['count_facilitator'] = 0
     features['facilitator_dominance_ratio'] = 0.0
     features['facilitator_high_quality_ratio'] = 0.0
     features['facilitator_average_score'] = 0.0
     
     # Number of unique speakers in this segment
-    features['num_segment_members'] = 0
+    features['count_segment_members'] = 0
     
     # Segment length (zero for empty segments)
     features['segment_length'] = 0.0
@@ -323,21 +355,24 @@ def process_session_file(file_path):
     features = calculate_features_by_when(data, conf_name, session_name)
     return features
 
-def main():
-    parser = argparse.ArgumentParser(description="Featurize session JSON files with time segment analysis.")
-    parser.add_argument("dataset", type=str, help="Dataset name (e.g., 2020NES)")
-    args = parser.parse_args()
-
-    dataset = args.dataset
+def process_dataset(dataset):
+    """Process a single dataset folder with time segment analysis."""
     output_dir = f'data/{dataset}/featurized_with_when'
+    data_dir = f'data/{dataset}/session_data'
+    
+    # Check if session_data folder exists
+    if not os.path.exists(data_dir):
+        print(f"  ⚠️  Skipping {dataset}: no 'session_data' folder found")
+        return 0
+    
     os.makedirs(output_dir, exist_ok=True)
     
-    data_dir = f'data/{dataset}/session_data'
+    processed_count = 0
     for filename in os.listdir(data_dir):
         if filename.endswith('.json') and 'person_to_team' not in filename and 'outcome' not in filename:
             input_path = os.path.join(data_dir, filename)
             
-            print(f"Processing {filename}...")
+            print(f"  Processing {filename}...")
             segment_features = process_session_file(input_path)
             
             # Save three separate files for each time segment
@@ -351,7 +386,49 @@ def main():
                 with open(output_path, 'w') as f:
                     json.dump(features, f, indent=2)
                 
-                print(f"  Saved {segment_name} features to {output_filename}")
+            processed_count += 1
+    
+    print(f"  ✅ Saved {processed_count * 3} feature files (3 segments each) to {output_dir}")
+    return processed_count
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Featurize session JSON files with time segment analysis.")
+    parser.add_argument("dataset", type=str, nargs='?', default=None,
+                        help="Dataset name (e.g., 2020NES). If not provided, processes all datasets in /data")
+    args = parser.parse_args()
+
+    if args.dataset:
+        # Process single dataset
+        print(f"📂 Processing dataset: {args.dataset}")
+        process_dataset(args.dataset)
+    else:
+        # Process all datasets in /data folder
+        data_root = 'data'
+        if not os.path.exists(data_root):
+            print(f"❌ Error: '{data_root}' directory not found")
+            return
+        
+        # Get all subdirectories in /data
+        datasets = [d for d in os.listdir(data_root) 
+                    if os.path.isdir(os.path.join(data_root, d))]
+        
+        if not datasets:
+            print(f"❌ No dataset folders found in '{data_root}'")
+            return
+        
+        print(f"🔍 Found {len(datasets)} dataset(s) in '{data_root}': {', '.join(datasets)}")
+        print("=" * 60)
+        
+        total_processed = 0
+        for dataset in sorted(datasets):
+            print(f"\n📂 Processing dataset: {dataset}")
+            total_processed += process_dataset(dataset)
+        
+        print("\n" + "=" * 60)
+        print(f"✅ Done! Processed {total_processed} total session files across {len(datasets)} dataset(s)")
+        print(f"   (Each session creates 3 segment files: beginning, middle, end)")
+
 
 if __name__ == "__main__":
     main()
