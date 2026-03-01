@@ -1,0 +1,1342 @@
+[
+    {
+        "utterance": "Jan Spille: Hello. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: for for this point, yeah, I guess you can turn off your mute and we'll see if it becomes too noisy. Uh, let me start me with a my introduction and then Erica can give her introduction and then we'll in fact go around and hear a little bit about what we're all doing. Um, I'm Paul Selvin, University of Illinois, Urbana Champagne. Uh I'm an experimentalist. I've been that way for 24 years and I work on super resolution microscopy largely on molecular motors and uh neuron problems like Alzheimer's. And in fact I have real questions about molecular crowding. Erica? ",
+        "annotations": {
+            "Signal expertise": "He explicitly states his background and experience as an experimentalist and his work area.",
+            "Encourage participation": "He invites Erica and implies others to introduce themselves.",
+            "Process management": "He suggests a way to proceed with introductions."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: I'm Erika Matunis. I'm a cell biologist uh and my lab uses fly genetics to study stem cells in the testis. We also do a bit of mouse work. Um I am not a crowding person. I love this topic though and I'm so excited to meet you all and learn more about it. Um I I think um I think about cells all the time and cells in tissues so it's really great to meet people who think more about molecules. ",
+        "annotations": {
+            "signal expertise": "Erika explicitly states her background and expertise as a cell biologist and her work with fly genetics and mouse work.",
+            "identify gap": "Erika mentions she is 'not a crowding person,' indicating a lack of expertise in the specific topic of molecular crowding.",
+            "supportive response": "Erika expresses excitement and eagerness to learn, which can be seen as a positive evaluation of the meeting."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay. Um before we actually ask you to uh write a sentence or two of some initial ideas, why don't we go around and just like Erica and myself have done, uh introduce yourself, who you are, where where you are and sort of what you're doing. Um so Seth, why don't we start with you? ",
+        "annotations": {
+            "process management": "Paul is managing the meeting flow by instructing the group on how to proceed with introductions.",
+            "encourage participation": "Paul invites Seth to contribute by starting the introductions."
+        }
+    },
+    {
+        "utterance": "Seth Childers: Sure. Um I'm Seth Childers, University of Pittsburgh. I'm a biochemist and microbiologist. I'm interested in the role of phase separation in organizing biochemistry in microbes. ",
+        "annotations": {
+            "signal expertise": "Seth explicitly states his background as a biochemist and microbiologist, signaling his expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you. Uh Joshua? ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a previous contribution with 'Okay, thank you'.",
+            "encourage participation": "The speaker invites Joshua to contribute by saying 'Uh Joshua?'"
+        }
+    },
+    {
+        "utterance": "Joshua Weinstein: Sure. Uh I'm Joshua Weinstein. I'm uh assistant professor at uh U Chicago. I'm uh my work is sort of uh at the interface between physics and um and genetics especially and and I guess you know, uh even though I'm more of on the technology development end of things, I'm most interested in sort of the ways in which um information propagates uh you know, between length scales and I think that uh that broadly speaking molecular crowding is a is an important way in which that happens. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states his position and work area, indicating his expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Very good. Uh Brian? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting Brian to contribute his introduction, thereby encouraging participation.",
+            "process management": "The speaker is managing the meeting flow by determining who speaks next."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I'm a professor at UC San Diego. Uh we use yeast and we look at MRNA organization and that ends up getting into some phase separation during stressful conditions but we also look at MRNA localization to the mitochondria and how that can be controlled and the impact of that um in different conditions. ",
+        "annotations": {
+            "signal expertise": "Brian explicitly states his position as a professor and describes his research area, indicating his expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Thank you. And Kathy? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by moving from one participant introduction to the next.",
+            "encourage participation": "The speaker is inviting Kathy to contribute her introduction, encouraging her participation."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: Yeah, hello everyone. I'm Kathy Liu, assistant professor in the department of biochemistry and biophysics at UPenn. Uh my lab is interested in the function of enzyme-mediated RNA modifications in human cancer and neurodegenerative disorders. Uh we are particularly interested in ribosomal RNA modifications, how do they influence translation and because the ribosomal RNA modifications occurs in the nucleolus, so we want to ask how those modifications influence the phase separation in nucleolus and how phase separation actually influences the ribosomal RNA modifications role all the way down to translation. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states her own qualifications and area of expertise.",
+            "None": "No other code explicitly applies to the content of the utterance as described."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you Kathy. Uh Elizabeth? ",
+        "annotations": {
+            "encourage participation": "The speaker invites Elizabeth to contribute her introduction, encouraging her participation in the meeting."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: Hi, I'm Elizabeth. Um my home department is chemical and biomolecular engineering. Um we do theory and computation at at sort of large scales within the cell. So um we look at things like biomolecular network dynamics having to do with gene regulation. We model enzymatic processes related to epigenomics. Um we're we're very interested in in trying to kind of combine stochastic process mechanistic models um with also increasingly more sort of data integration techniques and in trying to and to kind of engage with large scale data sets, transcriptomics and epigenomics and so forth. ",
+        "annotations": {
+            "signal expertise": "The speaker explicitly states their department and field of work.",
+            "develop idea": "The speaker is elaborating on their work and research focus."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you. Um Matthias? ",
+        "annotations": {
+            "encourage participation": "The speaker invites Matthias to contribute by saying 'Um Matthias?'",
+            "process management": "The utterance manages the meeting flow by moving to the next person for introduction."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Um I'm Matthias Heyden. I'm at Arizona State University. I'm in the school of molecular sciences and I do atomistic simulations of proteins and I'm interested in protein vibrations and collective dynamics and how proteins interact with their environment which includes the solvent and also all the other proteins around them in a crowded environment. ",
+        "annotations": {
+            "signal expertise": "Matthias explicitly states his own expertise and qualifications related to the task by mentioning his work and interests."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: And thank you. Uh next we have I guess what is your neighbor, uh Judith at Arizona. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by introducing the next speaker.",
+            "encourage participation": "The speaker is encouraging Judith to participate by calling her to introduce herself."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: the random order on our screen. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Judith Su: I'm Judith Su. I'm an assistant professor in optical sciences and biomedical engineering at the University of Arizona. So hopefully I have a complimentary expertise to many of you. Our lab builds ultra sensitive optical sensors uh primarily for things like medical diagnostics but also basic science applications like what we're going to be discussing here today. ",
+        "annotations": {
+            "signal expertise": "Judith explicitly states her own expertise and her lab's work, signaling her qualifications and area of expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, very good. And we're on to Caitlin who I she used to be at the University of Illinois Urbana Champagne until she had the I don't know, I guess good or bad idea. Okay, there we go. And she's at Yale. Okay, Caitlin, go ahead. ",
+        "annotations": {
+            "encourage participation": "The utterance invites Caitlin to speak by saying 'Okay, Caitlin, go ahead.'",
+            "express humor": "The comment about 'I don't know, I guess good or bad idea' is a humorous remark.",
+            "acknowledge contribution": "The utterance mentions Caitlin's background, acknowledging her."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Good, let's say good. ",
+        "annotations": {
+            "express humor": "The utterance 'Good, let's say good.' can be interpreted as making a joke or having a humorous tone.",
+            "supportive response": "The utterance serves as a minimal agreement or acknowledgment of the previous statement."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Great. Hi, I'm Caitlin Davis. I'm an assistant professor in the Department of Chemistry at Yale University and I'm interested in how the local environment regulates protein-protein and protein-RNA interactions and we use uh fluorescence and infrared imaging to study those in vitro, in cell and in whole organism with the idea of replicating these interactions in the test tube. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you Caitlin. Uh Jan, um at Chicago. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by transitioning from Caitlin's introduction to inviting Jan to introduce themselves."
+        }
+    },
+    {
+        "utterance": "Jan Spille: Yes, hey, thank you. Um yeah, my name is Jan Spille. I'm in the physics department here at uh University of Illinois Chicago. I'm an experimentalist as well. I do single molecule super resolution imaging and we use that to study how protein and chromatin is organized in the cell nucleus specifically in transcription regulation. Um so so our goal is to really create very detailed high resolution maps of how structures form and then understand how function arises from those structures. ",
+        "annotations": {
+            "develop idea": "Jan Spille is elaborating on his work, explaining what he does and his goals.",
+            "signal expertise": "Jan Spille mentions that he is an experimentalist and specifies his area of work, indicating his expertise.",
+            "clarify goal": "Jan Spille clarifies his goal, which is to create detailed maps of how structures form and understand how function arises from those structures."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you very much. Um let's see, is Gant, is that your first name? You're up next. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by calling on the next person to speak, ensuring introductions proceed in an orderly manner."
+        }
+    },
+    {
+        "utterance": "Gant Luxton: That is, yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Gant Luxton: Great. So I just uh joined the Department of Molecular and Cellular Biology at the University of California Davis. And um I used to be at the University of Minnesota for a while. And my lab is really interested in trying to figure out how the nucleus uh not only allows cells to sense and respond to mechanical stimuli from outside of the cell in the extracellular environment, but we're also really interested recently in trying to understand how the nucleus controls the biophysical the biophysical properties of the cytoplasm. And so we're really big into microrheology and uh trying to figure out how molecular crowding is regulated by nuclear cytoskeletal connections. ",
+        "annotations": {
+            "signal expertise": "Gant Luxton explicitly states his own expertise and research focus related to the task.",
+            "clarify goal": "Gant Luxton clarifies his research goals and interests."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay, thank you very much. Uh and we have I suspect is not your name but is bot four and you are silenced. Do you do you exist bot four? Well, okay. If not, you're not. ",
+        "annotations": {
+            "express humor": "The speaker is making a joke about a bot named 'bot four' being silenced and questioning its existence in a humorous manner."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: I don't I think we're only supposed to have 12, right? ",
+        "annotations": {
+            "ask question": "Erika is requesting confirmation or information about the number of participants.",
+            "express humor": "Erika's comment has a lighthearted tone, suggesting she is making a humorous remark about the number of participants."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Yeah. I don't okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Yeah. Maybe it's something to do with the people that are going to be popping in and out of the rooms visiting. ",
+        "annotations": {
+            "process management": "Erika Matunis is contributing to the informal management of the group's dynamics by speculating about the presence of 'bot four' in the context of people moving between rooms."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay. Um so what we would like just to sort of get you started is to take just a few minutes and write down your thoughts on anything associated with cell crowding and in particular what is not known, what would you like to know, how would you go about knowing it. Okay? And then we'll start off talking about them and just continue on and then basically I'll be quiet for the rest of the time. Um actually can I get a volunteer at this point to be the reporter which really is a group effort in that you will go and put it on the web various ideas and then in the last ",
+        "annotations": {
+            "encourage participation": "The speaker invites group members to share their thoughts and ideas.",
+            "identify gap": "The speaker asks the group to think about what is not known about cell crowding.",
+            "process management": "The speaker manages the meeting flow by asking for a volunteer to report the group's ideas."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: last 10 minutes or so the group as a whole will get together and make up what are a couple of the most important ideas. So how about ",
+        "annotations": {
+            "process management": "The speaker is outlining the plan for the group discussion and managing the meeting flow.",
+            "encourage participation": "The speaker invites participation by asking 'So how about', encouraging others to contribute."
+        }
+    },
+    {
+        "utterance": "Erika Matunis JHU: I see we have seven people already in the document which is great. Is everyone know how to find this document because whoever's recording is definitely just like Paul said not doing this all on their own we'll all help out. ",
+        "annotations": {
+            "ask question": "The speaker asks if everyone knows how to find the document, seeking information or confirmation from the group.",
+            "acknowledge contribution": "The speaker acknowledges that seven people are already in the document, which she finds great.",
+            "encourage participation": "The speaker encourages group collaboration by stating that everyone will help out, not just one person.",
+            "process management": "The speaker is managing the group's process by checking if everyone can access the document."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: Where is this document? I keep trying to find it. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the location of a document, which is a direct question seeking clarification or information."
+        }
+    },
+    {
+        "utterance": "Erika Matunis JHU: So if you're back in the main meeting folder do you know how to find that? And then if you look there's a little gray icon for another folder inside the folder. ",
+        "annotations": {
+            "process management": "The speaker is providing instructions on how to find a document, which involves managing the group's activities and ensuring everyone can access the necessary resources."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: Virtual meeting folder? Yeah and if you click on that ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the document's location.",
+            "offer feedback": "The speaker is providing guidance on how to find the document."
+        }
+    },
+    {
+        "utterance": "Erika Matunis JHU: and just scroll through the material there's a there's a Google doc for every breakout room and ours is 1.4. ",
+        "annotations": {
+            "process management": "The speaker is providing guidance on how to manage the meeting's materials (documents)."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: Thank you. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is verbally recognizing Erika's input by thanking her for the explanation."
+        }
+    },
+    {
+        "utterance": "Erika Matunis JHU: So I see that garnered a couple more people in there. We have nine viewers on our document. Does anyone else need help getting in there? ",
+        "annotations": {
+            "ask question": "Erika Matunis is requesting help or confirmation from the group.",
+            "encourage participation": "Erika Matunis is inviting others to contribute by offering help."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: And now we just need one person who's going to at the end synthesize it all with our help. Come on. ",
+        "annotations": {
+            "assign task": "The speaker is assigning the responsibility of synthesizing the ideas to one person.",
+            "encourage participation": "The speaker is inviting someone to contribute by assigning them a task."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I'm happy to enter things in. ",
+        "annotations": {
+            "assign task": "Brian Zid is volunteering to take on a specific task assigned by Paul Selvin, which is to enter things in.",
+            "process management": "By volunteering for this task, Brian Zid is also contributing to the management of the meeting's process."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Thank you Brian. Is that Brian? Yes. Okay great. Thank you very much. Okay. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance as it seems more about social politeness and confirmation rather than discussing scientific content or managing the team."
+        }
+    },
+    {
+        "utterance": "Erika Matunis JHU: Other people can feel free to put their notes in this document correct? ",
+        "annotations": {
+            "ask question": "The speaker is seeking confirmation or clarification on whether others can put their notes in the document.",
+            "encourage participation": "The speaker is inviting others to contribute by putting their notes in the document."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Yes as far as I know yes. It's completely open at this point. ",
+        "annotations": {
+            "supportive response": "Paul Selvin is validating the information that the document is open for everyone to contribute to, which supports the facilitation of the collaborative process."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay so if you could spend just let's say two minutes writing down a a couple a sentence or a couple of sentences on what you want to know or discover or how are you going to do the the following associated with crowding in a cell. Okay and I guess I will time it so I don't rush you. ",
+        "annotations": {
+            "Process management": "The speaker is managing the meeting flow by instructing the group on what to do next.",
+            "Assign task": "The speaker is assigning a task to the group to write down their thoughts on cell crowding.",
+            "Clarify goal": "The speaker is clarifying the goal of the task, which is to write about what they want to know or discover about cell crowding."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: 20 seconds. ",
+        "annotations": {
+            "process management": "This code applies because Paul Selvin is managing the meeting flow by informing the group about the time they have left to complete their task."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: That was the alarm. And would anybody like to begin? Okay then I will begin. ",
+        "annotations": {
+            "ask question": "The speaker asks if anybody would like to begin, requesting input from others.",
+            "encourage participation": "The speaker invites others to contribute with the question 'And would anybody like to begin?'",
+            "process management": "The speaker manages the meeting flow by indicating it's time to start and that they will begin if no one else does."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: I work a lot on molecular motors proteins that move other proteins to where they go and I want to know how does the incredibly high viscoelasticity of the cell influence them and how do they pick up the cell cargo and then walk with it and how do they drop it off and and do this in a reasonable period of time. And related to that is how you actually measure it. That is in my case I do a lot of fluorescence and so the idea is to get a fluorophore that's small enough in general that can go through the cell membrane so you can label a native biomolecule and and have decent signal to noise. Yeah Caitlin go ahead. You can turn off your your microphone make make them on. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces specific research questions and challenges related to molecular motors and cellular viscoelasticity.",
+            "ask question": "The speaker explicitly asks questions about how molecular motors interact with the cell's viscoelastic environment and how to measure these interactions.",
+            "develop idea": "The speaker elaborates on his research, providing specifics about his work with molecular motors, the challenges of studying them in a cellular environment, and the need for appropriate measurement tools."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Go ahead and don't rely on on me or Erica to prompt you just go ahead. ",
+        "annotations": {
+            "encourage participation": "The speaker is explicitly inviting someone to contribute their thoughts or ideas, encouraging them to participate.",
+            "process management": "The speaker is managing the flow of conversation by prompting someone to speak, thereby organizing the group activity."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So I come from a protein folding background to put this in context and I feel like in the folding field if we think about crowding we can predict what's going to happen to proteins based on crowding alone. So crowding stabilizes proteins it stabilizes binding interactions and and so from that perspective for from a well-structured protein we can make pretty good predictions but what we don't understand is how the other parts of the environment are affecting the stability of proteins or predicting how like non-steric interactions are affecting the protein interactions. So I thought this was a nice juxtaposition to what Paul was saying about his specific system. ",
+        "annotations": {
+            "develop idea": "Caitlin is expanding on her experience in protein folding and its relation to crowding.",
+            "signal expertise": "Caitlin mentions her background in protein folding to provide context.",
+            "identify gap": "Caitlin points out a lack of understanding regarding how the environment affects protein stability."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: I would I would very much agree with that is very much a point that I wrote down too that we understand crowding in terms of volume exclusion that there is limited volume that usually stabilizes either aggregation or compact folds or stuff like that but we don't understand all the effects of attractive interactions which if you have things which strongly attract each other they will precipitate out of course but in in the cell you are surrounded by a myriad of other potential interaction partners these interactions are not necessarily strong but they're not zero or repulsive either and how they can affect for example biomolecular assembly the formation of complexes and everything is very densely packed so what Paul was mentioning are there any collective dynamic effects like hydrodynamics how do they affect not only the the biomolecular assembly which is a thermodynamic problem but also how things move in the cell dynamically. ",
+        "annotations": {
+            "Develop Idea": "Matthias is expanding on existing ideas about crowding, discussing volume exclusion and attractive interactions.",
+            "Ask Question": "Matthias asks about the effects of collective dynamic effects like hydrodynamics on biomolecular assembly and movement in the cell."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: And I think maybe crowding and how it affects intrinsically disordered proteins or disordered molecules is is less well understood as well. ",
+        "annotations": {
+            "develop idea": "Caitlin Davis is expanding on the existing ideas about crowding and its effects, specifically focusing on intrinsically disordered proteins.",
+            "identify gap": "Caitlin Davis is pointing out that the effect of crowding on intrinsically disordered proteins is less well understood."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So you're saying that with crowding that the molecular motor and cargo they're they're sort of satisfied and then you have the problem of how does it find the cargo and then how does it know when to release. So these are just questions. ",
+        "annotations": {
+            "ask question": "The utterance contains explicit questions about the behavior of molecular motors and cargo in crowded environments.",
+            "develop idea": "The utterance expands on previous ideas by exploring the implications of crowding on molecular motors and cargo."
+        }
+    },
+    {
+        "utterance": "Brian Zid: Yeah I think a related question is in these phase separated granules which are concentrating certain proteins a lot of these are I'm interested in RNA binding proteins a lot of these are RNA binding proteins and so they have some binding specificity and that might be on the nanomolar range but then in these condensates they're micromolar and so do they still maintain this specificity when they're at such high concentrations or is specificity lost in these condensates when the concentrations are much higher than they are in the normal cytosol and I haven't seen this really addressed and I don't know if it's because it's a ",
+        "annotations": {
+            "identify gap": "Brian Zid notes a gap in current understanding regarding the specificity of RNA binding proteins in phase-separated granules at high concentrations."
+        }
+    },
+    {
+        "utterance": "Brian Zid (UCSD): very difficult question and it's not answerable or if it's just people haven't tried to get into it. I mean because there's a lot of what RNAs are in these granules because we don't know we might not be certain about what the function are and if we understand the components and how they get there that seems important. And people have tried to say oh we see these RNA binding proteins in there and that's why these RNAs are in there but it could be the opposite that the RNAs are in there and they're pulling their RNA binding proteins along for the ride. And I think we have this thinking of just like oh the RNA binding proteins are defining the specificity but that doesn't make a lot of sense once I feel like we start really getting into the concentrations within these granules. And again I don't crowding versus concentration are kind of interrelated to me but this is something that comes up in my head that I haven't seen good experiments to try and disentangle these things of what's going on and how the chemistry changes in these condensates. ",
+        "annotations": {
+            "develop idea": "The speaker expands on his thoughts regarding the behavior of RNA binding proteins and RNAs within granules, discussing potential misunderstandings and areas for further research."
+        }
+    },
+    {
+        "utterance": "Jan Spille (U. Chicago): That's very interesting so that that connects on many levels I think to to what we're thinking about. We're we're working on condensates in the cell nucleus specifically related to transcription and you know this this whole idea that things just phase separate in the nucleus is obviously more complicated because many of the condensates are anchored to specific chromatin sites right so so there needs to be some cue to do it in that place and and not elsewhere. And and transcription nascent transcripts might be one of those triggers. I don't know that would be what causes the the nucleation. The other thing that we're thinking about is and and that's somewhat related to crowding maybe not is is the the scaffold structure that is underneath you know what what kind of chromatin structures impact on condensation is it is it something where we create a scaffold that favors nucleation is it something that the exclusive volume which which creates a space for the condensate to form there's a push out. I this is not exactly crowding questions per se but I think it's very closely related to that. And then you're talking about concentrations right so I just did the math because we have some of those quantitative imaging data and at least in the ballpark estimates we're actually in the hundreds of micromolar range sometimes for some of the the proteins and that's a thousandfold higher than the surrounding nucleoplasm which is obviously going to have a big effect. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on their research, explaining its connection to crowding and phase separation, and discussing specific aspects like chromatin sites, nascent transcripts, and protein concentrations.",
+            "ask question": "The speaker poses questions about the nature of scaffold structures and their impact on condensation, indicating an inquiry about specific processes."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: I think this gets to a really interesting problem from our perspective building off of the nucleus which is you know how is molecular crowding as a event influenced how is it regulated in different subcellular compartments even in the from the nucleus to the ER right to the mitochondria there's crowding events that happen but they're differentially regulated and it seems like metabolism is a big part of that equation. And one thing that amazes me is you know you take proteins out of the cell you put it in a test tube those things are sticky sticky sticky and fall out of solution and they're not happy but in the cell molecules like trehalose and glucose help maintain that solubility. And so you know how do you bridge that right? People can say we understand the effect of a crowding on protein structure and folding and I'm sure we do but is it the same thing that happens in the cell? You know I don't know. And I guess the other thing I would say is what is the consequence of molecular crowding dynamic molecular crowding regulatable molecular crowding on emergent properties like cellular mechanics. And that's where we get really excited because we think that there's a lot of room here to consider the impact of you know how does crowding and its tunability influence cellular viscoelasticity. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas about molecular crowding and its effects in different subcellular compartments.",
+            "ask question": "The speaker asks questions about the regulation of molecular crowding, its impact on protein behavior, and the applicability of in vitro studies to in vivo conditions.",
+            "identify gap": "The speaker identifies gaps in understanding, particularly about the dynamic regulation of molecular crowding and its impact on cellular mechanics."
+        }
+    },
+    {
+        "utterance": "Brian Zid (UCSD): I think the what you were saying about the crowding in different compartments also what the molecules are that are crowding is different where in the ER you're going to have these super high protein concentrations and presumably not high RNA concentrations and then same thing with like the trehalose and glycogen or something that may help with crowding they're going to be different in different compartments and how that changes the chemistry if the molecules are different if you have nucleic acids versus proteins versus lipids. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas about crowding in different cellular compartments and how the chemistry changes with different molecules.",
+            "identify gap": "The speaker is implicitly pointing out gaps in understanding, such as how crowding and its effects vary between different cellular compartments and with different types of molecules."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: Concentration versus composition. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the conversation by highlighting a distinction between concentration and composition, which could influence understanding of molecular crowding."
+        }
+    },
+    {
+        "utterance": "Brian Zid (UCSD): Yeah. ",
+        "annotations": {
+            "None": "The utterance is a brief, affirmative response that does not explicitly fit into any other category."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden ASU: Also solubility I mean the you have things kind of partitioning into these phase separated droplets whatever they are and that means that they are probably highly soluble in that and that actually then counteracts also a little bit the interactions because when you're surrounded by an environment where you really want to be in and that is kind of a little bit of a compensating effect for interactions between molecules in these these these compartments. ",
+        "annotations": {
+            "develop idea": "Matthias is expanding on previous discussions about crowding and phase separation by introducing the concept of solubility and its effects on molecular interactions.",
+            "supportive response": "Matthias is engaging with the ideas presented by others and adding his perspective in a positive manner."
+        }
+    },
+    {
+        "utterance": "Seth Childers, U Pittsburgh: This this question of a composition what's driving the crowding was really resonated with me because and also thinking about like how do you mimic experiments in vitro is is PEG really the the universal crowder particularly like in the bacterial cytoplasm is more probably the molecule that's driving that is the the chromosome the DNA chromosome inside and so I think like the the coupling of of pure crowding with other physiochemical properties like the electrostatics that the the chromosome might introduce is going to be interesting and how we how we can develop probes to distinguish these different environments. ",
+        "annotations": {
+            "develop idea": "Seth expands on previous ideas about crowding by discussing the importance of composition and questioning the use of PEG as a universal crowder.",
+            "ask question": "Seth implicitly asks questions about the role of DNA chromosomes in crowding and how to distinguish different environments."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton UC Davis: Seth you're absolutely right and I think that thinking about I had this great idea and it just went away. Oh shit what were you saying? I didn't take my Adderall today. I had this thing that I wanted to say that made a lot of sense to me and then all of a sudden it went away I don't know what happened. Oh I remember. So crowding at different scales too right? We have crowding events that'll happen at the nano scale but then you get crowding events that happen at the meso scale from things like ribosomes and chromatin. Are they playing by the same rules? ",
+        "annotations": {
+            "ask question": "The speaker ends with a question about whether crowding events at different scales play by the same rules."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read | UC Irvine: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance as it's a minimal acknowledgment"
+        }
+    },
+    {
+        "utterance": "Paul Selvin (U Illinois, Urbana): What about Kathy or Judith or Josh what do you have to say? ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting others (Kathy, Judith, Josh) to contribute their thoughts or ideas."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu (UPenn): I really agree. This is an interesting question especially the the condensation state I want to connect it a little bit to the function. You see for that's why I nodded a lot when I heard the ribosome. A lot of ribosome modifications unlike messenger RNA modifications which are at low stoichiometry ribosome modifications are at nearly 100% is evolutionarily conserved. And but if you do an in vitro reaction it's very hard to get to 100% modified no matter how hard you try. In cells in the nucleolus is always 100%. So I'm really curious about how those condensation state whether and how it promotes the biogenesis and the function of ribosome modifications and whether is similarly or differently regulated as a chromatin state modifications. ",
+        "annotations": {
+            "supportive response": "Kathy F. Liu (UPenn) expresses agreement with the previous discussion and shows interest in exploring the topic further.",
+            "develop idea": "Kathy F. Liu (UPenn) expands on the idea by discussing the condensation state of ribosome modifications, its connection to function, and comparing it to chromatin state modifications."
+        }
+    },
+    {
+        "utterance": "Judith Su (UArizona): I was sort of curious about sort of following up on something Paul mentioned was in terms of what people want to measure what are the current technological gaps. ",
+        "annotations": {
+            "ask question": "Judith is asking for information about what people want to measure and the current technological gaps, following up on Paul's previous mention."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read | UC Irvine: I think I don't know if this is quite related but for for me and this also follows something that Gant was saying it's sort of the dynamics of crowding that's really interesting and that we we try to model and so sort of the time scales when you think about the the time scales of you know when things have to get out of the way actually in order to enable something to happen. And you know this could you know in some some of the work that we're doing on this some has to do with with you know surface protein reorganization and so and we're also interested in doing this in the context of the epigenome and so you end up with really very variable time scales you know you could you could have you know you have to wait a really long time or you might just by chance you know not have to wait very long for these things to happen and so I guess back to Judith's question about measurements it's like the dynamics of that seems very very difficult to measure to actually sort of get a grip on sort of this very dynamic process of of you know things are crowded yes but they're also transiently you know uncrowded right and so so how do you actually get a grip on those dynamic processes. ",
+        "annotations": {
+            "ask question": "The speaker asks about the difficulty of measuring dynamic processes in crowded environments.",
+            "develop idea": "The speaker expands on the concept of crowding dynamics, discussing time scales and measurement challenges.",
+            "signal expertise": "The speaker mentions her work on modeling and her interest in the epigenome, signaling her expertise."
+        }
+    },
+    {
+        "utterance": "Paul Selvin (U Illinois, Urbana): What dynamics are you talking about what time scales? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on the dynamics and time scales being discussed."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read | UC Irvine: So in just just an example that that we've been interested in is if you need to sort of open up so in an example of T cell signaling when it it looks like you have surface proteins that are sort of moving out of the way and you need to sort of clear you know relatively clear an area of the cell surface. Um is that happening actively is that happening just through passive diffusion and so you know what are the time scales associated with with that occurring. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the mechanism of surface protein movement and the time scales associated with it.",
+            "develop idea": "The speaker is expanding on an idea by providing a specific example related to T cell signaling and the movement of surface proteins."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: should happen on the order of seconds if it's going to enable according to measurements that people have made of T-cell activation. But if you just try to when we just simulate this in in passive models then it it can take way way way longer, you know much too long to be sort of physiologically relevant. But that's just just one example. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on previous discussions about crowding and its effects, providing more details and examples.",
+            "critical response": "The speaker is offering a critique of current modeling approaches (passive models) in understanding physiological time scales.",
+            "offer feedback": "The speaker is providing feedback on the limitations of current modeling approaches."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: And and okay I'll ask I can't resist. So this question of there moving out of the way. Is this for an isolated cell or what is the effect of having you know another cell right there and I can't imagine though I don't know that it could have a dramatic effect. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about a specific point, indicating a need for further understanding or expertise from other team members."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: Yeah definitely yeah. So there's definitely mechanical aspects too right because you're this is in the context of having engagement of a T-cell receptor with a with a pMHC so it's it's not like it's happening in the absence of you know membrane protrusion and and lots of other things yeah. So but I think sort of generally I I think you know maybe generally sort of the question of you know in this crowded environment say say on on DNA like just the the time scales associated with you know areas opening up for a transcription factor to bind or something like that could potentially have you know sort of very very different different time scales depending on what the sort of crowding in the environment is. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on the context of cellular processes and crowding, building upon previously discussed ideas.",
+            "supportive response": "The speaker is providing a supportive and elaborative response to the discussion."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Did did you did you get back to the idea of what kind of a great tool that someone like Judith could build to help you solve some of your questions? Is there something you can imagine? ",
+        "annotations": {
+            "ask question": "Erika Matunis is asking for ideas on what kind of tool Judith could build to help solve some of the questions raised during the discussion.",
+            "encourage participation": "The utterance invites group members to contribute their thoughts and ideas on potential tools Judith could develop."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: (laughs) Silence. ",
+        "annotations": {
+            "express humor": "The speaker is making a humorous remark by laughing and saying 'Silence.' in response to a question about potential solutions or tools that could help solve the discussed problems."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: Yeah. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous statement."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: What about Brillouin I can't say it. Brillouin spectroscopy right? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about Brillouin spectroscopy.",
+            "None": "No other codes seem to directly apply to this utterance as it primarily involves asking a question."
+        }
+    },
+    {
+        "utterance": "Judith Su: Brillouin yeah. That's the word yeah. ",
+        "annotations": {
+            "acknowledge contribution": "Judith is acknowledging the term 'Brillouin' suggested by someone else.",
+            "supportive response": "Judith's response is positive and confirmatory."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Can somebody explain what that is and why it might be good? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on a topic previously mentioned, specifically about Brillouin spectroscopy and its potential benefits."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Non-invasive measurement of mechanical properties of cells and tissues. It's a spectroscopy I think technique isn't it or is it microscopy? It's an imaging technique. ",
+        "annotations": {
+            "ask question": "The speaker requests information about Brillouin spectroscopy or microscopy, indicating a need for clarification."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: We better put it in the document. You have to type it in there for us so we can spell it. ",
+        "annotations": {
+            "process management": "Erika Matunis is suggesting an action to organize their information by putting it into a document.",
+            "encourage participation": "By asking someone to type it in there, she is indirectly encouraging participation."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I put in something. ",
+        "annotations": {
+            "acknowledge contribution": "Brian Zid is acknowledging that he has made a contribution to the document or effort."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: B R I L L O U I N ",
+        "annotations": {
+            "offer feedback": "Provides a specific tool or method (Brillouin spectroscopy) that could be useful for studying molecular crowding or related phenomena."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: I wasn't even close. Brillouin yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance as it is a simple acknowledgment and realization without further context or depth."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So why why did you mention that Gant? ",
+        "annotations": {
+            "ask question": "The speaker, Paul Selvin, is requesting information or clarification from Gant Luxton about a previous statement regarding Brillouin spectroscopy."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Well ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: what what potential does it have? ",
+        "annotations": {
+            "ask question": "The speaker, Paul Selvin, is requesting information about the potential of Brillouin spectroscopy, which was previously mentioned."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: I think it has the potential to reflect on cellular crowding. People use this to study micromechanics and elasticity but that's all building out from probably crowding. And so taking some established techniques for studying things that we know are crowding dependent like mechanics and trying to go backwards to figure out how that reflects crowding. And the other technique that's really cool that people are using now is quantitative phase imaging for looking at cellular densities. ",
+        "annotations": {
+            "develop idea": "The speaker expands on existing concepts of using certain techniques to study cellular crowding.",
+            "offer feedback": "The speaker suggests using established techniques to study crowding.",
+            "identify gap": "The speaker implies a gap in understanding how techniques like Brillouin spectroscopy reflect cellular crowding."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Can you explain a little bit what that is? ",
+        "annotations": {
+            "ask question": "The speaker, Paul Selvin, is explicitly asking for clarification or more information on a previously mentioned concept, 'quantitative phase imaging', which indicates he is seeking further understanding."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Sure. So phase imaging phase contrast imaging you guys have all used I'm sure where you have a little donut of a thing that blocks some wavelengths and you get constructive and deconstructive interference based on how light interacts with your sample and you get contrast that way. Well you can actually quantify some of you can quantify a lot from phase contrast and those quantifications seem to be reflecting back on how dense the cytoplasm is for example. But the problem with these techniques is they all seem to work pretty well on the single cell level on a glass cover slip but applying it to actual tissues or organisms is where the challenge really becomes apparent. ",
+        "annotations": {
+            "develop idea": "The speaker explains phase imaging and its application in studying cellular densities, building upon existing ideas of using imaging to understand cellular properties."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: So I agree with what Gant said that these techniques provide you access to mechanical properties of a of an intracellular medium essentially but it's been pretty hard to backtrack these overall properties to individual interactions between molecules like what what is actually happening there. So often computer simulations try to help on one much much smaller scale this is something I did in the past for proteins. Like a very cool experiment that I kind of envision I'm not doing experiments so I'm completely dreaming here but Caitlin maybe this is something that you can do but I don't know I'm really spitballing. But you can track interactions between proteins using FRET and there has been some very cool research to do that in basically a microscope where you follow the FRET signals you can even resolve that spatially and you can see dynamics you can see things folding opening closing falling apart and if you can do that with multiple FRET pairs at the same time you can kind of see things moving out of the way so that something else can actually interact with something. So very often we we we think of these things in terms of how does molecule A and molecule B interact and how does it bind but we don't think about okay how does molecule C interfere with that how does it move out of the way and for that interactions of C and B and C and A of course are also important. But if you have multiple FRET pairs that you can monitor all at the same time in different channels you may be able to kind of disentangle that and then actually explain some of the more general mechanical properties that you can observe. That would be fantastic. Tall order. ",
+        "annotations": {
+            "develop idea": "The speaker is developing Gant's idea about using techniques to study cellular properties.",
+            "propose new idea": "The speaker proposes a new experimental approach using multiple FRET pairs to study molecular interactions."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So we have a microscope where we've monitored protein RNA binding partners who are part of the spliceosome and we we can do exactly what you describe. So label one partner with one fluorophore and the other with another and monitor FRET between them and we use temperature perturbations to get on and off rates as well as binding affinities and then mapping that to regions of the cell so we see differences in affinity in vitro in the cytoplasm and in the nucleus and I do have some evidence for differences in droplets at least for motion into and out of the droplet at different temperatures. So it's something we can look at and we've built a three color system to try and do assembly. But something I'm also interested in is the structure and the activity inside the droplets and so PFK for example is thought to form a filament structure and that's been seen in vitro but not in cells. So using infrared spectroscopy or infrared imaging we're hoping to look at the actual structure in in the droplets and then by using infrared labels in a region that is free of infrared modes monitor activity associated with those different structures. And then we use our perturbation techniques to cause phase separation to occur and look at changes in the activity. So we get kind of a spatial map of activity in the cell. ",
+        "annotations": {
+            "develop idea": "The speaker elaborates on their existing research approach and findings related to protein-RNA interactions and cellular environments.",
+            "signal expertise": "The speaker explicitly states their expertise in using FRET microscopy to study protein-RNA interactions.",
+            "identify gap": "The speaker identifies gaps in current understanding regarding the structure and activity inside cellular droplets."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: So how many channels can you follow you mentioned three colors but would it be possible to look at four five six different FRET pairs at the same time I mean the the spectrum is limited but ",
+        "annotations": {
+            "ask question": "Matthias Heyden is asking about the technical capability to monitor multiple FRET pairs at the same time, indicating a request for information."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So so by FRET you can increase right but each color diminishes the the amount of FRET that you see. So I think three is is a reasonable goal for us right now but then by moving the third probe you can map everything together. So keep two the same and move the third and then in the end you can overlay everything. Then in the infrared you're unlimited in your probes right because you know we have basically two million vibrational spectra from 800 wave numbers out to 2000 wave numbers. So if we can create a unique probe we can use that to monitor activity in the cell and they can be much smaller than our fluorescence probes. ",
+        "annotations": {
+            "develop idea": "She is expanding on existing ideas about FRET and infrared spectroscopy applications and limitations.",
+            "signal expertise": "Caitlin demonstrates her expertise in molecular biology techniques, specifically FRET and infrared spectroscopy.",
+            "offer feedback": "She provides insights into the methodologies, discussing their potential and limitations."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: So one one dream further can you look at them as a function of time and do cross correlations like if this distance decreases does other decrease distance increases is that possible? ",
+        "annotations": {
+            "ask question": "The speaker is asking if it's possible to look at the them as a function of time and do cross correlations, indicating curiosity about methodological approaches.",
+            "propose new idea": "The utterance suggests a further direction of investigation involving cross-correlations over time, indicating an introduction of a new methodological suggestion."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Yeah so we're working on the cross correlation analysis in our cell images yeah. ",
+        "annotations": {
+            "supportive response": "Caitlin Davis confirms that she and her team are working on cross-correlation analysis, showing agreement with previous suggestions."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: I'm pretty happy to hear that. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing a positive sentiment."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: One other technique that I just wanted to plug really quick is something my friend Liam Holt at NYU developed called genetically encoded microparticles they're called GEMS. And these are fantastic probes they're archaea derived little viral capsid like assemblies that are of known diameter so like 20 nanometers 40 nanometers 100 nanometers. You express these genetically in your cells and then do single particle tracking on them and you can do then mean squared displacements and all sorts of microrheology tricks to figure out crowding at different length scales. But I think the thing that's really important to point out is like you guys were just mentioning Matthias and Caitlin there are specific probes for looking at specific interactions and how they're influenced by crowding then there are non-specific probes that look at you know general crowding. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new technique called genetically encoded microparticles (GEMS) for studying crowding at different length scales within cells.",
+            "develop idea": "The speaker explains how GEMS work, their applications in single particle tracking, mean squared displacements, and microrheology tricks to study crowding."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: I think is where it gets really fun. ",
+        "annotations": {
+            "supportive response": "The speaker expresses enthusiasm about the conversation.",
+            "express humor": "The speaker makes a lighthearted comment about the conversation."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Mhm. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Caitlin what are these IR probes? Are they ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about IR probes from Caitlin."
+        }
+    },
+    {
+        "utterance": "Jan Spille: I was just going to ask. Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Okay. So actually a lot of bio bioorthogonal probes have been developed for mass spectrometry. So azide and alkyne labels but they have a vibrational mode in a region of the infrared where nothing absorbs so we can use them to monitor dynamics in in cells and this could also be useful for NMR. Also you know heavy isotopes have a unique vibrational mode so if you feed a cell glucose for example you can monitor incorporation of the C13 labels so I think these kind of approaches could be very complementary to mass spectrometry approaches that have been well developed. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance as it discusses methodologies and tools rather than engaging with the cell crowding topic in a way that matches the provided codes."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: What what are the sensitivity of these? You know presumably you can't see a single one. ",
+        "annotations": {
+            "ask question": "Paul Selvin is requesting information about the sensitivity of the probes.",
+            "identify gap": "Paul Selvin is pointing out a potential limitation (sensitivity) of the probes."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So this is So all of my measurements are are bulk but it's a single residue in the protein so you can't this has been used to monitor you know well I used it for protein folding. So I would look at differences in folding in different parts of a protein backbone but it can also be used to monitor it just is sensitive to environmental changes so you can look at binding for example environmental changes in the polarity of the environments by just putting a probe in things like that. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by explaining the applications and implications of her measurements in protein folding and environmental change detection."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: not ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So and and what's nice is we can actually do experiments in vivo in the infrared. I'm just like selling selling this. So ",
+        "annotations": {
+            "Express humor": "The speaker makes a humorous comment about selling her idea.",
+            "Supportive response": "The speaker is expressing a positive sentiment about the capability to do in vivo experiments in the infrared."
+        }
+    },
+    {
+        "utterance": "Brian Zid: So how much how many molecules do you need to be able to measure this? Because I assume you're not getting single molecule and that you need almost the condensates with lots of molecules in one place or ",
+        "annotations": {
+            "ask question": "Brian Zid is requesting information about the number of molecules needed to make a measurement.",
+            "clarify goal": "The question seeks to understand the requirements for measuring certain phenomena, indicating a goal to clarify the capabilities or needs of a measurement technique."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: So that's why I picked condensates to start because we have a high concentration in those regions so we can separate them from the backbone or sorry from the background. But eventually it would be nice to improve these kinds of approaches. But just overexpressing a protein in a cell versus a normal cell we can see the signal for that protein and it's unique and different from the background signal and then by inducing stress we see a shift in that peak associated with the protein. So I think that there is some promise and this is label-free measurements but then once you insert a probe at a specific position you can ask questions about what's happening at the single residue level which starts to get to what Matthias was mentioning you know like we want to know structurally what's going on not just kind of big big picture. ",
+        "annotations": {
+            "develop idea": "Caitlin expands on previous discussions about using infrared spectroscopy to study protein structures and activities in condensates.",
+            "propose new idea": "Caitlin hints at the potential for future improvements in understanding structural changes at the single residue level using infrared spectroscopy.",
+            "signal expertise": "Caitlin demonstrates her expertise in protein folding, infrared spectroscopy, and studying protein-RNA interactions."
+        }
+    },
+    {
+        "utterance": "Jan Spille: Well then so do you do you need to I guess you need to express your modified protein then. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on the necessity of expressing a modified protein."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Yes if you want to get to single residue information. So right now our our approach is going to be to microinject the protein that we want in in cells. You could express everything with like an azide incorporation using methionine for example but anything that had a methionine would be labeled. ",
+        "annotations": {
+            "develop idea": "Caitlin is expanding on their approach for achieving single residue information by discussing microinjecting proteins and using azide incorporation.",
+            "clarify goal": "Caitlin is clarifying their methodological approach to achieve their goal of getting single residue information."
+        }
+    },
+    {
+        "utterance": "Jan Spille: But so if I wanted to preserve my my endogenous concentration I would have to knock down my my endogenous protein replace it with your modified version. Um or at least have some controllable system where I can regulate concentrations and then I can do those measurements. ",
+        "annotations": {
+            "clarify goal": "Jan Spille is discussing how to achieve a specific experimental goal (preserving endogenous concentration).",
+            "offer feedback": "Jan Spille is providing suggestions for experimental design.",
+            "ask question": "Jan Spille is inquiring about the necessity of certain experimental steps."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Right currently. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: What are the sizes of these proteins that you're interested in looking at? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about the sizes of proteins the other participants are interested in."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Well I'm interested in starting with peptides because they're small but and so you can use a peptide synthesizer to to make the modification so so that would be easy. But then eventually we'd like to be able to study larger proteins with more unique interactions and there are ways to generate this but I I don't have the manpower or expertise to to generate a lot of labeled proteins at this point in time. ",
+        "annotations": {
+            "propose new idea": "Caitlin introduces her approach to studying peptides and proteins.",
+            "develop idea": "She elaborates on her interest in peptides and larger proteins.",
+            "identify gap": "Caitlin mentions her lack of manpower or expertise in generating labeled proteins."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Josh we haven't heard from you. ",
+        "annotations": {
+            "encourage participation": "The speaker is inviting Josh to contribute his thoughts or introduction, encouraging his participation in the discussion."
+        }
+    },
+    {
+        "utterance": "Joshua Weinstein: Sure sure sure yeah I'll yeah I guess I I I didn't want to kind of diverge too much from from that main line of discussion. I guess I guess the relevant question that I guess I I I would have in kind of in in kind of drawing on some of what was said was um just you know it's you know whether whether or not it's you know there's there's any possibility for for you know measuring sort of you know physiologically relevant aspects of the dynamics of of of you know of condensates without temporal resolution or whether or not you know sort of like there's any way in which sort of looking at kind of ensemble averages of sort of of sort of the distributions of these things can actually give any insight at all or whether or not you know any any type of measurement that we could hope to have or any any type of measurement that we could hope to have relevant information must necessarily be measurements at the time scale of the phenomenon. And I guess like you know arguably right I mean you know any any you know I guess you know the the kind of the side question of that is whether or not um sort of in order to kind of infer uh kind of you know the that kind of short time scale information from from ensemble averages of particles whether or not we would have to have a very clear understanding of sort of the you know the the actual kind of non-equilibrium physics of of um of of condensate formation and um or or or whether or not there's you know there's something maybe you know a little bit more zero knowledge that um that we can we could use to to make that inference. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on measuring physiologically relevant aspects of condensates without temporal resolution."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: One sorry to interrupt again but Josh one thing that was very interesting about what you said is the idea of doing a time independent measurement for example on a fixed cell which in general is more realistic versus you know a time dependent phenomenon. Is so we haven't heard too much about looking at these condensates let's say in a fixed cell that is is this a possibility or is it not? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification on a specific methodological approach."
+        }
+    },
+    {
+        "utterance": "Joshua Weinstein: I'm not sure if I'm So I mean honestly I I would completely defer that question to ",
+        "annotations": {
+            "None": "The speaker expresses uncertainty and defers the question to others, not explicitly fitting into any other code category."
+        }
+    },
+    {
+        "utterance": "Jan Spille: No so I think there is there's value in that and and that's something that we have done in the past. We we've taken obviously not everything that clusters is a condensate right so a fixed cell alone will will hide a lot of the dynamic information but um what we have done in the past is is really quantitatively measure size distributions for example. Um if you have your very specific thermodynamic model of of how things nucleate and and grow and then disassemble again and you can measure a size distribution then the size distribution is very closely related to the free energy function right it's just probability is related to to free energy difference and so if you have this distribution um then then can tell you something about mechanisms um of how things nucleate and form and and disassemble again. ",
+        "annotations": {
+            "develop idea": "The speaker explains and develops the idea of quantitatively measuring size distributions and its relation to thermodynamic models.",
+            "offer feedback": "The speaker provides feedback on the method of using fixed cells, noting its limitations in capturing dynamic information."
+        }
+    },
+    {
+        "utterance": "Brian Zid: One issue I guess we've found whenever you try to fix things is that the chemistry inside these condensates is not the same as everything else and so they might not be fixed in the same way. Um where we've tried to look at RNA fish of localization to these condensates and then by the end of our fixation the condensates are gone. Um and that you need different chemicals to be able to fix them properly versus the rest of the cytosol. Um again it's just kind of a side thing that fix I I agree that getting quantitative information um is super important to understanding these things and there hasn't been enough of that um but that it can be more difficult than just using the properties that people have used on normal fixation or normal chemistry because just again everything seems to be changing. ",
+        "annotations": {
+            "critical response": "The speaker critiques current fixation methods for condensates, highlighting their ineffectiveness due to different chemistries inside these structures.",
+            "offer feedback": "Brian Zid shares his experience as a way to provide feedback on methodological approaches to studying condensates, suggesting that standard fixation methods may not be suitable."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Um related to that I would love to hear what Kathy has to say about that with respect to the nucleolus. Do you have any ideas about that? ",
+        "annotations": {
+            "ask question": "Erika Matunis is requesting information or expertise from Kathy.",
+            "encourage participation": "Erika Matunis is inviting Kathy to contribute her thoughts or ideas."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: Not yet. Sorry to disappoint you not yet. ",
+        "annotations": {
+            "None": "No relevant code directly applies to this utterance as it is a simple response indicating no current information."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Yeah. I mean it's certainly a really well-known condensate that we look at live and fixed all the time. So yeah. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker acknowledges a previous discussion point about condensates.",
+            "supportive response": "The speaker validates the discussion by mentioning a well-known condensate."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: Right the condensate certainly promotes ribosomal assembly but it's not known whether the condensate really promotes the function of those modifications to to occur. Uh I have a I actually have an unrelated question. Uh I wonder whether any biochemical activities or cellular energy states that explain or contribute to the dynamics of the condensate because a lot of like a composition uh component protein component in the condensates are enzymes like ATPases enzymes so no matter RNA drives the condensate or protein drives the condensate the RNA protein interaction definitely are in the condensates but those ATPase activity would change the equilibrium of the RNA protein interaction so and that's correlated with the cellular state like younger people has more ",
+        "annotations": {
+            "develop idea": "The speaker is building upon previous discussions about condensates and their functions.",
+            "ask question": "The speaker explicitly asks a question about biochemical activities or cellular energy states.",
+            "clarify goal": "The speaker seeks to understand the mechanisms or factors influencing condensate dynamics."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: I wonder whether those biochemical activities underline some of the dynamics of a condensate and whether that's correlated with the cellular energy state. No idea on how to measure or technology development is just not my strength. ",
+        "annotations": {
+            "ask question": "Kathy is requesting information about the relationship between biochemical activities, condensate dynamics, and cellular energy states.",
+            "identify gap": "Kathy is recognizing a gap in knowledge regarding how to measure or understand the relationship between biochemical activities and condensate dynamics."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Yeah I think if you can generate a contrast between kind of a steady state non-equilibrium state that we observe in cells, living cells, and a kind of more thermodynamically equilibrium state that Joshua mentioned, if you can generate a contrast, for example Jan mentioned that he measured size distributions of such such aggregates or liquid droplets essentially. If you can do that in a living cell and then you can basically kill the cell and deplete the ATP and see how thermodynamically things are now changing, maybe the droplets are now coalescing into larger droplets, how that changes. And that would be pretty cool if you can generate this contrast. What what does the non-equilibrium steady state where everything is moving, you have molecular motors kind of zooming through it, probably kind of pushing things apart, while if you don't have that anymore, how how do things change? That would be pretty cool. ",
+        "annotations": {
+            "develop idea": "expanding on existing ideas by suggesting an experiment",
+            "ask question": "inquiring about the effects of changing cellular states",
+            "supportive response": "expressing a positive view on exploring new approaches",
+            "acknowledge contribution": "referencing and building upon others' work"
+        }
+    },
+    {
+        "utterance": "Brian Zid: So they've tried to do this in yeast. There was a couple paper, Carsten Weiss's lab and Simon Alberti, they had differing opinions on what was driving this because there's pH changes and then there's ATP depletion during like glucose starvation. And they said that the whole cytosol becomes glass-like, just that everything, just all diffusion slows as you drop ATP in the cell. Again, whether that's conserved, exactly what was driving it, it was unclear. One paper was saying it's pH changes, other was saying it's the ATP drop, but there it seems like it's not just changing the condensates but that everything becomes just like frozen kind of if you do that. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing research findings by Carsten Weiss's lab and Simon Alberti.",
+            "identify gap": "The speaker notes that it was unclear what exactly drives the changes in the cytosol.",
+            "critical response": "The speaker mentions differing opinions in previous research, indicating a critical evaluation of existing studies."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Is that an older paper? ",
+        "annotations": {
+            "ask question": "Matthias Heyden is requesting information or clarification about a paper mentioned in the conversation."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Is that the paper where they sorry. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about a paper, indicating an inquiry about prior statements or ideas."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Is that an older paper or is it new? ",
+        "annotations": {
+            "ask question": "Matthias Heyden is asking for information about the age of a paper mentioned in the conversation."
+        }
+    },
+    {
+        "utterance": "Brian Zid: Three, four years ago. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: All right. I may prompt you for that reference. That sounds awesome. Thank you. ",
+        "annotations": {
+            "supportive response": "Matthias is expressing interest and gratitude towards Brian's contribution by saying the information sounds awesome and thanking him, indicating a positive and supportive attitude."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Is that the paper where they showed that the metabolite the metabolic enzymes that uh polymerize uh started to polymerize in response to drops in pH or am I thinking of a different one? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about a prior statement or idea proposed by another group member, specifically about a research paper and its findings."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I think that's a different paper. So this might have been using kind of some of the gems, I feel like Simon Alberti, the first time I saw this he was using some of those gems type of things to measure kind of diffusion rates within the cell and how that changes when you glucose starve or azide treat the cells to cause ATP to drop. But yeah, I mean it does seem like there are these enzymes that also condensate and whether it's related to the metabolic activity, I think that's still unclear but that has been proposed I guess. ",
+        "annotations": {
+            "identify gap": "Brian Zid explicitly recognizes that it is unclear whether the formation of condensates is related to metabolic activity, indicating a gap in knowledge."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: In the same sorry. In the same way I'd like to recommend a paper from Roy Parker's lab. So Roy he discovered I think it may be a 2017 Cell paper. EIF4A or 4G, one of the ATPases in the translation machinery, it's just that one outnumbers all the other translational components. So suggesting it might have a non-translational ribosome-related role and that one controls, it's ATPase, it controls the availability of of the RNA in the cell to to inhibit or promote condensation. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on an idea by sharing specific details from a research paper."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: There's been a lot of discussion about these condensates. Is there a clear definition of what is a condensate or when is it not a condensate and is there a way of measuring this? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about condensates, their definition, and how to measure them."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: FRAP. ",
+        "annotations": {
+            "propose new idea": "The speaker suggests using FRAP (Fluorescence Recovery After Photobleaching) as a method, which introduces a new approach for studying condensate dynamics or molecular mobility in the context of cellular crowding."
+        }
+    },
+    {
+        "utterance": "Brian Zid: Generally people have just, well a condensate, they just say that they're by imaging they can see it, but I think that misses a lot of what may be happening in the biology and that there's potentially condensates that are forming that we can't visually see. I think Alan Drummond had a cool paper where he was seeing Pab1 separate into a non-soluble fraction before he could see actually phase-separated gran or condensates in the yeast. And it was at higher temperatures that you could see the granules but presumably some of the same chemistry is happening before you can even see the condensates. So yeah, I don't, I think no, there's no definition and a lot of it has been very qualitative and so that's been a problem. And I agree Mike Rosen and Roy Parker had this great P-body quantification paper and that was like one of the first, I don't know, there needs to be more of that because I think without quantification it is just very qualitative and again people are saying they're liquid-like, they're gel-like, they're all these things but without quantification it's uncertain. ",
+        "annotations": {
+            "develop idea": "Brian expands on the limitations of current methods for studying condensates.",
+            "signal expertise": "Brian references specific researchers and papers, showing his familiarity with the field.",
+            "identify gap": "Brian points out the need for more quantitative approaches in studying condensates.",
+            "critical response": "Brian criticizes the current qualitative nature of condensate research."
+        }
+    },
+    {
+        "utterance": "Jan Spille: It's not even liquid, it's liquid-like. ",
+        "annotations": {
+            "critical response": "Jan Spille is providing a critical response by challenging the characterization of condensates as simply 'liquid', suggesting they are more accurately described as 'liquid-like'."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: And what's going on at the interface of of the condensate? ",
+        "annotations": {
+            "ask question": "Caitlin is requesting information about the interface of the condensate, indicating she is seeking clarification or knowledge on this specific topic."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Who knows? I mean some of them are formed by for example intrinsically disordered proteins which are more hydrophobic, some of them are very heavily charged and have like polyanionic character and so what is happening inside of them will be very different based on that. So as far as I know there are no general rules to classify any of that. ",
+        "annotations": {
+            "Develop idea": "Matthias is expanding on the previous discussion about condensates by highlighting their diverse composition and the implications for their properties.",
+            "Identify gap": "Matthias is pointing out that there are no general rules to classify condensates, indicating a gap in knowledge."
+        }
+    },
+    {
+        "utterance": "Jan Spille: And I think it will become even more complicated and I mean the Paul's question was you know what what is a condensate, is there a definition? And I think it's it's probably very much in flux at this point what what people describe as that. And so so one thing that that I'm really excited about is is that we're gearing up to do this kind of multiplexed imaging with very high resolution to really map out structures and and we all know that all these in vitro reconstructions use maybe two, three components so that that very much limits how many phases you can observe. But in a cell you're dealing with dozens of different components that are always there at at different concentrations, different modification states, you have activity in there. So so I think that and we've seen some some very promising results that that we will see much more complex morphologies, maybe something where an interface is actually important for for activity and not just the bulk phase but the the edge or the the connection between different sub-phases so to say which gives it you know some some sort of structural connection like maybe as you see in the nucleolus where you have the different layers and then you transition from one phase to the next to the next and they're all functionally connected and not just through some biophysical rules that create layers. ",
+        "annotations": {
+            "develop idea": "Jan Spille is expanding on the idea of condensates, their complexity, and the potential for new imaging techniques to understand them better.",
+            "identify gap": "Jan Spille mentions that the definition of a condensate is 'very much in flux,' indicating a gap in understanding.",
+            "offer feedback": "Jan Spille provides some suggestions for future research directions."
+        }
+    },
+    {
+        "utterance": "Brian Zid: So would the definition of a condensate just crudely be higher concentration than the global average? Again, what that threshold is and how many, yeah, what by random chance you just have proteins that are higher concentration versus this is a true condensate I think is unclear. But I think part of the problem was people called these like liquid-liquid phase separation and that's, condensates I think should be more encompassing and it's just higher concentrations, right? Is that generally what we think condensates are? ",
+        "annotations": {
+            "ask question": "Brian Zid is requesting information or clarification on the definition of a condensate.",
+            "critical response": "Brian Zid is questioning and evaluating the current understanding or terminology used for condensates, suggesting an alternative perspective."
+        }
+    },
+    {
+        "utterance": "Joshua Weinsten: Is there a qualitative difference between that and just a supramolecular complex or is like or is it or is it just like a question of degree? I guess would be the question, right? I mean. ",
+        "annotations": {
+            "ask question": "The speaker explicitly asks for clarification on the difference between condensates and supramolecular complexes, fitting the definition of asking a question."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Well I guess there's a size distribution while in a in a complex you kind of assume you have a certain number of monomers that come together while here you have a usually a relatively broad size distribution. I think if you give it enough time they would ripen into one big liquid droplet but usually they don't have that time but I might be wrong about that too. Definitely their size is not well defined. ",
+        "annotations": {
+            "develop idea": "Matthias Heyden is expanding on the existing ideas about condensates, discussing their broad size distribution and potential behavior over time.",
+            "offer feedback": "He provides speculative insights into how condensates might behave if given enough time, comparing them to supramolecular complexes."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: It's also governed by on-off rates though, isn't it? I mean a condensate if you FRAP it recovers pretty damn quick. But if you FRAP like the lamina for example, which I would call a molecular complex, it doesn't. And so there are other ways. I guess the other thing I wanted to point out or maybe emphasize is it seems like, you know, condensates are the are a big topic, right? And they're only one part of molecular crowding. They're a very specialized part of molecular crowding. And it's important. So it's, you know, looking at work like from Fred Chang at UCSF has this beautiful, I don't know if he got it published yet, paper showing that by modulating the density of the cytoplasm you change the dynamics of microtubule polymerization in really interesting ways. And so the thing I'm really curious about is with big, you know, macro-scale changes to molecular crowding, you're changing so many different reactions simultaneously. ",
+        "annotations": {
+            "develop idea": "The speaker expands on the concept of condensates, their characteristics, and their distinction from molecular complexes.",
+            "ask question": "The speaker asks questions about the nature of condensates and molecular complexes.",
+            "critical response": "The speaker provides a critical perspective by comparing condensates to molecular complexes and discussing the implications of their differences."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: More sessions on that by the way. Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: right? How does the cell deal with that? And one cool example is I think also Simon Alberti, I can't remember who did this to be honest. But people were looking at the diffusion, just diffusion in the cytoplasm of particles under in yeast cells grown at different temperatures, right? And Einstein-Boltzmann would say that that should cause diffusion to change in a temperature-dependent way, but they didn't see that. It looked like the diffusion remained constant across increasing temperature scales. And that's how they ended up doing a screen and finding that look, trehalose production goes through the roof and that's actually stabilizing diffusion so reactions don't go haywire. Anyway, me on my soapbox. ",
+        "annotations": {
+            "ask question": "The speaker asks a question about how the cell deals with certain conditions.",
+            "develop idea": "The speaker provides an example and discusses findings from a study about diffusion in yeast cells at different temperatures."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: That's cool. ",
+        "annotations": {
+            "supportive response": "The speaker expresses a positive evaluation or agreement with the previous statement."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I guess one thing that got brought up earlier is about the necrotic environment and you have a whole slew of cells. I guess one thing that comes out of the cell to get around such a are there mechanisms to help again if you're I look at targeting of mRNAs to the mitochondria and they can go to the ER, they can go to all these different places. It's a very crowded environment and how does the cell counteract this crowding? What are the mechanisms that it's using to check, like proofreading type of things but for self-self and like to get it to the right place? And are there kind of general philosophies or general mechanisms that the cell uses to get around such a crowded environment in making sure that things are going to the right place, that the right interactions are taking place? You're muted Paul. ",
+        "annotations": {
+            "ask question": "Brian Zid asks about mechanisms cells use to counteract crowding and ensure correct mRNA targeting.",
+            "identify gap": "Brian Zid identifies a gap in understanding how cells manage crowding and ensure correct mRNA targeting."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Thank you. It's 1:33, so we should start to wrap it up and take a look at what we're going to say. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by suggesting it's time to wrap up the discussion."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I also have something. So I was the one that volunteered to report out. Yes. During that report out. So can someone else report out for me instead? I'm sorry to volunteer and then say I can't do it. I have a class at noon right when we're reporting out. So can someone else report out for me, please? ",
+        "annotations": {
+            "process management": "Brian is managing the meeting flow and his own participation in it.",
+            "assign task": "Brian is asking someone else to take on the task of reporting out for him."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Somebody want to volunteer kind of a last minute thing and then we can all get together. Brian, did you did you write up a series of things? ",
+        "annotations": {
+            "encourage participation": "The speaker invites others to contribute or participate in the discussion or task.",
+            "process management": "The speaker is managing the flow of tasks and checking on their completion."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Well, our job now is to go through our lovely list of notes and prune them into a beautiful PowerPoint slide. So that's our job as a group right now. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow and tasks by specifying what the group needs to do next."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Right. And well, but somebody should be the leader and because at some point, I believe that you'll give a five-minute presentation of it, or a three-minute presentation, so you can tell that it'll be quite quick. So who will be this person? Apparently. Come on. ",
+        "annotations": {
+            "code name": "assign task",
+            "explanation": "The speaker is assigning the task of leading a presentation to an unspecified volunteer."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: I mean I can do it if no one else is going to do it. It's fine. ",
+        "annotations": {
+            "Supportive response": "The speaker is showing a positive and accommodating attitude by agreeing to take on a task if no one else will."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Sounds good. Thank you very much. So let's let's pare it down to like, I don't know, three three sentences or something like that and where you'll spend a minute on each. So, can I guess someone put on the web that we can all see it, the the list? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by instructing on how to proceed with summarizing their discussion and requesting to share the list of notes."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Everyone is in the document already. Oh, there you go. ",
+        "annotations": {
+            "process management": "Erika Matunis is managing the practical aspect of sharing a document and ensuring everyone has access to it.",
+            "supportive response": "Erika Matunis is providing a helpful response to the group's need by informing them that everyone is already in the document."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: I'm sharing it. Thank you. ",
+        "annotations": {
+            "process management": "The speaker is sharing a document and expressing gratitude, which facilitates the management of the meeting process."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Great. Okay, so. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: I mean we talked about a bunch of things, but I think we can definitely condense them into condensates. One of which is condensates. What are they? How do they work? How are they regulated? How do we study them? Molecular crowding across scales. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information about condensates, asking questions like 'What are they? How do they work? How are they regulated? How do we study them?'",
+            "summarize conversation": "The speaker is summarizing the discussion topics, suggesting that they can be condensed into the subject of condensates and molecular crowding across scales"
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So the the first thing there was a lot of questions, but do we have any so-called answers? ",
+        "annotations": {
+            "ask question": "Paul Selvin is asking if there are any answers to the questions that have been raised."
+        }
+    },
+    {
+        "utterance": "Elizabeth Read: I don't know about answers. I was just going to say another theme, another kind of underlying theme of a lot of what we talked about had to do with dynamics or you know, importance of thermodynamics versus dynamics, importance of equilibrium versus non-equilibrium. Maybe that can be condensed into a one of our condensate themes. ",
+        "annotations": {
+            "develop idea": "The speaker is expanding on existing ideas by suggesting another theme related to dynamics, thermodynamics, and equilibrium in the context of condensates.",
+            "summarize conversation": "The speaker is also summarizing or organizing the conversation by suggesting that the theme of dynamics versus thermodynamics and equilibrium could be part of the condensate themes."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Sounds good. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation of a previous suggestion."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Yeah, I like that point too. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement with a previous point, showing support and validation for another group member's contribution."
+        }
+    },
+    {
+        "utterance": "Brian Zid: Essentially we talked about benefits of studying things dynamically as well as statically to get more quantitative measurements and that things need to be attacked from multiple angles to really understand these things, right? ",
+        "annotations": {
+            "Develop idea": "The speaker is elaborating on the benefits of studying things dynamically and statically to get more quantitative measurements.",
+            "Supportive response": "The speaker is expressing a positive view on the approach discussed.",
+            "Summarize conversation": "The speaker is summarizing what has been discussed about the importance of dynamic and static studies."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Do we want to think about coming together with like a wish list of tools or reagents that we would want to be able to study this? ",
+        "annotations": {
+            "code name": "process management",
+            "explanation": "Managing meeting flow, time, structure, or organizing group activities by suggesting a task of coming together to create a wish list."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Seem like Caitlin had some potential ideas. But you know, you should summarize basically what we've done over the last hour 15 minutes and so I I don't want to do this for you. So, I'm I'm going to walk away and you take responsibility for this. So I'm walking away. ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting flow by delegating tasks and stepping out of the discussion.",
+            "assign task": "The speaker assigns a task to the group or an individual to summarize the discussion over the last hour and 15 minutes."
+        }
+    },
+    {
+        "utterance": "Brian Zid: So I think I think one of the key things that we could bring out, I like this thing about PEG and just it kind of relates back to that composition matters and that if we're thinking of experiments, we should be also thinking about changing compositions if we're doing in vitro kind of crowding experiments and that there's not necessarily one composition that is the molecular crowder in all situations and that could we develop crowders that better relate to other things besides just PEG, I guess? ",
+        "annotations": {
+            "develop idea": "The speaker is building on the idea of using PEG in experiments by highlighting the importance of composition.",
+            "propose new idea": "The speaker suggests developing crowders that better relate to other things besides just PEG.",
+            "ask question": "The speaker asks if it's possible to develop crowders that relate to other things besides PEG."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Well, in the yeast paper we were talking about, I'm assuming that wasn't PEG, right Gant? ",
+        "annotations": {
+            "ask question": "Erika Matunis is requesting information or clarification about the crowder used in a yeast paper discussed earlier."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: No, it wasn't. It was trehalose and glucose. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Yeah. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Which aren't proteins, right? So we have to think about other ways to identify what those molecules are. ",
+        "annotations": {
+            "ask question": "The speaker is requesting information or clarification about the nature of certain molecules, specifically if they are proteins or not."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Great, Brian's got it. He's writing it in. Yes. Thank you so much, Brian. ",
+        "annotations": {
+            "acknowledge contribution": "Erika Matunis verbally recognizes Brian's input and expresses gratitude."
+        }
+    },
+    {
+        "utterance": "Brian Zid: Tweak anything that I've miswritten. ",
+        "annotations": {
+            "supportive response": "Brian Zid is showing a cooperative attitude by inviting others to correct any mistakes he might have made.",
+            "offer feedback": "Brian Zid is also offering to adjust his statements based on input from others, which can be seen as providing feedback."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: The thing is we also need to put it into the PowerPoint slides, right? ",
+        "annotations": {
+            "process management": "This code applies because the speaker is discussing the need to organize their findings into a PowerPoint presentation, which is a task related to managing the meeting flow and organizing group activities."
+        }
+    },
+    {
+        "utterance": "Erika Matunis: Right. So we have our we have three bullet points right now, but I feel like there was a good discussion about tools and wish lists, right? ",
+        "annotations": {
+            "summarize conversation": "Erika Matunis is summarizing the group's discussion about tools and wish lists, referencing previous conversation points."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: There was the Brillouin and the FRET idea and the infrared probes. I think were like the three that we discussed. ",
+        "annotations": {
+            "summarize conversation": "Caitlin Davis is summarizing the previous discussion points about Brillouin, FRET idea, and infrared probes."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Gems. ",
+        "annotations": {
+            "acknowledge contribution": "The speaker is acknowledging a tool or technique, 'Gems', previously discussed in the conversation."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: Is that a probe? Yep. Okay. I think I'm nuclear gems. ",
+        "annotations": {
+            "ask question": "Caitlin Davis asks if something is a probe, showing she is seeking information.",
+            "signal expertise": "Caitlin Davis identifies or confirms something as 'nuclear gems,' indicating her familiarity or expertise with the term."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Yeah, in general like overall mechanical properties of the interior of a cell and then breaking it down and relating that to individual interactions between components, which would be the FRET part. ",
+        "annotations": {
+            "propose new idea": "The speaker introduces a new idea of studying overall mechanical properties of the interior of a cell and relating it to individual interactions between components using FRET."
+        }
+    },
+    {
+        "utterance": "Caitlin Davis: And maybe we didn't talk about it explicitly, but there was a lot of discussion of the different computational methods to study different scales of these interactions. ",
+        "annotations": {
+            "summarize conversation": "Caitlin Davis summarizes a part of the conversation that was about computational methods to study different scales of interactions."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I'm putting all this in the molecular crowding across scales with mechanical properties to individual components and how computational models could be very important to understanding across scales. ",
+        "annotations": {
+            "summarize conversation": "The speaker is summarizing the conversation by highlighting the importance of computational models in understanding molecular crowding across scales."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: works ",
+        "annotations": {
+            "supportive response": "The speaker is expressing agreement or validation for a previous statement."
+        }
+    },
+    {
+        "utterance": "Jan Spille: I think one aspect that is not covered yet is is that functional relationship right? We we talked about nucleosomes sorry nucleoli. I'm not sure how to phrase it. ",
+        "annotations": {
+            "identify gap": "Jan explicitly notes that the functional relationship has not been covered yet.",
+            "propose new idea": "Jan introduces the concept of a functional relationship as something to consider.",
+            "ask question": "Jan expresses uncertainty about how to phrase the concern or idea."
+        }
+    },
+    {
+        "utterance": "Kathy F. Liu: relationship to its function. How condensate are regulated to influence its function. ",
+        "annotations": {
+            "ask question": "Kathy F. Liu is requesting information or clarification on how condensates are regulated to influence their function.",
+            "clarify goal": "Kathy F. Liu is seeking to understand the relationship between condensates and their function, aiming to clarify objectives related to condensate regulation and function."
+        }
+    },
+    {
+        "utterance": "Jan Spille: And and how does crowding impact function? ",
+        "annotations": {
+            "ask question": "The speaker is requesting information on how crowding impacts function."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: My dog is snoring so loudly next to me on the couch. I hope you don't hear that. ",
+        "annotations": {
+            "express humor": "The speaker makes a joke about their dog snoring loudly, indicating an attempt to express humor."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: One thing you should think about is potential projects with other theorists, experimentalists and so forth because there will be this so-called call for proposals and you should think about it and you know some of the large scale questions that we're going to that we're putting right now is you know can can you possibly not about solve them but attack them. So so how are we doing? Do we have three bullet points maybe with some sub-bullet points that summarizes things? ",
+        "annotations": {
+            "process management": "The speaker is managing the group's process by suggesting they organize their ideas into bullet points for a proposal.",
+            "encourage participation": "The speaker encourages collaboration by suggesting potential projects with other theorists and experimentalists."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Brian's doing a pretty good job with that it looks like. We have at least three I think if not more. ",
+        "annotations": {
+            "supportive response": "The speaker is expressing a positive evaluation of Brian's work, indicating agreement and support."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Shall we move them over to the PowerPoint? We also still have to put in our names and identify if we're reporter, facilitator and stuff like that. I don't know how quickly we'll get cut off. ",
+        "annotations": {
+            "process management": "The speaker is discussing the logistics of organizing their work in PowerPoint and ensuring everyone knows their roles, which is a clear example of managing meeting flow and structure."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: Okay. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: (Laughs) ",
+        "annotations": {
+            "express humor": "The speaker is making a joke or expressing humor."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Magic. ",
+        "annotations": {
+            "express humor": "The utterance 'Magic.' is an expression that seems to convey a sense of astonishment or surprise in a humorous tone."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: That that was my alarm that says we're about to be cut off. ",
+        "annotations": {
+            "process management": "The speaker is indicating that their time is running out and they are about to be cut off, which relates to managing the meeting flow and timing."
+        }
+    },
+    {
+        "utterance": "Paul Selvin: So who's going to transfer this into a PowerPoint? Or is it already done? Brian? ",
+        "annotations": {
+            "process management": "The speaker is inquiring about the status of a task and potentially redirecting or assigning it, which is about managing the meeting flow and tasks.",
+            "assign task": "The speaker is directly asking Brian if he will handle transferring the information into a PowerPoint, which can be seen as assigning or checking on a task."
+        }
+    },
+    {
+        "utterance": "Brian Zid: I'm copying and pasting but it could be well that's very small now. ",
+        "annotations": {
+            "Process Management": "Brian is discussing the task of copying and pasting into a PowerPoint, which involves managing the presentation of information."
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Jesus dog, shush. You're snoring, shush. ",
+        "annotations": {
+            "express humor": "GW Gant Luxton makes a joke about a dog snoring, attempting to lighten the mood."
+        }
+    },
+    {
+        "utterance": "Erika Matusio: If the PowerPoint doesn't crash we can all help out by putting our names in the participant box on the slide. You guys see that? ",
+        "annotations": {
+            "process management": "The speaker is managing the meeting's practical aspects by ensuring participants can add their names to a PowerPoint slide."
+        }
+    },
+    {
+        "utterance": "Matthias Heyden: Yes. ",
+        "annotations": {
+            "None": "No relevant code applies to this utterance"
+        }
+    },
+    {
+        "utterance": "GW Gant Luxton: Trying to find the PowerPoint, where is that? Back in the okay. ",
+        "annotations": {
+            "process management": "The speaker is trying to manage the meeting flow by locating a necessary document, the PowerPoint."
+        }
+    }
+]
