@@ -916,7 +916,7 @@ def extract_session_state(response_json, chunk_index, prior_state=None):
 # Tries gemini-3.1-pro-preview first; on 503 UNAVAILABLE falls back to gemini-3.0-pro-preview.
 # The video_file is already uploaded so no re-upload occurs on model switch.
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, delay=1):
-    models = ['gemini-3.1-pro-preview', 'gemini-3.0-pro-preview']
+    models = ['gemini-3.1-pro-preview', 'gemini-2.5-pro']
     for model in models:
         print(f"Making LLM inference request for {filename} using {model}...")
         for attempt in range(max_tries):
