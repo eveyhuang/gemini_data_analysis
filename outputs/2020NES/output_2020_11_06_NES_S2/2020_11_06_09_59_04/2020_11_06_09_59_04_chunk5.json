@@ -1,0 +1,540 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Matt Green": 46,
+            "Emily Ryan": 112,
+            "Luisa Whittaker-Brooks": 20,
+            "Adam Holewinski": 96,
+            "George Shields": 14,
+            "Andrea Hicks": 148,
+            "Katie Knowles": 23,
+            "Kristen Schell": 140
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group brainstorms and connects multiple disciplinary perspectives—multiscale modeling, life cycle assessment, and systems engineering—to the challenge of direct air capture, expanding the solution space.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Non-speaking participants show consistent responsiveness, with visible head nods from Emily, Katie, George, and Adam, and active listening postures throughout the complex technical explanations.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Andrea Hicks",
+        "cross_disciplinary_bridging_description": "Connecting life cycle assessment (LCA) to prospective materials screening and design.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group narrowed the domain to using computational modeling and LCA to prospectively screen materials for direct air capture to reduce energy costs, but has not articulated a specific research question.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "There is clear shared interest in integrating their diverse methods (LCA, modeling, materials), but no specific joint project has been named or agreed upon.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "Yes",
+        "complementarity_recognition_speaker": "Emily Ryan",
+        "complementarity_recognition_quote": "unless I get parameterization or information from DFT or experiments, I can't tell you exactly what the reactions look like",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Emily notes her system-level models require reaction parameters that must be provided by DFT or experimentalists.",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "if we're resource limited... we could go chase the ones that look better",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "none",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
+        "funding_awareness_signal": "Yes",
+        "funding_reference_description": "Emily mentions DOE's Carbon Capture Simulation Initiative; Kristen mentions DOE funding for power plant capture.",
+        "prior_relationship_signal": "No",
+        "prior_relationship_description": "None",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group successfully integrated multiple distinct disciplinary perspectives—materials design, multiscale modeling, life cycle assessment, and systems engineering—into a cohesive discussion about optimizing direct air capture, demonstrating high collective intelligence."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Matt Green",
+            "timestamp": "00:00-00:46",
+            "speaking_duration_seconds": 46,
+            "codes": [
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "we have to rethink our approach to the capture side both from a materials and a systems perspective",
+                    "explanation": "Matt builds on the previous discussion about direct air capture by emphasizing the need for a new approach combining materials and systems.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "shares_domain_knowledge",
+                    "subcode": "None",
+                    "evidence": "it's a pretty low number of prototype or pilot scale direct air capture systems",
+                    "explanation": "He shares factual context about the current state of direct air capture technology."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we have to rethink our approach",
+                    "explanation": "He uses 'we' to refer to the scientific community or the group's collective effort."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Emily Ryan",
+            "timestamp": "00:46-01:58",
+            "speaking_duration_seconds": 72,
+            "codes": [
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "how do you integrate that into some sort of system, right? And the cost and the time... can you use computational methods to help accelerate that design",
+                    "explanation": "Emily builds on Matt's systems perspective by introducing computational methods to accelerate design and integration.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "if you're doing a DFT model and there's uncertainty and then you propagate that to MD... if you make that big jump to trying to model a device, what about all that uncertainty",
+                    "explanation": "She highlights the challenge of uncertainty propagation across multiscale models."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we have a little bit uncertainty analysis",
+                    "explanation": "She uses 'we' when discussing the group's analytical capabilities."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Luisa Whittaker-Brooks",
+            "timestamp": "01:59-02:19",
+            "speaking_duration_seconds": 20,
+            "codes": [
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "how do you address machine learning when it comes to that or data-driven... especially when experiments and computations are expensive",
+                    "explanation": "Luisa adds machine learning to the computational discussion, noting the challenge of data requirements.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "machine learning wants lots of data",
+                    "explanation": "She points out the contradiction between expensive experiments and ML's need for large datasets."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "how do you address machine learning",
+                    "explanation": "Uses the general 'you' to refer to the field's approach."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Adam Holewinski",
+            "timestamp": "02:19-02:32",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "design of experiments and kind of thinking about it in like a Bayesian framework and like what prior information would let me reduce the uncertainties the best",
+                    "explanation": "Adam suggests using a Bayesian framework for design of experiments to address the uncertainty and data issues raised by Emily and Luisa.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "what prior information would let me reduce the uncertainties",
+                    "explanation": "He frames the approach from an individual researcher's perspective ('let me')."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Emily Ryan",
+            "timestamp": "02:32-03:12",
+            "speaking_duration_seconds": 40,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "Most of my experience in negative emissions has come from the Department of Energy. They've had for a number of years the Carbon Capture Simulation Initiative",
+                    "explanation": "Emily shares her background working with a specific DOE initiative.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "asking exactly this of how can we go from a material that will work through a device into a power plant, how that affects the long-term risk",
+                    "explanation": "She explains the goals and scope of the DOE initiative regarding scale-up."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "how can we go from a material that will work",
+                    "explanation": "She uses 'we' to describe the collective scientific endeavor."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Adam Holewinski",
+            "timestamp": "03:12-03:46",
+            "speaking_duration_seconds": 34,
+            "codes": [
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "finding ways to extract the meaningful physics after the machine learning... turning that into physical intuition so that you can use it more predictively",
+                    "explanation": "Adam builds on the ML discussion by emphasizing the need to extract physical intuition from ML models.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we machine learned this model and now we can capture the outputs",
+                    "explanation": "He uses 'we' to describe the process of using ML."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "George Shields",
+            "timestamp": "03:46-04:00",
+            "speaking_duration_seconds": 14,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "Andrea, from your perspective, thinking about life cycle assessment, what, you know, how does this conversation strike you?",
+                    "explanation": "George explicitly invites Andrea to share her perspective based on her expertise."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "from your perspective",
+                    "explanation": "He addresses Andrea individually."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Andrea Hicks",
+            "timestamp": "04:00-05:09",
+            "speaking_duration_seconds": 69,
+            "codes": [
+                {
+                    "code_name": "Epistemic Bridging",
+                    "subcode": "reframes_cross_disciplinarily",
+                    "evidence": "usually we do a life cycle assessment at the end of everything... shouldn't we be doing it as a way to screen new materials... If the carbon doesn't work out, it can point us to what materials or methods might be most advantageous",
+                    "explanation": "Andrea reframes the use of LCA from a retrospective tool to a prospective screening method for materials design.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "usually we do a life cycle assessment at the end of everything",
+                    "explanation": "She shares standard practice in her field."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "shouldn't we be doing it as a way to screen... point us to what materials",
+                    "explanation": "She uses 'we' and 'us' to propose a shared approach for the group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Katie Knowles",
+            "timestamp": "05:09-05:32",
+            "speaking_duration_seconds": 23,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "From the like life cycle assessments that you do, can you identify the like, this is the weak spot... where we could really have a big impact",
+                    "explanation": "Katie asks Andrea a direct question about the capabilities of LCA."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "where we could really have a big impact",
+                    "explanation": "She uses 'we' to refer to the potential impact of their collective work."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Andrea Hicks",
+            "timestamp": "05:32-06:51",
+            "speaking_duration_seconds": 79,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "often it's been used to identify hotspots. I mean, for a lot of this, energy, right? Energy is going to be a hotspot.",
+                    "explanation": "Andrea answers Katie's question by explaining how LCA identifies hotspots like energy use.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "it's an interesting way to sort of backwards engineer like selecting materials and methods... if we're resource limited, right, in time and money, we could go chase the ones that look better",
+                    "explanation": "She elaborates on her idea of using LCA prospectively to screen out non-viable options and focus resources."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "if we're resource limited... we could go chase the ones that look better",
+                    "explanation": "She uses 'we' to describe the group's potential strategy."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kristen Schell",
+            "timestamp": "06:51-08:33",
+            "speaking_duration_seconds": 102,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "the thermal energy and the electric energy that you need for these processes are what is going to be driving your net carbon reduction",
+                    "explanation": "Kristen shares systems-level knowledge about the energy requirements of negative emissions technologies.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "is there a way to make the capture process more energy efficient from a materials perspective?",
+                    "explanation": "She poses a question to the group, bridging her systems perspective with the materials focus."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "how we use it to make electric and thermal energy",
+                    "explanation": "She uses 'we' to refer to societal energy use."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Adam Holewinski",
+            "timestamp": "08:33-09:22",
+            "speaking_duration_seconds": 49,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "could these processes be co-located with some other industrial process that has waste heat... integrating it even into a whole multi-system coupling kind of perspective",
+                    "explanation": "Adam proposes a new systems-level idea: co-locating DAC with industrial processes that produce waste heat.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "could these processes be co-located",
+                    "explanation": "He discusses the research idea without clear individual or joint pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kristen Schell",
+            "timestamp": "09:22-10:00",
+            "speaking_duration_seconds": 38,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "but moving towards direct air capture, you're trying to site the systems where CO2 concentrations are higher because it's really diffuse already... you're just sucking it out of the air",
+                    "explanation": "Kristen challenges Adam's co-location idea by pointing out that DAC needs to be sited based on CO2 concentration, which may not align with waste heat sources."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "that's why DOE started the funding at power plants. So carbon capture and storage, you can use the waste heat for that process",
+                    "explanation": "She provides historical context on DOE funding to explain why point-source capture uses waste heat.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "you're trying to site the systems",
+                    "explanation": "Uses the general 'you' to describe the engineering challenge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "procedural",
+            "procedural",
+            "divergent",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Direct air capture derisking",
+            "Multiscale modeling and uncertainty propagation",
+            "Prospective LCA for materials screening",
+            "Co-locating DAC with industrial waste heat"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Silvia Ronco",
+            "Jose Mendoza",
+            "Charles McCrory",
+            "Richard Wiener",
+            "Jane Zelikova",
+            "Elizabeth Weiss",
+            "Daniel Yawitz",
+            "Betsy Cantwell",
+            "Peter Reiners",
+            "Andrew Feig",
+            "George Shields",
+            "Katie Knowles",
+            "Emily Ryan",
+            "Andrea Hicks",
+            "Li-Chiang Lin",
+            "Sen Zhang",
+            "Robert Gilliard",
+            "Kristen Schell",
+            "Matt Green",
+            "Adam Holewinski",
+            "Luisa Whittaker-Brooks"
+        ],
+        "chunk_summaries": [
+            "The segment began with lighthearted banter about winter weather before transitioning into a structured plenary session led by Richard Wiener. Richard outlined the day's agenda, including breakout sessions and a social mixer, and then invited several guest representatives from funding and scientific organizations to introduce themselves. The chunk concluded with the group being sorted into smaller breakout rooms, where George Shields immediately initiated the selection of a recorder for his group.",
+            "George Shields led a structured round of introductions, asking each participant to briefly describe their research background. The group consisted of a mix of computational and experimental chemists and engineers. After introductions, Katie Knowles read the provided discussion prompts, and George clarified the funding agency's expectation for novel, high-risk proposals. The chunk ended with Emily Ryan asking for clarification on one of the prompts, prompting a brief discussion on the relationship between theory and experiment.",
+            "The group engaged in a deep, divergent discussion about the fundamental challenges of bridging theoretical modeling and experimental results. Participants from both sides shared their frustrations, noting that models often require idealized systems or clipped functional groups, while real-world experiments involve defects, solvent effects, and complex scales. Adam proposed that experimentalists could design more idealized systems to meet theorists halfway, and suggested writing perspective articles to facilitate better communication across the interface. The tone was highly collaborative and intellectually engaged, though the group remained focused on identifying field-wide problems rather than converging on a specific joint project.",
+            "The group continued their divergent exploration of how to bridge the theory-experiment gap, with Adam and Robert suggesting tutorial sessions and perspective articles to improve communication. Luisa then redirected the group to focus on specific scientific challenges within negative emissions, prompting Adam, Katie, and Sen to share specific modeling challenges like electrochemical interfaces, isolated defects, and operando monitoring. The tone remained highly collaborative and engaged, and the chunk ended with George inviting Matt to elaborate on the specific hurdles of direct air capture.",
+            "The group shifted focus to the systemic challenges of direct air capture (DAC). Emily highlighted the need for multiscale modeling and uncertainty quantification, noting her reliance on DFT and experimental data. Andrea introduced the idea of using life cycle assessment (LCA) prospectively to screen materials, which Katie and Kristen built upon by discussing energy requirements and hotspots. Adam suggested co-locating DAC with industrial waste heat, prompting Kristen to explain the trade-offs between point-source capture and DAC siting. The tone was highly collaborative and interdisciplinary, ending with a shared interest in combining LCA, modeling, and materials design, though a specific project was not yet finalized."
+        ]
+    }
+}

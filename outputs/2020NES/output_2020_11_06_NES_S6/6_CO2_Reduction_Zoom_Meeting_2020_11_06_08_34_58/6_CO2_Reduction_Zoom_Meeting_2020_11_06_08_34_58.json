@@ -1,0 +1,864 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Charles McCrory": 140,
+            "Ashleigh Baber": 21,
+            "Ellen Matson": 34,
+            "Venkat Viswanathan": 180,
+            "Sarbajit Banerjee": 92,
+            "Marta Hatzell": 85
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group explores multiple new directions, including single-atom alloys, benchmarking metrics, and roboticized machine learning setups, expanding the problem space rather than narrowing down to one specific project.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Non-speaking participants display regular head nods and visible facial reactions (smiles, thoughtful expressions) while others speak.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Ellen Matson",
+        "cross_disciplinary_bridging_description": "Connected single-atom catalysis to organometallic research on imparting noble metal reactivity.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "Yes",
+        "artifact_type": "slides",
+        "artifact_interaction": "No",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 3,
+        "problem_specificity_justification": "The group identifies a specific gap (lack of industrially relevant benchmarking for CO2 reduction) and proposes a specific approach (roboticized experimentation coupled with Bayesian optimization).",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "Participants agree on the importance of benchmarking and the potential of ML/robotics, but do not commit to a specific joint project or outline roles/timelines.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Charles noted the difficulty of inline product measurement for CO2 reduction, prompting Venkat to ask if ML could help.",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "what we're basically saying is we need industrial relevant benchmarking",
+        "pronoun_shift_flag": "Yes",
+        "personal_disclosure": "Yes",
+        "laughter_quality": "shared_humor",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "Yes",
+        "risk_enthusiasm_quote": "this actually is perfect for machine learning... perfect Bayesian optimization problem",
+        "funding_awareness_signal": "Yes",
+        "funding_reference_description": "Mentions of a large ARPA-E program and a recently funded DOE hub.",
+        "prior_relationship_signal": "Yes",
+        "prior_relationship_description": "Marta explicitly praises Charles's past papers.",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "Marta effectively synthesized a wide-ranging discussion by explicitly returning to the prompt, which successfully pivoted the group toward a shared problem (benchmarking) that integrated multiple participants' expertise."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "00:00-00:44",
+            "speaking_duration_seconds": 44,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "The good thing about moleculars are that they're more selective... bad thing is there are issues with stability",
+                    "explanation": "Shares specific knowledge about the pros and cons of molecular systems.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think a lot of people... I don't think that's been figured out",
+                    "explanation": "Uses 'I' to frame his perspective."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ashleigh Baber",
+            "timestamp": "00:45-01:04",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "What about enzymes? Have people, does anyone here know about using enzymes for this?",
+                    "explanation": "Asks the group for their knowledge on enzymes."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "using like single atom catalysts where you have a more expensive atom that's kind of embedded in a cheaper material.",
+                    "explanation": "Introduces the idea of using single-atom catalysts to reduce costs.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I'm gonna throw one other thing out as I'm kind of frantically taking notes.",
+                    "explanation": "Uses 'I' to frame her contribution."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ellen Matson",
+            "timestamp": "01:05-01:20",
+            "speaking_duration_seconds": 15,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "I have a collaborator who's looking at enzymes for CO2 reduction... she does it and shows that it works.",
+                    "explanation": "Shares knowledge about a collaborator's successful work with enzymes.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I don't do it because they don't let me play with proteins",
+                    "explanation": "Uses 'I' and 'me' to describe her own boundaries."
+                },
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "they don't let me play with proteins",
+                    "explanation": "Uses a self-deprecating joke about her discipline."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "01:21-03:03",
+            "speaking_duration_seconds": 102,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "We have a very large ARPA-E program that's essentially going after that exact question.",
+                    "explanation": "Shares information about an existing funding program and research effort.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "The design space now is almost unlimited, right? You can now do single atom alloy catalysts",
+                    "explanation": "Builds on Ashleigh's single-atom idea by introducing single-atom alloys.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I can maybe comment... I think it's at the point",
+                    "explanation": "Uses 'I' to frame his explanation."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 4,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "fast"
+        },
+        {
+            "speaker": "Ashleigh Baber",
+            "timestamp": "03:04-03:06",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Single atom alloy, yeah.",
+                    "explanation": "Verbally affirms Venkat's point."
+                }
+            ],
+            "interruption_type": "collaborative_completion",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "03:07-03:13",
+            "speaking_duration_seconds": 6,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "those are I think very exciting material sets where I think there's almost no picture on on the CO2 reduction.",
+                    "explanation": "Identifies a gap in the current literature regarding CO2 reduction.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think very exciting... I think there's almost no picture",
+                    "explanation": "Uses 'I' to state his view."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ellen Matson",
+            "timestamp": "03:14-03:33",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Epistemic Bridging",
+                    "subcode": "connects_methods",
+                    "evidence": "reminds me of this this huge body of literature in organometallic research that's focused on imparting noble metal reactivity on first row transition metals.",
+                    "explanation": "Explicitly connects the single-atom discussion to organometallic research."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "I wonder if there's there's parallels in those two spaces that would help kind of crystallize some of those ideas.",
+                    "explanation": "Suggests combining insights from the two fields.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "when I hear you talking... it really reminds me... I wonder if",
+                    "explanation": "Uses 'I' and 'me' to frame her connection."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Sarbajit Banerjee",
+            "timestamp": "03:34-04:35",
+            "speaking_duration_seconds": 61,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "identifies_common_ground",
+                    "evidence": "This seems like a really good like touch point for molecular catalysis and uh heterogeneous catalysis.",
+                    "explanation": "Synthesizes the previous points as a bridge between two fields.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "is there a pathway to a liquid fuel or any other fuel that you see or is it much easier to do something much more simple?",
+                    "explanation": "Asks the group for their perspective on the feasibility of liquid fuels."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we want single atoms, well dispersed",
+                    "explanation": "Uses 'we' to describe the shared scientific goal."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "slow"
+        },
+        {
+            "speaker": "Ellen Matson",
+            "timestamp": "04:36-04:51",
+            "speaking_duration_seconds": 15,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "DOE just funded a hub on this, right? Like their their whole goal is to now take CO2 and convert it into a liquid fuel.",
+                    "explanation": "Shares information about a relevant funding initiative.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I will say, DOE chose a molecular center",
+                    "explanation": "Uses 'I' to frame her statement."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Sarbajit Banerjee",
+            "timestamp": "04:52-04:59",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "these centers are not particularly... well, that's a question for another time",
+                    "explanation": "Expresses mild skepticism about the centers but decides not to pursue it."
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "yields_floor",
+                    "evidence": "well, that's a question for another time, but...",
+                    "explanation": "Explicitly drops his point to let the conversation move on."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Marta Hatzell",
+            "timestamp": "05:00-06:21",
+            "speaking_duration_seconds": 81,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "to synthesize from the discussion of the alloys and the single atom catalysts and enzymes and proteins is that what we're basically saying is... we need industrial relevant benchmarking metrics",
+                    "explanation": "Pulls together multiple threads to identify a core underlying need.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "we need industrial relevant benchmarking metrics that can be applied to any catalyst system.",
+                    "explanation": "Proposes focusing on benchmarking as a key direction.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "how do we move toward a complete picture... what we're basically saying is",
+                    "explanation": "Uses 'we' to frame the group's collective task and synthesis."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 4,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "06:22-06:27",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "I used to be the person leading benchmarking at one of the hubs before they cut benchmarking.",
+                    "explanation": "Shares his direct personal experience with the topic.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Can I just add... I used to be",
+                    "explanation": "Uses 'I' to share his background."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Marta Hatzell",
+            "timestamp": "06:28-06:32",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "expresses_appreciation",
+                    "evidence": "No, I like, you have great papers. I like your papers, they're great.",
+                    "explanation": "Explicitly compliments Charles's past work."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "fast"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "06:33-07:07",
+            "speaking_duration_seconds": 34,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "they cut it because they said it was too hard for basically too hard for CO2 reduction. How do you benchmark something when you have multiple products",
+                    "explanation": "Explains the historical difficulty of benchmarking in this specific domain.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "I think a benchmarking effort is necessary just in general is necessary",
+                    "explanation": "Agrees with and reinforces Marta's proposal for benchmarking.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think that was a mistake... I think a benchmarking effort",
+                    "explanation": "Uses 'I' to state his opinion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "fast"
+        },
+        {
+            "speaker": "Marta Hatzell",
+            "timestamp": "07:11-07:13",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "But it has to be rooted in industrial relevant...",
+                    "explanation": "Re-emphasizes her earlier point about industrial relevance.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "But it has to be rooted in industrial relevant...",
+                    "explanation": "Discusses the research requirement without specific pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "07:14-07:33",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Yes. Yes. Industrial value. Yeah.",
+                    "explanation": "Strongly agrees with Marta's point."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "that was the problem with the benchmarking we did for JCAP was it wasn't industrially relevant... It was only relevant for this one specific small type of diffuse device.",
+                    "explanation": "Provides a specific historical example of why previous benchmarking failed.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "the benchmarking we did for JCAP",
+                    "explanation": "Uses 'we' to refer to his past team, not the current group."
+                }
+            ],
+            "interruption_type": "collaborative_completion",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "fast"
+        },
+        {
+            "speaker": "Sarbajit Banerjee",
+            "timestamp": "07:34-07:36",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "Is there a way in which this could be roboticized? This benchmarking...",
+                    "explanation": "Introduces the idea of using robotics for benchmarking.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "Is there a way in which this could be roboticized?",
+                    "explanation": "Asks the group if this new approach is feasible."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "Is there a way in which this could be roboticized?",
+                    "explanation": "Discusses the research idea without specific pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "07:37-07:42",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "Could you build a robotic experimentation setup that could just be a data curator?",
+                    "explanation": "Builds on Sarbajit's robotics idea by specifying its role as a data curator.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "Could you build a robotic experimentation setup",
+                    "explanation": "Poses the idea as a question to the group."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "Could you build a robotic experimentation setup",
+                    "explanation": "Uses generic 'you'."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "07:43-08:18",
+            "speaking_duration_seconds": 35,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "But then what conditions do you use? And what are the best conditions? ... what are the variables that you're going to control",
+                    "explanation": "Points out the practical difficulty of defining the parameters for a robotic setup."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "NREL gets away from this because they just say send us a complete device... They're not trying to benchmark the the the photovoltaics",
+                    "explanation": "Shares how another institution handles a similar problem.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think you could",
+                    "explanation": "Uses 'I' to state his view."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "08:19-09:31",
+            "speaking_duration_seconds": 72,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "this actually is perfect for machine learning, right? It's it's a perfect Bayesian optimization problem because you have a bunch of different high dimensional variables",
+                    "explanation": "Combines the benchmarking/robotics idea with machine learning to solve the variable control problem Charles raised.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Yeah, I think this is a great great great formulation, right?",
+                    "explanation": "Strongly validates the direction the conversation is taking."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we can't reason... we can't possibly do a manual... one thing we've now seen",
+                    "explanation": "Uses 'we' to refer to the scientific community's shared limitations and capabilities."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "fast"
+        },
+        {
+            "speaker": "Sarbajit Banerjee",
+            "timestamp": "09:32-09:56",
+            "speaking_duration_seconds": 24,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "And if you do sequential learning, you can go you don't have to do you can literally do batch-wise experiments... optimizing to your cost",
+                    "explanation": "Extends Venkat's ML idea by suggesting sequential learning to optimize for cost.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "if you do sequential learning, you can go",
+                    "explanation": "Uses generic 'you'."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "09:57-10:33",
+            "speaking_duration_seconds": 36,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "One of the challenges of CO2 benchmarking... is product distribution. Because you're making gaseous products and you're making uh dissolved products",
+                    "explanation": "Raises a specific technical obstacle to the proposed high-throughput approach."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "it's easy to measure currents, it's hard to measure products inline especially when you're making small amounts of product.",
+                    "explanation": "Shares technical knowledge about the limitations of inline measurement.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I know there are ways of doing this",
+                    "explanation": "Uses 'I' to frame his knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Venkat Viswanathan",
+            "timestamp": "10:34-10:40",
+            "speaking_duration_seconds": 6,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "Charles, is there an opportunity for machine learning to help here?",
+                    "explanation": "Directly asks Charles if the proposed ML solution could address the specific obstacle he raised."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "is there an opportunity for machine learning to help here?",
+                    "explanation": "Discusses the research without specific pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Charles McCrory",
+            "timestamp": "10:41-10:54",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "coupling machine learning to a robust manual like generating the training sets manually or even robotically... it expands it dramatically",
+                    "explanation": "Agrees and builds on the idea of using ML to overcome the measurement bottleneck.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think machine learn I think coupling",
+                    "explanation": "Uses 'I' to state his view."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Single-atom alloy catalysts for CO2 reduction",
+            "Industrially relevant benchmarking metrics",
+            "Roboticized high-throughput experimentation",
+            "Bayesian optimization for phase space search"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Charles McCrory",
+            "Ashleigh Baber",
+            "Ellen Matson",
+            "Venkat Viswanathan",
+            "Sarbajit Banerjee",
+            "Marta Hatzell"
+        ],
+        "chunk_summaries": [
+            "The group explored multiple approaches to CO2 reduction, starting with single-atom alloys and enzymes before Marta synthesized the discussion around the need for industrially relevant benchmarking. Charles shared past failures in benchmarking, prompting Sarbajit and Venkat to propose a roboticized, high-throughput setup guided by Bayesian optimization to navigate the complex variable space. The tone was highly collaborative and intellectually engaged, ending with a clear shared interest in combining robotics and machine learning to solve the benchmarking bottleneck."
+        ]
+    }
+}
