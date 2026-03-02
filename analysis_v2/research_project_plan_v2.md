@@ -272,6 +272,11 @@ These are holistic assessments made by the model over the full chunk after proce
 - Prior familiarity reduces coordination costs and predicts both team formation and proposal quality.
 - If Yes: note the nature of the prior connection (1 sentence).
 
+**1.21 Notable observation**
+- A brief (1–3 sentence) free-text note on anything surprising, unusual, or potentially important that occurred in the chunk that is not captured by any other field above but is relevant to predicting team formation or grant proposal quality.
+- Examples: an unexpected moment of laughter that broke tension, a participant abruptly reversing position, a striking personal anecdote, an unusually creative leap, or a visible moment of disengagement that seems significant.
+- Set to `None` if nothing stands out.
+
 ---
 
 ### Layer 2: Utterance-level behavioral codes (single pass — behavior + selective inline quality)
@@ -306,12 +311,11 @@ New categories added in this version:
 
 **Rules:**
 - Apply codes based on what is explicitly observed in the utterance, not inferred intent.
-- Use the full chunk transcript as context — do not limit to surrounding utterances.
 - If no code applies (e.g., filler words like "yep", "mm-hmm", short acknowledgments), write `None`.
 - Assign no more than 3 codes per utterance.
 - **Pronoun Framing is applied to every substantive utterance** that references the proposed research — it is not optional like other codes.
 - Add `idea_quality` (0/1/2) only when `code_name` is Idea Management, Integration Practices, or Knowledge Sharing.
-- For each code, provide: `code_name`, `subcode`, `explanation` (1–2 sentences), and `idea_quality` if applicable.
+- For each code, provide: `code_name`, `subcode`, `evidence` (verbatim quote), `explanation` (1–2 sentences), and `idea_quality` if applicable.
 
 ---
 
@@ -319,18 +323,17 @@ New categories added in this version:
 
 These are extracted during Pass 1 and require the video to be present. They are not requested from transcript-only inputs.
 
-**4.1 Camera and distraction status**
-- `cameras_on_count` (integer): number of non-speaking participants with cameras visibly on during this turn.
-- `cameras_off_count` (integer): number of non-speaking participants with cameras visibly off during this turn.
-- `visible_off_screen_distraction` (Yes/No): Is any non-speaking participant visibly and clearly looking away from their screen (not a brief glance — sustained off-screen attention), using a phone in frame, or visibly engaged with someone off-camera? Do NOT flag brief eye movements or natural head shifts as distraction. Only flag behaviors that are sustained and obvious.
-- `distracted_participant_count` (integer): number of non-speakers showing visible off-screen distraction behavior during this turn. Set to 0 if none; do not estimate from non-visible behavior.
+**4.1 Distraction status**
+- `visible_off_screen_distraction` (Yes/No): Is any non-speaking participant visibly and clearly showing sustained off-screen distraction — looking far off-screen for more than a few seconds, using a phone in frame, or visibly engaged with someone off-camera? Do NOT flag brief eye movements or natural head shifts. When in doubt, write No.
+- `distracted_participant_count` (integer): number of non-speakers showing clearly visible, sustained off-screen distraction. Set to 0 if none.
 
-> **Note on gaze direction in Zoom**: Do NOT annotate whether participants appear to be "looking at the speaker" as a measure of engagement. In a video-conferencing context, participants face their camera regardless of where they are actually looking — at the speaker tile, their own reflection, another monitor, or nothing. This gaze signal is not interpretable and must not be used. Only annotate the behaviors listed above, which remain genuinely observable in Zoom recordings.
+> **Note**: Camera on/off counts (`cameras_on_count`, `cameras_off_count`) were removed from the per-utterance annotation schema. Camera status is captured at the chunk level via the `collective_engagement_level` rating, which penalizes camera-off behavior in its rubric. Per-utterance camera counts were producing sparse, low-signal data that did not improve downstream modeling and increased annotation noise.
 
 **4.2 Backchannel responses from non-speakers**
 - Count of visible head nods from non-speakers during this turn: `nod_count` (integer, 0 if none).
 - Any visible shared laughter or smiling from ≥2 participants simultaneously: `shared_affect` (Yes/No).
 - Presence of at least one non-speaker smiling: `any_smile_other` (Yes/No).
+- Audible backchannel vocalization from any non-speaker: `audible_backchannel` (Yes/No). Includes "mm-hmm", "yeah", "right", laughter, or any brief verbal response that does not constitute a full turn.
 
 **4.3 Speaker vocal affect**
 - Vocal enthusiasm rating (1–4):
@@ -377,15 +380,13 @@ PART B — UTTERANCE-LEVEL CODING: One annotation object per speaker turn.
 ======================================================================
 CRITICAL RULES — READ BEFORE ANNOTATING:
 ======================================================================
-1. Use the FULL chunk transcript as context when coding every utterance. Do not limit your context to surrounding turns only.
-2. In PART B, annotate BEHAVIOR first, then add idea_quality only for the three applicable categories (Idea Management, Integration Practices, Knowledge Sharing). Do not add idea_quality to any other category.
-3. Code only what is EXPLICITLY OBSERVABLE in the utterance or video. Do not infer intent, motivation, or background knowledge.
-4. For any audio or video field where quality is insufficient (participant off-camera, poor lighting, overlapping audio, blurry frame), append [low_confidence] directly after that field's value. Example: "nod_count": "0 [low_confidence]"
-5. If no behavioral code applies to an utterance (e.g., pure filler words like "yep", "mm-hmm", "okay", or utterances shorter than 5 words with no substantive content), assign code_name: "None" and leave other code fields empty.
-6. Assign no more than 3 behavioral codes per utterance. Only assign multiple codes if each is clearly and independently present.
-7. Do not hallucinate visual signals. If participants are not visible (e.g., camera off, out of frame), set nod_count to 0 and all binary visual fields to "No", and append [low_confidence] to each.
-8. NEVER use gaze direction to infer engagement or attention in Zoom recordings. This signal is not interpretable in video-conferencing contexts. See the multimodal signals section for valid alternatives.
-9. Apply Pronoun Framing [12] to EVERY utterance that discusses the research content — it is not optional.
+1. In PART B, annotate BEHAVIOR first, then add idea_quality only for the three applicable categories (Idea Management, Integration Practices, Knowledge Sharing). Do not add idea_quality to any other category.
+2. Code only what is EXPLICITLY OBSERVABLE in the utterance or video. Do not infer intent, motivation, or background knowledge.
+3. For any audio or video field where quality is insufficient (participant off-camera, poor lighting, overlapping audio, blurry frame), append [low_confidence] directly after that field's value. Example: "nod_count": "0 [low_confidence]"
+4. If no behavioral code applies to an utterance (e.g., pure filler words like "yep", "mm-hmm", "okay", or utterances shorter than 5 words with no substantive content), assign code_name: "None" and leave other code fields empty.
+5. Assign no more than 3 behavioral codes per utterance. Only assign multiple codes if each is clearly and independently present.
+6. Do not hallucinate visual signals. If participants are not visible (e.g., camera off, out of frame), set nod_count to 0 and all binary visual fields to "No", and append [low_confidence] to each.
+7. Apply Pronoun Framing [12] to EVERY utterance that discusses the research content — it is not optional.
 ======================================================================
 
 ======================================================================
@@ -423,13 +424,6 @@ Produce a single JSON object "chunk_summary" with the following fields:
 "collective_engagement_level": integer 1, 2, 3, or 4
   // A holistic rating of how behaviorally responsive the NON-SPEAKING participants appear
   // throughout this chunk, based ONLY on signals that are genuinely observable in Zoom video.
-  //
-  // *** CRITICAL INSTRUCTION FOR ZOOM MEETINGS ***
-  // DO NOT use gaze direction as an engagement signal. In a Zoom meeting, participants
-  // face their camera regardless of where their attention is actually directed. You cannot
-  // distinguish between someone looking at the speaker's tile, their own reflection, a
-  // second monitor, or nothing at all. "Looking at the screen" is therefore not an
-  // interpretable signal of attention and must NOT be used in your rating.
   //
   // VALID signals to observe (in order of interpretive confidence):
   //   HEAD NODS from non-speakers — clearly observable, strongest engagement signal.
@@ -656,6 +650,16 @@ Produce a single JSON object "chunk_summary" with the following fields:
   // structured: participants explicitly reference phases, topics to cover, what has been
   //   accomplished, or what remains; discussion is deliberately organized.
 
+--- NOTABLE OBSERVATION ---
+"notable_observation": string or "None"
+  // A brief (1–3 sentence) note on anything surprising, unusual, or potentially important
+  // that occurred in this chunk that is NOT captured by any field above, but could be
+  // relevant to predicting team formation success or grant proposal quality.
+  // Examples: an unexpected moment of genuine laughter that broke tension, a participant
+  // abruptly changing their position, a striking personal anecdote, an unusually creative
+  // leap, or a visible moment of disengagement that seems significant.
+  // Set to "None" if nothing stands out.
+
 ======================================================================
 PART B — UTTERANCE-LEVEL BEHAVIORAL CODING
 ======================================================================
@@ -663,16 +667,9 @@ Produce a JSON array "utterance_annotations" with one object per speaker turn.
 Each object must have the following fields:
 
 --- IDENTIFICATION ---
-"speaker": string
-  // Full name of the speaker as it appears in the transcript.
-"timestamp": string
-  // Start and end time of this turn in MM:SS-MM:SS format.
-"transcript": string
-  // Verbatim text of the utterance. Remove filler words (um, uh, like) unless they are
-  // meaningful (e.g., a long pause with "um" before a sensitive statement). Return as one
-  // continuous string without line breaks.
-"speaking_duration_seconds": integer
-  // Estimated number of seconds this turn lasts, derived from the transcript timestamps.
+"speaker": string — Full name of the speaker.
+"timestamp": string — Start and end time in MM:SS-MM:SS format.
+"speaking_duration_seconds": integer — Estimated seconds this turn lasts.
 
 --- BEHAVIORAL CODES (LAYER 2) ---
 "codes": array of code objects, or [{"code_name": "None"}] if no code applies.
@@ -857,23 +854,12 @@ BEHAVIORAL CODE CATEGORIES AND SUBCODES:
 //
 // Only annotate the specific behaviors listed below, which remain genuinely observable.
 
-// --- Camera status ---
-"cameras_on_count": integer
-  // Number of non-speaking participants whose cameras are visibly ON during this turn.
-"cameras_off_count": integer
-  // Number of non-speaking participants whose cameras are visibly OFF during this turn.
-  // A participant whose camera turns off mid-turn counts as off.
-
 // --- Off-screen distraction (conservative — only flag the obvious) ---
 "visible_off_screen_distraction": "Yes" or "No"
   // Yes ONLY if at least one non-speaking participant is clearly and SUSTAINEDLY showing
-  // off-screen distraction — defined as: visibly looking far off-screen for more than a
-  // few seconds, visibly using a phone in frame, or visibly talking to someone off-camera.
-  // Do NOT flag: brief eye movements, natural head shifts, brief glances away.
-  // When in doubt, write "No". Over-flagging is worse than under-flagging here.
-"distracted_participant_count": integer
-  // Number of non-speakers showing clearly visible, sustained off-screen distraction.
-  // Set to 0 if visible_off_screen_distraction is "No".
+  // off-screen distraction. Do NOT flag brief eye movements or natural head shifts.
+  // When in doubt, write "No".
+"distracted_participant_count": integer — Set to 0 if visible_off_screen_distraction is "No".
 
 // --- Facial and vocal responsiveness from non-speakers ---
 "nod_count": integer
@@ -942,13 +928,14 @@ Return a single, valid JSON object with exactly THREE top-level keys:
       // then APPEND a new entry for THIS chunk at the end.
       // Each entry is 2–3 sentences describing ONLY that chunk's content — not the full session.
       // Cover: (1) what ideas or topics were raised or developed, (2) the relational/affective
-      // tone and any notable dynamics, and (3) where the group stood at the end of that chunk.
-      // Write in past tense. Do not list fields — write flowing prose.
-      // Example entry: "Emily proposed using city sensor networks for CO2 measurement and Alissa
-      // raised the possibility of extending this to indoor air capture; Emily drove most of the
-      // ideation while Alissa asked clarifying questions. The tone was collaborative with visible
-      // head nods and active backchannels. The group ended in early divergent exploration with
-      // no specific project named."
+      // tone and any notable dynamics (who drove the discussion, any tension or strong rapport),
+      // and (3) where the group stood at the end of that chunk (convergence, open questions,
+      // commitments made). Write in past tense. Do not list fields — write flowing prose.
+      // Example entry for chunk 1: "Emily proposed using city sensor networks for CO2
+      // measurement and Alissa raised the possibility of extending this to indoor air capture;
+      // Emily drove most of the ideation while Alissa asked clarifying questions. The tone was
+      // collaborative with visible head nods and active backchannels. The group ended the chunk
+      // in early divergent exploration with no specific project named."
   }
 
 Do not include any text outside the JSON object.
