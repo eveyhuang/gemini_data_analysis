@@ -912,27 +912,34 @@ def extract_session_state(response_json, chunk_index, prior_state=None):
     return state
 
 
-# Analyze a video using the Gemini API
-def gemini_analyze_video(client, prompt, video_file, filename, max_tries = 3, delay=1):
-    print(f"Making LLM inference request for {filename}...")
-    for attempt in range(max_tries):
-        try:
-            response = client.models.generate_content(
-                model='gemini-3.1-pro-preview', 
-                contents=[prompt, video_file],
-                config={
-                    'temperature':0, 
-                },)
-            print("Got a response! ...")
-            return response
-            
-        except Exception as e:
-            print(f"Error in making LLM request for {filename} due to error {e}, trying again... ")
-            if attempt < max_tries-1:
-                time.sleep(delay)
-            else:
-                print(f"Couldn't get response even after three tries: {filename}. Error: {e}")
-                return None
+# Analyze a video using the Gemini API.
+# Tries gemini-3.1-pro-preview first; on 503 UNAVAILABLE falls back to gemini-3.0-pro-preview.
+# The video_file is already uploaded so no re-upload occurs on model switch.
+def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, delay=1):
+    models = ['gemini-3.1-pro-preview', 'gemini-3.0-pro-preview']
+    for model in models:
+        print(f"Making LLM inference request for {filename} using {model}...")
+        for attempt in range(max_tries):
+            try:
+                response = client.models.generate_content(
+                    model=model,
+                    contents=[prompt, video_file],
+                    config={'temperature': 0},
+                )
+                print(f"Got a response from {model}!")
+                return response
+            except Exception as e:
+                error_str = str(e)
+                if '503' in error_str or 'UNAVAILABLE' in error_str.upper():
+                    print(f"503 UNAVAILABLE from {model} for {filename}, switching to fallback model...")
+                    break  # skip remaining retries for this model; try next model
+                print(f"Error with {model} for {filename}: {e}")
+                if attempt < max_tries - 1:
+                    time.sleep(delay)
+                else:
+                    print(f"Exhausted {max_tries} attempts with {model} for {filename}. Error: {e}")
+    print(f"All models failed for {filename}.")
+    return None
 
 # Analyze all videos in the path dictionary
 def analyze_video(client, path_dict, prompt, dir):
