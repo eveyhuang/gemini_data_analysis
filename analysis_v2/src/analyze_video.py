@@ -765,13 +765,13 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
                 return gemini_file, safe_gemini_name
         except Exception as e:
             print(f"Could not get file with name {safe_gemini_name}: {e}")
-    
+
     # If we couldn't get the file, upload it
     print(f"Uploading {file_name} to Gemini")
     safe_file_path = sanitize_filename(file_path)
     try:
         video_file = client.files.upload(file=safe_file_path)
-        print(f"Completed upload: {video_file.uri}")  
+        print(f"Completed upload: {video_file.uri}")
         while video_file.state.name == "PROCESSING":
             print('.', end='')
             time.sleep(10)
@@ -779,7 +779,11 @@ def get_gemini_video(client, file_name, file_path, gemini_name):
             safe_gemini_name = sanitize_filename(video_file.name)
         if video_file.state.name == "FAILED":
             print(f"File processing failed for {file_name}")
+    except FatalAPIError:
+        raise
     except Exception as e:
+        if _is_fatal_error(str(e)):
+            raise FatalAPIError(f"Fatal error uploading {file_name}: {e}")
         print(f"When processing {file_name} at {safe_file_path} encountered the following error: {e}")
    
         
@@ -913,10 +917,10 @@ def extract_session_state(response_json, chunk_index, prior_state=None):
 
 
 # Analyze a video using the Gemini API.
-# Tries gemini-3.1-pro-preview first; on 503 UNAVAILABLE falls back to gemini-3.0-pro-preview.
-# The video_file is already uploaded so no re-upload occurs on model switch.
+# Raises FatalAPIError immediately on 400/403/413/429/503 so the caller can
+# save progress and stop rather than retrying a doomed request.
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, delay=1):
-    models = ['gemini-3.1-pro-preview', 'gemini-3-flash-preview', 'gemini-2.5-pro']
+    models = ['gemini-3.1-pro-preview']
     for model in models:
         print(f"Making LLM inference request for {filename} using {model}...")
         for attempt in range(max_tries):
@@ -930,9 +934,8 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, dela
                 return response
             except Exception as e:
                 error_str = str(e)
-                if '503' in error_str or 'UNAVAILABLE' in error_str.upper():
-                    print(f"503 UNAVAILABLE from {model} for {filename}, switching to fallback model...")
-                    break  # skip remaining retries for this model; try next model
+                if _is_fatal_error(error_str):
+                    raise FatalAPIError(f"Fatal API error from {model} for {filename}: {e}")
                 print(f"Error with {model} for {filename}: {e}")
                 if attempt < max_tries - 1:
                     time.sleep(delay)
@@ -976,33 +979,41 @@ def analyze_video(client, path_dict, prompt, dir):
             if not analyzed:
                 print(f"Analyzing {chunk_file_name}")
                 chunk_prompt = build_chunk_prompt(prompt, session_state, chunk_index=m)
-                video_file, gemini_name = get_gemini_video(client, chunk_file_name, file_path, gemini_name)
-                list_chunks[m][2] = gemini_name
-                if video_file:
-                    response = gemini_analyze_video(client, chunk_prompt, video_file, chunk_file_name)
-                    if response and response.text:
-                        print(f"Trying to save output for {chunk_file_name} to json file")
-                        try:
-                            save_to_json(response.text, fileName, output_dir)
-                            list_chunks[m][3] = True
-                            # Advance session state from the saved file — avoids re-parsing
-                            # raw response.text which may contain markdown fences or preamble.
+                try:
+                    video_file, gemini_name = get_gemini_video(client, chunk_file_name, file_path, gemini_name)
+                    list_chunks[m][2] = gemini_name
+                    if video_file:
+                        response = gemini_analyze_video(client, chunk_prompt, video_file, chunk_file_name)
+                        if response and response.text:
+                            print(f"Trying to save output for {chunk_file_name} to json file")
                             try:
-                                saved_path = os.path.join(
-                                    sanitize_name(output_dir),
-                                    f"{sanitize_name(fileName)}.json"
-                                )
-                                with open(saved_path) as f:
-                                    saved_json = json.load(f)
-                                session_state = extract_session_state(saved_json, m, session_state)
-                            except Exception as e:
-                                print(f"Could not extract session state from {chunk_file_name}: {e}")
-                        except ValueError:
+                                save_to_json(response.text, fileName, output_dir)
+                                list_chunks[m][3] = True
+                                # Advance session state from the saved file — avoids re-parsing
+                                # raw response.text which may contain markdown fences or preamble.
+                                try:
+                                    saved_path = os.path.join(
+                                        sanitize_name(output_dir),
+                                        f"{sanitize_name(fileName)}.json"
+                                    )
+                                    with open(saved_path) as f:
+                                        saved_json = json.load(f)
+                                    session_state = extract_session_state(saved_json, m, session_state)
+                                except Exception as e:
+                                    print(f"Could not extract session state from {chunk_file_name}: {e}")
+                            except ValueError:
+                                list_chunks[m][3] = False
+                        else:
+                            print(f"No response for {chunk_file_name}. Response: {response}")
                             list_chunks[m][3] = False
-                    else:
-                        print(f"No response for {chunk_file_name}. Response: {response}")
-                        list_chunks[m][3] = False
-                save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+                    save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+                except FatalAPIError as e:
+                    print(f"Fatal API error encountered: {e}")
+                    print("Saving current progress and stopping.")
+                    list_chunks[m][2] = gemini_name  # save gemini name if upload succeeded before the error
+                    list_chunks[m][3] = False
+                    save_path_dict(n_path_dict, f"{folder_name}_path_dict.json", cur_dir)
+                    return n_path_dict
             else:
                 print(f"{chunk_file_name} already analyzed, advancing session state...")
                 # Load the saved JSON to extract session state so context continues correctly
@@ -1168,6 +1179,15 @@ def add_times(time1, time2):
 class InvalidJsonContentError(Exception):
     """Exception raised when JSON file is invalid or empty."""
     pass
+
+class FatalAPIError(Exception):
+    """Raised on non-retryable API errors (400/403/413/429/503)."""
+    pass
+
+_FATAL_HTTP_CODES = ['400', '403', '413', '429', '503']
+
+def _is_fatal_error(error_str):
+    return any(code in error_str for code in _FATAL_HTTP_CODES)
 
 # Load JSON files from a directory and sort them by chunk number
 def load_json_files(directory):
