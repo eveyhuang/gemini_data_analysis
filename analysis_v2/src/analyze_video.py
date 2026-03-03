@@ -568,7 +568,7 @@ def create_or_update_path_dict(directory, cur_dir):
     folder_name = os.path.basename(directory)
     path_dict_file = os.path.join(cur_dir, f"{folder_name}_path_dict.json")
 
-    # Build a flat status map from any existing path_dict: chunk_path → (gemini_name, analyzed).
+    # Build a flat status map from any existing path_dict: chunk_path → (gemini_name, analyzed, model_used).
     # Keyed by full file path so it survives key-structure changes between runs.
     status_map = {}
     if os.path.exists(path_dict_file):
@@ -577,7 +577,8 @@ def create_or_update_path_dict(directory, cur_dir):
         for chunks in existing.values():
             for entry in chunks:
                 if len(entry) >= 4:
-                    status_map[entry[1]] = (entry[2], entry[3])
+                    model_used = entry[4] if len(entry) >= 5 else None
+                    status_map[entry[1]] = (entry[2], entry[3], model_used)
 
     # Collect all video files, skipping MKV files that already have an MP4 version.
     video_files = get_video_in_folders(directory)
@@ -624,12 +625,12 @@ def create_or_update_path_dict(directory, cur_dir):
                                  if extract_chunk_number(x) is not None else float('inf'))
                 for chunk_file in chunk_files:
                     chunk_path = os.path.join(split_dir, chunk_file)
-                    gemini_name, analyzed = status_map.get(chunk_path, (' ', False))
-                    all_chunks.append([chunk_file, chunk_path, gemini_name, analyzed])
+                    gemini_name, analyzed, model_used = status_map.get(chunk_path, (' ', False, None))
+                    all_chunks.append([chunk_file, chunk_path, gemini_name, analyzed, model_used])
             else:
                 # Short recording — treat the file itself as a single chunk.
-                gemini_name, analyzed = status_map.get(video_path, (' ', False))
-                all_chunks.append([full_filename, video_path, gemini_name, analyzed])
+                gemini_name, analyzed, model_used = status_map.get(video_path, (' ', False, None))
+                all_chunks.append([full_filename, video_path, gemini_name, analyzed, model_used])
 
         # Deduplicate while preserving order.
         seen, unique = set(), []
@@ -920,7 +921,8 @@ def extract_session_state(response_json, chunk_index, prior_state=None):
 # Raises FatalAPIError immediately on 400/403/413/429/503 so the caller can
 # save progress and stop rather than retrying a doomed request.
 def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, delay=1):
-    models = ['gemini-3.1-pro-preview']
+    models = ['gemini-3.1-pro-preview', 'gemini-3.1-flash-lite-preview','gemini-3-flash-preview','gemini-2.5-pro']
+    fatal_errors = []
     for model in models:
         print(f"Making LLM inference request for {filename} using {model}...")
         for attempt in range(max_tries):
@@ -931,18 +933,26 @@ def gemini_analyze_video(client, prompt, video_file, filename, max_tries=3, dela
                     config={'temperature': 0},
                 )
                 print(f"Got a response from {model}!")
-                return response
+                return response, model
             except Exception as e:
                 error_str = str(e)
                 if _is_fatal_error(error_str):
-                    raise FatalAPIError(f"Fatal API error from {model} for {filename}: {e}")
+                    fatal_errors.append(f"{model}: {e}")
+                    print(f"Fatal API error from {model} for {filename}: {e}")
+                    # Try the next model (don't retry a doomed request on the same model).
+                    break
                 print(f"Error with {model} for {filename}: {e}")
                 if attempt < max_tries - 1:
                     time.sleep(delay)
                 else:
                     print(f"Exhausted {max_tries} attempts with {model} for {filename}. Error: {e}")
     print(f"All models failed for {filename}.")
-    return None
+    if fatal_errors:
+        raise FatalAPIError(
+            f"Fatal API errors encountered for {filename}; no models succeeded:\n"
+            + "\n".join(fatal_errors)
+        )
+    return None, None
 
 # Analyze all videos in the path dictionary
 def analyze_video(client, path_dict, prompt, dir):
@@ -969,12 +979,15 @@ def analyze_video(client, path_dict, prompt, dir):
         session_state = None
 
         for m in range(len(list_chunks)):
-            # [chunk file name, full path to this video, gemini upload file name, analysis status]
+            # [chunk file name, full path to this video, gemini upload file name, analysis status, model used]
             chunk_file_name = list_chunks[m][0]
             fileName, _ = os.path.splitext(chunk_file_name)
             file_path = list_chunks[m][1]
             gemini_name = list_chunks[m][2]
             analyzed = list_chunks[m][3]
+            if len(list_chunks[m]) < 5:
+                list_chunks[m].append(None)
+            model_used = list_chunks[m][4]
 
             if not analyzed:
                 print(f"Analyzing {chunk_file_name}")
@@ -983,12 +996,13 @@ def analyze_video(client, path_dict, prompt, dir):
                     video_file, gemini_name = get_gemini_video(client, chunk_file_name, file_path, gemini_name)
                     list_chunks[m][2] = gemini_name
                     if video_file:
-                        response = gemini_analyze_video(client, chunk_prompt, video_file, chunk_file_name)
+                        response, model_used = gemini_analyze_video(client, chunk_prompt, video_file, chunk_file_name)
                         if response and response.text:
                             print(f"Trying to save output for {chunk_file_name} to json file")
                             try:
                                 save_to_json(response.text, fileName, output_dir)
                                 list_chunks[m][3] = True
+                                list_chunks[m][4] = model_used
                                 # Advance session state from the saved file — avoids re-parsing
                                 # raw response.text which may contain markdown fences or preamble.
                                 try:
