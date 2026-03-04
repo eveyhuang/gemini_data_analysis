@@ -1,0 +1,1251 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Stephen Fried": 155,
+            "Rigoberto Hernandez": 145,
+            "Abhishek Singharoy": 185,
+            "Rommie Amaro": 65,
+            "Davide Donadio": 35,
+            "Lu Wang": 75
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group continues to explore the intersection of AI, protein dynamics, and data quality, specifically discussing the limitations of the PDB and the potential for 'PDB-dev' to handle non-standard data.",
+        "collective_engagement_level": 4,
+        "collective_engagement_justification": "Participants show strong collective responsiveness through frequent head nods, shared laughter, and active backchannel vocalizations throughout the discussion.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Abhishek Singharoy",
+        "cross_disciplinary_bridging_description": "Connects structural biology data curation (PDB) with machine learning interpretation and physical constraints.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 3,
+        "problem_specificity_justification": "The group is actively discussing the specific challenge of data quality and curation in the PDB as a bottleneck for AI-driven protein research.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "The group has identified a shared interest in the data quality problem but has not yet committed to a specific project or research question.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "Yes",
+        "complementarity_recognition_speaker": "Rigoberto Hernandez",
+        "complementarity_recognition_quote": "What if you're an experimentalist and you're able to record trajectories of accurately?",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "The group identifies a gap in well-curated experimental data for non-protein systems (ligands, lipids) that could be filled by experimentalists.",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "How good are we as a community at sort of putting all of our experimental data together?",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "Yes",
+        "laughter_quality": "appreciative",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "funding_awareness_signal": "No",
+        "prior_relationship_signal": "Yes",
+        "prior_relationship_description": "Participants reference each other's work and ongoing projects, indicating prior familiarity.",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group's discussion of 'PDB-dev' as a potential solution to the data quality bottleneck shows a high level of collective intellectual rapport and shared domain knowledge."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "00:00-00:08",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "Hopefully you can imagine a model might be able to like learn patterns and be able to place the PTMs in sort of, you know, new locations.",
+                    "explanation": "Extends the idea of AI-driven protein modeling to include PTM placement.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Hopefully you can imagine...",
+                    "explanation": "Uses individual framing to propose a hypothetical model."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "00:08-00:30",
+            "speaking_duration_seconds": 22,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "AlphaFold had the PDB. The PDB is just like amazing resource that has been accumulating for 50 years.",
+                    "explanation": "Shares knowledge about the PDB's role in AlphaFold's success.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think that...",
+                    "explanation": "Uses individual framing to express an opinion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "00:34-00:53",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "How good are we as a community at sort of putting all of our experimental data together, so that the ML gurus can then go to town?",
+                    "explanation": "Frames the lack of curated experimental data as a shared problem for the community.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "How good are we...",
+                    "explanation": "Uses joint framing to refer to the scientific community."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 4,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "00:54-01:34",
+            "speaking_duration_seconds": 40,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "There is a group of people that are trying... to not only to deposit, but to basically make available trajectories.",
+                    "explanation": "Shares knowledge about ongoing efforts to make trajectory data available.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I know she is one of them...",
+                    "explanation": "Uses individual framing to refer to colleagues."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "01:35-01:37",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:38-01:51",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "What if you're an experimentalist and you're able to record trajectories of accurately?",
+                    "explanation": "Extends the idea of trajectory data to include experimental data.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "What if you're...",
+                    "explanation": "Uses individual framing to pose a hypothetical scenario."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "01:52-01:54",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "And those data sets will likely be even bigger.",
+                    "explanation": "Validates the idea by adding a consequence.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "And those data sets...",
+                    "explanation": "Uses individual framing to make a prediction."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "01:55-01:56",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "Yeah, exactly.",
+                    "explanation": "Uses humor to acknowledge the scale of the data.",
+                    "idea_quality": 0
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "01:57-01:59",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "And harder to curate.",
+                    "explanation": "Adds a realistic constraint to the idea.",
+                    "idea_quality": 1
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:00-02:03",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "Well, only as big as the experimentalist measures.",
+                    "explanation": "Uses humor to qualify the statement.",
+                    "idea_quality": 1
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "02:07-02:21",
+            "speaking_duration_seconds": 14,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "Can one do some sort of back mapping from the experiment?",
+                    "explanation": "Asks a factual question about the feasibility of back mapping.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Can one do...",
+                    "explanation": "Uses individual framing to ask a technical question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "02:22-02:30",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "All in-house, right? Like again, what is an experimental trajectory? It might be a single molecule experiment.",
+                    "explanation": "Shares knowledge about experimental trajectories.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "All in-house...",
+                    "explanation": "Uses individual framing to answer the question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "02:35-02:40",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "02:44-03:03",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Where I get stuck often with machine learning is my interpretation.",
+                    "explanation": "Shares a personal research challenge with machine learning.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Where I get stuck...",
+                    "explanation": "Uses individual framing to share a personal challenge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "03:07-03:42",
+            "speaking_duration_seconds": 35,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "If I train the same observations as a competition between observations, it's a different kind of data.",
+                    "explanation": "Shares a method for interpreting data differently.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "If I train...",
+                    "explanation": "Uses individual framing to explain a method."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "03:43-04:15",
+            "speaking_duration_seconds": 32,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "This really gets us into the inversion problem that Davide mentioned before.",
+                    "explanation": "Synthesizes the previous discussion into the 'inversion problem'.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "This really gets us...",
+                    "explanation": "Uses joint framing to connect the discussion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "04:34-05:00",
+            "speaking_duration_seconds": 26,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "I think the pharma industry right now is very interested in using machine learning for screening drugs.",
+                    "explanation": "Shares knowledge about industry trends.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think...",
+                    "explanation": "Uses individual framing to share an opinion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Davide Donadio",
+            "timestamp": "05:01-05:03",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "05:04-05:10",
+            "speaking_duration_seconds": 6,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "Here is a structure of a target, can we use ML to try to like hone in on a potential binder?",
+                    "explanation": "Extends the idea of drug screening to target-binder prediction.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "Can we use...",
+                    "explanation": "Uses joint framing to propose a research question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "05:11-05:18",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "So previously they were using like computational methods to see if you do a mutation here or change a methyl group, would it bind better or not?",
+                    "explanation": "Shares knowledge about previous computational methods.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "So previously they were...",
+                    "explanation": "Uses individual framing to describe a method."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "05:19-05:20",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "05:21-05:25",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "So right now there's, it's more trendy to use machine learning methods.",
+                    "explanation": "Shares knowledge about current trends.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "So right now...",
+                    "explanation": "Uses individual framing to describe a trend."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "05:26-05:38",
+            "speaking_duration_seconds": 12,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "But then I guess that runs into the issue of like small molecules don't maybe have like quite as like uniform of an encoding scheme as like a protein sequence, right?",
+                    "explanation": "Raises a concern about the applicability of ML to small molecules.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "But then I guess...",
+                    "explanation": "Uses individual framing to raise a concern."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "05:39-05:47",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "setback_response_explores",
+                    "evidence": "I I I can't comment too much on that. I I don't know how how careful they are with the training data. They just want things to work.",
+                    "explanation": "Responds to the concern by acknowledging uncertainty about industry practices.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I I I can't comment...",
+                    "explanation": "Uses individual framing to respond."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "05:48-06:17",
+            "speaking_duration_seconds": 29,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "My my take on it right now is that we still get back to the same challenge of the data.",
+                    "explanation": "Frames the data challenge as the central issue.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we still get back...",
+                    "explanation": "Uses joint framing to refer to the group's challenge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "06:18-06:20",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "06:21-06:32",
+            "speaking_duration_seconds": 11,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "We sort of need to see that replicated pretty much throughout the scientific community for every across every domain, right?",
+                    "explanation": "Frames the need for data replication as a community-wide challenge.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "We sort of need...",
+                    "explanation": "Uses joint framing to propose a community-wide need."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "06:33-06:35",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:36-06:39",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "The materials community is desperate to have their version of the of the PDB.",
+                    "explanation": "Shares knowledge about the materials community's needs.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "The materials community...",
+                    "explanation": "Uses individual framing to describe a community."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rommie Amaro",
+            "timestamp": "06:40-06:42",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Oh, they will probably be ahead, I would guess, right?",
+                    "explanation": "Validates the idea by suggesting the materials community might be ahead.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I would guess...",
+                    "explanation": "Uses individual framing to make a prediction."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "06:43-06:52",
+            "speaking_duration_seconds": 9,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "I say trying because I don't I don't know if there's a materials database that's comparable to the PDB yet.",
+                    "explanation": "Raises a concern about the existence of a comparable database.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I say trying...",
+                    "explanation": "Uses individual framing to express doubt."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "06:53-07:16",
+            "speaking_duration_seconds": 23,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Well, but even in the PDB, they find a lot of issues with ligands, like small molecules.",
+                    "explanation": "Shares knowledge about issues with ligands in the PDB.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Well, but even...",
+                    "explanation": "Uses individual framing to share knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "07:17-07:39",
+            "speaking_duration_seconds": 22,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Well, I mean this is because, you know, the PDB has all these like rules that when it comes to proteins where like things have to abide by Ramachandran.",
+                    "explanation": "Shares knowledge about the PDB's rules for proteins.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Well, I mean...",
+                    "explanation": "Uses individual framing to explain a concept."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "07:40-07:47",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "That's interesting, so you're saying the PDB while being a great success story, it's also now inhibiting the next generation of success?",
+                    "explanation": "Asks a clarifying question to confirm his understanding of the point.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "That's interesting...",
+                    "explanation": "Uses individual framing to ask a question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stephen Fried",
+            "timestamp": "07:48-08:29",
+            "speaking_duration_seconds": 41,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "No, I'm just saying that like, that like, you know, there are like structural data is imperfect.",
+                    "explanation": "Clarifies his point about the PDB's limitations.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "No, I'm just saying...",
+                    "explanation": "Uses individual framing to clarify."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "08:30-09:38",
+            "speaking_duration_seconds": 68,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "I can speak to that because what Rigoberto says is like quote unquote correct... there is a clear, when you submit things in PDB, parts are removed.",
+                    "explanation": "Shares knowledge about the PDB submission process and data removal.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I can speak to that...",
+                    "explanation": "Uses individual framing to share knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:39-09:42",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "PDB what? What was that?",
+                    "explanation": "Asks a clarifying question about the term 'PDB-dev'.",
+                    "idea_quality": 0
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "09:43-09:44",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "PDB-dev, development.",
+                    "explanation": "Clarifies the term 'PDB-dev'.",
+                    "idea_quality": 1
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rigoberto Hernandez",
+            "timestamp": "09:45-09:48",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "Oh, so is that also hosted at Rutgers, or is that an alternate universe?",
+                    "explanation": "Asks a clarifying question about the location of PDB-dev.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Oh, so is that...",
+                    "explanation": "Uses individual framing to ask a question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "09:49-09:54",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "That I don't know... but it's possible it's in Rutgers, right?",
+                    "explanation": "Shares knowledge about the uncertainty of the location.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "That I don't know...",
+                    "explanation": "Uses individual framing to answer."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wang",
+            "timestamp": "09:55-09:56",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Abhishek Singharoy",
+            "timestamp": "09:57-10:00",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "But it's clearly there, like there's a website and all that.",
+                    "explanation": "Shares knowledge about the existence of the website.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "But it's clearly there...",
+                    "explanation": "Uses individual framing to share knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "divergent",
+            "divergent",
+            "divergent",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Protein data bank with in vivo models",
+            "Inverse design using molecular simulations and AI",
+            "Hydrogen bond function in proteins",
+            "Chemical genetic interaction map",
+            "Thermodynamic simulations of out of equilibrium processes"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Rigoberto Hernandez",
+            "Rommie Amaro",
+            "Abhishek Singharoy",
+            "Stephen Fried",
+            "Sandra Laney",
+            "Davide Donadio",
+            "Lu Wang",
+            "Stephen Yi",
+            "Jim Mitchell",
+            "Gary Greenberg",
+            "Cheeming Tan"
+        ],
+        "chunk_summaries": [
+            "The group began with a structured introduction where participants shared personal anecdotes to build rapport, followed by a transition into brainstorming research interests. Abhishek proposed creating a protein data bank with in vivo models, and Davide suggested focusing on inverse design through the combination of molecular simulations and AI. The tone was collaborative and engaged, with the facilitator driving the process and the group ending the chunk in a divergent exploration phase.",
+            "The group continued to expand the research space by introducing new topics like hydrogen bonds, membrane protein dynamics, and AI-driven image analysis, while also discussing the implications of AlphaFold. Participants showed high engagement through frequent head nods, active listening, and shared laughter when discussing the 'Dojo' processor. The group remained in a divergent exploration phase, sharing interests and potential technical approaches without committing to a specific project.",
+            "The group actively brainstormed the integration of AlphaFold's capabilities with protein-protein interaction networks and dynamics, with Stephen Fried and Stephen Yi discussing the limitations of current models and Abhishek Singharoy providing a broader conceptual framework linking statistical mechanics to neural networks. The tone remained highly collaborative and intellectually rapport-filled, with participants building on each other's technical points. The group ended the chunk in a divergent exploration phase, having identified a shared interest in the intersection of AI and protein dynamics but without committing to a specific project.",
+            "The group continued to expand the research space by discussing protein-nucleic acid complexes, meta-stability, and the application of AI to predict post-translational modifications, maintaining a divergent exploration phase. Participants showed strong collective responsiveness through frequent head nods, active listening, and shared laughter. The group moved toward identifying potential collaborative roles between experimentalists and theoreticians, ending the chunk in a divergent exploration phase.",
+            "The group continued to explore the intersection of AI, protein dynamics, and data quality, specifically discussing the limitations of the PDB and the potential for 'PDB-dev' to handle non-standard data. Participants showed strong collective responsiveness through frequent head nods, shared laughter, and active backchannel vocalizations throughout the discussion. The group ended the chunk in a divergent exploration phase, having identified a shared interest in the data quality problem but without committing to a specific project."
+        ]
+    }
+}
