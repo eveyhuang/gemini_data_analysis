@@ -1,0 +1,570 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Samuel Achilefu": 45,
+            "Crystal Rogers": 135,
+            "Shannon Quinn": 75,
+            "Ferdinand Schweser": 45,
+            "Nick Galati": 85,
+            "Dylan Burnette": 105,
+            "Mimi Sammarco": 85
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group is actively brainstorming and debating the technical challenges of image analysis, specifically focusing on standardization, reproducibility, and the role of deep learning versus traditional thresholding.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Participants show consistent responsiveness through active listening, nodding, and verbal affirmations, particularly during the debate on image analysis standardization.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Ferdinand Schweser",
+        "cross_disciplinary_bridging_description": "Connects MRI quantitative imaging with general quantitative analysis, distinguishing between the imaging technique and the analysis method.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group has narrowed the focus to the lack of standardized image analysis pipelines, but has not yet defined a specific project or research question.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "There is a shared recognition of the problem (standardization in image analysis), but no specific project or next steps have been decided.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "Yes",
+        "complementarity_recognition_speaker": "Nick Galati",
+        "complementarity_recognition_quote": "I'm not sophisticated enough to use deep learning... I'm very curious then from the deep learning folks.",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Nick Galati identifies his lack of deep learning expertise and seeks input from those with that skill set.",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "How do we solve big problems in that area?",
+        "pronoun_shift_flag": "Yes",
+        "personal_disclosure": "Yes",
+        "laughter_quality": "shared_humor",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "funding_awareness_signal": "No",
+        "funding_reference_description": "None",
+        "prior_relationship_signal": "Yes",
+        "prior_relationship_description": "Participants mention having discussed these topics in previous sessions.",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group engaged in a productive debate about the 'snobbery' of certain imaging techniques, which served as a bonding moment and highlighted the need for more accessible, standardized tools."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Samuel Achilefu",
+            "timestamp": "00:00-00:24",
+            "speaking_duration_seconds": 24,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "returns_to_earlier_idea",
+                    "evidence": "last week in our group... how do you quantify that?",
+                    "explanation": "Samuel brings up a challenge discussed in a previous session to ground the current conversation.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "in our group",
+                    "explanation": "Uses inclusive language to refer to the team's shared history."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Crystal Rogers",
+            "timestamp": "00:25-00:59",
+            "speaking_duration_seconds": 34,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "there are so many different pipelines for image analysis",
+                    "explanation": "Crystal shares her perspective on the current state of image analysis tools.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we don't have normalized or consistent processes",
+                    "explanation": "Uses 'we' to describe the collective challenge faced by the field."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Shannon Quinn",
+            "timestamp": "01:00-01:08",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "do you mean in terms of the experimental protocols or the computational pre-processing?",
+                    "explanation": "Shannon seeks to clarify the scope of the 'normalization' problem.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "do you mean",
+                    "explanation": "Directly addresses Crystal's previous statement."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Crystal Rogers",
+            "timestamp": "01:09-01:38",
+            "speaking_duration_seconds": 29,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "that gets into it",
+                    "explanation": "Crystal validates Shannon's clarifying question.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "how they process or pre-process that",
+                    "explanation": "Discusses the shared problem of image processing."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ferdinand Schweser",
+            "timestamp": "01:39-02:10",
+            "speaking_duration_seconds": 31,
+            "codes": [
+                {
+                    "code_name": "Epistemic Bridging",
+                    "subcode": "translates_terminology",
+                    "evidence": "we distinguish between quantitative imaging and quantitative analysis",
+                    "explanation": "Ferdinand provides a conceptual framework to help the group distinguish between two types of quantitative work.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "in the MRI world, we distinguish",
+                    "explanation": "Uses his field's perspective to inform the group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Crystal Rogers",
+            "timestamp": "02:11-02:27",
+            "speaking_duration_seconds": 16,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "separating the actual quantitative imaging from quantitative analysis",
+                    "explanation": "Crystal synthesizes Ferdinand's point into the group's ongoing discussion.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "that's something we need to clarify",
+                    "explanation": "Uses 'we' to define a shared next step."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Nick Galati",
+            "timestamp": "02:28-03:25",
+            "speaking_duration_seconds": 57,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "I'm not sophisticated enough to use deep learning",
+                    "explanation": "Nick shares his personal limitation regarding deep learning tools.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I agree with you",
+                    "explanation": "Directly addresses Crystal."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Shannon Quinn",
+            "timestamp": "03:26-03:45",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "I would push back on that",
+                    "explanation": "Shannon challenges the idea that deep learning is inaccessible.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I would push back",
+                    "explanation": "Expresses his own opinion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Dylan Burnette",
+            "timestamp": "03:46-04:47",
+            "speaking_duration_seconds": 61,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "manages_tension",
+                    "evidence": "I don't like this imaging snobbery",
+                    "explanation": "Dylan uses strong language to address the tension around tool accessibility.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we want other people to use",
+                    "explanation": "Refers to the group's shared goal of creating usable tools."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Nick Galati",
+            "timestamp": "04:48-05:07",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "expresses_appreciation",
+                    "evidence": "I'm glad to hear that",
+                    "explanation": "Nick expresses relief and appreciation for Dylan's inclusive stance.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "I'd love to hear people try",
+                    "explanation": "Refers to the group's potential future collaboration."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Dylan Burnette",
+            "timestamp": "05:08-06:10",
+            "speaking_duration_seconds": 62,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "there are some very easy to use tools like elastic",
+                    "explanation": "Dylan shares a specific tool as a potential solution to the group's problem.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we typically use this",
+                    "explanation": "Refers to his lab's practice as a model for the group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ferdinand Schweser",
+            "timestamp": "06:11-06:28",
+            "speaking_duration_seconds": 17,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "you could upload your image J scripts to GitHub",
+                    "explanation": "Ferdinand builds on Dylan's suggestion by proposing a concrete way to share tools.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "so people could reproduce it",
+                    "explanation": "Refers to the group's shared goal of reproducibility."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Shannon Quinn",
+            "timestamp": "06:29-07:13",
+            "speaking_duration_seconds": 44,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "put it into a docker image",
+                    "explanation": "Shannon adds a technical suggestion to the group's discussion on reproducibility.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "let's build out this docker image",
+                    "explanation": "Uses 'let's' to propose a joint action."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Samuel Achilefu",
+            "timestamp": "07:14-07:46",
+            "speaking_duration_seconds": 32,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "is there really a challenging problem then?",
+                    "explanation": "Samuel attempts to synthesize the discussion and refocus the group on the core problem.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "are there opportunities for us to solve big problems",
+                    "explanation": "Uses 'us' to frame the group's potential impact."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Crystal Rogers",
+            "timestamp": "07:47-08:37",
+            "speaking_duration_seconds": 50,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "expresses_enthusiasm",
+                    "evidence": "I'm feeling very stressed about that question",
+                    "explanation": "Crystal expresses her passion and the weight of the problem they are tackling.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we are all doing different things",
+                    "explanation": "Refers to the group's collective challenge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mimi Sammarco",
+            "timestamp": "08:38-10:00",
+            "speaking_duration_seconds": 82,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "you and I probably have the same thing... when you're looking at IHC",
+                    "explanation": "Mimi shares her specific methodological challenge to connect with Crystal.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "you and I",
+                    "explanation": "Connects her work with Crystal's."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Quantitative imaging for cell tension and skeletal regeneration",
+            "Standardizing image analysis pipelines",
+            "Reproducible open science tools for image analysis",
+            "Docker-based image analysis workflows"
+        ],
+        "commitment_signals_cumulative": [
+            {
+                "speaker": "Dylan McCreedy",
+                "quote": "I can do the reporter."
+            }
+        ],
+        "speakers_identified": [
+            "Ferdinand Schweser",
+            "Katy Keenan",
+            "Dylan McCreedy",
+            "Crystal Rogers",
+            "Dylan Burnette",
+            "Nick Galati",
+            "Mimi Sammarco",
+            "Shannon Quinn",
+            "Samuel Achilefu",
+            "Melike Lakadamyali"
+        ],
+        "chunk_summaries": [
+            "The participants introduced themselves and their research areas, focusing on quantitative imaging and skeletal regeneration. The group established a collaborative tone, with Mimi Sammarco bridging her work with Crystal Rogers' developmental biology research. The chunk concluded with the group agreeing on a shared interest in quantitative imaging and selecting Dylan McCreedy as the reporter.",
+            "The group engaged in a productive, divergent discussion about the technical challenges of image analysis, specifically focusing on the lack of standardized pipelines and the need for more accessible, reproducible tools. Participants shared personal experiences and methodological approaches, with Dylan Burnette and Shannon Quinn offering concrete technical solutions like Elastic and Docker. The tone was collaborative and intellectually rapport-building, with the group ending the chunk in a state of shared recognition of the problem, though no specific project was finalized."
+        ]
+    }
+}

@@ -1,0 +1,331 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Barbara Smith": 215,
+            "Shwetadwip Chowdhury": 65,
+            "Wei Min": 155,
+            "Lu Wei": 75,
+            "Luke Mortensen": 115,
+            "Gokul Upadhyayula": 25
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "convergent",
+        "idea_trajectory_justification": "The group moves from brainstorming imaging modalities to discussing specific validation strategies and the integration of complementary techniques to address the 'translation' gap.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Participants show consistent responsiveness through active listening, nodding, and verbal affirmations during technical explanations.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Lu Wei",
+        "cross_disciplinary_bridging_description": "Connecting Raman spectroscopy with fluorescence imaging and machine learning for improved biological state prediction.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 3,
+        "problem_specificity_justification": "The group is actively discussing how to validate label-free imaging data and address the signal-to-noise ratio issues in fluorescence channels.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "Shared interest in multimodal validation is clear, but no specific project plan or division of labor has been finalized.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "Yes",
+        "complementarity_recognition_speaker": "Luke Mortensen",
+        "complementarity_recognition_quote": "There may be ways to get all the way back where you can use the pluses and minuses of each technology.",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Identifying the need for software/algorithmic tools to interpret complex imaging data, which aligns with the expertise of data scientists in the group.",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "How can we combine some of these to maybe make it multimodal?",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "shared_humor",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "funding_awareness_signal": "Yes",
+        "funding_reference_description": "Mention of reviewer feedback and the need to validate data to satisfy scientific scrutiny.",
+        "prior_relationship_signal": "No",
+        "meeting_structure_quality": "structured",
+        "notable_observation": "The group successfully transitioned from a high-level discussion of 'translation' to a concrete technical debate about validation, demonstrating strong intellectual rapport."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Barbara Smith",
+            "timestamp": "00:00-01:10",
+            "speaking_duration_seconds": 70,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "How do we combine it? Maybe how do we make it multimodal?",
+                    "explanation": "Barbara builds on the previous discussion of imaging techniques by proposing a multimodal approach.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "How do we combine it?",
+                    "explanation": "Uses 'we' to frame the research challenge as a collective effort."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Shwetadwip Chowdhury",
+            "timestamp": "01:10-01:35",
+            "speaking_duration_seconds": 25,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "Are there any other contrast mechanisms that would be good for label-free imaging?",
+                    "explanation": "Shwetadwip seeks to expand the list of potential imaging modalities.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "Are there any other contrast mechanisms that would be good for label-free imaging?",
+                    "explanation": "Uses 'we' implicitly in the context of the group's shared goal."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Wei Min",
+            "timestamp": "01:35-02:15",
+            "speaking_duration_seconds": 40,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Infrared microscopy itself is a rather expensive field.",
+                    "explanation": "Wei shares specific domain knowledge about the cost and accessibility of infrared microscopy.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I mean infrared microscopy itself...",
+                    "explanation": "Uses 'I' to share his perspective."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lu Wei",
+            "timestamp": "02:15-03:10",
+            "speaking_duration_seconds": 55,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "Instead of doing phase and fluorescence, we do Raman and fluorescence.",
+                    "explanation": "Lu proposes a specific integration of two modalities to solve the signal-to-noise issue.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we do Raman and fluorescence",
+                    "explanation": "Uses 'we' to describe the proposed research approach."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Luke Mortensen",
+            "timestamp": "03:10-04:00",
+            "speaking_duration_seconds": 50,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I think that that's a really good point.",
+                    "explanation": "Luke validates Lu's suggestion of combining Raman and fluorescence.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "I think that that's a really good point.",
+                    "explanation": "Uses 'I' to express his support for the group's direction."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Shwetadwip Chowdhury",
+            "timestamp": "04:00-04:30",
+            "speaking_duration_seconds": 30,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_elaboration",
+                    "evidence": "What optimization or validation will be needed to ensure accuracy of the interpretations?",
+                    "explanation": "Shwetadwip pushes the group to consider the validation requirements of their proposed multimodal approach.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "What optimization or validation will be needed...",
+                    "explanation": "Uses 'we' implicitly in the context of the group's shared goal."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Wei Min",
+            "timestamp": "04:30-05:15",
+            "speaking_duration_seconds": 45,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "We typically resolve to complementary techniques such as mass spec or fluorescence.",
+                    "explanation": "Wei shares his experience with validating imaging data using complementary methods.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "We typically resolve to...",
+                    "explanation": "Uses 'we' to describe standard practices in his field."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Gokul Upadhyayula",
+            "timestamp": "05:15-05:45",
+            "speaking_duration_seconds": 30,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I agree with what you're saying.",
+                    "explanation": "Gokul supports Wei's point about the difference between measurement accuracy and interpretation accuracy.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "I agree with what you're saying.",
+                    "explanation": "Uses 'I' to express his agreement with the group's direction."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "divergent",
+            "divergent",
+            "divergent",
+            "divergent",
+            "divergent",
+            "convergent"
+        ],
+        "ideas_currently_on_table": [
+            "Multimodal imaging (Raman + Fluorescence)",
+            "Validation strategies for label-free imaging",
+            "Machine learning for image interpretation",
+            "Translational gap between developers and end-users"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Shwetadwip Chowdhury",
+            "Barbara Smith",
+            "Wei Min",
+            "Jazz Dickinson",
+            "Lu Wei",
+            "David Van Valen",
+            "Gokul Upadhyayula",
+            "Stefan Wilhelm",
+            "Luke Mortensen",
+            "Alex Walsh"
+        ],
+        "chunk_summaries": [
+            "The group began by establishing a structured approach to the meeting, with participants introducing their respective research domains and methodologies. Shwetadwip Chowdhury, Jazz Dickinson, and Barbara Smith shared their work on computational microscopy, stem cell decisions, and diagnostic imaging tools, respectively. The group ended the chunk in early divergent exploration, having identified several potential areas for collaboration, including in vivo imaging contrast mechanisms and spatial distribution of endogenous molecules.",
+            "Participants introduced their research, focusing on advanced imaging techniques like vibrational spectroscopy, deep learning for image analysis, and adaptive optical lattice light-sheet microscopy. Stefan Wilhelm proposed a novel combination of fluorescence and scattered light imaging to study nanoparticle transport in tumor microenvironments, which the group engaged with enthusiastically. The session remained divergent as participants explored technical synergies, with no formal project commitment yet.",
+            "Participants continued their introductions, with Luke Mortensen, Alex Walsh, and Wei Min detailing their work on intravital optical microscopy, label-free fluorescence imaging, and non-linear Raman microscopy. Wei Min bridged the discussion by connecting Raman instrumentation with probe design, and the group explored the potential for Raman probes to follow the development trajectory of fluorescence probes. The tone remained collaborative and structured, with the group still in a divergent phase of exploring technical synergies.",
+            "The group discussed integrating label-free imaging with machine learning to predict biological states, with David Van Valen and Shwetadwip Chowdhury leading the conversation on the challenges of training data and the potential for scientific discovery. The tone was highly collaborative and intellectually rigorous, with participants actively building on each other's ideas and identifying potential pitfalls. The group ended the chunk with a shared vision for a potential project and a plan to document it for the larger group.",
+            "The group brainstormed the challenges of communicating label-free imaging data to biologists and clinicians, identifying a significant 'translation' gap between method development and end-user adoption. Participants shared anecdotes about user frustration and reviewer feedback, leading to a discussion on the psychological and practical barriers to adopting complex imaging systems. The group remained in a divergent phase, having identified a shared problem of translation but not yet a specific project.",
+            "The group moved from brainstorming imaging modalities to discussing specific validation strategies and the integration of complementary techniques to address the 'translation' gap. Participants actively debated how to ensure the accuracy of interpretations in label-free imaging, with a focus on multimodal validation. The tone was highly collaborative and intellectually rigorous, with the group beginning to converge on a shared technical approach."
+        ]
+    }
+}

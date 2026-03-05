@@ -1,0 +1,898 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Mini Das": 135,
+            "Beck Kamilov": 230,
+            "Benjamin Bartelle": 120,
+            "Brian Pogue": 45,
+            "Joyoni Dey": 180
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group is actively exploring the intersection of optical imaging, scattering models, and deep learning, with participants introducing new technical concepts and potential applications.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Participants show consistent responsiveness through active listening, nodding, and verbal affirmations during technical explanations.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Beck Kamilov",
+        "cross_disciplinary_bridging_description": "Connecting scattering models in optical imaging to convolutional neural networks.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 3,
+        "problem_specificity_justification": "The group is discussing specific technical challenges like scattering correction in optical tomography and the potential for deep learning to address these.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "The group has identified a shared interest in the intersection of optical imaging and deep learning, but no specific project or next step has been finalized.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "Yes",
+        "complementarity_recognition_speaker": "Benjamin Bartelle",
+        "complementarity_recognition_quote": "You bring up spectroscopy, I was talking about sensors... the fact that light is multispectral means it's never going to go away.",
+        "skill_gap_identification": "No",
+        "skill_gap_description": "None",
+        "shared_vision_indicator": "Yes",
+        "shared_vision_quote": "We want optics because the wealth of probes... what's left for optics?",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "none",
+        "dissent_response_quality": "NA",
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "funding_awareness_signal": "No",
+        "funding_reference_description": "None",
+        "prior_relationship_signal": "No",
+        "prior_relationship_description": "None",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group is successfully navigating a complex technical discussion, moving from individual expertise to a shared exploration of how deep learning can solve fundamental limitations in optical imaging."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Mini Das",
+            "timestamp": "00:00-00:07",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "you have a source and detector at the same plane",
+                    "explanation": "Explaining the geometry of a specific imaging setup.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you have a source",
+                    "explanation": "Describing a general technical setup."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "00:08-00:20",
+            "speaking_duration_seconds": 12,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "optical coherence... uses coherence to select where you do",
+                    "explanation": "Sharing technical knowledge about optical coherence imaging.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "as far as I understand",
+                    "explanation": "Framing the knowledge as his own understanding."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "00:20-00:23",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "00:23-00:42",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "if there is some form of selectivity you can embed there",
+                    "explanation": "Proposing a way to improve imaging by embedding selectivity.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we lose because of scattering",
+                    "explanation": "Using 'we' to describe the shared challenge of the field."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "00:42-00:59",
+            "speaking_duration_seconds": 17,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_data_or_findings",
+                    "evidence": "very nice nature communication paper... trying to do adaptive optics",
+                    "explanation": "Referencing a relevant scientific paper to support his point.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think last year",
+                    "explanation": "Referencing his own knowledge of the literature."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Brian Pogue",
+            "timestamp": "01:00-01:04",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "approaches with like a guide star type refocusing?",
+                    "explanation": "Asking for clarification on the technique mentioned.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "your question",
+                    "explanation": "Addressing the speaker's previous point."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "01:05-01:18",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "it's kind of trying to imitate guided star",
+                    "explanation": "Validating the previous speaker's interpretation.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "it's kind of",
+                    "explanation": "Describing the technique."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Benjamin Bartelle",
+            "timestamp": "01:22-01:56",
+            "speaking_duration_seconds": 34,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "we want optics because the wealth of probes... what's left for optics?",
+                    "explanation": "Synthesizing the group's interest in optics and questioning its unique value.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we want optics",
+                    "explanation": "Using 'we' to frame the group's research interest."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "01:57-02:05",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I would say cost",
+                    "explanation": "Directly answering the previous speaker's question.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I would say",
+                    "explanation": "Stating his own opinion."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "02:05-02:16",
+            "speaking_duration_seconds": 11,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "there is a big group of people interested in probing without ionizing radiation",
+                    "explanation": "Sharing knowledge about a specific research community.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I guess",
+                    "explanation": "Stating her own perspective."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Benjamin Bartelle",
+            "timestamp": "02:17-02:19",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Uzay Emir",
+            "timestamp": "02:19-02:43",
+            "speaking_duration_seconds": 24,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "you can get into the surgery room and get immediate response",
+                    "explanation": "Sharing a potential clinical application for the technology.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "you can take it",
+                    "explanation": "Using 'you' to describe the potential user."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Benjamin Bartelle",
+            "timestamp": "02:44-03:12",
+            "speaking_duration_seconds": 28,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "the multispectral aspect of it is also the thing that you want",
+                    "explanation": "Synthesizing the previous points about multispectral imaging.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we want",
+                    "explanation": "Using 'we' to describe the group's shared interest."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Brian Pogue",
+            "timestamp": "03:13-03:38",
+            "speaking_duration_seconds": 25,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "what about PET CT? I mean that that's actually pretty pretty awesome",
+                    "explanation": "Proposing a new imaging modality for the group to consider.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "your question made me think",
+                    "explanation": "Referencing his own thought process."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Benjamin Bartelle",
+            "timestamp": "03:39-04:37",
+            "speaking_duration_seconds": 58,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "it's also not multispectral",
+                    "explanation": "Critiquing the proposed PET CT idea based on the multispectral requirement.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "our ability to manipulate",
+                    "explanation": "Using 'our' to describe the group's research capability."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "04:38-05:11",
+            "speaking_duration_seconds": 33,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "have you seen that kind of work for... like light?",
+                    "explanation": "Asking for information about existing research in light imaging.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I had a question",
+                    "explanation": "Stating her own question."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "05:12-05:35",
+            "speaking_duration_seconds": 23,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "there are people working on scatter... modeling scatter",
+                    "explanation": "Sharing knowledge about current research in scatter modeling.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we haven't looked at it",
+                    "explanation": "Using 'we' to describe the group's research status."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "05:36-06:36",
+            "speaking_duration_seconds": 60,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "I know city denoising is done by deep learning",
+                    "explanation": "Sharing knowledge about deep learning applications in imaging.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I know",
+                    "explanation": "Stating her own knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "06:37-07:06",
+            "speaking_duration_seconds": 29,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "what I like the most... is when you do model the scattering process itself as a convolutional neural network",
+                    "explanation": "Combining scattering models with deep learning.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I have worked on it",
+                    "explanation": "Referencing his own research experience."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "07:07-07:14",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "it's object dependent",
+                    "explanation": "Raising a potential limitation of the proposed approach.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you have to",
+                    "explanation": "Describing the requirement of the technique."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "07:15-07:26",
+            "speaking_duration_seconds": 11,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "it's a little bit of a chicken and egg problem",
+                    "explanation": "Validating the previous speaker's concern.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we are looking",
+                    "explanation": "Using 'we' to describe the group's research focus."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "07:27-07:49",
+            "speaking_duration_seconds": 22,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "they have to assume something about that attenuation",
+                    "explanation": "Sharing knowledge about the assumptions made in existing imaging techniques.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I know",
+                    "explanation": "Stating her own knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "07:50-07:59",
+            "speaking_duration_seconds": 9,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "08:00-09:23",
+            "speaking_duration_seconds": 83,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "my master student did recently a simple version of this",
+                    "explanation": "Sharing her own research experience with a similar problem.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we are trying to do it",
+                    "explanation": "Using 'we' to describe her research team's work."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "09:24-09:34",
+            "speaking_duration_seconds": 10,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_elaboration",
+                    "evidence": "what was the depth and what was the modality?",
+                    "explanation": "Asking for more details about the research mentioned.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you mentioned",
+                    "explanation": "Referencing the speaker's previous point."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyoni Dey",
+            "timestamp": "09:35-09:52",
+            "speaking_duration_seconds": 17,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_data_or_findings",
+                    "evidence": "this is for x-ray... depth of like 30 centimeters",
+                    "explanation": "Providing the requested technical details.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "this is for",
+                    "explanation": "Describing the technical setup."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mini Das",
+            "timestamp": "09:53-09:55",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_elaboration",
+                    "evidence": "Beck you said you worked on it also right?",
+                    "explanation": "Asking for confirmation of another participant's experience.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you said",
+                    "explanation": "Referencing the speaker's previous point."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Beck Kamilov",
+            "timestamp": "09:56-10:00",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "I worked on a couple of contexts",
+                    "explanation": "Confirming his experience and offering to share more.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I worked on",
+                    "explanation": "Stating his own experience."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": true,
+        "idea_trajectory_sequence": [
+            "divergent",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Radiation detection for X-ray CT and PET",
+            "Molecular fMRI for neuroimmune system",
+            "Deformable structures for health monitoring",
+            "Light transport models for advanced detectors",
+            "Phase contrast mammography system",
+            "Deep learning for scattering correction in optical imaging"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Kristen Maitland",
+            "Shiva Abbaszadeh",
+            "Benjamin Bartelle",
+            "Larry Cheng",
+            "Mini Das",
+            "Joyoni Dey",
+            "Uzay Emir",
+            "Beck Kamilov",
+            "Morteza Mahmoudi",
+            "Mark Sellmyer",
+            "Brian Pogue"
+        ],
+        "chunk_summaries": [
+            "The group began with a structured round-robin introduction where each participant shared their disciplinary background and research interests. The tone was professional and collaborative, with participants actively listening and identifying potential areas of complementarity. The group ended the chunk with a shared recognition of the diverse expertise present, setting the stage for future divergent brainstorming.",
+            "The group brainstormed and connected diverse imaging modalities, including PET, CT, fMRI, optical, and photoacoustic imaging, to address tumor heterogeneity and signal corruption. The discussion was highly collaborative, with participants building on each other's technical contributions to bridge disparate imaging fields. The group ended the chunk in a divergent state, having identified a shared interest in multimodal imaging but without a specific project defined.",
+            "The group explored the intersection of optical imaging, scattering models, and deep learning, with participants sharing technical insights and potential clinical applications. The tone was highly collaborative and intellectually rigorous, with participants building on each other's ideas to address fundamental imaging challenges. The group ended the chunk in a divergent state, having identified a promising technical direction but without a finalized project plan."
+        ]
+    }
+}
