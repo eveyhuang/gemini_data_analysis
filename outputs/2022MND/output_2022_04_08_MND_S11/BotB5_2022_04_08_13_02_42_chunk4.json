@@ -1,0 +1,690 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Yanjiao Zhou": 128,
+            "Erin Longbrake": 160,
+            "Linnea Freeman": 22,
+            "Ran Blekhman": 74,
+            "Judith Eisen": 136,
+            "Stavroula Hatzios": 63
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group explores multiple new angles, including computational limitations, host-microbiome genetic interactions, and microglial components, expanding the problem space without narrowing down to a specific project.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Non-speaking participants like Judith and Linnea show consistent head nods and occasional smiles, indicating active listening and engagement.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Ran Blekhman",
+        "cross_disciplinary_bridging_description": "Connected host genetics with microbiome composition in complex diseases.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "No",
+        "artifact_type": "None",
+        "artifact_interaction": "NA",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group discusses specific challenges like computational limitations and host-microbiome genetic interactions, but has not yet formulated a specific joint research question.",
+        "decision_crystallization_level": 1,
+        "decision_crystallization_justification": "The conversation remains exploratory, identifying problems and gaps rather than converging on a shared project direction.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Identified the need for robust computational methodologies to handle microbiome presence/absence data and complex interactions.",
+        "shared_vision_indicator": "No",
+        "shared_vision_quote": "None",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "shared_humor",
+        "dissent_response_quality": "NA",
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
+        "funding_awareness_signal": "No",
+        "funding_reference_description": "None",
+        "prior_relationship_signal": "No",
+        "prior_relationship_description": "None",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group repeatedly identifies significant methodological bottlenecks—specifically computational limitations and the difficulty of experimental validation—as major barriers to establishing causality in microbiome-disease interactions."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Yanjiao Zhou",
+            "timestamp": "00:00-00:08",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Erin Longbrake",
+            "timestamp": "00:08-00:12",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Linnea Freeman",
+            "timestamp": "00:13-00:35",
+            "speaking_duration_seconds": 22,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "like what Erin said earlier just like general dysbiosis",
+                    "explanation": "Connects her understanding to a point made previously by Erin.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "typically just like blanket dysbiosis is associated with neurodegeneration, neuroinflammation",
+                    "explanation": "Shares general knowledge about the association between dysbiosis and neuroinflammation.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "as far as I know",
+                    "explanation": "Frames the knowledge from her individual perspective."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Erin Longbrake",
+            "timestamp": "00:36-02:12",
+            "speaking_duration_seconds": 96,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "There's just so many zeros in the datasets because there's a lot of presence absence situations... people will leverage techniques that were developed for RNA sequencing... but the structure of the data is different enough",
+                    "explanation": "Explains the specific statistical limitations of applying RNA-seq models to zero-inflated microbiome data.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "the need for robust and kind of a standard in the field in terms of the computational methodologies to compare presence absence... is an area of need.",
+                    "explanation": "Identifies a major methodological gap in the field that affects their ability to draw conclusions.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I am not a mathematician, I am not a computational person",
+                    "explanation": "Frames her contribution by explicitly defining her individual disciplinary boundaries."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ran Blekhman",
+            "timestamp": "02:13-02:39",
+            "speaking_duration_seconds": 26,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "is there a similar kind of high heritability of neuro-inflammatory disorders?",
+                    "explanation": "Asks the group for specific factual information regarding the heritability of neuro-inflammatory diseases."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "for the gut like IBD for example, there's a very strong genetic component.",
+                    "explanation": "Provides context from his domain knowledge regarding the genetic component of IBD.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "we know there are human genes that are causal",
+                    "explanation": "Uses 'we' in a general scientific sense, not referring to the specific group's joint work."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Erin Longbrake",
+            "timestamp": "02:40-03:27",
+            "speaking_duration_seconds": 47,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "multiple sclerosis if you take identical twins is 25 to 30% concordant. There is 233 genes currently described as being common variants",
+                    "explanation": "Provides detailed clinical and genetic statistics regarding MS, Parkinson's, and Alzheimer's in response to Ran's question.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Some of it is heritable.",
+                    "explanation": "Answers from her individual clinical expertise."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Ran Blekhman",
+            "timestamp": "03:28-04:16",
+            "speaking_duration_seconds": 48,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "is there potential for some kind of an interaction with the two? Maybe you need this microbe but you also need this gene or genetic variant",
+                    "explanation": "Proposes a new conceptual model where disease requires an interaction between specific host genetics and microbes.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "includes the role of the microbiome but also looking at the genetics of the host",
+                    "explanation": "Combines the two distinct domains (host genetics and microbiome) into a single interaction model.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I'm just thinking is there potential",
+                    "explanation": "Frames the idea as his own thought process."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Yanjiao Zhou",
+            "timestamp": "04:17-05:13",
+            "speaking_duration_seconds": 56,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_data_or_findings",
+                    "evidence": "We have a study not in the autoimmune disease but in the addiction... map the microbiome genes and to see if there is overlapping loci",
+                    "explanation": "Shares findings and methodology from her own lab's study on addiction to illustrate the host-microbiome genetic interaction.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "the hypothesis basically there is a genetic control on the microbiome composition.",
+                    "explanation": "Builds directly on Ran's proposed interaction model by providing a concrete example from her work.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "We have a study",
+                    "explanation": "Refers to her own research team's work, not the current group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Yanjiao Zhou",
+            "timestamp": "05:14-05:34",
+            "speaking_duration_seconds": 20,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "there's some other talks about um I think a similar strategy just to see there is whether there is a genetic overlapping",
+                    "explanation": "Mentions that this strategy is being discussed elsewhere in the field.",
+                    "idea_quality": 1
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "05:35-05:39",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "And are you finding links for addiction?",
+                    "explanation": "Asks for the specific outcome of Yanjiao's study."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Yanjiao Zhou",
+            "timestamp": "05:40-06:05",
+            "speaking_duration_seconds": 25,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_data_or_findings",
+                    "evidence": "You can definitely finding all the overlapping loci you know that controlled by both",
+                    "explanation": "Confirms the findings of overlapping loci in her study.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "The one problem is we could not validate the microbiome finding. You cannot do like for example feed the mice",
+                    "explanation": "Highlights a significant methodological limitation in validating the findings experimentally."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we could not validate",
+                    "explanation": "Refers to her own lab's inability to validate the findings."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "06:06-06:09",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "returns_to_earlier_idea",
+                    "evidence": "So back to the question of causation.",
+                    "explanation": "Explicitly links Yanjiao's validation problem back to the group's earlier core theme of causation.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "So back to the question of causation.",
+                    "explanation": "Synthesizes the current point about validation with the broader thematic challenge.",
+                    "idea_quality": 1
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Yanjiao Zhou",
+            "timestamp": "06:10-06:29",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "I talk with the people who work on the GWAS and they said they only do the GWAS you know they don't care about the experimental validation.",
+                    "explanation": "Shares an anecdote about the culture of GWAS research regarding validation.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "they don't care about the experimental validation. [laughs]",
+                    "explanation": "Laughs at the disconnect between computational and experimental researchers."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "06:30-07:12",
+            "speaking_duration_seconds": 42,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "it seems like it must be the case that there's an intersection. And then it's just it's going to be a matter of doing this kind of work to pull that out",
+                    "explanation": "Summarizes the need to find the intersection between genetics and microbiome despite the validation challenges.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "identifies_common_ground",
+                    "evidence": "this follows on our earlier conversations that the different groups had this morning about some of the difficulties",
+                    "explanation": "Connects the current discussion to broader themes discussed earlier in the day.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "our earlier conversations",
+                    "explanation": "Uses 'our' to refer to the shared experience of the group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Stavroula Hatzios",
+            "timestamp": "07:13-08:16",
+            "speaking_duration_seconds": 63,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "constellation of heritable genetic traits... and I think it was Ran who suggested that maybe it's also like a constellation of microbes... synergy between those two things",
+                    "explanation": "Synthesizes Ran's idea with earlier comments about complex traits, adding the concept of microbial cross-feeding.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Ownership and Attribution",
+                    "subcode": "attributes_to_other",
+                    "evidence": "I think it was Ran who suggested that maybe it's also like a constellation of microbes",
+                    "explanation": "Explicitly credits Ran for the idea of a constellation of microbes."
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "making those connections I think is going to be super challenging... require a lot of big data analyses... way beyond my skill set",
+                    "explanation": "Points out the significant computational and analytical challenges of this approach."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "08:17-08:31",
+            "speaking_duration_seconds": 14,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "summarizes_for_group",
+                    "evidence": "we're identifying lots of problems but uh not not necessarily uh the the solutions to those problems.",
+                    "explanation": "Summarizes the current state of the conversation as problem-heavy and solution-light."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we're identifying lots of problems",
+                    "explanation": "Uses 'we' to describe the group's collective activity."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "08:32-09:21",
+            "speaking_duration_seconds": 49,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "redirects_idea",
+                    "evidence": "So we haven't talked very much about um mucosal immunology or neuroimmunology uh and how these how these things might be um more specifically linked.",
+                    "explanation": "Shifts the conversation to a new, previously unaddressed topic area.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "Does anyone have thoughts on this?",
+                    "explanation": "Opens the floor for others to contribute to the new topic."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we haven't talked very much about",
+                    "explanation": "Uses 'we' to refer to the group's discussion history."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "slow"
+        },
+        {
+            "speaker": "Judith Eisen",
+            "timestamp": "09:22-09:46",
+            "speaking_duration_seconds": 24,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "is there for example uh a microglial component to that? Is that known?",
+                    "explanation": "Asks a specific factual question about MS pathology."
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "Erin in in in MS",
+                    "explanation": "Directs the question specifically to Erin, inviting her expertise."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "this is something that I'm uh ignorant about",
+                    "explanation": "Frames the question from her individual lack of knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Erin Longbrake",
+            "timestamp": "09:47-10:00",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "MS plaques in the brain um have a inflammatory um component to them and that is in large part microglial macrophages.",
+                    "explanation": "Answers Judith's question by sharing specific clinical knowledge about MS plaques.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "MS plaques in the brain um have a inflammatory um component",
+                    "explanation": "Answering from her individual domain expertise."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": true,
+        "shared_vision_established_cumulative": false,
+        "idea_trajectory_sequence": [
+            "procedural",
+            "divergent",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Microbiome as biomarker vs causal agent",
+            "Engineered biosensors for in vivo tracking",
+            "Parallels between MS and neurodegenerative diseases",
+            "Host-microbiome genetic interactions",
+            "Computational methods for zero-inflated microbiome data"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Erin Longbrake",
+            "Judith Eisen",
+            "Yanjiao Zhou",
+            "Jodi Lilley",
+            "Stavroula Hatzios",
+            "Pamela Chang",
+            "Linnea Freeman",
+            "Tom Mansell",
+            "Ran Blekhman"
+        ],
+        "chunk_summaries": [
+            "The group spent the first nine minutes on procedural setup, including assigning a reporter and recorder, locating shared documents, and conducting round-robin introductions. The tone was polite and structured, with participants sharing their diverse disciplinary backgrounds ranging from chemical biology to clinical neurology. In the final minute, Judith directed the group to the session prompt, and Linnea asked an initial factual question about the links between autoimmune disorders and neuroinflammation.",
+            "Erin and Yanjiao shared extensive domain knowledge regarding the relationship between the microbiome and autoimmune diseases like MS, noting that while dysbiosis is a consistent biomarker, its causal role remains unclear. Tom and Judith asked clarifying questions, with Judith explicitly framing the group's challenge around distinguishing correlation from causation, a theme from their previous day's discussion. The tone was highly engaged and intellectually focused, ending with an open exploration of how to experimentally define and test causality in this context.",
+            "The group explored the limitations of using germ-free mouse models to establish causality, leading Tom to share his work on engineered whole-cell biosensors for tracking metabolites like butyrate in vivo. Pamela proposed drawing parallels between the inflammatory and neurodegenerative components of MS and diseases like Alzheimer's, which Erin validated with clinical insights. The tone remained highly collaborative and intellectually curious, with the group expanding the problem space without yet converging on a specific joint project.",
+            "The group explored significant methodological bottlenecks, with Erin highlighting the lack of robust computational models for zero-inflated microbiome data and Yanjiao noting the difficulty of experimentally validating microbiome findings from large datasets. Ran proposed investigating the interaction between host genetics and the microbiome, which Yanjiao supported with examples from her addiction research. The tone remained highly engaged and intellectually rigorous, with Judith summarizing their progress as identifying many problems but few solutions before redirecting the group to consider mucosal and neuroimmunology."
+        ]
+    }
+}
