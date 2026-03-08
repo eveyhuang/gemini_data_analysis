@@ -1,0 +1,652 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Hongfu Liu": 97,
+            "Christoph Thaiss": 97,
+            "Curt Horvath": 21,
+            "Nicole Eikmeier": 44,
+            "Mark Wilber": 146,
+            "Matt Erdman": 34,
+            "Erik Procko": 58,
+            "Jason Ladner": 73
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "Participants are exploring various methodological challenges and potential solutions, such as hybridizing mechanistic and ML models and integrating sequence data, without narrowing down to a single shared project.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Visible head nods from multiple non-speakers (Matt, Mark, Nicole, Jason) and shared smiling/laughter during a joke about solving machine learning.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Mark Wilber",
+        "cross_disciplinary_bridging_description": "Connected mechanistic compartmental models with machine learning approaches.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "Yes",
+        "artifact_type": "document",
+        "artifact_interaction": "No",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group has narrowed the domain to predictive modeling of disease outbreaks using diverse data sources, but has not articulated a specific research question.",
+        "decision_crystallization_level": 1,
+        "decision_crystallization_justification": "The group is still in open exploration of different methodological approaches and data types.",
+        "ambition_level": "novel_combination",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
+        "skill_gap_identification": "Yes",
+        "skill_gap_description": "Erik Procko identifies a gap in knowing what key information is missing from sequence data to forward predict surges, asking modelers for input.",
+        "shared_vision_indicator": "No",
+        "shared_vision_quote": "None",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "shared_humor",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
+        "funding_awareness_signal": "No",
+        "funding_reference_description": "None",
+        "prior_relationship_signal": "No",
+        "prior_relationship_description": "None",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group is actively grappling with the tension between 'black box' machine learning approaches that use all available data and mechanistic models that rely on biological understanding, with multiple participants suggesting hybrid approaches."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Hongfu Liu",
+            "timestamp": "00:00-00:04",
+            "speaking_duration_seconds": 4,
+            "codes": [
+                {
+                    "code_name": "None"
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Christoph Thaiss",
+            "timestamp": "00:04-00:40",
+            "speaking_duration_seconds": 36,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "is there something intrinsic to geographic heterogeneity in the human population that's that we need to factor into the model",
+                    "explanation": "Builds on the previous discussion of model adaptation by questioning if geographic heterogeneity is an intrinsic factor that needs to be included.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "is this something that is going to get better as we standardize measurements... or is there something intrinsic to geographic heterogeneity",
+                    "explanation": "Asks a question about whether standardization or intrinsic heterogeneity is the key issue."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we need to factor into the model",
+                    "explanation": "Uses 'we' in the general scientific sense, not referring to a specific joint project."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Hongfu Liu",
+            "timestamp": "00:40-00:59",
+            "speaking_duration_seconds": 19,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "currently we just collect as many as possible of the measurement to put into the model.",
+                    "explanation": "Explains the current machine learning approach of collecting as much data as possible to improve performance.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we just collect as many as possible",
+                    "explanation": "Uses 'we' to refer to his field (machine learning), not the current group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Curt Horvath",
+            "timestamp": "01:00-01:21",
+            "speaking_duration_seconds": 21,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "could just be that in the different communities you have different diets, you have different genetics, you have different stresses.",
+                    "explanation": "Adds specific biological and environmental factors to Christoph's point about geographic heterogeneity.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you have to take into uh these local considerations",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Christoph Thaiss",
+            "timestamp": "01:24-01:39",
+            "speaking_duration_seconds": 15,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I completely agree. That's that's actually exactly what my what my lab is studying.",
+                    "explanation": "Explicitly agrees with Curt's point about local considerations."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "How how these uh um sort of lifestyle factors other than the traditional ones we're collecting influence the outcome of an infectious disease.",
+                    "explanation": "Shares that his lab studies how lifestyle factors influence infectious disease outcomes.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "what my lab is studying",
+                    "explanation": "Refers specifically to his own lab's work."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Nicole Eikmeier",
+            "timestamp": "01:40-02:17",
+            "speaking_duration_seconds": 37,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "the models can't predict the the outcomes of data that they haven't seen. And and that's just that's reality.",
+                    "explanation": "Challenges the expectation that models should perform well on unseen data, framing it as a universal limitation."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "you train these models on whatever data you have and then it can do really well on that data but not on on other things.",
+                    "explanation": "Explains a fundamental limitation of machine learning models regarding out-of-sample prediction.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "you train these models",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Christoph Thaiss",
+            "timestamp": "02:18-03:04",
+            "speaking_duration_seconds": 46,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "setback_response_accepts_builds",
+                    "evidence": "That's true, but at the same time we were hoping that there would be some kind of biological ground truth um that's that the model can predict no matter the the training set.",
+                    "explanation": "Accepts Nicole's critique but builds on it by explaining the biological hope for a universal ground truth."
+                },
+                {
+                    "code_name": "Broader Significance",
+                    "subcode": "field_significance",
+                    "evidence": "I think that's something that will have to be figured out um once we're talking about global surveillance of uh of potential outbreaks",
+                    "explanation": "Connects the modeling challenge to the broader field goal of global outbreak surveillance."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we were hoping",
+                    "explanation": "Refers to his own research group's hopes."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Nicole Eikmeier",
+            "timestamp": "03:04-03:11",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "So solve machine learning. Goal one.",
+                    "explanation": "Uses humor to highlight the difficulty of the problem Christoph described."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Goal one.",
+                    "explanation": "Implicitly individual/general framing."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mark Wilber",
+            "timestamp": "03:12-03:39",
+            "speaking_duration_seconds": 27,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "finding that balance I think is maybe where where we need to be looking.",
+                    "explanation": "Suggests combining mechanistic compartmental models with machine learning approaches.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "in our field, I think the tradition is very much like compartmental mechanistic models",
+                    "explanation": "Shares the traditional modeling approach used in his field.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "in our field",
+                    "explanation": "Refers to his specific discipline."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Matt Erdman",
+            "timestamp": "03:39-04:02",
+            "speaking_duration_seconds": 23,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_elaboration",
+                    "evidence": "Mark, how do how do you do that? Do is that almost always going to require multi-disciplinary collaborations",
+                    "explanation": "Asks Mark to elaborate on how to achieve the balance between mechanistic and ML models."
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "is there a risk to that when you just throw everything into a model?",
+                    "explanation": "Asks if there is a risk to the 'grab whatever data we can' approach."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "when you just throw everything",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mark Wilber",
+            "timestamp": "04:02-05:46",
+            "speaking_duration_seconds": 104,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "this group developed kind of a really simple kind of SIR type model, compartmental model with sort of a hybrid um kind of a-mechanistic statistical approach sort of layered on.",
+                    "explanation": "Describes a specific hybrid modeling approach used in an influenza paper.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "we can leverage this data data to build some sort of mechanistic foundation coupled with um I don't know sort of a big data black boxy machine learning approach.",
+                    "explanation": "Elaborates on his idea of combining mechanistic foundations with ML approaches using ecological data.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we can leverage this data",
+                    "explanation": "Uses 'we' in the general scientific sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 4,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Hongfu Liu",
+            "timestamp": "05:47-07:01",
+            "speaking_duration_seconds": 74,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "The reason is if we know what x can indicate y, we do not need to collect so many data... we also want to know with so many features measurement, what kind of measurement plays the key role",
+                    "explanation": "Explains the rationale behind collecting many features in ML and the goal of identifying key measurements.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Epistemic Bridging",
+                    "subcode": "translates_terminology",
+                    "evidence": "we want to fit an equation y equals fx. So x is the data we collect and f is something we kind of of interest, we call it is a label here.",
+                    "explanation": "Translates machine learning concepts (features, labels, mapping function) for the interdisciplinary group."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we want to fit an equation",
+                    "explanation": "Uses 'we' to refer to machine learning practitioners."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Erik Procko",
+            "timestamp": "07:08-08:06",
+            "speaking_duration_seconds": 58,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "is there key information which is being missed? You know what what new information do we need in all of that sequence information to be able to you know prepare for changes in the future",
+                    "explanation": "Asks the modelers what key information is missing from sequence data to enable forward prediction."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "regarding using sequencing data... if you want to forward predict what the next surge might be",
+                    "explanation": "Introduces the idea of using sequencing data for forward prediction of viral surges.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "what new information do we need",
+                    "explanation": "Uses 'we' in the general scientific sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "08:07-08:59",
+            "speaking_duration_seconds": 52,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "it's really important to combine data sources. Right? The sequence data alone isn't going to allow you to make a whole lot of predictions.",
+                    "explanation": "Builds on Erik's point by suggesting that sequence data must be combined with other data sources for effective prediction.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Jesse Bloom's group at the Fred Hutch who's been doing these really powerful studies to map sort of which amino acids allow for escape from uh antibody responses.",
+                    "explanation": "Shares specific domain knowledge about mapping amino acid escape to inform predictions.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "allow you to make a whole lot of predictions",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Matt Erdman",
+            "timestamp": "09:05-09:16",
+            "speaking_duration_seconds": 11,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "So is the genomic epidemiology data incorporated into the models?",
+                    "explanation": "Asks a direct question about whether genomic data is currently used in models."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "incorporated into the models",
+                    "explanation": "Refers to models generally."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mark Wilber",
+            "timestamp": "09:17-09:32",
+            "speaking_duration_seconds": 15,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "It is in it is in some cases, yeah, building like transmission chains... back tracing transmission from livestock to wildlife using genetic data.",
+                    "explanation": "Answers Matt's question by sharing that genetic data is used to build transmission chains in wildlife disease.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I'll just speak from a wildlife disease standpoint.",
+                    "explanation": "Frames his response from his specific disciplinary standpoint."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "09:39-10:00",
+            "speaking_duration_seconds": 21,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "I've had experience working in sort of previous um we we thought they were big outbreaks, right? So the Ebola outbreak in West Africa",
+                    "explanation": "Shares his personal experience working on the Ebola outbreak.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "data has gotten to a size that is kind of untenable uh for the types of analyses that have been done in the past.",
+                    "explanation": "Raises a concern about the untenable size of current data for traditional analysis methods."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I've had experience",
+                    "explanation": "Refers to his own past experience."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": false,
+        "shared_vision_established_cumulative": false,
+        "idea_trajectory_sequence": [
+            "procedural",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Hybrid mechanistic and ML models",
+            "Integrating sequence data with other data sources for prediction"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Curt Horvath",
+            "Matt Erdman",
+            "Christoph Thaiss",
+            "Salvador Almagro-Moreno",
+            "Hongfu Liu",
+            "Audrey Ruple",
+            "Nicole Eikmeier",
+            "Erik Procko",
+            "Mark Wilber",
+            "Jason Ladner"
+        ],
+        "chunk_summaries": [
+            "The group engaged in a structured round of introductions led by the facilitator, Matt Erdman. Participants shared their disciplinary backgrounds, which ranged from veterinary medicine and epidemiology to computer science and wildlife ecology, and answered an icebreaker question about how they unwind. The tone was light and collegial, with shared humor emerging around common themes like raising young children and having a drink after a hard day. The chunk ended with the completion of the introductions, with no research ideation having started yet.",
+            "The group spent the first three minutes on procedural tasks and silent reflection before transitioning into a structured round-robin style sharing of perspectives on big data. Participants shared their individual disciplinary views on the challenges of big data, such as data heterogeneity, quality, and the disconnect between bioinformatics and laboratory research. The tone was collaborative and attentive, with visible head nods and active listening. The group ended the chunk in early divergent exploration with no specific project named.",
+            "The group explored the tension between 'black box' machine learning approaches and mechanistic biological models, with Mark Wilber proposing hybrid models that leverage both. Erik Procko introduced the challenge of using massive sequencing data for forward prediction, prompting Jason Ladner to suggest combining sequence data with functional maps like antibody escape. The discussion remained divergent, focusing on methodological challenges and potential integrations across disciplines without converging on a specific joint project."
+        ]
+    }
+}

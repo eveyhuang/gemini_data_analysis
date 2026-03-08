@@ -1,0 +1,434 @@
+{
+    "chunk_summary": {
+        "speaking_time_seconds": {
+            "Jason Ladner": 270,
+            "Matt Erdman": 58,
+            "Christoph Thaiss": 156,
+            "Audrey Ruple": 115
+        },
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group explores various challenges related to big data, such as unmaintained code and messy datasets, and brainstorms potential solutions by drawing parallels to other fields like microbiome research and canine cancer models.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Visible non-speakers show consistent attentiveness and occasional head nods while others are speaking, with some audible backchanneling present.",
+        "cross_disciplinary_bridging": "Yes",
+        "cross_disciplinary_bridging_speaker": "Christoph Thaiss",
+        "cross_disciplinary_bridging_description": "Connected bioinformatics challenges in viral genomics to the commensal microbiome field.",
+        "explicit_commitment_signal": "No",
+        "commitment_signal_speaker": "None",
+        "commitment_signal_quote": "None",
+        "screenshare_active": "Yes",
+        "artifact_type": "document",
+        "artifact_interaction": "No",
+        "artifact_interaction_description": "None",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group narrowed the domain to data preprocessing and tool maintenance challenges, but has not yet articulated a specific research question.",
+        "decision_crystallization_level": 1,
+        "decision_crystallization_justification": "The conversation remains in open exploration of methodological challenges across different fields without a shared project direction.",
+        "ambition_level": "not_applicable",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
+        "skill_gap_identification": "No",
+        "skill_gap_description": "None",
+        "shared_vision_indicator": "No",
+        "shared_vision_quote": "None",
+        "pronoun_shift_flag": "No",
+        "personal_disclosure": "No",
+        "laughter_quality": "none",
+        "dissent_response_quality": 3,
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
+        "funding_awareness_signal": "Yes",
+        "funding_reference_description": "Jason noted the necessity of continued funding to maintain bioinformatics platforms.",
+        "prior_relationship_signal": "No",
+        "prior_relationship_description": "None",
+        "meeting_structure_quality": "loosely_structured",
+        "notable_observation": "The group effectively used analogies from their respective fields (microbiome, canine cancer) to understand and propose solutions for the bioinformatics challenges in viral genomics, demonstrating strong cross-disciplinary translation."
+    },
+    "utterance_annotations": [
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "00:00-01:26",
+            "speaking_duration_seconds": 86,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "the Zika virus outbreak in the new world... we thought we were sequencing a lot of genomes, right? We could still take all of the genomes and basically put them into a single analysis",
+                    "explanation": "Shares specific domain knowledge regarding viral genomics and the scale of sequencing data.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "it really has gotten to the point where we can't just grab all of the SARS... and throw them into one of these analyses. And so I think it really has posed these challenges of how we deal with this dataset.",
+                    "explanation": "Frames the core problem of dealing with massive, unmanageable datasets in bioinformatics.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we thought we were sequencing a lot of genomes",
+                    "explanation": "Uses 'we' to refer to his specific field or past research team, not the current group."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Matt Erdman",
+            "timestamp": "01:27-02:08",
+            "speaking_duration_seconds": 41,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "are there challenges with everyone analyzing the same genome sets in different ways and coming to different conclusions?",
+                    "explanation": "Asks a clarifying question to probe the consequences of the problem Jason raised."
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "how do you... do you need to standardize that across... how do you come out of different analysis methods for the same datasets?",
+                    "explanation": "Asks for Jason's opinion on whether standardization is necessary."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "everyone's got their own GitHub page",
+                    "explanation": "Refers to individuals in the field generally."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "02:08-03:11",
+            "speaking_duration_seconds": 63,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "we all end up developing software for maybe this one paper or this one project and then it kind of gets abandoned.",
+                    "explanation": "Shares knowledge about the common lifecycle of software tools in his field.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "you just have all of this old non-maintained code floating around... the ashes of old computer science programs",
+                    "explanation": "Highlights the significant issue of unmaintained code and abandoned software."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "we all end up developing software",
+                    "explanation": "Uses 'we' to refer to scientists in his discipline."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Matt Erdman",
+            "timestamp": "03:08-03:11",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Agreed.",
+                    "explanation": "Briefly validates Jason's point."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Christoph Thaiss",
+            "timestamp": "03:11-04:41",
+            "speaking_duration_seconds": 90,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "What do people think is the solution here?",
+                    "explanation": "Opens the floor for potential solutions to the problem raised."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "5 to 10 years ago the commensal microbiome field had the same challenge. Everybody was... for each paper there was a new method being developed",
+                    "explanation": "Shares historical context from the microbiome field to draw a parallel.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "in the commensal microbiome field it hasn't been solved",
+                    "explanation": "Speaks from the perspective of his own field's experience."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "04:41-05:56",
+            "speaking_duration_seconds": 75,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "anytime you try to do that kind of unification, you stifle innovation. And then things just like whatever has been sort of agreed becomes old",
+                    "explanation": "Challenges the idea of top-down unification, arguing it stifles innovation."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "make it a group sourced platform, right? Where they develop certain tools in there, but they've really tried to provide a low bar of entry for other people to create plugins... kind of a hybrid between those two suggestions.",
+                    "explanation": "Proposes a hybrid solution combining a standard environment with flexible plugins, using QIIME 2 as an example.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I don't see that kind of like forced unification as being really tenable.",
+                    "explanation": "Expresses his individual perspective on the proposed solution."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Christoph Thaiss",
+            "timestamp": "05:56-07:02",
+            "speaking_duration_seconds": 66,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Yeah, that's a good point. And QIIME is actually a great example for how user popularity has decided on the dominant tool.",
+                    "explanation": "Validates Jason's counter-example and agrees with the premise."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "giving the power to the application or giving the power to the scientists at the lowest level of performing the analysis other than a top-down approach",
+                    "explanation": "Builds on the hybrid idea by framing it as a bottom-up, user-driven approach.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think that's actually a good example of what could be done",
+                    "explanation": "Maintains individual framing while discussing field-level solutions."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Jason Ladner",
+            "timestamp": "07:02-07:48",
+            "speaking_duration_seconds": 46,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "another example in the infectious diseases is Nextstrain, right? Trevor Bedford's group developed this Nextstrain platform that was just so awesome that everyone gravitated towards it",
+                    "explanation": "Provides another successful example of a widely adopted platform.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Broader Significance",
+                    "subcode": "funding_priority_alignment",
+                    "evidence": "And then I think it's funding, right? You know, when these platforms get developed, then it's key that there's continued funding to keep developing and maintaining those platforms.",
+                    "explanation": "Highlights the critical role of sustained funding in maintaining these tools."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I guess another example",
+                    "explanation": "Uses individual framing to introduce a new example."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Matt Erdman",
+            "timestamp": "07:48-08:05",
+            "speaking_duration_seconds": 17,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "So Audrey, I want to pull you into this for a minute.",
+                    "explanation": "Explicitly invites Audrey to join the conversation."
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "Is data always going to be messy or are there... how do you address that problem?",
+                    "explanation": "Asks Audrey for her perspective on messy data."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I want to pull you into this",
+                    "explanation": "Uses individual framing as the facilitator."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Audrey Ruple",
+            "timestamp": "08:05-10:00",
+            "speaking_duration_seconds": 115,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "maybe the consistency is not in the data that's being put out, but maybe there's some consistency in how we preprocess and join and create datasets of usable data",
+                    "explanation": "Proposes shifting the focus of standardization from data collection to data preprocessing.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "there's a move that's being made on the cancer side with dogs as a model for human cancers, which is this integrated canine data commons.",
+                    "explanation": "Shares an example from canine cancer research to illustrate her point.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I've done some work with the NCBI datasets",
+                    "explanation": "Uses individual framing to describe her past work and perspective."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        }
+    ],
+    "session_state": {
+        "pronoun_shift_occurred_cumulative": false,
+        "shared_vision_established_cumulative": false,
+        "idea_trajectory_sequence": [
+            "procedural",
+            "divergent",
+            "divergent",
+            "divergent"
+        ],
+        "ideas_currently_on_table": [
+            "Hybrid mechanistic and ML models",
+            "Integrating sequence data with functional maps",
+            "Standardizing data preprocessing pipelines",
+            "Group-sourced flexible analysis platforms"
+        ],
+        "commitment_signals_cumulative": [],
+        "speakers_identified": [
+            "Curt Horvath",
+            "Matt Erdman",
+            "Christoph Thaiss",
+            "Salvador Almagro-Moreno",
+            "Hongfu Liu",
+            "Audrey Ruple",
+            "Nicole Eikmeier",
+            "Erik Procko",
+            "Mark Wilber",
+            "Jason Ladner"
+        ],
+        "chunk_summaries": [
+            "The group engaged in a structured round of introductions led by the facilitator, Matt Erdman. Participants shared their disciplinary backgrounds, which ranged from veterinary medicine and epidemiology to computer science and wildlife ecology, and answered an icebreaker question about how they unwind. The tone was light and collegial, with shared humor emerging around common themes like raising young children and having a drink after a hard day. The chunk ended with the completion of the introductions, with no research ideation having started yet.",
+            "The group spent the first three minutes on procedural tasks and silent reflection before transitioning into a structured round-robin style sharing of perspectives on big data. Participants shared their individual disciplinary views on the challenges of big data, such as data heterogeneity, quality, and the disconnect between bioinformatics and laboratory research. The tone was collaborative and attentive, with visible head nods and active listening. The group ended the chunk in early divergent exploration with no specific project named.",
+            "The group explored the tension between 'black box' machine learning approaches and mechanistic biological models, with Mark Wilber proposing hybrid models that leverage both. Erik Procko introduced the challenge of using massive sequencing data for forward prediction, prompting Jason Ladner to suggest combining sequence data with functional maps like antibody escape. The discussion remained divergent, focusing on methodological challenges and potential integrations across disciplines without converging on a specific joint project.",
+            "The group discussed the challenges of unmaintained bioinformatics code and messy datasets, drawing parallels between viral genomics, the commensal microbiome field, and canine cancer models. Jason Ladner and Christoph Thaiss debated the merits of top-down tool unification versus flexible, group-sourced platforms like QIIME 2, while Audrey Ruple proposed focusing on standardized data preprocessing rather than limiting data collection. The tone remained highly collaborative and intellectually engaged, ending with a continued divergent exploration of methodological solutions."
+        ]
+    }
+}
