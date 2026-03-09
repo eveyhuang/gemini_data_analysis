@@ -1,22 +1,23 @@
 {
     "chunk_summary": {
         "speaking_time_seconds": {
-            "Daniel Becker": 120,
-            "Lauren Charles": 240,
-            "Mike Wimberly": 180,
-            "Mark Wilber": 120,
-            "Guillaume Bastile-Rousseau": 30,
-            "Kezia Manlove": 15
+            "Daniel Becker": 81,
+            "Lauren Charles": 228,
+            "Mike Wimberly": 169,
+            "Liliana Salvador": 2,
+            "Mark Wilber": 88,
+            "Guillaume Bastille-Rousseau": 18,
+            "Kezia Manlove": 7
         },
         "dominant_speaker_flag": "No",
         "dominant_speaker_name": "None",
-        "idea_trajectory": "convergent",
-        "idea_trajectory_justification": "The group is actively synthesizing their previous ideas about animal movement and disease modeling into a more concrete, multi-layered modeling approach.",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "Participants are exploring different modeling approaches and conceptual frameworks to bridge the gap between local and broad scales, without yet converging on a single project direction.",
         "collective_engagement_level": 3,
-        "collective_engagement_justification": "Participants are actively listening and nodding, with Lauren and Mark engaging in a back-and-forth dialogue that others are following.",
+        "collective_engagement_justification": "Non-speaking participants, particularly Kezia Manlove, Avery Strait, and Daniel Becker, consistently provide visible head nods while others are speaking.",
         "cross_disciplinary_bridging": "Yes",
         "cross_disciplinary_bridging_speaker": "Lauren Charles",
-        "cross_disciplinary_bridging_description": "Connecting machine learning models with mechanistic models to improve disease forecasting.",
+        "cross_disciplinary_bridging_description": "Combining machine learning forecasting with mechanistic models.",
         "explicit_commitment_signal": "No",
         "commitment_signal_speaker": "None",
         "commitment_signal_quote": "None",
@@ -24,108 +25,56 @@
         "artifact_type": "None",
         "artifact_interaction": "NA",
         "artifact_interaction_description": "None",
-        "problem_specificity_level": 3,
-        "problem_specificity_justification": "The group is discussing how to integrate different modeling approaches (statistical, mechanistic, machine learning) to address disease transmission at different scales.",
-        "decision_crystallization_level": 3,
-        "decision_crystallization_justification": "The group has agreed on the need for a multi-layered modeling approach, though specific roles and timelines are not yet defined.",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The group has narrowed the domain to the methodological challenge of bridging local contact data with broad-scale surveillance, but has not articulated a specific research question.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "Participants share a strong interest in the problem of bridging scales and combining models, but have not yet defined a specific project to pursue together.",
         "ambition_level": "novel_combination",
         "explicit_complementarity_recognition": "Yes",
         "complementarity_recognition_speaker": "Lauren Charles",
-        "complementarity_recognition_quote": "I don't think it's necessarily like a one-all solution, but a potential linking of different understandings.",
+        "complementarity_recognition_quote": "by combining the different models and throwing more of the traditional statistics on top of it",
         "skill_gap_identification": "No",
         "skill_gap_description": "None",
         "shared_vision_indicator": "Yes",
-        "shared_vision_quote": "How do we deal with the middle man?",
+        "shared_vision_quote": "frameworks and abstractions that we can use to extend some of these monitoring ideas",
         "pronoun_shift_flag": "No",
         "personal_disclosure": "No",
         "laughter_quality": "none",
-        "dissent_response_quality": 3,
+        "dissent_response_quality": "NA",
         "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
         "funding_awareness_signal": "No",
         "funding_reference_description": "None",
         "prior_relationship_signal": "No",
         "prior_relationship_description": "None",
         "meeting_structure_quality": "loosely_structured",
-        "notable_observation": "The group is successfully moving from high-level brainstorming to a more technical discussion about how to integrate their respective modeling expertise."
+        "notable_observation": "The conversation heavily focused on the methodological challenges of bridging local, fine-scale data with broad, landscape-level models, with participants proposing various ways to partition scales or combine modeling techniques."
     },
     "utterance_annotations": [
         {
             "speaker": "Daniel Becker",
-            "timestamp": "00:00-01:20",
-            "speaking_duration_seconds": 80,
+            "timestamp": "00:00-01:21",
+            "speaking_duration_seconds": 81,
             "codes": [
                 {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "So if we're thinking about areas where wildlife have the most contact with people, then we might see sort of... equivalent densities.",
-                    "explanation": "Daniel is building on the previous discussion about animal movement and disease transmission by introducing the concept of contact frequency.",
+                    "code_name": "shares_domain_knowledge",
+                    "subcode": "None",
+                    "evidence": "wildlife movement becomes definitely slightly more sedentary and aggregated in sort of human environments",
+                    "explanation": "Shares specific knowledge about how wildlife movement patterns change in human-dominated landscapes.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "extends_existing_idea",
+                    "subcode": "None",
+                    "evidence": "whether you layer on top of that, you know, how many zoonotic viruses a given species has",
+                    "explanation": "Builds on the previous discussion of contact patterns by suggesting the addition of viral load data to determine spillover risk.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "So if we're thinking about areas where wildlife have the most contact with people...",
-                    "explanation": "Uses 'we' to frame the research problem."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "Yes",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Lauren Charles",
-            "timestamp": "01:21-01:39",
-            "speaking_duration_seconds": 18,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "That's a great different way to split the population.",
-                    "explanation": "Lauren validates Daniel's idea about splitting the population by contact frequency.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "That's a great different way to split the population.",
-                    "explanation": "Uses 'we' implicitly in the context of the group's work."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "Yes",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Mike Wimberly",
-            "timestamp": "01:40-04:30",
-            "speaking_duration_seconds": 170,
-            "codes": [
-                {
-                    "code_name": "Integration Practices",
-                    "subcode": "synthesizes_contributions",
-                    "evidence": "I still very much hear the in terms of scales, you know, ideas coming from a variety of different directions.",
-                    "explanation": "Mike is synthesizing the various ideas presented by the group, focusing on the challenge of scale.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "Are there conceptual frameworks and abstractions that we can use to extend some of these monitoring ideas?",
-                    "explanation": "Uses 'we' to frame the group's research goal."
+                    "subcode": "ambiguous",
+                    "evidence": "what we ultimately think of as spillover risk",
+                    "explanation": "Uses 'we' in a general sense referring to the scientific community rather than the specific team."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -134,88 +83,201 @@
             "nod_count": 3,
             "shared_affect": "No",
             "any_smile_other": "No",
-            "audible_backchannel": "Yes",
+            "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
+            "hesitation_flag": "Yes",
             "pace": "normal"
         },
         {
-            "speaker": "Mark Wilber",
-            "timestamp": "04:31-06:00",
-            "speaking_duration_seconds": 89,
+            "speaker": "Lauren Charles",
+            "timestamp": "01:21-01:39",
+            "speaking_duration_seconds": 18,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "critiques_or_challenges",
-                    "evidence": "I don't think this quite answers that question, um, as a really good question.",
-                    "explanation": "Mark challenges the current direction, pushing for more specificity on how to bridge scales.",
+                    "code_name": "supports_or_validates",
+                    "subcode": "None",
+                    "evidence": "that's a great different way to split the population",
+                    "explanation": "Explicitly validates Daniel's idea of categorizing populations by urban vs rural environments.",
+                    "idea_quality": 0
+                },
+                {
+                    "code_name": "synthesizes_contributions",
+                    "subcode": "None",
+                    "evidence": "that keeps multiple different types of animals in the same category",
+                    "explanation": "Summarizes the utility of Daniel's proposed categorization.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "I think one of the challenges with that is sort of how you partition your scales.",
-                    "explanation": "Uses 'you' and 'your' in a way that implies a shared problem space."
+                    "subcode": "ambiguous",
+                    "evidence": "different way to split the population",
+                    "explanation": "Discusses the research content without clear individual or joint pronouns."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
-            "audible_backchannel": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mike Wimberly",
+            "timestamp": "01:39-01:42",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "yields_floor",
+                    "evidence": "I guess just... go ahead",
+                    "explanation": "Starts to speak but stops to let someone else talk."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Liliana Salvador",
+            "timestamp": "01:43-01:45",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "No no please go",
+                    "explanation": "Encourages Mike to continue speaking after they briefly talked over each other."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mike Wimberly",
+            "timestamp": "01:46-04:30",
+            "speaking_duration_seconds": 164,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "I still very much hear the in terms of scales, you know, ideas coming from a variety of different directions",
+                    "explanation": "Summarizes the group's ongoing discussion about the tension between local detailed measurements and broad-scale abstractions.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "maybe that's because that middle, you know, that middle part and the connections is the hardest part",
+                    "explanation": "Identifies the core challenge the group is grappling with: bridging the gap between fine-scale data and broad-scale models.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "frameworks and abstractions that we can use to extend some of these monitoring ideas",
+                    "explanation": "Uses 'we' to refer to the group's potential approach to the problem."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 5,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Mark Wilber",
+            "timestamp": "04:31-05:59",
+            "speaking_duration_seconds": 88,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "understanding the connectivity between those nodes is something that would be slightly more feasible",
+                    "explanation": "Proposes using network connectivity models to bridge the scale gap identified by Mike.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "I think there's some cases where you could bridge that scale by sort of saying well I don't care too much what's happening within the node",
+                    "explanation": "Builds directly on Mike's challenge of bridging the middle scale by suggesting a specific partitioning strategy.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "you partition your scales",
+                    "explanation": "Uses the generic 'you' to describe a methodological approach."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
             "pace": "normal"
         },
         {
             "speaker": "Lauren Charles",
-            "timestamp": "06:01-08:47",
-            "speaking_duration_seconds": 166,
+            "timestamp": "06:00-06:03",
+            "speaking_duration_seconds": 3,
             "codes": [
                 {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_method_or_approach",
-                    "evidence": "Basically, you know, in thinking about the different types of models, whether it's a statistical model or a mechanistic model or a machine learning model, they all have their strengths.",
-                    "explanation": "Lauren shares her expertise on different modeling approaches and how they can be combined.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "I don't think necessarily that we need to come up with one solution.",
-                    "explanation": "Uses 'we' to frame the group's collaborative approach."
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "So I guess...",
+                    "explanation": "Brief false start before yielding to Mike."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
-            "audible_backchannel": "Yes",
-            "vocal_enthusiasm": 3,
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
             "pace": "normal"
         },
         {
-            "speaker": "Kezia Manlove",
-            "timestamp": "08:48-08:56",
-            "speaking_duration_seconds": 8,
+            "speaker": "Mike Wimberly",
+            "timestamp": "06:04-06:06",
+            "speaking_duration_seconds": 2,
             "codes": [
                 {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "Lauren, in your machine learning models, are you mostly after density? What are you trying to predict?",
-                    "explanation": "Kezia asks a clarifying question to better understand Lauren's modeling approach.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "Lauren, in your machine learning models...",
-                    "explanation": "Uses 'your' to refer to Lauren's work."
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "go for it",
+                    "explanation": "Encourages Lauren to take the floor."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -231,21 +293,57 @@
         },
         {
             "speaker": "Lauren Charles",
-            "timestamp": "08:57-09:59",
-            "speaking_duration_seconds": 62,
+            "timestamp": "06:07-07:37",
+            "speaking_duration_seconds": 90,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
-                    "subcode": "shares_data_or_findings",
-                    "evidence": "Sometimes we can get case counts, and so we're trying to understand case counts and predict that.",
-                    "explanation": "Lauren explains the data she uses and the goals of her models.",
-                    "idea_quality": 1
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "whether it's a statistical model or a mechanistic model or a machine learning model, they all have their strengths",
+                    "explanation": "Discusses the different types of models used in disease forecasting and their respective utilities.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "looking at the smaller scale and that feeding into something that's looking at the higher scale",
+                    "explanation": "Proposes linking different modeling approaches across scales to solve the bridging problem.",
+                    "idea_quality": 2
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "Sometimes we can get case counts...",
-                    "explanation": "Uses 'we' to describe her research process."
+                    "evidence": "the result that we're looking for or needed to understand the situation",
+                    "explanation": "Uses 'we' to refer to the group's shared goal of understanding the disease system."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Guillaume Bastille-Rousseau",
+            "timestamp": "07:37-07:49",
+            "speaking_duration_seconds": 12,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "the model you're talking about, species are like virus specific or is that like, do you think it's feasible to have that multi-species?",
+                    "explanation": "Asks Lauren to clarify whether her proposed models can handle multiple species simultaneously."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "the model you're talking about",
+                    "explanation": "Refers to the models Lauren just described."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -254,34 +352,151 @@
             "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
-            "audible_backchannel": "Yes",
+            "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
             "pace": "normal"
         },
         {
-            "speaker": "Guillaume Bastile-Rousseau",
-            "timestamp": "07:38-08:01",
-            "speaking_duration_seconds": 23,
+            "speaker": "Lauren Charles",
+            "timestamp": "07:50-07:53",
+            "speaking_duration_seconds": 3,
             "codes": [
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "Are you talking about species or virus specific? Or is that like, could it be, do you think it's feasible to have that multi-species?",
-                    "explanation": "Guillaume asks a clarifying question about the scope of the models.",
-                    "idea_quality": 1
+                    "evidence": "The pathogen species or the host?",
+                    "explanation": "Asks Guillaume to specify which type of species he is referring to."
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "Are you talking about...",
-                    "explanation": "Uses 'you' to refer to Lauren's work."
+                    "subcode": "ambiguous",
+                    "evidence": "The pathogen species or the host?",
+                    "explanation": "Brief clarifying question without pronouns."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
             "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Guillaume Bastille-Rousseau",
+            "timestamp": "07:54-08:00",
+            "speaking_duration_seconds": 6,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "Yeah, I mean host or pathogen or both.",
+                    "explanation": "Clarifies his previous question to include both host and pathogen species."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "host or pathogen or both",
+                    "explanation": "Brief clarification without pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "08:01-08:47",
+            "speaking_duration_seconds": 46,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "with the pathogen, because of all of the different transmissions, I don't think one model... I've been working in like classes of pathogens and building models for that",
+                    "explanation": "Explains her approach to modeling different pathogens by grouping them into classes rather than using a single model.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I've shown that in some things",
+                    "explanation": "Uses 'I' to describe her own past research and preferences."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "08:48-08:55",
+            "speaking_duration_seconds": 7,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "in your machine learning models, are you mostly after density? What are you trying to predict?",
+                    "explanation": "Asks Lauren to specify the target variable of her machine learning models."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "in your machine learning models",
+                    "explanation": "Directs the question specifically at Lauren's individual work."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "08:56-10:00",
+            "speaking_duration_seconds": 64,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "sometimes we can get case counts, and so we're trying to understand case counts and predict that. Sometimes it's more of a presence absence",
+                    "explanation": "Explains that the prediction target depends heavily on the available data, ranging from case counts to presence/absence.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "highly dependent on what we can get",
+                    "explanation": "Uses 'we' to refer to the general scientific capability or the potential team's capability to acquire data."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -297,36 +512,41 @@
             "divergent",
             "divergent",
             "divergent",
-            "convergent",
-            "convergent"
+            "divergent",
+            "divergent"
         ],
         "ideas_currently_on_table": [
-            "Fine-scale movement vs. population density for disease modeling",
-            "Human-wildlife interface in disease transmission",
-            "Citizen science for broad-scale disease surveillance",
-            "Blood meal analysis for host identification",
-            "Wireless sensor networks for monitoring livestock behavior and disease transmission"
+            "Applying machine learning to globalize disease spread forecasting",
+            "Contrasting fine-scale mitigation vs large-scale prediction",
+            "Using cheap wireless sensor networks to track livestock contact patterns",
+            "Bridging local contact data with broad-scale surveillance via connectivity models",
+            "Combining machine learning and mechanistic models for disease forecasting"
         ],
-        "commitment_signals_cumulative": [],
+        "commitment_signals_cumulative": [
+            {
+                "speaker": "Lauren Charles",
+                "quote": "maybe that's something we propose... it's all there if there's interest"
+            }
+        ],
         "speakers_identified": [
             "Bethany McGregor",
             "Daniel Becker",
-            "Guillaume Bastile-Rousseau",
+            "Guillaume Bastille-Rousseau",
             "Mark Wilber",
             "Lauren Charles",
             "Kezia Manlove",
+            "Liliana Salvador",
             "Avery Strait",
             "Andrew Feig",
             "Gonzalo Vazquez-Prokopec",
-            "Mike Wimberly",
-            "Liliana Salvador"
+            "Mike Wimberly"
         ],
         "chunk_summaries": [
-            "The group brainstormed the intersection of animal movement, disease transmission, and environmental factors, with participants introducing new variables and perspectives. The tone was collaborative with frequent head nods and active backchannels, and the group ended the chunk in early divergent exploration with no specific project named.",
-            "The group continued to brainstorm, with participants connecting their specific expertise in blood meal analysis and machine learning to the broader problem of tracking animal movement and disease. The tone remained collaborative and intellectually rapport-filled, with participants building on each other's ideas and using humor to manage the meeting process. The group ended the chunk still in a divergent phase, having narrowed the domain but not yet selected a specific project.",
-            "The group explored the trade-offs between fine-scale movement data and population density for disease modeling, with Mike Wimberly synthesizing the need for abstraction at larger scales. Avery Strait and Bethany McGregor introduced the human-wildlife interface and citizen science as potential avenues for broader surveillance. The discussion remained highly collaborative and divergent, with participants using humor and active listening to build on each other's disciplinary perspectives.",
-            "The group converged on the idea of using wireless sensor networks to monitor livestock behavior as a proxy for disease transmission risk. Participants integrated their expertise in engineering and epidemiology to frame a specific research problem, with Lauren Charles sharing her past work as a potential foundation. The tone was highly collaborative and intellectually engaged, ending with a shared sense of direction.",
-            "The group focused on integrating different modeling approaches (statistical, mechanistic, machine learning) to address disease transmission at different scales. Lauren Charles and Mark Wilber engaged in a technical dialogue about the feasibility of multi-species modeling, while Mike Wimberly synthesized the discussion around the challenge of scale. The group ended the chunk in a convergent phase, having agreed on the need for a multi-layered modeling approach."
+            "The group engaged in a divergent brainstorming session focused on the intersection of animal movement and disease transmission. Participants debated whether to focus on generalizable movement models or specific contact patterns, with Kezia Manlove synthesizing these views by distinguishing between resource-driven movement and direct interaction. The tone was highly collaborative and intellectually safe, highlighted by Kezia directly challenging the facilitator's suggestion to use remote sensing data, pivoting the group toward predicting contact and host susceptibility instead. The chunk ended with open exploration of these critical information gaps without a specific project commitment.",
+            "The group continued divergent brainstorming, exploring novel data sources like radar detection and mosquito blood meals for tracking animal movement. A logistical hurdle arose when Lauren expressed difficulty taking notes while ideating, which Kezia quickly resolved by volunteering to take over the shared document. Mark shifted the conversation's focus by asking what the group would do with 'perfect data', leading to discussions on mechanistic modeling, machine learning for global forecasting, and retrospective trace back. The chunk ended with Guillaume challenging the utility of fine-scale data for predicting emergence, suggesting a focus on scale and mitigation instead.",
+            "The group debated the necessity of fine-scale movement data versus broad-scale density modeling, which Lauren synthesized as complementary approaches needed for different scales of prediction. New variables were introduced into the brainstorming, including human-wildlife contact points raised by Avery, and the unpredictable impacts of climate change raised by Lauren. Bethany suggested citizen science as a broad surveillance solution, and Liliana returned to the idea of using insect blood meals for tracking. The tone remained collaborative and exploratory, with participants actively building on each other's frameworks without yet converging on a single project.",
+            "The group continued divergent brainstorming, exploring the tension between density-dependent and frequency-dependent disease transmission. Andrew Feig intervened to point out the group's blind spot regarding livestock, prompting a pivot to discuss agricultural contact patterns. Lauren Charles proposed resurrecting her PhD research on cheap wireless sensor networks for cattle, explicitly offering it as a potential grant proposal idea. The chunk ended with active exploration of how this technology could identify sentinel animals and reduce testing burdens.",
+            "Daniel Becker expanded the discussion by contrasting wildlife and domestic animal movement, noting that wildlife often aggregates in human environments. Mike Wimberly synthesized the group's ideas, identifying a critical gap between fine-scale local monitoring and broad-scale density models, and challenged the group to bridge this 'middle part.' Mark Wilber and Lauren Charles responded by proposing methodological solutions, with Mark suggesting network connectivity models and Lauren advocating for combining machine learning with mechanistic models. The tone remained highly collaborative and intellectually engaged, with frequent head nods, though the group remained in a divergent exploratory phase without committing to a specific project."
         ]
     }
 }

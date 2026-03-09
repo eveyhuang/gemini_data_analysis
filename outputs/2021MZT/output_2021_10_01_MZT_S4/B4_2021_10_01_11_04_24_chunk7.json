@@ -1,51 +1,55 @@
 {
     "chunk_summary": {
         "speaking_time_seconds": {
-            "Justin Bahl": 350,
-            "Angela Arenas": 25,
-            "Rebecca Garabed": 120,
-            "Joyce Jose": 15
+            "Justin Bahl": 250,
+            "Angela Arenas": 20,
+            "Rebecca Garabed": 200,
+            "Joyce Jose": 15,
+            "Gisselle Medina": 3,
+            "Dana Mitzel": 0,
+            "Ana Bento": 0,
+            "Efrem Lim": 0
         },
-        "dominant_speaker_flag": "Yes",
-        "dominant_speaker_name": "Justin Bahl",
-        "idea_trajectory": "ambiguous",
-        "idea_trajectory_justification": "The group oscillates between brainstorming new research directions and struggling to define a concrete, manageable project scope.",
-        "collective_engagement_level": 3,
-        "collective_engagement_justification": "Participants maintain consistent engagement through active listening, nodding, and verbal backchannels while Justin synthesizes the group's ideas.",
-        "cross_disciplinary_bridging": "Yes",
-        "cross_disciplinary_bridging_speaker": "Justin Bahl",
-        "cross_disciplinary_bridging_description": "Justin connects molecular viral data with field-based ecological surveillance to understand pathogen transmission.",
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
+        "idea_trajectory": "convergent",
+        "idea_trajectory_justification": "The group shifts from open exploration to actively summarizing and synthesizing their discussion into key themes to prepare for the upcoming report out.",
+        "collective_engagement_level": 2,
+        "collective_engagement_justification": "Some participants like Rebecca show visible engagement and nods, but several others have their cameras off or remain static throughout the chunk.",
+        "cross_disciplinary_bridging": "No",
+        "cross_disciplinary_bridging_speaker": "None",
+        "cross_disciplinary_bridging_description": "None",
         "explicit_commitment_signal": "No",
         "commitment_signal_speaker": "None",
         "commitment_signal_quote": "None",
         "screenshare_active": "Yes",
         "artifact_type": "document",
         "artifact_interaction": "Yes",
-        "artifact_interaction_description": "Rebecca shares a document summarizing the group's key points, which the group references to structure their discussion.",
+        "artifact_interaction_description": "Rebecca shares a Word document with notes and actively references and edits it while summarizing the group's ideas.",
         "problem_specificity_level": 2,
-        "problem_specificity_justification": "The group has identified several key research themes but has not yet narrowed them down to a single, actionable research question.",
+        "problem_specificity_justification": "The group narrows down their broad discussion into three main themes (pathogen diversity, host variability, and interface contacts) but acknowledges they have not defined a specific, measurable research question.",
         "decision_crystallization_level": 2,
-        "decision_crystallization_justification": "The group agrees that their ideas represent multiple potential projects rather than one, but they have not yet committed to a specific one.",
-        "ambition_level": "novel_combination",
+        "decision_crystallization_justification": "They agree on the overarching themes of their discussion but explicitly state that these represent multiple potential projects rather than a single agreed-upon direction.",
+        "ambition_level": "not_applicable",
         "explicit_complementarity_recognition": "No",
         "complementarity_recognition_speaker": "None",
         "complementarity_recognition_quote": "None",
         "skill_gap_identification": "No",
         "skill_gap_description": "None",
         "shared_vision_indicator": "Yes",
-        "shared_vision_quote": "We got to a lot of points that we don't know anything about.",
+        "shared_vision_quote": "we're eventually looking towards",
         "pronoun_shift_flag": "No",
         "personal_disclosure": "Yes",
         "laughter_quality": "tension_release",
-        "dissent_response_quality": 3,
-        "risk_acknowledgment_with_enthusiasm": "Yes",
-        "risk_enthusiasm_quote": "It's a very ambitious project, if it is, like the questions are like a lot.",
+        "dissent_response_quality": "NA",
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
         "funding_awareness_signal": "No",
         "funding_reference_description": "None",
         "prior_relationship_signal": "No",
         "prior_relationship_description": "None",
         "meeting_structure_quality": "structured",
-        "notable_observation": "The group uses a shared document to ground their discussion, which helps them maintain focus despite the complexity of their research ideas."
+        "notable_observation": "Justin explicitly expressed feeling challenged by the broad scope of the discussion and the difficulty of narrowing it down to a specific, measurable project, which prompted the group to shift into a structured synthesis phase led by Rebecca."
     },
     "utterance_annotations": [
         {
@@ -54,17 +58,10 @@
             "speaking_duration_seconds": 6,
             "codes": [
                 {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_domain_knowledge",
-                    "evidence": "all throughout the Southeast and South",
-                    "explanation": "Justin shares his knowledge of the geographic scope of his research.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I'm having trouble",
-                    "explanation": "Justin uses individual framing to express his personal struggle with the project scope."
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "as well. But not just Texas, all throughout the Southeast and South.",
+                    "explanation": "Brief continuation of a previous thought with no substantive new content."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -80,21 +77,57 @@
         },
         {
             "speaker": "Angela Arenas",
-            "timestamp": "00:07-00:26",
-            "speaking_duration_seconds": 19,
+            "timestamp": "00:06-00:26",
+            "speaking_duration_seconds": 20,
             "codes": [
                 {
                     "code_name": "Information Seeking",
-                    "subcode": "asks_for_opinion",
-                    "evidence": "Which other species are we seeing that they're instead of going low, they're going higher?",
-                    "explanation": "Angela asks for the group's input on a specific research question.",
+                    "subcode": "asks_factual_question",
+                    "evidence": "which other species are we seeing that there instead of going lower, they're going higher?",
+                    "explanation": "Angela asks the group to identify other species that might be increasing in prevalence."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "Like well, of course, rodents. I don't know. That rodents are another one that might be especially...",
+                    "explanation": "She introduces rodents as a potential species of interest for their discussion.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
                     "evidence": "are we seeing",
-                    "explanation": "Angela uses joint framing to include the group in her research question."
+                    "explanation": "Uses 'we' to refer to the group's shared observation or knowledge."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "00:27-00:32",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "In the North, our group's doing a lot of research with coyotes expanding.",
+                    "explanation": "Rebecca shares information about her own lab's research on coyotes.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "our group's doing",
+                    "explanation": "Refers to her specific research group outside of the current Zoom meeting."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -109,22 +142,161 @@
             "pace": "normal"
         },
         {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "00:27-00:31",
-            "speaking_duration_seconds": 4,
+            "speaker": "Justin Bahl",
+            "timestamp": "00:32-01:05",
+            "speaking_duration_seconds": 33,
             "codes": [
                 {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_data_or_findings",
-                    "evidence": "our group's doing a lot of research with coyotes expanding.",
-                    "explanation": "Rebecca shares information about her group's current research.",
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "So rodents would fit into that, right? Rodents, they will interact with wildlife, they'll interact with domestic animals.",
+                    "explanation": "Justin builds on Angela's mention of rodents by categorizing them as interface animals.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "our group",
-                    "explanation": "Rebecca uses individual framing to refer to her specific research group."
+                    "subcode": "joint_framing",
+                    "evidence": "we see increase",
+                    "explanation": "Uses 'we' to refer to shared scientific observations."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Justin Bahl",
+            "timestamp": "01:09-02:21",
+            "speaking_duration_seconds": 72,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "I'm having trouble thinking about a potential project that... we can have really defined objectives or defined measurable outcomes.",
+                    "explanation": "Justin expresses difficulty in narrowing down their broad discussion into a concrete project."
+                },
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "scope_calibration",
+                    "evidence": "Everything that I'm hearing and we're discussing are all really huge problems... maybe that's entirely appropriate for this program, right?",
+                    "explanation": "He explicitly questions whether the massive scope of their ideas is appropriate for the grant program."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we can have really defined objectives",
+                    "explanation": "Uses 'we' to refer to the group's potential joint project."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "slow"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "02:22-03:15",
+            "speaking_duration_seconds": 53,
+            "codes": [
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "proposes_process",
+                    "evidence": "I'm going to share screen and I'm going to show the notes that I have.",
+                    "explanation": "Rebecca proposes a process for summarizing their thoughts by sharing her notes."
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "And yeah, who wants to report?",
+                    "explanation": "She asks for a volunteer to report out to the main room."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we're eventually looking towards",
+                    "explanation": "Uses 'we' to refer to the group's shared goals."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Joyce Jose",
+            "timestamp": "03:16-03:19",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "I did one reporting, so I can't.",
+                    "explanation": "Procedural comment declining the reporter role."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "03:19-03:22",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "You're a professional now. Okay. I did once. All right.",
+                    "explanation": "Rebecca jokes about Joyce being a professional reporter."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Justin Bahl",
+            "timestamp": "03:22-03:30",
+            "speaking_duration_seconds": 8,
+            "codes": [
+                {
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "Sorry, I wasn't saying no. I had somebody coming in and I thought they maybe don't want to be on camera.",
+                    "explanation": "Logistical explanation for turning off his camera."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -139,142 +311,15 @@
             "pace": "normal"
         },
         {
-            "speaker": "Justin Bahl",
-            "timestamp": "00:32-01:04",
-            "speaking_duration_seconds": 32,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "these animals that increase contacts between interfaces",
-                    "explanation": "Justin builds on the idea of host reservoirs by focusing on contact interfaces.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we see increase",
-                    "explanation": "Justin uses joint framing to discuss the group's shared observations."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Justin Bahl",
-            "timestamp": "01:09-01:44",
-            "speaking_duration_seconds": 35,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "raises_concern",
-                    "evidence": "I'm having trouble thinking about a potential project that we can have really defined objectives",
-                    "explanation": "Justin expresses his concern about the feasibility of the current project ideas.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we can have",
-                    "explanation": "Justin uses joint framing to discuss the group's potential project."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Justin Bahl",
-            "timestamp": "01:45-02:21",
-            "speaking_duration_seconds": 36,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "using the molecular data to estimate the whole system",
-                    "explanation": "Justin elaborates on a potential methodological approach.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we have no",
-                    "explanation": "Justin uses joint framing to describe the group's current limitations."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
             "speaker": "Rebecca Garabed",
-            "timestamp": "02:22-02:58",
-            "speaking_duration_seconds": 36,
+            "timestamp": "03:31-03:38",
+            "speaking_duration_seconds": 7,
             "codes": [
                 {
-                    "code_name": "Integration Practices",
-                    "subcode": "synthesizes_contributions",
-                    "evidence": "sometimes it's best to think about like, here's the big issue that we're eventually looking towards, but here's like the first step on that pathway",
-                    "explanation": "Rebecca synthesizes the group's discussion by proposing a structured approach to their research.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we're eventually looking",
-                    "explanation": "Rebecca uses joint framing to describe the group's shared research goals."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "03:06-03:14",
-            "speaking_duration_seconds": 8,
-            "codes": [
-                {
-                    "code_name": "Relational Climate",
-                    "subcode": "uses_humor",
-                    "evidence": "is this you saying no?",
-                    "explanation": "Rebecca uses humor to address Justin's nonverbal reaction.",
-                    "idea_quality": 0
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "is this you",
-                    "explanation": "Rebecca uses individual framing to address Justin directly."
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "records_or_documents",
+                    "evidence": "Okay. All right, so I'm putting Joyce down as our reporter here.",
+                    "explanation": "Rebecca notes down Joyce as the reporter in the shared document."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -290,11 +335,14 @@
         },
         {
             "speaker": "Joyce Jose",
-            "timestamp": "03:15-03:18",
-            "speaking_duration_seconds": 3,
+            "timestamp": "03:38-03:46",
+            "speaking_duration_seconds": 8,
             "codes": [
                 {
-                    "code_name": "None"
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "No, no, I can't. Oh, you can't. You're not allowed to do it twice. Oh, I did once yesterday, so someone else will have to.",
+                    "explanation": "Procedural clarification about reporting rules."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -310,91 +358,37 @@
         },
         {
             "speaker": "Rebecca Garabed",
-            "timestamp": "03:19-03:21",
-            "speaking_duration_seconds": 2,
-            "codes": [
-                {
-                    "code_name": "None"
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Justin Bahl",
-            "timestamp": "03:22-03:31",
-            "speaking_duration_seconds": 9,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "setback_response_explores",
-                    "evidence": "I wasn't saying no, I had somebody coming in and I thought they maybe don't want to be on camera.",
-                    "explanation": "Justin explains his previous behavior, clarifying his position.",
-                    "idea_quality": 0
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I wasn't saying",
-                    "explanation": "Justin uses individual framing to explain his own actions."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "03:34-03:46",
-            "speaking_duration_seconds": 12,
-            "codes": [
-                {
-                    "code_name": "Coordination and Decision Practices",
-                    "subcode": "proposes_next_step",
-                    "evidence": "so I'm putting Joyce down as our our reporter here.",
-                    "explanation": "Rebecca assigns a role to Joyce to help structure the meeting.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "our reporter",
-                    "explanation": "Rebecca uses joint framing to include Joyce in the group's work."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Justin Bahl",
-            "timestamp": "03:47-03:51",
+            "timestamp": "03:46-03:50",
             "speaking_duration_seconds": 4,
             "codes": [
                 {
-                    "code_name": "None"
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "All right. Volunteer? I can do it. All right, Justin.",
+                    "explanation": "Rebecca asks for another volunteer to report."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Justin Bahl",
+            "timestamp": "03:50-03:51",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "I can do it.",
+                    "explanation": "Brief procedural agreement."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -410,87 +404,33 @@
         },
         {
             "speaker": "Rebecca Garabed",
-            "timestamp": "03:52-04:14",
-            "speaking_duration_seconds": 22,
+            "timestamp": "03:51-05:37",
+            "speaking_duration_seconds": 106,
             "codes": [
                 {
                     "code_name": "Integration Practices",
                     "subcode": "synthesizes_contributions",
-                    "evidence": "so this is kind of from beginning to end, all the different things we talked about.",
-                    "explanation": "Rebecca summarizes the group's discussion using the shared document.",
+                    "evidence": "So it seems like we started out with this idea of immune response... We touched a couple of times it seems like on the idea of the field sampling and the lab work... Different kinds of reservoirs, variability...",
+                    "explanation": "Rebecca provides a comprehensive summary of the various topics the group has discussed.",
                     "idea_quality": 2
+                },
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "proposes_process",
+                    "evidence": "Usually what I do is I go through and kind of look for themes and things I can pull together.",
+                    "explanation": "She explains her process for organizing the notes into themes."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
                     "evidence": "we talked about",
-                    "explanation": "Rebecca uses joint framing to refer to the group's collective work."
+                    "explanation": "Uses 'we' to refer to the group's collective discussion."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "04:23-04:50",
-            "speaking_duration_seconds": 27,
-            "codes": [
-                {
-                    "code_name": "Integration Practices",
-                    "subcode": "synthesizes_contributions",
-                    "evidence": "it seems like we started out with this idea of immune response... we touched a couple of times it seems like on the idea of the field sampling and the lab work",
-                    "explanation": "Rebecca synthesizes the group's progress by identifying key themes.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we started out",
-                    "explanation": "Rebecca uses joint framing to describe the group's collective progress."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "04:51-05:33",
-            "speaking_duration_seconds": 42,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "finding the key data points that will give you the most information, so that was this like string theory idea",
-                    "explanation": "Rebecca elaborates on a previously mentioned idea.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we were talking about",
-                    "explanation": "Rebecca uses joint framing to refer to the group's discussion."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -506,51 +446,63 @@
                 {
                     "code_name": "Integration Practices",
                     "subcode": "synthesizes_contributions",
-                    "evidence": "summarizing the the big things that I think we we've spoken about",
-                    "explanation": "Justin attempts to synthesize the group's discussion into key themes.",
-                    "idea_quality": 2
+                    "evidence": "So general surveillance in zoonotic reservoirs to try and understand the system of pathogen tolerance as one potential area... The other was looking at specific animals that may increase contacts or increase risk.",
+                    "explanation": "Justin attempts to synthesize the broad notes into a few key potential project areas.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "I think the biggest challenge is what's actually practical and that's something that we haven't really narrowed down.",
+                    "explanation": "He reiterates his concern that they haven't identified a practical, narrow project."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we've spoken about",
-                    "explanation": "Justin uses joint framing to refer to the group's collective discussion."
+                    "evidence": "we haven't really narrowed down",
+                    "explanation": "Uses 'we' to refer to the group's progress."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
+            "hesitation_flag": "Yes",
             "pace": "normal"
         },
         {
             "speaker": "Rebecca Garabed",
-            "timestamp": "06:44-07:37",
-            "speaking_duration_seconds": 53,
+            "timestamp": "06:43-07:39",
+            "speaking_duration_seconds": 56,
             "codes": [
                 {
                     "code_name": "Integration Practices",
                     "subcode": "synthesizes_contributions",
-                    "evidence": "so if I could draw a connection here... we talked at the beginning about hosts that might play a larger role because of the way the pathogen behaves in them",
-                    "explanation": "Rebecca draws connections between different parts of the group's discussion.",
+                    "evidence": "So if I could draw a connection here, so we talked at the beginning about hosts... But then at the end we got into here more about the behavior of the animals. And then in between we were talking about like variability.",
+                    "explanation": "Rebecca connects different parts of their conversation to show how they relate to the concept of a reservoir.",
                     "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "would you have to look at each one of those separately? Could you look at them together for a particular pathogen or species?",
+                    "explanation": "She asks if these themes need to be studied separately or can be combined."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
                     "evidence": "we talked at the beginning",
-                    "explanation": "Rebecca uses joint framing to refer to the group's collective discussion."
+                    "explanation": "Uses 'we' to refer to the group's discussion."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -564,25 +516,31 @@
             "speaking_duration_seconds": 21,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "raises_concern",
-                    "evidence": "we got to a lot of points that we don't know anything about and we're not sure how to do",
-                    "explanation": "Justin expresses his concern about the group's lack of knowledge and methodological clarity.",
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "So I guess in summary we got to a lot of points that we don't know anything about and we're not sure how to do.",
+                    "explanation": "Justin provides a humorous, high-level summary of their current state.",
                     "idea_quality": 1
+                },
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "we got to a lot of points that we don't know anything about and we're not sure how to do.",
+                    "explanation": "He uses self-deprecating humor about the group's lack of concrete answers."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we got to",
-                    "explanation": "Justin uses joint framing to describe the group's collective situation."
+                    "evidence": "we got to a lot of points",
+                    "explanation": "Uses 'we' to refer to the group's collective outcome."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
             "shared_affect": "No",
-            "any_smile_other": "No",
+            "any_smile_other": "Yes",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
@@ -590,27 +548,26 @@
         },
         {
             "speaker": "Joyce Jose",
-            "timestamp": "08:04-08:11",
-            "speaking_duration_seconds": 7,
+            "timestamp": "08:04-08:12",
+            "speaking_duration_seconds": 8,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "raises_concern",
-                    "evidence": "It's a very ambitious project, if it is, like the questions are like a lot.",
-                    "explanation": "Joyce expresses her concern about the project's ambition and complexity.",
-                    "idea_quality": 1
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "scope_calibration",
+                    "evidence": "It's a very ambitious project if it is, like the questions are like a lot.",
+                    "explanation": "Joyce notes that the scope of what they are discussing is very large."
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "the questions are",
-                    "explanation": "Joyce uses joint framing to refer to the group's project."
+                    "subcode": "ambiguous",
+                    "evidence": "It's a very ambitious project",
+                    "explanation": "Discusses the project scope but without clear pronoun framing."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -626,15 +583,14 @@
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "is it one project or is it is it multiple projects?",
-                    "explanation": "Justin asks for clarification on the project's scope.",
-                    "idea_quality": 1
+                    "evidence": "I mean, is it one project or is it multiple projects?",
+                    "explanation": "Justin asks for clarification on whether their ideas constitute one or many projects."
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
+                    "subcode": "ambiguous",
                     "evidence": "is it one project",
-                    "explanation": "Justin uses joint framing to refer to the group's work."
+                    "explanation": "Discusses the project structure without clear pronouns."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -650,11 +606,20 @@
         },
         {
             "speaker": "Joyce Jose",
-            "timestamp": "08:17-08:18",
-            "speaking_duration_seconds": 1,
+            "timestamp": "08:16-08:19",
+            "speaking_duration_seconds": 3,
             "codes": [
                 {
-                    "code_name": "None"
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Multiple projects definitely.",
+                    "explanation": "Joyce confirms that it is multiple projects."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "Multiple projects definitely.",
+                    "explanation": "No clear pronouns used."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -669,12 +634,21 @@
             "pace": "normal"
         },
         {
-            "speaker": "Angela Arenas",
-            "timestamp": "08:19-08:21",
-            "speaking_duration_seconds": 2,
+            "speaker": "Gisselle Medina",
+            "timestamp": "08:19-08:22",
+            "speaking_duration_seconds": 3,
             "codes": [
                 {
-                    "code_name": "None"
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Yeah, I will agree with that. It is definitely multiple.",
+                    "explanation": "Gisselle agrees that the scope covers multiple projects."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "It is definitely multiple.",
+                    "explanation": "No clear joint or individual framing regarding the research."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -696,21 +670,21 @@
                 {
                     "code_name": "Integration Practices",
                     "subcode": "synthesizes_contributions",
-                    "evidence": "the ones being on on the pathogen diversity, another being from host variability, and then another being between contacts",
-                    "explanation": "Justin synthesizes the group's discussion into three distinct project areas.",
-                    "idea_quality": 2
+                    "evidence": "Okay, so the ones being on from the pathogen diversity, another being from host variability, and then another being between contacts.",
+                    "explanation": "Justin lists the three main themes they have identified.",
+                    "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "the ones being",
-                    "explanation": "Justin uses joint framing to refer to the group's project areas."
+                    "subcode": "ambiguous",
+                    "evidence": "the ones being on from the pathogen diversity",
+                    "explanation": "Summarizes themes without clear pronoun framing."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -726,21 +700,20 @@
                 {
                     "code_name": "Coordination and Decision Practices",
                     "subcode": "proposes_process",
-                    "evidence": "so from that prompt that just came through, we're supposed to make a slide to show",
-                    "explanation": "Rebecca proposes a process for the group to follow.",
-                    "idea_quality": 1
+                    "evidence": "we're supposed to make a slide to show. So how do we want to summarize this?",
+                    "explanation": "Rebecca shifts the group to the task of creating a summary slide."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we're supposed to",
-                    "explanation": "Rebecca uses joint framing to include the group in the process."
+                    "evidence": "how do we want to summarize this?",
+                    "explanation": "Uses 'we' to refer to the group's joint task."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -750,27 +723,62 @@
         },
         {
             "speaker": "Justin Bahl",
-            "timestamp": "09:08-09:50",
-            "speaking_duration_seconds": 42,
+            "timestamp": "09:08-09:56",
+            "speaking_duration_seconds": 48,
             "codes": [
                 {
                     "code_name": "Integration Practices",
                     "subcode": "synthesizes_contributions",
-                    "evidence": "we're looking at it from the the side of the pathogen... the input of the hosts... how do we examine complexity of the system",
-                    "explanation": "Justin synthesizes the group's discussion into a structured framework for their slide.",
+                    "evidence": "So I was thinking that we're looking at it from the side of the pathogen... The input of the hosts as well... And then how do we examine complexity of the system?",
+                    "explanation": "Justin provides a structured summary of their themes for the slide.",
                     "idea_quality": 2
+                },
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "Breakout room closing in 60 seconds. This is pressure.",
+                    "explanation": "He jokes about the time pressure as the room is about to close."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we're looking at",
-                    "explanation": "Justin uses joint framing to refer to the group's collective work."
+                    "evidence": "we're looking at it",
+                    "explanation": "Uses 'we' to refer to the group's shared perspective."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "09:57-10:00",
+            "speaking_duration_seconds": 3,
+            "codes": [
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "proposes_next_step",
+                    "evidence": "So I can finish up the slides a little bit and I can...",
+                    "explanation": "Rebecca states she will finish the slides as the room closes."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I can finish up",
+                    "explanation": "Refers to her own individual action."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -783,25 +791,23 @@
         "pronoun_shift_occurred_cumulative": true,
         "shared_vision_established_cumulative": true,
         "idea_trajectory_sequence": [
+            "procedural",
             "divergent",
             "divergent",
             "divergent",
             "divergent",
             "divergent",
-            "divergent",
-            "ambiguous"
+            "convergent"
         ],
         "ideas_currently_on_table": [
-            "Pathogen diversity in host reservoirs",
-            "Host immunological variability and disease dynamics",
-            "Contact interfaces and transmission risk",
-            "Targeted surveillance using negative data",
-            "System complexity and pathogen tolerance"
+            "Investigating pathogen diversity within reservoir hosts",
+            "Examining how host immunological variability impacts pathogen diversity",
+            "Studying interface animals like rodents or feral pigs that increase spillover risk"
         ],
         "commitment_signals_cumulative": [],
         "speakers_identified": [
-            "Rebecca Garabed",
             "Justin Bahl",
+            "Rebecca Garabed",
             "Joyce Jose",
             "Efrem Lim",
             "Ana Bento",
@@ -810,13 +816,13 @@
             "Dana Mitzel"
         ],
         "chunk_summaries": [
-            "The group introduced themselves and their research interests, which span virology, epidemiology, disease ecology, and veterinary medicine. Rebecca facilitated the session, and the group began to explore the prompt on zoonotic host reservoirs, with Justin raising questions about the feasibility of studying host immune responses in wildlife. The tone was collaborative and structured, and the group ended the chunk in early divergent exploration with no specific project named.",
-            "The group continued to explore zoonotic host reservoirs, with Gisselle and Justin discussing the role of bats and other wildlife in viral maintenance. Ana bridged the discussion by connecting field surveillance with lab-based immunological studies, and the group began to refine their focus on identifying high-consequence pathogens in low-prevalence reservoirs. The tone remained collaborative and intellectually engaged, with participants actively building on each other's ideas.",
-            "The group actively brainstormed and debated the definitions of 'reservoir' and 'amplifying host' across different species, introducing new variables like viral load and shedding efficiency. Ana bridged the discussion by connecting individual-level immunological variability to population-level disease dynamics, and Rebecca sought input from lab-based participants to measure these traits. The group maintained a collaborative tone and ended the chunk in divergent exploration, having narrowed the domain but not yet settled on a specific research question.",
-            "The group explored the challenges of linking lab-based viral isolation with field-based surveillance, with Joyce and Rebecca discussing the difficulty of studying reservoir hosts. Justin and Efrem contributed perspectives on the complexity of vector-borne transmission and the use of NGS for viral discovery. The tone was intellectually engaged and collaborative, with participants actively building on each other's ideas, and the group ended the chunk in divergent exploration, having identified a key challenge in their research domain.",
-            "The group brainstormed how to refine surveillance strategies, moving from general pathogen discovery to targeted, data-informed approaches. Efrem introduced the concept of using 'negative data' to infer infection clusters, which was well-received by the group. Dana Mitzel joined the discussion, and the group ended the chunk in divergent exploration, having identified a promising, data-driven direction for their research.",
-            "The group brainstormed potential model systems for studying zoonotic spillover, including feral pigs and mosquitoes, while debating the merits of lab-based versus in-silico approaches. Justin and Angela drove the discussion, with Rebecca facilitating and encouraging the group to narrow their focus toward human-animal contact. The group ended the chunk in divergent exploration, having identified a need to synthesize their ideas into a more cohesive research direction.",
-            "The group synthesized their previous discussions into three potential project areas: pathogen diversity, host variability, and contact interfaces. Justin and Rebecca led the effort to structure these ideas, with the group acknowledging the ambition and complexity of their proposed research. The tone was collaborative and focused, and the group ended the chunk having identified multiple potential projects but not yet committing to a single one."
+            "The group spent the first half of the segment conducting structured introductions, sharing their diverse backgrounds in virology, disease ecology, and veterinary medicine. Facilitator Rebecca Garabed then shared the prompt document, leading Justin Bahl to initiate the first substantive discussion by questioning the availability of datasets for wild animal host immune responses. The tone was collaborative and lighthearted, with participants sharing jokes and actively listening, ending the chunk in the early stages of exploring the provided prompts.",
+            "The group transitioned into divergent brainstorming, focusing on wild animal immune responses and reservoir hosts. Gisselle and Justin discussed the unique immune tolerance of bats, while Ana expanded the scope by sharing her ecological work on environmental cues affecting immune responses in wild sheep. Justin proposed a broad project idea to establish baselines for pathogen diversity and system tolerance, openly admitting his lack of immunology expertise, which fostered a safe and collaborative tone. The chunk ended with the group actively exploring the concept of reservoir hosts, though no specific project or commitment was finalized.",
+            "The group continued divergent exploration by debating the definition of a reservoir host, with Justin proposing a pathogen diversity metric and Gisselle highlighting viral load and shedding differences between species. Rebecca actively facilitated the discussion, pausing to clarify concepts and inviting quieter participants to contribute. Ana introduced a new conceptual angle by asking how individual immunological variability maps to population-level epidemiological traits, shifting the group toward a shared problem framing. The chunk ended with Efrem and Angela discussing the genetic and immunological differences between domestic and wild animals, maintaining an exploratory trajectory without settling on a specific project.",
+            "The group engaged in divergent exploration focused on the methodological challenges of studying viral pathogens. Joyce shared her lab-based approaches to studying vector-borne viruses like Rift Valley fever, while Justin and Efrem discussed the difficulties of translating sequence data and lab findings to population-level inferences. The tone remained collaborative and intellectually engaged, with participants actively validating each other's challenges. The chunk ended with the group sharing their respective methods without converging on a specific joint project.",
+            "The group continued divergent exploration focusing on the methodological challenges of viral surveillance. Efrem proposed using concepts from string theory and reverse contact tracing to optimize sampling without needing to sequence every animal, while Rebecca highlighted the biases inherent in current surveillance methods. Dana joined the conversation, introducing her expertise in vector-borne diseases and asking how to account for emerging pathogens in new areas. The tone remained collaborative and engaged, with participants actively building on each other's analogies, though they remained in the exploratory phase without committing to a specific project.",
+            "Justin proposed shifting focus to systematic vector surveillance and later suggested developing a lab model system for reservoir hosts using nematodes. The group explored these ideas divergently until Rebecca invited Angela to share her thoughts, prompting Angela to critique the broad scope and suggest narrowing the focus to feral pigs due to their high contact with humans. Rebecca actively facilitated this pivot by reframing it as backtracking from human spillover events. The tone remained collaborative and engaged, and the chunk ended with the group beginning to organize their thoughts around the feral pig concept for the upcoming report out.",
+            "The group shifted into a convergent and procedural phase as they prepared for the upcoming report out. Justin expressed feeling challenged by the broad scope of their discussion and the difficulty of narrowing it down to a specific, measurable project. Rebecca facilitated a synthesis of their notes, and the group agreed to summarize their ideas into three broad themes: pathogen diversity, host variability, and interface animals. The tone was collaborative but slightly pressured as the breakout room timer counted down, ending with the group finalizing their summary slide without committing to a single specific project."
         ]
     }
 }

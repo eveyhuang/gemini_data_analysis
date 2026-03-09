@@ -1,21 +1,21 @@
 {
     "chunk_summary": {
         "speaking_time_seconds": {
-            "Silhie Huijben": 350,
-            "Tavis Anderson": 180,
-            "Rebecca Garabed": 60,
-            "Kezia Manlove": 60,
-            "Laurene Tetard": 60
+            "Silvie Huijben": 180,
+            "Tavis Anderson": 100,
+            "Rebecca Garabed": 30,
+            "Kezia Manlove": 30,
+            "Laurene Tetard": 40
         },
-        "dominant_speaker_flag": "Yes",
-        "dominant_speaker_name": "Silhie Huijben",
+        "dominant_speaker_flag": "No",
+        "dominant_speaker_name": "None",
         "idea_trajectory": "divergent",
-        "idea_trajectory_justification": "The group is actively brainstorming how to integrate climate data, vector population dynamics, and machine learning, moving from problem identification to potential modeling approaches.",
+        "idea_trajectory_justification": "The group is actively brainstorming and expanding on a modeling concept, adding new layers such as trait-based clustering, machine learning, and satellite imagery.",
         "collective_engagement_level": 3,
-        "collective_engagement_justification": "Participants show consistent responsiveness through frequent head nods and active, relevant follow-up questions.",
+        "collective_engagement_justification": "Visible non-speakers (Rebecca, Laurene, Kezia) show consistent responsiveness with regular head nods and attentive facial expressions throughout the chunk.",
         "cross_disciplinary_bridging": "Yes",
         "cross_disciplinary_bridging_speaker": "Tavis Anderson",
-        "cross_disciplinary_bridging_description": "Connecting satellite imagery (spatial ecology) with vector population dynamics (epidemiology) and machine learning (data science).",
+        "cross_disciplinary_bridging_description": "Connected satellite imagery, abiotic data, and machine learning.",
         "explicit_commitment_signal": "No",
         "commitment_signal_speaker": "None",
         "commitment_signal_quote": "None",
@@ -23,48 +23,56 @@
         "artifact_type": "None",
         "artifact_interaction": "NA",
         "artifact_interaction_description": "None",
-        "problem_specificity_level": 2,
-        "problem_specificity_justification": "The group has narrowed the focus to vector-borne disease modeling and climate dependence, but has not yet defined a specific research question.",
-        "decision_crystallization_level": 2,
-        "decision_crystallization_justification": "The group has identified a shared interest in modeling vector dynamics under climate change, but no specific project has been agreed upon.",
+        "problem_specificity_level": 3,
+        "problem_specificity_justification": "The group articulated a specific research question: how to predict vector population dynamics using trait-based clustering and machine learning.",
+        "decision_crystallization_level": 3,
+        "decision_crystallization_justification": "A specific project idea (a multi-layered machine learning model for vector dynamics) was named and collaboratively built upon by Tavis, Laurene, and Kezia.",
         "ambition_level": "novel_combination",
-        "explicit_complementarity_recognition": "Yes",
-        "complementarity_recognition_speaker": "Laurene Tetard",
-        "complementarity_recognition_quote": "The lab experiment would become the training set for the machine learning.",
-        "skill_gap_identification": "Yes",
-        "skill_gap_description": "Silhie identifies a lack of data on mosquito micro-climates, which Tavis suggests could be addressed through spatial modeling.",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
+        "skill_gap_identification": "No",
+        "skill_gap_description": "None",
         "shared_vision_indicator": "Yes",
-        "shared_vision_quote": "If we think about this as a modeling issue...",
-        "pronoun_shift_flag": "Yes",
+        "shared_vision_quote": "if we think about this as a modeling issue",
+        "pronoun_shift_flag": "No",
         "personal_disclosure": "No",
-        "laughter_quality": "appreciative",
+        "laughter_quality": "social_lubricant",
         "dissent_response_quality": 3,
         "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
         "funding_awareness_signal": "No",
         "funding_reference_description": "None",
         "prior_relationship_signal": "No",
         "prior_relationship_description": "None",
         "meeting_structure_quality": "loosely_structured",
-        "notable_observation": "The group successfully transitioned from a general discussion of research interests to a collaborative brainstorming session, with participants actively building on each other's ideas."
+        "notable_observation": "The group successfully transitioned from identifying a broad problem (lack of predictive models for vector-borne diseases) to collaboratively building a specific, multi-layered methodological approach involving trait-based clustering, lab-derived training sets, and machine learning."
     },
     "utterance_annotations": [
         {
-            "speaker": "Silhie Huijben",
+            "speaker": "Silvie Huijben",
             "timestamp": "00:00-00:41",
             "speaking_duration_seconds": 41,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
                     "subcode": "shares_domain_knowledge",
-                    "evidence": "The problem is that there is just one a huge lack of data.",
-                    "explanation": "Silhie shares her domain knowledge about the lack of data in vector-borne disease modeling.",
+                    "evidence": "there is just one a huge lack of data... not really good models to predict how vector populations are going to change over time",
+                    "explanation": "Silvie shares her domain expertise regarding the current state of data and modeling for vector-borne diseases.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "that's like one really critical need at this point because if there is an outbreak... you're too late",
+                    "explanation": "She frames the lack of predictive models as a critical need and a shared problem for the group to consider.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I think that's like one really critical need at this point.",
-                    "explanation": "Silhie uses individual framing to express her perspective on the research needs."
+                    "subcode": "ambiguous",
+                    "evidence": "if you're then have to scramble and try and get models going",
+                    "explanation": "Uses 'you' in a general scientific sense, not clearly individual or joint."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -85,16 +93,22 @@
             "codes": [
                 {
                     "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "Is it possible to bin the the vector species into generic groups?",
-                    "explanation": "Tavis asks a clarifying question to explore potential modeling approaches.",
-                    "idea_quality": 1
+                    "subcode": "asks_factual_question",
+                    "evidence": "Is it possible to bin the vector species into generic groups in which the abiotic conditions are going to have the same mechanistic impact",
+                    "explanation": "Tavis asks a specific question about the feasibility of grouping vector species based on traits."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "Is it possible to do a trait-based model of vector population dynamics over time?",
+                    "explanation": "He extends the existing idea of modeling vector-borne diseases by proposing a specific trait-based approach.",
+                    "idea_quality": 2
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I have a question there on your absence of data.",
-                    "explanation": "Tavis uses individual framing to introduce his question."
+                    "subcode": "ambiguous",
+                    "evidence": "Is it possible to do a trait-based model",
+                    "explanation": "Discusses the research approach without using personal or joint pronouns."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -109,22 +123,385 @@
             "pace": "normal"
         },
         {
-            "speaker": "Silhie Huijben",
-            "timestamp": "01:21-02:37",
-            "speaking_duration_seconds": 76,
+            "speaker": "Silvie Huijben",
+            "timestamp": "01:20-02:37",
+            "speaking_duration_seconds": 77,
             "codes": [
                 {
                     "code_name": "Evaluation Practices",
-                    "subcode": "setback_response_accepts_builds",
-                    "evidence": "I suppose yes. This is hard, right?",
-                    "explanation": "Silhie acknowledges the difficulty of the proposed approach while remaining open to it.",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I suppose yes... as a first approximation like of course you can do that",
+                    "explanation": "Silvie validates Tavis's idea as a possible first approximation."
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "you might get into trouble where there might be some very important specific differences... the climate that they prefer more",
+                    "explanation": "She raises a concern about the limitations of the binning approach due to specific microclimate preferences."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I'm thinking of a lot of my work is also in Africa",
+                    "explanation": "She frames her response using her own individual research experience."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Tavis Anderson",
+            "timestamp": "02:38-02:51",
+            "speaking_duration_seconds": 13,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "Is climate important for every pathogen and every mosquito?",
+                    "explanation": "Tavis asks a clarifying question about the universality of climate importance."
+                },
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "scope_calibration",
+                    "evidence": "how much biological reality is it necessary to describe vector dynamics?",
+                    "explanation": "He explicitly questions the necessary scope and complexity of the biological reality needed for the models."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "how much biological reality is it necessary",
+                    "explanation": "Discusses the research scope without using personal or joint pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Silvie Huijben",
+            "timestamp": "02:52-03:18",
+            "speaking_duration_seconds": 26,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I would say it's very very important.",
+                    "explanation": "Silvie directly answers and validates the importance of climate."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "the mosquito is ectothermic... these pathogens speed up their replication if they're at warmer climates",
+                    "explanation": "She shares specific biological knowledge about why climate is crucial for mosquitoes and pathogens.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "the mosquito is ectothermic",
+                    "explanation": "Discusses biological facts without personal or joint framing."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "03:18-04:04",
+            "speaking_duration_seconds": 46,
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "If you want to go write a model, go ahead.",
+                    "explanation": "Rebecca uses a lighthearted joke to transition the conversation."
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "frames_shared_problem",
+                    "evidence": "if we think about this as a modeling issue... archetype systems where you have lots of individual very fine scale differences and then you have the overall population",
+                    "explanation": "She frames the discussion as a broader modeling challenge involving fine-scale vs. overall population dynamics.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "When we think about, okay, well we need to incorporate climate.",
-                    "explanation": "Silhie shifts to joint framing when discussing the research problem."
+                    "evidence": "if we think about this as a modeling issue... do we just need to go out",
+                    "explanation": "Uses 'we' to frame the problem-solving approach as a joint effort."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "04:04-04:32",
+            "speaking_duration_seconds": 28,
+            "codes": [
+                {
+                    "code_name": "Epistemic Bridging",
+                    "subcode": "reframes_cross_disciplinarily",
+                    "evidence": "I would maybe just phrase that question in a slightly different way",
+                    "explanation": "Kezia reframes Rebecca's question to make it more specific to the biological predictability."
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "can you predict how a new species is going to respond to climate on the basis of... is that predictable and on what dimensions?",
+                    "explanation": "She asks a specific question about the predictability of species' responses to climate."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "can you predict how a new species is going to respond",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Silvie Huijben",
+            "timestamp": "04:32-05:45",
+            "speaking_duration_seconds": 73,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "collect data on one mosquito development under different climatic conditions in a lab... with incubators set at different temperatures",
+                    "explanation": "Silvie shares a specific methodological approach for collecting the necessary data.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "you can make a model out of it, but I'm not sure whether that model is actually going to be all that predictive",
+                    "explanation": "She expresses skepticism about the predictive power of such a model given the complexities."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "a collaborator of mine",
+                    "explanation": "Frames the data collection approach around her own collaborative network."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "05:45-06:26",
+            "speaking_duration_seconds": 41,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "are those then correlated across mosquito species? So like if you're fast on one, are you fast on all",
+                    "explanation": "Kezia extends the idea by suggesting that traits might be correlated across species, simplifying the modeling.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "can you reduce all that... and then maybe you've got this other critical component which is where do they live, how much are they buffered?",
+                    "explanation": "She asks if the complexity can be reduced and introduces buffering as another component."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "if you're fast on one, are you fast on all",
+                    "explanation": "Uses 'you' generally to refer to the mosquito species."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Silvie Huijben",
+            "timestamp": "06:26-06:57",
+            "speaking_duration_seconds": 31,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "I would imagine that they must be quite correlated",
+                    "explanation": "Silvie agrees with Kezia's hypothesis about trait correlation."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "returns_to_earlier_idea",
+                    "evidence": "to go back to Tavis's question, I suppose you can probably cluster mosquitoes in a few clusters",
+                    "explanation": "She explicitly returns to Tavis's earlier idea of clustering or binning the mosquitoes.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "I suppose you can probably cluster mosquitoes",
+                    "explanation": "Uses 'you' generally."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Laurene Tetard",
+            "timestamp": "06:57-07:29",
+            "speaking_duration_seconds": 32,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "So what are those clusters based on?",
+                    "explanation": "Laurene asks for clarification on the basis of the proposed clusters."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "use that as the guide for the evaluation with machine learning of where the real mosquito from the real world will fall into",
+                    "explanation": "She extends the clustering idea by introducing machine learning to categorize real-world mosquitoes based on lab-defined features.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "what are those clusters based on",
+                    "explanation": "Discusses the research approach without personal or joint pronouns."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "07:29-07:52",
+            "speaking_duration_seconds": 23,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "I don't know if that's totally clear to me what you just said Laurene... where are you putting the machine learning in to compare that to real data?",
+                    "explanation": "Rebecca asks Laurene to clarify how the machine learning component fits into the proposed workflow."
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "I'd be interested to hear more",
+                    "explanation": "She explicitly invites Laurene to elaborate on her idea."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "where are you putting the machine learning in",
+                    "explanation": "Uses 'you' to refer to Laurene's proposed method."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Laurene Tetard",
+            "timestamp": "07:52-09:00",
+            "speaking_duration_seconds": 68,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "the lab experiment would become the training set for the machine learning",
+                    "explanation": "Laurene explains the methodological approach of using lab data to train a machine learning model.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "when you go to the real world and you collect the mosquitoes... the algorithm can then place them in bins",
+                    "explanation": "She further develops the idea of how the algorithm would classify real-world data based on the established framework.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "when you go to the real world and you collect the mosquitoes",
+                    "explanation": "Uses 'you' generally to describe the scientific process."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -140,327 +517,34 @@
         },
         {
             "speaker": "Tavis Anderson",
-            "timestamp": "02:38-02:51",
-            "speaking_duration_seconds": 13,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_rhetorical_question",
-                    "evidence": "Is climate important for every pathogen and every mosquito?",
-                    "explanation": "Tavis asks a rhetorical question to prompt further reflection on the scope of the problem.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "ambiguous",
-                    "evidence": "Is climate important for every pathogen and every mosquito?",
-                    "explanation": "Tavis discusses the research content in a general way."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Silhie Huijben",
-            "timestamp": "02:52-03:18",
-            "speaking_duration_seconds": 26,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "I would say it's very, very important.",
-                    "explanation": "Silhie validates Tavis's question and emphasizes the importance of climate.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I would say it's very, very important.",
-                    "explanation": "Silhie uses individual framing to express her opinion."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "03:19-04:03",
-            "speaking_duration_seconds": 44,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "proposes_new_idea",
-                    "evidence": "So if we think about this as a modeling issue as sort of this might be one of the archetype systems.",
-                    "explanation": "Rebecca proposes framing the problem as an archetype system for modeling.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "So if we think about this as a modeling issue.",
-                    "explanation": "Rebecca uses joint framing to propose a new way of looking at the problem."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "Yes",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Kezia Manlove",
-            "timestamp": "04:04-04:31",
-            "speaking_duration_seconds": 27,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "Can you predict how a new a different species is going to respond to climate?",
-                    "explanation": "Kezia asks a clarifying question to explore the predictive capabilities of the proposed model.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "Can you predict how a new a different species is going to respond to climate?",
-                    "explanation": "Kezia uses joint framing to ask about the model's capabilities."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Silhie Huijben",
-            "timestamp": "04:32-05:44",
-            "speaking_duration_seconds": 72,
-            "codes": [
-                {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_method_or_approach",
-                    "evidence": "I mean this is something that I'm currently interested in and a collaborator of mine too to just collect data on one mosquito development under different climatic conditions.",
-                    "explanation": "Silhie shares her current research approach and interest in collecting data.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "But we could collect data.",
-                    "explanation": "Silhie uses joint framing to suggest a potential research activity."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Kezia Manlove",
-            "timestamp": "05:45-06:25",
-            "speaking_duration_seconds": 40,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_for_elaboration",
-                    "evidence": "Are those then correlated across mosquito species?",
-                    "explanation": "Kezia asks for elaboration on whether the life history attributes are correlated across species.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "Are those then correlated across mosquito species?",
-                    "explanation": "Kezia uses joint framing to ask about the correlation of attributes."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Silhie Huijben",
-            "timestamp": "06:26-06:57",
-            "speaking_duration_seconds": 31,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "That's a good question. I don't know the answer to that question, but I would imagine that they must be quite correlated.",
-                    "explanation": "Silhie validates Kezia's question and shares her hypothesis.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I don't know the answer to that question.",
-                    "explanation": "Silhie uses individual framing to express her uncertainty."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Laurene Tetard",
-            "timestamp": "06:58-07:29",
-            "speaking_duration_seconds": 31,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_factual_question",
-                    "evidence": "So what are those clusters based on?",
-                    "explanation": "Laurene asks a factual question to understand the basis of the proposed clusters.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "ambiguous",
-                    "evidence": "So what are those clusters based on?",
-                    "explanation": "Laurene discusses the research content in a general way."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "07:30-07:52",
-            "speaking_duration_seconds": 22,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_for_elaboration",
-                    "evidence": "But then where where are you putting the machine learning in to to compare that to real data?",
-                    "explanation": "Rebecca asks for elaboration on how machine learning will be used to compare the model to real data.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "But then where where are you putting the machine learning in to to compare that to real data?",
-                    "explanation": "Rebecca uses joint framing to ask about the research methodology."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Laurene Tetard",
-            "timestamp": "07:53-08:59",
-            "speaking_duration_seconds": 66,
-            "codes": [
-                {
-                    "code_name": "Integration Practices",
-                    "subcode": "synthesizes_contributions",
-                    "evidence": "Because then the the lab experiment would become the training set for the machine learning.",
-                    "explanation": "Laurene synthesizes the lab experiment and machine learning components into a single workflow.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "Because then the the lab experiment would become the training set for the machine learning.",
-                    "explanation": "Laurene uses joint framing to describe the proposed research workflow."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 2,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Tavis Anderson",
-            "timestamp": "09:00-10:00",
-            "speaking_duration_seconds": 60,
+            "timestamp": "09:00-10:01",
+            "speaking_duration_seconds": 61,
             "codes": [
                 {
                     "code_name": "Idea Management",
                     "subcode": "extends_existing_idea",
-                    "evidence": "I think of as different layers within a network.",
-                    "explanation": "Tavis extends the idea of modeling by proposing a multi-layered network approach.",
+                    "evidence": "jumping off that point... is if I think of it as different layers within a network",
+                    "explanation": "Tavis explicitly builds on Laurene's point by proposing a multi-layered network structure.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "combines_ideas",
+                    "evidence": "base layer could be your satellite imagery... fine scale abiotic data... vector population measure... machine learning algorithm would piece all of those different features together",
+                    "explanation": "He combines multiple data sources (satellite, abiotic, vector captures) with the machine learning approach into a single cohesive model.",
                     "idea_quality": 2
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "I think of as different layers within a network.",
-                    "explanation": "Tavis uses joint framing to propose a new way of structuring the research."
+                    "subcode": "ambiguous",
+                    "evidence": "if I think of it as different layers... your satellite imagery",
+                    "explanation": "Uses 'I' for his thought process and 'your' generally for the data."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 3,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -473,17 +557,15 @@
         "pronoun_shift_occurred_cumulative": true,
         "shared_vision_established_cumulative": true,
         "idea_trajectory_sequence": [
-            "divergent",
-            "divergent",
+            "procedural",
+            "procedural",
             "divergent",
             "divergent"
         ],
         "ideas_currently_on_table": [
-            "Vector-borne disease modeling and climate dependence",
-            "Spatial wildlife ecology and movement",
-            "Metabolic adaptations of apicomplexan parasites",
-            "Nanoscale imaging and molecular modeling",
-            "RNA virus evolution and genetic diversity"
+            "Machine learning model for vector dynamics using trait-based clustering",
+            "Genetic variants for host colonization success",
+            "Targeting host mRNA modification enzymes to prevent viral spillover"
         ],
         "commitment_signals_cumulative": [],
         "speakers_identified": [
@@ -496,8 +578,8 @@
             "Dana Mitzel",
             "William Witola",
             "Rebecca Garabed",
-            "Nicole Eklmeier",
-            "Silhie Huijben",
+            "Nicole Eikmeier",
+            "Silvie Huijben",
             "Guillaume Bastille-Rousseau",
             "Diego Huet",
             "Laurene Tetard",
@@ -505,10 +587,10 @@
             "Kezia Manlove"
         ],
         "chunk_summaries": [
-            "The group initiated their breakout session by introducing themselves and their respective research domains, which span genetics, biochemistry, virology, and biophysical modeling. Wilfred van der Donk facilitated the introductions and set the stage for the session, emphasizing that the discussion should be driven by the fellows. The group ended the chunk in early divergent exploration, having established a baseline of their diverse expertise without yet narrowing down to a specific research project.",
-            "The group continued with introductions, with each participant sharing their research background and interests. The tone was collaborative and structured, with participants actively listening and engaging with each other's introductions. The group ended the chunk in a divergent state, having identified several potential research topics but not yet narrowing down to a specific project.",
-            "The group actively brainstormed and connected their respective research areas, specifically focusing on the intersection of RNA modifications, viral evolution, and host-pathogen interactions. Kristin Koutmou proposed a new research direction, and the group engaged in a productive discussion, with Wilfred van der Donk facilitating and clarifying the session's purpose. The group ended the chunk in a divergent state, having identified a shared interest but not yet a specific project.",
-            "The group focused on vector-borne disease modeling and its dependence on climate, with Silhie Huijben and Tavis Anderson driving the discussion. They explored the potential for integrating lab-based experiments with machine learning to predict vector population dynamics. The tone was highly collaborative and intellectually engaged, with the group ending the chunk in a divergent state, having identified a promising, albeit complex, research direction."
+            "The group began the session with Wilfred van der Donk outlining the process and initiating a round of introductions. Each participant shared their disciplinary background and current research focus, ranging from RNA virology and biophysical modeling to parasite-host interactions and horizontal gene transfer. The tone was polite and structured, and the chunk ended with Kristin Koutmou volunteering to be the reporter before the group transitioned to discussing the prompts.",
+            "The group spent the majority of the chunk conducting structured introductions, with each participant sharing their background and expertise. Facilitator Rebecca Garabed then shared her screen to display the discussion prompts, giving the group time to read them silently. In the final minute, Silvie Huijben initiated the substantive discussion by proposing a focus on modeling vector-borne diseases and their dependence on climate.",
+            "The group navigated a minor logistical issue with the discussion prompts before transitioning into substantive scientific ideation. Participants shared their individual research interests, with Kristin Koutmou introducing the novel concept of mRNA modifications affecting viral mutation rates. This sparked cross-disciplinary exploration, leading Wilfred van der Donk to propose targeting these host modification enzymes to prevent viral spillover, an idea the group began to critically evaluate.",
+            "Silvie highlighted the lack of predictive models for vector-borne diseases due to data scarcity and microclimate complexities. Tavis, Kezia, and Laurene collaboratively built on this by proposing a trait-based clustering approach, where lab experiments would serve as training sets for a machine learning algorithm. Tavis synthesized these ideas into a multi-layered network model incorporating satellite imagery and abiotic data. The tone was highly collaborative and intellectually engaged, with participants actively building on each other's disciplinary perspectives. The group ended the chunk with a richly developed, specific research concept on the table."
         ]
     }
 }

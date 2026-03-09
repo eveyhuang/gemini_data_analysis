@@ -1,54 +1,55 @@
 {
     "chunk_summary": {
         "speaking_time_seconds": {
-            "Avery Strait": 115,
-            "Bethany McGregor": 65,
+            "Avery Strait": 70,
+            "Bethany McGregor": 35,
             "Liliana Salvador": 35,
+            "Kezia Manlove": 70,
+            "Guillaume Bastille-Rousseau": 35,
+            "Lauren Charles": 100,
             "Andrew Feig": 55,
-            "Kezia Manlove": 60,
-            "Guillaume Bastile-Rousseau": 60,
-            "Lauren Charles": 110
+            "Daniel Becker": 2
         },
         "dominant_speaker_flag": "No",
         "dominant_speaker_name": "None",
-        "idea_trajectory": "convergent",
-        "idea_trajectory_justification": "The group moves from discussing general surveillance to synthesizing specific methods (wireless sensor networks, blood meal analysis) to address the challenge of identifying disease transmission in livestock.",
-        "collective_engagement_level": 4,
-        "collective_engagement_justification": "Participants show high responsiveness through frequent head nods, active listening, and shared laughter when discussing the practical challenges of tracking livestock.",
+        "idea_trajectory": "divergent",
+        "idea_trajectory_justification": "The group explores multiple new angles, including the theoretical distinction between density and frequency dependence, and pivots entirely to a new domain (livestock) based on a facilitator's prompt.",
+        "collective_engagement_level": 3,
+        "collective_engagement_justification": "Non-speakers show consistent responsiveness, including visible head nods (e.g., Lauren and Kezia nodding while others speak) and shared smiles during humorous moments.",
         "cross_disciplinary_bridging": "Yes",
-        "cross_disciplinary_bridging_speaker": "Lauren Charles",
-        "cross_disciplinary_bridging_description": "Connects wireless sensor network data (engineering) with livestock behavior and disease transmission (epidemiology).",
-        "explicit_commitment_signal": "No",
-        "commitment_signal_speaker": "None",
-        "commitment_signal_quote": "None",
+        "cross_disciplinary_bridging_speaker": "Liliana Salvador",
+        "cross_disciplinary_bridging_description": "Bridged disease transmission models (frequency vs density) with movement ecology.",
+        "explicit_commitment_signal": "Yes",
+        "commitment_signal_speaker": "Lauren Charles",
+        "commitment_signal_quote": "maybe that's something we propose... it's all there if there's interest",
         "screenshare_active": "No",
         "artifact_type": "None",
         "artifact_interaction": "NA",
         "artifact_interaction_description": "None",
-        "problem_specificity_level": 3,
-        "problem_specificity_justification": "The group is now focusing on the specific problem of using sensor networks and behavioral data to monitor disease transmission in livestock.",
-        "decision_crystallization_level": 3,
-        "decision_crystallization_justification": "The group has converged on the idea of using sensor networks to monitor livestock behavior as a proxy for disease transmission risk.",
-        "ambition_level": "novel_combination",
-        "explicit_complementarity_recognition": "Yes",
-        "complementarity_recognition_speaker": "Lauren Charles",
-        "complementarity_recognition_quote": "It is possible, I just don't know... if research has been done in that.",
+        "problem_specificity_level": 2,
+        "problem_specificity_justification": "The domain narrowed significantly to livestock contact patterns and sentinel testing, but a specific research question has not yet been fully articulated.",
+        "decision_crystallization_level": 2,
+        "decision_crystallization_justification": "Lauren proposed a specific project idea (using her sensor networks), but the group has not yet explicitly agreed to pursue it together.",
+        "ambition_level": "novel_application",
+        "explicit_complementarity_recognition": "No",
+        "complementarity_recognition_speaker": "None",
+        "complementarity_recognition_quote": "None",
         "skill_gap_identification": "Yes",
-        "skill_gap_description": "Lauren identifies a gap in current research regarding the application of her sensor network work to livestock disease monitoring.",
+        "skill_gap_description": "Avery identified a gap in tracking fine-scale interactions within livestock pens, which Lauren addressed with her sensor network technology.",
         "shared_vision_indicator": "Yes",
-        "shared_vision_quote": "Maybe that's something we propose.",
+        "shared_vision_quote": "maybe that's something we propose",
         "pronoun_shift_flag": "No",
         "personal_disclosure": "Yes",
         "laughter_quality": "shared_humor",
         "dissent_response_quality": 3,
-        "risk_acknowledgment_with_enthusiasm": "Yes",
-        "risk_enthusiasm_quote": "It could be really, really cheap. It could be maybe, you know, if it's needed, maybe that's something we propose.",
+        "risk_acknowledgment_with_enthusiasm": "No",
+        "risk_enthusiasm_quote": "None",
         "funding_awareness_signal": "No",
         "funding_reference_description": "None",
         "prior_relationship_signal": "No",
         "prior_relationship_description": "None",
         "meeting_structure_quality": "loosely_structured",
-        "notable_observation": "The group successfully transitioned from a broad, abstract discussion to a concrete, technical application by integrating Lauren's past research with the current problem space."
+        "notable_observation": "Andrew Feig (a program director/facilitator) intervened to point out a major blind spot in the group's brainstorming (ignoring livestock), which successfully and immediately pivoted the group's direction. This led Lauren Charles to resurrect her 10-year-old PhD research as a highly relevant potential solution."
     },
     "utterance_annotations": [
         {
@@ -59,21 +60,20 @@
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "So, when you said you can trace that to individual animals, is that what you said?",
-                    "explanation": "Avery is seeking clarification on Bethany's previous statement about tracing disease.",
-                    "idea_quality": 1
+                    "evidence": "when you said you can trace that to individual animals, is that what you said?",
+                    "explanation": "Avery is asking Bethany to clarify a point she made previously about tracing blood meals."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "is that what you said?",
-                    "explanation": "Avery uses individual framing to address Bethany."
+                    "evidence": "when you said you can trace that",
+                    "explanation": "Uses 'you' to refer to Bethany's specific work."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -87,23 +87,29 @@
             "speaking_duration_seconds": 16,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "setback_response_explores",
-                    "evidence": "I wish I could... obviously I don't have a genetic marker for every individual that's out there.",
-                    "explanation": "Bethany acknowledges the limitation of her current approach.",
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "I can get the IDs, you know, but obviously I don't have a genetic marker for every individual",
+                    "explanation": "Explains the limitations of her current methodology.",
                     "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "obviously I don't have a genetic marker for every individual that's out there. So I can't trace it to an individual.",
+                    "explanation": "Highlights a methodological limitation."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "I wish I could",
-                    "explanation": "Bethany uses individual framing to describe her capabilities."
+                    "evidence": "I wish I could. So I mean, I can get the IDs",
+                    "explanation": "Speaks entirely from the perspective of her own capabilities."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -120,20 +126,19 @@
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
                     "evidence": "But you can take it down to species level?",
-                    "explanation": "Avery is clarifying the resolution of Bethany's method.",
-                    "idea_quality": 1
+                    "explanation": "Asks for confirmation on the resolution of the data."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "you can take it",
-                    "explanation": "Avery uses individual framing to address Bethany."
+                    "evidence": "you can take it down",
+                    "explanation": "Refers to Bethany's capabilities."
                 }
             ],
-            "interruption_type": "not_interruption",
+            "interruption_type": "elaborative_jump_in",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -148,24 +153,30 @@
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
-                    "subcode": "shares_data_or_findings",
-                    "evidence": "I can get it down to species... they're out sampling the environment for us at all times.",
-                    "explanation": "Bethany explains the capability of her current approach.",
+                    "subcode": "shares_method_or_approach",
+                    "evidence": "I can get it down to species.",
+                    "explanation": "Confirms the resolution of her data.",
                     "idea_quality": 1
                 },
                 {
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
+                    "evidence": "they're a pretty handy little scientist to have working for you actually.",
+                    "explanation": "Uses a lighthearted metaphor to describe mosquitoes."
+                },
+                {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "sampling the environment for us",
-                    "explanation": "Bethany uses joint framing to describe the benefit to the group."
+                    "subcode": "individual_framing",
+                    "evidence": "I can get it down to species.",
+                    "explanation": "Refers to her own work."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
+            "nod_count": 2,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
@@ -173,21 +184,20 @@
         },
         {
             "speaker": "Liliana Salvador",
-            "timestamp": "00:41-00:45",
-            "speaking_duration_seconds": 4,
+            "timestamp": "00:41-00:46",
+            "speaking_duration_seconds": 5,
             "codes": [
                 {
                     "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "So, do you do like a metagenomics approach?",
-                    "explanation": "Liliana is asking about the specific methodology used.",
-                    "idea_quality": 1
+                    "subcode": "asks_factual_question",
+                    "evidence": "So do you do like a metagenomics approach?",
+                    "explanation": "Asks a specific methodological question."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
                     "evidence": "do you do",
-                    "explanation": "Liliana uses individual framing to address Bethany."
+                    "explanation": "Directs the question at Bethany's individual work."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -203,27 +213,34 @@
         },
         {
             "speaker": "Bethany McGregor",
-            "timestamp": "00:45-01:00",
-            "speaking_duration_seconds": 15,
+            "timestamp": "00:46-01:03",
+            "speaking_duration_seconds": 17,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
                     "subcode": "shares_method_or_approach",
-                    "evidence": "No, so I've just done very basic, you know, COI barcoding on these blood meals.",
-                    "explanation": "Bethany clarifies her methodology.",
+                    "evidence": "I've just done very basic, you know, COI barcoding on these blood meals.",
+                    "explanation": "Explains her specific laboratory technique.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "you can probably take it a level deeper and get some much more valuable information",
+                    "explanation": "Suggests how her current method could be expanded by the group.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "I've just done",
-                    "explanation": "Bethany uses individual framing to describe her work."
+                    "evidence": "I've just done very basic",
+                    "explanation": "Describes her own past actions."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -239,15 +256,122 @@
                 {
                     "code_name": "Idea Management",
                     "subcode": "returns_to_earlier_idea",
-                    "evidence": "I wanted to go back to what Guillaume was proposing about density as potentially being the best predictor.",
-                    "explanation": "Kezia redirects the conversation to a previous topic.",
+                    "evidence": "Can we go back to for a second... what Guillaume was proposing about density as potentially being the best predictor",
+                    "explanation": "Explicitly pulls the conversation back to a topic from the previous chunk.",
                     "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "does that hold even if disease dynamics in the reservoir are not stationary? ... is density alone still sufficient",
+                    "explanation": "Challenges the assumption that density alone is enough if the disease is moving through a new population."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "what Guillaume was proposing",
-                    "explanation": "Kezia uses joint framing to refer to the group's discussion."
+                    "evidence": "Can we go back to",
+                    "explanation": "Uses 'we' to manage the group's conversational focus."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Guillaume Bastille-Rousseau",
+            "timestamp": "01:49-02:24",
+            "speaking_duration_seconds": 35,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "setback_response_explores",
+                    "evidence": "my point was really that maybe if you're trying just to predict like the next event... then I feel maybe the process happening is like maybe density",
+                    "explanation": "Responds to Kezia's challenge by clarifying the specific context (surveillance) where his point applies."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "It's basically overlap between animals and humans. And then ideally if you have information on a bit behaviors on both that might make them more risky",
+                    "explanation": "Expands his density idea to include behavioral overlap.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "my point was really that",
+                    "explanation": "Defends his own previous statement."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "02:24-02:26",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "Like a probability.",
+                    "explanation": "Summarizes Guillaume's point about risk and overlap into a single concept.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "Like a probability.",
+                    "explanation": "No pronouns used."
+                }
+            ],
+            "interruption_type": "collaborative_completion",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Guillaume Bastille-Rousseau",
+            "timestamp": "02:26-02:46",
+            "speaking_duration_seconds": 20,
+            "codes": [
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "scope_calibration",
+                    "evidence": "what are we going after? Is it, are we going for intervention like after the disease is there or are we trying to predict when it's likely to emerge?",
+                    "explanation": "Explicitly asks the group to define the scope and goal of their potential project."
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_rhetorical_question",
+                    "evidence": "what are we going after?",
+                    "explanation": "Poses a question to the group to prompt reflection on their direction."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "how we were discussing things... what are we going after?",
+                    "explanation": "Uses 'we' to refer to the group's collective goal."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -262,158 +386,64 @@
             "pace": "normal"
         },
         {
-            "speaker": "Guillaume Bastile-Rousseau",
-            "timestamp": "01:48-02:24",
-            "speaking_duration_seconds": 36,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "My point was really that maybe if you're trying just to predict the next event... then I feel maybe the process happening is like maybe density or even it's more of a species distribution.",
-                    "explanation": "Guillaume clarifies his previous point about density and prediction.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we were discussing",
-                    "explanation": "Guillaume uses joint framing to refer to the group's discussion."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Lauren Charles",
-            "timestamp": "02:24-02:25",
-            "speaking_duration_seconds": 1,
-            "codes": [
-                {
-                    "code_name": "None"
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 1,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Guillaume Bastile-Rousseau",
-            "timestamp": "02:25-02:46",
-            "speaking_duration_seconds": 21,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "are we going for intervention like after the disease is there or we're trying to predict when it's likely to emerge?",
-                    "explanation": "Guillaume asks for clarification on the group's goal.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "are we going",
-                    "explanation": "Guillaume uses joint framing to refer to the group's goal."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Lauren Charles",
-            "timestamp": "02:46-02:47",
-            "speaking_duration_seconds": 1,
-            "codes": [
-                {
-                    "code_name": "None"
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
             "speaker": "Lauren Charles",
             "timestamp": "02:47-02:52",
             "speaking_duration_seconds": 5,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
+                    "code_name": "Relational Climate",
+                    "subcode": "uses_humor",
                     "evidence": "Everything. We're going to solve it all.",
-                    "explanation": "Lauren uses humor to acknowledge the complexity of the problem.",
-                    "idea_quality": 0
+                    "explanation": "Makes a joke about the scope of their project to lighten the mood."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "We're going to",
-                    "explanation": "Lauren uses joint framing to refer to the group."
+                    "evidence": "We're going to solve it all.",
+                    "explanation": "Uses 'we' in a collective, albeit joking, sense."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 2,
             "shared_affect": "Yes",
             "any_smile_other": "Yes",
-            "audible_backchannel": "No",
+            "audible_backchannel": "Yes",
             "vocal_enthusiasm": 3,
             "hesitation_flag": "No",
             "pace": "normal"
         },
         {
             "speaker": "Liliana Salvador",
-            "timestamp": "02:52-03:17",
-            "speaking_duration_seconds": 25,
+            "timestamp": "02:53-03:17",
+            "speaking_duration_seconds": 24,
             "codes": [
                 {
                     "code_name": "Idea Management",
                     "subcode": "proposes_new_idea",
                     "evidence": "I was wondering if we could divide like our disease systems in frequency or density dependent.",
-                    "explanation": "Liliana proposes a new way to categorize disease systems.",
+                    "explanation": "Introduces a new theoretical framework for categorizing their approach.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "resolves_contradiction",
+                    "evidence": "based on that, if you know, in one case movement would be more important while in another case maybe just population density",
+                    "explanation": "Synthesizes the ongoing debate between movement and density by suggesting they apply to different types of diseases.",
                     "idea_quality": 2
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "our disease systems",
-                    "explanation": "Liliana uses joint framing to refer to the group's work."
+                    "evidence": "if we could divide like our disease systems",
+                    "explanation": "Uses 'we' and 'our' to propose a shared analytical framework."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 3,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -423,51 +453,61 @@
         },
         {
             "speaker": "Kezia Manlove",
-            "timestamp": "03:17-03:47",
-            "speaking_duration_seconds": 30,
+            "timestamp": "03:18-03:47",
+            "speaking_duration_seconds": 29,
             "codes": [
                 {
                     "code_name": "Evaluation Practices",
                     "subcode": "critiques_or_challenges",
-                    "evidence": "But real-world... at least the systems that I work on, they're behaviorally mediated frequency dependent.",
-                    "explanation": "Kezia challenges the assumption of frequency vs. density dependence.",
-                    "idea_quality": 2
+                    "evidence": "at least the systems that I work on, they're behaviorally mediated frequency dependent... I think there's a strong assumption associated with partitioning.",
+                    "explanation": "Challenges Liliana's idea by pointing out that real-world systems are often a messy mix of both."
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "I worry about it.",
+                    "explanation": "Expresses doubt about the feasibility of cleanly dividing diseases this way."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "I work on",
-                    "explanation": "Kezia uses individual framing to describe her work."
+                    "evidence": "the systems that I work on... I think there's a strong assumption... I worry about it.",
+                    "explanation": "Frames her critique based on her personal research experience."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
+            "hesitation_flag": "Yes",
             "pace": "normal"
         },
         {
             "speaker": "Liliana Salvador",
-            "timestamp": "03:47-04:03",
-            "speaking_duration_seconds": 16,
+            "timestamp": "03:48-04:03",
+            "speaking_duration_seconds": 15,
             "codes": [
                 {
                     "code_name": "Evaluation Practices",
                     "subcode": "supports_or_validates",
-                    "evidence": "I agree, I agree that it's complicated because then there are certain diseases that you don't really know which one is.",
-                    "explanation": "Liliana validates Kezia's point about the complexity of disease systems.",
-                    "idea_quality": 1
+                    "evidence": "I agree, I agree that it's complicated",
+                    "explanation": "Validates Kezia's critique."
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "there are certain diseases that you don't really know which one is, is it frequency dependent dependency or density dependent.",
+                    "explanation": "Acknowledges the difficulty in classifying diseases."
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I agree",
-                    "explanation": "Liliana uses individual framing to express agreement."
+                    "subcode": "ambiguous",
+                    "evidence": "you don't really know",
+                    "explanation": "Uses 'you' in a general sense."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -483,21 +523,132 @@
         },
         {
             "speaker": "Lauren Charles",
-            "timestamp": "04:03-04:19",
-            "speaking_duration_seconds": 16,
+            "timestamp": "04:04-04:05",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "Yeah, I think, oh, sorry.",
+                    "explanation": "False start."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Liliana Salvador",
+            "timestamp": "04:05-04:06",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "yields_floor",
+                    "evidence": "Go on, go on.",
+                    "explanation": "Allows Lauren to speak after the collision."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "04:06-04:19",
+            "speaking_duration_seconds": 13,
             "codes": [
                 {
                     "code_name": "Idea Management",
                     "subcode": "extends_existing_idea",
-                    "evidence": "the disease transmission patterns probably drive a lot of that... the importance of it being density or or not.",
-                    "explanation": "Lauren adds to the discussion about what drives disease transmission.",
-                    "idea_quality": 2
+                    "evidence": "the disease transmission patterns probably drive a lot of that, um, you know, the importance of it being density or not.",
+                    "explanation": "Builds on the discussion of density vs frequency by linking it to transmission patterns.",
+                    "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "ambiguous",
-                    "evidence": "the disease transmission patterns",
-                    "explanation": "Lauren discusses research content without explicit pronoun framing."
+                    "evidence": "the disease transmission patterns probably drive a lot of that",
+                    "explanation": "No pronouns used."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Andrew Feig",
+            "timestamp": "04:20-05:13",
+            "speaking_duration_seconds": 53,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "Yet the conversation has been entirely or almost entirely driven on wildlife, non-domesticated.",
+                    "explanation": "Points out a major blind spot in the group's brainstorming."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "redirects_idea",
+                    "evidence": "Where is the balance of... effort that should be put in terms of that potential for spillover through the food stock chains of wildlife versus, um, uh, wild animals?",
+                    "explanation": "Pivots the group to consider livestock and agricultural supply chains.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "if we, of effort that should be put",
+                    "explanation": "Uses 'we' to refer to the group's collective focus."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "05:14-05:19",
+            "speaking_duration_seconds": 5,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "This is a world where we would get to collar livestock?",
+                    "explanation": "Asks for clarification on the feasibility of tracking livestock."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we would get to collar",
+                    "explanation": "Uses 'we' to refer to the hypothetical research team."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -513,27 +664,27 @@
         },
         {
             "speaker": "Andrew Feig",
-            "timestamp": "04:19-05:14",
-            "speaking_duration_seconds": 55,
+            "timestamp": "05:20-05:22",
+            "speaking_duration_seconds": 2,
             "codes": [
                 {
-                    "code_name": "Integration Practices",
-                    "subcode": "frames_shared_problem",
-                    "evidence": "Where is the balance of effort that should be put in terms of that spill potential for spillover through the food stock chains of wildlife versus wild animals?",
-                    "explanation": "Andrew synthesizes the discussion and frames the core problem.",
-                    "idea_quality": 2
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "Well, they are tracked usually.",
+                    "explanation": "Provides factual information about livestock tracking.",
+                    "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "the conversation has been",
-                    "explanation": "Andrew uses joint framing to refer to the group's discussion."
+                    "subcode": "ambiguous",
+                    "evidence": "they are tracked usually.",
+                    "explanation": "No pronouns referring to the researchers."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 2,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -542,58 +693,28 @@
             "pace": "normal"
         },
         {
-            "speaker": "Kezia Manlove",
-            "timestamp": "05:14-05:19",
-            "speaking_duration_seconds": 5,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "uses_humor",
-                    "evidence": "This is a world where we would get to collar livestock.",
-                    "explanation": "Kezia uses humor to respond to Andrew's question.",
-                    "idea_quality": 0
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we would get to",
-                    "explanation": "Kezia uses joint framing to refer to the group."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "Yes",
-            "any_smile_other": "Yes",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
             "speaker": "Avery Strait",
-            "timestamp": "05:22-05:25",
-            "speaking_duration_seconds": 3,
+            "timestamp": "05:23-05:25",
+            "speaking_duration_seconds": 2,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
                     "subcode": "shares_domain_knowledge",
-                    "evidence": "They are official IDs through a microchip and a reader.",
-                    "explanation": "Avery shares factual information about livestock identification.",
+                    "evidence": "Yeah, official IDs, they're a microchip and a reader and tracked through a system.",
+                    "explanation": "Adds specific details about how livestock are tracked.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "They are",
-                    "explanation": "Avery uses individual framing to describe the IDs."
+                    "subcode": "ambiguous",
+                    "evidence": "they're a microchip",
+                    "explanation": "No pronouns referring to the researchers."
                 }
             ],
-            "interruption_type": "not_interruption",
+            "interruption_type": "elaborative_jump_in",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -609,21 +730,26 @@
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "Are you tracking movement within a ranch?",
-                    "explanation": "Kezia is clarifying the scope of Avery's tracking.",
-                    "idea_quality": 1
+                    "evidence": "Are you tracking movement within a ranch or on an allotment?",
+                    "explanation": "Asks for the spatial resolution of the livestock tracking."
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "critiques_or_challenges",
+                    "evidence": "But that's like herd to herd, right? It's not like within.",
+                    "explanation": "Challenges the utility of the tracking data by pointing out it might not be fine-scale enough."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
                     "evidence": "Are you tracking",
-                    "explanation": "Kezia uses individual framing to address Avery."
+                    "explanation": "Directs the question at Avery's specific knowledge/field."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -633,27 +759,50 @@
         },
         {
             "speaker": "Avery Strait",
-            "timestamp": "05:36-06:07",
-            "speaking_duration_seconds": 31,
+            "timestamp": "05:37-06:07",
+            "speaking_duration_seconds": 30,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
-                    "subcode": "shares_data_or_findings",
-                    "evidence": "We can track... they have a big piece of land and like dairy still have like multiple, multiple pens.",
-                    "explanation": "Avery explains the tracking capabilities on a ranch.",
-                    "idea_quality": 2
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "At very well regulated dairies, yes, they do have that information. Um, and they do track it, but if they don't keep solid records... you can't trace it within the farm.",
+                    "explanation": "Explains the variability in record-keeping and tracking within dairy farms.",
+                    "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "We can track",
-                    "explanation": "Avery uses joint framing to describe the capability."
+                    "subcode": "ambiguous",
+                    "evidence": "you can't trace it within the farm.",
+                    "explanation": "Uses 'you' in a general sense."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "06:08-06:10",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "None",
+                    "subcode": "None",
+                    "evidence": "Yeah, that was the...",
+                    "explanation": "Incomplete utterance."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -667,27 +816,33 @@
             "speaking_duration_seconds": 11,
             "codes": [
                 {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "Okay, we have to go test 12,000 dairy cows.",
-                    "explanation": "Avery uses humor to highlight the scale of the problem.",
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "since we can't definitively say that, say who was nose to nose, well, okay, we have to go test 12,000 dairy cows.",
+                    "explanation": "Explains the consequence of poor tracking data (massive testing requirements).",
                     "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "we have to go test 12,000 dairy cows.",
+                    "explanation": "Highlights a significant logistical problem in disease management."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we have to go",
-                    "explanation": "Avery uses joint framing to refer to the group."
+                    "evidence": "we have to go test",
+                    "explanation": "Uses 'we' to refer to the agricultural/scientific community dealing with this issue."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "Yes",
-            "any_smile_other": "Yes",
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
             "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
+            "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
             "pace": "normal"
         },
@@ -698,16 +853,15 @@
             "codes": [
                 {
                     "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "Are mixing dynamics on farms or on ranches really well understood?",
-                    "explanation": "Kezia asks about the state of knowledge regarding mixing dynamics.",
-                    "idea_quality": 1
+                    "subcode": "asks_factual_question",
+                    "evidence": "So are mixing dynamics on farms or on ranches really well understood?",
+                    "explanation": "Asks about the state of knowledge regarding animal interaction on farms."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "ambiguous",
-                    "evidence": "mixing dynamics",
-                    "explanation": "Kezia discusses research content without explicit pronoun framing."
+                    "evidence": "are mixing dynamics... well understood?",
+                    "explanation": "No pronouns used."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -723,27 +877,85 @@
         },
         {
             "speaker": "Avery Strait",
-            "timestamp": "06:45-07:16",
-            "speaking_duration_seconds": 31,
+            "timestamp": "06:30-06:31",
+            "speaking_duration_seconds": 1,
             "codes": [
                 {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_domain_knowledge",
-                    "evidence": "because there's so many different mechanical vectors, biological vectors... it's hard to say that you can definitively say this group of animals was not potentially exposed.",
-                    "explanation": "Avery explains the difficulty of determining exposure.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we have people",
-                    "explanation": "Avery uses joint framing to refer to the group."
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_clarifying_question",
+                    "evidence": "Sorry, can you say that again?",
+                    "explanation": "Asks for repetition."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "06:31-06:45",
+            "speaking_duration_seconds": 14,
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "are mixing dynamics on like on farms or like within a dairy... well documented, well understood?",
+                    "explanation": "Repeats her question about the state of knowledge."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "are mixing dynamics... well documented",
+                    "explanation": "No pronouns used."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Avery Strait",
+            "timestamp": "06:46-07:16",
+            "speaking_duration_seconds": 30,
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "because there's so many different mechanical vectors, biological vectors... it's hard to say that you can definitively say this group of animals was not potentially exposed",
+                    "explanation": "Explains the complexity of transmission pathways on farms.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "it's hard to say that you can definitively say this group of animals was not potentially exposed",
+                    "explanation": "Highlights the difficulty of ruling out exposure due to complex mixing."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "you can definitively say",
+                    "explanation": "Uses 'you' in a general sense."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -759,15 +971,14 @@
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "Do we know what their contact patterns are if they're just out grazing?",
-                    "explanation": "Kezia asks about contact patterns during grazing.",
-                    "idea_quality": 1
+                    "evidence": "do we know like say you've got 30 cow calf pairs on a ranch. Do we know what their contact patterns are if they're just out grazing?",
+                    "explanation": "Clarifies her previous question to focus specifically on animal-to-animal contact patterns while grazing."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "Do we know",
-                    "explanation": "Kezia uses joint framing to refer to the group."
+                    "evidence": "do we know",
+                    "explanation": "Uses 'we' to refer to the scientific community's collective knowledge."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -783,59 +994,42 @@
         },
         {
             "speaker": "Lauren Charles",
-            "timestamp": "07:36-08:28",
-            "speaking_duration_seconds": 52,
+            "timestamp": "07:36-08:54",
+            "speaking_duration_seconds": 78,
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
                     "subcode": "shares_personal_experience",
-                    "evidence": "This was part of my PhD research... that wireless sensor network... it was non-GPS based, super, super cheap.",
-                    "explanation": "Lauren shares her relevant past research experience.",
+                    "evidence": "this was part of my PhD research, right? That wireless sensor network... each cattle talked to each other and said, hi, I'm cattle number whatever",
+                    "explanation": "Shares details of her past research that directly addresses the gap Kezia and Avery identified.",
                     "idea_quality": 2
                 },
                 {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "my PhD research",
-                    "explanation": "Lauren uses individual framing to describe her past work."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 1,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Lauren Charles",
-            "timestamp": "08:31-08:54",
-            "speaking_duration_seconds": 23,
-            "codes": [
-                {
                     "code_name": "Idea Management",
                     "subcode": "proposes_new_idea",
-                    "evidence": "it could be maybe, you know, if it's needed, maybe that's something we propose.",
-                    "explanation": "Lauren proposes using her past sensor network work for the current problem.",
+                    "evidence": "it is, it's definitely possible and, um, could be really, really cheap. It could be maybe, you know, if it's needed, maybe that's something we propose.",
+                    "explanation": "Proposes using her sensor network technology as the basis for their project.",
                     "idea_quality": 2
+                },
+                {
+                    "code_name": "Coordination and Decision Practices",
+                    "subcode": "proposes_next_step",
+                    "evidence": "maybe that's something we propose. Um, I have a lot of things written up on it... it's all there if there's interest.",
+                    "explanation": "Suggests proposing this idea and offers her existing materials."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "something we propose",
-                    "explanation": "Lauren uses joint framing to refer to the group."
+                    "evidence": "maybe that's something we propose.",
+                    "explanation": "Uses 'we' to suggest a joint action."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 3,
             "shared_affect": "No",
-            "any_smile_other": "No",
+            "any_smile_other": "Yes",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 3,
             "hesitation_flag": "No",
@@ -843,27 +1037,27 @@
         },
         {
             "speaker": "Avery Strait",
-            "timestamp": "08:57-09:05",
-            "speaking_duration_seconds": 8,
+            "timestamp": "08:58-09:07",
+            "speaking_duration_seconds": 9,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "I think we don't like look specifically at their interaction within the pen, we're just assuming if they're in the same pen they've all interacted.",
-                    "explanation": "Avery validates the need for better interaction data.",
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "we don't like look specifically at their interaction within the pen. We're just assuming if they're in the same pen, they've all interacted.",
+                    "explanation": "Confirms that current practices do not track fine-scale interaction, validating the need for Lauren's idea.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we don't",
-                    "explanation": "Avery uses joint framing to refer to the group."
+                    "evidence": "we don't like look... We're just assuming",
+                    "explanation": "Uses 'we' to refer to the agricultural management community."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 2,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -879,25 +1073,31 @@
                 {
                     "code_name": "Idea Management",
                     "subcode": "extends_existing_idea",
-                    "evidence": "I think there is a higher-level structure to... the cattle behavior and some may have more transmission potential than others.",
-                    "explanation": "Lauren extends the idea of using sensor networks to identify high-risk individuals.",
+                    "evidence": "instead of having to test all of them, maybe through this method you could identify, okay, as long as we test these three, you know, we can safely say that this herd probably isn't infected.",
+                    "explanation": "Applies her sensor idea to solve the specific problem Avery raised earlier about having to test 12,000 cows.",
                     "idea_quality": 2
+                },
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Right. But I think there is a hierarchical structure",
+                    "explanation": "Validates Avery's point while offering a more nuanced solution."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we can safely say",
-                    "explanation": "Lauren uses joint framing to refer to the group."
+                    "evidence": "as long as we test these three, you know, we can safely say",
+                    "explanation": "Uses 'we' to describe the potential capability of their proposed solution."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 3,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
+            "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
             "pace": "normal"
         },
@@ -908,16 +1108,15 @@
             "codes": [
                 {
                     "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "Right, and that all depends on your risk of transmission, your prevalence and, you know, all those different kind of factors.",
-                    "explanation": "Avery validates Lauren's point about risk factors.",
-                    "idea_quality": 1
+                    "subcode": "raises_concern",
+                    "evidence": "that all depends on your risk of transmission, your prevalence, and, you know, all those different kind of factors.",
+                    "explanation": "Adds caveats to Lauren's proposed solution."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "your risk",
-                    "explanation": "Avery uses individual framing to address Lauren."
+                    "evidence": "your risk of transmission, your prevalence",
+                    "explanation": "Uses 'your' in a general sense."
                 }
             ],
             "interruption_type": "not_interruption",
@@ -933,27 +1132,109 @@
         },
         {
             "speaker": "Lauren Charles",
-            "timestamp": "09:50-09:57",
-            "speaking_duration_seconds": 7,
+            "timestamp": "09:50-09:52",
+            "speaking_duration_seconds": 2,
             "codes": [
                 {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "And an understanding of the behavior that we don't have right now.",
-                    "explanation": "Lauren agrees with Avery's point about the need for behavioral data.",
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "And an understanding of the behavior.",
+                    "explanation": "Adds behavior to Avery's list of factors.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "And an understanding of the behavior.",
+                    "explanation": "No pronouns used."
+                }
+            ],
+            "interruption_type": "elaborative_jump_in",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Avery Strait",
+            "timestamp": "09:53-09:55",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "Right. That we don't have right now.",
+                    "explanation": "Points out that the behavioral understanding is currently missing."
+                },
+                {
+                    "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "that we don't have",
-                    "explanation": "Lauren uses joint framing to refer to the group."
+                    "evidence": "That we don't have right now.",
+                    "explanation": "Uses 'we' to refer to the scientific community."
+                }
+            ],
+            "interruption_type": "collaborative_completion",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Lauren Charles",
+            "timestamp": "09:56-09:57",
+            "speaking_duration_seconds": 1,
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Right. Yep.",
+                    "explanation": "Agrees with Avery."
                 }
             ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 1,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal"
+        },
+        {
+            "speaker": "Daniel Becker",
+            "timestamp": "09:58-10:00",
+            "speaking_duration_seconds": 2,
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "returns_to_earlier_idea",
+                    "evidence": "So to, I just want to hop back on the Andrew...",
+                    "explanation": "Attempts to return to a point made earlier by Andrew.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I just want to hop back",
+                    "explanation": "Uses 'I' to state his intent."
+                }
+            ],
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
@@ -969,34 +1250,40 @@
             "divergent",
             "divergent",
             "divergent",
-            "convergent"
+            "divergent"
         ],
         "ideas_currently_on_table": [
-            "Fine-scale movement vs. population density for disease modeling",
-            "Human-wildlife interface in disease transmission",
-            "Citizen science for broad-scale disease surveillance",
-            "Blood meal analysis for host identification",
-            "Wireless sensor networks for monitoring livestock behavior and disease transmission"
+            "Tracking individual animals via mosquito blood meals",
+            "Applying machine learning to globalize disease spread forecasting",
+            "Contrasting fine-scale mitigation vs large-scale prediction",
+            "Incorporating human-wildlife interaction points (e.g., hunters)",
+            "Using citizen science (e.g., eBird models) for broad surveillance",
+            "Using cheap wireless sensor networks to track livestock contact patterns"
         ],
-        "commitment_signals_cumulative": [],
+        "commitment_signals_cumulative": [
+            {
+                "speaker": "Lauren Charles",
+                "quote": "maybe that's something we propose... it's all there if there's interest"
+            }
+        ],
         "speakers_identified": [
             "Bethany McGregor",
             "Daniel Becker",
-            "Guillaume Bastile-Rousseau",
+            "Guillaume Bastille-Rousseau",
             "Mark Wilber",
             "Lauren Charles",
             "Kezia Manlove",
+            "Liliana Salvador",
             "Avery Strait",
             "Andrew Feig",
             "Gonzalo Vazquez-Prokopec",
-            "Mike Wimberly",
-            "Liliana Salvador"
+            "Mike Wimberly"
         ],
         "chunk_summaries": [
-            "The group brainstormed the intersection of animal movement, disease transmission, and environmental factors, with participants introducing new variables and perspectives. The tone was collaborative with frequent head nods and active backchannels, and the group ended the chunk in early divergent exploration with no specific project named.",
-            "The group continued to brainstorm, with participants connecting their specific expertise in blood meal analysis and machine learning to the broader problem of tracking animal movement and disease. The tone remained collaborative and intellectually rapport-filled, with participants building on each other's ideas and using humor to manage the meeting process. The group ended the chunk still in a divergent phase, having narrowed the domain but not yet selected a specific project.",
-            "The group explored the trade-offs between fine-scale movement data and population density for disease modeling, with Mike Wimberly synthesizing the need for abstraction at larger scales. Avery Strait and Bethany McGregor introduced the human-wildlife interface and citizen science as potential avenues for broader surveillance. The discussion remained highly collaborative and divergent, with participants using humor and active listening to build on each other's disciplinary perspectives.",
-            "The group converged on the idea of using wireless sensor networks to monitor livestock behavior as a proxy for disease transmission risk. Participants integrated their expertise in engineering and epidemiology to frame a specific research problem, with Lauren Charles sharing her past work as a potential foundation. The tone was highly collaborative and intellectually engaged, ending with a shared sense of direction."
+            "The group engaged in a divergent brainstorming session focused on the intersection of animal movement and disease transmission. Participants debated whether to focus on generalizable movement models or specific contact patterns, with Kezia Manlove synthesizing these views by distinguishing between resource-driven movement and direct interaction. The tone was highly collaborative and intellectually safe, highlighted by Kezia directly challenging the facilitator's suggestion to use remote sensing data, pivoting the group toward predicting contact and host susceptibility instead. The chunk ended with open exploration of these critical information gaps without a specific project commitment.",
+            "The group continued divergent brainstorming, exploring novel data sources like radar detection and mosquito blood meals for tracking animal movement. A logistical hurdle arose when Lauren expressed difficulty taking notes while ideating, which Kezia quickly resolved by volunteering to take over the shared document. Mark shifted the conversation's focus by asking what the group would do with 'perfect data', leading to discussions on mechanistic modeling, machine learning for global forecasting, and retrospective trace back. The chunk ended with Guillaume challenging the utility of fine-scale data for predicting emergence, suggesting a focus on scale and mitigation instead.",
+            "The group debated the necessity of fine-scale movement data versus broad-scale density modeling, which Lauren synthesized as complementary approaches needed for different scales of prediction. New variables were introduced into the brainstorming, including human-wildlife contact points raised by Avery, and the unpredictable impacts of climate change raised by Lauren. Bethany suggested citizen science as a broad surveillance solution, and Liliana returned to the idea of using insect blood meals for tracking. The tone remained collaborative and exploratory, with participants actively building on each other's frameworks without yet converging on a single project.",
+            "The group continued divergent brainstorming, exploring the tension between density-dependent and frequency-dependent disease transmission. Andrew Feig intervened to point out the group's blind spot regarding livestock, prompting a pivot to discuss agricultural contact patterns. Lauren Charles proposed resurrecting her PhD research on cheap wireless sensor networks for cattle, explicitly offering it as a potential grant proposal idea. The chunk ended with active exploration of how this technology could identify sentinel animals and reduce testing burdens."
         ]
     }
 }

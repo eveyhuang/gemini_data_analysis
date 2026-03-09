@@ -1,22 +1,22 @@
 {
     "chunk_summary": {
         "speaking_time_seconds": {
-            "Tavis Anderson": 245,
-            "Rebecca Garabed": 105,
-            "Kezia Manlove": 60,
-            "Guillaume Bastille-Rousseau": 85,
-            "Nicole Eklmeier": 65,
-            "Silhie Huijben": 65
+            "Tavis Anderson": 209,
+            "Rebecca Garabed": 93,
+            "Kezia Manlove": 59,
+            "Guillaume Bastille-Rousseau": 79,
+            "Nicole Eikmeier": 73,
+            "Silvie Huijben": 68
         },
         "dominant_speaker_flag": "No",
         "dominant_speaker_name": "None",
         "idea_trajectory": "divergent",
-        "idea_trajectory_justification": "The group is actively brainstorming how to integrate machine learning with biological data, exploring specific technical challenges like data set shift and causal inference.",
+        "idea_trajectory_justification": "The group is exploring the complexities of building a predictive model, debating machine learning versus mechanistic approaches, and adding new layers like spatial heterogeneity.",
         "collective_engagement_level": 3,
-        "collective_engagement_justification": "Participants show consistent responsiveness through active listening, nodding, and building on each other's points, particularly during the technical discussion on machine learning.",
+        "collective_engagement_justification": "Consistent head nods from Rebecca, Kezia, and Silvie, along with shared laughter and active backchanneling, indicate strong engagement despite Tavis eating on camera.",
         "cross_disciplinary_bridging": "Yes",
         "cross_disciplinary_bridging_speaker": "Tavis Anderson",
-        "cross_disciplinary_bridging_description": "Connects computer science/mathematical modeling with biological field data to address vector-borne disease dynamics.",
+        "cross_disciplinary_bridging_description": "Connected computer science, mathematics, and biology for model feature selection.",
         "explicit_commitment_signal": "No",
         "commitment_signal_speaker": "None",
         "commitment_signal_quote": "None",
@@ -25,50 +25,65 @@
         "artifact_interaction": "NA",
         "artifact_interaction_description": "None",
         "problem_specificity_level": 3,
-        "problem_specificity_justification": "The group is discussing specific technical approaches (e.g., batch normalization, causal inference) to address the challenge of applying machine learning models across different spatial contexts.",
+        "problem_specificity_justification": "The group is articulating a specific approach (combining ML and mechanistic models) to predict vector-borne disease dynamics using abiotic and spatial data.",
         "decision_crystallization_level": 2,
-        "decision_crystallization_justification": "The group has identified a shared interest in integrating machine learning with biological data but has not yet committed to a specific project or research question.",
+        "decision_crystallization_justification": "There is shared interest in the modeling project, but the group is still debating the specific methodologies and constraints to use.",
         "ambition_level": "novel_combination",
         "explicit_complementarity_recognition": "Yes",
         "complementarity_recognition_speaker": "Tavis Anderson",
-        "complementarity_recognition_quote": "The biologist would provide the features that they think are most important for the system.",
+        "complementarity_recognition_quote": "you'd have to have the integration between the computer scientist and mathematician and the biologist",
         "skill_gap_identification": "Yes",
-        "skill_gap_description": "Rebecca identifies a need for a machine learning expert to help address the technical challenges of their proposed modeling approach.",
+        "skill_gap_description": "Rebecca identified that the group lacks a dedicated machine learning expert to answer specific algorithmic constraint questions.",
         "shared_vision_indicator": "Yes",
-        "shared_vision_quote": "Can we use some of the stuff we already know to put constraints on the machine learning?",
+        "shared_vision_quote": "we have some sort of mechanism behind what we're trying to get at",
         "pronoun_shift_flag": "No",
         "personal_disclosure": "Yes",
         "laughter_quality": "shared_humor",
         "dissent_response_quality": 3,
         "risk_acknowledgment_with_enthusiasm": "Yes",
-        "risk_enthusiasm_quote": "But I think it's still fun to to to push them and try.",
+        "risk_enthusiasm_quote": "we might be trying to put the cart before the horse... But I think it's still fun to push them and try",
         "funding_awareness_signal": "No",
         "funding_reference_description": "None",
         "prior_relationship_signal": "No",
         "prior_relationship_description": "None",
         "meeting_structure_quality": "loosely_structured",
-        "notable_observation": "The group engaged in a sophisticated technical discussion about the limitations of machine learning in biological contexts, specifically addressing the 'black box' nature of models and the need for causal inference."
+        "notable_observation": "The group engaged in a deep, cross-disciplinary critique of machine learning, with biologists and mathematicians questioning its 'black box' nature and a biologist (Tavis) defending and proposing advanced ML techniques to address those exact concerns."
     },
     "utterance_annotations": [
         {
             "speaker": "Tavis Anderson",
             "timestamp": "00:00-00:22",
             "speaking_duration_seconds": 22,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
             "codes": [
                 {
                     "code_name": "Idea Management",
                     "subcode": "extends_existing_idea",
-                    "evidence": "let's go out to this location that has these specific abiotic parameters and we would predict that at this time point there would be a thousand mosquitoes emerging",
-                    "explanation": "Tavis builds on the idea of integrating climate data with vector population modeling.",
+                    "evidence": "predict that at this time point there would be a thousand mosquitoes emerging",
+                    "explanation": "Tavis builds on the previous discussion of modeling by providing a concrete example of what the model would output.",
                     "idea_quality": 1
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we would predict",
-                    "explanation": "Uses joint framing to describe the potential research model."
+                    "evidence": "let's go and collect",
+                    "explanation": "Uses 'let's' to frame the hypothetical research action as a joint effort."
                 }
-            ],
+            ]
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "00:23-00:36",
+            "speaking_duration_seconds": 13,
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
@@ -78,378 +93,333 @@
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "00:22-00:36",
-            "speaking_duration_seconds": 14,
+            "pace": "fast",
             "codes": [
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "summarizes_for_group",
+                    "evidence": "you had three kind of data streams... remote sensed data, vector population data",
+                    "explanation": "Rebecca synthesizes the data inputs Tavis previously mentioned to ensure accurate note-taking."
+                },
                 {
                     "code_name": "Information Seeking",
                     "subcode": "asks_clarifying_question",
-                    "evidence": "So you you had three kind of data streams so the remote sensed data like vector population data from traps and then there was something about abiotic",
-                    "explanation": "Rebecca seeks to clarify the data inputs Tavis mentioned.",
-                    "idea_quality": 1
+                    "evidence": "and then there was something about abiotic...",
+                    "explanation": "She asks for clarification on the third data stream she missed."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "individual_framing",
-                    "evidence": "I'm trying to take notes",
-                    "explanation": "Uses individual framing to describe her own activity."
+                    "evidence": "I'm trying to take notes really madly here",
+                    "explanation": "Frames her action individually as the note-taker."
                 }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
+            ]
         },
         {
             "speaker": "Tavis Anderson",
-            "timestamp": "00:36-01:28",
-            "speaking_duration_seconds": 52,
-            "codes": [
-                {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_method_or_approach",
-                    "evidence": "the biologist would provide the features that they think are most important for the system",
-                    "explanation": "Tavis explains the collaborative process between biologists and modelers.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Integration Practices",
-                    "subcode": "synthesizes_contributions",
-                    "evidence": "this is where you'd have to have the integration between the computer scientist and mathematician and the biologist",
-                    "explanation": "Tavis synthesizes the need for interdisciplinary collaboration.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we would have to have the integration",
-                    "explanation": "Uses joint framing to describe the necessary team structure."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Kezia Manlove",
-            "timestamp": "01:29-02:28",
-            "speaking_duration_seconds": 59,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_clarifying_question",
-                    "evidence": "can you constrain a machine learning algorithm to work in accordance with a given dynamic?",
-                    "explanation": "Kezia asks a technical question about machine learning constraints.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we often don't have a ton of we don't maybe have enough field data",
-                    "explanation": "Uses joint framing to describe the group's shared challenge."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Guillaume Bastille-Rousseau",
-            "timestamp": "02:30-03:51",
-            "speaking_duration_seconds": 81,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "I like your point because you'll go back to that",
-                    "explanation": "Guillaume validates Kezia's point.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "extends_existing_idea",
-                    "evidence": "the upper layers maybe more the like can predict where the vector will be or is mostly",
-                    "explanation": "Guillaume extends the idea of using machine learning for spatial prediction.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we're taking really the same way",
-                    "explanation": "Uses joint framing to describe the group's shared perspective."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "03:51-04:50",
-            "speaking_duration_seconds": 59,
-            "codes": [
-                {
-                    "code_name": "Integration Practices",
-                    "subcode": "frames_shared_problem",
-                    "evidence": "can we use some of the stuff we already know to put constraints on the machine learning to to make more sense out of it",
-                    "explanation": "Rebecca frames the shared problem of integrating domain knowledge with machine learning.",
-                    "idea_quality": 2
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "can we use some of the stuff we already know",
-                    "explanation": "Uses joint framing to describe the group's potential approach."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Nicole Eklmeier",
-            "timestamp": "04:50-05:58",
-            "speaking_duration_seconds": 68,
-            "codes": [
-                {
-                    "code_name": "Knowledge Sharing",
-                    "subcode": "shares_personal_experience",
-                    "evidence": "the reason I don't do machine learning very much at all is because I'm I'm quite wary of it",
-                    "explanation": "Nicole shares her personal experience and caution regarding machine learning.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "it does help us to find patterns",
-                    "explanation": "Uses joint framing to describe the potential utility of machine learning."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "05:59-06:17",
-            "speaking_duration_seconds": 18,
-            "codes": [
-                {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_for_opinion",
-                    "evidence": "can you suggest some other formats for modeling across scales with these odd inputs",
-                    "explanation": "Rebecca asks for suggestions on modeling approaches.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "joint_framing",
-                    "evidence": "we kind of know how they should be interacting",
-                    "explanation": "Uses joint framing to describe the group's shared knowledge."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Nicole Eklmeier",
-            "timestamp": "06:18-06:24",
-            "speaking_duration_seconds": 6,
-            "codes": [
-                {
-                    "code_name": "Relational Climate",
-                    "subcode": "expresses_enthusiasm",
-                    "evidence": "I'd be interested in",
-                    "explanation": "Nicole expresses interest in the proposed direction.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "individual_framing",
-                    "evidence": "I'd be interested in",
-                    "explanation": "Uses individual framing to express her interest."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Tavis Anderson",
-            "timestamp": "06:25-06:32",
-            "speaking_duration_seconds": 7,
-            "codes": [
-                {
-                    "code_name": "Idea Management",
-                    "subcode": "proposes_new_idea",
-                    "evidence": "Justin was suggesting generalized linear mixed effects models maybe",
-                    "explanation": "Tavis introduces a new modeling approach.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "ambiguous",
-                    "evidence": "Justin was suggesting",
-                    "explanation": "Discusses a suggestion from another person."
-                }
-            ],
-            "interruption_type": "not_interruption",
-            "visible_off_screen_distraction": "No",
-            "distracted_participant_count": 0,
-            "nod_count": 0,
-            "shared_affect": "No",
-            "any_smile_other": "No",
-            "audible_backchannel": "No",
-            "vocal_enthusiasm": 2,
-            "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Rebecca Garabed",
-            "timestamp": "06:33-06:38",
+            "timestamp": "00:37-00:42",
             "speaking_duration_seconds": 5,
-            "codes": [
-                {
-                    "code_name": "Evaluation Practices",
-                    "subcode": "supports_or_validates",
-                    "evidence": "Yes so generalized linear linear models",
-                    "explanation": "Rebecca validates the suggestion.",
-                    "idea_quality": 1
-                },
-                {
-                    "code_name": "Pronoun Framing",
-                    "subcode": "ambiguous",
-                    "evidence": "generalized linear linear models",
-                    "explanation": "Discusses a modeling approach."
-                }
-            ],
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
-            "nod_count": 0,
+            "nod_count": 1,
             "shared_affect": "No",
             "any_smile_other": "No",
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Tavis Anderson",
-            "timestamp": "06:39-08:51",
-            "speaking_duration_seconds": 132,
+            "pace": "normal",
             "codes": [
                 {
                     "code_name": "Knowledge Sharing",
                     "subcode": "shares_domain_knowledge",
-                    "evidence": "it's called concept whitening",
-                    "explanation": "Tavis shares domain knowledge about machine learning.",
+                    "evidence": "fine scale abiotic conditions, so temperature and humidity",
+                    "explanation": "Tavis clarifies the specific abiotic factors he was referring to.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "fine scale abiotic conditions",
+                    "explanation": "No pronouns are used in this brief clarification."
+                }
+            ]
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "00:42-00:43",
+            "speaking_duration_seconds": 1,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Relational Climate",
+                    "subcode": "expresses_appreciation",
+                    "evidence": "Okay. Thank you.",
+                    "explanation": "Briefly thanks Tavis for the clarification."
+                }
+            ]
+        },
+        {
+            "speaker": "Tavis Anderson",
+            "timestamp": "00:44-01:28",
+            "speaking_duration_seconds": 44,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "layer in pathogen prevalence... bed net use or insecticide prevalence",
+                    "explanation": "Tavis expands the model's scope by suggesting additional data layers.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Complementarity Articulation",
+                    "subcode": "expertise_complementarity",
+                    "evidence": "The biologist would provide the features... feed that into the model",
+                    "explanation": "Explicitly describes how the biologist's domain knowledge complements the computational modeling.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "ambiguous",
+                    "evidence": "this is where you'd have to have the integration",
+                    "explanation": "Uses the generic 'you' to describe the team's necessary integration."
+                }
+            ]
+        },
+        {
+            "speaker": "Kezia Manlove",
+            "timestamp": "01:30-02:29",
+            "speaking_duration_seconds": 59,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_factual_question",
+                    "evidence": "can you constrain a machine learning algorithm to work in accordance with a given dynamic?",
+                    "explanation": "Kezia asks a specific methodological question about the capabilities of machine learning.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "you know your antibody kinetics are going to work in according to some particular functional form",
+                    "explanation": "Provides an example from biology regarding known functional forms to illustrate her question.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I have a question about just... me being a machine learning neophyte",
+                    "explanation": "Frames her inquiry from her individual perspective and knowledge gap."
+                }
+            ]
+        },
+        {
+            "speaker": "Guillaume Bastille-Rousseau",
+            "timestamp": "02:31-03:50",
+            "speaking_duration_seconds": 79,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "Yes",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "what Tavis was suggesting... what Laurene was suggesting with lab experiment",
+                    "explanation": "Guillaume connects Tavis's ML approach with Laurene's earlier suggestion of using lab experiments.",
                     "idea_quality": 2
                 },
                 {
                     "code_name": "Evaluation Practices",
                     "subcode": "critiques_or_challenges",
-                    "evidence": "we might be trying to put the cart before the horse",
-                    "explanation": "Tavis critiques the current approach of using advanced techniques with limited data.",
-                    "idea_quality": 1
+                    "evidence": "maybe purely AI might not be the way to go",
+                    "explanation": "Challenges the reliance on pure machine learning, suggesting a mechanistic model might be better suited."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "we might be trying to put the cart before the horse",
-                    "explanation": "Uses joint framing to describe the group's potential pitfall."
+                    "evidence": "we have some sort of mechanism behind what we're trying to get at",
+                    "explanation": "Uses 'we' to describe the group's shared scientific goal and underlying mechanisms."
                 }
-            ],
+            ]
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "03:52-04:50",
+            "speaking_duration_seconds": 58,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Integration Practices",
+                    "subcode": "synthesizes_contributions",
+                    "evidence": "Kezia and Guillaume, you're kind of coming at the same thing here",
+                    "explanation": "Rebecca explicitly links Kezia and Guillaume's concerns about constraining ML models.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Participation Dynamics",
+                    "subcode": "invites_contribution",
+                    "evidence": "Nicole, you're a mathematician... Laurene, is this at all in the realm of what you do?",
+                    "explanation": "Directly calls on specific participants to fill the expertise gap regarding machine learning."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "can we use some of the stuff we already know",
+                    "explanation": "Frames the problem as a shared challenge for the group to solve."
+                }
+            ]
+        },
+        {
+            "speaker": "Nicole Eikmeier",
+            "timestamp": "04:51-05:58",
+            "speaking_duration_seconds": 67,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "raises_concern",
+                    "evidence": "as soon as you rely on that algorithm... it's only as good as whatever data you've given it",
+                    "explanation": "Nicole raises a fundamental concern about the fragility of ML models in changing environments."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "the reason I don't do machine learning very much at all is because I'm quite wary of it",
+                    "explanation": "Shares her personal professional stance on machine learning to contextualize her concern.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I think my solution is going to somewhat look like this",
+                    "explanation": "Speaks from her individual perspective regarding her approach to modeling."
+                }
+            ]
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "06:00-06:16",
+            "speaking_duration_seconds": 16,
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
             "nod_count": 0,
             "shared_affect": "No",
-            "any_smile_other": "No",
+            "any_smile_other": "Yes",
             "audible_backchannel": "No",
-            "vocal_enthusiasm": 3,
+            "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
-            "pace": "normal"
-        },
-        {
-            "speaker": "Silhie Huijben",
-            "timestamp": "08:52-10:00",
-            "speaking_duration_seconds": 68,
+            "pace": "normal",
             "codes": [
                 {
-                    "code_name": "Information Seeking",
-                    "subcode": "asks_for_elaboration",
-                    "evidence": "how would you approach that",
-                    "explanation": "Silhie asks for elaboration on the proposed approach.",
+                    "code_name": "Idea Management",
+                    "subcode": "redirects_idea",
+                    "evidence": "can you suggest some other formats for modeling across scales",
+                    "explanation": "Pivots the conversation away from ML toward alternative modeling formats.",
                     "idea_quality": 1
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "can you suggest some other formats",
+                    "explanation": "Asks Nicole for her expert opinion on alternative approaches."
                 },
                 {
                     "code_name": "Pronoun Framing",
                     "subcode": "joint_framing",
-                    "evidence": "how would you approach that",
-                    "explanation": "Uses joint framing to ask about the group's approach."
+                    "evidence": "we kind of know how they should be interacting",
+                    "explanation": "Uses 'we' to refer to the group's collective biological knowledge."
                 }
-            ],
+            ]
+        },
+        {
+            "speaker": "Nicole Eikmeier",
+            "timestamp": "06:18-06:24",
+            "speaking_duration_seconds": 6,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 1,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_personal_experience",
+                    "evidence": "I like networks, like Kezia. So I would be interested in...",
+                    "explanation": "Briefly shares her methodological preference for network models.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I like networks",
+                    "explanation": "Frames her preference individually."
+                }
+            ]
+        },
+        {
+            "speaker": "Tavis Anderson",
+            "timestamp": "06:25-06:32",
+            "speaking_duration_seconds": 7,
             "interruption_type": "not_interruption",
             "visible_off_screen_distraction": "No",
             "distracted_participant_count": 0,
@@ -459,26 +429,148 @@
             "audible_backchannel": "No",
             "vocal_enthusiasm": 2,
             "hesitation_flag": "No",
-            "pace": "normal"
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Idea Ownership and Attribution",
+                    "subcode": "attributes_to_other",
+                    "evidence": "Justin was suggesting generalized linear mixed effects models",
+                    "explanation": "Brings an idea from the chat into the verbal discussion, attributing it to Justin."
+                },
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "proposes_new_idea",
+                    "evidence": "generalized linear mixed effects models maybe?",
+                    "explanation": "Introduces GLMMs as a potential alternative modeling format.",
+                    "idea_quality": 1
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "Justin was suggesting",
+                    "explanation": "Refers to another individual's suggestion."
+                }
+            ]
+        },
+        {
+            "speaker": "Rebecca Garabed",
+            "timestamp": "06:33-06:38",
+            "speaking_duration_seconds": 5,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 0,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "supports_or_validates",
+                    "evidence": "Yes, so generalized linear models.",
+                    "explanation": "Validates the suggestion brought up from the chat."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "I wasn't looking at that so well.",
+                    "explanation": "Explains her individual oversight of the chat."
+                }
+            ]
+        },
+        {
+            "speaker": "Tavis Anderson",
+            "timestamp": "06:39-08:50",
+            "speaking_duration_seconds": 131,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 3,
+            "shared_affect": "Yes",
+            "any_smile_other": "Yes",
+            "audible_backchannel": "Yes",
+            "vocal_enthusiasm": 3,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Evaluation Practices",
+                    "subcode": "setback_response_explores",
+                    "evidence": "what you can start doing there is you can do like a batch normalization and you can add noise",
+                    "explanation": "Tavis directly addresses the concerns raised about ML overfitting by proposing specific algorithmic solutions."
+                },
+                {
+                    "code_name": "Knowledge Sharing",
+                    "subcode": "shares_domain_knowledge",
+                    "evidence": "an active area of research... is called concept whitening... another active area and it's called causal inference",
+                    "explanation": "Shares advanced, specific knowledge from the machine learning field to address the group's critiques.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "joint_framing",
+                    "evidence": "we might be trying to put the cart before the horse",
+                    "explanation": "Uses 'we' to reflect on the group's collective ambition versus the current state of the data and algorithms."
+                }
+            ]
+        },
+        {
+            "speaker": "Silvie Huijben",
+            "timestamp": "08:52-10:00",
+            "speaking_duration_seconds": 68,
+            "interruption_type": "not_interruption",
+            "visible_off_screen_distraction": "No",
+            "distracted_participant_count": 0,
+            "nod_count": 2,
+            "shared_affect": "No",
+            "any_smile_other": "No",
+            "audible_backchannel": "No",
+            "vocal_enthusiasm": 2,
+            "hesitation_flag": "No",
+            "pace": "normal",
+            "codes": [
+                {
+                    "code_name": "Idea Management",
+                    "subcode": "extends_existing_idea",
+                    "evidence": "If you're trying to capture the more heterogeneous aspect of this, then how would you approach that?",
+                    "explanation": "Silvie adds a new layer of complexity to the modeling discussion by introducing spatial and social heterogeneity.",
+                    "idea_quality": 2
+                },
+                {
+                    "code_name": "Information Seeking",
+                    "subcode": "asks_for_opinion",
+                    "evidence": "how would you approach that?",
+                    "explanation": "Asks the group how they would handle this added complexity in the models."
+                },
+                {
+                    "code_name": "Pronoun Framing",
+                    "subcode": "individual_framing",
+                    "evidence": "one thing that I've been starting to think more about is just the whole spatial heterogeneity",
+                    "explanation": "Frames the new variable from her individual research perspective."
+                }
+            ]
         }
     ],
     "session_state": {
         "pronoun_shift_occurred_cumulative": true,
         "shared_vision_established_cumulative": true,
         "idea_trajectory_sequence": [
-            "divergent",
-            "divergent",
+            "procedural",
+            "procedural",
             "divergent",
             "divergent",
             "divergent",
             "divergent"
         ],
         "ideas_currently_on_table": [
-            "Vector-borne disease modeling and climate dependence",
-            "Spatial wildlife ecology and movement",
-            "Metabolic adaptations of apicomplexan parasites",
-            "Nanoscale imaging and molecular modeling",
-            "RNA virus evolution and genetic diversity"
+            "Machine learning model for vector dynamics using trait-based clustering",
+            "Genetic variants for host colonization success",
+            "Targeting host mRNA modification enzymes to prevent viral spillover",
+            "Correlation between asymptomatic behavior and super spreading",
+            "Mechanistic vs ML models for spatial heterogeneity of vector-borne diseases"
         ],
         "commitment_signals_cumulative": [],
         "speakers_identified": [
@@ -491,8 +583,8 @@
             "Dana Mitzel",
             "William Witola",
             "Rebecca Garabed",
-            "Nicole Eklmeier",
-            "Silhie Huijben",
+            "Nicole Eikmeier",
+            "Silvie Huijben",
             "Guillaume Bastille-Rousseau",
             "Diego Huet",
             "Laurene Tetard",
@@ -500,12 +592,12 @@
             "Kezia Manlove"
         ],
         "chunk_summaries": [
-            "The group initiated their breakout session by introducing themselves and their respective research domains, which span genetics, biochemistry, virology, and biophysical modeling. Wilfred van der Donk facilitated the introductions and set the stage for the session, emphasizing that the discussion should be driven by the fellows. The group ended the chunk in early divergent exploration, having established a baseline of their diverse expertise without yet narrowing down to a specific research project.",
-            "The group continued with introductions, with each participant sharing their research background and interests. The tone was collaborative and structured, with participants actively listening and engaging with each other's introductions. The group ended the chunk in a divergent state, having identified several potential research topics but not yet narrowing down to a specific project.",
-            "The group actively brainstormed and connected their respective research areas, specifically focusing on the intersection of RNA modifications, viral evolution, and host-pathogen interactions. Kristin Koutmou proposed a new research direction, and the group engaged in a productive discussion, with Wilfred van der Donk facilitating and clarifying the session's purpose. The group ended the chunk in a divergent state, having identified a shared interest but not yet a specific project.",
-            "The group focused on vector-borne disease modeling and its dependence on climate, with Silhie Huijben and Tavis Anderson driving the discussion. They explored the potential for integrating lab-based experiments with machine learning to predict vector population dynamics. The tone was highly collaborative and intellectually engaged, with the group ending the chunk in a divergent state, having identified a promising, albeit complex, research direction.",
-            "The group explored the intersection of host genetics, pathogen virulence, and asymptomatic transmission, using William Witola's work on Toxoplasma as a case study. The discussion was driven by William and Dana Mitzel, with Wilfred van der Donk and Danae Schulz actively contributing to the exploration of genetic and epigenetic determinants. The group remained in a divergent state, having identified a shared interest in host-pathogen interactions but not yet a specific project.",
-            "The group engaged in a sophisticated technical discussion about the limitations of machine learning in biological contexts, specifically addressing the 'black box' nature of models and the need for causal inference. Tavis Anderson and Rebecca Garabed led the exploration of integrating domain knowledge with machine learning to improve model applicability across different spatial contexts. The group remained in a divergent state, having identified a shared interest in this technical integration but not yet a specific project."
+            "The group began the session with Wilfred van der Donk outlining the process and initiating a round of introductions. Each participant shared their disciplinary background and current research focus, ranging from RNA virology and biophysical modeling to parasite-host interactions and horizontal gene transfer. The tone was polite and structured, and the chunk ended with Kristin Koutmou volunteering to be the reporter before the group transitioned to discussing the prompts.",
+            "The group spent the majority of the chunk conducting structured introductions, with each participant sharing their background and expertise. Facilitator Rebecca Garabed then shared her screen to display the discussion prompts, giving the group time to read them silently. In the final minute, Silvie Huijben initiated the substantive discussion by proposing a focus on modeling vector-borne diseases and their dependence on climate.",
+            "The group navigated a minor logistical issue with the discussion prompts before transitioning into substantive scientific ideation. Participants shared their individual research interests, with Kristin Koutmou introducing the novel concept of mRNA modifications affecting viral mutation rates. This sparked cross-disciplinary exploration, leading Wilfred van der Donk to propose targeting these host modification enzymes to prevent viral spillover, an idea the group began to critically evaluate.",
+            "Silvie highlighted the lack of predictive models for vector-borne diseases due to data scarcity and microclimate complexities. Tavis, Kezia, and Laurene collaboratively built on this by proposing a trait-based clustering approach, where lab experiments would serve as training sets for a machine learning algorithm. Tavis synthesized these ideas into a multi-layered network model incorporating satellite imagery and abiotic data. The tone was highly collaborative and intellectually engaged, with participants actively building on each other's disciplinary perspectives. The group ended the chunk with a richly developed, specific research concept on the table.",
+            "Wilfred van der Donk asked the group about the availability of databases for identifying genetic markers of pathogen spillover. William Witola responded with a lengthy, 5-minute explanation of his past research on Toxoplasma and host epigenetics, which dominated the chunk's speaking time. Dana Mitzel added that identifying genetic determinants for viral spillover has historically been very difficult, and Danae Schulz introduced a new question about the correlation between asymptomatic individuals and super-spreading behavior. The tone was academic and informative, but the extended monologue temporarily stalled collaborative back-and-forth ideation, leaving the group in a divergent, knowledge-sharing state.",
+            "The group engaged in a deep, cross-disciplinary discussion about the limitations and applications of machine learning for modeling vector-borne diseases. Kezia, Guillaume, and Nicole raised concerns about the 'black box' nature of ML and its inability to handle novel environments without mechanistic constraints. Tavis responded enthusiastically, sharing advanced ML concepts like concept whitening and causal inference to address these exact issues, while acknowledging the risks of applying complex models to limited biological data. The tone was highly collaborative and intellectually rigorous, with participants actively bridging computer science, mathematics, and biology. The chunk ended with Silvie introducing the need to account for spatial and social heterogeneity in these models."
         ]
     }
 }
