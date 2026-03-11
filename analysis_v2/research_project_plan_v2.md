@@ -86,7 +86,6 @@ The codebook and annotation targets are not arbitrary — each maps to a constru
 
 The preliminary pipeline had several structural limitations that this redesign corrects:
 
-- **Invalid transcript-only visual annotations**: The prior `analyze_text.py` prompt asked the model to annotate gaze, smiles, nods, and gestures from text — generating confabulated visual data. The new pipeline strictly separates what can be inferred from audio/video vs. transcript, and uses a full multimodal model (Gemini 2.5 Pro or equivalent) for all visual signal extraction.
 - **No inter-rater reliability validation**: The new pipeline includes a mandatory human expert validation stage covering ~15–20% of chunks. Human-AI agreement (Cohen's kappa, ICC) is computed per annotation category before any feature is included in downstream models.
 - **Cherry-picked split reporting**: The prior pipeline reported best-split AUC across 20 random splits. The new pipeline uses leave-one-session-out or leave-one-conference-out cross-validation and reports mean ± SD of performance metrics.
 - **Conference-level clustering ignored**: All regression models now include conference fixed effects or mixed-effects structure with conference as a random intercept.
@@ -110,7 +109,7 @@ The preliminary pipeline had several structural limitations that this redesign c
 
 ## Pipeline overview
 
-```
+
 Stage 0: Preprocessing & Chunk Registry
         ↓
 Stage 1: Multimodal Annotation 
@@ -128,16 +127,16 @@ Stage 6: Inferential Modeling (Regression + ML)
 Stage 7: Temporal Segment Analysis
         ↓
 Stage 8: Reproducibility Packaging & Zenodo Deposit
-```
+
         ↓
 Stage 9: Reproducibility Packaging
-```
+
 
 Each stage corresponds to one or more notebooks or scripts described below.
 
 ---
 
-## Annotation targets
+## Annotation details
 
 ### Layer 1: Chunk-level summary annotations (per 5–10 min segment)
 
@@ -319,7 +318,7 @@ New categories added in this version:
 
 ---
 
-### Layer 4: Multimodal-only signals per utterance (audio + video)
+### Layer 3: Multimodal-only signals per utterance (audio + video)
 
 These are extracted during Pass 1 and require the video to be present. They are not requested from transcript-only inputs.
 
@@ -356,927 +355,710 @@ These are extracted during Pass 1 and require the video to be present. They are 
 
 ---
 
-## Prompt Library
+### Prompt Library
 
 These are the exact, production-ready prompts to be saved as plain `.txt` files in the `prompts/` directory. They are referenced verbatim in the annotation scripts. Any change to a prompt text must be saved as a new file version and re-hashed in `prompt_manifest.json`.
 
----
-
-### `prompts/pass1_chunk_prompt.txt` — Multimodal behavioral annotation (video + transcript)
-
-```
-SYSTEM ROLE:
-You are an expert in team science, interaction analysis, multimodal behavioral coding, and deductive qualitative research. You have deep knowledge of team cognition, collective intelligence, interdisciplinary collaboration, and nonverbal communication in group settings.
-
-CONTEXT:
-You are analyzing a 5–10 minute video segment from a recorded Zoom meeting. The participants are scientists from diverse disciplinary backgrounds (e.g., biology, physics, chemistry, data science, engineering) who are collaborating to develop novel research ideas in response to a scientific challenge. These meetings are part of a Scialog conference, a structured scientific collaboration program. The goal of the meeting is to generate ideas that could lead to joint research teams and grant proposals.
-
-YOUR TASK:
-Analyze the video and transcript below and produce two types of structured annotations:
-
-PART A — CHUNK-LEVEL SUMMARY: One holistic assessment of the entire 5–10 minute segment.
-PART B — UTTERANCE-LEVEL CODING: One annotation object per speaker turn.
-
-======================================================================
-CRITICAL RULES — READ BEFORE ANNOTATING:
-======================================================================
-1. In PART B, annotate BEHAVIOR first, then add idea_quality only for the three applicable categories (Idea Management, Integration Practices, Knowledge Sharing). Do not add idea_quality to any other category.
-2. Code only what is EXPLICITLY OBSERVABLE in the utterance or video. Do not infer intent, motivation, or background knowledge.
-3. For any audio or video field where quality is insufficient (participant off-camera, poor lighting, overlapping audio, blurry frame), append [low_confidence] directly after that field's value. Example: "nod_count": "0 [low_confidence]"
-4. If no behavioral code applies to an utterance (e.g., pure filler words like "yep", "mm-hmm", "okay", or utterances shorter than 5 words with no substantive content), assign code_name: "None" and leave other code fields empty.
-5. Assign no more than 3 behavioral codes per utterance. Only assign multiple codes if each is clearly and independently present.
-6. Do not hallucinate visual signals. If participants are not visible (e.g., camera off, out of frame), set nod_count to 0 and all binary visual fields to "No", and append [low_confidence] to each.
-7. Apply Pronoun Framing [12] to EVERY utterance that discusses the research content — it is not optional.
-======================================================================
-
-======================================================================
-PART A — CHUNK-LEVEL SUMMARY ANNOTATION
-======================================================================
-Produce a single JSON object "chunk_summary" with the following fields:
-
---- PARTICIPATION STRUCTURE ---
-"speaking_time_seconds": {
-  // For every participant who speaks in this chunk, estimate the number of seconds they speak.
-  // Use the transcript timestamps to inform this estimate.
-  // Format: {"SpeakerName": integer_seconds, ...}
-  // Include ALL speakers who appear in the transcript for this chunk.
-}
-"dominant_speaker_flag": "Yes" or "No"
-  // Yes if any single speaker accounts for more than 50% of total speaking time in this chunk.
-"dominant_speaker_name": string or "None"
-  // Name of the dominant speaker, or "None" if no dominant speaker.
-
---- IDEA TRAJECTORY ---
-"idea_trajectory": one of ["divergent", "convergent", "procedural", "ambiguous"]
-  // divergent: the group is primarily generating, exploring, or brainstorming new ideas.
-  //            Participants are introducing new angles, asking "what if", expanding the space.
-  // convergent: the group is primarily narrowing down, synthesizing, reaching consensus,
-  //             making decisions, or committing to a direction.
-  // procedural: the discussion is primarily logistical — coordinating who speaks when,
-  //             scheduling, housekeeping, or meta-discussion about the meeting itself.
-  // ambiguous: the chunk contains a genuine mix that cannot be clearly classified,
-  //            or the discussion shifts between modes without a dominant one.
-"idea_trajectory_justification": string
-  // One sentence explaining why you assigned this trajectory label.
-  // Example: "Participants generated four distinct hypotheses without evaluating any of them."
-
---- COLLECTIVE BEHAVIORAL RESPONSIVENESS ---
-"collective_engagement_level": integer 1, 2, 3, or 4
-  // A holistic rating of how behaviorally responsive the NON-SPEAKING participants appear
-  // throughout this chunk, based ONLY on signals that are genuinely observable in Zoom video.
-  //
-  // VALID signals to observe (in order of interpretive confidence):
-  //   HEAD NODS from non-speakers — clearly observable, strongest engagement signal.
-  //   FACIAL EXPRESSIONS — smiles, raised eyebrows, frowns, visible reactions.
-  //   AUDIBLE BACKCHANNELS — "mm-hmm", "yeah", laughter, brief affirmations from non-speakers.
-  //   CAMERA STATUS — participants who turn cameras off mid-chunk signal reduced engagement.
-  //   VISIBLE OFF-SCREEN DISTRACTION — only flag if clearly sustained: participant is
-  //     obviously looking far off-screen, visibly using a phone in frame, or talking to
-  //     someone off-camera. Do NOT flag brief glances or natural head movements.
-  //   POSTURAL SHIFTS — visible lean toward or away from camera (note: lower confidence).
-  //
-  // Rating rubric:
-  // 1 = Most visible non-speakers show NO behavioral responsiveness: no nods, no visible
-  //     facial reactions, no audible backchannels throughout. Multiple cameras off, or
-  //     visible sustained off-screen distraction from one or more participants.
-  // 2 = Mixed: some participants show responsiveness (occasional nod, brief smile),
-  //     others do not. Backchannel vocalizations are rare or absent.
-  // 3 = Most visible non-speakers show consistent responsiveness: regular nods, visible
-  //     expressions, audible backchannels from at least one participant.
-  // 4 = Strong collective responsiveness throughout: frequent nods, shared laughter or
-  //     smiling, active backchannel vocalizations from multiple participants.
-"collective_engagement_justification": string
-  // One sentence naming the specific OBSERVABLE signals (not inferred attention) that
-  // led to this rating. Example: "Three participants nodded frequently and two produced
-  // audible 'mm-hmm' backchannels; no visible off-screen distraction."
-  // Do NOT write: "Participants appeared to be paying attention to the speaker."
-
---- CROSS-DISCIPLINARY BRIDGING ---
-"cross_disciplinary_bridging": "Yes" or "No"
-  // Yes if ANY participant in this chunk explicitly connects their own disciplinary framing
-  // to another participant's. This means explicitly naming or referencing two frameworks,
-  // fields, or terminologies and drawing a link between them.
-  // Examples that qualify:
-  //   "What you're calling a cascade effect is what we in network science call a contagion process."
-  //   "In my field we'd approach this as an optimization problem, but I think your framing as
-  //    an evolutionary system is actually capturing something we miss."
-  // Examples that do NOT qualify:
-  //   Simply mentioning your own field without connecting it to another.
-  //   Using a technical term without bridging it to another participant's vocabulary.
-"cross_disciplinary_bridging_speaker": string or "None"
-  // Name of the participant who made the bridging move, or "None".
-"cross_disciplinary_bridging_description": string or "None"
-  // A brief phrase (≤20 words) describing what two disciplines or frameworks were connected.
-  // Example: "Connected network contagion modeling (physics) to immune response cascades (biology)."
-  // Write "None" if cross_disciplinary_bridging is "No".
-
---- EXPLICIT COMMITMENT SIGNALS ---
-"explicit_commitment_signal": "Yes" or "No"
-  // Yes if ANY participant explicitly expresses interest in forming a team, proposes a
-  // specific future collaboration, references a joint next step involving multiple people,
-  // or suggests writing a proposal together.
-  // This must be an explicit verbal signal — not an implicit one.
-  // Examples that qualify:
-  //   "I'd really like to continue this conversation — would you be open to co-authoring something?"
-  //   "Let's set up a call next week to sketch out a proposal."
-  //   "I think the three of us have something here — we should submit together."
-  // Examples that do NOT qualify:
-  //   "This has been a great discussion."
-  //   Expressing enthusiasm about the topic without committing to joint action.
-"commitment_signal_speaker": string or "None"
-  // Name of the participant who made the commitment signal, or "None".
-"commitment_signal_quote": string or "None"
-  // Verbatim quote of the commitment signal, 20 words or fewer. Write "None" if no signal.
-
---- COLLABORATIVE ARTIFACT ENGAGEMENT ---
-"screenshare_active": "Yes" or "No"
-  // Yes if a screen is being shared by any participant at any point during this chunk.
-"artifact_type": one of ["document", "diagram", "data", "slides", "code", "whiteboard", "other", "None"]
-  // Type of artifact being shared. Write "None" if no screenshare.
-"artifact_interaction": "Yes" or "No" or "NA"
-  // Yes if participants actively interact with the shared artifact during this chunk.
-  // Interaction means: making live edits, pointing at elements, referencing specific parts
-  // of the artifact in speech, annotating, or drawing.
-  // No if screen is shared but participants do not interact with it (e.g., static slide as backdrop).
-  // NA if no screenshare is active.
-"artifact_interaction_description": string or "None"
-  // One sentence describing what kind of interaction occurred with the artifact.
-  // Example: "Speaker edited the diagram live while explaining a proposed feedback loop."
-  // Write "None" if artifact_interaction is "No" or "NA".
-
---- INTELLECTUAL QUALITY AND SPECIFICITY ---
-"problem_specificity_level": integer 1, 2, 3, or 4, or "NA"
-  // Rate how specific the research problem the group is working on is by the END of this chunk.
-  // 1 = Topic-level only: participants share general interest in an area ("we both work on X")
-  //     but no specific question has been identified.
-  // 2 = Domain narrowed: a more specific area has been identified, but no concrete question yet
-  //     ("something about X in the context of Y").
-  // 3 = Specific question: a concrete, answerable research question has been articulated
-  //     ("can X mechanism explain Y phenomenon in Z system?").
-  // 4 = Question + approach: a specific question with at least a sketch of how to answer it
-  //     ("we think X causes Y via Z — we could test that by doing W with dataset Q").
-  // Write "NA" if this chunk is entirely procedural (no research content discussed).
-"problem_specificity_justification": string or "NA"
-  // One sentence referencing specific language from the transcript that supports your rating.
-
-"decision_crystallization_level": integer 1, 2, 3, or 4
-  // Rate how crystallized the group's sense of a joint direction is by the END of this chunk.
-  // 1 = No shared direction: still at open, individual exploration; no convergence visible.
-  // 2 = Shared interest identified: participants agree there is something to explore together,
-  //     but no specific joint project has been named.
-  // 3 = Specific project named: a specific project idea has been articulated and acknowledged
-  //     by at least two participants as worth pursuing.
-  // 4 = Project with structure: a specific project plus at least TWO of the following:
-  //     a research question, an approach, a timeline, a division of roles, a named next step.
-  // This field is MOST important for the final chunk of each session.
-"decision_crystallization_justification": string
-  // One sentence explaining what specifically in this chunk justified this rating.
-
-"ambition_level": one of ["incremental", "novel_application", "novel_combination",
-                           "paradigm_challenging", "not_applicable"]
-  // Classify the most ambitious idea proposed in this chunk.
-  // incremental: extends existing work in an expected direction; no surprising combination.
-  // novel_application: applies established methods or frameworks to a new domain.
-  // novel_combination: combines two fields, methods, or frameworks in a way neither has done.
-  //   This is the "atypical combination" associated with high-impact science (Uzzi et al., 2013).
-  // paradigm_challenging: questions a foundational assumption of one or more of the fields involved.
-  // not_applicable: no specific research idea was proposed in this chunk (procedural/social only).
-
---- COMPLEMENTARITY AND SHARED VISION ---
-"explicit_complementarity_recognition": "Yes" or "No"
-  // Yes if any participant explicitly articulates that their expertise or approach COMPLEMENTS
-  // another participant's — meaning the COMBINATION is more capable than either alone.
-  // This is different from noting that fields are related or overlap. The signal is valuation:
-  //   "I could never do W without someone who does Y — that's exactly what's been missing."
-  //   "Your experimental access is exactly what my models need to be testable."
-  // Does NOT qualify: "Oh interesting, we both work on X." / "There's definitely overlap there."
-"complementarity_recognition_speaker": string or "None"
-"complementarity_recognition_quote": string or "None"
-  // Verbatim phrase (≤20 words) capturing the complementarity articulation, or "None".
-
-"skill_gap_identification": "Yes" or "No"
-  // Yes if any participant identifies a specific gap in the proposed project AND connects
-  // that gap to what another person in the room could provide.
-  // "You'd be the one who could actually run the experiment — I don't have the lab for it."
-  // "We'd need someone who knows the clinical side. Do you have those connections?"
-  // Does NOT qualify: vague acknowledgments that the project is hard or incomplete.
-"skill_gap_description": string or "None"
-  // One sentence describing the gap and who was identified as filling it, or "None".
-
-"shared_vision_indicator": "Yes" or "No"
-  // Yes if the conversation shifted in this chunk from participants describing their OWN
-  // separate work toward discussing a SHARED project that belongs jointly to the group.
-  // Key linguistic signal: participants use "our," "we," or "together" when referring to
-  // the proposed research (not just social politeness).
-  // Distinct from commitment signals: shared vision is about language and framing, not
-  // an explicit proposal to collaborate.
-"shared_vision_quote": string or "None"
-  // The phrase or exchange that most clearly marks the shift, or "None".
-
-"pronoun_shift_flag": "Yes" or "No"
-  // Yes if this chunk shows a NOTABLE SHIFT from individual framing ("my work," "your work,"
-  // "in my field") toward joint framing ("our idea," "we could," "together we") when
-  // discussing the proposed research.
-  // Code Yes only when the shift OCCURS in this chunk — not if joint language has been
-  // present consistently since the beginning.
-
---- INTERPERSONAL AND RELATIONAL SIGNALS ---
-"personal_disclosure": "Yes" or "No"
-  // Yes if any participant shares something personally revealing that goes beyond
-  // professional role presentation: a research frustration, a career aspiration,
-  // a domain passion, a past failure, or an unexpected personal finding.
-  // Do NOT flag polite self-introductions or standard academic presentations.
-  // Only flag disclosures that are personally candid or emotionally revealing.
-
-"laughter_quality": one of ["tension_release", "shared_humor", "appreciative",
-                             "social_lubricant", "none"]
-  // If laughter or shared humor occurred, classify its primary function.
-  // tension_release: laughter at/after a moment of disagreement, awkwardness, or challenge.
-  // shared_humor: laughter in response to a joke or playful remark — social warmth.
-  // appreciative: laughter or amusement in direct response to an idea being CLEVER,
-  //   SURPRISING, or ELEGANT — signals intellectual rapport and is most predictive of
-  //   team formation.
-  // social_lubricant: light background laughter with no clear trigger.
-  // none: no laughter occurred.
-
---- PSYCHOLOGICAL SAFETY AND DISSENT ---
-"dissent_response_quality": integer 1, 2, 3, or "NA"
-  // When any participant expresses disagreement, raises a concern, or proposes a contrarian
-  // view in this chunk, how does the group respond?
-  // 1 = Dismissive or defensive: dissent is interrupted, dropped without engagement, or the
-  //     response signals the dissent was unwelcome.
-  // 2 = Neutral: dissent is acknowledged but not deeply engaged with; conversation moves on.
-  // 3 = Curious and exploratory: dissent is met with follow-up questions, elaboration requests,
-  //     or genuine engagement. Disagreement is treated as useful information.
-  // "NA" = No dissent or contrarian view was expressed in this chunk.
-  // Based on Edmondson (1999): psychological safety is observable in how disagreement is received.
-
---- INTELLECTUAL RISK AND AMBITION ---
-"risk_acknowledgment_with_enthusiasm": "Yes" or "No"
-  // Yes if any participant explicitly acknowledged that the proposed project is risky,
-  // uncertain, or hard — AND responded to that acknowledgment with excitement or positive
-  // affect rather than hedging, qualification, or retreat.
-  // BOTH elements must be present: risk acknowledgment + enthusiasm about the risk.
-  // "This is going to be really hard, but that's exactly why it's exciting."
-  // "I don't know if it's feasible, but the potential payoff is enormous."
-  // Does NOT qualify: acknowledging risk without positive affect, or enthusiasm without
-  // acknowledging risk.
-"risk_enthusiasm_quote": string or "None"
-  // Verbatim phrase (≤20 words) or "None".
-
---- GRANT AND FUNDING CONTEXT ---
-"funding_awareness_signal": "Yes" or "No"
-  // Yes if any participant mentions a specific funding mechanism, program priority,
-  // grant deadline, review criterion, or funding agency relevant to the proposed work.
-  // "Scialog is specifically looking for cross-disciplinary proposals" qualifies.
-  // "We should think about funding eventually" does NOT qualify.
-"funding_reference_description": string or "None"
-  // One sentence describing the specific funding reference, or "None".
-
-"prior_relationship_signal": "Yes" or "No"
-  // Yes if any participant mentions prior familiarity with another participant:
-  // having read their work, met at a conference before, collaborated previously,
-  // or known of each other's research before this meeting.
-  // Prior familiarity reduces coordination costs and predicts collaboration follow-through.
-"prior_relationship_description": string or "None"
-  // One sentence describing the nature of the prior connection, or "None".
-
---- MEETING PROCESS QUALITY ---
-"meeting_structure_quality": one of ["unstructured", "loosely_structured", "structured"]
-  // Rate the degree to which this chunk has an implicit or explicit structure.
-  // unstructured: conversation is associative; topic jumps without apparent shared plan.
-  // loosely_structured: participants have a general shared sense of what they're doing,
-  //   but no explicit agenda or reference to phases.
-  // structured: participants explicitly reference phases, topics to cover, what has been
-  //   accomplished, or what remains; discussion is deliberately organized.
-
---- NOTABLE OBSERVATION ---
-"notable_observation": string or "None"
-  // A brief (1–3 sentence) note on anything surprising, unusual, or potentially important
-  // that occurred in this chunk that is NOT captured by any field above, but could be
-  // relevant to predicting team formation success or grant proposal quality.
-  // Examples: an unexpected moment of genuine laughter that broke tension, a participant
-  // abruptly changing their position, a striking personal anecdote, an unusually creative
-  // leap, or a visible moment of disengagement that seems significant.
-  // Set to "None" if nothing stands out.
-
-======================================================================
-PART B — UTTERANCE-LEVEL BEHAVIORAL CODING
-======================================================================
-Produce a JSON array "utterance_annotations" with one object per speaker turn.
-Each object must have the following fields:
-
---- IDENTIFICATION ---
-"speaker": string — Full name of the speaker.
-"timestamp": string — Start and end time in MM:SS-MM:SS format.
-"speaking_duration_seconds": integer — Estimated seconds this turn lasts.
-
---- BEHAVIORAL CODES (LAYER 2) ---
-"codes": array of code objects, or [{"code_name": "None"}] if no code applies.
-  // Assign 1–3 codes. Each code object has:
-  //   "code_name": one of the 16 categories listed below
-  //   "subcode": string or "None" — a more specific label within the category (see below)
-  //   "evidence": string — verbatim quote from the utterance that directly supports the code.
-  //   "explanation": string — 1–2 sentences describing what in the utterance justifies
-  //                  this code.
-  //   "idea_quality": integer 0, 1, or 2 — ONLY for these three categories:
-  //                   Idea Management, Integration Practices, Knowledge Sharing.
-  //                   Omit this field entirely for all other code categories.
-  //
-  //   idea_quality rubric (for the three applicable categories only):
-  //   0 = Undeveloped, vague, tangential, or already well-known to the group. The utterance
-  //       does not meaningfully advance the team's intellectual work.
-  //   1 = Clear, relevant, and specific. Another participant could meaningfully respond to it.
-  //   2 = Notably novel, richly developed, fills a specific gap, or opens a new direction
-  //       the group had not yet considered. Clearly advances the team's work.
-  //
-  //   Examples of when to include idea_quality:
-  //   → code_name is "Idea Management" → always include idea_quality
-  //   → code_name is "Integration Practices" → always include idea_quality
-  //   → code_name is "Knowledge Sharing" → always include idea_quality
-  //   → code_name is "Relational Climate" → DO NOT include idea_quality
-  //   → code_name is "Pronoun Framing" → DO NOT include idea_quality
-
-BEHAVIORAL CODE CATEGORIES AND SUBCODES:
-
-[1] Idea Management
-  // The speaker introduces, develops, extends, or responds to an idea.
-  Subcodes: "proposes_new_idea" | "extends_existing_idea" | "combines_ideas" |
-            "returns_to_earlier_idea" | "redirects_idea"
-
-[2] Information Seeking
-  // The speaker asks a question or requests information, clarification, or elaboration
-  // from another participant.
-  Subcodes: "asks_factual_question" | "asks_clarifying_question" |
-            "asks_for_elaboration" | "asks_for_opinion" | "asks_rhetorical_question"
-
-[3] Knowledge Sharing
-  // The speaker contributes domain knowledge, data, findings, methods, or expertise
-  // relevant to the discussion topic.
-  Subcodes: "shares_domain_knowledge" | "shares_data_or_findings" |
-            "shares_method_or_approach" | "shares_personal_experience"
-
-[4] Evaluation Practices
-  // The speaker evaluates, critiques, challenges, validates, or compares an idea or claim.
-  Subcodes: "supports_or_validates" | "critiques_or_challenges" |
-            "compares_options" | "raises_concern" | "devil_advocate" |
-            "setback_response_explores" | "setback_response_defends" |
-            "setback_response_redirects" | "setback_response_accepts_builds"
-  //
-  // The setback_response subcodes apply when the speaker responds to criticism of their
-  // OWN idea or to an obstacle raised about the team's current direction:
-  //   setback_response_explores: speaker asks follow-up questions about the criticism,
-  //     seeking to understand it rather than counter it.
-  //   setback_response_defends: speaker argues against the criticism without engaging
-  //     its content; position is held rather than examined.
-  //   setback_response_redirects: speaker changes subject or moves on without addressing
-  //     the concern.
-  //   setback_response_accepts_builds: speaker acknowledges the concern and incorporates
-  //     it into a revised or strengthened proposal.
-
-[5] Relational Climate
-  // The speaker's utterance primarily serves a relational or social function rather than
-  // a cognitive one: building rapport, expressing appreciation, managing tension,
-  // encouraging participation, or expressing humor.
-  Subcodes: "expresses_appreciation" | "encourages_participation" |
-            "manages_tension" | "uses_humor" | "expresses_enthusiasm"
-
-[6] Participation Dynamics
-  // The utterance explicitly invites, redirects, or manages who speaks or contributes.
-  // This includes facilitating, yielding the floor, or gatekeeping.
-  Subcodes: "invites_contribution" | "yields_floor" | "redirects_speaker" |
-            "summarizes_for_group" | "gatekeeps"
-
-[7] Coordination and Decision Practices
-  // The speaker proposes or manages a process, agenda, decision rule, or next step
-  // for the group as a whole.
-  Subcodes: "proposes_process" | "calls_for_decision" | "records_or_documents" |
-            "proposes_next_step" | "checks_consensus" | "scope_calibration"
-  //
-  // scope_calibration: speaker explicitly discusses whether the project scope is
-  //   appropriate for a grant proposal — too big, too small, or about right.
-  //   "We probably can't answer all of that in one grant cycle." / "This is actually
-  //   a perfect scale for an NIH R01."
-
-[8] Integration Practices
-  // The speaker synthesizes, connects, or reconciles contributions from multiple people
-  // or multiple ideas into a coherent whole.
-  Subcodes: "synthesizes_contributions" | "identifies_common_ground" |
-            "resolves_contradiction" | "frames_shared_problem"
-
-[9] Idea Ownership and Attribution
-  // The speaker explicitly claims ownership of an idea or attributes an idea to a
-  // specific person. Tracks intellectual investment and credit dynamics.
-  Subcodes: "claims_own_idea" | "attributes_to_other" | "challenges_attribution"
-
-[10] Future-Oriented Language
-  // The utterance explicitly references future joint work, shared plans, next steps, or
-  // proposed continuation beyond this meeting. Must be explicit, not implied.
-  Subcodes: "vague_future_reference" | "specific_future_plan" | "named_next_step"
-  // vague_future_reference: "We should think more about this" / "It would be interesting..."
-  // specific_future_plan: "Let's schedule a follow-up call" / "We could submit in March."
-  // named_next_step: a concrete action with a responsible person and approximate timeline.
-  //   "I'll send you my dataset by end of week." / "Can you draft the outline by Friday?"
-
-[11] Epistemic Bridging
-  // The speaker explicitly translates a concept, term, or framework across disciplinary
-  // boundaries. Must explicitly name or invoke two different frameworks or fields.
-  Subcodes: "translates_terminology" | "connects_methods" | "reframes_cross_disciplinarily"
-
-[12] Pronoun Framing  *** APPLY TO ALL SUBSTANTIVE UTTERANCES ABOUT THE RESEARCH ***
-  // How does the speaker frame the proposed research — as belonging to individuals separately
-  // or as a joint shared endeavor? Apply this code to every utterance that discusses the
-  // research content (not to social pleasantries or procedural talk).
-  Subcodes: "individual_framing" | "joint_framing" | "ambiguous"
-  // individual_framing: speaker refers to their own work or the other's work as separate
-  //   ("my research," "your approach," "in my field we do X"). The research is described
-  //   as belonging to individuals.
-  // joint_framing: speaker uses "we," "our," "together," or equivalent when describing
-  //   the proposed work — the research is described as a shared project.
-  // ambiguous: the utterance discusses the research but cannot be clearly classified as
-  //   either individual or joint framing.
-  // Track this across the session — the SHIFT from individual to joint framing is
-  // theoretically the key moment of team formation.
-
-[13] Complementarity Articulation
-  // The speaker explicitly names how their expertise or approach COMPLEMENTS another
-  // participant's — articulating that the COMBINATION is more capable than either alone.
-  // This is different from noting that fields are related or overlap.
-  Subcodes: "expertise_complementarity" | "resource_complementarity" | "method_complementarity"
-  // expertise_complementarity: "Your theoretical framing is exactly what my empirical work
-  //   has been missing."
-  // resource_complementarity: "I have the cohort data; you have the computational tools."
-  // method_complementarity: "Your experimental approach combined with my modeling could
-  //   test things neither of us can test alone."
-
-[14] Role Anticipation
-  // The speaker begins to map out — implicitly or explicitly — who would do what in the
-  // proposed collaboration. Forward-modeling the collaboration as a real future project.
-  Subcodes: "explicit_role_assignment" | "implicit_role_suggestion"
-  // explicit_role_assignment: "You'd handle the theoretical side; I'd run the experiments."
-  // implicit_role_suggestion: "I could see myself doing the field work while someone with
-  //   your modeling background handles the analysis."
-
-[15] Broader Significance
-  // The speaker articulates why the proposed work matters BEYOND the immediate research
-  // question — to the field, to science generally, to society, or to a funding priority.
-  // Grant reviewers weight broader impact heavily; teams that discuss it in initial meetings
-  // are more likely to build compelling broader impact sections into proposals.
-  Subcodes: "field_significance" | "societal_significance" | "funding_priority_alignment"
-  // field_significance: "This would settle a debate that's been open for 20 years."
-  // societal_significance: "If we can solve this, it has direct implications for X."
-  // funding_priority_alignment: "This fits exactly what [agency] is prioritizing right now."
-
-[16] Idea Novelty Signal
-  // Any participant explicitly marks an idea as surprising, unexpected, or unlike prior
-  // approaches. This is distinct from enthusiasm (which could be social) — it specifically
-  // marks PERCEIVED GENUINE NOVELTY of the intellectual content.
-  Subcodes: "novelty_recognized_self" | "novelty_recognized_other"
-  // novelty_recognized_self: speaker marks their own idea as novel or unexpected.
-  // novelty_recognized_other: speaker reacts to another's idea as novel.
-  // Examples: "I've never thought about it that way." / "Has anyone actually done that
-  //   combination before?" / "That's a really different angle on the problem."
-
---- INTERRUPTION TYPE ---
-"interruption_type": one of ["not_interruption", "collaborative_completion",
-                              "elaborative_jump_in", "competitive_interruption"]
-  // not_interruption: this turn followed a complete turn by the previous speaker.
-  // collaborative_completion: the speaker begins talking before the prior speaker finishes
-  //   and completes or extends their sentence in agreement or support.
-  // elaborative_jump_in: the speaker begins before the prior speaker finishes and
-  //   adds new content in support — not finishing their sentence but jumping in helpfully.
-  // competitive_interruption: the speaker cuts off the prior speaker to redirect,
-  //   contradict, or take the floor away.
-
---- MULTIMODAL SIGNALS (VIDEO + AUDIO — DO NOT ESTIMATE FROM TRANSCRIPT ALONE) ---
-// The following fields require direct video and audio observation.
-// If participants are off-camera or video quality is insufficient, apply [low_confidence].
-//
-// Only annotate the specific behaviors listed below, which remain genuinely observable.
-
-// --- Off-screen distraction (conservative — only flag the obvious) ---
-"visible_off_screen_distraction": "Yes" or "No"
-  // Yes ONLY if at least one non-speaking participant is clearly and SUSTAINEDLY showing
-  // off-screen distraction. Do NOT flag brief eye movements or natural head shifts.
-  // When in doubt, write "No".
-"distracted_participant_count": integer — Set to 0 if visible_off_screen_distraction is "No".
-
-// --- Facial and vocal responsiveness from non-speakers ---
-"nod_count": integer
-  // Total number of visible head nods from non-speaking participants during this turn.
-  // Count individual nod gestures, not nodders (one person nodding 3 times = 3).
-  // Set to 0 if no nods are visible. Append [low_confidence] if video quality is poor.
-"shared_affect": "Yes" or "No"
-  // Yes if 2 or more participants simultaneously display a positive emotional response
-  // (smiling, laughing, leaning in with visible positive affect) during this turn.
-"any_smile_other": "Yes" or "No"
-  // Yes if at least one non-speaking participant appears to be smiling during this turn.
-"audible_backchannel": "Yes" or "No"
-  // Yes if any non-speaking participant produces an audible backchannel vocalization
-  // during this turn: "mm-hmm", "yeah", "right", laughter, or other brief verbal response
-  // that does not constitute a full turn.
-
-// --- Speaker vocal affect ---
-"vocal_enthusiasm": integer 1, 2, 3, or 4
-  // Rating of the SPEAKER's vocal energy, pitch variation, and expressiveness.
-  // Base this on audio only — do not conflate with content quality.
-  // 1 = Flat, monotone, very low energy — difficult to distinguish emphasized words.
-  // 2 = Moderate, conversational energy — some variation in pace and pitch.
-  // 3 = Noticeably energetic and engaged — clear emphasis, varied pace, expressive.
-  // 4 = High energy, passionate, emphatic — speaker sounds genuinely excited or invested.
-"hesitation_flag": "Yes" or "No"
-  // Yes if there is a notable pause or audible hesitation (longer than ~2 seconds,
-  // or repeated false starts) BEFORE the speaker's key claim or main point in this turn.
-"pace": one of ["fast", "normal", "slow"]
-  // fast: noticeably faster than typical conversational pace.
-  // normal: conversational pace, neither rushed nor labored.
-  // slow: noticeably slower than typical, potentially for emphasis or uncertainty.
-
-======================================================================
-OUTPUT FORMAT:
-======================================================================
-Return a single, valid JSON object with exactly THREE top-level keys:
-  "chunk_summary": { the Part A object }
-  "utterance_annotations": [ { utterance object 1 }, { utterance object 2 }, ... ]
-  "session_state": {
-    // Compact handoff for the next chunk. Always produce this, even for the first chunk.
-    "pronoun_shift_occurred_cumulative": bool,
-      // True if a pronoun shift (individual → joint framing) has occurred in ANY chunk
-      // up to and including this one. Once true, remains true for the rest of the session.
-      // Carry forward true from prior session_state if it was already true.
-    "shared_vision_established_cumulative": bool,
-      // True if shared_vision_indicator was "Yes" in ANY prior or current chunk.
-      // Carry forward true from prior session_state if it was already true.
-    "idea_trajectory_sequence": [string, ...]
-      // The full sequence of idea_trajectory labels from all chunks processed so far.
-      // Append this chunk's idea_trajectory value to whatever was passed in as prior context.
-      // If no prior context, this is a one-element array: [this chunk's idea_trajectory].
-    "ideas_currently_on_table": [string, ...]
-      // Up to 5 distinct research ideas that are active at the end of this chunk.
-      // Each idea described in ≤15 words. Carry forward ideas from prior context,
-      // add new ones raised in this chunk, remove any explicitly rejected or dropped.
-    "commitment_signals_cumulative": [{"speaker": string, "quote": string}, ...]
-      // All commitment signals from all prior chunks PLUS any new ones from this chunk.
-      // Carry forward the list from prior session_state; append a new entry only if
-      // explicit_commitment_signal is "Yes" in this chunk.
-    "speakers_identified": [string, ...]
-      // Complete list of all speaker names seen across all chunks so far including this one.
-      // Use consistent full names. Carry forward from prior session_state and add new names.
-    "chunk_summaries": [string, ...]
-      // A list of per-chunk summaries, one entry per chunk processed so far INCLUDING this one.
-      // Carry forward all entries from the prior session_state's chunk_summaries list unchanged,
-      // then APPEND a new entry for THIS chunk at the end.
-      // Each entry is 2–3 sentences describing ONLY that chunk's content — not the full session.
-      // Cover: (1) what ideas or topics were raised or developed, (2) the relational/affective
-      // tone and any notable dynamics (who drove the discussion, any tension or strong rapport),
-      // and (3) where the group stood at the end of that chunk (convergence, open questions,
-      // commitments made). Write in past tense. Do not list fields — write flowing prose.
-      // Example entry for chunk 1: "Emily proposed using city sensor networks for CO2
-      // measurement and Alissa raised the possibility of extending this to indoor air capture;
-      // Emily drove most of the ideation while Alissa asked clarifying questions. The tone was
-      // collaborative with visible head nods and active backchannels. The group ended the chunk
-      // in early divergent exploration with no specific project named."
-  }
-
-Do not include any text outside the JSON object.
-Do not include markdown code fences.
-Ensure all string values use double quotes.
-Every speaker turn in the transcript must have a corresponding utterance annotation object.
-```
-
----
-
-
-### Prompt usage rules and versioning
-
-| Prompt file | Used in | Input modalities | Temperature |
-|---|---|---|---|
-| `pass1_chunk_prompt.txt` | `analyze_video.py` | Video + transcript | 0 |
-| `pass1_transcript_only_prompt.txt` | `analyze_video.py` (fallback) | Transcript only | 0 |
-| ~~`pass2_quality_prompt.txt`~~ | *eliminated — see design note* | — | — |
-
-Any edit to a prompt must:
-1. Be saved under a new filename (e.g., `pass1_chunk_prompt_v2.txt`).
-2. Update `prompt_manifest.json` with the new SHA-256 hash and model version.
-3. Trigger a full re-annotation of all chunks using that prompt (not a partial update).
-4. Be documented in the Git commit message with the reason for the change.
+`prompts/pass1_chunk_prompt.txt` — Multimodal behavioral annotation 
 
 ---
 
 ### Session context preamble (cross-chunk continuity)
 
-Chunks within a session are annotated sequentially. To preserve context across chunks, `analyze_video.py` prepends a **SESSION CONTEXT** block to the base prompt before each chunk, using structured state carried forward from all prior chunks in the session.
+- Chunk annotation is sequential within each session.
+- `build_chunk_prompt()` prepends a SESSION CONTEXT block before each chunk.
+- `extract_session_state()` carries forward prior chunk state and repairs malformed `chunk_summaries` outputs.
+- On resumed runs, previously saved chunk JSON files are loaded so context continues across already-completed chunks.
 
-**How it works:**
-- Each chunk's annotation response includes a `session_state` object (third top-level key in the JSON output — see OUTPUT FORMAT above).
-- Before annotating chunk N, `build_chunk_prompt()` injects a preamble above the base prompt containing the state produced by chunk N-1.
-- For already-annotated chunks (e.g., on a re-run), state is reconstructed by loading the saved `.json` file, so context accumulates correctly even when restarting a partial run.
-
-**What the preamble contains (shown to the model before the base prompt):**
-
-```
-======================================================================
-SESSION CONTEXT — FROM PRIOR CHUNKS (do not re-annotate; use for continuity only)
-======================================================================
-This is chunk N of the session.
-
-WHAT HAPPENED IN EACH PRIOR CHUNK:
-  Chunk 1: <2–3 sentence summary of chunk 1 only>
-  Chunk 2: <2–3 sentence summary of chunk 2 only>
-  ...
-
-pronoun_shift_already_occurred: true/false
-shared_vision_already_established: true/false
-decision_crystallization_at_end_of_last_chunk: <1–4>
-problem_specificity_at_end_of_last_chunk: <1–4>
-idea_trajectory_sequence_so_far: ["divergent", "ambiguous", ...]
-ideas_currently_on_table: ["idea 1 in ≤15 words", ...]
-commitment_signals_so_far: [{"speaker": "...", "quote": "..."}]
-speakers_identified_so_far: ["Name1", "Name2", ...]
-======================================================================
-```
-
-**Design rationale for `chunk_summaries` over a rolling summary:**
-An earlier design used a single rolling `session_summary` that was rewritten each chunk to cover the entire session so far. This is lossy: by chunk 6, a 2–3 sentence compression of chunks 1–5 cannot preserve the specific texture of chunk 1. The per-chunk list is append-only — chunk 1's entry is carried forward verbatim to chunk 6, guaranteeing no information loss. At 2–3 sentences per chunk and ~9 chunks per session, the full list is still compact (~20–27 sentences total).
-
+**One implementation detail to retain:** for the first chunk (`session_state is None`), the script prepends a short bracket note:
+`[SESSION CONTEXT: This is chunk 1 ... No prior context ...]`
+instead of the full prior-context template.
 
 ---
 
-# DETAILED STEPS AND STAGES
+# DETAILED STEPS AND STAGES (implementation-aligned)
 
-## Stage 0: Preprocessing and chunk registry
+## Stage 0: Video preprocessing and `path_dict` creation
+
+**Implemented in:** `src/analyze_video.py` via `main()`
+
+### 0.1 Discover and normalize source videos
+
+The script scans the target directory and supports videos in nested session folders or at root.
+Supported extensions: `.mp4`, `.mkv`, `.avi`, `.mov`, `.flv`, `.wmv`.
+
+Implementation behavior:
+- `.mkv` is converted to `.mp4` when needed (`convert_mkv_to_mp4`).
+- Videos longer than 10 minutes are split into 10-minute chunks (`split_video`).
+- Existing split folders (`split-<recording_name>/`) are reused.
+
+### 0.2 Build/update `path_dict`
+
+`create_or_update_path_dict()` builds one ordered chunk list per session key (session folder name).
+
+Each chunk entry uses this list schema:
+`[chunk_file_name, chunk_path, gemini_file_name, analyzed_flag, model_used]`
+
+Key properties of the current implementation:
+- Session recordings are timestamp-sorted (`extract_recording_timestamp`) before chunk expansion.
+- Split chunks are chunk-number sorted (`extract_chunk_number`).
+- Existing progress is preserved by loading prior `<folder_name>_path_dict.json` and matching by `chunk_path`.
+- Duplicate chunk paths are removed while preserving order.
+
+### 0.3 Persist progress
+
+`<folder_name>_path_dict.json` is written in the current working directory and updated during annotation after each chunk attempt.
+
+### 0.4 Build chunk registry
 
 **Notebook: `0-build_registry.ipynb`**
 
-### 0.1 Load raw data sources
+The `path_dict` tracks file paths and analysis status but carries no study-level metadata (conference identity, session outcome, temporal position within a session). The chunk registry is a flat, tabular version of the same information enriched with those fields. It is the master index used in Stage 3 for stratified sampling and in Stage 4–6 for joining features to outcomes.
 
+**Build the registry after `path_dict` is finalized and before running `analyze_video.py` on the full dataset** — this is what makes it possible to select the human validation set without peeking at AI outputs.
+
+#### Step 0.4.1 — Load outcomes and session metadata
+
+Outcomes are stored in per-conference JSON files:
+`analysis_v1/data/<conferenceID>/<conferenceID>_session_outcomes.json`
+
+Each file maps `session_group` (e.g. `2020_11_05_NES_S1`) → `{teams: {team_id: {members, funded_status}}}`.
+The `session_group` is the first path component of the `session_key` in the path_dict
+(e.g. `2020_11_05_NES_S1` from `2020_11_05_NES_S1/1_DAC_Simulations_Zoom_Meeting_2020_11_05_12_09_10`).
+
+```python
+import pandas as pd
+import json
+from pathlib import Path
+
+GEMINI_CODE = Path('../../gemini_code')          # relative to analysis_v2/notebooks/
+ANALYSIS_V1 = GEMINI_CODE / 'analysis_v1/data'
+
+path_dict_files = sorted(GEMINI_CODE.glob('*_path_dict.json'))
+
+def parse_session_outcomes(outcomes_path):
+    with open(outcomes_path) as f:
+        raw = json.load(f)
+    result = {}
+    for session_group, data in raw.items():
+        teams = data.get('teams', {})
+        num_funded = sum(1 for t in teams.values() if t.get('funded_status', 0) == 1)
+        result[session_group] = {
+            'num_teams':        len(teams),
+            'num_funded_teams': num_funded,
+            'has_teams':        len(teams) > 0,
+            'has_funded_teams': num_funded > 0,
+        }
+    return result
 ```
-inputs/
-  sessions/          ← one folder per session_id
-    <session_id>/
-      chunks/        ← mp4 files named <session_id>_chunk_<index>.mp4
-  rosters/           ← CSV per conference: participant name, session_id, conference_id
-  outcomes/          ← master outcome sheet: session_id, num_teams, num_funded_teams
+
+#### Step 0.4.2 — Expand path_dict entries into chunk rows
+
+Each path_dict entry maps `session_key → list of chunks`. Expand into one row per chunk and derive temporal position.
+
+```python
+def chunk_position_label(chunk_index, n_chunks):
+    """Assign beginning / middle / end label based on chunk index."""
+    if n_chunks == 1:
+        return 'whole'
+    if chunk_index == 0:
+        return 'beginning'
+    if chunk_index == n_chunks - 1:
+        return 'end'
+    return 'middle'
+
+rows = []
+for pd_file in path_dict_files:
+    with open(pd_file) as f:
+        path_dict = json.load(f)
+
+    for session_key, chunks in path_dict.items():
+        n_chunks = len(chunks)
+        for i, chunk in enumerate(chunks):
+            # chunk schema: [chunk_file_name, chunk_path, gemini_file_name, analyzed_flag]
+            # (4 elements; model_used is not stored in the current analyze_video.py implementation)
+            chunk_file_name = chunk[0]
+            chunk_path      = chunk[1]
+            analyzed_flag   = bool(chunk[3])
+
+            rows.append({
+                'chunk_id':         f'{conference_id}__{session_key}__{chunk_file_name}',
+                'session_key':      session_key,
+                'chunk_file_name':  chunk_file_name,
+                'chunk_path':       chunk_path,
+                'chunk_index':      i,
+                'n_chunks_in_session': n_chunks,
+                'chunk_position':   chunk_position_label(i, n_chunks),
+                'analyzed':         bool(analyzed_flag),
+            })
+
+registry = pd.DataFrame(rows)
 ```
 
-### 0.2 Build canonical chunk registry
+#### Step 0.4.3 — Join study-level metadata
 
-Create a DataFrame where each row is one chunk. Columns:
+Outcomes are joined inline while iterating the path_dict (see notebook Step 4). Conference ID is derived from the path_dict filename. Session group is the first component of the session_key. After building `rows` and constructing the DataFrame, add the convenience stratification flag:
+
+```python
+registry = pd.DataFrame(rows)
+registry['outcome_has_funded_teams'] = registry['has_funded_teams'].astype('boolean')
+
+# Report any sessions with no outcome match
+unmatched = [(c, s) for c, s in unmatched_sessions]
+if unmatched:
+    print(f'WARNING: {len(unmatched)} session groups had no outcome entry')
+```
+
+#### Step 0.4.4 — Add validation flags (empty; filled in Stage 3a)
+
+```python
+registry['human_validation_set']   = False
+registry['utterance_validation_set'] = False
+registry['oversampled_for']        = None
+```
+
+#### Step 0.4.5 — Validate and save
+
+```python
+# Sanity checks
+assert registry['chunk_id'].is_unique, 'chunk_id must be unique'
+assert registry['conference_id'].notna().all(), 'every chunk must have a conference_id'
+
+print(f'Registry built: {len(registry)} chunks across {registry["session_key"].nunique()} sessions')
+print(registry.groupby(['conference_id', 'chunk_position']).size().unstack(fill_value=0))
+
+# Save
+registry.to_parquet('data/chunk_registry_v1.parquet', index=False)
+registry.to_csv('data/chunk_registry_v1.csv', index=False)   # human-readable backup
+print('Saved data/chunk_registry_v1.parquet')
+```
+
+**Expected columns in `chunk_registry_v1.parquet`:**
 
 | Column | Type | Description |
 |---|---|---|
-| `chunk_id` | str | Unique ID: `<session_id>__chunk<index>` |
-| `session_id` | str | Parent session identifier |
-| `conference_id` | str | Parent conference identifier |
-| `chunk_index` | int | Position of chunk within session (0-indexed) |
-| `chunk_position` | str | `beginning` / `middle` / `end` (based on tertile of chunk_index within session) |
-| `total_chunks_in_session` | int | Total number of chunks for this session |
-| `video_path` | str | Absolute path to mp4 file |
-| `transcript_path` | str | Absolute path to vtt file |
-| `has_video` | bool | Whether mp4 exists for this chunk |
-| `num_participants` | int | Number of participants in session (from roster) |
-| `conference_id` | str | Conference membership for clustering control |
-| `outcome_num_teams` | int | Session-level outcome |
-| `outcome_num_funded_teams` | int | Session-level outcome |
-| `outcome_has_teams` | int | Binary: 1 if num_teams > 0 |
-| `outcome_has_funded_teams` | int | Binary: 1 if num_funded_teams > 0 |
-| `annotation_status` | str | `pending` / `annotated` / `failed` / `flagged_for_review` |
-| `human_validation_set` | bool | Whether this chunk is in the human validation sample |
-
-### 0.3 Stratified sampling for human validation set
-
-Sample ~15–20% of chunks for human expert validation. Stratify by:
-- `conference_id` (at least 2 chunks per conference)
-- `chunk_position` (beginning/middle/end represented proportionally)
-- `outcome_has_funded_teams` (balance positive and negative outcome sessions)
-
-Set `human_validation_set = True` for sampled chunks. Save this assignment to the registry before any annotation runs so sampling is not influenced by annotation results.
-
-### 0.4 Version control and prompt hashing
-
-- Save registry as `data/chunk_registry_v1.parquet` (versioned filename).
-- Store all prompt strings in `prompts/` directory as plain `.txt` files.
-- Compute SHA-256 hash of each prompt file and store in `prompts/prompt_manifest.json` alongside model version string (e.g., `gemini-2.5-pro-preview-05-06`).
-- Every annotation output file stores: `prompt_hash`, `model_version`, `temperature`, `timestamp_utc`.
-
-### 0.5 Output
-
-```
-data/
-  chunk_registry_v1.parquet
-prompts/
-  pass1_chunk_prompt.txt
-  pass1_utterance_prompt.txt
-  # pass2_quality_prompt.txt  ← eliminated (see design note in Prompt Library)
-  prompt_manifest.json        ← {prompt_name: sha256_hash, model_version: ...}
-```
+| `chunk_id` | str | `<conference_id>__<session_key>__<chunk_file_name>` — globally unique |
+| `session_key` | str | Folder name used as session identifier |
+| `chunk_file_name` | str | Filename of the chunk video (e.g. `chunk_003.mp4`) |
+| `chunk_path` | str | Absolute path to the video file |
+| `chunk_index` | int | 0-based position within the session |
+| `n_chunks_in_session` | int | Total chunks in this session |
+| `chunk_position` | str | `beginning` / `middle` / `end` / `whole` |
+| `analyzed` | bool | Whether AI annotation has run (from path_dict) |
+| `conference_id` | str | Conference identifier (clustering variable) |
+| `has_teams` | bool | Session-level outcome |
+| `has_funded_teams` | bool | Session-level outcome |
+| `num_teams` | int | Number of teams formed |
+| `num_funded_teams` | int | Number of funded teams formed |
+| `outcome_has_funded_teams` | bool | Convenience copy for stratification key |
+| `human_validation_set` | bool | Filled in Stage 3a (initially `False`) |
+| `utterance_validation_set` | bool | Filled in Stage 3a (initially `False`) |
+| `oversampled_for` | str / None | Which rare flag triggered oversampling (Stage 3a) |
 
 ---
 
-## Stage 1: Multimodal annotation (behavioral coding + inline quality)
+## Stage 1: Multimodal chunk annotation
 
-**Script: `annotate.py`** (called from notebook `1-annotate.ipynb`)
+**Implemented in:** `analyze_video()` + `gemini_analyze_video()`
 
-### 1.1 Input per chunk
+### 1.1 Prompt and model invocation
 
-- Full video file (mp4) uploaded to Gemini Files API.
-- Full chunk transcript (parsed from .vtt) formatted as: `Speaker (MM:SS-MM:SS): utterance text`.
-- Pass 1 prompt (loaded from `prompts/pass1_chunk_prompt.txt`).
+Current runtime flow per chunk:
+1. Build prompt with `build_chunk_prompt(prompt, session_state, chunk_index)`.
+2. Resolve/upload Gemini file with `get_gemini_video()`.
+3. Call `gemini_analyze_video()`.
 
-### 1.2 Prompt reference
+Model fallback order in code:
+1. `gemini-3.1-pro-preview`
+2. `gemini-3.1-flash-lite-preview`
+3. `gemini-3-flash-preview`
+4. `gemini-2.5-pro`
 
-Use the exact text from `prompts/pass1_chunk_prompt.txt` as defined in the **Prompt Library** section above. Load it at runtime with `{transcript}` substituted as the full formatted chunk transcript string. If the video file is unavailable for a chunk, fall back to `prompts/pass1_transcript_only_prompt.txt` and set `multimodal_source = "transcript_only"` in the registry for that chunk. Both prompts produce the same JSON schema — null values in the transcript-only version preserve schema compatibility for downstream processing.
+Retry behavior:
+- Up to 3 attempts per model for non-fatal errors.
+- Fatal API errors (400/403/413/429/503) trigger model-switch; if all models fail fatally, run stops with `FatalAPIError` after saving progress.
 
-### 1.3 Execution logic (`annotate.py`)
+### 1.2 Output persistence
 
-```python
-for chunk_id in registry[registry.annotation_status == 'pending'].chunk_id:
-    chunk = registry.loc[chunk_id]
+For each successful chunk response:
+- Response text is saved to JSON via `save_to_json()`.
+- JSON parsing is attempted directly; if malformed, `parse_json_garbage()` tries salvage.
+- If salvage fails, raw text is saved as `ATTN_<chunk>.json` for manual inspection.
 
-    # Upload video to Gemini Files API (reuse if already uploaded this session)
-    video_file = upload_or_retrieve(chunk.video_path)
+Output directory pattern:
+`outputs/<input_folder_name>/output_<session_key>/<chunk_name>.json`
 
-    # Parse transcript
-    transcript_str = parse_vtt(chunk.transcript_path)
+### 1.3 Session-state continuity during reruns
 
-    # Build prompt
-    prompt = load_prompt('prompts/pass1_chunk_prompt.txt').format(
-        transcript=transcript_str
-    )
+If a chunk is already marked analyzed, the script loads the saved chunk JSON and rehydrates `session_state` via `extract_session_state()` before continuing to later chunks.
 
-    # Call Gemini (temperature=0 for reproducibility)
-    response = gemini_client.generate_content(
-        model=MODEL_VERSION,
-        contents=[video_file, prompt],
-        generation_config={'temperature': 0, 'response_mime_type': 'application/json'}
-    )
-
-    # Save raw response
-    output = {
-        'chunk_id': chunk_id,
-        'model_version': MODEL_VERSION,
-        'prompt_hash': PROMPT_HASH,
-        'temperature': 0,
-        'timestamp_utc': datetime.utcnow().isoformat(),
-        'pass': 1,
-        'raw_response': response.text
-    }
-    save_json(output, f'outputs/pass1/{chunk_id}.json')
-
-    # Update registry status
-    registry.loc[chunk_id, 'annotation_status'] = 'annotated_pass1'
-```
-
-- On API failure or JSON parse error: set `annotation_status = 'failed'`, log error, continue to next chunk.
-- Retry failed chunks up to 2 times with exponential backoff before marking as `failed`.
-- Run in batches to respect API rate limits; log progress to `logs/pass1_run.log`.
-
-### 1.4 Output structure
-
-```
-outputs/
-  pass1/
-    <chunk_id>.json        ← one file per chunk
-```
-
-Each file contains the raw model JSON plus metadata fields (`chunk_id`, `model_version`, `prompt_hash`, `temperature`, `timestamp_utc`).
+This enables safe resume without losing cross-chunk context.
 
 ---
 
-## Stage 2: Schema validation and quality flagging
+## Stage 2: Current guardrails implemented in code
 
-**Notebook: `2-validate_schema.ipynb`**
+The following quality/error guardrails are implemented today:
+- API fatal error classification and early stop with progress save.
+- Per-model fallback and retry loop.
+- JSON salvage path (`parse_json_garbage`) and manual-attention outputs (`ATTN_*.json`).
+- Invalid/empty JSON detection in `load_json_files()` via `InvalidJsonContentError`.
 
-### 2.1 Define Pydantic schemas
 
-Define strict schemas for:
-- `ChunkSummary` (chunk-level annotation object)
-- `UtteranceAnnotation` (utterance-level object from Pass 1)
-
-All fields are typed. Enum constraints are enforced (e.g., `idea_trajectory` must be one of `divergent`, `convergent`, `procedural`, `ambiguous`). Integer fields have valid ranges. String fields have max length.
-
-### 2.2 Validate all outputs
-
-```python
-validation_results = []
-for chunk_id in registry.chunk_id:
-    raw = load_json(f'outputs/pass1/{chunk_id}.json')
-    try:
-        validated = AnnotatedChunk.model_validate(raw)
-        status = 'valid'
-        issues = []
-    except ValidationError as e:
-        status = 'schema_error'
-        issues = e.errors()
-
-    # Count low_confidence flags
-    lc_count = count_low_confidence_flags(raw)
-    lc_rate = lc_count / total_fields(raw)
-
-    validation_results.append({
-        'chunk_id': chunk_id,
-        'validation_status': status,
-        'issues': issues,
-        'low_confidence_rate': lc_rate,
-        'flagged_for_review': lc_rate > 0.30 or status == 'schema_error'
-    })
-
-registry = registry.merge(pd.DataFrame(validation_results), on='chunk_id')
-```
-
-### 2.3 Triage flagged chunks
-
-Chunks with `flagged_for_review = True` are either:
-- Re-queued for a second annotation attempt (if schema error or high low-confidence rate due to API issue), or
-- Moved to `manual_review/` for human inspection if they fail twice.
-
-Report summary statistics: total chunks, % valid on first attempt, % flagged, % failed after retry.
-
-### 2.4 Output
-
-```
-data/
-  chunk_registry_v2.parquet     ← updated registry with validation columns
-  validation_report.csv         ← per-chunk validation summary
-  manual_review/                ← chunks requiring human inspection
-```
 
 ---
 
 ## Stage 3: Human expert validation and agreement computation
 
-**Notebook: `3-human_validation.ipynb`**
+**Notebooks:** `3a-sample_validation_set.ipynb` · `3b-export_coding_materials.ipynb` · `3c-compute_agreement.ipynb`
 
-This is the methodological centerpiece. It must be completed before any features are used in predictive models.
+This stage is the methodological centerpiece. It must be completed before any features are used in predictive models. The core challenge is that the annotation scheme has ~25 chunk-level dimensions and ~10 utterance-level fields per turn — no human rater can attend to all of these simultaneously with acceptable reliability. The solution is instrument decomposition with multiple passes per chunk, stratified sampling to ensure rare events are covered, and a tiered priority system that determines which dimensions must be validated before model use.
 
-### 3.1 Prepare human coding materials
+---
 
-For each chunk in the `human_validation_set`:
-1. Export a human-readable coding sheet: transcript formatted as speaker turns, one row per utterance, with empty columns for each code category.
-2. Include the codebook (`code_book_v4` + 3 new categories) as a reference PDF.
-3. Export the chunk video clip for rater viewing.
-4. Do NOT expose AI annotations to raters at this stage.
+### 3.1 Construct the human validation set
 
-Deliver materials via a secure shared folder (e.g., encrypted Google Drive). Each rater receives a unique copy so annotations remain independent.
+**Notebook: `3a-sample_validation_set.ipynb`**
 
-### 3.2 Rater training protocol
+**Principle:** The sample must be drawn before AI annotation runs so that selection cannot be influenced by model performance. Save the `human_validation_set` flag to the registry before running `analyze_video.py`.
 
-- Minimum 2 raters with background in team science, organizational behavior, or conversation analysis.
-- Calibration phase: 3 practice chunks coded together with discussion.
-- Reliability check phase: 5 chunks coded independently; compute preliminary kappa. If kappa < 0.60 on any category, revise codebook anchors and repeat. These calibration chunks are excluded from the final validation sample.
-- Main validation phase: remaining ~200–300 chunks coded independently (no discussion until after coding is complete).
+#### Step 3.1.1 — Define dimension priority tiers
 
-### 3.3 Compute inter-rater reliability (human vs. human)
+Assign each chunk-level dimension to a validation tier. Only Tier 1 dimensions are blockers for model use; Tier 2 are important but can proceed with caveats; Tier 3 are descriptive and can remain AI-only.
+
+```python
+TIER_1 = [  # Must validate before any predictive model use
+    'idea_trajectory',
+    'collective_engagement_level',
+    'explicit_commitment_signal',
+    'decision_crystallization_level',
+    'pronoun_shift_flag',
+    'cross_disciplinary_bridging',
+    'shared_vision_indicator',
+]
+TIER_2 = [  # Should validate; include with caveat if kappa 0.40–0.59
+    'problem_specificity_level',
+    'ambition_level',
+    'laughter_quality',
+    'dissent_response_quality',
+    'risk_acknowledgment_with_enthusiasm',
+    'personal_disclosure',
+    'meeting_structure_quality',
+]
+TIER_3 = [  # Descriptive only; AI-only annotation acceptable
+    'screenshare_active',
+    'artifact_interaction',
+    'funding_awareness_signal',
+    'prior_relationship_signal',
+    'explicit_complementarity_recognition',
+    'skill_gap_identification',
+]
+UTTERANCE_PRIORITY = [  # Utterance-level: validate only these categories
+    'Idea_Management',
+    'Integration_Practices',
+    'Pronoun_Framing',
+    'interruption_type',
+]
+```
+
+#### Step 3.1.2 — Stratified random sampling
+
+Target: **20% of chunks for chunk-level coding** (all Tier 1 + 2 dimensions); **50 chunks for utterance-level coding** (utterance priority categories only).
+
+Stratify the chunk-level sample on four dimensions to ensure coverage:
+
+```python
+import pandas as pd
+from sklearn.model_selection import StratifiedShuffleSplit
+
+# Load registry built in Stage 0
+registry = pd.read_parquet('data/chunk_registry_v1.parquet')
+
+# Derive a combined stratification key
+registry['strat_key'] = (
+    registry['conference_id'].astype(str) + '__' +
+    registry['chunk_position'] + '__' +            # beginning / middle / end
+    registry['outcome_has_funded_teams'].astype(str)
+)
+
+# 20% stratified sample (chunk-level coding)
+sss = StratifiedShuffleSplit(n_splits=1, test_size=0.20, random_state=42)
+_, val_idx = next(sss.split(registry, registry['strat_key']))
+registry['human_validation_set'] = False
+registry.loc[registry.index[val_idx], 'human_validation_set'] = True
+
+print(registry['human_validation_set'].value_counts())
+print(registry[registry['human_validation_set']].groupby(
+    ['conference_id', 'chunk_position', 'outcome_has_funded_teams']
+).size())
+```
+
+#### Step 3.1.3 — Oversample rare-event chunks
+
+Random stratified sampling will underrepresent rare binary flags. Ensure the validation set contains at least **15 positive examples** of each Tier 1 binary dimension by inspecting AI annotations and adding targeted chunks where needed.
+
+```python
+RARE_FLAGS = [
+    'explicit_commitment_signal',
+    'cross_disciplinary_bridging',
+    'risk_acknowledgment_with_enthusiasm',
+]
+MIN_POSITIVE = 15
+
+# Load all AI-annotated chunk summaries (from Stage 1 outputs)
+ai_summaries = load_all_chunk_summaries('outputs/')  # returns DataFrame
+
+for flag in RARE_FLAGS:
+    n_positive_in_val = (
+        ai_summaries
+        .loc[ai_summaries['chunk_id'].isin(
+            registry.loc[registry['human_validation_set'], 'chunk_id']
+        ), flag]
+        .eq('Yes').sum()
+    )
+    if n_positive_in_val < MIN_POSITIVE:
+        # Find positive chunks not yet in validation set
+        positive_not_in_val = ai_summaries.loc[
+            (ai_summaries[flag] == 'Yes') &
+            (~ai_summaries['chunk_id'].isin(
+                registry.loc[registry['human_validation_set'], 'chunk_id']
+            ))
+        ]
+        n_needed = MIN_POSITIVE - n_positive_in_val
+        extra_ids = positive_not_in_val.sample(
+            min(n_needed, len(positive_not_in_val)), random_state=42
+        )['chunk_id']
+        registry.loc[registry['chunk_id'].isin(extra_ids), 'human_validation_set'] = True
+        registry.loc[registry['chunk_id'].isin(extra_ids), 'oversampled_for'] = flag
+        print(f'{flag}: added {len(extra_ids)} oversampled chunks')
+
+# Save updated registry
+registry.to_parquet('data/chunk_registry_v2.parquet', index=False)
+```
+
+**Note:** Track `oversampled_for` so that population-level statistics (e.g., prevalence estimates) are computed on the non-oversampled random sample only; oversampled chunks are used only for kappa computation.
+
+#### Step 3.1.4 — Select utterance-level subsample
+
+```python
+# 50-chunk subsample for utterance-level coding, drawn from within the chunk-level set
+utterance_val = (
+    registry[registry['human_validation_set']]
+    .groupby(['conference_id', 'chunk_position'], group_keys=False)
+    .apply(lambda g: g.sample(frac=0.25, random_state=42))
+    .head(50)
+)
+registry['utterance_validation_set'] = registry['chunk_id'].isin(utterance_val['chunk_id'])
+registry.to_parquet('data/chunk_registry_v2.parquet', index=False)
+```
+
+---
+
+### 3.2 Coding instrument design and rater materials
+
+**Notebook: `3b-export_coding_materials.ipynb`**
+
+**Core principle:** Decompose the full annotation scheme into three thematically coherent instruments. Each rater watches the same video chunk up to three times, once per instrument. This keeps per-viewing attention load to 6–8 dimensions, which is within reliable human coding capacity.
+
+| Instrument | Dimensions coded | Viewing focus |
+|---|---|---|
+| **A — Intellectual trajectory** | `idea_trajectory`, `problem_specificity_level`, `decision_crystallization_level`, `ambition_level`, `cross_disciplinary_bridging`, `explicit_commitment_signal` | What is being discussed; where the group is headed |
+| **B — Social & relational dynamics** | `pronoun_shift_flag`, `shared_vision_indicator`, `laughter_quality`, `personal_disclosure`, `dissent_response_quality`, `risk_acknowledgment_with_enthusiasm`, `meeting_structure_quality` | How participants relate; affective and relational signals |
+| **C — Behavioral responsiveness** | `collective_engagement_level` (and its sub-signals: nods, facial expressions, backchannels, cameras-off) | Non-speaker behavior only; can be watched at reduced playback speed |
+
+**Utterance instrument (subset of chunks only):** `Idea_Management` subcode, `Integration_Practices` subcode, `Pronoun_Framing` subcode, `interruption_type`. Raters code all utterances in the chunk but only for these four categories.
+
+#### Step 3.2.1 — Generate per-chunk coding sheets
+
+For each chunk in the validation set, export one coding sheet per instrument as a CSV (one row per field, with AI annotation hidden):
+
+```python
+INSTRUMENT_A_FIELDS = [
+    'idea_trajectory',
+    'idea_trajectory_justification',
+    'problem_specificity_level',
+    'problem_specificity_justification',
+    'decision_crystallization_level',
+    'decision_crystallization_justification',
+    'ambition_level',
+    'cross_disciplinary_bridging',
+    'cross_disciplinary_bridging_description',
+    'explicit_commitment_signal',
+    'commitment_signal_quote',
+]
+INSTRUMENT_B_FIELDS = [
+    'pronoun_shift_flag',
+    'shared_vision_indicator',
+    'shared_vision_quote',
+    'laughter_quality',
+    'personal_disclosure',
+    'dissent_response_quality',
+    'risk_acknowledgment_with_enthusiasm',
+    'risk_enthusiasm_quote',
+    'meeting_structure_quality',
+]
+INSTRUMENT_C_FIELDS = [
+    'collective_engagement_level',
+    'collective_engagement_justification',
+]
+
+def export_coding_sheet(chunk_id, instrument_fields, output_dir):
+    rows = [{'field': f, 'rater_code': '', 'notes': ''} for f in instrument_fields]
+    df = pd.DataFrame(rows)
+    df.to_csv(f'{output_dir}/{chunk_id}__instrument_{instrument_fields[0][:1]}.csv', index=False)
+
+val_chunks = registry.loc[registry['human_validation_set'], 'chunk_id'].tolist()
+for chunk_id in val_chunks:
+    export_coding_sheet(chunk_id, INSTRUMENT_A_FIELDS, 'data/human_coding/materials/A')
+    export_coding_sheet(chunk_id, INSTRUMENT_B_FIELDS, 'data/human_coding/materials/B')
+    export_coding_sheet(chunk_id, INSTRUMENT_C_FIELDS, 'data/human_coding/materials/C')
+```
+
+#### Step 3.2.2 — Prepare rater packages
+
+- Copy chunk video files (`.mp4`) for all validation chunks to `data/human_coding/videos/`.
+- Do **not** include AI annotations in any materials delivered to raters.
+- Export codebook anchors for each instrument as a reference PDF.
+- Deliver via secure shared folder (e.g., Google Drive with individual rater folders). Each rater receives their own copy so annotations remain independent.
+
+---
+
+### 3.3 Rater training protocol
+
+- Minimum 2 raters with background in team science, organizational behavior, or interaction analysis.
+- **Calibration phase:** 3 practice chunks coded together with discussion per instrument. Calibration chunks are drawn from sessions **outside** the formal validation sample. Do not use validation chunks for calibration.
+- **Pilot reliability phase:** 5 chunks coded independently per instrument. Compute preliminary kappa per dimension. If kappa < 0.50 on any Tier 1 dimension, revise codebook anchors and repeat pilot. Pilot chunks are excluded from final validation statistics.
+- **Main validation phase:** Remaining validation chunks coded independently. No discussion between raters until after all coding is complete for the batch.
+- Raters are assigned **one instrument at a time** (complete all chunks for Instrument A before starting B) to minimize context switching.
+
+---
+
+### 3.4 Ingest and reconcile human codes
+
+**Notebook: `3c-compute_agreement.ipynb`**
+
+#### Step 3.4.1 — Load and merge rater files
+
+```python
+import pandas as pd
+import glob
+
+def load_rater_codes(rater_dir, instrument):
+    files = glob.glob(f'{rater_dir}/instrument_{instrument}/*.csv')
+    dfs = []
+    for f in files:
+        chunk_id = os.path.basename(f).replace(f'__instrument_{instrument}.csv', '')
+        df = pd.read_csv(f)
+        df['chunk_id'] = chunk_id
+        dfs.append(df)
+    return pd.concat(dfs).pivot(index='chunk_id', columns='field', values='rater_code')
+
+rater1_A = load_rater_codes('data/human_coding/rater1', 'A')
+rater2_A = load_rater_codes('data/human_coding/rater2', 'A')
+rater1_B = load_rater_codes('data/human_coding/rater1', 'B')
+rater2_B = load_rater_codes('data/human_coding/rater2', 'B')
+rater1_C = load_rater_codes('data/human_coding/rater1', 'C')
+rater2_C = load_rater_codes('data/human_coding/rater2', 'C')
+
+# Stack all instruments
+all_fields = INSTRUMENT_A_FIELDS + INSTRUMENT_B_FIELDS + INSTRUMENT_C_FIELDS
+rater1_all = pd.concat([rater1_A, rater1_B, rater1_C], axis=1).reindex(columns=all_fields)
+rater2_all = pd.concat([rater2_A, rater2_B, rater2_C], axis=1).reindex(columns=all_fields)
+```
+
+#### Step 3.4.2 — Resolve disagreements
+
+```python
+# Majority vote (2 raters: use rater1 as default; flag disagreements for reconciliation)
+resolved = rater1_all.copy()
+disagreements = []
+
+for field in all_fields:
+    mismatch = rater1_all[field] != rater2_all[field]
+    disagreements.append({
+        'field': field,
+        'n_disagreements': mismatch.sum(),
+        'pct_disagreements': mismatch.mean()
+    })
+    # Flag disagreements for manual adjudication
+    resolved.loc[mismatch, field] = 'DISPUTED'
+
+pd.DataFrame(disagreements).to_csv('data/human_coding/disagreement_summary.csv', index=False)
+# Adjudicated values entered manually into resolved_codes.csv
+resolved.to_csv('data/human_coding/resolved_codes.csv')
+```
+
+---
+
+### 3.5 Compute inter-rater reliability (human vs. human)
 
 ```python
 from sklearn.metrics import cohen_kappa_score
 from pingouin import intraclass_corr
 
-for category in code_categories:
-    # Categorical codes: Cohen's kappa
-    kappa = cohen_kappa_score(rater1_codes[category], rater2_codes[category])
+ORDINAL_FIELDS = [
+    'collective_engagement_level',
+    'problem_specificity_level',
+    'decision_crystallization_level',
+    'dissent_response_quality',
+]
+BINARY_FIELDS = [
+    'explicit_commitment_signal', 'cross_disciplinary_bridging',
+    'pronoun_shift_flag', 'shared_vision_indicator',
+    'personal_disclosure', 'risk_acknowledgment_with_enthusiasm',
+]
+CATEGORICAL_FIELDS = [
+    'idea_trajectory', 'ambition_level', 'laughter_quality', 'meeting_structure_quality',
+]
 
-    # Ordinal/continuous (quality scores): ICC(2,1) two-way mixed
-    icc = intraclass_corr(data=scores_df, targets='utterance_id',
-                          raters='rater_id', ratings=category)
+irr_results = []
 
-    human_irr_results[category] = {'kappa': kappa, 'icc': icc}
+for field in BINARY_FIELDS + CATEGORICAL_FIELDS:
+    paired = rater1_all[[field]].join(rater2_all[[field]], lsuffix='_r1', rsuffix='_r2').dropna()
+    kappa = cohen_kappa_score(paired[f'{field}_r1'], paired[f'{field}_r2'])
+    irr_results.append({'field': field, 'metric': 'cohen_kappa', 'value': kappa, 'n': len(paired)})
+
+for field in ORDINAL_FIELDS:
+    # ICC(2,1) two-way mixed for ordinal ratings
+    scores_long = pd.concat([
+        rater1_all[[field]].rename(columns={field: 'rating'}).assign(rater='rater1').reset_index(),
+        rater2_all[[field]].rename(columns={field: 'rating'}).assign(rater='rater2').reset_index(),
+    ])
+    scores_long['rating'] = pd.to_numeric(scores_long['rating'], errors='coerce')
+    scores_long = scores_long.dropna(subset=['rating'])
+    icc_result = intraclass_corr(data=scores_long, targets='chunk_id',
+                                  raters='rater', ratings='rating')
+    icc_val = icc_result.loc[icc_result['Type'] == 'ICC2', 'ICC'].values[0]
+    irr_results.append({'field': field, 'metric': 'ICC2', 'value': icc_val,
+                        'n': scores_long['chunk_id'].nunique()})
+
+irr_df = pd.DataFrame(irr_results)
+irr_df.to_csv('data/validation/human_irr_results.csv', index=False)
+print(irr_df.sort_values('value'))
 ```
 
-### 3.4 Compute human-AI agreement
+---
 
-Using majority-vote human code as reference (or single rater if only 2, resolved by discussion on disagreements):
+### 3.6 Compute human-AI agreement
+
+Use the reconciled `resolved_codes.csv` as the ground-truth reference.
 
 ```python
-for category in code_categories:
-    ai_codes = [pass1_data[chunk_id][utterance_id][category] for ...]
-    human_codes = [human_coding[chunk_id][utterance_id][category] for ...]
+# Load AI chunk summaries for validation chunks only
+ai_rows = []
+for chunk_id in val_chunks:
+    chunk_json = load_chunk_json(chunk_id, 'outputs/')   # loads saved JSON
+    summary = chunk_json.get('chunk_summary', {})
+    summary['chunk_id'] = chunk_id
+    ai_rows.append(summary)
 
-    kappa_ai = cohen_kappa_score(human_codes, ai_codes)
-    agreement_results[category] = {'human_ai_kappa': kappa_ai}
+ai_df = pd.DataFrame(ai_rows).set_index('chunk_id')
+human_df = pd.read_csv('data/human_coding/resolved_codes.csv', index_col='chunk_id')
+
+# Align on shared chunks
+shared = human_df.index.intersection(ai_df.index)
+human_aligned = human_df.loc[shared]
+ai_aligned = ai_df.loc[shared]
+
+hai_results = []
+for field in BINARY_FIELDS + CATEGORICAL_FIELDS:
+    if field not in ai_aligned.columns:
+        continue
+    paired = human_aligned[[field]].join(
+        ai_aligned[[field]], lsuffix='_human', rsuffix='_ai'
+    ).dropna()
+    kappa = cohen_kappa_score(paired[f'{field}_human'], paired[f'{field}_ai'])
+    hai_results.append({'field': field, 'metric': 'cohen_kappa_human_ai',
+                        'value': kappa, 'n': len(paired)})
+
+for field in ORDINAL_FIELDS:
+    if field not in ai_aligned.columns:
+        continue
+    scores_long = pd.concat([
+        human_aligned[[field]].rename(columns={field: 'rating'}).assign(source='human').reset_index(),
+        ai_aligned[[field]].rename(columns={field: 'rating'}).assign(source='ai').reset_index(),
+    ])
+    scores_long['rating'] = pd.to_numeric(scores_long['rating'], errors='coerce')
+    scores_long = scores_long.dropna(subset=['rating'])
+    icc_result = intraclass_corr(data=scores_long, targets='chunk_id',
+                                  raters='source', ratings='rating')
+    icc_val = icc_result.loc[icc_result['Type'] == 'ICC2', 'ICC'].values[0]
+    hai_results.append({'field': field, 'metric': 'ICC2_human_ai',
+                        'value': icc_val, 'n': scores_long['chunk_id'].nunique()})
+
+hai_df = pd.DataFrame(hai_results)
+hai_df.to_csv('data/validation/human_ai_agreement.csv', index=False)
+print(hai_df.sort_values('value'))
 ```
 
-### 3.5 Feature inclusion decision rule
+---
 
-- If human-AI kappa ≥ 0.60 for a category: **include** all features derived from that category in predictive models.
-- If human-AI kappa is 0.40–0.59: **include with caveat** — feature is included but flagged as "moderate reliability" in the paper; sensitivity analyses exclude it.
-- If human-AI kappa < 0.40: **exclude** from predictive models. Revise prompt and re-annotate if the feature is theoretically important. Document exclusion explicitly in paper.
+### 3.7 Feature inclusion decision rule
 
-### 3.6 Output
+```python
+KAPPA_INCLUDE   = 0.60   # full inclusion
+KAPPA_CAVEAT    = 0.40   # include with caveat; flag in paper
+# < KAPPA_CAVEAT = exclude from predictive models
+
+decisions = []
+for _, row in hai_df.iterrows():
+    field = row['field']
+    k = row['value']
+    tier = (
+        'tier1' if field in TIER_1 else
+        'tier2' if field in TIER_2 else
+        'tier3'
+    )
+    if k >= KAPPA_INCLUDE:
+        decision = 'include'
+    elif k >= KAPPA_CAVEAT:
+        decision = 'include_with_caveat'
+    else:
+        decision = 'exclude'
+    decisions.append({'field': field, 'tier': tier,
+                      'human_ai_kappa': k, 'decision': decision})
+
+feature_decisions = pd.DataFrame(decisions)
+feature_decisions.to_csv('data/validation/feature_inclusion_decision.csv', index=False)
+
+# Print summary
+print(feature_decisions.groupby(['tier', 'decision']).size())
+excluded = feature_decisions[feature_decisions['decision'] == 'exclude']
+if not excluded.empty:
+    print('\nExcluded features (require prompt revision before use):')
+    print(excluded[['field', 'human_ai_kappa']].to_string())
+```
+
+**Decision rules:**
+- `kappa ≥ 0.60`: **include** — feature used in all predictive models.
+- `kappa 0.40–0.59`: **include with caveat** — feature included but flagged as "moderate reliability" in the paper; sensitivity analyses must be run excluding these features.
+- `kappa < 0.40`: **exclude** — feature dropped from predictive models. If theoretically important, revise prompt and re-annotate before re-running validation. Document exclusion explicitly in paper.
+- Any Tier 1 feature with `kappa < 0.40` triggers a prompt revision cycle before Stage 4 can proceed.
+
+---
+
+### 3.8 Outputs
 
 ```
 data/
   human_coding/
-    rater1_codes.csv
-    rater2_codes.csv
-    resolved_codes.csv          ← majority vote / reconciled
+    materials/
+      A/         ← per-chunk CSV coding sheets, Instrument A
+      B/         ← per-chunk CSV coding sheets, Instrument B
+      C/         ← per-chunk CSV coding sheets, Instrument C
+    videos/      ← copied .mp4 files for validation chunks
+    rater1/      ← completed coding sheets, Rater 1
+    rater2/      ← completed coding sheets, Rater 2
+    disagreement_summary.csv
+    resolved_codes.csv    ← adjudicated ground truth
   validation/
-    human_irr_results.csv       ← kappa, ICC per category, human vs. human
-    human_ai_agreement.csv      ← kappa, ICC per category, human vs. AI
-    feature_inclusion_decision.csv  ← which features pass the reliability threshold
+    human_irr_results.csv          ← kappa / ICC2 per dimension, human vs. human
+    human_ai_agreement.csv         ← kappa / ICC2 per dimension, human vs. AI
+    feature_inclusion_decision.csv ← include / caveat / exclude per feature
+  chunk_registry_v2.parquet        ← updated with human_validation_set and oversampled_for flags
 ```
 
-Report: a table of all annotation categories with human IRR and human-AI agreement — this becomes Table 1 in the paper.
+The `human_ai_agreement.csv` and `feature_inclusion_decision.csv` tables together become **Table 1** in the paper (annotation reliability and validity summary).
 
 ---
 
@@ -1284,7 +1066,6 @@ Report: a table of all annotation categories with human IRR and human-AI agreeme
 
 **Notebook: `4-feature_engineering.ipynb`**
 
-All feature engineering is deterministic and version-controlled. Only features that passed the reliability threshold in Stage 4 are included.
 
 ### 4.1 Chunk-level derived features
 
@@ -1391,9 +1172,12 @@ building_count = (
                 subcodes=['supports_or_validates']) +
     count_codes(utterances, 'Knowledge_Sharing')
 )
-# Blocking: negative-scored utterances + competitive interruptions
+# Blocking: explicit challenge/critique/concern subcodes + competitive interruptions
+# (replaces the former score=-1 approach; idea_quality only has values 0–2 and
+#  is only coded for three categories, so negative scores do not exist in the output)
 blocking_count = (
-    count_utterances_with_score(utterances, score=-1) +
+    count_codes(utterances, 'Evaluation_Practices',
+                subcodes=['critiques_or_challenges', 'devil_advocate', 'raises_concern']) +
     count_interruption_type(utterances, 'competitive_interruption')
 )
 chunk_features['building_count']          = building_count
@@ -1453,10 +1237,10 @@ chunk_features['interruption_quality_ratio']    = (collab + elab) / (compet + ep
 
 ```python
 # Camera engagement signals
-# camera_on_rate: proportion of non-speaking participants with cameras on across utterances in chunk
-chunk_features['camera_on_rate'] = mean(
-    cameras_on_count / (cameras_on_count + cameras_off_count + epsilon) for each utterance
-)
+# NOTE: camera_on_rate is NOT computable from current outputs. The utterance-level schema
+# does not include cameras_on_count or cameras_off_count fields. The distraction proxy
+# below (pct_turns_distraction, mean_distracted_count) is the valid replacement.
+
 # Proportion of turns with any visible off-screen distraction
 chunk_features['pct_turns_distraction'] = pct turns with visible_off_screen_distraction == 'Yes'
 # Mean number of visibly distracted participants per turn
@@ -1483,7 +1267,7 @@ chunk_features['pct_high_enthusiasm'] = pct turns with vocal_enthusiasm >= 3
 chunk_features['pct_hesitation'] = pct turns with hesitation_flag == 'Yes'
 ```
 
-> **Note**: The `mean_attending_ratio` and `mean_disengaged_ratio` features from earlier pipeline versions are removed. These were based on gaze-direction coding, which is not valid in Zoom recordings. The new `responsiveness_index`, `camera_on_rate`, `mean_nod_rate`, and `pct_turns_audible_backchannel` features are the Zoom-valid replacements and should be used in all models.
+> **Note**: The `mean_attending_ratio` and `mean_disengaged_ratio` features from earlier pipeline versions are removed. These were based on gaze-direction coding, which is not valid in Zoom recordings. The new `responsiveness_index`, `pct_turns_distraction`, `mean_nod_rate`, and `pct_turns_audible_backchannel` features are the Zoom-valid replacements and should be used in all models. `camera_on_rate` is also removed: per-utterance camera on/off counts are not coded in the Pass 1 output schema, so this feature cannot be computed.
 
 ### 4.4 Session-level aggregation (from chunks)
 
