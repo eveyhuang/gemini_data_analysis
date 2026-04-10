@@ -49,13 +49,15 @@ df = pd.read_csv(INPUT_PATH).copy()
 
 if "n_sessions_attended" not in df.columns and "n_sessions_seen" in df.columns:
     df["n_sessions_attended"] = df["n_sessions_seen"]
+if "speaking_minutes_total" not in df.columns and "speaking_seconds_total" in df.columns:
+    df["speaking_minutes_total"] = df["speaking_seconds_total"] / 60.0
 
 targets = ["outcome_joined_team", "outcome_joined_funded_team"]
-subcode_cols = [c for c in df.columns if c.startswith("subcode__")]
+subcode_cols = [c for c in df.columns if c.startswith("subcode__") and c != "subcode__none"]
 
-controls = [c for c in ["n_sessions_attended", "speaking_seconds_total"] if c in df.columns]
+controls = [c for c in ["n_sessions_attended", "speaking_minutes_total"] if c in df.columns]
 if len(controls) < 2:
-    raise ValueError("Expected controls n_sessions_attended and speaking_seconds_total")
+    raise ValueError("Expected controls n_sessions_attended and speaking_minutes_total")
 
 core_behavior_cols = [
     c
@@ -63,7 +65,7 @@ core_behavior_cols = [
         "n_sessions_attended",
         "n_chunks_seen",
         "utterance_count",
-        "speaking_seconds_total",
+        "speaking_minutes_total",
         "dominant_speaker_rate",
         "build_per_utterance",
         "feedback_per_utterance",
@@ -79,6 +81,95 @@ def norm_name(text: object) -> str:
     s = s.lower().strip()
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def build_facilitator_flag(base_df: pd.DataFrame) -> pd.DataFrame:
+    """Create conference+person facilitator flag from session_data role labels."""
+    by_conf = BASE / "finalized_matching_csvs" / "global_participant_identity_by_conference.csv"
+    alias_path = BASE / "participant_alias_mapping.csv"
+    session_dir = BASE / "analysis_v1" / "data"
+    if not by_conf.exists() or not session_dir.exists():
+        out = base_df.copy()
+        out["is_facilitator"] = 0
+        return out
+
+    alias_map: dict[str, str] = {}
+    if alias_path.exists():
+        adf = pd.read_csv(alias_path)
+        for _, r in adf.iterrows():
+            a = norm_name(r.get("alias_name"))
+            c = norm_name(r.get("canonical_name"))
+            if a and c:
+                alias_map[a] = c
+
+    def resolve_alias(name: str) -> str:
+        cur = name
+        seen = set()
+        while cur in alias_map and cur not in seen:
+            seen.add(cur)
+            cur = alias_map[cur]
+        return cur
+
+    map_df = pd.read_csv(by_conf).copy()
+    map_df["conference"] = map_df["conference"].astype(str).str.strip()
+    map_df["normalized_name"] = map_df["normalized_name"].astype(str).map(norm_name).map(resolve_alias)
+    lookup = {(r["conference"], r["normalized_name"]): r["global_person_id"] for _, r in map_df.iterrows()}
+
+    def role_is_facilitator(role: object) -> int:
+        rs = str(role).strip().lower()
+        if not rs:
+            return 0
+        return int(
+            ("facilitator" in rs)
+            or ("program director" in rs)
+            or ("program officer" in rs)
+        )
+
+    rows = []
+    for jp in sorted(session_dir.glob("*/session_data/*.json")):
+        conference = jp.parent.parent.name.strip()
+        try:
+            payload = json.loads(jp.read_text())
+        except Exception:
+            continue
+        for row in payload.get("all_data", []):
+            if not isinstance(row, dict):
+                continue
+            speaker = resolve_alias(norm_name(row.get("speaker")))
+            if not speaker:
+                continue
+            pid = lookup.get((conference, speaker))
+            if not pid:
+                continue
+            rows.append(
+                {
+                    "conference": conference,
+                    "global_person_id": pid,
+                    "fac_count": role_is_facilitator(row.get("role")),
+                    "n_rows": 1,
+                }
+            )
+
+    out = base_df.copy()
+    if not rows:
+        out["is_facilitator"] = 0
+        return out
+
+    role_df = pd.DataFrame(rows)
+    role_df = role_df.groupby(["conference", "global_person_id"], as_index=False)[["fac_count", "n_rows"]].sum()
+    role_df["is_facilitator"] = (role_df["fac_count"] > 0).astype(int)
+    out = out.merge(
+        role_df[["conference", "global_person_id", "is_facilitator"]],
+        on=["conference", "global_person_id"],
+        how="left",
+    )
+    out["is_facilitator"] = out["is_facilitator"].fillna(0).astype(int)
+    return out
+
+
+df = build_facilitator_flag(df)
+if "is_facilitator" not in controls:
+    controls.append("is_facilitator")
 
 
 def build_within_session_matrix(target: str):
@@ -250,9 +341,9 @@ def run_loco_predictions(data: pd.DataFrame, feature_cols: list[str], target: st
 
 
 metrics_rows = []
+sensitivity_rows = []
 
 for target in targets:
-    y = df[target].astype(int)
 
     # ----------------------------
     # (1) Exploration figure
@@ -292,7 +383,7 @@ for target in targets:
         axes[0, 1].set_title("Top Detailed Subcodes")
 
     # C) Clean control-variable distributions by outcome (split panels to avoid scale compression)
-    ctrl_plot_cols = [c for c in ["n_sessions_attended", "speaking_seconds_total"] if c in df.columns]
+    ctrl_plot_cols = [c for c in ["n_sessions_attended", "speaking_minutes_total"] if c in df.columns]
     if ctrl_plot_cols:
         axes[1, 0].set_title("Control Variable Distributions by Outcome")
         axes[1, 0].axis("off")
@@ -308,16 +399,16 @@ for target in targets:
         left_ax.set_title("n_sessions_attended", fontsize=10)
         left_ax.set_ylabel("Count")
 
-        # Right mini-panel: speaking_seconds_total
+        # Right mini-panel: speaking_minutes_total
         right_ax = axes[1, 0].inset_axes([0.56, 0.17, 0.42, 0.72])
-        ss0 = df.loc[df[target] == 0, "speaking_seconds_total"].dropna().values if "speaking_seconds_total" in ctrl_plot_cols else []
-        ss1 = df.loc[df[target] == 1, "speaking_seconds_total"].dropna().values if "speaking_seconds_total" in ctrl_plot_cols else []
+        ss0 = df.loc[df[target] == 0, "speaking_minutes_total"].dropna().values if "speaking_minutes_total" in ctrl_plot_cols else []
+        ss1 = df.loc[df[target] == 1, "speaking_minutes_total"].dropna().values if "speaking_minutes_total" in ctrl_plot_cols else []
         if len(ss0) and len(ss1):
             bp_right = right_ax.boxplot([ss0, ss1], patch_artist=True, tick_labels=["Y=0", "Y=1"], showfliers=False)
             bp_right["boxes"][0].set_facecolor("#90caf9")
             bp_right["boxes"][1].set_facecolor("#ffcc80")
-        right_ax.set_title("speaking_seconds_total", fontsize=10)
-        right_ax.set_ylabel("Seconds")
+        right_ax.set_title("speaking_minutes_total", fontsize=10)
+        right_ax.set_ylabel("Minutes")
     else:
         axes[1, 0].text(0.5, 0.5, "Control distributions unavailable", ha="center", va="center")
         axes[1, 0].set_title("Control Variable Distributions")
@@ -377,7 +468,7 @@ for target in targets:
             pass
 
     coef_plot_df["abs_coef"] = coef_plot_df["coef"].abs()
-    coef_plot_df = coef_plot_df.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
+    coef_plot_df = coef_plot_df.sort_values("coef")
     coef_plot_df["stars"] = coef_plot_df["pvalue"].map(p_to_stars)
 
     model_fig = plt.figure(figsize=(16, 12), constrained_layout=True)
@@ -387,7 +478,7 @@ for target in targets:
     ax3 = model_fig.add_subplot(gs[1, 0])
     ax4 = model_fig.add_subplot(gs[1, 1])
     model_fig.suptitle(
-        f"Person-Level Model Results ({target})\nControls: n_sessions_attended + speaking_seconds_total",
+        f"Person-Level Model Results ({target})\nControls: n_sessions_attended + speaking_minutes_total + is_facilitator",
         fontsize=15,
         fontweight="bold",
     )
@@ -463,9 +554,46 @@ for target in targets:
         }
     )
 
+    # non-facilitator-only sensitivity check
+    nonfac = df[df["is_facilitator"] == 0].copy()
+    nonfac_features = [c for c in model_features if c != "is_facilitator"]
+    if not nonfac.empty and nonfac[target].nunique() >= 2:
+        ny_true, ny_score, ny_pred = run_loco_predictions(nonfac, nonfac_features, target)
+        if len(np.unique(ny_true)) >= 2:
+            sensitivity_rows.append(
+                {
+                    "target": target,
+                    "sample": "non_facilitator_only",
+                    "n_rows": len(nonfac),
+                    "feature_count": len(nonfac_features),
+                    "accuracy_loco_pooled": accuracy_score(ny_true, ny_pred),
+                    "f1_loco_pooled": f1_score(ny_true, ny_pred, zero_division=0),
+                    "auc_loco_pooled": roc_auc_score(ny_true, ny_score),
+                    "auprc_loco_pooled": average_precision_score(ny_true, ny_score),
+                }
+            )
+
+    sensitivity_rows.append(
+        {
+            "target": target,
+            "sample": "all_rows",
+            "n_rows": len(df),
+            "feature_count": len(model_features),
+            "accuracy_loco_pooled": acc,
+            "f1_loco_pooled": f1,
+            "auc_loco_pooled": auc,
+            "auprc_loco_pooled": auprc,
+        }
+    )
+
 summary_df = pd.DataFrame(metrics_rows)
 summary_out = FEATURE_DIR / "person_model_visualization_summary.csv"
 summary_df.to_csv(summary_out, index=False)
+sense_df = pd.DataFrame(sensitivity_rows)
+sense_out = FEATURE_DIR / "person_model_non_facilitator_sensitivity.csv"
+sense_df.to_csv(sense_out, index=False)
 
 print("Saved summary:", summary_out)
 print(summary_df.to_string(index=False))
+print("\nSaved non-facilitator sensitivity:", sense_out)
+print(sense_df.to_string(index=False))
