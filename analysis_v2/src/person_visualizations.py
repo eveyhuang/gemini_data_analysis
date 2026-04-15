@@ -712,34 +712,41 @@ print("\nSaved supplemental coefficients:", supp_coef_out)
 # outcome 2: funded team (conditional on being on a team)
 # ----------------------------
 heckman_summary_rows: list[dict] = []
-stage1_coef_df = pd.DataFrame()
-stage2_coef_df = pd.DataFrame()
+stage1_coef_frames: list[pd.DataFrame] = []
+stage2_coef_frames: list[pd.DataFrame] = []
 
-if sm is not None:
-    # keep consistent feature set with existing modeling pipeline
-    subcode_eligible = [c for c in subcode_cols if df[c].sum() >= 10]
-    top_k = 14
-    top_subcodes = sorted(subcode_eligible, key=lambda c: df[c].sum(), reverse=True)[:top_k]
-    selection_features = controls + top_subcodes
-    outcome_features = controls + top_subcodes
 
-    # stage 1: selection equation (Probit) on full sample
-    y_sel = df["outcome_joined_team"].astype(int).values
-    x_sel_raw = df[selection_features].copy().fillna(df[selection_features].median(numeric_only=True))
+def run_heckman_two_stage(sample_name: str, base_df: pd.DataFrame, include_facilitator_control: bool) -> dict | None:
+    if sm is None or base_df.empty:
+        return None
+    if base_df["outcome_joined_team"].nunique() < 2:
+        return None
+
+    subcode_eligible_local = [c for c in subcode_cols if c in base_df.columns and base_df[c].sum() >= 10]
+    top_subcodes_local = sorted(subcode_eligible_local, key=lambda c: base_df[c].sum(), reverse=True)[:14]
+    controls_local = [c for c in controls if c in base_df.columns]
+    if not include_facilitator_control and "is_facilitator" in controls_local:
+        controls_local = [c for c in controls_local if c != "is_facilitator"]
+
+    selection_features = controls_local + top_subcodes_local
+    outcome_features = controls_local + top_subcodes_local
+    if not selection_features:
+        return None
+
+    y_sel = base_df["outcome_joined_team"].astype(int).values
+    x_sel_raw = base_df[selection_features].copy().fillna(base_df[selection_features].median(numeric_only=True))
     x_sel = sm.add_constant(x_sel_raw, has_constant="add")
     sel_fit = sm.Probit(y_sel, x_sel).fit(disp=0, maxiter=200)
 
-    # inverse Mills ratio for selected observations
     xb = np.clip(np.asarray(sel_fit.predict(x_sel, which="linear"), dtype=float), -8.0, 8.0)
     phi = norm.pdf(xb)
     Phi = np.clip(norm.cdf(xb), 1e-8, 1 - 1e-8)
-    imr = phi / Phi
+    work = base_df.copy()
+    work["imr_selection"] = phi / Phi
 
-    work = df.copy()
-    work["imr_selection"] = imr
-
-    # stage 2: funded outcome conditional on selection
     obs = work[work["outcome_joined_team"] == 1].copy()
+    if obs.empty or obs["outcome_joined_funded_team"].nunique() < 2:
+        return None
     y_out = obs["outcome_joined_funded_team"].astype(int).values
     x_out_raw = obs[outcome_features + ["imr_selection"]].copy()
     x_out_raw = x_out_raw.fillna(x_out_raw.median(numeric_only=True))
@@ -748,210 +755,141 @@ if sm is not None:
         out_fit = sm.Logit(y_out, x_out).fit(disp=0, maxiter=200)
         stage2_model_type = "logit"
     except Exception:
-        # Fallback for singular Hessian/separation cases.
         out_fit = sm.GLM(y_out, x_out, family=sm.families.Binomial()).fit(maxiter=200)
         stage2_model_type = "glm_binomial_fallback"
 
-    # stage metrics
     p_sel = np.clip(np.asarray(sel_fit.predict(x_sel), dtype=float), 1e-8, 1 - 1e-8)
     p_out = np.clip(np.asarray(out_fit.predict(x_out), dtype=float), 1e-8, 1 - 1e-8)
     y_out_pred = (p_out >= 0.5).astype(int)
 
-    sel_auc = roc_auc_score(y_sel, p_sel) if len(np.unique(y_sel)) >= 2 else np.nan
-    sel_auprc = average_precision_score(y_sel, p_sel) if len(np.unique(y_sel)) >= 2 else np.nan
-    out_auc = roc_auc_score(y_out, p_out) if len(np.unique(y_out)) >= 2 else np.nan
-    out_auprc = average_precision_score(y_out, p_out) if len(np.unique(y_out)) >= 2 else np.nan
-    out_acc = accuracy_score(y_out, y_out_pred) if len(np.unique(y_out)) >= 2 else np.nan
-    out_f1 = f1_score(y_out, y_out_pred, zero_division=0) if len(np.unique(y_out)) >= 2 else np.nan
+    row = {
+        "sample": sample_name,
+        "selection_target": "outcome_joined_team",
+        "outcome_target": "outcome_joined_funded_team",
+        "n_total": int(len(work)),
+        "n_selected": int(len(obs)),
+        "selection_n_features": int(len(selection_features)),
+        "outcome_n_features_plus_imr": int(len(outcome_features) + 1),
+        "selection_auc": roc_auc_score(y_sel, p_sel),
+        "selection_auprc": average_precision_score(y_sel, p_sel),
+        "outcome_auc_selected_only": roc_auc_score(y_out, p_out),
+        "outcome_auprc_selected_only": average_precision_score(y_out, p_out),
+        "outcome_accuracy_selected_only": accuracy_score(y_out, y_out_pred),
+        "outcome_f1_selected_only": f1_score(y_out, y_out_pred, zero_division=0),
+        "imr_coef_stage2": float(out_fit.params.get("imr_selection", np.nan)),
+        "imr_pvalue_stage2": float(out_fit.pvalues.get("imr_selection", np.nan)),
+        "imr_significance": p_to_stars(float(out_fit.pvalues.get("imr_selection", np.nan))),
+        "stage2_model_type": stage2_model_type,
+    }
 
-    heckman_summary_rows.append(
-        {
-            "selection_target": "outcome_joined_team",
-            "outcome_target": "outcome_joined_funded_team",
-            "n_total": int(len(work)),
-            "n_selected": int(len(obs)),
-            "selection_n_features": int(len(selection_features)),
-            "outcome_n_features_plus_imr": int(len(outcome_features) + 1),
-            "selection_auc": sel_auc,
-            "selection_auprc": sel_auprc,
-            "outcome_auc_selected_only": out_auc,
-            "outcome_auprc_selected_only": out_auprc,
-            "outcome_accuracy_selected_only": out_acc,
-            "outcome_f1_selected_only": out_f1,
-            "imr_coef_stage2": float(out_fit.params.get("imr_selection", np.nan)),
-            "imr_pvalue_stage2": float(out_fit.pvalues.get("imr_selection", np.nan)),
-            "imr_significance": p_to_stars(float(out_fit.pvalues.get("imr_selection", np.nan))),
-            "stage2_model_type": stage2_model_type,
-        }
+    s1 = pd.DataFrame(
+        {"feature": sel_fit.params.index, "coef": sel_fit.params.values, "pvalue": sel_fit.pvalues.reindex(sel_fit.params.index).values}
     )
+    s1["sample"] = sample_name
+    s1["stage"] = "selection_probit"
+    s1["stars"] = s1["pvalue"].map(p_to_stars)
+    s1["abs_coef"] = s1["coef"].abs()
+    stage1_coef_frames.append(s1.sort_values("abs_coef", ascending=False))
 
-    stage1_coef_df = pd.DataFrame(
-        {
-            "feature": sel_fit.params.index,
-            "coef": sel_fit.params.values,
-            "pvalue": sel_fit.pvalues.reindex(sel_fit.params.index).values,
-        }
+    s2 = pd.DataFrame(
+        {"feature": out_fit.params.index, "coef": out_fit.params.values, "pvalue": out_fit.pvalues.reindex(out_fit.params.index).values}
     )
-    stage1_coef_df["stage"] = "selection_probit"
-    stage1_coef_df["stars"] = stage1_coef_df["pvalue"].map(p_to_stars)
-    stage1_coef_df["abs_coef"] = stage1_coef_df["coef"].abs()
-    stage1_coef_df = stage1_coef_df.sort_values("abs_coef", ascending=False)
+    s2["sample"] = sample_name
+    s2["stage"] = f"funded_{stage2_model_type}_with_imr"
+    s2["stars"] = s2["pvalue"].map(p_to_stars)
+    s2["abs_coef"] = s2["coef"].abs()
+    stage2_coef_frames.append(s2.sort_values("abs_coef", ascending=False))
 
-    stage2_coef_df = pd.DataFrame(
-        {
-            "feature": out_fit.params.index,
-            "coef": out_fit.params.values,
-            "pvalue": out_fit.pvalues.reindex(out_fit.params.index).values,
-        }
+    # figure for this sample
+    fig = plt.figure(figsize=(18, 12), constrained_layout=True)
+    gs = fig.add_gridspec(2, 3)
+    ax1 = fig.add_subplot(gs[0, 0]); ax2 = fig.add_subplot(gs[0, 1]); ax3 = fig.add_subplot(gs[0, 2])
+    ax4 = fig.add_subplot(gs[1, 0]); ax5 = fig.add_subplot(gs[1, 1]); ax6 = fig.add_subplot(gs[1, 2])
+    fig.suptitle(
+        f"Heckman-Style Two-Stage Results ({sample_name})\nSelection: joined team | Outcome: funded team (conditional on selection)",
+        fontsize=15, fontweight="bold",
     )
-    stage2_coef_df["stage"] = f"funded_{stage2_model_type}_with_imr"
-    stage2_coef_df["stars"] = stage2_coef_df["pvalue"].map(p_to_stars)
-    stage2_coef_df["abs_coef"] = stage2_coef_df["coef"].abs()
-    stage2_coef_df = stage2_coef_df.sort_values("abs_coef", ascending=False)
+    metric_names = ["Sel AUC", "Sel AUPRC", "Out AUC\n(selected)", "Out AUPRC\n(selected)", "Out Acc\n(selected)", "Out F1\n(selected)"]
+    metric_vals = [row["selection_auc"], row["selection_auprc"], row["outcome_auc_selected_only"], row["outcome_auprc_selected_only"], row["outcome_accuracy_selected_only"], row["outcome_f1_selected_only"]]
+    ax1.bar(metric_names, metric_vals, color=["#1b9e77", "#66a61e", "#7570b3", "#e7298a", "#1f78b4", "#d95f02"]); ax1.set_ylim(0, 1.0); ax1.set_title("Stage Metrics")
+    for i, v in enumerate(metric_vals):
+        ax1.text(i, v + 0.02, f"{v:.3f}", ha="center", va="bottom", fontsize=10)
+
+    fpr1, tpr1, _ = roc_curve(y_sel, p_sel)
+    ax2.plot(fpr1, tpr1, color="#1b9e77", lw=2, label=f"Stage 1 ROC (AUC={row['selection_auc']:.3f})")
+    ax2.fill_between(fpr1, tpr1, alpha=0.15, color="#1b9e77")
+    ax2.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
+    ax2.set_xlim(0, 1); ax2.set_ylim(0, 1); ax2.set_xlabel("False Positive Rate"); ax2.set_ylabel("True Positive Rate"); ax2.set_title("Stage 1 ROC (Joined Team)"); ax2.legend(loc="lower right", frameon=False)
+
+    s1_plot = s1[s1["feature"] != "const"].sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
+    ax3.barh(s1_plot["feature"], s1_plot["coef"], color=["#00c853" if c >= 0 else "#ff1744" for c in s1_plot["coef"]]); ax3.axvline(0, color="black", lw=1); ax3.set_title("Stage 1 (Selection Probit) Coefficients"); ax3.set_xlabel("Coefficient")
+    for yi, (_, r) in enumerate(s1_plot.reset_index(drop=True).iterrows()):
+        ax3.text(r["coef"] + (0.02 if r["coef"] >= 0 else -0.02), yi, p_to_stars(r["pvalue"]), va="center", ha=("left" if r["coef"] >= 0 else "right"), fontsize=10)
+
+    txt = (
+        f"Stage 2 model: {stage2_model_type}\n\nIMR coefficient: {row['imr_coef_stage2']:.3f}\nIMR p-value: {row['imr_pvalue_stage2']:.3f}\n"
+        f"IMR significance: {row['imr_significance'] if row['imr_significance'] else 'ns'}\n\n"
+        "IMR captures selection-bias correction term."
+    )
+    ax4.axis("off"); ax4.text(0.02, 0.98, txt, va="top", ha="left", fontsize=11); ax4.set_title("Selection-Correction (IMR) Summary", loc="left")
+
+    fpr2, tpr2, _ = roc_curve(y_out, p_out)
+    ax5.plot(fpr2, tpr2, color="#7570b3", lw=2, label=f"Stage 2 ROC (AUC={row['outcome_auc_selected_only']:.3f})")
+    ax5.fill_between(fpr2, tpr2, alpha=0.15, color="#7570b3")
+    ax5.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
+    ax5.set_xlim(0, 1); ax5.set_ylim(0, 1); ax5.set_xlabel("False Positive Rate"); ax5.set_ylabel("True Positive Rate"); ax5.set_title("Stage 2 ROC (Funded | Joined Team)"); ax5.legend(loc="lower right", frameon=False)
+
+    s2_plot = s2[~s2["feature"].isin(["const", "imr_selection"])].sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
+    ax6.barh(s2_plot["feature"], s2_plot["coef"], color=["#00c853" if c >= 0 else "#ff1744" for c in s2_plot["coef"]]); ax6.axvline(0, color="black", lw=1); ax6.set_title("Stage 2 (Funded Outcome + IMR) Coefficients"); ax6.set_xlabel("Coefficient")
+    for yi, (_, r) in enumerate(s2_plot.reset_index(drop=True).iterrows()):
+        ax6.text(r["coef"] + (0.02 if r["coef"] >= 0 else -0.02), yi, p_to_stars(r["pvalue"]), va="center", ha=("left" if r["coef"] >= 0 else "right"), fontsize=10)
+
+    if sample_name == "all_rows":
+        fig_path = FIG_DIR / "person_model_heckman_two_stage_results_all_rows.png"
+    else:
+        fig_path = FIG_DIR / "person_model_heckman_two_stage_results_non_facilitator_only.png"
+    fig.savefig(fig_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+
+    row["figure_path"] = str(fig_path)
+    return row
+
+
+if sm is not None:
+    res_all = run_heckman_two_stage("all_rows", df.copy(), include_facilitator_control=True)
+    if res_all is not None:
+        heckman_summary_rows.append(res_all)
+    df_nonfac = df[df["is_facilitator"] == 0].copy()
+    res_nonfac = run_heckman_two_stage("non_facilitator_only", df_nonfac, include_facilitator_control=False)
+    if res_nonfac is not None:
+        heckman_summary_rows.append(res_nonfac)
 
 heckman_summary_df = pd.DataFrame(heckman_summary_rows)
+stage1_coef_df = pd.concat(stage1_coef_frames, ignore_index=True) if stage1_coef_frames else pd.DataFrame()
+stage2_coef_df = pd.concat(stage2_coef_frames, ignore_index=True) if stage2_coef_frames else pd.DataFrame()
+
 heckman_summary_out = FEATURE_DIR / "person_model_heckman_two_stage_summary.csv"
+heckman_summary_by_sample_out = FEATURE_DIR / "person_model_heckman_two_stage_summary_by_sample.csv"
 heckman_summary_df.to_csv(heckman_summary_out, index=False)
+heckman_summary_df.to_csv(heckman_summary_by_sample_out, index=False)
 stage1_out = FEATURE_DIR / "person_model_heckman_stage1_coefficients.csv"
 stage2_out = FEATURE_DIR / "person_model_heckman_stage2_coefficients.csv"
+stage1_out_by_sample = FEATURE_DIR / "person_model_heckman_stage1_coefficients_by_sample.csv"
+stage2_out_by_sample = FEATURE_DIR / "person_model_heckman_stage2_coefficients_by_sample.csv"
 stage1_coef_df.to_csv(stage1_out, index=False)
 stage2_coef_df.to_csv(stage2_out, index=False)
+stage1_coef_df.to_csv(stage1_out_by_sample, index=False)
+stage2_coef_df.to_csv(stage2_out_by_sample, index=False)
+
+# keep previous canonical path pointing at the non-facilitator run if available
+nonfac_fig = FIG_DIR / "person_model_heckman_two_stage_results_non_facilitator_only.png"
+if nonfac_fig.exists():
+    canonical_fig = FIG_DIR / "person_model_heckman_two_stage_results.png"
+    canonical_fig.write_bytes(nonfac_fig.read_bytes())
 
 print("\nSaved Heckman-style summary:", heckman_summary_out)
 if not heckman_summary_df.empty:
     print(heckman_summary_df.to_string(index=False))
 print("Saved Heckman stage-1 coefficients:", stage1_out)
 print("Saved Heckman stage-2 coefficients:", stage2_out)
-
-# Heckman summary figure
-heckman_fig_out = FIG_DIR / "person_model_heckman_two_stage_results.png"
-if not heckman_summary_df.empty:
-    row = heckman_summary_df.iloc[0]
-    fig = plt.figure(figsize=(18, 12), constrained_layout=True)
-    gs = fig.add_gridspec(2, 3)
-    ax1 = fig.add_subplot(gs[0, 0])
-    ax2 = fig.add_subplot(gs[0, 1])
-    ax3 = fig.add_subplot(gs[0, 2])
-    ax4 = fig.add_subplot(gs[1, 0])
-    ax5 = fig.add_subplot(gs[1, 1])
-    ax6 = fig.add_subplot(gs[1, 2])
-
-    fig.suptitle(
-        "Heckman-Style Two-Stage Results\nSelection: joined team | Outcome: funded team (conditional on selection)",
-        fontsize=15,
-        fontweight="bold",
-    )
-
-    # Panel A: stage metrics
-    metric_names = [
-        "Sel AUC",
-        "Sel AUPRC",
-        "Out AUC\n(selected)",
-        "Out AUPRC\n(selected)",
-        "Out Acc\n(selected)",
-        "Out F1\n(selected)",
-    ]
-    metric_vals = [
-        row.get("selection_auc", np.nan),
-        row.get("selection_auprc", np.nan),
-        row.get("outcome_auc_selected_only", np.nan),
-        row.get("outcome_auprc_selected_only", np.nan),
-        row.get("outcome_accuracy_selected_only", np.nan),
-        row.get("outcome_f1_selected_only", np.nan),
-    ]
-    ax1.bar(metric_names, metric_vals, color=["#1b9e77", "#66a61e", "#7570b3", "#e7298a", "#1f78b4", "#d95f02"])
-    ax1.set_ylim(0, 1.0)
-    ax1.set_title("Stage Metrics")
-    for i, v in enumerate(metric_vals):
-        if pd.notna(v):
-            ax1.text(i, v + 0.02, f"{v:.3f}", ha="center", va="bottom", fontsize=10)
-
-    # Panel B: stage-1 ROC
-    x_sel_raw = df[selection_features].copy().fillna(df[selection_features].median(numeric_only=True))
-    x_sel = sm.add_constant(x_sel_raw, has_constant="add")
-    y_sel = df["outcome_joined_team"].astype(int).values
-    p_sel = np.clip(np.asarray(sel_fit.predict(x_sel), dtype=float), 1e-8, 1 - 1e-8)
-    if len(np.unique(y_sel)) >= 2:
-        fpr1, tpr1, _ = roc_curve(y_sel, p_sel)
-        ax2.plot(fpr1, tpr1, color="#1b9e77", lw=2, label=f"Stage 1 ROC (AUC={row.get('selection_auc', np.nan):.3f})")
-        ax2.fill_between(fpr1, tpr1, alpha=0.15, color="#1b9e77")
-    ax2.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
-    ax2.set_xlim(0, 1)
-    ax2.set_ylim(0, 1)
-    ax2.set_xlabel("False Positive Rate")
-    ax2.set_ylabel("True Positive Rate")
-    ax2.set_title("Stage 1 ROC (Joined Team)")
-    ax2.legend(loc="lower right", frameon=False)
-
-    # Panel C: stage-1 coefficients
-    s1 = stage1_coef_df[stage1_coef_df["feature"] != "const"].copy()
-    s1 = s1.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
-    colors1 = ["#00c853" if c >= 0 else "#ff1744" for c in s1["coef"]]
-    ax3.barh(s1["feature"], s1["coef"], color=colors1)
-    ax3.axvline(0, color="black", lw=1)
-    ax3.set_title("Stage 1 (Selection Probit) Coefficients")
-    ax3.set_xlabel("Coefficient")
-    for yi, (_, r) in enumerate(s1.reset_index(drop=True).iterrows()):
-        x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
-        ha = "left" if r["coef"] >= 0 else "right"
-        ax3.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
-
-    # Panel D: IMR summary
-    imr_coef = row.get("imr_coef_stage2", np.nan)
-    imr_p = row.get("imr_pvalue_stage2", np.nan)
-    stars = row.get("imr_significance", "")
-    stage2_type = row.get("stage2_model_type", "unknown")
-    txt = (
-        f"Stage 2 model: {stage2_type}\n\n"
-        f"IMR coefficient: {imr_coef:.3f}\n"
-        f"IMR p-value: {imr_p:.3f}\n"
-        f"IMR significance: {stars if stars else 'ns'}\n\n"
-        "Interpretation:\n"
-        "IMR captures selection-bias correction term.\n"
-        "Non-significant IMR suggests limited selection correction\n"
-        "signal in this specification."
-    )
-    ax4.axis("off")
-    ax4.text(0.02, 0.98, txt, va="top", ha="left", fontsize=11)
-    ax4.set_title("Selection-Correction (IMR) Summary", loc="left")
-
-    # Panel E: stage-2 ROC
-    xb_plot = np.clip(np.asarray(sel_fit.predict(x_sel, which="linear"), dtype=float), -8.0, 8.0)
-    phi_plot = norm.pdf(xb_plot)
-    Phi_plot = np.clip(norm.cdf(xb_plot), 1e-8, 1 - 1e-8)
-    work_plot = df.copy()
-    work_plot["imr_selection"] = phi_plot / Phi_plot
-    obs = work_plot[work_plot["outcome_joined_team"] == 1].copy()
-    x_out_raw = obs[outcome_features + ["imr_selection"]].copy()
-    x_out_raw = x_out_raw.fillna(x_out_raw.median(numeric_only=True))
-    x_out = sm.add_constant(x_out_raw, has_constant="add")
-    y_out = obs["outcome_joined_funded_team"].astype(int).values
-    p_out = np.clip(np.asarray(out_fit.predict(x_out), dtype=float), 1e-8, 1 - 1e-8)
-    if len(np.unique(y_out)) >= 2:
-        fpr2, tpr2, _ = roc_curve(y_out, p_out)
-        ax5.plot(fpr2, tpr2, color="#7570b3", lw=2, label=f"Stage 2 ROC (AUC={row.get('outcome_auc_selected_only', np.nan):.3f})")
-        ax5.fill_between(fpr2, tpr2, alpha=0.15, color="#7570b3")
-    ax5.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
-    ax5.set_xlim(0, 1)
-    ax5.set_ylim(0, 1)
-    ax5.set_xlabel("False Positive Rate")
-    ax5.set_ylabel("True Positive Rate")
-    ax5.set_title("Stage 2 ROC (Funded | Joined Team)")
-    ax5.legend(loc="lower right", frameon=False)
-
-    # Panel F: stage-2 coefficients
-    s2 = stage2_coef_df[~stage2_coef_df["feature"].isin(["const", "imr_selection"])].copy()
-    s2 = s2.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
-    colors2 = ["#00c853" if c >= 0 else "#ff1744" for c in s2["coef"]]
-    ax6.barh(s2["feature"], s2["coef"], color=colors2)
-    ax6.axvline(0, color="black", lw=1)
-    ax6.set_title("Stage 2 (Funded Outcome + IMR) Coefficients")
-    ax6.set_xlabel("Coefficient")
-    for yi, (_, r) in enumerate(s2.reset_index(drop=True).iterrows()):
-        x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
-        ha = "left" if r["coef"] >= 0 else "right"
-        ax6.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
-
-    fig.savefig(heckman_fig_out, dpi=150, bbox_inches="tight")
-    plt.close(fig)
-    print("Saved Heckman figure:", heckman_fig_out)
+print("Saved Heckman per-sample summary:", heckman_summary_by_sample_out)
