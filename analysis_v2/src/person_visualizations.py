@@ -827,12 +827,14 @@ print("Saved Heckman stage-2 coefficients:", stage2_out)
 heckman_fig_out = FIG_DIR / "person_model_heckman_two_stage_results.png"
 if not heckman_summary_df.empty:
     row = heckman_summary_df.iloc[0]
-    fig = plt.figure(figsize=(16, 12), constrained_layout=True)
-    gs = fig.add_gridspec(2, 2)
+    fig = plt.figure(figsize=(18, 12), constrained_layout=True)
+    gs = fig.add_gridspec(2, 3)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
-    ax3 = fig.add_subplot(gs[1, 0])
-    ax4 = fig.add_subplot(gs[1, 1])
+    ax3 = fig.add_subplot(gs[0, 2])
+    ax4 = fig.add_subplot(gs[1, 0])
+    ax5 = fig.add_subplot(gs[1, 1])
+    ax6 = fig.add_subplot(gs[1, 2])
 
     fig.suptitle(
         "Heckman-Style Two-Stage Results\nSelection: joined team | Outcome: funded team (conditional on selection)",
@@ -864,20 +866,37 @@ if not heckman_summary_df.empty:
         if pd.notna(v):
             ax1.text(i, v + 0.02, f"{v:.3f}", ha="center", va="bottom", fontsize=10)
 
-    # Panel B: stage-1 coefficients
+    # Panel B: stage-1 ROC
+    x_sel_raw = df[selection_features].copy().fillna(df[selection_features].median(numeric_only=True))
+    x_sel = sm.add_constant(x_sel_raw, has_constant="add")
+    y_sel = df["outcome_joined_team"].astype(int).values
+    p_sel = np.clip(np.asarray(sel_fit.predict(x_sel), dtype=float), 1e-8, 1 - 1e-8)
+    if len(np.unique(y_sel)) >= 2:
+        fpr1, tpr1, _ = roc_curve(y_sel, p_sel)
+        ax2.plot(fpr1, tpr1, color="#1b9e77", lw=2, label=f"Stage 1 ROC (AUC={row.get('selection_auc', np.nan):.3f})")
+        ax2.fill_between(fpr1, tpr1, alpha=0.15, color="#1b9e77")
+    ax2.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
+    ax2.set_xlim(0, 1)
+    ax2.set_ylim(0, 1)
+    ax2.set_xlabel("False Positive Rate")
+    ax2.set_ylabel("True Positive Rate")
+    ax2.set_title("Stage 1 ROC (Joined Team)")
+    ax2.legend(loc="lower right", frameon=False)
+
+    # Panel C: stage-1 coefficients
     s1 = stage1_coef_df[stage1_coef_df["feature"] != "const"].copy()
     s1 = s1.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
     colors1 = ["#00c853" if c >= 0 else "#ff1744" for c in s1["coef"]]
-    ax2.barh(s1["feature"], s1["coef"], color=colors1)
-    ax2.axvline(0, color="black", lw=1)
-    ax2.set_title("Stage 1 (Selection Probit) Coefficients")
-    ax2.set_xlabel("Coefficient")
+    ax3.barh(s1["feature"], s1["coef"], color=colors1)
+    ax3.axvline(0, color="black", lw=1)
+    ax3.set_title("Stage 1 (Selection Probit) Coefficients")
+    ax3.set_xlabel("Coefficient")
     for yi, (_, r) in enumerate(s1.reset_index(drop=True).iterrows()):
         x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
         ha = "left" if r["coef"] >= 0 else "right"
-        ax2.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
+        ax3.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
 
-    # Panel C: IMR summary
+    # Panel D: IMR summary
     imr_coef = row.get("imr_coef_stage2", np.nan)
     imr_p = row.get("imr_pvalue_stage2", np.nan)
     stars = row.get("imr_significance", "")
@@ -892,22 +911,46 @@ if not heckman_summary_df.empty:
         "Non-significant IMR suggests limited selection correction\n"
         "signal in this specification."
     )
-    ax3.axis("off")
-    ax3.text(0.02, 0.98, txt, va="top", ha="left", fontsize=11)
-    ax3.set_title("Selection-Correction (IMR) Summary", loc="left")
+    ax4.axis("off")
+    ax4.text(0.02, 0.98, txt, va="top", ha="left", fontsize=11)
+    ax4.set_title("Selection-Correction (IMR) Summary", loc="left")
 
-    # Panel D: stage-2 coefficients
-    s2 = stage2_coef_df[stage2_coef_df["feature"] != "const"].copy()
+    # Panel E: stage-2 ROC
+    xb_plot = np.clip(np.asarray(sel_fit.predict(x_sel, which="linear"), dtype=float), -8.0, 8.0)
+    phi_plot = norm.pdf(xb_plot)
+    Phi_plot = np.clip(norm.cdf(xb_plot), 1e-8, 1 - 1e-8)
+    work_plot = df.copy()
+    work_plot["imr_selection"] = phi_plot / Phi_plot
+    obs = work_plot[work_plot["outcome_joined_team"] == 1].copy()
+    x_out_raw = obs[outcome_features + ["imr_selection"]].copy()
+    x_out_raw = x_out_raw.fillna(x_out_raw.median(numeric_only=True))
+    x_out = sm.add_constant(x_out_raw, has_constant="add")
+    y_out = obs["outcome_joined_funded_team"].astype(int).values
+    p_out = np.clip(np.asarray(out_fit.predict(x_out), dtype=float), 1e-8, 1 - 1e-8)
+    if len(np.unique(y_out)) >= 2:
+        fpr2, tpr2, _ = roc_curve(y_out, p_out)
+        ax5.plot(fpr2, tpr2, color="#7570b3", lw=2, label=f"Stage 2 ROC (AUC={row.get('outcome_auc_selected_only', np.nan):.3f})")
+        ax5.fill_between(fpr2, tpr2, alpha=0.15, color="#7570b3")
+    ax5.plot([0, 1], [0, 1], color="red", linestyle="--", lw=1.2, label="Baseline (AUC=0.5)")
+    ax5.set_xlim(0, 1)
+    ax5.set_ylim(0, 1)
+    ax5.set_xlabel("False Positive Rate")
+    ax5.set_ylabel("True Positive Rate")
+    ax5.set_title("Stage 2 ROC (Funded | Joined Team)")
+    ax5.legend(loc="lower right", frameon=False)
+
+    # Panel F: stage-2 coefficients
+    s2 = stage2_coef_df[~stage2_coef_df["feature"].isin(["const", "imr_selection"])].copy()
     s2 = s2.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
     colors2 = ["#00c853" if c >= 0 else "#ff1744" for c in s2["coef"]]
-    ax4.barh(s2["feature"], s2["coef"], color=colors2)
-    ax4.axvline(0, color="black", lw=1)
-    ax4.set_title("Stage 2 (Funded Outcome + IMR) Coefficients")
-    ax4.set_xlabel("Coefficient")
+    ax6.barh(s2["feature"], s2["coef"], color=colors2)
+    ax6.axvline(0, color="black", lw=1)
+    ax6.set_title("Stage 2 (Funded Outcome + IMR) Coefficients")
+    ax6.set_xlabel("Coefficient")
     for yi, (_, r) in enumerate(s2.reset_index(drop=True).iterrows()):
         x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
         ha = "left" if r["coef"] >= 0 else "right"
-        ax4.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
+        ax6.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
 
     fig.savefig(heckman_fig_out, dpi=150, bbox_inches="tight")
     plt.close(fig)
