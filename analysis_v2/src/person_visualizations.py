@@ -9,6 +9,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from scipy.stats import norm
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
@@ -340,8 +341,39 @@ def run_loco_predictions(data: pd.DataFrame, feature_cols: list[str], target: st
     return y_true, y_score, y_pred
 
 
+def metric_row(y_true: np.ndarray, y_score: np.ndarray, y_pred: np.ndarray) -> dict[str, float]:
+    if len(np.unique(y_true)) < 2:
+        return {
+            "accuracy_loco_pooled": np.nan,
+            "f1_loco_pooled": np.nan,
+            "auc_loco_pooled": np.nan,
+            "auprc_loco_pooled": np.nan,
+        }
+    return {
+        "accuracy_loco_pooled": float(accuracy_score(y_true, y_pred)),
+        "f1_loco_pooled": float(f1_score(y_true, y_pred, zero_division=0)),
+        "auc_loco_pooled": float(roc_auc_score(y_true, y_score)),
+        "auprc_loco_pooled": float(average_precision_score(y_true, y_score)),
+    }
+
+
+def fit_full_sample_coefficients(data: pd.DataFrame, feature_cols: list[str], target: str, c_val: float = 0.5) -> pd.DataFrame:
+    x = data[feature_cols].copy()
+    x = x.fillna(x.median(numeric_only=True))
+    scaler = StandardScaler()
+    x_scaled = scaler.fit_transform(x.values)
+    y = data[target].astype(int).values
+    clf = LogisticRegression(max_iter=5000, class_weight="balanced", C=c_val)
+    clf.fit(x_scaled, y)
+    out = pd.DataFrame({"feature": feature_cols, "coef": clf.coef_[0]})
+    out["abs_coef"] = out["coef"].abs()
+    return out.sort_values("abs_coef", ascending=False)
+
+
 metrics_rows = []
 sensitivity_rows = []
+supplemental_rows = []
+supplemental_coef_rows = []
 
 for target in targets:
 
@@ -554,6 +586,71 @@ for target in targets:
         }
     )
 
+    # ----------------------------
+    # (3) Supplemental checks (no figure changes)
+    # ----------------------------
+    base_metrics = metric_row(y_true, y_score, y_pred)
+
+    # 3a) Conference fixed-effects check (conference dummies)
+    df_fe = df.copy()
+    conf_dummies = pd.get_dummies(df_fe["conference"], prefix="conf", drop_first=True, dtype=float)
+    df_fe = pd.concat([df_fe, conf_dummies], axis=1)
+    fe_features = model_features + conf_dummies.columns.tolist()
+    fe_true, fe_score, fe_pred = run_loco_predictions(df_fe, fe_features, target)
+    fe_metrics = metric_row(fe_true, fe_score, fe_pred)
+    supplemental_rows.append(
+        {
+            "target": target,
+            "check_name": "conference_fixed_effects",
+            "n_rows": len(df_fe),
+            "n_features": len(fe_features),
+            **fe_metrics,
+            "delta_auc_vs_base": fe_metrics["auc_loco_pooled"] - base_metrics["auc_loco_pooled"],
+            "delta_auprc_vs_base": fe_metrics["auprc_loco_pooled"] - base_metrics["auprc_loco_pooled"],
+        }
+    )
+    fe_coef = fit_full_sample_coefficients(df_fe, fe_features, target)
+    fe_coef["target"] = target
+    fe_coef["check_name"] = "conference_fixed_effects"
+    fe_coef["feature_type"] = np.where(fe_coef["feature"].str.startswith("conf_"), "conference_dummy", "behavior_or_control")
+    supplemental_coef_rows.append(fe_coef)
+
+    # 3b) Facilitator interaction check (role-modified behavior effects)
+    key_interactions = [
+        "subcode__proposes_process",
+        "subcode__extends_existing_idea",
+        "subcode__invites_contribution",
+        "subcode__shares_domain_knowledge",
+        "subcode__individual_framing",
+    ]
+    key_interactions = [c for c in key_interactions if c in df.columns]
+    df_int = df.copy()
+    int_cols: list[str] = []
+    for c in key_interactions:
+        int_name = f"is_facilitator_x_{c.replace('subcode__', '')}"
+        df_int[int_name] = df_int["is_facilitator"] * df_int[c]
+        int_cols.append(int_name)
+
+    int_features = model_features + int_cols
+    int_true, int_score, int_pred = run_loco_predictions(df_int, int_features, target)
+    int_metrics = metric_row(int_true, int_score, int_pred)
+    supplemental_rows.append(
+        {
+            "target": target,
+            "check_name": "facilitator_behavior_interactions",
+            "n_rows": len(df_int),
+            "n_features": len(int_features),
+            **int_metrics,
+            "delta_auc_vs_base": int_metrics["auc_loco_pooled"] - base_metrics["auc_loco_pooled"],
+            "delta_auprc_vs_base": int_metrics["auprc_loco_pooled"] - base_metrics["auprc_loco_pooled"],
+        }
+    )
+    int_coef = fit_full_sample_coefficients(df_int, int_features, target)
+    int_coef["target"] = target
+    int_coef["check_name"] = "facilitator_behavior_interactions"
+    int_coef["feature_type"] = np.where(int_coef["feature"].str.startswith("is_facilitator_x_"), "interaction_term", "behavior_or_control")
+    supplemental_coef_rows.append(int_coef)
+
     # non-facilitator-only sensitivity check
     nonfac = df[df["is_facilitator"] == 0].copy()
     nonfac_features = [c for c in model_features if c != "is_facilitator"]
@@ -597,3 +694,221 @@ print("Saved summary:", summary_out)
 print(summary_df.to_string(index=False))
 print("\nSaved non-facilitator sensitivity:", sense_out)
 print(sense_df.to_string(index=False))
+
+supp_df = pd.DataFrame(supplemental_rows)
+supp_out = FEATURE_DIR / "person_model_supplemental_checks.csv"
+supp_df.to_csv(supp_out, index=False)
+supp_coef_df = pd.concat(supplemental_coef_rows, ignore_index=True)
+supp_coef_out = FEATURE_DIR / "person_model_supplemental_coefficients.csv"
+supp_coef_df.to_csv(supp_coef_out, index=False)
+
+print("\nSaved supplemental checks:", supp_out)
+print(supp_df.to_string(index=False))
+print("\nSaved supplemental coefficients:", supp_coef_out)
+
+# ----------------------------
+# (4) Heckman-style two-stage selection model
+# outcome 1: on a team (selection)
+# outcome 2: funded team (conditional on being on a team)
+# ----------------------------
+heckman_summary_rows: list[dict] = []
+stage1_coef_df = pd.DataFrame()
+stage2_coef_df = pd.DataFrame()
+
+if sm is not None:
+    # keep consistent feature set with existing modeling pipeline
+    subcode_eligible = [c for c in subcode_cols if df[c].sum() >= 10]
+    top_k = 14
+    top_subcodes = sorted(subcode_eligible, key=lambda c: df[c].sum(), reverse=True)[:top_k]
+    selection_features = controls + top_subcodes
+    outcome_features = controls + top_subcodes
+
+    # stage 1: selection equation (Probit) on full sample
+    y_sel = df["outcome_joined_team"].astype(int).values
+    x_sel_raw = df[selection_features].copy().fillna(df[selection_features].median(numeric_only=True))
+    x_sel = sm.add_constant(x_sel_raw, has_constant="add")
+    sel_fit = sm.Probit(y_sel, x_sel).fit(disp=0, maxiter=200)
+
+    # inverse Mills ratio for selected observations
+    xb = np.clip(np.asarray(sel_fit.predict(x_sel, which="linear"), dtype=float), -8.0, 8.0)
+    phi = norm.pdf(xb)
+    Phi = np.clip(norm.cdf(xb), 1e-8, 1 - 1e-8)
+    imr = phi / Phi
+
+    work = df.copy()
+    work["imr_selection"] = imr
+
+    # stage 2: funded outcome conditional on selection
+    obs = work[work["outcome_joined_team"] == 1].copy()
+    y_out = obs["outcome_joined_funded_team"].astype(int).values
+    x_out_raw = obs[outcome_features + ["imr_selection"]].copy()
+    x_out_raw = x_out_raw.fillna(x_out_raw.median(numeric_only=True))
+    x_out = sm.add_constant(x_out_raw, has_constant="add")
+    try:
+        out_fit = sm.Logit(y_out, x_out).fit(disp=0, maxiter=200)
+        stage2_model_type = "logit"
+    except Exception:
+        # Fallback for singular Hessian/separation cases.
+        out_fit = sm.GLM(y_out, x_out, family=sm.families.Binomial()).fit(maxiter=200)
+        stage2_model_type = "glm_binomial_fallback"
+
+    # stage metrics
+    p_sel = np.clip(np.asarray(sel_fit.predict(x_sel), dtype=float), 1e-8, 1 - 1e-8)
+    p_out = np.clip(np.asarray(out_fit.predict(x_out), dtype=float), 1e-8, 1 - 1e-8)
+    y_out_pred = (p_out >= 0.5).astype(int)
+
+    sel_auc = roc_auc_score(y_sel, p_sel) if len(np.unique(y_sel)) >= 2 else np.nan
+    sel_auprc = average_precision_score(y_sel, p_sel) if len(np.unique(y_sel)) >= 2 else np.nan
+    out_auc = roc_auc_score(y_out, p_out) if len(np.unique(y_out)) >= 2 else np.nan
+    out_auprc = average_precision_score(y_out, p_out) if len(np.unique(y_out)) >= 2 else np.nan
+    out_acc = accuracy_score(y_out, y_out_pred) if len(np.unique(y_out)) >= 2 else np.nan
+    out_f1 = f1_score(y_out, y_out_pred, zero_division=0) if len(np.unique(y_out)) >= 2 else np.nan
+
+    heckman_summary_rows.append(
+        {
+            "selection_target": "outcome_joined_team",
+            "outcome_target": "outcome_joined_funded_team",
+            "n_total": int(len(work)),
+            "n_selected": int(len(obs)),
+            "selection_n_features": int(len(selection_features)),
+            "outcome_n_features_plus_imr": int(len(outcome_features) + 1),
+            "selection_auc": sel_auc,
+            "selection_auprc": sel_auprc,
+            "outcome_auc_selected_only": out_auc,
+            "outcome_auprc_selected_only": out_auprc,
+            "outcome_accuracy_selected_only": out_acc,
+            "outcome_f1_selected_only": out_f1,
+            "imr_coef_stage2": float(out_fit.params.get("imr_selection", np.nan)),
+            "imr_pvalue_stage2": float(out_fit.pvalues.get("imr_selection", np.nan)),
+            "imr_significance": p_to_stars(float(out_fit.pvalues.get("imr_selection", np.nan))),
+            "stage2_model_type": stage2_model_type,
+        }
+    )
+
+    stage1_coef_df = pd.DataFrame(
+        {
+            "feature": sel_fit.params.index,
+            "coef": sel_fit.params.values,
+            "pvalue": sel_fit.pvalues.reindex(sel_fit.params.index).values,
+        }
+    )
+    stage1_coef_df["stage"] = "selection_probit"
+    stage1_coef_df["stars"] = stage1_coef_df["pvalue"].map(p_to_stars)
+    stage1_coef_df["abs_coef"] = stage1_coef_df["coef"].abs()
+    stage1_coef_df = stage1_coef_df.sort_values("abs_coef", ascending=False)
+
+    stage2_coef_df = pd.DataFrame(
+        {
+            "feature": out_fit.params.index,
+            "coef": out_fit.params.values,
+            "pvalue": out_fit.pvalues.reindex(out_fit.params.index).values,
+        }
+    )
+    stage2_coef_df["stage"] = f"funded_{stage2_model_type}_with_imr"
+    stage2_coef_df["stars"] = stage2_coef_df["pvalue"].map(p_to_stars)
+    stage2_coef_df["abs_coef"] = stage2_coef_df["coef"].abs()
+    stage2_coef_df = stage2_coef_df.sort_values("abs_coef", ascending=False)
+
+heckman_summary_df = pd.DataFrame(heckman_summary_rows)
+heckman_summary_out = FEATURE_DIR / "person_model_heckman_two_stage_summary.csv"
+heckman_summary_df.to_csv(heckman_summary_out, index=False)
+stage1_out = FEATURE_DIR / "person_model_heckman_stage1_coefficients.csv"
+stage2_out = FEATURE_DIR / "person_model_heckman_stage2_coefficients.csv"
+stage1_coef_df.to_csv(stage1_out, index=False)
+stage2_coef_df.to_csv(stage2_out, index=False)
+
+print("\nSaved Heckman-style summary:", heckman_summary_out)
+if not heckman_summary_df.empty:
+    print(heckman_summary_df.to_string(index=False))
+print("Saved Heckman stage-1 coefficients:", stage1_out)
+print("Saved Heckman stage-2 coefficients:", stage2_out)
+
+# Heckman summary figure
+heckman_fig_out = FIG_DIR / "person_model_heckman_two_stage_results.png"
+if not heckman_summary_df.empty:
+    row = heckman_summary_df.iloc[0]
+    fig = plt.figure(figsize=(16, 12), constrained_layout=True)
+    gs = fig.add_gridspec(2, 2)
+    ax1 = fig.add_subplot(gs[0, 0])
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax3 = fig.add_subplot(gs[1, 0])
+    ax4 = fig.add_subplot(gs[1, 1])
+
+    fig.suptitle(
+        "Heckman-Style Two-Stage Results\nSelection: joined team | Outcome: funded team (conditional on selection)",
+        fontsize=15,
+        fontweight="bold",
+    )
+
+    # Panel A: stage metrics
+    metric_names = [
+        "Sel AUC",
+        "Sel AUPRC",
+        "Out AUC\n(selected)",
+        "Out AUPRC\n(selected)",
+        "Out Acc\n(selected)",
+        "Out F1\n(selected)",
+    ]
+    metric_vals = [
+        row.get("selection_auc", np.nan),
+        row.get("selection_auprc", np.nan),
+        row.get("outcome_auc_selected_only", np.nan),
+        row.get("outcome_auprc_selected_only", np.nan),
+        row.get("outcome_accuracy_selected_only", np.nan),
+        row.get("outcome_f1_selected_only", np.nan),
+    ]
+    ax1.bar(metric_names, metric_vals, color=["#1b9e77", "#66a61e", "#7570b3", "#e7298a", "#1f78b4", "#d95f02"])
+    ax1.set_ylim(0, 1.0)
+    ax1.set_title("Stage Metrics")
+    for i, v in enumerate(metric_vals):
+        if pd.notna(v):
+            ax1.text(i, v + 0.02, f"{v:.3f}", ha="center", va="bottom", fontsize=10)
+
+    # Panel B: stage-1 coefficients
+    s1 = stage1_coef_df[stage1_coef_df["feature"] != "const"].copy()
+    s1 = s1.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
+    colors1 = ["#00c853" if c >= 0 else "#ff1744" for c in s1["coef"]]
+    ax2.barh(s1["feature"], s1["coef"], color=colors1)
+    ax2.axvline(0, color="black", lw=1)
+    ax2.set_title("Stage 1 (Selection Probit) Coefficients")
+    ax2.set_xlabel("Coefficient")
+    for yi, (_, r) in enumerate(s1.reset_index(drop=True).iterrows()):
+        x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
+        ha = "left" if r["coef"] >= 0 else "right"
+        ax2.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
+
+    # Panel C: IMR summary
+    imr_coef = row.get("imr_coef_stage2", np.nan)
+    imr_p = row.get("imr_pvalue_stage2", np.nan)
+    stars = row.get("imr_significance", "")
+    stage2_type = row.get("stage2_model_type", "unknown")
+    txt = (
+        f"Stage 2 model: {stage2_type}\n\n"
+        f"IMR coefficient: {imr_coef:.3f}\n"
+        f"IMR p-value: {imr_p:.3f}\n"
+        f"IMR significance: {stars if stars else 'ns'}\n\n"
+        "Interpretation:\n"
+        "IMR captures selection-bias correction term.\n"
+        "Non-significant IMR suggests limited selection correction\n"
+        "signal in this specification."
+    )
+    ax3.axis("off")
+    ax3.text(0.02, 0.98, txt, va="top", ha="left", fontsize=11)
+    ax3.set_title("Selection-Correction (IMR) Summary", loc="left")
+
+    # Panel D: stage-2 coefficients
+    s2 = stage2_coef_df[stage2_coef_df["feature"] != "const"].copy()
+    s2 = s2.sort_values("abs_coef", ascending=False).head(12).sort_values("coef")
+    colors2 = ["#00c853" if c >= 0 else "#ff1744" for c in s2["coef"]]
+    ax4.barh(s2["feature"], s2["coef"], color=colors2)
+    ax4.axvline(0, color="black", lw=1)
+    ax4.set_title("Stage 2 (Funded Outcome + IMR) Coefficients")
+    ax4.set_xlabel("Coefficient")
+    for yi, (_, r) in enumerate(s2.reset_index(drop=True).iterrows()):
+        x = r["coef"] + (0.02 if r["coef"] >= 0 else -0.02)
+        ha = "left" if r["coef"] >= 0 else "right"
+        ax4.text(x, yi, p_to_stars(r["pvalue"]), va="center", ha=ha, fontsize=10)
+
+    fig.savefig(heckman_fig_out, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print("Saved Heckman figure:", heckman_fig_out)
