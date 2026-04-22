@@ -460,7 +460,9 @@ for target in targets:
     # (2) Model + effect-size/significance figure
     # ----------------------------
     subcode_eligible = [c for c in subcode_cols if df[c].sum() >= 10]
-    top_k = 14
+    # Use all eligible subcodes — no arbitrary cutoff
+    # For funded-team (n=294), fall back to top-14 if model fails to converge
+    top_k = len(subcode_eligible) if target == "outcome_joined_team" else 14
     top_subcodes = sorted(subcode_eligible, key=lambda c: df[c].sum(), reverse=True)[:top_k]
     model_features = controls + top_subcodes
 
