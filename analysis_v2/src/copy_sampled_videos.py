@@ -272,6 +272,13 @@ def find_matching_chunk_file(split_folder_path, chunk_file_name):
             return entry_path
     return None
 
+def is_chunked_filename(name):
+    """
+    Return True if a filename stem looks like a chunked video name,
+    e.g. "..._chunk1" or "...-chunk12".
+    """
+    return bool(re.search(r'(?:^|[_-])chunk\d+$', str(name or ''), flags=re.IGNORECASE))
+
 
 def extract_folder_info(key):
     """
@@ -423,6 +430,13 @@ def find_video_file(source_dir, folder_name, subfolder_name, file_name, chunk_fi
         if verbose:
             print(f"      No video file found for: {file_name}")
         return None
+
+    # If chunk file is the same as the source video name and does not look like
+    # a chunked name, treat it as an unsplit video and copy directly.
+    if canonicalize_for_match(chunk_file_name) == canonicalize_for_match(file_name) and not is_chunked_filename(chunk_file_name):
+        if verbose:
+            print("      Chunk name matches video name (unsplit source); using original video file directly")
+        return video_file_path
     
     # Look for the split folder (allow split_<name> vs split-<name>)
     split_folder_path = find_matching_split_folder(folder_path, file_name)
