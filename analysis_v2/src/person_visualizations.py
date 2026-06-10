@@ -86,8 +86,8 @@ def norm_name(text: object) -> str:
 
 def build_facilitator_flag(base_df: pd.DataFrame) -> pd.DataFrame:
     """Create conference+person facilitator flag from session_data role labels."""
-    by_conf = BASE / "finalized_matching_csvs" / "global_participant_identity_by_conference.csv"
-    alias_path = BASE / "participant_alias_mapping.csv"
+    by_conf = BASE / "analysis_v2" / "notebooks" / "finalized_matching_csvs" / "global_participant_identity_by_conference.csv"
+    alias_path = BASE / "analysis_v2" / "notebooks" / "participant_alias_mapping.csv"
     session_dir = BASE / "analysis_v1" / "data"
     if not by_conf.exists() or not session_dir.exists():
         out = base_df.copy()
@@ -177,8 +177,8 @@ def build_within_session_matrix(target: str):
     """Return a within-session heatmap matrix (top subcodes x top sessions)
     showing log-count difference between outcome=1 and outcome=0 utterance codes.
     """
-    by_conf = BASE / "finalized_matching_csvs" / "global_participant_identity_by_conference.csv"
-    alias_path = BASE / "participant_alias_mapping.csv"
+    by_conf = BASE / "analysis_v2" / "notebooks" / "finalized_matching_csvs" / "global_participant_identity_by_conference.csv"
+    alias_path = BASE / "analysis_v2" / "notebooks" / "participant_alias_mapping.csv"
     outputs_dir = BASE / "outputs"
     if not by_conf.exists() or not outputs_dir.exists():
         return pd.DataFrame()

@@ -2,6 +2,525 @@
 
 ---
 
+## Current implementation audit (June 10, 2026)
+
+This section is the current source-of-truth audit of what is implemented in
+`analysis_v2/notebooks/` and what results are currently saved in the repository.
+The longer sections below remain the design plan and theoretical rationale; when
+they differ from this audit, this audit reflects the code and saved artifacts
+currently present in the local project folder.
+
+### Audit scope and status
+
+- Audited notebooks: `0-build_registry.ipynb`, `3a-sample_validation_set.ipynb`,
+  `3b-export_coding_materials.ipynb`, `3c-compute_agreement.ipynb`,
+  `4-feature_engineering.ipynb`, `5-descriptive_analysis.ipynb`,
+  `6-regression_modeling.ipynb`, `7-person_level_modeling.ipynb`,
+  `8-temporal_predictive_power.ipynb`, `interrater_reliability.ipynb`, and
+  `sample_v2.ipynb`.
+- Primary implemented analysis families:
+  1. session-level prediction of team/funded-team outcomes from session features;
+  2. person-level prediction of who joins teams or funded teams;
+  3. temporal-window person-level prediction;
+  4. human/Gemini utterance-code agreement and validation sampling.
+- Reproducibility status: Stage 4 and Stage 6 now execute end-to-end in this
+  environment and write CSV artifacts for chunk/session/model-ready features and
+  session-level model results. Parquet writes are skipped gracefully when
+  `pyarrow`/`fastparquet` is unavailable.
+- Notebook cleanup status: `7-person_level_modeling.ipynb` and
+  `8-temporal_predictive_power.ipynb` now have stepwise markdown sectioning,
+  repository-root path discovery, and explicit presentation-figure sections.
+  Slide-specific figure cells are retained because they produce current reporting
+  assets rather than disposable experiments.
+- Figure organization status: original figure paths are preserved for notebook
+  compatibility, and curated copies are available under
+  `analysis_v2/figures/reporting/`.
+
+### Compact results table
+
+| Analysis | Data / unit | Outcome | Main result | Saved result artifact |
+|---|---:|---|---|---|
+| Stage 0 registry | 1,310 chunks from 196 recordings across 8 conferences | Session outcomes joined from v1 JSONs | 50 chunks lack outcome data; 9 session groups had no outcome match in executed output | `analysis_v2/data/chunk_registry_v1.csv` |
+| Stage 4 feature engineering | 1,310 registry rows; 1,286 JSONs loaded | Chunk/session/model-ready feature tables | Fresh outputs: chunk features `1,310 x 101`; session features `162 x 493`; model-ready features `162 x 360`; feature manifest `483 x 3` | `analysis_v2/results/tables/4-feature_engineering/` |
+| Session logistic, LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4573`; 95% CI `0.3478-0.5751`; balanced accuracy `0.4586`; F1 `0.7186`; confusion matrix `[[8,25],[40,83]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
+| Session logistic, LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.6222`; 95% CI `0.5288-0.7162`; balanced accuracy `0.5976`; F1 `0.5507`; confusion matrix `[[56,32],[30,38]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
+| Session logistic, LOCO | 156 sessions | `outcome_has_teams` | AUC `0.4090`; 95% CI `0.2968-0.5260`; balanced accuracy `0.4313`; F1 `0.6987`; confusion matrix `[[7,26],[43,80]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
+| Session logistic, LOCO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5655`; 95% CI `0.4639-0.6618`; balanced accuracy `0.5551`; F1 `0.4925`; confusion matrix `[[55,33],[35,33]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
+| Session random forest robustness, LOSO | 156 sessions | `outcome_has_teams` | AUC `0.6194`; 95% CI `0.5072-0.7260`; balanced accuracy `0.5525`; F1 `0.8864`; confusion matrix `[[4,29],[2,121]]` | `analysis_v2/results/tables/6-regression_modeling/random_forest_results.csv` |
+| Session random forest robustness, LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5234`; 95% CI `0.4281-0.6166`; balanced accuracy `0.4903`; F1 `0.3243`; confusion matrix `[[63,25],[50,18]]` | `analysis_v2/results/tables/6-regression_modeling/random_forest_results.csv` |
+| Beginning-segment session model, LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4398`; 95% CI `0.3218-0.5620`; balanced accuracy `0.4804`; F1 `0.8231` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
+| Beginning-segment session model, LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.4948`; 95% CI `0.4088-0.5834`; balanced accuracy `0.4418`; F1 `0.3511` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
+| Count outcome elasticnet, LOSO | 156 sessions | `outcome_num_teams` | RMSE `1.2882`; MAE `0.9798`; R2 `-0.2270` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
+| Count outcome elasticnet, LOSO | 156 sessions | `outcome_num_funded_teams` | RMSE `0.8168`; MAE `0.6203`; R2 `-0.2874` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
+| Person model, global person CV | 504 global-person rows | joined team | AUC `0.8594`; AUPRC `0.8096`; prevalence `0.4722` | `analysis_v2/results/tables/7-person_level_modeling/person_model_comparison_summary.csv` |
+| Person model, global person CV | 504 global-person rows | joined funded team | AUC `0.7916`; AUPRC `0.4776`; prevalence `0.2440` | `analysis_v2/results/tables/7-person_level_modeling/person_model_comparison_summary.csv` |
+| Person model, within-conference LOCO | 639 person-conference rows | joined team | AUC `0.8357`; AUPRC `0.7581`; prevalence `0.4601` | `analysis_v2/results/tables/7-person_level_modeling/person_model_loco_summary.csv` |
+| Person model, within-conference LOCO | 639 person-conference rows | joined funded team | AUC `0.7553`; AUPRC `0.3737`; prevalence `0.2050` | `analysis_v2/results/tables/7-person_level_modeling/person_model_loco_summary.csv` |
+| Person model visualization summary | 639 person-conference rows | joined team | AUC `0.8580`; AUPRC `0.8074`; accuracy `0.7809`; F1 `0.7535`; 61 features | `analysis_v2/results/tables/7-person_level_modeling/person_model_visualization_summary.csv` |
+| Person model visualization summary | 639 person-conference rows | joined funded team | AUC `0.7947`; AUPRC `0.4487`; accuracy `0.7246`; F1 `0.5111`; 17 features | `analysis_v2/results/tables/7-person_level_modeling/person_model_visualization_summary.csv` |
+| Non-facilitator sensitivity | 579 non-facilitator rows | joined team | AUC `0.8325`; AUPRC `0.8121`; accuracy `0.7513`; F1 `0.7419` | `analysis_v2/results/tables/7-person_level_modeling/person_model_non_facilitator_sensitivity.csv` |
+| Non-facilitator sensitivity | 579 non-facilitator rows | joined funded team | AUC `0.7675`; AUPRC `0.4475`; accuracy `0.7168`; F1 `0.5176` | `analysis_v2/results/tables/7-person_level_modeling/person_model_non_facilitator_sensitivity.csv` |
+| High-level vs detailed person model | 639 rows | joined team | High-level code categories: AUC `0.8749`, AUPRC `0.8183`; detailed subcodes: AUC `0.8580`, AUPRC `0.8074` | `analysis_v2/results/tables/7-person_level_modeling/person_model_highlevel_vs_detailed.csv` |
+| Heckman-style two-stage model | 639 all rows; 294 selected rows | joined team then funded team | Selection AUC `0.8936`; selected-only funding AUC `0.6609`; IMR p `0.7619` | `analysis_v2/results/tables/7-person_level_modeling/person_model_heckman_two_stage_summary.csv` |
+| Heckman-style two-stage model | 579 non-facilitator rows; 294 selected rows | joined team then funded team | Selection AUC `0.8687`; selected-only funding AUC `0.6585`; IMR p `0.8212` | `analysis_v2/results/tables/7-person_level_modeling/person_model_heckman_two_stage_summary.csv` |
+| Temporal person-window model | 579 aligned rows, same subcode set as full-session model | joined team | First 1 min AUC `0.731`; first 5 min `0.779`; full session `0.833`; last 5 min `0.810`; last 1 min `0.762` | `analysis_v2/results/tables/8-temporal_predictive_power/temporal_window_model_summary.csv` |
+| Human/Gemini utterance-code agreement | 212 matched utterances; 20 code labels | utterance code presence | PABAK examples: Idea Novelty `0.991`; Complementarity Articulation `0.887`; Broader Significance `0.868`; Epistemic Bridging `0.736`; Evaluation Practices `0.660` | `analysis_v2/notebooks/interrater_pabak.csv` |
+
+### Notebook-by-notebook implementation audit
+
+#### `0-build_registry.ipynb`
+
+Purpose: build the master chunk registry from all top-level `*_path_dict.json`
+files and join session-level outcome metadata from `analysis_v1/data`.
+
+Implemented steps:
+
+1. Defines standardized output paths under `analysis_v2/data`,
+   `analysis_v2/results/tables/baseline`, and `analysis_v2/results/figures/baseline`.
+2. Discovers 8 path-dict files: `2020NES`, `2021ABI`, `2021CMC`, `2021MND`,
+   `2021MZT`, `2021NES`, `2021SLU`, and `2022MND`.
+3. Parses per-conference session-outcome JSON files.
+4. Expands each path-dict chunk into one registry row with chunk filename, path,
+   Gemini file reference, chunk index, number of chunks, temporal position,
+   analyzed flag, model used, conference, session group, and outcomes.
+5. Validates uniqueness and prints conference by chunk-position distributions.
+6. Saves `analysis_v2/data/chunk_registry_v1.parquet` and
+   `analysis_v2/data/chunk_registry_v1.csv`.
+
+Executed output captured in the notebook:
+
+- Registry size: `1,310` chunks from `196` recordings across `8` conferences.
+- Outcome matching gap: `9` session groups had no outcome entry.
+- Missing outcome rows: `50` chunks have no outcome data.
+- Distribution by conference: `2020NES=142`, `2021ABI=203`,
+  `2021CMC=167`, `2021MND=170`, `2021MZT=168`, `2021NES=163`,
+  `2021SLU=167`, `2022MND=130`.
+
+#### `3a-sample_validation_set.ipynb`
+
+Purpose: select the human-validation sample and update the registry with
+validation flags.
+
+Implemented steps:
+
+1. Loads `chunk_registry_v1`.
+2. Defines validation tiers for chunk-level fields and priority utterance fields.
+3. Samples a stratified chunk-level validation set using conference, chunk
+   position, and `outcome_has_funded_teams`.
+4. Optionally oversamples rare AI-positive chunks for `explicit_commitment_signal`,
+   `cross_disciplinary_bridging`, and `risk_acknowledgment_with_enthusiasm`.
+5. Selects an utterance-level subsample from within the chunk validation set.
+6. Saves `chunk_registry_v2.parquet` and `chunk_registry_v2.csv`.
+
+Audit note: the notebook code is present, but the audited notebook had no saved
+execution outputs for the sample counts. The plan should not claim completed
+human-validation sample sizes unless `chunk_registry_v2` exists and is checked.
+
+#### `3b-export_coding_materials.ipynb`
+
+Purpose: export human-coding materials from the validation registry.
+
+Implemented steps:
+
+1. Loads the validation registry.
+2. Defines Instrument A, B, and C fields:
+   - A: intellectual trajectory, problem specificity, decision crystallization,
+     ambition, bridging, and commitment.
+   - B: pronoun shift, shared vision, laughter, personal disclosure, dissent,
+     risk enthusiasm, and meeting structure.
+   - C: collective engagement and engagement justification.
+3. Exports coding-sheet CSVs.
+4. Copies chunk videos when available.
+5. Saves a validation-materials manifest.
+
+Audit note: the code is present, but no saved execution outputs were embedded in
+the notebook audit. Treat this as implemented but not independently verified from
+notebook output.
+
+#### `3c-compute_agreement.ipynb`
+
+Purpose: compute human-human reliability, human-AI agreement, disagreement
+summaries, and feature-inclusion decisions.
+
+Implemented steps:
+
+1. Defines instrument fields and reliability field groups.
+2. Loads registry and rater files.
+3. Flags disagreements and writes a disagreement summary.
+4. Computes human-human reliability using Cohen's kappa for binary/categorical
+   fields and ICC2 for ordinal fields.
+5. Computes human-AI agreement against resolved human codes.
+6. Applies inclusion thresholds: include at `>=0.60`, caveat at `0.40-0.59`,
+   exclude below `0.40`.
+
+Audit note: the code is present, but no saved execution outputs were embedded in
+the notebook audit. The separate `interrater_reliability.ipynb` has executed
+human/Gemini PABAK results for utterance code labels.
+
+#### `4-feature_engineering.ipynb`
+
+Purpose: transform raw AI JSON annotations into chunk-level, session-level, and
+model-ready features.
+
+Implemented steps:
+
+1. Loads `chunk_registry_v1` and resolves output JSON paths.
+2. Loads AI output JSON files and skips empty/malformed/missing files.
+3. Maps noisy or variant code names into canonical code categories.
+4. Computes chunk-level features from `chunk_summary`: speaking-time Gini,
+   dominant speaker, trajectory flags, engagement, bridging, commitment,
+   screen-share/artifact flags, specificity, crystallization, ambition,
+   complementarity, shared vision, pronoun shift, laughter, dissent, risk,
+   funding awareness, prior relationship, and structure quality.
+5. Aggregates utterance-level code counts, subcode counts, quality scores, and
+   multimodal signals.
+6. Builds responsiveness-index features.
+7. Aggregates chunk features to session features, including beginning/middle/end
+   and delta features.
+8. Joins outcomes and conference metadata.
+9. Runs multicollinearity checks and builds a feature manifest/model-ready table.
+10. Saves chunk/session/model-ready outputs.
+
+Executed output captured in the notebook:
+
+- Registry loaded: `1,310` chunks from `196` recordings across `8` conferences.
+- JSONs loaded: `1,286`.
+- Skipped chunks: `24`, due to empty, malformed, or missing JSON.
+
+#### `5-descriptive_analysis.ipynb`
+
+Purpose: descriptive figures and feature-distribution diagnostics.
+
+Implemented steps:
+
+1. Loads Stage 4 outputs.
+2. Creates conference-level outcome summaries.
+3. Plots chunk-position profiles for key features.
+4. Plots validation/reliability results when `human_irr_results.csv` and
+   `human_ai_agreement.csv` exist.
+5. Writes feature-distribution plots and outlier diagnostics.
+
+Audit note: code structure is present, but no saved execution outputs were
+embedded in the notebook audit. Existing generic figures in
+`analysis_v2/results/figures/baseline/figure_001.png` through `figure_006.png`
+are not self-descriptive enough to serve as final paper assets without renaming.
+
+#### `6-regression_modeling.ipynb`
+
+Purpose: session-level predictive modeling for team/funded-team outcomes.
+
+Implemented steps:
+
+1. Loads `model_ready_features` or equivalent Stage 4 feature table.
+2. Selects 354 candidate modeling features and 64 beginning-only features.
+3. Runs primary fixed-regularized logistic regression with LOSO-CV for
+   `outcome_has_teams` and `outcome_has_funded_teams`.
+4. Runs LOCO robustness checks by conference.
+5. Runs single-feature logistic screening.
+6. Runs random forest robustness checks.
+7. Fits a conference-clustered logistic proxy.
+8. Runs beginning-segment models.
+9. Runs secondary count-outcome elasticnet models for `outcome_num_teams` and
+   `outcome_num_funded_teams`.
+10. Saves ROC and feature-importance figures.
+
+Executed output captured in the notebook and saved CSVs:
+
+- Model table loaded: `162` rows x `360` columns.
+- Candidate modeling features: `354`; beginning-only features: `64`.
+- Session models used `156` rows after dropping rows without usable outcomes.
+- LOSO logistic:
+  - `outcome_has_teams`: AUC `0.4573`; 95% CI `0.3478-0.5751`;
+    balanced accuracy `0.4586`; F1 `0.7186`; confusion matrix
+    `[[8,25],[40,83]]`.
+  - `outcome_has_funded_teams`: AUC `0.6222`; 95% CI `0.5288-0.7162`;
+    balanced accuracy `0.5976`; F1 `0.5507`; confusion matrix
+    `[[56,32],[30,38]]`.
+- LOCO logistic:
+  - `outcome_has_teams`: AUC `0.4090`; 95% CI `0.2968-0.5260`;
+    balanced accuracy `0.4313`; F1 `0.6987`; confusion matrix
+    `[[7,26],[43,80]]`.
+  - `outcome_has_funded_teams`: AUC `0.5655`; 95% CI `0.4639-0.6618`;
+    balanced accuracy `0.5551`; F1 `0.4925`; confusion matrix
+    `[[55,33],[35,33]]`.
+- Random forest LOSO:
+  - `outcome_has_teams`: AUC `0.6194`; 95% CI `0.5072-0.7260`;
+    balanced accuracy `0.5525`; F1 `0.8864`; confusion matrix
+    `[[4,29],[2,121]]`.
+  - `outcome_has_funded_teams`: AUC `0.5234`; 95% CI `0.4281-0.6166`;
+    balanced accuracy `0.4903`; F1 `0.3243`; confusion matrix
+    `[[63,25],[50,18]]`.
+- Beginning-segment logistic:
+  - `outcome_has_teams`: AUC `0.4398`; 95% CI `0.3218-0.5620`;
+    balanced accuracy `0.4804`; F1 `0.8231`.
+  - `outcome_has_funded_teams`: AUC `0.4948`; 95% CI `0.4088-0.5834`;
+    balanced accuracy `0.4418`; F1 `0.3511`.
+- Count outcomes:
+  - `outcome_num_teams`: RMSE `1.2882`; MAE `0.9798`; R2 `-0.2270`.
+  - `outcome_num_funded_teams`: RMSE `0.8168`; MAE `0.6203`;
+    R2 `-0.2874`.
+
+Runtime/reproducibility note: the original nested `LogisticRegressionCV` and
+`ElasticNetCV` inside LOSO loops were replaced with fixed regularized models so
+the notebook executes end-to-end in a practical time while preserving the same
+outer LOSO/LOCO validation design. Random forest robustness uses 100 trees.
+
+#### `7-person_level_modeling.ipynb`
+
+Purpose: person-level feature construction and prediction of who joins a team or
+funded team.
+
+Implemented steps:
+
+1. Loads global participant identity mappings and participant alias mapping.
+2. Aggregates person-conference features from annotated outputs, including
+   sessions seen, chunks seen, utterance count, speaking seconds, dominant-speaker
+   chunks, hesitation, backchannel, behavior code/subcode counts, facilitator
+   status, and team/funded-team outcomes.
+3. Saves person-level feature tables.
+4. Runs global-person stratified CV models.
+5. Runs within-conference/person-conference LOCO models.
+6. Saves class-balance tables.
+7. Builds detailed subcode feature tables.
+8. Runs controls-only vs controls-plus-single-subcode screens.
+9. Produces non-facilitator charts and role/speaker charts for slide use.
+
+Saved class balance:
+
+- `outcome_joined_team`: `639` rows, `294` positives, `345` negatives,
+  positive rate `0.4601`.
+- `outcome_joined_funded_team`: `639` rows, `131` positives, `508` negatives,
+  positive rate `0.2050`.
+
+Saved model results:
+
+- Global-person stratified CV (`504` rows):
+  - joined team: AUC `0.8594`, AUPRC `0.8096`.
+  - joined funded team: AUC `0.7916`, AUPRC `0.4776`.
+- Person-conference LOCO (`639` rows):
+  - joined team: AUC `0.8357`, AUPRC `0.7581`.
+  - joined funded team: AUC `0.7553`, AUPRC `0.3737`.
+- Visualization summary models:
+  - joined team: AUC `0.8580`, AUPRC `0.8074`, accuracy `0.7809`, F1 `0.7535`,
+    61 features.
+  - joined funded team: AUC `0.7947`, AUPRC `0.4487`, accuracy `0.7246`,
+    F1 `0.5111`, 17 features.
+- Non-facilitator sensitivity:
+  - joined team: AUC `0.8325`, AUPRC `0.8121`, accuracy `0.7513`, F1 `0.7419`.
+  - joined funded team: AUC `0.7675`, AUPRC `0.4475`, accuracy `0.7168`,
+    F1 `0.5176`.
+- High-level vs detailed code models for joined team:
+  - high-level code categories: AUC `0.8749`, AUPRC `0.8183`, accuracy `0.7903`,
+    F1 `0.7666`.
+  - detailed subcodes: AUC `0.8580`, AUPRC `0.8074`, accuracy `0.7809`,
+    F1 `0.7535`.
+- Heckman-style two-stage checks:
+  - all rows: selection AUC `0.8936`, selected-only funded-team AUC `0.6609`,
+    IMR p `0.7619`.
+  - non-facilitators: selection AUC `0.8687`, selected-only funded-team AUC
+    `0.6585`, IMR p `0.8212`.
+
+Selected coefficient results from saved tables:
+
+- Joined team detailed model:
+  - positive significant: `n_sessions_attended` coef `0.6798`, p `0.000268`;
+    `checks_consensus` coef `0.7256`, p `0.0316`;
+    `extends_existing_idea` coef `0.6805`, p `0.0341`.
+  - negative significant: `proposes_process` coef `-1.8538`, p `0.0063`;
+    `expresses_appreciation` coef `-0.8378`, p `0.0094`;
+    `summarizes_for_group` coef `-0.7716`, p `0.0199`.
+- Joined funded-team detailed model:
+  - positive significant: `n_sessions_attended` coef `0.5136`, p `0.000611`;
+    `extends_existing_idea` coef `0.3910`, p `0.0330`.
+  - negative significant: `proposes_process` coef `-1.3135`, p `0.0104`.
+- Non-facilitator high-level code-name model for joined team:
+  - positive significant: `Idea Management` coef `0.9871`, p `0.000405`;
+    `Epistemic Bridging` coef `0.3829`, p `0.0318`.
+  - negative significant: `Coordination & Decision` coef `-0.5758`,
+    p `0.0126`; `Relational Climate` coef `-0.4712`, p `0.0137`;
+    `Participation Dynamics` coef `-1.0168`, p `0.0344`.
+- High-level code-name model for joined funded team:
+  - `Knowledge Sharing` is the only p<.05 code category in the saved table
+    (coef `0.5372`, p `0.0478`).
+- Speaker-role/count features:
+  - count model: speaking minutes positive (coef `1.0221`, p `<0.001`);
+    dominant-speaker count negative (coef `-0.6170`, p `<0.001`);
+    sessions attended positive (coef `0.3823`, p `0.0011`);
+    cross-disciplinary bridging count positive (coef `0.3823`, p `0.0161`).
+  - binary model: speaking minutes positive (coef `0.9566`, p `<0.001`);
+    ever dominant speaker negative (coef `-0.4377`, p `<0.001`);
+    sessions attended positive (coef `0.3837`, p `0.0011`);
+    ever cross-disciplinary bridging positive (coef `0.3005`, p `0.0067`).
+
+Cleanup note: this notebook currently mixes feature production, modeling,
+diagnostics, and slide-specific visualization cells. For publication workflow it
+should be split or cleaned into: feature construction, model estimation, and
+figure generation.
+
+#### `8-temporal_predictive_power.ipynb`
+
+Purpose: estimate person-level predictive power from early/late temporal windows.
+
+Implemented steps:
+
+1. Loads helper functions and full-session person/subcode features.
+2. Extracts subcode records for four windows: first 1 minute, first 5 minutes,
+   last 5 minutes, and last 1 minute.
+3. Aligns each window to the full-session feature set where possible.
+4. Fits comparable models for each window and full session.
+5. Saves a temporal summary table and window-comparison figures.
+6. Saves coefficient charts for each temporal window.
+
+Executed/saved results:
+
+- Records collected: `10,680`.
+- Window records: last 5 min `4,298`; first 5 min `3,910`; last 1 min `1,389`;
+  first 1 min `1,083`.
+- Window person-session/subcode coverage:
+  - first 1 min: `239` person-sessions, `46` subcodes.
+  - first 5 min: `478` person-sessions, `57` subcodes.
+  - last 5 min: `424` person-sessions, `60` subcodes.
+  - last 1 min: `305` person-sessions, `52` subcodes.
+  - full session: `639` rows, `69` subcodes.
+- Main aligned model results:
+  - first 1 min: AUC `0.731`, AUPRC `0.672`, accuracy `68.2%`, F1 `0.669`.
+  - first 5 min: AUC `0.779`, AUPRC `0.742`, accuracy `71.7%`, F1 `0.705`.
+  - full session: AUC `0.833`, AUPRC `0.813`, accuracy `75.5%`, F1 `0.746`.
+  - last 5 min: AUC `0.810`, AUPRC `0.803`, accuracy `73.9%`, F1 `0.729`.
+  - last 1 min: AUC `0.762`, AUPRC `0.729`, accuracy `71.2%`, F1 `0.701`.
+- Statsmodels coefficient inference failed for sparse window data with
+  `Singular matrix`; the notebook uses sklearn coefficients for window charts.
+
+#### `interrater_reliability.ipynb`
+
+Purpose: compare Max-coded utterance labels against Gemini-coded labels.
+
+Implemented steps:
+
+1. Loads Max's annotations (`212` utterances).
+2. Loads Gemini annotations (`226` utterances).
+3. Merges on chunk key, timestamp, and speaker.
+4. Builds binary code matrices across code labels.
+5. Computes PABAK and percent agreement per code.
+6. Saves `analysis_v2/notebooks/interrater_pabak.csv` and
+   `analysis_v2/notebooks/interrater_pabak.png`.
+
+Executed/saved results:
+
+- Matched utterances: `212`.
+- Unmatched Max rows: `0`.
+- Unmatched Gemini rows: `14`.
+- Codes evaluated: `20`; Pronoun Framing excluded in the summary.
+- High-agreement examples: Idea Novelty Signal PABAK `0.991`; Prior
+  Relationship Signal `0.991`; Complementarity Articulation `0.887`; Broader
+  Significance `0.868`; Role Anticipation `0.840`; Future-Oriented Language
+  `0.774`; Epistemic Bridging `0.736`; Participation Dynamics `0.679`;
+  Evaluation Practices `0.660`; Relational Climate `0.660`.
+
+#### `sample_v2.ipynb`
+
+Purpose: create a video-level stratified human-coding sample with balanced code
+coverage.
+
+Implemented steps:
+
+1. Builds a video registry from existing output JSONs.
+2. Samples about 20% of videos, stratified by conference.
+3. Greedily selects chunks and utterances to improve code coverage.
+4. Plots before/after distribution.
+5. Saves `analysis_v2/notebooks/sampled_v2.xlsx`.
+
+Executed output:
+
+- Total JSON files scanned: `1,325`.
+- Excluded for bad recording name: `149`.
+- Skipped empty/invalid JSON: `35`.
+- Unique videos: `228`; target 20% sample: `46`.
+- Sampled videos: `45`.
+- Unique chunks sampled: `110`.
+- Total utterances sampled: `226`.
+- By-conference sampled utterances: `2020NES=16`, `2021ABI=18`,
+  `2021CMC=32`, `2021MND=32`, `2021MZT=34`, `2021NES=36`,
+  `2021SLU=26`, `2022MND=32`.
+
+Audit note: this is a support/sampling notebook, not a primary results notebook.
+
+### Visualization and output organization audit
+
+Current organization is now review-ready:
+
+- Curated reporting folders:
+  - `analysis_v2/figures/reporting/session-level/`
+  - `analysis_v2/figures/reporting/person-level/`
+  - `analysis_v2/figures/reporting/temporal-windows/`
+  - `analysis_v2/figures/reporting/validation/`
+  - `analysis_v2/figures/reporting/sampling/`
+- `analysis_v2/figures/reporting/README.md` describes the folder categories.
+- Original figure paths remain in place for notebook compatibility.
+- Session-level figures now include descriptive files such as
+  `roc_curves_primary_models.png`, `feature_importance_lasso.png`,
+  `feature_importance_rf_permutation.png`, and
+  `beginning_vs_full_session_auc_comparison.png`.
+- Person-level figures:
+  - `analysis_v2/figures/person-aggregation-features/`.
+  - This folder is properly scoped and contains meaningful names such as
+    `metrics_bar_joined_team.png`, `metrics_bar_joined_funded_team.png`,
+    `person_model_results_outcome_joined_team.png`,
+    `person_model_results_outcome_joined_funded_team.png`,
+    `coef_chart_codename_nonfac.png`, `coef_chart_without_facilitators.png`,
+    `feature_correlation_heatmap.png`, `temporal_window_comparison.png`, and
+    `temporal_auc_lineplot.png`.
+- Notebook-local validation/sampling figures were copied into curated reporting
+  folders while the original files remain beside their notebooks.
+- Generated CSV tables are organized by notebook under:
+  - `analysis_v2/results/tables/4-feature_engineering/`
+  - `analysis_v2/results/tables/6-regression_modeling/`
+  - `analysis_v2/results/tables/7-person_level_modeling/`
+  - `analysis_v2/results/tables/8-temporal_predictive_power/`
+- Participant-matching support files that were previously loose at repository
+  root are now grouped under `analysis_v2/notebooks/`, including
+  `participant_alias_mapping.csv`, `unmatched_*participants.csv`,
+  `unmatched_name_review.csv`, `gemini_behavior_codebook.pptx`, and
+  `finalized_matching_csvs/`.
+
+### Notebook cleanup checklist
+
+Current cleanup status:
+
+- Keep primary notebooks:
+  - `0-build_registry.ipynb`
+  - `3a-sample_validation_set.ipynb`
+  - `3b-export_coding_materials.ipynb`
+  - `3c-compute_agreement.ipynb`
+  - `4-feature_engineering.ipynb`
+  - `5-descriptive_analysis.ipynb`
+  - `6-regression_modeling.ipynb`
+  - `7-person_level_modeling.ipynb`
+  - `8-temporal_predictive_power.ipynb`
+- Mark support notebooks:
+  - `sample_v2.ipynb` for sampling/human-coding material development.
+  - `interrater_reliability.ipynb` for the Max-vs-Gemini utterance-code check.
+- Completed cleanup:
+  - `4-feature_engineering.ipynb`, `6-regression_modeling.ipynb`,
+    `7-person_level_modeling.ipynb`, and `8-temporal_predictive_power.ipynb`
+    execute successfully in the current repo.
+  - `7-person_level_modeling.ipynb` and `8-temporal_predictive_power.ipynb`
+    now have stepwise markdown headers.
+  - Stage 7 and Stage 8 use repository-root discovery rather than hard-coded
+    personal paths.
+  - Stage 7 presentation figure cells are explicitly labeled as presentation
+    figure exports.
+  - Generated CSV tables are now grouped by notebook under
+    `analysis_v2/results/tables/`.
+- Remaining caveats:
+  - Stage 7 emits statsmodels convergence warnings in a few coefficient models,
+    but the notebook completes and writes all current outputs.
+  - Stage 5 descriptive figures still include older generic baseline files under
+    `analysis_v2/results/figures/baseline/`; curated reporting copies should be
+    used for writing.
+
+---
+
 ## Theoretical framing and positioning
 
 This project sits at the intersection of team science and multimodal AI, motivated by a foundational tension in organizational research: we have known for decades that micro-interactions predict team outcomes, yet have lacked instruments capable of measuring those interactions at scale.
