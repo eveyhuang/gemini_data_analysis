@@ -37,8 +37,8 @@ Primary research questions:
 | Beginning-segment logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.4948`; 95% CI `0.4088–0.5834`; balanced accuracy `0.4418`; F1 `0.3511` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
 | Count outcome elasticnet LOSO | 156 sessions | `outcome_num_teams` | RMSE `1.2882`; MAE `0.9798`; R² `−0.2270` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
 | Count outcome elasticnet LOSO | 156 sessions | `outcome_num_funded_teams` | RMSE `0.8168`; MAE `0.6203`; R² `−0.2874` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
-| Person model, global person CV | 504 global-person rows | joined team | AUC `0.8594`; AUPRC `0.8096`; prevalence `0.4722` | `analysis_v2/results/tables/7-person_level_modeling/person_model_comparison_summary.csv` |
-| Person model, global person CV | 504 global-person rows | joined funded team | AUC `0.7916`; AUPRC `0.4776`; prevalence `0.2440` | `analysis_v2/results/tables/7-person_level_modeling/person_model_comparison_summary.csv` |
+| Person model, global person CV | 504 global-person rows | joined team | AUC `0.8594`; AUPRC `0.8096`; prevalence `0.4722` | `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv` |
+| Person model, global person CV | 504 global-person rows | joined funded team | AUC `0.7916`; AUPRC `0.4776`; prevalence `0.2440` | `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv` |
 | Person model, LOCO | 639 person-conference rows | joined team | AUC `0.8357`; AUPRC `0.7581`; prevalence `0.4601` | `analysis_v2/results/tables/7-person_level_modeling/person_model_loco_summary.csv` |
 | Person model, LOCO | 639 person-conference rows | joined funded team | AUC `0.7553`; AUPRC `0.3737`; prevalence `0.2050` | `analysis_v2/results/tables/7-person_level_modeling/person_model_loco_summary.csv` |
 | Person model visualization summary | 639 person-conference rows | joined team | AUC `0.8580`; AUPRC `0.8074`; accuracy `0.7809`; F1 `0.7535`; 61 features | `analysis_v2/results/tables/7-person_level_modeling/person_model_visualization_summary.csv` |
@@ -316,7 +316,7 @@ Global settings:
 
 - Model table: `analysis_v2/results/tables/4-feature_engineering/model_ready_features.csv`.
 - Candidate modeling features: `354`.
-- Beginning-only features: `64`.
+- Beginning-only features: `63`.
 - Session rows after dropping missing outcomes: `156`.
 - Primary CV scheme: leave-one-session-out (LOSO).
 - Robustness CV scheme: leave-one-conference-out (LOCO).
@@ -400,7 +400,7 @@ Figures:
 
 Step-by-step:
 
-1. Restricts features to `64` beginning-only features (beginning-chunk aggregates only).
+1. Restricts features to `63` beginning-only features (beginning-chunk aggregates only).
 2. Runs same LOSO logistic regression scheme.
 3. Compares beginning-segment AUC against full-session AUC.
 
@@ -485,7 +485,7 @@ Executed output:
 
 Tables:
 
-- `analysis_v2/results/tables/7-person_level_modeling/person_model_comparison_summary.csv`
+- `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv`
 
 #### `## Within-Conference LOCO`
 
