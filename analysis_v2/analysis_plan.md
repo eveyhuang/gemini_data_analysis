@@ -49,7 +49,7 @@ Primary research questions:
 | Heckman two-stage model | 639 all rows; 294 selected | joined team then funded team | Selection AUC `0.8936`; selected-only funded AUC `0.6609`; IMR p `0.7619` | `analysis_v2/results/tables/7-person_level_modeling/person_model_heckman_two_stage_summary.csv` |
 | Heckman two-stage model (non-fac) | 579 non-fac rows; 294 selected | joined team then funded team | Selection AUC `0.8687`; selected-only funded AUC `0.6585`; IMR p `0.8212` | `analysis_v2/results/tables/7-person_level_modeling/person_model_heckman_two_stage_summary.csv` |
 | Temporal person-window model | 579 aligned rows, same subcode set | joined team | First 1 min AUC `0.731`; first 5 min `0.779`; full session `0.833`; last 5 min `0.810`; last 1 min `0.762` | `analysis_v2/results/tables/8-temporal_predictive_power/temporal_window_model_summary.csv` |
-| Human/Gemini utterance-code agreement | 212 matched utterances; 20 code labels | utterance code presence | PABAK: Idea Novelty `0.991`; Prior Relationship `0.991`; Complementarity `0.887`; Broader Significance `0.868`; Epistemic Bridging `0.736`; Evaluation Practices `0.660` | `analysis_v2/notebooks/interrater_pabak.csv` |
+| Human/Gemini utterance-code agreement | 212 matched utterances; 20 code labels | utterance code presence | PABAK: Idea Novelty `0.991`; Prior Relationship `0.991`; Complementarity `0.887`; Broader Significance `0.868`; Epistemic Bridging `0.736`; Evaluation Practices `0.660` | `analysis_v2/notebooks/support-notebooks/interrater_pabak.csv` |
 
 ## Notebooks and Analyses
 
@@ -452,7 +452,7 @@ Output paths: `analysis_v2/results/tables/7-person_level_modeling/`, `analysis_v
 Step-by-step:
 
 1. Loads global participant identity mappings (linking names across sessions and conferences).
-2. Loads participant alias mapping from `analysis_v2/notebooks/participant_alias_mapping.csv`.
+2. Loads participant alias mapping from `analysis_v2/notebooks/participant-matching/participant_alias_mapping.csv`.
 3. Discovers repository root using path walking.
 
 #### `## Person-Level Feature Construction`
@@ -691,7 +691,7 @@ Figures:
 
 Purpose: compare Max-coded utterance labels against Gemini-coded labels to estimate human-AI agreement.
 
-Ground-truth audited notebook: `analysis_v2/notebooks/interrater_reliability.ipynb`.
+Ground-truth audited notebook: `analysis_v2/notebooks/support-notebooks/interrater_reliability.ipynb`.
 
 #### Matching and Agreement
 
@@ -727,11 +727,11 @@ Executed output:
 
 Tables:
 
-- `analysis_v2/notebooks/interrater_pabak.csv`
+- `analysis_v2/notebooks/support-notebooks/interrater_pabak.csv`
 
 Figures:
 
-- `analysis_v2/notebooks/interrater_pabak.png`
+- `analysis_v2/notebooks/support-notebooks/interrater_pabak.png`
 - `analysis_v2/figures/reporting/validation/` (curated copy)
 
 ---
@@ -742,7 +742,7 @@ Figures:
 
 Purpose: create a video-level stratified human-coding sample with balanced code coverage. This is a support/sampling notebook, not a primary results notebook.
 
-Ground-truth audited notebook: `analysis_v2/notebooks/sample_v2.ipynb`.
+Ground-truth audited notebook: `analysis_v2/notebooks/support-notebooks/sample_v2.ipynb`.
 
 #### Sampling Steps
 
@@ -764,7 +764,7 @@ Executed output:
 
 Tables:
 
-- `analysis_v2/notebooks/sampled_v2.xlsx`
+- `analysis_v2/notebooks/support-notebooks/sampled_v2.xlsx`
 
 Figures:
 
@@ -792,12 +792,20 @@ Current organization is review-ready:
 - `analysis_v2/results/tables/7-person_level_modeling/` — person model comparison summary, LOCO summary, visualization summary, non-facilitator sensitivity, high-level vs detailed, Heckman two-stage summary, coefficient tables.
 - `analysis_v2/results/tables/8-temporal_predictive_power/` — temporal window model summary.
 
-### Support Files
+### Notebooks Subfolder Organization
 
-- `analysis_v2/notebooks/participant_alias_mapping.csv` — participant name mapping across sessions.
-- `analysis_v2/notebooks/unmatched_*participants.csv` — unmatched name review files.
-- `analysis_v2/notebooks/finalized_matching_csvs/` — finalized participant matching.
-- `analysis_v2/notebooks/gemini_behavior_codebook.pptx` — codebook reference.
+Non-primary notebooks and support files are organized into subfolders under `analysis_v2/notebooks/`:
+
+- **`support-notebooks/`** — support notebooks and their direct outputs:
+  - `interrater_reliability.ipynb`, `interrater_pabak.csv`, `interrater_pabak.png`
+  - `sample_v2.ipynb`, `sampled_v2.xlsx`, `sampled_v2_distribution.png`
+- **`participant-matching/`** — all participant name matching and alias CSVs (intermediate and finalized versions)
+- **`finalized_matching_csvs/`** — final resolved participant identity maps (`global_participant_identity_map.csv`, `global_participant_identity_by_conference.csv`)
+- **`annotation-audit/`** — annotation QA outputs:
+  - `audit_invalid_code_subcode_pairs.csv`, `audit_unexpected_code_names.csv`
+  - `code_name_17_category_counts.png`, `subcode_frequency_updated.png`, `subcode_frequency_updated_v2.png`
+  - `tmp_audit_slide_taxonomy.py`
+- **`codebook/`** — `gemini_behavior_codebook.pptx` — codebook reference used during annotation and validation
 
 ---
 
