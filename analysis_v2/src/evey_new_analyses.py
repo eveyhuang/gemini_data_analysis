@@ -40,8 +40,8 @@ BASE        = Path("/Users/maxchalekson/Projects/NICO-Research/gemini_data_analy
 FEATURE_DIR = BASE / "analysis_v2/data/person-aggregation-features"
 FIG_DIR     = BASE / "analysis_v2/figures/person-aggregation-features"
 OUTPUTS_DIR = BASE / "outputs"
-BY_CONF     = BASE / "finalized_matching_csvs/global_participant_identity_by_conference.csv"
-ALIAS_PATH  = BASE / "participant_alias_mapping.csv"
+BY_CONF     = BASE / "analysis_v2/notebooks/finalized_matching_csvs/global_participant_identity_by_conference.csv"
+ALIAS_PATH  = BASE / "analysis_v2/notebooks/participant_alias_mapping.csv"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 # ─── color palette ────────────────────────────────────────────────────────────
