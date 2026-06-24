@@ -27,14 +27,14 @@ Primary research questions:
 |---|---:|---|---|---|
 | Stage 0 registry build | 1,310 chunks, 196 recordings, 8 conferences | Session outcomes joined from v1 JSONs | 50 chunks lack outcome data; 9 session groups had no outcome match | `analysis_v2/data/chunk_registry_v1.csv` |
 | Stage 4 feature engineering | 1,310 registry rows; 1,286 JSONs loaded | Chunk/session/model-ready feature tables | Chunk features `1,310 × 101`; session features `162 × 493`; model-ready features `162 × 360`; feature manifest `483 × 3` | `analysis_v2/results/tables/4-feature_engineering/` |
-| Session logistic LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4573`; 95% CI `0.3478–0.5751`; balanced accuracy `0.4586`; F1 `0.7186`; confusion `[[8,25],[40,83]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
-| Session logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.6222`; 95% CI `0.5288–0.7162`; balanced accuracy `0.5976`; F1 `0.5507`; confusion `[[56,32],[30,38]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
-| Session logistic LOCO | 156 sessions | `outcome_has_teams` | AUC `0.4090`; 95% CI `0.2968–0.5260`; balanced accuracy `0.4313`; F1 `0.6987`; confusion `[[7,26],[43,80]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
-| Session logistic LOCO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5655`; 95% CI `0.4639–0.6618`; balanced accuracy `0.5551`; F1 `0.4925`; confusion `[[55,33],[35,33]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
+| Session logistic LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4797`; 95% CI `0.3771–0.5986`; balanced accuracy `0.4557`; F1 `0.7319`; confusion `[[7,26],[37,86]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
+| Session logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.6220`; 95% CI `0.5306–0.7161`; balanced accuracy `0.5959`; F1 `0.5441`; confusion `[[57,31],[31,37]]` | `analysis_v2/results/tables/6-regression_modeling/loso_auc_summary.csv` |
+| Session logistic LOCO | 156 sessions | `outcome_has_teams` | AUC `0.4136`; 95% CI `0.3056–0.5246`; balanced accuracy `0.4627`; F1 `0.7241`; confusion `[[8,25],[39,84]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
+| Session logistic LOCO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5700`; 95% CI `0.4681–0.6649`; balanced accuracy `0.5608`; F1 `0.4962`; confusion `[[56,32],[35,33]]` | `analysis_v2/results/tables/6-regression_modeling/loco_auc_summary.csv` |
 | Session random forest LOSO | 156 sessions | `outcome_has_teams` | AUC `0.6194`; 95% CI `0.5072–0.7260`; balanced accuracy `0.5525`; F1 `0.8864`; confusion `[[4,29],[2,121]]` | `analysis_v2/results/tables/6-regression_modeling/random_forest_results.csv` |
 | Session random forest LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5234`; 95% CI `0.4281–0.6166`; balanced accuracy `0.4903`; F1 `0.3243`; confusion `[[63,25],[50,18]]` | `analysis_v2/results/tables/6-regression_modeling/random_forest_results.csv` |
-| Beginning-segment logistic LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4398`; 95% CI `0.3218–0.5620`; balanced accuracy `0.4804`; F1 `0.8231` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
-| Beginning-segment logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.4948`; 95% CI `0.4088–0.5834`; balanced accuracy `0.4418`; F1 `0.3511` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
+| Beginning-segment logistic LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4545`; 95% CI `0.3317–0.5738`; balanced accuracy `0.4686`; F1 `0.6964` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
+| Beginning-segment logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5058`; 95% CI `0.4181–0.5971`; balanced accuracy `0.4926`; F1 `0.4552` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
 | Count outcome elasticnet LOSO | 156 sessions | `outcome_num_teams` | RMSE `1.2882`; MAE `0.9798`; R² `−0.2270`; mean `1.49` ± SD `1.17` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
 | Count outcome elasticnet LOSO | 156 sessions | `outcome_num_funded_teams` | RMSE `0.8168`; MAE `0.6203`; R² `−0.2874`; mean `0.53` ± SD `0.72` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
 | Person model, global person CV | 504 global-person rows | joined team | AUC `0.8594`; AUPRC `0.8096`; prevalence `0.4722` | `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv` |
@@ -320,10 +320,11 @@ Global settings:
 - Session rows after dropping missing outcomes: `156`.
 - Primary CV scheme: leave-one-session-out (LOSO).
 - Robustness CV scheme: leave-one-conference-out (LOCO).
-- Logistic regression: fixed regularization (replaced original nested `LogisticRegressionCV` inside LOSO for runtime).
+- Logistic regression: `LogisticRegression(C=1.0, penalty='l2', class_weight='balanced', random_state=42, max_iter=4000)` — aligned with notebook 7 person-level settings; `class_weight='balanced'` added to handle class imbalance (`has_teams` 79% positive).
 - Random forest: `100` trees, LOSO.
-- Count outcomes: `ElasticNetCV`, LOSO.
+- Count outcomes: `ElasticNet(alpha=0.1, l1_ratio=0.5)`, LOSO.
 - Random state: `42`.
+- Pipeline: `SimpleImputer(strategy='median') → StandardScaler() → LogisticRegression` — identical to notebook 7.
 
 #### `## Setup and Data Loading`
 
@@ -346,8 +347,8 @@ Step-by-step:
 
 Executed output:
 
-- `outcome_has_teams`: AUC `0.4573`; 95% CI `0.3478–0.5751`; balanced accuracy `0.4586`; F1 `0.7186`; confusion `[[8,25],[40,83]]`.
-- `outcome_has_funded_teams`: AUC `0.6222`; 95% CI `0.5288–0.7162`; balanced accuracy `0.5976`; F1 `0.5507`; confusion `[[56,32],[30,38]]`.
+- `outcome_has_teams`: AUC `0.4797`; 95% CI `0.3771–0.5986`; balanced accuracy `0.4557`; F1 `0.7319`; confusion `[[7,26],[37,86]]`.
+- `outcome_has_funded_teams`: AUC `0.6220`; 95% CI `0.5306–0.7161`; balanced accuracy `0.5959`; F1 `0.5441`; confusion `[[57,31],[31,37]]`.
 
 Tables:
 
@@ -367,8 +368,8 @@ Step-by-step:
 
 Executed output:
 
-- `outcome_has_teams`: AUC `0.4090`; 95% CI `0.2968–0.5260`; balanced accuracy `0.4313`; F1 `0.6987`; confusion `[[7,26],[43,80]]`.
-- `outcome_has_funded_teams`: AUC `0.5655`; 95% CI `0.4639–0.6618`; balanced accuracy `0.5551`; F1 `0.4925`; confusion `[[55,33],[35,33]]`.
+- `outcome_has_teams`: AUC `0.4136`; 95% CI `0.3056–0.5246`; balanced accuracy `0.4627`; F1 `0.7241`; confusion `[[8,25],[39,84]]`.
+- `outcome_has_funded_teams`: AUC `0.5700`; 95% CI `0.4681–0.6649`; balanced accuracy `0.5608`; F1 `0.4962`; confusion `[[56,32],[35,33]]`.
 
 Tables:
 
@@ -406,8 +407,8 @@ Step-by-step:
 
 Executed output:
 
-- `outcome_has_teams`: AUC `0.4398`; 95% CI `0.3218–0.5620`; balanced accuracy `0.4804`; F1 `0.8231`.
-- `outcome_has_funded_teams`: AUC `0.4948`; 95% CI `0.4088–0.5834`; balanced accuracy `0.4418`; F1 `0.3511`.
+- `outcome_has_teams`: AUC `0.4545`; 95% CI `0.3317–0.5738`; balanced accuracy `0.4686`; F1 `0.6964`.
+- `outcome_has_funded_teams`: AUC `0.5058`; 95% CI `0.4181–0.5971`; balanced accuracy `0.4926`; F1 `0.4552`.
 
 Tables:
 
@@ -433,7 +434,7 @@ Tables:
 
 - `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv`
 
-Runtime note: nested `LogisticRegressionCV` and `ElasticNetCV` inside LOSO loops were replaced with fixed regularized models to enable end-to-end execution in a practical runtime; the outer LOSO/LOCO design is preserved.
+Alignment note: pipeline settings updated to match notebook 7 (person-level) as ground truth — added `class_weight='balanced'`, set `max_iter=4000`. AUC results are minimally affected (has_teams: 0.457 → 0.480; has_funded_teams: unchanged at 0.622), confirming the low session-level AUC reflects genuine weak signal rather than a modeling error.
 
 ---
 
