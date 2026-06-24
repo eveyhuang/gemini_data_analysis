@@ -14,7 +14,7 @@ Primary research questions:
 - **Chunk registry**: `1,310` chunks from `196` recordings across `8` Scialog conferences.
 - **Conferences**: `2020NES` (142 chunks), `2021ABI` (203), `2021CMC` (167), `2021MND` (170), `2021MZT` (168), `2021NES` (163), `2021SLU` (167), `2022MND` (130).
 - **Outcome data**: Session-level JSON files in `analysis_v1/data/<conferenceID>/<conferenceID>_session_outcomes.json`.
-- **Outcome missingness**: `50` chunks have no outcome data; `9` session groups had no outcome match.
+- **Outcome missingness**: `50` chunks have no outcome data; `6` session groups had no outcome match (2020NES S6, 2021MZT S1/S6/S10/S12/S13).
 - **Annotation JSONs loaded**: `1,286` (24 chunks skipped: empty, malformed, or missing JSON).
 - **Session-level model data**: `156` sessions with usable outcomes.
 - **Person-level model data**: `504` global-person rows (stratified CV); `639` person-conference rows (LOCO); `579` non-facilitator rows.
@@ -86,7 +86,7 @@ Step-by-step:
 Executed output:
 
 - Registry size: `1,310` chunks from `196` recordings across `8` conferences.
-- Outcome matching gap: `9` session groups had no outcome entry.
+- Outcome matching gap: `6` session groups had no outcome entry (2020NES S6, 2021MZT S1/S6/S10/S12/S13).
 - Missing outcome rows: `50` chunks have no outcome data.
 - Distribution by conference: `2020NES=142`, `2021ABI=203`, `2021CMC=167`, `2021MND=170`, `2021MZT=168`, `2021NES=163`, `2021SLU=167`, `2022MND=130`.
 
