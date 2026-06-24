@@ -35,8 +35,8 @@ Primary research questions:
 | Session random forest LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.5234`; 95% CI `0.4281–0.6166`; balanced accuracy `0.4903`; F1 `0.3243`; confusion `[[63,25],[50,18]]` | `analysis_v2/results/tables/6-regression_modeling/random_forest_results.csv` |
 | Beginning-segment logistic LOSO | 156 sessions | `outcome_has_teams` | AUC `0.4398`; 95% CI `0.3218–0.5620`; balanced accuracy `0.4804`; F1 `0.8231` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
 | Beginning-segment logistic LOSO | 156 sessions | `outcome_has_funded_teams` | AUC `0.4948`; 95% CI `0.4088–0.5834`; balanced accuracy `0.4418`; F1 `0.3511` | `analysis_v2/results/tables/6-regression_modeling/beginning_segment_results.csv` |
-| Count outcome elasticnet LOSO | 156 sessions | `outcome_num_teams` | RMSE `1.2882`; MAE `0.9798`; R² `−0.2270` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
-| Count outcome elasticnet LOSO | 156 sessions | `outcome_num_funded_teams` | RMSE `0.8168`; MAE `0.6203`; R² `−0.2874` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
+| Count outcome elasticnet LOSO | 156 sessions | `outcome_num_teams` | RMSE `1.2882`; MAE `0.9798`; R² `−0.2270`; mean `1.49` ± SD `1.17` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
+| Count outcome elasticnet LOSO | 156 sessions | `outcome_num_funded_teams` | RMSE `0.8168`; MAE `0.6203`; R² `−0.2874`; mean `0.53` ± SD `0.72` | `analysis_v2/results/tables/6-regression_modeling/count_outcome_summary.csv` |
 | Person model, global person CV | 504 global-person rows | joined team | AUC `0.8594`; AUPRC `0.8096`; prevalence `0.4722` | `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv` |
 | Person model, global person CV | 504 global-person rows | joined funded team | AUC `0.7916`; AUPRC `0.4776`; prevalence `0.2440` | `analysis_v2/results/tables/7-person_level_modeling/person_model_global_cv_summary.csv` |
 | Person model, LOCO | 639 person-conference rows | joined team | AUC `0.8357`; AUPRC `0.7581`; prevalence `0.4601` | `analysis_v2/results/tables/7-person_level_modeling/person_model_loco_summary.csv` |
@@ -426,8 +426,8 @@ Step-by-step:
 
 Executed output:
 
-- `outcome_num_teams`: RMSE `1.2882`; MAE `0.9798`; R² `−0.2270`.
-- `outcome_num_funded_teams`: RMSE `0.8168`; MAE `0.6203`; R² `−0.2874`.
+- `outcome_num_teams`: RMSE `1.2882`; MAE `0.9798`; R² `−0.2270`; outcome mean `1.49` ± SD `1.17` (RMSE ≈ SD — model barely beats predicting the mean).
+- `outcome_num_funded_teams`: RMSE `0.8168`; MAE `0.6203`; R² `−0.2874`; outcome mean `0.53` ± SD `0.72` (RMSE/SD ratio `1.14`).
 
 Tables:
 
@@ -806,6 +806,44 @@ Non-primary notebooks and support files are organized into subfolders under `ana
   - `code_name_17_category_counts.png`, `subcode_frequency_updated.png`, `subcode_frequency_updated_v2.png`
   - `tmp_audit_slide_taxonomy.py`
 - **`codebook/`** — `gemini_behavior_codebook.pptx` — codebook reference used during annotation and validation
+
+---
+
+## PABAK Disagreement Diagnosis
+
+### Low-agreement codes flagged by Evey
+
+Four codes fall below the 0.60 threshold. Direction of disagreement (from 212 matched utterances, 226 Gemini rows):
+
+| Code | PABAK | Max coded | Gemini coded | Direction |
+|---|---|---|---|---|
+| Idea Management | 0.189 | 82 | 34 | Max over-codes 2.4× |
+| Knowledge Sharing | 0.557 | 62 | 41 | Max over-codes 1.5× |
+| Integration Practices | 0.585 | 9 | 37 | Gemini over-codes 4× |
+| Information Seeking | 0.594 | 54 | 33 | Max over-codes 1.6× |
+
+### Idea Management: root cause
+
+Max coded Idea Management in **67 cases** where Gemini did not; Gemini coded it in **24 cases** where Max did not.
+
+**When Max codes Idea Management but Gemini does not**, Gemini assigns instead:
+- `Knowledge Sharing` (17), `Evaluation Practices` (16), `Integration Practices` (14), `Information Seeking` (11), `Coordination and Decision Practices` (10), `Relational Climate` (10)
+
+This pattern reveals a boundary problem: Max is applying Idea Management broadly to any turn that touches an idea (including sharing domain knowledge, evaluating proposals, and coordinating). Gemini applies it more narrowly — specifically to acts of proposing, extending, combining, or returning to ideas as distinct intellectual contributions.
+
+**When Gemini codes Idea Management but Max does not**, Max tends to code:
+- `Information Seeking` (asking a question that is really a new idea framed as a question)
+- `Evaluation Practices` (crediting someone's contribution that is actually building on it)
+- `Future-Oriented Language` (proposal framed as future vision)
+- Nothing at all (Max misses novel ideas embedded in complex turns)
+
+### Diagnosis
+
+The core issue is that Max is using Idea Management as a catch-all for "any substantive intellectual content," while Gemini treats it as specifically about idea generation and development acts (`proposes_new_idea`, `extends_existing_idea`, `combines_ideas`, `returns_to_earlier_idea`). This produces Max's overcounting (82 vs 34) and correspondingly inflated counts for Information Seeking and Knowledge Sharing where Max codes those instead of Idea Management in the reverse cases.
+
+The consequence for modeling: person-level Idea Management features are derived from Gemini annotations (not Max's), so model predictions are based on Gemini's narrower coding scheme. The PABAK disagreement reflects a calibration gap between Max's and Gemini's interpretation of the codebook boundary, not necessarily that Gemini is wrong.
+
+**Action item**: revisit the Idea Management / Knowledge Sharing / Integration Practices boundary in the codebook with Evey, then re-examine whether Max's or Gemini's interpretation is the intended one. If Gemini's is correct, model features are valid; if Max's is correct, Gemini annotations need re-review for these categories.
 
 ---
 
