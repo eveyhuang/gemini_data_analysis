@@ -1,0 +1,48 @@
+{
+  "_readme": [
+    "The session list the scaled Gemini linkography/network run operates on.",
+    "Edit `sessions` to change what gets run -- `gemini_scale.py` reads this file and",
+    "nothing else. An entry may be a bare session id string or an object with `id`;",
+    "`role` and `why` are documentation only and do not affect the run, except that",
+    "role == 'focal' excludes a session from the spot-check sample by default (the two",
+    "focal sessions were already read edge-by-edge during validation).",
+    "Session ids are the `outputs/<conf>/output_<id>` directory names; conference and",
+    "short label are derived from the id, so nothing else needs updating."
+  ],
+  "selection": {
+    "criteria_source": "analysis_v2/src/linkograph_network/gemini_session_inventory.py",
+    "inventory": "analysis_v2/results/tables/prototypes/scale10/session_inventory.csv",
+    "pool": "54 of 162 annotated sessions passed all six eligibility criteria",
+    "design": [
+      "Both focal sessions pass the criteria unchanged -- the gate does not exclude the pair the method was validated on.",
+      "Outcome contrast: 5 sessions where >=2 people from the room teamed up with each other, 5 where none did (the has_teams framing on deck slide 26).",
+      "Conference spread: all 8 conferences represented, so a finding is not a 2020NES artifact.",
+      "Comparability: every session is inside the focal pair's range on speakers (8-13 vs 11/11), idea utterances (40-62 vs 58/47) and length (126-207 utterances vs 139/162).",
+      "Groundedness: nearest_prior share 3-32%, i.e. at or below NES_S10's 30%, the worst case the validation actually read through."
+    ]
+  },
+  "sessions": [
+    {"id": "2020_11_05_NES_S3", "role": "focal",
+     "why": "Validated session A. 3 in-room teams, 1 funded. Spread participation, no dominator."},
+    {"id": "2020_11_06_NES_S10", "role": "focal",
+     "why": "Validated session B. 0 in-room teams (9/10 teamed up elsewhere). One dominant hub."},
+
+    {"id": "2020_11_05_NES_S4", "role": "scale", "outcome": "teams",
+     "why": "Same conference and day as NES_S3, most funded teams of any eligible 2020NES session (3 teams / 2 funded). Strongest links of the set: 31% named, 14% nearest_prior."},
+    {"id": "2021_10_08_CMC_S11", "role": "scale", "outcome": "teams",
+     "why": "2021CMC representative. Teams formed but none funded (1/0), separating 'formed a team' from 'got funded'. Best-grounded links in the pool: 31% named, 10% nearest_prior."},
+    {"id": "2021_09_30_MZT_S5", "role": "scale", "outcome": "teams",
+     "why": "2021MZT representative. 2 teams, both funded -- the highest funded rate in the set. Dense idea stream (61 idea utterances from 9 speakers)."},
+    {"id": "2022_04_07_MND_S5", "role": "scale", "outcome": "teams",
+     "why": "2022MND representative, and the only year not otherwise covered. 2 teams / 1 funded, 36% named links."},
+
+    {"id": "2021_05_21_ABI_S1", "role": "scale", "outcome": "no_in_room_teams",
+     "why": "2021ABI representative. No in-room teams. NOTE: the only ABI session clearing the material floor -- ABI sessions carry a median 26 idea utterances vs 46 overall, so ABI is thinner than the rest and this session sits at the top of its conference, not the middle."},
+    {"id": "2021_04_23_MND_S15", "role": "scale", "outcome": "no_in_room_teams",
+     "why": "2021MND representative. No in-room teams, and near-zero fallback (3% nearest_prior) -- a no-team session whose links are about as trustworthy as this method gets."},
+    {"id": "2021_06_11_SLU_S5", "role": "scale", "outcome": "no_in_room_teams",
+     "why": "2021SLU representative. No in-room teams with 12 speakers and 36% named links -- a well-attended, well-grounded negative case."},
+    {"id": "2021_11_05_NES_S8", "role": "scale", "outcome": "no_in_room_teams",
+     "why": "2021NES representative. No in-room teams. Highest fallback share of the eight (32%), deliberately kept in as the stress case for caveat (A)."}
+  ]
+}
