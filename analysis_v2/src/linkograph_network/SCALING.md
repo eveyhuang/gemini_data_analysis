@@ -384,7 +384,41 @@ It also deletes the `.md` caption `figures.py` writes next to each PNG: those de
 links in Liu's N/S/M vocabulary, which does not apply to a Gemini linkograph (the same
 reason `gemini_deck_figures.main()` skips `export_legend_spec()`).
 
-## 8. Not done here
+## 8. Transcript evidence tables
+
+Deck slide 44 traces NES_S3's linkograph back to the transcript by hand — a short thread
+as `# | Speaker | Text | Gemini code | Links to`, so a reader can check the figure rather
+than trust it. `gemini_transcript_evidence.py` produces that for every scaled session.
+
+```bash
+python analysis_v2/src/linkograph_network/gemini_transcript_evidence.py
+```
+
+Writes to `scale10/transcript_evidence/`:
+
+| File | What it is |
+|---|---|
+| `evidence_<LABEL>.md` | one page per session: table A (idea thread) + table B (speaker edges) |
+| `idea_threads.csv` | every thread row across all sessions |
+| `speaker_edges.csv` | every edge row across all sessions |
+
+**Table A — confirms the linkograph.** The session's longest build-chain (the
+`longest_chain` metric): each utterance with its quote, code, link target, and which of
+the three rules resolved that link. Same-speaker steps appear here — those are real
+linkograph links, excluded only from the speaker network, where they become the self-link
+index. Steps resolved by `nearest_prior` are called out, since that tier is only ~55%
+correct.
+
+**Table B — confirms the network.** Cross-speaker edges heaviest first, each with a worked
+example: who built on whom, in whose words, on what. A network edge is an aggregate of
+links, so this is the level at which one can be checked.
+
+Quoted text is the `evidence` field of the Gemini code — the same source slide 44 quotes.
+It is Gemini's citation of the utterance, not a separate transcript file, so this verifies
+*linkograph against annotation*. Checking the annotation against the raw recording is the
+separate manual pass in `spotcheck_extends_sample.csv`.
+
+## 9. Not done here
 
 - **Liu cross-tab at scale.** `run_pipeline_on_session` accepts a `liu_json`, and
   `run_pipeline_on_sessions` a `liu_json_for={session_id: path}` map, but no Liu outputs
