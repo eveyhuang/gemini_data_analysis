@@ -369,6 +369,17 @@ It applies two patches at runtime rather than editing those shared modules:
    one-line fix, if wanted: `G.add_nodes_from(sorted(all_speakers))` in
    `speaker_network_metrics.py`.
 
+3. **Liu wording.** `figures.py` labels the linkograph x-axis "Relevant-message sequence
+   (irrelevant omitted)" and the subtitle "<n> relevant messages". "Relevant" is Liu's
+   topic-filter word — Liu discards off-topic turns; the Gemini pipeline has no topic
+   filter and drops nothing for relevance. What is off the graph is every turn carrying
+   no idea-move code (NES_S4: 62 of 156 utterances are on it; the other 94 are Pronoun
+   Framing, Knowledge Sharing, Relational Climate, Coordination and so on). That is the
+   partial-coverage caveat on deck slide 45, not a relevance judgement. Relabelled to
+   "Idea-bearing utterance sequence (turns with no idea-move code omitted)" and
+   "<n> idea-bearing utterances", matching what `gemini_linkography.draw_linkograph`
+   already says. **Slides 57-60 still carry the old wording** — they predate this fix.
+
 It also deletes the `.md` caption `figures.py` writes next to each PNG: those describe
 links in Liu's N/S/M vocabulary, which does not apply to a Gemini linkograph (the same
 reason `gemini_deck_figures.main()` skips `export_legend_spec()`).

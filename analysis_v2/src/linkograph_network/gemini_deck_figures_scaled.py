@@ -67,6 +67,46 @@ def _deterministic_build(session_data):
 
 snm.build_speaker_graph = _deterministic_build
 
+
+# --- axis label -------------------------------------------------------------------
+# figures.py labels the linkograph x-axis "Relevant-message sequence (irrelevant
+# omitted)". That is Liu vocabulary: Liu applies a TOPIC FILTER and genuinely drops
+# off-topic turns. The Gemini pipeline has no topic filter -- nothing is dropped for
+# being irrelevant. What is off the graph is every turn carrying no idea-move code
+# (Pronoun Framing, Knowledge Sharing, Relational Climate, Coordination, ...), which is
+# the "partial coverage" caveat on deck slide 45, not a relevance judgement.
+#
+# gemini_linkography.draw_linkograph already words this correctly; the deck renderer
+# inherited Liu's phrasing. Swap that one exact string.
+import matplotlib.axes                              # noqa: E402
+
+_LIU_XLABEL = "Relevant-message sequence (irrelevant omitted)"
+_GEMINI_XLABEL = "Idea-bearing utterance sequence (turns with no idea-move code omitted)"
+_ORIG_SET_XLABEL = matplotlib.axes.Axes.set_xlabel
+
+
+def _set_xlabel(self, xlabel, *args, **kwargs):
+    if xlabel == _LIU_XLABEL:
+        xlabel = _GEMINI_XLABEL
+    return _ORIG_SET_XLABEL(self, xlabel, *args, **kwargs)
+
+
+matplotlib.axes.Axes.set_xlabel = _set_xlabel
+
+# Same substitution in the linkograph subtitle, which reads "<n> relevant messages".
+# "Relevant" is Liu's topic-filter word; here the count is idea-bearing utterances.
+_ORIG_SET_TITLE = matplotlib.axes.Axes.set_title
+
+
+def _set_title(self, label=None, *args, **kwargs):
+    if isinstance(label, str) and " relevant messages · link ratio " in label:
+        label = label.replace(" relevant messages · link ratio ",
+                              " idea-bearing utterances · link ratio ")
+    return _ORIG_SET_TITLE(self, label, *args, **kwargs)
+
+
+matplotlib.axes.Axes.set_title = _set_title
+
 SCALE_TBL = BASE / "analysis_v2/results/tables/prototypes/scale10"
 # Written into each session's own folder alongside the prototype-style figures
 # gemini_scale.py produces, so everything for one session lives together:
