@@ -332,6 +332,47 @@ python analysis_v2/src/linkograph_network/gemini_scale_figures.py
 The 20 per-session figures (`scale10/<LABEL>/`) are appendix material. Nothing exists yet
 for the spot-check results slide — that needs `correct_yn` filled in first.
 
+### Deck-style per-session figures
+
+`gemini_scale.py` renders the plain prototype figures (node-vs-move colouring, plain
+sociogram). The deck uses a richer style for NES_S3 / NES_S10 — **node colour = speaker in
+both figures** so the same person is the same colour in the linkograph and the network,
+plus dashed self-link arcs, critical-move outlines, convergence / rabbit-hole rings,
+team-outcome borders and in-room teammate rings.
+
+```bash
+python analysis_v2/src/linkograph_network/gemini_deck_figures_scaled.py
+```
+
+writes that style into `scale10/<LABEL>/linkograph_<LABEL>_gemini.png` and
+`network_<LABEL>_gemini.png`, alongside the prototype pair. Different filenames, so the
+two scripts never overwrite each other.
+
+**External dependency.** This script does not reimplement the styling — it drives
+`analysis_v2/src/session_story/gemini_deck_figures.py` and `figures.py`, which in turn
+import `speaker_network_metrics` and `liu2026_linkography_pipeline` from
+`analysis_v2/src/prototypes/`. **None of those are on this branch.** It runs in the full
+working repo; on a bare clone of this branch it will not.
+
+It applies two patches at runtime rather than editing those shared modules:
+
+1. **Conference binding.** `figures.draw_network()` calls `team_status(n)` and
+   `in_room_teammates(...)` with no conference argument, so both fall back to
+   `conf="2020NES"`. Correct for the two original sessions; silently wrong everywhere else
+   — MND_S5's speakers match 0 of 8 against the 2020NES roster versus 4 of 8 against
+   2022MND, which drew every node as "joined no team" under a title saying two teams
+   formed. Each session is now rendered with its own conference.
+2. **Determinism.** `speaker_network_metrics.build_speaker_graph()` collects speakers into
+   a set and adds nodes in set-iteration order, so `spring_layout(seed=7)` produces a
+   different layout every run — the original `gemini_deck_figures.py` does not reproduce
+   its own output either. The graph is rebuilt with sorted node order here. The permanent
+   one-line fix, if wanted: `G.add_nodes_from(sorted(all_speakers))` in
+   `speaker_network_metrics.py`.
+
+It also deletes the `.md` caption `figures.py` writes next to each PNG: those describe
+links in Liu's N/S/M vocabulary, which does not apply to a Gemini linkograph (the same
+reason `gemini_deck_figures.main()` skips `export_legend_spec()`).
+
 ## 8. Not done here
 
 - **Liu cross-tab at scale.** `run_pipeline_on_session` accepts a `liu_json`, and

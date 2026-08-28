@@ -88,51 +88,58 @@ If asked about the basis mix: across all 10 sessions the `nearest_prior` fallbac
 
 ---
 
-## 64–83 — Per-session linkographs and networks
+## 64–79 — Per-session linkographs and networks
 
-Same treatment as slides 57–60, ten times over. **Titles below** — 57–60 currently have
-none, so this is also the fix for those four.
+**Only the eight NEW sessions.** NES_S3 and NES_S10 are already on slides 57–60; putting
+them here too would show the same session twice.
 
-Linkograph: `scale10/<LABEL>/gemini_linkography_<LABEL>.png`
-Network: `scale10/<LABEL>/gemini_speaker_network_<LABEL>.png`
+All files live in `analysis_v2/figures/prototypes/scale10/<LABEL>/`. Each session folder
+holds four PNGs — use the `*_gemini.png` pair, which is the **deck style** matching slides
+57–60 (node colour = speaker in both figures, ★ new ideas, black-outlined critical moves,
+dashed self-links, gold convergence rings, team-outcome borders, magenta in-room rings).
+The `gemini_linkography_*` / `gemini_speaker_network_*` pair is the plainer prototype
+render — same data, no speaker colouring.
 
-### Linkograph slides
+The deck-style figures carry their own full title, e.g. *"NES_S4 (11/05) — Gemini
+linkography · 3 teams formed WITHIN this room (2 funded) · 62 relevant messages · link
+ratio 0.89 · self-link index 0.073"*, so a separate slide title is optional.
 
-| # | Title | Subtitle |
+### Linkographs — slides 64–71
+
+| # | Session | File (in `scale10/<LABEL>/`) |
 |---|---|---|
-| 64 | NES_S3 (11/05) — 3 teams formed WITHIN this room (1 funded) | 58 idea utterances · link ratio 0.793 · self-link index 0.217 |
-| 65 | NES_S4 (11/05) — 3 teams formed WITHIN this room (2 funded) | 62 idea utterances · link ratio 0.887 · self-link index 0.073 |
-| 66 | MZT_S5 (09/30) — 2 teams formed WITHIN this room (2 funded) | 61 idea utterances · link ratio 0.885 · self-link index 0.204 |
-| 67 | MND_S5 (04/07) — 2 teams formed WITHIN this room (1 funded) | 51 idea utterances · link ratio 0.824 · self-link index 0.262 |
-| 68 | CMC_S11 (10/08) — 1 team formed WITHIN this room | 51 idea utterances · link ratio 0.941 · self-link index 0.188 |
-| 69 | NES_S10 (11/06) — 0 teams formed within this room | 47 idea utterances · link ratio 0.851 · self-link index 0.050 |
-| 70 | NES_S8 (11/05) — 0 teams formed within this room | 40 idea utterances · link ratio 0.850 · self-link index 0.118 |
-| 71 | ABI_S1 (05/21) — 0 teams formed within this room | 50 idea utterances · link ratio 0.680 · self-link index 0.206 |
-| 72 | MND_S15 (04/23) — 0 teams formed within this room | 47 idea utterances · link ratio 0.809 · self-link index 0.158 |
-| 73 | SLU_S5 (06/11) — 0 teams formed within this room | 56 idea utterances · link ratio 0.839 · self-link index 0.128 |
+| 64 | NES_S4 | `linkograph_NES_S4_gemini.png` |
+| 65 | MZT_S5 | `linkograph_MZT_S5_gemini.png` |
+| 66 | MND_S5 | `linkograph_MND_S5_gemini.png` |
+| 67 | CMC_S11 | `linkograph_CMC_S11_gemini.png` |
+| 68 | NES_S8 | `linkograph_NES_S8_gemini.png` |
+| 69 | ABI_S1 | `linkograph_ABI_S1_gemini.png` |
+| 70 | MND_S15 | `linkograph_MND_S15_gemini.png` |
+| 71 | SLU_S5 | `linkograph_SLU_S5_gemini.png` |
 
-### Network slides
+### Networks — slides 72–79
 
-| # | Title | Subtitle |
+| # | Session | File (in `scale10/<LABEL>/`) |
 |---|---|---|
-| 74 | NES_S3 (11/05) — 3 teams formed WITHIN this room (1 funded) | 11 speakers · 46 links · weighted-degree centralization 0.380 |
-| 75 | NES_S4 (11/05) — 3 teams formed WITHIN this room (2 funded) | 12 speakers · 55 links · weighted-degree centralization 0.705 |
-| 76 | MZT_S5 (09/30) — 2 teams formed WITHIN this room (2 funded) | 9 speakers · 54 links · weighted-degree centralization 0.712 |
-| 77 | MND_S5 (04/07) — 2 teams formed WITHIN this room (1 funded) | 8 speakers · 42 links · weighted-degree centralization 0.462 |
-| 78 | CMC_S11 (10/08) — 1 team formed WITHIN this room | 10 speakers · 48 links · weighted-degree centralization 0.569 |
-| 79 | NES_S10 (11/06) — 0 teams formed within this room | 11 speakers · 40 links · weighted-degree centralization 0.653 |
-| 80 | NES_S8 (11/05) — 0 teams formed within this room | 9 speakers · 34 links · weighted-degree centralization 0.589 |
-| 81 | ABI_S1 (05/21) — 0 teams formed within this room | 11 speakers · 34 links · weighted-degree centralization 0.740 |
-| 82 | MND_S15 (04/23) — 0 teams formed within this room | 10 speakers · 38 links · weighted-degree centralization 0.465 |
-| 83 | SLU_S5 (06/11) — 0 teams formed within this room | 12 speakers · 47 links · weighted-degree centralization 0.625 |
+| 72 | NES_S4 | `network_NES_S4_gemini.png` |
+| 73 | MZT_S5 | `network_MZT_S5_gemini.png` |
+| 74 | MND_S5 | `network_MND_S5_gemini.png` |
+| 75 | CMC_S11 | `network_CMC_S11_gemini.png` |
+| 76 | NES_S8 | `network_NES_S8_gemini.png` |
+| 77 | ABI_S1 | `network_ABI_S1_gemini.png` |
+| 78 | MND_S15 | `network_MND_S15_gemini.png` |
+| 79 | SLU_S5 | `network_SLU_S5_gemini.png` |
 
-Alternatively put both figures for one session on a single slide (10 slides, one title
-each). Order matches slide 62 either way.
+Regenerate with:
 
-**Note on look:** these are the plain `gemini_linkography.py` style, not the annotated
-version on slide 57 (no callout boxes, no speaker-colour legend). Same pipeline, plainer
-rendering. If the ten go in the main body rather than an appendix they should be
-regenerated to match slide 57 — say so and I'll do it.
+```bash
+python analysis_v2/src/linkograph_network/gemini_deck_figures_scaled.py
+```
+
+**Caveat for slides 77 and 79.** ABI_S1 and SLU_S5 each render one person as two nodes —
+`Brian Spring` / `Bryan Spring` and `Tori Hoehler` / `Tori Hoeler`. On SLU_S5 that splits a
+weighted degree of 15 into an 8 and a 7. Note it so the sociogram isn't read as a real
+structural finding.
 
 ---
 
