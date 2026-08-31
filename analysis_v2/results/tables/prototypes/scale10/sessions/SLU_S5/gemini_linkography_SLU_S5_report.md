@@ -18,9 +18,9 @@
 | `combines_ideas` | move | 1 |
 
 ## Q3 -- how the linker recovered each move's target (basis)
-- **on_table_idea**: 27
-- **named_speaker**: 17
-- **nearest_prior**: 3
+- **on_table_idea**: 29
+- **named_speaker**: 13
+- **nearest_prior**: 5
 
 ## Q2 -- agreement vs Liu
 _No Liu output supplied (or none matched)._

@@ -21,6 +21,28 @@
       "Groundedness: nearest_prior share 3-32%, i.e. at or below NES_S10's 30%, the worst case the validation actually read through."
     ]
   },
+  "speaker_aliases": {
+    "_readme": [
+      "Confirmed one-person-two-spellings cases, applied before the linkograph is built.",
+      "EXPLICIT and per-session on purpose: a similarity rule would also merge genuinely",
+      "different people (the Kris Hall / Kirsten Hall case on deck slide 46). Add an entry",
+      "only after checking the roster. gemini_scale.py reports candidates it detects but",
+      "never merges on its own.",
+      "Canonical spelling is the one the project's own data already uses:",
+      "  ABI_S1  -> 'Bryan Spring' is the spelling in 2021ABI_person_to_team.json, so",
+      "             merging also fixes that node's team outcome, which was reading as",
+      "             'no team' because 'Brian Spring' matched no roster entry.",
+      "  SLU_S5  -> 'Tori Hoeler' is the spelling in that session's all_speakers_raw.",
+      "             NOTE: the identity registry",
+      "             (notebooks/finalized_matching_csvs/global_participant_identity_by_conference.csv)",
+      "             carries BOTH spellings as separate people -- person_0518 'tori hoehler'",
+      "             and person_0519 'tori hoeler'. That is unresolved and affects the",
+      "             person-level pipeline, not just these figures."
+    ],
+    "2021_05_21_ABI_S1": {"Brian Spring": "Bryan Spring"},
+    "2021_06_11_SLU_S5": {"Tori Hoehler": "Tori Hoeler"}
+  },
+
   "sessions": [
     {"id": "2020_11_05_NES_S3", "role": "focal",
      "why": "Validated session A. 3 in-room teams, 1 funded. Spread participation, no dominator."},

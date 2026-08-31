@@ -91,6 +91,30 @@ def resolve_session(session_id, base=_BASE):
     return {"session": session_id, "conf": conf, "label": label, "session_dir": session_dir}
 
 
+def load_speaker_aliases(path=SESSIONS_JSON):
+    """{session_id: {written_form: canonical_form}} for confirmed one-person-two-spellings
+    cases. Explicit per session -- never inferred from name similarity, which would also
+    merge genuinely different people."""
+    with open(path) as f:
+        cfg = json.load(f)
+    return {k: v for k, v in (cfg.get("speaker_aliases") or {}).items()
+            if not k.startswith("_")}
+
+
+def apply_speaker_aliases(utts, aliases):
+    """Rewrite speaker labels in place before nodes/moves are extracted, so the linker,
+    the network and every metric see one person. Returns the number of utterances renamed."""
+    if not aliases:
+        return 0
+    n = 0
+    for u in utts:
+        canon = aliases.get(u.get("speaker"))
+        if canon:
+            u["speaker"] = canon
+            n += 1
+    return n
+
+
 def load_session_list(path=SESSIONS_JSON):
     """Read the configured session list. Entries may be plain ids or objects with an
     `id` key; returns (ids, {id: entry-metadata})."""
@@ -241,9 +265,13 @@ def run_pipeline_on_session(session_id, out_root=OUT_ROOT, fig_root=FIG_ROOT,
 
     # --- annotations -> nodes/moves -> links (the pipeline proper) ---
     bad_files = []
-    utts = extract_nodes_moves(
-        load_utterances(ident["session_dir"],
-                        on_bad_file=lambda p, e: bad_files.append(os.path.basename(p))))
+    raw = load_utterances(ident["session_dir"],
+                          on_bad_file=lambda p, e: bad_files.append(os.path.basename(p)))
+    aliases = load_speaker_aliases().get(session_id, {})
+    n_aliased = apply_speaker_aliases(raw, aliases)
+    if n_aliased:
+        log(f"  speaker aliases applied: {aliases} ({n_aliased} utterances relabelled)")
+    utts = extract_nodes_moves(raw)
     if bad_files:
         log(f"  WARNING: skipped {len(bad_files)} unparseable chunk file(s): {bad_files}")
     edges, unresolved = link_moves(utts)
@@ -330,6 +358,7 @@ def run_pipeline_on_session(session_id, out_root=OUT_ROOT, fig_root=FIG_ROOT,
                 sum(1 for r in log_rows if r["links_to_extracted"]) / n_links, 3),
             "pct_cross_chunk": round(sum(1 for r in log_rows if r["is_cross_chunk"]) / n_links, 3),
             "n_bad_files": len(bad_files),
+            "n_utterances_aliased": n_aliased,
             "split_speaker_candidates": splits,
         },
     }

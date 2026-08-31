@@ -16,7 +16,7 @@
       "session": "2020_11_05_NES_S3",
       "label": "NES_S3",
       "conf": "2020NES",
-      "seconds": 0.29,
+      "seconds": 0.28,
       "spotcheck": "skipped",
       "n_utterances": 139,
       "n_idea_utterances": 58,
@@ -30,6 +30,7 @@
       "pct_links_to_extracted": 0.283,
       "pct_cross_chunk": 0.283,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/NES_S3/gemini_linkography_NES_S3.json",
@@ -57,6 +58,7 @@
       "pct_links_to_extracted": 0.2,
       "pct_cross_chunk": 0.4,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/NES_S10/gemini_linkography_NES_S10.json",
@@ -84,6 +86,7 @@
       "pct_links_to_extracted": 0.327,
       "pct_cross_chunk": 0.364,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/NES_S4/gemini_linkography_NES_S4.json",
@@ -111,6 +114,7 @@
       "pct_links_to_extracted": 0.333,
       "pct_cross_chunk": 0.562,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/CMC_S11/gemini_linkography_CMC_S11.json",
@@ -124,7 +128,7 @@
       "session": "2021_09_30_MZT_S5",
       "label": "MZT_S5",
       "conf": "2021MZT",
-      "seconds": 0.22,
+      "seconds": 0.19,
       "spotcheck": "stratified 4 of 25 extends links (named_speaker=2, nearest_prior=1, on_table_idea=1)",
       "n_utterances": 126,
       "n_idea_utterances": 61,
@@ -138,6 +142,7 @@
       "pct_links_to_extracted": 0.222,
       "pct_cross_chunk": 0.444,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/MZT_S5/gemini_linkography_MZT_S5.json",
@@ -151,7 +156,7 @@
       "session": "2022_04_07_MND_S5",
       "label": "MND_S5",
       "conf": "2022MND",
-      "seconds": 0.21,
+      "seconds": 0.2,
       "spotcheck": "stratified 4 of 16 extends links (named_speaker=2, nearest_prior=1, on_table_idea=1)",
       "n_utterances": 207,
       "n_idea_utterances": 51,
@@ -165,6 +170,7 @@
       "pct_links_to_extracted": 0.357,
       "pct_cross_chunk": 0.405,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/MND_S5/gemini_linkography_MND_S5.json",
@@ -192,12 +198,8 @@
       "pct_links_to_extracted": 0.176,
       "pct_cross_chunk": 0.5,
       "n_bad_files": 0,
-      "split_speaker_candidates": [
-        [
-          "Brian Spring",
-          "Bryan Spring"
-        ]
-      ],
+      "n_utterances_aliased": 4,
+      "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/ABI_S1/gemini_linkography_ABI_S1.json",
         "report_md": "analysis_v2/results/tables/prototypes/scale10/sessions/ABI_S1/gemini_linkography_ABI_S1_report.md",
@@ -224,6 +226,7 @@
       "pct_links_to_extracted": 0.211,
       "pct_cross_chunk": 0.553,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/MND_S15/gemini_linkography_MND_S15.json",
@@ -237,26 +240,22 @@
       "session": "2021_06_11_SLU_S5",
       "label": "SLU_S5",
       "conf": "2021SLU",
-      "seconds": 0.22,
+      "seconds": 0.18,
       "spotcheck": "stratified 4 of 21 extends links (named_speaker=2, nearest_prior=1, on_table_idea=1)",
       "n_utterances": 161,
       "n_idea_utterances": 56,
       "n_links": 47,
       "n_unresolved_moves": 0,
       "n_extends": 21,
-      "basis_named_speaker": 17,
-      "basis_on_table_idea": 27,
-      "basis_nearest_prior": 3,
-      "pct_nearest_prior": 0.064,
-      "pct_links_to_extracted": 0.362,
-      "pct_cross_chunk": 0.617,
+      "basis_named_speaker": 13,
+      "basis_on_table_idea": 29,
+      "basis_nearest_prior": 5,
+      "pct_nearest_prior": 0.106,
+      "pct_links_to_extracted": 0.298,
+      "pct_cross_chunk": 0.532,
       "n_bad_files": 0,
-      "split_speaker_candidates": [
-        [
-          "Tori Hoehler",
-          "Tori Hoeler"
-        ]
-      ],
+      "n_utterances_aliased": 11,
+      "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/SLU_S5/gemini_linkography_SLU_S5.json",
         "report_md": "analysis_v2/results/tables/prototypes/scale10/sessions/SLU_S5/gemini_linkography_SLU_S5_report.md",
@@ -269,7 +268,7 @@
       "session": "2021_11_05_NES_S8",
       "label": "NES_S8",
       "conf": "2021NES",
-      "seconds": 0.17,
+      "seconds": 0.16,
       "spotcheck": "stratified 4 of 18 extends links (named_speaker=2, nearest_prior=1, on_table_idea=1)",
       "n_utterances": 169,
       "n_idea_utterances": 40,
@@ -283,6 +282,7 @@
       "pct_links_to_extracted": 0.294,
       "pct_cross_chunk": 0.353,
       "n_bad_files": 0,
+      "n_utterances_aliased": 0,
       "split_speaker_candidates": [],
       "paths": {
         "linkography_json": "analysis_v2/results/tables/prototypes/scale10/sessions/NES_S8/gemini_linkography_NES_S8.json",
