@@ -14,9 +14,11 @@ Sessions with in-room teams first.
 
 **What happened**
 - Thirteen people on beyond-CO2 chemistry. The most successful room in the set.
-- Five left with an in-room teammate: Carlos Morales-Guio + Katie Knowles (NES19); Chong
-  Liu with both Nanette Boyle (NES29) and Sen Zhang (NES9)
-- 10 of 13 joined a team somewhere
+- **3 teams formed between two people who were both in this room** — NES19 (Carlos
+  Morales-Guio + Katie Knowles), NES29 (Chong Liu + Nanette Boyle), NES9 (Chong Liu + Sen
+  Zhang). Chong Liu is in two, so 5 distinct people across the 3 teams.
+- 10 of 13 joined a team at all — **that 10 includes those 5**; the other 5 paired with
+  people from other sessions
 
 **How they built on ideas**
 - **One person carried the room and it still worked.** Charles McCrory's weighted degree
@@ -39,8 +41,14 @@ Sessions with in-room teams first.
 
 **What happened**
 - Twelve people on pathogen surveillance. Best funding rate in the set — both teams funded.
-- No in-room teammates flagged: the people who teamed up weren't both idea-speakers here
-- 7 of 12 joined a team somewhere
+- **Both teams formed between two people in this room** — MZT4 (Nicole Eikmeier + Richard
+  Wiener) and MZT5 (Pilar Fernandez + Tavis Anderson)
+- **In each team, one partner never contributed a codeable idea.** Richard Wiener and
+  Tavis Anderson are on the roster but appear nowhere in the linkograph or network. So the
+  sociogram shows no in-room-teammate rings even though two funded teams formed here.
+- 7 of 12 joined a team at all (here or in another session)
+- ⚠️ Worth checking whether the silent partners were participants or facilitators — if
+  organisers are counted as team members, the outcome variable is affected
 
 **How they built on ideas**
 - **The most centralized room here, and it worked anyway.** Pilar Fernandez's weighted
@@ -48,6 +56,10 @@ Sessions with in-room teams first.
   speaker pairs include her.
 - **Most new ideas of the eight** — 16 from 61 idea acts. Generating, not just refining.
 - Heaviest pair anywhere: Matt Erdman ↔ Pilar, 8 links, running both ways (5 / 3)
+- **A silent person can still form a funded team.** Pilar was the most central speaker in
+  the room and partnered with someone who said nothing codeable. This is the clearest
+  single case against "participation predicts team formation" — and it matches the
+  corpus-level finding that share of the room contributing correlates −0.17 with teams.
 
 **Evidence — a question that redirected the room**
 > Joyce Jose proposes sequencing for virus detection
@@ -64,7 +76,7 @@ Sessions with in-room teams first.
 - Smallest room (8 idea-speakers of 11), on the gut microbiome
 - **Faranak Fattahi and Iliyan Iliev left together on MND5, the funded team** — and both
   sit at the centre of this network
-- 6 of 11 joined a team somewhere
+- 6 of 11 joined a team at all (here or in another session)
 
 **How they built on ideas**
 - **The flattest network in the set.** Centralization 0.462, max betweenness 0.187 — both
