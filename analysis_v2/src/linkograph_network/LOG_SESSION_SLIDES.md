@@ -20,11 +20,13 @@ boundary. Verified monotonic within every session.
 
 **What happened**
 - Thirteen people on beyond-CO2 chemistry. The most successful room in the set.
-- **3 teams formed between two people who were both in this room** — NES19 (Carlos
-  Morales-Guio + Katie Knowles), NES29 (Chong Liu + Nanette Boyle), NES9 (Chong Liu + Sen
-  Zhang). Chong Liu is in two, so 5 distinct people across the 3 teams.
-- 10 of 13 joined a team at all — **that 10 includes those 5**; the other 5 paired with
+- **3 teams formed between two people who were both in this room** — NES9 (Chong Liu +
+  Nanette Boyle), NES19 (Carlos Morales-Guio + Jordi Cabana, funded), NES29 (Chong Liu +
+  Michael Nippe, funded). Chong Liu is in two, so **5 distinct people** across the 3 teams.
+- **11 of 13 joined a team at all** — that 11 includes those 5; the other 6 paired with
   people from other sessions
+- **Chong Liu and Michael Nippe are the two people in the quoted exchange below** — they
+  formed NES29, which was funded
 
 **How they built on ideas**
 - **One person carried the room and it still worked.** Charles McCrory's weighted degree
@@ -52,13 +54,15 @@ recording, Katie in the 12:17:00 one. The link held across the gap.*
 **What happened**
 - Twelve people on pathogen surveillance. Best funding rate in the set — both teams funded.
 - **Both teams formed between two people in this room** — MZT4 (Nicole Eikmeier + Richard
-  Wiener) and MZT5 (Pilar Fernandez + Tavis Anderson)
+  Wiener, funded) and MZT5 (Pilar Fernandez + Tavis Anderson, funded). **4 people.**
 - **In each team, one partner never contributed a codeable idea.** Richard Wiener and
   Tavis Anderson are on the roster but appear nowhere in the linkograph or network. So the
   sociogram shows no in-room-teammate rings even though two funded teams formed here.
-- 7 of 12 joined a team at all (here or in another session)
-- ⚠️ Worth checking whether the silent partners were participants or facilitators — if
-  organisers are counted as team members, the outcome variable is affected
+- **8 of 12 joined a team at all** (here or in another session)
+- ⚠️ **Richard Wiener appears as a team member in four different conferences** (2021NES,
+  2021MND, 2021ABI, 2021CMC) and is absent from `person_to_team`. Almost certainly programme
+  staff rather than a Fellow. If organisers are being counted as team members, MZT_S5 has
+  one participant team, not two — and the DV is affected corpus-wide.
 
 **How they built on ideas**
 - **The most centralized room here, and it worked anyway.** Pilar Fernandez's weighted
@@ -87,9 +91,10 @@ recording, Katie in the 12:17:00 one. The link held across the gap.*
 
 **What happened**
 - Smallest room (8 idea-speakers of 11), on the gut microbiome
-- **Faranak Fattahi and Iliyan Iliev left together on MND5, the funded team** — and both
-  sit at the centre of this network
-- 6 of 11 joined a team at all (here or in another session)
+- **2 teams formed between people in this room** — MND5 (Iliyan Iliev + Tom Mansell,
+  funded) and MND7 (Faranak Fattahi + Pamela Chang). **4 people.** Faranak and Iliyan are
+  on *different* teams, though both sit near the centre of this network.
+- **7 of 11 joined a team at all** (here or in another session)
 
 **How they built on ideas**
 - **The flattest network in the set.** Centralization 0.462, max betweenness 0.187 — both
@@ -99,6 +104,7 @@ recording, Katie in the 12:17:00 one. The link held across the gap.*
 - **But the highest self-link ratio** (0.262), and zero bridging moves
 
 **Evidence — a chain that turns from method to obstacle, over 38 minutes**
+*(Faranak opens it and Iliyan closes it — both went on to form teams, with other people.)*
 > **10:10:08** · Faranak Fattahi: *"are we in the phase where we should be screening for a
 > larger set of molecules or metabolites?"*
 > **10:15:24** · Erin Longbrake: *"to go back to Faranak's question, what would be a model
@@ -113,9 +119,9 @@ recording, Katie in the 12:17:00 one. The link held across the gap.*
 
 **What happened**
 - Thirteen people on cellular signalling and scale
-- **The useful case for separating "formed a team" from "got funded"** — one team, no
-  funding
-- Only 6 of 13 joined a team anywhere
+- **The useful case for separating "formed a team" from "got funded"** — one team, not
+  funded: CMC10 (Gulcin Pekkurnaz + Joshua Weinstein)
+- **7 of 13 joined a team at all**; the other 5 paired with people from other sessions
 
 **How they built on ideas**
 - **The most conceptual session of the eight** — what counts as "self," deterministic
@@ -269,6 +275,48 @@ density** (r = 0.63) and **how many people use more than one kind of idea-move**
 
 ---
 
+# ⚠️ Data-quality issue found while checking these counts
+
+**Two sources disagree about who was on a team, and neither is complete.**
+
+`session_outcomes_v2.json` lists, per session, the teams whose members were present in
+that room. `person_to_team.json` maps a person to the teams they joined. The "teamed
+anywhere" column on every slide above was computed from the second — and **161 of 537 team
+memberships recorded in the first name someone who is absent from the second (30%).**
+
+Within our ten sessions, one in-room team member per session is missing from
+`person_to_team`:
+
+| Session | Missing from `person_to_team` |
+|---|---|
+| NES_S3 | Phil Milner |
+| NES_S4 | Jordi Cabana |
+| CMC_S11 | Joshua Weinstein |
+| MZT_S5 | Richard Wiener |
+| MND_S5 | Tom Mansell |
+
+**Two different problems are mixed together here.**
+
+*Incompleteness.* Phil Milner, Jordi Cabana and Joshua Weinstein are clearly Fellows —
+they speak throughout their sessions. `person_to_team` is simply missing them, so any
+count built on it undercounts.
+
+*Possible organisers counted as participants.* Some names recur across conferences —
+**Richard Wiener** appears as a team member in 2021NES, 2021MND, 2021ABI and 2021CMC;
+Silvia Ronco, Jim Mitchell, Becky Smith and Andrew Feig also recur. A Fellow attends one
+Scialog. Someone appearing at four is almost certainly programme staff.
+
+**Why it matters.** If organisers are being counted as team members, some "teams" are an
+organiser paired with a participant, and the dependent variable itself is contaminated.
+MZT_S5 is the sharpest case: it is credited with two funded in-room teams, and one of the
+four people involved is Richard Wiener.
+
+**Before scaling, resolve:** which source is authoritative, why 30% of memberships don't
+reconcile, and whether programme staff are in the team rosters. All the counts above use
+"on a team by either source," which is the most inclusive reading.
+
+---
+
 # Brian's framing dimensions — what the data actually supports
 
 Brian listed the levels he thinks in: **people (no.), information, statements, words,
@@ -298,6 +346,9 @@ Rooms run **10–13 people**, of whom **8–12** contribute at least one idea. B
 *share* of the roster contributing r = **−0.17**. Note the sign: the three sessions where
 *everyone* contributed produced 3, 0 and 0 teams. Breadth of participation is not the
 mechanism.
+
+*(These three correlations use participation counts only and are unaffected by the
+team-source discrepancy above.)*
 
 ## Statements
 
