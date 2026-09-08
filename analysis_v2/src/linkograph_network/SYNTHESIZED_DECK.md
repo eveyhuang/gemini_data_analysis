@@ -48,6 +48,7 @@ that session go on to form a research team?
 | **DV** | Team formation. Primary: number of teams formed between two people *from the same room* (0–3). Secondary: share of the room joining any team; share on a funded team. |
 | **IV — idea flow** | How many distinct new ideas; how much total idea work; how deeply ideas were built on; how long the longest build-chain ran |
 | **IV — collaboration structure** | Who built on whom; how evenly participation was spread; how concentrated the building was on one person; who bridged otherwise-separate parts of the room |
+| **IV — roles** | Who initiates, builds, synthesizes, evaluates — derived from which move codes each person uses. And **role versatility**: what share of the room plays more than one role |
 | **Unit** | One session (n = 10 analysed; 162 available) |
 
 **Say out loud:** a "0" on the DV does **not** mean nobody formed a team. NES_S10 has zero
@@ -107,7 +108,44 @@ than hide it.
 
 ---
 
-## 6 · Finding 2 — but structure doesn't predict it
+## 5b · Finding 2 — rooms where people played more than one role
+
+**Brian's question — do individuals play multiple roles? — turns out to be the strongest
+single signal we have.**
+
+Each move code maps to a role: *initiator* (proposes, frames), *builder* (extends,
+combines, connects), *synthesizer* (synthesizes, returns, resolves), *evaluator*
+(critiques, raises concern). We count someone as playing a role if they use it at least
+twice.
+
+| Session | In-room teams | Share of room playing 2+ roles |
+|---|---|---|
+| MND_S5 | 2 | **0.75** |
+| MZT_S5 | 2 | **0.67** |
+| NES_S4 | 3 | **0.58** |
+| NES_S3 | 3 | **0.55** |
+| NES_S10 | 0 | 0.55 |
+| MND_S15 | 0 | 0.40 |
+| SLU_S5 | 0 | 0.36 |
+| CMC_S11 | 1 | 0.30 |
+| ABI_S1 | 0 | 0.30 |
+| NES_S8 | 0 | 0.22 |
+
+**r = 0.68**, leave-one-out 0.64–0.77.
+
+**It is not the role *mix* that matters.** The share of the conversation spent initiating,
+building, synthesizing or evaluating correlates with nothing (−0.20 to +0.20). What
+matters is whether the *same people* do several of those things.
+
+**And it is not just density restated** — the two correlate at 0.46, so they overlap but
+measure different things. Nor is it room size (−0.12).
+
+**Exceptions to show:** NES_S10 has high versatility (0.55) and no in-room teams;
+CMC_S11 has the second lowest (0.30) and formed one.
+
+---
+
+## 6 · Finding 3 — but network structure doesn't predict it
 
 **We expected network shape to matter. It doesn't.**
 
@@ -131,11 +169,15 @@ overlap is visible.
 
 ## 7 · What that suggests
 
-**How much a room does idea work looks more important than how that work is distributed.**
+**What people *do* matters more than how the network is *shaped*.**
+
+The two things that track team formation — how densely the room does idea work, and how
+many people play more than one role — are both about behaviour. The things that don't —
+centralization, betweenness — are about structure.
 
 A room can run through one dominant person and still produce teams, as long as the
-conversation is densely about ideas. A room can be perfectly egalitarian and produce
-nothing.
+conversation is densely about ideas and people are doing more than one kind of idea work.
+A room can be perfectly egalitarian and produce nothing.
 
 **Two readings, and we can't yet separate them:**
 - Dense idea work *causes* people to find collaborators
