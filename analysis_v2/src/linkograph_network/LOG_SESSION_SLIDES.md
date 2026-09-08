@@ -8,6 +8,12 @@ and `network_<LABEL>_gemini.png`.
 
 Sessions with in-room teams first.
 
+**On the timestamps.** Gemini's timestamps restart at 00:00 in every chunk file, and a
+session spans several ~10-minute chunks across one or more recordings. The times below are
+reconstructed session clock time — recording start + (chunk number − 1) × 10 min +
+in-chunk offset — so a thread reads forward even when it crosses a chunk or recording
+boundary. Verified monotonic within every session.
+
 ---
 
 ## NES_S4 (2020NES · 5 Nov 2020) — 3 teams formed, 2 funded
@@ -28,12 +34,16 @@ Sessions with in-room teams first.
 - **Additive, not adversarial** — 28 of 55 links are extends, only 4 critiques
 - Best-grounded links of the eight: 17 named / 30 on-table / 8 fallback
 
-**Evidence — a thread widening across three people**
-> Chong Liu: *"nature has enzymes to do methane to liquid… maybe they just need an energy
-> source like electrochemistry"*
-> → Michael Nippe extends it to cofactor generation
-> → Katie Knowles: *"build off an idea that Michael just said… using electrochemistry more
-> broadly"*
+**Evidence — a thread widening across three people, over 4½ minutes**
+> **12:14:08** · Chong Liu: *"nature has enzymes to do methane to liquid… maybe they just
+> need an energy source like electrochemistry"*
+> **12:15:31** · Michael Nippe: *"the electrocatalytic generation of food for enzymes…
+> efficient systems for NAD+ to NADH"*
+> **12:18:41** · Katie Knowles: *"build off an idea that Michael just said… using
+> electrochemistry more broadly"*
+
+*Note the last one crosses a recording boundary — Chong and Michael are in the 11:59:04
+recording, Katie in the 12:17:00 one. The link held across the gap.*
 
 ---
 
@@ -61,12 +71,15 @@ Sessions with in-room teams first.
   single case against "participation predicts team formation" — and it matches the
   corpus-level finding that share of the room contributing correlates −0.17 with teams.
 
-**Evidence — a question that redirected the room**
-> Joyce Jose proposes sequencing for virus detection
-> → Pilar Fernandez: *"how we achieve sustainability of the surveillance system"*
-> → Matt Erdman: *"What's the actionable outcome of surveillance?"*
-> → Pilar: *"we're always focusing about human disease. But do we just want to care about
-> that…?"*
+**Evidence — a question that redirected the room, over 38 minutes**
+> **13:13:59** · Joyce Jose proposes sequencing for virus detection
+> **13:21:48** · Pilar Fernandez: *"how we achieve sustainability of the surveillance
+> system"*
+> **13:23:32** · Matt Erdman: *"What's the actionable outcome of surveillance?"*
+> **13:35:50** · Pilar: *"we're always focusing about human disease. But do we just want
+> to care about that…?"*
+> **13:52:02** · Matt Erdman: *"point of care sequencing falls under the umbrella of
+> continued evolutions of diagnostics"*
 
 ---
 
@@ -85,13 +98,14 @@ Sessions with in-room teams first.
 - **Deepest thread anywhere** — 8 steps, longer than either original session
 - **But the highest self-link ratio** (0.262), and zero bridging moves
 
-**Evidence — a chain that turns from method to obstacle**
-> Faranak Fattahi: *"are we in the phase where we should be screening for a larger set of
-> molecules or metabolites?"*
-> → Erin Longbrake: *"to go back to Faranak's question, what would be a model system…"*
-> → Rosa Krajmalnik-Brown adds lower-throughput screening methods
-> → Erin: *"they don't like funding anything that's risky and there's a bias towards
-> hypothesis"*
+**Evidence — a chain that turns from method to obstacle, over 38 minutes**
+> **10:10:08** · Faranak Fattahi: *"are we in the phase where we should be screening for a
+> larger set of molecules or metabolites?"*
+> **10:15:24** · Erin Longbrake: *"to go back to Faranak's question, what would be a model
+> system…"*
+> **10:37:38** · Rosa Krajmalnik-Brown adds lower-throughput screening methods
+> **10:48:06** · Erin Longbrake: *"they don't like funding anything that's risky and
+> there's a bias towards hypothesis"*
 
 ---
 
@@ -111,13 +125,17 @@ Sessions with in-room teams first.
   ratio in the set
 - Highest cross-chunk linking anywhere (56%): ideas persisted and were returned to
 
-**Evidence — disagreement that resolved rather than split**
-> Rigoberto Hernandez: *"how big does a system have to be to have this sort of
-> self-organization?"*
-> → Joshua Weinstein: *"you could define it across different time scales"*
-> → Davide Donadio: *"I'm surprised about the thought of anything deterministic"*
-> → Rigoberto: *"there was a deterministic driving force, but yet it's stochastic"*
-> *(coded `resolves_contradiction` — the rarest move type in the corpus)*
+**Evidence — disagreement that resolved rather than split, inside 3½ minutes**
+> **13:55:01** · Rigoberto Hernandez: *"how big does a system have to be to have this sort
+> of self-organization?"*
+> **13:56:37** · Joshua Weinstein: *"you could define it across different time scales"*
+> **13:57:54** · Davide Donadio: *"I'm surprised about the thought of anything
+> deterministic"*
+> **13:58:29** · Rigoberto: *"there was a deterministic driving force, but yet it's
+> stochastic"*
+> *(coded `resolves_contradiction` — the rarest move type in the corpus, 63 of 6,157)*
+
+*The tightest exchange in the set — four turns, four minutes, ending in a resolution.*
 
 ---
 
@@ -136,10 +154,14 @@ Sessions with in-room teams first.
   network numbers with that caveat.
 
 **Evidence — the linker's strongest signal, visible in the transcript**
-> Wilson Smith: *"back to **Linsey's** point… having local identification under reaction
-> conditions"*
-> He names his target out loud; the link resolved to Linsey Seitz. This is what the ~85%
-> tier looks like.
+> **13:21:25** · Linsey Seitz: *"pushing experimental techniques to be able to probe those
+> relevant conditions"*
+> **13:27:15** · Wilson Smith: *"back to **Linsey's** point… having local identification
+> under reaction conditions"*
+
+*Six minutes later he names her out loud, and the link resolved to Linsey Seitz. This is
+what the ~85% tier looks like — and note the linker had to reach back six minutes to find
+the right target.*
 
 ---
 
@@ -161,11 +183,15 @@ Sessions with in-room teams first.
 - One person appeared as `Brian Spring` / `Bryan Spring`; merged, moving max betweenness
   0.548 → 0.454
 
-**Evidence — note how short the contributions are**
-> Carolyn Bayer: *"sacrificing spatial resolution to improve temporal"*
-> → Brian Pogue: *"And can you have both? Can you have high spatial, high temporal?"*
-> → *"in the microscopy world, this is where it's done a lot"*
-> → Katharine White: *"I would have no idea in terms of that"*
+**Evidence — note how short the contributions are, and how fast it dies**
+> **11:07:10** · Carolyn Bayer: *"sacrificing spatial resolution to improve temporal"*
+> **11:07:33** · Brian Pogue: *"And can you have both? Can you have high spatial, high
+> temporal?"*
+> **11:09:51** · Brian Pogue: *"in the microscopy world, this is where it's done a lot"*
+> **11:12:00** · Katharine White: *"I would have no idea in terms of that"*
+
+*The whole thread runs five minutes and ends in a non-answer — characteristic of this
+session's short chains.*
 
 ---
 
@@ -183,11 +209,14 @@ Sessions with in-room teams first.
   participation and the cleanest evidence, and nobody left with a collaborator from the room.
 - Fewest new ideas of the eight (11); short chains (5)
 
-**Evidence — a list built collaboratively, three people, three turns**
-> Ying-Hui Chou: *"Like traumatic brain injury, that could be a stress."*
-> → Abhishek Shrivastava: *"changes in oxygen are definitely one type of stress"*
-> → Lisa Ryno: *"how would you interface that with one of these organoid models?"*
-> → Carolina Tropini: *"it's key to find the right model for the question that is asked"*
+**Evidence — a list built collaboratively, four people, over 32 minutes**
+> **13:31:07** · Ying-Hui Chou: *"Like traumatic brain injury, that could be a stress."*
+> **13:32:48** · Abhishek Shrivastava: *"changes in oxygen are definitely one type of
+> stress"*
+> **13:56:31** · Lisa Ryno: *"how would you interface that with one of these organoid
+> models?"*
+> **14:03:06** · Carolina Tropini: *"it's key to find the right model for the question
+> that is asked"*
 
 **Say this one out loud:** textbook additive building that produced nothing.
 
@@ -208,14 +237,18 @@ Sessions with in-room teams first.
 - One person appeared as `Tori Hoehler` / `Tori Hoeler`; merged, moving centralization
   0.625 → 0.588
 
-**Evidence — a problem framed, then narrowed**
-> Maggie Osburn: *"one of the biggest battles we fight is the abiotic system mimicking the
-> biological system"*
-> → Amanda Stockton: *"connectivity and patterns of connectivity that leads to molecules"*
-> → Jay Forsythe: *"it'll be really difficult to assign when you have these really complex
-> mixtures"*
-> → Andro Rios: *"small reactive organic compounds in the absence of life would degrade
-> very quickly"*
+**Evidence — a problem framed, then narrowed, over 47 minutes**
+> **11:07:04** · Maggie Osburn: *"one of the biggest battles we fight is the abiotic system
+> mimicking the biological system"*
+> **11:09:29** · Amanda Stockton: *"connectivity and patterns of connectivity that leads to
+> molecules"*
+> **11:48:55** · Jay Forsythe: *"it'll be really difficult to assign when you have these
+> really complex mixtures"*
+> **11:52:28** · Andro Rios: *"small reactive organic compounds in the absence of life
+> would degrade very quickly"*
+
+*The longest-spanning thread in the set — the framing at 11:07 is still being built on 45
+minutes later.*
 
 ---
 
