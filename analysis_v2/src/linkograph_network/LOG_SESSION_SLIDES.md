@@ -221,3 +221,101 @@ density** (r = 0.63) and **how many people use more than one kind of idea-move**
 
 **Caveat when presenting:** ABI_S1 (thin conference, weakest link evidence) and NES_S8
 (11 of 34 links are fallback).
+
+---
+
+# Brian's framing dimensions — what the data actually supports
+
+Brian listed the levels he thinks in: **people (no.), information, statements, words,
+social structure (networks)**, then asked about the *"genetic makeup of the teams — size
+of team, roles missing, individuals playing multiple roles."* Here is what exists for each,
+what it shows, and where the data simply doesn't reach.
+
+## People (number)
+
+| Session | Teams | Roster | Contributed ≥1 idea | Silent |
+|---|---|---|---|---|
+| NES_S3 | 3 | 11 | 11 | 0 |
+| NES_S4 | 3 | 13 | 12 | 1 |
+| MZT_S5 | 2 | 12 | 9 | 3 |
+| MND_S5 | 2 | 11 | 8 | 3 |
+| CMC_S11 | 1 | 13 | 10 | 3 |
+| NES_S10 | 0 | 11 | 11 | 0 |
+| ABI_S1 | 0 | 11 | 11 | 0 |
+| MND_S15 | 0 | 12 | 10 | 2 |
+| SLU_S5 | 0 | 13 | 12 | 1 |
+| NES_S8 | 0 | 10 | 9 | 1 |
+
+Rooms run **10–13 people**, of whom **8–12** contribute at least one idea. Between **0 and
+3 people say nothing codeable** in any given session.
+
+**None of it predicts the outcome.** Roster size r = +0.19; number contributing r = −0.02;
+*share* of the roster contributing r = **−0.17**. Note the sign: the three sessions where
+*everyone* contributed produced 3, 0 and 0 teams. Breadth of participation is not the
+mechanism.
+
+## Statements
+
+Total annotated turns per session: **126–207** in these ten (24–335 across the corpus).
+Of those, the ones carrying an idea code: **40–62**. That ratio — idea moments per turn —
+is the density measure, and it is one of the two things that does track the outcome
+(r = 0.63).
+
+## Information
+
+Approximated by the **new-idea count** (`proposes_new_idea` + `frames_shared_problem`):
+**10–19 per session**. Correlates +0.50 with in-room teams, weaker than density.
+
+Everything *not* idea-coded — knowledge sharing, information seeking, coordination — is
+counted but not analysed. It is roughly **60% of all turns**. Brian's "information" level
+is arguably mostly in there, and we currently discard it.
+
+## Words
+
+**Not available.** Gemini's output contains no transcript text — only the `evidence`
+snippets it chose to quote inside each code. No word counts, no lexical measures, no
+speaking-time analysis. `speaking_duration_seconds` exists per utterance but is dropped by
+our loader and is untested.
+
+This is a hard gap, not an oversight: it would need the source transcripts.
+
+## Social structure (networks)
+
+Fully available and the best-developed layer: weighted degree per person, edge weights,
+degree centralization, betweenness, self-link index, bridging moves.
+
+**And it does not predict the outcome** — centralization r = −0.18, betweenness r = −0.22.
+This is the negative result worth stating plainly.
+
+## Genetic makeup of the teams
+
+**Team size.** Not a variable here. Of 256 teams across the whole corpus, **231 are
+2-person and 25 are 3-person**; every team in these ten sessions is a pair. There is
+nothing to correlate.
+
+**Formal roles.** The only role metadata that exists is participant type in the roster:
+**Fellow** (364), **Scialog Fellow** (69), **Guest** (32), unknown (17). Within our ten,
+nine sessions are Fellows; **MND_S5 is entirely Guests** — worth checking whether that is
+a real composition difference or a labelling difference at 2022MND.
+
+There is **no facilitator flag, no seniority, no discipline, no institution** in the data
+we have. So "genetic makeup" in the sense Brian means it — who these people are — is
+mostly not measurable from what's here.
+
+**Individuals playing multiple roles.** This is the one part of his question the data can
+answer, and it is the strongest signal in the set (r = **+0.68**) — but only by defining
+"role" ourselves from the move codes, which is exactly the move he warned against. See the
+versatility slide, and treat the construct as **provisional until it is literature-backed**.
+
+## Summary — what Brian asked for versus what exists
+
+| Dimension | Available? | Predicts outcome? |
+|---|---|---|
+| People (number, participation breadth) | Yes | No (−0.17 to +0.19) |
+| Statements (turns, idea moments) | Yes | **Yes — density, r = 0.63** |
+| Information (new ideas) | Partly | Weakly (+0.50) |
+| Words | **No** | — |
+| Social structure (networks) | Yes | **No (−0.18, −0.22)** |
+| Team size | No variation (all pairs) | — |
+| Formal roles | Only Fellow / Guest | Untested |
+| Multiple roles per person | Yes, but self-defined | **Yes — r = 0.68, construct provisional** |
